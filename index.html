@@ -82,7 +82,7 @@ function v8Portfolios(){return '<h2>پورتفولیوها</h2><div class="panel
 menuGroups[0][1].push(['v8types','انواع سکشن'],['v8designs','قالب سکشن‌ها']);
 menuGroups[1][1].unshift(['v8portfolios','پورتفولیوها']);
 const v8OldRender=render;
-render=function(){v8Init();if(tab==='v8types'||tab==='v8designs'||tab==='v8portfolios'){v8OldRender();document.getElementById('app').innerHTML=({v8types:v8Types,v8designs:v8Designs,v8portfolios:v8Portfolios})[tab]();return}v8OldRender();if(tab==='sections'||tab==='pages'){let el=document.getElementById('app');el.insertAdjacentHTML('afterbegin','<div class="panel no-print"><b>پورتفولیوی فعال: '+esc(v8Portfolio().name)+'</b><div class="toolbar"><button class="btn primary" onclick="v8AddPage()">+ افزودن صفحه از قالب سکشن</button><button class="btn" onclick="go(\'v8portfolios\')">مدیریت پورتفولیوها</button></div></div>')}};
+render=function(){v8Init();if(tab==='v8types'||tab==='v8designs'||tab==='v8portfolios'){const desired=tab;tab='dashboard';v8OldRender();tab=desired;document.getElementById('app').innerHTML=({v8types:v8Types,v8designs:v8Designs,v8portfolios:v8Portfolios})[tab]();return}v8OldRender();if(tab==='sections'||tab==='pages'){let el=document.getElementById('app');el.insertAdjacentHTML('afterbegin','<div class="panel no-print"><b>پورتفولیوی فعال: '+esc(v8Portfolio().name)+'</b><div class="toolbar"><button class="btn primary" onclick="v8AddPage()">+ افزودن صفحه از قالب سکشن</button><button class="btn" onclick="go(\'v8portfolios\')">مدیریت پورتفولیوها</button></div></div>')}};
 const v8OldSave=save;
 addPage=v8AddPage;
 const v8OldDeleteMaster=deleteMainTemplate;
