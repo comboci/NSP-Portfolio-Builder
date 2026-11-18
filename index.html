@@ -2772,7 +2772,7 @@ v8Portfolios=function(){
   if(!p)return '<p>پورتفولیو پیدا نشد.</p>';
   if(activeSection===null){
     // Keep V30 section-ordering, deletion and portfolio exports while replacing its edit action.
-    return oldList().replace(/v28SelectSection\\\('/g,'v31SectionPages\\\(');
+    return oldList().split('v28SelectSection(').join('v31SectionPages(');
   }
   const pages=p.pages.filter(pg=>pg.sectionId===activeSection);
   const type=state.sectionTypes.find(t=>t.id===activeSection);
