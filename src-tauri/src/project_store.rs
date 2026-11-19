@@ -3,6 +3,7 @@
 //! Image ownership across projects is implemented separately in TASK-007.
 use rusqlite::{params, Connection, OptionalExtension, Transaction};
 use serde_json::{json, Value};
+use std::collections::HashSet;
 
 fn err(e: impl std::fmt::Display) -> String { e.to_string() }
 fn identity<'a>(value:&'a Value,field:&str)->Result<&'a str,String>{
@@ -10,12 +11,71 @@ fn identity<'a>(value:&'a Value,field:&str)->Result<&'a str,String>{
     if s.is_empty(){return Err(format!("Empty {field}"));}
     Ok(s)
 }
+
+// V102 TASK-006/014: the named Style Library has one canonical SQLite table.
+// Existing JSON workspace and backup payloads remain readable for recovery.
+fn style_catalog<'a>(workspace:&'a Value)->Result<Option<&'a Vec<Value>>,String>{
+    let source=workspace.get("globalTemplates").filter(|v|v.is_object())
+        .and_then(|v|v.get("styleLibrary")).filter(|v|!v.is_null())
+        .or_else(||workspace.get("styleLibrary").filter(|v|!v.is_null()));
+    match source {
+        None=>Ok(None),
+        Some(v)=>v.as_array().map(Some).ok_or_else(||"Invalid central style library".to_owned()),
+    }
+}
+fn persist_shared_styles(tx:&Transaction<'_>,workspace:&Value)->Result<(),String>{
+    // Old workspaces without styles must not clear an existing central catalog.
+    // A provided empty list deliberately clears the central catalog.
+    let Some(styles)=style_catalog(workspace)? else {return Ok(());};
+    let mut ids=HashSet::new();
+    let mut names=HashSet::new();
+    for style in styles {
+        let id=identity(style,"id")?;
+        let name=identity(style,"name")?.trim();
+        if name.is_empty()||name.chars().count()>80{return Err("Invalid central style name".into());}
+        if !ids.insert(id.to_owned())||!names.insert(name.to_lowercase()){
+            return Err(format!("Duplicate central style identity or name: {name}"));
+        }
+        if !style.is_object(){return Err("Invalid central style record".into());}
+    }
+    // These operations run inside the same transaction as all portfolio writes;
+    // failure rolls back both the catalogue and the rest of the workspace.
+    tx.execute("DELETE FROM shared_styles",[]).map_err(err)?;
+    for (index,style) in styles.iter().enumerate(){
+        tx.execute("INSERT INTO shared_styles(id,name,position,payload) VALUES(?1,?2,?3,?4)",
+            params![identity(style,"id")?,identity(style,"name")?.trim(),index as i64,style.to_string()]).map_err(err)?;
+    }
+    Ok(())
+}
+fn load_shared_styles(db:&Connection)->Result<Vec<Value>,String>{
+    let mut stmt=db.prepare("SELECT payload FROM shared_styles ORDER BY position,id").map_err(err)?;
+    let rows=stmt.query_map([],|r|r.get::<_,String>(0)).map_err(err)?;
+    let raw=rows.collect::<Result<Vec<_>,_>>().map_err(err)?;
+    raw.iter().map(|v|serde_json::from_str(v).map_err(err)).collect()
+}
+// Migrate once from the previous workspace snapshot, without rewriting
+// snapshots, automatic backups or named backups.
+pub fn migrate_style_library(tx:&Transaction<'_>)->Result<(),String>{
+    let primary:Option<String>=tx.query_row(
+        "SELECT payload FROM projects WHERE id='workspace'",[],|r|r.get(0)).optional().map_err(err)?;
+    let fallback:Option<String>=if primary.is_none(){
+        tx.query_row("SELECT payload FROM workspace_projects WHERE is_active=1 LIMIT 1",[],|r|r.get(0))
+            .optional().map_err(err)?
+    }else{None};
+    if let Some(payload)=primary.or(fallback){
+        let existing:Value=serde_json::from_str(&payload).map_err(err)?;
+        persist_shared_styles(tx,&existing)?;
+    }
+    Ok(())
+}
+
 fn persist_project(tx:&Transaction<'_>,id:&str,name:&str,data:&Value,active:bool)->Result<(),String>{
     if id.is_empty()||name.trim().is_empty(){return Err("Invalid project identity".into());}
     let mut snapshot=data.clone();
     if let Some(m)=snapshot.as_object_mut(){
         m.remove("projectWorkspaces");
         m.remove("globalTemplates");
+        m.remove("styleLibrary"); // Central, never project-owned
     }
     tx.execute("INSERT INTO workspace_projects(id,name,payload,is_active) VALUES(?1,?2,?3,?4)",
         params![id,name,snapshot.to_string(),if active {1}else{0}]).map_err(err)?;
@@ -53,6 +113,7 @@ pub fn persist_workspace(tx:&Transaction<'_>,workspace:&Value)->Result<(),String
     let context=json!({"master":global.get("master").cloned().unwrap_or(Value::Null),
                        "sectionTypes":global.get("sectionTypes").cloned().unwrap_or(Value::Null)});
     tx.execute("INSERT INTO shared_template_context(id,payload) VALUES(1,?1)",[context.to_string()]).map_err(err)?;
+    persist_shared_styles(tx,workspace)?;
     for kind in ["masterTemplates","sectionDesigns","templates"]{
         let entries=global.get(kind).and_then(Value::as_array).ok_or_else(||format!("Missing {kind}"))?;
         for (position,item) in entries.iter().enumerate(){
@@ -99,6 +160,7 @@ pub fn load_workspace(db:&Connection)->Result<Option<String>,String>{
     if projects.is_empty(){return Ok(None);}
     let context:Option<String>=db.query_row("SELECT payload FROM shared_template_context WHERE id=1",[],|r|r.get(0)).optional().map_err(err)?;
     let mut global:Value=serde_json::from_str(&context.ok_or("Missing shared template context")?).map_err(err)?;
+    global["styleLibrary"]=Value::Array(load_shared_styles(db)?);
     for kind in ["masterTemplates","sectionDesigns","templates"]{
         let mut stmt=db.prepare("SELECT payload FROM shared_templates WHERE kind=?1 ORDER BY position").map_err(err)?;
         let rows=stmt.query_map([kind],|r|r.get::<_,String>(0)).map_err(err)?;
@@ -116,7 +178,7 @@ pub fn load_workspace(db:&Connection)->Result<Option<String>,String>{
         data["pages"]=chosen.and_then(|p|p.get("pages")).cloned().unwrap_or_else(||json!([]));
         if let Some(p)=chosen {data["activePortfolioId"]=p["id"].clone();}
         data["portfolios"]=Value::Array(portfolios);
-        for key in ["master","sectionTypes","masterTemplates","sectionDesigns","templates"]{
+        for key in ["master","sectionTypes","masterTemplates","sectionDesigns","templates","styleLibrary"]{
             if let Some(value)=global.get(key){data[key]=value.clone();}
         }
         if is_active==1 && active.is_none(){active=Some((project_id,name,data));}
