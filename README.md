@@ -1,3 +1,16 @@
+# NSP Portfolio Builder — Version 80 (source candidate)
+
+## V80 — TASK-005 editor and numbering implementation
+
+- New image objects receive sequential editor-only labels `Image 1`, `Image 2`, etc. Labels are metadata for Layers/Properties only; no automatic image captions print.
+- A **Page Number** object can be added to templates or pages. It displays the actual 1-based position in the current portfolio, updating on reorder/delete. **Show on First Page** defaults to off and does not renumber later pages. Legacy footer numbers follow the same rule unless superseded by an explicit Page Number object.
+- **Text Once** and **Image Once** are available only within the individual page editor, persisted in that page's visualObjects with an explicit once marker, and removed automatically when that page is deleted.
+- No SQLite migration is required for this additive frontend metadata; native schema stays revision 5. Tauri/Cargo product version is 80.0.0.
+
+**Validation:** source changes have not been built, functionally tested, run in Tauri or reviewed in PDF. User video/runtime acceptance is pending. TASK-005 stays in progress until the user verifies behavior.
+
+---
+
 # NSP Portfolio Builder — Version 79 (source candidate)
 
 ## V79 — TASK-007: private/public image ownership

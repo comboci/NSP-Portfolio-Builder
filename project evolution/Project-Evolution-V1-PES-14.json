@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V79 source (Tauri 79.0.0), not built or runtime-reviewed",
+    "software_release": "V80 source (Tauri 80.0.0), not built or runtime-reviewed",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V79 source authored on V78 main c4ad795; implementation requires user runtime review and approval",
-    "source_revision_ref": "148ec10818264622a7ac0a97586084faf94b4592"
+    "source_alignment": "V80 source authored from main HEAD 973861a3b5f1; TASK-005 awaits owner runtime/PDF review",
+    "source_revision_ref": "973861a3b5f1f77208f8980156d8e658a06084c0"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1045,18 +1045,26 @@
           "SC-NUMBERING",
           "SC-ONCE"
         ],
-        "status": "unassigned",
+        "status": "in_progress",
         "provenance": {
           "type": "source_inspection",
           "date": "2026-11-19",
           "source_revision_ref": "148ec10818264622a7ac0a97586084faf94b4592"
         },
-        "implementation_state": "not_started",
+        "implementation_state": "V80_source_implementation_prepared_pending_owner_runtime_pdf_review",
         "related_record_ids": [
           "FND-006",
           "FND-007",
           "FND-008",
           "TASK-003"
+        ],
+        "result": "V80 source implementation: editor-only sequential Image N labels; dynamic Page Number object bound to portfolio page position with Show on First Page off by default and no renumbering; page-local Text Once/Image Once insertion with persisted once marker, no master/section creation, and deletion through owning page. Legacy footer number respects first-page and custom page-number object. No build, automated test, user runtime review or PDF verification performed.",
+        "source_version": "V80",
+        "updated_on": "2026-11-19",
+        "changed_files": [
+          "index.html",
+          "src-tauri/Cargo.toml",
+          "src-tauri/tauri.conf.json"
         ]
       },
       {
@@ -1369,11 +1377,11 @@
   "relationships": [],
   "views": {
     "current_architecture": {
-      "freshness_state": "source_authored_runtime_unverified",
+      "freshness_state": "source_prepared_runtime_unknown",
       "source_revision_refs": [
         "148ec10818264622a7ac0a97586084faf94b4592"
       ],
-      "note": "V79 source includes logical per-project image ownership, permanent public assets and usage/backup reference tracking; all persistent bytes remain in writable Tauri app-local storage/assets; no physical GC. Runtime behavior not yet verified. V78 project/template model also unverified."
+      "note": "V80 adds frontend numbering and page Once semantics; V78/V79 relational projects, shared templates and images remain runtime-unverified; no physical image GC. SQLite revision stays 5."
     },
     "current_operational_context": {
       "freshness_state": "unknown",
@@ -1437,7 +1445,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V79 TASK-007 code authored for cross-project image ownership and global/private libraries; pending user build, interactive runtime and acceptance. V78 TASK-006 and TASK-005 also need independent runtime/follow-up. Never claim tested. V79 development data can be reset if needed per DEC-007. Persist source of truth in main and Project Evolution. Owner approved eight further design-editor feature groups TASK-008..TASK-015 on 2026-11-19; these are documentation-only planned tasks, not implemented. Group locks and distinct Save Page/Save Project documented in DEC-008/009. Owner closed remaining design decisions: exclusively central Style Library (DEC-010), session-only History (DEC-011). Seven more approved editor features TASK-016..TASK-022 documented only; Page Sections explicitly rejected, no task created.",
+    "current_summary": "V80 TASK-005 source changes prepared: Image N editor labels, portfolio-relative dynamic page number with cover toggle, and page-only Text/Image Once. No build/test/PDF/runtime review or owner acceptance. V78 TASK-006 and V79 TASK-007 remain pending runtime acceptance. Tasks 008–015 are design-only planned work.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
