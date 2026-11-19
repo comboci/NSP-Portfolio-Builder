@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V89 source candidate (Tauri 89.0.0), TASK-010 Region Block; runtime unverified",
+    "software_release": "V90 source candidate (Tauri 90.0.0), TASK-011 advanced Layers; runtime unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed. V87 0cbd0379 restructures expanded Projects presentation for TASK-024; no runtime validation. V88 1e617a31 unifies project Pages create/edit navigation for TASK-025; source only. V89 TASK-010 source candidate based on main 0b97e761ee75; included in same source+PES commit; owner must review runtime.",
-    "source_revision_ref": "0b97e761ee75f7f01bc4355095e3c95c6d51ec3b"
+    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed. V87 0cbd0379 restructures expanded Projects presentation for TASK-024; no runtime validation. V88 1e617a31 unifies project Pages create/edit navigation for TASK-025; source only. V89 TASK-010 source candidate based on main 0b97e761ee75; included in same source+PES commit; owner must review runtime. V90 TASK-011 source-only candidate based on main 8d09779c23f7: local rename/lock, Group folding, inherited visibility/z-order. Runtime acceptance pending.",
+    "source_revision_ref": "8d09779c23f751227c95fa44d0f31714c6f108f6"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1206,17 +1206,19 @@
       {
         "record_id": "TASK-011",
         "title": "Advanced Layers panel",
-        "detail": "Rename, reorder, multi-select, visibility and ordinary-object locks; collapsible Region Blocks and Groups; inherited master objects retain immutable placement/style and permit only visibility/z-order overrides.",
+        "detail": "Rename, reorder, multi-select, visibility and ordinary-object locks; collapsible Region Blocks and Groups; inherited master objects retain immutable placement/style and permit only visibility/z-order overrides. V90 source candidate adds direct local-object rename and lock controls, collapsible existing Groups, group selection, inherited-only z-order arrows and visibility toggle even for locked inherited objects. Existing Ctrl/Shift multi-select, layer drag/drop and Region Block folding remain. No build/test, Tauri/PDF review, or owner acceptance; TASK-011 stays open.",
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
         "related_record_ids": [],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+        "implementation_state": "V90_source_candidate_pending_owner_runtime_review",
+        "source_revision_ref": "8d09779c23f751227c95fa44d0f31714c6f108f6",
+        "updated_on": "2026-11-19"
       },
       {
         "record_id": "TASK-012",
@@ -1696,6 +1698,22 @@
           "source_revision_ref": "1e617a31113768f8f9bdd8c1396bb20caf65b5c1"
         },
         "implementation_state": "V88_source_committed_pending_owner_runtime_review"
+      },
+      {
+        "record_id": "OBS-011",
+        "title": "V90 TASK-011 advanced Layers source candidate",
+        "status": "source_implemented_runtime_unverified",
+        "detail": "Reviewed V89 Layers and added inline row actions for local object rename and lock/unlock, group-tree collapse/expand and group selection, and stacking arrows for inherited objects within their inherited layer. Toggling visibility no longer depends on the object's own lock. Inheritance property writes remain limited to visibility and objectOrder; no inherited geometry or style edit was introduced. Existing local layer ordering, Ctrl/Shift multi-selection and Region Block hierarchy were retained. Code was not built/tested and owner runtime/PDF acceptance is pending.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES"
+        ],
+        "provenance": {
+          "type": "static_source_review_and_source_change",
+          "date": "2026-11-19",
+          "source_revision_ref": "8d09779c23f751227c95fa44d0f31714c6f108f6"
+        },
+        "implementation_state": "V90_source_candidate_pending_owner_runtime_review"
       }
     ]
   },
@@ -1775,7 +1793,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V89 TASK-010 source candidate with editor-only region containers, nested member management, linked move/resize, Ctrl-center resize and local ownership. TASK-010 in progress awaiting owner interactive review; prior source tasks 005/006/007/008/009/022/024/025 still await owner runtime acceptance.",
+    "current_summary": "V90 TASK-011 source candidate extends Layers with local object rename/lock, collapsible group folders and inherited-only visibility/z-order overrides. TASK-011 remains in_progress pending user runtime review; TASK-012 is the next planned feature if no newer owner-priority change.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -1795,7 +1813,8 @@
       "Formal semantic conformance beyond JSON shape is not claimed.",
       "Existing image work may change HEAD concurrently.",
       "Previous PES-13 candidate was not canonical and was not merged as authoritative source.",
-      "V89 TASK-010 source change not built or functionally/runtime/PDF tested; owner acceptance is outstanding."
+      "V89 TASK-010 source change not built or functionally/runtime/PDF tested; owner acceptance is outstanding.",
+      "V90 Layers enhancements are unbuilt and untested; inherited z-order within its existing layer and group folder interaction need owner review."
     ]
   }
 }
