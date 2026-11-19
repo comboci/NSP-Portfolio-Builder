@@ -2724,7 +2724,7 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
   };
   v8Types=function(){return '<h2>انواع سکشن‌ها</h2><div class="v28-toolbar"><button class="btn primary" onclick="v8AddType()">+ افزودن</button></div><div class="panel v28-table-wrap"><table class="v28-table"><thead><tr><th>نام</th><th>تاریخ ایجاد</th><th>عملیات</th></tr></thead><tbody>'+types().map(t=>'<tr><td>'+safe(t.name)+'</td><td>'+(t.createdAt?new Date(t.createdAt).toLocaleDateString('fa-IR'):'ثبت نشده')+'</td><td><button class="btn" onclick="v8RenameType(\''+safe(t.id)+'\')">ویرایش نام</button><button class="btn danger" onclick="v8DeleteType(\''+safe(t.id)+'\')">حذف</button></td></tr>').join('')+'</tbody></table></div>';};
   
-  const goOld=go;go=function(t){if(t==='v8portfolios'){v29Detail=false;selectedSectionId=null;}return goOld(t);};
+  const goOld=go;window.V13.isPortfolioDetailView=()=>v29Detail;go=function(t){if(t==='v8portfolios'){v29Detail=false;selectedSectionId=null;}return goOld(t);};
   const style=document.createElement('style');style.textContent='html,body{height:100%;overflow:hidden}.shell{height:calc(100vh - 75px);min-height:0;overflow:hidden}nav{overflow-y:auto;overscroll-behavior:contain}main{height:100%;overflow-y:auto;overscroll-behavior:contain}.v28-table td:last-child{text-align:left;white-space:nowrap}.v20-layer-heading .btn.danger{padding:3px 6px;font-size:10px}nav .nav-subitem.active{background:#e4f3f3!important;color:#06656c!important}';document.head.appendChild(style);
   for(const group of menuGroups)group[1]=group[1].filter(pair=>pair[0]!=='v8designs');
   const previousRender=render;
@@ -2734,7 +2734,7 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
 </script>
 <script>V13.finishInitialization();</script>
 
-<!-- Version 31: unified view chrome and portfolio-scoped exports -->
+<!-- Version 32: unified view chrome and portfolio-scoped exports -->
 <style id="v30-layout">
 .shell{grid-template-columns:235px minmax(0,1fr)!important}
 .shell>main{max-width:none!important;margin:0!important;min-width:0!important;width:100%!important;scrollbar-gutter:stable;overflow-y:auto!important}
@@ -2796,7 +2796,7 @@ window.v30PrintPortfolio=function(id){
 
 <!-- Version 37: isolated print snapshot survives application rerenders -->
 <style id="v37-print-isolation">#v37-print-snapshot{display:none}@media print{body.v37-print-active .shell{display:none!important}body.v37-print-active #v37-print-snapshot{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}#v37-print-snapshot .v13-page-surface{break-inside:avoid}}</style>
-<!-- Version 31: independent section pages view and floating export menus -->
+<!-- Version 32: independent section pages view and floating export menus -->
 <style id="v31-fixes">
 .v31-pages-view .v28-toolbar{margin:12px 0 16px}
 .v31-pages-view .v28-table-wrap{overflow-x:auto}
@@ -2829,7 +2829,7 @@ window.v31OpenEditor=function(id){
 };
 const htmlSafe=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 v8Portfolios=function(){
-  if(!v29Detail)return oldList();
+  if(!window.V13.isPortfolioDetailView())return oldList();
   const p=v8Portfolio();
   if(!p)return '<p>پورتفولیو پیدا نشد.</p>';
   if(activeSection===null){
