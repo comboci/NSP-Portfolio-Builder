@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V72 reported by repository commit; recheck live source",
+    "software_release": "HTML UI V77; native Tauri 74.0.0 (source-inspected, runtime unverified)",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "unverified; active concurrent development",
-    "source_revision_ref": "1c25d4c87bfc007794b580e553e1ae7620700172"
+    "source_alignment": "audited_2026-11-19_with_unresolved_gaps",
+    "source_revision_ref": "148ec10818264622a7ac0a97586084faf94b4592"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -266,6 +266,75 @@
           "date": "2026-11-19"
         },
         "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "FND-003",
+        "title": "V77 project workspaces are nested JSON; SQLite projects use one workspace ID",
+        "detail": "index.html:651-715,744-815 stores active workspace at root and inactive workspaces in projectWorkspaces. src-tauri/src/main.rs:13-85 loads/saves id='workspace' and projects templates/pages/images with project_id='workspace'. migrations/001.sql has no independent portfolio entity. UI project isolation does not establish independent relational project ownership.",
+        "scope_refs": [
+          "SC-STORAGE"
+        ],
+        "status": "source_confirmed",
+        "provenance": {
+          "type": "source_inspection",
+          "date": "2026-11-19",
+          "repository": "comboci/NSP-Portfolio-Builder",
+          "revision": "148ec10818264622a7ac0a97586084faf94b4592"
+        },
+        "implementation_state": "gap_unresolved_runtime_unverified",
+        "related_record_ids": [
+          "TASK-002",
+          "DEC-001",
+          "DEC-002",
+          "REQ-001"
+        ]
+      },
+      {
+        "record_id": "FND-004",
+        "title": "Templates are not yet system-wide entities",
+        "detail": "index.html:424-450,651-665,784-790 maintains masterTemplates,sectionDesigns,templates in project snapshots. src-tauri/src/main.rs:57-66 stores templates scoped to project_id='workspace'. No centralized template ownership or cross-project live dependency model is confirmed. Contradicts approved global template intent; requires targeted design/implementation in later work.",
+        "scope_refs": [
+          "SC-TEMPLATES"
+        ],
+        "status": "source_confirmed",
+        "provenance": {
+          "type": "source_inspection",
+          "date": "2026-11-19",
+          "repository": "comboci/NSP-Portfolio-Builder",
+          "revision": "148ec10818264622a7ac0a97586084faf94b4592"
+        },
+        "implementation_state": "gap_unresolved_runtime_unverified",
+        "related_record_ids": [
+          "TASK-002",
+          "DEC-001",
+          "DEC-004",
+          "BR-008",
+          "BR-010"
+        ]
+      },
+      {
+        "record_id": "FND-005",
+        "title": "Asset hashing exists; shared project ownership and guarded cleanup are missing",
+        "detail": "src-tauri/src/media_store.rs:30-56 stores SHA-256 content-addressed immutable assets. main.rs:46-55,113-116 and migrations/001.sql,002.sql scope image rows/references to fixed workspace; no durable many-to-many project ownership/global-public access record is present. No physical asset GC is implemented (README.md, V74_STORAGE_HANDOFF.md). Project deletion in index.html:792-803 changes JSON snapshots only. Runtime behavior unverified.",
+        "scope_refs": [
+          "SC-LIBRARY"
+        ],
+        "status": "source_confirmed",
+        "provenance": {
+          "type": "source_inspection",
+          "date": "2026-11-19",
+          "repository": "comboci/NSP-Portfolio-Builder",
+          "revision": "148ec10818264622a7ac0a97586084faf94b4592"
+        },
+        "implementation_state": "gap_unresolved_runtime_unverified",
+        "related_record_ids": [
+          "TASK-004",
+          "DEC-003",
+          "BR-003",
+          "BR-005",
+          "BR-006",
+          "BR-007"
+        ]
       }
     ],
     "business_rules": [
@@ -703,12 +772,19 @@
         "scope_refs": [
           "SC-STORAGE"
         ],
-        "status": "unassigned",
+        "status": "completed",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "unverified_against_live_source"
+        "implementation_state": "static_audit_completed_runtime_unverified",
+        "result": "Reviewed current main source against PES-14; reconciliation gaps recorded as FND-003–FND-005. No build/test performed; no product source code changed.",
+        "completed_on": "2026-11-19",
+        "evidence_refs": [
+          "FND-003",
+          "FND-004",
+          "FND-005"
+        ]
       },
       {
         "record_id": "TASK-002",
@@ -761,11 +837,11 @@
   "relationships": [],
   "views": {
     "current_architecture": {
-      "freshness_state": "unknown",
+      "freshness_state": "partially_confirmed_static_source_only",
       "source_revision_refs": [
-        "1c25d4c87bfc007794b580e553e1ae7620700172"
+        "148ec10818264622a7ac0a97586084faf94b4592"
       ],
-      "note": "Intended design, not verified deployed architecture. Project -> portfolios -> templates/pages; project and global libraries; Tauri/SQLite planned or under active implementation."
+      "note": "Source-inspected: V77 UI workspaces in nested JSON; native storage retains single workspace ID; physical images content-addressed, but relational ownership/global templates incomplete. FND-003..005. No runtime verification."
     },
     "current_operational_context": {
       "freshness_state": "unknown",
@@ -807,7 +883,6 @@
     "open_conflict_relationship_ids": [],
     "blocked_record_ids": [],
     "next_work_record_ids": [
-      "TASK-001",
       "TASK-002",
       "TASK-003",
       "TASK-004"
