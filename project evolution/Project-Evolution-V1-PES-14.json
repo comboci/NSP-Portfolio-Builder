@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V81 source candidate (Tauri 81.0.0), runtime unverified",
+    "software_release": "V81 source candidate (Tauri 81.0.0); image-library UX committed, runtime unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V81 base source at V80 main 0f07fdbe7b54; UI alignment/count/layer cascade implemented, additional owner review feedback queued.",
-    "source_revision_ref": "0f07fdbe7b5488205daa5901b5b793755dd6d6e2"
+    "source_alignment": "V81 main contains prior add-button/inheritance/layer-cascade fixes plus image-library project/public tabs, global public library, and context-specific image selector. Owner runtime/PDF acceptance pending.",
+    "source_revision_ref": "72c1b33b8ed2c1b6bdd6569b2144f6ccea28ecc8"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1376,8 +1376,8 @@
       {
         "record_id": "OBS-001",
         "title": "Owner V80 runtime review feedback",
-        "status": "partially_addressed_in_V81",
-        "detail": "Observed Add buttons positioned right in master/page design lists; requested left. Requested count of direct/indirect inheriting pages on master grid. Deleting a layer kept its objects because raw object layerKey is absent. Also requested removal of redundant editor Library, a project/public library image selector, autosave toggle and unsaved page exit protection. First three issues patched in V81 source; remaining two are pending source implementation. None owner-accepted.",
+        "status": "source_only_addressed_except_autosave",
+        "detail": "V80 owner review: Add button left alignment, inherited-page count, layer-delete cascade, editor Library removal, project/public library selection and autosave with unsaved-exit protection requested. V81 source commits 2d657fb9 and 72c1b33b cover first five categories. Autosave toggle and warning remain pending. No owner acceptance yet.",
         "scope_refs": [
           "SC-TEMPLATES",
           "SC-PORTFOLIOS",
@@ -1388,7 +1388,24 @@
           "date": "2026-11-19",
           "source_revision_ref": "0f07fdbe7b5488205daa5901b5b793755dd6d6e2"
         },
-        "implementation_state": "source_only_partial_runtime_unverified"
+        "implementation_state": "V81_source_changes_committed_runtime_unverified"
+      },
+      {
+        "record_id": "OBS-002",
+        "title": "V81 scoped image library and picker source commit",
+        "status": "source_implemented_runtime_unverified",
+        "detail": "V81 main 72c1b33b: remove redundant Library dock/tab, provide public catalog in main navigation, two-tab private/public collection for active project (Project Images row), route editor image replacement/double-click through contextual picker, and add explicit global publishing upload. Active private library stays scoped to active project; global templates accept public assets only. No build, test, or owner runtime acceptance performed.",
+        "scope_refs": [
+          "SC-LIBRARY",
+          "SC-TEMPLATES",
+          "SC-PROJECTS"
+        ],
+        "provenance": {
+          "type": "source_inspection",
+          "date": "2026-11-19",
+          "source_revision_ref": "72c1b33b8ed2c1b6bdd6569b2144f6ccea28ecc8"
+        },
+        "implementation_state": "source_committed_pending_owner_runtime_review"
       }
     ]
   },
