@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 92 (TASK-013 canvas view controls, source candidate)
+
+V92 adds contextual editor Zoom (35–250%), Pan (hand-drag), Fit Page and portfolio Print/PDF controls in the top design toolbar, and places the existing page-only Show/Hide Guides action beside them. Canvas view state is session-only and per editor context, so zooming or panning does not change object geometry, page data, Project Evolution history or printed output. Existing object drag/resize calculations use the canvas bounding rectangle and should account for view zoom; this must be checked at runtime.
+
+**Scope/remaining TASK-013:** This is a coherent partial source implementation, not completion of the whole task. Separate Save Page (Ctrl+S) and Save Project semantics, clipboard Cut/Copy/Paste and reliable dirty-page feedback are not yet implemented. The current persistence API saves an entire workspace and asynchronously queues SQLite writes, so a button claiming page-only durable save would be misleading until DEC-009 and TASK-023 are addressed explicitly. Print opens the existing portfolio print/preflight workflow rather than printing the editor canvas.
+
+**Validation:** source review only; no Build, Test, browser/Tauri runtime, PDF comparison or owner acceptance. TASK-013 remains in_progress. Runtime review should check zoomed drag/resize and guide positioning, scrollbar/pan behavior, Fit Page across portrait/landscape, switching pages/templates and print/PDF scale independence.
+
+---
+
 # NSP Portfolio Builder — Version 91 (TASK-012 History source candidate)
 
 V91 adds an editor History tab to the existing Visual Studio-style dock alongside Properties and Layers. Per-page/template history remains in memory only, retaining up to 100 atomic scene snapshots (including group/block and layer mutations), with descriptive operation labels, clickable timeline navigation and Ctrl+Z / Ctrl+Y / Ctrl+Shift+Z outside text inputs. History survives changing pages during the current editing session, but is discarded on application restart/project reset. Zoom and pan are excluded.

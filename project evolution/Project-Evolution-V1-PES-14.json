@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V91 source candidate (Tauri 91.0.0), TASK-012 History/Undo/Redo; runtime unverified",
+    "software_release": "V92 source candidate (Tauri 92.0.0), TASK-013 partial Zoom/Pan/Fit and Print/Guides toolbar; runtime unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed. V87 0cbd0379 restructures expanded Projects presentation for TASK-024; no runtime validation. V88 1e617a31 unifies project Pages create/edit navigation for TASK-025; source only. V89 TASK-010 source candidate based on main 0b97e761ee75; included in same source+PES commit; owner must review runtime. V90 TASK-011 source-only candidate based on main 8d09779c23f7: local rename/lock, Group folding, inherited visibility/z-order. Runtime acceptance pending. V91 TASK-012 is based on actual V90 HEAD 37fca8404839; the prior PE source_revision_ref 8d09779c23f7 was the parent of the V90 combined source+PE commit, not an unreconciled code divergence. In-memory per-page History and clickable rewind added; runtime unverified.",
-    "source_revision_ref": "37fca8404839f9521c2ff8cff183e23ea293d00e"
+    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed. V87 0cbd0379 restructures expanded Projects presentation for TASK-024; no runtime validation. V88 1e617a31 unifies project Pages create/edit navigation for TASK-025; source only. V89 TASK-010 source candidate based on main 0b97e761ee75; included in same source+PES commit; owner must review runtime. V90 TASK-011 source-only candidate based on main 8d09779c23f7: local rename/lock, Group folding, inherited visibility/z-order. Runtime acceptance pending. V91 TASK-012 is based on actual V90 HEAD 37fca8404839; the prior PE source_revision_ref 8d09779c23f7 was the parent of the V90 combined source+PE commit, not an unreconciled code divergence. In-memory per-page History and clickable rewind added; runtime unverified. V92 TASK-013 source-only canvas zoom/pan/fit controls based on V91 HEAD 1d5834de34c3; Save Page/Project, clipboard and dirty-state remain open.",
+    "source_revision_ref": "1d5834de34c372cd861fa1183e6053901f0e5f7c"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1240,17 +1240,17 @@
       {
         "record_id": "TASK-013",
         "title": "Design toolbar and zoom/pan",
-        "detail": "Top toolbar Save Page (Ctrl+S, current page only), Save Project (all changed pages, separate explicit action), Print, Undo/Redo, Cut/Copy/Paste, Zoom, Pan, Fit Page and Show/Hide Guides. Display save success/errors and dirty-page state.",
+        "detail": "Top toolbar Save Page (Ctrl+S, current page only), Save Project (all changed pages, separate explicit action), Print, Undo/Redo, Cut/Copy/Paste, Zoom, Pan, Fit Page and Show/Hide Guides. Display save success/errors and dirty-page state. V92 partial source candidate: top editor toolbar now exposes session-only per-context Zoom 35%-250%, Pan drag, Fit Page, portfolio Print/PDF and existing page-only Guides toggle. It does not modify design geometry, the page's persistent data or Undo/Redo. Remaining: separated Save Page/Ctrl+S versus Save Project semantics, clipboard Cut/Copy/Paste and reliable dirty/error state; current workspace-level asynchronous storage requires deliberate refactor under DEC-009/TASK-023. No Build/Test or runtime verification; owner review is required.",
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
         "related_record_ids": [],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+        "implementation_state": "V92_canvas_view_controls_source_candidate_pending_owner_runtime_review"
       },
       {
         "record_id": "TASK-014",
@@ -1735,6 +1735,29 @@
           "TASK-012",
           "DEC-011"
         ]
+      },
+      {
+        "record_id": "OBS-013",
+        "title": "V92 TASK-013 design toolbar canvas view source candidate",
+        "status": "source_implemented_runtime_unverified",
+        "detail": "Based on V91 main HEAD 1d5834de34c372cd861fa1183e6053901f0e5f7c, the source adds Zoom/Pan/Fit Page controls (35%–250%) with per-editor-context session-only view settings and pointer-captured panning, moves the existing page-specific Show/Hide Guides control into the top view toolbar and exposes portfolio Print/PDF through the existing preview/preflight route. Version strings and Tauri metadata are aligned to V92. No stored scene geometry or Undo/Redo timeline is changed. This is partial TASK-013: Save Page (Ctrl+S) vs Save Project, clipboard and accurate dirty-page status remain for a later source implementation. Current save() writes a whole workspace and queues SQLite/IndexedDB asynchronously, so persistence completion cannot be honestly claimed synchronously. No Build/Test/runtime or PDF verification has occurred.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES"
+        ],
+        "provenance": {
+          "type": "static_source_review_and_source_change",
+          "date": "2026-11-19",
+          "source_revision_ref": "1d5834de34c372cd861fa1183e6053901f0e5f7c"
+        },
+        "implementation_state": "V92_source_candidate_pending_owner_runtime_review",
+        "related_record_ids": [
+          "TASK-013",
+          "DEC-009",
+          "DEC-011",
+          "TASK-023",
+          "TASK-009"
+        ]
       }
     ]
   },
@@ -1814,7 +1837,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V91 TASK-012 source candidate adds a third VS dock History tab, up to 100 in-memory page-local snapshots, keyboard undo/redo, timeline jumps and rollback-on-save-error; preserving histories across page selection. Pending owner runtime acceptance, TASK-012 remains in_progress. Next planned task TASK-013 if no higher-priority owner change.",
+    "current_summary": "V92 source candidate adds per-context Zoom/Pan/Fit and Print/Guides top toolbar for TASK-013. Version 92 is source-only; user runtime review is pending. Save Page vs Project, clipboard and dirty status remain open under TASK-013/023. V91 TASK-012 source candidate adds a third VS dock History tab, up to 100 in-memory page-local snapshots, keyboard undo/redo, timeline jumps and rollback-on-save-error; preserving histories across page selection. Pending owner runtime acceptance, TASK-012 remains in_progress. Next planned task TASK-013 if no higher-priority owner change.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
