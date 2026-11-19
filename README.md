@@ -1,4 +1,20 @@
-# NSP Portfolio Builder — Version 74
+# NSP Portfolio Builder — Version 78 (source candidate)
+
+## V78: TASK-006 implementation scope
+
+- The HTML interface uses one shared master/page-template catalog for all project workspaces. Each project still owns its portfolios, pages and private image library.
+- The Tauri/SQLite layer introduces independent relational records for projects, portfolios and pages; a separate global template catalog and page-to-template dependency index are stored transactionally.
+- An additive `004.sql` migration preserves the V74 legacy `workspace` snapshot and all named/automatic backups; existing saved workspaces can be read before their first V78 save. **No existing database was reset by this change.**
+- Inherited objects permit per-child visibility and stacking order only; their geometry, content and style are read from the source template.
+- Native package and UI versions are `78.0.0` and `V78`. The immutable image reference format remains `nsp-asset-v74:` for compatibility.
+
+**Validation:** this is a source handoff only. No build, test, browser runtime, Windows Tauri runtime, migration execution, or owner acceptance has been performed. Run owner runtime review before trusting the new storage model.
+
+**Outstanding:** TASK-007 (global/private image ownership and safe shared deletion) and TASK-005 (Once elements and numbering) remain open. Shared-template image resources that belong to a different project's private image library require TASK-007; until then, cross-project image binding is not guaranteed. Legacy assets/backups are deliberately retained.
+
+---
+
+## V74 storage background (historical)
 
 Version 74 preserves the Version 72 HTML editor, image library, crop/tiles, and browser IndexedDB storage, while changing **native Tauri/SQLite asset persistence**. The branch also retains the separate Project Evolution commits.
 

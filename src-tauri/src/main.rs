@@ -5,6 +5,7 @@ use std::{path::PathBuf, sync::Mutex};
 use tauri::{Manager, State};
 
 mod media_store;
+mod project_store;
 struct AssetRoot(PathBuf);
 struct Storage(Mutex<Connection>);
 fn error(e: impl std::fmt::Display) -> String { e.to_string() }
@@ -12,9 +13,11 @@ fn error(e: impl std::fmt::Display) -> String { e.to_string() }
 #[tauri::command]
 fn load_project(db: State<'_, Storage>, root: State<'_, AssetRoot>) -> Result<Option<String>, String> {
     let conn = db.0.lock().map_err(error)?;
-    let saved: Option<String> = conn.query_row(
-        "SELECT payload FROM projects WHERE id='workspace'", [], |r| r.get(0),
-    ).optional().map_err(error)?;
+    let saved: Option<String> = if let Some(payload)=project_store::load_workspace(&conn)? {
+        Some(payload)
+    } else {
+        conn.query_row("SELECT payload FROM projects WHERE id='workspace'",[],|r|r.get(0)).optional().map_err(error)?
+    };
     saved.map(|s| media_store::hydrate_payload(&conn, &root.0, &s)).transpose()
 }
 
@@ -83,6 +86,7 @@ fn save_project(
     }
     media_store::persist_image_links(&tx, &compact)?;
     media_store::project_links(&tx, &compact)?;
+    project_store::persist_workspace(&tx, &compact)?;
     tx.execute(
         "DELETE FROM backups WHERE id NOT IN (SELECT id FROM backups ORDER BY id DESC LIMIT 30)", [],
     ).map_err(error)?;
@@ -208,7 +212,7 @@ fn main() {
             conn.execute_batch("PRAGMA foreign_keys=ON; PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;")?;
             let tx = conn.transaction()?;
             let version: i64 = tx.query_row("PRAGMA user_version", [], |r| r.get(0))?;
-            if version > 3 { return Err("Database schema is newer than this application".into()); }
+            if version > 4 { return Err("Database schema is newer than this application".into()); }
             if version < 1 { tx.execute_batch(include_str!("../migrations/001.sql"))?; }
             if version < 2 { tx.execute_batch(include_str!("../migrations/002.sql"))?; }
             if version < 3 {
@@ -217,6 +221,7 @@ fn main() {
                 }
                 tx.execute_batch(include_str!("../migrations/003.sql"))?;
             }
+            if version < 4 { tx.execute_batch(include_str!("../migrations/004.sql"))?; }
             tx.commit()?;
             app.manage(AssetRoot(root));
             app.manage(Storage(Mutex::new(conn)));

@@ -25,10 +25,10 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "HTML UI V77; native Tauri 74.0.0 (source-inspected, runtime unverified)",
+    "software_release": "V78 source (Tauri 78.0.0), not built or runtime-reviewed",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "audited_2026-11-19_with_unresolved_gaps",
+    "source_alignment": "V78 source authored from V77 audit; user runtime acceptance pending",
     "source_revision_ref": "148ec10818264622a7ac0a97586084faf94b4592"
   },
   "coordination": {
@@ -1017,12 +1017,23 @@
           "FND-004",
           "DEC-007"
         ],
-        "status": "unassigned",
+        "status": "in_progress",
         "provenance": {
           "type": "source_audit_follow_up",
           "date": "2026-11-19"
         },
-        "implementation_state": "not_started"
+        "implementation_state": "V78_source_implementation_prepared_runtime_unverified",
+        "result": "V78 source includes normalized SQLite projects/portfolios/pages and a shared system-wide template catalog. UI project switching uses the global catalog; inherited object edits are restricted to local visibility and z-order. Asset ownership remains TASK-007. No builds/tests/runtime acceptance.",
+        "source_version": "V78",
+        "updated_on": "2026-11-19",
+        "changed_files": [
+          "index.html",
+          "src-tauri/src/main.rs",
+          "src-tauri/src/project_store.rs",
+          "src-tauri/migrations/004.sql",
+          "src-tauri/Cargo.toml",
+          "src-tauri/tauri.conf.json"
+        ]
       },
       {
         "record_id": "TASK-007",
@@ -1057,11 +1068,11 @@
   "relationships": [],
   "views": {
     "current_architecture": {
-      "freshness_state": "partially_confirmed_static_source_only",
+      "freshness_state": "source_prepared_runtime_unknown",
       "source_revision_refs": [
         "148ec10818264622a7ac0a97586084faf94b4592"
       ],
-      "note": "Source-inspected: V77 UI workspaces in nested JSON; native storage retains single workspace ID; physical images content-addressed, but relational ownership/global templates incomplete. FND-003..005. No runtime verification."
+      "note": "V78 authored relational project/portfolio/page records and a shared template catalog. No runtime proof. Image ownership still TASK-007."
     },
     "current_operational_context": {
       "freshness_state": "unknown",
@@ -1110,7 +1121,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "TASK-001–004 analysis/design/source-verification tasks completed and committed. Important: NONE of the source implementation gaps is fixed. Current test data may be reset by owner decision (DEC-007). Open implementation tasks: TASK-005 (numbering/Once), TASK-006 (relational projects/global templates), TASK-007 (multi-owner image libraries); no builds/tests/runtime or owner acceptance.",
+    "current_summary": "TASK-006 V78 source changes authored for relational projects and globally shared templates; no build/test/runtime review. Task remains in progress for runtime acceptance and potential fixes. TASK-005 and TASK-007 still open; no development data deleted.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
