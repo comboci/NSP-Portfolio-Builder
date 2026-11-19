@@ -1,0 +1,14 @@
+[package]
+name = "nsp-portfolio-builder"
+version = "70.0.0"
+description = "NSP Portfolio Builder for Windows"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = "2"
+
+[dependencies]
+tauri = "2"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]

@@ -1,0 +1,17 @@
+[package]
+name = "nsp-portfolio-builder"
+version = "71.0.0"
+description = "NSP Portfolio Builder for Windows"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = "2"
+
+[dependencies]
+tauri = "2"
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde_json = "1"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
+

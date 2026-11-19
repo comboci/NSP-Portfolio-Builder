@@ -1,21 +1,21 @@
-# NSP Portfolio Builder
+# NSP Portfolio Builder — Version 72
 
-The browser entry point is `index.html`. Tauri 2 embeds that same file as the Windows desktop frontend.
+Open `index.html` in Edge/Chrome. The complete frontend stays in this file. Browser storage uses IndexedDB, migrating the existing localStorage project without deleting it. JSON backups include original local images and thumbnails.
 
-## Run locally on Windows
+The existing editor now has a Library dock tab for images. Image Tiles begin at **0 × 1**: the vertical input counts extra rows, and the horizontal input counts images per row. Thus 0 × 2 means two images side by side; 1 × 2 means four images. Use the two Properties inputs or the + buttons at the upper/lower right of the selected grid. Hidden cells are retained when shrinking a grid.
 
-Install the [Tauri Windows prerequisites](https://v2.tauri.app/start/prerequisites/) and the Tauri 2 CLI. From the repository root, run:
+Library supports previews, insertion/replacement, original download, safe deletion and library Undo/Redo. Selected images and individual tiles have interactive crop, fit/fill, zoom/position, filters and frame shapes. Existing layer/selection/template/history behavior is used.
+
+Desktop source uses Tauri 2, SQLite migrations, managed immutable originals/thumbnails, automatic previous-save snapshots and named backups. Wait for **saved** before closing; retry or export JSON if storage reports an error.
+
+User-run commands after installing Windows Tauri prerequisites and Rust/Cargo:
 
 ```powershell
+Set-Location 'G:\ChatGPT\outputs\NSP-Portfolio-Builder'
 cargo install tauri-cli --version '^2' --locked
 cargo tauri dev --no-dev-server
 ```
 
-The development command uses bundled HTML and the desktop app origin. To verify the Windows installer separately, run `cargo tauri build --bundles nsis`.
+No build or runtime tests were run. Static-only source checks: `node scripts/static-check.cjs`.
 
-## Data and permissions
-
-- Browser and desktop keep the same localStorage keys and JSON schema. Their storage profiles are separate. To move an existing portfolio, export its JSON from the browser and import it in the desktop app. Keep the original browser data and the exported file until the import has been checked.
-- The Rust startup code creates `%LOCALAPPDATA%\com.nspelectronics.portfoliobuilder\storage` for future native storage. The SQLite phase can place `portfolio.sqlite3` there. This release keeps project persistence in localStorage.
-- Desktop file import, image selection, export and printing use the existing browser APIs. The webview has zero native command permissions and an empty file asset scope.
-- The desktop Content Security Policy keeps Tauri's inline script hashes and allows the existing inline event handlers and dynamic styles. HTML5 drag and drop remains enabled in WebView2.
+See [LOCAL_IMPLEMENTATION_REPORT.md](LOCAL_IMPLEMENTATION_REPORT.md) for the complete implementation inventory, migration behavior, limitations and Runtime Review steps. Validation results are in `STATIC_VALIDATION.json`.
