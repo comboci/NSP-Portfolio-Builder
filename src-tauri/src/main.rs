@@ -97,6 +97,8 @@ fn save_project(
     tx.execute(
         "DELETE FROM backups WHERE id NOT IN (SELECT id FROM backups ORDER BY id DESC LIMIT 30)", [],
     ).map_err(error)?;
+    // Re-index only backups that survived retention pruning, inside this transaction.
+    image_ownership::sync_backup_references(&tx)?;
     tx.commit().map_err(error)
 }
 
@@ -151,23 +153,29 @@ fn create_backup(
 ) -> Result<i64, String> {
     if name.trim().is_empty() || name.len() > 300 { return Err("Invalid backup name".into()); }
     let mut conn = db.0.lock().map_err(error)?;
-    if let Some(payload) = payload {
+    let tx = conn.transaction().map_err(error)?;
+    let compact = if let Some(payload) = payload {
         let mut value: Value = serde_json::from_str(&payload).map_err(error)?;
-        if !value["pages"].is_array() || !value["templates"].is_array() { return Err("Invalid backup".into()); }
-        let tx = conn.transaction().map_err(error)?;
+        if !value["pages"].is_array() || !value["templates"].is_array() {
+            return Err("Invalid backup".into());
+        }
         media_store::compact_value(&tx, &root.0, &mut value)?;
-        let compact = serde_json::to_string(&value).map_err(error)?;
-        tx.execute("INSERT INTO named_backups(name,payload) VALUES(?1,?2)", params![name.trim(), compact]).map_err(error)?;
-        let id = tx.last_insert_rowid();
-        tx.commit().map_err(error)?;
-        return Ok(id);
-    }
-    let count = conn.execute(
-        "INSERT INTO named_backups(name,payload) SELECT ?1,payload FROM projects WHERE id='workspace'",
-        [name.trim()],
+        value.to_string()
+    } else {
+        tx.query_row(
+            "SELECT payload FROM projects WHERE id='workspace'", [], |r| r.get::<_, String>(0),
+        ).optional().map_err(error)?.ok_or("Save the project first")?
+    };
+    let value: Value = serde_json::from_str(&compact).map_err(error)?;
+    tx.execute(
+        "INSERT INTO named_backups(name,payload) VALUES(?1,?2)",
+        params![name.trim(), compact],
     ).map_err(error)?;
-    if count == 0 { return Err("Save the project first".into()); }
-    Ok(conn.last_insert_rowid())
+    let id = tx.last_insert_rowid();
+    // Keep the backup and its asset-reference index in the SAME commit.
+    image_ownership::index_backup_refs(&tx, "named", id, &value)?;
+    tx.commit().map_err(error)?;
+    Ok(id)
 }
 
 #[tauri::command]

@@ -69,68 +69,177 @@ pub fn migrate_style_library(tx:&Transaction<'_>)->Result<(),String>{
     Ok(())
 }
 
-fn persist_project(tx:&Transaction<'_>,id:&str,name:&str,data:&Value,active:bool)->Result<(),String>{
-    if id.is_empty()||name.trim().is_empty(){return Err("Invalid project identity".into());}
-    let mut snapshot=data.clone();
-    if let Some(m)=snapshot.as_object_mut(){
-        m.remove("projectWorkspaces");
-        m.remove("globalTemplates");
-        m.remove("styleLibrary"); // Central, never project-owned
+// Reconcile stable primary keys without rewriting all projects/pages at every save.
+#[derive(Default)]
+struct SeenKeys {
+    projects: HashSet<Vec<String>>,
+    portfolios: HashSet<Vec<String>>,
+    pages: HashSet<Vec<String>>,
+    templates: HashSet<Vec<String>>,
+}
+
+fn delete_missing(
+    tx: &Transaction<'_>, table: &str, columns: &[&str], seen: &HashSet<Vec<String>>,
+) -> Result<(), String> {
+    // Table and column identifiers are internal constants, not frontend input.
+    let select = format!("SELECT {} FROM {table}", columns.join(","));
+    let mut stmt = tx.prepare(&select).map_err(err)?;
+    let rows = stmt.query_map([], |row| {
+        (0..columns.len()).map(|i| row.get::<usize, String>(i))
+            .collect::<rusqlite::Result<Vec<_>>>()
+    }).map_err(err)?;
+    let old = rows.collect::<rusqlite::Result<Vec<_>>>().map_err(err)?;
+    drop(stmt);
+    let where_clause = columns.iter().enumerate()
+        .map(|(i, column)| format!("{column}=?{}", i + 1))
+        .collect::<Vec<_>>().join(" AND ");
+    let delete = format!("DELETE FROM {table} WHERE {where_clause}");
+    for key in old {
+        if !seen.contains(&key) {
+            tx.execute(&delete, rusqlite::params_from_iter(key.iter())).map_err(err)?;
+        }
     }
-    tx.execute("INSERT INTO workspace_projects(id,name,payload,is_active) VALUES(?1,?2,?3,?4)",
-        params![id,name,snapshot.to_string(),if active {1}else{0}]).map_err(err)?;
-    let portfolios=data.get("portfolios").and_then(Value::as_array).ok_or("Missing portfolios")?;
-    if portfolios.is_empty(){return Err("Each project needs a portfolio".into());}
-    for (i,portfolio) in portfolios.iter().enumerate(){
-        let pid=identity(portfolio,"id")?;
-        let title=portfolio.get("name").and_then(Value::as_str).unwrap_or("Portfolio");
-        let mut meta=portfolio.clone();
-        if let Some(m)=meta.as_object_mut(){m.remove("pages");}
-        tx.execute("INSERT INTO workspace_portfolios(project_id,id,name,position,payload) VALUES(?1,?2,?3,?4,?5)",
-            params![id,pid,title,i as i64,meta.to_string()]).map_err(err)?;
-        let pages=portfolio.get("pages").and_then(Value::as_array).ok_or("Missing portfolio pages")?;
-        for (n,page) in pages.iter().enumerate(){
-            let page_id=identity(page,"id")?;
-            tx.execute("INSERT INTO workspace_pages(project_id,portfolio_id,id,position,payload) VALUES(?1,?2,?3,?4,?5)",
-                params![id,pid,page_id,n as i64,page.to_string()]).map_err(err)?;
-            for (field,kind) in [("masterTemplateId","masterTemplates"),("sectionDesignId","sectionDesigns"),("templateId","templates")]{
-                if let Some(template)=page.get(field).and_then(Value::as_str){
-                    if template.is_empty()||template=="none"{continue;}
-                    tx.execute("INSERT OR IGNORE INTO global_template_dependencies(project_id,portfolio_id,page_id,template_kind,template_id) SELECT ?1,?2,?3,?4,?5 WHERE EXISTS(SELECT 1 FROM shared_templates WHERE kind=?4 AND id=?5)",
-                        params![id,pid,page_id,kind,template]).map_err(err)?;
+    Ok(())
+}
+
+fn persist_project(
+    tx: &Transaction<'_>, id: &str, name: &str, data: &Value, active: bool,
+    seen: &mut SeenKeys,
+) -> Result<(), String> {
+    if id.is_empty() || name.trim().is_empty() { return Err("Invalid project identity".into()); }
+    if !seen.projects.insert(vec![id.to_owned()]) {
+        return Err(format!("Duplicate project ID: {id}"));
+    }
+    // Pages and portfolios are authoritative in their relational tables.
+    // Do not duplicate their full arrays in each project JSON record.
+    let mut snapshot = data.clone();
+    if let Some(m) = snapshot.as_object_mut() {
+        for key in ["projectWorkspaces", "globalTemplates", "styleLibrary", "portfolios", "pages"] {
+            m.remove(key);
+        }
+    }
+    tx.execute(
+        "INSERT INTO workspace_projects(id,name,payload,is_active) VALUES(?1,?2,?3,?4)
+         ON CONFLICT(id) DO UPDATE SET name=excluded.name,payload=excluded.payload,
+            is_active=excluded.is_active,updated_at=CURRENT_TIMESTAMP
+         WHERE name IS NOT excluded.name OR payload IS NOT excluded.payload
+            OR is_active IS NOT excluded.is_active",
+        params![id, name, snapshot.to_string(), if active { 1 } else { 0 }],
+    ).map_err(err)?;
+
+    let portfolios = data.get("portfolios").and_then(Value::as_array).ok_or("Missing portfolios")?;
+    if portfolios.is_empty() { return Err("Each project needs a portfolio".into()); }
+    for (i, portfolio) in portfolios.iter().enumerate() {
+        let pid = identity(portfolio, "id")?;
+        if !seen.portfolios.insert(vec![id.to_owned(), pid.to_owned()]) {
+            return Err(format!("Duplicate portfolio {pid} in project {id}"));
+        }
+        let title = portfolio.get("name").and_then(Value::as_str).unwrap_or("Portfolio");
+        let mut meta = portfolio.clone();
+        if let Some(m) = meta.as_object_mut() { m.remove("pages"); }
+        tx.execute(
+            "INSERT INTO workspace_portfolios(project_id,id,name,position,payload) VALUES(?1,?2,?3,?4,?5)
+             ON CONFLICT(project_id,id) DO UPDATE SET name=excluded.name,
+                position=excluded.position,payload=excluded.payload
+             WHERE name IS NOT excluded.name OR position IS NOT excluded.position
+                OR payload IS NOT excluded.payload",
+            params![id, pid, title, i as i64, meta.to_string()],
+        ).map_err(err)?;
+        let pages = portfolio.get("pages").and_then(Value::as_array).ok_or("Missing portfolio pages")?;
+        for (n, page) in pages.iter().enumerate() {
+            let page_id = identity(page, "id")?;
+            if !seen.pages.insert(vec![id.to_owned(), pid.to_owned(), page_id.to_owned()]) {
+                return Err(format!("Duplicate page {page_id} in portfolio {pid}"));
+            }
+            tx.execute(
+                "INSERT INTO workspace_pages(project_id,portfolio_id,id,position,payload)
+                 VALUES(?1,?2,?3,?4,?5)
+                 ON CONFLICT(project_id,portfolio_id,id) DO UPDATE
+                 SET position=excluded.position,payload=excluded.payload
+                 WHERE position IS NOT excluded.position OR payload IS NOT excluded.payload",
+                params![id, pid, page_id, n as i64, page.to_string()],
+            ).map_err(err)?;
+            for (field, kind) in [
+                ("masterTemplateId", "masterTemplates"),
+                ("sectionDesignId", "sectionDesigns"),
+                ("templateId", "templates"),
+            ] {
+                if let Some(template) = page.get(field).and_then(Value::as_str) {
+                    if template.is_empty() || template == "none" || template == "master" { continue; }
+                    if !seen.templates.contains(&vec![kind.to_owned(), template.to_owned()]) {
+                        return Err(format!("Page {page_id} references missing {kind}/{template}"));
+                    }
+                    tx.execute(
+                        "INSERT INTO global_template_dependencies(
+                           project_id,portfolio_id,page_id,template_kind,template_id
+                         ) VALUES(?1,?2,?3,?4,?5)",
+                        params![id, pid, page_id, kind, template],
+                    ).map_err(err)?;
                 }
             }
         }
     }
     Ok(())
 }
-pub fn persist_workspace(tx:&Transaction<'_>,workspace:&Value)->Result<(),String>{
-    // Rebuild the projection transactionally. Never delete legacy workspace/backups/assets.
-    for table in ["global_template_dependencies","workspace_pages","workspace_portfolios","workspace_projects","shared_templates","shared_template_context"]{
-        tx.execute(&format!("DELETE FROM {table}"),[]).map_err(err)?;
-    }
-    let global=workspace.get("globalTemplates").filter(|v|v.is_object()).unwrap_or(workspace);
-    let context=json!({"master":global.get("master").cloned().unwrap_or(Value::Null),
-                       "sectionTypes":global.get("sectionTypes").cloned().unwrap_or(Value::Null)});
-    tx.execute("INSERT INTO shared_template_context(id,payload) VALUES(1,?1)",[context.to_string()]).map_err(err)?;
-    persist_shared_styles(tx,workspace)?;
-    for kind in ["masterTemplates","sectionDesigns","templates"]{
-        let entries=global.get(kind).and_then(Value::as_array).ok_or_else(||format!("Missing {kind}"))?;
-        for (position,item) in entries.iter().enumerate(){
-            tx.execute("INSERT INTO shared_templates(kind,id,position,payload) VALUES(?1,?2,?3,?4)",
-                params![kind,identity(item,"id")?,position as i64,item.to_string()]).map_err(err)?;
+
+pub fn persist_workspace(tx: &Transaction<'_>, workspace: &Value) -> Result<(), String> {
+    let mut seen = SeenKeys::default();
+    // Only dependency edges must be recreated; all other rows are differential UPSERTs.
+    tx.execute("DELETE FROM global_template_dependencies", []).map_err(err)?;
+    let global = workspace.get("globalTemplates").filter(|v|v.is_object()).unwrap_or(workspace);
+    let context = json!({
+        "master": global.get("master").cloned().unwrap_or(Value::Null),
+        "sectionTypes": global.get("sectionTypes").cloned().unwrap_or(Value::Null),
+    });
+    tx.execute(
+        "INSERT INTO shared_template_context(id,payload) VALUES(1,?1)
+         ON CONFLICT(id) DO UPDATE SET payload=excluded.payload
+         WHERE payload IS NOT excluded.payload",
+        [context.to_string()],
+    ).map_err(err)?;
+    persist_shared_styles(tx, workspace)?;
+    for kind in ["masterTemplates", "sectionDesigns", "templates"] {
+        let entries = global.get(kind).and_then(Value::as_array)
+            .ok_or_else(||format!("Missing {kind}"))?;
+        for (position, item) in entries.iter().enumerate() {
+            let id = identity(item, "id")?;
+            if !seen.templates.insert(vec![kind.to_owned(), id.to_owned()]) {
+                return Err(format!("Duplicate shared template: {kind}/{id}"));
+            }
+            tx.execute(
+                "INSERT INTO shared_templates(kind,id,position,payload) VALUES(?1,?2,?3,?4)
+                 ON CONFLICT(kind,id) DO UPDATE SET position=excluded.position,
+                    payload=excluded.payload
+                 WHERE position IS NOT excluded.position OR payload IS NOT excluded.payload",
+                params![kind, id, position as i64, item.to_string()],
+            ).map_err(err)?;
         }
     }
-    let active_id=workspace.get("activeWorkspaceId").and_then(Value::as_str).unwrap_or("legacy-default");
-    let active_name=workspace.get("activeWorkspaceName").and_then(Value::as_str)
+
+    let active_id = workspace.get("activeWorkspaceId").and_then(Value::as_str)
+        .unwrap_or("legacy-default");
+    let active_name = workspace.get("activeWorkspaceName").and_then(Value::as_str)
         .or_else(||workspace.get("title").and_then(Value::as_str)).unwrap_or("Main Project");
-    persist_project(tx,active_id,active_name,workspace,true)?;
-    if let Some(others)=workspace.get("projectWorkspaces").and_then(Value::as_array){
-        for entry in others{
-            persist_project(tx,identity(entry,"id")?,identity(entry,"name")?,
-                entry.get("data").ok_or("Missing inactive project data")?,false)?;
+    // Release the previous active unique-index slot before upserting a new active project.
+    tx.execute(
+        "UPDATE workspace_projects SET is_active=0 WHERE is_active=1 AND id<>?1",
+        [active_id],
+    ).map_err(err)?;
+    persist_project(tx, active_id, active_name, workspace, true, &mut seen)?;
+    if let Some(others) = workspace.get("projectWorkspaces").and_then(Value::as_array) {
+        for entry in others {
+            persist_project(
+                tx, identity(entry, "id")?, identity(entry, "name")?,
+                entry.get("data").ok_or("Missing inactive project data")?,
+                false, &mut seen,
+            )?;
         }
     }
+    // Delete only removed keys; FK cascades keep children and image owners consistent.
+    delete_missing(tx, "workspace_pages", &["project_id", "portfolio_id", "id"], &seen.pages)?;
+    delete_missing(tx, "workspace_portfolios", &["project_id", "id"], &seen.portfolios)?;
+    delete_missing(tx, "workspace_projects", &["id"], &seen.projects)?;
+    delete_missing(tx, "shared_templates", &["kind", "id"], &seen.templates)?;
     Ok(())
 }
 fn load_pages(db:&Connection,project:&str,portfolio:&str)->Result<Vec<Value>,String>{

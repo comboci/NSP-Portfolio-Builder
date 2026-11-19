@@ -141,21 +141,42 @@ pub fn persist_ownership(tx:&Transaction<'_>,workspace:&Value)->Result<(),String
             }
         }
     }
-    // Historical backups may retain references even if all projects are removed.
-    // This is a tracking projection only; there is intentionally NO physical GC.
-    tx.execute("DELETE FROM image_backup_refs",[]).map_err(err)?;
-    for (kind,table) in [("automatic","backups"),("named","named_backups")]{
-        let mut stmt=tx.prepare(&format!("SELECT id,payload FROM {table}")).map_err(err)?;
-        let rows=stmt.query_map([],|r|Ok((r.get::<_,i64>(0)?,r.get::<_,String>(1)?))).map_err(err)?;
-        let snapshots=rows.collect::<Result<Vec<_>,_>>().map_err(err)?;
-        for (id,raw) in snapshots{
-            let payload:Value=serde_json::from_str(&raw).map_err(err)?;
-            let mut hashes=HashSet::new();
-            collect_hashes(&payload,&mut hashes);
-            for hash in hashes{
-                tx.execute("INSERT OR IGNORE INTO image_backup_refs(backup_kind,backup_id,asset_hash) VALUES(?1,?2,?3)",
-                    params![kind,id,hash]).map_err(err)?;
-            }
+    Ok(())
+}
+
+// Backups are immutable snapshots. Index their immutable content hashes on
+// creation, and rebuild the index after automatic-backup retention pruning.
+pub fn index_backup_refs(
+    tx: &Transaction<'_>, kind: &str, id: i64, value: &Value,
+) -> Result<(), String> {
+    if kind != "automatic" && kind != "named" {
+        return Err("Unknown backup kind".into());
+    }
+    let mut hashes = HashSet::new();
+    collect_hashes(value, &mut hashes);
+    for hash in hashes {
+        // A backup must never reference a missing asset registration.
+        tx.execute(
+            "INSERT INTO image_backup_refs(backup_kind,backup_id,asset_hash)
+             VALUES(?1,?2,?3)",
+            params![kind, id, hash],
+        ).map_err(err)?;
+    }
+    Ok(())
+}
+
+pub fn sync_backup_references(tx: &Transaction<'_>) -> Result<(), String> {
+    tx.execute("DELETE FROM image_backup_refs", []).map_err(err)?;
+    for (kind, table) in [("automatic", "backups"), ("named", "named_backups")] {
+        let mut stmt = tx.prepare(&format!("SELECT id,payload FROM {table}")).map_err(err)?;
+        let rows = stmt.query_map([], |r| {
+            Ok((r.get::<_, i64>(0)?, r.get::<_, String>(1)?))
+        }).map_err(err)?;
+        let snapshots = rows.collect::<rusqlite::Result<Vec<_>>>().map_err(err)?;
+        drop(stmt);
+        for (id, raw) in snapshots {
+            let value: Value = serde_json::from_str(&raw).map_err(err)?;
+            index_backup_refs(tx, kind, id, &value)?;
         }
     }
     Ok(())
