@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V90 source candidate (Tauri 90.0.0), TASK-011 advanced Layers; runtime unverified",
+    "software_release": "V91 source candidate (Tauri 91.0.0), TASK-012 History/Undo/Redo; runtime unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed. V87 0cbd0379 restructures expanded Projects presentation for TASK-024; no runtime validation. V88 1e617a31 unifies project Pages create/edit navigation for TASK-025; source only. V89 TASK-010 source candidate based on main 0b97e761ee75; included in same source+PES commit; owner must review runtime. V90 TASK-011 source-only candidate based on main 8d09779c23f7: local rename/lock, Group folding, inherited visibility/z-order. Runtime acceptance pending.",
-    "source_revision_ref": "8d09779c23f751227c95fa44d0f31714c6f108f6"
+    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed. V87 0cbd0379 restructures expanded Projects presentation for TASK-024; no runtime validation. V88 1e617a31 unifies project Pages create/edit navigation for TASK-025; source only. V89 TASK-010 source candidate based on main 0b97e761ee75; included in same source+PES commit; owner must review runtime. V90 TASK-011 source-only candidate based on main 8d09779c23f7: local rename/lock, Group folding, inherited visibility/z-order. Runtime acceptance pending. V91 TASK-012 is based on actual V90 HEAD 37fca8404839; the prior PE source_revision_ref 8d09779c23f7 was the parent of the V90 combined source+PE commit, not an unreconciled code divergence. In-memory per-page History and clickable rewind added; runtime unverified.",
+    "source_revision_ref": "37fca8404839f9521c2ff8cff183e23ea293d00e"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1223,18 +1223,19 @@
       {
         "record_id": "TASK-012",
         "title": "History panel and Undo/Redo",
-        "detail": "Right-side History tab alongside Layers and Properties, clickable operation timeline, undo/redo shortcuts, at least 100 page-local steps, atomic block/group edits. Zoom and pan excluded. History is SESSION-ONLY and is cleared on application close/restart; saved page content persists independently.",
+        "detail": "Right-side History tab alongside Layers and Properties, clickable operation timeline, undo/redo shortcuts, at least 100 page-local steps, atomic block/group edits. Zoom and pan excluded. History is SESSION-ONLY and is cleared on application close/restart; saved page content persists independently. V91 source candidate integrates a third History tab in the existing VS dock, labels in-memory snapshots, raises capacity to 100, adds Ctrl+Z/Y/Shift+Z outside editable inputs, supports clickable atomic timeline jumps with save rollback, and retains page-specific history when navigating between pages in the same session. Runtime/Tauri/PDF verification and owner acceptance are outstanding; task remains in_progress.",
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
         "related_record_ids": [],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified",
-        "updated_on": "2026-11-19"
+        "implementation_state": "V91_source_candidate_pending_owner_runtime_review",
+        "updated_on": "2026-11-19",
+        "source_revision_ref": "37fca8404839f9521c2ff8cff183e23ea293d00e"
       },
       {
         "record_id": "TASK-013",
@@ -1714,6 +1715,26 @@
           "source_revision_ref": "8d09779c23f751227c95fa44d0f31714c6f108f6"
         },
         "implementation_state": "V90_source_candidate_pending_owner_runtime_review"
+      },
+      {
+        "record_id": "OBS-012",
+        "title": "V91 TASK-012 History/Undo/Redo source candidate",
+        "status": "source_implemented_runtime_unverified",
+        "detail": "At V90 main HEAD 37fca8404839f9521c2ff8cff183e23ea293d00e, source editor history had 50 snapshots and resetSelection cleared all history on page change. V91 source extends existing scene-wide snapshots to at least 100 per editing context, adds transition labels and clickable history navigation, keyboard Ctrl+Z/Ctrl+Y/Ctrl+Shift+Z outside text controls, and mounts History as a third tab in the existing left-docked VS-style inspector. It moves page guide controls inside the Properties tab so that all three top-level inspector panes can mount. History stays transient in memory and is reset upon project reset/restart; zoom/pan excluded. Multi-step jump uses one save and rolls back cursor and scene on failure. Source only, no build/tests, browser/Tauri review, or owner acceptance.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES"
+        ],
+        "provenance": {
+          "type": "static_source_review_and_source_change",
+          "date": "2026-11-19",
+          "source_revision_ref": "37fca8404839f9521c2ff8cff183e23ea293d00e"
+        },
+        "implementation_state": "V91_source_candidate_pending_owner_runtime_review",
+        "related_record_ids": [
+          "TASK-012",
+          "DEC-011"
+        ]
       }
     ]
   },
@@ -1793,7 +1814,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V90 TASK-011 source candidate extends Layers with local object rename/lock, collapsible group folders and inherited-only visibility/z-order overrides. TASK-011 remains in_progress pending user runtime review; TASK-012 is the next planned feature if no newer owner-priority change.",
+    "current_summary": "V91 TASK-012 source candidate adds a third VS dock History tab, up to 100 in-memory page-local snapshots, keyboard undo/redo, timeline jumps and rollback-on-save-error; preserving histories across page selection. Pending owner runtime acceptance, TASK-012 remains in_progress. Next planned task TASK-013 if no higher-priority owner change.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -1814,7 +1835,8 @@
       "Existing image work may change HEAD concurrently.",
       "Previous PES-13 candidate was not canonical and was not merged as authoritative source.",
       "V89 TASK-010 source change not built or functionally/runtime/PDF tested; owner acceptance is outstanding.",
-      "V90 Layers enhancements are unbuilt and untested; inherited z-order within its existing layer and group folder interaction need owner review."
+      "V90 Layers enhancements are unbuilt and untested; inherited z-order within its existing layer and group folder interaction need owner review.",
+      "V91 History panel/shortcuts and atomic multi-step history jump are source-only and have not been executed in the browser or Tauri; owner runtime review required."
     ]
   }
 }

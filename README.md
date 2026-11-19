@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 91 (TASK-012 History source candidate)
+
+V91 adds an editor History tab to the existing Visual Studio-style dock alongside Properties and Layers. Per-page/template history remains in memory only, retaining up to 100 atomic scene snapshots (including group/block and layer mutations), with descriptive operation labels, clickable timeline navigation and Ctrl+Z / Ctrl+Y / Ctrl+Shift+Z outside text inputs. History survives changing pages during the current editing session, but is discarded on application restart/project reset. Zoom and pan are excluded.
+
+The session history itself is never persisted in SQLite or the portable export. Jumping across multiple steps restores the scene and attempts a single page save; a failed save rolls back the scene and the history cursor.
+
+**Validation:** source implementation only. No build, static-test execution, browser/Tauri runtime test, PDF comparison or owner acceptance performed; TASK-012 stays in progress pending owner runtime review. Existing TASK-005 through TASK-011 acceptance remains outstanding.
+
+---
+
 # NSP Portfolio Builder — Version 81 (source-only runtime review correction)
 
 V81 introduces physical-left Add buttons in Master Templates and Page Designs, a live cross-project inherited-page count per master template, and deletion of all actual objects attached to a deleted local layer (the previous implementation mistakenly checked a computed layerKey on raw objects). No build, runtime tests, or owner acceptance performed.
