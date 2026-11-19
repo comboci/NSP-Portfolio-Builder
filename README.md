@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 107 (TASK-023 partial, source-only)
+
+V107 begins TASK-023 by making persistence feedback in the shared page/template editor truthful: **saving**, **durably saved**, **error** and **recovery required** now reflect the SQLite/IndexedDB/localStorage write pipeline, instead of labeling a queued write as saved. A retry button invokes the existing global database retry mechanism; it does not pretend to be a separate Save Page command. A failed write remains visible until a subsequent successful write is acknowledged.
+
+**Still outstanding:** the autosave on/off checkbox; independent Save Page / Save Project; manual-mode dirty page snapshots; and Save / Discard / Cancel navigation and close flows. These require an atomic state/persistence boundary under DEC-009. TASK-023 remains in progress. No Build/Test/browser/Tauri/runtime/PDF evaluation was performed. Owner should review editor statuses under save latency, simulated storage failure, retry, page switch, and reopen.
+
+---
+
 # NSP Portfolio Builder — Version 106 (TASK-021, source-only)
 
 V106 improves image replacement through the existing contextual project/public library picker. Replacing a selected image or Tile updates only its immutable asset reference, descriptive filename and legacy inline-source fallbacks, leaving object identity, x/y/w/h, Crop/mask metadata, rounded corners, border, shadow, opacity and other effects unchanged. If the new image aspect ratio differs from the selected frame or Tile by more than 1%, the default Fit view switches to non-distorting **Fill (cover)**; explicitly selected Cover, Stretch or Original modes remain unchanged. The user can change the fit afterwards, including independently per Tile. The image-status label now recognizes SQLite/library asset IDs and the currently selected Tile. Existing editor snapshots provide a single Undo/Redo operation per replacement. No original library bytes or SQLite schema are modified (schema 6).
