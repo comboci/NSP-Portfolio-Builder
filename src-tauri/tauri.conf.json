@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "NSP Portfolio Builder",
+  "version": "70.0.0",
+  "identifier": "com.nspelectronics.portfoliobuilder",
+  "build": {
+    "frontendDist": ["../index.html"]
+  },
+  "app": {
+    "withGlobalTauri": false,
+    "windows": [
+      {
+        "label": "main",
+        "title": "NSP Portfolio Builder",
+        "url": "index.html",
+        "width": 1280,
+        "height": 850,
+        "minWidth": 800,
+        "minHeight": 560,
+        "dragDropEnabled": false
+      }
+    ],
+    "security": {
+      "assetProtocol": { "enable": false, "scope": [] },
+      "capabilities": [],
+      "csp": {
+        "default-src": "'self'",
+        "script-src": "'self'",
+        "script-src-attr": "'unsafe-inline'",
+        "style-src": "'self' 'unsafe-inline'",
+        "img-src": "'self' data: blob: http: https:",
+        "connect-src": "'none'",
+        "object-src": "'none'",
+        "frame-src": "'none'",
+        "base-uri": "'none'",
+        "form-action": "'none'"
+      },
+      "dangerousDisableAssetCspModification": ["style-src"]
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "icon": ["icons/icon.ico"]
+  }
+}
