@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V93 source candidate (Tauri 93.0.0), TASK-014 central linked text styles; runtime unverified",
+    "software_release": "V94 source candidate (Tauri 94.0.0), TASK-015 Group/Ungroup locked-safe source changes; runtime unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed. V87 0cbd0379 restructures expanded Projects presentation for TASK-024; no runtime validation. V88 1e617a31 unifies project Pages create/edit navigation for TASK-025; source only. V89 TASK-010 source candidate based on main 0b97e761ee75; included in same source+PES commit; owner must review runtime. V90 TASK-011 source-only candidate based on main 8d09779c23f7: local rename/lock, Group folding, inherited visibility/z-order. Runtime acceptance pending. V91 TASK-012 is based on actual V90 HEAD 37fca8404839; the prior PE source_revision_ref 8d09779c23f7 was the parent of the V90 combined source+PE commit, not an unreconciled code divergence. In-memory per-page History and clickable rewind added; runtime unverified. V92 TASK-013 source-only canvas zoom/pan/fit controls based on V91 HEAD 1d5834de34c3; Save Page/Project, clipboard and dirty-state remain open. V93 TASK-014 source candidate developed from V92 head e05adf1180bea8d8c2607f23f435cd42cf682117; source and PE committed together using V92 as parent reference. Owner runtime and PDF review pending.",
-    "source_revision_ref": "e05adf1180bea8d8c2607f23f435cd42cf682117"
+    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required.",
+    "source_revision_ref": "2e69bd4a8e64c956f1b186d12092cd6e52797a46"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1271,17 +1271,17 @@
       {
         "record_id": "TASK-015",
         "title": "Group/Ungroup distinct from Region Block",
-        "detail": "Group ordinary objects with Layers folder/chain affordance; Ungroup preserves child locks; locked objects may join groups without unlocking; block group transforms that would move/resize locked children; never bypass master inheritance or alter Region Block ownership.",
+        "detail": "Group ordinary objects with Layers folder/chain affordance; Ungroup preserves child locks; locked objects may join groups without unlocking; block group transforms that would move/resize locked children; never bypass master inheritance or alter Region Block ownership. V94 source candidate: Group and Ungroup operate on membership metadata for locked local ordinary elements without altering individual locks; new groups are limited to one local layer outside Region Blocks, and inherited elements are excluded. Layers displays a chain/folder and direct Ungroup action. Canvas drag expands all group peers before checking locks so locked peers block group transform. No Build/Test, runtime or owner acceptance.",
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
         "related_record_ids": [],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+        "implementation_state": "V94_group_membership_source_candidate_pending_owner_runtime_review"
       },
       {
         "record_id": "TASK-016",
@@ -1781,6 +1781,29 @@
           "DEC-004",
           "BR-009"
         ]
+      },
+      {
+        "record_id": "OBS-015",
+        "title": "V94 TASK-015 Group/Ungroup locked-safe source candidate",
+        "status": "source_candidate_pending_owner_review",
+        "detail": "V93 group/ungroup eligibility incorrectly rejected locked ordinary elements and canvas movement failed to include all members when a single group member was selected from Layers. V94 separates membership operations from transforms, retains child lock flags during group/ungroup, restricts group membership to owned ordinary elements in the same layer and outside Region Blocks, leaves inherited objects immutable, adds group folder chain/Ungroup controls, and checks every linked peer against locks before canvas transforms. Source changes only; no Build/Test/browser/Tauri/PDF or owner acceptance.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES"
+        ],
+        "provenance": {
+          "type": "static_source_review_and_source_change",
+          "date": "2026-11-19",
+          "source_revision_ref": "2e69bd4a8e64c956f1b186d12092cd6e52797a46"
+        },
+        "implementation_state": "source_only_unbuilt_untested",
+        "related_record_ids": [
+          "TASK-015",
+          "DEC-008",
+          "BR-009",
+          "TASK-010",
+          "TASK-011"
+        ]
       }
     ]
   },
@@ -1860,7 +1883,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V93 source candidate: central Style Library with live-linked text font/size/color/weight for TASK-014. Not built, run or accepted. Earlier tasks TASK-005 to TASK-013 and TASK-022/024/025 remain pending owner review or partial scope, including TASK-013 Save Page/Project separation, clipboard and dirty-state; only next eligible planned work should progress.",
+    "current_summary": "V94 TASK-015 source candidate makes Group/Ungroup lock-preserving and guards canvas transformations. TASK-005 to TASK-015 and TASK-022/024/025 await owner runtime acceptance; TASK-013 remains partial. Next planned task subject to refreshed HEAD is TASK-016.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -1883,7 +1906,8 @@
       "V89 TASK-010 source change not built or functionally/runtime/PDF tested; owner acceptance is outstanding.",
       "V90 Layers enhancements are unbuilt and untested; inherited z-order within its existing layer and group folder interaction need owner review.",
       "V91 History panel/shortcuts and atomic multi-step history jump are source-only and have not been executed in the browser or Tauri; owner runtime review required.",
-      "V93 TASK-014 central text styles require owner runtime verification of global scope, project switches, inherited text, import/export, saved data, and PDF parity."
+      "V93 TASK-014 central text styles require owner runtime verification of global scope, project switches, inherited text, import/export, saved data, and PDF parity.",
+      "V94 TASK-015 source-only. Review grouping locked/unlocked objects, group folder direct Ungroup, movement lock, Undo/Redo, save/reopen, and rejection of inherited, cross-layer and Region Block members at runtime."
     ]
   }
 }

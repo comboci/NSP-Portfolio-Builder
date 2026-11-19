@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 94 (TASK-015, source-only)
+
+V94 refines Group/Ungroup as a membership relation distinct from Region Blocks. Local ordinary elements in the same local layer and outside Region Blocks may join a Group even if some are individually locked. Ungroup removes membership only and preserves each child lock. The Layers group folder exposes chain, selection and direct Ungroup controls. Canvas drag expands all group peers before transformations and refuses to move/resize a linked selection when any member is locked. Inherited master objects cannot be re-owned by grouping, and Region Block parent links are unchanged.
+
+**Validation:** source-only review; no Build, Test, Windows/Tauri/browser runtime or PDF confirmation. TASK-015 remains in progress. Owner review: group locked and unlocked local text/image; attempt group movement while locked; Ungroup and confirm locks unchanged; undo/redo; repeat group movement after unlocking; reject mixed-layer, Region Block and inherited selections; save/reopen and compare PDF geometry.
+
+---
+
 # NSP Portfolio Builder — Version 93 (TASK-014, source-only)
 
 V93 adds a single system-wide Style Library of named text styles (font, size, color and weight). Editable text objects can link to a style from Properties; the shared renderer resolves linked styles for canvas/preview/printing and inherited objects without changing geometry or local inheritance rules. Style creation, editing, and referenced-style deletion protection are accessible under Templates. Central styles follow the V78 global catalog across project switches and are excluded from project-local snapshots; old projects start with an empty catalog. This is additive to the existing schema-2 JSON and requires no SQLite reset.
