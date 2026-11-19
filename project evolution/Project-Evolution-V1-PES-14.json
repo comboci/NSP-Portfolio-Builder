@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V88 source candidate (Tauri 88.0.0); V86 left designer dock, V87 clean Projects list, V88 unified Pages editor; runtime unverified",
+    "software_release": "V89 source candidate (Tauri 89.0.0), TASK-010 Region Block; runtime unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed. V87 0cbd0379 restructures expanded Projects presentation for TASK-024; no runtime validation. V88 1e617a31 unifies project Pages create/edit navigation for TASK-025; source only.",
-    "source_revision_ref": "1e617a31113768f8f9bdd8c1396bb20caf65b5c1"
+    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed. V87 0cbd0379 restructures expanded Projects presentation for TASK-024; no runtime validation. V88 1e617a31 unifies project Pages create/edit navigation for TASK-025; source only. V89 TASK-010 source candidate based on main 0b97e761ee75; included in same source+PES commit; owner must review runtime.",
+    "source_revision_ref": "0b97e761ee75f7f01bc4355095e3c95c6d51ec3b"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1190,17 +1190,18 @@
       {
         "record_id": "TASK-010",
         "title": "Region Block container",
-        "detail": "Toolbar creates sequential Block 1/2; nested editable image/text/shape children move together, collapsible Layers node, container-only or proportional-content resize modes; Ctrl-resize from center applies globally, independently of aspect ratio lock.",
+        "detail": "Toolbar creates sequential Block 1/2; nested editable image/text/shape children move together, collapsible Layers node, container-only or proportional-content resize modes; Ctrl-resize from center applies globally, independently of aspect ratio lock. V89 source candidate: Region Block with sequential naming, local text/image/shape children, per-object parent selector, collapsible layer hierarchy, linked drag, proportional/frame resize, Ctrl-center resize, ID-preserving duplication, layer/delete cascades. Code review only; owner runtime/PDF acceptance pending.",
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
         "related_record_ids": [],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+        "implementation_state": "V89_source_candidate_pending_owner_runtime_review",
+        "source_revision_ref": "0b97e761ee75f7f01bc4355095e3c95c6d51ec3b"
       },
       {
         "record_id": "TASK-011",
@@ -1774,7 +1775,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V88 1e617a31 latest: owner layout issue V86, TASK-024 UI V87, TASK-025 unified Pages workflow V88. All source-only, pending owner runtime acceptance. TASK-023 autosave/dirty prompts, TASK-026 contextual import/export and TASK-027 global image management remain planned.",
+    "current_summary": "V89 TASK-010 source candidate with editor-only region containers, nested member management, linked move/resize, Ctrl-center resize and local ownership. TASK-010 in progress awaiting owner interactive review; prior source tasks 005/006/007/008/009/022/024/025 still await owner runtime acceptance.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -1793,7 +1794,8 @@
       "No source build or runtime review performed.",
       "Formal semantic conformance beyond JSON shape is not claimed.",
       "Existing image work may change HEAD concurrently.",
-      "Previous PES-13 candidate was not canonical and was not merged as authoritative source."
+      "Previous PES-13 candidate was not canonical and was not merged as authoritative source.",
+      "V89 TASK-010 source change not built or functionally/runtime/PDF tested; owner acceptance is outstanding."
     ]
   }
 }
