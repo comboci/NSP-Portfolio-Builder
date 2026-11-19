@@ -165,12 +165,12 @@
       },
       {
         "record_id": "Q-002",
-        "title": "Image numbering scope",
-        "detail": "Continuous across whole portfolio or restart per page/section?",
+        "title": "Image object naming, not image numbering",
+        "detail": "Resolved: new image objects receive editor-only labels such as Image 1, Image 2. Each object binds to an image selected from the library through a persisted SQLite asset reference. No automatic image number/caption is rendered on pages or in PDF.",
         "scope_refs": [
           "SC-NUMBERING"
         ],
-        "status": "open",
+        "status": "resolved",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
@@ -179,12 +179,12 @@
       },
       {
         "record_id": "Q-003",
-        "title": "Project migration",
-        "detail": "How to migrate existing saved portfolios into project and multi-portfolio hierarchy without loss?",
+        "title": "Schema evolution versus master-template edits",
+        "detail": "Resolved: the product is currently in testing, so test projects and data may be updated or cleaned up as needed. Editing a master template is immediate design inheritance, not migration. Future software/schema changes must preserve real saved projects and templates; migration mechanics are an engineering task, not an owner question.",
         "scope_refs": [
           "SC-STORAGE"
         ],
-        "status": "open",
+        "status": "resolved",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
@@ -245,6 +245,20 @@
         "detail": "Previous assumptions about portfolio-local templates, free inherited-property overrides, revocable image sharing and master-level Once elements were superseded by explicit owner decisions on 2026-11-19.",
         "scope_refs": [
           "SC-TEMPLATES"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "FND-002",
+        "title": "Owner clarification closes remaining questions",
+        "detail": "No printed image numbering: only editor-side image object names with library asset binding. Current projects/data are in testing; future schema migrations are an engineering responsibility distinct from template inheritance.",
+        "scope_refs": [
+          "SC-STORAGE"
         ],
         "status": "approved_intent",
         "provenance": {
@@ -408,6 +422,34 @@
           "date": "2026-11-19"
         },
         "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "BR-012",
+        "title": "Image object labels are not printed numbers",
+        "detail": "Image 1/Image 2 are editor identifiers for image objects. Each object references an image selected from the library via SQLite. No automatic image numbering appears in pages or PDF.",
+        "scope_refs": [
+          "SC-NUMBERING"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "BR-013",
+        "title": "Master edits versus schema migration",
+        "detail": "Editing a master template immediately updates dependent designs; it is not a data migration. Test data may be cleaned as needed, while future real saved content must be preserved across software/schema upgrades.",
+        "scope_refs": [
+          "SC-STORAGE"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
       }
     ],
     "technical_contracts": [],
@@ -512,12 +554,12 @@
       },
       {
         "record_id": "REQ-008",
-        "title": "Automatic image number",
-        "detail": "Numbering attached to images/tiles; exact scope and renumbering semantics require owner decision.",
+        "title": "Editor-only image object labels and library binding",
+        "detail": "Adding an image object gives it an editor-only name (Image 1, Image 2, etc.). The user assigns a library image to that object, persisted as a SQLite asset reference. No automatic visible image numbering, number overlays or printed image captions are required in page preview or PDF.",
         "scope_refs": [
           "SC-NUMBERING"
         ],
-        "status": "needs_detail",
+        "status": "approved_intent",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
@@ -670,8 +712,8 @@
       },
       {
         "record_id": "TASK-002",
-        "title": "Design safe project/portfolio hierarchy migration",
-        "detail": "Preserve existing templates and stored documents.",
+        "title": "Plan safe schema evolution separately from master-template changes",
+        "detail": "Test-phase data may be updated or cleaned as needed. Preserve real saved projects/templates during future schema changes. Master-template design edits propagate immediately through inheritance and do not constitute data migration.",
         "scope_refs": [
           "SC-PROJECTS"
         ],
@@ -684,8 +726,8 @@
       },
       {
         "record_id": "TASK-003",
-        "title": "Review numbering and one-off semantics",
-        "detail": "Confirm exact user-facing controls and PDF behavior.",
+        "title": "Verify editor image names, page numbers and page-only Once elements",
+        "detail": "Image object labels are editor-only; no visible image numbering. Page numbers remain dynamic and independent per portfolio, including preview/PDF. Text Once and Image Once exist only on individual pages and are deleted with their owning page.",
         "scope_refs": [
           "SC-NUMBERING"
         ],
@@ -761,12 +803,7 @@
     "default_contract_ref": "RETRIEVAL-DEFAULT"
   },
   "open_state": {
-    "open_question_ids": [
-      "Q-001",
-      "Q-002",
-      "Q-003",
-      "Q-004"
-    ],
+    "open_question_ids": [],
     "open_conflict_relationship_ids": [],
     "blocked_record_ids": [],
     "next_work_record_ids": [
@@ -778,14 +815,20 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "PES-14 project record initialized from current conversation. Verify current main source and active Work changes before implementation. Do not equate requirements with implemented features.",
+    "current_summary": "Owner decisions consolidated: centralized templates and live inheritance, permanent SQLite image ownership, safe cascade deletion, page-only Once elements, per-portfolio page numbers, and editor-only image object names (no printed image numbering). All owner questions resolved; implementation remains unverified.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
       "DEC-003",
       "REQ-004",
       "REQ-007",
-      "REQ-009"
+      "REQ-009",
+      "BR-005",
+      "BR-007",
+      "BR-009",
+      "BR-010",
+      "BR-012",
+      "BR-013"
     ],
     "known_limits": [
       "No source build or runtime review performed.",
