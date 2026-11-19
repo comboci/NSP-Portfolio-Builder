@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V94 source candidate (Tauri 94.0.0), TASK-015 Group/Ungroup locked-safe source changes; runtime unverified",
+    "software_release": "V95 source (Tauri 95.0.0); dock position/hover/pin structural fix, owner runtime review pending",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required.",
-    "source_revision_ref": "2e69bd4a8e64c956f1b186d12092cd6e52797a46"
+    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding.",
+    "source_revision_ref": "a2f1e0f6a9a0b95d88489707319b7930faceabbd"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1804,6 +1804,31 @@
           "TASK-010",
           "TASK-011"
         ]
+      },
+      {
+        "record_id": "OBS-016",
+        "title": "V95 owner-reported designer Dock layout and hover/pin regression correction",
+        "status": "source_committed_pending_owner_runtime_review",
+        "detail": "Owner runtime review of V88 reported that Properties and Layers remained to the right of the canvas despite the V86 CSS. The earlier two-pane exact-count Dock mount was bypassed by extra guide details; by V94 the History pane changed the expected count to three but the controller still relied on a fragile exact count/order. V95 explicitly marks Properties, Layers and History with data-v16-pane identities, mounts by identity rather than count, preserves future auxiliary inspector controls inside Properties, applies left-of-canvas physical direction to every shared editor including the non-docked fallback, keeps PowerPoint-style page thumbnails on the right, and reverses the auto-hide animation to open from the left. Fresh profiles default to auto-hidden hover/flyout/pin behavior; previously saved profile choices are honored. Visible release markers, export metadata and Tauri/Cargo version were aligned to 95.0.0. No build, automated test, browser/Tauri runtime check or owner acceptance was performed.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES"
+        ],
+        "provenance": {
+          "type": "owner_runtime_report_and_source_review",
+          "date": "2026-11-19",
+          "repository": "comboci/NSP-Portfolio-Builder",
+          "source_revision_ref": "a2f1e0f6a9a0b95d88489707319b7930faceabbd"
+        },
+        "implementation_state": "V95_source_committed_runtime_unverified",
+        "related_record_ids": [
+          "OBS-008",
+          "OBS-010",
+          "TASK-011",
+          "TASK-012",
+          "TASK-025"
+        ]
       }
     ]
   },
@@ -1883,7 +1908,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V94 TASK-015 source candidate makes Group/Ungroup lock-preserving and guards canvas transformations. TASK-005 to TASK-015 and TASK-022/024/025 await owner runtime acceptance; TASK-013 remains partial. Next planned task subject to refreshed HEAD is TASK-016.",
+    "current_summary": "V95 a2f1e0f6 current: owner-reported Dock layout issue addressed at source level with explicit named panes, stable left dock in every editor, right page thumbnails and auto-hide/hover/pin. V89–94 Project Evolution changes remain in main. Owner runtime acceptance pending. Continue next source task after checking fresh HEAD and owner feedback.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
