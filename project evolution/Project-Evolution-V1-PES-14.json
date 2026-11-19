@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V82 source candidate (Tauri 82.0.0); TASK-008 preflight implemented, runtime/PDF unverified",
+    "software_release": "V83 source candidate (Tauri 83.0.0); TASK-009 source implemented, runtime unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V81 image-library UX implemented at 72c1b33b; V82 adds TASK-008 print/PDF preflight at 9d012096. Both source-only and awaiting owner runtime; previous TASK-005/006/007 also remain unaccepted.",
-    "source_revision_ref": "9d0120963401fc5a3163c8847276ea448af46a1e"
+    "source_alignment": "V81 image library, V82 print preflight, V83 page guides/snapping. Owner runtime acceptance pending; subsequent owner feedback queued.",
+    "source_revision_ref": "b8b031523a5909e51282805b58b0804b27c025b1"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1172,12 +1172,20 @@
           "SC-PORTFOLIOS"
         ],
         "related_record_ids": [],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+        "implementation_state": "V83_source_implemented_pending_owner_runtime_review",
+        "source_version": "V83",
+        "updated_on": "2026-11-19",
+        "result": "V83 adds page-local vertical/horizontal guides, pointer drag and numeric mm positions, show/hide control, persistence, object drag snapping (within 7px) and no PDF rendering. Source-only; not built or runtime verified.",
+        "changed_files": [
+          "index.html",
+          "src-tauri/Cargo.toml",
+          "src-tauri/tauri.conf.json"
+        ]
       },
       {
         "record_id": "TASK-010",
@@ -1430,6 +1438,24 @@
           "source_revision_ref": "9d0120963401fc5a3163c8847276ea448af46a1e"
         },
         "implementation_state": "V82_source_changes_committed_waiting_owner_review"
+      },
+      {
+        "record_id": "OBS-004",
+        "title": "Owner follow-up requests after TASK-009",
+        "status": "accepted_for_implementation",
+        "detail": "Once TASK-009 is source-committed, templates and system page design editors must show only the global public image library; project/portfolio page editor may use its own private library and public library. Exclude reset/demo pages from inherited-page counts while preserving genuine user data. Provide PowerPoint-like vertical page thumbnails on the right of the portfolio editing screen, switch page and edit by click/double-click. Add changes in separate sequential commits; no runtime verified.",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-PROJECTS",
+          "SC-LIBRARY",
+          "SC-PORTFOLIOS"
+        ],
+        "provenance": {
+          "type": "user_runtime_report",
+          "date": "2026-11-19",
+          "source_revision_ref": "b8b031523a5909e51282805b58b0804b27c025b1"
+        },
+        "implementation_state": "owner_requested_followup_pending_source"
       }
     ]
   },
