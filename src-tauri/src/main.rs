@@ -6,6 +6,7 @@ use tauri::{Manager, State};
 
 mod media_store;
 mod project_store;
+mod image_ownership;
 struct AssetRoot(PathBuf);
 struct Storage(Mutex<Connection>);
 fn error(e: impl std::fmt::Display) -> String { e.to_string() }
@@ -18,7 +19,12 @@ fn load_project(db: State<'_, Storage>, root: State<'_, AssetRoot>) -> Result<Op
     } else {
         conn.query_row("SELECT payload FROM projects WHERE id='workspace'",[],|r|r.get(0)).optional().map_err(error)?
     };
-    saved.map(|s| media_store::hydrate_payload(&conn, &root.0, &s)).transpose()
+    saved.map(|raw| {
+        let mut workspace: Value = serde_json::from_str(&raw).map_err(error)?;
+        workspace["globalImageLibrary"] =
+            Value::Array(image_ownership::read_public_catalog(&conn)?);
+        media_store::hydrate_payload(&conn, &root.0, &workspace.to_string())
+    }).transpose()
 }
 
 #[tauri::command]
@@ -87,6 +93,7 @@ fn save_project(
     media_store::persist_image_links(&tx, &compact)?;
     media_store::project_links(&tx, &compact)?;
     project_store::persist_workspace(&tx, &compact)?;
+    image_ownership::persist_ownership(&tx, &compact)?;
     tx.execute(
         "DELETE FROM backups WHERE id NOT IN (SELECT id FROM backups ORDER BY id DESC LIMIT 30)", [],
     ).map_err(error)?;
@@ -212,7 +219,7 @@ fn main() {
             conn.execute_batch("PRAGMA foreign_keys=ON; PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;")?;
             let tx = conn.transaction()?;
             let version: i64 = tx.query_row("PRAGMA user_version", [], |r| r.get(0))?;
-            if version > 4 { return Err("Database schema is newer than this application".into()); }
+            if version > 5 { return Err("Database schema is newer than this application".into()); }
             if version < 1 { tx.execute_batch(include_str!("../migrations/001.sql"))?; }
             if version < 2 { tx.execute_batch(include_str!("../migrations/002.sql"))?; }
             if version < 3 {
@@ -222,6 +229,7 @@ fn main() {
                 tx.execute_batch(include_str!("../migrations/003.sql"))?;
             }
             if version < 4 { tx.execute_batch(include_str!("../migrations/004.sql"))?; }
+            if version < 5 { tx.execute_batch(include_str!("../migrations/005.sql"))?; }
             tx.commit()?;
             app.manage(AssetRoot(root));
             app.manage(Storage(Mutex::new(conn)));

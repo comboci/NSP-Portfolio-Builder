@@ -25,10 +25,10 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V78 source (Tauri 78.0.0), not built or runtime-reviewed",
+    "software_release": "V79 source (Tauri 79.0.0), not built or runtime-reviewed",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V78 source authored from V77 audit; user runtime acceptance pending",
+    "source_alignment": "V79 source authored on V78 main c4ad795; implementation requires user runtime review and approval",
     "source_revision_ref": "148ec10818264622a7ac0a97586084faf94b4592"
   },
   "coordination": {
@@ -1052,12 +1052,29 @@
           "BR-006",
           "BR-007"
         ],
-        "status": "unassigned",
+        "status": "in_progress",
         "provenance": {
           "type": "source_audit_follow_up",
           "date": "2026-11-19"
         },
-        "implementation_state": "not_started"
+        "implementation_state": "V79_source_implementation_committed_pending_build_and_runtime_review",
+        "source_version": "V79",
+        "updated_on": "2026-11-19",
+        "result": "V79 source implements private project image ownership, irreversible public catalog, explicit cross-project ownership grants, project and public library UI, page/global template usage edges including tile stash, and backup reference indexing. Asset files remain immutable and physical garbage collection is disabled. Source not built or runtime verified; owner acceptance pending.",
+        "changed_files": [
+          "index.html",
+          "src-tauri/src/main.rs",
+          "src-tauri/src/image_ownership.rs",
+          "src-tauri/migrations/005.sql",
+          "src-tauri/Cargo.toml",
+          "src-tauri/tauri.conf.json",
+          "README.md"
+        ],
+        "evidence_refs": [
+          "SOL-003",
+          "FND-005",
+          "DEC-003"
+        ]
       }
     ],
     "evidence": [],
@@ -1068,11 +1085,11 @@
   "relationships": [],
   "views": {
     "current_architecture": {
-      "freshness_state": "source_prepared_runtime_unknown",
+      "freshness_state": "source_authored_runtime_unverified",
       "source_revision_refs": [
         "148ec10818264622a7ac0a97586084faf94b4592"
       ],
-      "note": "V78 authored relational project/portfolio/page records and a shared template catalog. No runtime proof. Image ownership still TASK-007."
+      "note": "V79 source includes logical per-project image ownership, permanent public assets and usage/backup reference tracking; all persistent bytes remain in writable Tauri app-local storage/assets; no physical GC. Runtime behavior not yet verified. V78 project/template model also unverified."
     },
     "current_operational_context": {
       "freshness_state": "unknown",
@@ -1121,7 +1138,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "TASK-006 V78 source changes authored for relational projects and globally shared templates; no build/test/runtime review. Task remains in progress for runtime acceptance and potential fixes. TASK-005 and TASK-007 still open; no development data deleted.",
+    "current_summary": "V79 TASK-007 code authored for cross-project image ownership and global/private libraries; pending user build, interactive runtime and acceptance. V78 TASK-006 and TASK-005 also need independent runtime/follow-up. Never claim tested. V79 development data can be reset if needed per DEC-007. Persist source of truth in main and Project Evolution.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
