@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V102 source candidate (Tauri 102.0.0, SQLite schema 6); global Style Library migration, owner runtime verification pending",
+    "software_release": "V103 source candidate (Tauri 103.0.0, SQLite schema 6); TASK-019 awaiting owner runtime/PDF review",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding. V96 dd8884b8 implements TASK-016 in the shared designer with px/mm geometry, grouped Block and Group movement, key/selection/page references, history and non-destructive bounds guards. No build or runtime review. V97 65d0788a implements TASK-017 signed-mm Ctrl+D duplication in the shared designer and preserves Group/Region Block ownership; owner runtime review outstanding. V98 TASK-018 based on V97 HEAD 1eb6f858f9457c6c45f35b27ac71d415d6f372ea; no Build/Test, runtime or PDF validation. V99 160af83c guards editor exit until async persistence acknowledgement. V100 efdf0e93 centralizes page/portfolio/master duplication and preserves source provenance while remapping local compound identities; source only, no build/runtime test. V101 e2221346 replaces preflight go('visual') with direct page navigation and exact object provenance focus for TASK-008, with no build/runtime/PDF verification. V102 bee05475 creates independent shared_styles SQLite schema 6 table, transactional catalog projection, legacy style backfill, canonical project load, and confirmed asynchronous Style Library saving. No Build/Test/runtime acceptance.",
-    "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
+    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding. V96 dd8884b8 implements TASK-016 in the shared designer with px/mm geometry, grouped Block and Group movement, key/selection/page references, history and non-destructive bounds guards. No build or runtime review. V97 65d0788a implements TASK-017 signed-mm Ctrl+D duplication in the shared designer and preserves Group/Region Block ownership; owner runtime review outstanding. V98 TASK-018 based on V97 HEAD 1eb6f858f9457c6c45f35b27ac71d415d6f372ea; no Build/Test, runtime or PDF validation. V99 160af83c guards editor exit until async persistence acknowledgement. V100 efdf0e93 centralizes page/portfolio/master duplication and preserves source provenance while remapping local compound identities; source only, no build/runtime test. V101 e2221346 replaces preflight go('visual') with direct page navigation and exact object provenance focus for TASK-008, with no build/runtime/PDF verification. V102 bee05475 creates independent shared_styles SQLite schema 6 table, transactional catalog projection, legacy style backfill, canonical project load, and confirmed asynchronous Style Library saving. No Build/Test/runtime acceptance. V103 TASK-019 based on PE-only HEAD a7cab4f; object effect controls in shared renderer and local Properties; no DB migration or Build/Test; owner acceptance pending.",
+    "source_revision_ref": "a7cab4f70115671caf38038dd69f3eab056faccb"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1561,12 +1561,26 @@
           "SC-PORTFOLIOS"
         ],
         "related_record_ids": [],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+        "implementation_state": "V103_object_styles_source_candidate_pending_owner_runtime_pdf_review",
+        "source_version": "V103",
+        "source_revision_ref": "a7cab4f70115671caf38038dd69f3eab056faccb",
+        "updated_on": "2026-11-19",
+        "result": "Image, rectangle and circle Properties expose opacity, shadow X/Y/blur/strength, border width/color, and image/rectangle rounded corners. Optional object fields persist through existing state storage and Undo/Redo; the common object renderer applies effects in editor/preview/print. Inherited objects remain read-only. Source-only; no Build/Test/runtime/PDF or owner acceptance.",
+        "changed_files": [
+          "index.html",
+          "src-tauri/Cargo.toml",
+          "src-tauri/tauri.conf.json",
+          "README.md",
+          "project evolution/Project-Evolution-V1-PES-14.json"
+        ],
+        "evidence_refs": [
+          "OBS-024"
+        ]
       },
       {
         "record_id": "TASK-020",
@@ -2303,6 +2317,27 @@
           "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
         },
         "implementation_state": "recorded_only_not_implemented"
+      },
+      {
+        "record_id": "OBS-024",
+        "title": "V103 TASK-019 Object Styles & Effects source candidate",
+        "status": "source_implemented_runtime_unverified",
+        "detail": "On main a7cab4f, the latest code remained V102 and TASK-019 had no opacity/border Properties controls or shadow/corner fields. V103 adds clamped typed controls for opacity (percent UI/fractional storage), shadow offsets/blur/strength, border width/color, rounded image/rectangle corners, with shared editor/preview/print CSS. Legacy objects retain defaults, inherited objects cannot be style-overridden, and Undo/Redo/persistence reuse existing object snapshots. This is static source evidence, not Build/Test/Tauri/browser/PDF or owner acceptance.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES",
+          "SC-PDF"
+        ],
+        "related_record_ids": [
+          "TASK-019",
+          "TASK-018"
+        ],
+        "provenance": {
+          "type": "static_source_review_and_implementation",
+          "date": "2026-11-19",
+          "source_revision_ref": "a7cab4f70115671caf38038dd69f3eab056faccb"
+        },
+        "implementation_state": "V103_source_candidate_pending_owner_runtime_pdf_review"
       }
     ]
   },
@@ -2387,7 +2422,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V102 source HEAD bee05475, PE-only backlog checkpoint 2026-11-19: TASK-028 (albums), TASK-029 (missing image effects and print-quality warnings), TASK-030 (static-check V74 drift) newly registered; existing TASK-006/007/008/013/014/022/023/025/026/027 reconciled; public Delete conflict Q-005, superseded docked Library REQ-003. No app source edited, no tests/builds; continue N remediation only after fresh main SHA and review of safe public deletion policy.",
+    "current_summary": "V103 TASK-019 source candidate: opacity, shadow, border, rounded corners for local images/shapes. Based on PE-only HEAD a7cab4f, latest executable source V102. No Build/Test/runtime/PDF verification. Re-read main and PE before selecting next planned task.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -2416,7 +2451,8 @@
       "V97 TASK-017 is source-only. Owner should review repeated Ctrl+D, sign and magnitude of offsets, zero offset, Group and Region Block copy integrity, locked/inherited rejection, edge overflow, undo/redo, save/reopen and PDF geometry; no Build/Test/runtime or owner acceptance.",
       "V98 TASK-018: rotation/mirror disables mouse resize handles pending local-axis geometry; owner should check pivots, aspect lock, Ctrl-center, Block bounds, undo/redo, persistence and PDF parity. Source-only.",
       "V102 TASK-014 requires owner Tauri runtime verification of migration from schema 5, global styles across project switches, style references and error recovery; no Build/Test performed.",
-      "The 2026-11-19 V102 backlog review was source/documentation only; Task 028–030 are not implemented and the public image Delete policy is unresolved (Q-005)."
+      "The 2026-11-19 V102 backlog review was source/documentation only; Task 028–030 are not implemented and the public image Delete policy is unresolved (Q-005).",
+      "V103 TASK-019 needs owner Tauri/browser/PDF review of new object effects, rounded-image clipping, save/reopen, Undo/Redo, and inherited-object locks."
     ]
   }
 }

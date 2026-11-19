@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 103 (TASK-019, source-only)
+
+V103 introduces per-object opacity (0–100% user input, persisted as existing 0–1 fraction), shadow X/Y offset (±100 px), blur (0–100 px), shadow strength (0–100%), border width (0–30px) and color, and rounded corners (0–200 px) for image and rectangle objects. Circles remain circular. Image, Rectangle and Circle use common Properties controls; the editor, page previews and print/PDF use a shared effect renderer. Edits use existing Undo/Redo snapshots and storage; inherited properties remain read-only. No SQLite migration is needed.
+
+**Validation:** SOURCE ONLY; no Build/Test, browser/Tauri runtime, PDF comparison or owner acceptance. TASK-019 stays in progress. Review zero/100% opacity, negative shadow offsets, image cropping under rounded corners, border defaults, changes near page edges, repeated edits/Undo, save/reopen, inherited objects and PDF parity.
+
+---
+
 # NSP Portfolio Builder — Version 98 (TASK-018, source-only)
 
 V98 adds the Transform panel to shared Properties: numeric X/Y/W/H, rotation (-360° to +360°), horizontal/vertical mirroring, nine pivot choices and an aspect-ratio lock. The source renderer shares CSS transforms in editor, preview and print/PDF. Bounds checks consider transformed corners and Region Block containment; ordinary pointer resize honors aspect lock while Ctrl/Command independently resizes around the center. Locked and inherited geometry stays read-only.
