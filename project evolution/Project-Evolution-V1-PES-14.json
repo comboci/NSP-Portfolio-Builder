@@ -1254,6 +1254,111 @@
           "date": "2026-11-19"
         },
         "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-016",
+        "title": "Align & Distribute",
+        "detail": "Align left/center/right and top/middle/bottom; distribute equal horizontal/vertical spacing; numeric gap in mm. Reference modes: key object, selection bounds or page. Design toolbar; locked and inherited master objects cannot be transformed.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-017",
+        "title": "Smart Duplicate",
+        "detail": "Ctrl+D duplicates selected image/text/shape/group/Region Block; repeat last displacement vector and allow numeric horizontal/vertical offsets. Each duplication is undoable; respect locks and master inheritance.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-018",
+        "title": "Transform Panel",
+        "detail": "Properties panel numeric X/Y, width/height, rotation angle, horizontal/vertical flip, aspect-ratio lock and selectable transform origin. Ctrl-resize from center remains independent of aspect ratio.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-019",
+        "title": "Object Styles & Effects",
+        "detail": "Properties controls opacity 0–100%, shadow offset/blur/strength, border color/width and rounded corners for supported images/shapes. WYSIWYG PDF parity and undoable edits.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-020",
+        "title": "Non-destructive Image Crop & Mask",
+        "detail": "Crop, pan and zoom within frame; circular, rectangular and custom-shape masks. Preserve original source; editable/resettable crop; PDF matches editor.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-021",
+        "title": "Replace Image preserving frame",
+        "detail": "Swap image content without changing frame position/size, crop mask, border, shadow or other effects. Default fill when aspect ratio differs, adjustable afterwards; undoable.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-022",
+        "title": "Multi-Page Overview",
+        "detail": "Slide-sorter thumbnail view of all portfolio pages; drag-drop reorder, duplicate, delete with confirmation, double-click to edit. Preserve master-template relationships and page content.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
       }
     ],
     "evidence": [],
@@ -1320,12 +1425,19 @@
       "TASK-012",
       "TASK-013",
       "TASK-014",
-      "TASK-015"
+      "TASK-015",
+      "TASK-016",
+      "TASK-017",
+      "TASK-018",
+      "TASK-019",
+      "TASK-020",
+      "TASK-021",
+      "TASK-022"
     ],
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V79 TASK-007 code authored for cross-project image ownership and global/private libraries; pending user build, interactive runtime and acceptance. V78 TASK-006 and TASK-005 also need independent runtime/follow-up. Never claim tested. V79 development data can be reset if needed per DEC-007. Persist source of truth in main and Project Evolution. Owner approved eight further design-editor feature groups TASK-008..TASK-015 on 2026-11-19; these are documentation-only planned tasks, not implemented. Group locks and distinct Save Page/Save Project documented in DEC-008/009. Owner closed remaining design decisions: exclusively central Style Library (DEC-010), session-only History (DEC-011).",
+    "current_summary": "V79 TASK-007 code authored for cross-project image ownership and global/private libraries; pending user build, interactive runtime and acceptance. V78 TASK-006 and TASK-005 also need independent runtime/follow-up. Never claim tested. V79 development data can be reset if needed per DEC-007. Persist source of truth in main and Project Evolution. Owner approved eight further design-editor feature groups TASK-008..TASK-015 on 2026-11-19; these are documentation-only planned tasks, not implemented. Group locks and distinct Save Page/Save Project documented in DEC-008/009. Owner closed remaining design decisions: exclusively central Style Library (DEC-010), session-only History (DEC-011). Seven more approved editor features TASK-016..TASK-022 documented only; Page Sections explicitly rejected, no task created.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
