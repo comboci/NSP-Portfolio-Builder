@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 98 (TASK-018, source-only)
+
+V98 adds the Transform panel to shared Properties: numeric X/Y/W/H, rotation (-360° to +360°), horizontal/vertical mirroring, nine pivot choices and an aspect-ratio lock. The source renderer shares CSS transforms in editor, preview and print/PDF. Bounds checks consider transformed corners and Region Block containment; ordinary pointer resize honors aspect lock while Ctrl/Command independently resizes around the center. Locked and inherited geometry stays read-only.
+
+**Known limit:** canvas resize handles for rotated/flipped objects are deliberately hidden because those handles require local-axis pointer geometry. Use numeric width/height. TASK-018 remains **in_progress**. **Validation: SOURCE ONLY.** No Build/Test, browser/Tauri runtime review, PDF check or owner acceptance. Review 90° rotations, origin pivots, mirrored text/images, numeric and pointer aspect lock, Ctrl-center, Region Block and Group constraints, Undo/Redo, save/reopen and print output.
+
+---
+
 # NSP Portfolio Builder — Version 97 (TASK-017, source-only)
 
 V97 implements Smart Duplicate in the shared page, section-template and master-template designer. The **Smart Duplicate** toolbar menu keeps signed X/Y offsets (mm) per editing context; the existing Duplicate action and **Ctrl+D** duplicate selected local objects, then select the copies so that repeated Ctrl+D reuses the same displacement vector. Group members and Region Block descendants are duplicated together with fresh IDs and remapped membership; separately duplicated child objects remain inside their original Region Block. Image and Block labels are assigned new sequential names. Inherited/locked selections and offsets that cross page or Block boundaries are refused before mutation. Each duplicate is one Undo/Redo history operation.
