@@ -1,0 +1,639 @@
+{
+  "_pes": {
+    "standard": "PES-14",
+    "schema_revision": "14.0.0",
+    "schema_digest": "0461a63f0a08f299a0f8ece052f38cdc8848a1437b6f2d102be6ab0f187e4c7f",
+    "semantic_rules_digest": "375af191f6fb9a8b17db77a347419b89cd649b18a90849561d03e54ffb4c6497",
+    "compatibility_profile_digest": "62b52c8a14ceaf6ac5816e8c6dacaa25d6880c01c69e8ed63020b6fa248468e9"
+  },
+  "project": {
+    "project_id": "NSP-PORTFOLIO-BUILDER",
+    "project_name": "NSP Portfolio Builder",
+    "namespace": "NSP-PB"
+  },
+  "artifact": {
+    "artifact_id": "NSP-PB-PES14-BOOTSTRAP-20261119",
+    "profile": "canonical_snapshot",
+    "lifecycle": "active",
+    "lineage_role": "root",
+    "acceptance_state": "draft",
+    "created_at": "2026-11-19T06:36:00Z",
+    "parent_artifact_ids": [],
+    "base_artifact_id": null,
+    "source_modification_authorized": false
+  },
+  "release_context": {
+    "repository": "comboci/NSP-Portfolio-Builder",
+    "branch": "main",
+    "software_release": "V72 reported by repository commit; recheck live source",
+    "project_evolution_version": "V1",
+    "base_project_evolution_version": null,
+    "source_alignment": "unverified; active concurrent development",
+    "source_revision_ref": "1c25d4c87bfc007794b580e553e1ae7620700172"
+  },
+  "coordination": {
+    "canonical_store_type": "git",
+    "canonical_store_ref": "project evolution/Project-Evolution-V1-PES-14.json",
+    "startup_document_ref": "project evolution/PROJECT-EVOLUTION-START-HERE-PES-14.md",
+    "write_concurrency": "Re-fetch main and PE before each write; merge by stable IDs; never overwrite concurrent changes."
+  },
+  "purpose": {
+    "primary_goal": {
+      "value": "Project-based desktop authoring of multiple architecture portfolios and catalogs with reusable page designs, rich image management and dependable exports.",
+      "knowledge_state": "user_confirmed"
+    },
+    "problem": {
+      "value": "Avoid recreating portfolio layouts and assets for each new document; support project-specific and shared content.",
+      "knowledge_state": "user_confirmed"
+    },
+    "success_criteria": [
+      "Multiple portfolios per project",
+      "Project/global library with explicit sharing",
+      "Stable page/template inheritance",
+      "Non-destructive per-tile image editing",
+      "Consistent saved projects and PDF output"
+    ],
+    "intent_notes": [
+      "Projects are primary; master/page templates remain inside portfolio documents.",
+      "Image development already underway in separate Work conversation."
+    ]
+  },
+  "scopes": [
+    {
+      "scope_id": "SC-PROJECTS",
+      "scope_type": "module",
+      "name": "Project workspaces",
+      "parent_scope_ref": null,
+      "status": "active"
+    },
+    {
+      "scope_id": "SC-PORTFOLIOS",
+      "scope_type": "module",
+      "name": "Multiple portfolio documents",
+      "parent_scope_ref": null,
+      "status": "active"
+    },
+    {
+      "scope_id": "SC-LIBRARY",
+      "scope_type": "module",
+      "name": "Project and global image library",
+      "parent_scope_ref": null,
+      "status": "active"
+    },
+    {
+      "scope_id": "SC-TILES",
+      "scope_type": "feature",
+      "name": "Dynamic image tiles",
+      "parent_scope_ref": null,
+      "status": "active"
+    },
+    {
+      "scope_id": "SC-IMAGEEDIT",
+      "scope_type": "feature",
+      "name": "Non-destructive image editing",
+      "parent_scope_ref": null,
+      "status": "active"
+    },
+    {
+      "scope_id": "SC-TEMPLATES",
+      "scope_type": "module",
+      "name": "Master and page templates",
+      "parent_scope_ref": null,
+      "status": "active"
+    },
+    {
+      "scope_id": "SC-NUMBERING",
+      "scope_type": "feature",
+      "name": "Page and image numbering",
+      "parent_scope_ref": null,
+      "status": "active"
+    },
+    {
+      "scope_id": "SC-ONCE",
+      "scope_type": "feature",
+      "name": "One-off and repeated elements",
+      "parent_scope_ref": null,
+      "status": "active"
+    },
+    {
+      "scope_id": "SC-STORAGE",
+      "scope_type": "module",
+      "name": "Tauri and SQLite persistence",
+      "parent_scope_ref": null,
+      "status": "active"
+    },
+    {
+      "scope_id": "SC-PDF",
+      "scope_type": "feature",
+      "name": "PDF output",
+      "parent_scope_ref": null,
+      "status": "active"
+    }
+  ],
+  "records": {
+    "statements": [],
+    "ideas": [],
+    "questions": [
+      {
+        "record_id": "Q-001",
+        "title": "Cross-portfolio design sharing",
+        "detail": "Do portfolios in same project share page designs or only images?",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "status": "open",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "Q-002",
+        "title": "Image numbering scope",
+        "detail": "Continuous across whole portfolio or restart per page/section?",
+        "scope_refs": [
+          "SC-NUMBERING"
+        ],
+        "status": "open",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "Q-003",
+        "title": "Project migration",
+        "detail": "How to migrate existing saved portfolios into project and multi-portfolio hierarchy without loss?",
+        "scope_refs": [
+          "SC-STORAGE"
+        ],
+        "status": "open",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "Q-004",
+        "title": "Shared asset publishing",
+        "detail": "Explicit publish into Global Library or shared reference to private project asset?",
+        "scope_refs": [
+          "SC-LIBRARY"
+        ],
+        "status": "open",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      }
+    ],
+    "analyses": [],
+    "solutions": [],
+    "findings": [],
+    "business_rules": [
+      {
+        "record_id": "BR-001",
+        "title": "Page-specific once elements",
+        "detail": "Once elements render only on owning page, not on every page and not arbitrarily once elsewhere.",
+        "scope_refs": [
+          "SC-ONCE"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "BR-002",
+        "title": "Page-number position",
+        "detail": "Hiding number on cover must not renumber subsequent pages.",
+        "scope_refs": [
+          "SC-NUMBERING"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "BR-003",
+        "title": "Safe shared image deletion",
+        "detail": "Deleting one project cannot delete images still referenced by other projects.",
+        "scope_refs": [
+          "SC-LIBRARY"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "BR-004",
+        "title": "Image source integrity",
+        "detail": "Edits are non-destructive and do not mutate original library asset.",
+        "scope_refs": [
+          "SC-IMAGEEDIT"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      }
+    ],
+    "technical_contracts": [],
+    "requirements": [
+      {
+        "record_id": "REQ-001",
+        "title": "Project CRUD and document organization",
+        "detail": "Create/open/rename projects; each project can contain multiple independent portfolios, covers, identity pages, and repeated data pages.",
+        "scope_refs": [
+          "SC-PROJECTS"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "REQ-002",
+        "title": "Library manager",
+        "detail": "Albums, bulk import, thumbnails, metadata, search, deduplication, safe deletion, and global/project scopes.",
+        "scope_refs": [
+          "SC-LIBRARY"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "REQ-003",
+        "title": "Dockable library",
+        "detail": "Dock panel alongside Layers/Properties, pin/unpin, select multiple assets, drag/drop to page.",
+        "scope_refs": [
+          "SC-LIBRARY"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "REQ-004",
+        "title": "Dynamic image tiles",
+        "detail": "One image object expands using right/bottom plus controls and synchronized vertical/horizontal Properties; keep existing tile content and support undo.",
+        "scope_refs": [
+          "SC-TILES"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "REQ-005",
+        "title": "Tile Count convention",
+        "detail": "0×1 = one; 0×2 = two horizontally; 1×2 = four in two rows. Vertical count represents extra rows, horizontal count number per row; confirm implementation matches latest owner instruction.",
+        "scope_refs": [
+          "SC-TILES"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "REQ-006",
+        "title": "Non-destructive image editing",
+        "detail": "Crop, zoom, pan, fit/fill, replace, rotate, flip, opacity, border, rounded/circle/polygon masks, brightness, contrast, saturation, grayscale, sepia, blur, sharpen, reset and print-quality warning; per-tile settings.",
+        "scope_refs": [
+          "SC-IMAGEEDIT"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "REQ-007",
+        "title": "Automatic page number",
+        "detail": "Dynamic element, page order updates after insert/delete/reorder; option Show on First Page defaults off, without renumbering remaining pages; consistent preview/PDF.",
+        "scope_refs": [
+          "SC-NUMBERING"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "REQ-008",
+        "title": "Automatic image number",
+        "detail": "Numbering attached to images/tiles; exact scope and renumbering semantics require owner decision.",
+        "scope_refs": [
+          "SC-NUMBERING"
+        ],
+        "status": "needs_detail",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "REQ-009",
+        "title": "Text Once and Image Once",
+        "detail": "One-off elements appear only on owning page regardless of its position; distinguish from inherited repeated template elements.",
+        "scope_refs": [
+          "SC-ONCE"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "REQ-010",
+        "title": "Repeat and inheritance controls",
+        "detail": "Template inheritance and per-page overrides without duplication; preserve locks, saved documents and PDF output.",
+        "scope_refs": [
+          "SC-TEMPLATES"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "REQ-011",
+        "title": "Image library persistence",
+        "detail": "Original asset immutable; store metadata and per-use edits; shared asset deletion cannot break another project.",
+        "scope_refs": [
+          "SC-STORAGE"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      }
+    ],
+    "decisions": [
+      {
+        "record_id": "DEC-001",
+        "title": "Project-first organization",
+        "detail": "Project is primary workspace; templates remain inside documents, not top-level entry.",
+        "scope_refs": [
+          "SC-PROJECTS"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "DEC-002",
+        "title": "Multiple portfolios per project",
+        "detail": "A project can contain multiple independent portfolios/catalogs; default names Portfolio 1, Portfolio 2, editable.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "DEC-003",
+        "title": "Project and global libraries",
+        "detail": "Project-specific images are private by default; users may explicitly share to a global library; use stable references to avoid duplicate bytes.",
+        "scope_refs": [
+          "SC-LIBRARY"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "DEC-004",
+        "title": "Preserve master/page inheritance",
+        "detail": "Master Template -> Page Template -> pages, including page-specific content and overrides.",
+        "scope_refs": [
+          "SC-TEMPLATES"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "DEC-005",
+        "title": "Desktop evolution",
+        "detail": "Use Tauri 2 and SQLite; preserve existing behavior and migrate incrementally.",
+        "scope_refs": [
+          "SC-STORAGE"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "DEC-006",
+        "title": "No tests or builds by assistant",
+        "detail": "Do not run build or tests; user owns runtime review.",
+        "scope_refs": [
+          "SC-STORAGE"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      }
+    ],
+    "tasks": [
+      {
+        "record_id": "TASK-001",
+        "title": "Audit live repository and concurrent Work changes",
+        "detail": "Read current main HEAD, versions and actual code; do not infer implementation from handoffs.",
+        "scope_refs": [
+          "SC-STORAGE"
+        ],
+        "status": "unassigned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "TASK-002",
+        "title": "Design safe project/portfolio hierarchy migration",
+        "detail": "Preserve existing templates and stored documents.",
+        "scope_refs": [
+          "SC-PROJECTS"
+        ],
+        "status": "unassigned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "TASK-003",
+        "title": "Review numbering and one-off semantics",
+        "detail": "Confirm exact user-facing controls and PDF behavior.",
+        "scope_refs": [
+          "SC-NUMBERING"
+        ],
+        "status": "unassigned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "TASK-004",
+        "title": "Align image development with new project library scopes",
+        "detail": "Avoid collisions with active image feature development.",
+        "scope_refs": [
+          "SC-LIBRARY"
+        ],
+        "status": "unassigned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      }
+    ],
+    "evidence": [],
+    "verifications": [],
+    "acceptances": [],
+    "observations": []
+  },
+  "relationships": [],
+  "views": {
+    "current_architecture": {
+      "freshness_state": "unknown",
+      "source_revision_refs": [
+        "1c25d4c87bfc007794b580e553e1ae7620700172"
+      ],
+      "note": "Intended design, not verified deployed architecture. Project -> portfolios -> templates/pages; project and global libraries; Tauri/SQLite planned or under active implementation."
+    },
+    "current_operational_context": {
+      "freshness_state": "unknown",
+      "note": "Build and tests prohibited for assistant; runtime acceptance by owner. No deployment or runtime claims."
+    }
+  },
+  "retrieval": {
+    "contracts": [
+      {
+        "contract_id": "RETRIEVAL-DEFAULT",
+        "title": "Default PES-14 continuation context",
+        "subject_scope_refs": [],
+        "include_record_types": [
+          "business_rule",
+          "technical_contract",
+          "requirement",
+          "decision",
+          "solution",
+          "finding",
+          "question",
+          "verification",
+          "acceptance",
+          "observation",
+          "task"
+        ],
+        "required_views": [
+          "current_architecture"
+        ],
+        "relationship_depth": 2,
+        "current_only": false,
+        "require_source_alignment": true,
+        "output_profile": "standard"
+      }
+    ],
+    "default_contract_ref": "RETRIEVAL-DEFAULT"
+  },
+  "open_state": {
+    "open_question_ids": [
+      "Q-001",
+      "Q-002",
+      "Q-003",
+      "Q-004"
+    ],
+    "open_conflict_relationship_ids": [],
+    "blocked_record_ids": [],
+    "next_work_record_ids": [
+      "TASK-001",
+      "TASK-002",
+      "TASK-003",
+      "TASK-004"
+    ],
+    "candidate_solution_ids": []
+  },
+  "continuation": {
+    "current_summary": "PES-14 project record initialized from current conversation. Verify current main source and active Work changes before implementation. Do not equate requirements with implemented features.",
+    "must_read_record_ids": [
+      "DEC-001",
+      "DEC-002",
+      "DEC-003",
+      "REQ-004",
+      "REQ-007",
+      "REQ-009"
+    ],
+    "known_limits": [
+      "No source build or runtime review performed.",
+      "Formal semantic conformance beyond JSON shape is not claimed.",
+      "Existing image work may change HEAD concurrently.",
+      "Previous PES-13 candidate was not canonical and was not merged as authoritative source."
+    ]
+  }
+}
