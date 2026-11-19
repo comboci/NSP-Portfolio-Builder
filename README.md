@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 81 (source-only runtime review correction)
+
+V81 introduces physical-left Add buttons in Master Templates and Page Designs, a live cross-project inherited-page count per master template, and deletion of all actual objects attached to a deleted local layer (the previous implementation mistakenly checked a computed layerKey on raw objects). No build, runtime tests, or owner acceptance performed.
+
+Other V80 review requests (library selector redesign and configurable page autosave) remain to be incorporated before complete V81 runtime review. TASK-005/006/007 remain in progress pending owner runtime acceptance.
+
+---
+
 # NSP Portfolio Builder — Version 80 (source candidate)
 
 ## V80 — TASK-005 editor and numbering implementation

@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V80 source (Tauri 80.0.0), not built or runtime-reviewed",
+    "software_release": "V81 source candidate (Tauri 81.0.0), runtime unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V80 source authored from main HEAD 973861a3b5f1; TASK-005 awaits owner runtime/PDF review",
-    "source_revision_ref": "973861a3b5f1f77208f8980156d8e658a06084c0"
+    "source_alignment": "V81 base source at V80 main 0f07fdbe7b54; UI alignment/count/layer cascade implemented, additional owner review feedback queued.",
+    "source_revision_ref": "0f07fdbe7b5488205daa5901b5b793755dd6d6e2"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1372,7 +1372,25 @@
     "evidence": [],
     "verifications": [],
     "acceptances": [],
-    "observations": []
+    "observations": [
+      {
+        "record_id": "OBS-001",
+        "title": "Owner V80 runtime review feedback",
+        "status": "partially_addressed_in_V81",
+        "detail": "Observed Add buttons positioned right in master/page design lists; requested left. Requested count of direct/indirect inheriting pages on master grid. Deleting a layer kept its objects because raw object layerKey is absent. Also requested removal of redundant editor Library, a project/public library image selector, autosave toggle and unsaved page exit protection. First three issues patched in V81 source; remaining two are pending source implementation. None owner-accepted.",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-PORTFOLIOS",
+          "SC-LIBRARY"
+        ],
+        "provenance": {
+          "type": "user_runtime_report",
+          "date": "2026-11-19",
+          "source_revision_ref": "0f07fdbe7b5488205daa5901b5b793755dd6d6e2"
+        },
+        "implementation_state": "source_only_partial_runtime_unverified"
+      }
+    ]
   },
   "relationships": [],
   "views": {
@@ -1445,7 +1463,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V80 TASK-005 source changes prepared: Image N editor labels, portfolio-relative dynamic page number with cover toggle, and page-only Text/Image Once. No build/test/PDF/runtime review or owner acceptance. V78 TASK-006 and V79 TASK-007 remain pending runtime acceptance. Tasks 008–015 are design-only planned work.",
+    "current_summary": "V81 source draft includes left-side Add buttons, master inherited-page counts and actual layer+objects deletion. Remaining V80 review fixes: image picker/dock redesign and page autosave toggle. TASK-005/006/007 still awaiting runtime acceptance.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
