@@ -893,6 +893,35 @@
           "date": "2026-11-19"
         },
         "implementation_state": "permission_recorded_no_reset_performed"
+      },
+      {
+        "record_id": "DEC-008",
+        "title": "Locked-layer grouping and master inheritance",
+        "detail": "Locked ordinary objects may be grouped without unlocking. Group movement or resizing is prohibited when it would violate a child lock. Ungroup preserves child lock states. Inherited master objects cannot be transformed or re-owned through grouping.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "DEC-009",
+        "title": "Page save and project save are separate",
+        "detail": "Save Page / Ctrl+S saves only the current design page; Save Project explicitly saves pending changes across the portfolio. Neither should silently substitute for the other.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "unverified_against_live_source"
       }
     ],
     "tasks": [
@@ -1075,6 +1104,126 @@
           "FND-005",
           "DEC-003"
         ]
+      },
+      {
+        "record_id": "TASK-008",
+        "title": "PDF and office-print preflight",
+        "detail": "Validate text overflow, page bounds, missing images, A4/A3 paper settings and configurable safe printable margins; clickable errors locate affected objects; PDF preview. No bleed, crop marks or mandatory CMYK.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-009",
+        "title": "Smart guides and snapping",
+        "detail": "Design-page-only movable horizontal/vertical guides, numeric positions in mm, Show/Hide toolbar control without deleting guides, object snapping, persistent positions, no PDF output and no master inheritance.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-010",
+        "title": "Region Block container",
+        "detail": "Toolbar creates sequential Block 1/2; nested editable image/text/shape children move together, collapsible Layers node, container-only or proportional-content resize modes; Ctrl-resize from center applies globally, independently of aspect ratio lock.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-011",
+        "title": "Advanced Layers panel",
+        "detail": "Rename, reorder, multi-select, visibility and ordinary-object locks; collapsible Region Blocks and Groups; inherited master objects retain immutable placement/style and permit only visibility/z-order overrides.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-012",
+        "title": "History panel and Undo/Redo",
+        "detail": "Right-side History tab alongside Layers and Properties, clickable operation timeline, undo/redo shortcuts, at least 100 page-local steps, atomic block/group edits. Zoom and pan excluded; persistence after app close undecided.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-013",
+        "title": "Design toolbar and zoom/pan",
+        "detail": "Top toolbar Save Page (Ctrl+S, current page only), Save Project (all changed pages, separate explicit action), Print, Undo/Redo, Cut/Copy/Paste, Zoom, Pan, Fit Page and Show/Hide Guides. Display save success/errors and dirty-page state.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-014",
+        "title": "Style Library",
+        "detail": "Word-like named text, color and optional frame styles, linked updates without changing geometry; central shared styles with potential project-specific styles; central-vs-project inheritance semantics to finalize.",
+        "scope_refs": [
+          "SC-TEMPLATES"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+      },
+      {
+        "record_id": "TASK-015",
+        "title": "Group/Ungroup distinct from Region Block",
+        "detail": "Group ordinary objects with Layers folder/chain affordance; Ungroup preserves child locks; locked objects may join groups without unlocking; block group transforms that would move/resize locked children; never bypass master inheritance or alter Region Block ownership.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [],
+        "status": "planned",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
       }
     ],
     "evidence": [],
@@ -1133,12 +1282,20 @@
     "next_work_record_ids": [
       "TASK-005",
       "TASK-006",
-      "TASK-007"
+      "TASK-007",
+      "TASK-008",
+      "TASK-009",
+      "TASK-010",
+      "TASK-011",
+      "TASK-012",
+      "TASK-013",
+      "TASK-014",
+      "TASK-015"
     ],
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V79 TASK-007 code authored for cross-project image ownership and global/private libraries; pending user build, interactive runtime and acceptance. V78 TASK-006 and TASK-005 also need independent runtime/follow-up. Never claim tested. V79 development data can be reset if needed per DEC-007. Persist source of truth in main and Project Evolution.",
+    "current_summary": "V79 TASK-007 code authored for cross-project image ownership and global/private libraries; pending user build, interactive runtime and acceptance. V78 TASK-006 and TASK-005 also need independent runtime/follow-up. Never claim tested. V79 development data can be reset if needed per DEC-007. Persist source of truth in main and Project Evolution. Owner approved eight further design-editor feature groups TASK-008..TASK-015 on 2026-11-19; these are documentation-only planned tasks, not implemented. Group locks and distinct Save Page/Save Project documented in DEC-008/009.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -1157,7 +1314,8 @@
       "No source build or runtime review performed.",
       "Formal semantic conformance beyond JSON shape is not claimed.",
       "Existing image work may change HEAD concurrently.",
-      "Previous PES-13 candidate was not canonical and was not merged as authoritative source."
+      "Previous PES-13 candidate was not canonical and was not merged as authoritative source.",
+      "History persistence after application close and final shared/project style precedence remain open implementation decisions."
     ]
   }
 }
