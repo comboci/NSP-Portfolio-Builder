@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V101 source candidate (Tauri 101.0.0); TASK-008 issue navigation fix; pending owner runtime/PDF acceptance",
+    "software_release": "V102 source candidate (Tauri 102.0.0, SQLite schema 6); global Style Library migration, owner runtime verification pending",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding. V96 dd8884b8 implements TASK-016 in the shared designer with px/mm geometry, grouped Block and Group movement, key/selection/page references, history and non-destructive bounds guards. No build or runtime review. V97 65d0788a implements TASK-017 signed-mm Ctrl+D duplication in the shared designer and preserves Group/Region Block ownership; owner runtime review outstanding. V98 TASK-018 based on V97 HEAD 1eb6f858f9457c6c45f35b27ac71d415d6f372ea; no Build/Test, runtime or PDF validation. V99 160af83c guards editor exit until async persistence acknowledgement. V100 efdf0e93 centralizes page/portfolio/master duplication and preserves source provenance while remapping local compound identities; source only, no build/runtime test. V101 e2221346 replaces preflight go('visual') with direct page navigation and exact object provenance focus for TASK-008, with no build/runtime/PDF verification.",
-    "source_revision_ref": "e2221346b447e392566e257adc76ee92f0e3d7f5"
+    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding. V96 dd8884b8 implements TASK-016 in the shared designer with px/mm geometry, grouped Block and Group movement, key/selection/page references, history and non-destructive bounds guards. No build or runtime review. V97 65d0788a implements TASK-017 signed-mm Ctrl+D duplication in the shared designer and preserves Group/Region Block ownership; owner runtime review outstanding. V98 TASK-018 based on V97 HEAD 1eb6f858f9457c6c45f35b27ac71d415d6f372ea; no Build/Test, runtime or PDF validation. V99 160af83c guards editor exit until async persistence acknowledgement. V100 efdf0e93 centralizes page/portfolio/master duplication and preserves source provenance while remapping local compound identities; source only, no build/runtime test. V101 e2221346 replaces preflight go('visual') with direct page navigation and exact object provenance focus for TASK-008, with no build/runtime/PDF verification. V102 bee05475 creates independent shared_styles SQLite schema 6 table, transactional catalog projection, legacy style backfill, canonical project load, and confirmed asynchronous Style Library saving. No Build/Test/runtime acceptance.",
+    "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1108,8 +1108,8 @@
           "type": "source_audit_follow_up",
           "date": "2026-11-19"
         },
-        "implementation_state": "V78_source_implementation_prepared_runtime_unverified",
-        "result": "V78 source includes normalized SQLite projects/portfolios/pages and a shared system-wide template catalog. UI project switching uses the global catalog; inherited object edits are restricted to local visibility and z-order. Asset ownership remains TASK-007. No builds/tests/runtime acceptance.",
+        "implementation_state": "V102_shared_style_persistence_aligned_other_project_schema_runtime_unverified",
+        "result": "V78 source includes normalized SQLite projects/portfolios/pages and a shared system-wide template catalog. UI project switching uses the global catalog; inherited object edits are restricted to local visibility and z-order. Asset ownership remains TASK-007. No builds/tests/runtime acceptance. V102 adds independent global style table and schema 6 migration; does not close remaining TASK-006 architectural or runtime acceptance gaps.",
         "source_version": "V78",
         "updated_on": "2026-11-19",
         "changed_files": [
@@ -1119,6 +1119,9 @@
           "src-tauri/migrations/004.sql",
           "src-tauri/Cargo.toml",
           "src-tauri/tauri.conf.json"
+        ],
+        "evidence_refs": [
+          "OBS-022"
         ]
       },
       {
@@ -1289,8 +1292,21 @@
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "V93_source_candidate_central_text_styles_pending_owner_runtime_print_review",
-        "updated_on": "2026-11-19"
+        "implementation_state": "V102_central_sqlite_style_catalog_source_committed_pending_owner_runtime_review",
+        "updated_on": "2026-11-19",
+        "source_version": "V102",
+        "result": "V102 bee05475 implements SQLite schema revision 6 with one shared_styles table (id/name/order/payload), migration seeding prior workspace style catalog without rewriting old backups, transactional save, and load-time distribution of one canonical shared library to all projects. Per-project relational payloads no longer contain styleLibrary; frontend awaits durable save acknowledgement and rolls back local modifications on failure. Source only; no build, automated test, Tauri/browser runtime or owner acceptance.",
+        "changed_files": [
+          "index.html",
+          "src-tauri/src/project_store.rs",
+          "src-tauri/src/main.rs",
+          "src-tauri/migrations/006.sql",
+          "src-tauri/Cargo.toml",
+          "src-tauri/tauri.conf.json"
+        ],
+        "evidence_refs": [
+          "OBS-022"
+        ]
       },
       {
         "record_id": "TASK-015",
@@ -2003,6 +2019,29 @@
           "source_revision_ref": "e2221346b447e392566e257adc76ee92f0e3d7f5"
         },
         "implementation_state": "V101_source_committed_pending_owner_runtime_review"
+      },
+      {
+        "record_id": "OBS-022",
+        "title": "V102 TASK-014 SQLite central Style Library and safe legacy migration",
+        "status": "source_implemented_runtime_unverified",
+        "detail": "V102 bee05475 implements SQLite schema revision 6 with one shared_styles table (id/name/order/payload), migration seeding prior workspace style catalog without rewriting old backups, transactional save, and load-time distribution of one canonical shared library to all projects. Per-project relational payloads no longer contain styleLibrary; frontend awaits durable save acknowledgement and rolls back local modifications on failure. Source only; no build, automated test, Tauri/browser runtime or owner acceptance.",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-STORAGE",
+          "SC-PROJECTS"
+        ],
+        "related_record_ids": [
+          "TASK-006",
+          "TASK-014",
+          "DEC-010",
+          "DEC-006"
+        ],
+        "provenance": {
+          "type": "source_inspection_and_implementation",
+          "date": "2026-11-19",
+          "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
+        },
+        "implementation_state": "V102_source_committed_pending_owner_runtime_review"
       }
     ]
   },
@@ -2082,7 +2121,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V101 e2221346 on main: TASK-008 preflight report can open the correct page and select/scroll to exact element including inherited objects. Next 'N' should take next defect from the review after a fresh HEAD check. Runtime/PDF acceptance pending.",
+    "current_summary": "V102 bee05475 on main: TASK-014 central Style Library now has SQLite schema 6 shared_styles table and migration preserving prior backups, source only. Next N: inspect image ownership/public catalog and deletion integrity review findings from fresh main; owner runtime remains pending.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -2109,7 +2148,8 @@
       "V94 TASK-015 source-only. Review grouping locked/unlocked objects, group folder direct Ungroup, movement lock, Undo/Redo, save/reopen, and rejection of inherited, cross-layer and Region Block members at runtime.",
       "V96 TASK-016 is source-only. Runtime acceptance needed for alignment/distribution directions, mm conversion, all three reference modes, Region Block/Group safeguards, inherited/locked objects, Undo/Redo and save/reopen.",
       "V97 TASK-017 is source-only. Owner should review repeated Ctrl+D, sign and magnitude of offsets, zero offset, Group and Region Block copy integrity, locked/inherited rejection, edge overflow, undo/redo, save/reopen and PDF geometry; no Build/Test/runtime or owner acceptance.",
-      "V98 TASK-018: rotation/mirror disables mouse resize handles pending local-axis geometry; owner should check pivots, aspect lock, Ctrl-center, Block bounds, undo/redo, persistence and PDF parity. Source-only."
+      "V98 TASK-018: rotation/mirror disables mouse resize handles pending local-axis geometry; owner should check pivots, aspect lock, Ctrl-center, Block bounds, undo/redo, persistence and PDF parity. Source-only.",
+      "V102 TASK-014 requires owner Tauri runtime verification of migration from schema 5, global styles across project switches, style references and error recovery; no Build/Test performed."
     ]
   }
 }
