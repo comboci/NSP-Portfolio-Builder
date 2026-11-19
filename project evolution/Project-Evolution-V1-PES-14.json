@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V83 source candidate (Tauri 83.0.0); TASK-009 source implemented, runtime unverified",
+    "software_release": "V85 source candidate (Tauri 85.0.0); TASK-009, template/project image scopes and project page thumbnail sidebar source-implemented; runtime unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V81 image library, V82 print preflight, V83 page guides/snapping. Owner runtime acceptance pending; subsequent owner feedback queued.",
-    "source_revision_ref": "b8b031523a5909e51282805b58b0804b27c025b1"
+    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending.",
+    "source_revision_ref": "23a009bb94f941351f755dbc6dacefba6ad46fd3"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1377,12 +1377,20 @@
           "SC-PORTFOLIOS"
         ],
         "related_record_ids": [],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+        "implementation_state": "V85_portfolio_thumbnail_sidebar_source_implemented_pending_owner_runtime_review",
+        "source_version": "V85",
+        "updated_on": "2026-11-19",
+        "result": "V85 provides a per-portfolio right-side scrollable vertical page thumbnail navigation when entering from Projects, click-to-edit via the existing editor, drag/drop or arrow reorder, duplicate and delete actions, and existing double-click text editing. The generic independent slide-sorter view and runtime behavior are not yet verified.",
+        "changed_files": [
+          "index.html",
+          "src-tauri/Cargo.toml",
+          "src-tauri/tauri.conf.json"
+        ]
       }
     ],
     "evidence": [],
@@ -1442,8 +1450,8 @@
       {
         "record_id": "OBS-004",
         "title": "Owner follow-up requests after TASK-009",
-        "status": "accepted_for_implementation",
-        "detail": "Once TASK-009 is source-committed, templates and system page design editors must show only the global public image library; project/portfolio page editor may use its own private library and public library. Exclude reset/demo pages from inherited-page counts while preserving genuine user data. Provide PowerPoint-like vertical page thumbnails on the right of the portfolio editing screen, switch page and edit by click/double-click. Add changes in separate sequential commits; no runtime verified.",
+        "status": "V84_V85_source_implemented_pending_owner_runtime",
+        "detail": "Owner-requested post-TASK-009 updates: V84 178a9c9e limits system master/section/page-design image selection to public assets, permits project-owned+public assets only in project portfolio page editor, seeds new/reset projects with zero demo pages, excludes untouched old demo pages from inheritance counts (old saved data preserved); V85 23a009bb adds right-side scrollable page thumbnails with selection, reorder, copy/delete in portfolio editor. Build/runtime not performed; no owner acceptance.",
         "scope_refs": [
           "SC-TEMPLATES",
           "SC-PROJECTS",
@@ -1455,7 +1463,26 @@
           "date": "2026-11-19",
           "source_revision_ref": "b8b031523a5909e51282805b58b0804b27c025b1"
         },
-        "implementation_state": "owner_requested_followup_pending_source"
+        "implementation_state": "source_committed_runtime_unverified"
+      },
+      {
+        "record_id": "OBS-005",
+        "title": "V85 owner review checkpoint",
+        "status": "awaiting_runtime",
+        "detail": "Run runtime review on latest V85: opening a portfolio from Projects must enter thumbnail sidebar, click switches editable page, text double-click edits in place, project-only image library is available; system Master and Design Pages should show only public images, inherited counts should exclude untouched legacy seeded pages; verify V83 guides and V82 print preflight. Existing saved demo pages remain unless explicitly removed; reset creates an empty page list.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-TEMPLATES",
+          "SC-LIBRARY",
+          "SC-PORTFOLIOS",
+          "SC-PDF"
+        ],
+        "provenance": {
+          "type": "source_inspection",
+          "date": "2026-11-19",
+          "source_revision_ref": "23a009bb94f941351f755dbc6dacefba6ad46fd3"
+        },
+        "implementation_state": "source_implemented_runtime_unverified"
       }
     ]
   },
