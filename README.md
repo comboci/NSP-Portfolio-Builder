@@ -1,21 +1,32 @@
-# NSP Portfolio Builder — Version 72
+# NSP Portfolio Builder — Version 74
 
-Open `index.html` in Edge/Chrome. The complete frontend stays in this file. Browser storage uses IndexedDB, migrating the existing localStorage project without deleting it. JSON backups include original local images and thumbnails.
+Version 74 preserves the Version 72 HTML editor, image library, crop/tiles, and browser IndexedDB storage, while changing **native Tauri/SQLite asset persistence**. The branch also retains the separate Project Evolution commits.
 
-The existing editor now has a Library dock tab for images. Image Tiles begin at **0 × 1**: the vertical input counts extra rows, and the horizontal input counts images per row. Thus 0 × 2 means two images side by side; 1 × 2 means four images. Use the two Properties inputs or the + buttons at the upper/lower right of the selected grid. Hidden cells are retained when shrinking a grid.
+## Desktop storage
 
-Library supports previews, insertion/replacement, original download, safe deletion and library Undo/Redo. Selected images and individual tiles have interactive crop, fit/fill, zoom/position, filters and frame shapes. Existing layer/selection/template/history behavior is used.
+The Tauri app saves the project's complete editable *metadata and references* in SQLite. The binary original images and thumbnails are stored **once** in the application-local `storage/assets/` folder, identified by SHA-256. SQLite JSON records use `nsp-asset-v74:<sha256>` instead of Base64 image bodies. This also applies to automatic and named backup records. Files referenced by any backup are retained; asset garbage collection is intentionally **not** performed.
 
-Desktop source uses Tauri 2, SQLite migrations, managed immutable originals/thumbnails, automatic previous-save snapshots and named backups. Wait for **saved** before closing; retry or export JSON if storage reports an error.
+When loading a project or restoring a backup, the native backend verifies the image file and rebuilds the previous compatible data-URL representation for the existing editor. The portable JSON export generated in the editor still embeds images and is self-contained. The standalone HTML browser build **continues to use IndexedDB** and has no access to native SQLite.
 
-User-run commands after installing Windows Tauri prerequisites and Rust/Cargo:
+### Non-destructive SQLite migration
+
+The first native startup upgrades schema version 2 to 3 in a transaction, converting legacy Base64 payloads in projects, image metadata, templates, pages and automatic/named backups to immutable asset references. The old database tables are retained. If the conversion fails, SQLite rolls back; any content-addressed files already created remain safe. Because the new format is not recognized by V72, **do not downgrade the desktop app with an already migrated database**.
+
+**Before first desktop launch:** make an independent backup of the whole `storage/` folder **including** `portfolio.sqlite3`, any WAL/SHM companion files, and `assets/` (close the application before copying). Keeping only the SQLite file will not preserve the images in V74. Exporting JSON from inside the app provides an independent portable backup.
+
+### Running
+
+Browser: open `index.html` with Edge/Chrome. Desktop (on a Windows host with Rust, MSVC C++ and WebView2):
 
 ```powershell
-Set-Location 'G:\ChatGPT\outputs\NSP-Portfolio-Builder'
 cargo install tauri-cli --version '^2' --locked
 cargo tauri dev --no-dev-server
 ```
 
-No build or runtime tests were run. Static-only source checks: `node scripts/static-check.cjs`.
+Static check from repository root:
 
-See [LOCAL_IMPLEMENTATION_REPORT.md](LOCAL_IMPLEMENTATION_REPORT.md) for the complete implementation inventory, migration behavior, limitations and Runtime Review steps. Validation results are in `STATIC_VALIDATION.json`.
+```powershell
+node scripts/static-check.cjs
+```
+
+**Validation status:** No Rust build, Tauri runtime test, or browser functional test has been executed by this handoff. A static source check cannot establish that the application works at runtime. See `V74_STORAGE_HANDOFF.md` for change scope, risks and the user-run acceptance checklist.

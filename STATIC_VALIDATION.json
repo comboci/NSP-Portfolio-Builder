@@ -1,18 +1,11 @@
 {
-  "kind": "static-only",
-  "scripts": 15,
-  "combinedScope": "parsed",
-  "seedJSON": "parsed",
-  "tauriConfig": "parsed",
-  "registeredCommands": [
-    "load_project",
-    "save_project",
-    "list_backups",
-    "create_backup",
-    "list_named_backups",
-    "read_named_backup"
-  ],
-  "version": "72",
+  "kind": "source-inspection-only",
+  "version": "74",
+  "basedOnGitHubCommit": "8781fad4310e401cb71f8cf1f58b4789d0e7cba0",
+  "htmlScriptBlocks": 16,
+  "checks": "version markers, Tauri config, added IPC call and script block layout inspected",
+  "staticCheckExecuted": false,
+  "rustBuildExecuted": false,
   "runtimeExecuted": false,
-  "buildExecuted": false
+  "userCheck": "node scripts/static-check.cjs"
 }
