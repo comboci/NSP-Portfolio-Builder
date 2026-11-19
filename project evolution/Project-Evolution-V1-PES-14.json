@@ -236,6 +236,33 @@
           "date": "2026-11-19"
         },
         "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "SOL-002",
+        "title": "Target schema and rollout strategy for development reset vs future durable migrations",
+        "detail": "1. Scope: development-stage migration design only; old V77 JSON workspace is a known interim representation, not the target relational model (FND-003).\n2. Prefer an explicit clean DEV reset of SQLite and disposable test workspaces if backfill is disproportionately risky; obtain no additional permission for that same current test data. NEVER silently reset databases after real user data is in use.\n3. Define persistent entities with unique stable IDs: projects, portfolios (project_id FK), globally reusable master/page templates (not project-owned), pages (portfolio_id FK), immutable content-addressed asset files, independent project-to-image ownership, global/public catalog membership, and image usage links. Physical deduplication is separate from ownership.\n4. Enforce foreign keys and explicit ownership/reference constraints. Delete dependent project content without deleting globally shared templates or physical images still owned/referenced anywhere; defer asset GC until reference coverage is proven.\n5. Make SQLite schema upgrades revisioned and transactional; after development reset phase, preserve all real data through additive migrations, backups, rollback/recovery and consistency checks.\n6. Separate two mechanisms: (A) schema evolution is an application-startup DB version upgrade; (B) editing Master Template is an ordinary design update which immediately changes all dependent pages via live inheritance and independent per-page visibility/z-index overrides. Do not re-save inherited elements as mutable copies.\n7. Define acceptance criteria before implementation: independent project/portfolio persistence across restart, shared global template edits visible in every dependent project, no cross-project library leakage, permanent image ownership, backup/restore of asset bytes and references, and safe project deletion.\n8. Do not alter runtime data, run migrations/tests/builds, or claim implementation/owner acceptance under this planning task. Subsequent implementation and runtime review must be separately tracked.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-STORAGE",
+          "SC-TEMPLATES",
+          "SC-LIBRARY"
+        ],
+        "status": "planned",
+        "provenance": {
+          "type": "source_inspection_and_owner_decision",
+          "date": "2026-11-19",
+          "source_revision_ref": "06ca703418bf07929490852356eebbfdd40c2a75"
+        },
+        "implementation_state": "design_only_not_implemented",
+        "related_record_ids": [
+          "TASK-002",
+          "DEC-007",
+          "FND-003",
+          "FND-004",
+          "FND-005",
+          "BR-003",
+          "BR-013"
+        ]
       }
     ],
     "findings": [
@@ -762,6 +789,21 @@
           "date": "2026-11-19"
         },
         "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "DEC-007",
+        "title": "Current development/test data may be reset during schema restructuring",
+        "detail": "Owner explicitly authorizes discarding or rebuilding the CURRENT test-stage saved data if this simplifies the architecture. This does not authorize loss of future real user data, destruction of repository source history, or claims that any reset was actually run.",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-PROJECTS"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "permission_recorded_no_reset_performed"
       }
     ],
     "tasks": [
@@ -793,12 +835,20 @@
         "scope_refs": [
           "SC-PROJECTS"
         ],
-        "status": "unassigned",
+        "status": "completed",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "unverified_against_live_source"
+        "implementation_state": "planning_completed_not_implemented_or_tested",
+        "completed_on": "2026-11-19",
+        "result": "Completed schema-evolution design (SOL-002) using owner-approved reset of disposable CURRENT test data (DEC-007). No data was deleted, database migrations not applied, app code not changed. Future real-user data must be preserved, and live master inheritance is separate from schema upgrades.",
+        "evidence_refs": [
+          "SOL-002",
+          "DEC-007",
+          "FND-003",
+          "FND-004"
+        ]
       },
       {
         "record_id": "TASK-003",
@@ -883,14 +933,13 @@
     "open_conflict_relationship_ids": [],
     "blocked_record_ids": [],
     "next_work_record_ids": [
-      "TASK-002",
       "TASK-003",
       "TASK-004"
     ],
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "Owner decisions consolidated: centralized templates and live inheritance, permanent SQLite image ownership, safe cascade deletion, page-only Once elements, per-portfolio page numbers, and editor-only image object names (no printed image numbering). All owner questions resolved; implementation remains unverified.",
+    "current_summary": "TASK-001 source inspection complete (FND-003–005). TASK-002 design plan complete (SOL-002): current disposable test data may be reset (DEC-007), but no reset or implementation performed; real user data must be protected later. TASK-003/004 await separate source audit/implementation.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
