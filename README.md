@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 97 (TASK-017, source-only)
+
+V97 implements Smart Duplicate in the shared page, section-template and master-template designer. The **Smart Duplicate** toolbar menu keeps signed X/Y offsets (mm) per editing context; the existing Duplicate action and **Ctrl+D** duplicate selected local objects, then select the copies so that repeated Ctrl+D reuses the same displacement vector. Group members and Region Block descendants are duplicated together with fresh IDs and remapped membership; separately duplicated child objects remain inside their original Region Block. Image and Block labels are assigned new sequential names. Inherited/locked selections and offsets that cross page or Block boundaries are refused before mutation. Each duplicate is one Undo/Redo history operation.
+
+**Validation status:** SOURCE ONLY. No Build, Test, browser/Tauri runtime, PDF check or owner acceptance has been executed. TASK-017 remains in progress. Owner review should cover: repeated Ctrl+D (including negative/zero mm offsets), single image/text/shape, linked Group, Region Block with children, individually selected Block child, locked Group member, inherited master object, edges/overflow, undo/redo, saved/reopened objects and PDF layout.
+
+---
+
 # NSP Portfolio Builder — Version 94 (TASK-015, source-only)
 
 V94 refines Group/Ungroup as a membership relation distinct from Region Blocks. Local ordinary elements in the same local layer and outside Region Blocks may join a Group even if some are individually locked. Ungroup removes membership only and preserves each child lock. The Layers group folder exposes chain, selection and direct Ungroup controls. Canvas drag expands all group peers before transformations and refuses to move/resize a linked selection when any member is locked. Inherited master objects cannot be re-owned by grouping, and Region Block parent links are unchanged.
