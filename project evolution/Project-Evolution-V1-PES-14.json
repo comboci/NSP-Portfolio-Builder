@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V100 source candidate (Tauri 100.0.0), V99 storage completion protocol and V100 copy-reference integrity; owner runtime acceptance pending",
+    "software_release": "V101 source candidate (Tauri 101.0.0); TASK-008 issue navigation fix; pending owner runtime/PDF acceptance",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding. V96 dd8884b8 implements TASK-016 in the shared designer with px/mm geometry, grouped Block and Group movement, key/selection/page references, history and non-destructive bounds guards. No build or runtime review. V97 65d0788a implements TASK-017 signed-mm Ctrl+D duplication in the shared designer and preserves Group/Region Block ownership; owner runtime review outstanding. V98 TASK-018 based on V97 HEAD 1eb6f858f9457c6c45f35b27ac71d415d6f372ea; no Build/Test, runtime or PDF validation. V99 160af83c guards editor exit until async persistence acknowledgement. V100 efdf0e93 centralizes page/portfolio/master duplication and preserves source provenance while remapping local compound identities; source only, no build/runtime test.",
-    "source_revision_ref": "efdf0e939eb7ce3dadfcd9bdc4bc076f10470c18"
+    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding. V96 dd8884b8 implements TASK-016 in the shared designer with px/mm geometry, grouped Block and Group movement, key/selection/page references, history and non-destructive bounds guards. No build or runtime review. V97 65d0788a implements TASK-017 signed-mm Ctrl+D duplication in the shared designer and preserves Group/Region Block ownership; owner runtime review outstanding. V98 TASK-018 based on V97 HEAD 1eb6f858f9457c6c45f35b27ac71d415d6f372ea; no Build/Test, runtime or PDF validation. V99 160af83c guards editor exit until async persistence acknowledgement. V100 efdf0e93 centralizes page/portfolio/master duplication and preserves source provenance while remapping local compound identities; source only, no build/runtime test. V101 e2221346 replaces preflight go('visual') with direct page navigation and exact object provenance focus for TASK-008, with no build/runtime/PDF verification.",
+    "source_revision_ref": "e2221346b447e392566e257adc76ee92f0e3d7f5"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1175,14 +1175,17 @@
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "V82_source_implemented_pending_owner_print_pdf_runtime_review",
-        "source_version": "V82",
+        "implementation_state": "V101_source_navigation_fixed_pending_owner_print_pdf_runtime_review",
+        "source_version": "V101",
         "updated_on": "2026-11-19",
-        "result": "V82 source adds A4/A3 print format and configurable safe margin, checks object bounds, library/tile asset references, failed image loads, and rendered text overflow before print. Preview shows clickable issue reports; errors block printing, warnings require confirmation. Printer/PDF rendering, clickable navigation, and overflow detection require owner runtime acceptance; no build or automated test executed.",
+        "result": "V82 source adds A4/A3 print format and configurable safe margin, checks object bounds, library/tile asset references, failed image loads, and rendered text overflow before print. Preview shows clickable issue reports; errors block printing, warnings require confirmation. Printer/PDF rendering, clickable navigation, and overflow detection require owner runtime acceptance; no build or automated test executed. V101 e2221346 fixes preflight issue navigation by direct page opening in the active project portfolio instead of go('visual') list reset. Compound origin/owner/id tokens locate exact page or inherited elements. Scrolls selected canvas object or hidden Layers row; unchanged source content, no build or runtime verification.",
         "changed_files": [
           "index.html",
           "src-tauri/Cargo.toml",
           "src-tauri/tauri.conf.json"
+        ],
+        "evidence_refs": [
+          "OBS-021"
         ]
       },
       {
@@ -1980,6 +1983,26 @@
           "source_revision_ref": "efdf0e939eb7ce3dadfcd9bdc4bc076f10470c18"
         },
         "implementation_state": "V100_source_only_pending_owner_runtime_review"
+      },
+      {
+        "record_id": "OBS-021",
+        "title": "V101 TASK-008 print preflight issue navigation source fix",
+        "status": "source_implemented_runtime_unverified",
+        "detail": "From main cc6ea2be V100, commit e2221346b447e392566e257adc76ee92f0e3d7f5 fixes issue-link handling: preserve object provenance in the preflight report, navigate directly into active portfolio page editor, select exact source element including master/section inheritance, scroll its canvas or Layers row when hidden. Page-only issues still open the correct page. No build, automated test, browser/Tauri runtime or printer/PDF verification; owner acceptance pending.",
+        "scope_refs": [
+          "SC-PDF",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "TASK-008",
+          "TASK-025"
+        ],
+        "provenance": {
+          "type": "source_inspection_and_implementation",
+          "date": "2026-11-19",
+          "source_revision_ref": "e2221346b447e392566e257adc76ee92f0e3d7f5"
+        },
+        "implementation_state": "V101_source_committed_pending_owner_runtime_review"
       }
     ]
   },
@@ -2059,7 +2082,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V100 efdf0e93 on main addresses duplication reference integrity after V99 storage acknowledgement fixes; both source-only, pending owner runtime review. Next audit remediation: TASK-008 preflight clickable error navigation, then central Style Library DB persistence and asset ownership as warranted; re-fetch HEAD and PE before any write.",
+    "current_summary": "V101 e2221346 on main: TASK-008 preflight report can open the correct page and select/scroll to exact element including inherited objects. Next 'N' should take next defect from the review after a fresh HEAD check. Runtime/PDF acceptance pending.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
