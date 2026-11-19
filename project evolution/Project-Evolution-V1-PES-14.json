@@ -204,6 +204,26 @@
           "date": "2026-11-19"
         },
         "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "Q-005",
+        "title": "Define permitted public image Delete under irreversible public access",
+        "detail": "BR-006 prohibits making public images private, while TASK-027 requests Delete from the public catalog. Clarify whether Delete may remove only the user's gallery listing/owner-specific copy (without revoking global access), or under what explicit authorization an unreferenced public catalog record may be permanently removed. This is a policy/semantics conflict recorded for later decision; safe metadata renaming and other independent tasks can progress meanwhile. Physical image bytes must never be removed while any project/template/page/backup reference exists.",
+        "scope_refs": [
+          "SC-LIBRARY"
+        ],
+        "status": "open",
+        "provenance": {
+          "type": "source_review_backlog_reconciliation",
+          "date": "2026-11-19",
+          "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
+        },
+        "implementation_state": "owner_policy_clarification_not_yet_obtained",
+        "related_record_ids": [
+          "BR-006",
+          "TASK-027",
+          "FND-012"
+        ]
       }
     ],
     "analyses": [
@@ -472,6 +492,118 @@
           "TASK-024",
           "TASK-025"
         ]
+      },
+      {
+        "record_id": "FND-010",
+        "title": "Static checker and validation artifact stale versus V102",
+        "detail": "scripts/static-check.cjs still asserts an old V74 application version and STATIC_VALIDATION.json belongs to V74; they cannot establish that V102 source or SQLite schema revision 6 is correct. Reconcile via TASK-030; no tests/builds executed.",
+        "scope_refs": [
+          "SC-STORAGE"
+        ],
+        "status": "source_gap_confirmed",
+        "provenance": {
+          "type": "source_review_backlog_reconciliation",
+          "date": "2026-11-19",
+          "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
+        },
+        "implementation_state": "source_validation_debt_pending",
+        "related_record_ids": [
+          "TASK-030",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-011",
+        "title": "Image album organization and advanced image filter/print-quality requirements lack execution tasks",
+        "detail": "REQ-002 explicitly includes albums; REQ-006 includes grayscale, sepia, blur, sharpen and a print-quality warning. The V102 review identified no dedicated implemented album workflow and no complete assignment of the missing effects/quality requirements. TASK-028 covers albums; TASK-029 covers remaining image editing effects and print resolution warnings alongside TASK-019/020/021.",
+        "scope_refs": [
+          "SC-LIBRARY",
+          "SC-IMAGEEDIT",
+          "SC-PDF"
+        ],
+        "status": "requirement_coverage_gap",
+        "provenance": {
+          "type": "source_review_backlog_reconciliation",
+          "date": "2026-11-19",
+          "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
+        },
+        "implementation_state": "not_implemented_or_unverified_against_current_source",
+        "related_record_ids": [
+          "REQ-002",
+          "REQ-006",
+          "TASK-028",
+          "TASK-029"
+        ]
+      },
+      {
+        "record_id": "FND-012",
+        "title": "Public image deletion conflicts with irreversible-publication ownership contract",
+        "detail": "BR-006 and image_ownership::public_catalog specify public publication cannot be reversed; TASK-027 requires Delete controls for public images. Existing backend INSERT OR IGNORE stores public payload once, so renaming a public record in frontend alone would not persist new public metadata. Before implementing Delete, distinguish hiding/removing a gallery item, revoking public visibility, deleting one project's ownership, deleting public metadata, and physically garbage-collecting shared bytes; no public revocation or physical GC may be implemented without an explicit policy-compatible resolution and reference checks.",
+        "scope_refs": [
+          "SC-LIBRARY",
+          "SC-PROJECTS",
+          "SC-STORAGE"
+        ],
+        "status": "policy_contract_conflict_and_source_gap",
+        "provenance": {
+          "type": "source_review_backlog_reconciliation",
+          "date": "2026-11-19",
+          "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
+        },
+        "implementation_state": "pending_metadata_persistence_fix_and_safe_delete_policy",
+        "related_record_ids": [
+          "BR-003",
+          "BR-005",
+          "BR-006",
+          "BR-007",
+          "TASK-007",
+          "TASK-027",
+          "Q-005"
+        ]
+      },
+      {
+        "record_id": "FND-013",
+        "title": "Independent Save Page, editor clipboard and unsaved changes remain incomplete",
+        "detail": "TASK-013 implemented zoom, pan and fit, but Save Page/Ctrl+S versus Save Project semantics, Cut/Copy/Paste, per-page dirty tracking and save success/error signals remained incomplete at V102. TASK-023 covers Autosave toggle and unsaved-navigation Save/Discard/Cancel. V99 addressed one confirmed async-exit hazard only; neither TASK-013 nor TASK-023 is fully implemented. Keep the two tasks separate and do not count durable async acknowledgement as page-scoped save.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES",
+          "SC-STORAGE"
+        ],
+        "status": "source_gap_pending",
+        "provenance": {
+          "type": "source_review_backlog_reconciliation",
+          "date": "2026-11-19",
+          "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
+        },
+        "implementation_state": "partially_source_implemented_pending_remaining_controls",
+        "related_record_ids": [
+          "TASK-013",
+          "TASK-023",
+          "DEC-009"
+        ]
+      },
+      {
+        "record_id": "FND-014",
+        "title": "Legacy page-design routes and slide sorter remain to be reconciled with unified editor",
+        "detail": "V88 introduced a unified portfolio Pages entry and V85 a right-side thumbnail strip, but the V102 source review still found legacy page-design entry flow and global navigation routes. TASK-025 must remove disjoint redundant entry points without breaking system template design, TASK-022 still requires the independent multi-page overview if not superseded by owner, and TASK-026 must move import/export/print/order controls to appropriate project/portfolio contexts.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-PROJECTS",
+          "SC-TEMPLATES"
+        ],
+        "status": "source_gap_pending",
+        "provenance": {
+          "type": "source_review_backlog_reconciliation",
+          "date": "2026-11-19",
+          "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
+        },
+        "implementation_state": "partially_source_implemented_pending_entrypoint_reconciliation",
+        "related_record_ids": [
+          "TASK-022",
+          "TASK-025",
+          "TASK-026"
+        ]
       }
     ],
     "business_rules": [
@@ -691,16 +823,20 @@
       {
         "record_id": "REQ-003",
         "title": "Dockable library",
-        "detail": "Dock panel alongside Layers/Properties, pin/unpin, select multiple assets, drag/drop to page.",
+        "detail": "Dock panel alongside Layers/Properties, pin/unpin, select multiple assets, drag/drop to page.\nOwner's later instruction supersedes the editor Library dock: no separate Library tab alongside Layers/Properties. Image selection uses a contextual private/public picker, while the left designer dock contains Properties/Layers/History with hover/pin behavior. Do not reintroduce a docked Library from this outdated requirement.",
         "scope_refs": [
           "SC-LIBRARY"
         ],
-        "status": "approved_intent",
+        "status": "superseded",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "unverified_against_live_source"
+        "implementation_state": "superseded_by_owner_request_for_contextual_image_picker",
+        "related_record_ids": [
+          "OBS-006",
+          "OBS-002"
+        ]
       },
       {
         "record_id": "REQ-004",
@@ -1091,7 +1227,7 @@
       {
         "record_id": "TASK-006",
         "title": "Implement real relational projects, portfolios and global template model",
-        "detail": "Replace V77 fixed workspace-only relational projection with project/portfolio records and centralized system-wide templates. Use SOL-002; current test data may be reset with clear warning, but do not destroy real user data. Implement live inheritance and restrictive inherited property overrides as per BR-008..010. Source changes, owner runtime acceptance and backup strategy tracked separately.",
+        "detail": "Replace V77 fixed workspace-only relational projection with project/portfolio records and centralized system-wide templates. Use SOL-002; current test data may be reset with clear warning, but do not destroy real user data. Implement live inheritance and restrictive inherited property overrides as per BR-008..010. Source changes, owner runtime acceptance and backup strategy tracked separately.\nBacklog reconciliation 2026-11-19 (V102 static review): V102 relational/central-style schema migration still requires source review for compatibility and owner-run persistence/backup/reopen; neither prior source commitment nor planning closes all project/template model obligations.",
         "scope_refs": [
           "SC-PROJECTS",
           "SC-TEMPLATES",
@@ -1101,7 +1237,9 @@
           "SOL-002",
           "FND-003",
           "FND-004",
-          "DEC-007"
+          "DEC-007",
+          "TASK-014",
+          "FND-010"
         ],
         "status": "in_progress",
         "provenance": {
@@ -1127,7 +1265,7 @@
       {
         "record_id": "TASK-007",
         "title": "Implement multi-project image ownership and global/private library",
-        "detail": "Build SOL-003: stable assets, many-to-many permanent project ownership, public catalog, usage references across templates/pages/tiles/backups, safe cascading deletes, independent per-project browsing. Resolve storage-root portability vs Tauri app-local root; do not enable unsafe physical garbage collection.",
+        "detail": "Build SOL-003: stable assets, many-to-many permanent project ownership, public catalog, usage references across templates/pages/tiles/backups, safe cascading deletes, independent per-project browsing. Resolve storage-root portability vs Tauri app-local root; do not enable unsafe physical garbage collection.\nBacklog reconciliation 2026-11-19 (V102 static review): Reconcile permanent owner relation, independent public catalog metadata and reference edges through all projects/templates/tiles/backups; NO unsafe physical file garbage collection. Public metadata update and removal contract are tracked in TASK-027/FND-012.",
         "scope_refs": [
           "SC-LIBRARY",
           "SC-STORAGE"
@@ -1139,7 +1277,10 @@
           "BR-003",
           "BR-005",
           "BR-006",
-          "BR-007"
+          "BR-007",
+          "FND-012",
+          "Q-005",
+          "TASK-027"
         ],
         "status": "in_progress",
         "provenance": {
@@ -1168,11 +1309,13 @@
       {
         "record_id": "TASK-008",
         "title": "PDF and office-print preflight",
-        "detail": "Validate text overflow, page bounds, missing images, A4/A3 paper settings and configurable safe printable margins; clickable errors locate affected objects; PDF preview. No bleed, crop marks or mandatory CMYK.",
+        "detail": "Validate text overflow, page bounds, missing images, A4/A3 paper settings and configurable safe printable margins; clickable errors locate affected objects; PDF preview. No bleed, crop marks or mandatory CMYK.\nBacklog reconciliation 2026-11-19 (V102 static review): V101 issue navigation is a source-only fix pending owner Print/PDF review; print-quality effective-DPI warnings not yet fully covered by print preflight, tracked separately in TASK-029.",
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
-        "related_record_ids": [],
+        "related_record_ids": [
+          "TASK-029"
+        ],
         "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
@@ -1267,11 +1410,14 @@
       {
         "record_id": "TASK-013",
         "title": "Design toolbar and zoom/pan",
-        "detail": "Top toolbar Save Page (Ctrl+S, current page only), Save Project (all changed pages, separate explicit action), Print, Undo/Redo, Cut/Copy/Paste, Zoom, Pan, Fit Page and Show/Hide Guides. Display save success/errors and dirty-page state. V92 partial source candidate: top editor toolbar now exposes session-only per-context Zoom 35%-250%, Pan drag, Fit Page, portfolio Print/PDF and existing page-only Guides toggle. It does not modify design geometry, the page's persistent data or Undo/Redo. Remaining: separated Save Page/Ctrl+S versus Save Project semantics, clipboard Cut/Copy/Paste and reliable dirty/error state; current workspace-level asynchronous storage requires deliberate refactor under DEC-009/TASK-023. No Build/Test or runtime verification; owner review is required.",
+        "detail": "Top toolbar Save Page (Ctrl+S, current page only), Save Project (all changed pages, separate explicit action), Print, Undo/Redo, Cut/Copy/Paste, Zoom, Pan, Fit Page and Show/Hide Guides. Display save success/errors and dirty-page state. V92 partial source candidate: top editor toolbar now exposes session-only per-context Zoom 35%-250%, Pan drag, Fit Page, portfolio Print/PDF and existing page-only Guides toggle. It does not modify design geometry, the page's persistent data or Undo/Redo. Remaining: separated Save Page/Ctrl+S versus Save Project semantics, clipboard Cut/Copy/Paste and reliable dirty/error state; current workspace-level asynchronous storage requires deliberate refactor under DEC-009/TASK-023. No Build/Test or runtime verification; owner review is required.\nBacklog reconciliation 2026-11-19 (V102 static review): Still missing real independent Save Page (Ctrl+S) vs Save Project, Cut/Copy/Paste, truthful per-page dirty/error states. V99 protects against navigating away before a queued save confirms persistence but does not implement separate save scopes; preserve DEC-009.",
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
-        "related_record_ids": [],
+        "related_record_ids": [
+          "FND-013",
+          "TASK-023"
+        ],
         "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
@@ -1282,11 +1428,14 @@
       {
         "record_id": "TASK-014",
         "title": "Style Library",
-        "detail": "Word-like linked named styles for text, colors and optionally frames. ONE CENTRAL SHARED STYLE LIBRARY ONLY, available to every project; no project-specific style definitions, overrides or forks. Style updates propagate to linked objects without altering geometry or master ownership. V93 source candidate adds a sole central named text-style catalog (font, size, color, weight), globally shared across project switches via V78 global catalog, with editable local text style binding and live render-time resolution for inherited template objects. An editor menu provides style create/edit and safe deletion guard when referenced, with schema-2 backward-compatible normalization. No local style definitions, and geometry remains independent. Source changes are not built or runtime/PDF verified; owner acceptance pending.",
+        "detail": "Word-like linked named styles for text, colors and optionally frames. ONE CENTRAL SHARED STYLE LIBRARY ONLY, available to every project; no project-specific style definitions, overrides or forks. Style updates propagate to linked objects without altering geometry or master ownership. V93 source candidate adds a sole central named text-style catalog (font, size, color, weight), globally shared across project switches via V78 global catalog, with editable local text style binding and live render-time resolution for inherited template objects. An editor menu provides style create/edit and safe deletion guard when referenced, with schema-2 backward-compatible normalization. No local style definitions, and geometry remains independent. Source changes are not built or runtime/PDF verified; owner acceptance pending.\nBacklog reconciliation 2026-11-19 (V102 static review): V102 SQLite schema 6 and style backfill are source changes only; follow up canonical catalog on project switches, legacy backups, failure rollback and reopen (owner runs acceptance). Static tooling must not claim V102 passed.",
         "scope_refs": [
           "SC-TEMPLATES"
         ],
-        "related_record_ids": [],
+        "related_record_ids": [
+          "TASK-030",
+          "FND-010"
+        ],
         "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
@@ -1452,13 +1601,14 @@
       {
         "record_id": "TASK-022",
         "title": "Multi-Page Overview",
-        "detail": "Slide-sorter thumbnail view of all portfolio pages; drag-drop reorder, duplicate, delete with confirmation, double-click to edit. Preserve master-template relationships and page content. Owner 2026-11-19 follow-up requires integrating this sidebar into the sole portfolio Pages editing entry point and removing duplicate Visual Design routes; tracked separately by TASK-025. V85 source exists; runtime review remains pending.",
+        "detail": "Slide-sorter thumbnail view of all portfolio pages; drag-drop reorder, duplicate, delete with confirmation, double-click to edit. Preserve master-template relationships and page content. Owner 2026-11-19 follow-up requires integrating this sidebar into the sole portfolio Pages editing entry point and removing duplicate Visual Design routes; tracked separately by TASK-025. V85 source exists; runtime review remains pending.\nBacklog reconciliation 2026-11-19 (V102 static review): The right sidebar added V85 does not by itself implement or verify the separately specified full-screen/generic slide sorter; avoid marking entire task done without checking owner intent and preserving master references.",
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
         "related_record_ids": [
           "TASK-025",
-          "OBS-005"
+          "OBS-005",
+          "FND-014"
         ],
         "status": "in_progress",
         "provenance": {
@@ -1478,7 +1628,7 @@
       {
         "record_id": "TASK-023",
         "title": "Editor autosave toggle, dirty-state tracking and unsaved-exit confirmation",
-        "detail": "Owner runtime follow-up not implemented as of V85. Add a visible autosave checkbox at the top of the page/template editor. When enabled, persist editor changes automatically with honest saved/error feedback. When disabled, track dirty edits and on Save/Back, navigation, page switch and window exit require Save / Discard / Cancel handling as appropriate; prevent silent data loss and maintain DEC-009 separation of Save Page and Save Project. Acceptance: edit without saving then leave with checkbox off -> clear prompt; checkbox on -> saved state survives reopen; saving failure never claims success; no duplicate or unexpected auto-save.",
+        "detail": "Owner runtime follow-up not implemented as of V85. Add a visible autosave checkbox at the top of the page/template editor. When enabled, persist editor changes automatically with honest saved/error feedback. When disabled, track dirty edits and on Save/Back, navigation, page switch and window exit require Save / Discard / Cancel handling as appropriate; prevent silent data loss and maintain DEC-009 separation of Save Page and Save Project. Acceptance: edit without saving then leave with checkbox off -> clear prompt; checkbox on -> saved state survives reopen; saving failure never claims success; no duplicate or unexpected auto-save.\nBacklog reconciliation 2026-11-19 (V102 static review): No confirmed Autosave checkbox or complete Save/Discard/Cancel unsaved navigation flow. V99 asynchronous save exit guard is partial, not full TASK-023 implementation.",
         "scope_refs": [
           "SC-TEMPLATES",
           "SC-PORTFOLIOS",
@@ -1486,7 +1636,9 @@
         ],
         "related_record_ids": [
           "DEC-009",
-          "OBS-001"
+          "OBS-001",
+          "FND-013",
+          "TASK-013"
         ],
         "status": "planned",
         "provenance": {
@@ -1530,7 +1682,7 @@
       {
         "record_id": "TASK-025",
         "title": "Unify portfolio Pages and Visual Design into one editor with thumbnail sidebar",
-        "detail": "Owner follow-up on partially source-implemented TASK-022/V85. Eliminate separate competing 'Visual Design' and page-edit entry flows: selecting Pages on a project portfolio should open the same editable workspace, with a scrollable vertical right-side slide-thumbnail strip, click-to-select and reorder, add a page from a page/master template in that workspace, edit/delete/save without changing context, and double-click text or an image to access its edit/replace behavior. Remove/hide redundant 'Visual Design for this page' entry points instead of maintaining two disjoint editors. Preserve page order, inherited elements and project-scoped asset picker. Source of thumbnail strip already committed V85; this task covers remaining workflow integration and owner runtime verification, not a claim that TASK-022 was never coded.",
+        "detail": "Owner follow-up on partially source-implemented TASK-022/V85. Eliminate separate competing 'Visual Design' and page-edit entry flows: selecting Pages on a project portfolio should open the same editable workspace, with a scrollable vertical right-side slide-thumbnail strip, click-to-select and reorder, add a page from a page/master template in that workspace, edit/delete/save without changing context, and double-click text or an image to access its edit/replace behavior. Remove/hide redundant 'Visual Design for this page' entry points instead of maintaining two disjoint editors. Preserve page order, inherited elements and project-scoped asset picker. Source of thumbnail strip already committed V85; this task covers remaining workflow integration and owner runtime verification, not a claim that TASK-022 was never coded.\nBacklog reconciliation 2026-11-19 (V102 static review): Audit and remove duplicate legacy design/list entry routes still present in V102 while retaining the genuine global master/page-template design workflow and the project portfolio thumbnail editor.",
         "scope_refs": [
           "SC-PROJECTS",
           "SC-PORTFOLIOS",
@@ -1540,7 +1692,8 @@
         "related_record_ids": [
           "TASK-022",
           "OBS-004",
-          "OBS-005"
+          "OBS-005",
+          "FND-014"
         ],
         "status": "in_progress",
         "provenance": {
@@ -1556,7 +1709,7 @@
       {
         "record_id": "TASK-026",
         "title": "Restructure Import/Export/Print and page-order navigation by project context",
-        "detail": "Owner follow-up pending as of V85. Remove generic 'File > Import, Export & Print' and the redundant Preview/Print and Page Order entries from the global Operations menus. Keep system-level Import for importing an entire project. In the corresponding project/portfolio context provide relevant Export and Print actions; also allow importing a previously saved portfolio backup into the intended project while retaining existing Backup functionality. Page-order editing belongs in the in-portfolio thumbnail editor, not global Operations. Separate Import from Export instead of one mixed page. Verify no action is lost and each import targets the selected project, while print/export targets the correct portfolio/document.\nOwner clarification: system-level Import imports a complete project; inside a selected project, Import imports a previously saved portfolio into that project; Export and Print are contextual actions for the selected project/portfolio. Remove duplicate Import/Export/Print and Page Order routes from global File/Operations, without losing backup capability. Distinguish project-level and portfolio-level destinations explicitly.",
+        "detail": "Owner follow-up pending as of V85. Remove generic 'File > Import, Export & Print' and the redundant Preview/Print and Page Order entries from the global Operations menus. Keep system-level Import for importing an entire project. In the corresponding project/portfolio context provide relevant Export and Print actions; also allow importing a previously saved portfolio backup into the intended project while retaining existing Backup functionality. Page-order editing belongs in the in-portfolio thumbnail editor, not global Operations. Separate Import from Export instead of one mixed page. Verify no action is lost and each import targets the selected project, while print/export targets the correct portfolio/document.\nOwner clarification: system-level Import imports a complete project; inside a selected project, Import imports a previously saved portfolio into that project; Export and Print are contextual actions for the selected project/portfolio. Remove duplicate Import/Export/Print and Page Order routes from global File/Operations, without losing backup capability. Distinguish project-level and portfolio-level destinations explicitly.\nBacklog reconciliation 2026-11-19 (V102 static review): Still lacks explicit system-wide whole-project Import vs selected-project portfolio Import, and project/portfolio Export/Print context. Old duplicate global Operations/Preview/Page Order routes should be reconciled without losing Backup.",
         "scope_refs": [
           "SC-PROJECTS",
           "SC-PORTFOLIOS",
@@ -1566,7 +1719,8 @@
         "related_record_ids": [
           "TASK-022",
           "REQ-001",
-          "OBS-005"
+          "OBS-005",
+          "FND-014"
         ],
         "status": "planned",
         "provenance": {
@@ -1578,7 +1732,7 @@
       {
         "record_id": "TASK-027",
         "title": "Complete global public image library asset rename and safe delete",
-        "detail": "Owner runtime follow-up pending as of V85. Global public-image gallery currently offers upload and add-to-project but lacks the owner-requested Rename and Delete actions for public images. Add visible per-image rename and safe delete with confirmation, reference/ownership integrity checks and a clear blocked-state explanation for assets still in use; preserve independence of project-private images and prevent accidental deletion across other projects. Public-only editor image pickers and project-specific private/public tabs from V84 must not regress. Acceptance: rename persists, deletion handles referenced/unreferenced assets safely, other projects remain intact.",
+        "detail": "Owner runtime follow-up pending as of V85. Global public-image gallery currently offers upload and add-to-project but lacks the owner-requested Rename and Delete actions for public images. Add visible per-image rename and safe delete with confirmation, reference/ownership integrity checks and a clear blocked-state explanation for assets still in use; preserve independence of project-private images and prevent accidental deletion across other projects. Public-only editor image pickers and project-specific private/public tabs from V84 must not regress. Acceptance: rename persists, deletion handles referenced/unreferenced assets safely, other projects remain intact.\nBacklog reconciliation 2026-11-19 (V102 static review): Rename must update persisted image_public_catalog payload after immutable asset hash verification; current insert-or-ignore does not propagate new name. Delete cannot silently revoke permanent public visibility under BR-006; clarify Q-005, guard any permissible action against project owners, global template/page/tile edges and backups, and keep physical bytes intact until provably orphaned. UI needs blocked-state reasons.",
         "scope_refs": [
           "SC-LIBRARY",
           "SC-PROJECTS",
@@ -1590,7 +1744,9 @@
           "BR-005",
           "BR-006",
           "BR-007",
-          "OBS-004"
+          "OBS-004",
+          "FND-012",
+          "Q-005"
         ],
         "status": "planned",
         "provenance": {
@@ -1598,6 +1754,81 @@
           "date": "2026-11-19"
         },
         "implementation_state": "owner_requested_not_implemented_as_of_V85"
+      },
+      {
+        "record_id": "TASK-028",
+        "title": "Image Library albums, metadata and bulk organization",
+        "detail": "Cover previously unassigned REQ-002 Album feature. Provide add/rename/delete albums, assign/remove images in bulk without changing immutable asset bytes or independent project ownership, album browsing/filter/search/metadata, scope separation between project-private and global/public library, persistence across project switches/reopen and backup/restore, and explicit handling of album deletion without deleting referenced image assets. Protect projects from private-asset leakage. Album management was not found implemented in the V102 source audit. No build/runtime verification performed.",
+        "scope_refs": [
+          "SC-LIBRARY",
+          "SC-PROJECTS",
+          "SC-STORAGE"
+        ],
+        "related_record_ids": [
+          "REQ-002",
+          "TASK-007",
+          "TASK-027",
+          "FND-011"
+        ],
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_backlog_reconciliation",
+          "date": "2026-11-19",
+          "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
+        },
+        "implementation_state": "unimplemented_requirement_identified_by_V102_static_review",
+        "source_version": null,
+        "updated_on": "2026-11-19"
+      },
+      {
+        "record_id": "TASK-029",
+        "title": "Complete missing image filters and print-resolution warnings",
+        "detail": "Cover REQ-006 gaps not fully assigned to TASK-019/020/021: non-destructive grayscale, sepia, blur and sharpen, per-image/per-tile independent settings and Reset, consistent canvas/preview/PDF rendering, safe preservation of original library file, and a print quality warning from effective DPI after crop/zoom/scaling (separate from hard asset-missing/overflow errors). Inspect current rotation/flip/opacity/mask implementations before adding duplicate controls. Acceptance: no changes to asset bytes, repeatable edit/reload, independent tiles and accurate PDF/preflight warning. Source-only identification, no tests/builds.",
+        "scope_refs": [
+          "SC-IMAGEEDIT",
+          "SC-PDF",
+          "SC-TILES"
+        ],
+        "related_record_ids": [
+          "REQ-006",
+          "TASK-008",
+          "TASK-019",
+          "TASK-020",
+          "TASK-021",
+          "FND-011"
+        ],
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_backlog_reconciliation",
+          "date": "2026-11-19",
+          "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
+        },
+        "implementation_state": "unimplemented_requirement_identified_by_V102_static_review",
+        "source_version": null,
+        "updated_on": "2026-11-19"
+      },
+      {
+        "record_id": "TASK-030",
+        "title": "Update source-level static validation to current releases and migrations",
+        "detail": "Repair scripts/static-check.cjs and STATIC_VALIDATION.json which remained tied to V74 while source advanced to V102 and SQLite schema revision 6. Make expected version/schema derive from current source/release metadata or be automatically maintained; verify source markers, links between UI/Cargo/Tauri versions and migration references, and maintain a clearly dated static-review artifact. Never pass off stale V74 checks as V102 verification, and do not run tests/builds under DEC-006 without changing owner policy. Keep this independent from runtime acceptance.",
+        "scope_refs": [
+          "SC-STORAGE"
+        ],
+        "related_record_ids": [
+          "DEC-006",
+          "TASK-006",
+          "TASK-014",
+          "FND-010"
+        ],
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_backlog_reconciliation",
+          "date": "2026-11-19",
+          "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
+        },
+        "implementation_state": "unimplemented_requirement_identified_by_V102_static_review",
+        "source_version": null,
+        "updated_on": "2026-11-19"
       }
     ],
     "evidence": [],
@@ -2042,6 +2273,36 @@
           "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
         },
         "implementation_state": "V102_source_committed_pending_owner_runtime_review"
+      },
+      {
+        "record_id": "OBS-023",
+        "title": "V102 static backlog reconciliation: unassigned requirements and unfinished source review items",
+        "status": "requirements_registered_no_product_source_change",
+        "detail": "Registered TASK-028 for Image Library albums, TASK-029 for missing image filters and print-quality warnings, and TASK-030 for stale static validation. Extended existing TASK-006/007/008/013/014/022/023/025/026/027 with source-review gaps; recorded FND-010..014, unresolved Q-005 for public Delete semantics, and superseded obsolete docked-library requirement REQ-003. V100 copy-reference fix and V101 preflight navigation fix remain source-implemented with owner acceptance pending. This was documentation-only; did not edit app source, build, test or perform runtime review.",
+        "scope_refs": [
+          "SC-LIBRARY",
+          "SC-PORTFOLIOS",
+          "SC-IMAGEEDIT",
+          "SC-PDF",
+          "SC-STORAGE"
+        ],
+        "related_record_ids": [
+          "TASK-028",
+          "TASK-029",
+          "TASK-030",
+          "FND-010",
+          "FND-011",
+          "FND-012",
+          "FND-013",
+          "FND-014",
+          "Q-005"
+        ],
+        "provenance": {
+          "type": "source_review_backlog_reconciliation",
+          "date": "2026-11-19",
+          "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
+        },
+        "implementation_state": "recorded_only_not_implemented"
       }
     ]
   },
@@ -2090,7 +2351,9 @@
     "default_contract_ref": "RETRIEVAL-DEFAULT"
   },
   "open_state": {
-    "open_question_ids": [],
+    "open_question_ids": [
+      "Q-005"
+    ],
     "open_conflict_relationship_ids": [],
     "blocked_record_ids": [],
     "next_work_record_ids": [
@@ -2116,12 +2379,15 @@
       "TASK-024",
       "TASK-025",
       "TASK-026",
-      "TASK-027"
+      "TASK-027",
+      "TASK-028",
+      "TASK-029",
+      "TASK-030"
     ],
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V102 bee05475 on main: TASK-014 central Style Library now has SQLite schema 6 shared_styles table and migration preserving prior backups, source only. Next N: inspect image ownership/public catalog and deletion integrity review findings from fresh main; owner runtime remains pending.",
+    "current_summary": "V102 source HEAD bee05475, PE-only backlog checkpoint 2026-11-19: TASK-028 (albums), TASK-029 (missing image effects and print-quality warnings), TASK-030 (static-check V74 drift) newly registered; existing TASK-006/007/008/013/014/022/023/025/026/027 reconciled; public Delete conflict Q-005, superseded docked Library REQ-003. No app source edited, no tests/builds; continue N remediation only after fresh main SHA and review of safe public deletion policy.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -2149,7 +2415,8 @@
       "V96 TASK-016 is source-only. Runtime acceptance needed for alignment/distribution directions, mm conversion, all three reference modes, Region Block/Group safeguards, inherited/locked objects, Undo/Redo and save/reopen.",
       "V97 TASK-017 is source-only. Owner should review repeated Ctrl+D, sign and magnitude of offsets, zero offset, Group and Region Block copy integrity, locked/inherited rejection, edge overflow, undo/redo, save/reopen and PDF geometry; no Build/Test/runtime or owner acceptance.",
       "V98 TASK-018: rotation/mirror disables mouse resize handles pending local-axis geometry; owner should check pivots, aspect lock, Ctrl-center, Block bounds, undo/redo, persistence and PDF parity. Source-only.",
-      "V102 TASK-014 requires owner Tauri runtime verification of migration from schema 5, global styles across project switches, style references and error recovery; no Build/Test performed."
+      "V102 TASK-014 requires owner Tauri runtime verification of migration from schema 5, global styles across project switches, style references and error recovery; no Build/Test performed.",
+      "The 2026-11-19 V102 backlog review was source/documentation only; Task 028–030 are not implemented and the public image Delete policy is unresolved (Q-005)."
     ]
   }
 }
