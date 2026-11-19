@@ -263,6 +263,34 @@
           "BR-003",
           "BR-013"
         ]
+      },
+      {
+        "record_id": "SOL-003",
+        "title": "Image library ownership/scope alignment for future implementation",
+        "detail": "1. Current source: SHA-256 immutable media_store physical files (src-tauri/src/media_store.rs:30-56), one active project imageLibrary in JS (index.html:1148-1166), and fixed workspace image_files/image_refs/scene_links (main.rs:46-85; media_store.rs:159-230). These are NOT project/global multi-owner semantics.\n2. Target: asset_files(hash) is the sole immutable physical byte store; logical image records are distinct from asset hash; project_asset_ownership(project_id,image_id or hash) is durable many-to-many; public image catalog state is independent of any single project.\n3. Granting ownership to project B is additive and irreversible from project A, without byte copying. Public access is one-way; simply viewing/using a public image does not grant project ownership. Explicit Add to Project Library creates ownership.\n4. Maintain independent active usage edges from page/template/tile cells (including hidden stash) and backups. Deletion checks usage before removing project-specific ownership. Project cascade can clear its records but cannot delete any physical asset with ownership, usage or backup references elsewhere.\n5. Do not enable physical asset deletion/garbage collection until full reference coverage across projects, global templates, tile stash and backups is established and owner-reviewed.\n6. Separate read-only Global Library view from per-project library; crossing a project boundary must not accidentally copy/revoke an image or expose private photos.\n7. Respect existing source modifications by other developers: work from fresh main HEAD, minimize conflicts with frontend image tile/crop feature code, and make ownership backend changes in a separate implementation commit.\n8. Images root: existing writable Tauri storage/assets and DEC-003 proposed images/ beside index.html are not equivalent without deployment-specific design. Preserve this divergence visibly until implementation resolves storage-root behavior; never assume packaged UI directory is writable.\n9. Current owner has authorized clearing development TEST data if necessary; production migration/backup/restore and integrity remain mandatory before real data is used.",
+        "scope_refs": [
+          "SC-LIBRARY",
+          "SC-STORAGE",
+          "SC-PROJECTS"
+        ],
+        "status": "design_aligned",
+        "provenance": {
+          "type": "source_inspection",
+          "date": "2026-11-19",
+          "source_revision_ref": "148ec10818264622a7ac0a97586084faf94b4592"
+        },
+        "implementation_state": "source_gap_identified_no_code_change",
+        "related_record_ids": [
+          "TASK-004",
+          "SOL-002",
+          "DEC-003",
+          "BR-003",
+          "BR-005",
+          "BR-006",
+          "BR-007",
+          "FND-003",
+          "FND-005"
+        ]
       }
     ],
     "findings": [
@@ -939,12 +967,18 @@
         "scope_refs": [
           "SC-LIBRARY"
         ],
-        "status": "unassigned",
+        "status": "completed",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "unverified_against_live_source"
+        "implementation_state": "source_design_alignment_complete_implementation_pending",
+        "completed_on": "2026-11-19",
+        "result": "Project-local vs global image scopes and multi-owner asset model aligned to approved rules; documented as SOL-003, including Tauri asset root divergence. No frontend/backend logic was changed or tested. Implement through TASK-007.",
+        "evidence_refs": [
+          "SOL-003",
+          "FND-005"
+        ]
       },
       {
         "record_id": "TASK-005",
@@ -967,6 +1001,52 @@
           "FND-008",
           "TASK-003"
         ]
+      },
+      {
+        "record_id": "TASK-006",
+        "title": "Implement real relational projects, portfolios and global template model",
+        "detail": "Replace V77 fixed workspace-only relational projection with project/portfolio records and centralized system-wide templates. Use SOL-002; current test data may be reset with clear warning, but do not destroy real user data. Implement live inheritance and restrictive inherited property overrides as per BR-008..010. Source changes, owner runtime acceptance and backup strategy tracked separately.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-TEMPLATES",
+          "SC-STORAGE"
+        ],
+        "related_record_ids": [
+          "SOL-002",
+          "FND-003",
+          "FND-004",
+          "DEC-007"
+        ],
+        "status": "unassigned",
+        "provenance": {
+          "type": "source_audit_follow_up",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "not_started"
+      },
+      {
+        "record_id": "TASK-007",
+        "title": "Implement multi-project image ownership and global/private library",
+        "detail": "Build SOL-003: stable assets, many-to-many permanent project ownership, public catalog, usage references across templates/pages/tiles/backups, safe cascading deletes, independent per-project browsing. Resolve storage-root portability vs Tauri app-local root; do not enable unsafe physical garbage collection.",
+        "scope_refs": [
+          "SC-LIBRARY",
+          "SC-STORAGE"
+        ],
+        "related_record_ids": [
+          "SOL-003",
+          "FND-005",
+          "DEC-003",
+          "BR-003",
+          "BR-005",
+          "BR-006",
+          "BR-007"
+        ],
+        "status": "unassigned",
+        "provenance": {
+          "type": "source_audit_follow_up",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "not_started"
       }
     ],
     "evidence": [],
@@ -1023,13 +1103,14 @@
     "open_conflict_relationship_ids": [],
     "blocked_record_ids": [],
     "next_work_record_ids": [
-      "TASK-004",
-      "TASK-005"
+      "TASK-005",
+      "TASK-006",
+      "TASK-007"
     ],
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "TASK-001 static audit complete (FND-003–005); TASK-002 schema planning complete (SOL-002, DEC-007 test data disposable); TASK-003 source verification complete with missing capabilities (FND-006–008 and implementation TASK-005). No migrations, code changes, builds, runtime tests or owner acceptance. TASK-004 remains open.",
+    "current_summary": "TASK-001–004 analysis/design/source-verification tasks completed and committed. Important: NONE of the source implementation gaps is fixed. Current test data may be reset by owner decision (DEC-007). Open implementation tasks: TASK-005 (numbering/Once), TASK-006 (relational projects/global templates), TASK-007 (multi-owner image libraries); no builds/tests/runtime or owner acceptance.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
