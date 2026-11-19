@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V85 source candidate (Tauri 85.0.0); TASK-009, template/project image scopes and project page thumbnail sidebar source-implemented; runtime unverified",
+    "software_release": "V86 source candidate (Tauri 86.0.0); designer dock moved to left of canvas while portfolio page thumbnails remain right; runtime unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending.",
-    "source_revision_ref": "23a009bb94f941351f755dbc6dacefba6ad46fd3"
+    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed.",
+    "source_revision_ref": "f2dab59966d174c9b45b505c9c3bb3e70f9e0ccb"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1638,6 +1638,22 @@
           "date": "2026-11-19"
         },
         "implementation_state": "requirements_registered_only"
+      },
+      {
+        "record_id": "OBS-008",
+        "title": "V86 owner runtime review: relocate designer dock to left",
+        "status": "source_implemented_runtime_unverified",
+        "detail": "Owner screenshot of V85 showed Properties/Layers dock between canvas and right-hand portfolio thumbnails, impairing Visual Studio-like hover/pin positioning. V86 moves the shared editor dock physically left of the canvas, preserves RTL contents and original hover/flyout/pin controller, and retains the PowerPoint-style page thumbnail sidebar to the right. This is a source-only CSS change plus matching HTML/Tauri/Cargo version markers. Runtime testing and owner acceptance remain pending.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS"
+        ],
+        "provenance": {
+          "type": "owner_runtime_review_and_source_change",
+          "date": "2026-11-19",
+          "source_revision_ref": "f2dab59966d174c9b45b505c9c3bb3e70f9e0ccb"
+        },
+        "implementation_state": "V86_source_committed_pending_owner_runtime_review"
       }
     ]
   },
@@ -1717,7 +1733,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V85 is the latest product source on main: V83 TASK-009 guides, V84 public-only system template/image scope and demo-page inheritance count, V85 right-side portfolio page thumbnails; all remain runtime-unverified where indicated. 2026-11-19 owner asked to register ALL known unimplemented follow-ups and STOP until next instruction. TASK-023–TASK-027 have been added as planned; do not implement, build, test or commit product source in response to this request. TASK-022 remains in_progress, with TASK-025 tracking remaining workflow integration. Existing TASK-005–TASK-009 and V81–V85 runtime validation remain pending acceptance.",
+    "current_summary": "V86 f2dab599 implements owner-requested designer layout correction (left dock, right thumbnails) but remains runtime-unverified. V85 and earlier source changes remain subject to owner acceptance. Next planned user-requested UI follow-ups include TASK-023 to TASK-027; implementation authorized after this runtime review.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -1736,8 +1752,7 @@
       "No source build or runtime review performed.",
       "Formal semantic conformance beyond JSON shape is not claimed.",
       "Existing image work may change HEAD concurrently.",
-      "Previous PES-13 candidate was not canonical and was not merged as authoritative source.",
-      "Owner explicitly paused implementation after task registration; wait for new instruction."
+      "Previous PES-13 candidate was not canonical and was not merged as authoritative source."
     ]
   }
 }
