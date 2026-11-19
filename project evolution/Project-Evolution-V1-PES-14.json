@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V87 source candidate (Tauri 87.0.0); V86 left-side dock, V87 simplified Projects expansion; runtime unverified",
+    "software_release": "V88 source candidate (Tauri 88.0.0); V86 left designer dock, V87 clean Projects list, V88 unified Pages editor; runtime unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed. V87 0cbd0379 restructures expanded Projects presentation for TASK-024; no runtime validation.",
-    "source_revision_ref": "0cbd037992c9e2159590a573aca72f33fbe9488f"
+    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed. V87 0cbd0379 restructures expanded Projects presentation for TASK-024; no runtime validation. V88 1e617a31 unifies project Pages create/edit navigation for TASK-025; source only.",
+    "source_revision_ref": "1e617a31113768f8f9bdd8c1396bb20caf65b5c1"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1453,12 +1453,16 @@
           "OBS-004",
           "OBS-005"
         ],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "owner_requested_integration_pending_V85_partial_source"
+        "implementation_state": "V88_source_implemented_pending_owner_runtime_review",
+        "result": "V88 integrates create, edit and empty states into one in-portfolio workspace with right-side page thumbnails; Save Page stays in the editor, return navigates to Projects, and the redundant per-page Visual Design button was removed. Failed new-page persistence rolls back. Direct global design menu remains separately for template/design use. Build/runtime and owner acceptance pending.",
+        "evidence_refs": [
+          "OBS-010"
+        ]
       },
       {
         "record_id": "TASK-026",
@@ -1674,6 +1678,23 @@
           "source_revision_ref": "0cbd037992c9e2159590a573aca72f33fbe9488f"
         },
         "implementation_state": "V87_source_committed_pending_owner_runtime_review"
+      },
+      {
+        "record_id": "OBS-010",
+        "title": "V88 TASK-025 unified portfolio Pages editor",
+        "status": "source_implemented_runtime_unverified",
+        "detail": "The project Pages entry retains one thumbnail-sidebar workspace for empty portfolios, page creation, and editing. Save Page no longer sends the user to the separate table, returning from the project workflow navigates to Projects, and the redundant Visual Design entry inside the legacy Pages content screen is removed. Failed creation persistence rolls back the new page. No build, runtime, or owner acceptance.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES"
+        ],
+        "provenance": {
+          "type": "source_inspection_and_owner_review",
+          "date": "2026-11-19",
+          "source_revision_ref": "1e617a31113768f8f9bdd8c1396bb20caf65b5c1"
+        },
+        "implementation_state": "V88_source_committed_pending_owner_runtime_review"
       }
     ]
   },
@@ -1753,7 +1774,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "Latest V87 0cbd0379: V86 left dock/right thumbnails plus TASK-024 V87 cleaner Project expansion. Both are source-only pending owner runtime acceptance. TASK-025 and other tasks remain to implement.",
+    "current_summary": "V88 1e617a31 latest: owner layout issue V86, TASK-024 UI V87, TASK-025 unified Pages workflow V88. All source-only, pending owner runtime acceptance. TASK-023 autosave/dirty prompts, TASK-026 contextual import/export and TASK-027 global image management remain planned.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
