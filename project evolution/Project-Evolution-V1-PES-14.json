@@ -922,6 +922,34 @@
           "date": "2026-11-19"
         },
         "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "DEC-010",
+        "title": "Style Library is exclusively central",
+        "detail": "Owner explicitly rejected project-specific styles. A single central shared Style Library applies across all projects, with no project-local style definitions or overrides.",
+        "scope_refs": [
+          "SC-TEMPLATES"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "requirements_only_not_implemented"
+      },
+      {
+        "record_id": "DEC-011",
+        "title": "History lasts only for current editing session",
+        "detail": "Undo/Redo and History records are session-scoped and need not survive closing/restarting the application. Saved design changes remain persistent. Zoom and pan do not enter history.",
+        "scope_refs": [
+          "SC-PORTFOLIOS"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "requirements_only_not_implemented"
       }
     ],
     "tasks": [
@@ -1168,7 +1196,7 @@
       {
         "record_id": "TASK-012",
         "title": "History panel and Undo/Redo",
-        "detail": "Right-side History tab alongside Layers and Properties, clickable operation timeline, undo/redo shortcuts, at least 100 page-local steps, atomic block/group edits. Zoom and pan excluded; persistence after app close undecided.",
+        "detail": "Right-side History tab alongside Layers and Properties, clickable operation timeline, undo/redo shortcuts, at least 100 page-local steps, atomic block/group edits. Zoom and pan excluded. History is SESSION-ONLY and is cleared on application close/restart; saved page content persists independently.",
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
@@ -1178,7 +1206,8 @@
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified",
+        "updated_on": "2026-11-19"
       },
       {
         "record_id": "TASK-013",
@@ -1198,7 +1227,7 @@
       {
         "record_id": "TASK-014",
         "title": "Style Library",
-        "detail": "Word-like named text, color and optional frame styles, linked updates without changing geometry; central shared styles with potential project-specific styles; central-vs-project inheritance semantics to finalize.",
+        "detail": "Word-like linked named styles for text, colors and optionally frames. ONE CENTRAL SHARED STYLE LIBRARY ONLY, available to every project; no project-specific style definitions, overrides or forks. Style updates propagate to linked objects without altering geometry or master ownership.",
         "scope_refs": [
           "SC-TEMPLATES"
         ],
@@ -1208,7 +1237,8 @@
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified",
+        "updated_on": "2026-11-19"
       },
       {
         "record_id": "TASK-015",
@@ -1295,7 +1325,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V79 TASK-007 code authored for cross-project image ownership and global/private libraries; pending user build, interactive runtime and acceptance. V78 TASK-006 and TASK-005 also need independent runtime/follow-up. Never claim tested. V79 development data can be reset if needed per DEC-007. Persist source of truth in main and Project Evolution. Owner approved eight further design-editor feature groups TASK-008..TASK-015 on 2026-11-19; these are documentation-only planned tasks, not implemented. Group locks and distinct Save Page/Save Project documented in DEC-008/009.",
+    "current_summary": "V79 TASK-007 code authored for cross-project image ownership and global/private libraries; pending user build, interactive runtime and acceptance. V78 TASK-006 and TASK-005 also need independent runtime/follow-up. Never claim tested. V79 development data can be reset if needed per DEC-007. Persist source of truth in main and Project Evolution. Owner approved eight further design-editor feature groups TASK-008..TASK-015 on 2026-11-19; these are documentation-only planned tasks, not implemented. Group locks and distinct Save Page/Save Project documented in DEC-008/009. Owner closed remaining design decisions: exclusively central Style Library (DEC-010), session-only History (DEC-011).",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -1314,8 +1344,7 @@
       "No source build or runtime review performed.",
       "Formal semantic conformance beyond JSON shape is not claimed.",
       "Existing image work may change HEAD concurrently.",
-      "Previous PES-13 candidate was not canonical and was not merged as authoritative source.",
-      "History persistence after application close and final shared/project style precedence remain open implementation decisions."
+      "Previous PES-13 candidate was not canonical and was not merged as authoritative source."
     ]
   }
 }
