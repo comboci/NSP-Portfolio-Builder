@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 106 (TASK-021, source-only)
+
+V106 improves image replacement through the existing contextual project/public library picker. Replacing a selected image or Tile updates only its immutable asset reference, descriptive filename and legacy inline-source fallbacks, leaving object identity, x/y/w/h, Crop/mask metadata, rounded corners, border, shadow, opacity and other effects unchanged. If the new image aspect ratio differs from the selected frame or Tile by more than 1%, the default Fit view switches to non-distorting **Fill (cover)**; explicitly selected Cover, Stretch or Original modes remain unchanged. The user can change the fit afterwards, including independently per Tile. The image-status label now recognizes SQLite/library asset IDs and the currently selected Tile. Existing editor snapshots provide a single Undo/Redo operation per replacement. No original library bytes or SQLite schema are modified (schema 6).
+
+**Validation:** SOURCE ONLY. No Build/Test, browser/Tauri execution, print/PDF parity check or owner acceptance. TASK-021 remains in_progress. Review regular-image and Tile replacement from private/public libraries, frame and effects preservation with different aspect ratios, Fit adjustments, history, save/reopen, inherited/locked restrictions and PDF preview.
+
+---
+
 # NSP Portfolio Builder — Version 105 (TASK-020, source-only)
 
 V105 exposes the previously hidden Image Crop/Zoom/Position controls directly in the shared Properties panel for image objects, including a per-Tile selector. It adds rectangle/circle/ellipse and editable custom polygon masks (up to 24 vertices), an interactive polygon editor (add, drag, undo vertex, clear), bounded coordinate validation for imported imageEdit metadata, and separate crop-only vs full image-edit reset. Source assets are not rewritten: edits are stored per image/tile and rendered by the existing shared canvas/preview/print renderer. SQLite schema remains revision 6. V104 transactional storage changes are preserved.
