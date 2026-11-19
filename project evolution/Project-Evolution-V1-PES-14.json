@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V92 source candidate (Tauri 92.0.0), TASK-013 partial Zoom/Pan/Fit and Print/Guides toolbar; runtime unverified",
+    "software_release": "V93 source candidate (Tauri 93.0.0), TASK-014 central linked text styles; runtime unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed. V87 0cbd0379 restructures expanded Projects presentation for TASK-024; no runtime validation. V88 1e617a31 unifies project Pages create/edit navigation for TASK-025; source only. V89 TASK-010 source candidate based on main 0b97e761ee75; included in same source+PES commit; owner must review runtime. V90 TASK-011 source-only candidate based on main 8d09779c23f7: local rename/lock, Group folding, inherited visibility/z-order. Runtime acceptance pending. V91 TASK-012 is based on actual V90 HEAD 37fca8404839; the prior PE source_revision_ref 8d09779c23f7 was the parent of the V90 combined source+PE commit, not an unreconciled code divergence. In-memory per-page History and clickable rewind added; runtime unverified. V92 TASK-013 source-only canvas zoom/pan/fit controls based on V91 HEAD 1d5834de34c3; Save Page/Project, clipboard and dirty-state remain open.",
-    "source_revision_ref": "1d5834de34c372cd861fa1183e6053901f0e5f7c"
+    "source_alignment": "V83 TASK-009 guides/snapping source b8b03152; V84 source 178a9c9e separates system public library from project private/public picker and excludes untouched seeded pages from inheritance count; V85 source 23a009bb adds project portfolio PowerPoint-style right-side thumbnails with scroll, open, duplicate, delete and reorder. Runtime review and acceptance pending. V86 f2dab599 changes CSS direction of the shared VS-style editor dock to left-of-canvas; right-hand V85 page thumbnails retained. No build or runtime review performed. V87 0cbd0379 restructures expanded Projects presentation for TASK-024; no runtime validation. V88 1e617a31 unifies project Pages create/edit navigation for TASK-025; source only. V89 TASK-010 source candidate based on main 0b97e761ee75; included in same source+PES commit; owner must review runtime. V90 TASK-011 source-only candidate based on main 8d09779c23f7: local rename/lock, Group folding, inherited visibility/z-order. Runtime acceptance pending. V91 TASK-012 is based on actual V90 HEAD 37fca8404839; the prior PE source_revision_ref 8d09779c23f7 was the parent of the V90 combined source+PE commit, not an unreconciled code divergence. In-memory per-page History and clickable rewind added; runtime unverified. V92 TASK-013 source-only canvas zoom/pan/fit controls based on V91 HEAD 1d5834de34c3; Save Page/Project, clipboard and dirty-state remain open. V93 TASK-014 source candidate developed from V92 head e05adf1180bea8d8c2607f23f435cd42cf682117; source and PE committed together using V92 as parent reference. Owner runtime and PDF review pending.",
+    "source_revision_ref": "e05adf1180bea8d8c2607f23f435cd42cf682117"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1255,17 +1255,17 @@
       {
         "record_id": "TASK-014",
         "title": "Style Library",
-        "detail": "Word-like linked named styles for text, colors and optionally frames. ONE CENTRAL SHARED STYLE LIBRARY ONLY, available to every project; no project-specific style definitions, overrides or forks. Style updates propagate to linked objects without altering geometry or master ownership.",
+        "detail": "Word-like linked named styles for text, colors and optionally frames. ONE CENTRAL SHARED STYLE LIBRARY ONLY, available to every project; no project-specific style definitions, overrides or forks. Style updates propagate to linked objects without altering geometry or master ownership. V93 source candidate adds a sole central named text-style catalog (font, size, color, weight), globally shared across project switches via V78 global catalog, with editable local text style binding and live render-time resolution for inherited template objects. An editor menu provides style create/edit and safe deletion guard when referenced, with schema-2 backward-compatible normalization. No local style definitions, and geometry remains independent. Source changes are not built or runtime/PDF verified; owner acceptance pending.",
         "scope_refs": [
           "SC-TEMPLATES"
         ],
         "related_record_ids": [],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified",
+        "implementation_state": "V93_source_candidate_central_text_styles_pending_owner_runtime_print_review",
         "updated_on": "2026-11-19"
       },
       {
@@ -1758,6 +1758,29 @@
           "TASK-023",
           "TASK-009"
         ]
+      },
+      {
+        "record_id": "OBS-014",
+        "title": "V93 TASK-014 central shared text-style library source candidate",
+        "detail": "Inspected V92 main e05adf1180bea8d8c2607f23f435cd42cf682117, global template/project snapshot synchronization, normalizer, text editor properties and shared render function. V93 introduces one global styleLibrary array with stable IDs and validated name/font/size/color/weight, central navigation CRUD, editable local-text style selection, render-time linked style lookup in editor and PDF path, and prevents deletion when linked objects are observed. The central library is excluded from project-specific snapshots. Source only: no Build/Test, native/browser runtime, print/PDF parity, backup/restore or owner verification was performed. Verify master/page inheritance, two-project propagation, reload/export/import, deletion guard, and error feedback in owner runtime.",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-PROJECTS"
+        ],
+        "status": "source_candidate_pending_owner_review",
+        "provenance": {
+          "type": "source_inspection",
+          "date": "2026-11-19",
+          "repository": "comboci/NSP-Portfolio-Builder",
+          "source_revision_ref": "e05adf1180bea8d8c2607f23f435cd42cf682117"
+        },
+        "implementation_state": "source_only_unbuilt_untested",
+        "related_record_ids": [
+          "TASK-014",
+          "DEC-010",
+          "DEC-004",
+          "BR-009"
+        ]
       }
     ]
   },
@@ -1837,7 +1860,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V92 source candidate adds per-context Zoom/Pan/Fit and Print/Guides top toolbar for TASK-013. Version 92 is source-only; user runtime review is pending. Save Page vs Project, clipboard and dirty status remain open under TASK-013/023. V91 TASK-012 source candidate adds a third VS dock History tab, up to 100 in-memory page-local snapshots, keyboard undo/redo, timeline jumps and rollback-on-save-error; preserving histories across page selection. Pending owner runtime acceptance, TASK-012 remains in_progress. Next planned task TASK-013 if no higher-priority owner change.",
+    "current_summary": "V93 source candidate: central Style Library with live-linked text font/size/color/weight for TASK-014. Not built, run or accepted. Earlier tasks TASK-005 to TASK-013 and TASK-022/024/025 remain pending owner review or partial scope, including TASK-013 Save Page/Project separation, clipboard and dirty-state; only next eligible planned work should progress.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -1859,7 +1882,8 @@
       "Previous PES-13 candidate was not canonical and was not merged as authoritative source.",
       "V89 TASK-010 source change not built or functionally/runtime/PDF tested; owner acceptance is outstanding.",
       "V90 Layers enhancements are unbuilt and untested; inherited z-order within its existing layer and group folder interaction need owner review.",
-      "V91 History panel/shortcuts and atomic multi-step history jump are source-only and have not been executed in the browser or Tauri; owner runtime review required."
+      "V91 History panel/shortcuts and atomic multi-step history jump are source-only and have not been executed in the browser or Tauri; owner runtime review required.",
+      "V93 TASK-014 central text styles require owner runtime verification of global scope, project switches, inherited text, import/export, saved data, and PDF parity."
     ]
   }
 }

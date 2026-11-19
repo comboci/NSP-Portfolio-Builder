@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 93 (TASK-014, source-only)
+
+V93 adds a single system-wide Style Library of named text styles (font, size, color and weight). Editable text objects can link to a style from Properties; the shared renderer resolves linked styles for canvas/preview/printing and inherited objects without changing geometry or local inheritance rules. Style creation, editing, and referenced-style deletion protection are accessible under Templates. Central styles follow the V78 global catalog across project switches and are excluded from project-local snapshots; old projects start with an empty catalog. This is additive to the existing schema-2 JSON and requires no SQLite reset.
+
+**Validation:** no Build/Test, Windows/Tauri/browser runtime or PDF review performed. TASK-014 remains in progress pending owner review: cross-project propagation, save/reopen, import/export, inherited text, print parity and deletion safeguards.
+
+---
+
 # NSP Portfolio Builder — Version 92 (TASK-013 canvas view controls, source candidate)
 
 V92 adds contextual editor Zoom (35–250%), Pan (hand-drag), Fit Page and portfolio Print/PDF controls in the top design toolbar, and places the existing page-only Show/Hide Guides action beside them. Canvas view state is session-only and per editor context, so zooming or panning does not change object geometry, page data, Project Evolution history or printed output. Existing object drag/resize calculations use the canvas bounding rectangle and should account for view zoom; this must be checked at runtime.
