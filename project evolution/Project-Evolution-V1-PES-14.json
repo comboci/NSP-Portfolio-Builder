@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V95 source (Tauri 95.0.0); dock position/hover/pin structural fix, owner runtime review pending",
+    "software_release": "V96 source (Tauri 96.0.0); TASK-016 Align & Distribute candidate; owner runtime acceptance pending",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding.",
-    "source_revision_ref": "a2f1e0f6a9a0b95d88489707319b7930faceabbd"
+    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding. V96 dd8884b8 implements TASK-016 in the shared designer with px/mm geometry, grouped Block and Group movement, key/selection/page references, history and non-destructive bounds guards. No build or runtime review.",
+    "source_revision_ref": "dd8884b89e58b052890bcb4a5da5336acffe9b82"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1291,12 +1291,24 @@
           "SC-PORTFOLIOS"
         ],
         "related_record_ids": [],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
-          "type": "user_conversation",
-          "date": "2026-11-19"
+          "type": "source_implementation",
+          "date": "2026-11-19",
+          "source_revision_ref": "dd8884b89e58b052890bcb4a5da5336acffe9b82"
         },
-        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+        "implementation_state": "V96_source_implemented_pending_owner_runtime_review",
+        "source_version": "V96",
+        "updated_on": "2026-11-19",
+        "result": "V96 source implements an Align & Distribute flyout in the shared master/section/page designer toolbar: left/center/right and top/middle/bottom alignment; equal horizontal/vertical distribution; optional 0–500 mm numeric gap converted to document px; selection-bounds, page, or primary/key-object reference. Linked groups and selected Region Block with children move as atomic units. Any selected locked/inherited object blocks transformations; final geometry and child containment are checked before mutation. One operation yields one Undo/Redo history entry. No build, automated test, Tauri/browser runtime, user review or print/PDF verification performed.",
+        "changed_files": [
+          "index.html",
+          "src-tauri/Cargo.toml",
+          "src-tauri/tauri.conf.json"
+        ],
+        "evidence_refs": [
+          "OBS-017"
+        ]
       },
       {
         "record_id": "TASK-017",
@@ -1829,6 +1841,29 @@
           "TASK-012",
           "TASK-025"
         ]
+      },
+      {
+        "record_id": "OBS-017",
+        "title": "V96 TASK-016 shared designer Align & Distribute source implementation",
+        "status": "source_implemented_runtime_unverified",
+        "detail": "Starting from main a7ca1139d28185580505f4e96a22c5f44ce6d220, V96 dd8884b89e58b052890bcb4a5da5336acffe9b82 adds a compact designer toolbar menu for six alignments, horizontal/vertical equal distribution and numeric spacing in mm with page, selection, or key-object reference. Group and Region Block transforms preserve membership; locked and inherited elements are ineligible. Bounds validation precedes updates, and one history entry records each action. Review selection, group/lock/bounds, Undo/Redo, save/reopen and reference modes at runtime. Source-only, not built or functionally/PDF tested.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES"
+        ],
+        "related_record_ids": [
+          "TASK-016",
+          "TASK-015",
+          "TASK-012",
+          "DEC-008",
+          "DEC-006"
+        ],
+        "provenance": {
+          "type": "source_inspection_and_implementation",
+          "date": "2026-11-19",
+          "source_revision_ref": "dd8884b89e58b052890bcb4a5da5336acffe9b82"
+        },
+        "implementation_state": "V96_source_committed_pending_owner_runtime_review"
       }
     ]
   },
@@ -1908,7 +1943,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V95 a2f1e0f6 current: owner-reported Dock layout issue addressed at source level with explicit named panes, stable left dock in every editor, right page thumbnails and auto-hide/hover/pin. V89–94 Project Evolution changes remain in main. Owner runtime acceptance pending. Continue next source task after checking fresh HEAD and owner feedback.",
+    "current_summary": "V96 dd8884b8 on main adds TASK-016 Align & Distribute source, owner runtime review still pending; V95 Dock layout also awaits runtime acceptance. Continue next planned source task after fresh HEAD read and user feedback.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -1932,7 +1967,8 @@
       "V90 Layers enhancements are unbuilt and untested; inherited z-order within its existing layer and group folder interaction need owner review.",
       "V91 History panel/shortcuts and atomic multi-step history jump are source-only and have not been executed in the browser or Tauri; owner runtime review required.",
       "V93 TASK-014 central text styles require owner runtime verification of global scope, project switches, inherited text, import/export, saved data, and PDF parity.",
-      "V94 TASK-015 source-only. Review grouping locked/unlocked objects, group folder direct Ungroup, movement lock, Undo/Redo, save/reopen, and rejection of inherited, cross-layer and Region Block members at runtime."
+      "V94 TASK-015 source-only. Review grouping locked/unlocked objects, group folder direct Ungroup, movement lock, Undo/Redo, save/reopen, and rejection of inherited, cross-layer and Region Block members at runtime.",
+      "V96 TASK-016 is source-only. Runtime acceptance needed for alignment/distribution directions, mm conversion, all three reference modes, Region Block/Group safeguards, inherited/locked objects, Undo/Redo and save/reopen."
     ]
   }
 }
