@@ -362,6 +362,67 @@
           "BR-006",
           "BR-007"
         ]
+      },
+      {
+        "record_id": "FND-006",
+        "title": "Image objects lack numbered editor-only labels",
+        "detail": "index.html:2085-2093 sets the initial image object name to 'تصویر جدید' for each added image instead of Image 1, Image 2, ... . index.html:1921-1925 renders object names in the inspector. No evidence of automatic printed image number; requested editor-only sequential labeling is not implemented.",
+        "scope_refs": [
+          "SC-NUMBERING"
+        ],
+        "related_record_ids": [
+          "TASK-003",
+          "BR-012",
+          "REQ-008"
+        ],
+        "status": "static_source_gap_observed",
+        "provenance": {
+          "type": "source_inspection",
+          "date": "2026-11-19",
+          "source_revision_ref": "148ec10818264622a7ac0a97586084faf94b4592"
+        },
+        "implementation_state": "not_verified_at_runtime"
+      },
+      {
+        "record_id": "FND-007",
+        "title": "Page index prints in footer but cover-number visibility control not confirmed",
+        "detail": "index.html:1020-1046: preview maps active portfolio state.pages to paper(p,i+1), and legacy footer emits the index unconditionally via <span>index</span>. Per-portfolio sequence calculation is visible in source; no Show on First Page toggle or separate dynamic page-number element was identified. PDF uses browser print of the preview, but no runtime/PDF verification was performed.",
+        "scope_refs": [
+          "SC-NUMBERING"
+        ],
+        "related_record_ids": [
+          "TASK-003",
+          "BR-002",
+          "BR-011",
+          "REQ-007"
+        ],
+        "status": "static_source_gap_observed",
+        "provenance": {
+          "type": "source_inspection",
+          "date": "2026-11-19",
+          "source_revision_ref": "148ec10818264622a7ac0a97586084faf94b4592"
+        },
+        "implementation_state": "not_verified_at_runtime"
+      },
+      {
+        "record_id": "FND-008",
+        "title": "Page-only Once element types are not implemented in the inspected creation route",
+        "detail": "index.html:2085-2093 creates standard text/image/line/shape/circle types; searched entire file for Text Once/Image Once and relevant Once implementations. Only DOM addEventListener options {once:true} matched 'once'. This is evidence of missing page-only Once element functionality in inspected V77 source, not a runtime claim.",
+        "scope_refs": [
+          "SC-ONCE"
+        ],
+        "related_record_ids": [
+          "TASK-003",
+          "BR-001",
+          "REQ-009"
+        ],
+        "status": "static_source_gap_observed",
+        "provenance": {
+          "type": "source_inspection",
+          "date": "2026-11-19",
+          "source_revision_ref": "148ec10818264622a7ac0a97586084faf94b4592"
+        },
+        "implementation_state": "not_verified_at_runtime"
       }
     ],
     "business_rules": [
@@ -857,12 +918,19 @@
         "scope_refs": [
           "SC-NUMBERING"
         ],
-        "status": "unassigned",
+        "status": "completed",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "unverified_against_live_source"
+        "implementation_state": "source_verification_complete_required_features_not_implemented",
+        "completed_on": "2026-11-19",
+        "result": "Static source verification completed; FND-006–008 document gaps in sequential editor-only image names, first-page number visibility, and page-only Once elements. No runtime/PDF testing, code modifications or acceptance.",
+        "evidence_refs": [
+          "FND-006",
+          "FND-007",
+          "FND-008"
+        ]
       },
       {
         "record_id": "TASK-004",
@@ -877,6 +945,28 @@
           "date": "2026-11-19"
         },
         "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "TASK-005",
+        "title": "Implement missing editor-only image labels, page-number visibility, and page-only Once behavior",
+        "detail": "Implement REQ-007–009 and BR-001, BR-002, BR-011, BR-012 for V77+; source gaps FND-006–008. Image 1/Image 2 labels must not print; page-number visibility on cover cannot alter sequence; Once must be page-only and cascade when page is deleted. Requires owner runtime/PDF acceptance.",
+        "scope_refs": [
+          "SC-NUMBERING",
+          "SC-ONCE"
+        ],
+        "status": "unassigned",
+        "provenance": {
+          "type": "source_inspection",
+          "date": "2026-11-19",
+          "source_revision_ref": "148ec10818264622a7ac0a97586084faf94b4592"
+        },
+        "implementation_state": "not_started",
+        "related_record_ids": [
+          "FND-006",
+          "FND-007",
+          "FND-008",
+          "TASK-003"
+        ]
       }
     ],
     "evidence": [],
@@ -933,13 +1023,13 @@
     "open_conflict_relationship_ids": [],
     "blocked_record_ids": [],
     "next_work_record_ids": [
-      "TASK-003",
-      "TASK-004"
+      "TASK-004",
+      "TASK-005"
     ],
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "TASK-001 source inspection complete (FND-003–005). TASK-002 design plan complete (SOL-002): current disposable test data may be reset (DEC-007), but no reset or implementation performed; real user data must be protected later. TASK-003/004 await separate source audit/implementation.",
+    "current_summary": "TASK-001 static audit complete (FND-003–005); TASK-002 schema planning complete (SOL-002, DEC-007 test data disposable); TASK-003 source verification complete with missing capabilities (FND-006–008 and implementation TASK-005). No migrations, code changes, builds, runtime tests or owner acceptance. TASK-004 remains open.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
