@@ -1418,7 +1418,7 @@
       {
         "record_id": "TASK-024",
         "title": "Simplify and visually separate Projects and expanded portfolio/page lists",
-        "detail": "Owner follow-up pending as of V85. Rework Projects list and its expand/collapse view to clearly separate projects, portfolio documents, and page rows. Expanded page lists should display pages cleanly, without inline Edit/Rename or duplicated action clutter. Place management operations on their correct project/portfolio level; a project/portfolio Pages entry opens the actual page workflow directly. Page Add belongs to the portfolio editor rather than the crowded expandable list. Preserve management of project/portfolio names in an appropriate dedicated action (not per-page expanded rows). Acceptance: multiple expanded projects are distinguishable, page lists readable, no redundant per-page Edit/Rename controls, actions operate on the correct project and document.",
+        "detail": "Owner follow-up pending as of V85. Rework Projects list and its expand/collapse view to clearly separate projects, portfolio documents, and page rows. Expanded page lists should display pages cleanly, without inline Edit/Rename or duplicated action clutter. Place management operations on their correct project/portfolio level; a project/portfolio Pages entry opens the actual page workflow directly. Page Add belongs to the portfolio editor rather than the crowded expandable list. Preserve management of project/portfolio names in an appropriate dedicated action (not per-page expanded rows). Acceptance: multiple expanded projects are distinguishable, page lists readable, no redundant per-page Edit/Rename controls, actions operate on the correct project and document.\nOwner clarification: inherited-page counters must be calculated from actual persisted dependencies, not legacy seeded demo pages. Audit stale test data; reset only disposable development data if necessary, without deleting real user data. Verify the count changes after adding/removing pages and after reopening.",
         "scope_refs": [
           "SC-PROJECTS",
           "SC-PORTFOLIOS"
@@ -1459,7 +1459,7 @@
       {
         "record_id": "TASK-026",
         "title": "Restructure Import/Export/Print and page-order navigation by project context",
-        "detail": "Owner follow-up pending as of V85. Remove generic 'File > Import, Export & Print' and the redundant Preview/Print and Page Order entries from the global Operations menus. Keep system-level Import for importing an entire project. In the corresponding project/portfolio context provide relevant Export and Print actions; also allow importing a previously saved portfolio backup into the intended project while retaining existing Backup functionality. Page-order editing belongs in the in-portfolio thumbnail editor, not global Operations. Separate Import from Export instead of one mixed page. Verify no action is lost and each import targets the selected project, while print/export targets the correct portfolio/document.",
+        "detail": "Owner follow-up pending as of V85. Remove generic 'File > Import, Export & Print' and the redundant Preview/Print and Page Order entries from the global Operations menus. Keep system-level Import for importing an entire project. In the corresponding project/portfolio context provide relevant Export and Print actions; also allow importing a previously saved portfolio backup into the intended project while retaining existing Backup functionality. Page-order editing belongs in the in-portfolio thumbnail editor, not global Operations. Separate Import from Export instead of one mixed page. Verify no action is lost and each import targets the selected project, while print/export targets the correct portfolio/document.\nOwner clarification: system-level Import imports a complete project; inside a selected project, Import imports a previously saved portfolio into that project; Export and Print are contextual actions for the selected project/portfolio. Remove duplicate Import/Export/Print and Page Order routes from global File/Operations, without losing backup capability. Distinguish project-level and portfolio-level destinations explicitly.",
         "scope_refs": [
           "SC-PROJECTS",
           "SC-PORTFOLIOS",
@@ -1622,6 +1622,22 @@
           "date": "2026-11-19"
         },
         "implementation_state": "requirements_registered_only_no_product_changes"
+      },
+      {
+        "record_id": "OBS-007",
+        "title": "Owner clarification on legacy inherited counts and Import/Export placement",
+        "status": "registered_pending_instruction",
+        "detail": "TASK-024 and TASK-026 details refined from owner copy-pasted runtime review. Documentation-only; no source code changes. Implementation remains paused until explicit next instruction.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS",
+          "SC-STORAGE"
+        ],
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-19"
+        },
+        "implementation_state": "requirements_registered_only"
       }
     ]
   },
