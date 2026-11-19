@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V81 source candidate (Tauri 81.0.0); image-library UX committed, runtime unverified",
+    "software_release": "V82 source candidate (Tauri 82.0.0); TASK-008 preflight implemented, runtime/PDF unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V81 main contains prior add-button/inheritance/layer-cascade fixes plus image-library project/public tabs, global public library, and context-specific image selector. Owner runtime/PDF acceptance pending.",
-    "source_revision_ref": "72c1b33b8ed2c1b6bdd6569b2144f6ccea28ecc8"
+    "source_alignment": "V81 image-library UX implemented at 72c1b33b; V82 adds TASK-008 print/PDF preflight at 9d012096. Both source-only and awaiting owner runtime; previous TASK-005/006/007 also remain unaccepted.",
+    "source_revision_ref": "9d0120963401fc5a3163c8847276ea448af46a1e"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1149,12 +1149,20 @@
           "SC-PORTFOLIOS"
         ],
         "related_record_ids": [],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "approved_requirements_not_implemented_or_runtime_verified"
+        "implementation_state": "V82_source_implemented_pending_owner_print_pdf_runtime_review",
+        "source_version": "V82",
+        "updated_on": "2026-11-19",
+        "result": "V82 source adds A4/A3 print format and configurable safe margin, checks object bounds, library/tile asset references, failed image loads, and rendered text overflow before print. Preview shows clickable issue reports; errors block printing, warnings require confirmation. Printer/PDF rendering, clickable navigation, and overflow detection require owner runtime acceptance; no build or automated test executed.",
+        "changed_files": [
+          "index.html",
+          "src-tauri/Cargo.toml",
+          "src-tauri/tauri.conf.json"
+        ]
       },
       {
         "record_id": "TASK-009",
@@ -1406,6 +1414,22 @@
           "source_revision_ref": "72c1b33b8ed2c1b6bdd6569b2144f6ccea28ecc8"
         },
         "implementation_state": "source_committed_pending_owner_runtime_review"
+      },
+      {
+        "record_id": "OBS-003",
+        "title": "TASK-008 V82 print preflight source state",
+        "status": "source_implemented_runtime_unverified",
+        "detail": "V82 main 9d012096 adds preflight against missing assets including Tile references, page and printable-margin bounds, text overflow from rendered DOM and broken image loading; per-project A4/A3 and safe margin preferences; clickable issue list; warnings require print confirmation and errors block print. This is source inspection, not runtime/PDF verification.",
+        "scope_refs": [
+          "SC-PDF",
+          "SC-PORTFOLIOS"
+        ],
+        "provenance": {
+          "type": "source_inspection",
+          "date": "2026-11-19",
+          "source_revision_ref": "9d0120963401fc5a3163c8847276ea448af46a1e"
+        },
+        "implementation_state": "V82_source_changes_committed_waiting_owner_review"
       }
     ]
   },
