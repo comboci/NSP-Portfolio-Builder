@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 105 (TASK-020, source-only)
+
+V105 exposes the previously hidden Image Crop/Zoom/Position controls directly in the shared Properties panel for image objects, including a per-Tile selector. It adds rectangle/circle/ellipse and editable custom polygon masks (up to 24 vertices), an interactive polygon editor (add, drag, undo vertex, clear), bounded coordinate validation for imported imageEdit metadata, and separate crop-only vs full image-edit reset. Source assets are not rewritten: edits are stored per image/tile and rendered by the existing shared canvas/preview/print renderer. SQLite schema remains revision 6. V104 transactional storage changes are preserved.
+
+**Validation:** SOURCE ONLY. No Build/Test, browser/Tauri execution, PDF parity check or owner acceptance. TASK-020 remains in_progress. Review rectangle/circle/polygon masks, polygon editing in portrait/landscape and non-square frames, Crop drag/resize, Zoom/Position, Tile-specific editing, Undo/Redo, project save/reopen, output PDF and preservation of original library bytes.
+
+---
+
 # NSP Portfolio Builder — Version 103 (TASK-019, source-only)
 
 V103 introduces per-object opacity (0–100% user input, persisted as existing 0–1 fraction), shadow X/Y offset (±100 px), blur (0–100 px), shadow strength (0–100%), border width (0–30px) and color, and rounded corners (0–200 px) for image and rectangle objects. Circles remain circular. Image, Rectangle and Circle use common Properties controls; the editor, page previews and print/PDF use a shared effect renderer. Edits use existing Undo/Redo snapshots and storage; inherited properties remain read-only. No SQLite migration is needed.
