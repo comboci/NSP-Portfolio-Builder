@@ -20,8 +20,8 @@
 | 04 | UI/UX پروژه‌ها، ناوبری، صفحات، Dockها، Responsive و دسترس‌پذیری | **انجام شد: سورس‌محور، بدون Build/Test** |
 | 05 | موتور طراحی، Template inheritance، Region Block، Layer/Group، history، snapping و Transform | **انجام شد: سورس‌محور، بدون Build/Test** |
 | 06 | Image Library، مالکیت خصوصی/عمومی، Assetها، Tile/Stash، crop/mask، حذف ایمن | **انجام شد: سورس‌محور، بدون Build/Test** |
-| 07 | PDF/Print، صفحه‌بندی، DPI، Preflight، مقیاس و برابری رندر | **نوبت بعد با N** |
-| 08 | کارایی، حافظه، امنیت ورودی، خطایابی و پایداری، کارهای چندپنجره‌ای | در انتظار N |
+| 07 | PDF/Print، صفحه‌بندی، DPI، Preflight، مقیاس و برابری رندر | **انجام شد: سورس‌محور، بدون Build/Test** |
+| 08 | کارایی، حافظه، امنیت ورودی، خطایابی و پایداری، کارهای چندپنجره‌ای | **نوبت بعد با N** |
 | 09 | ممیزی نهایی ردیابی Task 001 تا آخرین Task، Gapهای پوشش و ماتریس تأیید مالک | در انتظار N |
 
 ## خروجی فاز 01 — دیتابیس / یکپارچگی داده
@@ -426,3 +426,63 @@ M.crop's Apply handler checks the media-context token but calls writeCell(...) a
 - **Source vs Runtime:** یافتهٔ بحرانی `forceNew` از بررسی محدوده متغیر در JavaScript است؛ هیچ ادعای اجرای برنامه، Build/Test، واقعی‌شدن خرابی نصب یا تأیید مالک وجود ندارد.
 
 **Checkpoint:** `OBS-053`؛ تسک‌های TASK-060، TASK-061، TASK-062، TASK-063 در صف `open_state.next_work_record_ids` ثبت شدند، بدون تغییر سورس محصول یا نسخه. **مرحله بعد با N: فاز 07 — PDF/Print، DPI، Preflight، صفحه‌بندی و برابری رندر.**
+
+
+## خروجی فاز 07 — PDF/Print، Preflight، DPI، صفحه‌بندی و رندر
+
+**مبنای ممیزی:** HEAD `eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07`؛ سورس V129 / SQLite schema 12. بررسی مسیر مشترک `V.renderDocument`، تنظیمات A4/A3 و `@page`، Preflight، شماره صفحه، Image Tiles/Hidden Stash، بارگذاری SVG/Font/Image، `window.print()` و محاسبه DPI. هیچ Build/Test/Static Checker یا Print/PDF واقعی اجرا نشد؛ داده/سورس محصول تغییر نکردند.
+
+| اولویت | Finding | Task | موضوع |
+| --- | --- | --- | --- |
+| P1 | FND-043 | TASK-064 | Preflight یک Image Tiles سالم را تصویر گم‌شده تشخیص می‌دهد |
+| P1 | FND-044 | TASK-065 | چاپ می‌تواند پس از خطای بارگذاری تصویر یا پایان Timeout بدون بازبینی نهایی اجرا شود |
+| P2 | FND-045 | TASK-066 | Preflight روی شماره صفحه پنهان کاور و قاب Region Block غیرچاپی هشدار می‌دهد |
+| P2 | FND-046 | TASK-029 (موجود) | DPI هشدار چاپ برای Fit/Fill/Cover از یک فرمول یکسان استفاده می‌کند؛ تسک جدید تکراری ندارد |
+
+### FND-043 / TASK-064 — Preflight یک Image Tiles سالم را تصویر گم‌شده تشخیص می‌دهد
+
+**اولویت P1، نتیجه بازبینی سورس (نه مشاهده Runtime).**
+
+M.tiles creates one type=image element with tilesJson cells, without requiring a top-level assetId. M.markup renders each visible cell asset; however collectIssues unconditionally checks `o.type==='image'&&!imagePresent(o)` before entering its Tile branch. imagePresent only inspects the container's direct assetId/src/image/dataUrl. Therefore valid filled Image Tiles are flagged as missingImage and printAll blocks printing with an error, even if all visible cells resolve. The Tile branch also loops `tiles.stash`, even though stash cells are dormant and are not rendered; it treats a missing hidden image as a printable missing-image error. Confirmed from source, not runtime.
+
+**معیار پذیرش:** Branch on valid tilesJson before applying standalone-image checks. Validate visible cells by row/column and asset identity, display helpful cell-indexed errors for required missing/broken visible assets and intentional placeholders according to the approved policy, and do not block print solely because a dormant stash item is missing (report stash integrity separately). Prevent false missingImage on the Tile container; preserve per-tile DPI, crop, group ownership, source immutability, active/stashed references and blocked printing for genuinely broken visible assets. Owner validates populated/empty/partially-filled Tile, shrink/expand stash and multi-page PDF in browser/Tauri.
+
+**مراجع:** [index.html#L2134-L2136](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L2134-L2136)، [index.html#L2151-L2153](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L2151-L2153)، [index.html#L5337-L5344](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L5337-L5344)، [index.html#L5365-L5401](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L5365-L5401)، [index.html#L5468-L5477](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L5468-L5477)
+
+### FND-044 / TASK-065 — چاپ می‌تواند پس از خطای بارگذاری تصویر یا پایان Timeout بدون بازبینی نهایی اجرا شود
+
+**اولویت P1، نتیجه بازبینی سورس (نه مشاهده Runtime).**
+
+The preflight wrapper runs collectIssues before the oldPrintAll waits for fonts and image loading. In collectIssues, a raster img is marked broken only if `img.complete&&img.naturalWidth===0`; an image still loading is not an error yet. oldPrintAll then treats both image `load` and `error` as completion; after at most four seconds via Promise.race it always calls window.print() without recalculating broken resources or presenting unresolved-image warnings. SVG <image> readiness also resolves on error. A late failure or 4-second timeout can therefore proceed to a print/PDF with missing image content despite an earlier green preflight. This is separate from TASK-053 async navigation/print selection.
+
+**معیار پذیرش:** Use the exact immutable target print snapshot and await/decode all printable raster and SVG-linked images plus fonts, with bounded timeouts and explicit unresolved/error statuses. Re-run media/broken-resource preflight on the final snapshot immediately before window.print. Hard-block known failed required images; on timeout give a clear retry/cancel or owner-approved explicit override with affected page/asset names. Preserve TASK-053 awaited navigation, printing state cleanup, named @page settings, PDF snapshot isolation and no duplicate print invocation. Owner tests slow/failed/recovered images, fonts, remote SVG and 4+ second loads.
+
+**مراجع:** [index.html#L1821-L1836](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L1821-L1836)، [index.html#L1872-L1879](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L1872-L1879)، [index.html#L5411-L5427](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L5411-L5427)، [index.html#L5468-L5477](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L5468-L5477)، [index.html#L5594-L5619](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L5594-L5619)
+
+### FND-045 / TASK-066 — Preflight روی شماره صفحه پنهان کاور و قاب Region Block غیرچاپی هشدار می‌دهد
+
+**اولویت P2، نتیجه بازبینی سورس (نه مشاهده Runtime).**
+
+The print renderer filters out pageNumber on the first page unless `showOnFirstPage===true`, and filters out Region Block frames whenever not rendering an editor. collectIssues loops all resolved doc.objects except explicit visible/renderVisible/layerVisible flags; it does not replicate the print-only page-number or Region Block filters. An invisible first-page page-number object or an editor-only Block frame near the configured safe margin may therefore create a bounds/margin warning even when that object is not in the printable output. No runtime screen-reader/print output observed.
+
+**معیار پذیرش:** Create a shared or derived print visibility predicate used by both renderer and preflight, parameterized by actual portfolio pageIndex. Exclude editor-only Region Block chrome and hidden cover pageNumber from printed-object bounds/margin/overflow warnings without hiding their visible child content; preserve correct sequential number values after reorder/insert/delete and owner-tested first-page checkbox behavior. Show warnings for truly visible content only; verify mixed A4/A3 portrait/landscape and templates.
+
+**مراجع:** [index.html#L1723-L1730](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L1723-L1730)، [index.html#L1740-L1759](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L1740-L1759)، [index.html#L1785-L1801](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L1785-L1801)، [index.html#L5365-L5383](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L5365-L5383)
+
+### FND-046 — DPI هشدار چاپ برای Fit/Fill/Cover از یک فرمول یکسان استفاده می‌کند (پیگیری در TASK-029)
+
+v113PrintDpi calculates min(croppedPixelWidth/printFrameWidth, croppedPixelHeight/printFrameHeight)/zoom for every image and tile, without taking objectFit or actual visual image size into account. Shared frame rendering supports contain, cover, fill and none, with different effective image-to-paper scale. Example: an 800×200 px image in a 2×2 inch frame with contain is drawn 2×0.5 inches and has approximately 400 actual image pixels per printed inch, but the formula yields min(400,100)=100 and may warn below 200 DPI. Conversely, other modes can produce different effective sample densities. This is an unverified analytical example, not measured PDF output. Existing TASK-029 explicitly owns image-quality and effective-DPI warnings, so no duplicate task is created.
+
+**پذیرش افزوده به TASK-029:** Extend TASK-029 to derive effective pixels-per-printed-inch from actual crop dimensions, zoom, SVG/frame objectFit=contain|cover|fill|none, transformed image size and paper orientation/size, per Tile and main image. Label calculated estimates and unknown source sizes honestly; owner compares Fit/Fill/Cover/None known-pixel fixtures and A4/A3 printed/PDF output. Source image originals remain immutable.
+
+**شواهد:** [index.html#L2147-L2153](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L2147-L2153)، [index.html#L5345-L5355](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L5345-L5355)، [index.html#L5379-L5398](https://github.com/comboci/NSP-Portfolio-Builder/blob/eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07/index.html#L5379-L5398)
+
+### مسیرهای درست/ازقبل‌ثبت‌شده که تکرار نشدند
+
+- **شماره‌گذاری:** در `V.renderObjects` متن پویا از `pageIndex` ساخته می‌شود و شماره کاور در حالت پیش‌فرض پنهان است؛ یافته این فاز مربوط به اختلاف فیلتر Preflight با رندر است، نه ادعای اینکه موتور شمارنده همیشه غلط است.
+- **اندازه چاپ و رندر مشترک:** `V.pageSize` پشتیبانی A4/A3 و حالت portrait/landscape را دارد و `V.renderDocument` خروجی را با یک ساختار مشترک تولید می‌کند؛ برابری بصری فیزیکی، DPI و چاپ واقعی همچنان نیازمند پذیرش مالک است.
+- **TASK-053:** مسیر قدیمی `v30PrintPortfolio` و `go('preview')` ناهمگام که در فاز 04 پیدا شد، باز است. اینجا دوباره به‌عنوان Task جداگانه ثبت نشد؛ نقص readiness رسانه‌ها بعد از اجرای Preflight مستقل است.
+- **TASK-008/TASK-029:** گستره عمومی Preflight و هشدار کیفیت از قبل موجود بود؛ این ممیزی تنها نقص‌های call-site متمایز را به تسک جدید تبدیل کرده و خطای ریاضی DPI را به TASK-029 پیوند داده است.
+- **TASK-041/TASK-062:** Missing immutable Asset در بارگذاری و هندسه نامعتبر Grid قبلاً ثبت شده‌اند؛ بررسی چاپِ داده مخفی `stash` نباید به حذف ناامن Asset یا حذف reference index منجر شود.
+
+**Checkpoint:** OBS-056. TASK-064، TASK-065، TASK-066 در صف اجرای Project Evolution ثبت شدند؛ نسخه محصول، Schema و وضعیت Acceptance تغییر نکردند. **مرحله بعد با N: فاز 08 — کارایی، حافظه، امنیت ورودی، خطایابی و چندپنجره‌ای.**

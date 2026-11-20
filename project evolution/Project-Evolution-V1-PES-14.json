@@ -1322,6 +1322,113 @@
           "TASK-029",
           "DEC-006"
         ]
+      },
+      {
+        "record_id": "FND-043",
+        "title": "Preflight یک Image Tiles سالم را تصویر گم‌شده تشخیص می‌دهد",
+        "detail": "M.tiles creates one type=image element with tilesJson cells, without requiring a top-level assetId. M.markup renders each visible cell asset; however collectIssues unconditionally checks `o.type==='image'&&!imagePresent(o)` before entering its Tile branch. imagePresent only inspects the container's direct assetId/src/image/dataUrl. Therefore valid filled Image Tiles are flagged as missingImage and printAll blocks printing with an error, even if all visible cells resolve. The Tile branch also loops `tiles.stash`, even though stash cells are dormant and are not rendered; it treats a missing hidden image as a printable missing-image error. Confirmed from source, not runtime.\nSource evidence: index.html#L2134-L2136; index.html#L2151-L2153; index.html#L5337-L5344; index.html#L5365-L5401; index.html#L5468-L5477. Source-only; no runtime/PDF owner validation.",
+        "category": "implementation",
+        "scope_refs": [
+          "SC-PDF",
+          "SC-TILES",
+          "SC-LIBRARY",
+          "SC-IMAGEEDIT"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-064",
+          "TASK-008",
+          "TASK-029",
+          "TASK-041",
+          "TASK-062",
+          "REQ-004",
+          "REQ-005",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-044",
+        "title": "چاپ می‌تواند پس از خطای بارگذاری تصویر یا پایان Timeout بدون بازبینی نهایی اجرا شود",
+        "detail": "The preflight wrapper runs collectIssues before the oldPrintAll waits for fonts and image loading. In collectIssues, a raster img is marked broken only if `img.complete&&img.naturalWidth===0`; an image still loading is not an error yet. oldPrintAll then treats both image `load` and `error` as completion; after at most four seconds via Promise.race it always calls window.print() without recalculating broken resources or presenting unresolved-image warnings. SVG <image> readiness also resolves on error. A late failure or 4-second timeout can therefore proceed to a print/PDF with missing image content despite an earlier green preflight. This is separate from TASK-053 async navigation/print selection.\nSource evidence: index.html#L1821-L1836; index.html#L1872-L1879; index.html#L5411-L5427; index.html#L5468-L5477; index.html#L5594-L5619. Source-only; no runtime/PDF owner validation.",
+        "category": "data_integrity",
+        "scope_refs": [
+          "SC-PDF",
+          "SC-IMAGEEDIT",
+          "SC-STORAGE"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-065",
+          "TASK-008",
+          "TASK-029",
+          "TASK-041",
+          "TASK-053",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-045",
+        "title": "Preflight روی شماره صفحه پنهان کاور و قاب Region Block غیرچاپی هشدار می‌دهد",
+        "detail": "The print renderer filters out pageNumber on the first page unless `showOnFirstPage===true`, and filters out Region Block frames whenever not rendering an editor. collectIssues loops all resolved doc.objects except explicit visible/renderVisible/layerVisible flags; it does not replicate the print-only page-number or Region Block filters. An invisible first-page page-number object or an editor-only Block frame near the configured safe margin may therefore create a bounds/margin warning even when that object is not in the printable output. No runtime screen-reader/print output observed.\nSource evidence: index.html#L1723-L1730; index.html#L1740-L1759; index.html#L1785-L1801; index.html#L5365-L5383. Source-only; no runtime/PDF owner validation.",
+        "category": "code_review",
+        "scope_refs": [
+          "SC-PDF",
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES",
+          "SC-NUMBERING"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-066",
+          "TASK-005",
+          "TASK-008",
+          "TASK-010",
+          "REQ-007",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-046",
+        "title": "DPI هشدار چاپ برای Fit/Fill/Cover از یک فرمول یکسان استفاده می‌کند",
+        "detail": "v113PrintDpi calculates min(croppedPixelWidth/printFrameWidth, croppedPixelHeight/printFrameHeight)/zoom for every image and tile, without taking objectFit or actual visual image size into account. Shared frame rendering supports contain, cover, fill and none, with different effective image-to-paper scale. Example: an 800×200 px image in a 2×2 inch frame with contain is drawn 2×0.5 inches and has approximately 400 actual image pixels per printed inch, but the formula yields min(400,100)=100 and may warn below 200 DPI. Conversely, other modes can produce different effective sample densities. This is an unverified analytical example, not measured PDF output. Existing TASK-029 explicitly owns image-quality and effective-DPI warnings, so no duplicate task is created.\nAcceptance supplement for TASK-029: Extend TASK-029 to derive effective pixels-per-printed-inch from actual crop dimensions, zoom, SVG/frame objectFit=contain|cover|fill|none, transformed image size and paper orientation/size, per Tile and main image. Label calculated estimates and unknown source sizes honestly; owner compares Fit/Fill/Cover/None known-pixel fixtures and A4/A3 printed/PDF output. Source image originals remain immutable.\nSource evidence: index.html#L2147-L2153; index.html#L5345-L5355; index.html#L5379-L5398",
+        "category": "code_review",
+        "scope_refs": [
+          "SC-PDF",
+          "SC-IMAGEEDIT",
+          "SC-TILES"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07"
+        },
+        "implementation_state": "covered_by_existing_TASK-029_follow_up",
+        "related_record_ids": [
+          "TASK-029",
+          "TASK-008",
+          "TASK-020",
+          "TASK-021",
+          "DEC-006"
+        ]
       }
     ],
     "business_rules": [
@@ -2591,7 +2698,7 @@
       {
         "record_id": "TASK-029",
         "title": "Complete missing image filters and print-resolution warnings",
-        "detail": "Cover REQ-006 gaps not fully assigned to TASK-019/020/021: non-destructive grayscale, sepia, blur and sharpen, per-image/per-tile independent settings and Reset, consistent canvas/preview/PDF rendering, safe preservation of original library file, and a print quality warning from effective DPI after crop/zoom/scaling (separate from hard asset-missing/overflow errors). Inspect current rotation/flip/opacity/mask implementations before adding duplicate controls. Acceptance: no changes to asset bytes, repeatable edit/reload, independent tiles and accurate PDF/preflight warning. Source-only identification, no tests/builds.\n\nPhase 06 source-only follow-up FND-042: M.crop's Apply handler checks the media-context token but calls writeCell(...) and closes the dialog unconditionally, unlike editCustomMask where a false writeCell result leaves the dialog open and reports failure. M.adjust clamps only grayscale, sepia, blur and sharpen, but directly stores out-of-range zoom, x/y, brightness/contrast/saturation and radius values; frame() merely clamps them at display time, producing a mismatch between saved JSON and shown pixels. Existing TASK-020 and TASK-029 already own crop/filter semantics, and TASK-038 covers queued failure acknowledgement, so register a linked finding and enhance acceptance rather than creating a duplicate task.\nAdditional acceptance: In TASK-020/029, validate and normalize all image-edit limits before write, keep the Crop/Mask dialog open and report when writeCell rejects the edit, distinguish queue acknowledgement from synchronous enqueue, and preserve exact per-tile editor/preview/print settings with explicit rollback/retry. No assistant-run Build/Test.",
+        "detail": "Cover REQ-006 gaps not fully assigned to TASK-019/020/021: non-destructive grayscale, sepia, blur and sharpen, per-image/per-tile independent settings and Reset, consistent canvas/preview/PDF rendering, safe preservation of original library file, and a print quality warning from effective DPI after crop/zoom/scaling (separate from hard asset-missing/overflow errors). Inspect current rotation/flip/opacity/mask implementations before adding duplicate controls. Acceptance: no changes to asset bytes, repeatable edit/reload, independent tiles and accurate PDF/preflight warning. Source-only identification, no tests/builds.\n\nPhase 06 source-only follow-up FND-042: M.crop's Apply handler checks the media-context token but calls writeCell(...) and closes the dialog unconditionally, unlike editCustomMask where a false writeCell result leaves the dialog open and reports failure. M.adjust clamps only grayscale, sepia, blur and sharpen, but directly stores out-of-range zoom, x/y, brightness/contrast/saturation and radius values; frame() merely clamps them at display time, producing a mismatch between saved JSON and shown pixels. Existing TASK-020 and TASK-029 already own crop/filter semantics, and TASK-038 covers queued failure acknowledgement, so register a linked finding and enhance acceptance rather than creating a duplicate task.\nAdditional acceptance: In TASK-020/029, validate and normalize all image-edit limits before write, keep the Crop/Mask dialog open and report when writeCell rejects the edit, distinguish queue acknowledgement from synchronous enqueue, and preserve exact per-tile editor/preview/print settings with explicit rollback/retry. No assistant-run Build/Test.\n\nPhase 07 source review FND-046: v113PrintDpi calculates min(croppedPixelWidth/printFrameWidth, croppedPixelHeight/printFrameHeight)/zoom for every image and tile, without taking objectFit or actual visual image size into account. Shared frame rendering supports contain, cover, fill and none, with different effective image-to-paper scale. Example: an 800×200 px image in a 2×2 inch frame with contain is drawn 2×0.5 inches and has approximately 400 actual image pixels per printed inch, but the formula yields min(400,100)=100 and may warn below 200 DPI. Conversely, other modes can produce different effective sample densities. This is an unverified analytical example, not measured PDF output. Existing TASK-029 explicitly owns image-quality and effective-DPI warnings, so no duplicate task is created.\nExtended acceptance: Extend TASK-029 to derive effective pixels-per-printed-inch from actual crop dimensions, zoom, SVG/frame objectFit=contain|cover|fill|none, transformed image size and paper orientation/size, per Tile and main image. Label calculated estimates and unknown source sizes honestly; owner compares Fit/Fill/Cover/None known-pixel fixtures and A4/A3 printed/PDF output. Source image originals remain immutable.",
         "scope_refs": [
           "SC-IMAGEEDIT",
           "SC-PDF",
@@ -2604,7 +2711,8 @@
           "TASK-020",
           "TASK-021",
           "FND-011",
-          "FND-042"
+          "FND-042",
+          "FND-046"
         ],
         "status": "in_progress",
         "provenance": {
@@ -2624,7 +2732,8 @@
         ],
         "evidence_refs": [
           "OBS-033",
-          "FND-042"
+          "FND-042",
+          "FND-046"
         ]
       },
       {
@@ -3831,6 +3940,106 @@
           "FND-041"
         ],
         "result": "Not implemented. Source-only retrospective audit phase 06; owner acceptance pending."
+      },
+      {
+        "record_id": "TASK-064",
+        "title": "Use Tile-aware print preflight: validate visible cells, not the empty container or hidden stash",
+        "detail": "M.tiles creates one type=image element with tilesJson cells, without requiring a top-level assetId. M.markup renders each visible cell asset; however collectIssues unconditionally checks `o.type==='image'&&!imagePresent(o)` before entering its Tile branch. imagePresent only inspects the container's direct assetId/src/image/dataUrl. Therefore valid filled Image Tiles are flagged as missingImage and printAll blocks printing with an error, even if all visible cells resolve. The Tile branch also loops `tiles.stash`, even though stash cells are dormant and are not rendered; it treats a missing hidden image as a printable missing-image error. Confirmed from source, not runtime.\n\nAcceptance criteria: Branch on valid tilesJson before applying standalone-image checks. Validate visible cells by row/column and asset identity, display helpful cell-indexed errors for required missing/broken visible assets and intentional placeholders according to the approved policy, and do not block print solely because a dormant stash item is missing (report stash integrity separately). Prevent false missingImage on the Tile container; preserve per-tile DPI, crop, group ownership, source immutability, active/stashed references and blocked printing for genuinely broken visible assets. Owner validates populated/empty/partially-filled Tile, shrink/expand stash and multi-page PDF in browser/Tauri.\n\nSource evidence: index.html#L2134-L2136; index.html#L2151-L2153; index.html#L5337-L5344; index.html#L5365-L5401; index.html#L5468-L5477. Preserve existing resources, data, and live source history. Under DEC-006, do not run Build/Test/static-check; owner performs print/PDF validation.",
+        "scope_refs": [
+          "SC-PDF",
+          "SC-TILES",
+          "SC-LIBRARY",
+          "SC-IMAGEEDIT"
+        ],
+        "related_record_ids": [
+          "FND-043",
+          "TASK-008",
+          "TASK-029",
+          "TASK-041",
+          "TASK-062",
+          "REQ-004",
+          "REQ-005",
+          "DEC-006"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V129",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-043"
+        ],
+        "result": "Not implemented; source-only print/PDF audit phase 07; owner acceptance pending."
+      },
+      {
+        "record_id": "TASK-065",
+        "title": "Re-run resource-integrity preflight after image/font readiness and before invoking print",
+        "detail": "The preflight wrapper runs collectIssues before the oldPrintAll waits for fonts and image loading. In collectIssues, a raster img is marked broken only if `img.complete&&img.naturalWidth===0`; an image still loading is not an error yet. oldPrintAll then treats both image `load` and `error` as completion; after at most four seconds via Promise.race it always calls window.print() without recalculating broken resources or presenting unresolved-image warnings. SVG <image> readiness also resolves on error. A late failure or 4-second timeout can therefore proceed to a print/PDF with missing image content despite an earlier green preflight. This is separate from TASK-053 async navigation/print selection.\n\nAcceptance criteria: Use the exact immutable target print snapshot and await/decode all printable raster and SVG-linked images plus fonts, with bounded timeouts and explicit unresolved/error statuses. Re-run media/broken-resource preflight on the final snapshot immediately before window.print. Hard-block known failed required images; on timeout give a clear retry/cancel or owner-approved explicit override with affected page/asset names. Preserve TASK-053 awaited navigation, printing state cleanup, named @page settings, PDF snapshot isolation and no duplicate print invocation. Owner tests slow/failed/recovered images, fonts, remote SVG and 4+ second loads.\n\nSource evidence: index.html#L1821-L1836; index.html#L1872-L1879; index.html#L5411-L5427; index.html#L5468-L5477; index.html#L5594-L5619. Preserve existing resources, data, and live source history. Under DEC-006, do not run Build/Test/static-check; owner performs print/PDF validation.",
+        "scope_refs": [
+          "SC-PDF",
+          "SC-IMAGEEDIT",
+          "SC-STORAGE"
+        ],
+        "related_record_ids": [
+          "FND-044",
+          "TASK-008",
+          "TASK-029",
+          "TASK-041",
+          "TASK-053",
+          "DEC-006"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V129",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-044"
+        ],
+        "result": "Not implemented; source-only print/PDF audit phase 07; owner acceptance pending."
+      },
+      {
+        "record_id": "TASK-066",
+        "title": "Make preflight visibility match actual printed objects, including cover page numbers and Region Blocks",
+        "detail": "The print renderer filters out pageNumber on the first page unless `showOnFirstPage===true`, and filters out Region Block frames whenever not rendering an editor. collectIssues loops all resolved doc.objects except explicit visible/renderVisible/layerVisible flags; it does not replicate the print-only page-number or Region Block filters. An invisible first-page page-number object or an editor-only Block frame near the configured safe margin may therefore create a bounds/margin warning even when that object is not in the printable output. No runtime screen-reader/print output observed.\n\nAcceptance criteria: Create a shared or derived print visibility predicate used by both renderer and preflight, parameterized by actual portfolio pageIndex. Exclude editor-only Region Block chrome and hidden cover pageNumber from printed-object bounds/margin/overflow warnings without hiding their visible child content; preserve correct sequential number values after reorder/insert/delete and owner-tested first-page checkbox behavior. Show warnings for truly visible content only; verify mixed A4/A3 portrait/landscape and templates.\n\nSource evidence: index.html#L1723-L1730; index.html#L1740-L1759; index.html#L1785-L1801; index.html#L5365-L5383. Preserve existing resources, data, and live source history. Under DEC-006, do not run Build/Test/static-check; owner performs print/PDF validation.",
+        "scope_refs": [
+          "SC-PDF",
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES",
+          "SC-NUMBERING"
+        ],
+        "related_record_ids": [
+          "FND-045",
+          "TASK-005",
+          "TASK-008",
+          "TASK-010",
+          "REQ-007",
+          "DEC-006"
+        ],
+        "priority": "P2",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V129",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-045"
+        ],
+        "result": "Not implemented; source-only print/PDF audit phase 07; owner acceptance pending."
       }
     ],
     "evidence": [],
@@ -5118,6 +5327,39 @@
           "source_revision_ref": "636a2eed4854c35ee87a6902b3669f5a631bb460"
         },
         "implementation_state": "source_candidate_owner_runtime_pending"
+      },
+      {
+        "record_id": "OBS-056",
+        "title": "Retrospective audit phase 07: PDF/Print, preflight, media readiness, DPI and pagination",
+        "status": "source_only_review_completed",
+        "detail": "Reviewed V129 at eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07 across shared document rendering, page numbering, A4/A3 CSS @page/scale, preflight geometry, Tile visible/stash media checks, DPI and async print resource readiness. FND-043, FND-044, FND-045 mapped to planned TASK-064, TASK-065, TASK-066; FND-046 attached to preexisting TASK-029 for Fit/Contain DPI math without duplicate task. TASK-053 async navigation-print race and TASK-008/005/020/041/062 remain unchanged/linked, not falsely completed. No Build/Test/static-check/browser/Tauri print/PDF runtime or owner acceptance. Next owner N = audit phase 08 performance/security/reliability.",
+        "scope_refs": [
+          "SC-PDF",
+          "SC-TILES",
+          "SC-IMAGEEDIT",
+          "SC-LIBRARY",
+          "SC-PORTFOLIOS",
+          "SC-NUMBERING"
+        ],
+        "related_record_ids": [
+          "TASK-064",
+          "TASK-065",
+          "TASK-066",
+          "FND-043",
+          "FND-044",
+          "FND-045",
+          "FND-046",
+          "TASK-008",
+          "TASK-029",
+          "TASK-053",
+          "DEC-006"
+        ],
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07"
+        },
+        "implementation_state": "audit_documented_and_committed_code_untouched"
       }
     ]
   },
@@ -5194,6 +5436,8 @@
       "TASK-051",
       "TASK-052",
       "TASK-053",
+      "TASK-064",
+      "TASK-065",
       "TASK-054",
       "TASK-055",
       "TASK-056",
@@ -5202,6 +5446,7 @@
       "TASK-059",
       "TASK-062",
       "TASK-063",
+      "TASK-066",
       "TASK-038",
       "TASK-005",
       "TASK-006",
@@ -5242,7 +5487,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V129 TASK-046 source candidate: legacy v30 JSON export now routes to scoped v111 exporter, whitelisting one portfolio and referenced private/public images with a content manifest and preview. Full-backup option explicitly warns before exporting all projects; SQLite schema 12 unchanged; runtime/exported JSON owner review pending. TASK-046 remains in_progress, not completed; next eligible planned task TASK-061 pending fresh main/PE check.\nV128 TASK-060 source candidate: removed orphan IIFE-level duplicated M.place fragment causing out-of-scope ReferenceError; retains M.place public-template authorization and non-destructive image/Tile replacement, with all assets, SQLite schema-12 migrations/backups and concurrent phase-06 findings intact. Owner browser/Tauri image bootstrap, picker, Tile/Crop/Mask and PDF review pending; no Build/Test/static check. Next eligible planned TASK-046; TASK-060 remains in_progress pending owner acceptance.\nV127 TASK-038 source candidate on 503ab59d816d: failed queued writes survive later unrelated successes; global flush/leave/retry do not report false Saved. Explicit retry uses latest in-memory page/project under existing CAS and refuses stale/cross-project replay; public-image rename errors require an explicit repeat action. Owner runtime/Build/Test/static-check not performed; next eligible planned task TASK-046. V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nPhase 04 UI/UX retrospective source audit completed: FND-029, FND-030, FND-031, FND-032, FND-033 mapped to planned TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Verified source gaps: thumbnail reorder persists wrong Save scope, print reads preview ahead of async guarded navigation, outer shell fixed-width rail on narrow widths, project/thumbnail focus & semantics, hidden file inputs keyboard accessibility. Prior TASK-022..026 and TASK-030 not duplicated; owner Runtime/Acceptance pending. Next N = phase 05 designer/inheritance/layers/history; evidence in project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nRetrospective phase 05 designer source audit complete at 1207b87689523ff3b095df45ade70217b9b0838b: FND-034, FND-035, FND-036 mapped to TASK-057, TASK-058, TASK-059 for pointer Region Block containment, rotated-corner geometry guards for Align/Duplicate and rigid multi-object Guide snapping. FND-037 linked to prior TASK-012 for missing History coverage on Guides/page background/content-flow, no duplicate task. No Build/Test/runtime/Acceptance; next owner N = phase 06 Image Library/ownership/tiles.\nPhase 06 asset/Tile source-only audit at 7c3a53732082f1d36e8edb5a2c1e6858ca710715: FND-038, FND-039, FND-040, FND-041 mapped to planned TASK-060, TASK-061, TASK-062, TASK-063. Critical TASK-060 removes orphan top-level forceNew ReferenceError aborting media initialization; TASK-061 preserves immutable library originals; TASK-062, TASK-063 enforce Tile geometry and keyboard polygon masks. FND-042 attached to existing TASK-020/029 for Crop/filters. V127 TASK-038 source fix remains runtime unverified. No Build/Test/Runtime/Acceptance, next user N phase 07 Print/PDF.",
+    "current_summary": "V129 TASK-046 source candidate: legacy v30 JSON export now routes to scoped v111 exporter, whitelisting one portfolio and referenced private/public images with a content manifest and preview. Full-backup option explicitly warns before exporting all projects; SQLite schema 12 unchanged; runtime/exported JSON owner review pending. TASK-046 remains in_progress, not completed; next eligible planned task TASK-061 pending fresh main/PE check.\nV128 TASK-060 source candidate: removed orphan IIFE-level duplicated M.place fragment causing out-of-scope ReferenceError; retains M.place public-template authorization and non-destructive image/Tile replacement, with all assets, SQLite schema-12 migrations/backups and concurrent phase-06 findings intact. Owner browser/Tauri image bootstrap, picker, Tile/Crop/Mask and PDF review pending; no Build/Test/static check. Next eligible planned TASK-046; TASK-060 remains in_progress pending owner acceptance.\nV127 TASK-038 source candidate on 503ab59d816d: failed queued writes survive later unrelated successes; global flush/leave/retry do not report false Saved. Explicit retry uses latest in-memory page/project under existing CAS and refuses stale/cross-project replay; public-image rename errors require an explicit repeat action. Owner runtime/Build/Test/static-check not performed; next eligible planned task TASK-046. V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nPhase 04 UI/UX retrospective source audit completed: FND-029, FND-030, FND-031, FND-032, FND-033 mapped to planned TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Verified source gaps: thumbnail reorder persists wrong Save scope, print reads preview ahead of async guarded navigation, outer shell fixed-width rail on narrow widths, project/thumbnail focus & semantics, hidden file inputs keyboard accessibility. Prior TASK-022..026 and TASK-030 not duplicated; owner Runtime/Acceptance pending. Next N = phase 05 designer/inheritance/layers/history; evidence in project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nRetrospective phase 05 designer source audit complete at 1207b87689523ff3b095df45ade70217b9b0838b: FND-034, FND-035, FND-036 mapped to TASK-057, TASK-058, TASK-059 for pointer Region Block containment, rotated-corner geometry guards for Align/Duplicate and rigid multi-object Guide snapping. FND-037 linked to prior TASK-012 for missing History coverage on Guides/page background/content-flow, no duplicate task. No Build/Test/runtime/Acceptance; next owner N = phase 06 Image Library/ownership/tiles.\nPhase 06 asset/Tile source-only audit at 7c3a53732082f1d36e8edb5a2c1e6858ca710715: FND-038, FND-039, FND-040, FND-041 mapped to planned TASK-060, TASK-061, TASK-062, TASK-063. Critical TASK-060 removes orphan top-level forceNew ReferenceError aborting media initialization; TASK-061 preserves immutable library originals; TASK-062, TASK-063 enforce Tile geometry and keyboard polygon masks. FND-042 attached to existing TASK-020/029 for Crop/filters. V127 TASK-038 source fix remains runtime unverified. No Build/Test/Runtime/Acceptance, next user N phase 07 Print/PDF.\nPhase 07 PDF/Print source-only audit at eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07: FND-043, FND-044, FND-045 mapped to planned TASK-064, TASK-065, TASK-066 for false missingImage on Tile container/hidden stash, print media load failure/timeout re-preflight, hidden pageNumber/editor-only block false print warnings. FND-046 attached to TASK-029 to correct objectFit-dependent DPI. Existing TASK-053 print navigation race remains; no Build/Test/PDF/Runtime/Acceptance; next user N phase 08 performance/security/reliability.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
