@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V136 source candidate (Tauri 136.0.0; SQLite schema 13 unchanged); TASK-044 truthful startup recovery and metadata-only diagnostics; owner runtime pending",
+    "software_release": "V137 source candidate (Tauri 137.0.0; SQLite schema 13 unchanged); independent pages, categorized global templates and linked project Custom Components; legacy Master/Section compatibility pending; no owner runtime acceptance.",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding. V96 dd8884b8 implements TASK-016 in the shared designer with px/mm geometry, grouped Block and Group movement, key/selection/page references, history and non-destructive bounds guards. No build or runtime review. V97 65d0788a implements TASK-017 signed-mm Ctrl+D duplication in the shared designer and preserves Group/Region Block ownership; owner runtime review outstanding. V98 TASK-018 based on V97 HEAD 1eb6f858f9457c6c45f35b27ac71d415d6f372ea; no Build/Test, runtime or PDF validation. V99 160af83c guards editor exit until async persistence acknowledgement. V100 efdf0e93 centralizes page/portfolio/master duplication and preserves source provenance while remapping local compound identities; source only, no build/runtime test. V101 e2221346 replaces preflight go('visual') with direct page navigation and exact object provenance focus for TASK-008, with no build/runtime/PDF verification. V102 bee05475 creates independent shared_styles SQLite schema 6 table, transactional catalog projection, legacy style backfill, canonical project load, and confirmed asynchronous Style Library saving. No Build/Test/runtime acceptance. V103 TASK-019 based on PE-only HEAD a7cab4f; object effect controls in shared renderer and local Properties; no DB migration or Build/Test; owner acceptance pending. V104 HEAD e1e4f190 comprises V103 TASK-019 followed by transactional storage changes ec43999 and version-aware static validation e1e4f190; these have no matching V104 PE observation and remain unverified. V105 TASK-020 is based on V104 main e1e4f190, preserving the V104 storage changes and recording an image crop/mask source candidate only. V106 TASK-021 based on V105 main 85e3db9ab5580287a030037a4301fa93928c79de; frame-preserving replacement and Tile fit changes are source-only, pending owner review. V107 TASK-023 partial based on V106 main feaebe5f34604412305a6f8cf05487c42ab64266; editor displays backend-acknowledged save/error/retry state; autosave toggle and manual leave flows remain unimplemented and unverified. V108 TASK-023 based on V107 main HEAD e83db4904768cd7555415c22e5f616bf4d18b770; master/section draft confirmation awaits asynchronous backend save, but no Build/Test/runtime. V109 TASK-023 reconciled PE revision e83db4904768cd7555415c22e5f616bf4d18b770 as the verified immediate parent of V108 main HEAD d1a27c828defd92288a0e09a19755d8d89d97999; added optional three-way Save/Discard/Cancel for template draft changes, preserving prior dialogs. No Build/Test/runtime. V110 4b3531bf provides transactional SQLite metadata-only renaming for public images and a clearly blocked Delete control under BR-006/Q-005; retains all prior ownership, references, original bytes and schema 6; source only. V111 f67f2aa4 implements scoped non-destructive project Import and portfolio Import/Export/Print with dependency checks, local asset rebinding, contextual menu cleanup and retained Backup; source only, runtime unverified. V112 f7b0e5f6 introduces project-private and centralized public albums with safe metadata-only add/remove membership and no asset deletion; browser/Tauri runtime acceptance outstanding. V113 TASK-029 based on V112 HEAD 904bb89a420c51892f1fe5823d5aa9c628448dfa; PE source_revision_ref f7b0e5f6 is its immediate parent. Image effects and print DPI are source-only; no Build/Test/runtime/PDF/owner verification. V114 42cce72e / 13386ac8 reconciles HTML header/meta, JS/Cargo/Tauri version and schema-6 static source-check script; report intentionally not executed. V115 N-01 commit 5a1dd6b7454e adds additive three-index SQLite schema revision 7 and records N-02..N-07 architectural roadmap without running Build/Test/runtime, pending owner verification. V116 N-02 code commit b67cd4e4c48a adds migration 008 with typed FK-backed media/backup reference tables and durable legacy mismatch ledger; source-only, no Build/Test/runtime owner acceptance. V116 N-02 code revision b67cd4e4 is the immediate parent of V116 PE-only HEAD b76b5760, and V117 TASK-023 derives from the latter while preserving SQL migration 008. No tests/build/runtime. V118 N-03 commit c5c19ca761c8 is based on concurrent V117 TASK-023 commit 6dedc9fdb217 and replaces full image owner/use row rewrites and automatic/named backup rescans with FK-ordered SQL row deltas and newly-inserted-automatic-backup indexing; schema remains 8 and no Build/Test/runtime was run. V119 N-04 c06e6b57701d is based on V118 PE-only head 770a3e05663f (which follows code c5c19ca761c8); it preserves N-03 and V117/TASK-023. SQLite migration 009 adds FK-bound style usage with tolerant historical backfill; no Build/Test/runtime/owner acceptance. V120 N-05 a38d7e1f9e31 builds on V119 code/PE, adding schema 010 and scene_store Rust-derived FK projection without a second editable JSON source. Style deletion sequencing follows scene projection update; no Build/Test/runtime or owner acceptance. V121 TASK-023 frontend change derives from reconciled V120 main b6e617d4d5b2b290f6b841d2c579ebf6821a399a; the V120 N-05 PE-only commit remains preserved. No build/test/runtime. V122 N-06 4e73d0e3c4c1 builds on V121 TASK-023 main d792b175: migration 011 adds workspace/page revisions; backend/JS introduce atomic load_state, native save_page, revision-guarded save_project, scoped indexes and explicit Save Project, without executing Build/Test/runtime. Browser IndexedDB unchanged as monolithic JSON; owner acceptance pending. V123 ac9faa126049 follows V122 N-06 PE-only commit c87b9a76; preserves previous changes, routes editor save by page scope, and updates only that page's Scene projection. No Build/Test/runtime verification. V124 N-07 code commit 3a345d10162857815977091dd6b6e785cf8a2ad4 is based on V123 PE-only main 5e4646c5773c423ee165cfb5df10de4c8d23158b; additive schema 012 introduces default-disabled automatic pruning with verified named backup checkpoint gate, keeps named backups and immutable assets, adds cursor paging and read-only integrity diagnostics. Build/Test/static checker/real migration/owner restore acceptance not executed. V125 TASK-023 reconciled PE source ref 3a345d101628 with one PE-only N-07 documentation commit 57cb574f33903d9aed3b28327ab5fbf4ce44ca68; V124 backup retention/integrity and OBS-044 preserved; source-based global sidebar leave guard added without Build/Test/static checker/runtime. V126 TASK-040 05a225224e6e2b96821fb17da6f22443aa71055c follows V125 code and the concurrent database audit PE commit; public catalog rename now participates in workspace CAS transaction and JS revision queue. V124 N-07 schema 12, backup guard, immutable assets preserved. Source-only; no Build/Test/Static Checker/Windows runtime.\nAudit phase 02: source V126 reviewed at HEAD dd5ccf594c0d41c696250b3e3949ceb580983e71 (including earlier V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c); added documentation-only TASK-042..TASK-045, no code release or runtime validation. V127 TASK-038 based on latest main 503ab59d816d4a82b8bbc018c007c28559b811f5; PE was 3 documentation-only commits ahead of its source_revision_ref and reconciled by comparing dd5ccf5..503ab59d. Scoped failed-write ledger and explicit latest-state retry are source-only; owner verification pending, no Build/Test/static checker.\nV128 TASK-060 reconciled baseline e6a786321c8ec524af02c3822eafe5d74c3011c3 (prior PE source_revision_ref 503ab59d816d4a82b8bbc018c007c28559b811f5) using ancestor comparison (ahead 2, no divergent history). Exactly one orphan placement block removed; V127 code and phase-06 audit preserved; no Build/Test/static checker/runtime.\nV129 TASK-046 reconciled prior PE reference e6a786 as the immediate parent of V128 main 636a2eed, preserving concurrent media-bootstrap change. V129 works from 636a2eed with isolated export semantics; no Build/Test/runtime acceptance.\nV130 TASK-061 reconciled predecessor source ref 636a2eed against main 63f23607d6d7a9d548480de5487dfaf7ed82b5d2 (ahead 2, non-divergent) including V129 TASK-046 and OBS-056 PDF audit. Original library bytes/IDs remain immutable; source-only candidate, no Build/Test/static checker/runtime.\nV131 TASK-039 starts from V130 main 88971c04776c2e9b32cb3e1a39f6af06d70a7077 (its PE source_revision_ref was the immediate parent). Uses non-destructive IndexedDB v2 upgrade and transactional browser CAS; localStorage fallback remains outside CAS and separately tracked as TASK-042. No Build/Test/static checker/browser runtime or owner acceptance.\nV132 TASK-041 reconciled PE reference 88971c04776c2e9b32cb3e1a39f6af06d70a7077 to HEAD 4133d23cd3bb4de9f70037acb90bb82db056726a (2 commits ahead, no divergence), preserving concurrent V131 source and phase-08 audit. Normal workspace read-only preview differs from strict backup integrity/restore; no Build/Test/static checker/runtime.\nV133 TASK-042 reconciled PE source 4133d23cd3bb4de9f70037acb90bb82db056726a with current HEAD 809e8df04107403dbf27320d04b8539e24ff7f09 (ahead 2 with no divergence); preserved nine-phase audit and V132 missing-image recovery. No Build/Test/static checker/runtime.\nV134 TASK-071 started from current main 229312fa33a82908834b69fb68a86ab1f0730fe7 (V133 TASK-042 + prior Phase 09 audit); source-only lazy viewport thumbnails and selected-page invalidation, preserving all concurrent CAS, image ownership, print and schema 12 contracts. No assistant Build/Test/static checker/runtime; owner verification pending.\nV135 TASK-043 reconciled prior PE source 229312fa33a82908834b69fb68a86ab1f0730fe7 to dc2fe9a5afc901d2f9fbea400698154019353afc (ahead 2, no divergence); all TASK-071 changes preserved. Only source candidate; no Build/Test/static checker/runtime.\nV136 TASK-044 starts from V135 main 2a9aef9ee02c6825c1b1d6e88f48860c79c01b66; previous PE source ref dc2fe9a5afc901d2f9fbea400698154019353afc was that commit's immediate parent. Preserved V135 migration 013 and TASK-043. Source-only; no Build/Test/static checker/runtime.",
-    "source_revision_ref": "2a9aef9ee02c6825c1b1d6e88f48860c79c01b66"
+    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding. V96 dd8884b8 implements TASK-016 in the shared designer with px/mm geometry, grouped Block and Group movement, key/selection/page references, history and non-destructive bounds guards. No build or runtime review. V97 65d0788a implements TASK-017 signed-mm Ctrl+D duplication in the shared designer and preserves Group/Region Block ownership; owner runtime review outstanding. V98 TASK-018 based on V97 HEAD 1eb6f858f9457c6c45f35b27ac71d415d6f372ea; no Build/Test, runtime or PDF validation. V99 160af83c guards editor exit until async persistence acknowledgement. V100 efdf0e93 centralizes page/portfolio/master duplication and preserves source provenance while remapping local compound identities; source only, no build/runtime test. V101 e2221346 replaces preflight go('visual') with direct page navigation and exact object provenance focus for TASK-008, with no build/runtime/PDF verification. V102 bee05475 creates independent shared_styles SQLite schema 6 table, transactional catalog projection, legacy style backfill, canonical project load, and confirmed asynchronous Style Library saving. No Build/Test/runtime acceptance. V103 TASK-019 based on PE-only HEAD a7cab4f; object effect controls in shared renderer and local Properties; no DB migration or Build/Test; owner acceptance pending. V104 HEAD e1e4f190 comprises V103 TASK-019 followed by transactional storage changes ec43999 and version-aware static validation e1e4f190; these have no matching V104 PE observation and remain unverified. V105 TASK-020 is based on V104 main e1e4f190, preserving the V104 storage changes and recording an image crop/mask source candidate only. V106 TASK-021 based on V105 main 85e3db9ab5580287a030037a4301fa93928c79de; frame-preserving replacement and Tile fit changes are source-only, pending owner review. V107 TASK-023 partial based on V106 main feaebe5f34604412305a6f8cf05487c42ab64266; editor displays backend-acknowledged save/error/retry state; autosave toggle and manual leave flows remain unimplemented and unverified. V108 TASK-023 based on V107 main HEAD e83db4904768cd7555415c22e5f616bf4d18b770; master/section draft confirmation awaits asynchronous backend save, but no Build/Test/runtime. V109 TASK-023 reconciled PE revision e83db4904768cd7555415c22e5f616bf4d18b770 as the verified immediate parent of V108 main HEAD d1a27c828defd92288a0e09a19755d8d89d97999; added optional three-way Save/Discard/Cancel for template draft changes, preserving prior dialogs. No Build/Test/runtime. V110 4b3531bf provides transactional SQLite metadata-only renaming for public images and a clearly blocked Delete control under BR-006/Q-005; retains all prior ownership, references, original bytes and schema 6; source only. V111 f67f2aa4 implements scoped non-destructive project Import and portfolio Import/Export/Print with dependency checks, local asset rebinding, contextual menu cleanup and retained Backup; source only, runtime unverified. V112 f7b0e5f6 introduces project-private and centralized public albums with safe metadata-only add/remove membership and no asset deletion; browser/Tauri runtime acceptance outstanding. V113 TASK-029 based on V112 HEAD 904bb89a420c51892f1fe5823d5aa9c628448dfa; PE source_revision_ref f7b0e5f6 is its immediate parent. Image effects and print DPI are source-only; no Build/Test/runtime/PDF/owner verification. V114 42cce72e / 13386ac8 reconciles HTML header/meta, JS/Cargo/Tauri version and schema-6 static source-check script; report intentionally not executed. V115 N-01 commit 5a1dd6b7454e adds additive three-index SQLite schema revision 7 and records N-02..N-07 architectural roadmap without running Build/Test/runtime, pending owner verification. V116 N-02 code commit b67cd4e4c48a adds migration 008 with typed FK-backed media/backup reference tables and durable legacy mismatch ledger; source-only, no Build/Test/runtime owner acceptance. V116 N-02 code revision b67cd4e4 is the immediate parent of V116 PE-only HEAD b76b5760, and V117 TASK-023 derives from the latter while preserving SQL migration 008. No tests/build/runtime. V118 N-03 commit c5c19ca761c8 is based on concurrent V117 TASK-023 commit 6dedc9fdb217 and replaces full image owner/use row rewrites and automatic/named backup rescans with FK-ordered SQL row deltas and newly-inserted-automatic-backup indexing; schema remains 8 and no Build/Test/runtime was run. V119 N-04 c06e6b57701d is based on V118 PE-only head 770a3e05663f (which follows code c5c19ca761c8); it preserves N-03 and V117/TASK-023. SQLite migration 009 adds FK-bound style usage with tolerant historical backfill; no Build/Test/runtime/owner acceptance. V120 N-05 a38d7e1f9e31 builds on V119 code/PE, adding schema 010 and scene_store Rust-derived FK projection without a second editable JSON source. Style deletion sequencing follows scene projection update; no Build/Test/runtime or owner acceptance. V121 TASK-023 frontend change derives from reconciled V120 main b6e617d4d5b2b290f6b841d2c579ebf6821a399a; the V120 N-05 PE-only commit remains preserved. No build/test/runtime. V122 N-06 4e73d0e3c4c1 builds on V121 TASK-023 main d792b175: migration 011 adds workspace/page revisions; backend/JS introduce atomic load_state, native save_page, revision-guarded save_project, scoped indexes and explicit Save Project, without executing Build/Test/runtime. Browser IndexedDB unchanged as monolithic JSON; owner acceptance pending. V123 ac9faa126049 follows V122 N-06 PE-only commit c87b9a76; preserves previous changes, routes editor save by page scope, and updates only that page's Scene projection. No Build/Test/runtime verification. V124 N-07 code commit 3a345d10162857815977091dd6b6e785cf8a2ad4 is based on V123 PE-only main 5e4646c5773c423ee165cfb5df10de4c8d23158b; additive schema 012 introduces default-disabled automatic pruning with verified named backup checkpoint gate, keeps named backups and immutable assets, adds cursor paging and read-only integrity diagnostics. Build/Test/static checker/real migration/owner restore acceptance not executed. V125 TASK-023 reconciled PE source ref 3a345d101628 with one PE-only N-07 documentation commit 57cb574f33903d9aed3b28327ab5fbf4ce44ca68; V124 backup retention/integrity and OBS-044 preserved; source-based global sidebar leave guard added without Build/Test/static checker/runtime. V126 TASK-040 05a225224e6e2b96821fb17da6f22443aa71055c follows V125 code and the concurrent database audit PE commit; public catalog rename now participates in workspace CAS transaction and JS revision queue. V124 N-07 schema 12, backup guard, immutable assets preserved. Source-only; no Build/Test/Static Checker/Windows runtime.\nAudit phase 02: source V126 reviewed at HEAD dd5ccf594c0d41c696250b3e3949ceb580983e71 (including earlier V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c); added documentation-only TASK-042..TASK-045, no code release or runtime validation. V127 TASK-038 based on latest main 503ab59d816d4a82b8bbc018c007c28559b811f5; PE was 3 documentation-only commits ahead of its source_revision_ref and reconciled by comparing dd5ccf5..503ab59d. Scoped failed-write ledger and explicit latest-state retry are source-only; owner verification pending, no Build/Test/static checker.\nV128 TASK-060 reconciled baseline e6a786321c8ec524af02c3822eafe5d74c3011c3 (prior PE source_revision_ref 503ab59d816d4a82b8bbc018c007c28559b811f5) using ancestor comparison (ahead 2, no divergent history). Exactly one orphan placement block removed; V127 code and phase-06 audit preserved; no Build/Test/static checker/runtime.\nV129 TASK-046 reconciled prior PE reference e6a786 as the immediate parent of V128 main 636a2eed, preserving concurrent media-bootstrap change. V129 works from 636a2eed with isolated export semantics; no Build/Test/runtime acceptance.\nV130 TASK-061 reconciled predecessor source ref 636a2eed against main 63f23607d6d7a9d548480de5487dfaf7ed82b5d2 (ahead 2, non-divergent) including V129 TASK-046 and OBS-056 PDF audit. Original library bytes/IDs remain immutable; source-only candidate, no Build/Test/static checker/runtime.\nV131 TASK-039 starts from V130 main 88971c04776c2e9b32cb3e1a39f6af06d70a7077 (its PE source_revision_ref was the immediate parent). Uses non-destructive IndexedDB v2 upgrade and transactional browser CAS; localStorage fallback remains outside CAS and separately tracked as TASK-042. No Build/Test/static checker/browser runtime or owner acceptance.\nV132 TASK-041 reconciled PE reference 88971c04776c2e9b32cb3e1a39f6af06d70a7077 to HEAD 4133d23cd3bb4de9f70037acb90bb82db056726a (2 commits ahead, no divergence), preserving concurrent V131 source and phase-08 audit. Normal workspace read-only preview differs from strict backup integrity/restore; no Build/Test/static checker/runtime.\nV133 TASK-042 reconciled PE source 4133d23cd3bb4de9f70037acb90bb82db056726a with current HEAD 809e8df04107403dbf27320d04b8539e24ff7f09 (ahead 2 with no divergence); preserved nine-phase audit and V132 missing-image recovery. No Build/Test/static checker/runtime.\nV134 TASK-071 started from current main 229312fa33a82908834b69fb68a86ab1f0730fe7 (V133 TASK-042 + prior Phase 09 audit); source-only lazy viewport thumbnails and selected-page invalidation, preserving all concurrent CAS, image ownership, print and schema 12 contracts. No assistant Build/Test/static checker/runtime; owner verification pending.\nV135 TASK-043 reconciled prior PE source 229312fa33a82908834b69fb68a86ab1f0730fe7 to dc2fe9a5afc901d2f9fbea400698154019353afc (ahead 2, no divergence); all TASK-071 changes preserved. Only source candidate; no Build/Test/static checker/runtime.\nV136 TASK-044 starts from V135 main 2a9aef9ee02c6825c1b1d6e88f48860c79c01b66; previous PE source ref dc2fe9a5afc901d2f9fbea400698154019353afc was that commit's immediate parent. Preserved V135 migration 013 and TASK-043. Source-only; no Build/Test/static checker/runtime.\nV137 phase 1: reconciled previous PE ref 2a9aef9ee02c6825c1b1d6e88f48860c79c01b66 to HEAD 589eb307aa22d70261ee5236c8de181bfe00d534 (ahead 8, behind 0, nondivergent); preserved concurrent V136 TASK-044 and all earlier storage/media/backup changes. Global category context, page-first UI and linked project-local custom object source only. Pending full Master/Section retirement; Build/Test/static checker and owner runtime not executed.",
+    "source_revision_ref": "589eb307aa22d70261ee5236c8de181bfe00d534"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -49,13 +49,14 @@
     "success_criteria": [
       "Multiple portfolios per project",
       "Project/global library with explicit sharing",
-      "Stable page/template inheritance",
+      "Independent pages, reusable categorized templates, linked Custom Components",
       "Non-destructive per-tile image editing",
       "Consistent saved projects and PDF output"
     ],
     "intent_notes": [
       "Templates are managed in a centralized system-wide library, independent of projects and portfolios.",
-      "Image development already underway in separate Work conversation."
+      "Image development already underway in separate Work conversation.",
+      "2026-11-20 owner superseded Master/Section authoring hierarchy: pages are primary, template groups are search-only, and custom components live in Toolbox; V137 phase 1 is not full old-code removal."
     ]
   },
   "scopes": [
@@ -97,7 +98,7 @@
     {
       "scope_id": "SC-TEMPLATES",
       "scope_type": "module",
-      "name": "Master and page templates",
+      "name": "System-wide categorized page templates; legacy Master/Section internal compatibility",
       "parent_scope_ref": null,
       "status": "active"
     },
@@ -128,6 +129,13 @@
       "name": "PDF output",
       "parent_scope_ref": null,
       "status": "active"
+    },
+    {
+      "scope_id": "SC-COMPONENTS",
+      "scope_type": "feature",
+      "name": "Project-local reusable Custom Components in Toolbox",
+      "parent_scope_ref": null,
+      "status": "active"
     }
   ],
   "records": {
@@ -145,6 +153,23 @@
           "date": "2026-11-19"
         },
         "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "ST-002",
+        "title": "Owner's 2026-11-20 page-first redesign intent",
+        "detail": "Project and independent portfolio entities remain; pages are created without a mandatory Master/Section. Category groups merely organize reusable page templates (e.g. Cover/About/Contents/Gallery). Custom components are defined from selected objects in the designer and appear in the same Toolbox, with shared definitions and ordinary general Properties. The owner permits clearing CURRENT test data if genuinely needed, but no reset is required or claimed in V137. Named styles retain current central scope pending explicit scope decision.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES",
+          "SC-STORAGE"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-20"
+        },
+        "implementation_state": "V137_source_candidate_owner_runtime_pending"
       }
     ],
     "ideas": [],
@@ -224,6 +249,26 @@
           "TASK-027",
           "FND-012"
         ]
+      },
+      {
+        "record_id": "Q-006",
+        "title": "Future portfolio style defaults versus single shared named Style Library",
+        "detail": "DEC-010 still governs the existing centralized shared named Style Library. Owner discussed portfolio-level style use but explicitly deferred extra portfolio-wide Properties and custom property design. Determine whether future Portfolio defaults reference existing global style IDs without creating local forks. Do not invent a per-portfolio style database or silently supersede DEC-010.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES"
+        ],
+        "related_record_ids": [
+          "DEC-010",
+          "TASK-014",
+          "TASK-077"
+        ],
+        "status": "open",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-20"
+        },
+        "implementation_state": "open_design_question_no_implementation"
       }
     ],
     "analyses": [
@@ -250,12 +295,13 @@
         "scope_refs": [
           "SC-STORAGE"
         ],
-        "status": "approved_intent",
+        "status": "superseded",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "unverified_against_live_source"
+        "implementation_state": "unverified_against_live_source",
+        "superseded_by": "DEC-012"
       },
       {
         "record_id": "SOL-002",
@@ -1729,12 +1775,13 @@
         "scope_refs": [
           "SC-TEMPLATES"
         ],
-        "status": "approved_intent",
+        "status": "superseded",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "unverified_against_live_source"
+        "implementation_state": "unverified_against_live_source",
+        "superseded_by": "DEC-012"
       },
       {
         "record_id": "BR-009",
@@ -1757,12 +1804,13 @@
         "scope_refs": [
           "SC-TEMPLATES"
         ],
-        "status": "approved_intent",
+        "status": "superseded",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "unverified_against_live_source"
+        "implementation_state": "unverified_against_live_source",
+        "superseded_by": "DEC-012"
       },
       {
         "record_id": "BR-011",
@@ -1799,12 +1847,55 @@
         "scope_refs": [
           "SC-STORAGE"
         ],
-        "status": "approved_intent",
+        "status": "superseded",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "unverified_against_live_source"
+        "implementation_state": "unverified_against_live_source",
+        "superseded_by": "DEC-012"
+      },
+      {
+        "record_id": "BR-014",
+        "title": "Template categories organize, never constrain page identity",
+        "detail": "Categories like Cover, Contents, About and Gallery are library search metadata. A portfolio page has no immutable section identity; it can be designed empty, receive or change a template, and keep independently added objects. Template placement uses distinct local IDs and must not bind private images into a globally public template.",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-PORTFOLIOS",
+          "SC-LIBRARY"
+        ],
+        "related_record_ids": [
+          "DEC-012",
+          "REQ-013",
+          "TASK-073"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-20"
+        },
+        "implementation_state": "V137_partial_source_candidate_runtime_pending"
+      },
+      {
+        "record_id": "BR-015",
+        "title": "Custom component definition/instance separation",
+        "detail": "A named project-local component definition is authoritative; page instances reference it and resolve current children on render. Per-instance geometry remains local, Detach ends linkage; image assets and sharing permissions are not implicitly globalized. Creating/deleting/redefining a component requires durable project save and owner acceptance.",
+        "scope_refs": [
+          "SC-COMPONENTS",
+          "SC-STORAGE",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "DEC-013",
+          "REQ-014",
+          "TASK-074"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-20"
+        },
+        "implementation_state": "V137_partial_source_candidate_runtime_pending"
       }
     ],
     "technical_contracts": [],
@@ -1946,12 +2037,13 @@
         "scope_refs": [
           "SC-TEMPLATES"
         ],
-        "status": "approved_intent",
+        "status": "superseded",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "unverified_against_live_source"
+        "implementation_state": "unverified_against_live_source",
+        "superseded_by": "REQ-012"
       },
       {
         "record_id": "REQ-011",
@@ -1966,6 +2058,69 @@
           "date": "2026-11-19"
         },
         "implementation_state": "unverified_against_live_source"
+      },
+      {
+        "record_id": "REQ-012",
+        "title": "Blank page independent of Master and Section",
+        "detail": "Adding a page must not ask for Section or Master and should directly open the shared designer/slide thumbnails; a page may later accept or replace an independent library template. Project and multiple Portfolio organization, page Save and project Save remain intact.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-PROJECTS"
+        ],
+        "related_record_ids": [
+          "DEC-012",
+          "TASK-072",
+          "TASK-025",
+          "DEC-009"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-20"
+        },
+        "implementation_state": "V137_source_candidate_runtime_unverified"
+      },
+      {
+        "record_id": "REQ-013",
+        "title": "Categorized system template library",
+        "detail": "Users can browse categories, add/rename/delete empty groups, save a page as a globally usable template, select/apply designs without inheriting Section/Master identity, and retain independent page objects. Template/public image reference contracts and cross-project SQLite persistence must remain correct.",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-PORTFOLIOS",
+          "SC-STORAGE"
+        ],
+        "related_record_ids": [
+          "BR-014",
+          "DEC-012",
+          "TASK-073"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-20"
+        },
+        "implementation_state": "V137_source_candidate_runtime_unverified"
+      },
+      {
+        "record_id": "REQ-014",
+        "title": "Project-local linked Custom Components in the Toolbox",
+        "detail": "Convert selected independent editor objects into a named Custom Component, show in existing Toolbox, insert on pages, move/resize with shared general Properties, centrally redefine to update linked instances, and Detach to ordinary objects. Preserve dynamic page numbers and image-reference integrity; defer published custom Properties and AutoCopy.",
+        "scope_refs": [
+          "SC-COMPONENTS",
+          "SC-PORTFOLIOS",
+          "SC-STORAGE"
+        ],
+        "related_record_ids": [
+          "DEC-013",
+          "BR-015",
+          "TASK-074"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-20"
+        },
+        "implementation_state": "V137_source_candidate_runtime_unverified"
       }
     ],
     "decisions": [
@@ -2018,12 +2173,13 @@
         "scope_refs": [
           "SC-TEMPLATES"
         ],
-        "status": "approved_intent",
+        "status": "superseded",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "unverified_against_live_source"
+        "implementation_state": "unverified_against_live_source",
+        "superseded_by": "DEC-012"
       },
       {
         "record_id": "DEC-005",
@@ -2124,6 +2280,58 @@
           "date": "2026-11-19"
         },
         "implementation_state": "requirements_only_not_implemented"
+      },
+      {
+        "record_id": "DEC-012",
+        "title": "Page-first architecture supersedes Master/Section hierarchy",
+        "detail": "The active design model is Project -> independent Portfolios -> independent Pages. A page can be created blank and later populated with a template. A centralized Template Library contains organizational categories only, not immutable page types or required sections. Master Template and Section are removed from the active owner workflow. Applying a page template instantiates objects into the page, while previously user-created independent page objects remain. V137 phase 1 retains old Master/Section source/state internally as compatibility data; COMPLETE source/SQLite decommission is a separate task, not falsely claimed done.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES",
+          "SC-STORAGE"
+        ],
+        "related_record_ids": [
+          "DEC-004",
+          "DEC-008",
+          "DEC-010",
+          "REQ-010",
+          "BR-008",
+          "BR-009",
+          "BR-010",
+          "TASK-006",
+          "TASK-025",
+          "TASK-072",
+          "TASK-073",
+          "TASK-075"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-20"
+        },
+        "implementation_state": "V137_partial_source_migration_owner_runtime_pending"
+      },
+      {
+        "record_id": "DEC-013",
+        "title": "Linked custom components live in shared Designer Toolbox",
+        "detail": "A Custom Component is constructed from a selected set of independent local page objects and appears in the existing Toolbox. A project-scoped canonical definition is referenced by custom instances (componentId); definition edits update all linked instances at render time, while instance X/Y/W/H remain local. Detach materializes local editable children. General object Properties and History are reused; special property publishing and AutoCopy are postponed. Image permissions follow project ownership, no implicit cross-project publication. V137 source candidate awaits owner runtime review.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-STORAGE",
+          "SC-COMPONENTS"
+        ],
+        "related_record_ids": [
+          "DEC-012",
+          "TASK-074",
+          "BR-015"
+        ],
+        "status": "approved_intent",
+        "provenance": {
+          "type": "user_conversation",
+          "date": "2026-11-20"
+        },
+        "implementation_state": "V137_partial_source_implementation_runtime_pending"
       }
     ],
     "tasks": [
@@ -4510,6 +4718,170 @@
           "FND-051"
         ],
         "result": "TASK-071 / V134: add scroll-window thumbnail virtualization. Offscreen pages retain only lightweight rows; visible/nearby previews use one resolved shared document and release DOM on exit. Render preserves scroll/focus, live editor changes refresh only affected page thumbnail, invalidation on full render covers templates/styles/assets/order, no stored preview HTML. No changes to SQLite schema 12, Save Page/Project or image originals; owner Runtime/benchmark pending under DEC-006. Follow-up source refinement: thumbnail frames now obey max-width:100% inside 165px sidebar, and visible scale/centering uses actual frame.clientWidth rather than fixed width. Runtime/benchmark owner pending."
+      },
+      {
+        "record_id": "TASK-072",
+        "title": "Introduce page-first flow without mandatory Master or Section",
+        "detail": "V137 source candidate: create blank pages from the dashboard and editor add-page affordances using internal compatibility sentinels masterTemplateId='none' and sectionId='CUSTOM', preserving shared designer, page thumbnails and separate persistence. Remove legacy Master/Section from active navigation but code/data remain for now. Owner must review new project/portfolio/page flows and no unintended old prompt before completion.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES"
+        ],
+        "related_record_ids": [
+          "DEC-012",
+          "DEC-013",
+          "DEC-006",
+          "DEC-007"
+        ],
+        "priority": "P0",
+        "status": "in_progress",
+        "provenance": {
+          "type": "source_audit_follow_up",
+          "date": "2026-11-20",
+          "source_revision_ref": "589eb307aa22d70261ee5236c8de181bfe00d534"
+        },
+        "implementation_state": "V137_source_candidate_owner_runtime_pending",
+        "source_version": "V137",
+        "updated_on": "2026-11-20",
+        "result": "Source-only changes committed on main; no Build/Test/static checker or owner runtime acceptance."
+      },
+      {
+        "record_id": "TASK-073",
+        "title": "Persist globally categorized independent page templates and safe page placement",
+        "detail": "V137 source candidate: metadata-only templateCategories added to SQLite shared_template_context and global project-switch projection. Existing shared_templates(kind=templates) holds categorized page objects. Page captures create a template; placement remaps IDs/groups/layers, copies layout objects, preserves independent page elements, restricts private image exposure. Owner must inspect reopen, cross-project catalog, page updates, scene FKs, image/Tiles and PDF; improve template update/copy workflows before sign-off.",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-STORAGE",
+          "SC-PORTFOLIOS",
+          "SC-LIBRARY"
+        ],
+        "related_record_ids": [
+          "DEC-012",
+          "DEC-013",
+          "DEC-006",
+          "DEC-007"
+        ],
+        "priority": "P0",
+        "status": "in_progress",
+        "provenance": {
+          "type": "source_audit_follow_up",
+          "date": "2026-11-20",
+          "source_revision_ref": "589eb307aa22d70261ee5236c8de181bfe00d534"
+        },
+        "implementation_state": "V137_source_candidate_owner_runtime_pending",
+        "source_version": "V137",
+        "updated_on": "2026-11-20",
+        "result": "Source-only changes committed on main; no Build/Test/static checker or owner runtime acceptance."
+      },
+      {
+        "record_id": "TASK-074",
+        "title": "Add linked reusable Custom Components to shared Toolbox",
+        "detail": "V137 source candidate: project-scoped customComponents definitions in canonical project payload; new custom object type references componentId, live renderer expands definition while instance geometry remains local. Shared designer selection/History/Properties used for create/insert/Detach; redefine from page selection supports central updates. Owner must review selection constraints, image refs, undo/redo, Save Page vs Save Project order, project switch, page numbering, Print/PDF and deletion across snapshots.",
+        "scope_refs": [
+          "SC-COMPONENTS",
+          "SC-PORTFOLIOS",
+          "SC-STORAGE",
+          "SC-LIBRARY"
+        ],
+        "related_record_ids": [
+          "DEC-012",
+          "DEC-013",
+          "DEC-006",
+          "DEC-007"
+        ],
+        "priority": "P0",
+        "status": "in_progress",
+        "provenance": {
+          "type": "source_audit_follow_up",
+          "date": "2026-11-20",
+          "source_revision_ref": "589eb307aa22d70261ee5236c8de181bfe00d534"
+        },
+        "implementation_state": "V137_source_candidate_owner_runtime_pending",
+        "source_version": "V137",
+        "updated_on": "2026-11-20",
+        "result": "Source-only changes committed on main; no Build/Test/static checker or owner runtime acceptance."
+      },
+      {
+        "record_id": "TASK-075",
+        "title": "Decommission legacy Master/Section state and navigation safely",
+        "detail": "Remaining second-stage migration: replace validator dependencies and hidden legacy create/list/routes, remove master/section inheritance and SQLite shared_template kinds/projections only after the new page/template/component paths are complete; revise keys, scene/Style FK references, and all import/export/backup behaviors. Owner allows test data reset if needed, but V137 performed no physical reset. No deletion of immutable media or old backups without explicitly verified scope; preserve source history.",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-STORAGE",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "DEC-012",
+          "DEC-013",
+          "DEC-006",
+          "DEC-007"
+        ],
+        "priority": "P0",
+        "status": "planned",
+        "provenance": {
+          "type": "source_audit_follow_up",
+          "date": "2026-11-20",
+          "source_revision_ref": "589eb307aa22d70261ee5236c8de181bfe00d534"
+        },
+        "implementation_state": "planned_legacy_compatibility_not_removed",
+        "source_version": "V137",
+        "updated_on": "2026-11-20",
+        "result": "Planned, not yet implemented."
+      },
+      {
+        "record_id": "TASK-076",
+        "title": "Harden new template/component ownership, save atomicity and portability",
+        "detail": "Review globally reusable templates against public/private image ownership; avoid dangling refs from published nested Tiles, cloned Group/Block/layer order and style IDs; project-local component payload and derived SQLite scene reference integrity; transactional rollback on component/template write errors; backup/restore and cross-project import/export compatibility; owner runtime and PDF review.",
+        "scope_refs": [
+          "SC-COMPONENTS",
+          "SC-STORAGE",
+          "SC-LIBRARY",
+          "SC-TEMPLATES"
+        ],
+        "related_record_ids": [
+          "DEC-012",
+          "DEC-013",
+          "DEC-006",
+          "DEC-007"
+        ],
+        "priority": "P0",
+        "status": "planned",
+        "provenance": {
+          "type": "source_audit_follow_up",
+          "date": "2026-11-20",
+          "source_revision_ref": "589eb307aa22d70261ee5236c8de181bfe00d534"
+        },
+        "implementation_state": "planned_owner_runtime_and_source_hardening",
+        "source_version": "V137",
+        "updated_on": "2026-11-20",
+        "result": "Planned, not yet implemented."
+      },
+      {
+        "record_id": "TASK-077",
+        "title": "Resolve portfolio style-default behavior without contradicting central Style Library",
+        "detail": "Keep existing DEC-010 central Style Library until explicit owner decision; inspect whether portfolios merely reference default global style IDs and determine precedence against local object overrides. User deferred special per-portfolio/global properties; do not create a parallel local style catalog automatically.",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "DEC-012",
+          "DEC-013",
+          "DEC-006",
+          "DEC-007"
+        ],
+        "priority": "P2",
+        "status": "planned",
+        "provenance": {
+          "type": "source_audit_follow_up",
+          "date": "2026-11-20",
+          "source_revision_ref": "589eb307aa22d70261ee5236c8de181bfe00d534"
+        },
+        "implementation_state": "awaiting_later_design_decision",
+        "source_version": "V137",
+        "updated_on": "2026-11-20",
+        "result": "Planned, not yet implemented."
       }
     ],
     "evidence": [],
@@ -6071,6 +6443,35 @@
           "source_revision_ref": "2a9aef9ee02c6825c1b1d6e88f48860c79c01b66"
         },
         "implementation_state": "V136_source_candidate_owner_runtime_pending"
+      },
+      {
+        "record_id": "OBS-066",
+        "title": "V137 stage-one page-first source candidate and compatibility boundary",
+        "status": "source_candidate_owner_runtime_pending",
+        "detail": "Reconciled PE source ref 2a9aef9ee02c6825c1b1d6e88f48860c79c01b66 through main 589eb307aa22d70261ee5236c8de181bfe00d534 (ahead 8, behind 0). V137 source adds categorized global templates with SQLite shared context, blank pages with no owner-visible Master/Section requirement, linked project-local Custom Components and Toolbox affordances. Cargo/Tauri/HTML version 137, SQLite schema 13 unchanged. Legacy Master/Section rows, normalized JSON and hidden routes are retained internally; no physical data reset, Build/Test/static checker/browser/Tauri Runtime, PDF or owner acceptance. Full legacy retirement TASK-075 and integrity audit TASK-076 outstanding.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES",
+          "SC-COMPONENTS",
+          "SC-STORAGE"
+        ],
+        "related_record_ids": [
+          "DEC-012",
+          "DEC-013",
+          "TASK-072",
+          "TASK-073",
+          "TASK-074",
+          "TASK-075",
+          "TASK-076",
+          "DEC-006"
+        ],
+        "provenance": {
+          "type": "source_code_change",
+          "date": "2026-11-20",
+          "source_revision_ref": "589eb307aa22d70261ee5236c8de181bfe00d534"
+        },
+        "implementation_state": "V137_phase1_source_candidate_owner_runtime_pending"
       }
     ]
   },
@@ -6086,13 +6487,14 @@
         "c06e6b57701d811d193aea2f45f1a82f2961a855",
         "a38d7e1f9e315f2e1d34a9a30a0270458b09749b",
         "4e73d0e3c4c162596128d74eed59e64b0f6876d2",
-        "ac9faa126049af071f5bea1fe983d75597323505"
+        "ac9faa126049af071f5bea1fe983d75597323505",
+        "589eb307aa22d70261ee5236c8de181bfe00d534"
       ],
-      "note": "V123 source candidate, SQLite schema 11: native Save Page and Save Project are distinct revision-CAS transactions. Current page editor generic saves use page-only queue; target page style, image/template and derived Scene projection updates occur in scope. Full project changes use explicit Save Project. Prior JSON canonical page/template records, image assets and backup paths retained. No Build/Test/runtime/owner acceptance."
+      "note": "V137 phase 1 source: independent page creation uses internal compatibility sentinels; system-wide templates contain group metadata persisted via existing SQLite shared context, with object snapshots applied to pages; project-local Custom Component definitions are expanded live from instance refs. Old master/section state and validators remain as legacy internals, and owner Runtime/PDF and full data reset not performed."
     },
     "current_operational_context": {
       "freshness_state": "unknown",
-      "note": "Build and tests prohibited for assistant; runtime acceptance by owner. No deployment or runtime claims."
+      "note": "No assistant Build, Test or static checker under DEC-006. Browser/Tauri/SQLite reopen and PDF/runtime acceptance must be performed by owner; no physical test-data reset was run."
     }
   },
   "retrieval": {
@@ -6127,11 +6529,18 @@
   },
   "open_state": {
     "open_question_ids": [
-      "Q-005"
+      "Q-005",
+      "Q-006"
     ],
     "open_conflict_relationship_ids": [],
     "blocked_record_ids": [],
     "next_work_record_ids": [
+      "TASK-072",
+      "TASK-073",
+      "TASK-074",
+      "TASK-075",
+      "TASK-076",
+      "TASK-077",
       "TASK-061",
       "TASK-039",
       "TASK-040",
@@ -6203,7 +6612,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V136 TASK-044: native load failure blocks save and labels initial-state export as UNVERIFIED_UI_MEMORY, not SQLite backup; user must close app and copy full original SQLite/WAL/SHM/assets storage. Opt-in redacted diagnostic JSON tracks generic startup/write/retry failures only; browser IndexedDB recovery remains locked and independent. No native snapshot copied by app; Tauri pre-frontend startup errors require manual action. Owner runtime and acceptance pending. TASK-044 remains in_progress.\nV135 TASK-043: canonical SQLite and browser committed revision-bound named checkpoints, unknown legacy provenance, separate unsaved Draft JSON, safeguarded Backup Before Restore. Owner verification pending; no Build/Test/static checker/runtime. TASK-043 remains in_progress.\nV133 TASK-042 source-only: IndexedDB failure leaves browser in locked recovery, presents non-canonical read-only localStorage snapshot summaries/RAW exports and explicit reload; never writes or merges sources. Owner runtime pending; TASK-042 remains open.\nV132 TASK-041 source candidate: degraded read-only normal SQLite workspace preview with explicit missing original hashes; strict backups untouched. Owner to verify missing/corrupt private/public/Tile assets, blocked Save/Export disclaimer, restored originals/reopen, and correct page content. No assistant Build/Test/static checker/runtime, TASK-041 remains open.\nV129 TASK-046 source candidate: legacy v30 JSON export now routes to scoped v111 exporter, whitelisting one portfolio and referenced private/public images with a content manifest and preview. Full-backup option explicitly warns before exporting all projects; SQLite schema 12 unchanged; runtime/exported JSON owner review pending. TASK-046 remains in_progress, not completed; next eligible planned task TASK-061 pending fresh main/PE check.\nV128 TASK-060 source candidate: removed orphan IIFE-level duplicated M.place fragment causing out-of-scope ReferenceError; retains M.place public-template authorization and non-destructive image/Tile replacement, with all assets, SQLite schema-12 migrations/backups and concurrent phase-06 findings intact. Owner browser/Tauri image bootstrap, picker, Tile/Crop/Mask and PDF review pending; no Build/Test/static check. Next eligible planned TASK-046; TASK-060 remains in_progress pending owner acceptance.\nV127 TASK-038 source candidate on 503ab59d816d: failed queued writes survive later unrelated successes; global flush/leave/retry do not report false Saved. Explicit retry uses latest in-memory page/project under existing CAS and refuses stale/cross-project replay; public-image rename errors require an explicit repeat action. Owner runtime/Build/Test/static-check not performed; next eligible planned task TASK-046. V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nPhase 04 UI/UX retrospective source audit completed: FND-029, FND-030, FND-031, FND-032, FND-033 mapped to planned TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Verified source gaps: thumbnail reorder persists wrong Save scope, print reads preview ahead of async guarded navigation, outer shell fixed-width rail on narrow widths, project/thumbnail focus & semantics, hidden file inputs keyboard accessibility. Prior TASK-022..026 and TASK-030 not duplicated; owner Runtime/Acceptance pending. Next N = phase 05 designer/inheritance/layers/history; evidence in project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nRetrospective phase 05 designer source audit complete at 1207b87689523ff3b095df45ade70217b9b0838b: FND-034, FND-035, FND-036 mapped to TASK-057, TASK-058, TASK-059 for pointer Region Block containment, rotated-corner geometry guards for Align/Duplicate and rigid multi-object Guide snapping. FND-037 linked to prior TASK-012 for missing History coverage on Guides/page background/content-flow, no duplicate task. No Build/Test/runtime/Acceptance; next owner N = phase 06 Image Library/ownership/tiles.\nPhase 06 asset/Tile source-only audit at 7c3a53732082f1d36e8edb5a2c1e6858ca710715: FND-038, FND-039, FND-040, FND-041 mapped to planned TASK-060, TASK-061, TASK-062, TASK-063. Critical TASK-060 removes orphan top-level forceNew ReferenceError aborting media initialization; TASK-061 preserves immutable library originals; TASK-062, TASK-063 enforce Tile geometry and keyboard polygon masks. FND-042 attached to existing TASK-020/029 for Crop/filters. V127 TASK-038 source fix remains runtime unverified. No Build/Test/Runtime/Acceptance, next user N phase 07 Print/PDF.\nPhase 07 PDF/Print source-only audit at eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07: FND-043, FND-044, FND-045 mapped to planned TASK-064, TASK-065, TASK-066 for false missingImage on Tile container/hidden stash, print media load failure/timeout re-preflight, hidden pageNumber/editor-only block false print warnings. FND-046 attached to TASK-029 to correct objectFit-dependent DPI. Existing TASK-053 print navigation race remains; no Build/Test/PDF/Runtime/Acceptance; next user N phase 08 performance/security/reliability.\nPhase 08 performance/security source-only audit (V131, 86a927adf8662768058cbc4f9832530701ddcef2): FND-047, FND-048, FND-049, FND-050, FND-051 mapped to planned TASK-067, TASK-068, TASK-069, TASK-070, TASK-071 for SQLite native scoped page serializer, long critical-section media IO, eager base64 memory amplification, unbounded JSON/image import budgets and unvirtualized thumbnails. Additional FND-052 attached to existing TASK-031 for full legacy compat rewrite and FND-053 attached to existing TASK-044 for redacted diagnostics. V131 Browser IndexedDB CAS TASK-039 code status unchanged, runtime/acceptance not performed; next owner N = phase 09 final traceability and acceptance matrix.\nAll nine Project Evolution retrospective audit phases are now source-only completed. Phase 09 at b7fe8c7b8795a2eb1a96639e2feeb8e899e75bbb (V132 source candidate (Tauri 132.0.0; SQLite schema 12 unchanged); TASK-041 workspace-only missing image recovery preview; owner runtime pending) checked 71 TASK, 53 FND, 11 REQ (REQ-003 superseded), 13 BR, 11 DEC, Q-005 unresolved; preserved 4 completed source/planning, 40 in progress and 27 planned. Added 75 cross-reference links and owner-run AT-01..AT-15 matrix in project evolution/FINAL-AUDIT-TRACEABILITY-ACCEPTANCE-2026-11-20.md; no new duplicate tasks. Verification and Acceptance both 0/0; no app code changes or Build/Test. Hourly task workflow remains open; source candidate does not imply owner approval.\nTASK-071 / V134: add scroll-window thumbnail virtualization. Offscreen pages retain only lightweight rows; visible/nearby previews use one resolved shared document and release DOM on exit. Render preserves scroll/focus, live editor changes refresh only affected page thumbnail, invalidation on full render covers templates/styles/assets/order, no stored preview HTML. No changes to SQLite schema 12, Save Page/Project or image originals; owner Runtime/benchmark pending under DEC-006. Latest source baseline: 229312fa33a82908834b69fb68a86ab1f0730fe7. TASK-071 is in_progress, not completed/accepted; next N must select the next highest numbered task not yet source implemented, without repeating this work.\nV134 same-task responsiveness refinement: narrow sidebar thumbnail frame constrained to available width, visible renderer derives scale/centering from measured clientWidth. Owner runtime still pending.",
+    "current_summary": "V137 stage-one migration committed: page-first creation, grouped global templates and linked project-local Custom Components. Legacy Master/Section compatibility still present internally. No data reset, Build/Test/static checker, runtime or owner acceptance. Next TASK-075 full decommission and TASK-076 data-integrity hardening, alongside ongoing independent tasks. \nV136 TASK-044: native load failure blocks save and labels initial-state export as UNVERIFIED_UI_MEMORY, not SQLite backup; user must close app and copy full original SQLite/WAL/SHM/assets storage. Opt-in redacted diagnostic JSON tracks generic startup/write/retry failures only; browser IndexedDB recovery remains locked and independent. No native snapshot copied by app; Tauri pre-frontend startup errors require manual action. Owner runtime and acceptance pending. TASK-044 remains in_progress.\nV135 TASK-043: canonical SQLite and browser committed revision-bound named checkpoints, unknown legacy provenance, separate unsaved Draft JSON, safeguarded Backup Before Restore. Owner verification pending; no Build/Test/static checker/runtime. TASK-043 remains in_progress.\nV133 TASK-042 source-only: IndexedDB failure leaves browser in locked recovery, presents non-canonical read-only localStorage snapshot summaries/RAW exports and explicit reload; never writes or merges sources. Owner runtime pending; TASK-042 remains open.\nV132 TASK-041 source candidate: degraded read-only normal SQLite workspace preview with explicit missing original hashes; strict backups untouched. Owner to verify missing/corrupt private/public/Tile assets, blocked Save/Export disclaimer, restored originals/reopen, and correct page content. No assistant Build/Test/static checker/runtime, TASK-041 remains open.\nV129 TASK-046 source candidate: legacy v30 JSON export now routes to scoped v111 exporter, whitelisting one portfolio and referenced private/public images with a content manifest and preview. Full-backup option explicitly warns before exporting all projects; SQLite schema 12 unchanged; runtime/exported JSON owner review pending. TASK-046 remains in_progress, not completed; next eligible planned task TASK-061 pending fresh main/PE check.\nV128 TASK-060 source candidate: removed orphan IIFE-level duplicated M.place fragment causing out-of-scope ReferenceError; retains M.place public-template authorization and non-destructive image/Tile replacement, with all assets, SQLite schema-12 migrations/backups and concurrent phase-06 findings intact. Owner browser/Tauri image bootstrap, picker, Tile/Crop/Mask and PDF review pending; no Build/Test/static check. Next eligible planned TASK-046; TASK-060 remains in_progress pending owner acceptance.\nV127 TASK-038 source candidate on 503ab59d816d: failed queued writes survive later unrelated successes; global flush/leave/retry do not report false Saved. Explicit retry uses latest in-memory page/project under existing CAS and refuses stale/cross-project replay; public-image rename errors require an explicit repeat action. Owner runtime/Build/Test/static-check not performed; next eligible planned task TASK-046. V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nPhase 04 UI/UX retrospective source audit completed: FND-029, FND-030, FND-031, FND-032, FND-033 mapped to planned TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Verified source gaps: thumbnail reorder persists wrong Save scope, print reads preview ahead of async guarded navigation, outer shell fixed-width rail on narrow widths, project/thumbnail focus & semantics, hidden file inputs keyboard accessibility. Prior TASK-022..026 and TASK-030 not duplicated; owner Runtime/Acceptance pending. Next N = phase 05 designer/inheritance/layers/history; evidence in project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nRetrospective phase 05 designer source audit complete at 1207b87689523ff3b095df45ade70217b9b0838b: FND-034, FND-035, FND-036 mapped to TASK-057, TASK-058, TASK-059 for pointer Region Block containment, rotated-corner geometry guards for Align/Duplicate and rigid multi-object Guide snapping. FND-037 linked to prior TASK-012 for missing History coverage on Guides/page background/content-flow, no duplicate task. No Build/Test/runtime/Acceptance; next owner N = phase 06 Image Library/ownership/tiles.\nPhase 06 asset/Tile source-only audit at 7c3a53732082f1d36e8edb5a2c1e6858ca710715: FND-038, FND-039, FND-040, FND-041 mapped to planned TASK-060, TASK-061, TASK-062, TASK-063. Critical TASK-060 removes orphan top-level forceNew ReferenceError aborting media initialization; TASK-061 preserves immutable library originals; TASK-062, TASK-063 enforce Tile geometry and keyboard polygon masks. FND-042 attached to existing TASK-020/029 for Crop/filters. V127 TASK-038 source fix remains runtime unverified. No Build/Test/Runtime/Acceptance, next user N phase 07 Print/PDF.\nPhase 07 PDF/Print source-only audit at eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07: FND-043, FND-044, FND-045 mapped to planned TASK-064, TASK-065, TASK-066 for false missingImage on Tile container/hidden stash, print media load failure/timeout re-preflight, hidden pageNumber/editor-only block false print warnings. FND-046 attached to TASK-029 to correct objectFit-dependent DPI. Existing TASK-053 print navigation race remains; no Build/Test/PDF/Runtime/Acceptance; next user N phase 08 performance/security/reliability.\nPhase 08 performance/security source-only audit (V131, 86a927adf8662768058cbc4f9832530701ddcef2): FND-047, FND-048, FND-049, FND-050, FND-051 mapped to planned TASK-067, TASK-068, TASK-069, TASK-070, TASK-071 for SQLite native scoped page serializer, long critical-section media IO, eager base64 memory amplification, unbounded JSON/image import budgets and unvirtualized thumbnails. Additional FND-052 attached to existing TASK-031 for full legacy compat rewrite and FND-053 attached to existing TASK-044 for redacted diagnostics. V131 Browser IndexedDB CAS TASK-039 code status unchanged, runtime/acceptance not performed; next owner N = phase 09 final traceability and acceptance matrix.\nAll nine Project Evolution retrospective audit phases are now source-only completed. Phase 09 at b7fe8c7b8795a2eb1a96639e2feeb8e899e75bbb (V132 source candidate (Tauri 132.0.0; SQLite schema 12 unchanged); TASK-041 workspace-only missing image recovery preview; owner runtime pending) checked 71 TASK, 53 FND, 11 REQ (REQ-003 superseded), 13 BR, 11 DEC, Q-005 unresolved; preserved 4 completed source/planning, 40 in progress and 27 planned. Added 75 cross-reference links and owner-run AT-01..AT-15 matrix in project evolution/FINAL-AUDIT-TRACEABILITY-ACCEPTANCE-2026-11-20.md; no new duplicate tasks. Verification and Acceptance both 0/0; no app code changes or Build/Test. Hourly task workflow remains open; source candidate does not imply owner approval.\nTASK-071 / V134: add scroll-window thumbnail virtualization. Offscreen pages retain only lightweight rows; visible/nearby previews use one resolved shared document and release DOM on exit. Render preserves scroll/focus, live editor changes refresh only affected page thumbnail, invalidation on full render covers templates/styles/assets/order, no stored preview HTML. No changes to SQLite schema 12, Save Page/Project or image originals; owner Runtime/benchmark pending under DEC-006. Latest source baseline: 229312fa33a82908834b69fb68a86ab1f0730fe7. TASK-071 is in_progress, not completed/accepted; next N must select the next highest numbered task not yet source implemented, without repeating this work.\nV134 same-task responsiveness refinement: narrow sidebar thumbnail frame constrained to available width, visible renderer derives scale/centering from measured clientWidth. Owner runtime still pending.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -6216,7 +6625,14 @@
       "BR-009",
       "BR-010",
       "BR-012",
-      "BR-013"
+      "BR-013",
+      "DEC-012",
+      "DEC-013",
+      "TASK-072",
+      "TASK-073",
+      "TASK-074",
+      "TASK-075",
+      "TASK-076"
     ],
     "known_limits": [
       "No source build or runtime review performed.",
