@@ -93,12 +93,18 @@ fn advance_workspace_revision(
 
 /* V110 TASK-027: only metadata changes; publication, identity and immutable
    original bytes are never revoked or replaced by this command. */
+// V126 / TASK-040: public image metadata obeys the workspace CAS revision.
 #[tauri::command]
 fn rename_public_image(
-    db: State<'_, Storage>, id: String, name: String,
-) -> Result<(), String> {
+    db: State<'_, Storage>, id: String, name: String, expected_revision: i64,
+) -> Result<i64, String> {
     let mut conn = db.0.lock().map_err(error)?;
-    image_ownership::rename_public_metadata(&mut conn, &id, &name)
+    let tx = conn.transaction().map_err(error)?;
+    require_workspace_revision(&tx, expected_revision)?;
+    image_ownership::rename_public_metadata(&tx, &id, &name)?;
+    let next = advance_workspace_revision(&tx, expected_revision)?;
+    tx.commit().map_err(error)?;
+    Ok(next)
 }
 
 #[tauri::command]

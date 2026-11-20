@@ -376,13 +376,13 @@ pub fn prune_automatic_backup_refs(tx:&Transaction<'_>)->Result<(),String>{
 }
 // V110: Rename public metadata in its canonical row, without changing
 // ownership, source hash, published timestamp, image usage, or backups.
-pub fn rename_public_metadata(db:&mut Connection,id:&str,name:&str)->Result<(),String>{
+pub fn rename_public_metadata(tx:&Transaction<'_>,id:&str,name:&str)->Result<(),String>{
     let name=name.trim();
     if id.trim().is_empty()||name.is_empty()||name.chars().count()>120||
        name.chars().any(|ch|ch.is_control()){
         return Err("Invalid public image identity or name".into());
     }
-    let tx=db.transaction().map_err(err)?;
+    // Caller handles atomic workspace revision check/advance and commit.
     let stored:Option<(String,String)>=tx.query_row(
         "SELECT asset_hash,payload FROM image_public_catalog WHERE id=?1",
         [id],|row|Ok((row.get(0)?,row.get(1)?))
@@ -399,7 +399,7 @@ pub fn rename_public_metadata(db:&mut Connection,id:&str,name:&str)->Result<(),S
         params![payload.to_string(),id,original_hash]
     ).map_err(err)?;
     if changed!=1{return Err("Public image rename was not saved".into());}
-    tx.commit().map_err(err)
+    Ok(())
 }
 
 pub fn read_public_catalog(db:&Connection)->Result<Vec<Value>,String>{

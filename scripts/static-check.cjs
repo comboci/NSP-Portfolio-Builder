@@ -108,6 +108,13 @@ assert(rust.includes('mod scene_store;') &&
        scene.includes('source_sha256') &&
        scene.includes('DELETE FROM design_scene_elements WHERE scene_key=?1'),
   'N-05 derived relational scenes or FK-safe save sequencing missing');
+// V126 TASK-040: the native public catalog must obey the shared CAS revision.
+assert(rust.includes('fn rename_public_image(') &&
+       rust.includes('image_ownership::rename_public_metadata(&tx, &id, &name)?;') &&
+       ownership.includes("pub fn rename_public_metadata(tx:&Transaction<'_>") &&
+       html.includes('V.renamePublicImage=function(id,name)') &&
+       html.includes("invoke('rename_public_image',{id,name,expectedRevision:dbRevision})"),
+  'Public-image rename bypasses workspace revision CAS');
 const n06 = read('src-tauri/migrations/011.sql');
 assert(n06.includes('CREATE TABLE IF NOT EXISTS workspace_write_revision') &&
        n06.includes('ALTER TABLE workspace_pages ADD COLUMN revision'),

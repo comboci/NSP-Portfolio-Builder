@@ -1,3 +1,15 @@
+# NSP Portfolio Builder — Version 126 (TASK-040: CAS-safe public-image rename, source-only)
+
+An independent source review of N-06/N-07 found that `rename_public_image` could update the canonical SQLite public-image catalog without checking or advancing the shared `workspace_write_revision`. Concurrent windows could silently overwrite the same public image's label even though Page/Project saves used CAS.
+
+V126 fixes only TASK-040: the native metadata rename takes `expectedRevision`, executes `require_workspace_revision`, canonical name update and `advance_workspace_revision` in one transaction, and returns the committed revision. The frontend routes this operation through the existing sequential storage queue and propagates the revision before later Page/Project writes. A stale rename returns `WRITE_CONFLICT` and does not overwrite a newer label; the UI displays failure and retains the older local name until the user reloads.
+
+No changes to public image ID, content hash, byte files, immutable asset storage, private project ownership, named/automatic backups, SQLite schema 12, N-07 default no-pruning policy, or Browser/IndexedDB persistence. This is a source-only correction; **DEC-006: no assistant Build, Test, static checker, Windows/Tauri runtime, real restore or owner acceptance**.
+
+Owner verification: two native windows attempting conflicting public image rename; rename during queued Save Page/Project; subsequent saves and reopening; retained image content hashes and public/private permissions; existing N-07 named and automatic backup/read/restore behavior. Any failure must leave the canonical name unchanged.
+
+---
+
 # NSP Portfolio Builder — Version 125 (TASK-023: guarded global sidebar; source-only)
 
 Main-sidebar navigation now awaits the active design page's scoped Save Page acknowledgement. On a database failure or concurrent page switch, the editor remains open. For a modified Master or Section draft, the existing Save / Discard / Cancel dialog is invoked before navigating away. Repeated sidebar requests while awaiting a save or dialog are ignored.
