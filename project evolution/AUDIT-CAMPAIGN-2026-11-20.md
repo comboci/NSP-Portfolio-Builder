@@ -18,8 +18,8 @@
 | 02 | ذخیره صفحه/پروژه، Autosave، Dirty State، Backup/Restore، فایل‌ها، WAL و شکست عملیات/rollback | **انجام شد: سورس‌محور، بدون Build/Test** |
 | 03 | Import/Export (JSON، پروژه/پورتفولیو، وابستگی‌ها، سازگاری نسخه، برخورد شناسه‌ها) | **انجام شد: سورس‌محور، بدون Build/Test** |
 | 04 | UI/UX پروژه‌ها، ناوبری، صفحات، Dockها، Responsive و دسترس‌پذیری | **انجام شد: سورس‌محور، بدون Build/Test** |
-| 05 | موتور طراحی، Template inheritance، Region Block، Layer/Group، history، snapping و Transform | **نوبت بعد با N** |
-| 06 | Image Library، مالکیت خصوصی/عمومی، Assetها، Tile/Stash، crop/mask، حذف ایمن | در انتظار N |
+| 05 | موتور طراحی، Template inheritance، Region Block، Layer/Group، history، snapping و Transform | **انجام شد: سورس‌محور، بدون Build/Test** |
+| 06 | Image Library، مالکیت خصوصی/عمومی، Assetها، Tile/Stash، crop/mask، حذف ایمن | **نوبت بعد با N** |
 | 07 | PDF/Print، صفحه‌بندی، DPI، Preflight، مقیاس و برابری رندر | در انتظار N |
 | 08 | کارایی، حافظه، امنیت ورودی، خطایابی و پایداری، کارهای چندپنجره‌ای | در انتظار N |
 | 09 | ممیزی نهایی ردیابی Task 001 تا آخرین Task، Gapهای پوشش و ماتریس تأیید مالک | در انتظار N |
@@ -296,3 +296,62 @@ The system-level project import uses a <label class=btn> wrapping a file input w
 - Dock دارای profile مستقل، keyboard arrow navigation، pin/hover و reduced-motion branch در سورس است؛ بدون اجرای واقعی نمی‌توان آن را پذیرفته یا رد کرد. بررسی هدفمند Runtime مالک برای فضای کوچک و focus پیشنهاد شده است.
 
 **Checkpoint:** OBS-050؛ TASK-052، TASK-053، TASK-054، TASK-055، TASK-056 در `open_state.next_work_record_ids` ثبت شد. هیچ رکورد قدیمی حذف یا Completed نشد؛ هیچ source/product version تغییر نکرد. **مرحله بعد با N: فاز 05 — موتور طراحی، ارث‌بری، Layers/Groups، History، Snapping و Transform.**
+
+
+## خروجی فاز 05 — موتور طراحی، ارث‌بری و هندسه
+
+**مبنای ممیزی سورس:** `1207b87689523ff3b095df45ade70217b9b0838b`؛ محصول V126 / SQLite schema 12. با TASK-001..TASK-056، الزامات ارث‌بری، Region Block، Group، Smart Duplicate، Align/Distribute، Transform، Snap و Undo/Redo تطبیق شد. بدون اجرای برنامه و بدون تغییر کد محصول.
+
+| اولویت | Finding | Task | نقص مستقل |
+| --- | --- | --- | --- |
+| P1 | FND-034 | TASK-057 | Resize با ماوس می‌تواند فرزندان Region Block را بیرون قاب باقی بگذارد |
+| P1 | FND-035 | TASK-058 | تراز و تکثیر هوشمند محدوده چرخش و Pivot را کنترل نمی‌کنند |
+| P2 | FND-036 | TASK-059 | Snap راهنما با Clamp مستقل می‌تواند شکل گروه را تغییر دهد |
+| P2 | FND-037 | TASK-012 (از قبل موجود) | History از تغییر راهنماها، پس‌زمینهٔ صفحه و Legacy Flow بی‌خبر است؛ بدون تسک تکراری |
+
+### FND-034 / TASK-057 — Resize با ماوس می‌تواند فرزندان Region Block را بیرون قاب باقی بگذارد
+
+**P1، یافته سورس‌محور؛ Runtime تأیید نشده.**
+
+The numeric property() path checks every existing Block child against the proposed frame after any x/y/w/h change. However pointerMove for a Region Block builds child patches only when blockResizeMode==='proportional'. In the 'frame' resize mode, changes contains only the Block; its frame passes v98BoundsValid but unchanged children are never checked against the new frame. A top/left/right/bottom frame shrink can therefore leave an attached child outside the Block, despite the document/Block containment invariant. No runtime repro was performed.
+
+**معیار پذیرش:** Apply one shared atomic frame/child validation for pointer and numeric transforms. In frame mode keep children at the intended absolute position, refuse any resize that would exclude a descendant (or offer an explicit user-selected containment behavior), and never commit an out-of-Block child. Preserve proportional mode and locked descendants; honor pointer cancel, Undo/Redo, Save Page, reopen and owner-run Windows/browser checks.
+
+**شواهد:** [index.html#L2513-L2516](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L2513-L2516)، [index.html#L3990-L4002](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L3990-L4002)، [index.html#L4044-L4055](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L4044-L4055)، [index.html#L4263-L4272](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L4263-L4272)، [index.html#L4280-L4322](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L4280-L4322)
+
+### FND-035 / TASK-058 — تراز و تکثیر هوشمند محدوده چرخش و Pivot را کنترل نمی‌کنند
+
+**P1، یافته سورس‌محور؛ Runtime تأیید نشده.**
+
+property() uses v98BoundsValid to check the four rotated/flipped corners around transformPivot. In contrast, v97Duplicate preflights only nx,ny,nx+w,ny+h and v96Apply preflights only x,y,x+w,y+h against document/Block bounds. For rotated objects near document/Region Block edges, a copied or aligned object may pass these axis-aligned checks even while its rendered transformed corners exceed the clipping surface; the aligned bounds also use raw w/h rather than visual bounding boxes. This gap is source-supported; exact UI outcome is pending runtime review.
+
+**معیار پذیرش:** Use a common transformed-corner validator for every changed object in Align, Distribute and Smart Duplicate; include rotation, flip, pivot and Region Block parent (including cloned parent). Make visual alignment semantics explicit for rotated objects, preflight every affected object before mutation, reject invalid operations without changing scene/history/save and owner-check with rotated/flip/multi-selection at page and Block borders.
+
+**شواهد:** [index.html#L2625-L2639](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L2625-L2639)، [index.html#L2747-L2832](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L2747-L2832)، [index.html#L3990-L4002](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L3990-L4002)، [index.html#L4044-L4047](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L4044-L4047)
+
+### FND-036 / TASK-059 — Snap راهنما با Clamp مستقل می‌تواند شکل گروه را تغییر دهد
+
+**P2، یافته سورس‌محور؛ Runtime تأیید نشده.**
+
+pointerMove represents a Group/multi-selection movement with a common dx/dy. v83SnapMoves chooses one x and y correction but then clamps each child's values.x and values.y independently to page edges. If a selection spans the page width and a guide matches one member, another member against the opposite edge may be clamped while its peer moves. That silently changes relative distances despite an intended rigid group translation, and the later validator checks each object's bounds but not pairwise offsets.
+
+**معیار پذیرش:** Compute one legal shared snap delta by intersecting allowable x/y translation ranges of all affected members/Region Block parents. If the best guide correction would alter member spacing, ignore or reduce the snap for the whole selection, never clamp individuals separately. Preserve locked members and group/Block semantics, and check group spacing and Undo after an edge snap with owner-run runtime validation.
+
+**شواهد:** [index.html#L2507-L2532](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L2507-L2532)، [index.html#L3101-L3121](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L3101-L3121)، [index.html#L4263-L4272](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L4263-L4272)، [index.html#L4309-L4322](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L4309-L4322)
+
+### FND-037 — History از تغییر راهنماها، پس‌زمینهٔ صفحه و Legacy Flow بی‌خبر است (پیگیری در TASK-012)
+
+objectSnapshot and v91ContentSnapshot track objects, styles and layer/order fields, but not designGuides, guidesVisible or legacyLayout. v83MutateGuide and the pageBackground/content-flow handlers directly mutate the page and queue storage without calling commit(), so these edits neither create a History step nor participate in session Undo/Redo. The pageBackground handler also lacks a local rollback when the queue rejects a save before acceptance. This is an explicit gap within existing TASK-012 History scope, TASK-023/038 persistence handling and TASK-013 Guides; no duplicate new task is required.
+
+**معیار پذیرش افزوده به TASK-012:** Extend TASK-012 acceptance to include reversible editor guide additions/deletions/moves/visibility, page background reset/color and legacy content-flow toggles with atomic history snapshots, correct redo invalidation, scoped Save Page persistence and rollback/error feedback. Preserve current session-only history and do not add zoom/pan or persisted historical metadata.
+
+**شواهد:** [index.html#L2903-L2923](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L2903-L2923)، [index.html#L2947-L2952](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L2947-L2952)، [index.html#L3032-L3054](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L3032-L3054)، [index.html#L3399-L3414](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L3399-L3414)، [index.html#L3982-L3988](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L3982-L3988)، [index.html#L4496-L4500](https://github.com/comboci/NSP-Portfolio-Builder/blob/1207b87689523ff3b095df45ade70217b9b0838b/index.html#L4496-L4500)
+
+### مواردی که باگ مستقل جدید نبودند
+
+- **ارث‌بری:** `setObject/getObject` روی شیء ارثی فقط نمایش/عدم نمایش را به‌عنوان Override مجاز نگه می‌دارد و `objectOrder` امکان تنظیم ترتیب محلی را فراهم می‌کند. بدون اجرای مالک، پیاده‌سازی منبع با TASK-006 و BR-008..010 تطبیق نهایی داده نمی‌شود؛ ادعای شکست Runtime نکردیم.
+- **Group/Region Block:** پیش از Drag، عضوهای هم‌گروه و فرزند Block جمع‌آوری و Lock کنترل می‌شود؛ مشکل فاز حاضر صرفاً تفاوت اعتبارسنجی Frame Resize با ماوس و Property است. TASK-010/015 عمداً تکرار نشدند.
+- **History:** تاریخچه تا ۱۰۰ مرحله در حافظه جلسه پیاده شده و Zoom/Pan به‌درستی خارج از آن است؛ نقطه کور Guide و تنظیمات صفحه در FND-037 به TASK-012 موجود پیوست شد.
+- **Save/Conflict:** اشکال Queue ACK قدیمی در TASK-038 و scoped Save در TASK-036 باقی است و تکرار نشد. هیچ Build/Test/Static-check/Windows/Browser یا Acceptance توسط دستیار انجام نشد.
+
+**Checkpoint:** `OBS-051`. TASK-057، TASK-058، TASK-059 در صف اجرای زمان‌بندی ساعتی ثبت شدند. محصول و SQLite schema تغییری نکردند. **مرحله بعد با N: فاز 06 — Image Library، مالکیت، Asset، Tile/Stash، Crop/Mask و حذف ایمن.**

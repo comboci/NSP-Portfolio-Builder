@@ -1084,6 +1084,105 @@
           "TASK-007",
           "DEC-006"
         ]
+      },
+      {
+        "record_id": "FND-034",
+        "title": "Resize با ماوس می‌تواند فرزندان Region Block را بیرون قاب باقی بگذارد",
+        "detail": "The numeric property() path checks every existing Block child against the proposed frame after any x/y/w/h change. However pointerMove for a Region Block builds child patches only when blockResizeMode==='proportional'. In the 'frame' resize mode, changes contains only the Block; its frame passes v98BoundsValid but unchanged children are never checked against the new frame. A top/left/right/bottom frame shrink can therefore leave an attached child outside the Block, despite the document/Block containment invariant. No runtime repro was performed.\nSource evidence: index.html#L2513-L2516; index.html#L3990-L4002; index.html#L4044-L4055; index.html#L4263-L4272; index.html#L4280-L4322. No Build/Test/runtime conducted.",
+        "category": "data_integrity",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-PORTFOLIOS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "1207b87689523ff3b095df45ade70217b9b0838b"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-057",
+          "TASK-010",
+          "TASK-018",
+          "TASK-035",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-035",
+        "title": "تراز و تکثیر هوشمند محدوده چرخش و Pivot را کنترل نمی‌کنند",
+        "detail": "property() uses v98BoundsValid to check the four rotated/flipped corners around transformPivot. In contrast, v97Duplicate preflights only nx,ny,nx+w,ny+h and v96Apply preflights only x,y,x+w,y+h against document/Block bounds. For rotated objects near document/Region Block edges, a copied or aligned object may pass these axis-aligned checks even while its rendered transformed corners exceed the clipping surface; the aligned bounds also use raw w/h rather than visual bounding boxes. This gap is source-supported; exact UI outcome is pending runtime review.\nSource evidence: index.html#L2625-L2639; index.html#L2747-L2832; index.html#L3990-L4002; index.html#L4044-L4047. No Build/Test/runtime conducted.",
+        "category": "data_integrity",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-PORTFOLIOS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "1207b87689523ff3b095df45ade70217b9b0838b"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-058",
+          "TASK-016",
+          "TASK-017",
+          "TASK-018",
+          "TASK-010",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-036",
+        "title": "Snap راهنما با Clamp مستقل می‌تواند شکل گروه را تغییر دهد",
+        "detail": "pointerMove represents a Group/multi-selection movement with a common dx/dy. v83SnapMoves chooses one x and y correction but then clamps each child's values.x and values.y independently to page edges. If a selection spans the page width and a guide matches one member, another member against the opposite edge may be clamped while its peer moves. That silently changes relative distances despite an intended rigid group translation, and the later validator checks each object's bounds but not pairwise offsets.\nSource evidence: index.html#L2507-L2532; index.html#L3101-L3121; index.html#L4263-L4272; index.html#L4309-L4322. No Build/Test/runtime conducted.",
+        "category": "code_review",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-PORTFOLIOS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "1207b87689523ff3b095df45ade70217b9b0838b"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-059",
+          "TASK-015",
+          "TASK-016",
+          "TASK-010",
+          "TASK-018",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-037",
+        "title": "History از تغییر راهنماها، پس‌زمینهٔ صفحه و Legacy Flow بی‌خبر است",
+        "detail": "objectSnapshot and v91ContentSnapshot track objects, styles and layer/order fields, but not designGuides, guidesVisible or legacyLayout. v83MutateGuide and the pageBackground/content-flow handlers directly mutate the page and queue storage without calling commit(), so these edits neither create a History step nor participate in session Undo/Redo. The pageBackground handler also lacks a local rollback when the queue rejects a save before acceptance. This is an explicit gap within existing TASK-012 History scope, TASK-023/038 persistence handling and TASK-013 Guides; no duplicate new task is required.\nAcceptance update: Extend TASK-012 acceptance to include reversible editor guide additions/deletions/moves/visibility, page background reset/color and legacy content-flow toggles with atomic history snapshots, correct redo invalidation, scoped Save Page persistence and rollback/error feedback. Preserve current session-only history and do not add zoom/pan or persisted historical metadata.\nSource evidence: index.html#L2903-L2923; index.html#L2947-L2952; index.html#L3032-L3054; index.html#L3399-L3414; index.html#L3982-L3988; index.html#L4496-L4500. No Build/Test/runtime conducted.",
+        "category": "code_review",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES",
+          "SC-STORAGE"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "1207b87689523ff3b095df45ade70217b9b0838b"
+        },
+        "implementation_state": "covered_by_existing_TASK-012_follow_up",
+        "related_record_ids": [
+          "TASK-012",
+          "TASK-013",
+          "TASK-023",
+          "TASK-038",
+          "DEC-006"
+        ]
       }
     ],
     "business_rules": [
@@ -1874,19 +1973,24 @@
       {
         "record_id": "TASK-012",
         "title": "History panel and Undo/Redo",
-        "detail": "Right-side History tab alongside Layers and Properties, clickable operation timeline, undo/redo shortcuts, at least 100 page-local steps, atomic block/group edits. Zoom and pan excluded. History is SESSION-ONLY and is cleared on application close/restart; saved page content persists independently. V91 source candidate integrates a third History tab in the existing VS dock, labels in-memory snapshots, raises capacity to 100, adds Ctrl+Z/Y/Shift+Z outside editable inputs, supports clickable atomic timeline jumps with save rollback, and retains page-specific history when navigating between pages in the same session. Runtime/Tauri/PDF verification and owner acceptance are outstanding; task remains in_progress.",
+        "detail": "Right-side History tab alongside Layers and Properties, clickable operation timeline, undo/redo shortcuts, at least 100 page-local steps, atomic block/group edits. Zoom and pan excluded. History is SESSION-ONLY and is cleared on application close/restart; saved page content persists independently. V91 source candidate integrates a third History tab in the existing VS dock, labels in-memory snapshots, raises capacity to 100, adds Ctrl+Z/Y/Shift+Z outside editable inputs, supports clickable atomic timeline jumps with save rollback, and retains page-specific history when navigating between pages in the same session. Runtime/Tauri/PDF verification and owner acceptance are outstanding; task remains in_progress.\n\nRetrospective audit phase 05 source gap (FND-037): objectSnapshot and v91ContentSnapshot track objects, styles and layer/order fields, but not designGuides, guidesVisible or legacyLayout. v83MutateGuide and the pageBackground/content-flow handlers directly mutate the page and queue storage without calling commit(), so these edits neither create a History step nor participate in session Undo/Redo. The pageBackground handler also lacks a local rollback when the queue rejects a save before acceptance. This is an explicit gap within existing TASK-012 History scope, TASK-023/038 persistence handling and TASK-013 Guides; no duplicate new task is required.\nAdditional acceptance: Extend TASK-012 acceptance to include reversible editor guide additions/deletions/moves/visibility, page background reset/color and legacy content-flow toggles with atomic history snapshots, correct redo invalidation, scoped Save Page persistence and rollback/error feedback. Preserve current session-only history and do not add zoom/pan or persisted historical metadata.",
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
-        "related_record_ids": [],
+        "related_record_ids": [
+          "FND-037"
+        ],
         "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
         "implementation_state": "V91_source_candidate_pending_owner_runtime_review",
-        "updated_on": "2026-11-19",
-        "source_revision_ref": "37fca8404839f9521c2ff8cff183e23ea293d00e"
+        "updated_on": "2026-11-20",
+        "source_revision_ref": "37fca8404839f9521c2ff8cff183e23ea293d00e",
+        "evidence_refs": [
+          "FND-037"
+        ]
       },
       {
         "record_id": "TASK-013",
@@ -3329,6 +3433,98 @@
           "FND-033"
         ],
         "result": "Not implemented. Source-only UI/UX retrospective audit phase 04; owner runtime acceptance pending."
+      },
+      {
+        "record_id": "TASK-057",
+        "title": "Constrain pointer-driven Region Block frame resize to its existing children",
+        "detail": "The numeric property() path checks every existing Block child against the proposed frame after any x/y/w/h change. However pointerMove for a Region Block builds child patches only when blockResizeMode==='proportional'. In the 'frame' resize mode, changes contains only the Block; its frame passes v98BoundsValid but unchanged children are never checked against the new frame. A top/left/right/bottom frame shrink can therefore leave an attached child outside the Block, despite the document/Block containment invariant. No runtime repro was performed.\n\nAcceptance criteria: Apply one shared atomic frame/child validation for pointer and numeric transforms. In frame mode keep children at the intended absolute position, refuse any resize that would exclude a descendant (or offer an explicit user-selected containment behavior), and never commit an out-of-Block child. Preserve proportional mode and locked descendants; honor pointer cancel, Undo/Redo, Save Page, reopen and owner-run Windows/browser checks.\n\nSource evidence: index.html#L2513-L2516; index.html#L3990-L4002; index.html#L4044-L4055; index.html#L4263-L4272; index.html#L4280-L4322. No assistant-run Build/Test/static-check under DEC-006. Preserve all existing user data and concurrent source modifications.",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "FND-034",
+          "TASK-010",
+          "TASK-018",
+          "TASK-035",
+          "DEC-006"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "1207b87689523ff3b095df45ade70217b9b0838b"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V126",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-034"
+        ],
+        "result": "Audit finding only; not implemented or owner-runtime accepted."
+      },
+      {
+        "record_id": "TASK-058",
+        "title": "Enforce rotated-corner and pivot-aware bounds in Align/Distribute and Smart Duplicate",
+        "detail": "property() uses v98BoundsValid to check the four rotated/flipped corners around transformPivot. In contrast, v97Duplicate preflights only nx,ny,nx+w,ny+h and v96Apply preflights only x,y,x+w,y+h against document/Block bounds. For rotated objects near document/Region Block edges, a copied or aligned object may pass these axis-aligned checks even while its rendered transformed corners exceed the clipping surface; the aligned bounds also use raw w/h rather than visual bounding boxes. This gap is source-supported; exact UI outcome is pending runtime review.\n\nAcceptance criteria: Use a common transformed-corner validator for every changed object in Align, Distribute and Smart Duplicate; include rotation, flip, pivot and Region Block parent (including cloned parent). Make visual alignment semantics explicit for rotated objects, preflight every affected object before mutation, reject invalid operations without changing scene/history/save and owner-check with rotated/flip/multi-selection at page and Block borders.\n\nSource evidence: index.html#L2625-L2639; index.html#L2747-L2832; index.html#L3990-L4002; index.html#L4044-L4047. No assistant-run Build/Test/static-check under DEC-006. Preserve all existing user data and concurrent source modifications.",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "FND-035",
+          "TASK-016",
+          "TASK-017",
+          "TASK-018",
+          "TASK-010",
+          "DEC-006"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "1207b87689523ff3b095df45ade70217b9b0838b"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V126",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-035"
+        ],
+        "result": "Audit finding only; not implemented or owner-runtime accepted."
+      },
+      {
+        "record_id": "TASK-059",
+        "title": "Preserve rigid relative geometry for multi-object Guide snapping",
+        "detail": "pointerMove represents a Group/multi-selection movement with a common dx/dy. v83SnapMoves chooses one x and y correction but then clamps each child's values.x and values.y independently to page edges. If a selection spans the page width and a guide matches one member, another member against the opposite edge may be clamped while its peer moves. That silently changes relative distances despite an intended rigid group translation, and the later validator checks each object's bounds but not pairwise offsets.\n\nAcceptance criteria: Compute one legal shared snap delta by intersecting allowable x/y translation ranges of all affected members/Region Block parents. If the best guide correction would alter member spacing, ignore or reduce the snap for the whole selection, never clamp individuals separately. Preserve locked members and group/Block semantics, and check group spacing and Undo after an edge snap with owner-run runtime validation.\n\nSource evidence: index.html#L2507-L2532; index.html#L3101-L3121; index.html#L4263-L4272; index.html#L4309-L4322. No assistant-run Build/Test/static-check under DEC-006. Preserve all existing user data and concurrent source modifications.",
+        "scope_refs": [
+          "SC-TEMPLATES",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "FND-036",
+          "TASK-015",
+          "TASK-016",
+          "TASK-010",
+          "TASK-018",
+          "DEC-006"
+        ],
+        "priority": "P2",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "1207b87689523ff3b095df45ade70217b9b0838b"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V126",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-036"
+        ],
+        "result": "Audit finding only; not implemented or owner-runtime accepted."
       }
     ],
     "evidence": [],
@@ -4473,6 +4669,41 @@
           "source_revision_ref": "c710ae870fe438f3ef63ed6740e2f820eb97a7ca"
         },
         "implementation_state": "audit_documented_and_committed_code_untouched"
+      },
+      {
+        "record_id": "OBS-051",
+        "title": "Retrospective audit phase 05: Designer inheritance, Region Block, Groups, history and geometry",
+        "status": "source_only_review_completed",
+        "detail": "Read current V126 source 1207b87689523ff3b095df45ade70217b9b0838b for inheritance overlay, grouped Region Block moves/resizes, align/distribute and duplicate bounds, Guide snap and Undo/Redo. FND-034, FND-035, FND-036 mapped to planned TASK-057, TASK-058, TASK-059. The distinct history issue FND-037 is linked to existing TASK-012 without new duplicate Task. TASK-006/010/012/015/016/017/018/023/035 retain existing implementation states pending owner review. No Build/Test/static checker/browser/Tauri runtime, migration, or owner acceptance. Next owner N = phase 06 Image Library/Asset/Tile.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-TEMPLATES",
+          "SC-STORAGE",
+          "SC-TILES"
+        ],
+        "related_record_ids": [
+          "TASK-057",
+          "TASK-058",
+          "TASK-059",
+          "FND-034",
+          "FND-035",
+          "FND-036",
+          "FND-037",
+          "TASK-006",
+          "TASK-010",
+          "TASK-012",
+          "TASK-015",
+          "TASK-016",
+          "TASK-017",
+          "TASK-018",
+          "DEC-006"
+        ],
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "1207b87689523ff3b095df45ade70217b9b0838b"
+        },
+        "implementation_state": "audit_documented_and_committed_code_untouched"
       }
     ]
   },
@@ -4553,6 +4784,9 @@
       "TASK-054",
       "TASK-055",
       "TASK-056",
+      "TASK-057",
+      "TASK-058",
+      "TASK-059",
       "TASK-005",
       "TASK-006",
       "TASK-007",
@@ -4590,7 +4824,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nPhase 04 UI/UX retrospective source audit completed: FND-029, FND-030, FND-031, FND-032, FND-033 mapped to planned TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Verified source gaps: thumbnail reorder persists wrong Save scope, print reads preview ahead of async guarded navigation, outer shell fixed-width rail on narrow widths, project/thumbnail focus & semantics, hidden file inputs keyboard accessibility. Prior TASK-022..026 and TASK-030 not duplicated; owner Runtime/Acceptance pending. Next N = phase 05 designer/inheritance/layers/history; evidence in project evolution/AUDIT-CAMPAIGN-2026-11-20.md.",
+    "current_summary": "V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nPhase 04 UI/UX retrospective source audit completed: FND-029, FND-030, FND-031, FND-032, FND-033 mapped to planned TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Verified source gaps: thumbnail reorder persists wrong Save scope, print reads preview ahead of async guarded navigation, outer shell fixed-width rail on narrow widths, project/thumbnail focus & semantics, hidden file inputs keyboard accessibility. Prior TASK-022..026 and TASK-030 not duplicated; owner Runtime/Acceptance pending. Next N = phase 05 designer/inheritance/layers/history; evidence in project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nRetrospective phase 05 designer source audit complete at 1207b87689523ff3b095df45ade70217b9b0838b: FND-034, FND-035, FND-036 mapped to TASK-057, TASK-058, TASK-059 for pointer Region Block containment, rotated-corner geometry guards for Align/Duplicate and rigid multi-object Guide snapping. FND-037 linked to prior TASK-012 for missing History coverage on Guides/page background/content-flow, no duplicate task. No Build/Test/runtime/Acceptance; next owner N = phase 06 Image Library/ownership/tiles.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
