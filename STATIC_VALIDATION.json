@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "121",
-  "basedOnMainCommitBeforeChange": "b6e617d4d5b2b290f6b841d2c579ebf6821a399a",
+  "plannedForVersion": "122",
+  "basedOnMainCommitBeforeChange": "d792b175a78c155d98953d175ae5edfa1fe2e4c3",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -12,11 +12,13 @@
     "Migration 008: FK-backed project/public image usage and typed automatic/named backup references, legacy audit ledger",
     "V118 N-03: delta-only media ownership and usage writes plus newly-created-backup-only reference indexing",
     "Migration 009: FK-backed style-to-page/template object references, historical diagnostic log, UPSERT-based central shared_styles and tolerant backfill",
-    "Migration 010: derived FK-backed Scene/Layer/Element/Group graph and scene-template links; source digest, tolerant migration and style/media cleanup order"
+    "Migration 010: derived FK-backed Scene/Layer/Element/Group graph and scene-template links; source digest, tolerant migration and style/media cleanup order",
+    "Migration 011: workspace CAS revision and per-page revision",
+    "N-06: load_project_state, isolated save_page, revision-guarded save_project, scoped style/media/scene updates"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V121 TASK-023 editor manual-save routing, guarded page dropdown/content navigation; SQLite schema 10 unchanged. Static checker, Build/Test, browser/Tauri runtime, and owner acceptance NOT performed."
+  "note": "V122 N-06 source candidate (SQLite schema 11). No Rust Build, automated test, static checker execution, actual SQLite migration, Windows/Tauri/browser runtime, PDF, or owner acceptance under DEC-006. Native Page/Project use distinct atomic transactions and optimistic revision; browser IndexedDB remains a full JSON document."
 }

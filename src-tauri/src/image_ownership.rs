@@ -206,6 +206,74 @@ fn collect_hashes(value:&Value,out:&mut HashSet<String>){
         _=>{}
     }
 }
+// N-06: update ONLY the currently edited page's media-reference edges.
+// Owners and the public catalog must already be registered by Save Project.
+// Never silently publish/share a newly imported image during Save Page.
+pub fn persist_page_usage(
+    tx:&Transaction<'_>,project:&str,portfolio:&str,page_id:&str,page:&Value,
+)->Result<(),String>{
+    let mut private=HashMap::new();
+    {
+        let mut stmt=tx.prepare(
+            "SELECT image_id,asset_hash FROM image_project_owners WHERE project_id=?1"
+        ).map_err(err)?;
+        let rows=stmt.query_map([project],|r|Ok((
+            r.get::<_,String>(0)?,r.get::<_,String>(1)?,
+        ))).map_err(err)?;
+        for row in rows {let (id,hash)=row.map_err(err)?;private.insert(id,hash);}
+    }
+    let mut public=HashMap::new();
+    {
+        let mut stmt=tx.prepare("SELECT id,asset_hash FROM image_public_catalog").map_err(err)?;
+        let rows=stmt.query_map([],|r|Ok((
+            r.get::<_,String>(0)?,r.get::<_,String>(1)?,
+        ))).map_err(err)?;
+        for row in rows {let (id,hash)=row.map_err(err)?;public.insert(id,hash);}
+    }
+    let mut images=HashSet::new();
+    collect_asset_ids(page,&mut images);
+    let mut refs=Vec::new();
+    for image_id in images {
+        if let Some(hash)=private.get(&image_id){
+            refs.push((image_id,hash.clone(),true));
+        } else if let Some(hash)=public.get(&image_id){
+            refs.push((image_id,hash.clone(),false));
+        } else {
+            return Err(format!(
+                "Page image {image_id} is not registered; Save Project and its image library first"
+            ));
+        }
+    }
+    for table in ["image_page_private_refs","image_page_public_refs"]{
+        tx.execute(
+            &format!("DELETE FROM {table} WHERE project_id=?1 AND portfolio_id=?2 AND page_id=?3"),
+            params![project,portfolio,page_id],
+        ).map_err(err)?;
+    }
+    let owner=format!("{portfolio}/{page_id}");
+    tx.execute(
+        "DELETE FROM image_usage_edges
+         WHERE scope_id=?1 AND owner_kind='page' AND owner_id=?2",
+        params![project,&owner],
+    ).map_err(err)?;
+    for (image_id,hash,private_owner) in refs {
+        let table=if private_owner{"image_page_private_refs"}else{"image_page_public_refs"};
+        tx.execute(
+            &format!(
+                "INSERT INTO {table}(project_id,portfolio_id,page_id,image_id,asset_hash)
+                 VALUES(?1,?2,?3,?4,?5)"
+            ),
+            params![project,portfolio,page_id,&image_id,&hash],
+        ).map_err(err)?;
+        tx.execute(
+            "INSERT INTO image_usage_edges(scope_id,owner_kind,owner_id,image_id,asset_hash)
+             VALUES(?1,'page',?2,?3,?4)",
+            params![project,&owner,&image_id,&hash],
+        ).map_err(err)?;
+    }
+    Ok(())
+}
+
 pub fn persist_ownership(tx:&Transaction<'_>,workspace:&Value)->Result<(),String>{
     // The relational project/page/template projection has already been committed
     // to this transaction. FK cascades for removed parents happen there.

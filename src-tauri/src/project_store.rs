@@ -395,7 +395,8 @@ fn persist_project(
                 "INSERT INTO workspace_pages(project_id,portfolio_id,id,position,payload)
                  VALUES(?1,?2,?3,?4,?5)
                  ON CONFLICT(project_id,portfolio_id,id) DO UPDATE
-                 SET position=excluded.position,payload=excluded.payload
+                 SET position=excluded.position,payload=excluded.payload,
+                     revision=workspace_pages.revision+1
                  WHERE position IS NOT excluded.position OR payload IS NOT excluded.payload",
                 params![id, pid, page_id, n as i64, page.to_string()],
             ).map_err(err)?;
@@ -502,6 +503,64 @@ pub fn finalize_shared_styles(
     }
     Ok(())
 }
+// N-06: scoped dependent indexes for ONE page, without rewriting global
+// templates, images, styles, other pages or portfolio metadata.
+pub fn persist_page_dependencies(
+    tx:&Transaction<'_>,project:&str,portfolio:&str,page_id:&str,page:&Value,
+)->Result<(),String>{
+    if page.get("id").and_then(Value::as_str)!=Some(page_id) {
+        return Err("Page identity mismatch".into());
+    }
+    tx.execute(
+        "DELETE FROM global_template_dependencies
+         WHERE project_id=?1 AND portfolio_id=?2 AND page_id=?3",
+        params![project,portfolio,page_id],
+    ).map_err(err)?;
+    for (field,kind) in [
+        ("masterTemplateId","masterTemplates"),
+        ("sectionDesignId","sectionDesigns"),
+        ("templateId","templates"),
+    ]{
+        if let Some(id)=page.get(field).and_then(Value::as_str){
+            if id.is_empty()||id=="none"||id=="master"{continue;}
+            let exists:i64=tx.query_row(
+                "SELECT EXISTS(SELECT 1 FROM shared_templates WHERE kind=?1 AND id=?2)",
+                params![kind,id],|r|r.get(0),
+            ).map_err(err)?;
+            if exists!=1 {
+                return Err(format!("Page {page_id} references missing {kind}/{id}"));
+            }
+            tx.execute(
+                "INSERT INTO global_template_dependencies(
+                  project_id,portfolio_id,page_id,template_kind,template_id
+                 ) VALUES(?1,?2,?3,?4,?5)",
+                params![project,portfolio,page_id,kind,id],
+            ).map_err(err)?;
+        }
+    }
+    let mut desired=StyleBindings::new();
+    let owner=json!([project,portfolio,page_id]).to_string();
+    bindings_for_owner(
+        tx,page,"page",&owner,
+        &[project.to_owned(),portfolio.to_owned(),page_id.to_owned()],
+        &known_style_ids(tx)?,true,&mut desired,
+    )?;
+    tx.execute(
+        "DELETE FROM style_page_element_refs
+         WHERE project_id=?1 AND portfolio_id=?2 AND page_id=?3",
+        params![project,portfolio,page_id],
+    ).map_err(err)?;
+    for (key,(element_id,style_id)) in desired {
+        tx.execute(
+            "INSERT INTO style_page_element_refs(
+              project_id,portfolio_id,page_id,element_path,element_id,style_id
+             ) VALUES(?1,?2,?3,?4,?5,?6)",
+            params![project,portfolio,page_id,&key[3],element_id,style_id],
+        ).map_err(err)?;
+    }
+    Ok(())
+}
+
 fn load_pages(db:&Connection,project:&str,portfolio:&str)->Result<Vec<Value>,String>{
     let mut stmt=db.prepare("SELECT payload FROM workspace_pages WHERE project_id=?1 AND portfolio_id=?2 ORDER BY position").map_err(err)?;
     let rows=stmt.query_map(params![project,portfolio],|r|r.get::<_,String>(0)).map_err(err)?;

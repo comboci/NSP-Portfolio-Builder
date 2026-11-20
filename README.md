@@ -1,3 +1,15 @@
+# NSP Portfolio Builder — Version 122 (N-06, source-only)
+
+N-06 implements DEC-009 on the native Tauri/SQLite path: separate atomic `save_page` and `save_project` transactions, and an atomic `load_project_state` returning the relational workspace with its revision. Migration 011 (schema 11) introduces singleton `workspace_write_revision` and a per-page `revision` column. Each page/project write uses optimistic compare-and-swap; stale writers return `WRITE_CONFLICT` rather than overwriting newer data.
+
+Native Save Page and Ctrl+S persist only the selected page and its scoped template/style/image/scene references. A separate Save Project button commits the full workspace. Assets not yet registered with a project require Save Project first. Automatic backup snapshots at full-project save and named-backup fallback now prefer the relational workspace rather than potentially stale legacy `projects` JSON. Page-only writes do not create automatic backups; existing backups remain intact.
+
+The JS write queue advances the backend revision only after a successful transaction. Conflicts block further saves until the user exports the unsaved JSON and reloads. Browser IndexedDB and localStorage still store a whole compatible JSON document; isolated SQL page transactions are native-only. New/deleted/reordered pages are structural Save Project operations.
+
+**Verification:** SOURCE ONLY. DEC-006 prohibits assistant-run Build/Test/static checker/runtime. Owner must verify two-window conflicting writes, Save Page not changing another page, global Save Project, media ownership, style/template/scene FKs, page editing/undo/redo, save/reopen and backup/restore.
+
+---
+
 # NSP Portfolio Builder — Version 121 (TASK-023, source-only)
 
 This release continues TASK-023 without changing SQLite schema 10, canonical page JSON, image ownership, or the N-05 derived scene graph. The shared editor now routes Ctrl+S / Command+S and its generic Save action through the existing durable page-save acknowledgement; Master and Section template manual saves use their existing draft-confirmation path. The legacy page-selection dropdown and the Page Content exit action also await backend acknowledgement before switching views, retaining the current page if persistence fails. The existing explicit Save Page button remains available.

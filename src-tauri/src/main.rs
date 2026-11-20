@@ -1,6 +1,6 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 use rusqlite::{params, Connection, OptionalExtension, Transaction};
-use serde_json::Value;
+use serde_json::{json, Value};
 use std::{path::PathBuf, sync::Mutex};
 use tauri::{Manager, State};
 
@@ -29,6 +29,67 @@ fn load_project(db: State<'_, Storage>, root: State<'_, AssetRoot>) -> Result<Op
 }
 
 
+// N-06: load both payload and its workspace revision under one SQLite lock.
+// The previous load_project endpoint stays available for compatibility.
+#[tauri::command]
+fn load_project_state(
+    db: State<'_, Storage>, root: State<'_, AssetRoot>,
+) -> Result<Value, String> {
+    let mut conn=db.0.lock().map_err(error)?;
+    let tx=conn.transaction().map_err(error)?;
+    let current:i64=tx.query_row(
+        "SELECT revision FROM workspace_write_revision WHERE id=1",
+        [],|r|r.get(0),
+    ).map_err(error)?;
+    let raw=match project_store::load_workspace(&tx)? {
+        Some(payload)=>Some(payload),
+        None=>tx.query_row(
+            "SELECT payload FROM projects WHERE id='workspace'",
+            [],|r|r.get::<_,String>(0),
+        ).optional().map_err(error)?,
+    };
+    let payload=match raw {
+        Some(raw)=>{
+            let mut value:Value=serde_json::from_str(&raw).map_err(error)?;
+            value["globalImageLibrary"]=
+                Value::Array(image_ownership::read_public_catalog(&tx)?);
+            Some(media_store::hydrate_payload(&tx,&root.0,&value.to_string())?)
+        }
+        None=>None,
+    };
+    tx.commit().map_err(error)?;
+    Ok(json!({"payload":payload,"revision":current}))
+}
+
+fn require_workspace_revision(
+    tx:&Transaction<'_>,expected:i64,
+)->Result<(),String>{
+    let stored:i64=tx.query_row(
+        "SELECT revision FROM workspace_write_revision WHERE id=1",
+        [],|r|r.get(0),
+    ).map_err(error)?;
+    if expected!=stored {
+        return Err(format!(
+            "WRITE_CONFLICT: workspace revision is {stored}, expected {expected}; reload before saving"
+        ));
+    }
+    Ok(())
+}
+fn advance_workspace_revision(
+    tx:&Transaction<'_>,expected:i64,
+)->Result<i64,String>{
+    let updated=tx.execute(
+        "UPDATE workspace_write_revision
+         SET revision=revision+1,updated_at=CURRENT_TIMESTAMP
+         WHERE id=1 AND revision=?1",
+        [expected],
+    ).map_err(error)?;
+    if updated!=1{
+        return Err("WRITE_CONFLICT: workspace changed during save".into());
+    }
+    Ok(expected+1)
+}
+
 /* V110 TASK-027: only metadata changes; publication, identity and immutable
    original bytes are never revoked or replaced by this command. */
 #[tauri::command]
@@ -41,25 +102,37 @@ fn rename_public_image(
 
 #[tauri::command]
 fn save_project(
-    db: State<'_, Storage>, root: State<'_, AssetRoot>, payload: String,
-) -> Result<(), String> {
+    db: State<'_, Storage>, root: State<'_, AssetRoot>,
+    payload: String, expected_revision:i64,
+) -> Result<i64, String> {
     let value: Value = serde_json::from_str(&payload).map_err(error)?;
     if !value["pages"].is_array() || !value["templates"].is_array() || !value["master"].is_object() {
         return Err("Invalid project".into());
     }
     let mut conn = db.0.lock().map_err(error)?;
     let tx = conn.transaction().map_err(error)?;
+    require_workspace_revision(&tx,expected_revision)?;
     let mut compact = value;
     // Persist immutable originals first, then commit ONLY references in all SQLite JSON rows.
     media_store::compact_value(&tx, &root.0, &mut compact)?;
     let compact_payload = serde_json::to_string(&compact).map_err(error)?;
     // Only a newly retained previous revision needs asset-reference indexing.
     // Named and older automatic backups are never rescanned on an ordinary save.
-    let previous:Option<String>=tx.query_row(
-        "SELECT payload FROM projects WHERE id='workspace' AND payload<>?1",
-        [&compact_payload],|r|r.get(0),
-    ).optional().map_err(error)?;
-    if let Some(prior)=previous {
+    // The relational workspace is canonical after an isolated Save Page.
+    // Never take a historical snapshot from stale legacy projects.payload.
+    let previous:Option<String>=match project_store::load_workspace(&tx)? {
+        Some(raw)=>{
+            let mut value:Value=serde_json::from_str(&raw).map_err(error)?;
+            value["globalImageLibrary"]=
+                Value::Array(image_ownership::read_public_catalog(&tx)?);
+            Some(value.to_string())
+        }
+        None=>tx.query_row(
+            "SELECT payload FROM projects WHERE id='workspace'",
+            [],|r|r.get::<_,String>(0),
+        ).optional().map_err(error)?,
+    };
+    if let Some(prior)=previous.filter(|p|p!=&compact_payload) {
         tx.execute("INSERT INTO backups(payload) VALUES(?1)",[&prior]).map_err(error)?;
         let backup_id=tx.last_insert_rowid();
         let prior_value:Value=serde_json::from_str(&prior).map_err(error)?;
@@ -125,7 +198,83 @@ fn save_project(
     // Deleting an automatic backup cascades its FK-backed asset refs; only the
     // legacy polymorphic index needs stale-row pruning.
     image_ownership::prune_automatic_backup_refs(&tx)?;
-    tx.commit().map_err(error)
+    let next_revision=advance_workspace_revision(&tx,expected_revision)?;
+    tx.commit().map_err(error)?;
+    Ok(next_revision)
+}
+
+// N-06 / DEC-009: Save Page does not persist project metadata, another page,
+// shared templates or global media catalogs. All scoped dependent indexes are
+// committed together. Optimistic workspace revision prevents lost updates.
+#[tauri::command]
+fn save_page(
+    db:State<'_, Storage>,root:State<'_, AssetRoot>,
+    project_id:String,portfolio_id:String,page_id:String,
+    payload:String,expected_revision:i64,
+)->Result<i64,String>{
+    if project_id.is_empty()||portfolio_id.is_empty()||page_id.is_empty(){
+        return Err("Invalid page scope".into());
+    }
+    let value:Value=serde_json::from_str(&payload).map_err(error)?;
+    if !value.is_object()||value.get("id").and_then(Value::as_str)!=Some(page_id.as_str()){
+        return Err("Page payload identity mismatch".into());
+    }
+    let mut conn=db.0.lock().map_err(error)?;
+    let tx=conn.transaction().map_err(error)?;
+    require_workspace_revision(&tx,expected_revision)?;
+    let active:i64=tx.query_row(
+        "SELECT EXISTS(SELECT 1 FROM workspace_projects
+          WHERE id=?1 AND is_active=1)",
+        [&project_id],|r|r.get(0),
+    ).map_err(error)?;
+    if active!=1{return Err("Save Page requires the active project".into());}
+    let present:i64=tx.query_row(
+        "SELECT EXISTS(SELECT 1 FROM workspace_pages
+         WHERE project_id=?1 AND portfolio_id=?2 AND id=?3)",
+        params![&project_id,&portfolio_id,&page_id],|r|r.get(0),
+    ).map_err(error)?;
+    if present!=1{
+        return Err("Page is not persisted; use Save Project to add it first".into());
+    }
+
+    let mut page=value;
+    media_store::compact_value(&tx,&root.0,&mut page)?;
+    let compact=page.to_string();
+    let count=tx.execute(
+        "UPDATE workspace_pages SET payload=?4,revision=revision+1
+         WHERE project_id=?1 AND portfolio_id=?2 AND id=?3",
+        params![&project_id,&portfolio_id,&page_id,&compact],
+    ).map_err(error)?;
+    if count!=1{return Err("Page disappeared while saving".into());}
+
+    // Keep only this page's legacy compatibility projection in sync; the
+    // canonical relational parent is still workspace_pages.payload.
+    tx.execute(
+        "INSERT INTO pages(project_id,portfolio_id,id,payload)
+         VALUES('workspace',?1,?2,?3)
+         ON CONFLICT(project_id,portfolio_id,id) DO UPDATE
+         SET payload=excluded.payload
+         WHERE payload IS NOT excluded.payload",
+        params![&portfolio_id,&page_id,&compact],
+    ).map_err(error)?;
+    let owner=format!("{portfolio_id}/{page_id}");
+    tx.execute(
+        "DELETE FROM image_refs WHERE project_id='workspace'
+          AND owner_kind='page' AND owner_id=?1",
+        [&owner],
+    ).map_err(error)?;
+    index_refs(&tx,"page",&owner,&page)?;
+
+    project_store::persist_page_dependencies(
+        &tx,&project_id,&portfolio_id,&page_id,&page,
+    )?;
+    image_ownership::persist_page_usage(
+        &tx,&project_id,&portfolio_id,&page_id,&page,
+    )?;
+    scene_store::persist_scene_projections(&tx)?;
+    let next=advance_workspace_revision(&tx,expected_revision)?;
+    tx.commit().map_err(error)?;
+    Ok(next)
 }
 
 fn index_refs(tx: &Transaction<'_>, kind: &str, owner: &str, v: &Value) -> Result<(), String> {
@@ -188,9 +337,18 @@ fn create_backup(
         media_store::compact_value(&tx, &root.0, &mut value)?;
         value.to_string()
     } else {
-        tx.query_row(
-            "SELECT payload FROM projects WHERE id='workspace'", [], |r| r.get::<_, String>(0),
-        ).optional().map_err(error)?.ok_or("Save the project first")?
+        match project_store::load_workspace(&tx)? {
+            Some(raw)=>{
+                let mut value:Value=serde_json::from_str(&raw).map_err(error)?;
+                value["globalImageLibrary"]=
+                    Value::Array(image_ownership::read_public_catalog(&tx)?);
+                value.to_string()
+            }
+            None=>tx.query_row(
+                "SELECT payload FROM projects WHERE id='workspace'",
+                [],|r|r.get::<_,String>(0),
+            ).optional().map_err(error)?.ok_or("Save the project first")?,
+        }
     };
     let value: Value = serde_json::from_str(&compact).map_err(error)?;
     tx.execute(
@@ -253,7 +411,7 @@ fn main() {
             conn.execute_batch("PRAGMA foreign_keys=ON; PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;")?;
             let tx = conn.transaction()?;
             let version: i64 = tx.query_row("PRAGMA user_version", [], |r| r.get(0))?;
-            if version > 10 { return Err("Database schema is newer than this application".into()); }
+            if version > 11 { return Err("Database schema is newer than this application".into()); }
             if version < 1 { tx.execute_batch(include_str!("../migrations/001.sql"))?; }
             if version < 2 { tx.execute_batch(include_str!("../migrations/002.sql"))?; }
             if version < 3 {
@@ -281,13 +439,16 @@ fn main() {
                 scene_store::backfill_scene_projections(&tx)
                     .map_err(|e|std::io::Error::other(e))?;
             }
+            if version < 11 {
+                tx.execute_batch(include_str!("../migrations/011.sql"))?;
+            }
             tx.commit()?;
             app.manage(AssetRoot(root));
             app.manage(Storage(Mutex::new(conn)));
             Ok(())
         })
         .invoke_handler(tauri::generate_handler![
-            load_project, save_project, rename_public_image, list_backups, read_backup, create_backup, list_named_backups, read_named_backup,
+            load_project, load_project_state, save_project, save_page, rename_public_image, list_backups, read_backup, create_backup, list_named_backups, read_named_backup,
         ])
         .run(tauri::generate_context!())
         .expect("Failed to start NSP Portfolio Builder");

@@ -108,6 +108,26 @@ assert(rust.includes('mod scene_store;') &&
        scene.includes('source_sha256') &&
        scene.includes('DELETE FROM design_scene_elements WHERE scene_key=?1'),
   'N-05 derived relational scenes or FK-safe save sequencing missing');
+const n06 = read('src-tauri/migrations/011.sql');
+assert(n06.includes('CREATE TABLE IF NOT EXISTS workspace_write_revision') &&
+       n06.includes('ALTER TABLE workspace_pages ADD COLUMN revision'),
+  'N-06 SQLite revision schema is missing');
+assert(rust.includes('fn load_project_state(') &&
+       rust.includes('fn save_page(') &&
+       rust.includes('fn require_workspace_revision(') &&
+       rust.includes('fn advance_workspace_revision(') &&
+       rust.includes('persist_page_usage(') &&
+       rust.includes('persist_page_dependencies(') &&
+       rust.includes('expected_revision:i64') &&
+       ownership.includes('pub fn persist_page_usage(') &&
+       projectStore.includes('pub fn persist_page_dependencies('),
+  'N-06 isolated Tauri page save or optimistic revision is missing');
+assert(html.includes("invoke('save_page'") &&
+       html.includes("invoke('load_project_state'") &&
+       html.includes("expectedRevision:dbRevision") &&
+       html.includes("V.saveProject=async function") &&
+       html.includes("V.queuePageSave=function"),
+  'N-06 independent frontend page/project save bridge missing');
 assert(projectStore.includes('ON CONFLICT(project_id,portfolio_id,id) DO UPDATE'),
   'Relational page upsert missing');
 assert(projectStore.includes('references missing {kind}/{template}'),

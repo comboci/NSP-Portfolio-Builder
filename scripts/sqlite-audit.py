@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only SQLite integrity check for NSP Portfolio Builder (schema 10+).
+"""Read-only SQLite integrity check for NSP Portfolio Builder (schema 11+).
 
 Usage: python scripts/sqlite-audit.py "/path/to/storage/portfolio.sqlite3"
 Close the desktop app before running a filesystem-level database/asset backup.
@@ -25,6 +25,7 @@ EXPECTED = {
     "design_scenes", "design_scene_layers", "design_scene_groups",
     "design_scene_elements", "design_scene_template_links",
     "design_scene_projection_issues",
+    "workspace_write_revision",
 }
 
 
@@ -86,6 +87,12 @@ def audit(db_path: Path) -> dict:
             report["historical_scene_projection_issues"] = conn.execute(
                 "SELECT COUNT(*) FROM design_scene_projection_issues"
             ).fetchone()[0]
+            report["workspace_revision"] = conn.execute(
+                "SELECT revision FROM workspace_write_revision WHERE id=1"
+            ).fetchone()[0]
+            report["pages_with_invalid_revision"] = conn.execute(
+                "SELECT COUNT(*) FROM workspace_pages WHERE revision < 0"
+            ).fetchone()[0]
             report["style_reference_migration_issues"] = conn.execute(
                 "SELECT COUNT(*) FROM style_reference_issues"
             ).fetchone()[0]
@@ -146,6 +153,7 @@ def audit(db_path: Path) -> dict:
             and report.get("unmapped_legacy_image_usage", 0) == 0
             and report.get("pages_without_scene_projection", 0) == 0
             and report.get("templates_without_scene_projection", 0) == 0
+            and report.get("pages_with_invalid_revision", 0) == 0
         )
         return report
     finally:
