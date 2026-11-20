@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 131 (TASK-039: Browser IndexedDB revision guard, source-only)
+
+Browser IndexedDB now upgrades from version 1 to version 2 **without deleting existing project or named-backup records**. Each payload is read with its revision; Save Page and Save Project compare the expected revision and atomically store the new JSON and next revision in one readwrite IndexedDB transaction. A second stale tab gets `WRITE_CONFLICT` and cannot overwrite the first tab's committed data. The recovery button exports local unsaved changes to JSON before the user confirms a reload. Version-change events block editing until reload. Legacy data without a revision starts at revision 0.
+
+**Scope boundary:** Browser `localStorage` fallback has **no cross-tab CAS** and is explicitly identified; its fail-closed redesign is still TASK-042. SQLite CAS and schema 12 were not changed.
+
+**Owner review:** first load of an older IndexedDB v1 workspace, simultaneous edits from two tabs, Save Page vs Save Project, stale-tab conflict, canceled/repeated export/reload, backup restore and fallback behavior. No assistant Build/Test/static checker/browser/Tauri runtime or owner acceptance; TASK-039 remains in progress.
+
+---
+
 # NSP Portfolio Builder — Version 130 (TASK-061: immutable image originals, source-only)
 
 The previous gallery action that overwrote a private library image in place now **imports a separate image identity** (or reuses an exact existing private duplicate). The original image ID, source, hash, ownership, page references and backups remain untouched. The button is renamed «ورود نسخهٔ مستقل» in both gallery entry points.

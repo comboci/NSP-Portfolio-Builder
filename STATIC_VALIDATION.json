@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "130",
-  "basedOnMainCommitBeforeChange": "63f23607d6d7a9d548480de5487dfaf7ed82b5d2",
+  "plannedForVersion": "131",
+  "basedOnMainCommitBeforeChange": "88971c04776c2e9b32cb3e1a39f6af06d70a7077",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -22,11 +22,12 @@
     "V127 TASK-038: failed Save Page/Project/public-rename scopes remain unresolved across unrelated acknowledgements; safe explicit retry and WRITE_CONFLICT guard",
     "V128 TASK-060: single M.place implementation, no orphan image-placement statements at module top level, image APIs registered after method",
     "V129 TASK-046: all single-portfolio export actions use scoped whitelist serializer, reference-only image inclusion, manifest preview and full-backup disclosure warning",
-    "V130 TASK-061: original library assets keep immutable IDs/hash/source, separate imported records, opt-in single selected element/Tile binding audit; no mass relinking"
+    "V130 TASK-061: original library assets keep immutable IDs/hash/source, separate imported records, opt-in single selected element/Tile binding audit; no mass relinking",
+    "V131 TASK-039: browser IndexedDB v2 non-destructive upgrade, atomic revision compare-and-write for Save Page/Project, stale tab fail-closed recovery and JSON export/reload; localStorage fallback remains separate"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V130 TASK-061 source-only immutable image import and reviewed selected-element/Tile rebinding. Owner must inspect project save, selection, Undo/Redo, public/shared ownership and backups. Assistant did not run Build/Test/static checker/runtime."
+  "note": "V131 TASK-039 browser transaction CAS is source-only. Owner must review two-tab conflicts, legacy v1 upgrade, backup/restore, and fallback. Assistant did not run Build/Test/static checker/browser/Tauri runtime."
 }

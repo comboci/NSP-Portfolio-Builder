@@ -1,4 +1,4 @@
-<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 130</title><meta name="application-version" content="130"><style>
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 131</title><meta name="application-version" content="131"><style>
 :root{font-family:Tahoma,'Segoe UI',sans-serif;color:#152638;background:#edf1f4}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}header{background:#122c3c;color:#fff;padding:17px 24px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}header small{color:#a7d7dd}.shell{display:grid;grid-template-columns:235px 1fr;min-height:calc(100vh - 75px)}nav{background:#fff;border-left:1px solid #d9e1e5;padding:18px 12px}nav button{display:block;width:100%;border:0;text-align:right;background:transparent;padding:13px;border-radius:9px;margin:3px 0;color:#324453}nav button.active{background:#e4f3f3;color:#06656c;font-weight:bold}main{padding:22px;max-width:1450px;width:100%;margin:auto}.panel{background:white;border:1px solid #dbe3e7;border-radius:14px;padding:20px;margin-bottom:18px;box-shadow:0 2px 8px #17304408}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.stat{background:#f4f8fa;padding:15px;border-radius:10px}.stat b{font-size:27px;display:block}.muted{color:#647683;font-size:13px}.btn{border:1px solid #b7cbd1;border-radius:8px;background:white;padding:9px 13px;color:#174450}.primary{background:#087b80;color:white;border-color:#087b80}.danger{color:#a33}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:12px 0}.item{padding:12px;border:1px solid #e1e8eb;border-radius:9px;margin:8px 0;background:#fbfdfd}.item.selected{border-color:#09858a;background:#f1fbfa}input,select,textarea{border:1px solid #c6d5da;border-radius:7px;padding:9px;background:#fff;max-width:100%}input[type=checkbox]{accent-color:#087b80}textarea{width:100%;min-height:100px}label{display:block;font-size:13px;margin:10px 0 5px}.columns{display:grid;grid-template-columns:minmax(240px,350px) minmax(0,1fr);gap:18px}.paper{background:#fff;width:min(100%,595px);min-height:842px;margin:15px auto;padding:55px 48px;box-shadow:0 8px 30px #17304425;position:relative;overflow:hidden;direction:rtl}.paper:before{content:'NSP';position:absolute;left:45px;top:40px;color:#087b80;font-weight:900;font-size:19px}.paper h1{margin-top:65px;font-size:26px}.paper footer{position:absolute;bottom:30px;right:48px;left:48px;border-top:1px solid #ccc;padding-top:9px;font-size:11px;color:#667}.paper .hero{height:185px;background:linear-gradient(130deg,#d8eeec,#f0f4f6);display:flex;align-items:center;justify-content:center;color:#568e90;margin:20px 0}.paper img{max-width:100%;max-height:260px;object-fit:contain}.paper table{width:100%;border-collapse:collapse}.paper td,.paper th{border:1px solid #ccd6da;padding:8px}.tag{display:inline-block;border-radius:12px;padding:3px 8px;background:#e7f3f3;font-size:11px;margin:2px}.note{border-right:3px solid #087b80;padding:10px;background:#f1f7f7}.hide{display:none!important}@media(max-width:850px){.shell{grid-template-columns:1fr}nav{display:flex;overflow-x:auto;padding:8px}nav button{white-space:nowrap;width:auto}.columns{grid-template-columns:1fr}main{padding:12px}.paper{min-height:700px;padding:38px 25px}}@media print{header,nav,.no-print,.editor,.panel:not(.print-zone){display:none!important}.shell{display:block}main{padding:0;max-width:none}.print-zone{border:0;box-shadow:none;padding:0;margin:0}.paper{box-shadow:none;margin:0;min-height:297mm;width:210mm;page-break-after:always;padding:25mm 20mm}.paper:last-child{page-break-after:auto}@page{size:A4;margin:0}}
 @media(max-width:850px){header{padding:12px;gap:8px}header .toolbar{flex-wrap:wrap}nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible!important;gap:8px;padding:10px}nav .nav-group{min-width:0!important;margin:0!important}nav button.nav-subitem{white-space:normal!important;text-align:right;width:100%!important;padding:10px!important}main{min-width:0;overflow-wrap:anywhere}.panel{max-width:100%;overflow-x:auto}button,select,input{max-width:100%}#v9-design-form[hidden]{display:none!important}}
 </style><style>
@@ -5647,7 +5647,7 @@ document.addEventListener('click',function(event){
 <script>
 (function(){
 'use strict';
-window.V13.appVersion=130;
+window.V13.appVersion=131;
 const oldExport=window.download;
 window.v30ExportPortfolio=function(id){
   const chosen=state.portfolios.find(p=>p.id===(id||state.activePortfolioId));
@@ -5701,7 +5701,7 @@ window.v30PrintPortfolio=function(id){
 <script>
 (function(){
 'use strict';
-window.V13.appVersion=130;
+window.V13.appVersion=131;
 let activeSection=null;
 const oldList=v8Portfolios;
 const oldOpen=v29Open;
@@ -5772,7 +5772,8 @@ v30ExportPortfolio=function(id){originalExport(id);};
 (function(){
 'use strict';
 const V=window.V13,invoke=window.__TAURI__?.core?.invoke;
-let ready=false,db=null,mode=invoke?'sqlite':'indexeddb',queue=Promise.resolve(),revision=0,completed=0,lastError='',lastPayload='',pending=0,dbRevision=0;
+let ready=false,db=null,mode=invoke?'sqlite':'indexeddb',queue=Promise.resolve(),revision=0,completed=0,lastError='',lastPayload='',pending=0,dbRevision=0,browserRevision=0;
+const BROWSER_REVISION_KEY=KEY+':browser-revision-v2';
 // TASK-038: a later successful write must never conceal an earlier failed scope.
 const failedWrites=new Map();
 const badge=document.createElement('div');badge.className='no-print';badge.style.cssText='position:fixed;bottom:4px;left:8px;z-index:99999;background:#fff;padding:4px;border:1px solid #ccd6da;font-size:11px';document.body.appendChild(badge);
@@ -5814,13 +5815,67 @@ function status(){
  v13UpdateSaveStatus();V.editor?.refreshStorageStatus?.();
 }
 function request(store,method,...args){return new Promise((ok,no)=>{const tx=db.transaction(store,method==='get'||method==='getAll'?'readonly':'readwrite'),req=tx.objectStore(store)[method](...args);let result;req.onsuccess=()=>result=req.result;tx.oncomplete=()=>ok(result);tx.onerror=()=>no(tx.error||req.error);tx.onabort=()=>no(tx.error||Error('Transaction aborted'));});}
-function openBrowser(){return new Promise((ok,no)=>{const req=indexedDB.open('nsp-portfolio-builder-storage',1);req.onupgradeneeded=()=>{const d=req.result;if(!d.objectStoreNames.contains('projects'))d.createObjectStore('projects');if(!d.objectStoreNames.contains('backups'))d.createObjectStore('backups',{keyPath:'id'});};req.onsuccess=()=>{db=req.result;db.onversionchange=()=>db.close();ok();};req.onerror=()=>no(req.error);req.onblocked=()=>no(Error('پایگاه مرورگر در پنجره دیگری مسدود است'));});}
+// TASK-039: revision metadata and payload share one IndexedDB transaction.
+// Version 2 also prevents older v1 clients from silently writing into this store.
+function openBrowser(){return new Promise((ok,no)=>{
+ const req=indexedDB.open('nsp-portfolio-builder-storage',2);
+ req.onupgradeneeded=()=>{const d=req.result;if(!d.objectStoreNames.contains('projects'))d.createObjectStore('projects');if(!d.objectStoreNames.contains('backups'))d.createObjectStore('backups',{keyPath:'id'});};
+ req.onsuccess=()=>{
+  db=req.result;
+  db.onversionchange=()=>{db.close();V.saveBlocked=true;lastError='WRITE_CONFLICT: پایگاه مرورگر در پنجره دیگری تغییر نسخه داد؛ خروجی JSON بگیرید و بارگذاری مجدد کنید.';status();};
+  ok();
+ };
+ req.onerror=()=>no(req.error);
+ req.onblocked=()=>{const error=Error('ارتقای پایگاه مرورگر با پنجره دیگری مسدود است؛ پنجره‌های قدیمی را ببندید و مجدداً بارگذاری کنید.');error.code='BROWSER_DB_BLOCKED';no(error);};
+});}
+function validBrowserRevision(value){
+ if(value===undefined)return 0; // Legacy v1 payloads are migrated without rewriting them.
+ if(typeof value!=='number'||!Number.isSafeInteger(value)||value<0){
+  const error=Error('BROWSER_REVISION_INVALID: شماره نسخه ذخیره‌سازی مرورگر نامعتبر است؛ پایگاه بازنویسی نشد.');
+  error.code='BROWSER_REVISION_INVALID';throw error;
+ }
+ return value;
+}
+function readBrowserSnapshot(){return new Promise((ok,no)=>{
+ const tx=db.transaction('projects','readonly'),store=tx.objectStore('projects');
+ const data=store.get(KEY),version=store.get(BROWSER_REVISION_KEY);
+ tx.oncomplete=()=>{
+  try{browserRevision=validBrowserRevision(version.result);V.workspaceRevision=browserRevision;ok(data.result??null);}
+  catch(error){no(error);}
+ };
+ tx.onerror=()=>no(tx.error||Error('خواندن پایگاه مرورگر ناموفق بود'));
+ tx.onabort=()=>no(tx.error||Error('خواندن پایگاه مرورگر لغو شد'));
+});}
+function browserCompareAndWrite(payload){return new Promise((ok,no)=>{
+ const tx=db.transaction('projects','readwrite'),store=tx.objectStore('projects');
+ let next=null,failure=null;
+ const read=store.get(BROWSER_REVISION_KEY);
+ read.onsuccess=()=>{
+  try{
+   const current=validBrowserRevision(read.result);
+   if(current!==browserRevision){
+    failure=Error('WRITE_CONFLICT: پروژه در پنجره دیگری ذخیره شده است؛ این نسخه بازنویسی نشد. خروجی JSON بگیرید و مجدداً بارگذاری کنید.');
+    tx.abort();return;
+   }
+   if(current===Number.MAX_SAFE_INTEGER){
+    failure=Error('BROWSER_REVISION_INVALID: ظرفیت شماره نسخه مرورگر به پایان رسیده است.');
+    tx.abort();return;
+   }
+   next=current+1;
+   store.put(payload,KEY);
+   store.put(next,BROWSER_REVISION_KEY);
+  }catch(error){failure=error;tx.abort();}
+ };
+ tx.oncomplete=()=>{browserRevision=next;V.workspaceRevision=next;ok(next);};
+ tx.onabort=()=>no(failure||tx.error||Error('تراکنش ذخیره مرورگر لغو شد'));
+ tx.onerror=()=>{ /* onabort reports the transaction failure */ };
+});}
 async function write(payload,recovery=false){
  if(V.saveBlocked&&!recovery)throw Error('WRITE_CONFLICT: ذخیره مسدود شده؛ ابتدا داده تازه را بازیابی کنید');
  if(mode==='sqlite'){
   const next=await invoke('save_project',{payload,expectedRevision:dbRevision});
   dbRevision=Number(next);V.workspaceRevision=dbRevision;
- }else if(mode==='indexeddb')await request('projects','put',payload,KEY);
+ }else if(mode==='indexeddb')await browserCompareAndWrite(payload);
  else localStorage.setItem(KEY,payload);
 }
 async function writePage(page,portablePayload){
@@ -5831,7 +5886,7 @@ async function writePage(page,portablePayload){
    payload:page.payload,expectedRevision:dbRevision
   });
   dbRevision=Number(next);V.workspaceRevision=dbRevision;
- }else if(mode==='indexeddb')await request('projects','put',portablePayload,KEY);
+ }else if(mode==='indexeddb')await browserCompareAndWrite(portablePayload);
  else localStorage.setItem(KEY,portablePayload);
 }
 function enqueue(payload,page=null){
@@ -6023,9 +6078,19 @@ V.restoreNative=async function(){
 };
 importData=async function(event){const input=event.target,file=input.files[0];input.value='';if(!file)return;try{const data=JSON.parse(await file.text());if(data.app!=null&&data.app!=='NSP Portfolio Builder')throw Error('فایل متعلق به برنامهٔ دیگری است');if(data.schemaVersion!=null&&(!Number.isInteger(data.schemaVersion)||data.schemaVersion<1||data.schemaVersion>2))throw Error('نسخهٔ فایل پشتیبانی نمی‌شود');const candidate=v13NormalizeProject(data.state);await restore(JSON.stringify(candidate));}catch(e){alert('ورود فایل کامل نشد؛ '+String(e?.message||e));}};
 function backupPayload(){v78SyncGlobal();v13SyncPages();let snap=v13Copy(state);if(mainDraft){const i=snap.masterTemplates.findIndex(m=>m.id===mainDraft.id);if(i>=0)snap.masterTemplates[i]=v13Copy(mainDraft);}if(V.editor?.exportState)snap=V.editor.exportState(snap)||snap;return JSON.stringify(snap);}
-const settingsBefore=settingsView;settingsView=function(){return settingsBefore()+'<div class="panel"><h3>Backup / Restore</h3><div class="toolbar"><button class="btn" onclick="download()">Backup قابل‌انتقال JSON + تصاویر</button><button class="btn" onclick="document.getElementById(\'importFile\').click()">Restore از JSON</button><button class="btn" onclick="V13.createBackup()">پشتیبان نام‌گذاری‌شده</button><button class="btn" onclick="V13.restoreBackup()">بازیابی پشتیبان</button>'+(invoke?'<button class="btn" onclick="V13.restoreNative()">نسخه‌های خودکار SQLite</button><button class="btn" onclick="V13.verifyNative()">سلامت بکاپ خودکار</button><button class="btn" onclick="V13.verifyNamed()">سلامت بکاپ نام‌دار</button><button class="btn" onclick="V13.showRetention()">وضعیت نگهداری بکاپ</button>':'')+'<button class="btn" onclick="V13.retryStorage()">تلاش مجدد ذخیره</button></div><p>پیش از بستن پنجره، وضعیت ذخیره در پایین صفحه را بررسی کنید.</p></div>';};
+const settingsBefore=settingsView;settingsView=function(){return settingsBefore()+'<div class="panel"><h3>Backup / Restore</h3><div class="toolbar"><button class="btn" onclick="download()">Backup قابل‌انتقال JSON + تصاویر</button><button class="btn" onclick="document.getElementById(\'importFile\').click()">Restore از JSON</button><button class="btn" onclick="V13.createBackup()">پشتیبان نام‌گذاری‌شده</button><button class="btn" onclick="V13.restoreBackup()">بازیابی پشتیبان</button>'+(invoke?'<button class="btn" onclick="V13.restoreNative()">نسخه‌های خودکار SQLite</button><button class="btn" onclick="V13.verifyNative()">سلامت بکاپ خودکار</button><button class="btn" onclick="V13.verifyNamed()">سلامت بکاپ نام‌دار</button><button class="btn" onclick="V13.showRetention()">وضعیت نگهداری بکاپ</button>':'')+'<button class="btn" onclick="V13.retryStorage()">تلاش مجدد ذخیره</button>'+(mode==='indexeddb'?'<button class="btn" onclick="V13.recoverBrowserConflict()">تعارض مرورگر: خروجی JSON و بازخوانی</button>':'')+'</div><p>پیش از بستن پنجره، وضعیت ذخیره در پایین صفحه را بررسی کنید.</p></div>';};
+// A stale tab must export its unsaved edits before loading the newer database state.
+V.recoverBrowserConflict=function(){
+ if(mode!=='indexeddb')return alert('این قابلیت فقط برای پایگاه دادهٔ مرورگر است.');
+ if(!V.saveBlocked)return alert('در حال حاضر تعارض ذخیرهٔ مرورگر گزارش نشده است.');
+ if(!confirm('پیش از بازخوانی، از تغییرات این پنجره خروجی JSON بگیرید. ادامه می‌دهید؟'))return;
+ download();
+ if(confirm('آیا فایل JSON حاوی تغییرات ذخیره‌نشده را دریافت و نگهداری کرده‌اید؟ تأیید باعث بازخوانی نسخه جدید پایگاه مرورگر می‌شود.')){
+  window.location.reload();
+ }
+};
 window.addEventListener('beforeunload',e=>{if(pending||lastError||V.editor?.hasDrafts?.()){e.preventDefault();e.returnValue='';}});
-(async()=>{try{let payload=null;if(invoke){const stored=await invoke('load_project_state');payload=stored?.payload??null;dbRevision=Number(stored?.revision||0);V.workspaceRevision=dbRevision;}else{try{await openBrowser();payload=await request('projects','get',KEY);}catch(e){mode='localStorage';badge.title=String(e);}}
+(async()=>{try{let payload=null;if(invoke){const stored=await invoke('load_project_state');payload=stored?.payload??null;dbRevision=Number(stored?.revision||0);V.workspaceRevision=dbRevision;}else{try{await openBrowser();payload=await readBrowserSnapshot();}catch(e){if(e?.code==='BROWSER_REVISION_INVALID'||e?.code==='BROWSER_DB_BLOCKED')throw e;mode='localStorage';badge.title='localStorage fallback — بدون کنترل هم‌زمانی پنجره‌ها: '+String(e);V.startupNotice='IndexedDB در دسترس نیست؛ ذخیره در localStorage فاقد محافظت هم‌زمانی است.';}}
 if(payload){const loaded=v13NormalizeProject(JSON.parse(payload));state=loaded;lastPayload=payload;selected=state.pages[0]?.id;v13ResetEditorContext(true);V.saveBlocked=false;V.startupNotice='';}
 const mediaMigrated=!V.saveBlocked&&await V.media.migrateLegacy();ready=true;V.nativeStorage=true;cover.remove();render();if((!payload||mediaMigrated)&&!V.saveBlocked)save();status();
 }catch(e){lastError=String(e?.message||e);cover.innerHTML='';const box=document.createElement('div');box.textContent='بازیابی ذخیره‌سازی ناموفق بود: '+lastError;const button=document.createElement('button');button.className='btn';button.textContent='خروجی JSON از دادهٔ فعلی';button.onclick=()=>download();box.appendChild(button);cover.appendChild(box);status();}})();
