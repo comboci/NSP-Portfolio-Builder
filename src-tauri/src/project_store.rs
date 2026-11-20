@@ -114,7 +114,7 @@ fn persist_project(
     // Do not duplicate their full arrays in each project JSON record.
     let mut snapshot = data.clone();
     if let Some(m) = snapshot.as_object_mut() {
-        for key in ["projectWorkspaces", "globalTemplates", "styleLibrary", "portfolios", "pages"] {
+        for key in ["projectWorkspaces", "globalTemplates", "styleLibrary", "globalImageAlbums", "portfolios", "pages"] {
             m.remove(key);
         }
     }
@@ -190,6 +190,7 @@ pub fn persist_workspace(tx: &Transaction<'_>, workspace: &Value) -> Result<(), 
     let context = json!({
         "master": global.get("master").cloned().unwrap_or(Value::Null),
         "sectionTypes": global.get("sectionTypes").cloned().unwrap_or(Value::Null),
+        "globalImageAlbums": global.get("globalImageAlbums").cloned().unwrap_or_else(||json!([])),
     });
     tx.execute(
         "INSERT INTO shared_template_context(id,payload) VALUES(1,?1)
@@ -287,7 +288,7 @@ pub fn load_workspace(db:&Connection)->Result<Option<String>,String>{
         data["pages"]=chosen.and_then(|p|p.get("pages")).cloned().unwrap_or_else(||json!([]));
         if let Some(p)=chosen {data["activePortfolioId"]=p["id"].clone();}
         data["portfolios"]=Value::Array(portfolios);
-        for key in ["master","sectionTypes","masterTemplates","sectionDesigns","templates","styleLibrary"]{
+        for key in ["master","sectionTypes","masterTemplates","sectionDesigns","templates","styleLibrary","globalImageAlbums"]{
             if let Some(value)=global.get(key){data[key]=value.clone();}
         }
         if is_active==1 && active.is_none(){active=Some((project_id,name,data));}
