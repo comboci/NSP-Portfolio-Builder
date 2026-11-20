@@ -959,6 +959,131 @@
           "REQ-001",
           "DEC-006"
         ]
+      },
+      {
+        "record_id": "FND-029",
+        "title": "جابه‌جایی صفحات با Save Page انجام می‌شود و ترتیب پایدار ممکن است ثبت نشود",
+        "detail": "In project-mode thumbnail sidebar, v85MovePage mutates state.pages order but invokes generic save(). When the page editor is active, save() dispatches to V.queuePageSave and the native save_page transaction updates one page payload, not workspace_pages.position or global portfolio order. The UI then renders the reordered list and may report a successful page save although the structural order can revert on reload. Previous TASK-022/TASK-025 cover UI functionality and TASK-036 the Save separation, but none explicitly tracked this call-site regression.\nSource evidence: index.html#L3805-L3814; index.html#L3820-L3820; index.html#L3843-L3850; index.html#L5724-L5725; src-tauri/src/main.rs#L208-L285; src-tauri/src/project_store.rs#L388-L403. Source-only review, no Runtime/Build/Test.",
+        "category": "data_integrity",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-PROJECTS",
+          "SC-STORAGE"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "c710ae870fe438f3ef63ed6740e2f820eb97a7ca"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-052",
+          "TASK-022",
+          "TASK-023",
+          "TASK-025",
+          "TASK-036",
+          "DEC-009",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-030",
+        "title": "مسیر Print پیش از پایان ناوبری ناهمگام، پیش‌نمایش را می‌خواند",
+        "detail": "V125 changed go(destination) to an async leave guard that may await page persistence or master/section draft confirmation. Legacy v30PrintPortfolio swaps state.pages, calls go('preview') without awaiting the promise, then immediately queries '#app .print-zone', creates a print snapshot and restores state.pages in finally. From an edited page with pending save/draft, printing can inspect stale DOM or fail while navigation continues later; a rejected leave must not produce a misleading print snapshot. The generic printAll preflight also calls go('preview') without awaiting.\nSource evidence: index.html#L4590-L4613; index.html#L5561-L5586; index.html#L5426-L5435; index.html#L1471-L1477. Source-only review, no Runtime/Build/Test.",
+        "category": "code_review",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-PDF",
+          "SC-PROJECTS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "c710ae870fe438f3ef63ed6740e2f820eb97a7ca"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-053",
+          "TASK-008",
+          "TASK-023",
+          "TASK-025",
+          "TASK-026",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-031",
+        "title": "نوار کناری ۲۳۵ پیکسلی در عرض کوچک همچنان ثابت می‌ماند",
+        "detail": "The main .shell stays grid-template-columns:235px minmax(0,1fr)!important even below the 850px and 650px media breakpoints. The breakpoint changes nav contents into two columns but does not stack/collapse the parent side rail. The 165px page thumbnail sidebar and designer dock remain inside the now narrower main column. This is a concrete source-level responsive-layout gap; exact overflow and usability are not runtime-verified. Native Tauri minWidth is 800px, but browser and constrained window widths still need a contract.\nSource evidence: index.html#L2-L3; index.html#L5529-L5532; index.html#L5479-L5494; src-tauri/tauri.conf.json. Source-only review, no Runtime/Build/Test.",
+        "category": "general",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "c710ae870fe438f3ef63ed6740e2f820eb97a7ca"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-054",
+          "TASK-024",
+          "TASK-025",
+          "TASK-022",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-032",
+        "title": "بازشدن پروژه‌ها و نقش دکمه در کارت صفحه فاقد ساختار و فوکوس مناسب است",
+        "detail": "Project expand/collapse buttons display only +/− with aria-expanded but no project-specific accessible name/controlled-region reference; v77ToggleProject calls render() which replaces #nav and #app via innerHTML without restoring the clicked control's focus. Page thumbnail items are div role=button/tabindex=0 while containing actual action buttons for reorder/copy/delete, making nested interactive structure confusing for keyboard/screen-reader navigation. Pointer/keyboard click routing exists but semantic/focus continuity is not guaranteed.\nSource evidence: index.html#L1147-L1150; index.html#L1491-L1496; index.html#L1507-L1527; index.html#L3784-L3803; index.html#L3815-L3830. Source-only review, no Runtime/Build/Test.",
+        "category": "general",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "c710ae870fe438f3ef63ed6740e2f820eb97a7ca"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-055",
+          "TASK-022",
+          "TASK-024",
+          "TASK-025",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-033",
+        "title": "انتخاب فایل پروژه و تصاویر با ورودی مخفی از مسیر Tab قابل دستیابی نیست",
+        "detail": "The system-level project import uses a <label class=btn> wrapping a file input with hidden; private/public Image Library uses the same label + input style='display:none' pattern. Neither label is focusable by default, and the hidden input is not in normal keyboard Tab order; pointer clicking a label can open the picker but a keyboard-only user lacks an equivalent focusable upload control. This is independent of the persisted import data contracts covered by TASK-026 and phase 03.\nSource evidence: index.html#L572-L572; index.html#L834-L848; index.html#L850-L859; index.html#L1311-L1332. Source-only review, no Runtime/Build/Test.",
+        "category": "general",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-LIBRARY"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "c710ae870fe438f3ef63ed6740e2f820eb97a7ca"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-056",
+          "TASK-024",
+          "TASK-026",
+          "TASK-007",
+          "DEC-006"
+        ]
       }
     ],
     "business_rules": [
@@ -3049,6 +3174,161 @@
           "FND-028"
         ],
         "result": "Not implemented. Source-only retrospective audit phase 03; owner acceptance pending."
+      },
+      {
+        "record_id": "TASK-052",
+        "title": "Persist thumbnail-driven page reorder as structural Save Project, not scoped Save Page",
+        "detail": "In project-mode thumbnail sidebar, v85MovePage mutates state.pages order but invokes generic save(). When the page editor is active, save() dispatches to V.queuePageSave and the native save_page transaction updates one page payload, not workspace_pages.position or global portfolio order. The UI then renders the reordered list and may report a successful page save although the structural order can revert on reload. Previous TASK-022/TASK-025 cover UI functionality and TASK-036 the Save separation, but none explicitly tracked this call-site regression.\n\nAcceptance criteria: Treat thumbnail arrow/drag reorder as project-structure change: await durable full Save Project, or add an explicit revision-guarded atomic order-change API; do not route through scoped Save Page. Block repeated drag/arrow actions until ACK, preserve original order on write failure, keep current editor/selection and Undo semantics, and verify order after reopen across portfolios and browsers (owner-run).\n\nSource evidence: index.html#L3805-L3814; index.html#L3820-L3820; index.html#L3843-L3850; index.html#L5724-L5725; src-tauri/src/main.rs#L208-L285; src-tauri/src/project_store.rs#L388-L403. Preserve prior history, concurrency safety and DEC-006 no assistant Build/Test/static-check. Owner runtime acceptance remains pending.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-PROJECTS",
+          "SC-STORAGE"
+        ],
+        "related_record_ids": [
+          "FND-029",
+          "TASK-022",
+          "TASK-023",
+          "TASK-025",
+          "TASK-036",
+          "DEC-009",
+          "DEC-006"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "c710ae870fe438f3ef63ed6740e2f820eb97a7ca"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V126",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-029"
+        ],
+        "result": "Not implemented. Source-only UI/UX retrospective audit phase 04; owner runtime acceptance pending."
+      },
+      {
+        "record_id": "TASK-053",
+        "title": "Await editor navigation before building portfolio print preview and preflight",
+        "detail": "V125 changed go(destination) to an async leave guard that may await page persistence or master/section draft confirmation. Legacy v30PrintPortfolio swaps state.pages, calls go('preview') without awaiting the promise, then immediately queries '#app .print-zone', creates a print snapshot and restores state.pages in finally. From an edited page with pending save/draft, printing can inspect stale DOM or fail while navigation continues later; a rejected leave must not produce a misleading print snapshot. The generic printAll preflight also calls go('preview') without awaiting.\n\nAcceptance criteria: Refactor print/preview entry points to await a single navigation/persistence result and obtain an immutable selected-portfolio snapshot only after guards resolve; if canceled or backend fails, do not change page state or print. Ensure preflight executes on that exact snapshot, avoid concurrent navigation/race with project switching, and owner-check browser/Tauri print/preview from editing, other screens and cancellation.\n\nSource evidence: index.html#L4590-L4613; index.html#L5561-L5586; index.html#L5426-L5435; index.html#L1471-L1477. Preserve prior history, concurrency safety and DEC-006 no assistant Build/Test/static-check. Owner runtime acceptance remains pending.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-PDF",
+          "SC-PROJECTS"
+        ],
+        "related_record_ids": [
+          "FND-030",
+          "TASK-008",
+          "TASK-023",
+          "TASK-025",
+          "TASK-026",
+          "DEC-006"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "c710ae870fe438f3ef63ed6740e2f820eb97a7ca"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V126",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-030"
+        ],
+        "result": "Not implemented. Source-only UI/UX retrospective audit phase 04; owner runtime acceptance pending."
+      },
+      {
+        "record_id": "TASK-054",
+        "title": "Make main app shell responsive instead of retaining a fixed 235px navigation column",
+        "detail": "The main .shell stays grid-template-columns:235px minmax(0,1fr)!important even below the 850px and 650px media breakpoints. The breakpoint changes nav contents into two columns but does not stack/collapse the parent side rail. The 165px page thumbnail sidebar and designer dock remain inside the now narrower main column. This is a concrete source-level responsive-layout gap; exact overflow and usability are not runtime-verified. Native Tauri minWidth is 800px, but browser and constrained window widths still need a contract.\n\nAcceptance criteria: At appropriate viewports collapse the outer shell into full-width navigation/accessible drawer and full-width content; keep physical-left Dock and right-hand page thumbnails without clipping. Provide an explicit responsive layout policy for 800px native minimum and narrow browser view; verify focus, scroll, touch, action menus and canvas at 1280/1024/800/650/390px with owner-run review.\n\nSource evidence: index.html#L2-L3; index.html#L5529-L5532; index.html#L5479-L5494; src-tauri/tauri.conf.json. Preserve prior history, concurrency safety and DEC-006 no assistant Build/Test/static-check. Owner runtime acceptance remains pending.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "FND-031",
+          "TASK-024",
+          "TASK-025",
+          "TASK-022",
+          "DEC-006"
+        ],
+        "priority": "P2",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "c710ae870fe438f3ef63ed6740e2f820eb97a7ca"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V126",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-031"
+        ],
+        "result": "Not implemented. Source-only UI/UX retrospective audit phase 04; owner runtime acceptance pending."
+      },
+      {
+        "record_id": "TASK-055",
+        "title": "Repair accessible project expansion and thumbnail list focus semantics",
+        "detail": "Project expand/collapse buttons display only +/− with aria-expanded but no project-specific accessible name/controlled-region reference; v77ToggleProject calls render() which replaces #nav and #app via innerHTML without restoring the clicked control's focus. Page thumbnail items are div role=button/tabindex=0 while containing actual action buttons for reorder/copy/delete, making nested interactive structure confusing for keyboard/screen-reader navigation. Pointer/keyboard click routing exists but semantic/focus continuity is not guaranteed.\n\nAcceptance criteria: Give expander controls an accessible project-specific name, aria-controls and stable controlled-region identity; preserve/reposition focus and announce expanded state after render. Use a separate focusable page-select button plus sibling action buttons instead of an interactive div containing buttons; indicate selected page accessibly, preserve keyboard arrow/reorder, and validate screen-reader, Tab/Shift+Tab and focus after row refresh (owner-run).\n\nSource evidence: index.html#L1147-L1150; index.html#L1491-L1496; index.html#L1507-L1527; index.html#L3784-L3803; index.html#L3815-L3830. Preserve prior history, concurrency safety and DEC-006 no assistant Build/Test/static-check. Owner runtime acceptance remains pending.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "FND-032",
+          "TASK-022",
+          "TASK-024",
+          "TASK-025",
+          "DEC-006"
+        ],
+        "priority": "P2",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "c710ae870fe438f3ef63ed6740e2f820eb97a7ca"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V126",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-032"
+        ],
+        "result": "Not implemented. Source-only UI/UX retrospective audit phase 04; owner runtime acceptance pending."
+      },
+      {
+        "record_id": "TASK-056",
+        "title": "Expose project and image file-import actions to keyboard and assistive technology",
+        "detail": "The system-level project import uses a <label class=btn> wrapping a file input with hidden; private/public Image Library uses the same label + input style='display:none' pattern. Neither label is focusable by default, and the hidden input is not in normal keyboard Tab order; pointer clicking a label can open the picker but a keyboard-only user lacks an equivalent focusable upload control. This is independent of the persisted import data contracts covered by TASK-026 and phase 03.\n\nAcceptance criteria: Provide actual focusable buttons that invoke hidden file input via explicit ref/click, or a labeled visually-hidden focusable file input with robust focus and key handling. Supply accessible names, accepted-file descriptions, error announcements and focus restoration after cancellation/upload; owner-check keyboard and screen-reader usage for system project Import, private and public image imports.\n\nSource evidence: index.html#L572-L572; index.html#L834-L848; index.html#L850-L859; index.html#L1311-L1332. Preserve prior history, concurrency safety and DEC-006 no assistant Build/Test/static-check. Owner runtime acceptance remains pending.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-LIBRARY"
+        ],
+        "related_record_ids": [
+          "FND-033",
+          "TASK-024",
+          "TASK-026",
+          "TASK-007",
+          "DEC-006"
+        ],
+        "priority": "P2",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "c710ae870fe438f3ef63ed6740e2f820eb97a7ca"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V126",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-033"
+        ],
+        "result": "Not implemented. Source-only UI/UX retrospective audit phase 04; owner runtime acceptance pending."
       }
     ],
     "evidence": [],
@@ -4155,6 +4435,44 @@
           "source_revision_ref": "621a3c9485d57bfa14af430f5559f6787562ee08"
         },
         "implementation_state": "audit_documented_and_committed_code_untouched"
+      },
+      {
+        "record_id": "OBS-050",
+        "title": "Retrospective audit phase 04: Projects/Pages/Dock UI, responsive layout and accessibility",
+        "status": "source_only_review_completed",
+        "detail": "Reviewed current source c710ae870fe438f3ef63ed6740e2f820eb97a7ca and all TASK-001..51 for project navigator/expander, portfolio thumbnail reorder, async global navigation and print, Dock responsive layout, keyboard input and accessible upload/thumbnail controls. Five distinct source-supported gaps FND-029, FND-030, FND-031, FND-032, FND-033 recorded as TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Prior TASK-022..026 and TASK-030 remain responsible for preexisting page-designer/navigation/style and version-marker tasks. index.html meta application-version=125 while title/Cargo/Tauri report V126 is an already covered TASK-030 version-alignment issue; no duplicate task. No Build/Test/static-check/browser/Tauri runtime or owner Acceptance. Next owner N = phase 05 designer engine.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS",
+          "SC-PDF",
+          "SC-STORAGE",
+          "SC-LIBRARY"
+        ],
+        "related_record_ids": [
+          "TASK-052",
+          "TASK-053",
+          "TASK-054",
+          "TASK-055",
+          "TASK-056",
+          "FND-029",
+          "FND-030",
+          "FND-031",
+          "FND-032",
+          "FND-033",
+          "TASK-022",
+          "TASK-023",
+          "TASK-024",
+          "TASK-025",
+          "TASK-026",
+          "TASK-030",
+          "DEC-006"
+        ],
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "c710ae870fe438f3ef63ed6740e2f820eb97a7ca"
+        },
+        "implementation_state": "audit_documented_and_committed_code_untouched"
       }
     ]
   },
@@ -4230,6 +4548,11 @@
       "TASK-049",
       "TASK-050",
       "TASK-051",
+      "TASK-052",
+      "TASK-053",
+      "TASK-054",
+      "TASK-055",
+      "TASK-056",
       "TASK-005",
       "TASK-006",
       "TASK-007",
@@ -4267,7 +4590,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.",
+    "current_summary": "V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nPhase 04 UI/UX retrospective source audit completed: FND-029, FND-030, FND-031, FND-032, FND-033 mapped to planned TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Verified source gaps: thumbnail reorder persists wrong Save scope, print reads preview ahead of async guarded navigation, outer shell fixed-width rail on narrow widths, project/thumbnail focus & semantics, hidden file inputs keyboard accessibility. Prior TASK-022..026 and TASK-030 not duplicated; owner Runtime/Acceptance pending. Next N = phase 05 designer/inheritance/layers/history; evidence in project evolution/AUDIT-CAMPAIGN-2026-11-20.md.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",

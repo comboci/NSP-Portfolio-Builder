@@ -17,8 +17,8 @@
 | 01 | SQLite، Schema/Migrations 001–012، FK، مالکیت داده، CAS، پروژه و رابطه صفحه/قالب، تطبیق TASK-001..037 | **انجام شد: سورس‌محور، بدون اجرای برنامه** |
 | 02 | ذخیره صفحه/پروژه، Autosave، Dirty State، Backup/Restore، فایل‌ها، WAL و شکست عملیات/rollback | **انجام شد: سورس‌محور، بدون Build/Test** |
 | 03 | Import/Export (JSON، پروژه/پورتفولیو، وابستگی‌ها، سازگاری نسخه، برخورد شناسه‌ها) | **انجام شد: سورس‌محور، بدون Build/Test** |
-| 04 | UI/UX پروژه‌ها، ناوبری، صفحات، Dockها، Responsive و دسترس‌پذیری | **نوبت بعد با N** |
-| 05 | موتور طراحی، Template inheritance، Region Block، Layer/Group، history، snapping و Transform | در انتظار N |
+| 04 | UI/UX پروژه‌ها، ناوبری، صفحات، Dockها، Responsive و دسترس‌پذیری | **انجام شد: سورس‌محور، بدون Build/Test** |
+| 05 | موتور طراحی، Template inheritance، Region Block، Layer/Group، history، snapping و Transform | **نوبت بعد با N** |
 | 06 | Image Library، مالکیت خصوصی/عمومی، Assetها، Tile/Stash، crop/mask، حذف ایمن | در انتظار N |
 | 07 | PDF/Print، صفحه‌بندی، DPI، Preflight، مقیاس و برابری رندر | در انتظار N |
 | 08 | کارایی، حافظه، امنیت ورودی، خطایابی و پایداری، کارهای چندپنجره‌ای | در انتظار N |
@@ -223,3 +223,76 @@ When a source is not kind NSP-Portfolio-Backup, v111ImportPortfolio accepts back
 - تبعات احتمالی Cross-installation و تصاویر/قالب‌های هم‌شناسه به‌عنوان ریسک سورس مستندند، نه مشاهده خرابی در اجرا. 
 
 **Checkpoint:** OBS-049. تسک‌های TASK-046، TASK-047، TASK-048، TASK-049، TASK-050، TASK-051 به `open_state.next_work_record_ids` اضافه شدند؛ نسخه نرم‌افزار، SQLite schema، تاریخچه و وضعیت Acceptance تغییری نکرد. **مرحله بعد با N: فاز 04 — UI/UX پروژه‌ها، ناوبری، Dock و دسترس‌پذیری.**
+
+
+## خروجی فاز 04 — UI/UX پروژه‌ها، صفحات، Dock، Responsive و دسترس‌پذیری
+
+HEAD مبنای بررسی: `c710ae870fe438f3ef63ed6740e2f820eb97a7ca`؛ سورس V126 و SQLite schema 12. سورس زنده، CSS/HTML/JS مربوط به مدیریت پروژه‌ها، منوی اصلی، نوار صفحات، Dock/Pin/Auto-hide، واکنش‌گرایی و کنترل‌های صفحه‌کلید با TASK-001 تا TASK-051 تطبیق شد. مطابق DEC-006 هیچ Build/Test/Static Check و تأیید اجرایی انجام نشده؛ هیچ فایل محصولی تغییر نکرد.
+
+| اولویت | Finding | Task | نقص مستقل |
+| --- | --- | --- | --- |
+| P1 | FND-029 | TASK-052 | جابه‌جایی صفحات با Save Page انجام می‌شود و ترتیب پایدار ممکن است ثبت نشود |
+| P1 | FND-030 | TASK-053 | مسیر Print پیش از پایان ناوبری ناهمگام، پیش‌نمایش را می‌خواند |
+| P2 | FND-031 | TASK-054 | نوار کناری ۲۳۵ پیکسلی در عرض کوچک همچنان ثابت می‌ماند |
+| P2 | FND-032 | TASK-055 | بازشدن پروژه‌ها و نقش دکمه در کارت صفحه فاقد ساختار و فوکوس مناسب است |
+| P2 | FND-033 | TASK-056 | انتخاب فایل پروژه و تصاویر با ورودی مخفی از مسیر Tab قابل دستیابی نیست |
+
+### FND-029 / TASK-052 — جابه‌جایی صفحات با Save Page انجام می‌شود و ترتیب پایدار ممکن است ثبت نشود
+
+**اولویت P1؛ یافته سورس‌محور (Runtime تأیید نشده).**
+
+In project-mode thumbnail sidebar, v85MovePage mutates state.pages order but invokes generic save(). When the page editor is active, save() dispatches to V.queuePageSave and the native save_page transaction updates one page payload, not workspace_pages.position or global portfolio order. The UI then renders the reordered list and may report a successful page save although the structural order can revert on reload. Previous TASK-022/TASK-025 cover UI functionality and TASK-036 the Save separation, but none explicitly tracked this call-site regression.
+
+**معیار پذیرش:** Treat thumbnail arrow/drag reorder as project-structure change: await durable full Save Project, or add an explicit revision-guarded atomic order-change API; do not route through scoped Save Page. Block repeated drag/arrow actions until ACK, preserve original order on write failure, keep current editor/selection and Undo semantics, and verify order after reopen across portfolios and browsers (owner-run).
+
+**شواهد:** [index.html#L3805-L3814](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L3805-L3814)، [index.html#L3820-L3820](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L3820-L3820)، [index.html#L3843-L3850](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L3843-L3850)، [index.html#L5724-L5725](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L5724-L5725)، [src-tauri/src/main.rs#L208-L285](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/src-tauri/src/main.rs#L208-L285)، [src-tauri/src/project_store.rs#L388-L403](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/src-tauri/src/project_store.rs#L388-L403)
+
+### FND-030 / TASK-053 — مسیر Print پیش از پایان ناوبری ناهمگام، پیش‌نمایش را می‌خواند
+
+**اولویت P1؛ یافته سورس‌محور (Runtime تأیید نشده).**
+
+V125 changed go(destination) to an async leave guard that may await page persistence or master/section draft confirmation. Legacy v30PrintPortfolio swaps state.pages, calls go('preview') without awaiting the promise, then immediately queries '#app .print-zone', creates a print snapshot and restores state.pages in finally. From an edited page with pending save/draft, printing can inspect stale DOM or fail while navigation continues later; a rejected leave must not produce a misleading print snapshot. The generic printAll preflight also calls go('preview') without awaiting.
+
+**معیار پذیرش:** Refactor print/preview entry points to await a single navigation/persistence result and obtain an immutable selected-portfolio snapshot only after guards resolve; if canceled or backend fails, do not change page state or print. Ensure preflight executes on that exact snapshot, avoid concurrent navigation/race with project switching, and owner-check browser/Tauri print/preview from editing, other screens and cancellation.
+
+**شواهد:** [index.html#L4590-L4613](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L4590-L4613)، [index.html#L5561-L5586](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L5561-L5586)، [index.html#L5426-L5435](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L5426-L5435)، [index.html#L1471-L1477](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L1471-L1477)
+
+### FND-031 / TASK-054 — نوار کناری ۲۳۵ پیکسلی در عرض کوچک همچنان ثابت می‌ماند
+
+**اولویت P2؛ یافته سورس‌محور (Runtime تأیید نشده).**
+
+The main .shell stays grid-template-columns:235px minmax(0,1fr)!important even below the 850px and 650px media breakpoints. The breakpoint changes nav contents into two columns but does not stack/collapse the parent side rail. The 165px page thumbnail sidebar and designer dock remain inside the now narrower main column. This is a concrete source-level responsive-layout gap; exact overflow and usability are not runtime-verified. Native Tauri minWidth is 800px, but browser and constrained window widths still need a contract.
+
+**معیار پذیرش:** At appropriate viewports collapse the outer shell into full-width navigation/accessible drawer and full-width content; keep physical-left Dock and right-hand page thumbnails without clipping. Provide an explicit responsive layout policy for 800px native minimum and narrow browser view; verify focus, scroll, touch, action menus and canvas at 1280/1024/800/650/390px with owner-run review.
+
+**شواهد:** [index.html#L2-L3](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L2-L3)، [index.html#L5529-L5532](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L5529-L5532)، [index.html#L5479-L5494](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L5479-L5494)، [src-tauri/tauri.conf.json](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/src-tauri/tauri.conf.json#Lundefined)
+
+### FND-032 / TASK-055 — بازشدن پروژه‌ها و نقش دکمه در کارت صفحه فاقد ساختار و فوکوس مناسب است
+
+**اولویت P2؛ یافته سورس‌محور (Runtime تأیید نشده).**
+
+Project expand/collapse buttons display only +/− with aria-expanded but no project-specific accessible name/controlled-region reference; v77ToggleProject calls render() which replaces #nav and #app via innerHTML without restoring the clicked control's focus. Page thumbnail items are div role=button/tabindex=0 while containing actual action buttons for reorder/copy/delete, making nested interactive structure confusing for keyboard/screen-reader navigation. Pointer/keyboard click routing exists but semantic/focus continuity is not guaranteed.
+
+**معیار پذیرش:** Give expander controls an accessible project-specific name, aria-controls and stable controlled-region identity; preserve/reposition focus and announce expanded state after render. Use a separate focusable page-select button plus sibling action buttons instead of an interactive div containing buttons; indicate selected page accessibly, preserve keyboard arrow/reorder, and validate screen-reader, Tab/Shift+Tab and focus after row refresh (owner-run).
+
+**شواهد:** [index.html#L1147-L1150](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L1147-L1150)، [index.html#L1491-L1496](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L1491-L1496)، [index.html#L1507-L1527](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L1507-L1527)، [index.html#L3784-L3803](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L3784-L3803)، [index.html#L3815-L3830](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L3815-L3830)
+
+### FND-033 / TASK-056 — انتخاب فایل پروژه و تصاویر با ورودی مخفی از مسیر Tab قابل دستیابی نیست
+
+**اولویت P2؛ یافته سورس‌محور (Runtime تأیید نشده).**
+
+The system-level project import uses a <label class=btn> wrapping a file input with hidden; private/public Image Library uses the same label + input style='display:none' pattern. Neither label is focusable by default, and the hidden input is not in normal keyboard Tab order; pointer clicking a label can open the picker but a keyboard-only user lacks an equivalent focusable upload control. This is independent of the persisted import data contracts covered by TASK-026 and phase 03.
+
+**معیار پذیرش:** Provide actual focusable buttons that invoke hidden file input via explicit ref/click, or a labeled visually-hidden focusable file input with robust focus and key handling. Supply accessible names, accepted-file descriptions, error announcements and focus restoration after cancellation/upload; owner-check keyboard and screen-reader usage for system project Import, private and public image imports.
+
+**شواهد:** [index.html#L572-L572](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L572-L572)، [index.html#L834-L848](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L834-L848)، [index.html#L850-L859](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L850-L859)، [index.html#L1311-L1332](https://github.com/comboci/NSP-Portfolio-Builder/blob/c710ae870fe438f3ef63ed6740e2f820eb97a7ca/index.html#L1311-L1332)
+
+### موارد موجود که تسک تکراری ندارند
+
+- **TASK-022/024/025:** یکپارچه‌سازی فهرست پروژه، thumbnail و ویرایشگر همچنان in_progress و نیازمند بررسی Runtime مالک است؛ تسک‌های جدید صرفاً نقص‌های جداگانه Save Scope/ARIA/Responsive را پوشش می‌دهند.
+- **TASK-023 و TASK-036:** Autosave Checkbox، Save/Discard/Cancel و تفکیک Save Page/Save Project از قبل ثبت شده‌اند. نواقص جدید Call-Site مستندند و به این تسک‌ها لینک شدند.
+- **TASK-008 و TASK-026:** تعارض Print/Navigation در فاز 04 ثبت شد؛ فاز 07 در N آینده بر برابری PDF، اندازه/حاشیه و DPI تمرکز می‌کند تا دوباره‌کاری نشود.
+- **TASK-030:** در `index.html:1` متای `application-version=125` با عنوان و نسخه محصول `V126` ناسازگار است؛ چون TASK-030 موجود است، تسک جدید ساخته نشد. نیازمند هماهنگی source markers است و هیچ تستی انجام نشده.
+- Dock دارای profile مستقل، keyboard arrow navigation، pin/hover و reduced-motion branch در سورس است؛ بدون اجرای واقعی نمی‌توان آن را پذیرفته یا رد کرد. بررسی هدفمند Runtime مالک برای فضای کوچک و focus پیشنهاد شده است.
+
+**Checkpoint:** OBS-050؛ TASK-052، TASK-053، TASK-054، TASK-055، TASK-056 در `open_state.next_work_record_ids` ثبت شد. هیچ رکورد قدیمی حذف یا Completed نشد؛ هیچ source/product version تغییر نکرد. **مرحله بعد با N: فاز 05 — موتور طراحی، ارث‌بری، Layers/Groups، History، Snapping و Transform.**
