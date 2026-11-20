@@ -48,3 +48,7 @@ Statement = source input; Question = open issue; Analysis = reasoning; Finding =
 - Read `V145-ARCHITECTURE-FOLLOWUP-AUDIT-FA.md`. Existing DEC-012/013 govern new pages/components; old Master/Section historical paths remain and require TASK-075.
 - TASK-049 and TASK-052 have partial source candidates, not owner-accepted functionality. TASK-030's checker needs Browser/Native release split awareness and was not executed.
 - Do not mark TASK-072..077 or any other task Complete merely because source exists. Owner Runtime/Print/PDF/Import verification remains distinct.
+
+## V164 — historical decision conflict correction
+- ST-001/Q-003 archived Master live-inheritance intent is superseded; DEC-012 and ST-002 govern the current Browser Page-First design.
+- SOL-002/DEC-005 are scoped to deferred Native SQLite; Browser does not depend on legacy DEV-data migration. TASK-048 Browser manifests use categorized page templates and central Style IDs.

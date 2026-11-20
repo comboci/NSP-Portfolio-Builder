@@ -57,3 +57,11 @@
 - رگرسیون سرعت/نمایش UI و Dock در مرورگر؛ نسخه Tauri/SQLite نیازمند مأموریت بعدی.
 
 **وضعیت نهایی:** صرفاً ممیزی سورس V164 + اصلاح Project Evolution؛ نه تأیید نهایی ۱۸ مرحله و نه حذف واقعی Legacy توسط این Commit. برنامه، Build، Test، Static Checker، PDF و Runtime اجرا نشده‌اند.
+
+## تکمیل تطبیق تعارض‌های تاریخی بعد از ممیزی
+
+- `ST-001` با توصیف «live-inherited templates» دیگر Intent جاری نیست و با حفظ متن تاریخی، `superseded_by=ST-002` شد.
+- `Q-003` درباره ویرایش Master در معماری سابق با حفظ سابقه، در Browser با `DEC-012` منسوخ شد.
+- `SOL-002` و `DEC-005`: فقط جنبه‌های آینده Native SQLite باقی‌اند (`deferred_native_sqlite`)؛ برای Browser مهاجرت داده آزمایشی لازم نیست.
+- `TASK-048`: Manifest مرورگر باید به Page Templates دسته‌بندی‌شده و Styleهای مرکزی متکی باشد، نه شناسه‌های Master/Section قدیمی.
+- بدون تغییر فایل اجرایی یا ادعای Runtime/Build/Test/Static Checker.
