@@ -3898,7 +3898,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
        // Build only the lightweight row; intersection loading supplies nearby previews.
        return '<div class="v85-page-item '+(selected===p.id?'is-active':'')+'" role="button" tabindex="0" draggable="true" data-v85-page="'+html(p.id)+'" data-v85-index="'+i+'" aria-label="ویرایش صفحه '+(i+1)+'، '+html(p.title||'صفحه')+'">'+
         '<div class="v85-thumb-meta"><b>'+(i+1)+'. '+html(p.title||'صفحه')+'</b></div>'+
-        '<div class="v85-thumb-frame" data-v134-thumb-frame data-v134-thumb-state="idle" style="width:145px;height:190px">'+
+        '<div class="v85-thumb-frame" data-v134-thumb-frame data-v134-thumb-state="idle" style="width:145px;max-width:100%;height:190px">'+
           '<div class="v85-thumb-inner" data-v134-thumb-inner aria-hidden="true"></div></div>'+
         '<div class="v85-page-actions"><button class="btn" type="button" data-v85-move="-1" data-v85-id="'+html(p.id)+'" '+(!i?'disabled':'')+' title="جابجایی صفحه به بالا">↑</button>'+
         '<button class="btn" type="button" data-v85-move="1" data-v85-id="'+html(p.id)+'" '+(i===pages.length-1?'disabled':'')+' title="جابجایی صفحه به پایین">↓</button>'+
@@ -6358,8 +6358,9 @@ const mediaMigrated=!V.saveBlocked&&await V.media.migrateLegacy();ready=true;V.n
   if(!Number.isSafeInteger(index)||index<0||!page||page.id!==row.dataset.v85Page)return;
   try{
    const resolved=V.resolvePage(page),w=Number(resolved.width)||595,h=Number(resolved.height)||842;
-   const scale=Math.max(.08,Math.min(.23,FRAME_W/w,FRAME_H/h));
-   inner.style.left=Math.max(0,(FRAME_W-w*scale)/2)+'px';
+   const availableW=Math.min(FRAME_W,frame.clientWidth||FRAME_W);
+   const scale=Math.max(.08,Math.min(.23,availableW/w,FRAME_H/h));
+   inner.style.left=Math.max(0,(availableW-w*scale)/2)+'px';
    inner.style.top=Math.max(0,(FRAME_H-h*scale)/2)+'px';
    inner.style.transform='scale('+scale+')';
    // Reuse the already resolved scene. This is only done for visible/nearby rows.

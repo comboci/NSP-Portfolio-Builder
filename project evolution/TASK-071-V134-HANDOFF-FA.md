@@ -31,3 +31,5 @@
 6. زمان بازشدن نوار، CPU/RAM و روانی Scroll را روی همان داده و دستگاه با V133 مقایسه کن؛ نتایج واقعی را در Verification مالک ثبت کن.
 
 **وضعیت:** Source Candidate؛ TASK-071 همچنان `in_progress` تا پذیرش مالک. **هیچ Build، Test، Static Checker، Benchmark یا Runtime توسط دستیار اجرا نشده است** (DEC-006).
+
+**تکمیل تطبیقی عرض باریک:** قاب پیش‌نمایش با `max-width:100%` از ستون ۱۶۵ پیکسلی بیرون نمی‌زند و محاسبه Scale/Center براساس `frame.clientWidth` واقعی انجام می‌شود. این بخش نیز تست نشده است.
