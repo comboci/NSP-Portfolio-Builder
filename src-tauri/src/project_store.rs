@@ -432,6 +432,8 @@ pub fn persist_workspace(tx: &Transaction<'_>, workspace: &Value) -> Result<(), 
         "master": global.get("master").cloned().unwrap_or(Value::Null),
         "sectionTypes": global.get("sectionTypes").cloned().unwrap_or(Value::Null),
         "globalImageAlbums": global.get("globalImageAlbums").cloned().unwrap_or_else(||json!([])),
+        // Categorization is catalog metadata, not a page kind or section.
+        "templateCategories": global.get("templateCategories").cloned().unwrap_or_else(||json!([])),
     });
     tx.execute(
         "INSERT INTO shared_template_context(id,payload) VALUES(1,?1)
@@ -606,7 +608,7 @@ pub fn load_workspace(db:&Connection)->Result<Option<String>,String>{
         data["pages"]=chosen.and_then(|p|p.get("pages")).cloned().unwrap_or_else(||json!([]));
         if let Some(p)=chosen {data["activePortfolioId"]=p["id"].clone();}
         data["portfolios"]=Value::Array(portfolios);
-        for key in ["master","sectionTypes","masterTemplates","sectionDesigns","templates","styleLibrary","globalImageAlbums"]{
+        for key in ["master","sectionTypes","masterTemplates","sectionDesigns","templates","styleLibrary","globalImageAlbums","templateCategories"]{
             if let Some(value)=global.get(key){data[key]=value.clone();}
         }
         if is_active==1 && active.is_none(){active=Some((project_id,name,data));}
