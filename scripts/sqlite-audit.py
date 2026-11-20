@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only SQLite integrity check for NSP Portfolio Builder (schema 6+).
+"""Read-only SQLite integrity check for NSP Portfolio Builder (schema 8+).
 
 Usage: python scripts/sqlite-audit.py "/path/to/storage/portfolio.sqlite3"
 Close the desktop app before running a filesystem-level database/asset backup.
@@ -17,6 +17,9 @@ EXPECTED = {
     "image_backup_refs", "projects", "images", "templates", "pages",
     "image_refs", "scene_entities", "scene_links", "backups",
     "named_backups", "schema_migrations", "storage_format_meta",
+    "image_page_private_refs", "image_page_public_refs",
+    "image_template_public_refs", "automatic_backup_asset_refs",
+    "named_backup_asset_refs", "reference_migration_issues",
 }
 
 
@@ -58,12 +61,54 @@ def audit(db_path: Path) -> dict:
                 WHERE NOT EXISTS (SELECT 1 FROM asset_files f WHERE f.hash=e.asset_hash)
                 """
             ).fetchone()[0]
+            # The migration ledger preserves unresolved pre-V116 relationships.
+            # This is historical evidence; current graph checks are independent.
+            report["historical_migration_issues"] = conn.execute(
+                "SELECT COUNT(*) FROM reference_migration_issues"
+            ).fetchone()[0]
+            report["unmapped_legacy_backup_refs"] = conn.execute(
+                """
+                SELECT COUNT(*) FROM image_backup_refs e
+                WHERE NOT EXISTS (
+                    SELECT 1 FROM automatic_backup_asset_refs r
+                    WHERE e.backup_kind='automatic' AND e.backup_id=r.backup_id
+                      AND e.asset_hash=r.asset_hash
+                ) AND NOT EXISTS (
+                    SELECT 1 FROM named_backup_asset_refs r
+                    WHERE e.backup_kind='named' AND e.backup_id=r.backup_id
+                      AND e.asset_hash=r.asset_hash
+                )
+                """
+            ).fetchone()[0]
+            report["unmapped_legacy_image_usage"] = conn.execute(
+                """
+                SELECT COUNT(*) FROM image_usage_edges e
+                WHERE NOT EXISTS (
+                    SELECT 1 FROM image_page_private_refs r
+                    WHERE e.owner_kind='page' AND e.scope_id=r.project_id
+                      AND e.owner_id=r.portfolio_id || '/' || r.page_id
+                      AND e.image_id=r.image_id AND e.asset_hash=r.asset_hash
+                ) AND NOT EXISTS (
+                    SELECT 1 FROM image_page_public_refs r
+                    WHERE e.owner_kind='page' AND e.scope_id=r.project_id
+                      AND e.owner_id=r.portfolio_id || '/' || r.page_id
+                      AND e.image_id=r.image_id AND e.asset_hash=r.asset_hash
+                ) AND NOT EXISTS (
+                    SELECT 1 FROM image_template_public_refs r
+                    WHERE e.scope_id='@global' AND e.owner_kind=r.template_kind
+                      AND e.owner_id=r.template_id
+                      AND e.image_id=r.image_id AND e.asset_hash=r.asset_hash
+                )
+                """
+            ).fetchone()[0]
         report["ok"] = (
             report["integrity_check"] == "ok"
             and not report["foreign_key_violations"]
             and not missing
             and report.get("orphan_backup_image_refs", 0) == 0
             and report.get("orphan_usage_assets", 0) == 0
+            and report.get("unmapped_legacy_backup_refs", 0) == 0
+            and report.get("unmapped_legacy_image_usage", 0) == 0
         )
         return report
     finally:

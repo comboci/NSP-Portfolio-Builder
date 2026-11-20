@@ -1,18 +1,19 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "115",
-  "basedOnMainCommitBeforeChange": "d739949bf3766ba7820af0cce0c000c7a75d70ca",
+  "plannedForVersion": "116",
+  "basedOnMainCommitBeforeChange": "21986714be86afb4139ab342a0a5bbefb1b3128f",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
     "HTML title/header/meta and JavaScript appVersion match Cargo/Tauri",
     "Sequential SQL user_version migrations and Rust wiring",
-    "Tauri IPC registration, JS parsing, backup/media invariants"
+    "Tauri IPC registration, JS parsing, backup/media invariants",
+    "Migration 008: FK-backed project/public image usage and typed automatic/named backup references, legacy audit ledger"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V115 storage-query-index migration 007 prepared; no static checker, Rust build, automated test, Tauri/browser runtime, or PDF test was executed. Owner verification remains pending."
+  "note": "N-02 V116 source prepared. No static checker, SQL integration test, build, Tauri/browser runtime or owner acceptance was performed. Legacy rows and backup/asset bytes remain retained; typed migration validation must be run by the owner on a copy."
 }
