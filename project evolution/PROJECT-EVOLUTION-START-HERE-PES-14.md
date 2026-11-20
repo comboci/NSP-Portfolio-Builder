@@ -26,6 +26,16 @@ Statement = source input; Question = open issue; Analysis = reasoning; Finding =
 - Any mismatch between PE and source blocks source mutation until reconciled.
 - See original PES-14 Portable Starter Pack for normative schema, semantic rules and compatibility profile.
 
+## V164 — آخرین ممیزی مستقل سورس (۲۰ نوامبر ۲۰۲۶)
+
+- فایل `V164-18-STAGE-SOURCE-AUDIT-FA.md` را قبل از هر اصلاح سورس بخوان؛ مرجع ۱۸ مرحله و وضعیت باقی‌مانده است.
+- **Browser:** `index.html` نسخه ۱۶۴، ذخیره‌سازی `IndexedDB` با `designModel='page-first'`، قالب‌های گروهی و کامپوننت‌های متصل.
+- **Native:** `native-ui/index.html` نسخه ۱۳۸ و `src-tauri` / SQLite schema 13. جدا و به فاز بعد واگذار شده، نه حذف‌شده.
+- داده‌های قدیمی **آزمایشی** را مالک قابل حذف دانسته است (DEC-007): مهاجرت آن‌ها برای پایان Browser اجباری نیست؛ هیچ Reset واقعی در ممیزی انجام نشده است.
+- مراحل ۰۱–۱۷ شواهد سورس دارند؛ مرحله ۱۸ حذف Legacy و تطبیق قراردادها **جزئی** است. وضعیت `TASK-072..076` همچنان در حال انجام/در انتظار Runtime و `TASK-077` تصمیم اختیاری موکول‌شده به مالک است.
+- توابع تاریخی Master/Section هنوز در متن HTML هستند، ولی وجود آن‌ها به‌تنهایی ثابت نمی‌کند در مسیر فعال استفاده می‌شوند. قبل از حذف کد، مسیرهای فراخوانی را از روی سورس بررسی کن.
+- ممیزی کد به معنی اجرای Build/Test/Static Checker/PDF/Runtime یا پذیرش مالک نیست (DEC-006).
+
 ## V137 owner-approved architecture decision
 - DEC-012: Master/Section authoring hierarchy is superseded by page-first independent design.
 - DEC-013: linked project-local Custom Components in the shared Toolbox. No dedicated separate library UI.

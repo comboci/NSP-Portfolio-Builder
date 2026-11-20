@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Browser V164 / Native V138 (۱۸ مرحله ممیزی‌شده، بدون Runtime)
+
+**Browser:** نسخه ۱۶۴، تک‌فایل `index.html`، مدل Page-First و `IndexedDB` مستقل. **Native:** نسخه ۱۳۸ در `native-ui/`، Tauri/SQLite schema 13 فعلاً فاز جدا. از V145 تا V164 تعداد ۱۹ Commit واقعی ثبت شده است؛ مرحله‌های ۰۱–۱۷ شواهد پیاده‌سازی سورس دارند ولی تأیید عملیاتی نشده‌اند؛ مرحله ۱۸ پاک‌سازی Legacy هنوز ناقص است.
+
+گزارش ممیزی یک‌به‌یک و تطبیق Project Evolution: `project evolution/V164-18-STAGE-SOURCE-AUDIT-FA.md`. تسک‌های ۰۷۲–۰۷۶ باز، ۰۷۷ موکول‌شده به تصمیم اختیاری استایل. داده‌های تاریخی آزمایشی الزاماً مهاجرت داده نمی‌شوند (DEC-007)، اما هیچ Reset انجام نشده و Native/Source history حفظ شده است. بدون Build/Test/Static Checker/Runtime.
+
+---
+
 # NSP Portfolio Builder — Browser V145, Native V138 (Architecture audit)
 
 The browser-first HTML source is V145; native Tauri package remains 138.0.0 with SQLite schema 13. **SQLite has not been removed**. Browser Page-First, categorized templates, Custom Components and page workflows are source candidates; some legacy Master/Section paths, import/export and storage behavior still require remediation. The V145 review and refreshed task crosswalk are in `project evolution/V145-ARCHITECTURE-FOLLOWUP-AUDIT-FA.md`. Build/Test/Static Checker/Runtime have not been executed by the assistant; owner acceptance is outstanding.
