@@ -16,8 +16,8 @@
 | --- | --- | --- |
 | 01 | SQLite، Schema/Migrations 001–012، FK، مالکیت داده، CAS، پروژه و رابطه صفحه/قالب، تطبیق TASK-001..037 | **انجام شد: سورس‌محور، بدون اجرای برنامه** |
 | 02 | ذخیره صفحه/پروژه، Autosave، Dirty State، Backup/Restore، فایل‌ها، WAL و شکست عملیات/rollback | **انجام شد: سورس‌محور، بدون Build/Test** |
-| 03 | Import/Export (JSON، پروژه/پورتفولیو، وابستگی‌ها، سازگاری نسخه، برخورد شناسه‌ها) | **نوبت بعد با N** |
-| 04 | UI/UX پروژه‌ها، ناوبری، صفحات، Dockها، Responsive و دسترس‌پذیری | در انتظار N |
+| 03 | Import/Export (JSON، پروژه/پورتفولیو، وابستگی‌ها، سازگاری نسخه، برخورد شناسه‌ها) | **انجام شد: سورس‌محور، بدون Build/Test** |
+| 04 | UI/UX پروژه‌ها، ناوبری، صفحات، Dockها، Responsive و دسترس‌پذیری | **نوبت بعد با N** |
 | 05 | موتور طراحی، Template inheritance، Region Block، Layer/Group، history، snapping و Transform | در انتظار N |
 | 06 | Image Library، مالکیت خصوصی/عمومی، Assetها، Tile/Stash، crop/mask، حذف ایمن | در انتظار N |
 | 07 | PDF/Print، صفحه‌بندی، DPI، Preflight، مقیاس و برابری رندر | در انتظار N |
@@ -139,3 +139,87 @@ media_store::store_file تصویر immutable را در assets/{hash}.pending ن�
 - **Asset:** ذخیره فیزیکی به‌صورت immutable است؛ `fs::sync_all` برای فایل موقت وجود دارد، اما Rollback SQLite فایل قبلاً منتقل‌شده را بازنمی‌گرداند. مطابق Q-005 و N-07 هیچ پاکسازی فیزیکی خودکار پیشنهاد/انجام نشد.
 
 **پیگیری:** ۴ تسک مستقل جدید TASK-042..TASK-045 به `open_state.next_work_record_ids` اضافه شدند تا زمان‌بندی موجود بتواند انتخابشان کند. هیچ تسکی به completed ارتقا نیافت و هیچ تأیید کاربر جعل نشد. **Checkpoint: OBS-048. نوبت بعد با N: فاز 03 — Import/Export.**
+
+
+## خروجی فاز 03 — Import/Export پروژه و پورتفولیو
+
+مبنای بازبینی: `621a3c9485d57bfa14af430f5559f6787562ee08`، سورس V126 / SQLite schema 12. فایل‌های `index.html`، شروع پروژه PES-14، TASK-001 تا TASK-045، قواعد و تصمیم‌های مالک بررسی شدند. مطابق DEC-006 هیچ Build/Test/Static Check یا Runtime اجرا نشده و هیچ فایل محصولی تغییر نکرده است.
+
+| اولویت | Finding | Task | موضوع |
+| --- | --- | --- | --- |
+| P0 | FND-023 | TASK-046 | خروجی قدیمی یک پورتفولیو می‌تواند پروژه‌های دیگر را نیز افشا کند |
+| P1 | FND-024 | TASK-047 | هم‌نام بودن شناسه یا Hash تصویر می‌تواند تصویر اشتباهی را در Import جایگزین کند |
+| P1 | FND-025 | TASK-048 | وابستگی قالب و استایل با شناسه موجود سنجیده می‌شود، نه با محتوای واقعی آن |
+| P1 | FND-026 | TASK-049 | نتیجه نرمال‌سازی Import پورتفولیو دور ریخته می‌شود |
+| P2 | FND-027 | TASK-050 | خروجی بزرگ‌تر از ۸۰MiB تولید می‌شود ولی همان Import آن را رد می‌کند |
+| P2 | FND-028 | TASK-051 | Import از بکاپ چندپورتفولیویی بدون انتخاب کاربر فقط اولین پورتفولیو را برمی‌دارد |
+
+### FND-023 / TASK-046 — خروجی قدیمی یک پورتفولیو می‌تواند پروژه‌های دیگر را نیز افشا کند
+
+**اولویت P0؛ بررسی سورس‌محور، بدون تأیید اجرایی.**
+
+Legacy v30ExportPortfolio copies the entire current state, narrows snapshot.portfolios but retains projectWorkspaces and other unrelated project/global fields. The v28/v29 portfolio action still invokes this legacy function. A file presented as one portfolio can therefore contain private records and assets belonging to other projects. The scoped v111ExportPortfolio is a separate implementation; no runtime execution was performed.
+
+**معیار پذیرش:** Replace all accessible single-portfolio export entry points with a single scoped serializer and versioned envelope; whitelist only the requested portfolio, permitted dependencies and explicitly intended assets. Exclude projectWorkspaces, unrelated portfolios, inactive-project image libraries and private content. Provide a privacy/content-manifest preview and source-only review of every export entry. Owner verifies export JSON on a multi-project fixture; no loss of project-level full-backup feature.
+
+**مراجع سورس:** [index.html#L5245-L5248](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L5245-L5248)، [index.html#L5546-L5559](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L5546-L5559)، [index.html#L1051-L1066](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L1051-L1066)
+
+### FND-024 / TASK-047 — هم‌نام بودن شناسه یا Hash تصویر می‌تواند تصویر اشتباهی را در Import جایگزین کند
+
+**اولویت P1؛ بررسی سورس‌محور، بدون تأیید اجرایی.**
+
+Portfolio export includes publicImages id/hash/src, but portfolio import skips all source-content checks when a public image with the same ID exists at destination (if(publicAsset)continue). Private-image dedupe also trusts declared a.hash===imported.hash before validating actual imported.src bytes. Cross-installation ID/hash collisions or manipulated metadata may silently bind a different image. This is independent of TASK-041 missing-file load.
+
+**معیار پذیرش:** Validate each imported image's decoded bytes against a trusted computed SHA-256 (when supported) and validate source/destination identity before using an existing public ID. If same ID has different content reject with an actionable conflict or use explicit safe remap to matching immutable asset; do not silently alias. Never trust the backup's hash field without verifying its bytes; include Tile/Stash, project/private/public scopes and previous backups in owner-run review.
+
+**مراجع سورس:** [index.html#L1381-L1390](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L1381-L1390)، [index.html#L1435-L1455](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L1435-L1455)، [index.html#L1942-L1946](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L1942-L1946)
+
+### FND-025 / TASK-048 — وابستگی قالب و استایل با شناسه موجود سنجیده می‌شود، نه با محتوای واقعی آن
+
+**اولویت P1؛ بررسی سورس‌محور، بدون تأیید اجرایی.**
+
+Project export explicitly drops globalTemplates and styleLibrary and only sets requiresSharedCatalog:true; portfolio export has no shared-catalog revision/fingerprint manifest. Project import substitutes the destination global catalog; the normalizer verifies referenced IDs exist but not that same-ID templates, section designs, styles, or inherited scene content match those used at export. Portfolio import also inherits current global definitions. An imported design may therefore be valid yet visually different without a conflict warning.
+
+**معیار پذیرش:** Record a dependency manifest for referenced Master/Page/Section templates, section types, central styles and their revision/digests; compare at import before mutation. Preserve system-wide shared ownership (no silent catalog overwrite) and explicitly report missing, changed or same-ID/different-content dependencies. Offer reject, view exact differences or explicit reviewed mapping as owner decides; verify inherited geometry, images, style references and print parity with owner-run cross-install review.
+
+**مراجع سورس:** [index.html#L1373-L1409](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L1373-L1409)، [index.html#L1381-L1390](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L1381-L1390)، [index.html#L1455-L1465](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L1455-L1465)، [index.html#L518-L548](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L518-L548)
+
+### FND-026 / TASK-049 — نتیجه نرمال‌سازی Import پورتفولیو دور ریخته می‌شود
+
+**اولویت P1؛ بررسی سورس‌محور، بدون تأیید اجرایی.**
+
+The portfolio import builds next, calls v13NormalizeProject(normalized), then discards its returned deep-cloned normalized state. It commits target.portfolios with the earlier clone, even when normalization would supply missing legacy defaults (for instance visualObjects/layers/page fields). A later native Save Page requires a normalized page. This is a source-level mismatch; actual failure depends on imported legacy input.
+
+**معیار پذیرش:** Use the returned normalized result or explicitly canonicalize the imported portfolio and image additions before any target mutation; maintain new IDs and rebinding provenance. Invalid input must leave target untouched; accepted legacy records must be immediately usable by Save Page, Save Project, render, undo/redo and reopen without reliance on a subsequent restart normalization.
+
+**مراجع سورس:** [index.html#L1429-L1465](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L1429-L1465)، [index.html#L468-L469](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L468-L469)، [index.html#L537-L549](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L537-L549)، [src-tauri/src/main.rs#L208-L225](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/src-tauri/src/main.rs#L208-L225)
+
+### FND-027 / TASK-050 — خروجی بزرگ‌تر از ۸۰MiB تولید می‌شود ولی همان Import آن را رد می‌کند
+
+**اولویت P2؛ بررسی سورس‌محور، بدون تأیید اجرایی.**
+
+v111BackupJSON emits arbitrary-sized JSON blobs (including base64 media), but v111ReadBackup always rejects files larger than 80 MiB. A valid project/portfolio exported by this application may be impossible to import using its matching scoped command; the restriction is not disclosed before export.
+
+**معیار پذیرش:** Define a symmetric, documented size contract: preflight/reject or stream/chunk/export package with compatible limits, preserve hash/asset integrity and show a clear size warning before download. Round-trip check with small/large single-portfolio and project files in owner runtime; never truncate images or silently drop dependencies.
+
+**مراجع سورس:** [index.html#L1314-L1332](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L1314-L1332)، [index.html#L1373-L1390](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L1373-L1390)
+
+### FND-028 / TASK-051 — Import از بکاپ چندپورتفولیویی بدون انتخاب کاربر فقط اولین پورتفولیو را برمی‌دارد
+
+**اولویت P2؛ بررسی سورس‌محور، بدون تأیید اجرایی.**
+
+When a source is not kind NSP-Portfolio-Backup, v111ImportPortfolio accepts backup.state?.portfolios?.[0]. A full workspace JSON containing multiple portfolios silently selects index 0 regardless of the intended portfolio, and the confirmation names only this selected one. A project export uses a different envelope. No author intent is inferred from a file just because it contains a state object.
+
+**معیار پذیرش:** Enforce known backup envelopes, and if importing from a full-workspace/multi-portfolio file, require an explicit selection by stable ID and display project/portfolio title and count; reject ambiguous or mismatched formats without mutating existing projects. Preserve backward compatibility only through an explicit documented migration path.
+
+**مراجع سورس:** [index.html#L1418-L1432](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L1418-L1432)، [index.html#L1373-L1390](https://github.com/comboci/NSP-Portfolio-Builder/blob/621a3c9485d57bfa14af430f5559f6787562ee08/index.html#L1373-L1390)
+
+### پوشش قبلی و مواردی که دوباره تسک نشدند
+
+- `TASK-026`: محل منوهای contextual Import/Export/Print و ورود پروژه/پورتفولیو در سورس V111 وجود دارد، اما تا تأیید مالک در وضعیت in_progress باقی می‌ماند. این مرحله روی شکاف‌های واقعی قرارداد داده، امنیت و سازگاری متمرکز بود.
+- `TASK-039`: تعارض نسخه IndexedDB بین تب‌ها؛ با اشکال‌های Import/Export جدید تکرار نشد.
+- `TASK-043`: تطبیق named backup با Revision پایدار SQLite؛ متفاوت از امنیت فایل پورتفولیو و واردکردن Assetهاست.
+- `TASK-007` و `TASK-037`: مالکیت و بازیابی Image Asset / نگهداری بکاپ؛ هیچ کد حذف فیزیکی یا GC تجویز نشد.
+- تبعات احتمالی Cross-installation و تصاویر/قالب‌های هم‌شناسه به‌عنوان ریسک سورس مستندند، نه مشاهده خرابی در اجرا. 
+
+**Checkpoint:** OBS-049. تسک‌های TASK-046، TASK-047، TASK-048، TASK-049، TASK-050، TASK-051 به `open_state.next_work_record_ids` اضافه شدند؛ نسخه نرم‌افزار، SQLite schema، تاریخچه و وضعیت Acceptance تغییری نکرد. **مرحله بعد با N: فاز 04 — UI/UX پروژه‌ها، ناوبری، Dock و دسترس‌پذیری.**
