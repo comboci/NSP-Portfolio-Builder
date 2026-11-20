@@ -21,8 +21,8 @@
 | 05 | موتور طراحی، Template inheritance، Region Block، Layer/Group، history، snapping و Transform | **انجام شد: سورس‌محور، بدون Build/Test** |
 | 06 | Image Library، مالکیت خصوصی/عمومی، Assetها، Tile/Stash، crop/mask، حذف ایمن | **انجام شد: سورس‌محور، بدون Build/Test** |
 | 07 | PDF/Print، صفحه‌بندی، DPI، Preflight، مقیاس و برابری رندر | **انجام شد: سورس‌محور، بدون Build/Test** |
-| 08 | کارایی، حافظه، امنیت ورودی، خطایابی و پایداری، کارهای چندپنجره‌ای | **نوبت بعد با N** |
-| 09 | ممیزی نهایی ردیابی Task 001 تا آخرین Task، Gapهای پوشش و ماتریس تأیید مالک | در انتظار N |
+| 08 | کارایی، حافظه، امنیت ورودی، خطایابی و پایداری، کارهای چندپنجره‌ای | **انجام شد: سورس‌محور، بدون Build/Test** |
+| 09 | ممیزی نهایی ردیابی Task 001 تا آخرین Task، Gapهای پوشش و ماتریس تأیید مالک | **نوبت بعد با N** |
 
 ## خروجی فاز 01 — دیتابیس / یکپارچگی داده
 
@@ -486,3 +486,95 @@ v113PrintDpi calculates min(croppedPixelWidth/printFrameWidth, croppedPixelHeigh
 - **TASK-041/TASK-062:** Missing immutable Asset در بارگذاری و هندسه نامعتبر Grid قبلاً ثبت شده‌اند؛ بررسی چاپِ داده مخفی `stash` نباید به حذف ناامن Asset یا حذف reference index منجر شود.
 
 **Checkpoint:** OBS-056. TASK-064، TASK-065، TASK-066 در صف اجرای Project Evolution ثبت شدند؛ نسخه محصول، Schema و وضعیت Acceptance تغییر نکردند. **مرحله بعد با N: فاز 08 — کارایی، حافظه، امنیت ورودی، خطایابی و چندپنجره‌ای.**
+
+
+## خروجی فاز 08 — Performance، Memory، Security، Reliability و Multiwindow
+
+**مبنای سورس:** `86a927adf8662768058cbc4f9832530701ddcef2`، V131 / SQLite schema 12. فایل‌های `index.html`، `src-tauri/src/main.rs`، `src-tauri/src/media_store.rs`، `src-tauri/src/project_store.rs` و رکوردهای تا `TASK-066` بررسی شدند. ممیزی با تحلیل خواندن سورس انجام شد، **بدون Build، Test، Static Checker، Benchmark، Runtime یا تأیید مالک**. وضعیت واقعی سرعت/مصرف RAM هنوز اندازه‌گیری نشده است.
+
+| اولویت | Finding | Task | موضوع |
+| --- | --- | --- | --- |
+| P1 | FND-047 | TASK-067 | Save Page در SQLite بی‌دلیل JSON تمام Workspace را می‌سازد |
+| P1 | FND-048 | TASK-068 | خواندن/نوشتن فایل تصاویر در حین نگهداری تراکنش SQLite انجام می‌شود |
+| P1 | FND-049 | TASK-069 | بارگذاری همه تصاویر به Base64 در حافظه مصرف RAM را با رشد پروژه افزایش می‌دهد |
+| P1 | FND-050 | TASK-070 | فایل JSON کامل و آپلود تصویر بدون بودجه حجم و Decode پردازش می‌شوند |
+| P2 | FND-051 | TASK-071 | تمام Thumbnailهای صفحات در هر Render دوباره محاسبه و ساخته می‌شوند |
+| P2 | FND-052 | TASK-031 (موجود) | Save Project همچنان جداول سازگاری Legacy را کامل حذف و بازنویسی می‌کند |
+| P2 | FND-053 | TASK-044 (موجود) | خطاهای ذخیره و بازیابی فقط در اعلان‌ها نمایش داده می‌شوند و گزارش تشخیصی قابل ارائه ندارند |
+
+### FND-047 / TASK-067 — Save Page در SQLite بی‌دلیل JSON تمام Workspace را می‌سازد
+
+**اولویت P1؛ شواهد سورس بدون Benchmark/Runtime.**
+
+V.queuePageSave() always calls JSON.stringify(page) AND JSON.stringify(state), including all inactive projects and Base64 image libraries, before enqueue. SQLite writePage() only passes the page payload to save_page and never consumes the full `portable` snapshot; it is used exclusively for browser IndexedDB/localStorage monolithic storage. Thus every small native Save Page synchronously allocates an otherwise unused complete workspace copy (potentially multiple queued copies) and spends main-thread CPU scaling with all projects/assets rather than the edited page. This is independent of browser CAS correctness and the existing masked-failure ledger.
+
+**معیار پذیرش:** Separate native-vs-browser serialization at enqueue time: in SQLite mode build only the page JSON and scoped metadata; preserve the full portable workspace JSON only when browser backend requires it. Keep status/ACK/failure-ledger identity, revision CAS, Save Page vs Save Project boundaries and Save/Discard/Cancel behavior. Avoid queued stale data and preserve owner portability/export semantics. Owner runs large multi-project repeated Save Page/reopen tests; record performance and memory comparisons before acceptance.
+
+**شواهد:** [index.html#L5934-L5942](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L5934-L5942)، [index.html#L5881-L5891](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L5881-L5891)، [index.html#L5892-L5902](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L5892-L5902)، [src-tauri/src/main.rs#L214-L252](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/src-tauri/src/main.rs#L214-L252)
+
+### FND-048 / TASK-068 — خواندن/نوشتن فایل تصاویر در حین نگهداری تراکنش SQLite انجام می‌شود
+
+**اولویت P1؛ شواهد سورس بدون Benchmark/Runtime.**
+
+load_project_state() takes Storage(Mutex<Connection>), begins SQLite transaction, then calls hydrate_payload(), which performs filesystem reads, SHA-256 validation and Base64 encoding before committing. save_project() and save_page() call media_store::compact_value inside a SQLite write transaction; store_file may decode files, read existing originals, fsync new temporary files and rename them. Consequently long I/O, hashing and JSON conversions extend transaction/connection lock occupancy, delaying other commands and potentially prolonging WAL reader lifetimes. This source-level lock exposure is independent of the CAS/lost-update safeguards; no latency or contention measurement has been executed.
+
+**معیار پذیرش:** Design a snapshot-consistent, revision-guarded two-phase read/write path: hold SQLite transactions for validated metadata and atomic revision/dependency changes, perform bounded large file work outside the critical lock whenever safe, and verify the immutable hash before references become committed. Reconcile staging/recovery with TASK-045; never auto-delete referenced files, bypass CAS or create incomplete backups. Owner evaluates two windows, slow asset storage, interruption/failure, WAL checkpoint and load/save latency with same data set.
+
+**شواهد:** [src-tauri/src/main.rs#L36-L62](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/src-tauri/src/main.rs#L36-L62)، [src-tauri/src/main.rs#L111-L125](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/src-tauri/src/main.rs#L111-L125)، [src-tauri/src/main.rs#L214-L252](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/src-tauri/src/main.rs#L214-L252)، [src-tauri/src/media_store.rs#L30-L56](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/src-tauri/src/media_store.rs#L30-L56)، [src-tauri/src/media_store.rs#L101-L156](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/src-tauri/src/media_store.rs#L101-L156)
+
+### FND-049 / TASK-069 — بارگذاری همه تصاویر به Base64 در حافظه مصرف RAM را با رشد پروژه افزایش می‌دهد
+
+**اولویت P1؛ شواهد سورس بدون Benchmark/Runtime.**
+
+hydrate_payload() eagerly replaces every immutable image reference in the entire workspace (including non-active project catalogs, snapshots and tilesJson) with a full Base64 data URL, caches those strings and clones them for repeated references. It then serializes the entire hydrated tree into one string, after which the frontend JSON.parse and v13NormalizeProject deep-copy the complete state. This produces several simultaneously live representations of many image bytes during startup and can amplify memory with repeated references even if pages/assets are not visible. No actual RAM profile or crash measurement was conducted.
+
+**معیار پذیرش:** Load canonical workspace metadata, visible thumbnails and immutable references first; resolve original image bytes on demand with a bounded reuse/LRU strategy and deduplicated content-addressed URLs/handles, while keeping portable JSON exports explicitly complete and integrity-checked. Preserve public/private permission boundaries, frozen snapshots, Tile/Stash references, original hash immutability, and the TASK-041 missing-file placeholder/recovery contract. Owner verifies large catalog across inactive projects and memory footprint before/after without dropping source content.
+
+**شواهد:** [src-tauri/src/media_store.rs#L101-L156](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/src-tauri/src/media_store.rs#L101-L156)، [src-tauri/src/main.rs#L45-L62](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/src-tauri/src/main.rs#L45-L62)، [index.html#L347-L349](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L347-L349)، [index.html#L468-L470](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L468-L470)، [index.html#L556-L564](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L556-L564)
+
+### FND-050 / TASK-070 — فایل JSON کامل و آپلود تصویر بدون بودجه حجم و Decode پردازش می‌شوند
+
+**اولویت P1؛ شواهد سورس بدون Benchmark/Runtime.**
+
+Scoped v111ReadBackup enforces an 80 MiB file cap, but global importData() directly awaits file.text(), JSON.parse() and the deep-copy normalizer with no file-length, nesting-depth, array-count or decoded-image budget. Image import prepare(file) similarly reads the whole file as a data URL, decodes it into Image/canvas, then calls file.arrayBuffer() for SHA-256 without an upfront file or pixel quota; native store_file() decodes arbitrarily long Base64 strings. Large or maliciously crafted user-supplied files can cause high peak RAM and a blocked UI or failed process before a clear recoverable validation error. This is a resource-exhaustion exposure, not evidence of code execution or a reproduced crash.
+
+**معیار پذیرش:** Define a compatible import/upload resource contract for full workspaces and scoped backups: preflight byte size, decoded image pixels/dimensions, object/depth count and aggregate asset size before heavy allocation; use streaming/chunked decode and background-safe work where supported. Set explainable limits and offer an approved large-package path instead of silently rejecting legitimate previous backups; honor TASK-050 round-trip compatibility. Fail closed without altering active state, source assets, backup snapshots or existing user data. Owner validates oversized JSON, deep nesting, huge pixels and normal valid files in browser/Tauri.
+
+**شواهد:** [index.html#L1320-L1332](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L1320-L1332)، [index.html#L1989-L1995](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L1989-L1995)، [index.html#L6079-L6080](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L6079-L6080)، [index.html#L5991-L6003](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L5991-L6003)، [src-tauri/src/media_store.rs#L30-L37](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/src-tauri/src/media_store.rs#L30-L37)
+
+### FND-051 / TASK-071 — تمام Thumbnailهای صفحات در هر Render دوباره محاسبه و ساخته می‌شوند
+
+**اولویت P2؛ شواهد سورس بدون Benchmark/Runtime.**
+
+v85PageSidebar maps all pages and computes V.resolvePage(p) then V.renderDocument(p,i+1) for every thumbnail. renderDocument resolves the page again and expands image/media markup; global render() replaces the app DOM, and multiple render wrappers refresh the editor even for selection/panel/navigation changes. With many pages/tiles/images, per-interaction work scales with the full portfolio and recreates preview DOM repeatedly; no visible-range virtualization, stable thumbnail cache or per-page invalidation is present in that path. This is an architectural performance finding, not a measured frame rate.
+
+**معیار پذیرش:** Render the page navigator incrementally: cache thumbnails by page/template/relevant style/asset revision; virtualize offscreen thumbnails or use lightweight previews; invalidate only changed page and downstream page-number/ordering dependencies. Keep correct drag/drop, keyboard reorder, selected focus, public/private image updates and page numbering, no stale previews after Save/Import/reopen. Owner runs 10/100/500-page fixtures with representative image tiles and checks memory, interaction latency and visual equivalence.
+
+**شواهد:** [index.html#L3890-L3910](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L3890-L3910)، [index.html#L3960-L3962](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L3960-L3962)، [index.html#L572-L572](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L572-L572)، [index.html#L1591-L1599](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L1591-L1599)، [index.html#L1803-L1819](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L1803-L1819)
+
+### FND-052 — Save Project همچنان جداول سازگاری Legacy را کامل حذف و بازنویسی می‌کند (بدون تسک تکراری؛ پیگیری در TASK-031)
+
+Although N-03 ownership and N-05 scene projections are incremental, save_project() still issues DELETE FROM on all rows belonging to 'workspace' across image_files, image_refs, scene_links, scene_entities, pages, templates and images, then re-inserts all compatibility rows. These writes occur even for small content changes, creating SQL churn and exacerbating long write transactions, backup/log growth and FK ordering complexity. The existing TASK-031 database optimization/architecture work is a better follow-up owner than duplicating it as a new task.
+
+**معیار پذیرش افزوده به TASK-031:** Extend TASK-031 source/runtime acceptance to reconcile or retire only proven redundant legacy compatibility projections while preserving every consumer, FK reference, migration and historical backup. For retained rows use guarded diff/UPSERT and avoid full deletes on unchanged Save Project. Never delete actual asset files; owner compares SQL row churn, WAL growth, multiwindow saves and reopen.
+
+**شواهد:** [src-tauri/src/main.rs#L153-L199](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/src-tauri/src/main.rs#L153-L199)، [src-tauri/src/project_store.rs#L426-L490](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/src-tauri/src/project_store.rs#L426-L490)
+
+### FND-053 — خطاهای ذخیره و بازیابی فقط در اعلان‌ها نمایش داده می‌شوند و گزارش تشخیصی قابل ارائه ندارند (بدون تسک تکراری؛ پیگیری در TASK-044)
+
+The current UI reports write failures in in-memory failedWrites, error badge, alerts and ad-hoc backup status; startup failure similarly presents a generic alert/export-of-current-state button. The inspected frontend path does not expose a durable read-only, structured redacted incident report with operation, scope, revision, backend, timestamp and non-sensitive error category that the owner can attach to issue diagnosis. This is an observability enhancement for existing TASK-044 truthful recovery and TASK-038 failure reporting, not evidence that all errors are silent.
+
+**معیار پذیرش افزوده به TASK-044:** Extend TASK-044 owner review to provide an opt-in, read-only export of redacted diagnostics for failed startup and storage conflicts (timestamp, backend, scope, revision, error code, retry outcome, safe source version). Exclude payloads, secrets, images, raw private project names and sensitive filesystem paths. Do not replace the canonical DB backup with a diagnostic report and do not invent successful recovery/acceptance.
+
+**شواهد:** [index.html#L5786-L5816](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L5786-L5816)، [index.html#L5954-L5989](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L5954-L5989)، [index.html#L6092-L6096](https://github.com/comboci/NSP-Portfolio-Builder/blob/86a927adf8662768058cbc4f9832530701ddcef2/index.html#L6092-L6096)
+
+### موارد قبلاً ثبت‌شده یا حفاظت‌هایی که نباید تضعیف شوند
+
+- **CAS چندپنجره‌ای:** `TASK-036` محافظ SQLite native و `TASK-039` محافظ IndexedDB browser در سورس دارند. هر دو هنوز نیازمند بررسی Owner هستند و اقدامات پرفورمنس نباید تراکنش revision، جلوگیری از lost updates و fail-closed recovery را حذف کنند.
+- **Fallback مرورگر:** `TASK-042` برای localStorage/IndexedDB split-brain باز است؛ با تسک جدید تکرار نشد.
+- **Failure ledger:** `TASK-038` ذخیره ردشده را ثبت می‌کند؛ مشکل فاز 08 مربوط به استفاده بی‌دلیل از حافظه و نبود گزارش تشخیصی قابل‌اشتراک است، نه بازکردن مجدد خطای قبلی.
+- **Memory و Asset:** بهبود lazy hydration باید با `TASK-041` placeholder تصویر مفقود و `TASK-045` staging فایل شکست‌خورده هماهنگ باشد؛ هیچ Garbage Collection، حذف Asset یا برش محتوای بکاپ خودکار مجاز نشد.
+- **Resource safety:** محدودیت ۸۰ MiB در Import پورتفولیو وجود دارد و تناقض Export/Import آن در `TASK-050` قبلاً ثبت شده است. تسک جدید مخصوص بودجه منابع فایل‌های کامل Workspace و تصاویر مستقل است؛ سازگاری فایل‌های قبلی باید حفظ شود.
+- **تشخیص خطا:** UI فعلی status، alert و پیام‌ها را فراهم می‌کند؛ عدم وجود export تشخیصی redacted یک gap پشتیبانی/عملیاتی است، نه ادعای پنهان‌کردن تمام خطاها.
+
+**Checkpoint:** OBS-059. TASK-067، TASK-068، TASK-069، TASK-070، TASK-071 به `open_state.next_work_record_ids` اضافه شدند. هیچ سورس، نسخه محصول، SQLite schema یا وضعیت Acceptance تغییر نکرد. **مرحله بعد با N: فاز 09 — ممیزی نهایی پوشش TASK-001 تا آخرین تسک، ردیابی یافته‌ها و ماتریس پذیرش مالک.**

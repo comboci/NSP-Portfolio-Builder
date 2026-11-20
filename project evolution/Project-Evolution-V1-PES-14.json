@@ -1429,6 +1429,184 @@
           "TASK-021",
           "DEC-006"
         ]
+      },
+      {
+        "record_id": "FND-047",
+        "title": "Save Page در SQLite بی‌دلیل JSON تمام Workspace را می‌سازد",
+        "detail": "V.queuePageSave() always calls JSON.stringify(page) AND JSON.stringify(state), including all inactive projects and Base64 image libraries, before enqueue. SQLite writePage() only passes the page payload to save_page and never consumes the full `portable` snapshot; it is used exclusively for browser IndexedDB/localStorage monolithic storage. Thus every small native Save Page synchronously allocates an otherwise unused complete workspace copy (potentially multiple queued copies) and spends main-thread CPU scaling with all projects/assets rather than the edited page. This is independent of browser CAS correctness and the existing masked-failure ledger.\nSource evidence: index.html#L5934-L5942; index.html#L5881-L5891; index.html#L5892-L5902; src-tauri/src/main.rs#L214-L252. Source-only; no performance measurements or owner runtime acceptance.",
+        "category": "performance",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-PORTFOLIOS",
+          "SC-PROJECTS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "86a927adf8662768058cbc4f9832530701ddcef2"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-067",
+          "TASK-036",
+          "TASK-038",
+          "TASK-039",
+          "DEC-009",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-048",
+        "title": "خواندن/نوشتن فایل تصاویر در حین نگهداری تراکنش SQLite انجام می‌شود",
+        "detail": "load_project_state() takes Storage(Mutex<Connection>), begins SQLite transaction, then calls hydrate_payload(), which performs filesystem reads, SHA-256 validation and Base64 encoding before committing. save_project() and save_page() call media_store::compact_value inside a SQLite write transaction; store_file may decode files, read existing originals, fsync new temporary files and rename them. Consequently long I/O, hashing and JSON conversions extend transaction/connection lock occupancy, delaying other commands and potentially prolonging WAL reader lifetimes. This source-level lock exposure is independent of the CAS/lost-update safeguards; no latency or contention measurement has been executed.\nSource evidence: src-tauri/src/main.rs#L36-L62; src-tauri/src/main.rs#L111-L125; src-tauri/src/main.rs#L214-L252; src-tauri/src/media_store.rs#L30-L56; src-tauri/src/media_store.rs#L101-L156. Source-only; no performance measurements or owner runtime acceptance.",
+        "category": "performance",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-LIBRARY",
+          "SC-PROJECTS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "86a927adf8662768058cbc4f9832530701ddcef2"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-068",
+          "TASK-031",
+          "TASK-036",
+          "TASK-041",
+          "TASK-045",
+          "DEC-009",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-049",
+        "title": "بارگذاری همه تصاویر به Base64 در حافظه مصرف RAM را با رشد پروژه افزایش می‌دهد",
+        "detail": "hydrate_payload() eagerly replaces every immutable image reference in the entire workspace (including non-active project catalogs, snapshots and tilesJson) with a full Base64 data URL, caches those strings and clones them for repeated references. It then serializes the entire hydrated tree into one string, after which the frontend JSON.parse and v13NormalizeProject deep-copy the complete state. This produces several simultaneously live representations of many image bytes during startup and can amplify memory with repeated references even if pages/assets are not visible. No actual RAM profile or crash measurement was conducted.\nSource evidence: src-tauri/src/media_store.rs#L101-L156; src-tauri/src/main.rs#L45-L62; index.html#L347-L349; index.html#L468-L470; index.html#L556-L564. Source-only; no performance measurements or owner runtime acceptance.",
+        "category": "performance",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-LIBRARY",
+          "SC-PORTFOLIOS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "86a927adf8662768058cbc4f9832530701ddcef2"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-069",
+          "TASK-007",
+          "TASK-041",
+          "TASK-045",
+          "REQ-011",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-050",
+        "title": "فایل JSON کامل و آپلود تصویر بدون بودجه حجم و Decode پردازش می‌شوند",
+        "detail": "Scoped v111ReadBackup enforces an 80 MiB file cap, but global importData() directly awaits file.text(), JSON.parse() and the deep-copy normalizer with no file-length, nesting-depth, array-count or decoded-image budget. Image import prepare(file) similarly reads the whole file as a data URL, decodes it into Image/canvas, then calls file.arrayBuffer() for SHA-256 without an upfront file or pixel quota; native store_file() decodes arbitrarily long Base64 strings. Large or maliciously crafted user-supplied files can cause high peak RAM and a blocked UI or failed process before a clear recoverable validation error. This is a resource-exhaustion exposure, not evidence of code execution or a reproduced crash.\nSource evidence: index.html#L1320-L1332; index.html#L1989-L1995; index.html#L6079-L6080; index.html#L5991-L6003; src-tauri/src/media_store.rs#L30-L37. Source-only; no performance measurements or owner runtime acceptance.",
+        "category": "security",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-LIBRARY",
+          "SC-PROJECTS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "86a927adf8662768058cbc4f9832530701ddcef2"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-070",
+          "TASK-026",
+          "TASK-050",
+          "TASK-047",
+          "REQ-002",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-051",
+        "title": "تمام Thumbnailهای صفحات در هر Render دوباره محاسبه و ساخته می‌شوند",
+        "detail": "v85PageSidebar maps all pages and computes V.resolvePage(p) then V.renderDocument(p,i+1) for every thumbnail. renderDocument resolves the page again and expands image/media markup; global render() replaces the app DOM, and multiple render wrappers refresh the editor even for selection/panel/navigation changes. With many pages/tiles/images, per-interaction work scales with the full portfolio and recreates preview DOM repeatedly; no visible-range virtualization, stable thumbnail cache or per-page invalidation is present in that path. This is an architectural performance finding, not a measured frame rate.\nSource evidence: index.html#L3890-L3910; index.html#L3960-L3962; index.html#L572-L572; index.html#L1591-L1599; index.html#L1803-L1819. Source-only; no performance measurements or owner runtime acceptance.",
+        "category": "performance",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-PROJECTS",
+          "SC-IMAGEEDIT"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "86a927adf8662768058cbc4f9832530701ddcef2"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-071",
+          "TASK-022",
+          "TASK-024",
+          "TASK-025",
+          "TASK-054",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-052",
+        "title": "Save Project همچنان جداول سازگاری Legacy را کامل حذف و بازنویسی می‌کند",
+        "detail": "Although N-03 ownership and N-05 scene projections are incremental, save_project() still issues DELETE FROM on all rows belonging to 'workspace' across image_files, image_refs, scene_links, scene_entities, pages, templates and images, then re-inserts all compatibility rows. These writes occur even for small content changes, creating SQL churn and exacerbating long write transactions, backup/log growth and FK ordering complexity. The existing TASK-031 database optimization/architecture work is a better follow-up owner than duplicating it as a new task.\nAdditional acceptance: Extend TASK-031 source/runtime acceptance to reconcile or retire only proven redundant legacy compatibility projections while preserving every consumer, FK reference, migration and historical backup. For retained rows use guarded diff/UPSERT and avoid full deletes on unchanged Save Project. Never delete actual asset files; owner compares SQL row churn, WAL growth, multiwindow saves and reopen.\nSource evidence: src-tauri/src/main.rs#L153-L199; src-tauri/src/project_store.rs#L426-L490. Source-only.",
+        "category": "performance",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-PROJECTS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "86a927adf8662768058cbc4f9832530701ddcef2"
+        },
+        "implementation_state": "covered_by_existing_TASK-031_follow_up",
+        "related_record_ids": [
+          "TASK-031",
+          "TASK-033",
+          "TASK-035",
+          "TASK-036",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-053",
+        "title": "خطاهای ذخیره و بازیابی فقط در اعلان‌ها نمایش داده می‌شوند و گزارش تشخیصی قابل ارائه ندارند",
+        "detail": "The current UI reports write failures in in-memory failedWrites, error badge, alerts and ad-hoc backup status; startup failure similarly presents a generic alert/export-of-current-state button. The inspected frontend path does not expose a durable read-only, structured redacted incident report with operation, scope, revision, backend, timestamp and non-sensitive error category that the owner can attach to issue diagnosis. This is an observability enhancement for existing TASK-044 truthful recovery and TASK-038 failure reporting, not evidence that all errors are silent.\nAdditional acceptance: Extend TASK-044 owner review to provide an opt-in, read-only export of redacted diagnostics for failed startup and storage conflicts (timestamp, backend, scope, revision, error code, retry outcome, safe source version). Exclude payloads, secrets, images, raw private project names and sensitive filesystem paths. Do not replace the canonical DB backup with a diagnostic report and do not invent successful recovery/acceptance.\nSource evidence: index.html#L5786-L5816; index.html#L5954-L5989; index.html#L6092-L6096. Source-only.",
+        "category": "operations",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-PROJECTS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "86a927adf8662768058cbc4f9832530701ddcef2"
+        },
+        "implementation_state": "covered_by_existing_TASK-044_follow_up",
+        "related_record_ids": [
+          "TASK-044",
+          "TASK-038",
+          "TASK-039",
+          "DEC-006"
+        ]
       }
     ],
     "business_rules": [
@@ -2774,7 +2952,7 @@
       {
         "record_id": "TASK-031",
         "title": "N-01: SQLite read-query composite indexes and incremental database architecture plan",
-        "detail": "Add non-unique compound indexes for existing project/portfolio/page and shared template ORDER BY query shapes, using an additive schema migration. Preserve all existing rows, snapshots, foreign keys, images, backups, and no physical asset deletion. Record subsequent N-02..N-07 architectural work in DATABASE_ARCHITECTURE_ROADMAP_FA.md. DEC-006 prohibits assistant-run tests/builds; owner runs DB migration, query-plan and Windows/Tauri review.",
+        "detail": "Add non-unique compound indexes for existing project/portfolio/page and shared template ORDER BY query shapes, using an additive schema migration. Preserve all existing rows, snapshots, foreign keys, images, backups, and no physical asset deletion. Record subsequent N-02..N-07 architectural work in DATABASE_ARCHITECTURE_ROADMAP_FA.md. DEC-006 prohibits assistant-run tests/builds; owner runs DB migration, query-plan and Windows/Tauri review.\n\nRetrospective audit phase 08 FND-052: Although N-03 ownership and N-05 scene projections are incremental, save_project() still issues DELETE FROM on all rows belonging to 'workspace' across image_files, image_refs, scene_links, scene_entities, pages, templates and images, then re-inserts all compatibility rows. These writes occur even for small content changes, creating SQL churn and exacerbating long write transactions, backup/log growth and FK ordering complexity. The existing TASK-031 database optimization/architecture work is a better follow-up owner than duplicating it as a new task.\nAdditional acceptance: Extend TASK-031 source/runtime acceptance to reconcile or retire only proven redundant legacy compatibility projections while preserving every consumer, FK reference, migration and historical backup. For retained rows use guarded diff/UPSERT and avoid full deletes on unchanged Save Project. Never delete actual asset files; owner compares SQL row churn, WAL growth, multiwindow saves and reopen.",
         "scope_refs": [
           "SC-STORAGE",
           "SC-PROJECTS",
@@ -2785,7 +2963,8 @@
           "TASK-007",
           "TASK-014",
           "TASK-023",
-          "DEC-006"
+          "DEC-006",
+          "FND-052"
         ],
         "status": "in_progress",
         "provenance": {
@@ -2807,7 +2986,8 @@
           "DATABASE_ARCHITECTURE_ROADMAP_FA.md"
         ],
         "evidence_refs": [
-          "OBS-035"
+          "OBS-035",
+          "FND-052"
         ]
       },
       {
@@ -3309,7 +3489,7 @@
       {
         "record_id": "TASK-044",
         "title": "Make startup failure recovery export truthful and non-destructive",
-        "detail": "در خطای load_project_state و startup، catch index.html:5873 دکمه «خروجی JSON از داده فعلی» را به download() وصل می‌کند؛ state اولیه از localStorage یا defaultState ساخته شده و در این مسیر لزوماً از SQLite شکست‌خورده بازیابی نشده است. download() از state فعلی خروجی می‌گیرد و هیچ کپی خام از DB/WAL/Assets یا Snapshot قابل اعتبارسنجی ارائه نمی‌کند. بنابراین خروجی می‌تواند نسخه معتبر پیشین را نمایندگی نکند؛ در خطای Asset این ریسک با TASK-041 هم‌پوشانی دارد ولی مسئله پیام/منبع ریکاوری مستقل است.\n\nAcceptance criteria: در خطای Startup، خروجی را صریحاً «حافظه محلی/پیش‌فرض ـ نه بازیابی از SQLite» معرفی و خطر عدم تطابق را هشدار بده؛ تا بازیابی معتبر صورت نگرفته از ذخیره خودکار و ادعای موفقیت جلوگیری کن. مسیر امن و فقط‌خواندنی برای نگهداری کپی واقعی storage/ شامل SQLite/WAL/SHM و assets و/یا raw persisted payload طراحی کن؛ اگر خواندن ممکن نیست راهنمای بازیابی کامل بده؛ نه دیتابیس قبلی بازنویسی شود و نه خروجی ساختگی به عنوان Backup اصلی ارائه شود.\n\nSource evidence: index.html#L556-L564; index.html#L1544-L1547; index.html#L5869-L5873. No Build/Test/static checker by assistant according to DEC-006. Preserve migrations and all existing data.",
+        "detail": "در خطای load_project_state و startup، catch index.html:5873 دکمه «خروجی JSON از داده فعلی» را به download() وصل می‌کند؛ state اولیه از localStorage یا defaultState ساخته شده و در این مسیر لزوماً از SQLite شکست‌خورده بازیابی نشده است. download() از state فعلی خروجی می‌گیرد و هیچ کپی خام از DB/WAL/Assets یا Snapshot قابل اعتبارسنجی ارائه نمی‌کند. بنابراین خروجی می‌تواند نسخه معتبر پیشین را نمایندگی نکند؛ در خطای Asset این ریسک با TASK-041 هم‌پوشانی دارد ولی مسئله پیام/منبع ریکاوری مستقل است.\n\nAcceptance criteria: در خطای Startup، خروجی را صریحاً «حافظه محلی/پیش‌فرض ـ نه بازیابی از SQLite» معرفی و خطر عدم تطابق را هشدار بده؛ تا بازیابی معتبر صورت نگرفته از ذخیره خودکار و ادعای موفقیت جلوگیری کن. مسیر امن و فقط‌خواندنی برای نگهداری کپی واقعی storage/ شامل SQLite/WAL/SHM و assets و/یا raw persisted payload طراحی کن؛ اگر خواندن ممکن نیست راهنمای بازیابی کامل بده؛ نه دیتابیس قبلی بازنویسی شود و نه خروجی ساختگی به عنوان Backup اصلی ارائه شود.\n\nSource evidence: index.html#L556-L564; index.html#L1544-L1547; index.html#L5869-L5873. No Build/Test/static checker by assistant according to DEC-006. Preserve migrations and all existing data.\n\nRetrospective audit phase 08 FND-053: The current UI reports write failures in in-memory failedWrites, error badge, alerts and ad-hoc backup status; startup failure similarly presents a generic alert/export-of-current-state button. The inspected frontend path does not expose a durable read-only, structured redacted incident report with operation, scope, revision, backend, timestamp and non-sensitive error category that the owner can attach to issue diagnosis. This is an observability enhancement for existing TASK-044 truthful recovery and TASK-038 failure reporting, not evidence that all errors are silent.\nAdditional acceptance: Extend TASK-044 owner review to provide an opt-in, read-only export of redacted diagnostics for failed startup and storage conflicts (timestamp, backend, scope, revision, error code, retry outcome, safe source version). Exclude payloads, secrets, images, raw private project names and sensitive filesystem paths. Do not replace the canonical DB backup with a diagnostic report and do not invent successful recovery/acceptance.",
         "scope_refs": [
           "SC-STORAGE",
           "SC-PROJECTS",
@@ -3320,7 +3500,8 @@
           "TASK-041",
           "TASK-037",
           "TASK-023",
-          "DEC-006"
+          "DEC-006",
+          "FND-053"
         ],
         "priority": "P1",
         "status": "planned",
@@ -3333,7 +3514,8 @@
         "source_version": "V126",
         "updated_on": "2026-11-20",
         "evidence_refs": [
-          "FND-021"
+          "FND-021",
+          "FND-053"
         ],
         "result": "Not implemented. Retrospective source audit phase 02; owner runtime acceptance pending."
       },
@@ -4058,6 +4240,167 @@
           "FND-045"
         ],
         "result": "Not implemented; source-only print/PDF audit phase 07; owner acceptance pending."
+      },
+      {
+        "record_id": "TASK-067",
+        "title": "Avoid serializing the entire workspace for every native scoped Save Page",
+        "detail": "V.queuePageSave() always calls JSON.stringify(page) AND JSON.stringify(state), including all inactive projects and Base64 image libraries, before enqueue. SQLite writePage() only passes the page payload to save_page and never consumes the full `portable` snapshot; it is used exclusively for browser IndexedDB/localStorage monolithic storage. Thus every small native Save Page synchronously allocates an otherwise unused complete workspace copy (potentially multiple queued copies) and spends main-thread CPU scaling with all projects/assets rather than the edited page. This is independent of browser CAS correctness and the existing masked-failure ledger.\n\nAcceptance criteria: Separate native-vs-browser serialization at enqueue time: in SQLite mode build only the page JSON and scoped metadata; preserve the full portable workspace JSON only when browser backend requires it. Keep status/ACK/failure-ledger identity, revision CAS, Save Page vs Save Project boundaries and Save/Discard/Cancel behavior. Avoid queued stale data and preserve owner portability/export semantics. Owner runs large multi-project repeated Save Page/reopen tests; record performance and memory comparisons before acceptance.\n\nSource evidence: index.html#L5934-L5942; index.html#L5881-L5891; index.html#L5892-L5902; src-tauri/src/main.rs#L214-L252. Preserve current source and snapshots. DEC-006: no Build/Test/static-check by assistant.",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-PORTFOLIOS",
+          "SC-PROJECTS"
+        ],
+        "related_record_ids": [
+          "FND-047",
+          "TASK-036",
+          "TASK-038",
+          "TASK-039",
+          "DEC-009",
+          "DEC-006"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "86a927adf8662768058cbc4f9832530701ddcef2"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V131",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-047"
+        ],
+        "result": "Not implemented. Source-only audit phase 08; owner runtime/performance acceptance pending."
+      },
+      {
+        "record_id": "TASK-068",
+        "title": "Keep long asset-file I/O outside SQLite transaction and connection lock where safe",
+        "detail": "load_project_state() takes Storage(Mutex<Connection>), begins SQLite transaction, then calls hydrate_payload(), which performs filesystem reads, SHA-256 validation and Base64 encoding before committing. save_project() and save_page() call media_store::compact_value inside a SQLite write transaction; store_file may decode files, read existing originals, fsync new temporary files and rename them. Consequently long I/O, hashing and JSON conversions extend transaction/connection lock occupancy, delaying other commands and potentially prolonging WAL reader lifetimes. This source-level lock exposure is independent of the CAS/lost-update safeguards; no latency or contention measurement has been executed.\n\nAcceptance criteria: Design a snapshot-consistent, revision-guarded two-phase read/write path: hold SQLite transactions for validated metadata and atomic revision/dependency changes, perform bounded large file work outside the critical lock whenever safe, and verify the immutable hash before references become committed. Reconcile staging/recovery with TASK-045; never auto-delete referenced files, bypass CAS or create incomplete backups. Owner evaluates two windows, slow asset storage, interruption/failure, WAL checkpoint and load/save latency with same data set.\n\nSource evidence: src-tauri/src/main.rs#L36-L62; src-tauri/src/main.rs#L111-L125; src-tauri/src/main.rs#L214-L252; src-tauri/src/media_store.rs#L30-L56; src-tauri/src/media_store.rs#L101-L156. Preserve current source and snapshots. DEC-006: no Build/Test/static-check by assistant.",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-LIBRARY",
+          "SC-PROJECTS"
+        ],
+        "related_record_ids": [
+          "FND-048",
+          "TASK-031",
+          "TASK-036",
+          "TASK-041",
+          "TASK-045",
+          "DEC-009",
+          "DEC-006"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "86a927adf8662768058cbc4f9832530701ddcef2"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V131",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-048"
+        ],
+        "result": "Not implemented. Source-only audit phase 08; owner runtime/performance acceptance pending."
+      },
+      {
+        "record_id": "TASK-069",
+        "title": "Reduce eager full-workspace Base64 hydration and image-memory amplification",
+        "detail": "hydrate_payload() eagerly replaces every immutable image reference in the entire workspace (including non-active project catalogs, snapshots and tilesJson) with a full Base64 data URL, caches those strings and clones them for repeated references. It then serializes the entire hydrated tree into one string, after which the frontend JSON.parse and v13NormalizeProject deep-copy the complete state. This produces several simultaneously live representations of many image bytes during startup and can amplify memory with repeated references even if pages/assets are not visible. No actual RAM profile or crash measurement was conducted.\n\nAcceptance criteria: Load canonical workspace metadata, visible thumbnails and immutable references first; resolve original image bytes on demand with a bounded reuse/LRU strategy and deduplicated content-addressed URLs/handles, while keeping portable JSON exports explicitly complete and integrity-checked. Preserve public/private permission boundaries, frozen snapshots, Tile/Stash references, original hash immutability, and the TASK-041 missing-file placeholder/recovery contract. Owner verifies large catalog across inactive projects and memory footprint before/after without dropping source content.\n\nSource evidence: src-tauri/src/media_store.rs#L101-L156; src-tauri/src/main.rs#L45-L62; index.html#L347-L349; index.html#L468-L470; index.html#L556-L564. Preserve current source and snapshots. DEC-006: no Build/Test/static-check by assistant.",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-LIBRARY",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "FND-049",
+          "TASK-007",
+          "TASK-041",
+          "TASK-045",
+          "REQ-011",
+          "DEC-006"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "86a927adf8662768058cbc4f9832530701ddcef2"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V131",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-049"
+        ],
+        "result": "Not implemented. Source-only audit phase 08; owner runtime/performance acceptance pending."
+      },
+      {
+        "record_id": "TASK-070",
+        "title": "Bound untrusted full-workspace JSON restore and image-upload resource consumption",
+        "detail": "Scoped v111ReadBackup enforces an 80 MiB file cap, but global importData() directly awaits file.text(), JSON.parse() and the deep-copy normalizer with no file-length, nesting-depth, array-count or decoded-image budget. Image import prepare(file) similarly reads the whole file as a data URL, decodes it into Image/canvas, then calls file.arrayBuffer() for SHA-256 without an upfront file or pixel quota; native store_file() decodes arbitrarily long Base64 strings. Large or maliciously crafted user-supplied files can cause high peak RAM and a blocked UI or failed process before a clear recoverable validation error. This is a resource-exhaustion exposure, not evidence of code execution or a reproduced crash.\n\nAcceptance criteria: Define a compatible import/upload resource contract for full workspaces and scoped backups: preflight byte size, decoded image pixels/dimensions, object/depth count and aggregate asset size before heavy allocation; use streaming/chunked decode and background-safe work where supported. Set explainable limits and offer an approved large-package path instead of silently rejecting legitimate previous backups; honor TASK-050 round-trip compatibility. Fail closed without altering active state, source assets, backup snapshots or existing user data. Owner validates oversized JSON, deep nesting, huge pixels and normal valid files in browser/Tauri.\n\nSource evidence: index.html#L1320-L1332; index.html#L1989-L1995; index.html#L6079-L6080; index.html#L5991-L6003; src-tauri/src/media_store.rs#L30-L37. Preserve current source and snapshots. DEC-006: no Build/Test/static-check by assistant.",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-LIBRARY",
+          "SC-PROJECTS"
+        ],
+        "related_record_ids": [
+          "FND-050",
+          "TASK-026",
+          "TASK-050",
+          "TASK-047",
+          "REQ-002",
+          "DEC-006"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "86a927adf8662768058cbc4f9832530701ddcef2"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V131",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-050"
+        ],
+        "result": "Not implemented. Source-only audit phase 08; owner runtime/performance acceptance pending."
+      },
+      {
+        "record_id": "TASK-071",
+        "title": "Cache or virtualize portfolio page thumbnails instead of fully rebuilding all pages on every render",
+        "detail": "v85PageSidebar maps all pages and computes V.resolvePage(p) then V.renderDocument(p,i+1) for every thumbnail. renderDocument resolves the page again and expands image/media markup; global render() replaces the app DOM, and multiple render wrappers refresh the editor even for selection/panel/navigation changes. With many pages/tiles/images, per-interaction work scales with the full portfolio and recreates preview DOM repeatedly; no visible-range virtualization, stable thumbnail cache or per-page invalidation is present in that path. This is an architectural performance finding, not a measured frame rate.\n\nAcceptance criteria: Render the page navigator incrementally: cache thumbnails by page/template/relevant style/asset revision; virtualize offscreen thumbnails or use lightweight previews; invalidate only changed page and downstream page-number/ordering dependencies. Keep correct drag/drop, keyboard reorder, selected focus, public/private image updates and page numbering, no stale previews after Save/Import/reopen. Owner runs 10/100/500-page fixtures with representative image tiles and checks memory, interaction latency and visual equivalence.\n\nSource evidence: index.html#L3890-L3910; index.html#L3960-L3962; index.html#L572-L572; index.html#L1591-L1599; index.html#L1803-L1819. Preserve current source and snapshots. DEC-006: no Build/Test/static-check by assistant.",
+        "scope_refs": [
+          "SC-PORTFOLIOS",
+          "SC-PROJECTS",
+          "SC-IMAGEEDIT"
+        ],
+        "related_record_ids": [
+          "FND-051",
+          "TASK-022",
+          "TASK-024",
+          "TASK-025",
+          "TASK-054",
+          "DEC-006"
+        ],
+        "priority": "P2",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "86a927adf8662768058cbc4f9832530701ddcef2"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V131",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-051"
+        ],
+        "result": "Not implemented. Source-only audit phase 08; owner runtime/performance acceptance pending."
       }
     ],
     "evidence": [],
@@ -5429,6 +5772,42 @@
           "source_revision_ref": "88971c04776c2e9b32cb3e1a39f6af06d70a7077"
         },
         "implementation_state": "source_candidate_owner_runtime_pending"
+      },
+      {
+        "record_id": "OBS-059",
+        "title": "Retrospective audit phase 08: performance, memory, untrusted input, diagnostics and concurrent windows",
+        "status": "source_only_review_completed",
+        "detail": "Reviewed live V131 source 86a927adf8662768058cbc4f9832530701ddcef2: frontend scoped Save Page serialization, all-page thumbnail rendering, eager immutable asset hydration, SQLite transaction and filesystem I/O, full JSON/image import resource limits, compatibility projection churn and error observability. Created findings FND-047, FND-048, FND-049, FND-050, FND-051 as planned tasks TASK-067, TASK-068, TASK-069, TASK-070, TASK-071. Linked FND-052 to existing TASK-031 and FND-053 to TASK-044 instead of duplicate tasks. Existing V131 TASK-039 IndexedDB CAS and TASK-038 failure ledger are source candidates, not runtime-accepted. No Build/Test/static checker, benchmark, browser/Tauri execution or owner acceptance. Next owner N = phase 09 traceability closure and owner acceptance matrix.",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-PORTFOLIOS",
+          "SC-LIBRARY",
+          "SC-PROJECTS"
+        ],
+        "related_record_ids": [
+          "TASK-067",
+          "TASK-068",
+          "TASK-069",
+          "TASK-070",
+          "TASK-071",
+          "FND-047",
+          "FND-048",
+          "FND-049",
+          "FND-050",
+          "FND-051",
+          "FND-052",
+          "FND-053",
+          "TASK-031",
+          "TASK-044",
+          "TASK-039",
+          "DEC-006"
+        ],
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "86a927adf8662768058cbc4f9832530701ddcef2"
+        },
+        "implementation_state": "audit_documented_and_committed_code_untouched"
       }
     ]
   },
@@ -5507,6 +5886,10 @@
       "TASK-053",
       "TASK-064",
       "TASK-065",
+      "TASK-067",
+      "TASK-068",
+      "TASK-069",
+      "TASK-070",
       "TASK-054",
       "TASK-055",
       "TASK-056",
@@ -5516,6 +5899,7 @@
       "TASK-062",
       "TASK-063",
       "TASK-066",
+      "TASK-071",
       "TASK-038",
       "TASK-005",
       "TASK-006",
@@ -5556,7 +5940,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V129 TASK-046 source candidate: legacy v30 JSON export now routes to scoped v111 exporter, whitelisting one portfolio and referenced private/public images with a content manifest and preview. Full-backup option explicitly warns before exporting all projects; SQLite schema 12 unchanged; runtime/exported JSON owner review pending. TASK-046 remains in_progress, not completed; next eligible planned task TASK-061 pending fresh main/PE check.\nV128 TASK-060 source candidate: removed orphan IIFE-level duplicated M.place fragment causing out-of-scope ReferenceError; retains M.place public-template authorization and non-destructive image/Tile replacement, with all assets, SQLite schema-12 migrations/backups and concurrent phase-06 findings intact. Owner browser/Tauri image bootstrap, picker, Tile/Crop/Mask and PDF review pending; no Build/Test/static check. Next eligible planned TASK-046; TASK-060 remains in_progress pending owner acceptance.\nV127 TASK-038 source candidate on 503ab59d816d: failed queued writes survive later unrelated successes; global flush/leave/retry do not report false Saved. Explicit retry uses latest in-memory page/project under existing CAS and refuses stale/cross-project replay; public-image rename errors require an explicit repeat action. Owner runtime/Build/Test/static-check not performed; next eligible planned task TASK-046. V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nPhase 04 UI/UX retrospective source audit completed: FND-029, FND-030, FND-031, FND-032, FND-033 mapped to planned TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Verified source gaps: thumbnail reorder persists wrong Save scope, print reads preview ahead of async guarded navigation, outer shell fixed-width rail on narrow widths, project/thumbnail focus & semantics, hidden file inputs keyboard accessibility. Prior TASK-022..026 and TASK-030 not duplicated; owner Runtime/Acceptance pending. Next N = phase 05 designer/inheritance/layers/history; evidence in project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nRetrospective phase 05 designer source audit complete at 1207b87689523ff3b095df45ade70217b9b0838b: FND-034, FND-035, FND-036 mapped to TASK-057, TASK-058, TASK-059 for pointer Region Block containment, rotated-corner geometry guards for Align/Duplicate and rigid multi-object Guide snapping. FND-037 linked to prior TASK-012 for missing History coverage on Guides/page background/content-flow, no duplicate task. No Build/Test/runtime/Acceptance; next owner N = phase 06 Image Library/ownership/tiles.\nPhase 06 asset/Tile source-only audit at 7c3a53732082f1d36e8edb5a2c1e6858ca710715: FND-038, FND-039, FND-040, FND-041 mapped to planned TASK-060, TASK-061, TASK-062, TASK-063. Critical TASK-060 removes orphan top-level forceNew ReferenceError aborting media initialization; TASK-061 preserves immutable library originals; TASK-062, TASK-063 enforce Tile geometry and keyboard polygon masks. FND-042 attached to existing TASK-020/029 for Crop/filters. V127 TASK-038 source fix remains runtime unverified. No Build/Test/Runtime/Acceptance, next user N phase 07 Print/PDF.\nPhase 07 PDF/Print source-only audit at eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07: FND-043, FND-044, FND-045 mapped to planned TASK-064, TASK-065, TASK-066 for false missingImage on Tile container/hidden stash, print media load failure/timeout re-preflight, hidden pageNumber/editor-only block false print warnings. FND-046 attached to TASK-029 to correct objectFit-dependent DPI. Existing TASK-053 print navigation race remains; no Build/Test/PDF/Runtime/Acceptance; next user N phase 08 performance/security/reliability.",
+    "current_summary": "V129 TASK-046 source candidate: legacy v30 JSON export now routes to scoped v111 exporter, whitelisting one portfolio and referenced private/public images with a content manifest and preview. Full-backup option explicitly warns before exporting all projects; SQLite schema 12 unchanged; runtime/exported JSON owner review pending. TASK-046 remains in_progress, not completed; next eligible planned task TASK-061 pending fresh main/PE check.\nV128 TASK-060 source candidate: removed orphan IIFE-level duplicated M.place fragment causing out-of-scope ReferenceError; retains M.place public-template authorization and non-destructive image/Tile replacement, with all assets, SQLite schema-12 migrations/backups and concurrent phase-06 findings intact. Owner browser/Tauri image bootstrap, picker, Tile/Crop/Mask and PDF review pending; no Build/Test/static check. Next eligible planned TASK-046; TASK-060 remains in_progress pending owner acceptance.\nV127 TASK-038 source candidate on 503ab59d816d: failed queued writes survive later unrelated successes; global flush/leave/retry do not report false Saved. Explicit retry uses latest in-memory page/project under existing CAS and refuses stale/cross-project replay; public-image rename errors require an explicit repeat action. Owner runtime/Build/Test/static-check not performed; next eligible planned task TASK-046. V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nPhase 04 UI/UX retrospective source audit completed: FND-029, FND-030, FND-031, FND-032, FND-033 mapped to planned TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Verified source gaps: thumbnail reorder persists wrong Save scope, print reads preview ahead of async guarded navigation, outer shell fixed-width rail on narrow widths, project/thumbnail focus & semantics, hidden file inputs keyboard accessibility. Prior TASK-022..026 and TASK-030 not duplicated; owner Runtime/Acceptance pending. Next N = phase 05 designer/inheritance/layers/history; evidence in project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nRetrospective phase 05 designer source audit complete at 1207b87689523ff3b095df45ade70217b9b0838b: FND-034, FND-035, FND-036 mapped to TASK-057, TASK-058, TASK-059 for pointer Region Block containment, rotated-corner geometry guards for Align/Duplicate and rigid multi-object Guide snapping. FND-037 linked to prior TASK-012 for missing History coverage on Guides/page background/content-flow, no duplicate task. No Build/Test/runtime/Acceptance; next owner N = phase 06 Image Library/ownership/tiles.\nPhase 06 asset/Tile source-only audit at 7c3a53732082f1d36e8edb5a2c1e6858ca710715: FND-038, FND-039, FND-040, FND-041 mapped to planned TASK-060, TASK-061, TASK-062, TASK-063. Critical TASK-060 removes orphan top-level forceNew ReferenceError aborting media initialization; TASK-061 preserves immutable library originals; TASK-062, TASK-063 enforce Tile geometry and keyboard polygon masks. FND-042 attached to existing TASK-020/029 for Crop/filters. V127 TASK-038 source fix remains runtime unverified. No Build/Test/Runtime/Acceptance, next user N phase 07 Print/PDF.\nPhase 07 PDF/Print source-only audit at eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07: FND-043, FND-044, FND-045 mapped to planned TASK-064, TASK-065, TASK-066 for false missingImage on Tile container/hidden stash, print media load failure/timeout re-preflight, hidden pageNumber/editor-only block false print warnings. FND-046 attached to TASK-029 to correct objectFit-dependent DPI. Existing TASK-053 print navigation race remains; no Build/Test/PDF/Runtime/Acceptance; next user N phase 08 performance/security/reliability.\nPhase 08 performance/security source-only audit (V131, 86a927adf8662768058cbc4f9832530701ddcef2): FND-047, FND-048, FND-049, FND-050, FND-051 mapped to planned TASK-067, TASK-068, TASK-069, TASK-070, TASK-071 for SQLite native scoped page serializer, long critical-section media IO, eager base64 memory amplification, unbounded JSON/image import budgets and unvirtualized thumbnails. Additional FND-052 attached to existing TASK-031 for full legacy compat rewrite and FND-053 attached to existing TASK-044 for redacted diagnostics. V131 Browser IndexedDB CAS TASK-039 code status unchanged, runtime/acceptance not performed; next owner N = phase 09 final traceability and acceptance matrix.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
