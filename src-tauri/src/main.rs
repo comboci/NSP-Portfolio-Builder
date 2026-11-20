@@ -27,6 +27,17 @@ fn load_project(db: State<'_, Storage>, root: State<'_, AssetRoot>) -> Result<Op
     }).transpose()
 }
 
+
+/* V110 TASK-027: only metadata changes; publication, identity and immutable
+   original bytes are never revoked or replaced by this command. */
+#[tauri::command]
+fn rename_public_image(
+    db: State<'_, Storage>, id: String, name: String,
+) -> Result<(), String> {
+    let mut conn = db.0.lock().map_err(error)?;
+    image_ownership::rename_public_metadata(&mut conn, &id, &name)
+}
+
 #[tauri::command]
 fn save_project(
     db: State<'_, Storage>, root: State<'_, AssetRoot>, payload: String,
@@ -249,7 +260,7 @@ fn main() {
             Ok(())
         })
         .invoke_handler(tauri::generate_handler![
-            load_project, save_project, list_backups, read_backup, create_backup, list_named_backups, read_named_backup,
+            load_project, save_project, rename_public_image, list_backups, read_backup, create_backup, list_named_backups, read_named_backup,
         ])
         .run(tauri::generate_context!())
         .expect("Failed to start NSP Portfolio Builder");

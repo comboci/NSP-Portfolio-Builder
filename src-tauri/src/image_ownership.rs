@@ -1,6 +1,6 @@
 //! V79: physical assets remain immutable; project ownership is a separate relation.
 //! Publishing is one-way. Deleting a project never deletes asset bytes.
-use rusqlite::{params, Connection, Transaction};
+use rusqlite::{params, Connection, OptionalExtension, Transaction};
 use serde_json::Value;
 use std::collections::{HashMap, HashSet};
 
@@ -181,6 +181,34 @@ pub fn sync_backup_references(tx: &Transaction<'_>) -> Result<(), String> {
     }
     Ok(())
 }
+// V110: Rename public metadata in its canonical row, without changing
+// ownership, source hash, published timestamp, image usage, or backups.
+pub fn rename_public_metadata(db:&mut Connection,id:&str,name:&str)->Result<(),String>{
+    let name=name.trim();
+    if id.trim().is_empty()||name.is_empty()||name.chars().count()>120||
+       name.chars().any(|ch|ch.is_control()){
+        return Err("Invalid public image identity or name".into());
+    }
+    let tx=db.transaction().map_err(err)?;
+    let stored:Option<(String,String)>=tx.query_row(
+        "SELECT asset_hash,payload FROM image_public_catalog WHERE id=?1",
+        [id],|row|Ok((row.get(0)?,row.get(1)?))
+    ).optional().map_err(err)?;
+    let (original_hash,raw)=stored.ok_or("Public image not found")?;
+    let mut payload:Value=serde_json::from_str(&raw).map_err(err)?;
+    if payload.get("id").and_then(Value::as_str)!=Some(id)||
+       hash_of(&payload)?!=original_hash{
+        return Err("Stored public image identity/hash mismatch".into());
+    }
+    payload["name"]=Value::String(name.to_owned());
+    let changed=tx.execute(
+        "UPDATE image_public_catalog SET payload=?1 WHERE id=?2 AND asset_hash=?3",
+        params![payload.to_string(),id,original_hash]
+    ).map_err(err)?;
+    if changed!=1{return Err("Public image rename was not saved".into());}
+    tx.commit().map_err(err)
+}
+
 pub fn read_public_catalog(db:&Connection)->Result<Vec<Value>,String>{
     let mut stmt=db.prepare("SELECT payload FROM image_public_catalog ORDER BY published_at,id").map_err(err)?;
     let rows=stmt.query_map([],|r|r.get::<_,String>(0)).map_err(err)?;
