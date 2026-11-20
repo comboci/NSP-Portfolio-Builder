@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "131",
-  "basedOnMainCommitBeforeChange": "88971c04776c2e9b32cb3e1a39f6af06d70a7077",
+  "plannedForVersion": "132",
+  "basedOnMainCommitBeforeChange": "4133d23cd3bb4de9f70037acb90bb82db056726a",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -23,11 +23,12 @@
     "V128 TASK-060: single M.place implementation, no orphan image-placement statements at module top level, image APIs registered after method",
     "V129 TASK-046: all single-portfolio export actions use scoped whitelist serializer, reference-only image inclusion, manifest preview and full-backup disclosure warning",
     "V130 TASK-061: original library assets keep immutable IDs/hash/source, separate imported records, opt-in single selected element/Tile binding audit; no mass relinking",
-    "V131 TASK-039: browser IndexedDB v2 non-destructive upgrade, atomic revision compare-and-write for Save Page/Project, stale tab fail-closed recovery and JSON export/reload; localStorage fallback remains separate"
+    "V131 TASK-039: browser IndexedDB v2 non-destructive upgrade, atomic revision compare-and-write for Save Page/Project, stale tab fail-closed recovery and JSON export/reload; localStorage fallback remains separate",
+    "V132 TASK-041: normal native workspace degraded image preview, missing-hash warning, read-only save guard and incomplete export disclosure; backup inspection/restore remain strict"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V131 TASK-039 browser transaction CAS is source-only. Owner must review two-tab conflicts, legacy v1 upgrade, backup/restore, and fallback. Assistant did not run Build/Test/static checker/browser/Tauri runtime."
+  "note": "V132 TASK-041 is source-only. Owner must verify missing/corrupt/private/public/Tile originals and full recovery; assistant did not run Build/Test/static checker/runtime."
 }

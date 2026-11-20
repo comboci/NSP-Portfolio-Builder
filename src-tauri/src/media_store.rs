@@ -156,6 +156,94 @@ pub fn hydrate_payload(db: &Connection, root: &Path, payload: &str) -> Result<St
     serde_json::to_string(&value).map_err(error)
 }
 
+// TASK-041: degraded display for normal workspace only; backup reads stay strict.
+fn unavailable_image(hash: &str, missing: &mut HashSet<String>) -> String {
+    missing.insert(hash.to_owned());
+    let svg = format!(
+        r##"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400"><rect width="600" height="400" fill="#eef2f4"/><rect x="10" y="10" width="580" height="380" fill="none" stroke="#ab5960" stroke-width="3" stroke-dasharray="12 8"/><text x="300" y="176" font-size="29" fill="#802e35" text-anchor="middle">Image unavailable</text><text x="300" y="218" font-size="18" fill="#555" text-anchor="middle">Original {} missing or corrupt</text></svg>"##,
+        &hash[..12]
+    );
+    format!("data:image/svg+xml;base64,{}", STANDARD.encode(svg.as_bytes()))
+}
+
+fn workspace_image(
+    db: &Connection, root: &Path, hash: &str,
+    cache: &mut HashMap<String, String>, missing: &mut HashSet<String>,
+) -> Result<String, String> {
+    validate_hash(hash)?;
+    if missing.contains(hash) { return Ok(unavailable_image(hash, missing)); }
+    if let Some(found) = cache.get(hash) { return Ok(found.clone()); }
+    // SQL errors, malformed references and unsafe paths must not be hidden.
+    let record: Option<(String, String, i64)> = db.query_row(
+        "SELECT mime,relative_path,byte_length FROM asset_files WHERE hash=?1",
+        [hash], |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?)),
+    ).optional().map_err(error)?;
+    let Some((mime, relative, length)) = record else {
+        return Ok(unavailable_image(hash, missing));
+    };
+    let Some(ext) = extension(&mime) else {
+        return Ok(unavailable_image(hash, missing));
+    };
+    if relative != format!("assets/{hash}.{ext}") {
+        return Err("Unsafe asset path in database".into());
+    }
+    let bytes = match fs::read(root.join(relative)) {
+        Ok(bytes) => bytes,
+        Err(_) => return Ok(unavailable_image(hash, missing)),
+    };
+    if length < 0 || bytes.len() as i64 != length || !signature_ok(&mime, &bytes)
+        || format!("{:x}", Sha256::digest(&bytes)) != hash {
+        return Ok(unavailable_image(hash, missing));
+    }
+    let data = format!("data:{mime};base64,{}", STANDARD.encode(&bytes));
+    cache.insert(hash.to_owned(), data.clone());
+    Ok(data)
+}
+
+fn hydrate_workspace_inner(
+    db: &Connection, root: &Path, value: &mut Value,
+    cache: &mut HashMap<String, String>, missing: &mut HashSet<String>,
+) -> Result<(), String> {
+    match value {
+        Value::String(s) => {
+            if let Some(hash) = s.strip_prefix(REF_PREFIX) {
+                *s = workspace_image(db, root, hash, cache, missing)?;
+            }
+        }
+        Value::Array(items) => for item in items {
+            hydrate_workspace_inner(db, root, item, cache, missing)?;
+        },
+        Value::Object(props) => for (name, item) in props.iter_mut() {
+            if name == "tilesJson" {
+                if let Value::String(raw) = item {
+                    if raw.contains(REF_PREFIX) {
+                        let mut nested: Value = serde_json::from_str(raw).map_err(error)?;
+                        hydrate_workspace_inner(db, root, &mut nested, cache, missing)?;
+                        *raw = serde_json::to_string(&nested).map_err(error)?;
+                    }
+                    continue;
+                }
+            }
+            hydrate_workspace_inner(db, root, item, cache, missing)?;
+        },
+        _ => {}
+    }
+    Ok(())
+}
+
+// Placeholders never replace immutable originals in SQLite. Caller must block
+// writes and clearly identify incomplete JSON exports until assets are restored.
+pub fn hydrate_workspace_payload(
+    db: &Connection, root: &Path, payload: &str,
+) -> Result<(String, Vec<String>), String> {
+    let mut value: Value = serde_json::from_str(payload).map_err(error)?;
+    let mut missing = HashSet::new();
+    hydrate_workspace_inner(db, root, &mut value, &mut HashMap::new(), &mut missing)?;
+    let mut hashes: Vec<String> = missing.into_iter().collect();
+    hashes.sort();
+    Ok((serde_json::to_string(&value).map_err(error)?, hashes))
+}
+
 // N-07: preflight a compact backup without modifying projects, image owners,
 // backup rows or the asset directory. Legacy inline Base64 remains self-contained.
 fn collect_snapshot_hashes(value:&Value, hashes:&mut HashSet<String>)->Result<(),String>{

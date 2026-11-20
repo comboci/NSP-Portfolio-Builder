@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 132 (TASK-041: recovery for unavailable images, source-only)
+
+Native SQLite normal-workspace loading can show a labeled SVG placeholder when an immutable original is missing, corrupt, has missing metadata or has unsupported stored MIME. Healthy projects, portfolios and pages still open. Malformed hashes, unsafe stored paths and SQL errors remain fatal. Missing immutable hashes are reported without changing SQLite records, original bytes or backups.
+
+The frontend opens a **read-only recovery preview**, visibly blocks all Page/Project/autosave operations, and warns that exported JSON contains placeholders and **is not a complete original backup**. Restore the original storage/assets files and reopen before resuming saves. Named/automatic backup inspection and read/restore still require full integrity and are not degraded.
+
+Owner review: with an offline copy of SQLite storage, make one private image and one public/Tile image unavailable or corrupt; verify other project content remains accessible, placeholders render, no partial data is saved, backup inspection remains strict, and restoring originals followed by reload clears recovery. No Build/Test/static checker/migration/browser/Tauri execution or owner acceptance by assistant. TASK-041 remains open; SQLite schema stays 12.
+
+---
+
 # NSP Portfolio Builder — Version 131 (TASK-039: Browser IndexedDB revision guard, source-only)
 
 Browser IndexedDB now upgrades from version 1 to version 2 **without deleting existing project or named-backup records**. Each payload is read with its revision; Save Page and Save Project compare the expected revision and atomically store the new JSON and next revision in one readwrite IndexedDB transaction. A second stale tab gets `WRITE_CONFLICT` and cannot overwrite the first tab's committed data. The recovery button exports local unsaved changes to JSON before the user confirms a reload. Version-change events block editing until reload. Legacy data without a revision starts at revision 0.

@@ -49,17 +49,21 @@ fn load_project_state(
             [],|r|r.get::<_,String>(0),
         ).optional().map_err(error)?,
     };
-    let payload=match raw {
+    let (payload,missing_assets)=match raw {
         Some(raw)=>{
             let mut value:Value=serde_json::from_str(&raw).map_err(error)?;
             value["globalImageLibrary"]=
                 Value::Array(image_ownership::read_public_catalog(&tx)?);
-            Some(media_store::hydrate_payload(&tx,&root.0,&value.to_string())?)
+            let (display,missing)=media_store::hydrate_workspace_payload(
+                &tx,&root.0,&value.to_string(),
+            )?;
+            (Some(display),missing)
         }
-        None=>None,
+        None=>(None,Vec::new()),
     };
     tx.commit().map_err(error)?;
-    Ok(json!({"payload":payload,"revision":current}))
+    // Native workspace-only degradation; backup inspection/restore remains strict.
+    Ok(json!({"payload":payload,"revision":current,"missingAssets":missing_assets}))
 }
 
 fn require_workspace_revision(
