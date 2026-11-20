@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 130 (TASK-061: immutable image originals, source-only)
+
+The previous gallery action that overwrote a private library image in place now **imports a separate image identity** (or reuses an exact existing private duplicate). The original image ID, source, hash, ownership, page references and backups remain untouched. The button is renamed «ورود نسخهٔ مستقل» in both gallery entry points.
+
+In a page designer with an explicitly selected image or Tile bound to the original, the user can separately **confirm rebinding only that one selected image/Tile**. No mass relinking occurs. The change retains frame geometry, crop, masks, filters, object membership and provenance; its from/to asset IDs, target token, tile and confirmation metadata are recorded on that image/Tile as `assetRebindHistory` so the serialized page makes the mapping reviewable. The existing editor Undo/Redo applies to the binding. Gallery imports outside an editable selected page do not change any binding. Library changes request **full-project persistence**, not a page-only save, and the selective binding prompt waits for the durable import acknowledgement.
+
+**Owner review:** compare the original image ID/hash/source before/after import, import duplicate files, use the gallery and editor, verify single selected Tile vs other Tiles/pages/projects, public/shared images, locked objects and templates, Undo/Redo, Save/Reload and backup/JSON/PDF. Unverified source candidate; **no assistant Build, Test, static checker, browser/Tauri runtime, or owner acceptance**. TASK-061 remains in progress; the completeness of persistent rebinding history and cross-workspace restore requires owner review. SQLite schema is unchanged at 12.
+
+---
+
 # NSP Portfolio Builder — Version 129 (TASK-046: privacy-scoped portfolio export, source-only)
 
 V129 routes the legacy v28/v29 **single-portfolio JSON export** through the same scoped V111 serializer used by project/portfolio cards. The envelope includes one whitelisted portfolio with its pages and only referenced project-private and global-public image originals; no other workspaces, portfolios, image catalogs, global templates or backup records are serialized. Referenced images with the same ID in both local and global catalogs resolve locally without exposing an extra global original.

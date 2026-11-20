@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "129",
-  "basedOnMainCommitBeforeChange": "636a2eed4854c35ee87a6902b3669f5a631bb460",
+  "plannedForVersion": "130",
+  "basedOnMainCommitBeforeChange": "63f23607d6d7a9d548480de5487dfaf7ed82b5d2",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -21,11 +21,12 @@
     "V126 TASK-040: public catalog rename shares native SQLite CAS transaction and serialized JS workspace revision queue",
     "V127 TASK-038: failed Save Page/Project/public-rename scopes remain unresolved across unrelated acknowledgements; safe explicit retry and WRITE_CONFLICT guard",
     "V128 TASK-060: single M.place implementation, no orphan image-placement statements at module top level, image APIs registered after method",
-    "V129 TASK-046: all single-portfolio export actions use scoped whitelist serializer, reference-only image inclusion, manifest preview and full-backup disclosure warning"
+    "V129 TASK-046: all single-portfolio export actions use scoped whitelist serializer, reference-only image inclusion, manifest preview and full-backup disclosure warning",
+    "V130 TASK-061: original library assets keep immutable IDs/hash/source, separate imported records, opt-in single selected element/Tile binding audit; no mass relinking"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V129 TASK-046 source-only privacy isolation of single-portfolio JSON exports; owner examines multi-project JSON and import compatibility. No assistant Build/Test/static checker/runtime/owner acceptance."
+  "note": "V130 TASK-061 source-only immutable image import and reviewed selected-element/Tile rebinding. Owner must inspect project save, selection, Undo/Redo, public/shared ownership and backups. Assistant did not run Build/Test/static checker/runtime."
 }
