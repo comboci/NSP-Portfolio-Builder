@@ -19,8 +19,8 @@
 | 03 | Import/Export (JSON، پروژه/پورتفولیو، وابستگی‌ها، سازگاری نسخه، برخورد شناسه‌ها) | **انجام شد: سورس‌محور، بدون Build/Test** |
 | 04 | UI/UX پروژه‌ها، ناوبری، صفحات، Dockها، Responsive و دسترس‌پذیری | **انجام شد: سورس‌محور، بدون Build/Test** |
 | 05 | موتور طراحی، Template inheritance، Region Block، Layer/Group، history، snapping و Transform | **انجام شد: سورس‌محور، بدون Build/Test** |
-| 06 | Image Library، مالکیت خصوصی/عمومی، Assetها، Tile/Stash، crop/mask، حذف ایمن | **نوبت بعد با N** |
-| 07 | PDF/Print، صفحه‌بندی، DPI، Preflight، مقیاس و برابری رندر | در انتظار N |
+| 06 | Image Library، مالکیت خصوصی/عمومی، Assetها، Tile/Stash، crop/mask، حذف ایمن | **انجام شد: سورس‌محور، بدون Build/Test** |
+| 07 | PDF/Print، صفحه‌بندی، DPI، Preflight، مقیاس و برابری رندر | **نوبت بعد با N** |
 | 08 | کارایی، حافظه، امنیت ورودی، خطایابی و پایداری، کارهای چندپنجره‌ای | در انتظار N |
 | 09 | ممیزی نهایی ردیابی Task 001 تا آخرین Task، Gapهای پوشش و ماتریس تأیید مالک | در انتظار N |
 
@@ -355,3 +355,74 @@ objectSnapshot and v91ContentSnapshot track objects, styles and layer/order fiel
 - **Save/Conflict:** اشکال Queue ACK قدیمی در TASK-038 و scoped Save در TASK-036 باقی است و تکرار نشد. هیچ Build/Test/Static-check/Windows/Browser یا Acceptance توسط دستیار انجام نشد.
 
 **Checkpoint:** `OBS-051`. TASK-057، TASK-058، TASK-059 در صف اجرای زمان‌بندی ساعتی ثبت شدند. محصول و SQLite schema تغییری نکردند. **مرحله بعد با N: فاز 06 — Image Library، مالکیت، Asset، Tile/Stash، Crop/Mask و حذف ایمن.**
+
+
+## خروجی فاز 06 — Image Library، مالکیت، Asset، Tile و Mask
+
+مبنای ممیزی: `7c3a53732082f1d36e8edb5a2c1e6858ca710715`؛ V127 (SQLite schema 12). سورس `index.html`، `media_store.rs`، `image_ownership.rs`، `scene_store.rs` و Project Evolution TASK-001..059 بررسی شدند. تغییرات موازی V127 / TASK-038 حفظ شدند. هیچ Build/Test/Static Checker یا Windows/Browser runtime اجرا نشده است.
+
+| اولویت | Finding | Task | موضوع |
+| --- | --- | --- | --- |
+| P0 | FND-038 | TASK-060 | کد یتیم بیرون تابع M.place موجب توقف راه‌اندازی ابزارهای تصویر می‌شود |
+| P1 | FND-039 | TASK-061 | جایگزینی اصل تصویر با همان شناسه، قرارداد تغییرناپذیری Asset را نقض می‌کند |
+| P2 | FND-040 | TASK-062 | تعداد زیاد ستون با Gap بزرگ باعث سلول‌های Tile بدون فضای قابل نمایش می‌شود |
+| P2 | FND-041 | TASK-063 | رسم و ویرایش رأس‌های ماسک چندضلعی فقط با اشاره‌گر ممکن است |
+| P2 | FND-042 | TASK-020/029 (موجود) | Crop و ابزار تنظیم تصویر باید خطای ذخیره و محدوده مقادیر را صریح نشان دهند؛ تسک تکراری ساخته نشد |
+
+### FND-038 / TASK-060 — کد یتیم بیرون تابع M.place موجب توقف راه‌اندازی ابزارهای تصویر می‌شود
+
+**اولویت P0، یافته سورس‌محور و فاقد تأیید اجرایی.**
+
+After `M.place=function(id,forceNew=false){...};` closes at line 2056, duplicated placement statements remain at the IIFE top level (2057-2063). Line 2063 evaluates `if(!forceNew&&...)`, but `forceNew` is defined only as an M.place parameter, not in this outer lexical scope. The image initialization IIFE therefore throws ReferenceError during script evaluation, stopping subsequent registration of M.grid, M.markup, M.openPicker, mask/crop extensions and their event handlers. Source check found no other forceNew declaration in index.html. No runtime execution is claimed. This is not a new feature request; it is a bootstrap-blocking code defect.
+
+**معیار پذیرش:** Remove the unreachable duplicated top-level placement block and retain one complete M.place method with the strict context/global-public authorization and frame-preserving replacement logic. Verify source script load completes, all media APIs are present, editor and global/private image pickers open, tile grid and crop/mask actions register, and no startup exception. Owner performs Windows/Tauri and browser runtime tests per DEC-006; do not run assistant Build/Test/static-check. Preserve all existing image metadata/ownership/asset files.
+
+**شواهد:** [index.html#L2030-L2064](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L2030-L2064)، [index.html#L2064-L2112](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L2064-L2112)، [index.html#L2125-L2185](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L2125-L2185)، [index.html#L4536-L4545](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L4536-L4545)
+
+### FND-039 / TASK-061 — جایگزینی اصل تصویر با همان شناسه، قرارداد تغییرناپذیری Asset را نقض می‌کند
+
+**اولویت P1، یافته سورس‌محور و فاقد تأیید اجرایی.**
+
+In M.replaceAsset, the gallery lets the user choose an unrelated file and then uses `Object.assign(old,fresh,{id})`, retaining the existing library image ID while changing src/hash and other immutable-original metadata. All page elements referencing that ID now resolve to a different image without replacing their own bindings, and ownership projections can migrate the ID to a different physical hash. Only exact public-src matches are blocked. This is a deliberate operation in the UI but contradicts BR-004/REQ-011 no direct replacement of the original image library asset and is distinct from valid element-level M.place binding replacement.
+
+**معیار پذیرش:** Preserve the original image record and immutable source/hash/ownership under its existing ID. Change the gallery operation into an explicitly named, non-destructive workflow that imports the new file as a distinct immutable asset and offers reviewed rebinding of selected page elements/tiles without changing their frames, edits, groups, provenance or other project owners. Require confirmation and auditable mapping; never remap every occurrence silently. Undo/Redo, backups, project sharing and owners remain intact. Owner tests multi-project and shared/public scenarios; no Build/Test by assistant.
+
+**شواهد:** [index.html#L1945-L1948](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L1945-L1948)، [index.html#L2030-L2055](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L2030-L2055)، [src-tauri/src/image_ownership.rs#L157-L171](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/src-tauri/src/image_ownership.rs#L157-L171)، [src-tauri/src/image_ownership.rs#L307-L333](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/src-tauri/src/image_ownership.rs#L307-L333)
+
+### FND-040 / TASK-062 — تعداد زیاد ستون با Gap بزرگ باعث سلول‌های Tile بدون فضای قابل نمایش می‌شود
+
+**اولویت P2، یافته سورس‌محور و فاقد تأیید اجرایی.**
+
+M.grid accepts rows/cols up to 12 and gap up to 60px independently, and adjusts the object frame width/height by clamping to available document bounds. It never verifies that (cols-1)*gap fits inside the resulting object width (or rows for height). For example 12 columns × 60px gaps require 660px of horizontal gap alone, more than a 595px page; M.markup still renders a CSS grid with 12 `minmax(0,1fr)` tracks, so image cells can collapse or be clipped. The grid can remain serialized and stash referenced images despite unusable visible cells.
+
+**معیار پذیرش:** Preflight Tile grid geometry atomically before changing rows/cols/gap or frame; require sufficient positive effective tile width/height and valid page/Region Block bounds, or offer explicit auto-scale/gap reduction with confirmation. Refuse invalid layouts without modifying cells or stash; keep all existing cell IDs and per-tile crop/filter state across grid edits and Undo. Owner checks small frames, 1×1, max 12×12, gap 0/60, landscape/portrait and reopening.
+
+**شواهد:** [index.html#L2010-L2013](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L2010-L2013)، [index.html#L2064-L2069](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L2064-L2069)، [index.html#L2071-L2093](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L2071-L2093)، [index.html#L2105-L2112](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L2105-L2112)
+
+### FND-041 / TASK-063 — رسم و ویرایش رأس‌های ماسک چندضلعی فقط با اشاره‌گر ممکن است
+
+**اولویت P2، یافته سورس‌محور و فاقد تأیید اجرایی.**
+
+M.editCustomMask creates SVG polygon/circle vertices with only pointerdown/pointermove events for adding, moving and selecting points. The vertices are SVG circles with no tabindex, keyboard handlers, accessible coordinate editor or alternative numeric per-vertex controls. A keyboard-only user can open the dialog and remove/clear points via buttons but cannot construct or move the polygon vertices needed to apply a custom mask. This is a distinct image-editor accessibility gap, not a claim that the existing pointer UI fails.
+
+**معیار پذیرش:** Provide labeled numeric X/Y percentage controls and keyboard vertex selection/add/move/delete, or an equivalent fully keyboard-operable vertex list alongside pointer drag; expose current count/selection/invalid polygon alerts accessibly. Preserve numeric validation, 3–24-point limits, close/cancel/focus restoration, per-tile mask settings, immutable source, and undo. Owner tests with keyboard/screen reader and mouse on browser/Tauri.
+
+**شواهد:** [index.html#L2221-L2269](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L2221-L2269)، [index.html#L1994-L2008](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L1994-L2008)
+
+### FND-042 — Crop و ابزار تنظیم تصویر باید خطای ذخیره و محدوده مقادیر را صریح نشان دهند (به TASK-020 و TASK-029 پیوست شد)
+
+M.crop's Apply handler checks the media-context token but calls writeCell(...) and closes the dialog unconditionally, unlike editCustomMask where a false writeCell result leaves the dialog open and reports failure. M.adjust clamps only grayscale, sepia, blur and sharpen, but directly stores out-of-range zoom, x/y, brightness/contrast/saturation and radius values; frame() merely clamps them at display time, producing a mismatch between saved JSON and shown pixels. Existing TASK-020 and TASK-029 already own crop/filter semantics, and TASK-038 covers queued failure acknowledgement, so register a linked finding and enhance acceptance rather than creating a duplicate task.
+
+**پذیرش تکمیلی:** In TASK-020/029, validate and normalize all image-edit limits before write, keep the Crop/Mask dialog open and report when writeCell rejects the edit, distinguish queue acknowledgement from synchronous enqueue, and preserve exact per-tile editor/preview/print settings with explicit rollback/retry. No assistant-run Build/Test.
+
+**شواهد:** [index.html#L2010-L2029](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L2010-L2029)، [index.html#L2105-L2111](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L2105-L2111)، [index.html#L2263-L2274](https://github.com/comboci/NSP-Portfolio-Builder/blob/7c3a53732082f1d36e8edb5a2c1e6858ca710715/index.html#L2263-L2274)
+
+### تطبیق قراردادهای قبلی و نقاطی که تسک جدید نشدند
+
+- **مالکیت مستقل:** `image_project_owners` و بازسازی FK-backed references در سورس وجود دارد؛ اجازه حذف تصویر عمومی، تحت `Q-005` هنوز تصمیم‌گیری نشده است. این ممیزی هیچ حذف فیزیکی یا تغییر سیاست pruning را مجاز نمی‌داند.
+- **Stash و ذخیره‌سازی:** شناسه‌های تصاویر در `tilesJson.cells` و `stash` توسط ایندکس Rust و Import traversal خوانده می‌شوند؛ نقص جدید مربوط به شرط هندسی سلول‌هاست، نه ادعای حذف قطعی Stash.
+- **Missing Asset/Backup:** بازشدن پروژه با تصویر مفقود زیر `TASK-041` و گزارش فایل orphan زیر `TASK-045` باقی است؛ دوباره تسک نشد. تطبیق Content Hash در Import نیز زیر `TASK-047` است.
+- **Crop/Mask:** اصلاح مستقیم فایل فیزیکی در `M.crop` انجام نمی‌شود؛ ایرادهای بازخورد رد شدن و صحت ورودی به تسک‌های قدیمی پیوست شدند.
+- **Source vs Runtime:** یافتهٔ بحرانی `forceNew` از بررسی محدوده متغیر در JavaScript است؛ هیچ ادعای اجرای برنامه، Build/Test، واقعی‌شدن خرابی نصب یا تأیید مالک وجود ندارد.
+
+**Checkpoint:** `OBS-053`؛ تسک‌های TASK-060، TASK-061، TASK-062، TASK-063 در صف `open_state.next_work_record_ids` ثبت شدند، بدون تغییر سورس محصول یا نسخه. **مرحله بعد با N: فاز 07 — PDF/Print، DPI، Preflight، صفحه‌بندی و برابری رندر.**

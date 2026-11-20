@@ -1183,6 +1183,139 @@
           "TASK-038",
           "DEC-006"
         ]
+      },
+      {
+        "record_id": "FND-038",
+        "title": "کد یتیم بیرون تابع M.place موجب توقف راه‌اندازی ابزارهای تصویر می‌شود",
+        "detail": "After `M.place=function(id,forceNew=false){...};` closes at line 2056, duplicated placement statements remain at the IIFE top level (2057-2063). Line 2063 evaluates `if(!forceNew&&...)`, but `forceNew` is defined only as an M.place parameter, not in this outer lexical scope. The image initialization IIFE therefore throws ReferenceError during script evaluation, stopping subsequent registration of M.grid, M.markup, M.openPicker, mask/crop extensions and their event handlers. Source check found no other forceNew declaration in index.html. No runtime execution is claimed. This is not a new feature request; it is a bootstrap-blocking code defect.\nSource evidence: index.html#L2030-L2064; index.html#L2064-L2112; index.html#L2125-L2185; index.html#L4536-L4545. Source-only, no runtime acceptance.",
+        "category": "implementation",
+        "scope_refs": [
+          "SC-LIBRARY",
+          "SC-TILES",
+          "SC-IMAGEEDIT",
+          "SC-PORTFOLIOS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "7c3a53732082f1d36e8edb5a2c1e6858ca710715"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-060",
+          "TASK-020",
+          "TASK-021",
+          "TASK-027",
+          "TASK-028",
+          "TASK-029",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-039",
+        "title": "جایگزینی اصل تصویر با همان شناسه، قرارداد تغییرناپذیری Asset را نقض می‌کند",
+        "detail": "In M.replaceAsset, the gallery lets the user choose an unrelated file and then uses `Object.assign(old,fresh,{id})`, retaining the existing library image ID while changing src/hash and other immutable-original metadata. All page elements referencing that ID now resolve to a different image without replacing their own bindings, and ownership projections can migrate the ID to a different physical hash. Only exact public-src matches are blocked. This is a deliberate operation in the UI but contradicts BR-004/REQ-011 no direct replacement of the original image library asset and is distinct from valid element-level M.place binding replacement.\nSource evidence: index.html#L1945-L1948; index.html#L2030-L2055; src-tauri/src/image_ownership.rs#L157-L171; src-tauri/src/image_ownership.rs#L307-L333. Source-only, no runtime acceptance.",
+        "category": "data_integrity",
+        "scope_refs": [
+          "SC-LIBRARY",
+          "SC-STORAGE",
+          "SC-PORTFOLIOS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "7c3a53732082f1d36e8edb5a2c1e6858ca710715"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-061",
+          "REQ-011",
+          "BR-004",
+          "BR-005",
+          "TASK-007",
+          "TASK-021",
+          "TASK-027",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-040",
+        "title": "تعداد زیاد ستون با Gap بزرگ باعث سلول‌های Tile بدون فضای قابل نمایش می‌شود",
+        "detail": "M.grid accepts rows/cols up to 12 and gap up to 60px independently, and adjusts the object frame width/height by clamping to available document bounds. It never verifies that (cols-1)*gap fits inside the resulting object width (or rows for height). For example 12 columns × 60px gaps require 660px of horizontal gap alone, more than a 595px page; M.markup still renders a CSS grid with 12 `minmax(0,1fr)` tracks, so image cells can collapse or be clipped. The grid can remain serialized and stash referenced images despite unusable visible cells.\nSource evidence: index.html#L2010-L2013; index.html#L2064-L2069; index.html#L2071-L2093; index.html#L2105-L2112. Source-only, no runtime acceptance.",
+        "category": "code_review",
+        "scope_refs": [
+          "SC-TILES",
+          "SC-IMAGEEDIT",
+          "SC-PORTFOLIOS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "7c3a53732082f1d36e8edb5a2c1e6858ca710715"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-062",
+          "REQ-004",
+          "REQ-005",
+          "TASK-004",
+          "TASK-020",
+          "TASK-029",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-041",
+        "title": "رسم و ویرایش رأس‌های ماسک چندضلعی فقط با اشاره‌گر ممکن است",
+        "detail": "M.editCustomMask creates SVG polygon/circle vertices with only pointerdown/pointermove events for adding, moving and selecting points. The vertices are SVG circles with no tabindex, keyboard handlers, accessible coordinate editor or alternative numeric per-vertex controls. A keyboard-only user can open the dialog and remove/clear points via buttons but cannot construct or move the polygon vertices needed to apply a custom mask. This is a distinct image-editor accessibility gap, not a claim that the existing pointer UI fails.\nSource evidence: index.html#L2221-L2269; index.html#L1994-L2008. Source-only, no runtime acceptance.",
+        "category": "general",
+        "scope_refs": [
+          "SC-IMAGEEDIT",
+          "SC-PORTFOLIOS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "7c3a53732082f1d36e8edb5a2c1e6858ca710715"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-063",
+          "TASK-020",
+          "REQ-006",
+          "TASK-055",
+          "TASK-056",
+          "DEC-006"
+        ]
+      },
+      {
+        "record_id": "FND-042",
+        "title": "Crop و ابزار تنظیم تصویر باید خطای ذخیره و محدوده مقادیر را صریح نشان دهند",
+        "detail": "M.crop's Apply handler checks the media-context token but calls writeCell(...) and closes the dialog unconditionally, unlike editCustomMask where a false writeCell result leaves the dialog open and reports failure. M.adjust clamps only grayscale, sepia, blur and sharpen, but directly stores out-of-range zoom, x/y, brightness/contrast/saturation and radius values; frame() merely clamps them at display time, producing a mismatch between saved JSON and shown pixels. Existing TASK-020 and TASK-029 already own crop/filter semantics, and TASK-038 covers queued failure acknowledgement, so register a linked finding and enhance acceptance rather than creating a duplicate task.\nAdditional acceptance: In TASK-020/029, validate and normalize all image-edit limits before write, keep the Crop/Mask dialog open and report when writeCell rejects the edit, distinguish queue acknowledgement from synchronous enqueue, and preserve exact per-tile editor/preview/print settings with explicit rollback/retry. No assistant-run Build/Test.\nSource evidence: index.html#L2010-L2029; index.html#L2105-L2111; index.html#L2263-L2274",
+        "category": "code_review",
+        "scope_refs": [
+          "SC-IMAGEEDIT",
+          "SC-STORAGE",
+          "SC-TILES"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "7c3a53732082f1d36e8edb5a2c1e6858ca710715"
+        },
+        "implementation_state": "covered_by_existing_TASK-020_and_TASK-029",
+        "related_record_ids": [
+          "TASK-020",
+          "TASK-023",
+          "TASK-038",
+          "TASK-029",
+          "DEC-006"
+        ]
       }
     ],
     "business_rules": [
@@ -2170,17 +2303,23 @@
       {
         "record_id": "TASK-020",
         "title": "Non-destructive Image Crop & Mask",
-        "detail": "Crop, pan and zoom within frame; circular, rectangular and custom-shape masks. Preserve original source; editable/resettable crop; PDF matches editor. V105 source candidate connects crop/zoom/position and mask selection to the shared Properties panel for both regular image and selected image tile, adds a draggable-vertex polygon mask, strict percent-coordinate validation, circle/rectangle mask shapes and independent crop/full edit reset. Existing immutable asset reference, history and shared rendering stay intact. No Build/Test/runtime/PDF verification; owner acceptance remains outstanding.",
+        "detail": "Crop, pan and zoom within frame; circular, rectangular and custom-shape masks. Preserve original source; editable/resettable crop; PDF matches editor. V105 source candidate connects crop/zoom/position and mask selection to the shared Properties panel for both regular image and selected image tile, adds a draggable-vertex polygon mask, strict percent-coordinate validation, circle/rectangle mask shapes and independent crop/full edit reset. Existing immutable asset reference, history and shared rendering stay intact. No Build/Test/runtime/PDF verification; owner acceptance remains outstanding.\n\nPhase 06 source-only follow-up FND-042: M.crop's Apply handler checks the media-context token but calls writeCell(...) and closes the dialog unconditionally, unlike editCustomMask where a false writeCell result leaves the dialog open and reports failure. M.adjust clamps only grayscale, sepia, blur and sharpen, but directly stores out-of-range zoom, x/y, brightness/contrast/saturation and radius values; frame() merely clamps them at display time, producing a mismatch between saved JSON and shown pixels. Existing TASK-020 and TASK-029 already own crop/filter semantics, and TASK-038 covers queued failure acknowledgement, so register a linked finding and enhance acceptance rather than creating a duplicate task.\nAdditional acceptance: In TASK-020/029, validate and normalize all image-edit limits before write, keep the Crop/Mask dialog open and report when writeCell rejects the edit, distinguish queue acknowledgement from synchronous enqueue, and preserve exact per-tile editor/preview/print settings with explicit rollback/retry. No assistant-run Build/Test.",
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
-        "related_record_ids": [],
+        "related_record_ids": [
+          "FND-042"
+        ],
         "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "V105_image_crop_mask_source_candidate_pending_owner_browser_tauri_pdf_review"
+        "implementation_state": "V105_image_crop_mask_source_candidate_pending_owner_browser_tauri_pdf_review",
+        "evidence_refs": [
+          "FND-042"
+        ],
+        "updated_on": "2026-11-20"
       },
       {
         "record_id": "TASK-021",
@@ -2446,7 +2585,7 @@
       {
         "record_id": "TASK-029",
         "title": "Complete missing image filters and print-resolution warnings",
-        "detail": "Cover REQ-006 gaps not fully assigned to TASK-019/020/021: non-destructive grayscale, sepia, blur and sharpen, per-image/per-tile independent settings and Reset, consistent canvas/preview/PDF rendering, safe preservation of original library file, and a print quality warning from effective DPI after crop/zoom/scaling (separate from hard asset-missing/overflow errors). Inspect current rotation/flip/opacity/mask implementations before adding duplicate controls. Acceptance: no changes to asset bytes, repeatable edit/reload, independent tiles and accurate PDF/preflight warning. Source-only identification, no tests/builds.",
+        "detail": "Cover REQ-006 gaps not fully assigned to TASK-019/020/021: non-destructive grayscale, sepia, blur and sharpen, per-image/per-tile independent settings and Reset, consistent canvas/preview/PDF rendering, safe preservation of original library file, and a print quality warning from effective DPI after crop/zoom/scaling (separate from hard asset-missing/overflow errors). Inspect current rotation/flip/opacity/mask implementations before adding duplicate controls. Acceptance: no changes to asset bytes, repeatable edit/reload, independent tiles and accurate PDF/preflight warning. Source-only identification, no tests/builds.\n\nPhase 06 source-only follow-up FND-042: M.crop's Apply handler checks the media-context token but calls writeCell(...) and closes the dialog unconditionally, unlike editCustomMask where a false writeCell result leaves the dialog open and reports failure. M.adjust clamps only grayscale, sepia, blur and sharpen, but directly stores out-of-range zoom, x/y, brightness/contrast/saturation and radius values; frame() merely clamps them at display time, producing a mismatch between saved JSON and shown pixels. Existing TASK-020 and TASK-029 already own crop/filter semantics, and TASK-038 covers queued failure acknowledgement, so register a linked finding and enhance acceptance rather than creating a duplicate task.\nAdditional acceptance: In TASK-020/029, validate and normalize all image-edit limits before write, keep the Crop/Mask dialog open and report when writeCell rejects the edit, distinguish queue acknowledgement from synchronous enqueue, and preserve exact per-tile editor/preview/print settings with explicit rollback/retry. No assistant-run Build/Test.",
         "scope_refs": [
           "SC-IMAGEEDIT",
           "SC-PDF",
@@ -2458,7 +2597,8 @@
           "TASK-019",
           "TASK-020",
           "TASK-021",
-          "FND-011"
+          "FND-011",
+          "FND-042"
         ],
         "status": "in_progress",
         "provenance": {
@@ -2477,7 +2617,8 @@
           "src-tauri/tauri.conf.json"
         ],
         "evidence_refs": [
-          "OBS-033"
+          "OBS-033",
+          "FND-042"
         ]
       },
       {
@@ -3534,6 +3675,138 @@
           "FND-036"
         ],
         "result": "Audit finding only; not implemented or owner-runtime accepted."
+      },
+      {
+        "record_id": "TASK-060",
+        "title": "Remove orphan top-level image-placement code that aborts media module initialization",
+        "detail": "After `M.place=function(id,forceNew=false){...};` closes at line 2056, duplicated placement statements remain at the IIFE top level (2057-2063). Line 2063 evaluates `if(!forceNew&&...)`, but `forceNew` is defined only as an M.place parameter, not in this outer lexical scope. The image initialization IIFE therefore throws ReferenceError during script evaluation, stopping subsequent registration of M.grid, M.markup, M.openPicker, mask/crop extensions and their event handlers. Source check found no other forceNew declaration in index.html. No runtime execution is claimed. This is not a new feature request; it is a bootstrap-blocking code defect.\n\nAcceptance criteria: Remove the unreachable duplicated top-level placement block and retain one complete M.place method with the strict context/global-public authorization and frame-preserving replacement logic. Verify source script load completes, all media APIs are present, editor and global/private image pickers open, tile grid and crop/mask actions register, and no startup exception. Owner performs Windows/Tauri and browser runtime tests per DEC-006; do not run assistant Build/Test/static-check. Preserve all existing image metadata/ownership/asset files.\n\nSource evidence: index.html#L2030-L2064; index.html#L2064-L2112; index.html#L2125-L2185; index.html#L4536-L4545. Preserve all migrations, backup records, immutable assets and concurrent source changes. DEC-006 forbids assistant Build/Test/static-check.",
+        "scope_refs": [
+          "SC-LIBRARY",
+          "SC-TILES",
+          "SC-IMAGEEDIT",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "FND-038",
+          "TASK-020",
+          "TASK-021",
+          "TASK-027",
+          "TASK-028",
+          "TASK-029",
+          "DEC-006"
+        ],
+        "priority": "P0",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "7c3a53732082f1d36e8edb5a2c1e6858ca710715"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V127",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-038"
+        ],
+        "result": "Not implemented. Source-only retrospective audit phase 06; owner acceptance pending."
+      },
+      {
+        "record_id": "TASK-061",
+        "title": "Preserve immutable image-asset identity: replace bindings, never overwrite library originals in-place",
+        "detail": "In M.replaceAsset, the gallery lets the user choose an unrelated file and then uses `Object.assign(old,fresh,{id})`, retaining the existing library image ID while changing src/hash and other immutable-original metadata. All page elements referencing that ID now resolve to a different image without replacing their own bindings, and ownership projections can migrate the ID to a different physical hash. Only exact public-src matches are blocked. This is a deliberate operation in the UI but contradicts BR-004/REQ-011 no direct replacement of the original image library asset and is distinct from valid element-level M.place binding replacement.\n\nAcceptance criteria: Preserve the original image record and immutable source/hash/ownership under its existing ID. Change the gallery operation into an explicitly named, non-destructive workflow that imports the new file as a distinct immutable asset and offers reviewed rebinding of selected page elements/tiles without changing their frames, edits, groups, provenance or other project owners. Require confirmation and auditable mapping; never remap every occurrence silently. Undo/Redo, backups, project sharing and owners remain intact. Owner tests multi-project and shared/public scenarios; no Build/Test by assistant.\n\nSource evidence: index.html#L1945-L1948; index.html#L2030-L2055; src-tauri/src/image_ownership.rs#L157-L171; src-tauri/src/image_ownership.rs#L307-L333. Preserve all migrations, backup records, immutable assets and concurrent source changes. DEC-006 forbids assistant Build/Test/static-check.",
+        "scope_refs": [
+          "SC-LIBRARY",
+          "SC-STORAGE",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "FND-039",
+          "REQ-011",
+          "BR-004",
+          "BR-005",
+          "TASK-007",
+          "TASK-021",
+          "TASK-027",
+          "DEC-006"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "7c3a53732082f1d36e8edb5a2c1e6858ca710715"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V127",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-039"
+        ],
+        "result": "Not implemented. Source-only retrospective audit phase 06; owner acceptance pending."
+      },
+      {
+        "record_id": "TASK-062",
+        "title": "Prevent impossible Tile grids when inter-cell gaps exceed available frame size",
+        "detail": "M.grid accepts rows/cols up to 12 and gap up to 60px independently, and adjusts the object frame width/height by clamping to available document bounds. It never verifies that (cols-1)*gap fits inside the resulting object width (or rows for height). For example 12 columns × 60px gaps require 660px of horizontal gap alone, more than a 595px page; M.markup still renders a CSS grid with 12 `minmax(0,1fr)` tracks, so image cells can collapse or be clipped. The grid can remain serialized and stash referenced images despite unusable visible cells.\n\nAcceptance criteria: Preflight Tile grid geometry atomically before changing rows/cols/gap or frame; require sufficient positive effective tile width/height and valid page/Region Block bounds, or offer explicit auto-scale/gap reduction with confirmation. Refuse invalid layouts without modifying cells or stash; keep all existing cell IDs and per-tile crop/filter state across grid edits and Undo. Owner checks small frames, 1×1, max 12×12, gap 0/60, landscape/portrait and reopening.\n\nSource evidence: index.html#L2010-L2013; index.html#L2064-L2069; index.html#L2071-L2093; index.html#L2105-L2112. Preserve all migrations, backup records, immutable assets and concurrent source changes. DEC-006 forbids assistant Build/Test/static-check.",
+        "scope_refs": [
+          "SC-TILES",
+          "SC-IMAGEEDIT",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "FND-040",
+          "REQ-004",
+          "REQ-005",
+          "TASK-004",
+          "TASK-020",
+          "TASK-029",
+          "DEC-006"
+        ],
+        "priority": "P2",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "7c3a53732082f1d36e8edb5a2c1e6858ca710715"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V127",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-040"
+        ],
+        "result": "Not implemented. Source-only retrospective audit phase 06; owner acceptance pending."
+      },
+      {
+        "record_id": "TASK-063",
+        "title": "Add keyboard-accessible polygon mask vertex editing alongside pointer controls",
+        "detail": "M.editCustomMask creates SVG polygon/circle vertices with only pointerdown/pointermove events for adding, moving and selecting points. The vertices are SVG circles with no tabindex, keyboard handlers, accessible coordinate editor or alternative numeric per-vertex controls. A keyboard-only user can open the dialog and remove/clear points via buttons but cannot construct or move the polygon vertices needed to apply a custom mask. This is a distinct image-editor accessibility gap, not a claim that the existing pointer UI fails.\n\nAcceptance criteria: Provide labeled numeric X/Y percentage controls and keyboard vertex selection/add/move/delete, or an equivalent fully keyboard-operable vertex list alongside pointer drag; expose current count/selection/invalid polygon alerts accessibly. Preserve numeric validation, 3–24-point limits, close/cancel/focus restoration, per-tile mask settings, immutable source, and undo. Owner tests with keyboard/screen reader and mouse on browser/Tauri.\n\nSource evidence: index.html#L2221-L2269; index.html#L1994-L2008. Preserve all migrations, backup records, immutable assets and concurrent source changes. DEC-006 forbids assistant Build/Test/static-check.",
+        "scope_refs": [
+          "SC-IMAGEEDIT",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "FND-041",
+          "TASK-020",
+          "REQ-006",
+          "TASK-055",
+          "TASK-056",
+          "DEC-006"
+        ],
+        "priority": "P2",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "7c3a53732082f1d36e8edb5a2c1e6858ca710715"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V127",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-041"
+        ],
+        "result": "Not implemented. Source-only retrospective audit phase 06; owner acceptance pending."
       }
     ],
     "evidence": [],
@@ -4738,6 +5011,41 @@
           "source_revision_ref": "503ab59d816d4a82b8bbc018c007c28559b811f5"
         },
         "implementation_state": "source_candidate_owner_runtime_pending"
+      },
+      {
+        "record_id": "OBS-053",
+        "title": "Retrospective audit phase 06: Image Library, public/private assets, Tile/Stash, Crop/Mask",
+        "status": "source_only_review_completed",
+        "detail": "At 7c3a53732082f1d36e8edb5a2c1e6858ca710715 (V127, SQLite schema 12), reviewed media initialization, immutable private/public asset contracts, project ownership, Tile grid/stash and image editor crop/masks, including current V127 TASK-038 change. Found FND-038, FND-039, FND-040, FND-041 mapped to planned TASK-060, TASK-061, TASK-062, TASK-063. Linked FND-042 to existing TASK-020/029 (crop apply/validation) without duplicate. Prior TASK-007/027/028/041/045/047 and open policy Q-005 retained; no public image deletion or physical GC performed. No Build/Test/static check/Tauri or browser runtime or owner acceptance. Next owner N is audit phase 07 PDF/Print.",
+        "scope_refs": [
+          "SC-LIBRARY",
+          "SC-STORAGE",
+          "SC-TILES",
+          "SC-IMAGEEDIT",
+          "SC-PORTFOLIOS"
+        ],
+        "related_record_ids": [
+          "TASK-060",
+          "TASK-061",
+          "TASK-062",
+          "TASK-063",
+          "FND-038",
+          "FND-039",
+          "FND-040",
+          "FND-041",
+          "FND-042",
+          "TASK-007",
+          "TASK-020",
+          "TASK-029",
+          "Q-005",
+          "DEC-006"
+        ],
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "7c3a53732082f1d36e8edb5a2c1e6858ca710715"
+        },
+        "implementation_state": "audit_documented_and_committed_code_untouched"
       }
     ]
   },
@@ -4799,7 +5107,9 @@
     "open_conflict_relationship_ids": [],
     "blocked_record_ids": [],
     "next_work_record_ids": [
+      "TASK-060",
       "TASK-046",
+      "TASK-061",
       "TASK-039",
       "TASK-040",
       "TASK-041",
@@ -4820,6 +5130,8 @@
       "TASK-057",
       "TASK-058",
       "TASK-059",
+      "TASK-062",
+      "TASK-063",
       "TASK-038",
       "TASK-005",
       "TASK-006",
@@ -4858,7 +5170,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V127 TASK-038 source candidate on 503ab59d816d: failed queued writes survive later unrelated successes; global flush/leave/retry do not report false Saved. Explicit retry uses latest in-memory page/project under existing CAS and refuses stale/cross-project replay; public-image rename errors require an explicit repeat action. Owner runtime/Build/Test/static-check not performed; next eligible planned task TASK-046. V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nPhase 04 UI/UX retrospective source audit completed: FND-029, FND-030, FND-031, FND-032, FND-033 mapped to planned TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Verified source gaps: thumbnail reorder persists wrong Save scope, print reads preview ahead of async guarded navigation, outer shell fixed-width rail on narrow widths, project/thumbnail focus & semantics, hidden file inputs keyboard accessibility. Prior TASK-022..026 and TASK-030 not duplicated; owner Runtime/Acceptance pending. Next N = phase 05 designer/inheritance/layers/history; evidence in project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nRetrospective phase 05 designer source audit complete at 1207b87689523ff3b095df45ade70217b9b0838b: FND-034, FND-035, FND-036 mapped to TASK-057, TASK-058, TASK-059 for pointer Region Block containment, rotated-corner geometry guards for Align/Duplicate and rigid multi-object Guide snapping. FND-037 linked to prior TASK-012 for missing History coverage on Guides/page background/content-flow, no duplicate task. No Build/Test/runtime/Acceptance; next owner N = phase 06 Image Library/ownership/tiles.",
+    "current_summary": "V127 TASK-038 source candidate on 503ab59d816d: failed queued writes survive later unrelated successes; global flush/leave/retry do not report false Saved. Explicit retry uses latest in-memory page/project under existing CAS and refuses stale/cross-project replay; public-image rename errors require an explicit repeat action. Owner runtime/Build/Test/static-check not performed; next eligible planned task TASK-046. V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nPhase 04 UI/UX retrospective source audit completed: FND-029, FND-030, FND-031, FND-032, FND-033 mapped to planned TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Verified source gaps: thumbnail reorder persists wrong Save scope, print reads preview ahead of async guarded navigation, outer shell fixed-width rail on narrow widths, project/thumbnail focus & semantics, hidden file inputs keyboard accessibility. Prior TASK-022..026 and TASK-030 not duplicated; owner Runtime/Acceptance pending. Next N = phase 05 designer/inheritance/layers/history; evidence in project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nRetrospective phase 05 designer source audit complete at 1207b87689523ff3b095df45ade70217b9b0838b: FND-034, FND-035, FND-036 mapped to TASK-057, TASK-058, TASK-059 for pointer Region Block containment, rotated-corner geometry guards for Align/Duplicate and rigid multi-object Guide snapping. FND-037 linked to prior TASK-012 for missing History coverage on Guides/page background/content-flow, no duplicate task. No Build/Test/runtime/Acceptance; next owner N = phase 06 Image Library/ownership/tiles.\nPhase 06 asset/Tile source-only audit at 7c3a53732082f1d36e8edb5a2c1e6858ca710715: FND-038, FND-039, FND-040, FND-041 mapped to planned TASK-060, TASK-061, TASK-062, TASK-063. Critical TASK-060 removes orphan top-level forceNew ReferenceError aborting media initialization; TASK-061 preserves immutable library originals; TASK-062, TASK-063 enforce Tile geometry and keyboard polygon masks. FND-042 attached to existing TASK-020/029 for Crop/filters. V127 TASK-038 source fix remains runtime unverified. No Build/Test/Runtime/Acceptance, next user N phase 07 Print/PDF.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
