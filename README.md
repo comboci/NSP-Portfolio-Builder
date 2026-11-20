@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 128 (TASK-060: media bootstrap initialization repair, source-only)
+
+V128 removes the duplicated **orphan top-level** image placement statements that followed the completed `M.place(id, forceNew)` method. That unreachable block referenced its former method parameters `id`, `a`, and `forceNew` outside their scope, causing script evaluation to abort before the Tile, picker, Crop/Mask, and image gallery APIs could be registered.
+
+The single retained `M.place` still enforces the explicit public-image requirement in global templates, protects locked/non-editable selections, and preserves the image frame, effects, Crop and mask during element/Tile binding replacement. No image files, private/public owners, SQLite schema (12), migrations, or backup data changed.
+
+**Owner verification:** launch in Browser and Windows/Tauri and check there is no startup ReferenceError, `V13.media.grid`, `markup`, `openPicker`, Crop/Mask and Tile operations are accessible, global/public vs project/private pickers enforce access, replacement preserves frame and Undo/Redo, and save/reopen/PDF retain images. **No assistant Build, Test, static checker or runtime review** under DEC-006. TASK-060 remains open for owner acceptance.
+
+---
+
 # NSP Portfolio Builder — Version 127 (TASK-038: fail-safe queued saves, source-only)
 
 V127 tracks each queued Save Page, Save Project, and public-image rename by durable-write scope. A failed page remains an unresolved error even after another page or project write succeeds; no global **Saved** indication or successful flush is permitted until that failed scope receives an acknowledged recovery write. Native `WRITE_CONFLICT` continues to block writes without automatic stale replay.
