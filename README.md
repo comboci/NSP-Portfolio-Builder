@@ -1,3 +1,15 @@
+# NSP Portfolio Builder — Version 120 (N-05, source-only)
+
+N-05 adds SQLite schema 10 with a relational **derived** scene graph: design_scenes, design_scene_layers, design_scene_groups, design_scene_elements, design_scene_template_links, and an append-only historical projection issue ledger. Scene keys are deterministic, owner-scoped JSON tuples; elements/layers/groups have stable composite identities. Project pages and global templates are real FK parents. Layer membership, group membership, optional Region Block linkage, style IDs, and direct image-file hashes are FK-constrained in the graph.
+
+**No competing source of truth:** workspace_pages.payload and shared_templates.payload remain the only editable design records. The scene graph carries identities, order and references ONLY (no editable scene JSON copy). Loading/rendering/exports still read canonical page/template JSON. The native scene_store module regenerates a changed owner's projection in the same SQL transaction after existing image ownership reconciliation; unchanged scenes are skipped using the canonical JSON digest plus directly referenced asset content hashes. Deleted page/template scenes cascade through FKs. Invalid historical element links are recorded in design_scene_projection_issues during migration backfill; the source JSON and assets are retained.
+
+Existing N-04 central-style lifecycle is adjusted: obsolete shared style IDs are finalized **after** scene graph reconciliation so newly added design_element style FK constraints cannot block legitimate cleanup. The old JSON-pointer style index remains to capture inherited object override bindings. Image tiles and hidden cells remain represented by canonical JSON and the existing N-02/N-03 image-use indexes; direct element asset hashes are an additional derived lookup, not a replacement.
+
+**Status:** SOURCE ONLY. DEC-006 forbids assistant-run Build/Test/runtime. Static checker, SQLite migration, Windows/Tauri and browser/PDF operations have NOT been executed. Owner review: close application and back up storage/ including SQLite/WAL and assets, then run V120 on a copy; check PRAGMA user_version=10, PRAGMA foreign_key_check, scene owner counts, group/layer/Region Block links, inherited templates and overrides, private/public images, undo/redo, page copy, save/reopen, JSON import/export and backup recovery.
+
+---
+
 # NSP Portfolio Builder — Version 119 (N-04 database architecture, source-only)
 
 Central `shared_styles` is updated by conditional UPSERT instead of delete-all/insert-all. Stable style IDs and unchanged rows remain untouched. A staged rename inside the save transaction prevents temporary NOCASE name collisions. SQLite migration `009.sql` introduces FK-backed style references for JSON text objects in project pages and system-wide templates. The owner page/template keys and style ID are guarded by real foreign keys; the object's JSON pointer path and optional `element_id` identify the binding until N-05 creates relational element rows.

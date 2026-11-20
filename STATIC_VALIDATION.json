@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "119",
-  "basedOnMainCommitBeforeChange": "770a3e05663fed4582fd0a246cfed3d223058268",
+  "plannedForVersion": "120",
+  "basedOnMainCommitBeforeChange": "3667392c274244c45a80f1084f4b0a79cb5f8434",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -11,11 +11,12 @@
     "Tauri IPC registration, JS parsing, backup/media invariants",
     "Migration 008: FK-backed project/public image usage and typed automatic/named backup references, legacy audit ledger",
     "V118 N-03: delta-only media ownership and usage writes plus newly-created-backup-only reference indexing",
-    "Migration 009: FK-backed style-to-page/template object references, historical diagnostic log, UPSERT-based central shared_styles and tolerant backfill"
+    "Migration 009: FK-backed style-to-page/template object references, historical diagnostic log, UPSERT-based central shared_styles and tolerant backfill",
+    "Migration 010: derived FK-backed Scene/Layer/Element/Group graph and scene-template links; source digest, tolerant migration and style/media cleanup order"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V119 N-04 source prepared (SQLite schema 9). The source static checker, Rust compilation, automated test, migration execution on a real database, Windows/Tauri and browser/PDF runtime checks were NOT executed under DEC-006. Owner acceptance remains pending."
+  "note": "V120 N-05 source candidate, schema 10. Static checker, Rust Build, automated Test, migration execution on user data, Windows/Tauri/Browser Runtime and PDF review NOT run under DEC-006. JSON remains sole editable source of truth; scene tables are replaceable FK-backed projections."
 }

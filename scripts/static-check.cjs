@@ -14,6 +14,7 @@ const rust = read('src-tauri/src/main.rs');
 const media = read('src-tauri/src/media_store.rs');
 const projectStore = read('src-tauri/src/project_store.rs');
 const ownership = read('src-tauri/src/image_ownership.rs');
+const scene = read('src-tauri/src/scene_store.rs');
 
 assert(/^\d+\.\d+\.\d+$/.test(config.version), 'Invalid Tauri semver');
 const packageStart = cargo.search(/^\[package\]\s*$/m);
@@ -89,6 +90,24 @@ assert(rust.includes('backfill_style_bindings(&tx)') &&
        projectStore.includes('ON CONFLICT(id) DO UPDATE') &&
        !projectStore.includes('DELETE FROM shared_styles",[]'),
   'N-04 incremental shared styles or FK binding management not wired');
+const n05 = read('src-tauri/migrations/010.sql');
+for (const name of [
+  'design_scenes', 'design_scene_layers', 'design_scene_groups',
+  'design_scene_elements', 'design_scene_template_links',
+  'design_scene_projection_issues'
+]) {
+  assert(n05.includes('CREATE TABLE IF NOT EXISTS ' + name),
+    'N-05 scene projection table missing: ' + name);
+}
+assert(rust.includes('mod scene_store;') &&
+       rust.includes('scene_store::backfill_scene_projections(&tx)') &&
+       rust.includes('scene_store::persist_scene_projections(&tx)') &&
+       projectStore.includes('pub fn finalize_shared_styles(') &&
+       scene.includes('pub fn persist_scene_projections(') &&
+       scene.includes('pub fn backfill_scene_projections(') &&
+       scene.includes('source_sha256') &&
+       scene.includes('DELETE FROM design_scene_elements WHERE scene_key=?1'),
+  'N-05 derived relational scenes or FK-safe save sequencing missing');
 assert(projectStore.includes('ON CONFLICT(project_id,portfolio_id,id) DO UPDATE'),
   'Relational page upsert missing');
 assert(projectStore.includes('references missing {kind}/{template}'),

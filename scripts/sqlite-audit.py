@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only SQLite integrity check for NSP Portfolio Builder (schema 9+).
+"""Read-only SQLite integrity check for NSP Portfolio Builder (schema 10+).
 
 Usage: python scripts/sqlite-audit.py "/path/to/storage/portfolio.sqlite3"
 Close the desktop app before running a filesystem-level database/asset backup.
@@ -22,6 +22,9 @@ EXPECTED = {
     "named_backup_asset_refs", "reference_migration_issues",
     "style_page_element_refs", "style_template_element_refs",
     "style_reference_issues",
+    "design_scenes", "design_scene_layers", "design_scene_groups",
+    "design_scene_elements", "design_scene_template_links",
+    "design_scene_projection_issues",
 }
 
 
@@ -56,6 +59,32 @@ def audit(db_path: Path) -> dict:
                    AND NOT EXISTS (SELECT 1 FROM named_backups b WHERE b.id=r.backup_id))
                    OR r.backup_kind NOT IN ('automatic','named')
                 """
+            ).fetchone()[0]
+            # The canonical payloads are in workspace_pages/shared_templates.
+            # A missing projection indicates an incomplete N-05 upgrade/save.
+            report["pages_without_scene_projection"] = conn.execute(
+                """
+                SELECT COUNT(*) FROM workspace_pages p
+                WHERE NOT EXISTS (
+                    SELECT 1 FROM design_scenes s
+                    WHERE s.owner_kind='page'
+                      AND s.project_id=p.project_id
+                      AND s.portfolio_id=p.portfolio_id AND s.page_id=p.id
+                )
+                """
+            ).fetchone()[0]
+            report["templates_without_scene_projection"] = conn.execute(
+                """
+                SELECT COUNT(*) FROM shared_templates t
+                WHERE NOT EXISTS (
+                    SELECT 1 FROM design_scenes s
+                    WHERE s.owner_kind='template'
+                      AND s.template_kind=t.kind AND s.template_id=t.id
+                )
+                """
+            ).fetchone()[0]
+            report["historical_scene_projection_issues"] = conn.execute(
+                "SELECT COUNT(*) FROM design_scene_projection_issues"
             ).fetchone()[0]
             report["style_reference_migration_issues"] = conn.execute(
                 "SELECT COUNT(*) FROM style_reference_issues"
@@ -115,6 +144,8 @@ def audit(db_path: Path) -> dict:
             and report.get("orphan_usage_assets", 0) == 0
             and report.get("unmapped_legacy_backup_refs", 0) == 0
             and report.get("unmapped_legacy_image_usage", 0) == 0
+            and report.get("pages_without_scene_projection", 0) == 0
+            and report.get("templates_without_scene_projection", 0) == 0
         )
         return report
     finally:

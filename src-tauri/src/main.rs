@@ -7,6 +7,7 @@ use tauri::{Manager, State};
 mod media_store;
 mod project_store;
 mod image_ownership;
+mod scene_store;
 struct AssetRoot(PathBuf);
 struct Storage(Mutex<Connection>);
 fn error(e: impl std::fmt::Display) -> String { e.to_string() }
@@ -113,6 +114,11 @@ fn save_project(
     media_store::project_links(&tx, &compact)?;
     project_store::persist_workspace(&tx, &compact)?;
     image_ownership::persist_ownership(&tx, &compact)?;
+    // JSON payloads are the only editable source; scene rows are derived
+    // and are refreshed after their page/template/media FK parents exist.
+    scene_store::persist_scene_projections(&tx)?;
+    // Delay retired style deletion until old scene element FKs are gone.
+    project_store::finalize_shared_styles(&tx, &compact)?;
     tx.execute(
         "DELETE FROM backups WHERE id NOT IN (SELECT id FROM backups ORDER BY id DESC LIMIT 30)", [],
     ).map_err(error)?;
@@ -247,7 +253,7 @@ fn main() {
             conn.execute_batch("PRAGMA foreign_keys=ON; PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;")?;
             let tx = conn.transaction()?;
             let version: i64 = tx.query_row("PRAGMA user_version", [], |r| r.get(0))?;
-            if version > 9 { return Err("Database schema is newer than this application".into()); }
+            if version > 10 { return Err("Database schema is newer than this application".into()); }
             if version < 1 { tx.execute_batch(include_str!("../migrations/001.sql"))?; }
             if version < 2 { tx.execute_batch(include_str!("../migrations/002.sql"))?; }
             if version < 3 {
@@ -268,6 +274,11 @@ fn main() {
             if version < 9 {
                 tx.execute_batch(include_str!("../migrations/009.sql"))?;
                 project_store::backfill_style_bindings(&tx)
+                    .map_err(|e|std::io::Error::other(e))?;
+            }
+            if version < 10 {
+                tx.execute_batch(include_str!("../migrations/010.sql"))?;
+                scene_store::backfill_scene_projections(&tx)
                     .map_err(|e|std::io::Error::other(e))?;
             }
             tx.commit()?;

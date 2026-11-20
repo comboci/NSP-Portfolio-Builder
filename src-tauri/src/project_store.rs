@@ -483,12 +483,22 @@ pub fn persist_workspace(tx: &Transaction<'_>, workspace: &Value) -> Result<(), 
     delete_missing(tx, "workspace_portfolios", &["project_id", "id"], &seen.portfolios)?;
     delete_missing(tx, "workspace_projects", &["id"], &seen.projects)?;
     delete_missing(tx, "shared_templates", &["kind", "id"], &seen.templates)?;
-    // Reconcile typed style references while old style IDs still exist.
-    // Only then retire unreferenced styles; unexpected FK dependencies abort
-    // and roll back the complete workspace save transaction.
+    // Reconcile legacy JSON-path style refs before scene projections change.
+    // N-05 element rows also reference shared_styles; deleting retired style
+    // IDs is delayed until scene_store has replaced their old FK children.
     reconcile_style_bindings(tx,desired_styles.as_ref(),true)?;
-    if let Some(ids)=desired_styles.as_ref(){
-        delete_obsolete_styles(tx,ids)?;
+    Ok(())
+}
+
+pub fn finalize_shared_styles(
+    tx:&Transaction<'_>,workspace:&Value,
+)->Result<(),String>{
+    if let Some(styles)=style_catalog(workspace)?{
+        let mut wanted=HashSet::new();
+        for style in styles {
+            wanted.insert(identity(style,"id")?.to_owned());
+        }
+        delete_obsolete_styles(tx,&wanted)?;
     }
     Ok(())
 }
