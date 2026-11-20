@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — V138: توسعه مرورگرمحور و ایمنی ذخیره کاتالوگ
+
+توسعه موتور طراحی فعلاً با فایل مستقل HTML و IndexedDB انجام می‌شود؛ کد و Schema 13 SQLite تغییر نکرد. فاز محدود TASK-076: حذف آخرین گروه مسدود است، تغییر نام تکراری گروه رد می‌شود، اعمال قالب از کتابخانه مقصد را صریحاً تأیید می‌کند، و خطاهای شروع ثبت باعث بازگردانی تغییرات همان عملیات می‌شوند. خطای تأیید ناهمگام به‌عنوان ذخیره قطعی نمایش داده نمی‌شود. مستندات در `project evolution/BROWSER-FIRST-DEV-V138-FA.md`. بدون Build/Test/Static Checker/Runtime، پذیرش مالک در انتظار.
+
+---
+
 # NSP Portfolio Builder — Version 137 (page-first migration phase 1; source-only)
 
 V137 introduces independent blank-page creation, a **system-wide page-template library with categories used only for finding templates**, and **project-local linked Custom Components inside the shared designer Toolbox**. The existing template records remain in SQLite `shared_templates`; category metadata lives in `shared_template_context`. Component definitions are stored in each project's canonical JSON payload. SQLite schema stays at revision 13, and image originals/backups are not reset by this commit.

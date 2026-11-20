@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "137",
-  "basedOnMainCommitBeforeChange": "c59e233b4afa415a03293dd74e382ed56e166ddd",
+  "plannedForVersion": "138",
+  "basedOnMainCommitBeforeChange": "945355079a68f3e5499af0b09990fa80bf0e906d",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -29,11 +29,12 @@
     "V134 TASK-071: scroll-window thumbnail virtualization, page-change invalidation, keyboard focus and scroll preservation, no stale template/style/media preview",
     "V135 TASK-043: SQLite migration 013 retains unknown-revision legacy named backups; transactional canonical snapshot and expected-revision CAS, atomic FK refs, IndexedDB atomic checkpoints, separate unsaved draft export and Backup Before Restore",
     "V136 TASK-044: native startup failure blocks persistence and labels UI-memory export noncanonical; closed-app SQLite/WAL/SHM/assets preservation guide; bounded redacted in-memory diagnostics for startup/write/retry and browser fail-closed recovery",
-    "V137: page-first blank page creation, global templateCategories in shared SQLite context, independent template instances, project-local linked customComponents in Toolbox, and legacy master/section compatibility"
+    "V137: page-first blank page creation, global templateCategories in shared SQLite context, independent template instances, project-local linked customComponents in Toolbox, and legacy master/section compatibility",
+    "V138 HTML/IndexedDB catalog update guards, apply-template confirmation and pre-enqueue rollback (source-only)"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V137 phase 1 source candidate only. Old Master/Section state remains internally pending full decommission. No assistant build, test, static checker, browser/Tauri Runtime, data reset, or owner acceptance."
+  "note": "V138 source-only browser-first. No assistant Build/Test/static checker/browser runtime/Tauri runtime or SQLite modification."
 }
