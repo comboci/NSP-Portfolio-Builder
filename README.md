@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 108 (TASK-023 partial, source-only)
+
+V108 delays clearing Master Template and Section Template drafts until SQLite/IndexedDB persistence is acknowledged (V13.flushStorage). Previously save() merely queued the asynchronous write and Save-and-Return could leave prematurely. A failed write restores the previous in-memory template, retains the editable unsaved draft and displays an error. Changes made while a save is pending stay in the unsaved draft; duplicate in-flight template-save requests are ignored. The editor now gives storage errors priority over the pending draft label.
+
+**Still pending:** Autosave on/off checkbox, independent Save Page / Save Project, manual dirty-page snapshots and Save / Discard / Cancel on navigation and exit. The global queue is not yet atomic across unrelated edits; this is a partial TASK-023 source candidate. No Build/Test, browser/Tauri, runtime, PDF or owner verification. Owner should review master/section save success/failure/retry, Save-and-Return and editing while a write is pending.
+
+---
+
 # NSP Portfolio Builder — Version 107 (TASK-023 partial, source-only)
 
 V107 begins TASK-023 by making persistence feedback in the shared page/template editor truthful: **saving**, **durably saved**, **error** and **recovery required** now reflect the SQLite/IndexedDB/localStorage write pipeline, instead of labeling a queued write as saved. A retry button invokes the existing global database retry mechanism; it does not pretend to be a separate Save Page command. A failed write remains visible until a subsequent successful write is acknowledged.
