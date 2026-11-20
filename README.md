@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 109 (TASK-023 partial, source-only)
+
+V109 adds a three-option **Save / Discard / Cancel** confirmation when leaving a dirty Master Template for the master list/another master, or switching from a dirty Section Template to another section. Save uses the V108 durable SQLite/IndexedDB acknowledgement before leaving. Failure or new edits retain the draft and stay in the editor; Discard explicitly drops the draft; Cancel leaves it untouched. The existing two-button dialog API remains backward-compatible.
+
+**Still pending:** A visible autosave checkbox, true page-scoped Save Page / Save Project separation, page dirty snapshots, unsaved page navigation/window-exit handling, and confirmation for other navigation paths. This change does not disable automatic page saves. No Build/Test or runtime/PDF/owner verification. Owner should review each choice for both template types, force a database-save failure to confirm the editor remains open, and check existing two-button dialogs.
+
+---
+
 # NSP Portfolio Builder — Version 108 (TASK-023 partial, source-only)
 
 V108 delays clearing Master Template and Section Template drafts until SQLite/IndexedDB persistence is acknowledged (V13.flushStorage). Previously save() merely queued the asynchronous write and Save-and-Return could leave prematurely. A failed write restores the previous in-memory template, retains the editable unsaved draft and displays an error. Changes made while a save is pending stay in the unsaved draft; duplicate in-flight template-save requests are ignored. The editor now gives storage errors priority over the pending draft label.
