@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Version 124 (N-07 backup retention and asset integrity, source-only)
+
+V124 adds SQLite Migration 012 (additive retention policy). Automatic backup deletion is OFF by default until the owner successfully verifies restoration from a named backup and a future explicit policy approval is recorded. Existing automatic and named snapshots and immutable physical assets are preserved. Backup listing is cursor-paginated so old snapshots stay reachable; named backup creation checks referenced asset bytes before commit; read-only inspection reports file integrity and FK index coverage. There is no physical asset garbage collector or delete call. Until pruning is approved, SQLite backups can grow beyond 30 records; monitor disk use and retain an offline full `storage/` copy (DB/WAL/SHM plus `assets/`).
+
+**Source only:** No Build, Test, static checker, SQLite migration or actual Restore has been executed by the assistant (DEC-006). Owner must verify V124 on a copy of the Windows database, including backup pagination, old reference mismatches, missing/corrupt image files, named/automatic recovery, WAL recovery, multiple windows, and PRAGMA foreign_key_check. A successful read-only integrity check is not owner acceptance of a restored workspace.
+
 # NSP Portfolio Builder — Version 123 (N-06 scope hardening, source-only)
 
 Following the concurrent V122 implementation of N-06, V123 closes two source-level scope leaks. Generic editor `save()` now dispatches to the page-scoped transactional queue when the active design editor is a page, rather than writing the entire workspace snapshot. The explicit `V.saveProject()` bypasses this dispatch for full-workspace commits; structural page duplication/deletion uses this explicit project operation and waits for its backend acknowledgement. The page editor shows a separate Save Project action.

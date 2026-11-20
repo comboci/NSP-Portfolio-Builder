@@ -8,6 +8,7 @@ mod media_store;
 mod project_store;
 mod image_ownership;
 mod scene_store;
+mod backup_store;
 struct AssetRoot(PathBuf);
 struct Storage(Mutex<Connection>);
 fn error(e: impl std::fmt::Display) -> String { e.to_string() }
@@ -192,12 +193,9 @@ fn save_project(
     scene_store::persist_scene_projections(&tx)?;
     // Delay retired style deletion until old scene element FKs are gone.
     project_store::finalize_shared_styles(&tx, &compact)?;
-    tx.execute(
-        "DELETE FROM backups WHERE id NOT IN (SELECT id FROM backups ORDER BY id DESC LIMIT 30)", [],
-    ).map_err(error)?;
-    // Deleting an automatic backup cascades its FK-backed asset refs; only the
-    // legacy polymorphic index needs stale-row pruning.
-    image_ownership::prune_automatic_backup_refs(&tx)?;
+    // N-07: no implicit automatic-backup deletion before owner-verified recovery.
+    // Any future approved retention remains inside this same SQLite transaction.
+    backup_store::apply_automatic_retention(&tx)?;
     let next_revision=advance_workspace_revision(&tx,expected_revision)?;
     tx.commit().map_err(error)?;
     Ok(next_revision)
@@ -318,11 +316,30 @@ fn add_ref(tx: &Transaction<'_>, kind: &str, owner: &str, id: &str) -> Result<()
 
 // A light list avoids hydrating all 30 historical revisions into Base64 at once.
 #[tauri::command]
-fn list_backups(db: State<'_, Storage>) -> Result<Vec<(i64, String)>, String> {
+fn list_backups(db: State<'_, Storage>, before_id: Option<i64>) -> Result<Vec<(i64, String)>, String> {
     let conn = db.0.lock().map_err(error)?;
-    let mut query = conn.prepare("SELECT id,created_at FROM backups ORDER BY id DESC LIMIT 30").map_err(error)?;
-    let rows = query.query_map([], |r| Ok((r.get(0)?, r.get(1)?))).map_err(error)?;
+    // Every retained snapshot stays reachable; paginate rather than silently
+    // hiding older entries when automatic pruning is disabled.
+    let before=before_id.filter(|id|*id>0).unwrap_or(i64::MAX);
+    let mut query=conn.prepare(
+        "SELECT id,created_at FROM backups WHERE id<?1 ORDER BY id DESC LIMIT 30"
+    ).map_err(error)?;
+    let rows=query.query_map([before], |r| Ok((r.get(0)?, r.get(1)?))).map_err(error)?;
     rows.collect::<Result<Vec<_>, _>>().map_err(error)
+}
+
+#[tauri::command]
+fn backup_retention_status(db:State<'_,Storage>)->Result<Value,String>{
+    let conn=db.0.lock().map_err(error)?;
+    backup_store::retention_status(&conn)
+}
+
+#[tauri::command]
+fn inspect_backup(
+    db:State<'_,Storage>,root:State<'_,AssetRoot>,kind:String,id:i64,
+)->Result<Value,String>{
+    let conn=db.0.lock().map_err(error)?;
+    backup_store::inspect_backup(&conn,&root.0,&kind,id)
 }
 
 #[tauri::command]
@@ -360,6 +377,9 @@ fn create_backup(
             ).optional().map_err(error)?.ok_or("Save the project first")?,
         }
     };
+    // Do not claim a durable named recovery point if any referenced asset is
+    // unreadable or has the wrong content hash. Failure rolls back metadata.
+    media_store::verify_snapshot_integrity(&tx,&root.0,&compact)?;
     let value: Value = serde_json::from_str(&compact).map_err(error)?;
     tx.execute(
         "INSERT INTO named_backups(name,payload) VALUES(?1,?2)",
@@ -421,7 +441,7 @@ fn main() {
             conn.execute_batch("PRAGMA foreign_keys=ON; PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;")?;
             let tx = conn.transaction()?;
             let version: i64 = tx.query_row("PRAGMA user_version", [], |r| r.get(0))?;
-            if version > 11 { return Err("Database schema is newer than this application".into()); }
+            if version > 12 { return Err("Database schema is newer than this application".into()); }
             if version < 1 { tx.execute_batch(include_str!("../migrations/001.sql"))?; }
             if version < 2 { tx.execute_batch(include_str!("../migrations/002.sql"))?; }
             if version < 3 {
@@ -452,13 +472,16 @@ fn main() {
             if version < 11 {
                 tx.execute_batch(include_str!("../migrations/011.sql"))?;
             }
+            if version < 12 {
+                tx.execute_batch(include_str!("../migrations/012.sql"))?;
+            }
             tx.commit()?;
             app.manage(AssetRoot(root));
             app.manage(Storage(Mutex::new(conn)));
             Ok(())
         })
         .invoke_handler(tauri::generate_handler![
-            load_project, load_project_state, save_project, save_page, rename_public_image, list_backups, read_backup, create_backup, list_named_backups, read_named_backup,
+            load_project, load_project_state, save_project, save_page, rename_public_image, list_backups, read_backup, create_backup, list_named_backups, read_named_backup, backup_retention_status, inspect_backup,
         ])
         .run(tauri::generate_context!())
         .expect("Failed to start NSP Portfolio Builder");

@@ -2,7 +2,7 @@ use base64::{engine::general_purpose::STANDARD, Engine};
 use rusqlite::{params, Connection, OptionalExtension, Transaction};
 use serde_json::Value;
 use sha2::{Digest, Sha256};
-use std::{collections::HashMap, fs, io::Write, path::Path};
+use std::{collections::{HashMap, HashSet}, fs, io::Write, path::Path};
 
 const REF_PREFIX: &str = "nsp-asset-v74:";
 fn error(e: impl std::fmt::Display) -> String { e.to_string() }
@@ -154,6 +154,51 @@ pub fn hydrate_payload(db: &Connection, root: &Path, payload: &str) -> Result<St
     let mut value: Value = serde_json::from_str(payload).map_err(error)?;
     hydrate_value_inner(db, root, &mut value, &mut HashMap::new())?;
     serde_json::to_string(&value).map_err(error)
+}
+
+// N-07: preflight a compact backup without modifying projects, image owners,
+// backup rows or the asset directory. Legacy inline Base64 remains self-contained.
+fn collect_snapshot_hashes(value:&Value, hashes:&mut HashSet<String>)->Result<(),String>{
+    match value {
+        Value::String(s)=>{
+            if let Some(hash)=s.strip_prefix(REF_PREFIX){
+                validate_hash(hash)?;
+                hashes.insert(hash.to_owned());
+            }
+        },
+        Value::Array(items)=>for item in items{
+            collect_snapshot_hashes(item,hashes)?;
+        },
+        Value::Object(props)=>for (name,item) in props {
+            if name=="tilesJson" {
+                if let Some(raw)=item.as_str(){
+                    if raw.contains(REF_PREFIX){
+                        let nested:Value=serde_json::from_str(raw).map_err(error)?;
+                        collect_snapshot_hashes(&nested,hashes)?;
+                        continue;
+                    }
+                }
+            }
+            collect_snapshot_hashes(item,hashes)?;
+        },
+        _=>{}
+    }
+    Ok(())
+}
+
+pub fn verify_snapshot_integrity(
+    db:&Connection, root:&Path, payload:&str,
+)->Result<HashSet<String>,String>{
+    let snapshot:Value=serde_json::from_str(payload).map_err(error)?;
+    let mut hashes=HashSet::new();
+    collect_snapshot_hashes(&snapshot,&mut hashes)?;
+    for hash in &hashes {
+        // Reuse the restore path's validated hash, MIME, length and safe-path checks.
+        // Limit Base64 working memory to one referenced asset at a time.
+        let mut one_asset=HashMap::new();
+        let _=fetch_image(db,root,hash,&mut one_asset)?;
+    }
+    Ok(hashes)
 }
 
 pub fn persist_image_links(tx: &Transaction<'_>, value: &Value) -> Result<(), String> {
