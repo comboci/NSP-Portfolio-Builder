@@ -52,10 +52,18 @@ fn save_project(
     // Persist immutable originals first, then commit ONLY references in all SQLite JSON rows.
     media_store::compact_value(&tx, &root.0, &mut compact)?;
     let compact_payload = serde_json::to_string(&compact).map_err(error)?;
-    tx.execute(
-        "INSERT INTO backups(payload) SELECT payload FROM projects WHERE id='workspace' AND payload<>?1",
-        [&compact_payload],
-    ).map_err(error)?;
+    // Only a newly retained previous revision needs asset-reference indexing.
+    // Named and older automatic backups are never rescanned on an ordinary save.
+    let previous:Option<String>=tx.query_row(
+        "SELECT payload FROM projects WHERE id='workspace' AND payload<>?1",
+        [&compact_payload],|r|r.get(0),
+    ).optional().map_err(error)?;
+    if let Some(prior)=previous {
+        tx.execute("INSERT INTO backups(payload) VALUES(?1)",[&prior]).map_err(error)?;
+        let backup_id=tx.last_insert_rowid();
+        let prior_value:Value=serde_json::from_str(&prior).map_err(error)?;
+        image_ownership::index_backup_refs(&tx,"automatic",backup_id,&prior_value)?;
+    }
     tx.execute(
         "INSERT INTO projects(id,payload) VALUES('workspace',?1) ON CONFLICT(id) DO UPDATE SET payload=excluded.payload,updated_at=CURRENT_TIMESTAMP",
         [&compact_payload],
@@ -108,8 +116,9 @@ fn save_project(
     tx.execute(
         "DELETE FROM backups WHERE id NOT IN (SELECT id FROM backups ORDER BY id DESC LIMIT 30)", [],
     ).map_err(error)?;
-    // Re-index only backups that survived retention pruning, inside this transaction.
-    image_ownership::sync_backup_references(&tx)?;
+    // Deleting an automatic backup cascades its FK-backed asset refs; only the
+    // legacy polymorphic index needs stale-row pruning.
+    image_ownership::prune_automatic_backup_refs(&tx)?;
     tx.commit().map_err(error)
 }
 

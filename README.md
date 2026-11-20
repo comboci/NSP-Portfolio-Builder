@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 118 (N-03 database architecture, source-only)
+
+N-03 reconciles immutable-image ownership and typed/legacy image usage indexes using set differences and FK-ordered updates. Unchanged rows are preserved. Only newly inserted automatic backups have their asset references indexed; deleting old automatic backups cascades typed FK rows and prunes the legacy compatibility index. Named backups are no longer rescanned on every save. SQLite schema is unchanged at **8** (no new migration); no reset or physical asset deletion. V117 TASK-023 page-save source changes are retained.
+
+**Verification:** SOURCE ONLY. Under DEC-006 no tests, builds, static checker execution, runtime, migration execution or PDF comparison have been performed. Owner must verify image replacement under stable ID, private/public page/template references, copy/share operations, Tile/stash, backup creation/pruning/restoration and `PRAGMA foreign_key_check`.
+
+---
+
 # NSP Portfolio Builder — Version 117 (TASK-023, source-only)
 
 Partial continuation of TASK-023: Page Save/Return, page-editor Back to Projects/table, new/edit-page entry and project thumbnail switching now wait for database persistence acknowledgement before navigating. If a write fails or the edited page changes during the wait, the page remains open. Page save status reflects pending/failed/acknowledged storage instead of assuming autosave success. No autosave-off checkbox or page-level Save/Discard/Cancel yet, and Save Page/Save Project are not isolated. V116 N-02 SQLite schema 008 and prior data remain unchanged. No Build, Test, static-check script, browser/Tauri runtime or PDF review was executed; owner acceptance remains pending.

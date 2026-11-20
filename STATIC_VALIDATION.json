@@ -1,19 +1,20 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "117",
-  "basedOnMainCommitBeforeChange": "b76b5760e942549352d61e0123099adf006e2330",
+  "plannedForVersion": "118",
+  "basedOnMainCommitBeforeChange": "6dedc9fdb217d6cafce54e4be5b5727c13dc88c2",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
     "HTML title/header/meta and JavaScript appVersion match Cargo/Tauri",
     "Sequential SQL user_version migrations and Rust wiring",
     "Tauri IPC registration, JS parsing, backup/media invariants",
-    "Migration 008: FK-backed project/public image usage and typed automatic/named backup references, legacy audit ledger"
+    "Migration 008: FK-backed project/public image usage and typed automatic/named backup references, legacy audit ledger",
+    "V118 N-03: delta-only media ownership and usage writes plus newly-created-backup-only reference indexing"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V117 TASK-023 source-only page-save acknowledgement/guard. Preserves N-02 schema 008 and FK-backed image/backup reference tables. No static checker, Rust build, automated test, browser/Tauri runtime, PDF or owner acceptance performed."
+  "note": "V118 N-03 source prepared on top of V117 TASK-023. Source checker, Build, Test, SQLite migration/runtime, browser/Tauri and PDF validation were NOT executed under DEC-006. Schema remains revision 8; owner review and acceptance pending."
 }

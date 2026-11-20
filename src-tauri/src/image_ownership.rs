@@ -44,49 +44,71 @@ fn collect_asset_ids(value:&Value, out:&mut HashSet<String>){
     }
 }
 // Maintain FK-backed typed edges alongside the legacy compatibility index.
-fn add_usage(
-    tx:&Transaction<'_>,scope:&str,kind:&str,owner:&str,content:&Value,
-    private:&HashMap<String,String>,public:&HashMap<String,String>,
-    page:Option<(&str,&str)>,
+// N-03: reconcile only changed rows. The complete workspace is still read from
+// the existing frontend, but unchanged SQL rows are never rewritten.
+#[derive(Default)]
+struct Expected {
+    owners: HashSet<Vec<String>>,
+    legacy_uses: HashSet<Vec<String>>,
+    page_private: HashSet<Vec<String>>,
+    page_public: HashSet<Vec<String>>,
+    template_public: HashSet<Vec<String>>,
+}
+
+struct Delta {
+    remove: Vec<Vec<String>>,
+    add: Vec<Vec<String>>,
+}
+
+fn difference(
+    tx: &Transaction<'_>, table: &str, columns: &[&str],
+    desired: &HashSet<Vec<String>>,
+) -> Result<Delta, String> {
+    // Identifiers are fixed by the caller; user input is always bound as values.
+    let mut stmt=tx.prepare(&format!("SELECT {} FROM {table}",columns.join(","))).map_err(err)?;
+    let rows=stmt.query_map([],|r| {
+        (0..columns.len()).map(|i|r.get::<usize,String>(i))
+            .collect::<rusqlite::Result<Vec<_>>>()
+    }).map_err(err)?;
+    let current:HashSet<Vec<String>>=
+        rows.collect::<rusqlite::Result<HashSet<_>>>().map_err(err)?;
+    Ok(Delta {
+        remove:current.difference(desired).cloned().collect(),
+        add:desired.difference(&current).cloned().collect(),
+    })
+}
+
+fn apply_delete(
+    tx:&Transaction<'_>,table:&str,columns:&[&str],rows:&[Vec<String>],
 )->Result<(),String>{
-    let mut ids=HashSet::new();
-    collect_asset_ids(content,&mut ids);
-    for id in ids {
-        let local=if scope=="@global"{None}else{private.get(&id)};
-        let hash=local.or_else(||public.get(&id))
-            .ok_or_else(||format!("Unowned or inaccessible image {id} referenced by {scope}/{kind}/{owner}"))?;
-        tx.execute(
-            "INSERT INTO image_usage_edges(scope_id,owner_kind,owner_id,image_id,asset_hash)
-             VALUES(?1,?2,?3,?4,?5)",
-            params![scope,kind,owner,id,hash],
-        ).map_err(err)?;
-        match page {
-            Some((portfolio_id,page_id)) => {
-                // Table names are chosen internally, never from frontend data.
-                let table=if local.is_some(){"image_page_private_refs"}else{"image_page_public_refs"};
-                tx.execute(&format!(
-                    "INSERT INTO {table}(project_id,portfolio_id,page_id,image_id,asset_hash)
-                     VALUES(?1,?2,?3,?4,?5)"
-                ),params![scope,portfolio_id,page_id,id,hash]).map_err(err)?;
-            }
-            None if scope=="@global" => {
-                tx.execute(
-                    "INSERT INTO image_template_public_refs(template_kind,template_id,image_id,asset_hash)
-                     VALUES(?1,?2,?3,?4)",
-                    params![kind,owner,id,hash],
-                ).map_err(err)?;
-            }
-            None => return Err("Image use without a typed page or template owner".into()),
-        }
+    if rows.is_empty(){return Ok(());}
+    let where_sql=columns.iter().enumerate()
+        .map(|(n,c)|format!("{c}=?{}",n+1)).collect::<Vec<_>>().join(" AND ");
+    let statement=format!("DELETE FROM {table} WHERE {where_sql}");
+    for values in rows {
+        tx.execute(&statement,rusqlite::params_from_iter(values.iter())).map_err(err)?;
     }
     Ok(())
 }
+fn apply_insert(
+    tx:&Transaction<'_>,table:&str,columns:&[&str],rows:&[Vec<String>],
+)->Result<(),String>{
+    if rows.is_empty(){return Ok(());}
+    let placeholders=(1..=columns.len())
+        .map(|n|format!("?{n}")).collect::<Vec<_>>().join(",");
+    let statement=format!("INSERT INTO {table}({}) VALUES({placeholders})",columns.join(","));
+    for values in rows {
+        tx.execute(&statement,rusqlite::params_from_iter(values.iter())).map_err(err)?;
+    }
+    Ok(())
+}
+
 fn public_catalog(tx:&Transaction<'_>,root:&Value)->Result<HashMap<String,String>,String>{
     if let Some(images)=root.get("globalImageLibrary").and_then(Value::as_array){
         for entry in images{
             let id=project_id(entry,"id")?;
             let hash=hash_of(entry)?;
-            // Permanent publication: a public ID cannot silently point to new bytes.
+            // Public identity/hash are immutable; rename changes metadata separately.
             tx.execute("INSERT OR IGNORE INTO image_public_catalog(id,asset_hash,payload) VALUES(?1,?2,?3)",
                 params![id,hash,entry.to_string()]).map_err(err)?;
             let old:String=tx.query_row("SELECT asset_hash FROM image_public_catalog WHERE id=?1",[id],|r|r.get(0)).map_err(err)?;
@@ -97,35 +119,73 @@ fn public_catalog(tx:&Transaction<'_>,root:&Value)->Result<HashMap<String,String
     let rows=stmt.query_map([],|r|Ok((r.get::<_,String>(0)?,r.get::<_,String>(1)?))).map_err(err)?;
     rows.collect::<Result<HashMap<_,_>,_>>().map_err(err)
 }
-fn project_images(tx:&Transaction<'_>,project:&str,content:&Value)->Result<HashMap<String,String>,String>{
-    let mut map=HashMap::new();
-    if let Some(images)=content.get("imageLibrary").and_then(Value::as_array){
-        for img in images{
-            let id=project_id(img,"id")?;
-            let hash=hash_of(img)?;
-            tx.execute("INSERT INTO image_project_owners(project_id,image_id,asset_hash) VALUES(?1,?2,?3)",
-                params![project,id,hash]).map_err(err)?;
-            map.insert(id.to_owned(),hash);
+
+fn collect_usage(
+    scope:&str,kind:&str,owner:&str,content:&Value,
+    private:&HashMap<String,String>,public:&HashMap<String,String>,
+    page:Option<(&str,&str)>,expected:&mut Expected,
+)->Result<(),String>{
+    let mut ids=HashSet::new();
+    collect_asset_ids(content,&mut ids);
+    for id in ids {
+        let local=if scope=="@global"{None}else{private.get(&id)};
+        let hash=local.or_else(||public.get(&id))
+            .ok_or_else(||format!("Unowned or inaccessible image {id} referenced by {scope}/{kind}/{owner}"))?;
+        expected.legacy_uses.insert(vec![
+            scope.to_owned(),kind.to_owned(),owner.to_owned(),id.clone(),hash.clone()
+        ]);
+        match page {
+            Some((portfolio_id,page_id))=>{
+                let row=vec![
+                    scope.to_owned(),portfolio_id.to_owned(),page_id.to_owned(),
+                    id,hash.clone()
+                ];
+                if local.is_some(){expected.page_private.insert(row);}
+                else{expected.page_public.insert(row);}
+            }
+            None if scope=="@global"=>{
+                expected.template_public.insert(vec![
+                    kind.to_owned(),owner.to_owned(),id,hash.clone()
+                ]);
+            }
+            None=>return Err("Image use without a typed page or template owner".into()),
         }
     }
-    Ok(map)
+    Ok(())
 }
-fn persist_one(tx:&Transaction<'_>,project:&str,content:&Value,
-               public:&HashMap<String,String>)->Result<(),String>{
-    let private=project_images(tx,project,content)?;
+
+fn collect_project(
+    project:&str,content:&Value,public:&HashMap<String,String>,
+    expected:&mut Expected,
+)->Result<(),String>{
+    let mut private=HashMap::new();
+    if let Some(images)=content.get("imageLibrary").and_then(Value::as_array){
+        for image in images{
+            let id=project_id(image,"id")?;
+            let hash=hash_of(image)?;
+            if private.insert(id.to_owned(),hash.clone()).is_some(){
+                return Err(format!("Duplicate private image {project}/{id}"));
+            }
+            expected.owners.insert(vec![project.to_owned(),id.to_owned(),hash]);
+        }
+    }
     if let Some(portfolios)=content.get("portfolios").and_then(Value::as_array){
         for portfolio in portfolios{
             let portfolio_id=project_id(portfolio,"id")?;
             if let Some(pages)=portfolio.get("pages").and_then(Value::as_array){
-                for page in pages{
+                for page in pages {
                     let page_id=project_id(page,"id")?;
-                    add_usage(tx,project,"page",&format!("{portfolio_id}/{page_id}"),page,&private,public,Some((portfolio_id,page_id)))?;
+                    collect_usage(
+                        project,"page",&format!("{portfolio_id}/{page_id}"),page,
+                        &private,public,Some((portfolio_id,page_id)),expected,
+                    )?;
                 }
             }
         }
     }
     Ok(())
 }
+
 fn collect_hashes(value:&Value,out:&mut HashSet<String>){
     match value{
         Value::String(v)=>{
@@ -147,35 +207,67 @@ fn collect_hashes(value:&Value,out:&mut HashSet<String>){
     }
 }
 pub fn persist_ownership(tx:&Transaction<'_>,workspace:&Value)->Result<(),String>{
-    // project_store::persist_workspace runs first, and clears the old project rows.
-    // Rebuild both typed and legacy use projections within one transaction.
-    // Deleting typed uses first keeps the ownership FKs valid throughout.
-    for table in ["image_page_private_refs", "image_page_public_refs", "image_template_public_refs"] {
-        tx.execute(&format!("DELETE FROM {table}"),[]).map_err(err)?;
-    }
-    tx.execute("DELETE FROM image_usage_edges",[]).map_err(err)?;
-    tx.execute("DELETE FROM image_project_owners",[]).map_err(err)?;
+    // The relational project/page/template projection has already been committed
+    // to this transaction. FK cascades for removed parents happen there.
     let public=public_catalog(tx,workspace)?;
-    let active=workspace.get("activeWorkspaceId").and_then(Value::as_str).unwrap_or("legacy-default");
-    persist_one(tx,active,workspace,&public)?;
+    let mut expected=Expected::default();
+    let active=workspace.get("activeWorkspaceId").and_then(Value::as_str)
+        .unwrap_or("legacy-default");
+    collect_project(active,workspace,&public,&mut expected)?;
     if let Some(inactive)=workspace.get("projectWorkspaces").and_then(Value::as_array){
-        for entry in inactive{
-            persist_one(tx,project_id(entry,"id")?,entry.get("data").ok_or("Missing project data")?,&public)?;
+        for entry in inactive {
+            collect_project(
+                project_id(entry,"id")?,
+                entry.get("data").ok_or("Missing project data")?,
+                &public,&mut expected,
+            )?;
         }
     }
-    let templates=workspace.get("globalTemplates").filter(|v|v.is_object()).unwrap_or(workspace);
-    for kind in ["masterTemplates","sectionDesigns","templates"]{
+    let templates=workspace.get("globalTemplates").filter(|v|v.is_object())
+        .unwrap_or(workspace);
+    for kind in ["masterTemplates","sectionDesigns","templates"] {
         if let Some(entries)=templates.get(kind).and_then(Value::as_array){
             for item in entries{
-                add_usage(tx,"@global",kind,project_id(item,"id")?,item,&HashMap::new(),&public,None)?;
+                collect_usage(
+                    "@global",kind,project_id(item,"id")?,item,
+                    &HashMap::new(),&public,None,&mut expected,
+                )?;
             }
         }
     }
+
+    const OWNER_COLS:&[&str]=&["project_id","image_id","asset_hash"];
+    const LEGACY_COLS:&[&str]=&["scope_id","owner_kind","owner_id","image_id","asset_hash"];
+    const PAGE_COLS:&[&str]=&["project_id","portfolio_id","page_id","image_id","asset_hash"];
+    const TEMPLATE_COLS:&[&str]=&["template_kind","template_id","image_id","asset_hash"];
+
+    let owners=difference(tx,"image_project_owners",OWNER_COLS,&expected.owners)?;
+    let private=difference(tx,"image_page_private_refs",PAGE_COLS,&expected.page_private)?;
+    let public_uses=difference(tx,"image_page_public_refs",PAGE_COLS,&expected.page_public)?;
+    let templates=difference(tx,"image_template_public_refs",TEMPLATE_COLS,&expected.template_public)?;
+    let legacy=difference(tx,"image_usage_edges",LEGACY_COLS,&expected.legacy_uses)?;
+
+    // Phase 1: remove stale child edges BEFORE changing an owner's content hash.
+    // A hash replacement is one old-row deletion + one new-row insertion.
+    apply_delete(tx,"image_page_private_refs",PAGE_COLS,&private.remove)?;
+    apply_delete(tx,"image_page_public_refs",PAGE_COLS,&public_uses.remove)?;
+    apply_delete(tx,"image_template_public_refs",TEMPLATE_COLS,&templates.remove)?;
+    apply_delete(tx,"image_usage_edges",LEGACY_COLS,&legacy.remove)?;
+
+    // Phase 2: reconcile private owners. Unchanged rows retain their identity.
+    apply_delete(tx,"image_project_owners",OWNER_COLS,&owners.remove)?;
+    apply_insert(tx,"image_project_owners",OWNER_COLS,&owners.add)?;
+
+    // Phase 3: all required parents exist; add only missing/new child links.
+    apply_insert(tx,"image_page_private_refs",PAGE_COLS,&private.add)?;
+    apply_insert(tx,"image_page_public_refs",PAGE_COLS,&public_uses.add)?;
+    apply_insert(tx,"image_template_public_refs",TEMPLATE_COLS,&templates.add)?;
+    apply_insert(tx,"image_usage_edges",LEGACY_COLS,&legacy.add)?;
     Ok(())
 }
 
-// Backups are immutable snapshots. Index their immutable content hashes on
-// creation, and rebuild the index after automatic-backup retention pruning.
+// Backups are immutable snapshots. Only a newly created snapshot is indexed;
+// previously recorded references remain untouched.
 pub fn index_backup_refs(
     tx: &Transaction<'_>, kind: &str, id: i64, value: &Value,
 ) -> Result<(), String> {
@@ -202,22 +294,16 @@ pub fn index_backup_refs(
     Ok(())
 }
 
-pub fn sync_backup_references(tx: &Transaction<'_>) -> Result<(), String> {
-    // Legacy and typed indexes are reconciled from the same retained snapshots.
-    // N-03 will make this incremental rather than rescanning named backups.
-    tx.execute("DELETE FROM image_backup_refs",[]).map_err(err)?;
-    tx.execute("DELETE FROM automatic_backup_asset_refs",[]).map_err(err)?;
-    tx.execute("DELETE FROM named_backup_asset_refs",[]).map_err(err)?;
-    for (kind,table) in [("automatic","backups"),("named","named_backups")] {
-        let mut stmt=tx.prepare(&format!("SELECT id,payload FROM {table}")).map_err(err)?;
-        let rows=stmt.query_map([],|r|Ok((r.get::<_,i64>(0)?,r.get::<_,String>(1)?))).map_err(err)?;
-        let snapshots=rows.collect::<rusqlite::Result<Vec<_>>>().map_err(err)?;
-        drop(stmt);
-        for (id,raw) in snapshots {
-            let value:Value=serde_json::from_str(&raw).map_err(err)?;
-            index_backup_refs(tx,kind,id,&value)?;
-        }
-    }
+// Typed automatic-backup rows are cascaded by the parent FK when retention
+// deletes an old backup. The old polymorphic index has no parent FK, so prune
+// only orphaned automatic rows; never scan or rewrite retained named backups.
+pub fn prune_automatic_backup_refs(tx:&Transaction<'_>)->Result<(),String>{
+    tx.execute(
+        "DELETE FROM image_backup_refs
+         WHERE backup_kind='automatic'
+           AND NOT EXISTS(SELECT 1 FROM backups b WHERE b.id=image_backup_refs.backup_id)",
+        [],
+    ).map_err(err)?;
     Ok(())
 }
 // V110: Rename public metadata in its canonical row, without changing

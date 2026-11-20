@@ -83,9 +83,19 @@ assert(projectStore.includes('ON CONFLICT(project_id,portfolio_id,id) DO UPDATE'
   'Relational page upsert missing');
 assert(projectStore.includes('references missing {kind}/{template}'),
   'Template reference integrity guard missing');
-assert(rust.includes('sync_backup_references(&tx)') &&
+assert(rust.includes('prune_automatic_backup_refs(&tx)') &&
+       rust.includes('index_backup_refs(&tx,"automatic",backup_id,&prior_value)') &&
        ownership.includes('pub fn index_backup_refs('),
-  'Backup reference tracking is not wired');
+  'Incremental backup reference tracking is not wired');
+assert(ownership.includes('fn difference(') &&
+       ownership.includes('fn apply_delete(') &&
+       ownership.includes('fn apply_insert(') &&
+       ownership.includes('image_page_private_refs') &&
+       ownership.includes('image_page_public_refs') &&
+       ownership.includes('image_template_public_refs') &&
+       !ownership.includes('DELETE FROM image_project_owners",[]') &&
+       !ownership.includes('DELETE FROM image_usage_edges",[]'),
+  'N-03 incremental media-usage reconciliation is missing');
 assert(ownership.includes('pub fn rename_public_metadata('),
   'Durable public image metadata update is missing');
 assert(html.includes('async function v77Persist(undo)') &&
