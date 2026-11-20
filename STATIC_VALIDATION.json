@@ -1,12 +1,12 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "138",
-  "basedOnMainCommitBeforeChange": "945355079a68f3e5499af0b09990fa80bf0e906d",
+  "plannedForVersion": "145",
+  "basedOnMainCommitBeforeChange": "9dc2d7b76bd06cbe14275df92d43850f444dcbbd",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
-    "HTML title/header/meta and JavaScript appVersion match Cargo/Tauri",
+    "Browser HTML title/meta/JS version 145; separate native Cargo/Tauri version 138.0.0; no expectation of cross-target equality until explicit release unification",
     "Sequential SQL user_version migrations and Rust wiring",
     "Tauri IPC registration, JS parsing, backup/media invariants",
     "Migration 008: FK-backed project/public image usage and typed automatic/named backup references, legacy audit ledger",
@@ -35,6 +35,6 @@
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
-  "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V138 source-only browser-first. No assistant Build/Test/static checker/browser runtime/Tauri runtime or SQLite modification."
+  "ownerAcceptance": "pending",
+  "note": "V145 source-only documentation reconciliation. Browser HTML application version 145 differs intentionally from native Tauri 138.0.0, SQLite schema 13. Current static-check script predates this split and needs review under TASK-030; checker NOT EXECUTED. No Build/Test/runtime."
 }

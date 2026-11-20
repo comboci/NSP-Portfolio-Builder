@@ -32,3 +32,9 @@ Statement = source input; Question = open issue; Analysis = reasoning; Finding =
 - DEC-010: existing centralized Style Library stays until Q-006 is explicitly resolved; do not invent project-specific style forks.
 - See TASK-072..TASK-077 for stage-one source status and remaining legacy decommission/data-integrity work. Do not call these accepted or tested.
 - DEC-006 forbids assistant Build, Test and static checker; owner performs runtime/PDF review.
+
+## V145 — Source-only reconciliation (2026-11-20)
+- Browser HTML at V145, Tauri at 138.0.0 and SQLite schema 13. Do not conflate versions or claim SQLite removal.
+- Read `V145-ARCHITECTURE-FOLLOWUP-AUDIT-FA.md`. Existing DEC-012/013 govern new pages/components; old Master/Section historical paths remain and require TASK-075.
+- TASK-049 and TASK-052 have partial source candidates, not owner-accepted functionality. TASK-030's checker needs Browser/Native release split awareness and was not executed.
+- Do not mark TASK-072..077 or any other task Complete merely because source exists. Owner Runtime/Print/PDF/Import verification remains distinct.

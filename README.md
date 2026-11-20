@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V145, Native V138 (Architecture audit)
+
+The browser-first HTML source is V145; native Tauri package remains 138.0.0 with SQLite schema 13. **SQLite has not been removed**. Browser Page-First, categorized templates, Custom Components and page workflows are source candidates; some legacy Master/Section paths, import/export and storage behavior still require remediation. The V145 review and refreshed task crosswalk are in `project evolution/V145-ARCHITECTURE-FOLLOWUP-AUDIT-FA.md`. Build/Test/Static Checker/Runtime have not been executed by the assistant; owner acceptance is outstanding.
+
+---
+
 # NSP Portfolio Builder — V138: توسعه مرورگرمحور و ایمنی ذخیره کاتالوگ
 
 توسعه موتور طراحی فعلاً با فایل مستقل HTML و IndexedDB انجام می‌شود؛ کد و Schema 13 SQLite تغییر نکرد. فاز محدود TASK-076: حذف آخرین گروه مسدود است، تغییر نام تکراری گروه رد می‌شود، اعمال قالب از کتابخانه مقصد را صریحاً تأیید می‌کند، و خطاهای شروع ثبت باعث بازگردانی تغییرات همان عملیات می‌شوند. خطای تأیید ناهمگام به‌عنوان ذخیره قطعی نمایش داده نمی‌شود. مستندات در `project evolution/BROWSER-FIRST-DEV-V138-FA.md`. بدون Build/Test/Static Checker/Runtime، پذیرش مالک در انتظار.
