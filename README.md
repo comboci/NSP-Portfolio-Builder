@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 133 (TASK-042: safe Browser recovery, source-only)
+
+If Browser IndexedDB cannot open, upgrade, or load, the application no longer silently writes to localStorage. Instead, the startup recovery overlay locks all editing and persistence. It labels IndexedDB unavailable and presents separately labeled current/legacy localStorage only as **read-only summaries and RAW exports**. Neither source is automatically selected as canonical, rewritten or merged. RAW exports may not be directly importable. Recover IndexedDB accessibility, reload, and compare any other snapshots manually before reconciliation. Native SQLite schema 12 and originals remain untouched.
+
+**Owner review:** blocked IndexedDB upgrade, denied access, invalid revision, corrupt JSON, raw localStorage export, retry after restoring browser storage, and preservation of both sources. No assistant Build/Test/static checker/browser/Tauri runtime or owner approval. TASK-042 remains in progress.
+
+---
+
 # NSP Portfolio Builder — Version 132 (TASK-041: recovery for unavailable images, source-only)
 
 Native SQLite normal-workspace loading can show a labeled SVG placeholder when an immutable original is missing, corrupt, has missing metadata or has unsupported stored MIME. Healthy projects, portfolios and pages still open. Malformed hashes, unsafe stored paths and SQL errors remain fatal. Missing immutable hashes are reported without changing SQLite records, original bytes or backups.

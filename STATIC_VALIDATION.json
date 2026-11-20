@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "132",
-  "basedOnMainCommitBeforeChange": "4133d23cd3bb4de9f70037acb90bb82db056726a",
+  "plannedForVersion": "133",
+  "basedOnMainCommitBeforeChange": "809e8df04107403dbf27320d04b8539e24ff7f09",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -24,11 +24,12 @@
     "V129 TASK-046: all single-portfolio export actions use scoped whitelist serializer, reference-only image inclusion, manifest preview and full-backup disclosure warning",
     "V130 TASK-061: original library assets keep immutable IDs/hash/source, separate imported records, opt-in single selected element/Tile binding audit; no mass relinking",
     "V131 TASK-039: browser IndexedDB v2 non-destructive upgrade, atomic revision compare-and-write for Save Page/Project, stale tab fail-closed recovery and JSON export/reload; localStorage fallback remains separate",
-    "V132 TASK-041: normal native workspace degraded image preview, missing-hash warning, read-only save guard and incomplete export disclosure; backup inspection/restore remain strict"
+    "V132 TASK-041: normal native workspace degraded image preview, missing-hash warning, read-only save guard and incomplete export disclosure; backup inspection/restore remain strict",
+    "V133 TASK-042: browser IndexedDB startup failure blocks edits/saves; labeled read-only localStorage inspection and raw export without promotion, overwrite or merge"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V132 TASK-041 is source-only. Owner must verify missing/corrupt/private/public/Tile originals and full recovery; assistant did not run Build/Test/static checker/runtime."
+  "note": "V133 TASK-042 source only; owner must verify blocked/denied/corrupt IndexedDB and raw localStorage recovery. No Build/Test/static checker/runtime by assistant."
 }
