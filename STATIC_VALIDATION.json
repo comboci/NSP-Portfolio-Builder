@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "134",
-  "basedOnMainCommitBeforeChange": "229312fa33a82908834b69fb68a86ab1f0730fe7",
+  "plannedForVersion": "135",
+  "basedOnMainCommitBeforeChange": "dc2fe9a5afc901d2f9fbea400698154019353afc",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -26,11 +26,12 @@
     "V131 TASK-039: browser IndexedDB v2 non-destructive upgrade, atomic revision compare-and-write for Save Page/Project, stale tab fail-closed recovery and JSON export/reload; localStorage fallback remains separate",
     "V132 TASK-041: normal native workspace degraded image preview, missing-hash warning, read-only save guard and incomplete export disclosure; backup inspection/restore remain strict",
     "V133 TASK-042: browser IndexedDB startup failure blocks edits/saves; labeled read-only localStorage inspection and raw export without promotion, overwrite or merge",
-    "V134 TASK-071: scroll-window thumbnail virtualization, page-change invalidation, keyboard focus and scroll preservation, no stale template/style/media preview"
+    "V134 TASK-071: scroll-window thumbnail virtualization, page-change invalidation, keyboard focus and scroll preservation, no stale template/style/media preview",
+    "V135 TASK-043: SQLite migration 013 retains unknown-revision legacy named backups; transactional canonical snapshot and expected-revision CAS, atomic FK refs, IndexedDB atomic checkpoints, separate unsaved draft export and Backup Before Restore"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V134 TASK-071 source-only: owner reviews 10/100/500 pages, lazy preview visibility, memory, drag/keyboard/reorder, template/style/image invalidation, PDF parity; no Build/Test/static checker/runtime by assistant."
+  "note": "V135 TASK-043 source only; owner validates schema upgrade, legacy backups, two-window revision conflicts, missing originals, named/Before Restore, drafts, IndexedDB backup. No assistant Build/Test/static checker/runtime."
 }

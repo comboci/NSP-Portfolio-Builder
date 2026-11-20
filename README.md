@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 135 (TASK-043: canonical named checkpoints, source-only)
+
+Named SQLite recovery checkpoints now select the **committed relational workspace + public catalog** within an immediate transaction, enforce the caller's expected workspace Revision, verify immutable assets, and atomically store snapshot, source Revision and FK-backed asset references. Migration 013 adds nullable `workspace_revision` to named backups: old snapshots remain intact with *unknown* provenance, not invented Revision 0. Automatic backups, files and pruning policy remain unchanged.
+
+Browser IndexedDB now atomically reads committed workspace payload and revision and inserts each named/Before Restore backup in a combined projects/backups transaction, rejecting stale tabs. Unsaved editor drafts are explicitly exported as separate **non-Recovery Draft JSON**, not silently included in named checkpoints; they block restore until saved or dealt with. Legacy named backup read/restore remains supported.
+
+**Owner review:** upgrade SQLite 12→13 and old backups, named backup revision and integrity, two simultaneous native windows racing save/backup, missing assets, SQLite and IndexedDB Backup Before Restore, browser two tabs and archived backups, unsaved drafts and JSON export. No Build/Test/static checker/runtime or owner acceptance by assistant; TASK-043 remains open.
+
+---
+
 # NSP Portfolio Builder — Version 134 (TASK-071: virtual page thumbnails, source-only)
 
 Portfolio Pages no longer resolves and renders every thumbnail on each global view rebuild. Each page first gets a lightweight, stable 145×190 preview shell and its existing page actions. An IntersectionObserver rooted in the scrollable page list hydrates only visible/nearby pages, and releases offscreen rendered image DOM; older hosts use a scroll/resize visibility fallback. Each visible preview reuses a single resolved page document. Editor-only page changes invalidate the affected thumbnail, while ordinary view reconstruction picks up changed master templates, central styles, image libraries, page order and numbering. The list attempts to preserve scroll position and keyboard focus after render. The read-only `V13.thumbnails.stats()` exposes current row/hydration counts for owner inspection.

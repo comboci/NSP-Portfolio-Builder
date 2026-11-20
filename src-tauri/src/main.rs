@@ -361,39 +361,33 @@ fn read_backup(db: State<'_, Storage>, root: State<'_, AssetRoot>, id: i64) -> R
 
 #[tauri::command]
 fn create_backup(
-    db: State<'_, Storage>, root: State<'_, AssetRoot>, name: String, payload: Option<String>,
+    db: State<'_, Storage>, root: State<'_, AssetRoot>, name: String, expected_revision: i64,
 ) -> Result<i64, String> {
     if name.trim().is_empty() || name.len() > 300 { return Err("Invalid backup name".into()); }
     let mut conn = db.0.lock().map_err(error)?;
-    let tx = conn.transaction().map_err(error)?;
-    let compact = if let Some(payload) = payload {
-        let mut value: Value = serde_json::from_str(&payload).map_err(error)?;
-        if !value["pages"].is_array() || !value["templates"].is_array() {
-            return Err("Invalid backup".into());
+    // Acquire writer slot and use the canonical durable relational snapshot.
+    // A caller-supplied draft must never be treated as a named recovery checkpoint.
+    let tx = conn.transaction_with_behavior(rusqlite::TransactionBehavior::Immediate).map_err(error)?;
+    require_workspace_revision(&tx, expected_revision)?;
+    let compact = match project_store::load_workspace(&tx)? {
+        Some(raw) => {
+            let mut value: Value = serde_json::from_str(&raw).map_err(error)?;
+            value["globalImageLibrary"] =
+                Value::Array(image_ownership::read_public_catalog(&tx)?);
+            value.to_string()
         }
-        media_store::compact_value(&tx, &root.0, &mut value)?;
-        value.to_string()
-    } else {
-        match project_store::load_workspace(&tx)? {
-            Some(raw)=>{
-                let mut value:Value=serde_json::from_str(&raw).map_err(error)?;
-                value["globalImageLibrary"]=
-                    Value::Array(image_ownership::read_public_catalog(&tx)?);
-                value.to_string()
-            }
-            None=>tx.query_row(
-                "SELECT payload FROM projects WHERE id='workspace'",
-                [],|r|r.get::<_,String>(0),
-            ).optional().map_err(error)?.ok_or("Save the project first")?,
-        }
+        None => tx.query_row(
+            "SELECT payload FROM projects WHERE id='workspace'",
+            [], |r| r.get::<_, String>(0),
+        ).optional().map_err(error)?.ok_or("Save the project first")?,
     };
     // Do not claim a durable named recovery point if any referenced asset is
     // unreadable or has the wrong content hash. Failure rolls back metadata.
     media_store::verify_snapshot_integrity(&tx,&root.0,&compact)?;
     let value: Value = serde_json::from_str(&compact).map_err(error)?;
     tx.execute(
-        "INSERT INTO named_backups(name,payload) VALUES(?1,?2)",
-        params![name.trim(), compact],
+        "INSERT INTO named_backups(name,payload,workspace_revision) VALUES(?1,?2,?3)",
+        params![name.trim(), compact, expected_revision],
     ).map_err(error)?;
     let id = tx.last_insert_rowid();
     // Keep the backup and its asset-reference index in the SAME commit.
@@ -403,10 +397,10 @@ fn create_backup(
 }
 
 #[tauri::command]
-fn list_named_backups(db: State<'_, Storage>) -> Result<Vec<(i64, String, String)>, String> {
+fn list_named_backups(db: State<'_, Storage>) -> Result<Vec<(i64, String, String, Option<i64>)>, String> {
     let conn = db.0.lock().map_err(error)?;
-    let mut query = conn.prepare("SELECT id,name,created_at FROM named_backups ORDER BY id DESC").map_err(error)?;
-    let rows = query.query_map([], |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?))).map_err(error)?;
+    let mut query = conn.prepare("SELECT id,name,created_at,workspace_revision FROM named_backups ORDER BY id DESC").map_err(error)?;
+    let rows = query.query_map([], |r| Ok((r.get(0)?, r.get(1)?, r.get(2)?, r.get(3)?))).map_err(error)?;
     rows.collect::<Result<Vec<_>, _>>().map_err(error)
 }
 
@@ -451,7 +445,7 @@ fn main() {
             conn.execute_batch("PRAGMA foreign_keys=ON; PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;")?;
             let tx = conn.transaction()?;
             let version: i64 = tx.query_row("PRAGMA user_version", [], |r| r.get(0))?;
-            if version > 12 { return Err("Database schema is newer than this application".into()); }
+            if version > 13 { return Err("Database schema is newer than this application".into()); }
             if version < 1 { tx.execute_batch(include_str!("../migrations/001.sql"))?; }
             if version < 2 { tx.execute_batch(include_str!("../migrations/002.sql"))?; }
             if version < 3 {
@@ -484,6 +478,9 @@ fn main() {
             }
             if version < 12 {
                 tx.execute_batch(include_str!("../migrations/012.sql"))?;
+            }
+            if version < 13 {
+                tx.execute_batch(include_str!("../migrations/013.sql"))?;
             }
             tx.commit()?;
             app.manage(AssetRoot(root));

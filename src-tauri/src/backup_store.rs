@@ -80,7 +80,17 @@ pub fn inspect_backup(
     )).map_err(error)?;
     let indexed:HashSet<String>=stmt.query_map([id],|r|r.get(0))
         .map_err(error)?.collect::<Result<HashSet<_>,_>>().map_err(error)?;
+    let workspace_revision:Option<i64>=if kind=="named" {
+        conn.query_row(
+            "SELECT workspace_revision FROM named_backups WHERE id=?1",
+            [id],|r|r.get(0),
+        ).map_err(error)?
+    } else { None };
     Ok(json!({
+        "workspaceRevision":workspace_revision,
+        "revisionProvenance":if kind=="named" {
+            if workspace_revision.is_some() {"committed_sqlite"} else {"legacy_unknown"}
+        } else {"automatic_snapshot"},
         "kind":kind, "id":id, "integrityOk":true,
         "referencedAssetCount":hashes.len(),
         "indexMatchesSnapshot":hashes==indexed,
