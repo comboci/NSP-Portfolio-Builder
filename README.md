@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 125 (TASK-023: guarded global sidebar; source-only)
+
+Main-sidebar navigation now awaits the active design page's scoped Save Page acknowledgement. On a database failure or concurrent page switch, the editor remains open. For a modified Master or Section draft, the existing Save / Discard / Cancel dialog is invoked before navigating away. Repeated sidebar requests while awaiting a save or dialog are ignored.
+
+**Partial task:** Autosave checkbox, manual page dirty/three-way exit and native window-close handling remain open. All N-07 V124 backup retention, image integrity and SQLite migration 012 changes are preserved; schema remains **12**. No Build, Test, static checker, migration, Windows/Tauri or browser runtime and no owner acceptance were performed (DEC-006).
+
+**Owner review:** click global Dashboard/Templates/Library/Projects while page writes are pending or failing; verify failure blocks exit. Check dirty Master and Section template Save, Discard and Cancel via the sidebar; rapid repeated clicks; Ctrl+S; existing editor Back; and save/reopen on both backends.
+
+---
+
 # NSP Portfolio Builder — Version 124 (N-07 backup retention and asset integrity, source-only)
 
 V124 adds SQLite Migration 012 (additive retention policy). Automatic backup deletion is OFF by default until the owner successfully verifies restoration from a named backup and a future explicit policy approval is recorded. Existing automatic and named snapshots and immutable physical assets are preserved. Backup listing is cursor-paginated so old snapshots stay reachable; named backup creation checks referenced asset bytes before commit; read-only inspection reports file integrity and FK index coverage. There is no physical asset garbage collector or delete call. Until pruning is approved, SQLite backups can grow beyond 30 records; monitor disk use and retain an offline full `storage/` copy (DB/WAL/SHM plus `assets/`).

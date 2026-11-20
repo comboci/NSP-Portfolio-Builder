@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "124",
-  "basedOnMainCommitBeforeChange": "c87b9a76b49a314189c080ab72e7fcb5f2264cfa",
+  "plannedForVersion": "125",
+  "basedOnMainCommitBeforeChange": "57cb574f33903d9aed3b28327ab5fbf4ce44ca68",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -16,11 +16,12 @@
     "Migration 011: workspace CAS revision and per-page revision",
     "N-06: load_project_state, isolated save_page, revision-guarded save_project, scoped style/media/scene updates",
     "V123 N-06: page-editor save() scope dispatch, structural project changes and single-page Scene projection",
-    "V124 N-07 guarded retention, paginated automatic backups and source-level backup integrity inspection"
+    "V124 N-07 guarded retention, paginated automatic backups and source-level backup integrity inspection",
+    "V125 TASK-023 global navigation respects durable page save and Master/Section three-way draft exit"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V124 N-07 adds SQLite migration schema 12 with backup_retention_policy defaulting to no-prune, protects named snapshots and physical assets, adds paginated auto backup browsing and read-only asset integrity/FK inspection. V123 independent Save Page/Save Project and Revision guard remain. This is a PLAN, not an executed report; no Build/Test/static checker/migration/runtime under DEC-006."
+  "note": "V125 source-only guarded sidebar exit, preserving N-07 V124/schema-12 backup changes. Autosave checkbox/manual page exit/native window close still unimplemented; no Build/Test/checker/runtime/owner acceptance."
 }
