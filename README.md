@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 127 (TASK-038: fail-safe queued saves, source-only)
+
+V127 tracks each queued Save Page, Save Project, and public-image rename by durable-write scope. A failed page remains an unresolved error even after another page or project write succeeds; no global **Saved** indication or successful flush is permitted until that failed scope receives an acknowledged recovery write. Native `WRITE_CONFLICT` continues to block writes without automatic stale replay.
+
+The **Retry** action re-serializes the latest in-memory version of each failed page (or current project) under the existing SQLite CAS revision, never blindly replays an outdated payload, and refuses recovery when the owner project/page context is unavailable. Failed public-image renames require an explicit new rename action; unrelated page/project saves cannot conceal them. Confirmed restore resets the in-memory failure ledger. No SQLite migration or changes to original images, ownership, backup policies, or Browser IndexedDB format.
+
+Owner runtime review: enqueue failing page A followed by successful page B and verify ERROR, blocked Save/Leave/Backup and truthful retry status; retry page A with a newer edit and confirm both pages after reload; verify a failed global project save is not cleared by a page save; simulate `WRITE_CONFLICT` in two Tauri windows and check no stale overwrite; retry a rejected public-image rename manually. **No assistant Build/Test/static checker/runtime/acceptance** (DEC-006); this is a source candidate.
+
+---
+
 # NSP Portfolio Builder — Version 126 (TASK-040: CAS-safe public-image rename, source-only)
 
 An independent source review of N-06/N-07 found that `rename_public_image` could update the canonical SQLite public-image catalog without checking or advancing the shared `workspace_write_revision`. Concurrent windows could silently overwrite the same public image's label even though Page/Project saves used CAS.

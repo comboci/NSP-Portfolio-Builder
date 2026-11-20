@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "126",
-  "basedOnMainCommitBeforeChange": "64e94ed5a3e3af66f86ce662ef32fa5a39154c11",
+  "plannedForVersion": "127",
+  "basedOnMainCommitBeforeChange": "503ab59d816d4a82b8bbc018c007c28559b811f5",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -18,11 +18,12 @@
     "V123 N-06: page-editor save() scope dispatch, structural project changes and single-page Scene projection",
     "V124 N-07 guarded retention, paginated automatic backups and source-level backup integrity inspection",
     "V125 TASK-023 global navigation respects durable page save and Master/Section three-way draft exit",
-    "V126 TASK-040: public catalog rename shares native SQLite CAS transaction and serialized JS workspace revision queue"
+    "V126 TASK-040: public catalog rename shares native SQLite CAS transaction and serialized JS workspace revision queue",
+    "V127 TASK-038: failed Save Page/Project/public-rename scopes remain unresolved across unrelated acknowledgements; safe explicit retry and WRITE_CONFLICT guard"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V126 TASK-040 source only: shared public-image metadata rename is now CAS-guarded and serialized with Page/Project writes. SQLite schema 12, N-07 backup retention, immutable Asset files and ownership unchanged. No assistant Build/Test/static checker/runtime/owner acceptance."
+  "note": "V127 TASK-038 source candidate: queued write failures are scoped and retained until same-scope durable recovery; no false global Saved after later successful writes. SQLite schema 12 unchanged. No assistant Build/Test/static checker/runtime/owner acceptance."
 }
