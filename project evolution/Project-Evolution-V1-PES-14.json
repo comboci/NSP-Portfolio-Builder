@@ -326,7 +326,14 @@
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "unverified_against_live_source"
+        "implementation_state": "unverified_against_live_source",
+        "related_record_ids": [
+          "TASK-005",
+          "TASK-006",
+          "TASK-007",
+          "DEC-001",
+          "DEC-003"
+        ]
       },
       {
         "record_id": "FND-002",
@@ -340,7 +347,13 @@
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "unverified_against_live_source"
+        "implementation_state": "unverified_against_live_source",
+        "related_record_ids": [
+          "TASK-002",
+          "TASK-003",
+          "TASK-005",
+          "BR-012"
+        ]
       },
       {
         "record_id": "FND-003",
@@ -2154,6 +2167,10 @@
           "DEC-007",
           "FND-003",
           "FND-004"
+        ],
+        "related_record_ids": [
+          "BR-013",
+          "DEC-007"
         ]
       },
       {
@@ -2175,6 +2192,14 @@
           "FND-006",
           "FND-007",
           "FND-008"
+        ],
+        "related_record_ids": [
+          "REQ-007",
+          "REQ-008",
+          "REQ-009",
+          "BR-001",
+          "BR-002",
+          "BR-012"
         ]
       },
       {
@@ -2195,6 +2220,10 @@
         "evidence_refs": [
           "SOL-003",
           "FND-005"
+        ],
+        "related_record_ids": [
+          "DEC-003",
+          "BR-005"
         ]
       },
       {
@@ -2216,7 +2245,14 @@
           "FND-006",
           "FND-007",
           "FND-008",
-          "TASK-003"
+          "TASK-003",
+          "REQ-007",
+          "REQ-008",
+          "REQ-009",
+          "BR-001",
+          "BR-002",
+          "BR-011",
+          "BR-012"
         ],
         "result": "V80 source implementation: editor-only sequential Image N labels; dynamic Page Number object bound to portfolio page position with Show on First Page off by default and no renumbering; page-local Text Once/Image Once insertion with persisted once marker, no master/section creation, and deletion through owning page. Legacy footer number respects first-page and custom page-number object. No build, automated test, user runtime review or PDF verification performed.",
         "source_version": "V80",
@@ -2242,7 +2278,16 @@
           "FND-004",
           "DEC-007",
           "TASK-014",
-          "FND-010"
+          "FND-010",
+          "REQ-001",
+          "REQ-010",
+          "BR-008",
+          "BR-009",
+          "BR-010",
+          "BR-013",
+          "DEC-001",
+          "DEC-002",
+          "DEC-004"
         ],
         "status": "in_progress",
         "provenance": {
@@ -2284,7 +2329,9 @@
           "FND-012",
           "Q-005",
           "TASK-027",
-          "OBS-024"
+          "OBS-024",
+          "REQ-002",
+          "REQ-011"
         ],
         "status": "in_progress",
         "provenance": {
@@ -2368,7 +2415,10 @@
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
-        "related_record_ids": [],
+        "related_record_ids": [
+          "REQ-010",
+          "BR-009"
+        ],
         "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
@@ -2425,7 +2475,8 @@
         ],
         "related_record_ids": [
           "FND-013",
-          "TASK-023"
+          "TASK-023",
+          "DEC-009"
         ],
         "status": "in_progress",
         "provenance": {
@@ -2443,7 +2494,9 @@
         ],
         "related_record_ids": [
           "TASK-030",
-          "FND-010"
+          "FND-010",
+          "BR-010",
+          "DEC-010"
         ],
         "status": "in_progress",
         "provenance": {
@@ -2473,7 +2526,10 @@
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
-        "related_record_ids": [],
+        "related_record_ids": [
+          "BR-009",
+          "DEC-008"
+        ],
         "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
@@ -2599,7 +2655,11 @@
           "SC-PORTFOLIOS"
         ],
         "related_record_ids": [
-          "FND-042"
+          "FND-042",
+          "REQ-004",
+          "REQ-005",
+          "REQ-006",
+          "BR-004"
         ],
         "status": "in_progress",
         "provenance": {
@@ -2619,7 +2679,13 @@
         "scope_refs": [
           "SC-PORTFOLIOS"
         ],
-        "related_record_ids": [],
+        "related_record_ids": [
+          "REQ-006",
+          "REQ-008",
+          "REQ-011",
+          "BR-004",
+          "BR-012"
+        ],
         "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
@@ -2646,7 +2712,12 @@
         "related_record_ids": [
           "TASK-025",
           "OBS-005",
-          "FND-014"
+          "FND-014",
+          "REQ-001",
+          "REQ-007",
+          "REQ-009",
+          "BR-001",
+          "BR-011"
         ],
         "status": "in_progress",
         "provenance": {
@@ -2715,7 +2786,8 @@
         "related_record_ids": [
           "TASK-022",
           "OBS-005",
-          "FND-009"
+          "FND-009",
+          "REQ-001"
         ],
         "status": "in_progress",
         "provenance": {
@@ -2750,7 +2822,13 @@
           "TASK-022",
           "OBS-004",
           "OBS-005",
-          "FND-014"
+          "FND-014",
+          "REQ-001",
+          "REQ-010",
+          "BR-008",
+          "BR-010",
+          "BR-011",
+          "DEC-004"
         ],
         "status": "in_progress",
         "provenance": {
@@ -2890,7 +2968,8 @@
           "TASK-021",
           "FND-011",
           "FND-042",
-          "FND-046"
+          "FND-046",
+          "BR-004"
         ],
         "status": "in_progress",
         "provenance": {
@@ -3005,7 +3084,9 @@
           "DEC-006",
           "BR-005",
           "BR-006",
-          "BR-007"
+          "BR-007",
+          "BR-003",
+          "DEC-003"
         ],
         "status": "in_progress",
         "provenance": {
@@ -3141,7 +3222,8 @@
           "DEC-007",
           "DEC-009",
           "DEC-010",
-          "DEC-011"
+          "DEC-011",
+          "REQ-010"
         ],
         "status": "in_progress",
         "provenance": {
@@ -3192,7 +3274,8 @@
           "DEC-006",
           "DEC-007",
           "DEC-009",
-          "OBS-041"
+          "OBS-041",
+          "DEC-005"
         ],
         "status": "in_progress",
         "provenance": {
@@ -3242,7 +3325,9 @@
           "TASK-036",
           "DEC-006",
           "DEC-009",
-          "OBS-043"
+          "OBS-043",
+          "BR-003",
+          "BR-007"
         ],
         "status": "in_progress",
         "provenance": {
@@ -4009,7 +4094,9 @@
           "TASK-027",
           "TASK-028",
           "TASK-029",
-          "DEC-006"
+          "DEC-006",
+          "REQ-004",
+          "REQ-006"
         ],
         "priority": "P0",
         "status": "in_progress",
@@ -4386,7 +4473,8 @@
           "TASK-024",
           "TASK-025",
           "TASK-054",
-          "DEC-006"
+          "DEC-006",
+          "REQ-001"
         ],
         "priority": "P2",
         "status": "planned",
@@ -5832,6 +5920,40 @@
           "source_revision_ref": "4133d23cd3bb4de9f70037acb90bb82db056726a"
         },
         "implementation_state": "source_only_awaiting_owner_runtime"
+      },
+      {
+        "record_id": "OBS-061",
+        "title": "Retrospective audit phase 09: final TASK traceability and owner-runtime acceptance matrix",
+        "status": "source_only_review_completed",
+        "detail": "Completed phased audit stage 09 against b7fe8c7b8795a2eb1a96639e2feeb8e899e75bbb (V132 source candidate (Tauri 132.0.0; SQLite schema 12 unchanged); TASK-041 workspace-only missing image recovery preview; owner runtime pending) with TASK-001..TASK-071 (71), FND-001..FND-053 (53), 4 completed administrative/source tasks, 40 in_progress and 27 planned; 0 verification and 0 acceptance records. Additively linked 66 task references and 9 historical FND references; no unresolved active REQ to Task, broken related ID, unqueued planned task, or uncovered task in owner acceptance suites. REQ-003 remains superseded, Q-005 remains open; owner acceptance remains the release gate for all source candidates. Created project evolution/FINAL-AUDIT-TRACEABILITY-ACCEPTANCE-2026-11-20.md. No product/source change, version bump, Build/Test/static checker, benchmark, Windows/browser runtime or owner sign-off. All 9 audit phases source-only complete; existing hourly task processing continues and actual code fixes stay open.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS",
+          "SC-STORAGE",
+          "SC-LIBRARY",
+          "SC-TEMPLATES",
+          "SC-PDF",
+          "SC-IMAGEEDIT",
+          "SC-TILES"
+        ],
+        "related_record_ids": [
+          "TASK-038",
+          "TASK-046",
+          "TASK-060",
+          "Q-005",
+          "DEC-006",
+          "TASK-023",
+          "TASK-026",
+          "TASK-036",
+          "TASK-037",
+          "TASK-041"
+        ],
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "b7fe8c7b8795a2eb1a96639e2feeb8e899e75bbb"
+        },
+        "implementation_state": "audit_documented_source_only_owner_acceptance_pending"
       }
     ]
   },
@@ -5964,7 +6086,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V132 TASK-041 source candidate: degraded read-only normal SQLite workspace preview with explicit missing original hashes; strict backups untouched. Owner to verify missing/corrupt private/public/Tile assets, blocked Save/Export disclaimer, restored originals/reopen, and correct page content. No assistant Build/Test/static checker/runtime, TASK-041 remains open.\nV129 TASK-046 source candidate: legacy v30 JSON export now routes to scoped v111 exporter, whitelisting one portfolio and referenced private/public images with a content manifest and preview. Full-backup option explicitly warns before exporting all projects; SQLite schema 12 unchanged; runtime/exported JSON owner review pending. TASK-046 remains in_progress, not completed; next eligible planned task TASK-061 pending fresh main/PE check.\nV128 TASK-060 source candidate: removed orphan IIFE-level duplicated M.place fragment causing out-of-scope ReferenceError; retains M.place public-template authorization and non-destructive image/Tile replacement, with all assets, SQLite schema-12 migrations/backups and concurrent phase-06 findings intact. Owner browser/Tauri image bootstrap, picker, Tile/Crop/Mask and PDF review pending; no Build/Test/static check. Next eligible planned TASK-046; TASK-060 remains in_progress pending owner acceptance.\nV127 TASK-038 source candidate on 503ab59d816d: failed queued writes survive later unrelated successes; global flush/leave/retry do not report false Saved. Explicit retry uses latest in-memory page/project under existing CAS and refuses stale/cross-project replay; public-image rename errors require an explicit repeat action. Owner runtime/Build/Test/static-check not performed; next eligible planned task TASK-046. V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nPhase 04 UI/UX retrospective source audit completed: FND-029, FND-030, FND-031, FND-032, FND-033 mapped to planned TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Verified source gaps: thumbnail reorder persists wrong Save scope, print reads preview ahead of async guarded navigation, outer shell fixed-width rail on narrow widths, project/thumbnail focus & semantics, hidden file inputs keyboard accessibility. Prior TASK-022..026 and TASK-030 not duplicated; owner Runtime/Acceptance pending. Next N = phase 05 designer/inheritance/layers/history; evidence in project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nRetrospective phase 05 designer source audit complete at 1207b87689523ff3b095df45ade70217b9b0838b: FND-034, FND-035, FND-036 mapped to TASK-057, TASK-058, TASK-059 for pointer Region Block containment, rotated-corner geometry guards for Align/Duplicate and rigid multi-object Guide snapping. FND-037 linked to prior TASK-012 for missing History coverage on Guides/page background/content-flow, no duplicate task. No Build/Test/runtime/Acceptance; next owner N = phase 06 Image Library/ownership/tiles.\nPhase 06 asset/Tile source-only audit at 7c3a53732082f1d36e8edb5a2c1e6858ca710715: FND-038, FND-039, FND-040, FND-041 mapped to planned TASK-060, TASK-061, TASK-062, TASK-063. Critical TASK-060 removes orphan top-level forceNew ReferenceError aborting media initialization; TASK-061 preserves immutable library originals; TASK-062, TASK-063 enforce Tile geometry and keyboard polygon masks. FND-042 attached to existing TASK-020/029 for Crop/filters. V127 TASK-038 source fix remains runtime unverified. No Build/Test/Runtime/Acceptance, next user N phase 07 Print/PDF.\nPhase 07 PDF/Print source-only audit at eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07: FND-043, FND-044, FND-045 mapped to planned TASK-064, TASK-065, TASK-066 for false missingImage on Tile container/hidden stash, print media load failure/timeout re-preflight, hidden pageNumber/editor-only block false print warnings. FND-046 attached to TASK-029 to correct objectFit-dependent DPI. Existing TASK-053 print navigation race remains; no Build/Test/PDF/Runtime/Acceptance; next user N phase 08 performance/security/reliability.\nPhase 08 performance/security source-only audit (V131, 86a927adf8662768058cbc4f9832530701ddcef2): FND-047, FND-048, FND-049, FND-050, FND-051 mapped to planned TASK-067, TASK-068, TASK-069, TASK-070, TASK-071 for SQLite native scoped page serializer, long critical-section media IO, eager base64 memory amplification, unbounded JSON/image import budgets and unvirtualized thumbnails. Additional FND-052 attached to existing TASK-031 for full legacy compat rewrite and FND-053 attached to existing TASK-044 for redacted diagnostics. V131 Browser IndexedDB CAS TASK-039 code status unchanged, runtime/acceptance not performed; next owner N = phase 09 final traceability and acceptance matrix.",
+    "current_summary": "V132 TASK-041 source candidate: degraded read-only normal SQLite workspace preview with explicit missing original hashes; strict backups untouched. Owner to verify missing/corrupt private/public/Tile assets, blocked Save/Export disclaimer, restored originals/reopen, and correct page content. No assistant Build/Test/static checker/runtime, TASK-041 remains open.\nV129 TASK-046 source candidate: legacy v30 JSON export now routes to scoped v111 exporter, whitelisting one portfolio and referenced private/public images with a content manifest and preview. Full-backup option explicitly warns before exporting all projects; SQLite schema 12 unchanged; runtime/exported JSON owner review pending. TASK-046 remains in_progress, not completed; next eligible planned task TASK-061 pending fresh main/PE check.\nV128 TASK-060 source candidate: removed orphan IIFE-level duplicated M.place fragment causing out-of-scope ReferenceError; retains M.place public-template authorization and non-destructive image/Tile replacement, with all assets, SQLite schema-12 migrations/backups and concurrent phase-06 findings intact. Owner browser/Tauri image bootstrap, picker, Tile/Crop/Mask and PDF review pending; no Build/Test/static check. Next eligible planned TASK-046; TASK-060 remains in_progress pending owner acceptance.\nV127 TASK-038 source candidate on 503ab59d816d: failed queued writes survive later unrelated successes; global flush/leave/retry do not report false Saved. Explicit retry uses latest in-memory page/project under existing CAS and refuses stale/cross-project replay; public-image rename errors require an explicit repeat action. Owner runtime/Build/Test/static-check not performed; next eligible planned task TASK-046. V126 TASK-040 source 05a225224e6e2b96821fb17da6f22443aa71055c: fixed FND-017—canonical public-image rename now participates in workspace CAS SQLite revision and the same JS save queue, preventing silent conflicting renames. SQLite schema 12, immutable assets and V124 N-07 backup behavior unchanged. Owner runtime/restore acceptance not performed under DEC-006. Audit phase 01 already logged FND-015..018/TASK-038..041; next source fixes remain TASK-038 (queued failed write hidden), TASK-039 (browser IndexedDB lost update), TASK-041 (missing-asset load failure), plus the separate audit phase 02 on owner N. Do not duplicate TASK-040.\nRetrospective audit phase 02 completed source-only (V126 / schema 12), FND-019..FND-022 mapped to planned TASK-042..TASK-045; next user N = phase 03 Import/Export. V126 TASK-040 source candidate remains runtime-unverified. No Build/Test/static checker or owner Acceptance.\nPhase 03 retrospective scoped import/export source audit: FND-023..FND-024..FND-025..FND-026..FND-027..FND-028 mapped to TASK-046, TASK-047, TASK-048, TASK-049, TASK-050, TASK-051; legacy single-portfolio export isolation P0, image content-identity checks, central template/style dependency fingerprints, normalized import application, symmetric 80 MiB file size contract, and explicit multi-portfolio selection. No source implementation, runtime acceptance or Build/Test under DEC-006. Next user N = audit phase 04 UI/UX. Full evidence: project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nPhase 04 UI/UX retrospective source audit completed: FND-029, FND-030, FND-031, FND-032, FND-033 mapped to planned TASK-052, TASK-053, TASK-054, TASK-055, TASK-056. Verified source gaps: thumbnail reorder persists wrong Save scope, print reads preview ahead of async guarded navigation, outer shell fixed-width rail on narrow widths, project/thumbnail focus & semantics, hidden file inputs keyboard accessibility. Prior TASK-022..026 and TASK-030 not duplicated; owner Runtime/Acceptance pending. Next N = phase 05 designer/inheritance/layers/history; evidence in project evolution/AUDIT-CAMPAIGN-2026-11-20.md.\nRetrospective phase 05 designer source audit complete at 1207b87689523ff3b095df45ade70217b9b0838b: FND-034, FND-035, FND-036 mapped to TASK-057, TASK-058, TASK-059 for pointer Region Block containment, rotated-corner geometry guards for Align/Duplicate and rigid multi-object Guide snapping. FND-037 linked to prior TASK-012 for missing History coverage on Guides/page background/content-flow, no duplicate task. No Build/Test/runtime/Acceptance; next owner N = phase 06 Image Library/ownership/tiles.\nPhase 06 asset/Tile source-only audit at 7c3a53732082f1d36e8edb5a2c1e6858ca710715: FND-038, FND-039, FND-040, FND-041 mapped to planned TASK-060, TASK-061, TASK-062, TASK-063. Critical TASK-060 removes orphan top-level forceNew ReferenceError aborting media initialization; TASK-061 preserves immutable library originals; TASK-062, TASK-063 enforce Tile geometry and keyboard polygon masks. FND-042 attached to existing TASK-020/029 for Crop/filters. V127 TASK-038 source fix remains runtime unverified. No Build/Test/Runtime/Acceptance, next user N phase 07 Print/PDF.\nPhase 07 PDF/Print source-only audit at eafe7c813ee7ffe3efb2cbf7acf5e635217b8d07: FND-043, FND-044, FND-045 mapped to planned TASK-064, TASK-065, TASK-066 for false missingImage on Tile container/hidden stash, print media load failure/timeout re-preflight, hidden pageNumber/editor-only block false print warnings. FND-046 attached to TASK-029 to correct objectFit-dependent DPI. Existing TASK-053 print navigation race remains; no Build/Test/PDF/Runtime/Acceptance; next user N phase 08 performance/security/reliability.\nPhase 08 performance/security source-only audit (V131, 86a927adf8662768058cbc4f9832530701ddcef2): FND-047, FND-048, FND-049, FND-050, FND-051 mapped to planned TASK-067, TASK-068, TASK-069, TASK-070, TASK-071 for SQLite native scoped page serializer, long critical-section media IO, eager base64 memory amplification, unbounded JSON/image import budgets and unvirtualized thumbnails. Additional FND-052 attached to existing TASK-031 for full legacy compat rewrite and FND-053 attached to existing TASK-044 for redacted diagnostics. V131 Browser IndexedDB CAS TASK-039 code status unchanged, runtime/acceptance not performed; next owner N = phase 09 final traceability and acceptance matrix.\nAll nine Project Evolution retrospective audit phases are now source-only completed. Phase 09 at b7fe8c7b8795a2eb1a96639e2feeb8e899e75bbb (V132 source candidate (Tauri 132.0.0; SQLite schema 12 unchanged); TASK-041 workspace-only missing image recovery preview; owner runtime pending) checked 71 TASK, 53 FND, 11 REQ (REQ-003 superseded), 13 BR, 11 DEC, Q-005 unresolved; preserved 4 completed source/planning, 40 in progress and 27 planned. Added 75 cross-reference links and owner-run AT-01..AT-15 matrix in project evolution/FINAL-AUDIT-TRACEABILITY-ACCEPTANCE-2026-11-20.md; no new duplicate tasks. Verification and Acceptance both 0/0; no app code changes or Build/Test. Hourly task workflow remains open; source candidate does not imply owner approval.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",

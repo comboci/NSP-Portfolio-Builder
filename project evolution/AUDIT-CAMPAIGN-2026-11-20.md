@@ -22,7 +22,7 @@
 | 06 | Image Library، مالکیت خصوصی/عمومی، Assetها، Tile/Stash، crop/mask، حذف ایمن | **انجام شد: سورس‌محور، بدون Build/Test** |
 | 07 | PDF/Print، صفحه‌بندی، DPI، Preflight، مقیاس و برابری رندر | **انجام شد: سورس‌محور، بدون Build/Test** |
 | 08 | کارایی، حافظه، امنیت ورودی، خطایابی و پایداری، کارهای چندپنجره‌ای | **انجام شد: سورس‌محور، بدون Build/Test** |
-| 09 | ممیزی نهایی ردیابی Task 001 تا آخرین Task، Gapهای پوشش و ماتریس تأیید مالک | **نوبت بعد با N** |
+| 09 | ممیزی نهایی ردیابی Task 001 تا آخرین Task، Gapهای پوشش و ماتریس تأیید مالک | **انجام شد: ممیزی سورس و ماتریس پذیرش؛ Runtime مالک باز** |
 
 ## خروجی فاز 01 — دیتابیس / یکپارچگی داده
 
@@ -578,3 +578,16 @@ The current UI reports write failures in in-memory failedWrites, error badge, al
 - **تشخیص خطا:** UI فعلی status، alert و پیام‌ها را فراهم می‌کند؛ عدم وجود export تشخیصی redacted یک gap پشتیبانی/عملیاتی است، نه ادعای پنهان‌کردن تمام خطاها.
 
 **Checkpoint:** OBS-059. TASK-067، TASK-068، TASK-069، TASK-070، TASK-071 به `open_state.next_work_record_ids` اضافه شدند. هیچ سورس، نسخه محصول، SQLite schema یا وضعیت Acceptance تغییر نکرد. **مرحله بعد با N: فاز 09 — ممیزی نهایی پوشش TASK-001 تا آخرین تسک، ردیابی یافته‌ها و ماتریس پذیرش مالک.**
+
+
+## خروجی فاز 09 — جمع‌بندی نهایی ردیابی TASK و پذیرش مالک
+
+**مبنای آخرین HEAD:** `b7fe8c7b8795a2eb1a96639e2feeb8e899e75bbb`، V132 source candidate (Tauri 132.0.0; SQLite schema 12 unchanged); TASK-041 workspace-only missing image recovery preview; owner runtime pending. 71 Task از TASK-001 تا TASK-071 و 53 Finding از FND-001 تا FND-053 بررسی شد. وضعیت تسک‌ها: `4` completed (فقط برنامه‌ریزی/ممیزی اولیه)، `40` in_progress، `27` planned. Verification=`0` و Acceptance=`0`؛ نتیجه Runtime یا تأیید مالک **ادعا نشده است**.
+
+**خروجی مستقل:** [FINAL-AUDIT-TRACEABILITY-ACCEPTANCE-2026-11-20.md](./FINAL-AUDIT-TRACEABILITY-ACCEPTANCE-2026-11-20.md) شامل جدول ردیابی تمام TASK-001..TASK-071، الزامات REQ/BR/DEC، وضعیت Source Candidate، ۱۵ سناریوی User Runtime Acceptance و شواهد موردنیاز.
+
+**ردیابی ترمیم شد:** 66 پیوند تکمیلی به Tasks و 9 پیوند بین FND-001/002 و تسک‌های پاسخگو؛ هیچ متن قدیمی یا Status/Source Version بازنویسی نشد. همه الزام‌های **فعال** REQ اکنون دست‌کم به یک تسک مربوط‌اند؛ REQ-003 صریحاً superseded است و نباید Dock کتابخانه قدیمی برگردد. شماره Task/Finding پیوسته، related refs معتبر، همه Planned Tasks در صف و همه Tasks در ماتریس پوشش داده شدند.
+
+**نقاط باز:** سه P0 دارای Source Candidate/Runtime Pending: `TASK-038`، `TASK-046`، `TASK-060`. `Q-005` درباره سیاست حذف عمومی باز است. سایر TASKها با وضعیت in_progress/planned به عهده صف ساعتی مانده‌اند؛ خاتمه ممیزی به معنای تکمیل محصول نیست. **DEC-006 پابرجاست: بدون Build/Test/Static Checker/Runtime توسط دستیار.**
+
+**Checkpoint:** `OBS-061`. فازهای 01 تا 09 ممیزی سورس کامل شدند؛ از این پس `N` به‌طور خودکار هیچ فاز جدیدی نمی‌سازد و ادامه باید طبق صف Project Evolution و بازخورد اجرای مالک باشد.
