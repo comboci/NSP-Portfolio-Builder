@@ -128,6 +128,13 @@ assert(html.includes("invoke('save_page'") &&
        html.includes("V.saveProject=async function") &&
        html.includes("V.queuePageSave=function"),
   'N-06 independent frontend page/project save bridge missing');
+assert(html.includes('save=function(forceProject=false)') &&
+       html.includes('currentPage:function()') &&
+       html.includes('if(save(true)!==true)'),
+  'V123 page-scoped editor dispatch or independent Save Project bypass missing');
+assert(scene.includes('pub fn persist_page_scene_projection(') &&
+       rust.includes('scene_store::persist_page_scene_projection('),
+  'V123 Save Page must only rebuild its own scene');
 assert(projectStore.includes('ON CONFLICT(project_id,portfolio_id,id) DO UPDATE'),
   'Relational page upsert missing');
 assert(projectStore.includes('references missing {kind}/{template}'),

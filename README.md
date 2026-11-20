@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 123 (N-06 scope hardening, source-only)
+
+Following the concurrent V122 implementation of N-06, V123 closes two source-level scope leaks. Generic editor `save()` now dispatches to the page-scoped transactional queue when the active design editor is a page, rather than writing the entire workspace snapshot. The explicit `V.saveProject()` bypasses this dispatch for full-workspace commits; structural page duplication/deletion uses this explicit project operation and waits for its backend acknowledgement. The page editor shows a separate Save Project action.
+
+The SQLite `save_page` command refreshes **only its own N-05 derived scene projection**, while keeping the existing per-page style/template/image/legacy projection writes and the workspace revision CAS guard. It also rejects page JSON missing core normalized fields before replacing the canonical page. All N-01..N-05 data relationships, automatic/named backup behavior and the V122 revision-11 migration remain unchanged. **Native SQLite Schema stays at 11.**
+
+**Status:** SOURCE ONLY. DEC-006 prohibits assistant Build/Test/static-check execution; none was performed. Owner should verify page edits do not touch another page or a shared template, project-level changes are committed only through the project path, competing windows reject stale writes, and SQLite foreign-key integrity, backups, reopening, browser fallback and Tauri editor behaviors. Browser IndexedDB still physically stores one JSON document (unlike the native SQLite scoped transaction).
+
+---
+
 # NSP Portfolio Builder — Version 122 (N-06, source-only)
 
 N-06 implements DEC-009 on the native Tauri/SQLite path: separate atomic `save_page` and `save_project` transactions, and an atomic `load_project_state` returning the relational workspace with its revision. Migration 011 (schema 11) introduces singleton `workspace_write_revision` and a per-page `revision` column. Each page/project write uses optimistic compare-and-swap; stale writers return `WRITE_CONFLICT` rather than overwriting newer data.

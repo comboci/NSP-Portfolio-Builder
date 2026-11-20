@@ -427,3 +427,23 @@ pub fn backfill_scene_projections(tx:&Transaction<'_>)->Result<(),String>{
     for source in sources(tx)?{rebuild(tx,&source,false)?;}
     Ok(())
 }
+
+
+// V123 / N-06 scope correction: rebuild only the saved page. This is not a
+// whole-workspace reconciliation and never modifies other scene owners.
+pub fn persist_page_scene_projection(
+    tx:&Transaction<'_>,project:&str,portfolio:&str,page:&str,
+)->Result<(),String>{
+    let payload:String=tx.query_row(
+        "SELECT payload FROM workspace_pages
+         WHERE project_id=?1 AND portfolio_id=?2 AND id=?3",
+        params![project,portfolio,page],|r|r.get(0),
+    ).map_err(err)?;
+    let source=SceneSource{
+        key:json!(["page",project,portfolio,page]).to_string(),
+        owner_kind:"page",project_id:Some(project.to_owned()),
+        portfolio_id:Some(portfolio.to_owned()),page_id:Some(page.to_owned()),
+        template_kind:None,template_id:None,payload,
+    };
+    rebuild(tx,&source,true)
+}

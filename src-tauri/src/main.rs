@@ -219,6 +219,13 @@ fn save_page(
     if !value.is_object()||value.get("id").and_then(Value::as_str)!=Some(page_id.as_str()){
         return Err("Page payload identity mismatch".into());
     }
+    if !value.get("visualObjects").is_some_and(Value::is_array)
+        || value.get("templateId").and_then(Value::as_str).is_none()
+        || value.get("title").and_then(Value::as_str).is_none()
+        || value.get("layers").is_some_and(|v|!v.is_array())
+    {
+        return Err("Save Page requires a normalized page; draft preserved".into());
+    }
     let mut conn=db.0.lock().map_err(error)?;
     let tx=conn.transaction().map_err(error)?;
     require_workspace_revision(&tx,expected_revision)?;
@@ -271,7 +278,10 @@ fn save_page(
     image_ownership::persist_page_usage(
         &tx,&project_id,&portfolio_id,&page_id,&page,
     )?;
-    scene_store::persist_scene_projections(&tx)?;
+    // Save Page only updates its own derived scene and FK child rows.
+    scene_store::persist_page_scene_projection(
+        &tx,&project_id,&portfolio_id,&page_id
+    )?;
     let next=advance_workspace_revision(&tx,expected_revision)?;
     tx.commit().map_err(error)?;
     Ok(next)
