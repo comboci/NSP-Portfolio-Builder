@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 129 (TASK-046: privacy-scoped portfolio export, source-only)
+
+V129 routes the legacy v28/v29 **single-portfolio JSON export** through the same scoped V111 serializer used by project/portfolio cards. The envelope includes one whitelisted portfolio with its pages and only referenced project-private and global-public image originals; no other workspaces, portfolios, image catalogs, global templates or backup records are serialized. Referenced images with the same ID in both local and global catalogs resolve locally without exposing an extra global original.
+
+A manifest embedded in the versioned `NSP-Portfolio-Backup` file provides page, private-image and public-image counts. Its privacy/content summary is shown for confirmation before download. The distinct **full backup of all projects** remains available under an explicit disclosure warning; no existing project-backup feature was removed. SQLite schema remains **12**, with no migration or stored data modification.
+
+**Owner review:** in a multi-project, multi-portfolio fixture, export through both old and new portfolio actions; inspect top-level JSON keys and confirm no unrelated project/title/asset bytes. Check exports from active and inactive projects, public/private images, missing referenced images, cancellation, import of the scoped envelope, and the separate full-backup path. No assistant Build, Test, static checker, browser/Tauri run or owner acceptance; TASK-046 remains in progress.
+
+---
+
 # NSP Portfolio Builder — Version 128 (TASK-060: media bootstrap initialization repair, source-only)
 
 V128 removes the duplicated **orphan top-level** image placement statements that followed the completed `M.place(id, forceNew)` method. That unreachable block referenced its former method parameters `id`, `a`, and `forceNew` outside their scope, causing script evaluation to abort before the Tile, picker, Crop/Mask, and image gallery APIs could be registered.

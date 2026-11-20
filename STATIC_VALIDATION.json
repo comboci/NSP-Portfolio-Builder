@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "128",
-  "basedOnMainCommitBeforeChange": "e6a786321c8ec524af02c3822eafe5d74c3011c3",
+  "plannedForVersion": "129",
+  "basedOnMainCommitBeforeChange": "636a2eed4854c35ee87a6902b3669f5a631bb460",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -20,11 +20,12 @@
     "V125 TASK-023 global navigation respects durable page save and Master/Section three-way draft exit",
     "V126 TASK-040: public catalog rename shares native SQLite CAS transaction and serialized JS workspace revision queue",
     "V127 TASK-038: failed Save Page/Project/public-rename scopes remain unresolved across unrelated acknowledgements; safe explicit retry and WRITE_CONFLICT guard",
-    "V128 TASK-060: single M.place implementation, no orphan image-placement statements at module top level, image APIs registered after method"
+    "V128 TASK-060: single M.place implementation, no orphan image-placement statements at module top level, image APIs registered after method",
+    "V129 TASK-046: all single-portfolio export actions use scoped whitelist serializer, reference-only image inclusion, manifest preview and full-backup disclosure warning"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V128 TASK-060 source candidate: removes orphan top-level placement block to prevent ReferenceError abort of media initialization; retains frame-preserving replacement, authorization and all SQLite schema-12 data. No assistant Build/Test/static checker/runtime/owner acceptance."
+  "note": "V129 TASK-046 source-only privacy isolation of single-portfolio JSON exports; owner examines multi-project JSON and import compatibility. No assistant Build/Test/static checker/runtime/owner acceptance."
 }
