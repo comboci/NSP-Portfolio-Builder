@@ -1,3 +1,11 @@
+# NSP Portfolio Builder — Version 134 (TASK-071: virtual page thumbnails, source-only)
+
+Portfolio Pages no longer resolves and renders every thumbnail on each global view rebuild. Each page first gets a lightweight, stable 145×190 preview shell and its existing page actions. An IntersectionObserver rooted in the scrollable page list hydrates only visible/nearby pages, and releases offscreen rendered image DOM; older hosts use a scroll/resize visibility fallback. Each visible preview reuses a single resolved page document. Editor-only page changes invalidate the affected thumbnail, while ordinary view reconstruction picks up changed master templates, central styles, image libraries, page order and numbering. The list attempts to preserve scroll position and keyboard focus after render. The read-only `V13.thumbnails.stats()` exposes current row/hydration counts for owner inspection.
+
+**Owner review:** use 10, 100 and 500-page portfolios with image tiles; measure CPU/RAM and scrolling, preview appearance, hidden/nearby hydration, selected page/focus, dragging and keyboard reorder, page edits, shared template/style edits, project switches and reopened documents. Confirm Print/PDF and original image ownership are unchanged. No assistant Build/Test/static checker/runtime/benchmark; TASK-071 remains in progress pending owner acceptance. SQLite schema stays 12.
+
+---
+
 # NSP Portfolio Builder — Version 133 (TASK-042: safe Browser recovery, source-only)
 
 If Browser IndexedDB cannot open, upgrade, or load, the application no longer silently writes to localStorage. Instead, the startup recovery overlay locks all editing and persistence. It labels IndexedDB unavailable and presents separately labeled current/legacy localStorage only as **read-only summaries and RAW exports**. Neither source is automatically selected as canonical, rewritten or merged. RAW exports may not be directly importable. Recover IndexedDB accessibility, reload, and compare any other snapshots manually before reconciliation. Native SQLite schema 12 and originals remain untouched.

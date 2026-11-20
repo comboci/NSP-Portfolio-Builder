@@ -1,4 +1,4 @@
-<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 133</title><meta name="application-version" content="133"><style>
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 134</title><meta name="application-version" content="134"><style>
 :root{font-family:Tahoma,'Segoe UI',sans-serif;color:#152638;background:#edf1f4}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}header{background:#122c3c;color:#fff;padding:17px 24px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}header small{color:#a7d7dd}.shell{display:grid;grid-template-columns:235px 1fr;min-height:calc(100vh - 75px)}nav{background:#fff;border-left:1px solid #d9e1e5;padding:18px 12px}nav button{display:block;width:100%;border:0;text-align:right;background:transparent;padding:13px;border-radius:9px;margin:3px 0;color:#324453}nav button.active{background:#e4f3f3;color:#06656c;font-weight:bold}main{padding:22px;max-width:1450px;width:100%;margin:auto}.panel{background:white;border:1px solid #dbe3e7;border-radius:14px;padding:20px;margin-bottom:18px;box-shadow:0 2px 8px #17304408}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.stat{background:#f4f8fa;padding:15px;border-radius:10px}.stat b{font-size:27px;display:block}.muted{color:#647683;font-size:13px}.btn{border:1px solid #b7cbd1;border-radius:8px;background:white;padding:9px 13px;color:#174450}.primary{background:#087b80;color:white;border-color:#087b80}.danger{color:#a33}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:12px 0}.item{padding:12px;border:1px solid #e1e8eb;border-radius:9px;margin:8px 0;background:#fbfdfd}.item.selected{border-color:#09858a;background:#f1fbfa}input,select,textarea{border:1px solid #c6d5da;border-radius:7px;padding:9px;background:#fff;max-width:100%}input[type=checkbox]{accent-color:#087b80}textarea{width:100%;min-height:100px}label{display:block;font-size:13px;margin:10px 0 5px}.columns{display:grid;grid-template-columns:minmax(240px,350px) minmax(0,1fr);gap:18px}.paper{background:#fff;width:min(100%,595px);min-height:842px;margin:15px auto;padding:55px 48px;box-shadow:0 8px 30px #17304425;position:relative;overflow:hidden;direction:rtl}.paper:before{content:'NSP';position:absolute;left:45px;top:40px;color:#087b80;font-weight:900;font-size:19px}.paper h1{margin-top:65px;font-size:26px}.paper footer{position:absolute;bottom:30px;right:48px;left:48px;border-top:1px solid #ccc;padding-top:9px;font-size:11px;color:#667}.paper .hero{height:185px;background:linear-gradient(130deg,#d8eeec,#f0f4f6);display:flex;align-items:center;justify-content:center;color:#568e90;margin:20px 0}.paper img{max-width:100%;max-height:260px;object-fit:contain}.paper table{width:100%;border-collapse:collapse}.paper td,.paper th{border:1px solid #ccd6da;padding:8px}.tag{display:inline-block;border-radius:12px;padding:3px 8px;background:#e7f3f3;font-size:11px;margin:2px}.note{border-right:3px solid #087b80;padding:10px;background:#f1f7f7}.hide{display:none!important}@media(max-width:850px){.shell{grid-template-columns:1fr}nav{display:flex;overflow-x:auto;padding:8px}nav button{white-space:nowrap;width:auto}.columns{grid-template-columns:1fr}main{padding:12px}.paper{min-height:700px;padding:38px 25px}}@media print{header,nav,.no-print,.editor,.panel:not(.print-zone){display:none!important}.shell{display:block}main{padding:0;max-width:none}.print-zone{border:0;box-shadow:none;padding:0;margin:0}.paper{box-shadow:none;margin:0;min-height:297mm;width:210mm;page-break-after:always;padding:25mm 20mm}.paper:last-child{page-break-after:auto}@page{size:A4;margin:0}}
 @media(max-width:850px){header{padding:12px;gap:8px}header .toolbar{flex-wrap:wrap}nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible!important;gap:8px;padding:10px}nav .nav-group{min-width:0!important;margin:0!important}nav button.nav-subitem{white-space:normal!important;text-align:right;width:100%!important;padding:10px!important}main{min-width:0;overflow-wrap:anywhere}.panel{max-width:100%;overflow-x:auto}button,select,input{max-width:100%}#v9-design-form[hidden]{display:none!important}}
 </style><style>
@@ -343,7 +343,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const uid=()=>globalThis.crypto?.randomUUID?.()||('id-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,10));
 const defaultState=()=>({title:'پورتفولیوی راهکارهای هتلی NSP',master:{font:'Tahoma',accent:'#087b80',header:'NSP Electronics',footer:'NSP • Portfolio',margin:48},templates:[{id:'cover',name:'کاور',parent:'master',layout:'cover',overrides:{}},{id:'standard',name:'استاندارد',parent:'master',layout:'standard',overrides:{}},{id:'project',name:'پروژه هتل',parent:'master',layout:'project',overrides:{}},{id:'data',name:'داده و نمودار',parent:'master',layout:'data',overrides:{}}],pages:[],selected:null});
 // Release policy: increment the app release for every delivered revision; preserve the existing file identity, storage key and schema unless a migration is intentional.
-Object.assign(window.V13,{appVersion:132,schemaVersion:2,storageKey:KEY,dirty:false,saveError:'',startupNotice:'',saveBlocked:false,lastSavedAt:null});
+Object.assign(window.V13,{appVersion:134,schemaVersion:2,storageKey:KEY,dirty:false,saveError:'',startupNotice:'',saveBlocked:false,lastSavedAt:null});
 function v13Copy(value){return JSON.parse(JSON.stringify(value))}
 function v13Record(value,label){if(!value||typeof value!=='object'||Array.isArray(value))throw Error(label+' ساختار معتبر ندارد.');return value}
 function v13Id(value,label){if(typeof value!=='string'||!/^[A-Za-z0-9][A-Za-z0-9_.:-]*$/.test(value))throw Error(label+' شناسه معتبر ندارد.');return value}
@@ -831,7 +831,7 @@ function imageLibraryView(){
   '<button class="btn" onclick="V13.media.downloadOriginal(\''+a.id+'\')">دریافت اصل تصویر</button>'+
   '<button class="btn danger" onclick="V13.media.remove(\''+a.id+'\')">حذف</button></div></article>').join('');
  const chosen=isPrivate?privateCards:shownPublic.map(v81PublicCard).join('');
- return '<section class="v75-gallery" aria-label="تصاویر پروژه"><h2>تصاویر پروژه — Version 130</h2>'+
+ return '<section class="v75-gallery" aria-label="تصاویر پروژه"><h2>تصاویر پروژه — Version 134</h2>'+
   '<p class="muted">پروژه فعال: <b>'+esc(state.activeWorkspaceName||state.title)+'</b>. آلبوم‌های اختصاصی هر پروژه از کتابخانهٔ عمومی جدا هستند.</p>'+
   '<div class="toolbar v81-image-tabs" role="tablist">'+
   '<button type="button" role="tab" class="btn '+(!isPrivate?'primary':'')+'" aria-selected="'+(!isPrivate)+'" onclick="v81SetProjectImageTab(\'public\')">عمومی ('+publicImages.length+')</button>'+
@@ -851,7 +851,7 @@ function globalImageLibraryView(){
  const publicImages=Array.isArray(state.globalImageLibrary)?state.globalImageLibrary:[],
    shown=publicImages.filter(a=>v112IsVisible('public',a.id));
  for(const id of [...v112PublicSelection])if(!publicImages.some(a=>a.id===id))v112PublicSelection.delete(id);
- return '<section class="v75-gallery" aria-label="کتابخانه تصاویر عمومی"><h2>کتابخانه تصاویر عمومی — Version 130</h2>'+
+ return '<section class="v75-gallery" aria-label="کتابخانه تصاویر عمومی"><h2>کتابخانه تصاویر عمومی — Version 134</h2>'+
  '<p class="muted">آلبوم‌های عمومی در سطح سیستم مشترک‌اند؛ تصاویر خصوصی پروژه‌های دیگر نمایش داده نمی‌شوند.</p>'+
  '<div class="panel"><div class="toolbar"><label class="btn primary">+ افزودن تصویر عمومی<input type="file" multiple accept="image/png,image/jpeg,image/webp,image/gif" style="display:none" onchange="V13.media.importPublicFiles(this)"></label></div>'+
  v112AlbumToolbar('public')+
@@ -1578,7 +1578,7 @@ function v76Projects(){
    '<div class="v87-portfolio-grid">'+(children||'<p class="muted">هنوز پورتفولیویی ثبت نشده است.</p>')+'</div>'+
    '</div></td></tr>';
  }).join('');
- return '<section class="v76-projects v77-projects"><div class="v77-topbar"><h2>پروژه‌ها — Version 130</h2>'+
+ return '<section class="v76-projects v77-projects"><div class="v77-topbar"><h2>پروژه‌ها — Version 134</h2>'+
  '<button class="btn primary" onclick="v76AddProject()">+ افزودن پروژه</button>'+
   '<button class="btn" onclick="V13.saveProject()">ذخیره پروژه</button></div>'+
  '<p class="muted">روی + هر پروژه کلیک کنید تا پورتفولیوهایش در زیر همان ردیف باز شوند.</p>'+
@@ -3501,6 +3501,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     if(V.refreshStatus)V.refreshStatus();
     v107RefreshStorageStatus();
     V.media?.refreshPanel?.();
+    V.thumbnails?.pageChanged?.(c);
   }
   function v122SaveByScope(c){
     if(c?.type==='page'&&typeof V.queuePageSave==='function'){
@@ -3894,13 +3895,11 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
        '<small>'+pages.length+' صفحه · جابه‌جایی با کشیدن یا فلش‌ها</small>'+
        '<button class="btn primary" type="button" data-v13-action="new-page-design">+ افزودن صفحه</button></div>'+
      '<div class="v85-page-stack">'+pages.map((p,i)=>{
-       const resolved=V.resolvePage(p),width=Number(resolved.width)||595,height=Number(resolved.height)||842;
-       const scale=Math.max(.08,Math.min(.23,145/width,190/height));
-       const preview=V.renderDocument(p,i+1);
-       return '<div class="v85-page-item '+(selected===p.id?'is-active':'')+'" role="button" tabindex="0" draggable="true" data-v85-page="'+html(p.id)+'" aria-label="ویرایش صفحه '+(i+1)+'، '+html(p.title||'صفحه')+'">'+
+       // Build only the lightweight row; intersection loading supplies nearby previews.
+       return '<div class="v85-page-item '+(selected===p.id?'is-active':'')+'" role="button" tabindex="0" draggable="true" data-v85-page="'+html(p.id)+'" data-v85-index="'+i+'" aria-label="ویرایش صفحه '+(i+1)+'، '+html(p.title||'صفحه')+'">'+
         '<div class="v85-thumb-meta"><b>'+(i+1)+'. '+html(p.title||'صفحه')+'</b></div>'+
-        '<div class="v85-thumb-frame" style="width:'+Math.round(width*scale)+'px;height:'+Math.round(height*scale)+'px">'+
-          '<div class="v85-thumb-inner" style="transform:scale('+scale+')">'+preview+'</div></div>'+
+        '<div class="v85-thumb-frame" data-v134-thumb-frame data-v134-thumb-state="idle" style="width:145px;height:190px">'+
+          '<div class="v85-thumb-inner" data-v134-thumb-inner aria-hidden="true"></div></div>'+
         '<div class="v85-page-actions"><button class="btn" type="button" data-v85-move="-1" data-v85-id="'+html(p.id)+'" '+(!i?'disabled':'')+' title="جابجایی صفحه به بالا">↑</button>'+
         '<button class="btn" type="button" data-v85-move="1" data-v85-id="'+html(p.id)+'" '+(i===pages.length-1?'disabled':'')+' title="جابجایی صفحه به پایین">↓</button>'+
         '<button class="btn" type="button" data-v13-action="duplicate-page-design" data-v13-id="'+html(p.id)+'" title="کپی صفحه">کپی</button>'+
@@ -5647,7 +5646,7 @@ document.addEventListener('click',function(event){
 <script>
 (function(){
 'use strict';
-window.V13.appVersion=133;
+window.V13.appVersion=134;
 const oldExport=window.download;
 window.v30ExportPortfolio=function(id){
   const chosen=state.portfolios.find(p=>p.id===(id||state.activePortfolioId));
@@ -5701,7 +5700,7 @@ window.v30PrintPortfolio=function(id){
 <script>
 (function(){
 'use strict';
-window.V13.appVersion=133;
+window.V13.appVersion=134;
 let activeSection=null;
 const oldList=v8Portfolios;
 const oldOpen=v29Open;
@@ -5997,7 +5996,7 @@ async function restore(payload,confirmed=false){
   if(!V.saveBlocked)await V.flushStorage();
   if(mode==='sqlite')await invoke('create_backup',{name:'Before restore '+new Date().toISOString(),payload:priorPayload});
   else if(mode==='indexeddb')await request('backups','put',{id:uid(),name:'Before restore',createdAt:new Date().toISOString(),payload:priorPayload});
-  else {const link=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify({app:'NSP Portfolio Builder',appVersion:133,schemaVersion:2,state:JSON.parse(priorPayload)})],{type:'application/json'}));link.href=url;link.download='NSP_Before_Restore.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+  else {const link=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify({app:'NSP Portfolio Builder',appVersion:134,schemaVersion:2,state:JSON.parse(priorPayload)})],{type:'application/json'}));link.href=url;link.download='NSP_Before_Restore.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
   await write(JSON.stringify(candidate),true);state=candidate;lastPayload=JSON.stringify(state);selected=state.pages[0]?.id;v13ResetEditorContext(true);failedWrites.clear();completed=revision;lastError='';V.saveBlocked=false;V.startupNotice='';V.recoveryMissingAssets=[];
   const migrated=await V.media.migrateLegacy();ready=true;if(migrated)save();
  }finally{ready=true;cover.remove();status();render();}
@@ -6325,4 +6324,132 @@ const mediaMigrated=!V.saveBlocked&&await V.media.migrateLegacy();ready=true;V.n
 @media print{.v96-align-menu{display:none!important}}
 </style>
 <style id="v107-storage-styles">.v13-tools .v107-storage-feedback{font-size:11px;white-space:normal;flex:1 1 180px;line-height:1.6}.v13-tools [data-v107-retry]{font-size:11px;min-height:34px}@media print{.v107-storage-feedback,[data-v107-retry]{display:none!important}}</style>
+
+<script id="v134-thumbnail-virtualization">
+/* TASK-071 / V134: only hydrate nearby portfolio thumbnails. All page edits
+   and inherited source data remain owned by the existing shared renderer. */
+(function(){
+ 'use strict';
+ const V=window.V13, FRAME_W=145, FRAME_H=190, OVERSCAN=160;
+ let stack=null, observer=null, fallback=null, owner=null, projectId='', portfolioId='', editTimer=null;
+ function current(){
+  return !!stack&&stack.isConnected&&owner===state&&
+   projectId===state.activeWorkspaceId&&portfolioId===state.activePortfolioId;
+ }
+ function rows(){return stack?Array.from(stack.querySelectorAll('[data-v85-page]')):[];}
+ function near(row){
+  if(!stack)return false;
+  const a=stack.getBoundingClientRect(),b=row.getBoundingClientRect();
+  return b.bottom>=a.top-OVERSCAN&&b.top<=a.bottom+OVERSCAN&&
+   b.right>=a.left-OVERSCAN&&b.left<=a.right+OVERSCAN;
+ }
+ function clear(row){
+  const inner=row.querySelector('[data-v134-thumb-inner]'),frame=row.querySelector('[data-v134-thumb-frame]');
+  if(!inner||inner.dataset.v134Ready!=='true')return;
+  inner.replaceChildren();
+  inner.removeAttribute('data-v134-ready');
+  if(frame)frame.dataset.v134ThumbState='idle';
+ }
+ function paint(row){
+  if(!current()||!stack.contains(row))return;
+  const frame=row.querySelector('[data-v134-thumb-frame]'),inner=row.querySelector('[data-v134-thumb-inner]');
+  if(!frame||!inner||inner.dataset.v134Ready==='true')return;
+  const index=Number(row.dataset.v85Index),page=(state.pages||[])[index];
+  if(!Number.isSafeInteger(index)||index<0||!page||page.id!==row.dataset.v85Page)return;
+  try{
+   const resolved=V.resolvePage(page),w=Number(resolved.width)||595,h=Number(resolved.height)||842;
+   const scale=Math.max(.08,Math.min(.23,FRAME_W/w,FRAME_H/h));
+   inner.style.left=Math.max(0,(FRAME_W-w*scale)/2)+'px';
+   inner.style.top=Math.max(0,(FRAME_H-h*scale)/2)+'px';
+   inner.style.transform='scale('+scale+')';
+   // Reuse the already resolved scene. This is only done for visible/nearby rows.
+   inner.innerHTML=V.renderDocument(page,index+1,{document:resolved});
+   inner.dataset.v134Ready='true';
+   frame.dataset.v134ThumbState='ready';
+  }catch(error){
+   inner.textContent='پیش‌نمایش در دسترس نیست';
+   inner.style.cssText='left:8px;top:14px;right:8px;transform:none;font-size:11px;color:#8a3541;white-space:normal';
+   inner.dataset.v134Ready='true';
+   frame.dataset.v134ThumbState='error';
+  }
+ }
+ function dispose(){
+  if(observer){observer.disconnect();observer=null;}
+  if(fallback&&stack){
+   stack.removeEventListener('scroll',fallback);
+   window.removeEventListener('resize',fallback);
+  }
+  fallback=null;
+ }
+ function mount(){
+  const next=document.querySelector('.v85-page-stack');
+  if(next===stack&&current())return;
+  dispose();stack=next;
+  if(!stack){owner=null;return;}
+  owner=state;projectId=state.activeWorkspaceId;portfolioId=state.activePortfolioId;
+  if(typeof IntersectionObserver==='function'){
+   observer=new IntersectionObserver(entries=>{
+    if(!current())return;
+    for(const entry of entries){
+     if(entry.isIntersecting)paint(entry.target);
+     else clear(entry.target);
+    }
+   },{root:stack,rootMargin:OVERSCAN+'px',threshold:0});
+   rows().forEach(row=>observer.observe(row));
+  }else{
+   // Older hosts retain bounded thumbnails rather than eagerly rendering all pages.
+   fallback=()=>{if(!current())return;rows().forEach(row=>near(row)?paint(row):clear(row));};
+   stack.addEventListener('scroll',fallback,{passive:true});
+   window.addEventListener('resize',fallback);
+   fallback();
+  }
+ }
+ V.thumbnails={
+  pageChanged(context){
+   if(context?.type!=='page')return;
+   if(editTimer)clearTimeout(editTimer);
+   const targetId=context.id;
+   editTimer=setTimeout(()=>{
+    editTimer=null;if(!current())return;
+    const row=rows().find(row=>row.dataset.v85Page===targetId);
+    if(!row)return;
+    clear(row);
+    if(near(row))paint(row);
+   },160);
+  },
+  stats(){
+   return {pages:current()?rows().length:0,hydrated:current()?rows().filter(row=>
+    row.querySelector('[data-v134-thumb-inner]')?.dataset.v134Ready==='true').length:0};
+  }
+ };
+ const renderBeforeThumbnails=render;
+ render=function(){
+  const old=stack&&stack.isConnected?stack:null,top=old?.scrollTop||0,left=old?.scrollLeft||0;
+  const focused=document.activeElement,focusedRow=focused?.closest?.('[data-v85-page]');
+  const focusInfo=old&&focusedRow&&old.contains(focusedRow)?{
+   pageId:focusedRow.dataset.v85Page,
+   move:focused?.dataset?.v85Move,
+   action:focused?.dataset?.v13Action
+  }:null;
+  const result=renderBeforeThumbnails.apply(this,arguments);
+  const next=document.querySelector('.v85-page-stack');
+  if(next&&old&&next!==old){
+   next.scrollTop=top;next.scrollLeft=left;
+   if(focusInfo){
+    const row=Array.from(next.querySelectorAll('[data-v85-page]')).find(el=>el.dataset.v85Page===focusInfo.pageId);
+    const buttons=row?Array.from(row.querySelectorAll('button')):[];
+    const button=focusInfo.move!==undefined?
+     buttons.find(el=>el.dataset.v85Move===focusInfo.move):
+     focusInfo.action?buttons.find(el=>el.dataset.v13Action===focusInfo.action):null;
+    (button&&!button.disabled?button:row)?.focus({preventScroll:true});
+   }
+  }
+  mount();
+  return result;
+ };
+ mount();
+})();
+</script>
+
+<style id="v134-thumbnail-style">.v85-thumb-frame[data-v134-thumb-state="idle"]{background:linear-gradient(135deg,#f6f9fa,#e8eff2)}.v85-thumb-frame[data-v134-thumb-state="error"]{background:#fff0f0}</style>
 </body></html>
