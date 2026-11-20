@@ -518,7 +518,30 @@ function v13NormalizeProject(input){
  s.master=v13Record(s.master,'تنظیمات اصلی');
  if(!Array.isArray(s.templates)||!s.templates.length)throw Error('فهرست قالب‌های صفحه خالی یا نامعتبر است.');
  v13Unique(s.templates,'قالب صفحه');
- for(const t of s.templates){t.name=v13Text(t.name,'قالب', 'نام قالب');t.layout=v13Text(t.layout,'standard','چیدمان');t.overrides=t.overrides==null?{}:v13Record(t.overrides,'تنظیمات قالب');}
+ // V137: global template groups are organizational, never a page type or section.
+ if(s.templateCategories==null)s.templateCategories=[{id:'cover',name:'جلد'},{id:'contents',name:'فهرست'},{id:'about',name:'معرفی'},{id:'projects',name:'پروژه‌ها'},{id:'gallery',name:'گالری'},{id:'other',name:'سایر'}];
+ if(!Array.isArray(s.templateCategories)||!s.templateCategories.length)throw Error('دسته‌بندی قالب‌ها نامعتبر است.');
+ v13Unique(s.templateCategories,'گروه قالب');for(const g of s.templateCategories)g.name=v13Text(g.name,'گروه','نام گروه');
+ const categoryIds=new Set(s.templateCategories.map(g=>g.id));
+ for(const t of s.templates){
+  t.name=v13Text(t.name,'قالب','نام قالب');t.layout=v13Text(t.layout,'standard','چیدمان');
+  t.overrides=t.overrides==null?{}:v13Record(t.overrides,'تنظیمات قالب');
+  if(!t.categoryId)t.categoryId=categoryIds.has(t.id)?t.id:t.id==='project'?'projects':'other';
+  v13Id(t.categoryId,'شناسه گروه قالب');
+  if(!categoryIds.has(t.categoryId))throw Error('گروه قالب پیدا نشد: '+t.name);
+  t.objects=v13Objects(t.objects,'عناصر قالب',true);
+  if(t.layers!=null)v20SceneRecord(t,'قالب صفحه');
+  t.style=t.style==null?{}:v13Record(t.style,'استایل قالب');
+ }
+ if(s.customComponents==null)s.customComponents=[];
+ if(!Array.isArray(s.customComponents))throw Error('فهرست کامپوننت‌ها نامعتبر است.');
+ v13Unique(s.customComponents,'کامپوننت سفارشی');
+ for(const c of s.customComponents){
+  c.name=v13Text(c.name,'کامپوننت','نام کامپوننت');
+  c.width=v13Finite(c.width,1,'عرض',true);c.height=v13Finite(c.height,1,'ارتفاع',true);
+  c.objects=v13Objects(c.objects,'اعضای کامپوننت',true);
+  if(c.objects.some(o=>o.type==='custom'||o.type==='block'))throw Error('کامپوننت تو در تو مجاز نیست.');
+ }
  if(s.masterTemplates==null)s.masterTemplates=[{id:'master-default',name:'قالب مادر پیش‌فرض',font:s.master.font||'Tahoma',accent:s.master.accent||'#087b80',background:'#ffffff',textColor:'#152638',margin:typeof s.master.margin==='number'?s.master.margin:48,verticalMargin:48,orientation:'portrait',objects:[]}];
  if(!Array.isArray(s.masterTemplates)||!s.masterTemplates.length)throw Error('حداقل یک قالب مادر لازم است.');
  v13Unique(s.masterTemplates,'قالب مادر');
@@ -544,7 +567,7 @@ function v13NormalizeProject(input){
   if(p.sectionLinked&&!designIds.has(p.sectionDesignId))throw Error('صفحه پیونددار باید قالب بخش معتبر داشته باشد.');
   if(p.masterTemplateId==null||p.masterTemplateId==='')p.masterTemplateId=p.sectionLinked?'':firstMaster;
   if(p.masterTemplateId!==''&&p.masterTemplateId!=='none'&&!masterIds.has(p.masterTemplateId))throw Error('قالب مادرِ یکی از صفحات پیدا نشد.');
-  p.visualObjects=v13Objects(p.visualObjects,'عناصر صفحه',true);if(p.snapshot!=null){v13Record(p.snapshot,'تصویر ثابت قالب');if(p.snapshot.v13){p.snapshot.objects=v19SnapshotObjects(p.snapshot.objects,'عناصر قالب ثابت');p.snapshot.width=v13Finite(p.snapshot.width,595,'عرض قالب ثابت',true);p.snapshot.height=v13Finite(p.snapshot.height,842,'ارتفاع قالب ثابت',true);}}
+  p.visualObjects=v13Objects(p.visualObjects,'عناصر صفحه',true);for(const o of p.visualObjects)if(o.type==='custom'&&(!o.componentId||!s.customComponents.some(c=>c.id===o.componentId)))throw Error('تعریف کامپوننت صفحه در پروژه پیدا نشد.');if(p.snapshot!=null){v13Record(p.snapshot,'تصویر ثابت قالب');if(p.snapshot.v13){p.snapshot.objects=v19SnapshotObjects(p.snapshot.objects,'عناصر قالب ثابت');p.snapshot.width=v13Finite(p.snapshot.width,595,'عرض قالب ثابت',true);p.snapshot.height=v13Finite(p.snapshot.height,842,'ارتفاع قالب ثابت',true);}}
   if(p.pageStyleOverrides!=null)v13Record(p.pageStyleOverrides,'تنظیمات صفحه');v20SceneRecord(p,'صفحه');
  }}
  if(!s.portfolios.some(p=>p.id===s.activePortfolioId))s.activePortfolioId=s.portfolios[0].id;
@@ -1026,7 +1049,7 @@ document.addEventListener('change',e=>{
  const input=e.target.closest('[data-v93-style][data-v93-field]');
  if(input)v93EditStyle(input.dataset.v93Style,input.dataset.v93Field,input.value);
 });
-const v78GlobalFields=['master','masterTemplates','sectionDesigns','templates','sectionTypes','styleLibrary','globalImageAlbums'];
+const v78GlobalFields=['master','masterTemplates','sectionDesigns','templates','sectionTypes','styleLibrary','globalImageAlbums','templateCategories'];
 function v78SyncGlobal(){
  if(!state.globalTemplates||typeof state.globalTemplates!=='object'||Array.isArray(state.globalTemplates))state.globalTemplates={};
  for(const field of v78GlobalFields)if(state[field]!=null)state.globalTemplates[field]=v13Copy(state[field]);
@@ -1058,6 +1081,7 @@ function v76CoreSnapshot(){
  delete core.globalImageLibrary;
  delete core.globalImageAlbums;
  delete core.styleLibrary; // Central, not part of an individual project.
+ delete core.templateCategories; // Categories live in the system-wide template catalog.
  return core;
 }
 function v76ListProjects(){
@@ -1767,6 +1791,16 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
       if(type==='block'){
         styles+='background:transparent;border:1px dashed #087b80;';
         content='<span class="v89-block-title">'+html(o.name||'Region Block')+'</span>';
+      }
+      // V137: linked component renders its definition inside a selectable frame.
+      if(type==='custom'){
+        var def=(state.customComponents||[]).find(function(c){return c.id===o.componentId;});
+        if(def&&def.width>0&&def.height>0){
+          var innerOpts=Object.assign({},opts,{editor:false,editableOrigin:null,selectedId:null,selectedIds:new Set(),showHandles:false});
+          var children=(def.objects||[]).map(function(x){return Object.assign({},x,{origin:'component',ownerId:def.id});});
+          content='<div aria-label="'+html(def.name)+'" style="position:absolute;left:0;top:0;width:'+def.width+'px;height:'+def.height+'px;transform-origin:top left;transform:scale('+(o.w/def.width)+','+(o.h/def.height)+');pointer-events:none">'+V.renderObjects(children,innerOpts)+'</div>';
+          styles+='overflow:hidden;';
+        }else content='<span>کامپوننت پیدا نشد</span>';
       }
       // Rotated/flipped frames are resized numerically until the mouse logic uses local axes.
       var v98AxisHandles=Math.abs(number(o.rotation,0)%360)<0.00001&&o.flipH!==true&&o.flipV!==true;
@@ -3600,7 +3634,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     }else if(o.type==='line'){
       out+=input('رنگ خط','strokeColor',o.strokeColor||(o.background&&o.background!=='transparent'?o.background:'#000000'),'color');
       out+='<div class="v13-number-grid"><div>'+labelFor('نوع خط','strokeStyle')+'<select data-v13-property="strokeStyle" '+disabled+'>'+[['solid','پیوسته'],['dashed','خط‌چین'],['dotted','نقطه‌چین']].map(a=>'<option value="'+a[0]+'" '+((o.strokeStyle||'solid')===a[0]?'selected':'')+'>'+a[1]+'</option>').join('')+'</select></div><div>'+labelFor('ضخامت (px)','strokeWidth')+'<input type="number" min="1" max="50" step="1" data-v13-property="strokeWidth" value="'+Number(o.strokeWidth||Math.min(50,o.h)||1)+'" '+disabled+'></div></div>';
-    }else out+=input('رنگ شکل','background',o.background||'#e4f3f3','color');
+    }else if(o.type==='custom'){out+='<p class="muted">این نمونه به تعریف مرکزی کامپوننت در Toolbox متصل است؛ جابه‌جایی و اندازه مختص همین نمونه است.</p>';}else out+=input('رنگ شکل','background',o.background||'#e4f3f3','color');
     if(o.type==='text'||o.type==='image')out+=input('رنگ پس‌زمینهٔ عنصر','background',o.background&&o.background!=='transparent'?o.background:'#ffffff','color')+'<label class="v13-check"><input type="checkbox" data-v13-object-transparent '+(!o.background||o.background==='transparent'?'checked':'')+' '+disabled+'> پس‌زمینهٔ شفاف</label>'+(o.type==='image'?'<p class="muted">رنگ پس‌زمینه در قسمت‌های شفاف تصویر و فضای خالی کادر دیده می‌شود.</p>':'');
     if(['image','shape','circle'].includes(o.type)){
       const field=(title,k,val,min,max)=>labelFor(title,k)+'<input type="number" data-v13-property="'+k+'" data-v103-effect-number min="'+min+'" max="'+max+'" step="1" value="'+html(val)+'" '+disabled+'>';
@@ -4687,6 +4721,46 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
   V.clearEditorHistory=function(){E.propertyEdit=null;E.imageRequest=null;E.inline=null;E.lastCanvasClick=null;E.selected.clear();E.multi.clear();E.anchors.clear();E.activeLayers.clear();E.selectedLayers.clear();E.layerDrag=null;E.histories.clear();E.drag=null;};
   V.editor=Object.assign(V.editor||{},{hasDrafts:function(){return !!(mainDraft || E.sectionDraft);},currentPage:function(){return tab==='visual'&&E.pageMode==='edit'&&E.current?.type==='page'?{projectId:state.activeWorkspaceId,portfolioId:E.current.portfolioId||state.activePortfolioId,pageId:E.current.id}:null;},resetSelection:function(){E.propertyEdit=null;E.imageRequest=null;E.inline=null;E.lastCanvasClick=null;E.epoch++;E.current=null;E.selected.clear();E.multi.clear();E.anchors.clear();E.activeLayers.clear();E.selectedLayers.clear();E.layerDrag=null;E.drag=null;},resetAll:function(){E.propertyEdit=null;E.imageRequest=null;E.inline=null;E.lastCanvasClick=null;E.epoch++;E.current=null;E.masterMode='list';E.masterForm=null;E.pageMode='list';E.pageForm=null;E.sectionId=null;E.sectionDraft=null;E.selected.clear();E.multi.clear();E.anchors.clear();E.activeLayers.clear();E.selectedLayers.clear();E.layerDrag=null;E.histories.clear();E.drag=null;},refreshStorageStatus:v107RefreshStorageStatus,exportState:function(exported){if(E.sectionDraft&&Array.isArray(exported.sectionDesigns)){const i=exported.sectionDesigns.findIndex(d=>d.id===E.sectionDraft.id);if(i>=0)exported.sectionDesigns[i]=copy(E.sectionDraft);}return exported;}});
   V.editor.focusPreflightObject=focusPreflightObject;
+  // Reuse the shared editor's local selection, Properties and History.
+  V.editor.customSelection=function(){
+   const c=E.current;if(!c||c.type!=='page'||locked(c))return null;
+   const list=selectedObjects(c);
+   if(!list.length||list.some(o=>!ownObject(c,o)||objectLocked(c,o)||o.type==='custom'||o.type==='block'||!!o.blockId||!!o.groupId))return null;
+   return copy(list);
+  };
+  V.editor.replaceWithComponent=function(def){
+   const c=E.current,list=V.editor.customSelection();
+   if(!list||!def)return false;
+   const before=objectSnapshot(c),r=record(c,true),ids=new Set(list.map(o=>o.id));
+   r.visualObjects=(r.visualObjects||[]).filter(o=>!ids.has(o.id));
+   const x=Math.min(...list.map(o=>o.x)),y=Math.min(...list.map(o=>o.y));
+   const o={id:uid(),type:'custom',componentId:def.id,name:def.name,x,y,w:def.width,h:def.height,visible:true,locked:false};
+   const layer=activeLayer(c);if(layer)Object.assign(o,layerValues(layer));
+   r.visualObjects.push(o);
+   const gone=new Set(list.map(objectToken));
+   r.objectOrder=(r.objectOrder||[]).filter(t=>!gone.has(t)).concat(ownToken(c,o));
+   setSelection(c,[ownToken(c,o)],ownToken(c,o));commit(c,before,true);return true;
+  };
+  V.editor.insertCustom=function(def){
+   const c=E.current;if(!c||c.type!=='page'||locked(c)||!def)return false;
+   const d=documentFor(c);add(c,'custom',{componentId:def.id,name:def.name,w:Math.min(def.width,d.width-60),h:Math.min(def.height,d.height-80)});return true;
+  };
+  V.editor.detachCustom=function(){
+   const c=E.current,o=c&&currentObject(c);
+   if(!c||c.type!=='page'||locked(c)||!o||o.type!=='custom'||!ownObject(c,o)||objectLocked(c,o))return false;
+   const def=(state.customComponents||[]).find(d=>d.id===o.componentId);if(!def)return false;
+   const before=objectSnapshot(c),r=record(c,true),sx=o.w/def.width,sy=o.h/def.height;
+   const children=def.objects.map(child=>Object.assign({},copy(child),{id:uid(),x:o.x+child.x*sx,y:o.y+child.y*sy,w:Math.max(1,child.w*sx),h:Math.max(1,child.h*sy)}));
+   const layer=activeLayer(c);if(layer)children.forEach(x=>Object.assign(x,layerValues(layer)));
+   r.visualObjects=(r.visualObjects||[]).filter(x=>x.id!==o.id).concat(children);
+   r.objectOrder=(r.objectOrder||[]).filter(t=>t!==ownToken(c,o)).concat(children.map(x=>ownToken(c,x)));
+   setSelection(c,children.map(x=>ownToken(c,x)),ownToken(c,children[children.length-1]));
+   commit(c,before,true);return true;
+  };
+  V.editor.selectContextObject=function(token){
+   const c=E.current;if(!c||c.type!=='page'||!documentFor(c).objects.some(o=>objectToken(o)===token))return false;
+   setSelection(c,[token],token);render();return true;
+  };
   const renderBeforeMasterLayout=render;
   render=function(){if(E.inline)finishInline(false,false);E.propertyEdit=null;const result=renderBeforeMasterLayout.apply(this,arguments);document.body.classList.toggle('v13-master-screen',tab==='templates'||tab==='visual');document.body.classList.toggle('v13-master-editing',tab==='templates'&&E.masterMode==='edit');return result;};
   const goBeforeMasterGrid=go;
