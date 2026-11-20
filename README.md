@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 136 (TASK-044: truthful startup recovery and redacted diagnostics, source-only)
+
+Native SQLite startup-load failures now **lock editing/persistence** and visibly state that the pre-loaded UI state can be default or stale localStorage, not recovered SQLite. The old generic "JSON of current state" backup button is replaced with a clearly named **UNVERIFIED_UI_MEMORY_NOT_DATABASE_RECOVERY** export; it is never labeled as a reliable SQLite backup. On-screen instructions explain how to **close the app** and preserve the entire actual Tauri app_local_data_dir/storage folder, including `portfolio.sqlite3`, `portfolio.sqlite3-wal`, `portfolio.sqlite3-shm` (if present), and all `assets/`. No automatic file copying or database repair occurs. If Tauri fails before the frontend loads, this manual closed-app preservation procedure is still required.
+
+An opt-in **NSP_REDACTED_DIAGNOSTICS_NOT_BACKUP** JSON export is available in startup recovery and settings. It collects a bounded, in-memory incident history for storage writes, retries and startup errors with safe error categories, operation, generic scope, backend, revision and timestamp. It excludes payloads, project names/IDs, private file paths, secrets and image bytes. Browser IndexedDB startup errors keep their existing fail-closed and independent read-only localStorage RAW export flow. A diagnostic report is **not** an importable recovery file or a DB backup.
+
+**Owner review:** on an offline copy, simulate native SQLite load failure after Tauri setup, inspect read-only overlay, confirm Save/Page/Project are blocked, distinguish unverified UI memory from canonical originals, compare the whole copied closed-app SQLite/WAL/SHM/assets folder, inspect diagnostics for sensitive fields, exercise browser storage failure and retry/conflict logs. An earlier Tauri setup/migration failure may prevent any frontend overlay, requiring manual file preservation. No assistant Build/Test/static checker/runtime or owner acceptance; TASK-044 remains in progress. SQLite schema stays 13 with no migration.
+
+---
+
 # NSP Portfolio Builder — Version 135 (TASK-043: canonical named checkpoints, source-only)
 
 Named SQLite recovery checkpoints now select the **committed relational workspace + public catalog** within an immediate transaction, enforce the caller's expected workspace Revision, verify immutable assets, and atomically store snapshot, source Revision and FK-backed asset references. Migration 013 adds nullable `workspace_revision` to named backups: old snapshots remain intact with *unknown* provenance, not invented Revision 0. Automatic backups, files and pruning policy remain unchanged.
