@@ -69,3 +69,11 @@ Normal load_project_state() calls hydrate_payload(), whose fetch_image() returns
 - هنگام اجرای N بعدی HEAD و PE را مجدد بخوانید؛ یافته‌های رفع‌شده در Commitهای هم‌زمان باید با Evidence و حفظ history به‌روز شوند، نه حذف شوند.
 
 **Checkpoint:** `OBS-046`. **مرحله بعد با N: 02 — ذخیره‌سازی، فایل‌ها، پشتیبان و rollback.**
+
+## رفع یک نقص مستقل در V126 — TASK-040 / FND-017
+
+Commit سورس: [`05a22522`](https://github.com/comboci/NSP-Portfolio-Builder/commit/05a225224e6e2b96821fb17da6f22443aa71055c).
+
+تغییر نام تصویر عمومی در نسخه V125 از کنترل Revision و صف ذخیره خارج بود؛ در V126 کنترل `expectedRevision`، تشخیص `WRITE_CONFLICT`، افزایش Revision و Metadata Rename در یک Transaction اتمیک قرار گرفت. کلاینت Tauri نیز همان صف Save Page/Save Project را برای این دستور به کار می‌برد. وضعیت TASK-040 در PES-14 به **in_progress / source-only / owner verification pending** تغییر کرد؛ FND-017 از «رفع‌نشده» به «سورس اصلاح‌شده، اجرای واقعی تأیید نشده» رسید.
+
+**محدودیت:** هیچ Build، Test، Static Checker یا Windows Runtime اجرا نشده است (DEC-006). ورژن محصول V126، SQLite Schema 12 بدون Migration جدید. سایر FND-015/016/018 و TASK-038/039/041 همچنان باز هستند؛ فاز ۰۲ ممیزی مستقل و در انتظار N کاربر باقی می‌ماند.
