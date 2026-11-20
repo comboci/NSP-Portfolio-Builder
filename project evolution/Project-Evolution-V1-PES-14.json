@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V112 source candidate (Tauri 112.0.0, SQLite schema 6); TASK-028 image albums/private and public bulk organization; owner runtime unverified",
+    "software_release": "V113 source candidate (Tauri 113.0.0, SQLite schema 6); TASK-029 image filters / print DPI; owner runtime unverified",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding. V96 dd8884b8 implements TASK-016 in the shared designer with px/mm geometry, grouped Block and Group movement, key/selection/page references, history and non-destructive bounds guards. No build or runtime review. V97 65d0788a implements TASK-017 signed-mm Ctrl+D duplication in the shared designer and preserves Group/Region Block ownership; owner runtime review outstanding. V98 TASK-018 based on V97 HEAD 1eb6f858f9457c6c45f35b27ac71d415d6f372ea; no Build/Test, runtime or PDF validation. V99 160af83c guards editor exit until async persistence acknowledgement. V100 efdf0e93 centralizes page/portfolio/master duplication and preserves source provenance while remapping local compound identities; source only, no build/runtime test. V101 e2221346 replaces preflight go('visual') with direct page navigation and exact object provenance focus for TASK-008, with no build/runtime/PDF verification. V102 bee05475 creates independent shared_styles SQLite schema 6 table, transactional catalog projection, legacy style backfill, canonical project load, and confirmed asynchronous Style Library saving. No Build/Test/runtime acceptance. V103 TASK-019 based on PE-only HEAD a7cab4f; object effect controls in shared renderer and local Properties; no DB migration or Build/Test; owner acceptance pending. V104 HEAD e1e4f190 comprises V103 TASK-019 followed by transactional storage changes ec43999 and version-aware static validation e1e4f190; these have no matching V104 PE observation and remain unverified. V105 TASK-020 is based on V104 main e1e4f190, preserving the V104 storage changes and recording an image crop/mask source candidate only. V106 TASK-021 based on V105 main 85e3db9ab5580287a030037a4301fa93928c79de; frame-preserving replacement and Tile fit changes are source-only, pending owner review. V107 TASK-023 partial based on V106 main feaebe5f34604412305a6f8cf05487c42ab64266; editor displays backend-acknowledged save/error/retry state; autosave toggle and manual leave flows remain unimplemented and unverified. V108 TASK-023 based on V107 main HEAD e83db4904768cd7555415c22e5f616bf4d18b770; master/section draft confirmation awaits asynchronous backend save, but no Build/Test/runtime. V109 TASK-023 reconciled PE revision e83db4904768cd7555415c22e5f616bf4d18b770 as the verified immediate parent of V108 main HEAD d1a27c828defd92288a0e09a19755d8d89d97999; added optional three-way Save/Discard/Cancel for template draft changes, preserving prior dialogs. No Build/Test/runtime. V110 4b3531bf provides transactional SQLite metadata-only renaming for public images and a clearly blocked Delete control under BR-006/Q-005; retains all prior ownership, references, original bytes and schema 6; source only. V111 f67f2aa4 implements scoped non-destructive project Import and portfolio Import/Export/Print with dependency checks, local asset rebinding, contextual menu cleanup and retained Backup; source only, runtime unverified. V112 f7b0e5f6 introduces project-private and centralized public albums with safe metadata-only add/remove membership and no asset deletion; browser/Tauri runtime acceptance outstanding.",
-    "source_revision_ref": "f7b0e5f65d518aa6d05510516b5d8f62e0b34210"
+    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding. V96 dd8884b8 implements TASK-016 in the shared designer with px/mm geometry, grouped Block and Group movement, key/selection/page references, history and non-destructive bounds guards. No build or runtime review. V97 65d0788a implements TASK-017 signed-mm Ctrl+D duplication in the shared designer and preserves Group/Region Block ownership; owner runtime review outstanding. V98 TASK-018 based on V97 HEAD 1eb6f858f9457c6c45f35b27ac71d415d6f372ea; no Build/Test, runtime or PDF validation. V99 160af83c guards editor exit until async persistence acknowledgement. V100 efdf0e93 centralizes page/portfolio/master duplication and preserves source provenance while remapping local compound identities; source only, no build/runtime test. V101 e2221346 replaces preflight go('visual') with direct page navigation and exact object provenance focus for TASK-008, with no build/runtime/PDF verification. V102 bee05475 creates independent shared_styles SQLite schema 6 table, transactional catalog projection, legacy style backfill, canonical project load, and confirmed asynchronous Style Library saving. No Build/Test/runtime acceptance. V103 TASK-019 based on PE-only HEAD a7cab4f; object effect controls in shared renderer and local Properties; no DB migration or Build/Test; owner acceptance pending. V104 HEAD e1e4f190 comprises V103 TASK-019 followed by transactional storage changes ec43999 and version-aware static validation e1e4f190; these have no matching V104 PE observation and remain unverified. V105 TASK-020 is based on V104 main e1e4f190, preserving the V104 storage changes and recording an image crop/mask source candidate only. V106 TASK-021 based on V105 main 85e3db9ab5580287a030037a4301fa93928c79de; frame-preserving replacement and Tile fit changes are source-only, pending owner review. V107 TASK-023 partial based on V106 main feaebe5f34604412305a6f8cf05487c42ab64266; editor displays backend-acknowledged save/error/retry state; autosave toggle and manual leave flows remain unimplemented and unverified. V108 TASK-023 based on V107 main HEAD e83db4904768cd7555415c22e5f616bf4d18b770; master/section draft confirmation awaits asynchronous backend save, but no Build/Test/runtime. V109 TASK-023 reconciled PE revision e83db4904768cd7555415c22e5f616bf4d18b770 as the verified immediate parent of V108 main HEAD d1a27c828defd92288a0e09a19755d8d89d97999; added optional three-way Save/Discard/Cancel for template draft changes, preserving prior dialogs. No Build/Test/runtime. V110 4b3531bf provides transactional SQLite metadata-only renaming for public images and a clearly blocked Delete control under BR-006/Q-005; retains all prior ownership, references, original bytes and schema 6; source only. V111 f67f2aa4 implements scoped non-destructive project Import and portfolio Import/Export/Print with dependency checks, local asset rebinding, contextual menu cleanup and retained Backup; source only, runtime unverified. V112 f7b0e5f6 introduces project-private and centralized public albums with safe metadata-only add/remove membership and no asset deletion; browser/Tauri runtime acceptance outstanding. V113 TASK-029 based on V112 HEAD 904bb89a420c51892f1fe5823d5aa9c628448dfa; PE source_revision_ref f7b0e5f6 is its immediate parent. Image effects and print DPI are source-only; no Build/Test/runtime/PDF/owner verification.",
+    "source_revision_ref": "904bb89a420c51892f1fe5823d5aa9c628448dfa"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1871,15 +1871,25 @@
           "TASK-021",
           "FND-011"
         ],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
           "type": "source_review_backlog_reconciliation",
           "date": "2026-11-19",
           "source_revision_ref": "bee0547554392cd8b10517e81c5abeb3e7fa5c8a"
         },
-        "implementation_state": "unimplemented_requirement_identified_by_V102_static_review",
-        "source_version": null,
-        "updated_on": "2026-11-19"
+        "implementation_state": "V113_image_filters_DPI_source_candidate_pending_owner_review",
+        "source_version": "V113",
+        "updated_on": "2026-11-20",
+        "result": "V113 source adds non-destructive per-image/per-Tile grayscale/sepia/blur/sharpen and independent Reset Filters using existing imageEdit, shared frame rendering and non-blocking estimated effective DPI below 200 for known library images and visible Tiles with crop/zoom/page size. No image byte or database schema changes; no Build/Test/browser/Tauri/PDF verification or owner acceptance.",
+        "changed_files": [
+          "index.html",
+          "README.md",
+          "src-tauri/Cargo.toml",
+          "src-tauri/tauri.conf.json"
+        ],
+        "evidence_refs": [
+          "OBS-033"
+        ]
       },
       {
         "record_id": "TASK-030",
@@ -2585,6 +2595,30 @@
           "source_revision_ref": "f7b0e5f65d518aa6d05510516b5d8f62e0b34210"
         },
         "implementation_state": "V112_source_committed_pending_owner_review"
+      },
+      {
+        "record_id": "OBS-033",
+        "title": "V113 TASK-029 source candidate for advanced filters and print DPI warnings",
+        "status": "source_implemented_runtime_unverified",
+        "detail": "V113 adds grayscale/sepia/blur/sharpen and independent filter reset to shared image Properties, per-image/per-Tile imageEdit and canvas/print frame rendering. Preflight estimates effective DPI from known library pixels, crop/zoom, physical A4/A3 page and visible Tile cell size; under 200 triggers a non-blocking warning, distinct from missing-asset and bounds errors. Immutable asset bytes and schema 6 unchanged; no Build/Test/browser/Tauri/PDF/owner acceptance.",
+        "scope_refs": [
+          "SC-IMAGEEDIT",
+          "SC-PDF",
+          "SC-TILES"
+        ],
+        "related_record_ids": [
+          "TASK-029",
+          "REQ-006",
+          "BR-004",
+          "TASK-008",
+          "TASK-020"
+        ],
+        "provenance": {
+          "type": "static_source_inspection_and_implementation",
+          "date": "2026-11-20",
+          "source_revision_ref": "904bb89a420c51892f1fe5823d5aa9c628448dfa"
+        },
+        "implementation_state": "V113_source_candidate_pending_owner_runtime_PDF_review"
       }
     ]
   },

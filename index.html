@@ -1,4 +1,4 @@
-<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 112</title><meta name="application-version" content="112"><style>
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 113</title><meta name="application-version" content="113"><style>
 :root{font-family:Tahoma,'Segoe UI',sans-serif;color:#152638;background:#edf1f4}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}header{background:#122c3c;color:#fff;padding:17px 24px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}header small{color:#a7d7dd}.shell{display:grid;grid-template-columns:235px 1fr;min-height:calc(100vh - 75px)}nav{background:#fff;border-left:1px solid #d9e1e5;padding:18px 12px}nav button{display:block;width:100%;border:0;text-align:right;background:transparent;padding:13px;border-radius:9px;margin:3px 0;color:#324453}nav button.active{background:#e4f3f3;color:#06656c;font-weight:bold}main{padding:22px;max-width:1450px;width:100%;margin:auto}.panel{background:white;border:1px solid #dbe3e7;border-radius:14px;padding:20px;margin-bottom:18px;box-shadow:0 2px 8px #17304408}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.stat{background:#f4f8fa;padding:15px;border-radius:10px}.stat b{font-size:27px;display:block}.muted{color:#647683;font-size:13px}.btn{border:1px solid #b7cbd1;border-radius:8px;background:white;padding:9px 13px;color:#174450}.primary{background:#087b80;color:white;border-color:#087b80}.danger{color:#a33}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:12px 0}.item{padding:12px;border:1px solid #e1e8eb;border-radius:9px;margin:8px 0;background:#fbfdfd}.item.selected{border-color:#09858a;background:#f1fbfa}input,select,textarea{border:1px solid #c6d5da;border-radius:7px;padding:9px;background:#fff;max-width:100%}input[type=checkbox]{accent-color:#087b80}textarea{width:100%;min-height:100px}label{display:block;font-size:13px;margin:10px 0 5px}.columns{display:grid;grid-template-columns:minmax(240px,350px) minmax(0,1fr);gap:18px}.paper{background:#fff;width:min(100%,595px);min-height:842px;margin:15px auto;padding:55px 48px;box-shadow:0 8px 30px #17304425;position:relative;overflow:hidden;direction:rtl}.paper:before{content:'NSP';position:absolute;left:45px;top:40px;color:#087b80;font-weight:900;font-size:19px}.paper h1{margin-top:65px;font-size:26px}.paper footer{position:absolute;bottom:30px;right:48px;left:48px;border-top:1px solid #ccc;padding-top:9px;font-size:11px;color:#667}.paper .hero{height:185px;background:linear-gradient(130deg,#d8eeec,#f0f4f6);display:flex;align-items:center;justify-content:center;color:#568e90;margin:20px 0}.paper img{max-width:100%;max-height:260px;object-fit:contain}.paper table{width:100%;border-collapse:collapse}.paper td,.paper th{border:1px solid #ccd6da;padding:8px}.tag{display:inline-block;border-radius:12px;padding:3px 8px;background:#e7f3f3;font-size:11px;margin:2px}.note{border-right:3px solid #087b80;padding:10px;background:#f1f7f7}.hide{display:none!important}@media(max-width:850px){.shell{grid-template-columns:1fr}nav{display:flex;overflow-x:auto;padding:8px}nav button{white-space:nowrap;width:auto}.columns{grid-template-columns:1fr}main{padding:12px}.paper{min-height:700px;padding:38px 25px}}@media print{header,nav,.no-print,.editor,.panel:not(.print-zone){display:none!important}.shell{display:block}main{padding:0;max-width:none}.print-zone{border:0;box-shadow:none;padding:0;margin:0}.paper{box-shadow:none;margin:0;min-height:297mm;width:210mm;page-break-after:always;padding:25mm 20mm}.paper:last-child{page-break-after:auto}@page{size:A4;margin:0}}
 @media(max-width:850px){header{padding:12px;gap:8px}header .toolbar{flex-wrap:wrap}nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible!important;gap:8px;padding:10px}nav .nav-group{min-width:0!important;margin:0!important}nav button.nav-subitem{white-space:normal!important;text-align:right;width:100%!important;padding:10px!important}main{min-width:0;overflow-wrap:anywhere}.panel{max-width:100%;overflow-x:auto}button,select,input{max-width:100%}#v9-design-form[hidden]{display:none!important}}
 </style><style>
@@ -343,7 +343,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const uid=()=>globalThis.crypto?.randomUUID?.()||('id-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,10));
 const defaultState=()=>({title:'پورتفولیوی راهکارهای هتلی NSP',master:{font:'Tahoma',accent:'#087b80',header:'NSP Electronics',footer:'NSP • Portfolio',margin:48},templates:[{id:'cover',name:'کاور',parent:'master',layout:'cover',overrides:{}},{id:'standard',name:'استاندارد',parent:'master',layout:'standard',overrides:{}},{id:'project',name:'پروژه هتل',parent:'master',layout:'project',overrides:{}},{id:'data',name:'داده و نمودار',parent:'master',layout:'data',overrides:{}}],pages:[],selected:null});
 // Release policy: increment the app release for every delivered revision; preserve the existing file identity, storage key and schema unless a migration is intentional.
-Object.assign(window.V13,{appVersion:112,schemaVersion:2,storageKey:KEY,dirty:false,saveError:'',startupNotice:'',saveBlocked:false,lastSavedAt:null});
+Object.assign(window.V13,{appVersion:113,schemaVersion:2,storageKey:KEY,dirty:false,saveError:'',startupNotice:'',saveBlocked:false,lastSavedAt:null});
 function v13Copy(value){return JSON.parse(JSON.stringify(value))}
 function v13Record(value,label){if(!value||typeof value!=='object'||Array.isArray(value))throw Error(label+' ساختار معتبر ندارد.');return value}
 function v13Id(value,label){if(typeof value!=='string'||!/^[A-Za-z0-9][A-Za-z0-9_.:-]*$/.test(value))throw Error(label+' شناسه معتبر ندارد.');return value}
@@ -419,7 +419,7 @@ function v20VisualFields(object,label,sparse) {
  for(const k of ['assetId','imageEdit','tilesJson'])if(object[k]!=null&&typeof object[k]!=='string')throw Error(label+' '+k+' must be text');
  if(object.assetId)v13Id(object.assetId,label);
  for(const k of ['imageEdit','tilesJson'])if(object[k]){let d;try{d=JSON.parse(object[k]);}catch{throw Error(label+' invalid '+k);}v13Record(d,label);
- if(k==='imageEdit'){for(const n of ['zoom','x','y','brightness','contrast','saturation','radius','cropX','cropY','cropW','cropH'])if(d[n]!=null)v13Finite(d[n],0,label);if(d.shape!=null&&!['rectangle','circle','ellipse','diamond','hexagon','custom'].includes(d.shape))throw Error('Invalid frame shape');
+ if(k==='imageEdit'){for(const n of ['zoom','x','y','brightness','contrast','saturation','grayscale','sepia','blur','sharpen','radius','cropX','cropY','cropW','cropH'])if(d[n]!=null)v13Finite(d[n],0,label);if(d.shape!=null&&!['rectangle','circle','ellipse','diamond','hexagon','custom'].includes(d.shape))throw Error('Invalid frame shape');
   if(d.maskPoints!=null&&(!Array.isArray(d.maskPoints)||d.maskPoints.length<3||d.maskPoints.length>24||d.maskPoints.some(p=>!Array.isArray(p)||p.length!==2||p.some(n=>typeof n!=='number'||!Number.isFinite(n)||n<0||n>100))))throw Error('Invalid image mask vertices');}
  if(k==='tilesJson'){if(!Number.isInteger(d.rows)||d.rows<1||d.rows>12||!Number.isInteger(d.cols)||d.cols<1||d.cols>12||!Array.isArray(d.cells)||d.cells.length>144)throw Error('Invalid tile grid');v13Finite(d.gap,0,label);if(d.count!=null&&(!Number.isInteger(d.count)||d.count<1||d.count>d.rows*d.cols))throw Error('Invalid Tile Count');if(d.stash!=null){v13Record(d.stash,label);for(const key of Object.keys(d.stash))if(!/^(?:[0-9]|1[01]):(?:[0-9]|1[01])$/.test(key))throw Error('Invalid hidden tile coordinate');}for(const c of d.cells.concat(Object.values(d.stash||{}))){if(c==null||c==='')continue;if(typeof c==='string')v13Id(c,label);else{v13Record(c,label);if(c.assetId)v13Id(c.assetId,label);if(c.tilesJson)throw Error('Nested tile metadata is not allowed');v20VisualFields(c,label,true);}}}}
 
@@ -829,7 +829,7 @@ function imageLibraryView(){
   '<button class="btn" onclick="V13.media.downloadOriginal(\''+a.id+'\')">دریافت اصل تصویر</button>'+
   '<button class="btn danger" onclick="V13.media.remove(\''+a.id+'\')">حذف</button></div></article>').join('');
  const chosen=isPrivate?privateCards:shownPublic.map(v81PublicCard).join('');
- return '<section class="v75-gallery" aria-label="تصاویر پروژه"><h2>تصاویر پروژه — Version 112</h2>'+
+ return '<section class="v75-gallery" aria-label="تصاویر پروژه"><h2>تصاویر پروژه — Version 113</h2>'+
   '<p class="muted">پروژه فعال: <b>'+esc(state.activeWorkspaceName||state.title)+'</b>. آلبوم‌های اختصاصی هر پروژه از کتابخانهٔ عمومی جدا هستند.</p>'+
   '<div class="toolbar v81-image-tabs" role="tablist">'+
   '<button type="button" role="tab" class="btn '+(!isPrivate?'primary':'')+'" aria-selected="'+(!isPrivate)+'" onclick="v81SetProjectImageTab(\'public\')">عمومی ('+publicImages.length+')</button>'+
@@ -849,7 +849,7 @@ function globalImageLibraryView(){
  const publicImages=Array.isArray(state.globalImageLibrary)?state.globalImageLibrary:[],
    shown=publicImages.filter(a=>v112IsVisible('public',a.id));
  for(const id of [...v112PublicSelection])if(!publicImages.some(a=>a.id===id))v112PublicSelection.delete(id);
- return '<section class="v75-gallery" aria-label="کتابخانه تصاویر عمومی"><h2>کتابخانه تصاویر عمومی — Version 112</h2>'+
+ return '<section class="v75-gallery" aria-label="کتابخانه تصاویر عمومی"><h2>کتابخانه تصاویر عمومی — Version 113</h2>'+
  '<p class="muted">آلبوم‌های عمومی در سطح سیستم مشترک‌اند؛ تصاویر خصوصی پروژه‌های دیگر نمایش داده نمی‌شوند.</p>'+
  '<div class="panel"><div class="toolbar"><label class="btn primary">+ افزودن تصویر عمومی<input type="file" multiple accept="image/png,image/jpeg,image/webp,image/gif" style="display:none" onchange="V13.media.importPublicFiles(this)"></label></div>'+
  v112AlbumToolbar('public')+
@@ -1527,7 +1527,7 @@ function v76Projects(){
    '<div class="v87-portfolio-grid">'+(children||'<p class="muted">هنوز پورتفولیویی ثبت نشده است.</p>')+'</div>'+
    '</div></td></tr>';
  }).join('');
- return '<section class="v76-projects v77-projects"><div class="v77-topbar"><h2>پروژه‌ها — Version 112</h2>'+
+ return '<section class="v76-projects v77-projects"><div class="v77-topbar"><h2>پروژه‌ها — Version 113</h2>'+
  '<button class="btn primary" onclick="v76AddProject()">+ افزودن پروژه</button></div>'+
  '<p class="muted">روی + هر پروژه کلیک کنید تا پورتفولیوهایش در زیر همان ردیف باز شوند.</p>'+
  '<div class="v77-table-wrap"><table class="v77-project-table"><thead><tr>'+
@@ -1984,7 +1984,7 @@ M.addPublicToProject=function(id){
  render();
 };
 
-const defaults={zoom:1,x:50,y:50,brightness:100,contrast:100,saturation:100,radius:0,shape:'rectangle',cropX:0,cropY:0,cropW:100,cropH:100};
+const defaults={zoom:1,x:50,y:50,brightness:100,contrast:100,saturation:100,grayscale:0,sepia:0,blur:0,sharpen:0,radius:0,shape:'rectangle',cropX:0,cropY:0,cropW:100,cropH:100};
 function settings(o){return Object.assign({},defaults,parse(o?.imageEdit));}
 
 /* TASK-020: frame-local, numeric-only CSS masks; no edits to original assets. */
@@ -2007,10 +2007,16 @@ function tile(o){const t=parse(o?.tilesJson);if(!Array.isArray(t.cells))return n
 const tileCount=t=>t.rows*t.cols;
 function cell(o){const t=tile(o);if(!t)return o;const i=Number(document.getElementById('v71-cell')?.value)||0,c=t.cells[i];return Object.assign({},o,{tilesJson:'',assetId:typeof c==='string'?c:c?.assetId||'',src:'',imageEdit:typeof c==='object'?c?.imageEdit||o.imageEdit:o.imageEdit,objectFit:typeof c==='object'?c?.objectFit||o.objectFit:o.objectFit});}
 function writeCell(values){const o=V.mediaContext?.selected();if(!o)return false;const t=tile(o);if(!t)return M.update(values);const i=Math.min(cellIndex,tileCount(t)-1);const old=t.cells[i];t.cells[i]=Object.assign(typeof old==='string'?{assetId:old}:old||{},values);return M.update({tilesJson:JSON.stringify(t)});}
-M.adjust=function(k,v){const o=cell(V.mediaContext?.selected());if(!o)return;const e=settings(o);if(!Object.hasOwn(defaults,k))return;e[k]=k==='shape'?v:Number(v);writeCell({imageEdit:JSON.stringify(e)});};
+M.adjust=function(k,v){const o=cell(V.mediaContext?.selected());if(!o)return;const e=settings(o);if(!Object.hasOwn(defaults,k))return;if(k==='shape')e[k]=v;else{const n=Number(v);if(!Number.isFinite(n))return;const limits={grayscale:[0,100],sepia:[0,100],blur:[0,12],sharpen:[0,100]};e[k]=limits[k]?cap(n,limits[k][0],limits[k][1]):n;}writeCell({imageEdit:JSON.stringify(e)});};
 M.fit=function(value){writeCell({objectFit:value});};
 M.clearCell=function(){writeCell({assetId:'',src:''});};
 M.resetEdit=function(){writeCell({imageEdit:'{}'});};
+M.resetFilters=function(){
+ const o=cell(V.mediaContext?.selected());if(!o)return;
+ const e=settings(o);
+ Object.assign(e,{brightness:100,contrast:100,saturation:100,grayscale:0,sepia:0,blur:0,sharpen:0});
+ writeCell({imageEdit:JSON.stringify(e)});
+};
 M.resetCrop=function(){
  const o=cell(V.mediaContext?.selected());if(!o)return;
  const e=settings(o);
@@ -2074,17 +2080,29 @@ M.properties=function(o,off){
  out+='<label>شکل ماسک</label><select onchange="V13.media.adjust(\'shape\',this.value)" '+disabled+'>'+[['rectangle','مستطیل'],['circle','دایره'],['ellipse','بیضی'],['diamond','لوزی'],['hexagon','شش‌ضلعی'],['custom','چندضلعی دلخواه']].map(([v,n])=>'<option value="'+v+'" '+(e.shape===v?'selected':'')+'>'+n+'</option>').join('')+'</select>';
  out+='<p class="muted">Crop و ماسک روی کادر اعمال می‌شوند؛ فایل اصلی کتابخانه تغییر نمی‌کند. برای ویرایش رئوس ماسک، «ترسیم ماسک دلخواه» را باز کنید.</p>';
  out+='<div class="toolbar"><button type="button" class="btn" onclick="V13.media.resetCrop()" '+disabled+'>حذف برش Crop</button><button type="button" class="btn" onclick="V13.media.resetEdit()" '+disabled+'>بازنشانی همه ویرایش‌های تصویر</button></div></fieldset>';
+ out+='<fieldset class="v113-image-filters"><legend>فیلترهای غیرمخرب تصویر'+(t?' — Tile '+(i+1):'')+'</legend>';
+ out+='<div class="v13-number-grid"><div>'+change('brightness','روشنایی (%)',0,200)+'</div><div>'+change('contrast','کنتراست (%)',0,200)+'</div><div>'+change('saturation','اشباع (%)',0,200)+'</div><div>'+change('grayscale','سیاه و سفید (%)',0,100)+'</div><div>'+change('sepia','سپیا (%)',0,100)+'</div><div>'+change('blur','محو تصویر (px)',0,12,.25)+'</div><div>'+change('sharpen','شارپ‌سازی (%)',0,100)+'</div></div>';
+ out+='<p class="muted">فیلتر هر تصویر و Tile جداگانه ذخیره می‌شود و فایل اصلی تغییر نمی‌کند. PDF را در اجرای واقعی بررسی کنید.</p><button type="button" class="btn" onclick="V13.media.resetFilters()" '+disabled+'>بازنشانی فقط فیلترها</button></fieldset>';
  return out;
 };
 M.controls=function(o){const t=tile(o);if(!t)return '';return '<button type="button" class="v72-tile-plus no-print" data-v72-add="cols" aria-label="افزودن عکس به سمت راست" title="افزودن عکس به راست" style="top:8px;right:8px" '+(t.cols>=12?'disabled':'')+'>+</button><button type="button" class="v72-tile-plus no-print" data-v72-add="rows" aria-label="افزودن ردیف پایین" title="افزودن ردیف پایین" style="bottom:8px;right:8px" '+(t.rows>=12?'disabled':'')+'>+</button>';};
 M.tiles=function(){V.mediaContext?.add({name:'Image Tiles',w:220,h:150,tilesJson:JSON.stringify({rows:1,cols:1,gap:8,cells:[],contract:'zero-extra-rows-v1'}),objectFit:'cover'});};
 document.addEventListener('pointerdown',event=>{if(event.target.closest('[data-v72-add]')){event.preventDefault();event.stopImmediatePropagation();}},true);
 document.addEventListener('click',event=>{const button=event.target.closest('[data-v72-add]');if(!button)return;event.preventDefault();event.stopImmediatePropagation();if(!button.disabled)M.bump(button.dataset.v72Add);},true);
-function frame(o){const a=original(o.assetId),src=safe(a?.src||o.src||o.image||o.dataUrl),e=settings(o);const x=cap(e.cropX,0,99),y=cap(e.cropY,0,99),w=cap(e.cropW,1,100-x,100-x),ht=cap(e.cropH,1,100-y,100-y);let clip=maskShape(e);return '<div style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:'+cap(e.radius,0,500)+'px;clip-path:'+clip+'">'+(src?'<div style="position:absolute;width:'+10000/w+'%;height:'+10000/ht+'%;left:'+(-x*100/w)+'%;top:'+(-y*100/ht)+'%"><img draggable="false" alt="'+html(o.alt||a?.name||'تصویر')+'" src="'+html(src)+'" style="display:block;width:100%;height:100%;object-fit:'+(['contain','cover','fill','none'].includes(o.objectFit)?o.objectFit:'contain')+';object-position:'+cap(e.x,0,100,50)+'% '+cap(e.y,0,100,50)+'%;transform:scale('+cap(e.zoom,1,8,1)+');filter:brightness('+cap(e.brightness,0,200,100)+'%) contrast('+cap(e.contrast,0,200,100)+'%) saturate('+cap(e.saturation,0,200,100)+'%);"></div>':'<span class="v13-image-placeholder">تصویر انتخاب نشده</span>')+'</div>';}
+/* TASK-029: shared non-destructive image and print filters; sharpening uses local SVG kernel. */
+function v113FilterCss(e,id){
+ return 'brightness('+cap(e.brightness,0,200,100)+'%) contrast('+cap(e.contrast,0,200,100)+'%) saturate('+cap(e.saturation,0,200,100)+'%) grayscale('+cap(e.grayscale,0,100)+'%) sepia('+cap(e.sepia,0,100)+'%) blur('+cap(e.blur,0,12)+'px)'+(id?' url(#'+id+')':'');
+}
+function v113SharpenDefs(e,id){
+ if(!id)return '';
+ const k=cap(e.sharpen,0,100)/100,kernel=[0,-k,0,-k,1+4*k,-k,0,-k,0].map(n=>Number(n.toFixed(3))).join(' ');
+ return '<filter id="'+id+'" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB"><feConvolveMatrix order="3" kernelMatrix="'+kernel+'" divisor="1" edgeMode="duplicate" preserveAlpha="true"/></filter>';
+}
+function frame(o){const a=original(o.assetId),src=safe(a?.src||o.src||o.image||o.dataUrl),e=settings(o);const x=cap(e.cropX,0,99),y=cap(e.cropY,0,99),w=cap(e.cropW,1,100-x,100-x),ht=cap(e.cropH,1,100-y,100-y);let clip=maskShape(e);const sharpId=cap(e.sharpen,0,100)>0?'v113-sharp-'+uid():'';return '<div style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:'+cap(e.radius,0,500)+'px;clip-path:'+clip+'">'+(sharpId?'<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><defs>'+v113SharpenDefs(e,sharpId)+'</defs></svg>':'')+(src?'<div style="position:absolute;width:'+10000/w+'%;height:'+10000/ht+'%;left:'+(-x*100/w)+'%;top:'+(-y*100/ht)+'%"><img draggable="false" alt="'+html(o.alt||a?.name||'تصویر')+'" src="'+html(src)+'" style="display:block;width:100%;height:100%;object-fit:'+(['contain','cover','fill','none'].includes(o.objectFit)?o.objectFit:'contain')+';object-position:'+cap(e.x,0,100,50)+'% '+cap(e.y,0,100,50)+'%;transform:scale('+cap(e.zoom,1,8,1)+');filter:'+v113FilterCss(e,sharpId)+';"></div>':'<span class="v13-image-placeholder">تصویر انتخاب نشده</span>')+'</div>';}
 const viewportFrame=frame;
 frame=function(o){const a=original(o.assetId),src=safe(a?.src||o.src||o.image||o.dataUrl);if(!src||!a?.width||!a?.height)return viewportFrame(o);const e=settings(o),x=cap(e.cropX,0,99),y=cap(e.cropY,0,99),w=cap(e.cropW,1,100-x,100-x),h=cap(e.cropH,1,100-y,100-y),cw=a.width*w/100,ch=a.height*h/100,clip='v72clip-'+uid(),shape=maskShape(e),fit=o.objectFit||'contain',align=(cap(e.x,0,100,50)<34?'xMin':cap(e.x,0,100,50)>66?'xMax':'xMid')+(cap(e.y,0,100,50)<34?'YMin':cap(e.y,0,100,50)>66?'YMax':'YMid'),aspect=fit==='fill'?'none':align+' '+(fit==='cover'?'slice':'meet');
-const bw=Math.max(1,Number(o.w)||220),bh=Math.max(1,Number(o.h)||150),scale=fit==='none'?1:fit==='cover'?Math.max(bw/cw,bh/ch):Math.min(bw/cw,bh/ch),sx=fit==='fill'?bw/cw:scale,sy=fit==='fill'?bh/ch:scale,dx=(bw-cw*sx)*cap(e.x,0,100,50)/100,dy=(bh-ch*sy)*cap(e.y,0,100,50)/100;
-return '<div style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:'+cap(e.radius,0,500)+'px;clip-path:'+shape+'"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="'+html(o.alt||a.name)+'" width="100%" height="100%" viewBox="0 0 '+bw+' '+bh+'" preserveAspectRatio="none" style="display:block;overflow:hidden;transform:scale('+cap(e.zoom,1,8,1)+');transform-origin:'+cap(e.x,0,100,50)+'% '+cap(e.y,0,100,50)+'%;filter:brightness('+cap(e.brightness,0,200,100)+'%) contrast('+cap(e.contrast,0,200,100)+'%) saturate('+cap(e.saturation,0,200,100)+'%)"><defs><clipPath id="'+clip+'"><rect width="'+cw+'" height="'+ch+'"/></clipPath></defs><g transform="translate('+dx+' '+dy+') scale('+sx+' '+sy+')"><g clip-path="url(#'+clip+')"><image href="'+html(src)+'" x="'+(-a.width*x/100)+'" y="'+(-a.height*y/100)+'" width="'+a.width+'" height="'+a.height+'"/></g></g></svg></div>';
+const sharpId=cap(e.sharpen,0,100)>0?'v113-sharp-'+uid():'';const bw=Math.max(1,Number(o.w)||220),bh=Math.max(1,Number(o.h)||150),scale=fit==='none'?1:fit==='cover'?Math.max(bw/cw,bh/ch):Math.min(bw/cw,bh/ch),sx=fit==='fill'?bw/cw:scale,sy=fit==='fill'?bh/ch:scale,dx=(bw-cw*sx)*cap(e.x,0,100,50)/100,dy=(bh-ch*sy)*cap(e.y,0,100,50)/100;
+return '<div style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:'+cap(e.radius,0,500)+'px;clip-path:'+shape+'"><svg xmlns="http://www.w3.org/2000/svg" role="img" aria-label="'+html(o.alt||a.name)+'" width="100%" height="100%" viewBox="0 0 '+bw+' '+bh+'" preserveAspectRatio="none" style="display:block;overflow:hidden;transform:scale('+cap(e.zoom,1,8,1)+');transform-origin:'+cap(e.x,0,100,50)+'% '+cap(e.y,0,100,50)+'%;filter:'+v113FilterCss(e,sharpId)+'"><defs>'+v113SharpenDefs(e,sharpId)+'<clipPath id="'+clip+'"><rect width="'+cw+'" height="'+ch+'"/></clipPath></defs><g transform="translate('+dx+' '+dy+') scale('+sx+' '+sy+')"><g clip-path="url(#'+clip+')"><image href="'+html(src)+'" x="'+(-a.width*x/100)+'" y="'+(-a.height*y/100)+'" width="'+a.width+'" height="'+a.height+'"/></g></g></svg></div>';
 };
 M.markup=function(o){const t=tile(o);if(!t)return frame(o);return '<div style="display:grid;direction:ltr;width:100%;height:100%;grid-template-columns:repeat('+t.cols+',minmax(0,1fr));grid-template-rows:repeat('+t.rows+',minmax(0,1fr));gap:'+t.gap+'px">'+Array.from({length:tileCount(t)},(_,i)=>{const c=t.cells[i];return '<div style="min-width:0;min-height:0;overflow:hidden">'+frame(Object.assign({},o,{src:'',image:'',dataUrl:'',assetId:'',tilesJson:'',w:Math.max(1,(o.w-(t.cols-1)*t.gap)/t.cols),h:Math.max(1,(o.h-(t.rows-1)*t.gap)/t.rows)},typeof c==='string'?{assetId:c}:c||{}))+'</div>';}).join('')+'</div>';};
 M.panel=function(){syncHistory();const context=V.mediaContext?.capture(),owner=JSON.stringify([context?.context,context?.token]);if(owner!==cellOwner){cellOwner=owner;cellIndex=0;}const raw=V.mediaContext?.selected(),t=tile(raw);if(t)cellIndex=Math.min(cellIndex,tileCount(t)-1);const o=raw?.type==='image'?cell(raw):null,e=settings(o);return '<div class="v72-library"><label>افزودن تصاویر<input type="file" multiple accept="image/png,image/jpeg,image/webp,image/gif" onchange="V13.media.importFiles(this)"></label><div class="toolbar"><button class="btn" onclick="V13.media.tiles()">+ Image Tiles</button><button class="btn" onclick="V13.media.libraryUndo(false)" '+(!past.length?'disabled':'')+'>Undo کتابخانه</button><button class="btn" onclick="V13.media.libraryUndo(true)" '+(!future.length?'disabled':'')+'>Redo کتابخانه</button></div><label>جست‌وجوی تصویر<input oninput="V13.media.search(this.value)" placeholder="نام فایل"></label><div class="v72-asset-grid">'+list().map(a=>'<article data-v72-name="'+html(a.name)+'"><button class="btn" onclick="V13.media.place(\''+a.id+'\')"><img loading="lazy" src="'+html(safe(a.thumbnail||a.src))+'" alt="'+html(a.name)+'"><span>'+html(a.name)+'</span></button><small>'+Number(a.width||0)+' × '+Number(a.height||0)+'</small><div class="toolbar"><button class="btn" onclick="V13.media.place(\''+a.id+'\',true)">درج جدید</button><button class="btn" onclick="V13.media.rename(\''+a.id+'\')">نام</button><button class="btn" onclick="V13.media.replaceAsset(\''+a.id+'\')">جایگزینی اصل</button><button class="btn" onclick="V13.media.downloadOriginal(\''+a.id+'\')">اصل فایل</button><button class="btn danger" onclick="V13.media.remove(\''+a.id+'\')">حذف</button></div></article>').join('')+'</div>'+(o?'<fieldset '+(!V.mediaContext?.editable()?'disabled':'')+' style="border:0;padding:0"><hr><b>ویرایش تصویر انتخاب‌شده</b>'+(t?'<p>Tile Count: '+(t.rows-1)+' × '+t.cols+' — '+t.rows*t.cols+' عکس. تعداد را از Properties یا + روی بوم تغییر دهید.</p><label>Tile مقصد (از بالا چپ)<select id="v71-cell" onchange="V13.media.selectCell(this.value)">'+Array.from({length:t.rows*t.cols},(_,i)=>'<option value="'+i+'" '+(i===cellIndex?'selected':'')+'>'+ (i+1)+'</option>').join('')+'</select></label>':'')+'<label>نمایش<select onchange="V13.media.fit(this.value)">'+[['contain','Fit'],['cover','Fill'],['fill','Stretch'],['none','Original scale']].map(([v,n])=>'<option value="'+v+'" '+((o.objectFit||'contain')===v?'selected':'')+'>'+n+'</option>').join('')+'</select></label><button class="btn" onclick="V13.media.crop()">Crop — انتخاب ناحیه</button><button class="btn" onclick="V13.media.clearCell()">پاک‌کردن تصویر</button>'+Object.entries({zoom:'Zoom / Scale',x:'Position X (%)',y:'Position Y (%)',brightness:'Brightness',contrast:'Contrast',saturation:'Saturation',radius:'شعاع قاب (px)'}).map(([k,n])=>'<label>'+n+'<input type="number" value="'+Number(e[k])+'" step="'+(k==='zoom'?'.1':'1')+'" onchange="V13.media.adjust(\''+k+'\',this.value)"></label>').join('')+'<label>شکل قاب<select onchange="V13.media.adjust(\'shape\',this.value)">'+[['rectangle','مستطیل'],['ellipse','بیضی'],['diamond','لوزی'],['hexagon','شش‌ضلعی']].map(([v,n])=>'<option value="'+v+'" '+(e.shape===v?'selected':'')+'>'+n+'</option>').join('')+'</select></label><button class="btn" onclick="V13.media.resetEdit()">بازنشانی Crop و فیلترها</button></fieldset>':'<p class="muted">یک تصویر را برای درج انتخاب کنید. انتخاب یک عنصر تصویری، جایگزینی و ویرایش آن را فعال می‌کند.</p>')+'</div>';};
@@ -5175,6 +5193,18 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
   if(obj.assetId)return !!getAsset(obj.assetId);
   return /^(https:\/\/|data:image\/(png|jpe?g|webp|gif);base64,)/i.test(String(obj.src||obj.image||obj.dataUrl||''));
  }
+ /* DPI estimate uses known library pixels, per-object Crop/Zoom and physical output size. */
+ function v113PrintDpi(asset,edit,width,height,doc,size){
+  if(!asset||![asset.width,asset.height,width,height,doc.width,doc.height,size.widthMm,size.heightMm].every(v=>Number.isFinite(Number(v))&&Number(v)>0))return null;
+  let s={};if(typeof edit==='string'&&edit.trim()){try{s=JSON.parse(edit);}catch{return null;}}
+  const cropW=Number.isFinite(Number(s.cropW))?Math.max(1,Math.min(100,Number(s.cropW))):100;
+  const cropH=Number.isFinite(Number(s.cropH))?Math.max(1,Math.min(100,Number(s.cropH))):100;
+  const zoom=Number.isFinite(Number(s.zoom))?Math.max(1,Math.min(8,Number(s.zoom))):1;
+  const widthIn=Number(width)/Number(doc.width)*Number(size.widthMm)/25.4;
+  const heightIn=Number(height)/Number(doc.height)*Number(size.heightMm)/25.4;
+  if(!(widthIn>0&&heightIn>0))return null;
+  return Math.floor(Math.min(Number(asset.width)*cropW/100/zoom/widthIn,Number(asset.height)*cropH/100/zoom/heightIn));
+ }
  function collectIssues(root){
   const issues=[],seen=new Set(),settings=options();
   const identity=o=>JSON.stringify([String(o.origin||''),String(o.ownerId||''),String(o.id||'')]);
@@ -5197,11 +5227,26 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
      push('warning','safeMargin',pageId,index,id,'عنصر «'+label+'» وارد حاشیهٔ امن '+settings.safeMarginMm+' میلی‌متری شده است.',identity(o));
     if(o.type==='image'&&!imagePresent(o))
      push('error','missingImage',pageId,index,id,'تصویر «'+label+'» در کتابخانهٔ همین پروژه یا کتابخانهٔ عمومی پیدا نشد.',identity(o));
+    if(o.type==='image'&&!(typeof o.tilesJson==='string'&&o.tilesJson.trim())){
+     const dpi=v113PrintDpi(getAsset(o.assetId),o.imageEdit,w,h,doc,size);
+     if(dpi!==null&&dpi<200)push('warning','imageDpi',pageId,index,id,'تصویر «'+label+'» پس از برش/بزرگ‌نمایی حدود '+dpi+' DPI (کمتر از ۲۰۰) دارد.',identity(o));
+    }
     if(o.type==='image'&&typeof o.tilesJson==='string'&&o.tilesJson.trim()){
      try{const tiles=JSON.parse(o.tilesJson);
       for(const cell of (tiles.cells||[]).concat(Object.values(tiles.stash||{}))){
        const assetId=typeof cell==='string'?cell:cell?.assetId;
        if(assetId&&!getAsset(assetId))push('error','missingTileImage',pageId,index,id,'یک تصویر Tile در «'+label+'» گم شده است.',identity(o));
+      }
+      const rows=Number(tiles.rows),cols=Number(tiles.cols),gap=Number(tiles.gap)||0;
+      if(Number.isInteger(rows)&&rows>0&&Number.isInteger(cols)&&cols>0&&rows*cols<=144){
+       const cellW=(w-(cols-1)*gap)/cols,cellH=(h-(rows-1)*gap)/rows;
+       (tiles.cells||[]).slice(0,rows*cols).forEach((cell,i)=>{
+        const assetId=typeof cell==='string'?cell:cell?.assetId;
+        if(!assetId)return;
+        const edit=cell&&typeof cell==='object'?cell.imageEdit||o.imageEdit:o.imageEdit;
+        const dpi=v113PrintDpi(getAsset(assetId),edit,cellW,cellH,doc,size);
+        if(dpi!==null&&dpi<200)push('warning','imageDpiTile'+i,pageId,index,id,'Tile '+(i+1)+' از «'+label+'» حدود '+dpi+' DPI (کمتر از ۲۰۰) دارد.',identity(o));
+       });
       }
      }catch(e){push('error','invalidTile',pageId,index,id,'اطلاعات Image Tiles در «'+label+'» معتبر نیست.',identity(o));}
     }
@@ -5267,7 +5312,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
    ['A4','A3'].map(x=>'<option value="'+x+'" '+(config.paper===x?'selected':'')+'>'+x+'</option>').join('')+'</select></label>'+
    '<label>حاشیهٔ امن چاپ (میلی‌متر) <input type="number" min="0" max="30" step="1" value="'+config.safeMarginMm+'" onchange="v82SetPrintOption(\'safeMarginMm\',this.value)"></label>'+
    '<button type="button" class="btn primary" onclick="v82RunPreflight()">بررسی خطاهای چاپ</button></div>'+
-   '<p class="muted">خطاهای تصاویر گمشده، موقعیت عناصر، بیرون‌زدگی متن و حاشیهٔ امن پیش از چاپ بررسی می‌شوند. حاشیهٔ امن هشدار است و روی طرح اصلی یا برش چاپگر اثر مستقیم ندارد.</p>'+
+   '<p class="muted">تصاویر گمشده، محدودهٔ عناصر، حاشیهٔ امن و هشدار کیفیت چاپ زیر ۲۰۰ DPI پس از Crop/Zoom بررسی می‌شوند. حاشیهٔ امن هشدار است و روی طرح اصلی یا برش چاپگر اثر مستقیم ندارد.</p>'+
    '<div id="v82-preflight-results" role="status"></div></section>';
   return setup+oldPreview();
  };
@@ -5278,7 +5323,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
   renderReport(issues);
   const errors=issues.filter(i=>i.severity==='error'),warnings=issues.length-errors.length;
   if(errors.length){alert('چاپ متوقف شد: '+errors.length+' خطا در پیش‌بررسی وجود دارد. از فهرست خطاها، عناصر را باز کنید.');return false;}
-  if(warnings&&!confirm(warnings+' هشدار حاشیهٔ امن شناسایی شد. با این وضعیت چاپ ادامه پیدا کند؟'))return false;
+  if(warnings&&!confirm(warnings+' هشدار حاشیهٔ امن یا کیفیت تصویر شناسایی شد. با این وضعیت چاپ ادامه پیدا کند؟'))return false;
   refreshPrintFormat();
   return oldPrintAll(snapshot);
  };
@@ -5554,7 +5599,7 @@ async function restore(payload,confirmed=false){
   if(!V.saveBlocked)await V.flushStorage();
   if(mode==='sqlite')await invoke('create_backup',{name:'Before restore '+new Date().toISOString(),payload:priorPayload});
   else if(mode==='indexeddb')await request('backups','put',{id:uid(),name:'Before restore',createdAt:new Date().toISOString(),payload:priorPayload});
-  else {const link=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify({app:'NSP Portfolio Builder',appVersion:112,schemaVersion:2,state:JSON.parse(priorPayload)})],{type:'application/json'}));link.href=url;link.download='NSP_Before_Restore.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+  else {const link=document.createElement('a'),url=URL.createObjectURL(new Blob([JSON.stringify({app:'NSP Portfolio Builder',appVersion:113,schemaVersion:2,state:JSON.parse(priorPayload)})],{type:'application/json'}));link.href=url;link.download='NSP_Before_Restore.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
   await write(JSON.stringify(candidate));state=candidate;lastPayload=JSON.stringify(state);selected=state.pages[0]?.id;v13ResetEditorContext(true);lastError='';V.saveBlocked=false;V.startupNotice='';
   const migrated=await V.media.migrateLegacy();ready=true;if(migrated)save();
  }finally{ready=true;cover.remove();status();render();}

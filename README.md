@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 113 (TASK-029, source-only)
+
+The shared image Properties inspector now provides non-destructive grayscale, sepia, blur (0–12 px) and sharpen (0–100%) alongside brightness/contrast/saturation, with independent **Reset Filters** preserving source image, Crop, mask, position, zoom and frame. Per-image and per-Tile settings persist in existing imageEdit JSON, without changing immutable library bytes, project ownership or SQLite schema (6). Canvas/preview/print use the shared image pipeline, with CSS filters and a per-image local SVG convolution kernel for sharpening.
+
+Print preflight reports a non-blocking warning for image/visible Tile assets whose estimated effective DPI drops below 200 after crop/zoom at the selected A4/A3 page geometry. This estimate uses known original pixel dimensions, not printer data; missing assets and geometry overflow remain errors. Missing pixel dimensions do not generate ungrounded quality warnings.
+
+**Review required by owner:** grayscale/sepia/blur/sharpen in browser/Tauri, Crop/Zoom/mask and per-Tile independence, Reset Filters vs Reset All, Undo/Redo, save/reopen, A4/A3 DPI warnings and PDF export/office print parity. No Build, Test, browser/Tauri execution, PDF verification or owner acceptance performed. TASK-029 remains in progress.
+
+---
+
 # NSP Portfolio Builder — Version 109 (TASK-023 partial, source-only)
 
 V109 adds a three-option **Save / Discard / Cancel** confirmation when leaving a dirty Master Template for the master list/another master, or switching from a dirty Section Template to another section. Save uses the V108 durable SQLite/IndexedDB acknowledgement before leaving. Failure or new edits retain the draft and stay in the editor; Discard explicitly drops the draft; Cancel leaves it untouched. The existing two-button dialog API remains backward-compatible.
