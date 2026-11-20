@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only SQLite integrity check for NSP Portfolio Builder (schema 8+).
+"""Read-only SQLite integrity check for NSP Portfolio Builder (schema 9+).
 
 Usage: python scripts/sqlite-audit.py "/path/to/storage/portfolio.sqlite3"
 Close the desktop app before running a filesystem-level database/asset backup.
@@ -20,6 +20,8 @@ EXPECTED = {
     "image_page_private_refs", "image_page_public_refs",
     "image_template_public_refs", "automatic_backup_asset_refs",
     "named_backup_asset_refs", "reference_migration_issues",
+    "style_page_element_refs", "style_template_element_refs",
+    "style_reference_issues",
 }
 
 
@@ -55,6 +57,10 @@ def audit(db_path: Path) -> dict:
                    OR r.backup_kind NOT IN ('automatic','named')
                 """
             ).fetchone()[0]
+            report["style_reference_migration_issues"] = conn.execute(
+                "SELECT COUNT(*) FROM style_reference_issues"
+            ).fetchone()[0]
+            # Historical entries are diagnostic, not automatically a current FK error.
             report["orphan_usage_assets"] = conn.execute(
                 """
                 SELECT COUNT(*) FROM image_usage_edges e

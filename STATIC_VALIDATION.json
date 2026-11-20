@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "118",
-  "basedOnMainCommitBeforeChange": "6dedc9fdb217d6cafce54e4be5b5727c13dc88c2",
+  "plannedForVersion": "119",
+  "basedOnMainCommitBeforeChange": "770a3e05663fed4582fd0a246cfed3d223058268",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -10,11 +10,12 @@
     "Sequential SQL user_version migrations and Rust wiring",
     "Tauri IPC registration, JS parsing, backup/media invariants",
     "Migration 008: FK-backed project/public image usage and typed automatic/named backup references, legacy audit ledger",
-    "V118 N-03: delta-only media ownership and usage writes plus newly-created-backup-only reference indexing"
+    "V118 N-03: delta-only media ownership and usage writes plus newly-created-backup-only reference indexing",
+    "Migration 009: FK-backed style-to-page/template object references, historical diagnostic log, UPSERT-based central shared_styles and tolerant backfill"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V118 N-03 source prepared on top of V117 TASK-023. Source checker, Build, Test, SQLite migration/runtime, browser/Tauri and PDF validation were NOT executed under DEC-006. Schema remains revision 8; owner review and acceptance pending."
+  "note": "V119 N-04 source prepared (SQLite schema 9). The source static checker, Rust compilation, automated test, migration execution on a real database, Windows/Tauri and browser/PDF runtime checks were NOT executed under DEC-006. Owner acceptance remains pending."
 }

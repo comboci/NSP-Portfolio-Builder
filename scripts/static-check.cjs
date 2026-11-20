@@ -79,6 +79,16 @@ assert(new RegExp('if\\s+version\\s*>\\s*' + schemaMigration + '\\b').test(rust)
   'Rust maximum schema guard differs from latest migration');
 assert(projectStore.includes('shared_styles') && read('src-tauri/migrations/006.sql').includes('shared_styles'),
   'Shared Style Library SQLite revision is not wired');
+const n04 = read('src-tauri/migrations/009.sql');
+for (const name of ['style_page_element_refs', 'style_template_element_refs', 'style_reference_issues']) {
+  assert(n04.includes(name), 'N-04 style migration table missing: ' + name);
+}
+assert(rust.includes('backfill_style_bindings(&tx)') &&
+       projectStore.includes('pub fn backfill_style_bindings(') &&
+       projectStore.includes('fn reconcile_style_bindings(') &&
+       projectStore.includes('ON CONFLICT(id) DO UPDATE') &&
+       !projectStore.includes('DELETE FROM shared_styles",[]'),
+  'N-04 incremental shared styles or FK binding management not wired');
 assert(projectStore.includes('ON CONFLICT(project_id,portfolio_id,id) DO UPDATE'),
   'Relational page upsert missing');
 assert(projectStore.includes('references missing {kind}/{template}'),

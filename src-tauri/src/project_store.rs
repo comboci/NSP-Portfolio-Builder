@@ -3,7 +3,7 @@
 //! Image ownership across projects is implemented separately in TASK-007.
 use rusqlite::{params, Connection, OptionalExtension, Transaction};
 use serde_json::{json, Value};
-use std::collections::HashSet;
+use std::collections::{HashMap, HashSet};
 
 fn err(e: impl std::fmt::Display) -> String { e.to_string() }
 fn identity<'a>(value:&'a Value,field:&str)->Result<&'a str,String>{
@@ -23,29 +23,59 @@ fn style_catalog<'a>(workspace:&'a Value)->Result<Option<&'a Vec<Value>>,String>
         Some(v)=>v.as_array().map(Some).ok_or_else(||"Invalid central style library".to_owned()),
     }
 }
-fn persist_shared_styles(tx:&Transaction<'_>,workspace:&Value)->Result<(),String>{
-    // Old workspaces without styles must not clear an existing central catalog.
-    // A provided empty list deliberately clears the central catalog.
-    let Some(styles)=style_catalog(workspace)? else {return Ok(());};
+// Stage changed style records without deleting stable IDs. Reconcile their
+// references before removing obsolete IDs, so FK RESTRICT is always enforced.
+fn persist_shared_styles(
+    tx:&Transaction<'_>, workspace:&Value,
+)->Result<Option<HashSet<String>>,String>{
+    let Some(styles)=style_catalog(workspace)? else{return Ok(None);};
     let mut ids=HashSet::new();
     let mut names=HashSet::new();
-    for style in styles {
+    let mut incoming=Vec::new();
+    for (position,style) in styles.iter().enumerate() {
+        if !style.is_object(){return Err("Invalid central style record".into());}
         let id=identity(style,"id")?;
         let name=identity(style,"name")?.trim();
-        if name.is_empty()||name.chars().count()>80{return Err("Invalid central style name".into());}
+        if name.is_empty()||name.chars().count()>80{
+            return Err("Invalid central style name".into());
+        }
         if !ids.insert(id.to_owned())||!names.insert(name.to_lowercase()){
             return Err(format!("Duplicate central style identity or name: {name}"));
         }
-        if !style.is_object(){return Err("Invalid central style record".into());}
+        incoming.push((id.to_owned(),name.to_owned(),position as i64,style.to_string()));
     }
-    // These operations run inside the same transaction as all portfolio writes;
-    // failure rolls back both the catalogue and the rest of the workspace.
-    tx.execute("DELETE FROM shared_styles",[]).map_err(err)?;
-    for (index,style) in styles.iter().enumerate(){
-        tx.execute("INSERT INTO shared_styles(id,name,position,payload) VALUES(?1,?2,?3,?4)",
-            params![identity(style,"id")?,identity(style,"name")?.trim(),index as i64,style.to_string()]).map_err(err)?;
+
+    // Free names of retired/renamed rows first. SQLite's NOCASE uniqueness
+    // otherwise rejects swaps or reusing the name of a deleted style.
+    // Temporary names are visible only inside this transaction.
+    let existing:Vec<(String,String)>={
+        let mut stmt=tx.prepare("SELECT id,name FROM shared_styles").map_err(err)?;
+        let rows=stmt.query_map([],|r|Ok((r.get(0)?,r.get(1)?))).map_err(err)?;
+        rows.collect::<rusqlite::Result<_>>().map_err(err)?
+    };
+    let desired_names:HashMap<&str,&str>=incoming.iter()
+        .map(|(id,name,_,_)|(id.as_str(),name.as_str())).collect();
+    for (id,old_name) in existing{
+        if desired_names.get(id.as_str()).map_or(true, |name|*name!=old_name.as_str()){
+            tx.execute(
+                "UPDATE shared_styles SET name='__n04_staged_' || hex(randomblob(16))
+                 WHERE id=?1",
+                [&id],
+            ).map_err(err)?;
+        }
     }
-    Ok(())
+    for (id,name,position,payload) in &incoming {
+        tx.execute(
+            "INSERT INTO shared_styles(id,name,position,payload)
+             VALUES(?1,?2,?3,?4)
+             ON CONFLICT(id) DO UPDATE SET
+                name=excluded.name,position=excluded.position,payload=excluded.payload
+             WHERE name IS NOT excluded.name OR position IS NOT excluded.position
+                OR payload IS NOT excluded.payload",
+            params![id,name,position,payload],
+        ).map_err(err)?;
+    }
+    Ok(Some(ids))
 }
 fn load_shared_styles(db:&Connection)->Result<Vec<Value>,String>{
     let mut stmt=db.prepare("SELECT payload FROM shared_styles ORDER BY position,id").map_err(err)?;
@@ -100,6 +130,216 @@ fn delete_missing(
         }
     }
     Ok(())
+}
+
+type StyleBindings=HashMap<Vec<String>,(Option<String>,String)>;
+
+fn known_style_ids(tx:&Transaction<'_>)->Result<HashSet<String>,String>{
+    let mut stmt=tx.prepare("SELECT id FROM shared_styles").map_err(err)?;
+    let rows=stmt.query_map([],|r|r.get::<_,String>(0)).map_err(err)?;
+    rows.collect::<rusqlite::Result<_>>().map_err(err)
+}
+
+fn collect_text_styles(
+    value:&Value, path:&str,
+    bindings:&mut Vec<(String,Option<String>,String)>,
+    invalid:&mut Vec<(String,String)>,
+){
+    match value {
+        Value::Object(map)=>{
+            // Text objects and type-less text override patches may carry a
+            // central styleId; do not lose the latter merely because the
+            // patch does not repeat its object's type.
+            if map.get("type").map_or(true,|kind|kind.as_str()==Some("text")) {
+                if let Some(raw)=map.get("styleId") {
+                    let element_path=if path.is_empty(){"/".to_owned()}else{path.to_owned()};
+                    match raw {
+                        Value::String(style) if !style.is_empty()=>{
+                            bindings.push((
+                                element_path,
+                                map.get("id").and_then(Value::as_str).map(str::to_owned),
+                                style.to_owned(),
+                            ));
+                        }
+                        Value::Null|Value::String(_)=>{},
+                        other=>invalid.push((element_path,other.to_string())),
+                    }
+                }
+            }
+            for (key,child) in map {
+                // JSON-pointer escaping makes object paths unambiguous even
+                // when a key contains '/' or '~'. Array position is part of
+                // the key until N-05 introduces separate element records.
+                let token=key.replace('~',"~0").replace('/',"~1");
+                collect_text_styles(child,&format!("{path}/{token}"),bindings,invalid);
+            }
+        }
+        Value::Array(items)=>{
+            for (index,child) in items.iter().enumerate() {
+                collect_text_styles(child,&format!("{path}/{index}"),bindings,invalid);
+            }
+        }
+        _=>{}
+    }
+}
+
+fn note_style_reference_issue(
+    tx:&Transaction<'_>,kind:&str,owner:&str,path:&str,style:&str,reason:&str,
+)->Result<(),String>{
+    tx.execute(
+        "INSERT OR IGNORE INTO style_reference_issues(
+            owner_kind,owner_key,element_path,style_id,reason
+         ) VALUES(?1,?2,?3,?4,?5)",
+        params![kind,owner,path,style,reason],
+    ).map_err(err)?;
+    Ok(())
+}
+
+fn bindings_for_owner(
+    tx:&Transaction<'_>,record:&Value,owner_type:&str,owner_key:&str,
+    prefix:&[String],styles:&HashSet<String>,strict:bool,
+    expected:&mut StyleBindings,
+)->Result<(),String>{
+    let mut bindings=Vec::new();
+    let mut invalid=Vec::new();
+    collect_text_styles(record,"",&mut bindings,&mut invalid);
+    for (path,value) in invalid {
+        if strict {
+            return Err(format!("Invalid text style reference in {owner_type}/{owner_key}/{path}: {value}"));
+        }
+        note_style_reference_issue(tx,owner_type,owner_key,&path,&value,"invalid_style_id")?;
+    }
+    for (path,element_id,style_id) in bindings {
+        if !styles.contains(&style_id) {
+            if strict {
+                return Err(format!("Missing shared text style {style_id} at {owner_type}/{owner_key}/{path}"));
+            }
+            note_style_reference_issue(tx,owner_type,owner_key,&path,&style_id,"unknown_style")?;
+            continue;
+        }
+        let mut key=prefix.to_vec();
+        key.push(path);
+        if expected.insert(key,(element_id,style_id)).is_some() {
+            return Err(format!("Duplicate text-style binding in {owner_type}/{owner_key}"));
+        }
+    }
+    Ok(())
+}
+
+fn reconcile_style_ref_table(
+    tx:&Transaction<'_>,table:&str,key_columns:&[&str],desired:&StyleBindings,
+)->Result<(),String>{
+    // Table and column identifiers are hard-coded call-site constants.
+    let select=format!("SELECT {},element_id,style_id FROM {table}",key_columns.join(","));
+    let existing:StyleBindings={
+        let mut stmt=tx.prepare(&select).map_err(err)?;
+        let rows=stmt.query_map([],|r|{
+            let keys=(0..key_columns.len())
+                .map(|n|r.get::<usize,String>(n))
+                .collect::<rusqlite::Result<Vec<_>>>()?;
+            let element_id=r.get::<usize,Option<String>>(key_columns.len())?;
+            let style_id=r.get::<usize,String>(key_columns.len()+1)?;
+            Ok((keys,(element_id,style_id)))
+        }).map_err(err)?;
+        rows.collect::<rusqlite::Result<_>>().map_err(err)?
+    };
+    let where_sql=key_columns.iter().enumerate()
+        .map(|(n,k)|format!("{k}=?{}",n+1)).collect::<Vec<_>>().join(" AND ");
+    let delete_sql=format!("DELETE FROM {table} WHERE {where_sql}");
+    for key in existing.keys(){
+        if !desired.contains_key(key){
+            tx.execute(&delete_sql,rusqlite::params_from_iter(key.iter())).map_err(err)?;
+        }
+    }
+    let cols=format!("{},element_id,style_id",key_columns.join(","));
+    let placeholders=(1..=key_columns.len()+2)
+        .map(|n|format!("?{n}")).collect::<Vec<_>>().join(",");
+    let insert_sql=format!(
+        "INSERT INTO {table}({cols}) VALUES({placeholders})
+         ON CONFLICT({}) DO UPDATE SET
+            element_id=excluded.element_id,style_id=excluded.style_id
+         WHERE element_id IS NOT excluded.element_id OR style_id IS NOT excluded.style_id",
+        key_columns.join(","),
+    );
+    for (key,pair) in desired {
+        if existing.get(key)==Some(pair){continue;}
+        let mut values=key.iter().cloned()
+            .map(rusqlite::types::Value::Text).collect::<Vec<_>>();
+        values.push(match &pair.0 {
+            Some(v)=>rusqlite::types::Value::Text(v.clone()),
+            None=>rusqlite::types::Value::Null,
+        });
+        values.push(rusqlite::types::Value::Text(pair.1.clone()));
+        tx.execute(&insert_sql,rusqlite::params_from_iter(values)).map_err(err)?;
+    }
+    Ok(())
+}
+
+fn reconcile_style_bindings(
+    tx:&Transaction<'_>,wanted:Option<&HashSet<String>>,strict:bool,
+)->Result<(),String>{
+    let styles=match wanted {
+        Some(ids)=>ids.clone(),
+        None=>known_style_ids(tx)?,
+    };
+    let pages:Vec<(String,String,String,String)>={
+        let mut stmt=tx.prepare(
+            "SELECT project_id,portfolio_id,id,payload FROM workspace_pages"
+        ).map_err(err)?;
+        let rows=stmt.query_map([],|r|Ok((r.get(0)?,r.get(1)?,r.get(2)?,r.get(3)?)))
+            .map_err(err)?;
+        rows.collect::<rusqlite::Result<_>>().map_err(err)?
+    };
+    let templates:Vec<(String,String,String)>={
+        let mut stmt=tx.prepare("SELECT kind,id,payload FROM shared_templates").map_err(err)?;
+        let rows=stmt.query_map([],|r|Ok((r.get(0)?,r.get(1)?,r.get(2)?)))
+            .map_err(err)?;
+        rows.collect::<rusqlite::Result<_>>().map_err(err)?
+    };
+    let mut page_refs=StyleBindings::new();
+    let mut template_refs=StyleBindings::new();
+    for (project,portfolio,page,payload) in pages {
+        let value:Value=serde_json::from_str(&payload).map_err(err)?;
+        let owner=json!([project,portfolio,page]).to_string();
+        bindings_for_owner(
+            tx,&value,"page",&owner,&[project,portfolio,page],
+            &styles,strict,&mut page_refs,
+        )?;
+    }
+    for (kind,id,payload) in templates {
+        let value:Value=serde_json::from_str(&payload).map_err(err)?;
+        let owner=json!([kind,id]).to_string();
+        bindings_for_owner(
+            tx,&value,"template",&owner,&[kind,id],
+            &styles,strict,&mut template_refs,
+        )?;
+    }
+    reconcile_style_ref_table(
+        tx,"style_page_element_refs",
+        &["project_id","portfolio_id","page_id","element_path"],&page_refs,
+    )?;
+    reconcile_style_ref_table(
+        tx,"style_template_element_refs",
+        &["template_kind","template_id","element_path"],&template_refs,
+    )?;
+    Ok(())
+}
+
+fn delete_obsolete_styles(
+    tx:&Transaction<'_>,desired:&HashSet<String>,
+)->Result<(),String>{
+    let present=known_style_ids(tx)?;
+    for id in present.difference(desired){
+        // FK RESTRICT refuses deletion if any valid live binding still exists.
+        tx.execute("DELETE FROM shared_styles WHERE id=?1",[id]).map_err(err)?;
+    }
+    Ok(())
+}
+
+// Called after migration 009 creates FK-backed binding tables. Old malformed
+// style references remain in JSON and are recorded for review, not destroyed.
+pub fn backfill_style_bindings(tx:&Transaction<'_>)->Result<(),String>{
+    reconcile_style_bindings(tx,None,false)
 }
 
 fn persist_project(
@@ -198,7 +438,9 @@ pub fn persist_workspace(tx: &Transaction<'_>, workspace: &Value) -> Result<(), 
          WHERE payload IS NOT excluded.payload",
         [context.to_string()],
     ).map_err(err)?;
-    persist_shared_styles(tx, workspace)?;
+    // Stage style UPSERTs; old IDs survive until their FK-bound design uses
+    // have been reconciled below.
+    let desired_styles=persist_shared_styles(tx, workspace)?;
     for kind in ["masterTemplates", "sectionDesigns", "templates"] {
         let entries = global.get(kind).and_then(Value::as_array)
             .ok_or_else(||format!("Missing {kind}"))?;
@@ -241,6 +483,13 @@ pub fn persist_workspace(tx: &Transaction<'_>, workspace: &Value) -> Result<(), 
     delete_missing(tx, "workspace_portfolios", &["project_id", "id"], &seen.portfolios)?;
     delete_missing(tx, "workspace_projects", &["id"], &seen.projects)?;
     delete_missing(tx, "shared_templates", &["kind", "id"], &seen.templates)?;
+    // Reconcile typed style references while old style IDs still exist.
+    // Only then retire unreferenced styles; unexpected FK dependencies abort
+    // and roll back the complete workspace save transaction.
+    reconcile_style_bindings(tx,desired_styles.as_ref(),true)?;
+    if let Some(ids)=desired_styles.as_ref(){
+        delete_obsolete_styles(tx,ids)?;
+    }
     Ok(())
 }
 fn load_pages(db:&Connection,project:&str,portfolio:&str)->Result<Vec<Value>,String>{

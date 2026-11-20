@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 119 (N-04 database architecture, source-only)
+
+Central `shared_styles` is updated by conditional UPSERT instead of delete-all/insert-all. Stable style IDs and unchanged rows remain untouched. A staged rename inside the save transaction prevents temporary NOCASE name collisions. SQLite migration `009.sql` introduces FK-backed style references for JSON text objects in project pages and system-wide templates. The owner page/template keys and style ID are guarded by real foreign keys; the object's JSON pointer path and optional `element_id` identify the binding until N-05 creates relational element rows.
+
+The migration backfills valid existing styles and logs missing/invalid historical references in `style_reference_issues` without discarding old project data. New saves reject unresolved style IDs and deleted styles are removed only after dependency reconciliation; FK violations roll back the whole transaction. Existing image assets, backups and SQLite migrations 001–008 are preserved. The native schema is **9**.
+
+**Validation:** SOURCE ONLY. Under DEC-006 no static checker, Rust Build, automated Test, SQLite migration execution, browser/Tauri Runtime or PDF verification was performed. The owner should verify simultaneous style renames, deletion safety, inherited styles/overrides, template/page style propagation, file reopen and backup recovery.
+
+---
+
 # NSP Portfolio Builder — Version 118 (N-03 database architecture, source-only)
 
 N-03 reconciles immutable-image ownership and typed/legacy image usage indexes using set differences and FK-ordered updates. Unchanged rows are preserved. Only newly inserted automatic backups have their asset references indexed; deleting old automatic backups cascades typed FK rows and prunes the legacy compatibility index. Named backups are no longer rescanned on every save. SQLite schema is unchanged at **8** (no new migration); no reset or physical asset deletion. V117 TASK-023 page-save source changes are retained.
