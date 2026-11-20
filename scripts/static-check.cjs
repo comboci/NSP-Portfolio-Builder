@@ -16,9 +16,12 @@ const projectStore = read('src-tauri/src/project_store.rs');
 const ownership = read('src-tauri/src/image_ownership.rs');
 
 assert(/^\d+\.\d+\.\d+$/.test(config.version), 'Invalid Tauri semver');
-const packageSection = cargo.match(/^\[package\]\s*([\s\S]*?)(?=^\[|\s*$)/m);
-assert(packageSection, 'Cargo [package] section missing');
-const cargoVersion = packageSection[1].match(/^version\s*=\s*"(\d+\.\d+\.\d+)"/m)?.[1];
+const packageStart = cargo.search(/^\[package\]\s*$/m);
+assert(packageStart >= 0, 'Cargo [package] section missing');
+const afterPackage = cargo.slice(packageStart + '[package]'.length);
+const nextSection = afterPackage.search(/^\[[^\]]+\]\s*$/m);
+const packageBody = nextSection >= 0 ? afterPackage.slice(0, nextSection) : afterPackage;
+const cargoVersion = packageBody.match(/^version\s*=\s*"(\d+\.\d+\.\d+)"/m)?.[1];
 assert(cargoVersion, 'Cargo package version missing');
 assert.strictEqual(cargoVersion, config.version, 'Cargo and Tauri versions differ');
 const version = Number(config.version.split('.')[0]);
