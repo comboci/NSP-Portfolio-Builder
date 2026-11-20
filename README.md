@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 114 (TASK-030, source-only)
+
+Updated `scripts/static-check.cjs` to derive the release version from Tauri, require the matching Cargo package version, HTML title/header/meta and every inline JavaScript `appVersion` marker, and check that all SQLite migrations are consecutive and registered in Rust with matching `PRAGMA user_version` declarations. Existing source-parse, IPC, backup and immutable-media consistency checks are retained. A stale V112 main-header label and two V112 JS version overrides were aligned to V114, alongside the Tauri/Cargo release markers.
+
+`STATIC_VALIDATION.json` is intentionally marked **not_executed** with a V114 plan rather than incorrectly claiming that the stale V74 report or the new checker passed. An owner may explicitly invoke `node scripts/static-check.cjs` in a checkout to produce a dated static-only result. That command does not build Tauri or run the application, and it cannot substitute for runtime/PDF acceptance.
+
+**Review required by owner:** inspect version consistency; explicitly run the static checker if desired; separately perform browser/Tauri functionality and SQLite migration reviews. No Build, Test, browser/Tauri execution, PDF verification or owner acceptance was performed by the assistant.
+
+---
+
 # NSP Portfolio Builder — Version 113 (TASK-029, source-only)
 
 The shared image Properties inspector now provides non-destructive grayscale, sepia, blur (0–12 px) and sharpen (0–100%) alongside brightness/contrast/saturation, with independent **Reset Filters** preserving source image, Crop, mask, position, zoom and frame. Per-image and per-Tile settings persist in existing imageEdit JSON, without changing immutable library bytes, project ownership or SQLite schema (6). Canvas/preview/print use the shared image pipeline, with CSS filters and a per-image local SVG convolution kernel for sharpening.
