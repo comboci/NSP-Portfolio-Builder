@@ -238,7 +238,7 @@ fn main() {
             conn.execute_batch("PRAGMA foreign_keys=ON; PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000;")?;
             let tx = conn.transaction()?;
             let version: i64 = tx.query_row("PRAGMA user_version", [], |r| r.get(0))?;
-            if version > 6 { return Err("Database schema is newer than this application".into()); }
+            if version > 7 { return Err("Database schema is newer than this application".into()); }
             if version < 1 { tx.execute_batch(include_str!("../migrations/001.sql"))?; }
             if version < 2 { tx.execute_batch(include_str!("../migrations/002.sql"))?; }
             if version < 3 {
@@ -254,6 +254,7 @@ fn main() {
                 project_store::migrate_style_library(&tx)
                     .map_err(|e| std::io::Error::other(e))?;
             }
+            if version < 7 { tx.execute_batch(include_str!("../migrations/007.sql"))?; }
             tx.commit()?;
             app.manage(AssetRoot(root));
             app.manage(Storage(Mutex::new(conn)));
