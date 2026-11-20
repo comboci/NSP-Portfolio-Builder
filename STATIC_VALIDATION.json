@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "136",
-  "basedOnMainCommitBeforeChange": "2a9aef9ee02c6825c1b1d6e88f48860c79c01b66",
+  "plannedForVersion": "137",
+  "basedOnMainCommitBeforeChange": "c59e233b4afa415a03293dd74e382ed56e166ddd",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -28,11 +28,12 @@
     "V133 TASK-042: browser IndexedDB startup failure blocks edits/saves; labeled read-only localStorage inspection and raw export without promotion, overwrite or merge",
     "V134 TASK-071: scroll-window thumbnail virtualization, page-change invalidation, keyboard focus and scroll preservation, no stale template/style/media preview",
     "V135 TASK-043: SQLite migration 013 retains unknown-revision legacy named backups; transactional canonical snapshot and expected-revision CAS, atomic FK refs, IndexedDB atomic checkpoints, separate unsaved draft export and Backup Before Restore",
-    "V136 TASK-044: native startup failure blocks persistence and labels UI-memory export noncanonical; closed-app SQLite/WAL/SHM/assets preservation guide; bounded redacted in-memory diagnostics for startup/write/retry and browser fail-closed recovery"
+    "V136 TASK-044: native startup failure blocks persistence and labels UI-memory export noncanonical; closed-app SQLite/WAL/SHM/assets preservation guide; bounded redacted in-memory diagnostics for startup/write/retry and browser fail-closed recovery",
+    "V137: page-first blank page creation, global templateCategories in shared SQLite context, independent template instances, project-local linked customComponents in Toolbox, and legacy master/section compatibility"
   ],
   "staticCheckExecuted": false,
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V136 TASK-044 source only; owner validates native load failure, safe physical folder copy, unverified memory disclosure, redacted incident export, browser failure and conflict/retry. No assistant Build/Test/static checker/runtime."
+  "note": "V137 phase 1 source candidate only. Old Master/Section state remains internally pending full decommission. No assistant build, test, static checker, browser/Tauri Runtime, data reset, or owner acceptance."
 }
