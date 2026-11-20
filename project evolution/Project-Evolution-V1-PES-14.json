@@ -604,6 +604,106 @@
           "TASK-025",
           "TASK-026"
         ]
+      },
+      {
+        "record_id": "FND-015",
+        "title": "خطای ذخیره قدیمی در صف با ذخیره جدید پنهان می‌شود",
+        "detail": "index.html enqueue() catches each rejected write and reports it only when rev===revision, while a later success sets completed=latestRevision, clears lastError and makes flushStorage() succeed. When save A and save B are queued and A fails but B succeeds (especially distinct pages), A can remain unpersisted while the user sees Saved. This is a source-supported failure path; reproduction remains owner-only.\nSource evidence: index.html:5708-5725. Build/Test/Runtime not executed.",
+        "category": "data_integrity",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-PORTFOLIOS",
+          "SC-PROJECTS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "57cb574f33903d9aed3b28327ab5fbf4ce44ca68"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-023",
+          "TASK-036",
+          "DEC-009",
+          "DEC-006",
+          "TASK-038"
+        ]
+      },
+      {
+        "record_id": "FND-016",
+        "title": "ذخیره IndexedDB بین تب‌های مختلف کنترل Revision ندارد",
+        "detail": "Browser openBrowser() reads one KEY snapshot, and both write() and writePage() issue blind IndexedDB put(payload,KEY). There is no compare-and-swap application revision or cross-tab stale-write detection. Two open tabs can silently overwrite each other; native SQLite CAS does not apply in browser mode. No runtime execution has been performed.\nSource evidence: index.html:5687-5706; index.html:5844-5846. Build/Test/Runtime not executed.",
+        "category": "data_integrity",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-PROJECTS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "57cb574f33903d9aed3b28327ab5fbf4ce44ca68"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-023",
+          "TASK-036",
+          "DEC-009",
+          "DEC-006",
+          "TASK-039"
+        ]
+      },
+      {
+        "record_id": "FND-017",
+        "title": "تغییر نام تصویر عمومی خارج از SQLite CAS انجام می‌شود",
+        "detail": "rename_public_image directly commits image_public_catalog.payload without expected_revision, require_workspace_revision or advance_workspace_revision; frontend calls invoke outside the storage queue. Concurrent renames may silently overwrite each other and do not invalidate a stale workspace revision. This violates the intended revision discipline of Migration 011 for shared mutations.\nSource evidence: src-tauri/src/main.rs:97-102; src-tauri/src/image_ownership.rs:379-403; index.html:1910-1919. Build/Test/Runtime not executed.",
+        "category": "data_integrity",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-LIBRARY"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "57cb574f33903d9aed3b28327ab5fbf4ce44ca68"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-007",
+          "TASK-027",
+          "TASK-036",
+          "DEC-009",
+          "BR-006",
+          "DEC-006",
+          "TASK-040"
+        ]
+      },
+      {
+        "record_id": "FND-018",
+        "title": "تصویر گم‌شده می‌تواند بارگذاری کل پروژه را مسدود کند",
+        "detail": "Normal load_project_state() calls hydrate_payload(), whose fetch_image() returns an error for missing/corrupt asset files/metadata; the error aborts the whole load. REQ-011 explicitly requires an unavailable-source placeholder for missing files. Backup integrity inspection/restore must remain strict; normal workspace load needs a separate degraded-read policy.\nSource evidence: src-tauri/src/media_store.rs:101-155; src-tauri/src/main.rs:53-62; index.html:5844-5847. Build/Test/Runtime not executed.",
+        "category": "data_integrity",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-LIBRARY",
+          "SC-PROJECTS"
+        ],
+        "status": "open_source_supported_runtime_unverified",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "57cb574f33903d9aed3b28327ab5fbf4ce44ca68"
+        },
+        "implementation_state": "source_gap_pending_implementation",
+        "related_record_ids": [
+          "TASK-007",
+          "TASK-037",
+          "REQ-011",
+          "DEC-006",
+          "TASK-041"
+        ]
       }
     ],
     "business_rules": [
@@ -2249,6 +2349,130 @@
         "evidence_refs": [
           "OBS-044"
         ]
+      },
+      {
+        "record_id": "TASK-038",
+        "title": "Fail-safe queued Save Page/Save Project: never hide earlier failed writes",
+        "detail": "index.html enqueue() catches each rejected write and reports it only when rev===revision, while a later success sets completed=latestRevision, clears lastError and makes flushStorage() succeed. When save A and save B are queued and A fails but B succeeds (especially distinct pages), A can remain unpersisted while the user sees Saved. This is a source-supported failure path; reproduction remains owner-only.\n\nAcceptance criteria: Preserve each write result and pending dirty scope; any failure must block a global 'saved' claim until recovery is durably acknowledged. flushStorage/Save/Leave/Retry must surface an earlier failed page even after another page successfully saves; WRITE_CONFLICT must remain fail-closed. No silent retry that overwrites newer data.\n\nSource evidence: index.html:5708-5725. Preserve existing data, migrations, CAS contracts and historical records. According to DEC-006 do NOT run Build/Test/static checker; owner must verify runtime.",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-PORTFOLIOS",
+          "SC-PROJECTS"
+        ],
+        "related_record_ids": [
+          "TASK-023",
+          "TASK-036",
+          "DEC-009",
+          "DEC-006",
+          "FND-015"
+        ],
+        "priority": "P0",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "57cb574f33903d9aed3b28327ab5fbf4ce44ca68"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V125",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-015"
+        ],
+        "result": "Not implemented. Scheduled candidate from source-only retrospective audit phase 01."
+      },
+      {
+        "record_id": "TASK-039",
+        "title": "Prevent cross-tab lost updates in Browser IndexedDB persistence",
+        "detail": "Browser openBrowser() reads one KEY snapshot, and both write() and writePage() issue blind IndexedDB put(payload,KEY). There is no compare-and-swap application revision or cross-tab stale-write detection. Two open tabs can silently overwrite each other; native SQLite CAS does not apply in browser mode. No runtime execution has been performed.\n\nAcceptance criteria: Persist a monotonic browser revision and enforce atomic compare-and-write in a single IndexedDB readwrite transaction; reject stale snapshots without overwriting data; provide an export/reload recovery flow and a safe upgrade path for existing IndexedDB state; distinguish the localStorage fallback contract.\n\nSource evidence: index.html:5687-5706; index.html:5844-5846. Preserve existing data, migrations, CAS contracts and historical records. According to DEC-006 do NOT run Build/Test/static checker; owner must verify runtime.",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-PROJECTS"
+        ],
+        "related_record_ids": [
+          "TASK-023",
+          "TASK-036",
+          "DEC-009",
+          "DEC-006",
+          "FND-016"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "57cb574f33903d9aed3b28327ab5fbf4ce44ca68"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V125",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-016"
+        ],
+        "result": "Not implemented. Scheduled candidate from source-only retrospective audit phase 01."
+      },
+      {
+        "record_id": "TASK-040",
+        "title": "Revision-guard and serialize native public image metadata rename",
+        "detail": "rename_public_image directly commits image_public_catalog.payload without expected_revision, require_workspace_revision or advance_workspace_revision; frontend calls invoke outside the storage queue. Concurrent renames may silently overwrite each other and do not invalidate a stale workspace revision. This violates the intended revision discipline of Migration 011 for shared mutations.\n\nAcceptance criteria: Apply expectedRevision CAS to public-image metadata rename in the same SQLite transaction; return the new revision and route frontend operations through the serialized persistence queue. A stale second-window rename reports WRITE_CONFLICT without overwriting the canonical name. Preserve published identity/hash, ownership, usage and original files.\n\nSource evidence: src-tauri/src/main.rs:97-102; src-tauri/src/image_ownership.rs:379-403; index.html:1910-1919. Preserve existing data, migrations, CAS contracts and historical records. According to DEC-006 do NOT run Build/Test/static checker; owner must verify runtime.",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-LIBRARY"
+        ],
+        "related_record_ids": [
+          "TASK-007",
+          "TASK-027",
+          "TASK-036",
+          "DEC-009",
+          "BR-006",
+          "DEC-006",
+          "FND-017"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "57cb574f33903d9aed3b28327ab5fbf4ce44ca68"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V125",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-017"
+        ],
+        "result": "Not implemented. Scheduled candidate from source-only retrospective audit phase 01."
+      },
+      {
+        "record_id": "TASK-041",
+        "title": "Recover workspace metadata with an unavailable-image placeholder when assets are missing",
+        "detail": "Normal load_project_state() calls hydrate_payload(), whose fetch_image() returns an error for missing/corrupt asset files/metadata; the error aborts the whole load. REQ-011 explicitly requires an unavailable-source placeholder for missing files. Backup integrity inspection/restore must remain strict; normal workspace load needs a separate degraded-read policy.\n\nAcceptance criteria: Allow the project, portfolios, pages and other healthy assets to open with explicit missing-image placeholders and warnings; retain original immutable hash/metadata without silent replacement. Keep backup restore and integrity checks fail-closed, and do not silently save a degraded snapshot that would discard unavailable images.\n\nSource evidence: src-tauri/src/media_store.rs:101-155; src-tauri/src/main.rs:53-62; index.html:5844-5847. Preserve existing data, migrations, CAS contracts and historical records. According to DEC-006 do NOT run Build/Test/static checker; owner must verify runtime.",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-LIBRARY",
+          "SC-PROJECTS"
+        ],
+        "related_record_ids": [
+          "TASK-007",
+          "TASK-037",
+          "REQ-011",
+          "DEC-006",
+          "FND-018"
+        ],
+        "priority": "P1",
+        "status": "planned",
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "57cb574f33903d9aed3b28327ab5fbf4ce44ca68"
+        },
+        "implementation_state": "planned_no_source_change_or_runtime_execution",
+        "source_version": "V125",
+        "updated_on": "2026-11-20",
+        "evidence_refs": [
+          "FND-018"
+        ],
+        "result": "Not implemented. Scheduled candidate from source-only retrospective audit phase 01."
       }
     ],
     "evidence": [],
@@ -3233,6 +3457,36 @@
           "source_revision_ref": "57cb574f33903d9aed3b28327ab5fbf4ce44ca68"
         },
         "implementation_state": "V125_code_change_owner_review_pending"
+      },
+      {
+        "record_id": "OBS-046",
+        "title": "Retrospective audit campaign, phase 01: SQLite/database and task-to-source reconciliation",
+        "status": "source_only_review_completed",
+        "detail": "Reviewed Project Evolution TASK-001 through TASK-037 against current source lineage V125 / schema 12, including relational projects, styles, image references, page/project CAS and N-07 retention. Four previously untracked source-supported gaps were recorded as FND-015, FND-016, FND-017, FND-018 with planned fixes TASK-038, TASK-039, TASK-040, TASK-041. Stage 02 (save-state, autosave, backup/file/rollback) is next on user N. No Build/Test/static checker, SQLite migration, Windows/browser execution or owner acceptance was performed.",
+        "scope_refs": [
+          "SC-STORAGE",
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS",
+          "SC-LIBRARY"
+        ],
+        "related_record_ids": [
+          "TASK-038",
+          "TASK-039",
+          "TASK-040",
+          "TASK-041",
+          "FND-015",
+          "FND-016",
+          "FND-017",
+          "FND-018",
+          "TASK-037",
+          "DEC-006"
+        ],
+        "provenance": {
+          "type": "source_review_multistage_audit",
+          "date": "2026-11-20",
+          "source_revision_ref": "57cb574f33903d9aed3b28327ab5fbf4ce44ca68"
+        },
+        "implementation_state": "audit_documented_and_committed_code_untouched"
       }
     ]
   },
@@ -3294,6 +3548,10 @@
     "open_conflict_relationship_ids": [],
     "blocked_record_ids": [],
     "next_work_record_ids": [
+      "TASK-038",
+      "TASK-039",
+      "TASK-040",
+      "TASK-041",
       "TASK-005",
       "TASK-006",
       "TASK-007",
@@ -3331,7 +3589,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V124 N-07 source code commit 3a345d10162857815977091dd6b6e785cf8a2ad4 follows V123 N-06 main 5e4646c5773c423ee165cfb5df10de4c8d23158b, with SQLite schema 12. Default backup-retention policy forbids automatic pruning until named restore is owner-verified and explicitly approved; named backups and immutable physical Assets remain protected. Automatic backups are paginated and read-only physical integrity/FK inspection is available; named backup creation preflights assets. Builds, tests, static checker, actual migration and Windows restore were NOT run. Owner acceptance still pending for N-02..N-07, especially backup restore/WAL, two-window revision conflicts, missing assets and disk growth. TASK-023 autosave and unsaved-navigation semantics remain open. No N-08 has been authorized or implemented.",
+    "current_summary": "V124 N-07 source code commit 3a345d10162857815977091dd6b6e785cf8a2ad4 follows V123 N-06 main 5e4646c5773c423ee165cfb5df10de4c8d23158b, with SQLite schema 12. Default backup-retention policy forbids automatic pruning until named restore is owner-verified and explicitly approved; named backups and immutable physical Assets remain protected. Automatic backups are paginated and read-only physical integrity/FK inspection is available; named backup creation preflights assets. Builds, tests, static checker, actual migration and Windows restore were NOT run. Owner acceptance still pending for N-02..N-07, especially backup restore/WAL, two-window revision conflicts, missing assets and disk growth. TASK-023 autosave and unsaved-navigation semantics remain open. No N-08 has been authorized or implemented. Retrospective audit phase 01 source-only completed; TASK-038, TASK-039, TASK-040, TASK-041 planned (P0/P1/P1/P1), evidence FND-015, FND-016, FND-017, FND-018; next user N = phase 02. Campaign: project evolution/AUDIT-CAMPAIGN-2026-11-20.md. No implementation or runtime acceptance claimed.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
@@ -3369,7 +3627,8 @@
       "V114 STATIC_VALIDATION.json is not_executed; source checker output must not be described as passed until owner actually runs it.",
       "V117 TASK-023 source only. Owner should check delayed/failed SQLite saves, page-switch while writing, retry, rapid double clicks, recovery after restart, and saved/pending/error wording. No Build/Test/static checker. Page autosave off, Save/Discard/Cancel and independent Save Page vs Save Project are outstanding.",
       "V121 TASK-023 manual Ctrl+S/Command+S, generic Save and legacy dropdown/Page Content guards await owner review; a page save still uses global project snapshot persistence and Autosave-off/Save-Discard-Cancel remain open.",
-      "V124 N-07 retains more than 30 automatic snapshots until the owner verifies a named restore and explicit pruning approval is recorded. This may grow the SQLite file; inspect_backup is read-only integrity inspection, not proven Restore. No Build/Test/static checker/runtime/migration executed."
+      "V124 N-07 retains more than 30 automatic snapshots until the owner verifies a named restore and explicit pruning approval is recorded. This may grow the SQLite file; inspect_backup is read-only integrity inspection, not proven Restore. No Build/Test/static checker/runtime/migration executed.",
+      "Audit phase 01 on source V125 was static inspection only; new planned TASK-038, TASK-039, TASK-040, TASK-041 require implementation and owner runtime review; no Build/Test executed."
     ]
   }
 }
