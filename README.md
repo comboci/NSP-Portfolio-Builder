@@ -1,3 +1,13 @@
+# NSP Portfolio Builder — Version 121 (TASK-023, source-only)
+
+This release continues TASK-023 without changing SQLite schema 10, canonical page JSON, image ownership, or the N-05 derived scene graph. The shared editor now routes Ctrl+S / Command+S and its generic Save action through the existing durable page-save acknowledgement; Master and Section template manual saves use their existing draft-confirmation path. The legacy page-selection dropdown and the Page Content exit action also await backend acknowledgement before switching views, retaining the current page if persistence fails. The existing explicit Save Page button remains available.
+
+**Limitations:** The current global storage bridge still writes project snapshots; Save Page and Save Project are **not** independently atomic (DEC-009 / planned N-06). An Autosave on/off checkbox and full page Save / Discard / Cancel experience are still outstanding. No assertion that a failed save was recovered, no owner acceptance and no native/browser runtime validation are made.
+
+**Owner review:** Make a page edit, press Ctrl+S in the canvas and with focus in a property input; try Command+S where supported. Check the generic Save button, legacy page-select dropdown, Page Content navigation, delayed/failed storage writes, rapid repeated saves, master/section drafts, Undo/Redo, and save/reopen. Confirm an unsuccessful write prevents navigation and leaves the unsaved data visible. **No Build, Test, static-check script or runtime was executed by the assistant.**
+
+---
+
 # NSP Portfolio Builder — Version 120 (N-05, source-only)
 
 N-05 adds SQLite schema 10 with a relational **derived** scene graph: design_scenes, design_scene_layers, design_scene_groups, design_scene_elements, design_scene_template_links, and an append-only historical projection issue ledger. Scene keys are deterministic, owner-scoped JSON tuples; elements/layers/groups have stable composite identities. Project pages and global templates are real FK parents. Layer membership, group membership, optional Region Block linkage, style IDs, and direct image-file hashes are FK-constrained in the graph.

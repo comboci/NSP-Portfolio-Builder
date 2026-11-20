@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "120",
-  "basedOnMainCommitBeforeChange": "3667392c274244c45a80f1084f4b0a79cb5f8434",
+  "plannedForVersion": "121",
+  "basedOnMainCommitBeforeChange": "b6e617d4d5b2b290f6b841d2c579ebf6821a399a",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -18,5 +18,5 @@
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "V120 N-05 source candidate, schema 10. Static checker, Rust Build, automated Test, migration execution on user data, Windows/Tauri/Browser Runtime and PDF review NOT run under DEC-006. JSON remains sole editable source of truth; scene tables are replaceable FK-backed projections."
+  "note": "V121 TASK-023 editor manual-save routing, guarded page dropdown/content navigation; SQLite schema 10 unchanged. Static checker, Build/Test, browser/Tauri runtime, and owner acceptance NOT performed."
 }
