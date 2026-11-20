@@ -25,11 +25,11 @@
   "release_context": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "software_release": "V110 source candidate (Tauri 110.0.0, SQLite schema 6); partial TASK-027 public image metadata rename; Delete remains policy-blocked Q-005; runtime unverified",
+    "software_release": "V111 source candidate (Tauri 111.0.0, SQLite schema 6); TASK-026 contextual Import/Export/Print; owner runtime/PDF and backup compatibility acceptance pending",
     "project_evolution_version": "V1",
     "base_project_evolution_version": null,
-    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding. V96 dd8884b8 implements TASK-016 in the shared designer with px/mm geometry, grouped Block and Group movement, key/selection/page references, history and non-destructive bounds guards. No build or runtime review. V97 65d0788a implements TASK-017 signed-mm Ctrl+D duplication in the shared designer and preserves Group/Region Block ownership; owner runtime review outstanding. V98 TASK-018 based on V97 HEAD 1eb6f858f9457c6c45f35b27ac71d415d6f372ea; no Build/Test, runtime or PDF validation. V99 160af83c guards editor exit until async persistence acknowledgement. V100 efdf0e93 centralizes page/portfolio/master duplication and preserves source provenance while remapping local compound identities; source only, no build/runtime test. V101 e2221346 replaces preflight go('visual') with direct page navigation and exact object provenance focus for TASK-008, with no build/runtime/PDF verification. V102 bee05475 creates independent shared_styles SQLite schema 6 table, transactional catalog projection, legacy style backfill, canonical project load, and confirmed asynchronous Style Library saving. No Build/Test/runtime acceptance. V103 TASK-019 based on PE-only HEAD a7cab4f; object effect controls in shared renderer and local Properties; no DB migration or Build/Test; owner acceptance pending. V104 HEAD e1e4f190 comprises V103 TASK-019 followed by transactional storage changes ec43999 and version-aware static validation e1e4f190; these have no matching V104 PE observation and remain unverified. V105 TASK-020 is based on V104 main e1e4f190, preserving the V104 storage changes and recording an image crop/mask source candidate only. V106 TASK-021 based on V105 main 85e3db9ab5580287a030037a4301fa93928c79de; frame-preserving replacement and Tile fit changes are source-only, pending owner review. V107 TASK-023 partial based on V106 main feaebe5f34604412305a6f8cf05487c42ab64266; editor displays backend-acknowledged save/error/retry state; autosave toggle and manual leave flows remain unimplemented and unverified. V108 TASK-023 based on V107 main HEAD e83db4904768cd7555415c22e5f616bf4d18b770; master/section draft confirmation awaits asynchronous backend save, but no Build/Test/runtime. V109 TASK-023 reconciled PE revision e83db4904768cd7555415c22e5f616bf4d18b770 as the verified immediate parent of V108 main HEAD d1a27c828defd92288a0e09a19755d8d89d97999; added optional three-way Save/Discard/Cancel for template draft changes, preserving prior dialogs. No Build/Test/runtime. V110 4b3531bf provides transactional SQLite metadata-only renaming for public images and a clearly blocked Delete control under BR-006/Q-005; retains all prior ownership, references, original bytes and schema 6; source only.",
-    "source_revision_ref": "4b3531bf8b91c7f1feda9a6f2a78db01601bacc4"
+    "source_alignment": "V94 TASK-015 source change built from V93 main 2e69bd4a8e64c956f1b186d12092cd6e52797a46; prior PE source_revision_ref e05adf1180bea8d8c2607f23f435cd42cf682117 was checked as that commit's immediate parent. Owner runtime review required. V95 a2f1e0f6 repairs project-wide designer Dock: explicit panel IDs including History, robust mounting with auxiliary controls retained, physical-left editor grid and fallback inspector, right-hand PowerPoint page thumbnails unchanged, default auto-hide with saved user preferences retained, export/release version alignment. Source-only; owner runtime review outstanding. V96 dd8884b8 implements TASK-016 in the shared designer with px/mm geometry, grouped Block and Group movement, key/selection/page references, history and non-destructive bounds guards. No build or runtime review. V97 65d0788a implements TASK-017 signed-mm Ctrl+D duplication in the shared designer and preserves Group/Region Block ownership; owner runtime review outstanding. V98 TASK-018 based on V97 HEAD 1eb6f858f9457c6c45f35b27ac71d415d6f372ea; no Build/Test, runtime or PDF validation. V99 160af83c guards editor exit until async persistence acknowledgement. V100 efdf0e93 centralizes page/portfolio/master duplication and preserves source provenance while remapping local compound identities; source only, no build/runtime test. V101 e2221346 replaces preflight go('visual') with direct page navigation and exact object provenance focus for TASK-008, with no build/runtime/PDF verification. V102 bee05475 creates independent shared_styles SQLite schema 6 table, transactional catalog projection, legacy style backfill, canonical project load, and confirmed asynchronous Style Library saving. No Build/Test/runtime acceptance. V103 TASK-019 based on PE-only HEAD a7cab4f; object effect controls in shared renderer and local Properties; no DB migration or Build/Test; owner acceptance pending. V104 HEAD e1e4f190 comprises V103 TASK-019 followed by transactional storage changes ec43999 and version-aware static validation e1e4f190; these have no matching V104 PE observation and remain unverified. V105 TASK-020 is based on V104 main e1e4f190, preserving the V104 storage changes and recording an image crop/mask source candidate only. V106 TASK-021 based on V105 main 85e3db9ab5580287a030037a4301fa93928c79de; frame-preserving replacement and Tile fit changes are source-only, pending owner review. V107 TASK-023 partial based on V106 main feaebe5f34604412305a6f8cf05487c42ab64266; editor displays backend-acknowledged save/error/retry state; autosave toggle and manual leave flows remain unimplemented and unverified. V108 TASK-023 based on V107 main HEAD e83db4904768cd7555415c22e5f616bf4d18b770; master/section draft confirmation awaits asynchronous backend save, but no Build/Test/runtime. V109 TASK-023 reconciled PE revision e83db4904768cd7555415c22e5f616bf4d18b770 as the verified immediate parent of V108 main HEAD d1a27c828defd92288a0e09a19755d8d89d97999; added optional three-way Save/Discard/Cancel for template draft changes, preserving prior dialogs. No Build/Test/runtime. V110 4b3531bf provides transactional SQLite metadata-only renaming for public images and a clearly blocked Delete control under BR-006/Q-005; retains all prior ownership, references, original bytes and schema 6; source only. V111 f67f2aa4 implements scoped non-destructive project Import and portfolio Import/Export/Print with dependency checks, local asset rebinding, contextual menu cleanup and retained Backup; source only, runtime unverified.",
+    "source_revision_ref": "f67f2aa4eb3ca1fef3948692a8351d8ad63e3067"
   },
   "coordination": {
     "canonical_store_type": "git",
@@ -1760,12 +1760,23 @@
           "OBS-005",
           "FND-014"
         ],
-        "status": "planned",
+        "status": "in_progress",
         "provenance": {
           "type": "user_conversation",
           "date": "2026-11-19"
         },
-        "implementation_state": "owner_requested_not_implemented_as_of_V85"
+        "implementation_state": "V111_contextual_import_export_print_source_implemented_pending_owner_runtime",
+        "source_version": "V111",
+        "updated_on": "2026-11-20",
+        "result": "V111 f67f2aa4 adds system-level non-destructive whole-project Import; project contextual Export, portfolio Import and portfolio Print chooser; portfolio contextual Export and Print; removes duplicate global Import/Export/Print and Page Order menus while keeping Backup/Settings. Scoped portfolio backup bundles required project images, validates access to referenced public assets and remaps local image IDs and V100 page identities; missing globals cause explicit rejection, no cross-project image access or public-catalog overwrite. Import commits via existing async v77Persist acknowledgement/rollback. Source-only; no build, automated/browser/Tauri runtime, PDF output or owner acceptance. Legacy direct routes remain in source but hidden from global navigation, and backup compatibility needs runtime review.",
+        "changed_files": [
+          "index.html",
+          "src-tauri/Cargo.toml",
+          "src-tauri/tauri.conf.json"
+        ],
+        "evidence_refs": [
+          "OBS-031"
+        ]
       },
       {
         "record_id": "TASK-027",
@@ -2517,6 +2528,30 @@
           "source_revision_ref": "4b3531bf8b91c7f1feda9a6f2a78db01601bacc4"
         },
         "implementation_state": "V110_source_only_rename_available_delete_policy_unresolved"
+      },
+      {
+        "record_id": "OBS-031",
+        "title": "V111 TASK-026 project/portfolio-scoped Import, Export and Print source",
+        "status": "source_implemented_runtime_unverified",
+        "detail": "V111 f67f2aa4 adds system-level non-destructive whole-project Import; project contextual Export, portfolio Import and portfolio Print chooser; portfolio contextual Export and Print; removes duplicate global Import/Export/Print and Page Order menus while keeping Backup/Settings. Scoped portfolio backup bundles required project images, validates access to referenced public assets and remaps local image IDs and V100 page identities; missing globals cause explicit rejection, no cross-project image access or public-catalog overwrite. Import commits via existing async v77Persist acknowledgement/rollback. Source-only; no build, automated/browser/Tauri runtime, PDF output or owner acceptance. Legacy direct routes remain in source but hidden from global navigation, and backup compatibility needs runtime review.",
+        "scope_refs": [
+          "SC-PROJECTS",
+          "SC-PORTFOLIOS",
+          "SC-PDF",
+          "SC-STORAGE"
+        ],
+        "related_record_ids": [
+          "TASK-026",
+          "TASK-025",
+          "TASK-022",
+          "FND-014"
+        ],
+        "provenance": {
+          "type": "source_inspection_and_implementation",
+          "date": "2026-11-20",
+          "source_revision_ref": "f67f2aa4eb3ca1fef3948692a8351d8ad63e3067"
+        },
+        "implementation_state": "V111_source_committed_owner_runtime_acceptance_pending"
       }
     ]
   },
@@ -2601,7 +2636,7 @@
     "candidate_solution_ids": []
   },
   "continuation": {
-    "current_summary": "V110 4b3531bf implements public image Rename (SQLite dedicated command) and blocked-state Delete explanation for TASK-027. Full public deletion is NOT implemented and Q-005 remains open due irreversible-publication rule BR-006. Need user-owned runtime review; next N must read fresh HEAD and select independent remaining defect or safe image management work without violating BR-006.",
+    "current_summary": "V111 f67f2aa4 published: TASK-026 contextual system project Import, per-project Export/portfolio Import/Print, per-portfolio Export/Print. Project and portfolio imports validate central template and public-asset dependencies and rollback on failed persistence. Does not replace Backup. Runtime acceptance pending. Next N should check fresh main and continue remaining source issues such as TASK-023 page autosave/dirty exit and TASK-028 image albums; Q-005 irreversible public delete still unresolved.",
     "must_read_record_ids": [
       "DEC-001",
       "DEC-002",
