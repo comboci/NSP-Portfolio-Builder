@@ -1,8 +1,8 @@
 {
   "kind": "source-static-check",
   "status": "not_executed",
-  "plannedForVersion": "116",
-  "basedOnMainCommitBeforeChange": "21986714be86afb4139ab342a0a5bbefb1b3128f",
+  "plannedForVersion": "117",
+  "basedOnMainCommitBeforeChange": "b76b5760e942549352d61e0123099adf006e2330",
   "planPreparedOn": "2026-11-20",
   "checker": "node scripts/static-check.cjs",
   "checks": [
@@ -15,5 +15,5 @@
   "rustBuildExecuted": false,
   "runtimeExecuted": false,
   "ownerAcceptance": "pending; only owner performs checks",
-  "note": "N-02 V116 source prepared. No static checker, SQL integration test, build, Tauri/browser runtime or owner acceptance was performed. Legacy rows and backup/asset bytes remain retained; typed migration validation must be run by the owner on a copy."
+  "note": "V117 TASK-023 source-only page-save acknowledgement/guard. Preserves N-02 schema 008 and FK-backed image/backup reference tables. No static checker, Rust build, automated test, browser/Tauri runtime, PDF or owner acceptance performed."
 }

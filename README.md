@@ -1,4 +1,10 @@
-# NSP Portfolio Builder — Version 114 (TASK-030, source-only)
+# NSP Portfolio Builder — Version 117 (TASK-023, source-only)
+
+Partial continuation of TASK-023: Page Save/Return, page-editor Back to Projects/table, new/edit-page entry and project thumbnail switching now wait for database persistence acknowledgement before navigating. If a write fails or the edited page changes during the wait, the page remains open. Page save status reflects pending/failed/acknowledged storage instead of assuming autosave success. No autosave-off checkbox or page-level Save/Discard/Cancel yet, and Save Page/Save Project are not isolated. V116 N-02 SQLite schema 008 and prior data remain unchanged. No Build, Test, static-check script, browser/Tauri runtime or PDF review was executed; owner acceptance remains pending.
+
+---
+
+## NSP Portfolio Builder — Version 114 (TASK-030, source-only)
 
 Updated `scripts/static-check.cjs` to derive the release version from Tauri, require the matching Cargo package version, HTML title/header/meta and every inline JavaScript `appVersion` marker, and check that all SQLite migrations are consecutive and registered in Rust with matching `PRAGMA user_version` declarations. Existing source-parse, IPC, backup and immutable-media consistency checks are retained. A stale V112 main-header label and two V112 JS version overrides were aligned to V114, alongside the Tauri/Cargo release markers.
 
