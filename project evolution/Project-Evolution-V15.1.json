@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 217",
+    "application_release": "Browser 218",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 217: fixes a JavaScript quote syntax error in the shared editor script at v83GuideToolbar, which prevented the entire editor module including page visual() and V.editor from initializing and consequently broke downstream refresh-route bootstrap. No data model changes; runtime acceptance pending."
+    "current_source_release_note": "Browser 218 adds Visual Studio-style two-sided left/right docking with draggable Layers, Properties, History panels, keyboard-accessible move buttons, independent pin/auto-hide and separate per-editor-profile persistent layouts. Retains 220ms hover, no data schema changes. Runtime owner acceptance pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -849,6 +849,40 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-027",
+      "title": "جابجایی آزاد پنل‌های لایه‌ها، ویژگی‌ها و تاریخچه میان چپ و راست و ذخیره چیدمان",
+      "type": "runtime_docking_feature",
+      "screen_or_flow": "طراح قالب، طراح صفحه، طراح کامپوننت → Dock دوطرفه",
+      "reproduction_steps": [
+        "قالبی را در طراح باز کنید و پنل لایه‌ها را از تب یا عنوانش به ناحیهٔ رهاکردن سمت راست بکشید",
+        "پنل ویژگی‌ها را سمت چپ نگه دارید و در صورت نیاز هر دو را با سنجاق ثابت کنید",
+        "در پنل تاریخچه کلید انتقال سمت مقابل را بزنید و عملکرد Hover با مکث ۲۲۰ms را بررسی کنید",
+        "Refresh کرده و سپس فایل محلی را ببندید و دوباره باز کنید؛ چیدمان باید بازگردد",
+        "چیدمان دیگری در طراح صفحه تنظیم کنید و به طراح قالب برگردید؛ پروفایل قبلی قالب مستقل بماند",
+        "در نمای باریک و هنگام نبودن هیچ پنلی در یک سمت، نباید بوم غیرقابل استفاده شود",
+        "با پنل‌های سنجاق‌شده و جمع‌شونده، ویرایش فیلدهای ویژگی‌ها و درج/ویرایش اشیا را بررسی کنید"
+      ],
+      "observed": "Dock فعلی در هر سه پروفایل فقط یک ستون در سمت چپ بوم داشت و صرفاً وضعیت سنجاق/انتخاب را ذخیره می‌کرد؛ امکان انتقال مستقل پنل‌ها به راست و چپ وجود نداشت.",
+      "expected": "پانل‌های مستقل چپ/راست در یک طراح، قابل Drag & Drop و انتقال با دکمه، با ذخیرهٔ ماندگار محل و وضعیت Pin/Auto-hide به تفکیک طراح قالب/صفحه/کامپوننت.",
+      "severity": "medium",
+      "source_commit": "63744803e47dad45fd83e3a7182dc62c84bad1bd",
+      "fix_version": "Browser 218",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "Refactor v16-docking-controller to dual hosts in v13-editor-grid (left, canvas, right); assign panels by prefs.side; migrate localStorage v2 -> v3 profiles without losing pin state; handle HTML5 drag/drop via side drop-zone overlays and button-based side switch; separate active pinned per side; maintain hover 220ms and existing panel DOM/form fields, avoid rerender on move.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "Move Layer right, Properties left using drag and button",
+          "Refresh/reopen page and verify persistence",
+          "Verify independent template/page layouts",
+          "Check pin/hover and editor interactions"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -904,7 +938,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 217,
+      "release": 218,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
