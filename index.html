@@ -5983,12 +5983,12 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
  const safeText=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function options(){
   const obj=state.printOptions&&typeof state.printOptions==='object'?state.printOptions:{};
-  return {paper:obj.paper==='A3'?'A3':'A4',safeMarginMm:Math.min(30,Math.max(0,Number.isFinite(Number(obj.safeMarginMm))?Number(obj.safeMarginMm):10))};
+  return {paper:['A3','A4','A5'].includes(obj.paper)?obj.paper:'A4',safeMarginMm:Math.min(30,Math.max(0,Number.isFinite(Number(obj.safeMarginMm))?Number(obj.safeMarginMm):10))};
  }
  function setPrintOptions(name,value){
   const before=state.printOptions?JSON.parse(JSON.stringify(state.printOptions)):null;
   const next=options();
-  if(name==='paper'){if(value!=='A4'&&value!=='A3')return;next.paper=value;}
+  if(name==='paper'){if(!['A3','A4','A5'].includes(value))return;next.paper=value;}
   if(name==='safeMarginMm'){value=Number(value);if(!Number.isFinite(value))return;next.safeMarginMm=Math.max(0,Math.min(30,value));}
   state.printOptions=next;
   if(!save()){state.printOptions=before;alert('تنظیمات چاپ ذخیره نشد؛ تنظیم قبلی حفظ شد.');return;}
@@ -5999,9 +5999,11 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
  const originalSize=V.pageSize;
  V.pageSize=function(style){
   const size=originalSize(style);
-  if(options().paper==='A3'){
+  // Explicit page formats override the global paper-size default.
+  if(!style?.paperSize&&options().paper!=='A4'){
    const landscape=style&&style.orientation==='landscape';
-   size.widthMm=landscape?420:297;size.heightMm=landscape?297:420;
+   const paper=options().paper,d=paper==='A3'?[297,420]:[148,210];
+   size.paper=paper;size.widthMm=landscape?d[1]:d[0];size.heightMm=landscape?d[0]:d[1];
   }
   return size;
  };
@@ -6132,7 +6134,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
   const config=options();
   const setup='<section class="panel no-print v82-preflight"><h3>پیش‌بررسی چاپ و PDF — TASK-008</h3>'+
    '<div class="toolbar"><label>اندازه کاغذ <select onchange="v82SetPrintOption(\'paper\',this.value)">'+
-   ['A4','A3'].map(x=>'<option value="'+x+'" '+(config.paper===x?'selected':'')+'>'+x+'</option>').join('')+'</select></label>'+
+   ['A4','A5','A3'].map(x=>'<option value="'+x+'" '+(config.paper===x?'selected':'')+'>'+x+'</option>').join('')+'</select></label>'+
    '<label>حاشیهٔ امن چاپ (میلی‌متر) <input type="number" min="0" max="30" step="1" value="'+config.safeMarginMm+'" onchange="v82SetPrintOption(\'safeMarginMm\',this.value)"></label>'+
    '<button type="button" class="btn primary" onclick="v82RunPreflight()">بررسی خطاهای چاپ</button></div>'+
    '<p class="muted">تصاویر گمشده، محدودهٔ عناصر، حاشیهٔ امن و هشدار کیفیت چاپ زیر ۲۰۰ DPI پس از Crop/Zoom بررسی می‌شوند. حاشیهٔ امن هشدار است و روی طرح اصلی یا برش چاپگر اثر مستقیم ندارد.</p>'+
