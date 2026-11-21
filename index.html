@@ -2470,7 +2470,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
 
 </script>
 <script>
-/* Version 13: one editor for master templates, section templates and pages. */
+/* Shared editor for independent pages and reusable templates. */
 (function () {
   'use strict';
   const V = window.V13 = window.V13 || {};
@@ -2482,7 +2482,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
   const catalogContext=c=>c?.portfolioId==='@template';
   const catalogChanged=()=>!!catalogDraft&&JSON.stringify(catalogDraft.page)!==catalogDraft.original;
   const key = c => c.type + ':' + (c.type==='page'?(c.portfolioId || state.activePortfolioId)+':':'') + c.id;
-  const label = type => ({master:'قالب مادر', section:'قالب بخش', page:'صفحه'}[type] || type);
+  const label = type => ({template:'قالب صفحه', component:'کامپوننت', page:'صفحه'}[type] || type);
   const selectedId = c => E.selected.get(key(c)) || null;
   const objectToken=o=>JSON.stringify([String(o.origin||''),String(o.ownerId||''),String(o.id||'')]);
   const ownToken=(c,o)=>objectToken({origin:c.type,ownerId:c.id,id:o.id});
@@ -4591,7 +4591,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     const saved=JSON.parse(localStorage.getItem(PREF_KEY)||'null');
     const legacy=saved?null:JSON.parse(localStorage.getItem(LEGACY_PREF_KEY)||'null');
     contexts.forEach(context=>{
-      const source=saved?.profiles?.[context]||(context==='template'?saved?.profiles?.master:null)||legacy,target=profiles[context];
+      const source=saved?.profiles?.[context]||legacy,target=profiles[context];
       if(!source||typeof source!=='object')return;
       ids.forEach(id=>{if(typeof source.pinned?.[id]==='boolean')target.pinned[id]=source.pinned[id];});
       if(typeof source.pinned?.settings==='boolean')target.pinned.properties=source.pinned.settings||source.pinned.properties===true;
@@ -6139,7 +6139,7 @@ function showBrowserStorageRecovery(error){
 <style id="v134-thumbnail-style">.v85-thumb-frame[data-v134-thumb-state="idle"]{background:linear-gradient(135deg,#f6f9fa,#e8eff2)}.v85-thumb-frame[data-v134-thumb-state="error"]{background:#fff0f0}</style>
 <script id="v137-page-first-model">
 /* V137 — independent pages, categorized global templates and linked custom
-   components. Old master/section rows remain internal compatibility records. */
+   components. Legacy master/section records are not part of the active page-first model. */
 (function(){
  'use strict';
  const V=window.V13,copy=v13Copy,html=esc;
