@@ -9751,11 +9751,20 @@ function componentFromSelection(list,name){
   if(!card||V.pageEditScope!=='project'||!state.pages?.some(p=>p.id===card.dataset.v85Page))return;
   e.preventDefault();e.stopPropagation();close();
   const pageId=card.dataset.v85Page,current=state.pages.find(p=>p.id===pageId);
+  const style=current.locked&&current.snapshot?.v13?(current.snapshot.style||{}):(current.pageStyleOverrides||{});
+  const orientation=style.orientation==='landscape'?'landscape':'portrait',paper=V.pageSize(style).paper;
+  const disabled=current.locked||current.contentLocked?'disabled':'';
   menu=document.createElement('div');menu.className='v223-page-context v235-page-context no-print';
   menu.setAttribute('role','menu');
   const canPaste=v235PageClipboard?.workspace===state.activeWorkspaceId;
   menu.innerHTML='<div class="v223-page-context-title">'+html(current?.title||'صفحه')+'</div>'+
    '<button type="button" role="menuitem" data-v235-page-action="template" data-v235-page-id="'+html(pageId)+'">انتخاب قالب از کتابخانه…</button>'+
+   '<div class="v244-page-menu-heading">جهت صفحه (Orientation)</div>'+
+   [['portrait','عمودی · Portrait'],['landscape','افقی · Landscape']].map(([v,label])=>
+    '<button type="button" class="v244-page-option" role="menuitemradio" aria-checked="'+(orientation===v)+'" data-v235-page-action="orientation" data-v244-value="'+v+'" data-v235-page-id="'+html(pageId)+'" '+disabled+'>'+(orientation===v?'✓ ':'')+label+'</button>').join('')+
+   '<div class="v244-page-menu-heading">اندازه کاغذ</div>'+
+   ['A4','A5','A3'].map(v=>'<button type="button" class="v244-page-option" role="menuitemradio" aria-checked="'+(paper===v)+'" data-v235-page-action="paper" data-v244-value="'+v+'" data-v235-page-id="'+html(pageId)+'" '+disabled+'>'+(paper===v?'✓ ':'')+v+'</button>').join('')+
+   '<div class="v244-page-menu-rule" role="separator"></div>'+
    '<button type="button" role="menuitem" data-v235-page-action="copy" data-v235-page-id="'+html(pageId)+'">کپی صفحه</button>'+
    '<button type="button" role="menuitem" data-v235-page-action="cut" data-v235-page-id="'+html(pageId)+'">برش صفحه</button>'+
    '<button type="button" role="menuitem" data-v235-page-action="paste" data-v235-page-id="'+html(pageId)+'" '+(canPaste?'':'disabled')+'>چسباندن صفحه بعد از این صفحه</button>'+
@@ -9769,6 +9778,20 @@ function componentFromSelection(list,name){
  document.addEventListener('pointerdown',e=>{
   if(menu&&!menu.contains(e.target))close();
  },true);
+ async function v244ApplyPageFormat(id,action,value){
+  const field=action==='paper'?'paperSize':action==='orientation'?'orientation':null;
+  if(!field||(field==='paperSize'&&!['A3','A4','A5'].includes(value))||
+     (field==='orientation'&&!['portrait','landscape'].includes(value)))return false;
+  const page=state.pages?.find(p=>p.id===id);
+  if(!page)return false;
+  if(page.locked||page.contentLocked){alert('ابتدا قفل این صفحه را باز کنید.');return false;}
+  if(V.pageEditScope!=='project'||V.saveBlocked||V.saveError||V.persistencePending){
+   alert('ابتدا وضعیت ذخیرهٔ فعلی را مشخص کنید.');return false;
+  }
+  if(page.pageStyleOverrides?.[field]===value)return true;
+  const next={...page,pageStyleOverrides:{...(page.pageStyleOverrides||{}),[field]:value}};
+  return v235StorePageStructure(()=>{state.pages=state.pages.map(p=>p.id===id?next:p);});
+ }
  document.addEventListener('click',async e=>{
   const btn=e.target.closest?.('[data-v235-page-action]');
   if(!btn){
@@ -9780,6 +9803,7 @@ function componentFromSelection(list,name){
   close();
   const source=state.pages?.find(p=>p.id===id);
   if(!source)return;
+  if(action==='orientation'||action==='paper'){await v244ApplyPageFormat(id,action,btn.dataset.v244Value);return;}
   if(action==='template'){V.templateChooser?.open(id);return;}
   if(action==='copy'||action==='cut'){
    if(action==='cut'&&(source.locked||source.contentLocked))return alert('ابتدا قفل صفحه را باز کنید.');
@@ -9822,6 +9846,9 @@ function componentFromSelection(list,name){
   padding:9px;text-align:right;cursor:pointer;color:#315844}
  .v223-page-context button:hover,.v223-page-context button:focus-visible{background:#e8f4ea}
  .v223-page-context .muted{padding:9px;font-size:11px}
+ .v223-page-context .v244-page-menu-heading{font-size:11px;font-weight:700;padding:8px 8px 4px;color:#476777}
+ .v223-page-context .v244-page-menu-rule{border-top:1px solid #dbe7e4;margin:5px 2px}
+ .v223-page-context .v244-page-option[aria-checked="true"]{background:#e5f4ee;color:#145d57;font-weight:700}
  @media print{.v223-page-context{display:none!important}}
  `;
  document.head.appendChild(sheet);
