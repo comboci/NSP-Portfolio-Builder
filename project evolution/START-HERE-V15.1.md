@@ -6,7 +6,7 @@
 
 - **نسخهٔ Project Evolution:** V15.1
 - **مبنای بازنشانی کد مرورگر:** Version 204 — `1b1f58420399276333aa42e0acd97ec1ef0232e8`
-- **نسخهٔ جاری مرورگر:** Version 230؛ پذیرش رانتایم در انتظار مالک
+- **نسخهٔ جاری مرورگر:** Version 231؛ پذیرش رانتایم در انتظار مالک
 - **Repository / Branch:** `comboci/NSP-Portfolio-Builder` / `main`
 - **معماری:** Project → Portfolios → Independent Pages (Page-First)
 - **ذخیره‌سازی مرورگر:** IndexedDB، پایگاه `nsp-portfolio-builder-independent-pages`، schema 2
@@ -21,7 +21,7 @@
 | نام | NSP Portfolio Builder |
 | زبان رابط کاربری | فارسی (`fa`) |
 | جهت رابط | راست‌به‌چپ (`RTL`) |
-| نسخهٔ فعال بررسی | Browser 230 |
+| نسخهٔ فعال بررسی | Browser 231 |
 | فناوری مرورگر | HTML / CSS / JavaScript، فایل `index.html` |
 | معماری مرورگر | Page-First؛ پروژه → پورتفولیوهای مستقل → صفحات مستقل |
 | پایگاه دادهٔ مرورگر | IndexedDB نسخهٔ ۲ (`nsp-portfolio-builder-independent-pages`) |
@@ -304,3 +304,11 @@ RR-024 در انتظار تست مالک در نسخهٔ ۲۱۹ است. طبق D
 - RR-074: دکمه‌های ذخیره و بازگشت و بازگشت در یک گروه سمت چپ سربرگ صفحه قرار گرفتند.
 
 Parse 29 اسکریپت JavaScript موفق بود. Runtime Firefox و تست ذخیره‌سازی نیازمند تأیید مالک است.
+
+
+## Runtime Review — Browser V231 (RR-075 تا RR-076) — ۲۱ نوامبر ۲۰۲۶
+
+- **RR-075:** کلیدهای Delete/Backspace، Ctrl+C، Ctrl+X و Ctrl+V روی آبجکت‌های انتخابی در طراحی صفحه فعال شدند. کلیدهای داخل textarea و سایر ورودی‌ها دست‌نخورده‌اند. Copy/Cut/Paste از حافظهٔ داخلی پروژه استفاده می‌کند و با Undo/Redo قبلی یکپارچه است. دکمه‌های نوار ابزار راهنمای میان‌بر دارند.
+- **RR-076:** حذف Region Block اکنون مجموعهٔ فرزندان را بازگشتی بر اساس `blockId` در فهرست اصلی `visualObjects` محاسبه می‌کند، به همین دلیل هر آبجکت متصل همراه Region حذف می‌شود و `objectOrder` پالایش می‌گردد. Region قفل‌شده نیازمند بازکردن قفل است و حذف والد تأیید می‌خواهد.
+
+**آزمون:** Parse 29 اسکریپت و تست واحد Cascade با دو فرزند و یک آبجکت مستقل موفق بود؛ Runtime واقعی Firefox، Copy/Paste، Undo/Redo و IndexedDB هنوز باز است.

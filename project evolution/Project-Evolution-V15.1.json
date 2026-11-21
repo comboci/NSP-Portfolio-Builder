@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 230",
+    "application_release": "Browser 231",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "V230: project listing title and per-project creator, default project/portfolio names and left-grouped editor save/back; V229 research preserved. Further shortcut and pagination fixes to follow."
+    "current_source_release_note": "V231: standard object shortcuts, internal project clipboard and recursive Region Block deletion, including object order cleanup. Source tests pass; live Firefox owner review pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -2317,6 +2317,66 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-075",
+      "title": "شورتکات‌های Delete و Ctrl+C/X/V برای آبجکت‌ها",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "ویرایشگر / Region Block",
+      "observed": "دکمه Delete و میانبرهای ویرایش آبجکت کار نمی‌کردند",
+      "expected": "کپی، برش، چسباندن و حذف با حفظ تایپ متن",
+      "reproduction_steps": [
+        "افزودن Region با متن و تصویر",
+        "حذف Region و بررسی عدم باقی ماندن اعضا",
+        "Undo/Redo و ذخیره/Refresh",
+        "Copy/Cut/Paste/Delete و کلیدهای میانبر"
+      ],
+      "severity": "high",
+      "source_commit": "cb7caff789a628efd71da9aad5209e0da7cdf63a",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 231",
+      "implementation": "اصلاح انتخاب، حذف و Clipboard داخلی پروژه؛ Syntax و تست واحد Cascade انجام شد. Firefox Runtime در انتظار کاربر.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "تست مرورگر",
+          "ذخیره",
+          "Undo/Redo"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-076",
+      "title": "حذف Region و همه فرزندان آن",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "ویرایشگر / Region Block",
+      "observed": "بعضی اعضا پس از حذف Region باقی می‌ماندند",
+      "expected": "حذف بازگشتی اعضا از Raw Objects و پاکسازی Object Order",
+      "reproduction_steps": [
+        "افزودن Region با متن و تصویر",
+        "حذف Region و بررسی عدم باقی ماندن اعضا",
+        "Undo/Redo و ذخیره/Refresh",
+        "Copy/Cut/Paste/Delete و کلیدهای میانبر"
+      ],
+      "severity": "high",
+      "source_commit": "cb7caff789a628efd71da9aad5209e0da7cdf63a",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 231",
+      "implementation": "اصلاح انتخاب، حذف و Clipboard داخلی پروژه؛ Syntax و تست واحد Cascade انجام شد. Firefox Runtime در انتظار کاربر.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "تست مرورگر",
+          "ذخیره",
+          "Undo/Redo"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -2379,7 +2439,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 230,
+      "release": 231,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
