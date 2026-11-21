@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 226",
+    "application_release": "Browser 227",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 226: RR-062 Region Block child drag-out: allow independent child translation beyond parent within page, detach/reparent on pointer release; preserve parent+children moves and resize bounds, support direct detach action and undo/save. Source-only testing; owner Firefox runtime pending."
+    "current_source_release_note": "Browser 227: component toolbox tiles, context delete, global portfolio page-number reference, text alignment RTL/LTR toolbar, streamlined editor top bar, exact page open, preview and wheel adjacent page. Source-validated, live Firefox and auto text pagination pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,9 +47,9 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "V226: 27 executable inline JavaScript blocks parsed; isolated tests for Region membership on drag-out/in, page bounds, parent move constraints, and direct parent removal passed; no live Firefox, IndexedDB or user runtime acceptance.",
+    "caveat": "V227: 28 inline executable scripts parse, structural checks passed; Firefox/IndexedDB and user acceptance pending. Auto text pagination not yet delivered.",
     "browser_javascript_syntax_checked": true,
-    "browser_javascript_scripts_parsed": 27,
+    "browser_javascript_scripts_parsed": 28,
     "browser_static_checker_executed": false
   },
   "active_tasks": [
@@ -1972,6 +1972,230 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-063",
+      "title": "نمایش کامپوننت‌های من به‌صورت ابزارهای درج",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح صفحات/پروژه‌ها",
+      "observed": "کامپوننت‌ها در منوی کشویی بودند.",
+      "expected": "کارت نام و آیکون روشن، Click/Drag و مدیریت تعریف.",
+      "reproduction_steps": [
+        "بازکردن پورتفولیو و انجام عملیات",
+        "بررسی نتیجه در نوار و صفحات",
+        "ذخیره و Refresh و کنترل مجدد"
+      ],
+      "severity": "medium",
+      "source_commit": "e85fd55816aca8fd05ff22092703a607c3523c6f",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 227",
+      "implementation": "تغییر index.html و Parse جاوااسکریپت؛ Runtime مالک هنوز باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "اجرای رفتار در Firefox",
+          "بررسی ذخیره‌سازی و بازکردن مجدد"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-064",
+      "title": "حذف آبجکت از راست کلیک",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح صفحات/پروژه‌ها",
+      "observed": "فقط تبدیل به کامپوننت در منوی راست کلیک بود.",
+      "expected": "منوی حذف آبجکت هم قابل دسترس باشد.",
+      "reproduction_steps": [
+        "بازکردن پورتفولیو و انجام عملیات",
+        "بررسی نتیجه در نوار و صفحات",
+        "ذخیره و Refresh و کنترل مجدد"
+      ],
+      "severity": "medium",
+      "source_commit": "e85fd55816aca8fd05ff22092703a607c3523c6f",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 227",
+      "implementation": "تغییر index.html و Parse جاوااسکریپت؛ Runtime مالک هنوز باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "اجرای رفتار در Firefox",
+          "بررسی ذخیره‌سازی و بازکردن مجدد"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-065",
+      "title": "شماره صفحات مشترک در کل پورتفولیو",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح صفحات/پروژه‌ها",
+      "observed": "PageNumber فقط آبجکت محلی بود.",
+      "expected": "شماره صفحه در تمام صفحات با یک منبع و عدد صحیح نشان داده شود.",
+      "reproduction_steps": [
+        "بازکردن پورتفولیو و انجام عملیات",
+        "بررسی نتیجه در نوار و صفحات",
+        "ذخیره و Refresh و کنترل مجدد"
+      ],
+      "severity": "medium",
+      "source_commit": "e85fd55816aca8fd05ff22092703a607c3523c6f",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 227",
+      "implementation": "تغییر index.html و Parse جاوااسکریپت؛ Runtime مالک هنوز باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "اجرای رفتار در Firefox",
+          "بررسی ذخیره‌سازی و بازکردن مجدد"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-066",
+      "title": "تراز و جهت متن در نوار بالا",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح صفحات/پروژه‌ها",
+      "observed": "Justify و RTL/LTR در نوار متن نبود.",
+      "expected": "Toolbar متن با Property واحد قابل‌ویرایش باشد.",
+      "reproduction_steps": [
+        "بازکردن پورتفولیو و انجام عملیات",
+        "بررسی نتیجه در نوار و صفحات",
+        "ذخیره و Refresh و کنترل مجدد"
+      ],
+      "severity": "medium",
+      "source_commit": "e85fd55816aca8fd05ff22092703a607c3523c6f",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 227",
+      "implementation": "تغییر index.html و Parse جاوااسکریپت؛ Runtime مالک هنوز باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "اجرای رفتار در Firefox",
+          "بررسی ذخیره‌سازی و بازکردن مجدد"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-067",
+      "title": "حذف کنترل‌های اضافی سربرگ ادیتور",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح صفحات/پروژه‌ها",
+      "observed": "کنترل‌های ذخیره، قفل و تایید طولانی بودند.",
+      "expected": "عنوان و فقط بازگشت و ذخیره‌وبازگشت باقی بمانند.",
+      "reproduction_steps": [
+        "بازکردن پورتفولیو و انجام عملیات",
+        "بررسی نتیجه در نوار و صفحات",
+        "ذخیره و Refresh و کنترل مجدد"
+      ],
+      "severity": "medium",
+      "source_commit": "e85fd55816aca8fd05ff22092703a607c3523c6f",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 227",
+      "implementation": "تغییر index.html و Parse جاوااسکریپت؛ Runtime مالک هنوز باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "اجرای رفتار در Firefox",
+          "بررسی ذخیره‌سازی و بازکردن مجدد"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-068",
+      "title": "بازشدن دقیق صفحه از درخت پروژه",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح صفحات/پروژه‌ها",
+      "observed": "اگر pageId پیدا نمی‌شد صفحه اول باز می‌شد.",
+      "expected": "همان صفحه انتخاب‌شده و ردیف Sidebar باز شود.",
+      "reproduction_steps": [
+        "بازکردن پورتفولیو و انجام عملیات",
+        "بررسی نتیجه در نوار و صفحات",
+        "ذخیره و Refresh و کنترل مجدد"
+      ],
+      "severity": "medium",
+      "source_commit": "e85fd55816aca8fd05ff22092703a607c3523c6f",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 227",
+      "implementation": "تغییر index.html و Parse جاوااسکریپت؛ Runtime مالک هنوز باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "اجرای رفتار در Firefox",
+          "بررسی ذخیره‌سازی و بازکردن مجدد"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-069",
+      "title": "پیش‌نمایش پیوسته صفحات و چاپ",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح صفحات/پروژه‌ها",
+      "observed": "پیش‌نمایش نیاز به بررسی اسکرول داخلی دارد.",
+      "expected": "صفحات یک‌جا و بدون نوار افقی داخلی نمایش داده شوند.",
+      "reproduction_steps": [
+        "بازکردن پورتفولیو و انجام عملیات",
+        "بررسی نتیجه در نوار و صفحات",
+        "ذخیره و Refresh و کنترل مجدد"
+      ],
+      "severity": "medium",
+      "source_commit": "e85fd55816aca8fd05ff22092703a607c3523c6f",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 227",
+      "implementation": "تغییر index.html و Parse جاوااسکریپت؛ Runtime مالک هنوز باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "اجرای رفتار در Firefox",
+          "بررسی ذخیره‌سازی و بازکردن مجدد"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-070",
+      "title": "جابجایی Wheel در مرز بین صفحات",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح صفحات/پروژه‌ها",
+      "observed": "Wheel در انتهای صفحه دیگر جابه‌جایی نداشت.",
+      "expected": "Wheel بعدی به صفحه بعد و Wheel قبلی به صفحه قبل برود.",
+      "reproduction_steps": [
+        "بازکردن پورتفولیو و انجام عملیات",
+        "بررسی نتیجه در نوار و صفحات",
+        "ذخیره و Refresh و کنترل مجدد"
+      ],
+      "severity": "medium",
+      "source_commit": "e85fd55816aca8fd05ff22092703a607c3523c6f",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 227",
+      "implementation": "تغییر index.html و Parse جاوااسکریپت؛ Runtime مالک هنوز باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "اجرای رفتار در Firefox",
+          "بررسی ذخیره‌سازی و بازکردن مجدد"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -2034,7 +2258,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 226,
+      "release": 227,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
