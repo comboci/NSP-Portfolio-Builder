@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 228",
+    "application_release": "Browser 230",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 228: RR-071 initial automatic text overflow pagination with measured DOM text chunks, independent generated continuation pages, full-text source, protective fingerprint and full-project durable save. Browser runtime pending."
+    "current_source_release_note": "V230: project listing title and per-project creator, default project/portfolio names and left-grouped editor save/back; V229 research preserved. Further shortcut and pagination fixes to follow."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -2230,6 +2230,93 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-072",
+      "title": "عنوان لیست پروژه‌ها و حذف Save Project از سربرگ",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "لیست پروژه‌ها / طراح صفحه",
+      "observed": "نسخه و ذخیره اضافی در فهرست پروژه دیده می‌شد",
+      "expected": "عنوان ثابت و بدون ذخیره دستی",
+      "reproduction_steps": [
+        "ساخت دو پروژه و بررسی نام پیش‌فرض",
+        "بررسی سازنده در ردیف پروژه",
+        "بررسی سربرگ ادیتور و دکمه‌ها",
+        "Refresh و کنترل بقا"
+      ],
+      "severity": "medium",
+      "source_commit": "bf90aac52ab55e7dc5de1ff34be27dfbf1ad30f1",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 230",
+      "implementation": "اصلاح index.html، Parse؛ آزمون Runtime مالک باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "Firefox Runtime",
+          "IndexedDB Refresh"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-073",
+      "title": "نام پیش‌فرض و مشخصات سازنده در هر پروژه",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "لیست پروژه‌ها / طراح صفحه",
+      "observed": "نام جدید بدون مقدار اولیه و کنترل سازنده سراسری بود",
+      "expected": "نام ترتیبی، سازنده و تاریخ در ردیف پروژه",
+      "reproduction_steps": [
+        "ساخت دو پروژه و بررسی نام پیش‌فرض",
+        "بررسی سازنده در ردیف پروژه",
+        "بررسی سربرگ ادیتور و دکمه‌ها",
+        "Refresh و کنترل بقا"
+      ],
+      "severity": "medium",
+      "source_commit": "bf90aac52ab55e7dc5de1ff34be27dfbf1ad30f1",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 230",
+      "implementation": "اصلاح index.html، Parse؛ آزمون Runtime مالک باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "Firefox Runtime",
+          "IndexedDB Refresh"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-074",
+      "title": "دو فرمان بازگشت و ذخیره و بازگشت در سمت چپ",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "لیست پروژه‌ها / طراح صفحه",
+      "observed": "دو دکمه کنار یکدیگر قرار نمی‌گرفتند",
+      "expected": "دو فرمان در یک گروه سمت چپ",
+      "reproduction_steps": [
+        "ساخت دو پروژه و بررسی نام پیش‌فرض",
+        "بررسی سازنده در ردیف پروژه",
+        "بررسی سربرگ ادیتور و دکمه‌ها",
+        "Refresh و کنترل بقا"
+      ],
+      "severity": "medium",
+      "source_commit": "bf90aac52ab55e7dc5de1ff34be27dfbf1ad30f1",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 230",
+      "implementation": "اصلاح index.html، Parse؛ آزمون Runtime مالک باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "Firefox Runtime",
+          "IndexedDB Refresh"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -2292,7 +2379,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 228,
+      "release": 230,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
