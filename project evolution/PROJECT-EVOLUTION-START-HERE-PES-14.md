@@ -52,3 +52,8 @@ Statement = source input; Question = open issue; Analysis = reasoning; Finding =
 ## V164 — historical decision conflict correction
 - ST-001/Q-003 archived Master live-inheritance intent is superseded; DEC-012 and ST-002 govern the current Browser Page-First design.
 - SOL-002/DEC-005 are scoped to deferred Native SQLite; Browser does not depend on legacy DEV-data migration. TASK-048 Browser manifests use categorized page templates and central Style IDs.
+
+## V164 — پیگیری ممیزی مسیرهای Legacy (۲۱ نوامبر ۲۰۲۶)
+- گزارش دقیق: `V164-TASK-075-REACHABILITY-REVIEW-FA.md`، با شناسه‌های `OBS-072` و `FND-054`.
+- مسیر معمول صفحه/قالب Page-First در سورس وجود دارد اما برخی توابع Master/Section باقی‌اند؛ پوشش قدیمی `render()` فیلد `legacyLayout=false` را پس از حذف آن در Normalizer دوباره درج می‌کند.
+- `TASK-075` همچنان باز است؛ تا جداسازی قراردادهای مشترک Editor/Layer و بررسی Runtime، حذف کلی Legacy یا ادعای اتمام مرحلهٔ ۱۸ ممنوع است.
