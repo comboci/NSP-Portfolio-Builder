@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 223",
+    "application_release": "Browser 224",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser V223: Grid-aligned dock panes from top, history refresh and toolbar Undo/Redo state; new projects may have zero portfolios and last portfolio may be removed; project/portfolio/page hierarchical explorer removes active/inactive and project image buttons, includes explicit import/export; page card right-click assigns templates and displays chosen template; editor removes save-as-template and top template picker, retains Save Page, Save and Back, Back; Page-editor print control removed. Static syntax and project-tree tests passed. Browser runtime owner acceptance pending."
+    "current_source_release_note": "Browser 224: restore VS-style tabbed Dock per side with one active pinned panel and shared full-height body (replaces V221/V223 vertical stacking); add Bring to Front/Send to Back Z-order actions with proper layer ordering and Region Block constraints; restore Save and Back to template designer while keeping Save/Back; keep File > Template Design navigation highlighted while editing templates; deduplicate visually identical shared/local image assets in unified library and picker, after album filtering. Visible version labels now dynamic. Syntax and isolated behavior tests performed, Firefox owner runtime pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,7 +47,7 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "V223: 25 executable JS blocks parsed, project-tree markup tested using empty and multi-portfolio fixtures. Real browser history, export, IndexedDB, page template selection and docking pending owner verification.",
+    "caveat": "V224: 26 executable inline JavaScript blocks parsed; isolated V8 tests for Bring to Front, Send to Back, Region Block child constraint, two-sided Dock tab state, media deduplication with folder membership, template nav active state passed. Live Firefox, IndexedDB, full UI integration and owner acceptance pending.",
     "browser_javascript_syntax_checked": true,
     "browser_javascript_scripts_parsed": 22,
     "browser_static_checker_executed": false
@@ -1124,7 +1124,7 @@
       "source_commit": "f688cb1f2f4b5d984cf14a977500b8eaa0ca85f4",
       "fix_commit": "same_commit_as_task_record",
       "fix_version": "Browser 221",
-      "implementation": "Source fix in index.html; no native or layer CRUD changes.",
+      "implementation": "Source fix in index.html; no native or layer CRUD changes. طراحی پله‌ای قبلی طبق بازخورد مالک در V224 با Dock تب‌دار جایگزین شد (RR-051).",
       "status": "source_fixed_pending_owner_runtime",
       "owner_verification": {
         "status": "pending",
@@ -1432,7 +1432,7 @@
       "source_commit": "3499a7caffbc538cd23256f3f7408ad3031232e1",
       "fix_version": "Browser 223",
       "fix_commit": "same_commit_as_task_record",
-      "implementation": "تغییر index.html در معماری مرورگر؛ JS Parse و تست ساختاری سورس انجام شد. Runtime در انتظار تأیید مالک.",
+      "implementation": "تغییر index.html در معماری مرورگر؛ JS Parse و تست ساختاری سورس انجام شد. Runtime در انتظار تأیید مالک. طراحی پله‌ای قبلی طبق بازخورد مالک در V224 با Dock تب‌دار جایگزین شد (RR-051).",
       "status": "source_fixed_pending_owner_runtime",
       "owner_verification": {
         "status": "pending",
@@ -1599,6 +1599,159 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-051",
+      "title": "بازگرداندن Dock به تب‌های Visual Studio به‌جای پنل‌های پله‌ای",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "Dock لایه‌ها/ویژگی‌ها/تاریخچه/جعبه‌ابزار",
+      "reproduction_steps": [
+        "دو پنل تاریخچه و ویژگی‌ها را سمت راست Pin کنید؛ عنوان‌ها کنار هم و محتوا فقط برای تب فعال باشد",
+        "میان تب‌ها جابه‌جا شوید و ارتفاع پنل ثابت بماند",
+        "Pin/Unpin و انتقال پنل‌ها بین چپ/راست را امتحان کنید",
+        "مرورگر را Refresh کنید و چیدمان را بررسی کنید"
+      ],
+      "observed": "در V222 چند پنل Pin‌شدهٔ لایه‌ها، تاریخچه، ویژگی‌ها و جعبه‌ابزار به‌صورت ردیف‌های عمودی با ارتفاع‌های کوچک و پله‌ای نمایش داده می‌شدند.",
+      "expected": "پنل‌های Pin‌شدهٔ هر سمت تب‌های مجاور دارند و یک ناحیهٔ محتوای کامل مشترک. فقط تب فعال نمایش داده شود، بقیه کنار آن قابل انتخاب باشند؛ Auto-hide/Pin/Drag حفظ شود.",
+      "severity": "high",
+      "source_commit": "710ed91d785794546fa04cacfc5b4c0dcca94ecc",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 224",
+      "implementation": "ویرایش سورس index.html؛ بررسی نحوی ۲۶ اسکریپت و آزمون‌های منطقی V8. پذیرش در Firefox توسط مالک باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "دو پنل تاریخچه و ویژگی‌ها را سمت راست Pin کنید؛ عنوان‌ها کنار هم و محتوا فقط برای تب فعال باشد",
+          "میان تب‌ها جابه‌جا شوید و ارتفاع پنل ثابت بماند",
+          "Pin/Unpin و انتقال پنل‌ها بین چپ/راست را امتحان کنید",
+          "مرورگر را Refresh کنید و چیدمان را بررسی کنید"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-052",
+      "title": "Z-Order واقعی: Bring to Front و Send to Back",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح، ترتیب عناصر و لایه‌ها",
+      "reproduction_steps": [
+        "چند عنصر هم‌پوشان در یک لایه بسازید و Bring to Front/Send to Back بزنید",
+        "دو لایه بسازید و ترتیب نهایی را بررسی کنید",
+        "برای Region Block و فرزندان آن ترتیب را آزمایش کنید",
+        "Undo/Redo، ذخیره و بازکردن مجدد را بررسی کنید"
+      ],
+      "observed": "فقط دکمه‌های یک پله جلو و یک پله عقب وجود داشت و انتقال مستقیم به جلوترین/عقب‌ترین موقعیت فراهم نبود.",
+      "expected": "در کنار کنترل‌های یک‌پله‌ای، Bring to Front و Send to Back با موتور ترتیب عناصر، لایه و Undo/Redo کار کنند. در جابه‌جایی کامل، گروه و فرزندان Block باهم حفظ شوند؛ فرزند منفرد Block لایه والد را ترک نکند.",
+      "severity": "high",
+      "source_commit": "710ed91d785794546fa04cacfc5b4c0dcca94ecc",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 224",
+      "implementation": "ویرایش سورس index.html؛ بررسی نحوی ۲۶ اسکریپت و آزمون‌های منطقی V8. پذیرش در Firefox توسط مالک باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "چند عنصر هم‌پوشان در یک لایه بسازید و Bring to Front/Send to Back بزنید",
+          "دو لایه بسازید و ترتیب نهایی را بررسی کنید",
+          "برای Region Block و فرزندان آن ترتیب را آزمایش کنید",
+          "Undo/Redo، ذخیره و بازکردن مجدد را بررسی کنید"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-053",
+      "title": "بازگرداندن دکمه ذخیره و بازگشت در طراحی قالب",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح قالب و ناوبری",
+      "reproduction_steps": [
+        "قالب را تغییر دهید و ذخیره بزنید؛ در طراح بمانید",
+        "قالب را تغییر دهید و ذخیره و بازگشت بزنید؛ به کتابخانه قالب‌ها بروید",
+        "بدون ذخیره، بازگشت بزنید و هشدار تغییرات ذخیره‌نشده را بررسی کنید"
+      ],
+      "observed": "در نسخه ۲۲۲ سربرگ طراح قالب فقط ذخیره و بازگشت جدا داشت؛ ذخیره و بازگشت مشترک حذف شده بود.",
+      "expected": "سه گزینهٔ مستقل ذخیره و بازگشت، ذخیره بدون خروج، و بازگشت با هشدار تغییرات ذخیره‌نشده در طراح قالب وجود داشته باشد.",
+      "severity": "high",
+      "source_commit": "710ed91d785794546fa04cacfc5b4c0dcca94ecc",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 224",
+      "implementation": "ویرایش سورس index.html؛ بررسی نحوی ۲۶ اسکریپت و آزمون‌های منطقی V8. پذیرش در Firefox توسط مالک باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "قالب را تغییر دهید و ذخیره بزنید؛ در طراح بمانید",
+          "قالب را تغییر دهید و ذخیره و بازگشت بزنید؛ به کتابخانه قالب‌ها بروید",
+          "بدون ذخیره، بازگشت بزنید و هشدار تغییرات ذخیره‌نشده را بررسی کنید"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-054",
+      "title": "حفظ هایلایت طراحی قالب‌ها هنگام ویرایش داخلی قالب",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح قالب و ناوبری",
+      "reproduction_steps": [
+        "از پروژه‌ها به طراحی قالب‌ها بروید و قالبی را باز کنید",
+        "هایلایت طراحی قالب‌ها و باز بودن فایل را بررسی کنید",
+        "با بازگشت و ورود به پروژه‌ها، هایلایت متناسب با مسیر جدید تغییر کند"
+      ],
+      "observed": "با ورود به ویرایشگر قالب، چون تب داخلی visual بود، ناوبری فایل > طراحی قالب‌ها هایلایت فعال را از دست می‌داد.",
+      "expected": "تا پایان ویرایش قالب، طراحی قالب‌ها در منوی فایل باز و فعال بماند و aria-current به آن اشاره کند؛ برای پروژه‌ها و صفحات ناوبری مستقل حفظ شود.",
+      "severity": "medium",
+      "source_commit": "710ed91d785794546fa04cacfc5b4c0dcca94ecc",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 224",
+      "implementation": "ویرایش سورس index.html؛ بررسی نحوی ۲۶ اسکریپت و آزمون‌های منطقی V8. پذیرش در Firefox توسط مالک باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "از پروژه‌ها به طراحی قالب‌ها بروید و قالبی را باز کنید",
+          "هایلایت طراحی قالب‌ها و باز بودن فایل را بررسی کنید",
+          "با بازگشت و ورود به پروژه‌ها، هایلایت متناسب با مسیر جدید تغییر کند"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-055",
+      "title": "حذف تکرار بندانگشتی تصاویر مشابه در همه تصاویر",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "کتابخانه تصاویر و Picker",
+      "reproduction_steps": [
+        "یک عکس را در مخزن خصوصی و مشترک قرار دهید",
+        "همه تصاویر فقط یک Thumbnail از عکس یکسان نشان دهد",
+        "آلبوم مرتبط همان تصویر را نشان دهد",
+        "تصویر دیگر و جستجو را بررسی کنید",
+        "انتخاب تصویر از طراحی قالب را آزمایش کنید"
+      ],
+      "observed": "در همه تصاویر دو کارت یک عکس واحد از نسخه‌های مشترک و خصوصی دیده می‌شد، در حالی که داخل آلبوم KL یک مورد بود.",
+      "expected": "نمای همهٔ تصاویر و Picker، تصاویر یکسان از لحاظ hash یا src را فقط یک‌بار نشان دهند؛ فیلتر عضویت آلبوم قبل از dedup انجام شود تا تصویر آلبوم از بین نرود. رکوردهای داده بدون حذف خودکار می‌مانند.",
+      "severity": "medium",
+      "source_commit": "710ed91d785794546fa04cacfc5b4c0dcca94ecc",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 224",
+      "implementation": "ویرایش سورس index.html؛ بررسی نحوی ۲۶ اسکریپت و آزمون‌های منطقی V8. پذیرش در Firefox توسط مالک باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "یک عکس را در مخزن خصوصی و مشترک قرار دهید",
+          "همه تصاویر فقط یک Thumbnail از عکس یکسان نشان دهد",
+          "آلبوم مرتبط همان تصویر را نشان دهد",
+          "تصویر دیگر و جستجو را بررسی کنید",
+          "انتخاب تصویر از طراحی قالب را آزمایش کنید"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -1661,7 +1814,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 223,
+      "release": 224,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
