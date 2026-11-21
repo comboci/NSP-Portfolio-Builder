@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 213",
+    "application_release": "Browser 214",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 213: applies owner-selected classic folder-tree visual style to template library with NSP green accents, yellow SVG folders, file icons, visible dotted connectors and matching green three-dot/right-click popups. No controls or data model changed."
+    "current_source_release_note": "Browser 214: restores direct Edit/Delete actions for template leaves through a three-dot menu on every tree template, fixes context-menu template ID resolution and delays portaled menu DOM cleanup until after action dispatch; design and data model unchanged."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -711,6 +711,39 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-023",
+      "title": "رفع عدم دسترسی به ویرایش و حذف قالب در کتابخانه",
+      "type": "runtime_bugfix",
+      "screen_or_flow": "کتابخانه قالب‌ها → قالب‌های داخل درخت، کارت گالری، منوی سه‌نقطه و کلیک راست",
+      "reproduction_steps": [
+        "داخل یک زیرگروه قالبی ایجاد و سپس از همان درخت روی نام قالب کلیک کنید؛ صفحهٔ طراحی باید باز شود",
+        "سه‌نقطهٔ کنار همان قالب را باز و ویرایش در طراح را اجرا کنید",
+        "همان منو را باز کنید و حذف قالب را بزنید؛ پس از تأیید قالب باید از درخت و گالری حذف شود",
+        "روی قالب داخل درخت و کارت داخل گالری کلیک راست و ویرایش و حذف را بررسی کنید",
+        "همچنین دکمهٔ طراحی/ویرایش کارت قالب را بررسی کنید",
+        "پس از Refresh حذف و ویرایش‌شدن قالب را بررسی کنید",
+        "عملیات گروه‌ها و Drag & Drop نباید تغییری کند"
+      ],
+      "observed": "درخت قالب‌ها منوی عملیات مختص قالب نداشت و تنها با کلیک روی برگ می‌توانست آن را باز کند؛ مالک گزارش داد ویرایش یا حذف قالب در Runtime فعلی قابل انجام نیست.",
+      "expected": "ویرایش و حذف قالب از درخت، کارت گالری و کلیک راست در دسترس باشند و کلیک روی منوی شناور پیش از اجرای فرمان باعث حذف زودهنگام منو نشود.",
+      "severity": "high",
+      "source_commit": "1a8987f9aed0e701a1194e9d6a445da50faed169",
+      "fix_version": "Browser 214",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "افزودن منوی ⋮ مستقل به هر برگ قالب و استفاده از همان dispatcher v137 و IndexedDB موجود؛ تصحیح شناسهٔ قالب در menu مربوط به Right-click؛ به تعویق‌انداختن جابه‌جایی/حذف منوی portaled تا پس از dispatch دستور ویرایش/حذف. بدون تغییر شکل داده یا جریان ذخیره.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "ویرایش قالب از منوی ⋮ برگ درخت و کارت",
+          "حذف قالب با تأیید و بررسی ماندگاری پس از Refresh",
+          "کلیک راست و بررسی دسترسی به عملیات"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -766,7 +799,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 213,
+      "release": 214,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
