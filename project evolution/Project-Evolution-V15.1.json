@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 216",
+    "application_release": "Browser 217",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 216: F5 route persisted in address hash, prioritized over storage; same-scope restriction removed for navigation tabs, while retained for opening project editor objects. Browser 215 failed owner runtime, new fix pending acceptance."
+    "current_source_release_note": "Browser 217: fixes a JavaScript quote syntax error in the shared editor script at v83GuideToolbar, which prevented the entire editor module including page visual() and V.editor from initializing and consequently broke downstream refresh-route bootstrap. No data model changes; runtime acceptance pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -777,7 +777,7 @@
           "F5 در تنظیمات و پروژه‌ها",
           "عدم تداخل میان دو تب مرورگر"
         ],
-        "note": "User confirmed version 215 still opens dashboard on Refresh. RR-025 addresses with URL hash."
+        "note": "Root cause found in browser 216: malformed quote in shared editor v83GuideToolbar prevents V.editor and visual() initialization; later view-restoration script depending on V.editor did not run. Corrected in RR-026 / Browser 217; needs owner runtime retest."
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
@@ -804,12 +804,47 @@
       "implementation": "ذخیره route فشرده tab/filter/pageId/templateId در hash آدرس با history.replaceState و fallback مستقیم؛ خواندن hash مقدم بر sessionStorage؛ اعتبارسنجی شناسهٔ پروژه صرفاً برای بازکردن ویرایشگر، نه ناوبری عمومی.",
       "status": "source_fixed_pending_owner_runtime",
       "owner_verification": {
-        "status": "pending",
+        "status": "needs_retest",
         "steps": [
           "F5 داخل کتابخانه و گروه فعال",
           "F5 در طراح قالب",
           "F5 در تنظیمات/پروژه‌ها",
           "تغییر hash در نوار آدرس"
+        ],
+        "note": "Root cause found in browser 216: malformed quote in shared editor v83GuideToolbar prevents V.editor and visual() initialization; later view-restoration script depending on V.editor did not run. Corrected in RR-026 / Browser 217; needs owner runtime retest."
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-026",
+      "title": "اصلاح خطای نحوی مانع راه‌اندازی طراح و حفظ صفحه پس از Refresh",
+      "type": "runtime_blocker_bugfix",
+      "screen_or_flow": "بوت‌استرپ برنامه → Shared Editor → طراح صفحات و کتابخانه قالب‌ها → F5",
+      "reproduction_steps": [
+        "نسخه ۲۱۷ را در مرورگر از فایل محلی بارگذاری کنید و مطمئن شوید Version 217 است",
+        "صفحه «طراحی صفحات» را باز کنید؛ نباید پیام قدیمی «طراح صفحه در حال آماده‌سازی است» نمایش داده شود",
+        "کتابخانه قالب‌ها را باز کنید و یک گروه انتخاب کنید؛ در انتهای URL باید #nsp-pb-view= درج شود",
+        "F5 بزنید و بازگشت به همان کتابخانه و گروه انتخاب‌شده را بررسی کنید",
+        "یک قالب ذخیره‌شده را از کتابخانه باز کنید و بررسی کنید طراح مشترک درست بالا می‌آید",
+        "F5 داخل طراح قالب ذخیره‌شده و بخش پروژه‌ها را هم آزمایش کنید",
+        "عملیات نمایش/پنهان‌سازی راهنماها و نبود خطا در کنسول را بررسی کنید"
+      ],
+      "observed": "در تصویر Browser 216 صفحهٔ «طراحی صفحات» فعال بود اما پیام fallback قدیمی نمایش داده شد و URL فاقد hash مسیر بود. سورس یک کوتیشن اضافه در v83GuideToolbar داشت که مانع پارس کامل اسکریپت Shared editor می‌شد؛ مسیر v215/V216 نیز به V.editor وابسته بود.",
+      "expected": "اسکریپت مشترک طراح بدون SyntaxError راه‌اندازی شود، طراح واقعی به جای placeholder نمایش داده شود و سازوکار نگهداری مسیر F5 از نسخه ۲۱۶ بتواند فعال شود.",
+      "severity": "critical",
+      "source_commit": "0dc8900dd08af6c8f6265690c7d3b4a0a3fc3321",
+      "fix_version": "Browser 217",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "اصلاح دقیق کوتیشن اضافه در ساخت رشتهٔ دکمهٔ data-v83-toggle aria-pressed (تبدیل +\\'\" \\'\\'title به +\\'\" title). بدون تغییر مسیر اجرا، دیتابیس، رفتار یا جابه‌جایی/حذف قالب. خطای یک رشته، کل اسکریپت Shared Editor ۱۴۳KB را از اجرا بازمی‌داشت و init وابستهٔ V.editor را مختل می‌کرد.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بررسی نبود placeholder هنگام بازکردن طراحی صفحات",
+          "بررسی نمایش hash بعد از بازکردن کتابخانه",
+          "F5 داخل کتابخانه و بازگشت به همان گروه",
+          "بازشدن طراح قالب و استفاده از نمایش/پنهان‌سازی راهنماها"
         ]
       },
       "created_at": "2026-11-21",
@@ -869,7 +904,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 216,
+      "release": 217,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
