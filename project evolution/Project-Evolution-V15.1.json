@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 225",
+    "application_release": "Browser 226",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 225: permit deletion of empty projects including last, persist empty project registry, guard portfolios; close portfolio menus on outside click/Escape; display page metadata grid and distinct project/portfolio/page icons; dedicated multi-page portfolio preview and cancel-back. Source parse only; live Firefox, IndexedDB and print pending."
+    "current_source_release_note": "Browser 226: RR-062 Region Block child drag-out: allow independent child translation beyond parent within page, detach/reparent on pointer release; preserve parent+children moves and resize bounds, support direct detach action and undo/save. Source-only testing; owner Firefox runtime pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,7 +47,7 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "V225: all 27 executable scripts parsed, static code checks for empty-project deletion, metadata, and multi-page preview performed; no live Firefox/IndexedDB/print verification or owner acceptance.",
+    "caveat": "V226: 27 executable inline JavaScript blocks parsed; isolated tests for Region membership on drag-out/in, page bounds, parent move constraints, and direct parent removal passed; no live Firefox, IndexedDB or user runtime acceptance.",
     "browser_javascript_syntax_checked": true,
     "browser_javascript_scripts_parsed": 27,
     "browser_static_checker_executed": false
@@ -1934,6 +1934,44 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-062",
+      "title": "آزاد شدن آبجکت از Region Block با Drag و فرمان مستقیم",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح صفحه / Region Block / Drag & Drop / Properties",
+      "observed": "آبجکتی که درون Region Block ایجاد شده به لبه‌های والد گیر می‌کند و با Drag به بیرون جدا نمی‌شود.",
+      "expected": "عضو Region با Drag مستقل بتواند از مرز Region قبلی عبور کند، ولی از صفحه خارج نشود؛ Drop بیرون عضویت را حذف کند، Drop داخل Region دیگر والد را تغییر دهد؛ Drag والد+فرزند رابطه را نگه دارد؛ Undo/Redo و ذخیره درست باشند.",
+      "reproduction_steps": [
+        "یک Region Block بسازید و یک متن از داخل آن اضافه کنید.",
+        "تنها متن را انتخاب کنید، از لبه Region بیرون بکشید و در صفحه رها کنید؛ متن باید آزاد بماند.",
+        "در فهرست لایه‌ها جدا شدن متن از زیر Region را بررسی کنید.",
+        "Undo و Redo انجام دهید و عضویت و موقعیت را بررسی کنید.",
+        "متن آزاد را داخل Region دیگر قرار دهید و وابستگی جدید را بررسی کنید.",
+        "Region و فرزندان را با هم حرکت دهید؛ اعضا باید داخل والد باقی بمانند.",
+        "متن داخل Region را Resize کنید؛ محدودیت قبلی Resize حفظ شود.",
+        "از پنل ویژگی‌ها «خروج از Region Block» را بزنید.",
+        "صفحه را ذخیره، Refresh و دوباره باز کنید و وابستگی را چک کنید.",
+        "Region را قفل کنید؛ فرزند نباید قابل حرکت باشد."
+      ],
+      "severity": "high",
+      "source_commit": "d570d35a67a38f143b96b629ae4ee061d60e436a",
+      "fix_version": "Browser 226",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "اصلاح اعتبارسنجی Drag و تغییر والد در Drop با حفظ مرز صفحه و Undo/Save؛ افزودن فرمان مستقیم در ویژگی‌ها. بررسی نحوی و تست منطقی؛ پذیرش Firefox مالک باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "خروج با Drag",
+          "Undo/Redo رابطهٔ Region",
+          "انتقال به Region دوم",
+          "حفظ قفل/Resize",
+          "ذخیره و Refresh"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -1996,7 +2034,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 225,
+      "release": 226,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
