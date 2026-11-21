@@ -1,4 +1,4 @@
-<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 244</title><meta name="application-version" content="244"><style>
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 245</title><meta name="application-version" content="245"><style>
 :root{font-family:Tahoma,'Segoe UI',sans-serif;color:#152638;background:#edf1f4}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}header{background:#122c3c;color:#fff;padding:17px 24px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}header small{color:#a7d7dd}.shell{display:grid;grid-template-columns:235px 1fr;min-height:calc(100vh - 75px)}nav{background:#fff;border-left:1px solid #d9e1e5;padding:18px 12px}nav button{display:block;width:100%;border:0;text-align:right;background:transparent;padding:13px;border-radius:9px;margin:3px 0;color:#324453}nav button.active{background:#e4f3f3;color:#06656c;font-weight:bold}main{padding:22px;max-width:1450px;width:100%;margin:auto}.panel{background:white;border:1px solid #dbe3e7;border-radius:14px;padding:20px;margin-bottom:18px;box-shadow:0 2px 8px #17304408}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.stat{background:#f4f8fa;padding:15px;border-radius:10px}.stat b{font-size:27px;display:block}.muted{color:#647683;font-size:13px}.btn{border:1px solid #b7cbd1;border-radius:8px;background:white;padding:9px 13px;color:#174450}.primary{background:#087b80;color:white;border-color:#087b80}.danger{color:#a33}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:12px 0}.item{padding:12px;border:1px solid #e1e8eb;border-radius:9px;margin:8px 0;background:#fbfdfd}.item.selected{border-color:#09858a;background:#f1fbfa}input,select,textarea{border:1px solid #c6d5da;border-radius:7px;padding:9px;background:#fff;max-width:100%}input[type=checkbox]{accent-color:#087b80}textarea{width:100%;min-height:100px}label{display:block;font-size:13px;margin:10px 0 5px}.columns{display:grid;grid-template-columns:minmax(240px,350px) minmax(0,1fr);gap:18px}.paper{background:#fff;width:min(100%,595px);min-height:842px;margin:15px auto;padding:55px 48px;box-shadow:0 8px 30px #17304425;position:relative;overflow:hidden;direction:rtl}.paper:before{content:'NSP';position:absolute;left:45px;top:40px;color:#087b80;font-weight:900;font-size:19px}.paper h1{margin-top:65px;font-size:26px}.paper footer{position:absolute;bottom:30px;right:48px;left:48px;border-top:1px solid #ccc;padding-top:9px;font-size:11px;color:#667}.paper .hero{height:185px;background:linear-gradient(130deg,#d8eeec,#f0f4f6);display:flex;align-items:center;justify-content:center;color:#568e90;margin:20px 0}.paper img{max-width:100%;max-height:260px;object-fit:contain}.paper table{width:100%;border-collapse:collapse}.paper td,.paper th{border:1px solid #ccd6da;padding:8px}.tag{display:inline-block;border-radius:12px;padding:3px 8px;background:#e7f3f3;font-size:11px;margin:2px}.note{border-right:3px solid #087b80;padding:10px;background:#f1f7f7}.hide{display:none!important}@media(max-width:850px){.shell{grid-template-columns:1fr}nav{display:flex;overflow-x:auto;padding:8px}nav button{white-space:nowrap;width:auto}.columns{grid-template-columns:1fr}main{padding:12px}.paper{min-height:700px;padding:38px 25px}}@media print{header,nav,.no-print,.editor,.panel:not(.print-zone){display:none!important}.shell{display:block}main{padding:0;max-width:none}.print-zone{border:0;box-shadow:none;padding:0;margin:0}.paper{box-shadow:none;margin:0;min-height:297mm;width:210mm;page-break-after:always;padding:25mm 20mm}.paper:last-child{page-break-after:auto}@page{size:A4;margin:0}}
 @media(max-width:850px){header{padding:12px;gap:8px}header .toolbar{flex-wrap:wrap}nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible!important;gap:8px;padding:10px}nav .nav-group{min-width:0!important;margin:0!important}nav button.nav-subitem{white-space:normal!important;text-align:right;width:100%!important;padding:10px!important}main{min-width:0;overflow-wrap:anywhere}.panel{max-width:100%;overflow-x:auto}button,select,input{max-width:100%}#v9-design-form[hidden]{display:none!important}}
 </style><style>
@@ -789,6 +789,72 @@ function workDownloadAllSources(includeResearch){
  .map((x,i)=>({...x,ordinal:i+1,direct:/\.pdf(?:[?#]|$)|\/Download\.aspx\?/i.test(x.url)}));
 }
 function workResourceDownloadList(){return workDownloadAllSources(false);}
+
+/* V245: explicit filesystem selection, local links only for verified PDF files. */
+let workLocalDirectory=null;
+let workLocalFileHandles=new Map();
+function workResourceFilename(x){
+ return String(x.ordinal).padStart(2,'0')+'_'+String(x.company).replace(/[^a-zA-Z0-9_-]/g,'_')+'_'+String(x.title).replace(/[\\/:*?"<>|]/g,'_').slice(0,70)+'.pdf';
+}
+async function workIsValidLocalPdf(handle){
+ const file=await handle.getFile();
+ if(file.size<5)return false;
+ const header=new Uint8Array(await file.slice(0,5).arrayBuffer());
+ return String.fromCharCode(...header)==='%PDF-';
+}
+async function workScanLocalResources(folder){
+ const found=new Map(),candidateNames=new Map();
+ for(const src of [...workDownloadAllSources(false),...workDownloadAllSources(true)]){
+  if(!src.direct)continue;
+  if(!candidateNames.has(src.url))candidateNames.set(src.url,new Set());
+  candidateNames.get(src.url).add(workResourceFilename(src));
+ }
+ for(const [url,names] of candidateNames){
+  for(const name of names){
+   try{
+    const handle=await folder.getFileHandle(name,{create:false});
+    if(await workIsValidLocalPdf(handle)){found.set(url,handle);break;}
+   }catch(_e){/* file missing, invalid or permission lost */ }
+  }
+ }
+ workLocalFileHandles=found;workLocalDirectory=folder;
+ return found.size;
+}
+async function workConnectLocalFolder(){
+ if(typeof window.showDirectoryPicker!=='function'){
+  alert('این مرورگر انتخاب پوشه را پشتیبانی نمی‌کند؛ لینک آنلاین منابع همچنان فعال است.');return;
+ }
+ try{
+  const selected=await window.showDirectoryPicker({mode:'read'});
+  let directory=selected;
+  try{directory=await selected.getDirectoryHandle('NSP_Research_Resources',{create:false});}
+  catch(err){if(err?.name!=='NotFoundError')throw err;}
+  const count=await workScanLocalResources(directory);
+  if(tab==='library')render();
+  alert(count+' فایل PDF معتبر به منابع رسمی مرتبط شد؛ فایل‌های نامشخص یا نامعتبر نمایش داده نمی‌شوند.');
+ }catch(e){
+  if(e?.name!=='AbortError')alert('شناسایی پوشه ناموفق بود: '+String(e?.message||e));
+ }
+}
+document.addEventListener('click',async e=>{
+ const btn=e.target.closest('[data-work-local-download]');
+ if(!btn)return;
+ e.preventDefault();e.stopPropagation();
+ const url=btn.dataset.workLocalDownload,handle=workLocalFileHandles.get(url);
+ if(!handle){alert('فایل محلی پیدا نشد؛ پوشه منابع را دوباره انتخاب کنید.');return;}
+ try{
+  if(!await workIsValidLocalPdf(handle))throw Error('این فایل PDF معتبر نیست.');
+  const file=await handle.getFile(),blobUrl=URL.createObjectURL(file);
+  const a=document.createElement('a');a.href=blobUrl;a.download=file.name||'catalog.pdf';
+  document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(blobUrl),2000);
+ }catch(error){
+  workLocalFileHandles.delete(url);
+  if(tab==='library')render();
+  alert('دانلود داخلی ناموفق بود: '+String(error?.message||error));
+ }
+});
+
 function workDownloadOpen(){
  if(workBatchDialog?.isConnected){workBatchDialog.showModal?.();return;}
  let list=workResourceDownloadList();
@@ -848,12 +914,12 @@ function workDownloadOpen(){
   for(let i=0;i<list.length;i++){
    const x=list[i];if(!x.direct){skipped++;continue;}
    if(workBatchAbort.signal.aborted)break;
-   const filename=String(x.ordinal).padStart(2,'0')+'_'+x.company.replace(/[^a-zA-Z0-9_-]/g,'_')+'_'+x.title.replace(/[\\/:*?"<>|]/g,'_').slice(0,70)+'.pdf';
+   const filename=workResourceFilename(x);
    setStatus(i,'اتصال به ناشر...',null);
    let writer=null,createdNew=false;
    try{
     // Never overwrite an earlier download.
-    try{await directory.getFileHandle(filename,{create:false});setStatus(i,'از قبل در پوشه موجود است (بازنویسی نشد)',100);already++;continue;}catch(e){if(e?.name!=='NotFoundError')throw e;}
+    try{const prior=await directory.getFileHandle(filename,{create:false});if(!await workIsValidLocalPdf(prior))throw Error('PDF موجود نامعتبر است؛ بازنویسی نشد.');workLocalFileHandles.set(x.url,prior);setStatus(i,'از قبل در پوشه موجود است (بازنویسی نشد)',100);already++;continue;}catch(e){if(e?.name!=='NotFoundError')throw e;}
     const response=await fetch(x.url,{mode:'cors',credentials:'omit',redirect:'follow',signal:workBatchAbort.signal});
     if(!response.ok)throw Error('HTTP '+response.status);
     if(!response.body)throw Error('مرورگر جریان داده را ارائه نمی‌کند');
@@ -883,7 +949,7 @@ function workDownloadOpen(){
      bytes+=chunk.value.length;if(bytes>maxBytes)throw Error('حجم فایل از ۵۰ مگابایت گذشت');await writer.write(chunk.value);
      setStatus(i,(bytes/1048576).toFixed(2)+' MB',total?bytes/total*100:null);
     }
-    await writer.close();writer=null;completed++;setStatus(i,'ذخیره شد · '+(bytes/1048576).toFixed(2)+' MB',100);
+    await writer.close();writer=null;workLocalFileHandles.set(x.url,handle);completed++;setStatus(i,'ذخیره شد · '+(bytes/1048576).toFixed(2)+' MB',100);
    }catch(e){
     if(writer){try{await writer.abort();}catch(_ignored){}}
     if(createdNew){try{await directory.removeEntry(filename);}catch(_ignored){}}
@@ -892,8 +958,9 @@ function workDownloadOpen(){
    }
    summary.textContent='تازه ذخیره شده: '+completed+' | از قبل موجود: '+already+' | ناموفق: '+failed+' | دانلود دستی: '+skipped;
   }
-  workBatchBusy=false;start.disabled=false;stop.disabled=true;scope.disabled=false;workBatchAbort=null;
+  workLocalDirectory=directory;workBatchBusy=false;start.disabled=false;stop.disabled=true;scope.disabled=false;workBatchAbort=null;
   summary.textContent='تازه ذخیره‌شده: '+completed+' | از قبل موجود: '+already+' | ناموفق: '+failed+' | دریافت دستی: '+skipped+(list.length-completed-already-failed-skipped?' | ناتمام: '+(list.length-completed-already-failed-skipped):'');
+  if(tab==='library')render();
  });
  dialog.querySelector('[data-work-download-close]').addEventListener('click',()=>{
   if(workBatchBusy){summary.textContent='برای بستن، ابتدا «توقف» را انتخاب کنید.';return;}
@@ -911,8 +978,9 @@ function library(){
   const companyCards=firms.map(f=>{
     const researchItems=workResearchCatalogAll.filter(x=>x.company_id===f.id);
     const sources=[...f.docs].map(([id,url])=>`<li>${resourceLink(url,id+" · "+(/\.pdf(?:[?#]|$)/i.test(url)?"PDF":"صفحه رسمی"))}</li>`).join("");
-    const catalogExtra=researchItems.map(x=>`<li><strong>${esc(x.title)}</strong> <small>${esc(x.kind)} · ${esc(x.date)}</small> — ${resourceLink(x.url,/\.pdf(?:[?#]|$)/i.test(x.url)?"بازکردن PDF رسمی":"صفحه دانلود ناشر")}${x.sourcePage?" · "+resourceLink(x.sourcePage,"صفحه مرجع"):""}</li>`).join("");
-    return `<details class="work-firm" data-work-firm="${esc((f.name+" "+f.sections.map(s=>s.title).join(" ")).toLocaleLowerCase())}"><summary><b dir="ltr">${esc(f.name)}</b><span>${f.sections.length} سکشن · ${f.docs.size} منبع ثبت‌شده ${researchItems.length?"· "+researchItems.length+" منبع تکمیلی":""}</span></summary><div class="work-firm-inner"><p><strong>سکشن‌های مرتبط:</strong> ${f.sections.map(s=>esc(s.title)).join(" · ")}</p><div class="work-two-cols"><div><h4>منابع اصلی از تحقیق Work</h4><ul class="work-links">${sources}</ul></div><div><h4>کاتالوگ‌ها و منابع تکمیلی</h4>${catalogExtra?`<ul class="work-links">${catalogExtra}</ul>`:"<p class='muted'>منبع تکمیلی هنوز بررسی نشده؛ لینک‌های تحقیق اصلی در ستون کناری هستند.</p>"}</div></div></div></details>`;
+    const catalogExtra=researchItems.map(x=>'<tr><td><strong>'+esc(x.title)+'</strong></td><td>'+esc(x.date)+'</td><td>'+esc(x.kind)+'</td><td>'+resourceLink(x.url,'دریافت آنلاین')+(x.sourcePage&&x.sourcePage!==x.url?' · '+resourceLink(x.sourcePage,'صفحه ناشر'):'')+'</td><td>'+(workLocalFileHandles.has(x.url)?'<button type="button" class="btn" data-work-local-download="'+esc(x.url)+'">دریافت داخلی</button>':'<span class="muted">موجود نیست</span>')+'</td></tr>').join('');
+    const catalogTable=catalogExtra?'<div class="work-catalog-scroll"><table class="work-catalog-grid"><thead><tr><th>نام کاتالوگ</th><th>سال</th><th>نوع</th><th>دانلود آنلاین</th><th>دانلود داخلی</th></tr></thead><tbody>'+catalogExtra+'</tbody></table></div>':'<p class="muted">منبع تکمیلی هنوز بررسی نشده؛ منابع تحقیق اصلی را باز کنید.</p>';
+    return `<details class="work-firm" data-work-firm="${esc((f.name+" "+f.sections.map(s=>s.title).join(" ")).toLocaleLowerCase())}"><summary><b dir="ltr">${esc(f.name)}</b><span>${f.sections.length} سکشن · ${f.docs.size} منبع ثبت‌شده ${researchItems.length?"· "+researchItems.length+" منبع تکمیلی":""}</span></summary><div class="work-firm-inner"><p><strong>سکشن‌های مرتبط:</strong> ${f.sections.map(s=>esc(s.title)).join(" · ")}</p><details class="work-primary-sources"><summary>منابع اصلی تحقیق Work (${f.docs.size} لینک)</summary><ul class="work-links">${sources}</ul></details><h4>کاتالوگ‌ها و منابع تکمیلی</h4>${catalogTable}</div></details>`;
   }).join("");
   const sectionCards=research.sections.map(s=>`<details class="work-firm"><summary><b>${esc(s.title_fa)}</b><span>${esc(s.priority)} · ${(s.references||[]).length} شرکت</span></summary><div class="work-firm-inner"><p>${esc(s.goal_fa)}</p><p><strong>ایده چیدمان تحقیق:</strong> ${esc(s.page_template_fa)}</p><p class="muted">اطلاعات موردنیاز NSP: ${esc(s.required_nsp_information_fa)}</p>${(s.references||[]).map(r=>`<div class="work-section-source"><b dir="ltr">${esc(r.company)}</b> ${(r.documents||[]).map(d=>resourceLink(d.url,d.source_id)).join(" · ")}</div>`).join("")}</div></details>`).join("");
   const ideas=workResearchCatalogAll.map(x=>`<article class="work-idea"><div class="work-idea-header"><strong dir="ltr">${esc(firms.find(f=>f.id===x.company_id)?.name||x.company_id)}</strong><span>${x.status==="reviewed"?"بازبینی بصری انجام‌شده":x.status==="partial"?"بررسی مقدماتی":"نیازمند بازبینی تصویری"}</span></div><h3>${esc(x.title)}</h3><p class="muted">${esc(x.kind)} · ${esc(x.date)} · ${esc(x.page)}</p><p>${esc(x.idea)}</p><p><strong>الگوی اختصاصی پیشنهادی NSP:</strong> ${esc(x.suggested)}</p><p>${resourceLink(x.url,/\.pdf(?:[?#]|$)/i.test(x.url)?"بازکردن PDF رسمی":"صفحه دانلود ناشر")}${x.sourcePage?" · "+resourceLink(x.sourcePage,"صفحه مرجع"):""}</p></article>`).join("");
@@ -927,6 +995,14 @@ function library(){
   .work-research .work-firm>summary span{color:#61798c;font-size:12px}.work-research .work-firm-inner{border-top:1px solid #e5edf3;padding:12px 16px;line-height:1.9}
   .work-research .work-two-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
   .work-research .work-links{padding-right:22px;line-height:2}.work-research .work-links li{overflow-wrap:anywhere;margin-bottom:5px}
+  .work-research .work-primary-sources{margin:8px 0 15px;padding:10px 14px;border:1px solid #dce8ea;border-radius:7px;background:#f7fafb}
+  .work-research .work-primary-sources>summary{cursor:pointer;font-weight:600}
+  .work-research .work-catalog-scroll{max-width:100%;overflow-x:auto;border:1px solid #dde7eb;border-radius:7px}
+  .work-research .work-catalog-grid{width:100%;min-width:680px;border-collapse:collapse;text-align:right;font-size:12px}
+  .work-research .work-catalog-grid th,.work-research .work-catalog-grid td{padding:9px 11px;text-align:right;border-bottom:1px solid #e1ebee;vertical-align:middle}
+  .work-research .work-catalog-grid th{font-weight:700;background:#eef5f6;white-space:nowrap}
+  .work-research .work-catalog-grid tr:nth-child(even){background:#fbfdfe}
+  .work-research .work-catalog-grid .btn{font-size:11px;padding:5px 8px;white-space:nowrap}
   .work-research a{color:#087b80;text-decoration:underline;text-underline-offset:3px}
   .work-research .work-ideas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
   .work-research .work-idea{background:#fff;border:1px solid #dce6ed;border-radius:10px;padding:15px;line-height:1.9}
@@ -939,7 +1015,7 @@ function library(){
   </style><h2>کتابخانه تحقیق Work</h2><p class="work-note">همان دادهٔ پژوهشی داخل فایل HTML؛ تمام سکشن‌ها و شرکت‌های مرجع بدون حذف منابع اصلی. منابع زیر صرفاً برای تحلیل و طراحی تمپلیت اختصاصی NSP هستند؛ PDF شرکت‌ها در مخزن کپی نشده‌اند. <a href="https://github.com/comboci/NSP-Portfolio-Builder/blob/main/project%20evolution/research-catalogs/reference-index.pdf" target="_blank" rel="noopener noreferrer">بازکردن PDF فهرست منابع</a></p>
   <div class="work-stats"><span>${research.sections.length} سکشن</span><span>${firms.length} شرکت مرجع</span><span>${totalSources} لینک منحصربه‌فرد</span><span>${workResearchCatalogAll.length} مورد منتخب برای مطالعه</span></div>
   <nav class="work-tabs" aria-label="نمای کتابخانه تحقیق">${tab("companies","شرکت‌ها و کاتالوگ‌ها")}${tab("sections","سکشن‌ها و منابع تحقیق")}${tab("inspiration","ایده‌های طراحی صفحات")}</nav>
-  <div class="toolbar"><button type="button" class="btn primary" onclick="workDownloadOpen()">دریافت گروهی منابع و نمایش پیشرفت</button><span class="muted">پیش از ذخیره فایل‌ها باید پوشه را انتخاب کنید.</span></div>
+  <div class="toolbar"><button type="button" class="btn primary" onclick="workDownloadOpen()">دریافت گروهی منابع و نمایش پیشرفت</button><button type="button" class="btn" onclick="workConnectLocalFolder()">اتصال پوشهٔ PDFهای ذخیره‌شده</button><span class="muted">دانلود داخلی فقط برای PDF موجود و تأییدشده فعال می‌شود.</span></div>
   ${workResearchMode==="companies"?`<label>جست‌وجوی شرکت یا سکشن <input type="search" placeholder="نام شرکت یا موضوع" oninput="workResearchFilter(this.value)"></label><div>${companyCards}</div>`:workResearchMode==="sections"?`<div>${sectionCards}</div>`:`<p class="work-note">مشاهدات زیر از منابع رسمی‌اند؛ بازبینی بصری انجام‌شده و منابع نیازمند مطالعهٔ تکمیلی جداگانه برچسب خورده‌اند. «الگوی پیشنهادی» یک ایدهٔ اولیه است، نه قالب کپی‌شده یا قابل افزودن فوری.</p><div class="work-ideas">${ideas}</div>`}
   </section>`;
 }
@@ -7777,6 +7853,7 @@ function componentFromSelection(list,name){
    document.getElementById('app').innerHTML=view==='v137library'?library():
     '<section class="nsp-file-templates"><h2>تمپلیت‌های آماده</h2><p class="muted">قالب‌های آمادهٔ قابل بارگذاری را از اینجا به کتابخانه اضافه کنید یا با آن‌ها صفحه بسازید. برای مدیریت قالب‌های ویرایش‌شده، به «طراحی قالب‌ها» بروید.</p>'+nspPresetsUI()+'</section>';
    document.querySelectorAll('#nav .nav-subitem').forEach(b=>b.classList.toggle('active',(b.getAttribute('onclick')||'').includes("go('"+view+"')")));
+   document.querySelector('#nav>button.active')?.classList.remove('active');
    return result;
   }
   const result=beforeRender.apply(this,arguments);
