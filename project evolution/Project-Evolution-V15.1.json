@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 208",
+    "application_release": "Browser 209",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 208 implements canvas Ctrl/Shift+wheel zoom, middle-button pan, more usable guide rulers/visibility controls, header print action, clearer alignment labels, mutually exclusive toolbar popups. Awaiting owner runtime validation."
+    "current_source_release_note": "Browser 209: full central-content scroll instead of nested tree scroll, three switchable gallery appearance themes, exact shared Once icons with inline Latin 1, and a 220ms hover dwell for auto-hide layers/history. Owner runtime review pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -437,6 +437,124 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-014",
+      "title": "حذف اسکرول محدود درخت و اسکرول‌پذیری کل فضای مرکزی",
+      "type": "runtime_ux_fix",
+      "screen_or_flow": "کتابخانه قالب‌ها / طراح صفحه و قالب",
+      "reproduction_steps": [
+        "ایجاد چند گروه و زیرگروه",
+        "اسکرول در فضای مرکزی",
+        "بررسی انتهای درخت و گالری"
+      ],
+      "observed": "درخت با اسکرول داخلی کوچک و ارتفاع محدود همراه بود.",
+      "expected": "درخت تا ارتفاع لازم رشد کند و اسکرول اصلی با ناحیه مرکزی برنامه باشد.",
+      "severity": "medium",
+      "source_commit": "6d4c321e3b7253b1f56883c6e6a439a9b75d1e6f",
+      "fix_version": "Browser 209",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "حذف max-height و overflow داخلی از tree و sidebar، حفظ ستون راست ناوبری.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "ایجاد چند گروه و زیرگروه",
+          "اسکرول در فضای مرکزی",
+          "بررسی انتهای درخت و گالری"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-015",
+      "title": "سه ظاهر انتخابی در کتابخانه قالب‌ها",
+      "type": "runtime_ux_fix",
+      "screen_or_flow": "کتابخانه قالب‌ها / طراح صفحه و قالب",
+      "reproduction_steps": [
+        "بازکردن کتابخانه",
+        "انتخاب A/B/C",
+        "مقایسه گروه فعال و همه قالب‌ها",
+        "Refresh و بررسی ماندگاری"
+      ],
+      "observed": "استایل درخت و هدر کتابخانه ابتدایی بود.",
+      "expected": "سه طرح مینیمال، حرفه‌ای و نرم با انتخاب زنده و ذخیره فقط برای ظاهر.",
+      "severity": "low",
+      "source_commit": "6d4c321e3b7253b1f56883c6e6a439a9b75d1e6f",
+      "fix_version": "Browser 209",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "سه تم CSS و کلید انتخاب aria-pressed، حفظ انتخاب در localStorage بدون تغییر داده قالب.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بازکردن کتابخانه",
+          "انتخاب A/B/C",
+          "مقایسه گروه فعال و همه قالب‌ها",
+          "Refresh و بررسی ماندگاری"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-016",
+      "title": "آیکون Once برابر با ابزار متن و تصویر، با رقم لاتین 1",
+      "type": "runtime_ux_fix",
+      "screen_or_flow": "کتابخانه قالب‌ها / طراح صفحه و قالب",
+      "reproduction_steps": [
+        "بازکردن طراح",
+        "مقایسه دو آیکون Once با ابزار اصلی",
+        "بررسی عدد لاتین 1 کنار آیکون"
+      ],
+      "observed": "آیکون Once متفاوت و همراه Badge فارسی در پایین بود.",
+      "expected": "SVG یکسان با ابزار اصلی و فقط 1 ساده کنار آیکون.",
+      "severity": "low",
+      "source_commit": "6d4c321e3b7253b1f56883c6e6a439a9b75d1e6f",
+      "fix_version": "Browser 209",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "استفاده از آیکون‌های text-size و file-media در نوار V18 و حذف Badge.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بازکردن طراح",
+          "مقایسه دو آیکون Once با ابزار اصلی",
+          "بررسی عدد لاتین 1 کنار آیکون"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-017",
+      "title": "کاهش حساسیت هاور روی لایه‌ها و تاریخچه",
+      "type": "runtime_ux_fix",
+      "screen_or_flow": "کتابخانه قالب‌ها / طراح صفحه و قالب",
+      "reproduction_steps": [
+        "عبور سریع ماوس روی لایه‌ها و تاریخچه",
+        "مکث ۲۲۰ میلی‌ثانیه",
+        "کلیک مستقیم و تست بازشدن فوری"
+      ],
+      "observed": "پنل‌ها در pointerenter بلافاصله باز می‌شدند.",
+      "expected": "مکث ۲۲۰ms پیش از بازشدن خودکار، بدون کند کردن کلیک و صفحه کلید.",
+      "severity": "medium",
+      "source_commit": "6d4c321e3b7253b1f56883c6e6a439a9b75d1e6f",
+      "fix_version": "Browser 209",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "hoverTimer مستقل لغوشونده با pointerleave و mount مجدد.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "عبور سریع ماوس روی لایه‌ها و تاریخچه",
+          "مکث ۲۲۰ میلی‌ثانیه",
+          "کلیک مستقیم و تست بازشدن فوری"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -492,7 +610,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 208,
+      "release": 209,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
