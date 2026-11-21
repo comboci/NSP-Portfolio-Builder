@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 211",
+    "application_release": "Browser 212",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 211 removes unrequested A/B/C gallery theme selector and duplicate creation controls; adds root three-dot menu and right-click context actions for library groups/templates, retaining Drag & Drop. Visual alternatives are outside the application."
+    "current_source_release_note": "Browser 212: corrects nested three-dot group menu HTML introduced in 211. Cleanup of A/B/C switcher, redundant buttons, root three-dot, scoped right-click actions retained. Mockups separate from code."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -604,9 +604,9 @@
       "expected": "انتخابگر A/B/C و دکمه‌های بالای کتابخانه/گالری و دکمه + مستقل کنار گروه حذف شوند.",
       "severity": "medium",
       "source_commit": "ac69f43a4eb453c229b17dde1c42b8de4f474190",
-      "fix_version": "Browser 211",
+      "fix_version": "Browser 212",
       "fix_commit": "same_commit_as_task_record",
-      "implementation": "حذف state، event و CSS انتخابگر و کنترل‌های تکراری، حفظ Once و اسکرول.",
+      "implementation": "حذف state، event و CSS انتخابگر و کنترل‌های تکراری، حفظ Once و اسکرول. Corrected group popup to a single div.v206-pop containing all group actions.",
       "status": "source_fixed_pending_owner_runtime",
       "owner_verification": {
         "status": "pending",
@@ -635,9 +635,9 @@
       "expected": "ریشه ⋮ برای گروه اصلی، گروه ⋮ برای زیرگروه و قالب؛ کلیک راست ریشه، گروه، قالب با عملیات مشترک.",
       "severity": "medium",
       "source_commit": "ac69f43a4eb453c229b17dde1c42b8de4f474190",
-      "fix_version": "Browser 211",
+      "fix_version": "Browser 212",
       "fix_commit": "same_commit_as_task_record",
-      "implementation": "استفاده از همان data-v137-action و ذخیره IndexedDB، انتقال root drop به سربرگ گروه‌بندی.",
+      "implementation": "استفاده از همان data-v137-action و ذخیره IndexedDB، انتقال root drop به سربرگ گروه‌بندی. Corrected group popup to a single div.v206-pop containing all group actions.",
       "status": "source_fixed_pending_owner_runtime",
       "owner_verification": {
         "status": "pending",
@@ -733,7 +733,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 211,
+      "release": 212,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
