@@ -72,3 +72,10 @@ Statement = source input; Question = open issue; Analysis = reasoning; Finding =
 - Commit سورس: `31494edb5dd9d19bd3108d48830daaeabd146190`.
 - TASK-075 همچنان باز است؛ حذف مسیرهای اجرایی Master/Section در این مرحله انجام نشده است.
 - طبق DEC-006 هیچ Build، Test یا Static Checker اجرا نشده؛ تأیید عملی با مالک است.
+
+
+### پیگیری TASK-075 — نسخه ۱۹۹
+- پوشش‌های رندر و ناوبری از نام‌های قدیمی `renderBeforeMasterLayout` و `goBeforeMasterGrid` به نام‌های Page Workspace تغییر نام یافتند؛ رفتار این مسیرها عمداً ثابت مانده است.
+- نسخهٔ داخلی و برچسب‌های نمایشی Browser به ۱۹۹ افزایش یافت. Commit سورس: `d59b75d0f28d869d3746fa1d58bfcf1dc02aa78b`.
+- این تغییر حذف کامل مسیرهای اجرایی Legacy نیست؛ TASK-075 باز است.
+- هیچ Build، Test یا Static Checker اجرا نشد و تأیید عملی با مالک پروژه است.
