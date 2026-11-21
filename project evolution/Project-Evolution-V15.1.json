@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 236",
+    "application_release": "Browser 237",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "V236 RR-081/082: visually enclosed unlinked line in user V230 JSON is deleted with Region; auto-associate tool-drop inside Region; vertical object menu and robust outside dismissal; paste text from OS clipboard with Firefox fallback. Mock+syntax, owner runtime pending."
+    "current_source_release_note": "Browser V237: unified Save As JSON chooser with Firefox setting guidance, immediate runtime pagination render before IndexedDB flush, Ctrl+V text onto canvas; source mock tests passed."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,7 +47,7 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "V236: 30 scripts parse, Region mock based on uploaded JSON geometry passes; Firefox actual right-click, Clipboard and IndexedDB not yet tested.",
+    "caveat": "V237: 30 executable scripts parsed; mocked Save As and optimistic flow passed. Firefox file:// actual save dialogs, pasted Persian metrics and database/print remain unverified.",
     "browser_javascript_syntax_checked": true,
     "browser_javascript_scripts_parsed": 30,
     "browser_static_checker_executed": false
@@ -2573,6 +2573,68 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-083",
+      "title": "ذخیره JSON با File Picker و fallback Firefox",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "JSON Export / Text Auto-flow",
+      "observed": "انتخاب مسیر ذخیره برای JSON تحت کنترل مستقیم کاربر نبود",
+      "expected": "انتخاب مقصد در مرورگر سازگار و راهنمای Always ask در Firefox",
+      "reproduction_steps": [
+        "Settings Firefox Always ask را فعال کنید",
+        "خروجی JSON بگیرید و مسیر مقصد را انتخاب کنید",
+        "متن چندصفحه‌ای Paste کنید",
+        "بدون Save & Back صفحات جدید را در Navigator ببینید",
+        "Refresh و بازیابی و PDF را تست کنید"
+      ],
+      "severity": "high",
+      "source_commit": "e22561e4a8c4d9fc58710e35f01dc67dfb35f9fe",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 237",
+      "implementation": "اشتراک Save As و render optimistic پیش از IndexedDB، Ctrl+V به Text Object. تست‌های mock و parse پاس؛ پذیرش Firefox باز.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "Firefox Save As",
+          "فوری‌بودن صفحه‌بندی",
+          "Refresh و چاپ"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-084",
+      "title": "نمایش فوری صفحات Text Auto-flow در حین Runtime",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "JSON Export / Text Auto-flow",
+      "observed": "صفحات بعدی پس از Save & Back یا تکمیل DB ظاهر می‌شدند",
+      "expected": "نمایش بی‌درنگ صفحات در Navigator و سپس ذخیره قطعی",
+      "reproduction_steps": [
+        "Settings Firefox Always ask را فعال کنید",
+        "خروجی JSON بگیرید و مسیر مقصد را انتخاب کنید",
+        "متن چندصفحه‌ای Paste کنید",
+        "بدون Save & Back صفحات جدید را در Navigator ببینید",
+        "Refresh و بازیابی و PDF را تست کنید"
+      ],
+      "severity": "high",
+      "source_commit": "e22561e4a8c4d9fc58710e35f01dc67dfb35f9fe",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 237",
+      "implementation": "اشتراک Save As و render optimistic پیش از IndexedDB، Ctrl+V به Text Object. تست‌های mock و parse پاس؛ پذیرش Firefox باز.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "Firefox Save As",
+          "فوری‌بودن صفحه‌بندی",
+          "Refresh و چاپ"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -2635,7 +2697,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 236,
+      "release": 237,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
