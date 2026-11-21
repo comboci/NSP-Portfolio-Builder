@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 204",
+    "application_release": "Browser 205",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -28,7 +28,8 @@
       "release": "V138",
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
-    }
+    },
+    "current_source_release_note": "Browser V205: sequential suggested template name in the native prompt; owner runtime acceptance pending"
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -48,7 +49,37 @@
     "no_build_or_static_checker_executed": true,
     "caveat": "The source can contain defects. Project Evolution reset does not reset browser IndexedDB or prove application correctness."
   },
-  "active_tasks": [],
+  "active_tasks": [
+    {
+      "id": "RR-001",
+      "title": "پیش‌فرض نام هنگام ساخت قالب جدید",
+      "type": "ux_improvement",
+      "screen_or_flow": "کتابخانه قالب‌های صفحه → + قالب جدید → نام قالب",
+      "reproduction_steps": [
+        "ورود به کتابخانهٔ قالب‌ها",
+        "انتخاب + قالب جدید",
+        "بررسی متن اولیهٔ فیلد نام قالب"
+      ],
+      "observed": "در Browser V204، فیلد نام قالب جدید خالی باز می‌شد؛ مالک در رانتایم ریویو گزارش داد.",
+      "expected": "فیلد مقدار پیش‌فرض قابل ویرایش «قالب جدید ۱» داشته باشد؛ برای نام تکراری شمارهٔ بعدی پیشنهاد شود.",
+      "severity": "low",
+      "source_commit": "047ad079e75fbbd883808cf5b2b67e8825c9e5f5",
+      "fix_version": "Browser 205",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "createTemplate نام پیشنهادی یکتا را برای prompt می‌گذارد؛ همهٔ شناسه‌های نمایشی نسخه به ۲۰۵ ارتقا یافته است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "تأیید وجود «قالب جدید ۱» در کادر نام",
+          "ساخت یک قالب، بررسی پیشنهاد «قالب جدید ۲»",
+          "ویرایش آزاد عنوان و ذخیره با نام دلخواه"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    }
+  ],
   "defects": [],
   "verified_acceptances": [],
   "review_plan": [
@@ -94,7 +125,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 204,
+      "release": 205,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
