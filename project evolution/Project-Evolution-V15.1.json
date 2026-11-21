@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 233",
+    "application_release": "Browser 235",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser V233: RR-078 inline textarea overflow triggers immediate on-paste/debounced auto-flow into continuation pages, hides internal scrolling, preserves source text and uses V228 flow engine; source-only tests, Firefox pending."
+    "current_source_release_note": "Browser V235 RR-079/080: categorized template picker on double-click PowerPoint thumbnail, vertical context menu including template/copy/cut/paste/delete and scoped page clipboard. Source syntax and structural tests only."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,7 +47,7 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "V233: 30 executable scripts parsed; overflow vs fitting text mocked. Firefox real font metrics, pagination, IndexedDB and user acceptance remain unverified.",
+    "caveat": "V235: 30 JS executable blocks parsed; real Firefox mouse, template picker, structural page clipboard and IndexedDB persistence not yet user-verified.",
     "browser_javascript_syntax_checked": true,
     "browser_javascript_scripts_parsed": 30,
     "browser_static_checker_executed": false
@@ -2443,6 +2443,72 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-079",
+      "title": "دابل‌کلیک بندانگشتی و انتخاب قالب از کتابخانهٔ دسته‌بندی‌شده",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "Page Designer / PowerPoint page navigator",
+      "observed": "منوی راست‌کلیک قالب‌ها تخت و بدون جست‌وجو بود و دابل‌کلیک قالب را باز نمی‌کرد",
+      "expected": "کتابخانهٔ مرکزی با دسته‌بندی و جست‌وجو در Dialog، اعمال فقط به صفحهٔ هدف",
+      "reproduction_steps": [
+        "ایجاد ۳ صفحه و چند قالب در دسته‌بندی‌های مختلف",
+        "دابل‌کلیک بندانگشتی صفحه دوم و جستجوی قالب در Dialog",
+        "انتخاب قالب و کنترل حفظ عناصر مستقل",
+        "راست‌کلیک صفحه و Copy/Cut/Paste/Delete",
+        "Escape و کلیک بیرون از منو",
+        "بازگشایی پس از Refresh و کنترل قالب و ترتیب"
+      ],
+      "severity": "high",
+      "source_commit": "4581754be3411b5bbcdc031181724c1df721e7e7",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 235",
+      "implementation": "واردکردن picker از تعریف واقعی کتابخانه و بازنویسی منوی بندانگشتی و تشخیص double-click؛ Parse موفق؛ Runtime کاربر باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "Firefox دسته‌بندی و جست‌وجو",
+          "دابل‌کلیک و اعمال قالب",
+          "Cut/Copy/Paste/Delete",
+          "IndexedDB Refresh"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-080",
+      "title": "کلیک راست روی بندانگشتی: انتخاب قالب، کپی، کات، پیست، حذف",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "Page Designer / PowerPoint page navigator",
+      "observed": "منوی بندانگشتی فقط قالب‌ها را نشان می‌داد",
+      "expected": "منوی عمودی پنج‌عملیاتی، بستن بیرون، Clipboard داخلی و ذخیرهٔ ایمن",
+      "reproduction_steps": [
+        "ایجاد ۳ صفحه و چند قالب در دسته‌بندی‌های مختلف",
+        "دابل‌کلیک بندانگشتی صفحه دوم و جستجوی قالب در Dialog",
+        "انتخاب قالب و کنترل حفظ عناصر مستقل",
+        "راست‌کلیک صفحه و Copy/Cut/Paste/Delete",
+        "Escape و کلیک بیرون از منو",
+        "بازگشایی پس از Refresh و کنترل قالب و ترتیب"
+      ],
+      "severity": "high",
+      "source_commit": "4581754be3411b5bbcdc031181724c1df721e7e7",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 235",
+      "implementation": "واردکردن picker از تعریف واقعی کتابخانه و بازنویسی منوی بندانگشتی و تشخیص double-click؛ Parse موفق؛ Runtime کاربر باز است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "Firefox دسته‌بندی و جست‌وجو",
+          "دابل‌کلیک و اعمال قالب",
+          "Cut/Copy/Paste/Delete",
+          "IndexedDB Refresh"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -2505,7 +2571,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 233,
+      "release": 235,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
