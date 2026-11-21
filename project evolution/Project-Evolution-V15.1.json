@@ -8,7 +8,8 @@
     "reset_policy": "fresh_operational_baseline",
     "history_imported": false,
     "former_active_records_imported": false,
-    "note": "V15.1 identifies this fresh Project Evolution operational record. It does not claim that an external PES-15.1 schema has been formally published."
+    "note": "V15.1 identifies this fresh Project Evolution operational record. It does not claim that an external PES-15.1 schema has been formally published.",
+    "last_metadata_update_at": "2026-11-21"
   },
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
@@ -82,5 +83,72 @@
     "update_record_from_confirmed_findings": true,
     "update_browser_release_only_when_app_code_changes": true,
     "protect_unrelated_source_files": true
+  },
+  "software_profile": {
+    "display_name": "NSP Portfolio Builder",
+    "product_kind": "Portfolio / catalog authoring software with a shared visual page designer",
+    "user_interface": {
+      "primary_language": "Persian (fa)",
+      "document_language_attribute": "fa",
+      "direction": "RTL",
+      "multilingual_ui_status": "not verified; do not assume other translations"
+    },
+    "browser_application": {
+      "release": 204,
+      "entrypoint": "index.html",
+      "application_type": "single-file HTML browser application",
+      "implementation_languages": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "runtime": "Web browser; actual browser compatibility requires owner runtime review",
+      "local_persistence": "IndexedDB",
+      "db_name": "nsp-portfolio-builder-independent-pages",
+      "db_version": 2,
+      "architecture": "Page-First; project owns independent portfolios and pages",
+      "source_evidence": [
+        "index.html"
+      ],
+      "runtime_verified": false
+    },
+    "native_desktop_application": {
+      "release": "138.0.0",
+      "target_platform": "Windows",
+      "frontend_entrypoint": "native-ui/index.html",
+      "frontend_languages": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "framework": "Tauri 2",
+      "backend_language": "Rust (edition 2021)",
+      "database": "SQLite (reported schema 13)",
+      "bundling": "NSIS installer configured",
+      "source_evidence": [
+        "native-ui/index.html",
+        "src-tauri/Cargo.toml",
+        "src-tauri/tauri.conf.json",
+        "src-tauri/src/main.rs",
+        "src-tauri/migrations/013.sql"
+      ],
+      "activity": "deferred; distinct from browser v204",
+      "runtime_verified": false
+    },
+    "source_based_functional_scope": [
+      "Projects with multiple independent portfolios and pages",
+      "Categorized shared page-template catalog",
+      "Shared visual editor with layers, properties, grouping and docking",
+      "Project-scoped linked custom components",
+      "Image library and centralized style references",
+      "Save/load and portability via import/export/backup/restore",
+      "Page layout print/PDF paths (functional results pending review)"
+    ],
+    "nonclaims": [
+      "No runtime pass or owner acceptance is inferred from source inspection",
+      "Native and Browser app versions are different",
+      "Project Evolution V15.1 is a project record version, not an application version"
+    ],
+    "evidence_reviewed_at": "2026-11-21"
   }
 }
