@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 222",
+    "application_release": "Browser 223",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 222: single unified image library (hotel logos are normal albums); folder three-dot and right-click commands for new folder, upload, rename, delete and selected-image filing; picker includes local and shared images with template promotion; region block adoption after dragging fully inside; Save stays in designer; separate Back, Ruler toggle, Preview and browser Print/PDF; removed advanced align/duplicate menus and merged navigation into File and Operations. JS syntax parsed (24 scripts); mocked UI checks passed; Firefox owner runtime pending."
+    "current_source_release_note": "Browser V223: Grid-aligned dock panes from top, history refresh and toolbar Undo/Redo state; new projects may have zero portfolios and last portfolio may be removed; project/portfolio/page hierarchical explorer removes active/inactive and project image buttons, includes explicit import/export; page card right-click assigns templates and displays chosen template; editor removes save-as-template and top template picker, retains Save Page, Save and Back, Back; Page-editor print control removed. Static syntax and project-tree tests passed. Browser runtime owner acceptance pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,7 +47,7 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "V222: 24 inline JS blocks parsed with V8, media explorer folder/combined view and print/nav command exercised with simulated DOM events. Real Firefox, IndexedDB, print dialog, saving and owner acceptance remain unverified.",
+    "caveat": "V223: 25 executable JS blocks parsed, project-tree markup tested using empty and multi-portfolio fixtures. Real browser history, export, IndexedDB, page template selection and docking pending owner verification.",
     "browser_javascript_syntax_checked": true,
     "browser_javascript_scripts_parsed": 22,
     "browser_static_checker_executed": false
@@ -1415,6 +1415,190 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-045",
+      "title": "هم‌ترازی پنل Dock و جلوگیری از پایین افتادن پنل اول",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "پنل‌های Dock و تاریخچه",
+      "observed": "در بعضی حالت‌های پین و جابه‌جایی، پنل سنجاق‌شده نزدیک پایین ستون نمایش داده می‌شد.",
+      "expected": "پنل اول از بالای Dock شروع شود و پنل‌های بعدی ردیف‌های منظم و مستقل داشته باشند.",
+      "reproduction_steps": [
+        "پین تاریخچه در سمت راست و بررسی شروع از بالا",
+        "پین هم‌زمان چند پنل و بررسی ترتیب عمودی",
+        "آزمون جابه‌جایی چپ/راست، Auto-hide و Refresh"
+      ],
+      "severity": "high",
+      "source_commit": "3499a7caffbc538cd23256f3f7408ad3031232e1",
+      "fix_version": "Browser 223",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "تغییر index.html در معماری مرورگر؛ JS Parse و تست ساختاری سورس انجام شد. Runtime در انتظار تأیید مالک.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "پین تاریخچه در سمت راست و بررسی شروع از بالا",
+          "پین هم‌زمان چند پنل و بررسی ترتیب عمودی",
+          "آزمون جابه‌جایی چپ/راست، Auto-hide و Refresh"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-046",
+      "title": "تازه‌سازی تاریخچه و اتصال پایدار Undo/Redo",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "پنل‌های Dock و تاریخچه",
+      "observed": "پس از افزودن و حرکت عناصر، تاریخچه خالی و دکمه‌های واگرد و بازانجام غیرفعال گزارش شده بود.",
+      "expected": "هر commit عنصر یا لایه در تاریخچه همان صفحه ثبت شود، دکمه‌های Undo/Redo بعد از هر تغییر از تعداد مراحل تازه‌سازی شوند و قفل یک عنصر تاریخچه را پاک نکند.",
+      "reproduction_steps": [
+        "ایجاد متن و تغییر نام و مکان و مشاهده چند مرحله تاریخچه",
+        "Undo/Redo با نوار ابزار و Ctrl+Z/Ctrl+Y",
+        "بازکردن تاریخچه و بازگشت به یک مرحله",
+        "قفل عنصر و بررسی باقی ماندن تاریخچه"
+      ],
+      "severity": "high",
+      "source_commit": "3499a7caffbc538cd23256f3f7408ad3031232e1",
+      "fix_version": "Browser 223",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "تغییر index.html در معماری مرورگر؛ JS Parse و تست ساختاری سورس انجام شد. Runtime در انتظار تأیید مالک.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "ایجاد متن و تغییر نام و مکان و مشاهده چند مرحله تاریخچه",
+          "Undo/Redo با نوار ابزار و Ctrl+Z/Ctrl+Y",
+          "بازکردن تاریخچه و بازگشت به یک مرحله",
+          "قفل عنصر و بررسی باقی ماندن تاریخچه"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-047",
+      "title": "امکان پروژهٔ بدون پورتفولیو و نمایش درختی سلسله‌مراتبی",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "پروژه‌ها و پورتفولیوها",
+      "observed": "ساخت پروژه به‌صورت خودکار یک پورتفولیوی اصلی ایجاد می‌کرد و نمای جدول تکرار عنوان و Indent نامناسب داشت.",
+      "expected": "پروژه تازه بدون پورتفولیو باشد؛ پورتفولیو فقط با دستور + اضافه شود؛ پروژه، پورتفولیو و صفحه به‌صورت یک درخت با تو‌رفتگی قابل بازشدن باشند.",
+      "reproduction_steps": [
+        "ایجاد پروژه تازه و اطمینان از صفر پورتفولیو",
+        "افزودن دو پورتفولیو و مشاهده درخت",
+        "حذف آخرین پورتفولیو و تأیید پروژهٔ خالی",
+        "ذخیره، Refresh و تعویض پروژه بدون خطای مدل"
+      ],
+      "severity": "high",
+      "source_commit": "3499a7caffbc538cd23256f3f7408ad3031232e1",
+      "fix_version": "Browser 223",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "تغییر index.html در معماری مرورگر؛ JS Parse و تست ساختاری سورس انجام شد. Runtime در انتظار تأیید مالک.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "ایجاد پروژه تازه و اطمینان از صفر پورتفولیو",
+          "افزودن دو پورتفولیو و مشاهده درخت",
+          "حذف آخرین پورتفولیو و تأیید پروژهٔ خالی",
+          "ذخیره، Refresh و تعویض پروژه بدون خطای مدل"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-048",
+      "title": "حذف کنترل فعال/غیرفعال و تصاویر پروژه و اصلاح Export",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "پروژه‌ها و پورتفولیوها",
+      "observed": "دکمه فعال‌کردن و تصاویر اختصاصی در جدول پروژه غیرضروری بود؛ خروجی پروژه مقصد واضح نداشت.",
+      "expected": "نمای پروژه فقط کنترل‌های لازم را نشان دهد؛ Export با تأیید دامنه و ذخیرهٔ JSON کار کند؛ در مرورگرهای پشتیبان File System Access انتخاب محل انجام شود و Firefox از تنظیمات دانلود استفاده کند.",
+      "reproduction_steps": [
+        "بررسی نبودن برچسب فعال و دکمه تصاویر",
+        "بازکردن پورتفولیو از پروژه غیرفعال بدون نیاز به فعال‌کردن دستی",
+        "Export و Import و بررسی فایل JSON",
+        "آزمایش تنظیم Firefox Always ask where to save"
+      ],
+      "severity": "medium",
+      "source_commit": "3499a7caffbc538cd23256f3f7408ad3031232e1",
+      "fix_version": "Browser 223",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "تغییر index.html در معماری مرورگر؛ JS Parse و تست ساختاری سورس انجام شد. Runtime در انتظار تأیید مالک.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بررسی نبودن برچسب فعال و دکمه تصاویر",
+          "بازکردن پورتفولیو از پروژه غیرفعال بدون نیاز به فعال‌کردن دستی",
+          "Export و Import و بررسی فایل JSON",
+          "آزمایش تنظیم Firefox Always ask where to save"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-049",
+      "title": "انتساب قالب از راست‌کلیک روی صفحه و نمایش نام قالب",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "صفحات پورتفولیو",
+      "observed": "دکمه ذخیره به عنوان قالب و ComboBox قالب در سربرگ طراح بودند، نه کنار صفحهٔ مربوطه.",
+      "expected": "منوی راست‌کلیک روی کارت صفحه فهرست قالب‌ها را نمایش دهد، انتخاب را به صفحه اعمال کند و نام قالب زیر عنوان صفحه نشان داده شود؛ دو کنترل سربرگ حذف شوند.",
+      "reproduction_steps": [
+        "راست‌کلیک روی کارت صفحه و دیدن قالب‌های موجود",
+        "انتخاب قالب و تأیید تغییر طراحی",
+        "مشاهده نام قالب پایین کارت صفحه",
+        "ذخیره، بازگشت و بازکردن مجدد صفحه"
+      ],
+      "severity": "medium",
+      "source_commit": "3499a7caffbc538cd23256f3f7408ad3031232e1",
+      "fix_version": "Browser 223",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "تغییر index.html در معماری مرورگر؛ JS Parse و تست ساختاری سورس انجام شد. Runtime در انتظار تأیید مالک.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "راست‌کلیک روی کارت صفحه و دیدن قالب‌های موجود",
+          "انتخاب قالب و تأیید تغییر طراحی",
+          "مشاهده نام قالب پایین کارت صفحه",
+          "ذخیره، بازگشت و بازکردن مجدد صفحه"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-050",
+      "title": "ساده‌سازی فرمان‌های صفحه و تفکیک ذخیره، ذخیره/بازگشت",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "صفحات پورتفولیو",
+      "observed": "سربرگ ویرایش صفحات شلوغ بود: چاپ/PDF، ذخیره به عنوان قالب و قالب صفحه؛ مسیر ذخیره و بازگشت مشخص نبود.",
+      "expected": "در صفحه پروژه، بازگشت، ذخیره صفحه، ذخیره و بازگشت و ذخیره پروژه مستقل باشند؛ چاپ/PDF از سربرگ صفحه حذف و در مسیر پورتفولیو باقی بماند.",
+      "reproduction_steps": [
+        "ذخیره صفحه و ماندن در طراح",
+        "ذخیره و بازگشت و مشاهده پروژه‌ها",
+        "بازگشت بدون فرمان ذخیره صریح با نگهبان تغییرات",
+        "بررسی نبودن PDF و انتخاب قالب در نوار بالای صفحه"
+      ],
+      "severity": "medium",
+      "source_commit": "3499a7caffbc538cd23256f3f7408ad3031232e1",
+      "fix_version": "Browser 223",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "تغییر index.html در معماری مرورگر؛ JS Parse و تست ساختاری سورس انجام شد. Runtime در انتظار تأیید مالک.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "ذخیره صفحه و ماندن در طراح",
+          "ذخیره و بازگشت و مشاهده پروژه‌ها",
+          "بازگشت بدون فرمان ذخیره صریح با نگهبان تغییرات",
+          "بررسی نبودن PDF و انتخاب قالب در نوار بالای صفحه"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -1477,7 +1661,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 222,
+      "release": 223,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
