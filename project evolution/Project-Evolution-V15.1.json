@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 218",
+    "application_release": "Browser 219",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 218 adds Visual Studio-style two-sided left/right docking with draggable Layers, Properties, History panels, keyboard-accessible move buttons, independent pin/auto-hide and separate per-editor-profile persistent layouts. Retains 220ms hover, no data schema changes. Runtime owner acceptance pending."
+    "current_source_release_note": "Browser 219 adds Toolbox and View menus, closes/restores draggable dock panels with persisted visibility, precise guide mm entry and labeled 1mm ruler ticks, normalizes toolbar icon sizing, hides redundant side arrow/Pan buttons. Owner runtime review pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -883,6 +883,101 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-028",
+      "title": "پنهان/بازیابی پنل‌های Dock با × و منوی نمایش",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "نوار ابزار مشترک و پنل‌های Dock",
+      "reproduction_steps": [
+        "بستن لایه‌ها با ×",
+        "بازکردن دوباره از نمایش",
+        "رفرش و بررسی چیدمان",
+        "درگ بین دو سمت"
+      ],
+      "observed": "گزارش مالک مبنی بر شلوغی نوار ابزار و نیاز به خط‌کش دقیق و مدیریت نمایش پنل‌ها",
+      "expected": "پوشش Drag & Drop و ذخیرهٔ سمت پنل؛ × بستن پنل و بازیابی از نمایش؛ حذف فلش انتقال.",
+      "severity": "medium",
+      "source_commit": "39d1ca33b2ed68e04a4d0868fbbe2c72bd88f813",
+      "fix_version": "Browser 219",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "پوشش Drag & Drop و ذخیرهٔ سمت پنل؛ × بستن پنل و بازیابی از نمایش؛ حذف فلش انتقال.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بستن لایه‌ها با ×",
+          "بازکردن دوباره از نمایش",
+          "رفرش و بررسی چیدمان",
+          "درگ بین دو سمت"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-029",
+      "title": "خط‌کش شماره‌دار با درجهٔ یک میلی‌متری و راهنمای دقیق",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "نوار ابزار مشترک و پنل‌های Dock",
+      "reproduction_steps": [
+        "نمایش خط‌کش",
+        "ورود موقعیت ۱۵ و افزودن راهنما",
+        "ورود ۱۶ و افزودن راهنما",
+        "بررسی عدد کنار راهنما و جابه‌جایی"
+      ],
+      "observed": "گزارش مالک مبنی بر شلوغی نوار ابزار و نیاز به خط‌کش دقیق و مدیریت نمایش پنل‌ها",
+      "expected": "درجه‌های یک‌میلی‌متری، اعداد هر ده میلی‌متر، مقدار هر راهنما کنار دستگیره و امکان افزودن در مکان ۱۵ و ۱۶ میلی‌متر.",
+      "severity": "medium",
+      "source_commit": "39d1ca33b2ed68e04a4d0868fbbe2c72bd88f813",
+      "fix_version": "Browser 219",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "درجه‌های یک‌میلی‌متری، اعداد هر ده میلی‌متر، مقدار هر راهنما کنار دستگیره و امکان افزودن در مکان ۱۵ و ۱۶ میلی‌متر.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "نمایش خط‌کش",
+          "ورود موقعیت ۱۵ و افزودن راهنما",
+          "ورود ۱۶ و افزودن راهنما",
+          "بررسی عدد کنار راهنما و جابه‌جایی"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-030",
+      "title": "منوهای جعبه‌ابزار و نمایش و آیکون‌های یکدست و حذف Pan",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "نوار ابزار مشترک و پنل‌های Dock",
+      "reproduction_steps": [
+        "آزمایش افزودن متن، تصویر، Once و Region Block",
+        "پنهان‌سازی راهنما در نمایش",
+        "استفاده از منوهای چینش و تکثیر",
+        "Pan با دکمه وسط",
+        "بررسی اندازه و ظاهر آیکون‌ها"
+      ],
+      "observed": "گزارش مالک مبنی بر شلوغی نوار ابزار و نیاز به خط‌کش دقیق و مدیریت نمایش پنل‌ها",
+      "expected": "ابزارهای درج و Region Block داخل جعبه‌ابزار؛ پنل‌ها، راهنما، چینش و تکثیر در نمایش؛ دکمه Pan و فلش حذف، درگ وسط باقی بماند.",
+      "severity": "medium",
+      "source_commit": "39d1ca33b2ed68e04a4d0868fbbe2c72bd88f813",
+      "fix_version": "Browser 219",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "ابزارهای درج و Region Block داخل جعبه‌ابزار؛ پنل‌ها، راهنما، چینش و تکثیر در نمایش؛ دکمه Pan و فلش حذف، درگ وسط باقی بماند.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "آزمایش افزودن متن، تصویر، Once و Region Block",
+          "پنهان‌سازی راهنما در نمایش",
+          "استفاده از منوهای چینش و تکثیر",
+          "Pan با دکمه وسط",
+          "بررسی اندازه و ظاهر آیکون‌ها"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -938,7 +1033,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 218,
+      "release": 219,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
