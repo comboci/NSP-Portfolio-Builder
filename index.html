@@ -2070,7 +2070,7 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
     var s = String(value || '');
     return /^(https:\/\/|data:image\/(png|jpeg|jpg|webp|gif);base64,)/i.test(s) ? s : '';
   };
-  var styleKeys = ['font','accent','background','textColor','margin','verticalMargin','orientation','header','footer'];
+  var styleKeys = ['font','accent','background','textColor','margin','verticalMargin','orientation','paperSize','header','footer'];
   function pickStyle(source) {
     var result = {};
     styleKeys.forEach(function (key) { if (source && own.call(source, key)) result[key] = source[key]; });
@@ -2078,7 +2078,7 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
   }
   function defaultStyle() {
     return {font:'Tahoma',accent:'#087b80',background:'#ffffff',textColor:'#152638',
-      margin:48,verticalMargin:48,orientation:'portrait',header:'',footer:''};
+      margin:48,verticalMargin:48,orientation:'portrait',paperSize:'',header:'',footer:''};
   }
   function cleanStyle(source) {
     var s = Object.assign(defaultStyle(), pickStyle(source));
@@ -2089,12 +2089,15 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
     s.margin = clamp(number(s.margin, 48), 0, 200);
     s.verticalMargin = clamp(number(s.verticalMargin, 48), 0, 200);
     s.orientation = s.orientation === 'landscape' ? 'landscape' : 'portrait';
+    s.paperSize = ['A3','A4','A5'].includes(s.paperSize) ? s.paperSize : '';
     return s;
   }
   V.pageSize = function (style) {
     var landscape = style && style.orientation === 'landscape';
-    return {width:landscape ? 842 : 595, height:landscape ? 595 : 842,
-      widthMm:landscape ? 297 : 210, heightMm:landscape ? 210 : 297};
+    var paper = ['A3','A4','A5'].includes(style?.paperSize) ? style.paperSize : 'A4';
+    var d = paper==='A3' ? [842,1191,297,420] : paper==='A5' ? [420,595,148,210] : [595,842,210,297];
+    return {paper:paper,width:landscape?d[1]:d[0],height:landscape?d[0]:d[1],
+      widthMm:landscape?d[3]:d[2],heightMm:landscape?d[2]:d[3]};
   };
   function objectList(objects, origin, ownerId, size) {
     return (Array.isArray(objects) ? objects : []).filter(function (o) {
@@ -2209,7 +2212,7 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
       showHandles:!!opts.editor && !!opts.showHandles,fontFamily:s.font,textColor:s.textColor,editor:!!opts.editor,showEditablePageNumber:!!opts.editor,pageIndex:index||1};
     var style = '--v13-width:'+width+'px;--v13-height:'+height+'px;--v13-paper-width:'+size.widthMm+'mm;--v13-paper-height:'+size.heightMm+'mm;--v13-print-scale:'+printScale+';';
     var surfaceStyle = 'width:'+width+'px;height:'+height+'px;background:'+s.background+';color:'+s.textColor+';font-family:'+s.font+';';
-    return '<article class="v13-document v13-'+s.orientation+(opts.editor ? ' v13-editor-document' : '')+'" data-v13-page-id="'+html(p && p.id || '')+'" style="'+html(style)+'"><div class="v13-page-surface" data-v13-surface="1" style="'+html(surfaceStyle)+'">'+V.renderObjects(resolved.objects,objectOptions)+'</div></article>';
+    return '<article class="v13-document v13-'+s.orientation+' v244-paper-'+size.paper.toLowerCase()+(opts.editor ? ' v13-editor-document' : '')+'" data-v13-page-id="'+html(p && p.id || '')+'" style="'+html(style)+'"><div class="v13-page-surface" data-v13-surface="1" style="'+html(surfaceStyle)+'">'+V.renderObjects(resolved.objects,objectOptions)+'</div></article>';
   };
   paper = function (p, index) { return V.renderDocument(p,index); };
   pageStyle = function (p) { return V.resolvePage(p).style; };
@@ -2761,7 +2764,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
 (function () {
   'use strict';
   const V=window.V13=window.V13||{},own=Object.prototype.hasOwnProperty;
-  const styleKeys=['font','accent','background','textColor','margin','verticalMargin','orientation','header','footer'];
+  const styleKeys=['font','accent','background','textColor','margin','verticalMargin','orientation','paperSize','header','footer'];
   const dictionary=value=>value&&typeof value==='object'&&!Array.isArray(value)?value:null;
   function key(object){const o=object||{};return JSON.stringify([String(o.origin||''),String(o.ownerId||''),String(o.id||'')]);}
   const layerKey=key;
@@ -2795,6 +2798,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     if(!styleKeys.includes(property))return false;
     if(property==='margin'||property==='verticalMargin')return Number.isFinite(value);
     if(property==='orientation')return ['portrait','landscape'].includes(value);
+    if(property==='paperSize')return ['A3','A4','A5'].includes(value);
     return typeof value==='string';
   }
   function getStyles(record){return Object.fromEntries(Object.entries(dictionary(record?.pageStyleOverrides)||{}).filter(([k,v])=>accepted(k,v)));}
@@ -3860,6 +3864,8 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     out+='<div class="v13-number-grid">'+[['margin','حاشیهٔ افقی'],['verticalMargin','حاشیهٔ عمودی']].map(a=>row(a[0],a[1],'<input type="number" min="0" max="200"'+attr(a[0])+' value="'+Number(doc.style[a[0]])+'" title="پیکسل">')).join('')+'</div>';
     out+=row('orientation','جهت صفحه','<div class="v20-segmented v20-orientation" role="group" aria-label="جهت صفحه">'+[['portrait','عمودی'],['landscape','افقی']].map(a=>'<label class="v20-segment"><input type="radio" id="v18-style-orientation-'+a[0]+'" name="v20-orientation" data-v18-style-property="orientation" value="'+a[0]+'" '+((doc.style.orientation||'portrait')===a[0]?'checked':'')+' '+disabled+'><span><i class="v20-page-shape '+a[0]+'" aria-hidden="true"></i>'+a[1]+'</span></label>').join('')+'</div>');
     if(c.type==='page'){
+      const chosenPaper=V.pageSize(doc.style).paper;
+      out+=row('paperSize','اندازه کاغذ','<select'+attr('paperSize')+'>'+['A4','A5','A3'].map(p=>'<option value="'+p+'" '+(chosenPaper===p?'selected':'')+'>'+p+'</option>').join('')+'</select>');
       out+='<p class="muted">'+(off?'طراحی این صفحه قفل است. قفل را از نوار بالای صفحه باز کنید.':'تغییرات این صفحه خودکار ذخیره می‌شوند.')+'</p>';
     }else out+='<p class="muted v18-field-note">تغییرات '+label(c.type)+' را با دکمهٔ ذخیره ثبت کنید.</p>';
     return out;
@@ -3872,7 +3878,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     const parentName='پیش‌فرض';
     controls.forEach(el=>{
       const k=el.dataset.v18StyleProperty;
-      if(el.type==='radio')el.checked=el.value===doc.style[k];else if(document.activeElement!==el)el.value=doc.style[k];
+      if(el.type==='radio')el.checked=el.value===doc.style[k];else if(document.activeElement!==el)el.value=k==='paperSize'?V.pageSize(doc.style).paper:doc.style[k];
       const own=V.pageScene.hasStyle(r,k);
       const badge=document.querySelector('[data-v18-style-source="'+k+'"]');
       if(badge){badge.textContent=own?'اختصاصی':'از '+parentName;badge.dataset.own=String(own);}
