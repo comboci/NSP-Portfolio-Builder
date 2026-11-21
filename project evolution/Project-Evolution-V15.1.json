@@ -1,0 +1,86 @@
+{
+  "project_evolution": {
+    "project_id": "NSP-PORTFOLIO-BUILDER",
+    "title": "NSP Portfolio Builder — Project Evolution",
+    "version": "15.1",
+    "lifecycle": "active",
+    "created_at": "2026-11-21",
+    "reset_policy": "fresh_operational_baseline",
+    "history_imported": false,
+    "former_active_records_imported": false,
+    "note": "V15.1 identifies this fresh Project Evolution operational record. It does not claim that an external PES-15.1 schema has been formally published."
+  },
+  "source_baseline": {
+    "repository": "comboci/NSP-Portfolio-Builder",
+    "branch": "main",
+    "application_release": "Browser 204",
+    "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
+    "browser_entry": "index.html",
+    "browser_architecture": "Page-First",
+    "browser_persistence": {
+      "engine": "IndexedDB",
+      "database": "nsp-portfolio-builder-independent-pages",
+      "database_version": 2
+    },
+    "native_track": {
+      "present": true,
+      "release": "V138",
+      "database": "SQLite schema 13",
+      "scope": "deferred; not considered browser-runtime accepted"
+    }
+  },
+  "product_definition": {
+    "hierarchy": "Project → independent Portfolios → independent Pages",
+    "page_templates": "Shared categorized page templates; placing a template creates page-owned elements, not live Master/Section inheritance",
+    "custom_components": "Project-scoped reusable linked components placed with the shared Toolbox; instance geometry stays local",
+    "styles": "One central shared Style Library, subject to runtime verification",
+    "media": "Project-private library with explicit global image sharing; actual ownership and import/export behavior need runtime verification",
+    "editor": "Shared page designer with Dock, layers, properties, groups/blocks, history and print/export paths"
+  },
+  "verification": {
+    "source_version_confirmed": true,
+    "source_only_baseline": true,
+    "browser_runtime_tested": false,
+    "browser_owner_accepted": false,
+    "native_runtime_tested": false,
+    "browser_database_physically_cleared": false,
+    "no_build_or_static_checker_executed": true,
+    "caveat": "The source can contain defects. Project Evolution reset does not reset browser IndexedDB or prove application correctness."
+  },
+  "active_tasks": [],
+  "defects": [],
+  "verified_acceptances": [],
+  "review_plan": [
+    "Main screen, project list, initial blank portfolio and first page creation",
+    "Project/portfolio/page create, rename, delete, switch and persistence after reload",
+    "Independent page editing; applying/copying a categorized page template",
+    "Editor selection, layers, Group/Block, properties, Undo/Redo and Dock",
+    "Images, central styles, linked custom components and detach/update",
+    "Save Page / Save Project, multi-project import/export, named backup and restore",
+    "Print/PDF layout and cross-project data integrity"
+  ],
+  "operation_rules": {
+    "new_task_id_prefix": "RR-",
+    "task_statuses": [
+      "open",
+      "in_progress",
+      "source_fixed_pending_owner_runtime",
+      "runtime_verified",
+      "closed"
+    ],
+    "issue_requirements": [
+      "screen_or_flow",
+      "reproduction_steps",
+      "observed",
+      "expected",
+      "severity",
+      "source_commit",
+      "fix_commit",
+      "owner_verification"
+    ],
+    "never_auto_close_unverified_source_work": true,
+    "update_record_from_confirmed_findings": true,
+    "update_browser_release_only_when_app_code_changes": true,
+    "protect_unrelated_source_files": true
+  }
+}
