@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 227",
+    "application_release": "Browser 228",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 227: component toolbox tiles, context delete, global portfolio page-number reference, text alignment RTL/LTR toolbar, streamlined editor top bar, exact page open, preview and wheel adjacent page. Source-validated, live Firefox and auto text pagination pending."
+    "current_source_release_note": "Browser 228: RR-071 initial automatic text overflow pagination with measured DOM text chunks, independent generated continuation pages, full-text source, protective fingerprint and full-project durable save. Browser runtime pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,9 +47,9 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "V227: 28 inline executable scripts parse, structural checks passed; Firefox/IndexedDB and user acceptance pending. Auto text pagination not yet delivered.",
+    "caveat": "V228: 29 JS scripts parsed and mock pagination checks passed; live Firefox text measurement, printed page boundaries, IndexedDB save/reload and user acceptance not verified.",
     "browser_javascript_syntax_checked": true,
-    "browser_javascript_scripts_parsed": 28,
+    "browser_javascript_scripts_parsed": 29,
     "browser_static_checker_executed": false
   },
   "active_tasks": [
@@ -2196,6 +2196,40 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-071",
+      "title": "تولید خودکار صفحات ادامه برای متن بلند بدون اسکرول داخلی در سند",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح صفحه / متن / ذخیره / صفحات پورتفولیو",
+      "observed": "متن طولانی داخل یک کادر اسکرول می‌خورد/بریده می‌شد و صفحه بعدی تولید نمی‌شد.",
+      "expected": "محتوای کامل بدون افت داده، طبق ظرفیت کادر و قالب به صفحات ادامه تقسیم شود؛ بازسازی ایمن و ذخیره انجام شود.",
+      "reproduction_steps": [
+        "در یک متن طولانی ۳ تا ۵ صفحه محتوا Paste کنید",
+        "با Ctrl+Enter یا کلیک بیرون ویرایش را ثبت کنید",
+        "ایجاد صفحات ادامه و بازسازی متن اولیه را بررسی کنید",
+        "شماره صفحات و چاپ را بررسی کنید",
+        "متن اصلی را دوباره ویرایش و صفحات ادامه را بازآرایی کنید",
+        "پس از Refresh و Import/Export صحت محتوا را بررسی کنید"
+      ],
+      "severity": "high",
+      "source_commit": "f30700cc1aa89721e8fc3bdef40fc7736b6ef95d",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 228",
+      "implementation": "موتور تقسیم DOM با متن کامل مبدأ، صفحات فلو، اثرانگشت حفاظت از ویرایش دستی و ذخیرهٔ کامل پروژه. Parse و Mock محدود؛ Firefox واقعی هنوز تست نشده.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "Paste متن بزرگ و ثبت",
+          "بررسی صفحات و شماره‌گذاری",
+          "بازسازی متن اصلی",
+          "ذخیره و Refresh و چاپ",
+          "ویرایش دستی صفحه ادامه و حفاظت از داده"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -2258,7 +2292,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 227,
+      "release": 228,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
