@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 221",
+    "application_release": "Browser 222",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "V221: vertically stacked simultaneous pinned dock panes; single aligned header per pane; full-width labeled Toolbox items; 5mm snap grid plus page, guides and other objects; corrected template/page navigation. 22 JS blocks parsed; browser runtime pending."
+    "current_source_release_note": "Browser 222: single unified image library (hotel logos are normal albums); folder three-dot and right-click commands for new folder, upload, rename, delete and selected-image filing; picker includes local and shared images with template promotion; region block adoption after dragging fully inside; Save stays in designer; separate Back, Ruler toggle, Preview and browser Print/PDF; removed advanced align/duplicate menus and merged navigation into File and Operations. JS syntax parsed (24 scripts); mocked UI checks passed; Firefox owner runtime pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,7 +47,7 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "V221: 22 JavaScript blocks parsed, but browser Runtime, IndexedDB and owner acceptance remain unverified.",
+    "caveat": "V222: 24 inline JS blocks parsed with V8, media explorer folder/combined view and print/nav command exercised with simulated DOM events. Real Firefox, IndexedDB, print dialog, saving and owner acceptance remain unverified.",
     "browser_javascript_syntax_checked": true,
     "browser_javascript_scripts_parsed": 22,
     "browser_static_checker_executed": false
@@ -1060,7 +1060,7 @@
       ],
       "observed": "در نسخه ۲۱۹ انتخابگر تصویری تفکیک عمومی/خصوصی داشت و آلبوم‌ها به صورت فهرست تخت نمایش داده می‌شدند.",
       "expected": "دو کتابخانهٔ مستقل تصاویر و لوگوهای هتل، پوشه‌های درختی و عکس‌های روبه‌رو، انتخاب و حذف گروهی و Picker یکپارچه.",
-      "implementation": "نمای Explorer و Picker یکپارچه، برچسب catalogKind برای لوگوها، parentId آلبوم‌ها، Thumbnail و عملیات دسته‌ای.",
+      "implementation": "نمای Explorer و Picker یکپارچه، برچسب catalogKind برای لوگوها، parentId آلبوم‌ها، Thumbnail و عملیات دسته‌ای. (V222 replaces the earlier two-library/navigation UI according to the owner's corrected design; prior source behavior is superseded and not owner-accepted.)",
       "type": "runtime_ui_review_fix",
       "source_commit": "35a55d3bc17006b0447145d63e005ae20e98eab9",
       "fix_version": "Browser 220",
@@ -1091,7 +1091,7 @@
       ],
       "observed": "عنوان کتابخانه قالب‌ها و منوی استایل در جای موردنظر نبودند؛ سیاست قبلی حفظ داده قدیمی محدودکننده توسعه تلقی می‌شد.",
       "expected": "قالب‌ها، طراحی قالب‌ها و سه کتابخانه زیر عملیات؛ داده قدیمی فقط با دستور صریح مالک اهمیت دارد.",
-      "implementation": "تغییر عنوان آیتم‌ها و جابه‌جایی کتابخانه استایل؛ ثبت قانون صریح داده‌های پیشین.",
+      "implementation": "تغییر عنوان آیتم‌ها و جابه‌جایی کتابخانه استایل؛ ثبت قانون صریح داده‌های پیشین. (V222 replaces the earlier two-library/navigation UI according to the owner's corrected design; prior source behavior is superseded and not owner-accepted.)",
       "type": "runtime_ui_review_fix",
       "source_commit": "35a55d3bc17006b0447145d63e005ae20e98eab9",
       "fix_version": "Browser 220",
@@ -1225,6 +1225,196 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-039",
+      "title": "یکپارچه‌سازی کتابخانه تصاویر و حذف جداسازی لوگوها",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "کتابخانه تصاویر و آلبوم‌ها",
+      "reproduction_steps": [
+        "ساخت پوشه لوگوها و زیرپوشه",
+        "افزودن تصویر به همان پوشه از سه‌نقطه و کلیک راست",
+        "تغییر نام و حذف پوشه بدون حذف تصویر",
+        "انتخاب همه، لغو انتخاب و حذف دسته‌ای",
+        "بررسی نبودن تب یا منوی جداگانه لوگوها و کنترل مقصد بالای گالری"
+      ],
+      "observed": "لوگوها به‌اشتباه به‌عنوان کتابخانه مستقل نمایش داده می‌شدند؛ دکمه افزودن و انتخاب مقصد بالای گالری بود.",
+      "expected": "یک کتابخانه تصاویر؛ لوگوها یک آلبوم نام‌گذاری‌شده توسط کاربر؛ مدیریت افزودن تصویر، زیرپوشه، تغییر نام و حذف از منوی ⋮ کنار پوشه و راست‌کلیک.",
+      "severity": "high",
+      "source_commit": "7f3bd23ba91e8e8debdce94e72561ded5014511a",
+      "fix_version": "Browser 222",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "Source changes in browser index.html; 24 JS blocks parsed. Runtime verification by owner pending.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "ساخت پوشه لوگوها و زیرپوشه",
+          "افزودن تصویر به همان پوشه از سه‌نقطه و کلیک راست",
+          "تغییر نام و حذف پوشه بدون حذف تصویر",
+          "انتخاب همه، لغو انتخاب و حذف دسته‌ای",
+          "بررسی نبودن تب یا منوی جداگانه لوگوها و کنترل مقصد بالای گالری"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-040",
+      "title": "رفع خالی بودن Picker قالب و انتخاب عملی تصویر",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "طراح قالب > انتخاب تصویر",
+      "reproduction_steps": [
+        "بازکردن قالب، افزودن تصویر و دوبار کلیک",
+        "انتخاب آلبوم دارای عکس پروژه و مشاهده Thumbnailها",
+        "کلیک روی تصویر و بررسی نمایش در بوم",
+        "ذخیره قالب، بازگشت و بازکردن مجدد و بررسی اتصال تصویر"
+      ],
+      "observed": "پوشه آلبوم تصویر داشت اما Picker قالب فقط تصاویر عمومی را نشان می‌داد و گالری خالی می‌شد.",
+      "expected": "Picker واحد باید تصاویر همه آلبوم‌ها را نشان دهد؛ انتخاب تصویری خصوصی برای قالب در مخزن مشترک با شناسه مستقل ثبت شود و به عنصر تصویری متصل گردد.",
+      "severity": "high",
+      "source_commit": "7f3bd23ba91e8e8debdce94e72561ded5014511a",
+      "fix_version": "Browser 222",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "Source changes in browser index.html; 24 JS blocks parsed. Runtime verification by owner pending.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بازکردن قالب، افزودن تصویر و دوبار کلیک",
+          "انتخاب آلبوم دارای عکس پروژه و مشاهده Thumbnailها",
+          "کلیک روی تصویر و بررسی نمایش در بوم",
+          "ذخیره قالب، بازگشت و بازکردن مجدد و بررسی اتصال تصویر"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-041",
+      "title": "پذیرش شیء مستقل در Region Block پس از کشیدن",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "بوم و Region Block",
+      "reproduction_steps": [
+        "ایجاد Region Block و عنصر مستقل بیرون آن",
+        "کشیدن کامل عنصر داخل بلوک و رهاکردن",
+        "حرکت بلوک و بررسی حرکت عضو",
+        "بررسی Undo و ذخیره و بازکردن مجدد"
+      ],
+      "observed": "شیئی که بیرون بلوک ایجاد شده بود، پس از کشیدن داخل بلوک عضو بلوک نمی‌شد و همراه آن حرکت نمی‌کرد.",
+      "expected": "پس از Drag یک شیء قابل‌ویرایش کاملاً درون Region Block، blockId و لایهٔ آن ثبت شود و انتقال بعدی بلوک همان شیء را حرکت دهد.",
+      "severity": "high",
+      "source_commit": "7f3bd23ba91e8e8debdce94e72561ded5014511a",
+      "fix_version": "Browser 222",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "Source changes in browser index.html; 24 JS blocks parsed. Runtime verification by owner pending.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "ایجاد Region Block و عنصر مستقل بیرون آن",
+          "کشیدن کامل عنصر داخل بلوک و رهاکردن",
+          "حرکت بلوک و بررسی حرکت عضو",
+          "بررسی Undo و ذخیره و بازکردن مجدد"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-042",
+      "title": "تفکیک ذخیره و بازگشت، حذف ابزارهای اضافی و کنترل مستقل خط‌کش",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "سربرگ طراح و منوی نمایش",
+      "reproduction_steps": [
+        "ویرایش و ذخیره قالب بدون خروج",
+        "بازگشت با دکمه مستقل",
+        "بررسی نبودن چینش و فاصله‌گذاری و تکثیر هوشمند",
+        "پنهان و آشکارکردن خط‌کش بدون پنهان‌شدن راهنماها"
+      ],
+      "observed": "ذخیره و بازگشت الزاماً خروج می‌کرد؛ کنترل مستقل برای نمایش خط‌کش وجود نداشت و منوهای چینش و تکثیر هوشمند شلوغ بودند.",
+      "expected": "ذخیره بدون خروج از طراح، بازگشت جداگانه، حذف دو منوی پیشرفته و افزودن نمایش/پنهان‌سازی مستقل خط‌کش‌ها.",
+      "severity": "medium",
+      "source_commit": "7f3bd23ba91e8e8debdce94e72561ded5014511a",
+      "fix_version": "Browser 222",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "Source changes in browser index.html; 24 JS blocks parsed. Runtime verification by owner pending.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "ویرایش و ذخیره قالب بدون خروج",
+          "بازگشت با دکمه مستقل",
+          "بررسی نبودن چینش و فاصله‌گذاری و تکثیر هوشمند",
+          "پنهان و آشکارکردن خط‌کش بدون پنهان‌شدن راهنماها"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-043",
+      "title": "پیش‌نمایش چاپ مستقل و چاپ/PDF قابل اجرا از طراح",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "چاپ قالب یا صفحه در سربرگ طراح",
+      "reproduction_steps": [
+        "بازکردن قالب آزمایشی، کلیک پیش‌نمایش چاپ",
+        "مقایسه چینش پیش‌نمایش با بوم",
+        "کلیک چاپ/PDF و بررسی Firefox Print dialog",
+        "ذخیره PDF از مرورگر و بررسی ابعاد/لوگو",
+        "بستن پیش‌نمایش و ادامه طراحی"
+      ],
+      "observed": "دکمه چاپ در Editbar خارج از محدوده شنونده رویداد و بی‌اثر بود؛ چاپ قالب تک‌صفحه‌ای هم از مسیر پورتفولیو انجام نمی‌شد.",
+      "expected": "دکمه پیش‌نمایش چاپ، صفحه یا قالب فعال را با renderer مشترک باز کند؛ چاپ/PDF پنجره استاندارد مرورگر را برای همان طرح باز کند.",
+      "severity": "high",
+      "source_commit": "7f3bd23ba91e8e8debdce94e72561ded5014511a",
+      "fix_version": "Browser 222",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "Source changes in browser index.html; 24 JS blocks parsed. Runtime verification by owner pending.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بازکردن قالب آزمایشی، کلیک پیش‌نمایش چاپ",
+          "مقایسه چینش پیش‌نمایش با بوم",
+          "کلیک چاپ/PDF و بررسی Firefox Print dialog",
+          "ذخیره PDF از مرورگر و بررسی ابعاد/لوگو",
+          "بستن پیش‌نمایش و ادامه طراحی"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-044",
+      "title": "ساده‌سازی ناوبری به فایل و عملیات",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "ناوبری اصلی",
+      "reproduction_steps": [
+        "بررسی دو گروه فایل و عملیات",
+        "ورود به طراحی قالب‌ها و پروژه‌ها",
+        "بررسی حذف ورود پروژه و طراحی صفحات از ناوبری",
+        "بررسی حفظ امکان بازکردن طراح صفحه از داخل پروژه"
+      ],
+      "observed": "گروه قالب‌ها، آیتم طراحی صفحاتِ اضافی، ورود پروژه و بخش لوگوها صفحه‌های موازی و گیج‌کننده می‌ساختند.",
+      "expected": "فقط دو گروه اصلی فایل (طراحی قالب‌ها، پروژه‌ها) و عملیات (کتابخانه تصاویر، استایل، تحقیق و تنظیمات) باقی بمانند.",
+      "severity": "medium",
+      "source_commit": "7f3bd23ba91e8e8debdce94e72561ded5014511a",
+      "fix_version": "Browser 222",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "Source changes in browser index.html; 24 JS blocks parsed. Runtime verification by owner pending.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بررسی دو گروه فایل و عملیات",
+          "ورود به طراحی قالب‌ها و پروژه‌ها",
+          "بررسی حذف ورود پروژه و طراحی صفحات از ناوبری",
+          "بررسی حفظ امکان بازکردن طراح صفحه از داخل پروژه"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -1287,7 +1477,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 221,
+      "release": 222,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
