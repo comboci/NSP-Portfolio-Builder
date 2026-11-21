@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 220",
+    "application_release": "Browser 221",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Version 220: Toolbox migrated into independent fourth Dock pane; headings remain visible for pinned/flyout panels; dock movement and unpin retain active panel; Ctrl-only wheel zoom with Fit Page, Fit Width and Reset 100%; guide toggle and precise entry are in View menu; redundant toolbar tips/storage text removed. Unified image explorer with independent Hotel Logos catalog, nested folders, thumbnail picker, multi-selection and album membership; menus renamed. Source syntax checked; browser runtime/owner acceptance pending."
+    "current_source_release_note": "V221: vertically stacked simultaneous pinned dock panes; single aligned header per pane; full-width labeled Toolbox items; 5mm snap grid plus page, guides and other objects; corrected template/page navigation. 22 JS blocks parsed; browser runtime pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,7 +47,7 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "The source can contain defects. Project Evolution reset does not reset browser IndexedDB or prove application correctness.",
+    "caveat": "V221: 22 JavaScript blocks parsed, but browser Runtime, IndexedDB and owner acceptance remain unverified.",
     "browser_javascript_syntax_checked": true,
     "browser_javascript_scripts_parsed": 22,
     "browser_static_checker_executed": false
@@ -1107,6 +1107,124 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-035",
+      "title": "چند پنل پین‌شده هم‌زمان در یک سمت و سربرگ واحد",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "دو ستون Dock",
+      "reproduction_steps": [
+        "Pin کردن لایه‌ها و تاریخچه در یک سمت و مشاهده هم‌زمان",
+        "تست هم‌زمان سه پنل، اسکرول مستقل و Refresh",
+        "جابجایی Drag & Drop بین سمت‌ها و unpin/auto-hide/بستن ×"
+      ],
+      "observed": "Pin تاریخچه، لایه‌ها را مخفی می‌کرد؛ هر پنل Pin‌شده دو عنوان و فاصلهٔ اضافی از بالا داشت.",
+      "expected": "همه پنل‌های Pin‌شده همان سمت زیر هم، با یک عنوان و تراز یکسان نمایش داده شوند.",
+      "severity": "high",
+      "source_commit": "f688cb1f2f4b5d984cf14a977500b8eaa0ca85f4",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 221",
+      "implementation": "Source fix in index.html; no native or layer CRUD changes.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "Pin کردن لایه‌ها و تاریخچه در یک سمت و مشاهده هم‌زمان",
+          "تست هم‌زمان سه پنل، اسکرول مستقل و Refresh",
+          "جابجایی Drag & Drop بین سمت‌ها و unpin/auto-hide/بستن ×"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-036",
+      "title": "ردیف‌های کشیده و نام‌دار برای Toolbox",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "جعبه ابزار طراح",
+      "reproduction_steps": [
+        "بررسی تنها یک عنوان Toolbox و ردیف‌های عمودی",
+        "درج و درگ متن، تصویر و Region Block",
+        "نام دو ابزار یک‌بار تکرار و کنترل پین"
+      ],
+      "observed": "ابزارهای سه‌ستونه فقط با آیکون و دو سربرگ جعبه‌ابزار نمایش داده می‌شدند.",
+      "expected": "یک سربرگ و ردیف‌های تمام‌عرض با نام کوتاه متن، تصویر، خط، شماره صفحه، متن/تصویر یک‌بار تکرار و بلوک.",
+      "severity": "medium",
+      "source_commit": "f688cb1f2f4b5d984cf14a977500b8eaa0ca85f4",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 221",
+      "implementation": "Source fix in index.html; no native or layer CRUD changes.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بررسی تنها یک عنوان Toolbox و ردیف‌های عمودی",
+          "درج و درگ متن، تصویر و Region Block",
+          "نام دو ابزار یک‌بار تکرار و کنترل پین"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-037",
+      "title": "Snap در درج و جابه‌جایی عنصر",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "بوم و خط‌کش",
+      "reproduction_steps": [
+        "درج متن و تصویر و بررسی موقعیت",
+        "کشیدن نزدیک بالا و چپ، مرکز صفحه و راهنما",
+        "هم‌راستایی با عناصر دیگر و شبکه ۵mm",
+        "پنهان‌سازی راهنما و ادامه Snap لبه/گرید"
+      ],
+      "observed": "چسبندگی به لبه صفحه و شبکه برای عناصر درج‌شده و کشیده‌شده ناکافی بود.",
+      "expected": "Snap به لبه‌ها و مرکز صفحه، خطوط راهنمای نمایان و عناصر دیگر تا ۸px؛ شبکه ۵mm تا ۴px.",
+      "severity": "medium",
+      "source_commit": "f688cb1f2f4b5d984cf14a977500b8eaa0ca85f4",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 221",
+      "implementation": "Source fix in index.html; no native or layer CRUD changes.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "درج متن و تصویر و بررسی موقعیت",
+          "کشیدن نزدیک بالا و چپ، مرکز صفحه و راهنما",
+          "هم‌راستایی با عناصر دیگر و شبکه ۵mm",
+          "پنهان‌سازی راهنما و ادامه Snap لبه/گرید"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-038",
+      "title": "اصلاح عناوین قالب‌ها و صفحات",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "ناوبری و سربرگ مدیریت قالب‌ها",
+      "reproduction_steps": [
+        "بررسی دو نام زیر منوی قالب‌ها",
+        "بازکردن هر دو و صحت عملکرد",
+        "بررسی سربرگ مدیر قالب و بازگشت پس از Refresh"
+      ],
+      "observed": "کتابخانه قالب‌ها در منو باقی بود و طراحی صفحات به اشتباه طراحی قالب‌ها نام داشت.",
+      "expected": "ورود به مدیریت قالب با عنوان طراحی قالب‌ها و ورود به ادیتور صفحات با عنوان طراحی صفحات.",
+      "severity": "low",
+      "source_commit": "f688cb1f2f4b5d984cf14a977500b8eaa0ca85f4",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 221",
+      "implementation": "Source fix in index.html; no native or layer CRUD changes.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بررسی دو نام زیر منوی قالب‌ها",
+          "بازکردن هر دو و صحت عملکرد",
+          "بررسی سربرگ مدیر قالب و بازگشت پس از Refresh"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -1169,7 +1287,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 220,
+      "release": 221,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
