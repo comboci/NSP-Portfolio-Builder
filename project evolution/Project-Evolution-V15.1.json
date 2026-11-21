@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 205",
+    "application_release": "Browser 206",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser V205: sequential suggested template name in the native prompt; owner runtime acceptance pending"
+    "current_source_release_note": "Browser 206 source implements tree group gallery and hierarchical template backup / restore. Owner runtime acceptance pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -78,6 +78,40 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-002",
+      "title": "کتابخانه قالب‌ها با درخت گروه‌های چندسطحی، گالری کارت‌ها و عملیات زمینه‌ای",
+      "type": "feature",
+      "screen_or_flow": "کتابخانه قالب‌ها — Tree View در سمت راست، قالب‌ها در گالری سمت چپ",
+      "reproduction_steps": [
+        "بازکردن کتابخانهٔ قالب‌ها",
+        "ساخت Cover → Fanwest با دکمهٔ ＋ گروه",
+        "ساخت قالب زیر Fanwest و طراحی و ذخیره آن",
+        "ویرایش، کپی و جابه‌جایی قالب‌ها",
+        "بررسی ذخیره‌سازی پس از بازگشایی و Import/Backup"
+      ],
+      "observed": "در نسخهٔ ۲۰۵ گروه‌های قالب تک‌سطحی بودند و ایجاد از داخل شاخهٔ درختی وجود نداشت.",
+      "expected": "درخت گروه‌ها با عمق نامحدود و قالب‌ها در برگ‌ها؛ ساخت زیرگروه/قالب با دکمهٔ ＋؛ بازشدن طراح پس از ساخت؛ حفظ عملیات و پیش‌نمایش، انتقال گروه‌ها و سازگاری داده.",
+      "severity": "medium",
+      "source_commit": "4e9daad50d1c7a8a14dbade785020f328f3a7c68",
+      "fix_version": "Browser 206",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "افزودن parentId، اعتبارسنجی چرخه و والد، افزودن درخت و پیش‌نمایش گالری، عملیات گره‌ای، انتقال و حذف محافظت‌شده، Export/Import سلسله‌مراتب.",
+      "status": "source_fixed_pending_owner_runtime",
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "Cover → Fanwest → قالب، ساخت/ویرایش/ذخیره/بازگشایی",
+          "باز و بسته‌کردن شاخه‌ها و گروه‌های چند سطحی",
+          "حذف امن گروه دارای زیرگروه/قالب و انتقال بدون حلقه",
+          "عملیات کارت‌های قالب",
+          "پایداری پس از Refresh، Import/Export و Restore",
+          "سازگاری با دسته‌های نسخهٔ ۲۰۵"
+        ]
+      }
     }
   ],
   "defects": [],
@@ -125,7 +159,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 205,
+      "release": 206,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
