@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 215",
+    "application_release": "Browser 216",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 215 fixes route/view persistence after F5 for file:// and normal browser use. Saves UI context via history.state, sessionStorage and window.name fallback; restores tab, selected library group, expanded tree, search, page/template editor, scroll after IndexedDB loads. Route failure does not trigger storage recovery."
+    "current_source_release_note": "Browser 216: F5 route persisted in address hash, prioritized over storage; same-scope restriction removed for navigation tabs, while retained for opening project editor objects. Browser 215 failed owner runtime, new fix pending acceptance."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -171,7 +171,7 @@
           "Refresh در مرورگر و بررسی صفحه و داده‌ها",
           "تکرار در طراح یک صفحهٔ پروژه"
         ],
-        "note": "User reported navigation was not reliably restored after refresh on file://. Follow-up fix RR-024 in browser 215 adds storage-independent fallbacks and guards."
+        "note": "User confirmed version 215 still opens dashboard on Refresh. RR-025 addresses with URL hash."
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
@@ -770,12 +770,46 @@
       "implementation": "ردیابی UI از render و pagehide؛ ذخیره به history.state، sessionStorage و fallback window.name در همان تب؛ خواندن جدیدترین snapshot و بازگردانی پس از readBrowserSnapshot از IndexedDB با اعتبارسنجی workspace/portfolio و شناسه‌های گروه، قالب و صفحه؛ خطای بازگردانی route از خطای واقعی DB جدا شده است.",
       "status": "source_fixed_pending_owner_runtime",
       "owner_verification": {
-        "status": "pending",
+        "status": "needs_retest",
         "steps": [
           "F5 در کتابخانه قالب‌ها و گروه انتخاب‌شده",
           "F5 در طراح قالب ذخیره‌شده و صفحات پروژه",
           "F5 در تنظیمات و پروژه‌ها",
           "عدم تداخل میان دو تب مرورگر"
+        ],
+        "note": "User confirmed version 215 still opens dashboard on Refresh. RR-025 addresses with URL hash."
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-025",
+      "title": "حفظ صفحه و گروه فعال پس از F5 با آدرس URL",
+      "type": "runtime_bugfix",
+      "screen_or_flow": "کتابخانه قالب‌ها، طراح قالب، پروژه‌ها، تنظیمات",
+      "reproduction_steps": [
+        "نسخه ۲۱۶ را در فایل محلی index.html باز کنید",
+        "وارد کتابخانه قالب‌ها شوید و یک گروه انتخاب کنید",
+        "وجود #nsp-pb-view= را در انتهای URL مشاهده کنید",
+        "F5 بزنید و بازگشت به همان کتابخانه و گروه را بررسی کنید",
+        "در طراح یک قالب ذخیره‌شده F5 بزنید",
+        "پروژه‌ها و تنظیمات را نیز با F5 بررسی کنید"
+      ],
+      "observed": "مالک گزارش داد نسخه ۲۱۵ با وجود ذخیره در sessionStorage/history.state/window.name دوباره داشبورد نمایش می‌دهد.",
+      "expected": "آدرس فایل، مسیر ناوبری را بدون نیاز به storage مرورگر حفظ کند؛ گروه/صفحهٔ موجود بازیابی شود و دادهٔ پروژه در IndexedDB باقی بماند.",
+      "severity": "high",
+      "source_commit": "1b48e94d5ab623c099cc791465b1382445a4c175",
+      "fix_version": "Browser 216",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "ذخیره route فشرده tab/filter/pageId/templateId در hash آدرس با history.replaceState و fallback مستقیم؛ خواندن hash مقدم بر sessionStorage؛ اعتبارسنجی شناسهٔ پروژه صرفاً برای بازکردن ویرایشگر، نه ناوبری عمومی.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "F5 داخل کتابخانه و گروه فعال",
+          "F5 در طراح قالب",
+          "F5 در تنظیمات/پروژه‌ها",
+          "تغییر hash در نوار آدرس"
         ]
       },
       "created_at": "2026-11-21",
@@ -835,7 +869,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 215,
+      "release": 216,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
