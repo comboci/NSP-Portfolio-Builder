@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 207",
+    "application_release": "Browser 208",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 207: fixes context menus, single active popup, taller scrollable tree, session view restore, right-opening Dock and icon-only Once tools. Owner runtime acceptance pending."
+    "current_source_release_note": "Browser 208 implements canvas Ctrl/Shift+wheel zoom, middle-button pan, more usable guide rulers/visibility controls, header print action, clearer alignment labels, mutually exclusive toolbar popups. Awaiting owner runtime validation."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -261,6 +261,182 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-008",
+      "title": "زوم بوم با Ctrl/Shift و چرخ ماوس",
+      "type": "interaction",
+      "screen_or_flow": "طراح صفحه/قالب → بوم",
+      "reproduction_steps": [
+        "بازکردن طراح و نگه داشتن نشانگر روی بوم",
+        "Ctrl + چرخ ماوس یا Shift + چرخ ماوس",
+        "بررسی اینکه فقط مقیاس بوم عوض می‌شود"
+      ],
+      "observed": "Ctrl + wheel صفحهٔ مرورگر را بزرگ می‌کرد و از وضعیت بوم مستقل بود.",
+      "expected": "زوم روی خود بوم با حفظ نقطهٔ زیر نشانگر؛ بدون Browser Zoom و بدون تغییر ابعاد چاپ یا ذخیرهٔ صفحه.",
+      "severity": "low",
+      "source_commit": "934fad291901d3f25ae53f730013fb140057788b",
+      "fix_version": "Browser 208",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "Wheel listener غیر passive و capture فقط داخل canvas scroll؛ فراخوانی zoom با لنگر مکان نشانگر و محدودیت zoom موجود.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بازکردن طراح و نگه داشتن نشانگر روی بوم",
+          "Ctrl + چرخ ماوس یا Shift + چرخ ماوس",
+          "بررسی اینکه فقط مقیاس بوم عوض می‌شود"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-009",
+      "title": "جابجایی بوم با دکمهٔ وسط ماوس",
+      "type": "interaction",
+      "screen_or_flow": "طراح صفحه/قالب → بوم",
+      "reproduction_steps": [
+        "بدون فعال‌کردن Pan دکمهٔ وسط ماوس را روی بوم نگه دارید",
+        "ماوس را افقی و عمودی حرکت دهید",
+        "رها کنید و ویرایش عادی را ادامه دهید"
+      ],
+      "observed": "Pan تنها با فعال‌کردن ابزار و کشیدن با دکمهٔ چپ قابل استفاده بود.",
+      "expected": "دکمهٔ وسط ماوس در همهٔ حالت‌ها بوم را جابه‌جا کند؛ ابزار Pan موجود برای دکمهٔ چپ حفظ شود.",
+      "severity": "low",
+      "source_commit": "934fad291901d3f25ae53f730013fb140057788b",
+      "fix_version": "Browser 208",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "مسیر pointer pan موجود برای event.button===1 نیز فعال شد؛ autoscroll مرورگر در ناحیهٔ بوم مهار شد.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بدون فعال‌کردن Pan دکمهٔ وسط ماوس را روی بوم نگه دارید",
+          "ماوس را افقی و عمودی حرکت دهید",
+          "رها کنید و ویرایش عادی را ادامه دهید"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-010",
+      "title": "خط‌کش و دستگیرهٔ جابه‌جایی راهنماها و وضعیت نمایش",
+      "type": "bugfix",
+      "screen_or_flow": "طراح قالب/صفحه → راهنمای عمودی، افقی، نمایش/پنهان",
+      "reproduction_steps": [
+        "افزودن یک راهنمای عمودی و افقی",
+        "گرفتن نشانگر از خط‌کش بالای/کنار صفحه و حرکت دادن",
+        "پنهان‌سازی و نمایش مجدد",
+        "کنترل مقدار میلی‌متری و ثبت تغییرات"
+      ],
+      "observed": "راهنما باریک بود و سخت انتخاب می‌شد؛ نمایش و پنهان‌سازی بازخورد قابل تشخیص نداشت.",
+      "expected": "خط‌کش درجه‌بندی‌شده و دستگیره‌های بزرگ با امکان کشیدن راهنما؛ وضعیت نمایش و تعداد راهنماها واضح باشد.",
+      "severity": "medium",
+      "source_commit": "934fad291901d3f25ae53f730013fb140057788b",
+      "fix_version": "Browser 208",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "افزودن ruler به خروجی canvas مشترک و همگام‌سازی drag با خط و دستهٔ راهنما؛ پهن‌تر کردن hit target و aria-pressed/تعداد.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "افزودن یک راهنمای عمودی و افقی",
+          "گرفتن نشانگر از خط‌کش بالای/کنار صفحه و حرکت دادن",
+          "پنهان‌سازی و نمایش مجدد",
+          "کنترل مقدار میلی‌متری و ثبت تغییرات"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-011",
+      "title": "جابجایی چاپ/PDF از ابزار نمایش به چپ بالای طراح",
+      "type": "ux_improvement",
+      "screen_or_flow": "طراح قالب/صفحه → نوار سربرگ",
+      "reproduction_steps": [
+        "بازکردن صفحهٔ طراح",
+        "بررسی حذف دکمهٔ چاپ از دستهٔ Zoom/Pan",
+        "کلیک دکمهٔ چاپ/PDF در گوشهٔ چپ بالای طراح"
+      ],
+      "observed": "دکمهٔ چاپ/PDF میان ابزارهای زوم، راهنما و Pan دیده می‌شد.",
+      "expected": "دکمهٔ چاپ/PDF در چپ سربرگ طراحی قابل دسترس و از ابزارهای بوم جدا باشد.",
+      "severity": "low",
+      "source_commit": "934fad291901d3f25ae53f730013fb140057788b",
+      "fix_version": "Browser 208",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "انتقال دکمهٔ چاپ به آخر نوار editbar راست‌به‌چپ، حفظ action چاپ موجود.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بازکردن صفحهٔ طراح",
+          "بررسی حذف دکمهٔ چاپ از دستهٔ Zoom/Pan",
+          "کلیک دکمهٔ چاپ/PDF در گوشهٔ چپ بالای طراح"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-012",
+      "title": "روشن‌سازی عناوین چینش و فاصله‌گذاری",
+      "type": "ux_improvement",
+      "screen_or_flow": "طراح → چینش و فاصله‌گذاری",
+      "reproduction_steps": [
+        "بازکردن منوی چینش",
+        "بررسی گزینه‌های مبنای چینش",
+        "آزمایش روی چند عنصر انتخاب‌شده"
+      ],
+      "observed": "مبنای تراز و برچسب‌های محدودهٔ انتخاب، عنصر کلیدی و تمام صفحه نامفهوم بودند.",
+      "expected": "توضیح روشن دربارهٔ تراز و توزیع فاصله و عنوان‌های دقیق؛ بدون تغییر ریاضی یا رفتار انتخاب.",
+      "severity": "low",
+      "source_commit": "934fad291901d3f25ae53f730013fb140057788b",
+      "fix_version": "Browser 208",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "بازنویسی برچسب مبنا و گزینه‌ها و افزودن راهنمای کوتاه فارسی.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بازکردن منوی چینش",
+          "بررسی گزینه‌های مبنای چینش",
+          "آزمایش روی چند عنصر انتخاب‌شده"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-013",
+      "title": "انحصاری‌شدن منوهای شناور نوار طراحی",
+      "type": "bugfix",
+      "screen_or_flow": "طراح → چینش و فاصله‌گذاری / تکثیر هوشمند / منوهای Toolbar",
+      "reproduction_steps": [
+        "بازکردن چینش و فاصله‌گذاری",
+        "کلیک تکثیر هوشمند",
+        "کلیک بیرون و فشردن Escape"
+      ],
+      "observed": "همزمان چند منوی شناور باز می‌ماندند و بوم را می‌پوشاندند.",
+      "expected": "همزمان یک منوی نوار طراحی باز باشد؛ با کلیک خارج یا Escape بسته شود.",
+      "severity": "medium",
+      "source_commit": "934fad291901d3f25ae53f730013fb140057788b",
+      "fix_version": "Browser 208",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "مدیریت اختصاصی <details>های نوار ابزار با click capture و Escape بدون تغییر پنل‌های Dock/Properties.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بازکردن چینش و فاصله‌گذاری",
+          "کلیک تکثیر هوشمند",
+          "کلیک بیرون و فشردن Escape"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -316,7 +492,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 207,
+      "release": 208,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
