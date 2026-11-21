@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 235",
+    "application_release": "Browser 236",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser V235 RR-079/080: categorized template picker on double-click PowerPoint thumbnail, vertical context menu including template/copy/cut/paste/delete and scoped page clipboard. Source syntax and structural tests only."
+    "current_source_release_note": "V236 RR-081/082: visually enclosed unlinked line in user V230 JSON is deleted with Region; auto-associate tool-drop inside Region; vertical object menu and robust outside dismissal; paste text from OS clipboard with Firefox fallback. Mock+syntax, owner runtime pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,7 +47,7 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "V235: 30 JS executable blocks parsed; real Firefox mouse, template picker, structural page clipboard and IndexedDB persistence not yet user-verified.",
+    "caveat": "V236: 30 scripts parse, Region mock based on uploaded JSON geometry passes; Firefox actual right-click, Clipboard and IndexedDB not yet tested.",
     "browser_javascript_syntax_checked": true,
     "browser_javascript_scripts_parsed": 30,
     "browser_static_checker_executed": false
@@ -2509,6 +2509,70 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-081",
+      "title": "حذف Region شامل خط هندسی بدون blockId",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "Page Designer / Region Block / Object Context Menu",
+      "observed": "خط فایل V230 در لایه جدا و blockId خالی بعد حذف Region می‌ماند",
+      "expected": "حذف پیوسته اعضا و عناصر کاملاً درون Region و ثبت خودکار عضویت جدید",
+      "reproduction_steps": [
+        "ساخت Region با خط در لایه مستقل",
+        "حذف Region و تأیید حذف خط و حفظ تصویر خارج",
+        "Right Click آبجکت و کلیک بیرون و Escape",
+        "کپی و Paste متن OS Clipboard",
+        "ذخیره و Refresh و بررسی خروجی"
+      ],
+      "severity": "high",
+      "source_commit": "9ace48e7d10e0d5180afb653b7cbc3ec3377d3da",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 236",
+      "implementation": "حذف هندسی آبجکت‌های کاملاً محصور همراه cascade عضویت، درج Drag-to-Region، منوی عمودی پایدار و Paste متن؛ Syntax/Mock موفق، Runtime مالک باز.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "حذف خط Region",
+          "منوی Firefox",
+          "Paste Clipboard",
+          "IndexedDB Refresh"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-082",
+      "title": "منوی عمودی آبجکت و Paste سیستم‌کلیپ‌بورد",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "Page Designer / Region Block / Object Context Menu",
+      "observed": "منوی افقی، بستن ناقص با کلیک بیرون، نبود Paste متن",
+      "expected": "راست‌کلیک عمودی با Copy/Cut/Paste/Delete و Paste متن Firefox",
+      "reproduction_steps": [
+        "ساخت Region با خط در لایه مستقل",
+        "حذف Region و تأیید حذف خط و حفظ تصویر خارج",
+        "Right Click آبجکت و کلیک بیرون و Escape",
+        "کپی و Paste متن OS Clipboard",
+        "ذخیره و Refresh و بررسی خروجی"
+      ],
+      "severity": "high",
+      "source_commit": "9ace48e7d10e0d5180afb653b7cbc3ec3377d3da",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 236",
+      "implementation": "حذف هندسی آبجکت‌های کاملاً محصور همراه cascade عضویت، درج Drag-to-Region، منوی عمودی پایدار و Paste متن؛ Syntax/Mock موفق، Runtime مالک باز.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "حذف خط Region",
+          "منوی Firefox",
+          "Paste Clipboard",
+          "IndexedDB Refresh"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -2571,7 +2635,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 235,
+      "release": 236,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
