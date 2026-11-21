@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 212",
+    "application_release": "Browser 213",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 212: corrects nested three-dot group menu HTML introduced in 211. Cleanup of A/B/C switcher, redundant buttons, root three-dot, scoped right-click actions retained. Mockups separate from code."
+    "current_source_release_note": "Browser 213: applies owner-selected classic folder-tree visual style to template library with NSP green accents, yellow SVG folders, file icons, visible dotted connectors and matching green three-dot/right-click popups. No controls or data model changed."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -668,12 +668,45 @@
       "fix_version": null,
       "fix_commit": null,
       "implementation": "فقط تصویر پیشنهادی در گفتگو؛ بدون اضافه‌شدن تم، تصویر یا کنترل انتخاب به پروژه.",
-      "status": "awaiting_owner_design_choice",
+      "status": "design_approved",
       "owner_verification": {
-        "status": "pending",
+        "status": "approved_visual_reference",
         "steps": [
           "مقایسه دو یا سه تصویر",
           "انتخاب طرح مطلوب توسط مالک"
+        ],
+        "note": "مالک تصویر کلاسیک درخت پوشه‌ها و منوی شناور را انتخاب کرد و تصریح کرد رنگ‌بندی آبی با سبز هماهنگ با NSP جایگزین شود؛ هیچ انتخابگر تم وارد نرم‌افزار نشود."
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-022",
+      "title": "اعمال طرح انتخابی کلاسیک پوشه‌ها با تم سبز در کتابخانه قالب‌ها",
+      "type": "runtime_ui_design",
+      "screen_or_flow": "کتابخانه قالب‌ها → درخت، پوشه‌ها، خطوط شاخه، منوی ⋮ و کلیک راست",
+      "reproduction_steps": [
+        "کتابخانه قالب‌ها را در نسخه ۲۱۳ باز کنید",
+        "گروه چندسطحی بسازید و خطوط اتصال و آیکون زرد پوشه‌ها را ببینید",
+        "گروهی را انتخاب کنید و رنگ سبز ردیف فعال را بررسی کنید",
+        "منوی ⋮ گروه و کلیک راست را باز کنید",
+        "درگ گروه روی گروه دیگر و باز و بسته‌کردن شاخه‌ها را بررسی کنید",
+        "عرض پنل در نمایشگر کوچک و حالت اسکرول را بررسی کنید"
+      ],
+      "observed": "ظاهر قبلی درخت و آیکون‌ها ساده و قدیمی بود و استایل تصویری انتخاب‌شده توسط مالک هنوز روی سورس اعمال نشده بود.",
+      "expected": "ظاهر نزدیک به نمونهٔ تصویری انتخابی با پوشه‌های زرد، آیکون برگ قالب، خطوط نقطه‌ای اتصال و منوهای یکدست؛ رنگ آبی طرح مرجع به طیف سبز NSP تغییر کند؛ بدون کنترل یا تم قابل‌تعویض جدید.",
+      "severity": "medium",
+      "source_commit": "373b4b88350b46a10cd5b6f60a3354a54dcf2909",
+      "fix_version": "Browser 213",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "Inline SVG decorative icons in existing group, leaf and all-templates nodes; scoped CSS for green gradient tree header, selected rows, dotted branch guides, wider desktop sidebar and matching portaled context menus. Data actions, drag/drop and DB schema untouched.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "تطبیق بصری درخت نسخه ۲۱۳ با تصویر مرجع از نظر سبز و آیکون‌ها",
+          "اجرای منوی سه‌نقطه و کلیک راست",
+          "آزمون Drag & Drop و نمایش در دسکتاپ"
         ]
       },
       "created_at": "2026-11-21",
@@ -733,7 +766,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 212,
+      "release": 213,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
