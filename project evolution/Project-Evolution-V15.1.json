@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 231",
+    "application_release": "Browser 232",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "V231: standard object shortcuts, internal project clipboard and recursive Region Block deletion, including object order cleanup. Source tests pass; live Firefox owner review pending."
+    "current_source_release_note": "Browser 232: explicit double-click on project portfolio page rows opens the exact page in visual editor; single-open button, Enter and identity validation; v231 object shortcut corrections retained. Firefox runtime pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,9 +47,9 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "V228: 29 JS scripts parsed and mock pagination checks passed; live Firefox text measurement, printed page boundaries, IndexedDB save/reload and user acceptance not verified.",
+    "caveat": "V232: 30 inline JS scripts parsed; structural data-grid event test passed; actual double-click Firefox, selected page after IndexedDB switch, and user acceptance pending.",
     "browser_javascript_syntax_checked": true,
-    "browser_javascript_scripts_parsed": 29,
+    "browser_javascript_scripts_parsed": 30,
     "browser_static_checker_executed": false
   },
   "active_tasks": [
@@ -2377,6 +2377,39 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-077",
+      "title": "دابل‌کلیک روی صفحهٔ فهرست پروژه‌ها و بازکردن دقیق آن در طراح صفحات",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "لیست پروژه‌ها ← پورتفولیو ← دیتاگراید صفحات ← طراح",
+      "observed": "دابل‌کلیک روی ردیف صفحه، صفحهٔ انتخابی را در طراح باز نمی‌کرد یا صفحهٔ دیگری باز می‌شد.",
+      "expected": "دابل‌کلیک روی ردیف، با حفظ پروژه و پورتفولیو، همان صفحه را در visual باز و در Sidebar هایلایت کند.",
+      "reproduction_steps": [
+        "پورتفولیویی با حداقل سه صفحه ایجاد کنید",
+        "به لیست پروژه‌ها برگردید و پروژه را باز کنید",
+        "روی ردیف صفحه سوم دابل‌کلیک کنید",
+        "باید طراح visual روی صفحه سوم و Sidebar انتخاب‌شده باشد",
+        "از پروژهٔ غیرفعال و با Enter نیز آزمایش کنید",
+        "ذخیره و بازگشت و مجدد تست کنید"
+      ],
+      "severity": "high",
+      "source_commit": "07e8173ca405e8cbcff1257119b9bfa0e2459450",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 232",
+      "implementation": "افزودن delegated double-click/keyboard و دکمهٔ بازکردن؛ اعتبارسنجی و ناوبری دقیق؛ syntax و تست ساختاری، Firefox Runtime pending.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "دابل‌کلیک",
+          "بررسی صفحه فعال",
+          "تست پروژه غیرفعال",
+          "Refresh"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -2439,7 +2472,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 231,
+      "release": 232,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [

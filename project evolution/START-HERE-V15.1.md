@@ -6,7 +6,7 @@
 
 - **نسخهٔ Project Evolution:** V15.1
 - **مبنای بازنشانی کد مرورگر:** Version 204 — `1b1f58420399276333aa42e0acd97ec1ef0232e8`
-- **نسخهٔ جاری مرورگر:** Version 231؛ پذیرش رانتایم در انتظار مالک
+- **نسخهٔ جاری مرورگر:** Version 232؛ پذیرش رانتایم در انتظار مالک
 - **Repository / Branch:** `comboci/NSP-Portfolio-Builder` / `main`
 - **معماری:** Project → Portfolios → Independent Pages (Page-First)
 - **ذخیره‌سازی مرورگر:** IndexedDB، پایگاه `nsp-portfolio-builder-independent-pages`، schema 2
@@ -21,7 +21,7 @@
 | نام | NSP Portfolio Builder |
 | زبان رابط کاربری | فارسی (`fa`) |
 | جهت رابط | راست‌به‌چپ (`RTL`) |
-| نسخهٔ فعال بررسی | Browser 231 |
+| نسخهٔ فعال بررسی | Browser 232 |
 | فناوری مرورگر | HTML / CSS / JavaScript، فایل `index.html` |
 | معماری مرورگر | Page-First؛ پروژه → پورتفولیوهای مستقل → صفحات مستقل |
 | پایگاه دادهٔ مرورگر | IndexedDB نسخهٔ ۲ (`nsp-portfolio-builder-independent-pages`) |
@@ -312,3 +312,10 @@ Parse 29 اسکریپت JavaScript موفق بود. Runtime Firefox و تست ذ
 - **RR-076:** حذف Region Block اکنون مجموعهٔ فرزندان را بازگشتی بر اساس `blockId` در فهرست اصلی `visualObjects` محاسبه می‌کند، به همین دلیل هر آبجکت متصل همراه Region حذف می‌شود و `objectOrder` پالایش می‌گردد. Region قفل‌شده نیازمند بازکردن قفل است و حذف والد تأیید می‌خواهد.
 
 **آزمون:** Parse 29 اسکریپت و تست واحد Cascade با دو فرزند و یک آبجکت مستقل موفق بود؛ Runtime واقعی Firefox، Copy/Paste، Undo/Redo و IndexedDB هنوز باز است.
+
+
+## Runtime Review — Browser V232 (RR-077) — ۲۱ نوامبر ۲۰۲۶
+
+- **RR-077 — بازکردن دقیق صفحه با دابل‌کلیک:** در لیست پروژه‌ها هر ردیف صفحه شناسه‌های پروژه/پورتفولیو/صفحه را در `data-v232-*` دارد. دابل‌کلیک روی هر بخش ردیف، و کلیک روی دکمهٔ «بازکردن»، به `v77EditPortfolio(projectId,portfolioId,pageId)` هدایت می‌شود. Enter/Space روی ردیف نیز مسیر یکسان دارد.
+- اعتبارسنجی شناسهٔ واقعی صفحه قبل از تعویض پروژه/پورتفولیو انجام می‌شود. پس از تعویض، `visualOpenPage` همان صفحه را فعال می‌کند و تطبیق `selected`، `tab=visual` و `activePortfolioId` بررسی می‌شود. ردیف همان صفحه در Sidebar نمایان می‌شود.
+- آزمایش: Parse 30 اسکریپت JavaScript و بررسی ساختاری دیتاگراید با شناسه‌های واقعی و دو مسیر بازکردن. اجرای واقعی Firefox/IndexedDB و پذیرش مالک در انتظار است.
