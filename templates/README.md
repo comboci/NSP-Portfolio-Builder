@@ -1,14 +1,19 @@
-# NSP Portfolio Builder — Curated A4 Templates
+# NSP Portfolio Builder — JSON template library
 
-Two independent, authored-in-NSP, editable page templates as JSON packs. Works with current browser-first single-file `index.html`.
+The repository `templates/` directory contains **five independently authored corporate portfolio template packs**, using schema `nsp.template-pack.v1` and the application’s existing editable objects (text, shape, circle, line). No third-party photographs, logos, or page designs are redistributed.
 
-- `nsp-legrand-grms-v1.json`: GRMS architecture, mapped to research Work sections **SEC-05, SEC-04, SEC-07**. Inspired by high-level layout patterns in Legrand hotel solution materials.
-- `nsp-abb-hospitality-v1.json`: hotel solution benefits, mapped to **SEC-03, SEC-05, SEC-10**. Inspired by general hospitality presentation patterns in ABB materials.
+| JSON file | Source of general layout inspiration | Work research sections | Editable pages |
+|---|---|---|---|
+| `nsp-legrand-grms-v1.json` | Legrand — Guest Room Hotel Solutions | SEC-05, SEC-04, SEC-07 | 1 |
+| `nsp-abb-hospitality-v1.json` | ABB — Hospitality Portfolio | SEC-03, SEC-05, SEC-10 | 1 |
+| `nsp-crestron-case-study-v1.json` | Crestron — Hotel Renegade Case Study | SEC-11, SEC-12 | 2 |
+| `nsp-vingcard-product-sheet-v1.json` | Vingcard — Hospitality / Product Sheets | SEC-14, SEC-16 | 1 |
+| `nsp-siemens-multihotel-dashboard-v1.json` | Siemens — Connected hotel operations | SEC-09, SEC-17 | 1 |
 
-No Legrand/ABB images, logos, or catalog pages are copied. Every placeholder is a simple editable text/shape object. Replace the logo or photo placeholders through the existing image library and editor. No vendor claims are implied for NSP.
+**How to use:** Open the single-file `index.html` and go to **طراحی قالب‌ها → نمونه قالب‌های اختصاصی NSP**. For any pack, choose **ساخت صفحه و ویرایش** to create its page(s) in the current portfolio, **افزودن به کتابخانه** to register reusable page templates without creating pages, or **دریافت JSON** to save the external pack. **بارگذاری فایل JSON** imports an external `nsp.template-pack.v1` file. Duplicate imports preserve existing edits to registered templates.
 
-Each pack is `nsp.template-pack.v1` with metadata and `pages`. Select **طراحی قالب‌ها → نمونه قالب‌های اختصاصی NSP → ساخت صفحه و ویرایش** for a new editable page, **افزودن به کتابخانه** to keep a template without adding a page, or **بارگذاری فایل JSON** to import a downloaded pack. Imported template ID is stable and duplicate imports preserve local edits.
+**Image and data placeholders:** All logos, product photographs, hotel photographs, metrics and project facts are placeholders. Insert appropriately licensed images with the existing image tools; fill in only verified NSP data. The dashboard contains no invented occupancy, energy or performance figures. The case study does not claim an NSP project was completed.
 
-Because standalone HTML cannot silently write to adjacent directories, these JSONs live in this repository folder for distribution; the same packs are embedded in the HTML for offline use. Imported templates persist through existing application storage, not by overwriting external JSON.
+**Storage semantics:** JSON files in this folder are distribution sources. The Browser cannot silently write files next to a local `index.html`; imported templates are persisted by the application's existing storage. The same five packs are embedded in `index.html` to work offline.
 
-Source syntax/JSON checks are not proof of runtime acceptance. Test loading, editing, saving, reloading and creating pages in the browser.
+**Quality status:** Source/schema/geometry checks are separate from actual browser runtime acceptance. Review creation of both Crestron pages in sequence, edit/save/reload each, preserve existing page content, import duplicates without overwriting edits, and verify printing/PDF.
