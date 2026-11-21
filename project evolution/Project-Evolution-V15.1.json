@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 206",
+    "application_release": "Browser 207",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 206 source implements tree group gallery and hierarchical template backup / restore. Owner runtime acceptance pending."
+    "current_source_release_note": "Browser 207: fixes context menus, single active popup, taller scrollable tree, session view restore, right-opening Dock and icon-only Once tools. Owner runtime acceptance pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -67,14 +67,15 @@
       "fix_version": "Browser 205",
       "fix_commit": "same_commit_as_task_record",
       "implementation": "createTemplate نام پیشنهادی یکتا را برای prompt می‌گذارد؛ همهٔ شناسه‌های نمایشی نسخه به ۲۰۵ ارتقا یافته است.",
-      "status": "source_fixed_pending_owner_runtime",
+      "status": "runtime_verified",
       "owner_verification": {
-        "status": "pending",
+        "status": "passed",
         "steps": [
           "تأیید وجود «قالب جدید ۱» در کادر نام",
           "ساخت یک قالب، بررسی پیشنهاد «قالب جدید ۲»",
           "ویرایش آزاد عنوان و ذخیره با نام دلخواه"
-        ]
+        ],
+        "note": "مالک در رانتایم نسخه ۲۰۶ نمایش نام پیش‌فرض قالب جدید ۱، پیشنهاد قالب جدید ۲ و عملکرد ذخیره/ویرایش را تأیید کرد."
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
@@ -110,12 +111,168 @@
           "عملیات کارت‌های قالب",
           "پایداری پس از Refresh، Import/Export و Restore",
           "سازگاری با دسته‌های نسخهٔ ۲۰۵"
-        ]
+        ],
+        "notes": "مالک ساخت، ویرایش، ذخیره، بازگشت و حذف را در نسخه ۲۰۶ مشاهده کرد؛ بررسی کامل درخت و Backup/Restore هنوز باز است."
       }
+    },
+    {
+      "id": "RR-003",
+      "title": "نمایش صحیح منوهای سه‌نقطه و بسته‌شدن منوی قبلی",
+      "type": "bugfix",
+      "screen_or_flow": "کتابخانه قالب‌ها → درخت گروه‌ها / کارت قالب‌ها",
+      "reproduction_steps": [
+        "بازکردن ⋮ در یکی از گروه‌های پایین درخت",
+        "بازکردن ⋮ گروه دیگر",
+        "کلیک بیرون و اسکرول و Escape"
+      ],
+      "observed": "منو زیر لایهٔ مجاور یا بیرون محدودهٔ اسکرول بریده می‌شد؛ هم‌زمان چند منو باز می‌ماند.",
+      "expected": "منو روی همهٔ بخش‌ها دیده شود؛ تنها یک منو باز بماند؛ بیرون/اسکرول/Escape آن را ببندند.",
+      "severity": "medium",
+      "source_commit": "04f9e4a73841ef08eb1cd3ad1563bd18e495f5f4",
+      "fix_version": "Browser 207",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "Popup به body منتقل می‌شود و بر اساس مختصات دکمه در viewport جای می‌گیرد؛ مدیریت واحد باز/بسته‌شدن.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بازکردن ⋮ در یکی از گروه‌های پایین درخت",
+          "بازکردن ⋮ گروه دیگر",
+          "کلیک بیرون و اسکرول و Escape"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-004",
+      "title": "بازیابی همان صفحه پس از Refresh",
+      "type": "ux_improvement",
+      "screen_or_flow": "ناوبری و طراح صفحه / کتابخانه قالب‌ها",
+      "reproduction_steps": [
+        "ورود به کتابخانه و انتخاب گروه چندسطحی",
+        "بازکردن قالب در طراح و ذخیره",
+        "Refresh در مرورگر و بررسی صفحه و داده‌ها",
+        "تکرار در طراح یک صفحهٔ پروژه"
+      ],
+      "observed": "Refresh نمای UI را به داشبورد برمی‌گرداند، حتی وقتی دادهٔ پروژه در IndexedDB ذخیره بود.",
+      "expected": "در همان تب، صفحهٔ قبلی و گروه/قالب یا صفحهٔ در حال ویرایش از دادهٔ ذخیره‌شده بازیابی شود. تغییرات ذخیره‌نشده ادعای بازیابی ندارند.",
+      "severity": "medium",
+      "source_commit": "04f9e4a73841ef08eb1cd3ad1563bd18e495f5f4",
+      "fix_version": "Browser 207",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "UI context جداگانه در sessionStorage همان تب ذخیره می‌شود؛ بعد از بارگذاری موفق IndexedDB و با اعتبارسنجی ID بازیابی می‌شود.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "ورود به کتابخانه و انتخاب گروه چندسطحی",
+          "بازکردن قالب در طراح و ذخیره",
+          "Refresh در مرورگر و بررسی صفحه و داده‌ها",
+          "تکرار در طراح یک صفحهٔ پروژه"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-005",
+      "title": "افزایش ارتفاع گروه‌بندی قالب‌ها",
+      "type": "ux_improvement",
+      "screen_or_flow": "کتابخانه قالب‌ها → ستون درخت گروه‌بندی",
+      "reproduction_steps": [
+        "بازکردن کتابخانه در مانیتور دسکتاپ",
+        "بررسی ارتفاع ستون درخت",
+        "افزودن چندین زیرگروه و اسکرول درخت"
+      ],
+      "observed": "باکس درخت به ارتفاع کوتاه محتوای جاری محدود و به‌صورت ظاهری فشرده بود.",
+      "expected": "ارتفاع بیشتری در دسکتاپ و اسکرول مستقل برای شاخه‌های طولانی، با هدر ثابت در همان باکس.",
+      "severity": "low",
+      "source_commit": "04f9e4a73841ef08eb1cd3ad1563bd18e495f5f4",
+      "fix_version": "Browser 207",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "ارتفاع واکنش‌گرا و اسکرول داخلی مستقل به ستون درخت اضافه شد.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بازکردن کتابخانه در مانیتور دسکتاپ",
+          "بررسی ارتفاع ستون درخت",
+          "افزودن چندین زیرگروه و اسکرول درخت"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-006",
+      "title": "بازشدن پنل‌های شناور و سنجاق‌شده طراح به سمت راست",
+      "type": "bugfix",
+      "screen_or_flow": "طراح قالب / طراح صفحه → ویژگی‌ها و لایه‌ها",
+      "reproduction_steps": [
+        "بازکردن ویژگی‌ها در حالت Auto-hide",
+        "بازکردن لایه‌ها",
+        "سنجاق کردن و بازکردن دوباره"
+      ],
+      "observed": "پنل‌های Dock به سمت چپ و بیرون فضای قابل مشاهده ظاهر می‌شدند.",
+      "expected": "نوار Dock سمت چپ بماند اما پنل‌ها به سمت راست، داخل ناحیهٔ طراح باز شوند.",
+      "severity": "high",
+      "source_commit": "04f9e4a73841ef08eb1cd3ad1563bd18e495f5f4",
+      "fix_version": "Browser 207",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "جهت گرید Dock دسکتاپ اصلاح شد؛ پنجره‌های flyout و pinned با مختصات physical-left در سمت بوم قرار می‌گیرند.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بازکردن ویژگی‌ها در حالت Auto-hide",
+          "بازکردن لایه‌ها",
+          "سنجاق کردن و بازکردن دوباره"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-007",
+      "title": "جایگزینی Text Once و Image Once با آیکون یک‌بار مصرف",
+      "type": "ux_improvement",
+      "screen_or_flow": "نوار ابزار طراح صفحه / قالب",
+      "reproduction_steps": [
+        "بازکردن طراح و مشاهدهٔ ابزارهای Once",
+        "کلیک روی آیکون متن و آیکون تصویر",
+        "بررسی tooltip و رفتار افزودن یک‌بار مصرف"
+      ],
+      "observed": "ابزارهای Once به‌صورت متن انگلیسی بلند و ناهماهنگ با سایر ابزارها بودند.",
+      "expected": "آیکون‌های کوچک متن/تصویر همراه با نشان ۱ و عنوان فارسی، با حفظ رفتار قبلی Once.",
+      "severity": "low",
+      "source_commit": "04f9e4a73841ef08eb1cd3ad1563bd18e495f5f4",
+      "fix_version": "Browser 207",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "برچسب قابل‌نمایش Text Once/Image Once حذف شد؛ آیکون‌ها، نشان ۱ و توضیح قابل دسترس جایگزین شد.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بازکردن طراح و مشاهدهٔ ابزارهای Once",
+          "کلیک روی آیکون متن و آیکون تصویر",
+          "بررسی tooltip و رفتار افزودن یک‌بار مصرف"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
-  "verified_acceptances": [],
+  "verified_acceptances": [
+    {
+      "id": "RR-001",
+      "date": "2026-11-21",
+      "source": "owner_report_during_browser_v206_runtime_review",
+      "scope": "پیشنهاد نام پیش‌فرض هنگام ایجاد قالب و پیشنهاد نام ترتیبی",
+      "result": "passed"
+    }
+  ],
   "review_plan": [
     "Main screen, project list, initial blank portfolio and first page creation",
     "Project/portfolio/page create, rename, delete, switch and persistence after reload",
@@ -159,7 +316,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 206,
+      "release": 207,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
