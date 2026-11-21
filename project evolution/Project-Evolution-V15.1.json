@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 219",
+    "application_release": "Browser 220",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 219 adds Toolbox and View menus, closes/restores draggable dock panels with persisted visibility, precise guide mm entry and labeled 1mm ruler ticks, normalizes toolbar icon sizing, hides redundant side arrow/Pan buttons. Owner runtime review pending."
+    "current_source_release_note": "Version 220: Toolbox migrated into independent fourth Dock pane; headings remain visible for pinned/flyout panels; dock movement and unpin retain active panel; Ctrl-only wheel zoom with Fit Page, Fit Width and Reset 100%; guide toggle and precise entry are in View menu; redundant toolbar tips/storage text removed. Unified image explorer with independent Hotel Logos catalog, nested folders, thumbnail picker, multi-selection and album membership; menus renamed. Source syntax checked; browser runtime/owner acceptance pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,7 +47,10 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "The source can contain defects. Project Evolution reset does not reset browser IndexedDB or prove application correctness."
+    "caveat": "The source can contain defects. Project Evolution reset does not reset browser IndexedDB or prove application correctness.",
+    "browser_javascript_syntax_checked": true,
+    "browser_javascript_scripts_parsed": 22,
+    "browser_static_checker_executed": false
   },
   "active_tasks": [
     {
@@ -978,6 +981,132 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-031",
+      "title": "جعبه‌ابزار به عنوان پنل چهارم Dock و اصلاح سنجاق و عنوان پنل‌ها",
+      "screen_or_flow": "طراح صفحه/قالب — Dock چپ و راست",
+      "severity": "high",
+      "reproduction_steps": [
+        "جابه‌جایی تاریخچه و لایه‌ها بین چپ و راست",
+        "سنجاق و برداشتن سنجاق",
+        "بستن و بازکردن از نمایش",
+        "بررسی عنوان داخل پنل و ابزارهای جعبه‌ابزار"
+      ],
+      "observed": "طبق Runtime نسخه ۲۱۹ پس از جابه‌جایی یا Pin گاهی عنوان بالای پنل حذف و تب‌ها به وضعیت نامنسجم می‌رفتند؛ Toolbox در نوار بالا بود.",
+      "expected": "جعبه‌ابزار پنل Dock مستقل مانند Visual Studio و عنوان همواره قابل مشاهده؛ جابه‌جایی و unpin پنل فعال را گم نکند.",
+      "implementation": "افزودن toolbox به پروفایل Dock؛ انتقال آیکون‌های درج به پنل؛ رفع مخفی شدن عنوان و پایدارسازی flyout پس از انتقال/unpin.",
+      "type": "runtime_ui_review_fix",
+      "source_commit": "35a55d3bc17006b0447145d63e005ae20e98eab9",
+      "fix_version": "Browser 220",
+      "fix_commit": "same_commit_as_task_record",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "جابه‌جایی تاریخچه و لایه‌ها بین چپ و راست",
+          "سنجاق و برداشتن سنجاق",
+          "بستن و بازکردن از نمایش",
+          "بررسی عنوان داخل پنل و ابزارهای جعبه‌ابزار"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-032",
+      "title": "تفکیک Fit Page، Fit Width و Reset 100% و خلوت‌سازی راهنماها",
+      "screen_or_flow": "نوار ابزار صفحه و بوم",
+      "severity": "medium",
+      "reproduction_steps": [
+        "Ctrl+Wheel و Shift+Wheel روی بوم",
+        "کلیک Fit Page و Fit Width و Reset 100%",
+        "افزودن راهنمای میلی‌متری در نمایش",
+        "پنهان‌کردن راهنما از منوی نمایش",
+        "بررسی حذف متن میانبر و وضعیت پایگاه داده از نوار"
+      ],
+      "observed": "در نسخه ۲۱۹ Fit Page به جای Reset استفاده می‌شد؛ میانبر Shift فعال بود و دکمه یا متن اضافی در نوار ظاهر می‌شد.",
+      "expected": "Ctrl+Wheel تنها مسیر Wheel Zoom؛ Fit Page تمام صفحه، Fit Width عرض و Reset برابر ۱۰۰٪. دستورات راهنما در نمایش.",
+      "implementation": "سه دستور مستقل زوم، Ctrl-only، ممانعت از بازگشت دکمه راهنما به toolbar و حذف متن‌های اضافی.",
+      "type": "runtime_ui_review_fix",
+      "source_commit": "35a55d3bc17006b0447145d63e005ae20e98eab9",
+      "fix_version": "Browser 220",
+      "fix_commit": "same_commit_as_task_record",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "Ctrl+Wheel و Shift+Wheel روی بوم",
+          "کلیک Fit Page و Fit Width و Reset 100%",
+          "افزودن راهنمای میلی‌متری در نمایش",
+          "پنهان‌کردن راهنما از منوی نمایش",
+          "بررسی حذف متن میانبر و وضعیت پایگاه داده از نوار"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-033",
+      "title": "اکسپلورر درختی تصاویر و لوگوهای هتل و انتخاب دسته‌ای",
+      "screen_or_flow": "عملیات/کتابخانه تصاویر، لوگوها، پنجره انتخاب تصویر",
+      "severity": "high",
+      "reproduction_steps": [
+        "ساخت پوشه و زیرپوشه",
+        "بارگذاری تصویر و لوگو و تغییر نام",
+        "انتخاب پوشه در درخت و دیدن تامبنیل",
+        "انتخاب همه/لغو/حذف",
+        "انتخاب لوگو از پنجره تصویر در طراح"
+      ],
+      "observed": "در نسخه ۲۱۹ انتخابگر تصویری تفکیک عمومی/خصوصی داشت و آلبوم‌ها به صورت فهرست تخت نمایش داده می‌شدند.",
+      "expected": "دو کتابخانهٔ مستقل تصاویر و لوگوهای هتل، پوشه‌های درختی و عکس‌های روبه‌رو، انتخاب و حذف گروهی و Picker یکپارچه.",
+      "implementation": "نمای Explorer و Picker یکپارچه، برچسب catalogKind برای لوگوها، parentId آلبوم‌ها، Thumbnail و عملیات دسته‌ای.",
+      "type": "runtime_ui_review_fix",
+      "source_commit": "35a55d3bc17006b0447145d63e005ae20e98eab9",
+      "fix_version": "Browser 220",
+      "fix_commit": "same_commit_as_task_record",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "ساخت پوشه و زیرپوشه",
+          "بارگذاری تصویر و لوگو و تغییر نام",
+          "انتخاب پوشه در درخت و دیدن تامبنیل",
+          "انتخاب همه/لغو/حذف",
+          "انتخاب لوگو از پنجره تصویر در طراح"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-034",
+      "title": "بازآرایی منوهای قالب‌ها/عملیات و سیاست داده‌های قدیمی",
+      "screen_or_flow": "ناوبری اصلی / Project Evolution",
+      "severity": "low",
+      "reproduction_steps": [
+        "بررسی عنوان قالب‌ها و طراحی قالب‌ها",
+        "بررسی کتابخانه تصاویر، لوگوهای هتل، کتابخانه استایل مرکزی در عملیات",
+        "بررسی دستور مالک برای داده‌های قدیمی"
+      ],
+      "observed": "عنوان کتابخانه قالب‌ها و منوی استایل در جای موردنظر نبودند؛ سیاست قبلی حفظ داده قدیمی محدودکننده توسعه تلقی می‌شد.",
+      "expected": "قالب‌ها، طراحی قالب‌ها و سه کتابخانه زیر عملیات؛ داده قدیمی فقط با دستور صریح مالک اهمیت دارد.",
+      "implementation": "تغییر عنوان آیتم‌ها و جابه‌جایی کتابخانه استایل؛ ثبت قانون صریح داده‌های پیشین.",
+      "type": "runtime_ui_review_fix",
+      "source_commit": "35a55d3bc17006b0447145d63e005ae20e98eab9",
+      "fix_version": "Browser 220",
+      "fix_commit": "same_commit_as_task_record",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "بررسی عنوان قالب‌ها و طراحی قالب‌ها",
+          "بررسی کتابخانه تصاویر، لوگوهای هتل، کتابخانه استایل مرکزی در عملیات",
+          "بررسی دستور مالک برای داده‌های قدیمی"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -1021,7 +1150,14 @@
     "never_auto_close_unverified_source_work": true,
     "update_record_from_confirmed_findings": true,
     "update_browser_release_only_when_app_code_changes": true,
-    "protect_unrelated_source_files": true
+    "protect_unrelated_source_files": true,
+    "legacy_data_policy": {
+      "default": "old_data_noncritical",
+      "user_directive": "داده‌های قبلی به صورت پیش‌فرض هیچ الزام حفاظتی، سازگاری یا مهاجرتی ایجاد نمی‌کنند. فقط با درخواست صریح مالک مهم‌اند.",
+      "applies_to": "Runtime Review و تغییرات بعدی NSP Portfolio Builder",
+      "exception": "حذف عمدی داده‌های موجود خارج از دامنهٔ تغییر درخواستی همچنان نیازمند دستور صریح است.",
+      "recorded_at": "2026-11-21"
+    }
   },
   "software_profile": {
     "display_name": "NSP Portfolio Builder",
@@ -1033,7 +1169,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 219,
+      "release": 220,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
