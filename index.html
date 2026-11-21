@@ -1,4 +1,4 @@
-<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 250</title><meta name="application-version" content="250"><style>
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 251</title><meta name="application-version" content="251"><style>
 :root{font-family:Tahoma,'Segoe UI',sans-serif;color:#152638;background:#edf1f4}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}header{background:#122c3c;color:#fff;padding:17px 24px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}header small{color:#a7d7dd}.shell{display:grid;grid-template-columns:235px 1fr;min-height:calc(100vh - 75px)}nav{background:#fff;border-left:1px solid #d9e1e5;padding:18px 12px}nav button{display:block;width:100%;border:0;text-align:right;background:transparent;padding:13px;border-radius:9px;margin:3px 0;color:#324453}nav button.active{background:#e4f3f3;color:#06656c;font-weight:bold}main{padding:22px;max-width:1450px;width:100%;margin:auto}.panel{background:white;border:1px solid #dbe3e7;border-radius:14px;padding:20px;margin-bottom:18px;box-shadow:0 2px 8px #17304408}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.stat{background:#f4f8fa;padding:15px;border-radius:10px}.stat b{font-size:27px;display:block}.muted{color:#647683;font-size:13px}.btn{border:1px solid #b7cbd1;border-radius:8px;background:white;padding:9px 13px;color:#174450}.primary{background:#087b80;color:white;border-color:#087b80}.danger{color:#a33}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:12px 0}.item{padding:12px;border:1px solid #e1e8eb;border-radius:9px;margin:8px 0;background:#fbfdfd}.item.selected{border-color:#09858a;background:#f1fbfa}input,select,textarea{border:1px solid #c6d5da;border-radius:7px;padding:9px;background:#fff;max-width:100%}input[type=checkbox]{accent-color:#087b80}textarea{width:100%;min-height:100px}label{display:block;font-size:13px;margin:10px 0 5px}.columns{display:grid;grid-template-columns:minmax(240px,350px) minmax(0,1fr);gap:18px}.paper{background:#fff;width:min(100%,595px);min-height:842px;margin:15px auto;padding:55px 48px;box-shadow:0 8px 30px #17304425;position:relative;overflow:hidden;direction:rtl}.paper:before{content:'NSP';position:absolute;left:45px;top:40px;color:#087b80;font-weight:900;font-size:19px}.paper h1{margin-top:65px;font-size:26px}.paper footer{position:absolute;bottom:30px;right:48px;left:48px;border-top:1px solid #ccc;padding-top:9px;font-size:11px;color:#667}.paper .hero{height:185px;background:linear-gradient(130deg,#d8eeec,#f0f4f6);display:flex;align-items:center;justify-content:center;color:#568e90;margin:20px 0}.paper img{max-width:100%;max-height:260px;object-fit:contain}.paper table{width:100%;border-collapse:collapse}.paper td,.paper th{border:1px solid #ccd6da;padding:8px}.tag{display:inline-block;border-radius:12px;padding:3px 8px;background:#e7f3f3;font-size:11px;margin:2px}.note{border-right:3px solid #087b80;padding:10px;background:#f1f7f7}.hide{display:none!important}@media(max-width:850px){.shell{grid-template-columns:1fr}nav{display:flex;overflow-x:auto;padding:8px}nav button{white-space:nowrap;width:auto}.columns{grid-template-columns:1fr}main{padding:12px}.paper{min-height:700px;padding:38px 25px}}@media print{header,nav,.no-print,.editor,.panel:not(.print-zone){display:none!important}.shell{display:block}main{padding:0;max-width:none}.print-zone{border:0;box-shadow:none;padding:0;margin:0}.paper{box-shadow:none;margin:0;min-height:297mm;width:210mm;page-break-after:always;padding:25mm 20mm}.paper:last-child{page-break-after:auto}@page{size:A4;margin:0}}
 @media(max-width:850px){header{padding:12px;gap:8px}header .toolbar{flex-wrap:wrap}nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible!important;gap:8px;padding:10px}nav .nav-group{min-width:0!important;margin:0!important}nav button.nav-subitem{white-space:normal!important;text-align:right;width:100%!important;padding:10px!important}main{min-width:0;overflow-wrap:anywhere}.panel{max-width:100%;overflow-x:auto}button,select,input{max-width:100%}#v9-design-form[hidden]{display:none!important}}
 </style><style>
@@ -798,11 +798,13 @@ let workLocalFileHandles=new Map();
 function workResourceFilename(x){
  return String(x.ordinal).padStart(2,'0')+'_'+String(x.company).replace(/[^a-zA-Z0-9_-]/g,'_')+'_'+String(x.title).replace(/[\\/:*?"<>|]/g,'_').slice(0,70)+'.pdf';
 }
-async function workIsValidLocalPdf(handle){
- const file=await handle.getFile();
- if(file.size<5)return false;
+async function workIsValidLocalPdf(source){
+ const file=typeof source?.getFile==='function'?await source.getFile():source;
+ if(!file||file.size<8)return false;
  const header=new Uint8Array(await file.slice(0,5).arrayBuffer());
- return String.fromCharCode(...header)==='%PDF-';
+ if(String.fromCharCode(...header)!=='%PDF-')return false;
+ const tail=await file.slice(-4096).text();
+ return tail.includes('%%EOF');
 }
 async function workScanLocalResources(folder){
  const found=new Map(),candidateNames=new Map();
@@ -822,9 +824,45 @@ async function workScanLocalResources(folder){
  workLocalFileHandles=found;workLocalDirectory=folder;
  return found.size;
 }
+// Firefox file:// has no showDirectoryPicker. A user-selected directory input works
+// without CORS or unsanctioned filesystem access, and only verifies local PDF bytes.
+async function workScanLocalFileList(fileList){
+ const available=new Map();
+ for(const file of Array.from(fileList||[])){
+  if(file?.name?.toLowerCase().endsWith('.pdf')&&!available.has(file.name))
+   available.set(file.name,file);
+ }
+ const found=new Map();
+ for(const src of workDownloadAllSources(true)){
+  if(!src.direct)continue;
+  const file=available.get(workResourceFilename(src));
+  if(!file)continue;
+  try{if(await workIsValidLocalPdf(file))found.set(src.url,file);}catch(e){}
+ }
+ workLocalFileHandles=found;workLocalDirectory=null;
+ return found.size;
+}
+function workLocalScanCompleted(count){
+ if(tab==='library')render();
+ document.dispatchEvent(new CustomEvent('nsp-work-local-scanned',{detail:{count}}));
+ alert(count+' فایل PDF معتبر از پوشهٔ انتخاب‌شده به منابع تحقیق متصل شد. فایل‌ها کپی یا آپلود نشدند.');
+}
 async function workConnectLocalFolder(){
  if(typeof window.showDirectoryPicker!=='function'){
-  alert('این مرورگر انتخاب پوشه را پشتیبانی نمی‌کند؛ لینک آنلاین منابع همچنان فعال است.');return;
+  const input=document.createElement('input');
+  input.type='file';input.multiple=true;input.setAttribute('webkitdirectory','');input.setAttribute('directory','');
+  input.style.display='none';document.body.appendChild(input);
+  input.addEventListener('change',async()=>{
+   try{
+    if(input.files?.length){
+     const count=await workScanLocalFileList(input.files);
+     workLocalScanCompleted(count);
+    }
+   }catch(e){alert('بررسی PDFهای پوشه موفق نبود: '+String(e.message||e));}
+   finally{input.remove();}
+  },{once:true});
+  input.addEventListener('cancel',()=>input.remove(),{once:true});
+  input.click();return;
  }
  try{
   const selected=await window.showDirectoryPicker({mode:'read'});
@@ -832,8 +870,7 @@ async function workConnectLocalFolder(){
   try{directory=await selected.getDirectoryHandle('NSP_Research_Resources',{create:false});}
   catch(err){if(err?.name!=='NotFoundError')throw err;}
   const count=await workScanLocalResources(directory);
-  if(tab==='library')render();
-  alert(count+' فایل PDF معتبر به منابع رسمی مرتبط شد؛ فایل‌های نامشخص یا نامعتبر نمایش داده نمی‌شوند.');
+  workLocalScanCompleted(count);
  }catch(e){
   if(e?.name!=='AbortError')alert('شناسایی پوشه ناموفق بود: '+String(e?.message||e));
  }
@@ -846,7 +883,7 @@ document.addEventListener('click',async e=>{
  if(!handle){alert('فایل محلی پیدا نشد؛ پوشه منابع را دوباره انتخاب کنید.');return;}
  try{
   if(!await workIsValidLocalPdf(handle))throw Error('این فایل PDF معتبر نیست.');
-  const file=await handle.getFile(),blobUrl=URL.createObjectURL(file);
+  const file=typeof handle.getFile==='function'?await handle.getFile():handle,blobUrl=URL.createObjectURL(file);
   const a=document.createElement('a');a.href=blobUrl;a.download=file.name||'catalog.pdf';
   document.body.appendChild(a);a.click();a.remove();
   setTimeout(()=>URL.revokeObjectURL(blobUrl),2000);
@@ -875,8 +912,9 @@ function workDownloadOpen(){
      '<button type="button" class="btn" data-work-retry="'+i+'" hidden>↻ تلاش مجدد</button>'+
      '<a class="btn" data-work-browser="'+i+'" href="'+url+'" target="_blank" rel="noopener noreferrer">بازکردن در مرورگر</a>'
     :'<a class="btn" href="'+url+'" target="_blank" rel="noopener noreferrer">صفحه ناشر</a>';
-  return '<tr data-work-download-row="'+i+'"><td><strong>'+safe(x.company)+'</strong><small>'+safe(x.title)+'</small></td>'+
-   '<td>'+original+'</td><td data-work-download-status>'+(x.direct?'آمادهٔ بررسی و دریافت':'این نشانی صفحهٔ ناشر است، نه PDF مستقیم')+'</td>'+
+  const inFolder=workLocalFileHandles.has(x.url);
+  return '<tr data-work-download-row="'+i+'" data-work-download-state="'+(inFolder?'local':x.direct?'pending':'page')+'"><td><strong>'+safe(x.company)+'</strong><small>'+safe(x.title)+'</small></td>'+
+   '<td>'+original+'</td><td data-work-download-status>'+(inFolder?'PDF موجود در پوشه محلی تأیید شد':x.direct?'آمادهٔ بررسی و دریافت':'این نشانی صفحهٔ ناشر / لینک غیرمستقیم است، نه PDF تأییدشده')+'</td>'+
    '<td><progress data-work-download-progress max="100" value="0"></progress></td>'+
    '<td><div class="toolbar" style="gap:5px;flex-wrap:wrap;min-width:max-content">'+actions+'</div></td></tr>';
  }).join('');
@@ -886,20 +924,22 @@ function workDownloadOpen(){
   '<div class="toolbar"><label>منابع <select data-work-download-scope><option value="selected">کاتالوگ‌های منتخب</option><option value="all">همه منابع تحقیق Work</option></select></label>'+
   '<button type="button" class="btn primary" data-work-download-start>بررسی و دانلود گروهی</button>'+
   '<button type="button" class="btn" data-work-download-stop disabled>توقف</button>'+
+  '<button type="button" class="btn" data-work-download-local-scan>بررسی پوشه PDFهای محلی</button>'+
   '<button type="button" class="btn" data-work-download-report>دریافت گزارش</button>'+
+  '<button type="button" class="btn" data-work-download-manifest>خروجی فهرست برای دانلودر ویندوز</button>'+
   '<span data-work-download-summary role="status"></span></div>'+
   '<div class="work-download-tablebox"><table><thead><tr><th>شرکت / سند</th><th>منبع</th><th>وضعیت لینک و دانلود</th><th>پیشرفت</th><th>اقدام / Retry</th></tr></thead><tbody>'+renderRows()+'</tbody></table></div>'+
-  '<p class="work-download-hint">بررسی واقعی PDF با پاسخ HTTPS، حجم دریافتی و امضای %PDF- و %%EOF انجام می‌شود. خطای CORS الزاماً نشانهٔ لینک خراب نیست. در این حالت «بازکردن در مرورگر» جایگزین دستی است؛ مرورگر ممکن است PDF را نمایش دهد. صفحهٔ ناشر و لینک‌های غیرمستقیم هرگز به‌عنوان فایل دانلودشده ثبت نمی‌شوند. ذخیرهٔ تضمینی در پوشهٔ کنار HTML به برنامهٔ محلی احتیاج دارد؛ HTML به‌تنهایی چنین دسترسی‌ای ندارد.</p></div>';
+  '<p class="work-download-hint">آبی: PDF به مرورگر تحویل شد، ذخیره روی هارد تأیید نشده. سبز: فایل PDF را واقعاً از پوشه انتخاب‌شده بررسی کردیم. زرد: دسترسی مرورگر به‌دلیل CORS/شبکه مسدود است؛ این الزاماً خرابی لینک نیست. قرمز: خطای واقعی دریافت یا اعتبارسنجی. خاکستری: صفحه ناشر/لینک غیرمستقیم. باز کردن لینک در تب جدید فایل را خودکار در پوشه ذخیره نمی‌کند. برای دانلود مستقیم در ویندوز از ابزار محلی و برای تأیید از دکمه «بررسی پوشه PDFهای محلی» استفاده کنید.</p></div>';
  document.body.appendChild(dialog);workBatchDialog=dialog;
  const scope=dialog.querySelector('[data-work-download-scope]');
  const summary=dialog.querySelector('[data-work-download-summary]');
  const start=dialog.querySelector('[data-work-download-start]');
  const stop=dialog.querySelector('[data-work-download-stop]');
- const stateAt=i=>results.get(i)||(list[i]?.direct?'pending':'page');
+ const stateAt=i=>workLocalFileHandles.has(list[i]?.url)?'local':(results.get(i)||(list[i]?.direct?'pending':'page'));
  const updateSummary=()=>{
-  const c={sent:0,handed:0,blocked:0,failed:0,stopped:0,pending:0,page:0,checking:0};
+  const c={local:0,sent:0,handed:0,blocked:0,failed:0,stopped:0,pending:0,page:0,checking:0};
   list.forEach((x,i)=>{const k=stateAt(i);if(Object.prototype.hasOwnProperty.call(c,k))c[k]++;});
-  summary.textContent='PDF تأیید و تحویل مرورگر: '+c.sent+' | محدودیت CORS: '+c.blocked+
+  summary.textContent='PDF تأییدشده در پوشه: '+c.local+' | تحویل مرورگر (تأییدنشده): '+c.sent+' | محدودیت CORS: '+c.blocked+
    ' | خطا: '+c.failed+' | بررسی‌نشده: '+c.pending+' | صفحات ناشر: '+c.page+
    (c.checking?' | در حال دریافت: '+c.checking:'')+(c.stopped?' | متوقف: '+c.stopped:'')+
    (c.handed?' | بازشده در مرورگر: '+c.handed:'');
@@ -908,6 +948,7 @@ function workDownloadOpen(){
   if(kind)results.set(i,kind);
   const row=dialog.querySelector('[data-work-download-row="'+i+'"]');
   if(row){
+   row.dataset.workDownloadState=stateAt(i);
    row.querySelector('[data-work-download-status]').textContent=message;
    const bar=row.querySelector('[data-work-download-progress]');
    if(progress==null)bar.removeAttribute('value');
@@ -919,9 +960,27 @@ function workDownloadOpen(){
   }
   updateSummary();
  };
- const resetRows=()=>{results.clear();errors.clear();dialog.querySelector('tbody').innerHTML=renderRows();updateSummary();};
+ const updateLocalRows=()=>{
+  for(let i=0;i<list.length;i++){
+   const x=list[i];
+   if(workLocalFileHandles.has(x.url)){
+    const source=workLocalFileHandles.get(x.url);
+    errors.delete(i);
+    setStatus(i,'PDF معتبر در پوشه انتخاب‌شده ('+(source?.name||workResourceFilename(x))+')',100,'local');
+   }
+  }
+  updateSummary();
+ };
+ const resetRows=()=>{results.clear();errors.clear();dialog.querySelector('tbody').innerHTML=renderRows();updateLocalRows();};
  scope.addEventListener('change',()=>{if(workBatchBusy)return;list=workDownloadAllSources(scope.value==='all');resetRows();});
- stop.addEventListener('click',()=>workBatchAbort?.abort());
+ stop.addEventListener('click',()=>{
+  if(!workBatchBusy||!workBatchAbort)return;
+  stop.disabled=true;stop.textContent='در حال توقف…';
+  summary.textContent='توقف درخواست شد؛ دریافت جاری لغو می‌شود و منابع باقی‌مانده شروع نخواهند شد.';
+  workBatchAbort.abort();
+ });
+ const onLocalScan=()=>updateLocalRows();
+ document.addEventListener('nsp-work-local-scanned',onLocalScan);
  const isPdf=async blob=>{
   if(blob.size<8)throw Error('فایل خالی یا ناقص دریافت شد');
   const head=new Uint8Array(await blob.slice(0,5).arrayBuffer());
@@ -976,6 +1035,13 @@ function workDownloadOpen(){
    if(signal)signal.removeEventListener('abort',aborter);
   }
  };
+ const pause=(ms,signal)=>new Promise(resolve=>{
+  if(signal?.aborted){resolve();return;}
+  let timer;
+  const done=()=>{clearTimeout(timer);signal?.removeEventListener('abort',done);resolve();};
+  timer=setTimeout(done,ms);
+  signal?.addEventListener('abort',done,{once:true});
+ });
  const processOne=async(i,signal)=>{
   const x=list[i];if(!x||!x.direct)return;
   const attempts=3;
@@ -1000,12 +1066,12 @@ function workDownloadOpen(){
     const retryable=e?.timedOut||e?.httpStatus===429||e?.httpStatus>=500;
     if(retryable&&n<attempts){
      setStatus(i,'خطای موقت: '+msg.slice(0,85)+'؛ تلاش خودکار بعدی ('+(n+1)+'/'+attempts+')',0,'checking');
-     await new Promise(resolve=>setTimeout(resolve,Math.min(n*1500,3500)));
+     await pause(Math.min(n*1500,3500),signal);
      continue;
     }
     errors.set(i,msg);
-    setStatus(i,(blocked?'خواندن لینک از برنامه با CORS/شبکه مسدود شد؛ لینک ممکن است سالم باشد':('ناموفق: '+msg.slice(0,125)))+
-     ' — «تلاش مجدد» بررسی را تکرار می‌کند.',0,blocked?'blocked':'failed');
+    setStatus(i,(blocked?'دسترسی مرورگر با CORS/شبکه مسدود شد؛ برای دانلود از ابزار ویندوز استفاده کنید':('ناموفق: '+msg.slice(0,125)))+
+     ' — «تلاش مجدد» فقط همان درخواست مرورگر را تکرار می‌کند.',0,blocked?'blocked':'failed');
     return;
    }
   }
@@ -1017,11 +1083,11 @@ function workDownloadOpen(){
   try{
    for(const i of indices){
     if(workBatchAbort.signal.aborted)break;
-    if(!list[i]?.direct||stateAt(i)==='sent')continue;
+    if(!list[i]?.direct||['sent','local'].includes(stateAt(i)))continue;
     await processOne(i,workBatchAbort.signal);
    }
   }finally{
-   workBatchBusy=false;workBatchAbort=null;start.disabled=false;stop.disabled=true;scope.disabled=false;
+   workBatchBusy=false;workBatchAbort=null;start.disabled=false;stop.disabled=true;stop.textContent='توقف';scope.disabled=false;
    updateSummary();
   }
  };
@@ -1040,21 +1106,36 @@ function workDownloadOpen(){
   }
  });
  start.addEventListener('click',()=>runIndices(list.map((_,i)=>i)));
- dialog.querySelector('[data-work-download-report]').addEventListener('click',()=>{
-  const report={app:'NSP Portfolio Builder',createdAt:new Date().toISOString(),
-   note:'sent means PDF was verified and handed to browser; disk saving is not observable.',
-   resources:list.map((x,i)=>({company:x.company,title:x.title,url:x.url,status:stateAt(i),error:errors.get(i)||null}))};
-  const file=new Blob([JSON.stringify(report,null,2)],{type:'application/json'});
+ dialog.querySelector('[data-work-download-local-scan]').addEventListener('click',()=>workConnectLocalFolder());
+ const saveJson=(filename,payload)=>{
+  const file=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
   const url=URL.createObjectURL(file),a=document.createElement('a');
-  a.href=url;a.download='NSP_Work_Download_Report.json';document.body.appendChild(a);a.click();a.remove();
+  a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),60000);
+ };
+ dialog.querySelector('[data-work-download-report]').addEventListener('click',()=>{
+  saveJson('NSP_Work_Download_Report.json',{
+   app:'NSP Portfolio Builder',createdAt:new Date().toISOString(),
+   note:'local means a PDF was verified by scanning files selected from the folder; sent is only a browser handoff, not a confirmed disk save.',
+   resources:list.map((x,i)=>({company:x.company,title:x.title,url:x.url,filename:workResourceFilename(x),
+    status:stateAt(i),error:errors.get(i)||null}))
+  });
+ });
+ dialog.querySelector('[data-work-download-manifest]').addEventListener('click',()=>{
+  saveJson('NSP_Research_Download_Manifest.json',{
+   app:'NSP Portfolio Builder',schema:'nsp-research-download-manifest-v1',
+   createdAt:new Date().toISOString(),resources:list.map(x=>({
+    ordinal:x.ordinal,company:x.company,title:x.title,url:x.url,direct:x.direct,filename:workResourceFilename(x)
+   }))
+  });
  });
  dialog.querySelector('[data-work-download-close]').addEventListener('click',()=>{
   if(workBatchBusy){summary.textContent='برای بستن ابتدا «توقف» را بزنید.';return;}
+  document.removeEventListener('nsp-work-local-scanned',onLocalScan);
   dialog.close();dialog.remove();workBatchDialog=null;
  });
- dialog.addEventListener('cancel',e=>{if(workBatchBusy)e.preventDefault();else{dialog.remove();workBatchDialog=null;}});
- updateSummary();dialog.showModal();
+ dialog.addEventListener('cancel',e=>{if(workBatchBusy)e.preventDefault();else{document.removeEventListener('nsp-work-local-scanned',onLocalScan);dialog.remove();workBatchDialog=null;}});
+ updateSummary();updateLocalRows();dialog.showModal();
 }
 
 function library(){
@@ -10598,5 +10679,19 @@ window.addEventListener('keydown',e=>{
 .v85-thumb-meta b{display:block;overflow-wrap:anywhere}
 .v85-thumb-meta .v244-page-format{display:block;color:#0a7181;font-size:10px;font-weight:700;direction:ltr;text-align:center;margin:4px 0}
 .v85-thumb-frame{transition:height .14s ease}
+</style>
+<style id="v251-research-download-status">
+.work-download-tablebox tr[data-work-download-state="local"]{background:#edf8f0}
+.work-download-tablebox tr[data-work-download-state="local"] [data-work-download-status]{color:#22643a;font-weight:700}
+.work-download-tablebox tr[data-work-download-state="blocked"]{background:#fff8db}
+.work-download-tablebox tr[data-work-download-state="blocked"] [data-work-download-status]{color:#866018;font-weight:700}
+.work-download-tablebox tr[data-work-download-state="failed"]{background:#fff0ee}
+.work-download-tablebox tr[data-work-download-state="failed"] [data-work-download-status]{color:#a33c33;font-weight:700}
+.work-download-tablebox tr[data-work-download-state="sent"] [data-work-download-status]{color:#2667a0;font-weight:700}
+.work-download-tablebox tr[data-work-download-state="stopped"]{background:#fff2e7}
+.work-download-tablebox tr[data-work-download-state="page"]{background:#f8fafb}
+.work-download-tablebox tr[data-work-download-state="checking"]{background:#edf5fd}
+.work-download-tablebox .toolbar{margin:3px 0}
+.work-download-hint{white-space:normal}
 </style>
 </body></html>
