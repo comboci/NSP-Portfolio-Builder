@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 224",
+    "application_release": "Browser 225",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 224: restore VS-style tabbed Dock per side with one active pinned panel and shared full-height body (replaces V221/V223 vertical stacking); add Bring to Front/Send to Back Z-order actions with proper layer ordering and Region Block constraints; restore Save and Back to template designer while keeping Save/Back; keep File > Template Design navigation highlighted while editing templates; deduplicate visually identical shared/local image assets in unified library and picker, after album filtering. Visible version labels now dynamic. Syntax and isolated behavior tests performed, Firefox owner runtime pending."
+    "current_source_release_note": "Browser 225: permit deletion of empty projects including last, persist empty project registry, guard portfolios; close portfolio menus on outside click/Escape; display page metadata grid and distinct project/portfolio/page icons; dedicated multi-page portfolio preview and cancel-back. Source parse only; live Firefox, IndexedDB and print pending."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,9 +47,9 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "V224: 26 executable inline JavaScript blocks parsed; isolated V8 tests for Bring to Front, Send to Back, Region Block child constraint, two-sided Dock tab state, media deduplication with folder membership, template nav active state passed. Live Firefox, IndexedDB, full UI integration and owner acceptance pending.",
+    "caveat": "V225: all 27 executable scripts parsed, static code checks for empty-project deletion, metadata, and multi-page preview performed; no live Firefox/IndexedDB/print verification or owner acceptance.",
     "browser_javascript_syntax_checked": true,
-    "browser_javascript_scripts_parsed": 22,
+    "browser_javascript_scripts_parsed": 27,
     "browser_static_checker_executed": false
   },
   "active_tasks": [
@@ -1752,6 +1752,188 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-056",
+      "title": "حذف همهٔ پروژه‌های بدون پورتفولیو، حتی آخرین پروژه",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "پروژه‌ها / حذف",
+      "observed": "آخرین پروژه با پیام ممنوعیت حذف باقی می‌ماند.",
+      "expected": "هر پروژهٔ بدون پورتفولیو حذف شود و پروژهٔ دارای پورتفولیو محافظت شود.",
+      "reproduction_steps": [
+        "دو پروژهٔ خالی بسازید و یکی را حذف کنید",
+        "آخرین پروژهٔ بدون پورتفولیو را حذف کنید؛ فهرست صفر پروژه ببینید",
+        "Refresh کنید و بازگشت پروژهٔ حذف‌شده را بررسی کنید",
+        "یک پروژهٔ تازه بسازید",
+        "پروژهٔ دارای پورتفولیو را حذف کنید و پیام محافظت را ببینید"
+      ],
+      "severity": "high",
+      "source_commit": "a49d8a8a072cd535d2713b768f305e90e23f4c5e",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 225",
+      "implementation": "اصلاح در index.html و بررسی نحوی اسکریپت‌های داخلی. پذیرش Runtime مرورگر و IndexedDB با مالک است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "دو پروژهٔ خالی بسازید و یکی را حذف کنید",
+          "آخرین پروژهٔ بدون پورتفولیو را حذف کنید؛ فهرست صفر پروژه ببینید",
+          "Refresh کنید و بازگشت پروژهٔ حذف‌شده را بررسی کنید",
+          "یک پروژهٔ تازه بسازید",
+          "پروژهٔ دارای پورتفولیو را حذف کنید و پیام محافظت را ببینید"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-057",
+      "title": "بستن منوی سه‌نقطهٔ پورتفولیو با کلیک بیرون و Escape",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "منوی پورتفولیو",
+      "observed": "رفتار منو هنگام کلیک بیرون نامطمئن بود.",
+      "expected": "با کلیک بیرون، Escape و باز شدن منوی دیگر منوی قبلی بسته شود.",
+      "reproduction_steps": [
+        "روی سه‌نقطه کلیک کنید",
+        "در فضای خالی صفحه کلیک کنید و بسته‌شدن منو را ببینید",
+        "با Escape و دو پورتفولیو امتحان کنید"
+      ],
+      "severity": "medium",
+      "source_commit": "a49d8a8a072cd535d2713b768f305e90e23f4c5e",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 225",
+      "implementation": "اصلاح در index.html و بررسی نحوی اسکریپت‌های داخلی. پذیرش Runtime مرورگر و IndexedDB با مالک است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "روی سه‌نقطه کلیک کنید",
+          "در فضای خالی صفحه کلیک کنید و بسته‌شدن منو را ببینید",
+          "با Escape و دو پورتفولیو امتحان کنید"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-058",
+      "title": "جدول اطلاعات صفحه: نام، سازنده، تاریخ و قالب",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "پروژه‌ها / صفحات پورتفولیو",
+      "observed": "درخت فقط عنوان صفحات را نشان می‌داد و نام سازنده، تاریخ و قالب در نمای پروژه مشخص نبود.",
+      "expected": "جدول زیر پورتفولیو فقط چهار ستون موردنظر را داشته باشد؛ تعداد تکرار صفحه حذف شود.",
+      "reproduction_steps": [
+        "نام سازنده را تنظیم و یک صفحه اضافه کنید",
+        "از ذخیره و بازگشت استفاده کنید",
+        "عنوان، سازنده، تاریخ ایجاد و نام قالب صفحه را ببینید",
+        "یک صفحهٔ قدیمیِ بدون سازنده را مشاهده کنید"
+      ],
+      "severity": "medium",
+      "source_commit": "a49d8a8a072cd535d2713b768f305e90e23f4c5e",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 225",
+      "implementation": "اصلاح در index.html و بررسی نحوی اسکریپت‌های داخلی. پذیرش Runtime مرورگر و IndexedDB با مالک است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "نام سازنده را تنظیم و یک صفحه اضافه کنید",
+          "از ذخیره و بازگشت استفاده کنید",
+          "عنوان، سازنده، تاریخ ایجاد و نام قالب صفحه را ببینید",
+          "یک صفحهٔ قدیمیِ بدون سازنده را مشاهده کنید"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-059",
+      "title": "نماد مجزای پروژه، پورتفولیو و صفحه",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "فهرست پروژه‌ها",
+      "observed": "پروژه و پورتفولیو هر دو نماد پوشه داشتند.",
+      "expected": "پروژه Grid، پورتفولیو دفتر و صفحه نماد سند داشته باشد.",
+      "reproduction_steps": [
+        "فهرست پروژه‌های دارای پورتفولیو و صفحه را باز کنید",
+        "سه آیکون را مقایسه کنید"
+      ],
+      "severity": "low",
+      "source_commit": "a49d8a8a072cd535d2713b768f305e90e23f4c5e",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 225",
+      "implementation": "اصلاح در index.html و بررسی نحوی اسکریپت‌های داخلی. پذیرش Runtime مرورگر و IndexedDB با مالک است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "فهرست پروژه‌های دارای پورتفولیو و صفحه را باز کنید",
+          "سه آیکون را مقایسه کنید"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-060",
+      "title": "پیش‌نمایش تمام صفحات پورتفولیوی انتخاب‌شده",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "پروژه‌ها / پیش‌نمایش چاپ",
+      "observed": "ورود قبلی به Preview بر صفحات پروژهٔ فعال متکی بود و کنترل چاپ بلافاصله اجرا می‌شد.",
+      "expected": "نمایش همهٔ صفحات همان پورتفولیو به ترتیب؛ دستور چاپ/PDF مستقل.",
+      "reproduction_steps": [
+        "در یک پورتفولیو ۳ صفحه بسازید",
+        "از منوی همان پورتفولیو پیش‌نمایش بزنید",
+        "هر ۳ صفحه را به ترتیب بررسی کنید",
+        "صفحات پورتفولیوی دیگر را با آن اشتباه نگیرد",
+        "چاپ/PDF را در صورت نیاز جداگانه اجرا کنید"
+      ],
+      "severity": "high",
+      "source_commit": "a49d8a8a072cd535d2713b768f305e90e23f4c5e",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 225",
+      "implementation": "اصلاح در index.html و بررسی نحوی اسکریپت‌های داخلی. پذیرش Runtime مرورگر و IndexedDB با مالک است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "در یک پورتفولیو ۳ صفحه بسازید",
+          "از منوی همان پورتفولیو پیش‌نمایش بزنید",
+          "هر ۳ صفحه را به ترتیب بررسی کنید",
+          "صفحات پورتفولیوی دیگر را با آن اشتباه نگیرد",
+          "چاپ/PDF را در صورت نیاز جداگانه اجرا کنید"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-061",
+      "title": "انصراف از پیش‌نمایش و بازگشت به صفحه پروژه‌ها",
+      "type": "runtime_ui_review_fix",
+      "screen_or_flow": "پروژه‌ها / پیش‌نمایش",
+      "observed": "دکمهٔ انصراف مسیر بازگشت به نمای پروژه‌ها را تضمین نمی‌کرد.",
+      "expected": "انصراف و Escape پیش‌نمایش را ببندند و فهرست پروژه‌ها را نمایش دهند.",
+      "reproduction_steps": [
+        "پیش‌نمایش را باز کنید و انصراف بزنید",
+        "بازگشت مستقیم به پروژه‌ها را بررسی کنید",
+        "مجدداً باز و با Escape ببندید"
+      ],
+      "severity": "medium",
+      "source_commit": "a49d8a8a072cd535d2713b768f305e90e23f4c5e",
+      "fix_commit": "same_commit_as_task_record",
+      "fix_version": "Browser 225",
+      "implementation": "اصلاح در index.html و بررسی نحوی اسکریپت‌های داخلی. پذیرش Runtime مرورگر و IndexedDB با مالک است.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "پیش‌نمایش را باز کنید و انصراف بزنید",
+          "بازگشت مستقیم به پروژه‌ها را بررسی کنید",
+          "مجدداً باز و با Escape ببندید"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -1814,7 +1996,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 224,
+      "release": 225,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
