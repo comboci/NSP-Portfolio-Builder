@@ -14,7 +14,7 @@
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 210",
+    "application_release": "Browser 211",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,7 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser 210 implements drag-and-drop template library tree: group under another group or back to root, template into group or adjacent to another template, prevents cycles/duplicate sibling names, reuses IndexedDB persistence and move fallback."
+    "current_source_release_note": "Browser 211 removes unrequested A/B/C gallery theme selector and duplicate creation controls; adds root three-dot menu and right-click context actions for library groups/templates, retaining Drag & Drop. Visual alternatives are outside the application."
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -589,6 +589,95 @@
       },
       "created_at": "2026-11-21",
       "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-019",
+      "title": "حذف انتخابگر ظاهر و کنترل‌های تکراری",
+      "type": "runtime_ux_correction",
+      "screen_or_flow": "کتابخانه قالب‌ها",
+      "reproduction_steps": [
+        "کنترل نبودن انتخابگر A/B/C",
+        "بررسی نبودن دکمه‌های ساخت بالا و بالای گالری",
+        "ایجاد گروه و قالب از منوی ⋮"
+      ],
+      "observed": "گزارش مالک در Runtime نسخه ۲۱۰",
+      "expected": "انتخابگر A/B/C و دکمه‌های بالای کتابخانه/گالری و دکمه + مستقل کنار گروه حذف شوند.",
+      "severity": "medium",
+      "source_commit": "ac69f43a4eb453c229b17dde1c42b8de4f474190",
+      "fix_version": "Browser 211",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "حذف state، event و CSS انتخابگر و کنترل‌های تکراری، حفظ Once و اسکرول.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "کنترل نبودن انتخابگر A/B/C",
+          "بررسی نبودن دکمه‌های ساخت بالا و بالای گالری",
+          "ایجاد گروه و قالب از منوی ⋮"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-020",
+      "title": "گروه جدید در منوی سه‌نقطه و منوی کلیک راست برای درخت",
+      "type": "runtime_ux_correction",
+      "screen_or_flow": "کتابخانه قالب‌ها",
+      "reproduction_steps": [
+        "ایجاد گروه اصلی از ⋮ سربرگ",
+        "کلیک راست روی گروه و ساخت زیرگروه و قالب",
+        "کلیک راست روی کارت قالب",
+        "درگ گروه روی سربرگ ریشه",
+        "بستن منوی زمینه‌ای با Escape"
+      ],
+      "observed": "گزارش مالک در Runtime نسخه ۲۱۰",
+      "expected": "ریشه ⋮ برای گروه اصلی، گروه ⋮ برای زیرگروه و قالب؛ کلیک راست ریشه، گروه، قالب با عملیات مشترک.",
+      "severity": "medium",
+      "source_commit": "ac69f43a4eb453c229b17dde1c42b8de4f474190",
+      "fix_version": "Browser 211",
+      "fix_commit": "same_commit_as_task_record",
+      "implementation": "استفاده از همان data-v137-action و ذخیره IndexedDB، انتقال root drop به سربرگ گروه‌بندی.",
+      "status": "source_fixed_pending_owner_runtime",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "ایجاد گروه اصلی از ⋮ سربرگ",
+          "کلیک راست روی گروه و ساخت زیرگروه و قالب",
+          "کلیک راست روی کارت قالب",
+          "درگ گروه روی سربرگ ریشه",
+          "بستن منوی زمینه‌ای با Escape"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
+    },
+    {
+      "id": "RR-021",
+      "title": "طرح تصویری مستقل برای جایگزین ظاهر پوشه‌ها",
+      "type": "runtime_ux_correction",
+      "screen_or_flow": "کتابخانه قالب‌ها",
+      "reproduction_steps": [
+        "مقایسه دو یا سه تصویر",
+        "انتخاب طرح مطلوب توسط مالک"
+      ],
+      "observed": "گزارش مالک در Runtime نسخه ۲۱۰",
+      "expected": "پیش از تغییر ظاهر پوشه‌ها، طرح‌های تصویری در گفتگو ارائه و توسط مالک انتخاب شود.",
+      "severity": "medium",
+      "source_commit": "ac69f43a4eb453c229b17dde1c42b8de4f474190",
+      "fix_version": null,
+      "fix_commit": null,
+      "implementation": "فقط تصویر پیشنهادی در گفتگو؛ بدون اضافه‌شدن تم، تصویر یا کنترل انتخاب به پروژه.",
+      "status": "awaiting_owner_design_choice",
+      "owner_verification": {
+        "status": "pending",
+        "steps": [
+          "مقایسه دو یا سه تصویر",
+          "انتخاب طرح مطلوب توسط مالک"
+        ]
+      },
+      "created_at": "2026-11-21",
+      "updated_at": "2026-11-21"
     }
   ],
   "defects": [],
@@ -644,7 +733,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 210,
+      "release": 211,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
