@@ -15,13 +15,13 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 121
+    "total_pending_steps": 120
   },
   "cursor": {
     "document_index": 3,
     "document_id": "09",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -495,11 +495,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/09_Legrand_Hospitality_Buildings_S06_audit.json"
+          ],
+          "completed_at": "2026-11-22",
+          "commit_sha": "6df737aa8921ba738fba372972ec646b73362bc3",
+          "notes": "ممیزی ۵۲ صفحه، تطبیق ۷۷ متن انگلیسی و ۱۲ تصویر؛ ۶۶ رکورد پژوهشی قابل ورود در S07 و ۱۱ رکورد مسدود؛ هیچ قابلیت NSP تأیید نشده است."
         },
         {
           "id": "S07",
