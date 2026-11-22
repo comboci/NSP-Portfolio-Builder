@@ -1,0 +1,233 @@
+{
+  "schema": "nsp-catalog-research-s01-source-inventory-v1",
+  "stage": "S01",
+  "stage_key": "source_inventory",
+  "status": "completed_source_verified",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "document_id": "10",
+  "date_checked": "2026-11-22",
+  "source": {
+    "company": "ABB",
+    "publisher": "ABB Ltd",
+    "brochure_title_en": "Hospitality",
+    "brochure_subtitle_en": "ABB's approach to guest room management",
+    "original_file": "10_ABB_Hospitality GRMS Brochure 2025.pdf",
+    "original_library_path": "/10_ABB_Hospitality GRMS Brochure 2025.pdf",
+    "file_size_bytes": 1466009,
+    "original_pdf_sha256": "23d6798ba910ec567663d2574d496eaac875f0b115aff2cc37947b382d637b88",
+    "pdf_specification": "PDF 1.7",
+    "page_count": 12,
+    "page_size_pdf_pt": [
+      841.89,
+      595.276
+    ],
+    "physical_orientation": "A4 landscape",
+    "has_extractable_native_text": true,
+    "encrypted": false,
+    "pdf_bookmarks_or_toc_entries": 0,
+    "document_revision": "Rev.D",
+    "documentary_publication_month": "2025-02",
+    "publication_date_evidence": {
+      "pdf_page": 12,
+      "back_cover_imprint": "Rev.D - February 2025; © Copyright 2025 ABB."
+    },
+    "creation_metadata": "2025-02-19T11:22:54+01:00",
+    "authoring_metadata": "Adobe InDesign 20.1 (Windows)",
+    "counts": {
+      "substantive_pages_including_cover": 9,
+      "substantive_body_pages": 8,
+      "notes_pages": 2,
+      "publisher_back_cover_pages": 1,
+      "printed_page_numbered_pages": 10,
+      "unnumbered_pages": 2,
+      "included_integrations_or_software_pages": [
+        3,
+        4,
+        5
+      ],
+      "relevant_illustrated_room_scenario_page": 7,
+      "relevant_equipment_presentation_page": 8
+    }
+  },
+  "printed_pagination": {
+    "pdf_pages_numbered": [
+      2,
+      11
+    ],
+    "printed_page_numbers": [
+      2,
+      11
+    ],
+    "rule": "For PDF pages 2 through 11, printed number = PDF page number; cover (PDF 1) and back cover (PDF 12) show no printed page number.",
+    "no_assumed_printed_page_one": true,
+    "notes": "Numbered sequence verified from page text and rendered pages. The cover is not marked with numeral 1."
+  },
+  "section_inventory": [
+    {
+      "pdf_page": 1,
+      "printed_page": null,
+      "editorial_heading_en": "Cover — Hospitality",
+      "topic_fa": "جلد؛ پیام آسایش، مدیریت اتاق، یکپارچگی و تجربه دیجیتال مهمان",
+      "page_role": "cover_brand_message",
+      "research_inclusion": "cover_presentation"
+    },
+    {
+      "pdf_page": 2,
+      "printed_page": 2,
+      "editorial_heading_en": "1. Guest Experience",
+      "topic_fa": "تجربه مهمان؛ پیکربندی کنترل‌های داخل اتاق و شخصی‌سازی ظاهری رابط",
+      "page_role": "guest_experience_and_configurator",
+      "research_inclusion": "content_and_presentation_reference"
+    },
+    {
+      "pdf_page": 3,
+      "printed_page": 3,
+      "editorial_heading_en": "2. Guest room management software — central monitoring",
+      "topic_fa": "نرم‌افزار مدیریت مرکزی؛ نمایش وضعیت اتاق، حالت‌های حضور و گردش کار پرسنل",
+      "page_role": "grms_central_software",
+      "research_inclusion": "content_and_presentation_reference"
+    },
+    {
+      "pdf_page": 4,
+      "printed_page": 4,
+      "editorial_heading_en": "3. Focus on Integration",
+      "topic_fa": "یکپارچگی با PMS، کنترل دسترسی و سامانه‌های دیگر؛ ادعاهای همکاری متعلق به ABB",
+      "page_role": "hospitality_integrations",
+      "research_inclusion": "content_and_presentation_reference"
+    },
+    {
+      "pdf_page": 5,
+      "printed_page": 5,
+      "editorial_heading_en": "4. Guest Convenience",
+      "topic_fa": "اپلیکیشن مهمان، کنترل اتاق و موضوع خدمات دیجیتال و سرگرمی",
+      "page_role": "guest_app_and_digital_services",
+      "research_inclusion": "content_and_presentation_reference"
+    },
+    {
+      "pdf_page": 6,
+      "printed_page": 6,
+      "editorial_heading_en": "5. Security and Convenience",
+      "topic_fa": "معماری امنیت سامانه و دیاگرام ارتباطات؛ هیچ مشخصه امنیتی برای NSP استنتاج نشود",
+      "page_role": "security_architecture",
+      "research_inclusion": "content_and_presentation_reference"
+    },
+    {
+      "pdf_page": 7,
+      "printed_page": 7,
+      "editorial_heading_en": "6. Energy Efficiency",
+      "topic_fa": "مدیریت انرژی مبتنی بر حضور و شرایط اتاق، نمودار تجهیزات و سناریو",
+      "page_role": "grms_energy_occupancy",
+      "research_inclusion": "content_and_presentation_reference"
+    },
+    {
+      "pdf_page": 8,
+      "printed_page": 8,
+      "editorial_heading_en": "ABB Guest Room Sensor Portfolio — Unmatched Variety",
+      "topic_fa": "نمایش تنوع خانواده محصولات و گزینه‌های طراحی؛ مشخصات مدل‌های رقبا خارج از دامنه",
+      "page_role": "equipment_presentation_style",
+      "research_inclusion": "content_and_presentation_reference"
+    },
+    {
+      "pdf_page": 9,
+      "printed_page": 9,
+      "editorial_heading_en": "Future-Ready Hospitality Through Digital Integration",
+      "topic_fa": "روایت آینده‌نگر مهمان و راهکارهای دیجیتال؛ ادعاهای فناورانه نیازمند بررسی",
+      "page_role": "digital_hospitality_marketing",
+      "research_inclusion": "content_and_presentation_reference"
+    },
+    {
+      "pdf_page": 10,
+      "printed_page": 10,
+      "editorial_heading_en": "Notes",
+      "topic_fa": "صفحه یادداشت؛ فاقد محتوای پژوهشی مستقل",
+      "page_role": "notes",
+      "research_inclusion": "metadata_only"
+    },
+    {
+      "pdf_page": 11,
+      "printed_page": 11,
+      "editorial_heading_en": "Notes",
+      "topic_fa": "صفحه یادداشت؛ فاقد محتوای پژوهشی مستقل",
+      "page_role": "notes",
+      "research_inclusion": "metadata_only"
+    },
+    {
+      "pdf_page": 12,
+      "printed_page": null,
+      "editorial_heading_en": "Back cover — ABB Ltd; Rev.D, February 2025",
+      "topic_fa": "پشت جلد، نشان ناشر، حق نشر، شناسه انتشار و تاریخ نسخه",
+      "page_role": "imprint_back_cover",
+      "research_inclusion": "bibliography_and_date"
+    }
+  ],
+  "visual_and_structure_checks": {
+    "inspected_all_pages_via_page_contact_sheet": true,
+    "individually_rendered_key_pdf_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      12
+    ],
+    "pdf_page_text_checked_all_12": true,
+    "note_pages_confirmed": [
+      10,
+      11
+    ],
+    "source_has_no_table_of_contents_page": true,
+    "page_number_placement": "Top corner; PDF 2 to 11",
+    "common_page_style": "White landscape pages, dark sans-serif titles, short red lines and accents, large lifestyle photographs, equipment renderings and concise diagrams.",
+    "charts_and_diagrams_to_inspect_in_S04": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "no_visual_reference_assets_added_during_S01": true
+  },
+  "known_content_scope_and_cautions_fa": [
+    "تمرکز سند بر GRMS هتلی ABB است؛ معرفی‌های IPTV در صفحه ۵ به‌عنوان ادغام خدمات دیجیتال مطرح شده‌اند، اما پشتیبانی IPTV برای NSP از آن ثابت نمی‌شود.",
+    "صفحه ۳ نرم‌افزار مانیتورینگ مرکزی و وضعیت اتاق‌ها را نشان می‌دهد؛ در ساختار NSP، این بخش زیرمجموعه فصل GRMS است نه فصل مستقل نرم‌افزار.",
+    "صفحه ۴ درباره یکپارچگی PMS و کنترل دسترسی است؛ نام برندها و یکپارچگی‌های ABB نباید به NSP نسبت داده شود.",
+    "صفحه ۵ اپلیکیشن مهمان و شخصی‌سازی رابط را مطرح می‌کند؛ وجود این قابلیت‌ها در NSP نیازمند مستند نرم‌افزار و آزمون است.",
+    "صفحه ۶ ویژگی‌های امنیتی راهکار ABB را معرفی می‌کند؛ این‌ها معیار یا گواهی امنیت NSP نیستند.",
+    "صفحه ۷ منطق حضور/عدم حضور و مدیریت انرژی اتاق را نمایش می‌دهد؛ هر نوع درصد یا صرفه‌جویی برای NSP نیازمند داده آزمایش و مبنای مقایسه است.",
+    "صفحه ۸ حاوی کاتالوگ تصویری و کد مدل‌های محصولات ABB است؛ فقط سبک معرفی خانواده تجهیزات و چیدمان تصویری حفظ شود، نه مدل، SKU یا مشخصات رقیب.",
+    "صفحه ۹ شامل ادعاهای بازاریابی درباره آینده فناوری هتل است؛ نباید به قابلیت قطعی فعلی NSP تبدیل شود.",
+    "در صفحه ۳ و ۴ اطلاعات دسترسی آزمایشی به نرم‌افزار در PDF دیده می‌شود؛ اعتبارنامه‌ها یا داده‌های ورود نباید در خروجی پژوهش بازنشر شوند.",
+    "صفحات ۱۰ و ۱۱ یادداشت خالی هستند؛ در S02 باید به‌عنوان صفحات بدون محتوای پژوهشی علامت‌گذاری شوند.",
+    "در S01 صرفاً شناسنامه و ساختار منبع ثبت شده است؛ ترجمه، استخراج فیچر و تصاویر به مراحل S02 تا S04 موکول شده‌اند."
+  ],
+  "project_alignment": {
+    "original_editorial_guidance": "Portfolio Instruction/HELP.md",
+    "approved_systems": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ],
+    "primary_catalog_research_theme": "GRMS",
+    "potential_software_subsection": "GRMS",
+    "possible_IPTV_digital_services_link": "research only, feature verification required",
+    "no_new_NSP_chapter_approved": true,
+    "competitor_specs_policy": "no competitor hardware SKU, electrical specs or proprietary product details in feature bank",
+    "commercial_image_reuse": "not authorized",
+    "NSP_claims_verified_by_this_stage": false
+  },
+  "audit_and_replay": {
+    "method": "Original Library PDF byte-copy programmatically inspected using PyMuPDF; all pages visually reviewed in contact sheet and selected pages rendered for layout.",
+    "source_hash_check": "SHA256 over entire PDF byte content.",
+    "section_count": 12,
+    "no_source_modification": true,
+    "next_stage": "S02 — source English text extraction"
+  }
+}
