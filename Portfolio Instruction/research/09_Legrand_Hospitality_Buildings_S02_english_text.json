@@ -1,0 +1,1220 @@
+{
+  "schema": "nsp-catalog-research-s02-english-extract-v1",
+  "stage": "S02",
+  "document_id": "09",
+  "repo": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "created_on": "2026-11-22",
+  "status": "completed",
+  "source": {
+    "company": "Legrand",
+    "title": "Hospitality Buildings — Integrated Solutions",
+    "filename": "09_Legrand_Hospitality Buildings – Integrated Solutions.pdf",
+    "library_path": "/09_Legrand_Hospitality Buildings – Integrated Solutions.pdf",
+    "pdf_page_count": 52,
+    "publication_year": 2016,
+    "sha256": "bab386c249c43f79005e8e0edbc02ca71e9fa9d28fb3b5e5c35beefca8ef6ade",
+    "prior_stage_evidence": "Portfolio Instruction/research/09_Legrand_Hospitality_Buildings_S01_source_inventory.json"
+  },
+  "contract": {
+    "all_52_pages_native_PDF_text_extracted": true,
+    "english_data_retained": "Exact relevant headings and selected source-English fragments per page; full brochure text remains in original PDF and is not republished publicly",
+    "no_hardware_models_skus_specs": true,
+    "not_translated_at_S02": true,
+    "matching": "109 original text fragments matched by content with punctuation/whitespace normalization",
+    "restricted_reuse": "Competitor text, capabilities and quantitative claims are NOT verification of NSP features",
+    "workflow": "S03 translates and classifies, S04 inspects visuals, S05 maps NSP sections, S06 audits, S07 merges feature data"
+  },
+  "statistics": {
+    "pages_read": 52,
+    "total_original_pdf_text_characters": 88372,
+    "pages_with_curated_en": 38,
+    "verified_en_fragments": 132,
+    "exact_headings": 34,
+    "claims_flagged": 9,
+    "dense_or_multicolumn_pages": 24
+  },
+  "pages": [
+    {
+      "pdf_page": 1,
+      "printed_page": null,
+      "section_from_S01_en": "Front cover",
+      "page_role": "cover_or_imprint",
+      "native_english_text_extract_chars": 303,
+      "native_english_word_count": 21,
+      "exact_source_headings_en": [
+        "HOSPITALITY BUILDINGS",
+        "INTEGRATED SOLUTIONS"
+      ],
+      "exact_source_fragments_en": [
+        "HOSPITALITY",
+        "BUILDINGS"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": []
+    },
+    {
+      "pdf_page": 2,
+      "printed_page": null,
+      "section_from_S01_en": "Hospitality projects opening",
+      "page_role": "cover_or_imprint",
+      "native_english_text_extract_chars": 42,
+      "native_english_word_count": 4,
+      "exact_source_headings_en": [
+        "BUILDING HOSPITALITY PROJECTS SUCCESSFULLY"
+      ],
+      "exact_source_fragments_en": [
+        "BUILDING",
+        "HOSPITALITY",
+        "PROJECTS",
+        "SUCCESSFULLY"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": []
+    },
+    {
+      "pdf_page": 3,
+      "printed_page": 1,
+      "section_from_S01_en": "Introduction and contents",
+      "page_role": "editorial_contents",
+      "native_english_text_extract_chars": 2670,
+      "native_english_word_count": 243,
+      "exact_source_headings_en": [
+        "BACKGROUND",
+        "GUEST ROOMS",
+        "ALL OTHER AREAS"
+      ],
+      "exact_source_fragments_en": [
+        "Our comprehensive and reliable solutions and services",
+        "The purpose of this brochure is also to act as a guide",
+        "GUEST ROOMS",
+        "ALL OTHER AREAS"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 4,
+      "printed_page": 2,
+      "section_from_S01_en": "Group background and integrated solutions",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1268,
+      "native_english_word_count": 99,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [
+        "Legrand is a global",
+        "electrical",
+        "digital building"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 5,
+      "printed_page": 3,
+      "section_from_S01_en": "Group background and integrated solutions",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1157,
+      "native_english_word_count": 89,
+      "exact_source_headings_en": [
+        "The global specialist"
+      ],
+      "exact_source_fragments_en": [
+        "The global specialist",
+        "A comprehensive solution"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 6,
+      "printed_page": 4,
+      "section_from_S01_en": "Sustainable development",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 3351,
+      "native_english_word_count": 261,
+      "exact_source_headings_en": [
+        "SUSTAINABLE DEVELOPMENT, ACT NOW FOR TOMORROW"
+      ],
+      "exact_source_fragments_en": [
+        "SUSTAINABLE",
+        "DEVELOPMENT",
+        "ACT NOW FOR",
+        "TOMORROW",
+        "The environment, a key dimension",
+        "In 2006, Legrand signed up to the Global Compact"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": []
+    },
+    {
+      "pdf_page": 7,
+      "printed_page": 5,
+      "section_from_S01_en": "Sustainable development",
+      "page_role": "numeric_graph",
+      "native_english_text_extract_chars": 4082,
+      "native_english_word_count": 230,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [
+        "lighting management",
+        "Saving on energy*: 368 euros / year",
+        "Return on investment: 2 years",
+        "-80%"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain",
+        "numerical_chart_requires_visual_context"
+      ]
+    },
+    {
+      "pdf_page": 8,
+      "printed_page": 6,
+      "section_from_S01_en": "Technology integration",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1411,
+      "native_english_word_count": 87,
+      "exact_source_headings_en": [
+        "TECHNOLOGY INTEGRATION"
+      ],
+      "exact_source_fragments_en": [
+        "TECHNOLOGY INTEGRATION",
+        "Legrand has developed",
+        "hotel automation"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": []
+    },
+    {
+      "pdf_page": 9,
+      "printed_page": 7,
+      "section_from_S01_en": "Technology integration",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 277,
+      "native_english_word_count": 13,
+      "exact_source_headings_en": [
+        "Property management",
+        "Room solutions"
+      ],
+      "exact_source_fragments_en": [
+        "Property management",
+        "Room solutions"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 10,
+      "printed_page": 8,
+      "section_from_S01_en": "Guest rooms overview",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 413,
+      "native_english_word_count": 19,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 11,
+      "printed_page": 9,
+      "section_from_S01_en": "Guest rooms overview",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1509,
+      "native_english_word_count": 69,
+      "exact_source_headings_en": [
+        "GUEST ROOMS"
+      ],
+      "exact_source_fragments_en": [
+        "GUEST ROOMS",
+        "Legrand’s entire product development process"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 12,
+      "printed_page": 10,
+      "section_from_S01_en": "Guest Room Management System",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 407,
+      "native_english_word_count": 36,
+      "exact_source_headings_en": [
+        "GUEST ROOM MANAGEMENT SYSTEM"
+      ],
+      "exact_source_fragments_en": [
+        "GUEST ROOM",
+        "MANAGEMENT SYSTEM",
+        "ENTRANCE AREA",
+        "STUDY AREA",
+        "LIVING AREA"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 13,
+      "printed_page": 11,
+      "section_from_S01_en": "Guest Room Management System",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1893,
+      "native_english_word_count": 106,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [
+        "SLEEPING AREA",
+        "The objective is to consistently",
+        "satisfy guests’ needs",
+        "Thanks to the",
+        "different scenes can be"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 14,
+      "printed_page": 12,
+      "section_from_S01_en": "In-room comfort",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 849,
+      "native_english_word_count": 82,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [
+        "The blinds, curtains and lighting",
+        "can all be controlled remotely",
+        "RECENT MEDICAL STUDIES HAVE",
+        "IMPACT ON OUR QUALITY OF SLEEP"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "medical_study_claim_missing_source"
+      ]
+    },
+    {
+      "pdf_page": 15,
+      "printed_page": 13,
+      "section_from_S01_en": "In-room comfort",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1726,
+      "native_english_word_count": 104,
+      "exact_source_headings_en": [
+        "IN-ROOM COMFORT"
+      ],
+      "exact_source_fragments_en": [
+        "IN-ROOM",
+        "COMFORT",
+        "With the right lighting and temperature conditions"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": []
+    },
+    {
+      "pdf_page": 16,
+      "printed_page": 14,
+      "section_from_S01_en": "In-room entertainment",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 820,
+      "native_english_word_count": 72,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [
+        "Multimedia solutions",
+        "enjoy their digit",
+        "connect their own"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 17,
+      "printed_page": 15,
+      "section_from_S01_en": "In-room entertainment",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1707,
+      "native_english_word_count": 113,
+      "exact_source_headings_en": [
+        "IN-ROOM ENTERTAINMENT"
+      ],
+      "exact_source_fragments_en": [
+        "IN-ROOM",
+        "ENTERTAINMENT",
+        "Staying in your hotel",
+        "TV over IP services"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 18,
+      "printed_page": 16,
+      "section_from_S01_en": "Design for all / assisted living",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 678,
+      "native_english_word_count": 75,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [
+        "ALTHOUGH LEGRAND DOES NOT",
+        "FOR DISABLED PEOPLE"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": []
+    },
+    {
+      "pdf_page": 19,
+      "printed_page": 17,
+      "section_from_S01_en": "Design for all / assisted living",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 2175,
+      "native_english_word_count": 137,
+      "exact_source_headings_en": [
+        "DESIGN FOR ALL",
+        "ASSISTED LIVING"
+      ],
+      "exact_source_fragments_en": [
+        "DESIGN FOR ALL",
+        "ASSISTED LIVING",
+        "To ensure that your hotels",
+        "accessible to as many people as possible"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 20,
+      "printed_page": 18,
+      "section_from_S01_en": "Choice of designs",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 1320,
+      "native_english_word_count": 149,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [
+        "LEATHER, BRUSHED STAINLESS",
+        "STEEL, COLOURED GLASS"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 21,
+      "printed_page": 19,
+      "section_from_S01_en": "Choice of designs",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1605,
+      "native_english_word_count": 112,
+      "exact_source_headings_en": [
+        "UNPARALLELED CHOICE OF DESIGNS"
+      ],
+      "exact_source_fragments_en": [
+        "UNPARALLELED",
+        "CHOICE OF",
+        "DESIGNS",
+        "Developing and building",
+        "the hotel’s identity"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 22,
+      "printed_page": 20,
+      "section_from_S01_en": "Customised solutions",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 1359,
+      "native_english_word_count": 147,
+      "exact_source_headings_en": [
+        "THE ART OF BEING UNIQUE"
+      ],
+      "exact_source_fragments_en": [
+        "THE ART OF BEING UNIQUE",
+        "Totally made to measure",
+        "SPECIAL MARKINGS"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 23,
+      "printed_page": 21,
+      "section_from_S01_en": "Customised solutions",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1440,
+      "native_english_word_count": 74,
+      "exact_source_headings_en": [
+        "CUSTOMISED SOLUTIONS"
+      ],
+      "exact_source_fragments_en": [
+        "CUSTOMISED",
+        "SOLUTIONS",
+        "In the most prestigious",
+        "personalised service"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 24,
+      "printed_page": 22,
+      "section_from_S01_en": "Versatile solutions for all projects",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 224,
+      "native_english_word_count": 21,
+      "exact_source_headings_en": [
+        "INTERNATIONAL STANDARDS"
+      ],
+      "exact_source_fragments_en": [
+        "INTERNATIONAL STANDARDS"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 25,
+      "printed_page": 23,
+      "section_from_S01_en": "Versatile solutions for all projects",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1432,
+      "native_english_word_count": 79,
+      "exact_source_headings_en": [
+        "VERSATILE SOLUTIONS FOR ALL PROJECTS"
+      ],
+      "exact_source_fragments_en": [
+        "VERSATILE",
+        "SOLUTIONS",
+        "FOR ALL PROJECTS",
+        "From Budget to Luxury",
+        "more than 100 ranges"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": []
+    },
+    {
+      "pdf_page": 26,
+      "printed_page": 24,
+      "section_from_S01_en": "Protection and safety",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 393,
+      "native_english_word_count": 31,
+      "exact_source_headings_en": [
+        "PROTECTION DEVICES FOR A ROOM"
+      ],
+      "exact_source_fragments_en": [
+        "PROTECTION DEVICES FOR A ROOM"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 27,
+      "printed_page": 25,
+      "section_from_S01_en": "Protection and safety",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1004,
+      "native_english_word_count": 65,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [
+        "The safety of your guests is",
+        "paramount"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 28,
+      "printed_page": 26,
+      "section_from_S01_en": "All other areas overview",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 164,
+      "native_english_word_count": 10,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 29,
+      "printed_page": 27,
+      "section_from_S01_en": "All other areas overview",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1072,
+      "native_english_word_count": 74,
+      "exact_source_headings_en": [
+        "ALL OTHER AREAS"
+      ],
+      "exact_source_fragments_en": [
+        "ALL OTHER",
+        "AREAS",
+        "Legrand has a comprehensive range"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": []
+    },
+    {
+      "pdf_page": 30,
+      "printed_page": 28,
+      "section_from_S01_en": "Lobbies and lounges",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 285,
+      "native_english_word_count": 16,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 31,
+      "printed_page": 29,
+      "section_from_S01_en": "Lobbies and lounges",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1661,
+      "native_english_word_count": 119,
+      "exact_source_headings_en": [
+        "LOBBIES AND LOUNGES"
+      ],
+      "exact_source_fragments_en": [
+        "LOBBIES",
+        "AND LOUNGES",
+        "Lobbies are more than reception areas."
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 32,
+      "printed_page": 30,
+      "section_from_S01_en": "Restaurants and bars",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 361,
+      "native_english_word_count": 18,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 33,
+      "printed_page": 31,
+      "section_from_S01_en": "Restaurants and bars",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1449,
+      "native_english_word_count": 84,
+      "exact_source_headings_en": [
+        "RESTAURANTS AND BARS"
+      ],
+      "exact_source_fragments_en": [
+        "RESTAURANTS",
+        "AND BARS",
+        "Carefully chosen lighting",
+        "Different lighting scenarios"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 34,
+      "printed_page": 32,
+      "section_from_S01_en": "Passages and corridors",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 197,
+      "native_english_word_count": 17,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 35,
+      "printed_page": 33,
+      "section_from_S01_en": "Passages and corridors",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1505,
+      "native_english_word_count": 86,
+      "exact_source_headings_en": [
+        "PASSAGES AND CORRIDORS"
+      ],
+      "exact_source_fragments_en": [
+        "PASSAGES",
+        "AND CORRIDORS",
+        "Smart lighting management can avoid",
+        "energy savings of more that 30%",
+        "building operating costs by 10%"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain",
+        "competitor_energy_claim_without_test_basis"
+      ]
+    },
+    {
+      "pdf_page": 36,
+      "printed_page": 34,
+      "section_from_S01_en": "Business centers and executive lounges",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 363,
+      "native_english_word_count": 18,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 37,
+      "printed_page": 35,
+      "section_from_S01_en": "Business centers and executive lounges",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1215,
+      "native_english_word_count": 74,
+      "exact_source_headings_en": [
+        "BUSINESS CENTERS, EXECUTIVE LOUNGES"
+      ],
+      "exact_source_fragments_en": [
+        "BUSINESS",
+        "CENTERS",
+        "EXECUTIVE",
+        "LOUNGES",
+        "Workstation performance"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 38,
+      "printed_page": 36,
+      "section_from_S01_en": "Conference and meeting rooms",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 248,
+      "native_english_word_count": 19,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 39,
+      "printed_page": 37,
+      "section_from_S01_en": "Conference and meeting rooms",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1551,
+      "native_english_word_count": 88,
+      "exact_source_headings_en": [
+        "CONFERENCE AND MEETING ROOMS"
+      ],
+      "exact_source_fragments_en": [
+        "CONFERENCE",
+        "AND MEETING",
+        "ROOMS",
+        "The centralisation of controls",
+        "Control and monitoring of lighting"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 40,
+      "printed_page": 38,
+      "section_from_S01_en": "Fitness, spas and outdoors",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 305,
+      "native_english_word_count": 18,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 41,
+      "printed_page": 39,
+      "section_from_S01_en": "Fitness, spas and outdoors",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1225,
+      "native_english_word_count": 81,
+      "exact_source_headings_en": [
+        "FITNESS, SPAS AND OUTDOORS"
+      ],
+      "exact_source_fragments_en": [
+        "FITNESS",
+        "SPAS AND",
+        "OUTDOORS",
+        "To make the most"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 42,
+      "printed_page": 40,
+      "section_from_S01_en": "Service areas",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 242,
+      "native_english_word_count": 16,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 43,
+      "printed_page": 41,
+      "section_from_S01_en": "Service areas",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1205,
+      "native_english_word_count": 77,
+      "exact_source_headings_en": [
+        "SERVICE AREAS"
+      ],
+      "exact_source_fragments_en": [
+        "SERVICE",
+        "AREAS",
+        "Only staff should have",
+        "Secure access management"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 44,
+      "printed_page": 42,
+      "section_from_S01_en": "Technical room",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 513,
+      "native_english_word_count": 27,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 45,
+      "printed_page": 43,
+      "section_from_S01_en": "Technical room",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 1609,
+      "native_english_word_count": 102,
+      "exact_source_headings_en": [
+        "TECHNICAL ROOM"
+      ],
+      "exact_source_fragments_en": [
+        "TECHNICAL",
+        "ROOM",
+        "The technical room is the",
+        "24 hour-a-day operation"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 46,
+      "printed_page": 44,
+      "section_from_S01_en": "Data room",
+      "page_role": "equipment_or_scenario_diagram",
+      "native_english_text_extract_chars": 275,
+      "native_english_word_count": 15,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hardware_models_and_specs"
+      ],
+      "flags": [
+        "illustration_and_hardware_labels_to_review_S04"
+      ]
+    },
+    {
+      "pdf_page": 47,
+      "printed_page": 45,
+      "section_from_S01_en": "Data room",
+      "page_role": "editorial_narrative",
+      "native_english_text_extract_chars": 883,
+      "native_english_word_count": 60,
+      "exact_source_headings_en": [
+        "DATA ROOM"
+      ],
+      "exact_source_fragments_en": [
+        "DATA",
+        "ROOM",
+        "The data room is the"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 48,
+      "printed_page": 46,
+      "section_from_S01_en": "Worldwide collaboration and hotel project references",
+      "page_role": "competitor_project_reference_directory",
+      "native_english_text_extract_chars": 6144,
+      "native_english_word_count": 397,
+      "exact_source_headings_en": [
+        "IN CLOSE COLLABORATION THROUGHOUT THE WORLD"
+      ],
+      "exact_source_fragments_en": [
+        "IN CLOSE",
+        "COLLABORATION",
+        "THROUGHOUT THE WORLD",
+        "Our experience covers",
+        "budget or luxury"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 49,
+      "printed_page": 47,
+      "section_from_S01_en": "Worldwide collaboration and hotel project references",
+      "page_role": "competitor_project_reference_directory",
+      "native_english_text_extract_chars": 5190,
+      "native_english_word_count": 315,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hotel_project_names_and_addresses"
+      ],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 50,
+      "printed_page": 48,
+      "section_from_S01_en": "Worldwide collaboration and hotel project references",
+      "page_role": "competitor_project_reference_directory",
+      "native_english_text_extract_chars": 8802,
+      "native_english_word_count": 601,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hotel_project_names_and_addresses"
+      ],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 51,
+      "printed_page": 49,
+      "section_from_S01_en": "Worldwide collaboration and hotel project references",
+      "page_role": "competitor_project_reference_directory",
+      "native_english_text_extract_chars": 16022,
+      "native_english_word_count": 832,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [
+        "third_party_hotel_project_names_and_addresses"
+      ],
+      "flags": [
+        "multicolumn_text_order_uncertain"
+      ]
+    },
+    {
+      "pdf_page": 52,
+      "printed_page": null,
+      "section_from_S01_en": "Back cover / publisher contact",
+      "page_role": "cover_or_imprint",
+      "native_english_text_extract_chars": 371,
+      "native_english_word_count": 45,
+      "exact_source_headings_en": [],
+      "exact_source_fragments_en": [
+        "FOLLOW US ALSO ON",
+        "March 2016"
+      ],
+      "fragment_match_validation": "matched_against_original_PDF_native_text",
+      "omitted_for_scope": [],
+      "flags": []
+    }
+  ],
+  "numerical_and_uncertain_source_claims": [
+    {
+      "pdf_page": 7,
+      "verbatim_en_fragments": [
+        "Saving on energy*: 368 euros / year"
+      ],
+      "kind": "competitor_example_savings",
+      "context": "Legrand small conference room lighting illustration; printed page 5",
+      "limitation": "Example configuration and financial assumptions not independently validated"
+    },
+    {
+      "pdf_page": 7,
+      "verbatim_en_fragments": [
+        "Return on investment: 2 years"
+      ],
+      "kind": "competitor_example_roi",
+      "context": "Same source illustration",
+      "limitation": "Project pricing and financial assumptions unknown"
+    },
+    {
+      "pdf_page": 7,
+      "verbatim_en_fragments": [
+        "Greenhouse gas (GHG) emissions avoided:",
+        "470 KG / GHG / year"
+      ],
+      "kind": "competitor_example_ghg",
+      "context": "Same source illustration",
+      "limitation": "Original unit convention retained; methodology unspecified"
+    },
+    {
+      "pdf_page": 7,
+      "verbatim_en_fragments": [
+        "70% of Legrand’s design offices are deploying eco-design methodology"
+      ],
+      "kind": "historical_company_claim",
+      "context": "Publisher claim in 2016",
+      "limitation": "Not relevant to NSP manufacturing claims"
+    },
+    {
+      "pdf_page": 7,
+      "verbatim_en_fragments": [
+        "-80%",
+        "-37%",
+        "-39%",
+        "-41%",
+        "-49%",
+        "-61%"
+      ],
+      "kind": "chart_numbers_uninterpreted",
+      "context": "Before/after lighting-use graph",
+      "limitation": "Do not infer meaning of separate series without visual verification"
+    },
+    {
+      "pdf_page": 14,
+      "verbatim_en_fragments": [
+        "RECENT MEDICAL STUDIES HAVE",
+        "IMPACT ON OUR QUALITY OF SLEEP"
+      ],
+      "kind": "unreferenced_medical_marketing_claim",
+      "context": "Lighting, sleep and colour temperature",
+      "limitation": "Primary-study citations absent"
+    },
+    {
+      "pdf_page": 25,
+      "verbatim_en_fragments": [
+        "more than 100 ranges"
+      ],
+      "kind": "historical_competitor_range_claim",
+      "context": "2016 product portfolio message",
+      "limitation": "Do not use as current market data"
+    },
+    {
+      "pdf_page": 35,
+      "verbatim_en_fragments": [
+        "energy savings of more that 30%",
+        "building operating costs by 10%"
+      ],
+      "kind": "unverified_energy_and_operating_cost_claim",
+      "context": "Corridors and passages; original typo 'more that' preserved",
+      "limitation": "No independent test conditions or ROI basis supplied"
+    },
+    {
+      "pdf_page": 45,
+      "verbatim_en_fragments": [
+        "24 hour-a-day operation"
+      ],
+      "kind": "operational_promise",
+      "context": "Technical equipment rooms",
+      "limitation": "Not a demonstrated uptime SLA"
+    }
+  ],
+  "contents_and_tables_inventory": [
+    {
+      "pdf_pages": [
+        3
+      ],
+      "type": "contents_table",
+      "action": "Use S01 page map; avoid treating printed page numbers as PDF page numbers"
+    },
+    {
+      "pdf_pages": [
+        7
+      ],
+      "type": "environmental_chart_and_examples",
+      "action": "Review chart visually before using values or numerical comparison"
+    },
+    {
+      "pdf_pages": [
+        20
+      ],
+      "type": "finishes_and_product_variants",
+      "action": "Presentation style only; brand hardware specs excluded"
+    },
+    {
+      "pdf_pages": [
+        28,
+        29
+      ],
+      "type": "hotel_area_numbered_illustration_and_index",
+      "action": "Retain layout concept; do not re-use competitor graphics"
+    },
+    {
+      "pdf_pages": [
+        48,
+        49,
+        50,
+        51
+      ],
+      "type": "global_project_reference_directory",
+      "action": "Directory exists; project names not attributed to NSP or independently verified"
+    }
+  ],
+  "editorial_quality_notes_fa": [
+    "متن انگلیسی هر ۵۲ صفحه از لایه متن خود PDF خوانده شد و بیش از صد گزیدهٔ انگلیسی با متن اصلی تطبیق داده شد.",
+    "ثبت گزیده‌های پژوهشی جایگزین بازنشر کامل سند و مشخصات/مدل‌های سخت‌افزاری رقیب در مخزن عمومی شده است.",
+    "در صفحات دارای چیدمان چندستونه یا فهرست‌های متراکم، ترتیب خروجی متن خام معتبر نیست؛ گزیده‌ها جداگانه تطبیق شدند.",
+    "ارقام صفحه ۷ و ۳۵ مربوط به Legrand هستند؛ شیوه محاسبه و شرایط آزمون برای انتقال ادعا کافی نیست.",
+    "در صفحه ۱۴ به مطالعات پزشکی اشاره شده اما استناد اولیه برای آن در صفحه ثبت نشده است.",
+    "انتخاب عکس‌ها، سبک‌ها و آیکون‌ها متعلق به S04 است و در این مرحله تصویر جدیدی وارد مخزن نشد."
+  ],
+  "next_stage": "S03 — استخراج و طبقه‌بندی فیچرها و ترجمه فارسی",
+  "feature_json_unmodified": true
+}
