@@ -1,0 +1,550 @@
+{
+  "schema": "nsp-catalog-research-s02-english-extract-v1",
+  "stage": "S02",
+  "stage_key": "source_text_extraction",
+  "project": "NSP Portfolio Builder",
+  "document_id": "10",
+  "status": "completed_verified_english_extract",
+  "created_on": "2026-11-22",
+  "source_pdf": {
+    "company": "ABB",
+    "title": "Hospitality — ABB's approach to guest room management",
+    "filename": "10_ABB_Hospitality GRMS Brochure 2025.pdf",
+    "library_path": "/10_ABB_Hospitality GRMS Brochure 2025.pdf",
+    "pdf_pages": 12,
+    "source_sha256": "23d6798ba910ec567663d2574d496eaac875f0b115aff2cc37947b382d637b88",
+    "document_revision": "Rev.D",
+    "publication_month": "2025-02",
+    "S01_inventory": "Portfolio Instruction/research/10_ABB_Hospitality_GRMS_S01_source_inventory.json"
+  },
+  "scope": {
+    "user_selected_purpose": "Internal research into marketing language, guest comfort, GRMS software, integrations, scenarios and equipment-presentation patterns",
+    "all_pages_native_text_inspected": true,
+    "entire_pdf_text_republished": false,
+    "excerpt_method": "Verbatim short source-language fragments with original PDF page. Not full reprint.",
+    "sample_demo_credentials_excluded": true,
+    "external_demo_URLs_and_QR_data_excluded": true,
+    "competitor_product_SKUs_model_specs_excluded": true,
+    "competitor_software_name_and_claims_allowed_for_research": true,
+    "source_claims_do_not_prove_NSP_capabilities": true,
+    "no_Persian_translation_until_S03": true,
+    "no_images_or_layout_crops_until_S04": true
+  },
+  "statistics": {
+    "pages_read": 12,
+    "pages_with_verified_fragments": 12,
+    "verified_english_fragments": 110,
+    "text_chars_native_second_extractor": 23608,
+    "unreconciled_candidate_fragments_excluded": 8,
+    "content_body_pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "blank_notes_pages": [
+      10,
+      11
+    ],
+    "main_room_modes_in_ABB": 4,
+    "additional_room_modes_in_ABB": 3,
+    "source_illustrative_presence_wait_minutes": 10,
+    "has_independently_measured_energy_savings_percentage": false
+  },
+  "pages": [
+    {
+      "pdf_page": 1,
+      "printed_page": null,
+      "section_role_from_S01": "cover_brand_message",
+      "source_category_hint": "cover_brand_messages",
+      "text_layer_extracted_characters": 527,
+      "headlines_en": [
+        "Hospitality"
+      ],
+      "verified_source_fragments_en": [
+        "Hospitality",
+        "Designed for guest comfort and convenience",
+        "Efficient and effective room management",
+        "Seamless integration and enhanced security"
+      ],
+      "fragment_count": 4,
+      "original_text_method": "PDF native text parsed by ChatGPT Files; separate visual and PyMuPDF inspection; no OCR",
+      "source_match": "normalization_of_case_unicode_whitespace_and_punctuation",
+      "quality_flags": [
+        "cover_photo_visual_reference_S04"
+      ],
+      "visual_assets_status": "deferred_to_S04",
+      "translated_into_Persian": false
+    },
+    {
+      "pdf_page": 2,
+      "printed_page": 2,
+      "section_role_from_S01": "guest_experience_and_configurator",
+      "source_category_hint": "guest_experience_and_customization",
+      "text_layer_extracted_characters": 6134,
+      "headlines_en": [
+        "1. Guest Experience",
+        "Fully customizable",
+        "COLOUR OPTIONS"
+      ],
+      "verified_source_fragments_en": [
+        "1. Guest Experience",
+        "comfortable and customizable environment",
+        "adjust lighting, temperature, curtains",
+        "order room service",
+        "user-friendly interface",
+        "control elements",
+        "Fully customizable",
+        "Freely editable text",
+        "COLOUR OPTIONS",
+        "Do not disturb",
+        "all texts, colours and icons"
+      ],
+      "fragment_count": 11,
+      "original_text_method": "PDF native text parsed by ChatGPT Files; separate visual and PyMuPDF inspection; no OCR",
+      "source_match": "normalization_of_case_unicode_whitespace_and_punctuation",
+      "quality_flags": [
+        "product_model_details_excluded",
+        "UI_configuration_scenarios_for_S03"
+      ],
+      "visual_assets_status": "deferred_to_S04",
+      "translated_into_Persian": false
+    },
+    {
+      "pdf_page": 3,
+      "printed_page": 3,
+      "section_role_from_S01": "grms_central_software",
+      "source_category_hint": "room_status_and_central_grms_monitoring",
+      "text_layer_extracted_characters": 3510,
+      "headlines_en": [
+        "2. Guest room management software",
+        "How the guest room occupancy detection works",
+        "4 MAIN ROOM MODES",
+        "3 ADDITIONAL ROOM MODES"
+      ],
+      "verified_source_fragments_en": [
+        "2. Guest room management software",
+        "central monitoring",
+        "How the guest room occupancy detection works",
+        "One configuration view",
+        "entire building",
+        "integrated softwares dashboard",
+        "overview of all guestrooms status",
+        "Detail view on every room",
+        "operate every room function from remote",
+        "Centrally control lighting",
+        "Monitor guestroom status for an entire floor",
+        "presence detectors are",
+        "typically 10 minutes",
+        "Every user group gets an individual view",
+        "Supports PC, phone, tablet and web browser",
+        "Configuration of multiple user rights",
+        "Free customization",
+        "Libraries to visualize the technical infrastructure",
+        "4 MAIN ROOM MODES",
+        "3 ADDITIONAL ROOM MODES",
+        "Vacant",
+        "Occupied",
+        "Unoccupied",
+        "Long term vacant",
+        "Night",
+        "Cleaning",
+        "Guest Arrives"
+      ],
+      "fragment_count": 27,
+      "original_text_method": "PDF native text parsed by ChatGPT Files; separate visual and PyMuPDF inspection; no OCR",
+      "source_match": "normalization_of_case_unicode_whitespace_and_punctuation",
+      "quality_flags": [
+        "demo_access_credential_content_excluded",
+        "7_room_modes_are_competitor_specific",
+        "10_minute_occupancy_rule_is_illustrative"
+      ],
+      "visual_assets_status": "deferred_to_S04",
+      "translated_into_Persian": false
+    },
+    {
+      "pdf_page": 4,
+      "printed_page": 4,
+      "section_role_from_S01": "hospitality_integrations",
+      "source_category_hint": "pms_and_door_lock_integrations",
+      "text_layer_extracted_characters": 2636,
+      "headlines_en": [
+        "3. Focus on Integration"
+      ],
+      "verified_source_fragments_en": [
+        "3. Focus on Integration",
+        "Property Management System (PMS) Integration",
+        "NETx integrates with Oracle",
+        "Additional integrations can be implemented",
+        "Certified integration",
+        "Server to server communication",
+        "guest entrance",
+        "staff entrance",
+        "door status",
+        "triggering actions in the room control",
+        "start a welcome scene",
+        "PROPERTY MANAGEMENT SYSTEM (PMS)"
+      ],
+      "fragment_count": 12,
+      "original_text_method": "PDF native text parsed by ChatGPT Files; separate visual and PyMuPDF inspection; no OCR",
+      "source_match": "normalization_of_case_unicode_whitespace_and_punctuation",
+      "quality_flags": [
+        "partner_brand_compatibility_and_security_certification_ABB_only",
+        "demo_access_credential_content_excluded"
+      ],
+      "visual_assets_status": "deferred_to_S04",
+      "translated_into_Persian": false
+    },
+    {
+      "pdf_page": 5,
+      "printed_page": 5,
+      "section_role_from_S01": "guest_app_and_digital_services",
+      "source_category_hint": "guest_app_and_digital_services",
+      "text_layer_extracted_characters": 3008,
+      "headlines_en": [
+        "4. Guest Convenience"
+      ],
+      "verified_source_fragments_en": [
+        "4. Guest Convenience",
+        "mySmartSuite app",
+        "Android / iOS",
+        "control of the entire guest room",
+        "room isolation",
+        "Only for the assigned hotel room",
+        "Valid only during the booked period",
+        "configured via QR code",
+        "user interface is fully customizable",
+        "any hotel logo or design language",
+        "OPC / BACnet",
+        "integrate IP TV/Audio devices",
+        "Guest entertainment features",
+        "3rd party solution providers",
+        "multi-protocol communication capability",
+        "Make up my room",
+        "Do not disturb"
+      ],
+      "fragment_count": 17,
+      "original_text_method": "PDF native text parsed by ChatGPT Files; separate visual and PyMuPDF inspection; no OCR",
+      "source_match": "normalization_of_case_unicode_whitespace_and_punctuation",
+      "quality_flags": [
+        "QR_code_payload_not_collected",
+        "mobile_and_IPTV_Audio_integration_not_verified_for_NSP"
+      ],
+      "visual_assets_status": "deferred_to_S04",
+      "translated_into_Persian": false
+    },
+    {
+      "pdf_page": 6,
+      "printed_page": 6,
+      "section_role_from_S01": "security_architecture",
+      "source_category_hint": "security_layers_ABB_claims",
+      "text_layer_extracted_characters": 1914,
+      "headlines_en": [
+        "5. Security and Convenience"
+      ],
+      "verified_source_fragments_en": [
+        "5. Security and Convenience",
+        "four-layered security",
+        "Encrypted communication between rooms and server",
+        "KNX IP-Secure",
+        "Network segmentation via dedicated VLAN",
+        "MAC address binding",
+        "Encrypted data transfer within guest rooms",
+        "Secure KNXnet/IP tunnelling connection"
+      ],
+      "fragment_count": 8,
+      "original_text_method": "PDF native text parsed by ChatGPT Files; separate visual and PyMuPDF inspection; no OCR",
+      "source_match": "normalization_of_case_unicode_whitespace_and_punctuation",
+      "quality_flags": [
+        "competitor_security_claim_not_NSP_certification"
+      ],
+      "visual_assets_status": "deferred_to_S04",
+      "translated_into_Persian": false
+    },
+    {
+      "pdf_page": 7,
+      "printed_page": 7,
+      "section_role_from_S01": "grms_energy_occupancy",
+      "source_category_hint": "occupancy_and_energy_scenarios",
+      "text_layer_extracted_characters": 3326,
+      "headlines_en": [
+        "6. Energy Efficiency"
+      ],
+      "verified_source_fragments_en": [
+        "6. Energy Efficiency",
+        "efficient power usage",
+        "Occupancy Detection",
+        "Presence detectors identify when a room is unoccupied",
+        "automatically adjust settings",
+        "lower the HVAC output",
+        "dim lights when the room is empty",
+        "Climate Control Optimization",
+        "Door and window contacts provide valuable data",
+        "avoid wasting energy",
+        "Personalized Comfort",
+        "preferred temperature and lighting levels",
+        "energy saving settings when the room is vacant",
+        "Presence detected",
+        "No presence detected"
+      ],
+      "fragment_count": 15,
+      "original_text_method": "PDF native text parsed by ChatGPT Files; separate visual and PyMuPDF inspection; no OCR",
+      "source_match": "normalization_of_case_unicode_whitespace_and_punctuation",
+      "quality_flags": [
+        "energy_savings_are_qualitative_without_measured_percentage",
+        "10_minutes_only_source_diagram",
+        "ABB_product_skus_omitted"
+      ],
+      "visual_assets_status": "deferred_to_S04",
+      "translated_into_Persian": false
+    },
+    {
+      "pdf_page": 8,
+      "printed_page": 8,
+      "section_role_from_S01": "equipment_presentation_style",
+      "source_category_hint": "equipment_family_display_style_not_specs",
+      "text_layer_extracted_characters": 1208,
+      "headlines_en": [
+        "ABB Guest Room Sensor Portfolio",
+        "Unmatched Variety: A World of Design Choices"
+      ],
+      "verified_source_fragments_en": [
+        "ABB Guest Room Sensor Portfolio",
+        "Unmatched Variety: A World of Design Choices",
+        "Click to view the full range"
+      ],
+      "fragment_count": 3,
+      "original_text_method": "PDF native text parsed by ChatGPT Files; separate visual and PyMuPDF inspection; no OCR",
+      "source_match": "normalization_of_case_unicode_whitespace_and_punctuation",
+      "quality_flags": [
+        "product_SKUs_and_model_names_omitted",
+        "presentation_style_for_S04"
+      ],
+      "visual_assets_status": "deferred_to_S04",
+      "translated_into_Persian": false
+    },
+    {
+      "pdf_page": 9,
+      "printed_page": 9,
+      "section_role_from_S01": "digital_hospitality_marketing",
+      "source_category_hint": "future_digital_marketing_claims",
+      "text_layer_extracted_characters": 932,
+      "headlines_en": [
+        "Future-Ready Hospitality",
+        "Through Digital Integration"
+      ],
+      "verified_source_fragments_en": [
+        "Future-Ready Hospitality",
+        "Through Digital Integration",
+        "non-touch biometrics",
+        "Bluetooth heat mapping",
+        "fully digital experience",
+        "efficiency is crucial for both hotel owners and guests",
+        "future-ready",
+        "best-in-class service"
+      ],
+      "fragment_count": 8,
+      "original_text_method": "PDF native text parsed by ChatGPT Files; separate visual and PyMuPDF inspection; no OCR",
+      "source_match": "normalization_of_case_unicode_whitespace_and_punctuation",
+      "quality_flags": [
+        "future_or_marketing_claims_not_NSP_product_features"
+      ],
+      "visual_assets_status": "deferred_to_S04",
+      "translated_into_Persian": false
+    },
+    {
+      "pdf_page": 10,
+      "printed_page": 10,
+      "section_role_from_S01": "notes",
+      "source_category_hint": "notes_only",
+      "text_layer_extracted_characters": 107,
+      "headlines_en": [
+        "Notes"
+      ],
+      "verified_source_fragments_en": [
+        "Notes"
+      ],
+      "fragment_count": 1,
+      "original_text_method": "PDF native text parsed by ChatGPT Files; separate visual and PyMuPDF inspection; no OCR",
+      "source_match": "normalization_of_case_unicode_whitespace_and_punctuation",
+      "quality_flags": [
+        "notes_page"
+      ],
+      "visual_assets_status": "deferred_to_S04",
+      "translated_into_Persian": false
+    },
+    {
+      "pdf_page": 11,
+      "printed_page": 11,
+      "section_role_from_S01": "notes",
+      "source_category_hint": "notes_only",
+      "text_layer_extracted_characters": 22,
+      "headlines_en": [
+        "Notes"
+      ],
+      "verified_source_fragments_en": [
+        "Notes"
+      ],
+      "fragment_count": 1,
+      "original_text_method": "PDF native text parsed by ChatGPT Files; separate visual and PyMuPDF inspection; no OCR",
+      "source_match": "normalization_of_case_unicode_whitespace_and_punctuation",
+      "quality_flags": [
+        "notes_page"
+      ],
+      "visual_assets_status": "deferred_to_S04",
+      "translated_into_Persian": false
+    },
+    {
+      "pdf_page": 12,
+      "printed_page": null,
+      "section_role_from_S01": "imprint_back_cover",
+      "source_category_hint": "publisher_imprint",
+      "text_layer_extracted_characters": 284,
+      "headlines_en": [
+        "ABB Ltd"
+      ],
+      "verified_source_fragments_en": [
+        "ABB Ltd",
+        "Rev.D - February 2025",
+        "Specifications subject to change without notice"
+      ],
+      "fragment_count": 3,
+      "original_text_method": "PDF native text parsed by ChatGPT Files; separate visual and PyMuPDF inspection; no OCR",
+      "source_match": "normalization_of_case_unicode_whitespace_and_punctuation",
+      "quality_flags": [
+        "publisher_name_and_revision_retained_without_contact_details"
+      ],
+      "visual_assets_status": "deferred_to_S04",
+      "translated_into_Persian": false
+    }
+  ],
+  "excluded_due_to_extraction_mismatch": [
+    {
+      "pdf_page": 1,
+      "source_phrase_candidate": "Customizable App with Entertainment Integration",
+      "reason": "parser_disagreement_unverified_in_second_text_extractor"
+    },
+    {
+      "pdf_page": 2,
+      "source_phrase_candidate": "add symbols and descriptions",
+      "reason": "parser_disagreement_unverified_in_second_text_extractor"
+    },
+    {
+      "pdf_page": 2,
+      "source_phrase_candidate": "Individual functions",
+      "reason": "parser_disagreement_unverified_in_second_text_extractor"
+    },
+    {
+      "pdf_page": 4,
+      "source_phrase_candidate": "digital door lock system providers",
+      "reason": "parser_disagreement_unverified_in_second_text_extractor"
+    },
+    {
+      "pdf_page": 4,
+      "source_phrase_candidate": "ACCESS CONTROL SERVER",
+      "reason": "parser_disagreement_unverified_in_second_text_extractor"
+    },
+    {
+      "pdf_page": 6,
+      "source_phrase_candidate": "Bus monitoring for device health and unauthorized access attempts",
+      "reason": "parser_disagreement_unverified_in_second_text_extractor"
+    },
+    {
+      "pdf_page": 7,
+      "source_phrase_candidate": "optimal temperature control",
+      "reason": "parser_disagreement_unverified_in_second_text_extractor"
+    },
+    {
+      "pdf_page": 7,
+      "source_phrase_candidate": "Monitor presence for 10 minutes",
+      "reason": "parser_disagreement_unverified_in_second_text_extractor"
+    }
+  ],
+  "structured_source_facts": [
+    {
+      "pdf_page": 3,
+      "kind": "room_status_modes",
+      "mode_groups": {
+        "main": [
+          "Vacant",
+          "Occupied",
+          "Unoccupied",
+          "Long term vacant"
+        ],
+        "additional": [
+          "Night",
+          "Cleaning",
+          "Guest Arrives"
+        ]
+      },
+      "source_specific": true,
+      "warning_fa": "بین Vacant و Unoccupied تمایز وجود دارد؛ فقط وضعیت‌های ABB هستند، نه مشخصات NSP."
+    },
+    {
+      "pdf_page": 3,
+      "kind": "room_presence_timing",
+      "example_minutes": 10,
+      "source_specific": true,
+      "warning_fa": "زمان ۱۰ دقیقه در متن ABB به‌عنوان مقدار معمول آمده؛ زمان NSP نیست."
+    },
+    {
+      "pdf_page": 4,
+      "kind": "software_integration",
+      "facts": "NETx partner integrations with PMS and electronic locks; hotel workflow triggers",
+      "source_specific": true,
+      "warning_fa": "سازگاری و گواهی ABB به NSP انتقال داده نشود."
+    },
+    {
+      "pdf_page": 5,
+      "kind": "guest_mobile_app",
+      "facts": "mySmartSuite app and scoped QR-based access, customizable UI, third-party TV/audio integration",
+      "source_specific": true,
+      "warning_fa": "قابلیت‌های رقبا هستند؛ برای NSP مدرک و آزمون مستقل لازم است."
+    },
+    {
+      "pdf_page": 6,
+      "kind": "security_claim",
+      "facts": "Four-layer security and claimed encrypted communication/segmentation/monitoring",
+      "source_specific": true,
+      "warning_fa": "هیچ سطح امنیت یا گواهی برای NSP اثبات نمی‌شود."
+    },
+    {
+      "pdf_page": 7,
+      "kind": "energy_and_occupancy",
+      "facts": "Presence detection, door/window status, HVAC dimming and illustrated 10-minute check",
+      "source_specific": true,
+      "warning_fa": "هیچ عدد صرفه‌جویی اندازه‌گیری‌شده مربوط به NSP استخراج نشده است."
+    },
+    {
+      "pdf_page": 8,
+      "kind": "presentation_of_equipment",
+      "facts": "Family-level range thumbnails and design-choice grid, excluding individual hardware specifications",
+      "source_specific": true,
+      "warning_fa": "فقط سبک معرفی بصری در S04 استفاده شود."
+    },
+    {
+      "pdf_page": 9,
+      "kind": "unverified_future_marketing",
+      "facts": "Non-touch biometrics and Bluetooth heat mapping appear in ABB future-looking copy",
+      "source_specific": true,
+      "warning_fa": "معرفی به‌عنوان قابلیت فعلی NSP ممنوع است."
+    }
+  ],
+  "critical_quality_notes_fa": [
+    "تمام ۱۲ صفحه اصلی خوانده شدند. ۱۱۰ عبارت کوتاه انگلیسی با استخراج متن مستقل قابل تطبیق بود.",
+    "۸ عبارت به دلیل اختلاف خروجی دو استخراج‌گر یا چیدمان متن، از فهرست عبارات قطعاً تطبیق‌شده حذف شدند و در فهرست بررسی دوباره قرار گرفتند.",
+    "آدرس‌ها، رمزهای نمونه، داده‌های اتصال QR و جزئیات مدل تجهیزات رقبا در پژوهش منتشر نمی‌شوند.",
+    "نمودار حالت اتاق در صفحهٔ ۳ بین چهار حالت اصلی و سه حالت تکمیلی تفاوت می‌گذارد.",
+    "مدیریت مرکزی نرم‌افزار GRMS موضوع صفحهٔ ۳ است و نباید به‌عنوان فصل مستقل نرم‌افزار NSP تعریف شود.",
+    "قابلیت‌های امنیتی و شبکه در صفحهٔ ۶ صرفاً ادعاهای شرکت ABB هستند.",
+    "این مرحله هیچ فیچر را تأیید نکرده و هنوز فایل‌های feature.json و feature.js را تغییر نمی‌دهد."
+  ],
+  "next_stage": "S03 — translate and classify English feature candidates",
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "portfolio_builder_app_source_changed": false
+}
