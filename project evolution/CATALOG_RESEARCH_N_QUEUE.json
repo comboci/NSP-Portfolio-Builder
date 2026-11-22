@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 117,
+    "total_pending_steps": 116,
     "completed_new_documents": 1,
     "remaining_new_documents": 17
   },
   "cursor": {
     "document_index": 4,
     "document_id": "10",
-    "step_index": 2,
-    "step_id": "S03"
+    "step_index": 3,
+    "step_id": "S04"
   },
   "section_types": [
     {
@@ -558,11 +558,13 @@
         {
           "id": "S03",
           "key": "feature_software_translation",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/10_ABB_Hospitality_GRMS_S03_features_fa.json"
+          ],
+          "completed_at": "2026-11-22",
+          "commit_sha": "9cafdc1ecf8c2a8249b5bc0b2803663db5512502",
+          "notes": "۱۰۱ گزیده انگلیسی تطبیق‌شده و ترجمه فارسی از ۹ صفحه محتوایی؛ ۳۲ سناریو، ۳۰ قابلیت نرم‌افزاری و ۵ سبک ارائه. داده‌های ورود دمو، SKU رقبا و ادعاهای تأییدنشده NSP وارد نشده است."
         },
         {
           "id": "S04",
