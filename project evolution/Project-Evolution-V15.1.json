@@ -2891,15 +2891,19 @@
     "queue_file": "project evolution/CATALOG_RESEARCH_N_QUEUE.json",
     "trigger": "N",
     "run_mode": "one_user_click_one_stage",
-    "status": "ready_awaiting_first_N",
+    "status": "in_progress_awaiting_next_N",
     "eligible_uploaded_pdf_count": 21,
     "previously_imported_catalogs": 3,
     "queued_pdfs": 18,
     "steps_per_pdf": 7,
-    "total_pending_steps": 126,
+    "total_pending_steps": 125,
     "next_pdf": "09_Legrand_Hospitality Buildings – Integrated Solutions.pdf",
-    "next_step": "S01 — کنترل فایل و صفحات",
+    "next_step": "S02 — استخراج متن دقیق",
     "updated_on": "2026-11-22",
-    "safety": "Does not auto-run; preserves existing RR tasks and Portfolio Builder source; GitHub commit required for each verified stage."
+    "safety": "Does not auto-run; preserves existing RR tasks and Portfolio Builder source; GitHub commit required for each verified stage.",
+    "last_completed_step": "09/S01 — کنترل فایل و صفحات",
+    "last_completed_evidence": "Portfolio Instruction/research/09_Legrand_Hospitality_Buildings_S01_source_inventory.json",
+    "last_completed_stage_commit": "61cf0d872cb376a18f7d0272b44f15c77f6477c3",
+    "queue_state_commit": "0ed980942440c8f58ae49758952ba724f15b248f"
   }
 }
