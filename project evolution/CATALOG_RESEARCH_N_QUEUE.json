@@ -15,13 +15,13 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 124
+    "total_pending_steps": 123
   },
   "cursor": {
     "document_index": 3,
     "document_id": "09",
-    "step_index": 2,
-    "step_id": "S03"
+    "step_index": 3,
+    "step_id": "S04"
   },
   "section_types": [
     {
@@ -450,11 +450,13 @@
         {
           "id": "S03",
           "key": "feature_software_translation",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/09_Legrand_Hospitality_Buildings_S03_features_fa.json"
+          ],
+          "completed_at": "2026-11-22",
+          "commit_sha": "02230a230a4cea740a35b95c47e19a31e06e6237",
+          "notes": "۷۷ رکورد دوزبانه از ۳۱ صفحه؛ ۶ ویژگی نرم‌افزار/UI، ۱۳ سناریو و ۵ ادعای عددی رقیب با وضعیت غیرقابل انتساب به NSP ثبت شد."
         },
         {
           "id": "S04",
