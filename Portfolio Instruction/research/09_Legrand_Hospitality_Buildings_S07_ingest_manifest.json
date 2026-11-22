@@ -1,0 +1,181 @@
+{
+  "schema": "nsp-catalog-research-s07-import-v1",
+  "stage": "S07",
+  "document_id": "09",
+  "status": "validated_and_committed",
+  "date": "2026-11-22",
+  "project": "NSP Portfolio Builder",
+  "source_catalog": "CAT009_LEGRAND_HOSPITALITY_BUILDINGS",
+  "source_pdf": "09_Legrand_Hospitality Buildings – Integrated Solutions.pdf",
+  "source_publication_year": 2016,
+  "audit_artifact": "Portfolio Instruction/research/09_Legrand_Hospitality_Buildings_S06_audit.json",
+  "updated_files": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js"
+  ],
+  "intended_existing_library_version": 3,
+  "new_library_version": 4,
+  "imported_feature_record_ids": [
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I001",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I002",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I003",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I004",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I005",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I006",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I007",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I011",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I012",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I013",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I014",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I015",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I017",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I018",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I019",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I020",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I021",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I022",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I023",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I024",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I025",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I027",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I028",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I030",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I031",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I032",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I033",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I034",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I035",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I036",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I037",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I038",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I039",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I040",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I041",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I042",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I043",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I044",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I045",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I046",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I047",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I048",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I049",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I050",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I051",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I052",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I053",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I054",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I055",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I056",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I057",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I058",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I061",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I062",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I063",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I064",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I065",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I066",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I067",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I068",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I069",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I070",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I071",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I072",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I073",
+    "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I074"
+  ],
+  "imported_visual_image_ids": [
+    "LEGRAND09_REF_01_hero_cover",
+    "LEGRAND09_REF_03_chapter_navigation",
+    "LEGRAND09_REF_08_technology_strip",
+    "LEGRAND09_REF_12_guest_room_zones",
+    "LEGRAND09_REF_14_comfort_lifestyle",
+    "LEGRAND09_REF_20_finishes_matrix",
+    "LEGRAND09_REF_22_custom_design",
+    "LEGRAND09_REF_28_hotel_cutaway",
+    "LEGRAND09_REF_30_lobby_overlay",
+    "LEGRAND09_REF_31_public_area_title",
+    "LEGRAND09_REF_38_meeting_render",
+    "LEGRAND09_REF_48_case_study_directory"
+  ],
+  "excluded_record_ids": [
+    {
+      "record_id": "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I008",
+      "source_pdf_page": 7,
+      "reason": "blocked_competitor_quantitative_claim"
+    },
+    {
+      "record_id": "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I009",
+      "source_pdf_page": 7,
+      "reason": "blocked_competitor_quantitative_claim"
+    },
+    {
+      "record_id": "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I010",
+      "source_pdf_page": 7,
+      "reason": "blocked_competitor_quantitative_claim"
+    },
+    {
+      "record_id": "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I016",
+      "source_pdf_page": 9,
+      "reason": "source_label_or_fragment_only"
+    },
+    {
+      "record_id": "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I026",
+      "source_pdf_page": 13,
+      "reason": "source_label_or_fragment_only"
+    },
+    {
+      "record_id": "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I029",
+      "source_pdf_page": 14,
+      "reason": "blocked_unverified_scientific_claim"
+    },
+    {
+      "record_id": "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I059",
+      "source_pdf_page": 35,
+      "reason": "blocked_competitor_quantitative_claim"
+    },
+    {
+      "record_id": "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I060",
+      "source_pdf_page": 35,
+      "reason": "blocked_competitor_quantitative_claim"
+    },
+    {
+      "record_id": "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I075",
+      "source_pdf_page": 47,
+      "reason": "source_label_or_fragment_only"
+    },
+    {
+      "record_id": "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I076",
+      "source_pdf_page": 47,
+      "reason": "source_label_or_fragment_only"
+    },
+    {
+      "record_id": "CAT009_LEGRAND_HOSPITALITY_BUILDINGS:I077",
+      "source_pdf_page": 48,
+      "reason": "source_label_or_fragment_only"
+    }
+  ],
+  "counts": {
+    "old_catalogs_preserved": true,
+    "feature_import_count": 66,
+    "visual_import_count": 12,
+    "blocked_held_count": 11,
+    "library_version_before": 3,
+    "library_version_after": 4,
+    "js_json_equivalent": true,
+    "application_source_unchanged": true
+  },
+  "release_policy": {
+    "is_catalog_publication": false,
+    "NSP_capabilities_confirmed": false,
+    "images_internal_reference_only": true,
+    "hardware_specs_excluded": true,
+    "editorial_review_required": true,
+    "Portfolio_Builder_application_source_not_modified": true
+  },
+  "next_queue_cursor": {
+    "document_id": "10",
+    "step_id": "S01",
+    "document_index": 4,
+    "step_index": 0
+  }
+}
