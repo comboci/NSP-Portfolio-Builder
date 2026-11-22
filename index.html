@@ -1,4 +1,4 @@
-<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 252</title><meta name="application-version" content="252"><style>
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 253</title><meta name="application-version" content="253"><style>
 :root{font-family:Tahoma,'Segoe UI',sans-serif;color:#152638;background:#edf1f4}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}header{background:#122c3c;color:#fff;padding:17px 24px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}header small{color:#a7d7dd}.shell{display:grid;grid-template-columns:235px 1fr;min-height:calc(100vh - 75px)}nav{background:#fff;border-left:1px solid #d9e1e5;padding:18px 12px}nav button{display:block;width:100%;border:0;text-align:right;background:transparent;padding:13px;border-radius:9px;margin:3px 0;color:#324453}nav button.active{background:#e4f3f3;color:#06656c;font-weight:bold}main{padding:22px;max-width:1450px;width:100%;margin:auto}.panel{background:white;border:1px solid #dbe3e7;border-radius:14px;padding:20px;margin-bottom:18px;box-shadow:0 2px 8px #17304408}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.stat{background:#f4f8fa;padding:15px;border-radius:10px}.stat b{font-size:27px;display:block}.muted{color:#647683;font-size:13px}.btn{border:1px solid #b7cbd1;border-radius:8px;background:white;padding:9px 13px;color:#174450}.primary{background:#087b80;color:white;border-color:#087b80}.danger{color:#a33}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:12px 0}.item{padding:12px;border:1px solid #e1e8eb;border-radius:9px;margin:8px 0;background:#fbfdfd}.item.selected{border-color:#09858a;background:#f1fbfa}input,select,textarea{border:1px solid #c6d5da;border-radius:7px;padding:9px;background:#fff;max-width:100%}input[type=checkbox]{accent-color:#087b80}textarea{width:100%;min-height:100px}label{display:block;font-size:13px;margin:10px 0 5px}.columns{display:grid;grid-template-columns:minmax(240px,350px) minmax(0,1fr);gap:18px}.paper{background:#fff;width:min(100%,595px);min-height:842px;margin:15px auto;padding:55px 48px;box-shadow:0 8px 30px #17304425;position:relative;overflow:hidden;direction:rtl}.paper:before{content:'NSP';position:absolute;left:45px;top:40px;color:#087b80;font-weight:900;font-size:19px}.paper h1{margin-top:65px;font-size:26px}.paper footer{position:absolute;bottom:30px;right:48px;left:48px;border-top:1px solid #ccc;padding-top:9px;font-size:11px;color:#667}.paper .hero{height:185px;background:linear-gradient(130deg,#d8eeec,#f0f4f6);display:flex;align-items:center;justify-content:center;color:#568e90;margin:20px 0}.paper img{max-width:100%;max-height:260px;object-fit:contain}.paper table{width:100%;border-collapse:collapse}.paper td,.paper th{border:1px solid #ccd6da;padding:8px}.tag{display:inline-block;border-radius:12px;padding:3px 8px;background:#e7f3f3;font-size:11px;margin:2px}.note{border-right:3px solid #087b80;padding:10px;background:#f1f7f7}.hide{display:none!important}@media(max-width:850px){.shell{grid-template-columns:1fr}nav{display:flex;overflow-x:auto;padding:8px}nav button{white-space:nowrap;width:auto}.columns{grid-template-columns:1fr}main{padding:12px}.paper{min-height:700px;padding:38px 25px}}@media print{header,nav,.no-print,.editor,.panel:not(.print-zone){display:none!important}.shell{display:block}main{padding:0;max-width:none}.print-zone{border:0;box-shadow:none;padding:0;margin:0}.paper{box-shadow:none;margin:0;min-height:297mm;width:210mm;page-break-after:always;padding:25mm 20mm}.paper:last-child{page-break-after:auto}@page{size:A4;margin:0}}
 @media(max-width:850px){header{padding:12px;gap:8px}header .toolbar{flex-wrap:wrap}nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible!important;gap:8px;padding:10px}nav .nav-group{min-width:0!important;margin:0!important}nav button.nav-subitem{white-space:normal!important;text-align:right;width:100%!important;padding:10px!important}main{min-width:0;overflow-wrap:anywhere}.panel{max-width:100%;overflow-x:auto}button,select,input{max-width:100%}#v9-design-form[hidden]{display:none!important}}
 </style><style>
@@ -2193,7 +2193,7 @@ function v76Projects(){
    '<button class="btn danger" onclick="'+link('v77DeleteProject',project.id)+'">حذف</button></div></div>'+subtree+'</div>';
  }).join('');
  return '<section class="v76-projects v223-projects"><div class="v223-projects-bar"><h2>لیست پروژه‌ها</h2>'+
-  '<div class="toolbar"><button class="btn primary" onclick="v76AddProject()">+ افزودن پروژه</button>'+
+  '<div class="toolbar"><button class="btn primary" onclick="v76AddProject()">+ افزودن پروژه</button><label class="btn" style="display:inline-flex;align-items:center;cursor:pointer">باز کردن پروژه<input type="file" accept=".json,application/json" hidden onchange="v111ImportProject(this)"></label>'+
   '</div></div>'+
   (projects.length?'<div class="v223-project-tree">'+cards+'</div>':
    '<div class="v225-empty-projects">هیچ پروژه‌ای وجود ندارد. با «افزودن پروژه» یک پروژهٔ جدید بسازید.</div>')+'</section>';
@@ -8048,7 +8048,7 @@ function componentFromSelection(list,name){
    '<div class="stat">پروژه‌ها<b>'+((state.projectWorkspaces||[]).length+1)+'</b></div>'+
    '<div class="stat">پورتفولیوها<b>'+state.portfolios.length+'</b></div>'+
    '<div class="stat">صفحات<b>'+state.pages.length+'</b></div>'+
-   '<div class="stat">قالب‌های آماده<b>'+templates().length+'</b></div></div>'+
+   '</div>'+
    '<div class="panel"><div class="toolbar"><button class="btn primary" data-v137-action="new-page">+ صفحه</button> '+
    '<button class="btn" onclick="go(\'v137library\')">طراحی قالب‌ها</button> '+
    '<button class="btn" onclick="go(\'v76projects\')">پروژه‌ها</button></div></div>';
@@ -8061,10 +8061,9 @@ function componentFromSelection(list,name){
   return beforeGo(to==='templates'?'v137library':to);
  };
  const beforeRender=render;render=function(){
-  if(tab==='v137library'||tab==='nsp-ready-templates'){
+  if(tab==='v137library'){
    const view=tab;tab='dashboard';const result=beforeRender.apply(this,arguments);tab=view;
-   document.getElementById('app').innerHTML=view==='v137library'?library():
-    '<section class="nsp-file-templates"><h2>تمپلیت‌های آماده</h2><p class="muted">قالب‌های آمادهٔ قابل بارگذاری را از اینجا به کتابخانه اضافه کنید یا با آن‌ها صفحه بسازید. برای مدیریت قالب‌های ویرایش‌شده، به «طراحی قالب‌ها» بروید.</p>'+nspPresetsUI()+'</section>';
+   document.getElementById('app').innerHTML=library();
    document.querySelectorAll('#nav .nav-subitem').forEach(b=>b.classList.toggle('active',(b.getAttribute('onclick')||'').includes("go('"+view+"')")));
    document.querySelector('#nav>button.active')?.classList.remove('active');
    return result;
@@ -9751,7 +9750,7 @@ function componentFromSelection(list,name){
  const file=menuGroups.find(g=>g[0]==='فایل');
  const ops=menuGroups.find(g=>g[0]==='عملیات');
  const groups=[
-   ['فایل',[['v137library','طراحی قالب‌ها'],['nsp-ready-templates','تمپلیت‌های آماده'],['v76projects','پروژه‌ها']]],
+   ['فایل',[['v137library','طراحی قالب‌ها'],['v76projects','پروژه‌ها']]],
    ['عملیات',[['image-library','کتابخانه تصاویر'],['v93styles','کتابخانه استایل مرکزی'],
      ['library','کتابخانه تحقیق Work'],['settings','تنظیمات و داده‌ها']]]
  ];
