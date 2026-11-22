@@ -15,13 +15,13 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 125
+    "total_pending_steps": 124
   },
   "cursor": {
     "document_index": 3,
     "document_id": "09",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -439,11 +439,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/09_Legrand_Hospitality_Buildings_S02_english_text.json"
+          ],
+          "completed_at": "2026-11-22",
+          "commit_sha": "b4b1cf158dd1ed13a0f2bcf843013280c69aefad",
+          "notes": "متن اصلی تمام ۵۲ صفحه خوانده شد؛ ۱۳۲ گزیده انگلیسی، ۳۴ تیتر و ۹ ادعای نیازمند اعتبارسنجی با ارجاع صفحه ثبت شد؛ بازنشر جزئیات سخت‌افزاری رقبا حذف شد."
         },
         {
           "id": "S03",
