@@ -1,0 +1,884 @@
+{
+  "schema": "nsp-catalog-research-s04-visual-styles-v1",
+  "stage": "S04",
+  "stage_key": "visuals_and_styles",
+  "document_id": "11",
+  "status": "completed_source_render_verified",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "verified_on": "2026-11-23",
+  "source_pdf": {
+    "filename": "11_ABB_Hospitality Portfolio 2026.pdf",
+    "publisher": "ABB",
+    "sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+    "pdf_pages": 100,
+    "cover_publication_year": 2026,
+    "pdf_aspect_ratio": "16:9"
+  },
+  "upstream_research": {
+    "S01": "Portfolio Instruction/research/11_ABB_Hospitality_Portfolio_S01_source_inventory.json",
+    "S02": "Portfolio Instruction/research/11_ABB_Hospitality_Portfolio_S02_english_text.json",
+    "S03": "Portfolio Instruction/research/11_ABB_Hospitality_Portfolio_S03_features_fa.json"
+  },
+  "visual_review": {
+    "pages_visually_reviewed_via_contact_sheets": 100,
+    "reference_image_count": 19,
+    "unique_style_types": 19,
+    "original_PDF_render_verified": true,
+    "PDF_sha256_verified": true,
+    "reference_crops_direct_from_original_PDF": true,
+    "git_blob_SHA_verified_for_all_19": true,
+    "source_blob_sha_matches_local_Git_object": true,
+    "personal_or_internal_material_reproduced": false,
+    "private_slide_87_excluded": true,
+    "QR_or_demo_access_pages_excluded": [
+      19,
+      20,
+      24
+    ],
+    "slide_98_AI_provenance_question_excluded": true,
+    "competitor_hardware_tables_skipped": true,
+    "no_full_slides_reproduced": true,
+    "duplicate_architecture_pages_not_counted_as_unique_evidence": true
+  },
+  "images": [
+    {
+      "id": "ABB11_01_hotel_cover_photo",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 1,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_01_hotel_cover_photo.webp",
+      "asset_filename": "ABB11_01_hotel_cover_photo.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 19188,
+      "asset_sha256": "cb7df8236d021da6efca517550940217852d26427e1ea52b486fff3d8f711f76",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "2c3b71a41dd130fa820ada35975e646ff3f2e752",
+      "normalized_pdf_crop": [
+        0.01,
+        0.01,
+        0.85,
+        0.74
+      ],
+      "rendered_size_px": [
+        650,
+        319
+      ],
+      "visual_style_type": "hero_hotel_lifestyle_photo",
+      "nsp_visual_adaptation_fa": "عکس فضای هتل در جلد، تأکید بر حس تجربه اقامت",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I001",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I002"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "COVER"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_05_value_icon_modules",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 5,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_05_value_icon_modules.webp",
+      "asset_filename": "ABB11_05_value_icon_modules.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 15736,
+      "asset_sha256": "6ab8c38d4528b47dca2b941e68d60b4646211de6775b7b3e2cfac856caf9ee09",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "fda82e2cf76fd357943cd8a904591121f42e1185",
+      "normalized_pdf_crop": [
+        0.23,
+        0.31,
+        0.63,
+        0.86
+      ],
+      "rendered_size_px": [
+        426,
+        330
+      ],
+      "visual_style_type": "benefit_icon_cards",
+      "nsp_visual_adaptation_fa": "کارت‌های ارزش پیشنهادی با آیکون‌های یکدست و متن کوتاه",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I006",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I007",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I008",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I009"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "CHALLENGES_VALUE"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_07_hotel_axonometric_map",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 7,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_07_hotel_axonometric_map.webp",
+      "asset_filename": "ABB11_07_hotel_axonometric_map.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 8574,
+      "asset_sha256": "8f22390c2e812d87de9703c805562c9bb393d0b9f279d5f17b27af93ffee1fc4",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "77327969b01f2e5bc0ff1473de6e74b89be2dc3d",
+      "normalized_pdf_crop": [
+        0.32,
+        0.14,
+        0.96,
+        0.91
+      ],
+      "rendered_size_px": [
+        486,
+        330
+      ],
+      "visual_style_type": "annotated_hotel_isometric_zone_map",
+      "nsp_visual_adaptation_fa": "نقشه سه‌بعدی فضاهای هتل و جانمایی شماره‌دار راهکارها",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I010",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I011",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I012"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "HOTEL_OVERVIEW"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_08_architecture_layers",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 8,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_08_architecture_layers.webp",
+      "asset_filename": "ABB11_08_architecture_layers.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 11340,
+      "asset_sha256": "0e583e6333ada7d49c39e4d02a364ccbe4e4f6f2f865cac889ba8922d835606b",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "0525327efc22022a09a1116c5a78ada482c55cba",
+      "normalized_pdf_crop": [
+        0.04,
+        0.24,
+        0.71,
+        0.86
+      ],
+      "rendered_size_px": [
+        633,
+        330
+      ],
+      "visual_style_type": "multi_layer_hotel_system_architecture",
+      "nsp_visual_adaptation_fa": "نمودار چندلایه سیستم هتل با اتصال نقش‌ها و اجزا",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I013",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I014",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I015",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I016"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "HOTEL_OVERVIEW"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_14_benefits_considerations",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 14,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_14_benefits_considerations.webp",
+      "asset_filename": "ABB11_14_benefits_considerations.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 28460,
+      "asset_sha256": "4ef6e6830a38b35b3a445d9b3fd8127e256f940e36b7eb171cca2c21f17e7a6c",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "6e97cd170b7142aa48b9b1e5d7ebca7eb2609d7e",
+      "normalized_pdf_crop": [
+        0.04,
+        0.28,
+        0.96,
+        0.91
+      ],
+      "rendered_size_px": [
+        650,
+        251
+      ],
+      "visual_style_type": "two_column_value_vs_considerations",
+      "nsp_visual_adaptation_fa": "چیدمان مقایسهٔ دو ستون مزایا و ملاحظات",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I027"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "CHALLENGES_VALUE"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_15_custom_panel_interface",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 15,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_15_custom_panel_interface.webp",
+      "asset_filename": "ABB11_15_custom_panel_interface.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 15980,
+      "asset_sha256": "841d5a416ff4394d23cde321ba3d7ee70800ac446e4ff3db01b1cbb35c45d55d",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "08bcb28e105e278519e128398c03e7ad54340107",
+      "normalized_pdf_crop": [
+        0.1,
+        0.25,
+        0.77,
+        0.86
+      ],
+      "rendered_size_px": [
+        642,
+        330
+      ],
+      "visual_style_type": "guest_control_UI_and_palette",
+      "nsp_visual_adaptation_fa": "ماتریس نمونه پنل کنترلی با پالت و قابلیت شخصی‌سازی",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I028",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I029"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "GRMS"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_16_monitoring_context_photo",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 16,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_16_monitoring_context_photo.webp",
+      "asset_filename": "ABB11_16_monitoring_context_photo.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 8264,
+      "asset_sha256": "f5f311d116855f8cd666b01d25e955b47b31235bb90ead9c576bb03d8297cc8c",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "9f64c50f05a158a2228478e7bc890e1bcc7e2f24",
+      "normalized_pdf_crop": [
+        0.59,
+        0.14,
+        0.98,
+        0.9
+      ],
+      "rendered_size_px": [
+        300,
+        330
+      ],
+      "visual_style_type": "software_monitoring_context_photo",
+      "nsp_visual_adaptation_fa": "تصویر کاربرد داشبورد مدیریت اتاق در محیط هتل",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I030",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I031",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I032",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I033"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "GRMS"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_18_room_mode_icons",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 18,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_18_room_mode_icons.webp",
+      "asset_filename": "ABB11_18_room_mode_icons.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 13646,
+      "asset_sha256": "736e09b8e5834460deb4306c1d4c4a4ccc113b737ad8250382b0553d3c2e682a",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "ba18edf95a511f0a35ba1a19489b4944bf5d2eb5",
+      "normalized_pdf_crop": [
+        0.03,
+        0.26,
+        0.64,
+        0.87
+      ],
+      "rendered_size_px": [
+        585,
+        330
+      ],
+      "visual_style_type": "occupancy_mode_icon_taxonomy",
+      "nsp_visual_adaptation_fa": "نمایش حالت‌های اتاق با آیکون و تعریف وضعیت",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I034",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I035",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I036",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I037"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "GRMS"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_22_finishes_matrix",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 22,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_22_finishes_matrix.webp",
+      "asset_filename": "ABB11_22_finishes_matrix.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 8894,
+      "asset_sha256": "f5514cd4e9e454c3ac0363d2f6328c4cf0484ff6b73014e4386d0cc10c580916",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "e9e3fd563bfe34ce312147cfda46811986d4b9bd",
+      "normalized_pdf_crop": [
+        0.05,
+        0.3,
+        0.96,
+        0.84
+      ],
+      "rendered_size_px": [
+        650,
+        217
+      ],
+      "visual_style_type": "switch_finish_product_matrix",
+      "nsp_visual_adaptation_fa": "نمایش تنوع رنگ و متریال پنل‌ها در ماتریس مقایسه‌ای",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I049",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I050"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "GRMS"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_23_room_device_callouts",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 23,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_23_room_device_callouts.webp",
+      "asset_filename": "ABB11_23_room_device_callouts.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 14018,
+      "asset_sha256": "0e506beead528281c73a33262259e94fe4d5806c61b14d9190e819a2c7f7a34f",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "ae895aa652c250c5a45b869d7feb1d201f3fa300",
+      "normalized_pdf_crop": [
+        0.19,
+        0.23,
+        0.89,
+        0.87
+      ],
+      "rendered_size_px": [
+        640,
+        330
+      ],
+      "visual_style_type": "room_cutaway_device_callouts",
+      "nsp_visual_adaptation_fa": "نقشه اتاق با اتصال نقاط محصول و برچسب کوتاه",
+      "related_S03_record_ids_same_pdf_page": [],
+      "candidate_target_section_types_for_S05": [
+        "GRMS"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_29_guestflow_holistic",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 29,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_29_guestflow_holistic.webp",
+      "asset_filename": "ABB11_29_guestflow_holistic.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 9414,
+      "asset_sha256": "c8d99c1cdba31596e6d7495390982a72eeee11d06b9b16c042dce2770c155d6b",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "6f4e363c0d520ed536d08fdd8eb4ff6f111ab05a",
+      "normalized_pdf_crop": [
+        0.1,
+        0.29,
+        0.92,
+        0.86
+      ],
+      "rendered_size_px": [
+        650,
+        255
+      ],
+      "visual_style_type": "GRMS_ecosystem_component_map",
+      "nsp_visual_adaptation_fa": "معرفی ماژول‌های یک سامانه GRMS در نقشه بسته راهکار",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I056",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I057"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "GRMS"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_30_room_cutaway",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 30,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_30_room_cutaway.webp",
+      "asset_filename": "ABB11_30_room_cutaway.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 5288,
+      "asset_sha256": "18b51220cbe8c42ddf57a4f71a9ff158dd64c131b53cb83e9ed89276b37afd82",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "468f057705f4d83537872b0666cd4c005510f492",
+      "normalized_pdf_crop": [
+        0.58,
+        0.18,
+        0.98,
+        0.91
+      ],
+      "rendered_size_px": [
+        321,
+        330
+      ],
+      "visual_style_type": "room_isometric_controller_locations",
+      "nsp_visual_adaptation_fa": "جانمایی کلید، ترموستات و کنترلرها روی مدل فضایی اتاق",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I058",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I059",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I060",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I061"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "GRMS"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_34_vision_dashboard",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 34,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_34_vision_dashboard.webp",
+      "asset_filename": "ABB11_34_vision_dashboard.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 1956,
+      "asset_sha256": "6fc4bdc6f90172c28b2a9d214b5ef461525beef6e1a6ed076c6cd11b86e5abba",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "99bda54ba90b7e32ac7a8e4a5c865f9380241141",
+      "normalized_pdf_crop": [
+        0.69,
+        0.33,
+        0.98,
+        0.83
+      ],
+      "rendered_size_px": [
+        339,
+        330
+      ],
+      "visual_style_type": "GRMS_management_dashboard_preview",
+      "nsp_visual_adaptation_fa": "نمای رابط مانیتورینگ وضعیت اتاق روی نمایشگر",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I064",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I065",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I066"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "GRMS"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_35_editor_commissioning",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 35,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_35_editor_commissioning.webp",
+      "asset_filename": "ABB11_35_editor_commissioning.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 1662,
+      "asset_sha256": "fffd123b616abf557840f14f1fbfb4e657685160c8017dd2f8a8fe2f241f4aa5",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "407eb8c8a1a3a22d53336414f1778ffcef2f3f6c",
+      "normalized_pdf_crop": [
+        0.68,
+        0.34,
+        0.98,
+        0.86
+      ],
+      "rendered_size_px": [
+        337,
+        330
+      ],
+      "visual_style_type": "commissioning_software_screen_preview",
+      "nsp_visual_adaptation_fa": "نمونه رابط نرم‌افزار تنظیمات و راه‌اندازی سیستم",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I067",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I068",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I069"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "GRMS"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_39_presence_layout",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 39,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_39_presence_layout.webp",
+      "asset_filename": "ABB11_39_presence_layout.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 21854,
+      "asset_sha256": "36a19f0041e1fb98e1eada9af66310d3f338f12777722c7b036f43ab6638548e",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "8e695d775802e3dea4cab9d8acebaac8787bc10a",
+      "normalized_pdf_crop": [
+        0.02,
+        0.27,
+        0.49,
+        0.84
+      ],
+      "rendered_size_px": [
+        483,
+        330
+      ],
+      "visual_style_type": "sensor_and_presence_use_case",
+      "nsp_visual_adaptation_fa": "ترکیب تصویر حسگر با توضیح سناریوی تشخیص حضور",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I072",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I073",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I074"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "GRMS"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_40_lighting_room_photo",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 40,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_40_lighting_room_photo.webp",
+      "asset_filename": "ABB11_40_lighting_room_photo.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 6034,
+      "asset_sha256": "b961f49d9cae770fe8b726bbbc4cdfed6f478f61b3411309ab37ae1b03004d52",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "0908a7cbf0bbdc43c0de5c5021d0de69f772b4f7",
+      "normalized_pdf_crop": [
+        0.69,
+        0.12,
+        0.98,
+        0.89
+      ],
+      "rendered_size_px": [
+        221,
+        330
+      ],
+      "visual_style_type": "shading_lighting_lifestyle_photo",
+      "nsp_visual_adaptation_fa": "معرفی کنترل نور و پرده در فضای واقعی اتاق",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I075",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I076"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "GRMS"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_71_energy_architecture",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 71,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_71_energy_architecture.webp",
+      "asset_filename": "ABB11_71_energy_architecture.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 22756,
+      "asset_sha256": "0b6d493eeb3e1bedbe447054338952dca1adda885d45ddc791a5141854b5bc76",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "246810c1dc53b40fc34b36830602ae73acdd71ba",
+      "normalized_pdf_crop": [
+        0.06,
+        0.2,
+        0.97,
+        0.87
+      ],
+      "rendered_size_px": [
+        650,
+        270
+      ],
+      "visual_style_type": "energy_system_layer_diagram",
+      "nsp_visual_adaptation_fa": "نمای فلو و اجزای سامانه پایش انرژی با بلوک‌های رنگی",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I081"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "HOTEL_OVERVIEW"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_79_energy_cloud_dashboard",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 79,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_79_energy_cloud_dashboard.webp",
+      "asset_filename": "ABB11_79_energy_cloud_dashboard.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 7104,
+      "asset_sha256": "7fc4e5ac90a4d1b612d1585bf6ecb242b4dad176c65f248bcd536f45965fba09",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "123a216b9204c6927d4fa1fdcc210e7de5387577",
+      "normalized_pdf_crop": [
+        0.51,
+        0.18,
+        0.98,
+        0.91
+      ],
+      "rendered_size_px": [
+        377,
+        330
+      ],
+      "visual_style_type": "energy_cloud_dashboard_mockup",
+      "nsp_visual_adaptation_fa": "چیدمان قابلیت‌های داشبورد انرژی در کنار اسکرین نرم‌افزار",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I094",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I095",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I096"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "HOTEL_OVERVIEW"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    },
+    {
+      "id": "ABB11_97_hotel_case_photo",
+      "source_company": "ABB",
+      "original_pdf": "11_ABB_Hospitality Portfolio 2026.pdf",
+      "source_pdf_page": 97,
+      "asset_path": "Portfolio Instruction/research/assets/abb11/ABB11_97_hotel_case_photo.webp",
+      "asset_filename": "ABB11_97_hotel_case_photo.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 16966,
+      "asset_sha256": "58732c8a8a42b886f60a164478608b719bb7cea2abab7c2fbc4c9a42e6989f66",
+      "original_pdf_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+      "git_blob_sha": "bf846b82117c46e0b29e6244dfaa6b1e9c01a3e7",
+      "normalized_pdf_crop": [
+        0.5,
+        0.19,
+        0.98,
+        0.85
+      ],
+      "rendered_size_px": [
+        426,
+        330
+      ],
+      "visual_style_type": "hotel_case_study_photo",
+      "nsp_visual_adaptation_fa": "الگوی ارائه مطالعه موردی با تصویر واقعی محل پروژه رقیب",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I097",
+        "CAT011_ABB_HOSPITALITY_PORTFOLIO_2026:I098"
+      ],
+      "candidate_target_section_types_for_S05": [
+        "CASE_STUDIES"
+      ],
+      "mapping_status": "candidate_only_not_approved",
+      "extracted_from": "Cropped rendered original PDF page",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "محتوا متعلق به ABB؛ فقط مرجع پژوهشی است. استفاده تجاری در کاتالوگ NSP مجاز فرض نمی‌شود.",
+      "capability_of_NSP_verified": false
+    }
+  ],
+  "design_observations_fa": [
+    {
+      "type": "hotel_brand_cover",
+      "pages": [
+        1
+      ],
+      "note_fa": "عکس تجربه اقامت و فضای منفی؛ در کاتالوگ NSP باید با عکس مجاز و پیام اختصاصی بازطراحی شود."
+    },
+    {
+      "type": "benefit_icons_and_contrast",
+      "pages": [
+        5,
+        14
+      ],
+      "note_fa": "کارت‌های ارزش و مقایسه دو ستونی، صرفاً الگوی سامان‌دهی اطلاعات و آیکون‌ها."
+    },
+    {
+      "type": "hotel_3D_zoning_and_architecture",
+      "pages": [
+        7,
+        8
+      ],
+      "note_fa": "نقشه سه‌بعدی شماره‌دار هتل و معماری چندلایه برای فصل نمای کلی؛ تنها سه سیستم واقعی NSP ترسیم شوند."
+    },
+    {
+      "type": "guest_experience_and_room_modes",
+      "pages": [
+        15,
+        16,
+        18
+      ],
+      "note_fa": "مقایسه رابط سفارشی، پایش اتاق و حالت‌های حضور؛ زمان ۱۰ دقیقه و هفت وضعیت از ABB هستند."
+    },
+    {
+      "type": "hardware_family_presentation",
+      "pages": [
+        22,
+        23,
+        29,
+        30
+      ],
+      "note_fa": "ماتریس متریال، دیاگرام اتاق و نقشه اکوسیستم برای روش ارائه تجهیزات واقعی NSP."
+    },
+    {
+      "type": "grms_software_previews",
+      "pages": [
+        34,
+        35
+      ],
+      "note_fa": "نمایش مجزای نرم‌افزار پایش و commissioning؛ وجود چنین ابزارهایی در NSP نیازمند مستند و تست است."
+    },
+    {
+      "type": "presence_and_lighting",
+      "pages": [
+        39,
+        40
+      ],
+      "note_fa": "ترکیب تصویر تجهیزات و محل کاربرد در روشنایی، پرده و حضور."
+    },
+    {
+      "type": "energy_management_diagram_and_cloud_UI",
+      "pages": [
+        71,
+        79
+      ],
+      "note_fa": "معماری پایش و داشبورد ابری فقط پژوهش بصری، نه اثبات سرویس/پروتکل NSP."
+    },
+    {
+      "type": "case_study_picture",
+      "pages": [
+        97
+      ],
+      "note_fa": "تصویر بنا در مطالعه موردی؛ ارقام و پروژه به ABB تعلق دارند و نباید به NSP نسبت داده شوند."
+    }
+  ],
+  "excluded_visuals": [
+    {
+      "pdf_page": 19,
+      "reason": "Partner/demonstration data and possible demo credential"
+    },
+    {
+      "pdf_page": 20,
+      "reason": "Guest app QR or booking authorization"
+    },
+    {
+      "pdf_page": 24,
+      "reason": "Mobile guest pairing QR"
+    },
+    {
+      "pdf_page": 33,
+      "reason": "Competitor controller and electrical specification table"
+    },
+    {
+      "pdf_page": 78,
+      "reason": "Time-sensitive unreleased firmware/feature claim"
+    },
+    {
+      "pdf_page": 83,
+      "reason": "Third-party EV case-study planned numerical claims"
+    },
+    {
+      "pdf_page": 87,
+      "reason": "Explicit INTERNAL ABB USE ONLY with personnel/contact information"
+    },
+    {
+      "pdf_page": 88,
+      "reason": "Third-party lighting case-study quantitative detail outside NSP scope"
+    },
+    {
+      "pdf_page": 98,
+      "reason": "AI-generated image-description uncertainty"
+    }
+  ],
+  "restrictions_fa": [
+    "برش‌های کوچک WebP برای پژوهش سبک ارائه‌اند؛ حق انتشار تجاری یا استفاده در محصول نهایی NSP از ABB منتقل نشده است.",
+    "برش کامل صفحات، مشخصات فنی مدل‌های رقیب، اطلاعات ورود، QR و اطلاعات تماس افراد در خروجی این مرحله وارد نشده‌اند.",
+    "شباهت مفهومی با ABB ۱۰ نباید در S05/S06 به‌عنوان دو شاهد مستقل برای قابلیت NSP شمارش شود.",
+    "پوشش واقعی GRMS/IPTV/مشاعات، داشبوردها، پروتکل‌ها، قابلیت‌های امنیتی و مطالعات موردی NSP مستلزم مستند مستقل است.",
+    "نگاشت به سکشن‌ها صرفاً نامزد S05 است؛ تصویری برای انتشار نهایی NSP تأیید نشده است."
+  ],
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "next_stage": "S05 — section_type_mapping"
+}
