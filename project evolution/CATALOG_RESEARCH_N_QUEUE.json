@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 101,
+    "total_pending_steps": 100,
     "completed_new_documents": 3,
     "remaining_new_documents": 15
   },
   "cursor": {
     "document_index": 6,
     "document_id": "12",
-    "step_index": 4,
-    "step_id": "S05"
+    "step_index": 5,
+    "step_id": "S06"
   },
   "section_types": [
     {
@@ -818,11 +818,13 @@
         {
           "id": "S05",
           "key": "section_type_mapping",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S05_section_mapping.json"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "2fbd1f11d35ca3858198d29da60f455fce9de018",
+          "notes": "هر ۱۱۰ رکورد دوزبانه و ۱۸ تصویر S04 با ساختار جاری SECTIONS_STRUCTURE.json نسخهٔ ۲.۳.۰ تطبیق یافت: ۱۰۰ متن با مقصد پیشنهادی و ۱۰ متن عمداً بی‌مقصد؛ ۱۶ تصویر با مقصد پیشنهادی و دو تصویر فرایند سفارش فقط سبک عمومی. ۱۵ خانوادهٔ سبک بدون ایجاد فیچر تکراری حفظ شد. نرم‌افزار و سناریوهای اتاق داخل GRMS و رابط‌های لابی/رستوران در مشاعات باقی ماندند؛ استریم، موسیقی، اینترنت و انتقال تماس به سه سیستم تحمیل نشدند. IDENTITY_PAGES با alias تاریخی BISMILLAH ثبت شد؛ واژگان قدیمی صف بازنویسی نشد. گزیده، ترجمه، نوع، صفحه، هش و روابط تصاویر با S03/S04 یکسان‌اند؛ فایل S05 از GitHub دقیقاً بازخوانی شد. هیچ قابلیت NSP یا انتشار تجاری تأیید نشده، S06 اجرا نشده و بانک feature نسخهٔ ۶ باقی است."
         },
         {
           "id": "S06",
