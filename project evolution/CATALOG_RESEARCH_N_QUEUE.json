@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 108,
+    "total_pending_steps": 107,
     "completed_new_documents": 2,
     "remaining_new_documents": 16
   },
   "cursor": {
     "document_index": 5,
     "document_id": "11",
-    "step_index": 4,
-    "step_id": "S05"
+    "step_index": 5,
+    "step_id": "S06"
   },
   "section_types": [
     {
@@ -705,11 +705,13 @@
         {
           "id": "S05",
           "key": "section_type_mapping",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/11_ABB_Hospitality_Portfolio_S05_section_mapping.json"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "b69ba42d780b6b73b466220d419abd11c24d16ef",
+          "notes": "مطابق HELP.json نسخه ۲، برای ۱۰۱ رکورد و ۱۹ تصویر پژوهشی ABB نگاشت S05 ثبت شد: ۸۰ رکورد به سکشن‌های مجاز، ۲۱ مورد عمداً بی‌مقصد و ۱۹ تصویر فقط مرجع سبک. جلد بیرونی زونکن با کاور داخلی ادغام نشد؛ هیچ ادعای NSP تأیید نشده است."
         },
         {
           "id": "S06",
@@ -730,7 +732,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S04"
+      "last_successful_stage": "S05"
     },
     {
       "id": "12",
