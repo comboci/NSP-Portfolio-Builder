@@ -1,21 +1,21 @@
 {
   "schema": "nsp-portfolio-editorial-structure-v1",
   "schema_version": 2,
-  "revision": "2.2.0",
+  "revision": "2.3.0",
   "updated_on": "2026-11-23",
   "language": "fa",
   "repository": "comboci/NSP-Portfolio-Builder",
   "branch": "main",
   "files": {
-    "editorial_source": "Portfolio Instruction/HELP.json",
+    "editorial_source": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
     "research_queue": "project evolution/CATALOG_RESEARCH_N_QUEUE.json",
     "feature_library": "Portfolio Instruction/feature.json",
     "portfolio_pages": "project file/General-Portfolio.json"
   },
   "document_roles_fa": {
-    "HELP_json": "تنها سند زندهٔ معماری سکشن‌ها، تصمیم‌های کاربر، پیشنهادها، نیازهای داده و تاریخچهٔ منتقل‌شده؛ جانشین کامل HELP.md.",
     "feature_json": "بانک پژوهش و ایده‌های رقبا، مستقل از سند دستورالعمل.",
-    "General_Portfolio_json": "پروژه و صفحات واقعی؛ ترتیب سکشن‌ها از شمارهٔ صفحات مستقل است."
+    "General_Portfolio_json": "پروژه و صفحات واقعی؛ ترتیب سکشن‌ها از شمارهٔ صفحات مستقل است.",
+    "SECTIONS_STRUCTURE_json": "سند اصلی و زندهٔ ساختار سکشن‌های کاتالوگ، ترتیب، تصمیم‌های تأییدشده، موارد باز، داده‌های موردنیاز و تاریخچهٔ منتقل‌شده از HELP.md؛ جانشین فایل قبلی HELP.json."
   },
   "project": {
     "title_fa": "کاتالوگ/پورتفولیوی راهکارهای هتلی NSP",
@@ -924,7 +924,7 @@
     "برای هر ایده نکتهٔ برجسته و نظر تحلیلی مستقل ثبت شود.",
     "جلد زونکن سکشن مستقل از کاور داخلی باشد و طراحی آن بعداً نهایی شود.",
     "این فایل داده‌ای نباید خودکار سورس برنامه، صفحات واقعی، صف N یا feature.json را تغییر دهد.",
-    "HELP.md پس از انتقال کامل محتوا به HELP.json از مخزن حذف شود و دو سند موازی نگهداری نشوند.",
+    "محتوای HELP.md قبلاً به HELP.json منتقل و HELP.md حذف شده بود؛ اکنون HELP.json به SECTIONS_STRUCTURE.json تغییر نام یافته و تنها همین یک فایل ساختاری فعال در مخزن نگهداری می‌شود.",
     "هر سکشن دارای ردیف یک‌مبنایی باشد؛ ترتیب با Drag & Drop در Portfolio Builder قابل تغییر و در پروژه ذخیره شود.",
     "نام سکشن دوم «صفحه اول کاتالوگ» و نام سکشن سوم «صفحات تنفس» است؛ صفحهٔ تنفس می‌تواند حتی کاملاً خالی باشد و نمونه‌هایی مثل بسم‌الله، پرچم ایران، شعار یا تصویر صرفاً اختیاری‌اند."
   ],
@@ -945,7 +945,7 @@
       "project evolution/CATALOG_RESEARCH_N_QUEUE.json"
     ],
     "section_id_compatibility": "شناسهٔ سکشن عمومی هویتی به IDENTITY_PAGES تغییر یافت؛ شناسهٔ تاریخی BISMILLAH در legacy_section_ids حفظ شده و نمایشگر برای ترتیب‌های ذخیره‌شدهٔ قدیمی نگاشت سازگاری دارد. سند migrated_help_md فقط آرشیو تاریخی است. نام نمایشی سکشن اکنون «صفحات تنفس» است؛ شناسهٔ فنی IDENTITY_PAGES برای حفظ اتصال‌ها و ترتیب‌های قبلی بدون مهاجرت پرریسک حفظ می‌شود.",
-    "update_only_help_json": true
+    "update_only_sections_structure_json": true
   },
   "migrated_help_md": {
     "migration_state": "completed_source_delete_in_same_commit",
@@ -1120,7 +1120,7 @@
     "stable_identifier": "section_id",
     "reordering_effect_fa": "جابه‌جایی فقط ترتیب مفهومی سکشن‌ها را تغییر می‌دهد؛ شناسه‌ها و صفحه‌های واقعی ثابت می‌مانند.",
     "physical_cover_rule_fa": "BINDER_COVER جلد بیرونی زونکن است و در شمارش صفحات داخلی قرار نمی‌گیرد؛ COVER نخستین صفحهٔ داخلی کاتالوگ است.",
-    "builder_persistence_fa": "تغییرات ترتیب در پروژهٔ مرورگر ذخیره می‌شود؛ برای انتقال تغییر به GitHub باید HELP.json صادرشده جایگزین فایل مخزن شود."
+    "builder_persistence_fa": "تغییرات ترتیب در پروژهٔ مرورگر ذخیره می‌شود؛ برای انتقال تغییر به GitHub باید SECTIONS_STRUCTURE.json صادرشده جایگزین فایل مخزن شود."
   },
   "section_ui_spec": {
     "location_fa": "ساختار کاتالوگ ← سکشن‌ها",
@@ -1130,10 +1130,10 @@
       "drag_to_reorder",
       "move_up_down",
       "browser_project_save",
-      "import_help_json",
-      "export_reordered_help_json"
+      "import_sections_structure_json",
+      "export_reordered_sections_structure_json"
     ],
-    "canonical_source": "Portfolio Instruction/HELP.json",
-    "offline_behavior_fa": "فهرست حداقلی سکشن‌ها داخلی است؛ برای نمایش تمام جزئیات در file:// باید فایل HELP.json وارد شود."
+    "canonical_source": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "offline_behavior_fa": "فهرست حداقلی سکشن‌ها داخلی است؛ برای نمایش تمام جزئیات در file:// باید فایل SECTIONS_STRUCTURE.json وارد شود."
   }
 }
