@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 112,
+    "total_pending_steps": 111,
     "completed_new_documents": 2,
     "remaining_new_documents": 16
   },
   "cursor": {
     "document_index": 5,
     "document_id": "11",
-    "step_index": 0,
-    "step_id": "S01"
+    "step_index": 1,
+    "step_id": "S02"
   },
   "section_types": [
     {
@@ -636,17 +636,19 @@
       "library_path": "/11_ABB_Hospitality Portfolio 2026.pdf",
       "bytes": 9951131,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "queued",
+      "status": "in_progress",
       "prior_import": null,
       "steps": [
         {
           "id": "S01",
           "key": "source_inventory",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/11_ABB_Hospitality_Portfolio_S01_source_inventory.json"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "16297dbc878fe7a5a374e12a82dd296831fb688f",
+          "notes": "تأیید اصل PDF پاورپوینتی ۱۰۰ اسلاید ۱۶:۹ ABB؛ ۲۳ گروه ساختاری و نقشه صفحه‌های ۱ تا ۱۰۰؛ ثبت SHA256؛ صفحه ۸۷ با برچسب محرمانگی داخلی مسدود؛ متن کامل/تصاویر هنوز استخراج نشده‌اند."
         },
         {
           "id": "S02",
@@ -702,7 +704,8 @@
           "commit_sha": null,
           "notes": null
         }
-      ]
+      ],
+      "last_successful_stage": "S01"
     },
     {
       "id": "12",
