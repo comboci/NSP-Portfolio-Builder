@@ -1,0 +1,923 @@
+{
+  "schema": "nsp-catalog-research-s07-import-v2",
+  "stage": "S07",
+  "stage_key": "feature_json_and_commit",
+  "document_id": "12",
+  "status": "validated_import",
+  "date": "2026-11-23",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "30524a0706fc8871079404fd23c269d99cbaabfe",
+  "source_catalog": "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS",
+  "source_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+  "source_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+  "source_publication": {
+    "date": "2025-06",
+    "precision": "month",
+    "revision": "M",
+    "evidence_pdf_page": 42
+  },
+  "audit_artifact": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S06_audit.json",
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S01_source_inventory.json",
+      "git_blob_sha": "cf50eccdb910f66298964927ff16175c70bc0709"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S02_english_text.json",
+      "git_blob_sha": "54e0fb5d5750c56d7a14a515a59b66c5aca889b7"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S03_features_fa.json",
+      "git_blob_sha": "5209776d5fb41a73d674c3c0cdf0700572e72005"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S04_visual_styles.json",
+      "git_blob_sha": "aca347ec28383cc07c486133d323b5f853c490e3"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S05_section_mapping.json",
+      "git_blob_sha": "8fbd86eddd02354400dad9ad285e11a1eade89c7"
+    },
+    "S06": {
+      "path": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S06_audit.json",
+      "git_blob_sha": "3cd244d8379287f2d09af283d94dfbe862cf7cd1"
+    }
+  },
+  "editorial_structure": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "git_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3"
+  },
+  "updated_bank_files": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js"
+  ],
+  "committed_artifact_paths": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js",
+    "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S07_ingest_manifest.json",
+    "Portfolio Instruction/assets/abb12-01-cover-photo-title.webp",
+    "Portfolio Instruction/assets/abb12-02-company-intro-photo.webp",
+    "Portfolio Instruction/assets/abb12-03-company-value-grid.webp",
+    "Portfolio Instruction/assets/abb12-05-schematic-hotel-overview.webp",
+    "Portfolio Instruction/assets/abb12-07-photo-narrative.webp",
+    "Portfolio Instruction/assets/abb12-08-design-award-marks.webp",
+    "Portfolio Instruction/assets/abb12-09-product-interior-collage.webp",
+    "Portfolio Instruction/assets/abb12-10-configurator-steps-1-3.webp",
+    "Portfolio Instruction/assets/abb12-11-configurator-steps-4-6.webp",
+    "Portfolio Instruction/assets/abb12-11-custom-panel-callouts.webp",
+    "Portfolio Instruction/assets/abb12-15-icons-and-benefit-columns.webp",
+    "Portfolio Instruction/assets/abb12-29-room-and-function-cards.webp",
+    "Portfolio Instruction/assets/abb12-31-service-and-card-controls.webp",
+    "Portfolio Instruction/assets/abb12-32-suite-touchscreen-context.webp",
+    "Portfolio Instruction/assets/abb12-37-hand-touchscreen-closeup.webp",
+    "Portfolio Instruction/assets/abb12-38-paired-product-function-rows.webp",
+    "Portfolio Instruction/assets/abb12-39-building-dashboard-row.webp",
+    "Portfolio Instruction/assets/abb12-41-numbered-hotel-gallery.webp"
+  ],
+  "new_display_alias_assets": [
+    {
+      "path": "Portfolio Instruction/assets/abb12-01-cover-photo-title.webp",
+      "bytes": 151202,
+      "sha256": "c320d6d37750f5545a09c18248b4f442c47d5200271cf3f2daeab6f0dcb231cd",
+      "git_blob_sha": "5671542972b16f1936d46783a4f9890a8873f4eb",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_01_cover_photo_title.webp",
+      "source_image_id": "ABB12_01_cover_photo_title",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-02-company-intro-photo.webp",
+      "bytes": 84678,
+      "sha256": "c4b9556deefb3bed0132f31d704cd2d3c6b8b7df09bdda618d0ee642fc2dbd30",
+      "git_blob_sha": "7c34d4557aa24c4060c590d181202f0ff6d4f5db",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_02_company_intro_photo.webp",
+      "source_image_id": "ABB12_02_company_intro_photo",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-03-company-value-grid.webp",
+      "bytes": 147272,
+      "sha256": "45cc7dd5f64732de87a3ec170d15c91e5e169698c9b77e6c081c221dbec9e1c8",
+      "git_blob_sha": "8c698eeaae197d9de0842d86fb4647e7ad83daff",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_03_company_value_grid.webp",
+      "source_image_id": "ABB12_03_company_value_grid",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-05-schematic-hotel-overview.webp",
+      "bytes": 115640,
+      "sha256": "cba08563aa9a3f6e2f2cfe73bcac857c359af1bab4c4a16de713be751b0200ea",
+      "git_blob_sha": "ceb575967cabef29266d9b5eea0d94e4e5c276c5",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_05_schematic_hotel_overview.webp",
+      "source_image_id": "ABB12_05_schematic_hotel_overview",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-07-photo-narrative.webp",
+      "bytes": 201556,
+      "sha256": "fe7ce45d47093a1f9e9745c9ef33ac948a155a6dcfa56d89fdd9e6928cc93584",
+      "git_blob_sha": "8b2139c23d329f58754af6e35bbf8b9b6335f3f8",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_07_photo_narrative.webp",
+      "source_image_id": "ABB12_07_photo_narrative",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-08-design-award-marks.webp",
+      "bytes": 20406,
+      "sha256": "31c69e16d1c88c0d26c689d3c98eb7cf69838642d7fa04570326c9e58ed83329",
+      "git_blob_sha": "6d1ca40162c2ee3b80c77dfee2449e5e1e6af269",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_08_design_award_marks.webp",
+      "source_image_id": "ABB12_08_design_award_marks",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-09-product-interior-collage.webp",
+      "bytes": 41946,
+      "sha256": "ba507ba1ddae96c3746f7a4418fbaac8f6d6d94b8d1aa4fb007162d26cbfb0f5",
+      "git_blob_sha": "2e97651fcb93466eb949fb6b33e90dfa71698bd6",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_09_product_interior_collage.webp",
+      "source_image_id": "ABB12_09_product_interior_collage",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-10-configurator-steps-1-3.webp",
+      "bytes": 25530,
+      "sha256": "5348d0e7891d566d053da2915ed4b242247d4d0375c501dcab429281dcf9554a",
+      "git_blob_sha": "90727cd1913261da135ea356796e7151f87e84ac",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_10_configurator_steps_1_3.webp",
+      "source_image_id": "ABB12_10_configurator_steps_1_3",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-11-configurator-steps-4-6.webp",
+      "bytes": 16822,
+      "sha256": "e9616d6dee9bf21d1373c4e5a2161fdd29e59f9235a815e95e25fad143aebe0b",
+      "git_blob_sha": "69b13ce564a38275a93f8e03e91fda329656ad89",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_11_configurator_steps_4_6.webp",
+      "source_image_id": "ABB12_11_configurator_steps_4_6",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-11-custom-panel-callouts.webp",
+      "bytes": 21644,
+      "sha256": "d39b9bdd28c0792e6bc2141392d7e011922c1168b32567b8b93582443eae3ef9",
+      "git_blob_sha": "ad10257b89f6fbbafe64b256b9138cd4f8246cc7",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_11_custom_panel_callouts.webp",
+      "source_image_id": "ABB12_11_custom_panel_callouts",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-15-icons-and-benefit-columns.webp",
+      "bytes": 109788,
+      "sha256": "92d3877396cb6c57a084184e60208ec44e78dd440205a1f71a3d81581938df06",
+      "git_blob_sha": "db4bc91c8e5bab0f871bd503b4e1635ca36f4cc5",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_15_icons_and_benefit_columns.webp",
+      "source_image_id": "ABB12_15_icons_and_benefit_columns",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-29-room-and-function-cards.webp",
+      "bytes": 85192,
+      "sha256": "1200da51564e6e2970e03a508449f8e9239b16c990fca5547e9271edf796604d",
+      "git_blob_sha": "8b4683f44349cdc1fc1abb8ef4a377e44245e138",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_29_room_and_function_cards.webp",
+      "source_image_id": "ABB12_29_room_and_function_cards",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-31-service-and-card-controls.webp",
+      "bytes": 11768,
+      "sha256": "dda19a7d13d39f36af285151fe0078fbd6c5e3e9a832a738b6899387fae7fcbf",
+      "git_blob_sha": "aa3da0c6f2f60629aab7426f6f9e0271b24e9894",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_31_service_and_card_controls.webp",
+      "source_image_id": "ABB12_31_service_and_card_controls",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-32-suite-touchscreen-context.webp",
+      "bytes": 45824,
+      "sha256": "129cca91cc77aaab6fa9e428f66de141edca80f4b75dc77782b1e853626998f2",
+      "git_blob_sha": "925635f09fba07165f63fcfdc4ba84ed1ec6f0af",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_32_suite_touchscreen_context.webp",
+      "source_image_id": "ABB12_32_suite_touchscreen_context",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-37-hand-touchscreen-closeup.webp",
+      "bytes": 97762,
+      "sha256": "20dae7649c7bf34d4b2664d6a9d41fab7362a40fa6830312f97052a89dde2379",
+      "git_blob_sha": "3b63c6ab1004ef69ce3b2f1b483cbd5f7baa080a",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_37_hand_touchscreen_closeup.webp",
+      "source_image_id": "ABB12_37_hand_touchscreen_closeup",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-38-paired-product-function-rows.webp",
+      "bytes": 150248,
+      "sha256": "0744fd5c7d3f7918b2683b45cc46cac763e3e87727ec1d5f35e08ffca58f3b53",
+      "git_blob_sha": "5e2c783bd9bc70a519b7adb4970f745f9de2d42a",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_38_paired_product_function_rows.webp",
+      "source_image_id": "ABB12_38_paired_product_function_rows",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-39-building-dashboard-row.webp",
+      "bytes": 25582,
+      "sha256": "c1f5807883d5574f87468525effaa513ab157cc6aa5d6bf1ae4550e4b88b195d",
+      "git_blob_sha": "03784af168bd015f732dc1a00ddf77922738775a",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_39_building_dashboard_row.webp",
+      "source_image_id": "ABB12_39_building_dashboard_row",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/abb12-41-numbered-hotel-gallery.webp",
+      "bytes": 244948,
+      "sha256": "5e614982f0c83507f8826001da11019e3b48e42d0028f0c9005b412909d86466",
+      "git_blob_sha": "b18bfe398a5c6829bb7a96e91abad5c51f64d0e8",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_41_numbered_hotel_gallery.webp",
+      "source_image_id": "ABB12_41_numbered_hotel_gallery",
+      "byte_identical_to_source": true,
+      "reuses_existing_git_blob": true
+    }
+  ],
+  "existing_source_assets_referenced": [
+    "Portfolio Instruction/research/assets/abb12/ABB12_01_cover_photo_title.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_02_company_intro_photo.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_03_company_value_grid.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_05_schematic_hotel_overview.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_07_photo_narrative.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_08_design_award_marks.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_09_product_interior_collage.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_10_configurator_steps_1_3.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_11_configurator_steps_4_6.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_11_custom_panel_callouts.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_15_icons_and_benefit_columns.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_29_room_and_function_cards.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_31_service_and_card_controls.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_32_suite_touchscreen_context.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_37_hand_touchscreen_closeup.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_38_paired_product_function_rows.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_39_building_dashboard_row.webp",
+    "Portfolio Instruction/research/assets/abb12/ABB12_41_numbered_hotel_gallery.webp"
+  ],
+  "original_research_assets_modified": false,
+  "intended_existing_library_version": 6,
+  "new_library_version": 7,
+  "imported_feature_record_ids": [
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I001",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I002",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I003",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I004",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I006",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I007",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I008",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I009",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I010",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I011",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I012",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I013",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I014",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I015",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I016",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I017",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I018",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I019",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I020",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I021",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I022",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I023",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I024",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I025",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I026",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I027",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I028",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I029",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I030",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I031",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I032",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I033",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I034",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I035",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I036",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I037",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I038",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I039",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I040",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I041",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I042",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I043",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I044",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I045",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I047",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I048",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I049",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I050",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I051",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I052",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I053",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I054",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I055",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I056",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I057",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I058",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I059",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I060",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I061",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I062",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I063",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I064",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I065",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I066",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I067",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I068",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I069",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I070",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I071",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I072",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I073",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I074",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I075",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I076",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I077",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I078",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I079",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I080",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I081",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I082",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I083",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I084",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I085",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I087",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I088",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I089",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I090",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I091",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I092",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I093",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I094",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I095",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I096",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I097",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I098",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I099",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I101",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I102",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I103",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I104",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I105",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I106",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I107",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I108",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I109",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I110"
+  ],
+  "imported_mapped_record_ids": [
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I001",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I003",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I004",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I006",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I007",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I008",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I009",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I010",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I011",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I012",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I013",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I015",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I016",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I017",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I018",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I019",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I020",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I021",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I022",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I023",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I024",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I025",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I026",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I027",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I028",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I029",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I030",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I031",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I032",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I033",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I034",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I035",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I036",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I037",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I038",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I039",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I040",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I041",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I042",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I043",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I044",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I045",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I047",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I048",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I049",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I050",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I052",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I053",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I054",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I055",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I056",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I057",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I058",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I059",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I060",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I062",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I064",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I065",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I066",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I067",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I068",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I069",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I070",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I071",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I072",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I073",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I074",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I075",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I076",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I077",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I078",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I079",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I081",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I082",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I084",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I085",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I087",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I088",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I089",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I090",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I091",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I092",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I093",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I094",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I095",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I096",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I097",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I098",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I099",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I101",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I102",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I103",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I104",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I105",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I106",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I107",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I108",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I109",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I110"
+  ],
+  "imported_unassigned_internal_record_ids": [
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I002",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I014",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I051",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I061",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I063",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I080",
+    "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I083"
+  ],
+  "imported_visual_image_ids": [
+    "ABB12_01_cover_photo_title",
+    "ABB12_02_company_intro_photo",
+    "ABB12_03_company_value_grid",
+    "ABB12_05_schematic_hotel_overview",
+    "ABB12_07_photo_narrative",
+    "ABB12_08_design_award_marks",
+    "ABB12_09_product_interior_collage",
+    "ABB12_10_configurator_steps_1_3",
+    "ABB12_11_configurator_steps_4_6",
+    "ABB12_11_custom_panel_callouts",
+    "ABB12_15_icons_and_benefit_columns",
+    "ABB12_29_room_and_function_cards",
+    "ABB12_31_service_and_card_controls",
+    "ABB12_32_suite_touchscreen_context",
+    "ABB12_37_hand_touchscreen_closeup",
+    "ABB12_38_paired_product_function_rows",
+    "ABB12_39_building_dashboard_row",
+    "ABB12_41_numbered_hotel_gallery"
+  ],
+  "unassigned_internal_visual_image_ids": [
+    "ABB12_10_configurator_steps_1_3",
+    "ABB12_11_configurator_steps_4_6"
+  ],
+  "visual_references_without_native_feature_links": [
+    "ABB12_08_design_award_marks",
+    "ABB12_10_configurator_steps_1_3",
+    "ABB12_11_configurator_steps_4_6",
+    "ABB12_37_hand_touchscreen_closeup",
+    "ABB12_38_paired_product_function_rows"
+  ],
+  "applied_translation_corrections": [
+    {
+      "correction_id": "ABB12-S06-NAME-01",
+      "record_id": "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I106",
+      "source_pdf_page": 41,
+      "source_English_name": "Hyatt Capital Gate, Abu Dhabi",
+      "original_translation_fa": "۰۲ — هتل هیات کپیتال گیت، ابوظبی",
+      "corrected_translation_fa": "۰۲ — هتل هایت کپیتال گیت، ابوظبی",
+      "reason_fa": "یک نام انگلیسی ثابت در رکورد با «هیات» و در زمینهٔ CLAIM-09 با «هایت» نوشته شده است. برای نمایش مشتق بعدی، صورت «هایت» با همان زمینه یکسان می‌شود؛ نام انگلیسی مرجع قطعی باقی می‌ماند. این یکسان‌سازی تحریری است و هویت پروژه یا معنی گزیده را تغییر نمی‌دهد.",
+      "correction_kind": "editorial_proper_name_consistency_not_source_identity_change",
+      "applies_to": "S07_import_only_and_derived_display_fields",
+      "S03_S05_originals_preserved": true,
+      "dependent_field_corrections": [
+        {
+          "source_artifact": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S03_features_fa.json",
+          "source_artifact_blob_sha": "5209776d5fb41a73d674c3c0cdf0700572e72005",
+          "json_pointer": "/research_records/105/translation_fa",
+          "old_value": "۰۲ — هتل هیات کپیتال گیت، ابوظبی",
+          "corrected_value": "۰۲ — هتل هایت کپیتال گیت، ابوظبی",
+          "historical_source_artifact_rewritten": false
+        },
+        {
+          "source_artifact": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S05_section_mapping.json",
+          "source_artifact_blob_sha": "8fbd86eddd02354400dad9ad285e11a1eade89c7",
+          "json_pointer": "/mappings/105/translation_fa",
+          "old_value": "۰۲ — هتل هیات کپیتال گیت، ابوظبی",
+          "corrected_value": "۰۲ — هتل هایت کپیتال گیت، ابوظبی",
+          "historical_source_artifact_rewritten": false
+        },
+        {
+          "source_artifact": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S05_section_mapping.json",
+          "source_artifact_blob_sha": "8fbd86eddd02354400dad9ad285e11a1eade89c7",
+          "json_pointer": "/mappings/105/mapping_reason_fa",
+          "old_value": "«۰۲ — هتل هیات کپیتال گیت، ابوظبی» مرجع ABB است. فقط منطق پیوند نام و شمارهٔ تصویر برای فصل رزومهٔ NSP بررسی می‌شود؛ نام یا تصویر این هتل سابقهٔ NSP نیست.",
+          "corrected_value": "«۰۲ — هتل هایت کپیتال گیت، ابوظبی» مرجع ABB است. فقط منطق پیوند نام و شمارهٔ تصویر برای فصل رزومهٔ NSP بررسی می‌شود؛ نام یا تصویر این هتل سابقهٔ NSP نیست.",
+          "historical_source_artifact_rewritten": false
+        },
+        {
+          "source_artifact": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S05_section_mapping.json",
+          "source_artifact_blob_sha": "8fbd86eddd02354400dad9ad285e11a1eade89c7",
+          "json_pointer": "/mappings/105/analyst_assessment_fa",
+          "old_value": "«۰۲ — هتل هیات کپیتال گیت، ابوظبی» مرجع ABB است. فقط منطق پیوند نام و شمارهٔ تصویر برای فصل رزومهٔ NSP بررسی می‌شود؛ نام یا تصویر این هتل سابقهٔ NSP نیست.",
+          "corrected_value": "«۰۲ — هتل هایت کپیتال گیت، ابوظبی» مرجع ABB است. فقط منطق پیوند نام و شمارهٔ تصویر برای فصل رزومهٔ NSP بررسی می‌شود؛ نام یا تصویر این هتل سابقهٔ NSP نیست.",
+          "historical_source_artifact_rewritten": false
+        }
+      ]
+    }
+  ],
+  "applied_effective_display_overrides": [
+    {
+      "record_id": "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I106",
+      "correction_ref": "ABB12-S06-NAME-01",
+      "translation_fa": "۰۲ — هتل هایت کپیتال گیت، ابوظبی",
+      "mapping_reason_fa": "«۰۲ — هتل هایت کپیتال گیت، ابوظبی» مرجع ABB است. فقط منطق پیوند نام و شمارهٔ تصویر برای فصل رزومهٔ NSP بررسی می‌شود؛ نام یا تصویر این هتل سابقهٔ NSP نیست.",
+      "analyst_assessment_fa": "«۰۲ — هتل هایت کپیتال گیت، ابوظبی» مرجع ABB است. فقط منطق پیوند نام و شمارهٔ تصویر برای فصل رزومهٔ NSP بررسی می‌شود؛ نام یا تصویر این هتل سابقهٔ NSP نیست.",
+      "preserve_original_English_excerpt": true
+    }
+  ],
+  "applied_metadata_errata": [
+    {
+      "source_artifact": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S02_english_text.json",
+      "json_pointer": "/pages/9/quality_flags/0",
+      "old_value": "Configurator flow must follow visible arrows; native block order places Configure before Getting started.",
+      "corrected_value": "Configurator flow follows the left-to-right layout and consecutive captions on physical PDF page 10, then page 11; red connector lines terminate in dots, not arrowheads. Native block order places Configure before Getting started.",
+      "correction_required": true,
+      "application_method": "S06 effective erratum overlay for later S07; preserve historical upstream files",
+      "erratum_id": "ABB12-S06-CONNECTOR-01",
+      "source_artifact_blob_sha": "54e0fb5d5750c56d7a14a515a59b66c5aca889b7",
+      "parent_issue_id": "ABB12-S06-ISSUE-01",
+      "physical_pdf_pages": [
+        10,
+        11
+      ],
+      "historical_source_artifact_rewritten": false
+    },
+    {
+      "source_artifact": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S02_english_text.json",
+      "json_pointer": "/structured_source_facts/0/source_order_method",
+      "old_value": "Visible arrows and captions, manually verified against page renders.",
+      "corrected_value": "Left-to-right layout and consecutive captions on physical PDF page 10, then page 11, manually verified against page renders; red connector lines terminate in dots, not arrowheads.",
+      "correction_required": true,
+      "application_method": "S06 effective erratum overlay for later S07; preserve historical upstream files",
+      "erratum_id": "ABB12-S06-CONNECTOR-02",
+      "source_artifact_blob_sha": "54e0fb5d5750c56d7a14a515a59b66c5aca889b7",
+      "parent_issue_id": "ABB12-S06-ISSUE-01",
+      "physical_pdf_pages": [
+        10,
+        11
+      ],
+      "historical_source_artifact_rewritten": false
+    },
+    {
+      "source_artifact": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S02_english_text.json",
+      "json_pointer": "/structured_tables_and_diagrams_inventory/1/handling",
+      "old_value": "Arrow order visually verified; recorded in structured_source_facts, not native block order.",
+      "corrected_value": "Left-to-right order and consecutive captions visually verified across physical PDF pages 10–11; recorded in structured_source_facts, not native block order. Red connector lines terminate in dots, not arrowheads.",
+      "correction_required": true,
+      "application_method": "S06 effective erratum overlay for later S07; preserve historical upstream files",
+      "erratum_id": "ABB12-S06-CONNECTOR-03",
+      "source_artifact_blob_sha": "54e0fb5d5750c56d7a14a515a59b66c5aca889b7",
+      "parent_issue_id": "ABB12-S06-ISSUE-01",
+      "physical_pdf_pages": [
+        10,
+        11
+      ],
+      "historical_source_artifact_rewritten": false
+    },
+    {
+      "source_artifact": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S03_features_fa.json",
+      "json_pointer": "/structured_context_translations/ABB_configurator_workflow/source_order_method",
+      "old_value": "Visible arrows and captions, manually verified against page renders.",
+      "corrected_value": "Left-to-right layout and consecutive captions on physical PDF page 10, then page 11, manually verified against page renders; red connector lines terminate in dots, not arrowheads.",
+      "correction_required": true,
+      "application_method": "S06 effective erratum overlay for later S07; preserve historical upstream files",
+      "erratum_id": "ABB12-S06-CONNECTOR-04",
+      "source_artifact_blob_sha": "5209776d5fb41a73d674c3c0cdf0700572e72005",
+      "parent_issue_id": "ABB12-S06-ISSUE-01",
+      "physical_pdf_pages": [
+        10,
+        11
+      ],
+      "historical_source_artifact_rewritten": false
+    },
+    {
+      "source_artifact": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S03_features_fa.json",
+      "json_pointer": "/quality_assurance/review_notes_fa/5",
+      "old_value": "ترتیب شش گام پیکربندی از فلش‌های منبع S02 حفظ شده است؛ قید حداکثر سه عنصر به همان ابزار طراحی ABB محدود می‌ماند و در تعداد فیچرها شمرده نمی‌شود.",
+      "corrected_value": "ترتیب شش گام پیکربندی بر اساس چیدمان چپ‌به‌راست و کپشن‌های پی‌درپی صفحهٔ فیزیکی ۱۰ و سپس ۱۱ حفظ شده است؛ رابط‌های قرمز خط‌هایی با نقطهٔ انتهایی هستند، نه فلش. قید حداکثر سه عنصر به همان ابزار طراحی ABB محدود می‌ماند و این فرایند و قید عددی آن در شمار فیچرها وارد نشده‌اند.",
+      "correction_required": true,
+      "application_method": "S06 effective erratum overlay for later S07; preserve historical upstream files",
+      "erratum_id": "ABB12-S06-CONNECTOR-05",
+      "source_artifact_blob_sha": "5209776d5fb41a73d674c3c0cdf0700572e72005",
+      "parent_issue_id": "ABB12-S06-ISSUE-01",
+      "physical_pdf_pages": [
+        10,
+        11
+      ],
+      "historical_source_artifact_rewritten": false
+    }
+  ],
+  "excluded_record_ids": [
+    {
+      "id": "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I005",
+      "source_pdf_page": 2,
+      "reason": "ABB_specific_corporate_values_retained_as_identity_context",
+      "reason_fa": "چهار ارزش، محتوای اختصاصی هویت ABB هستند؛ الگوی قابل اقتباسِ معرفی ارزش‌های شرکت در I004 و تصاویر S04 حفظ شده است. خود فهرست ارزش‌ها ایدهٔ مستقل تازه‌ای برای بانک NSP ایجاد نمی‌کند.",
+      "audit_ref": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S06_audit.json",
+      "historical_source_record_preserved": true,
+      "is_feature_bank_entry": false
+    },
+    {
+      "id": "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I046",
+      "source_pdf_page": 16,
+      "reason": "undefined_power_energy_comparison_has_no_auditable_functional_scope",
+      "reason_fa": "در شعار «توان بیشتر با انرژی کمتر»، معنای توان و مبنای مقایسه مشخص نیست؛ عبارت به‌عنوان نمونهٔ ادعای مبهم در تاریخچه می‌ماند و به رکورد فیچر منتقل نمی‌شود.",
+      "audit_ref": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S06_audit.json",
+      "historical_source_record_preserved": true,
+      "is_feature_bank_entry": false
+    },
+    {
+      "id": "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I086",
+      "source_pdf_page": 31,
+      "reason": "pre_entry_activation_trigger_and_mechanism_remain_unresolved",
+      "reason_fa": "متن دربارهٔ فعال‌سازی چراغ و گرمایش پیش از ورود است، اما محرک و سازوکار آن روشن نیست. این رفتار نباید با درج کارت در کلید داخل اتاق یا بازکردن در یکی گرفته شود. سناریوهای روشن درج و خروج کارت جداگانه حفظ می‌شوند.",
+      "audit_ref": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S06_audit.json",
+      "historical_source_record_preserved": true,
+      "is_feature_bank_entry": false
+    },
+    {
+      "id": "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I100",
+      "source_pdf_page": 38,
+      "reason": "early_error_detection_nature_and_mechanism_remain_unresolved",
+      "reason_fa": "از عبارت تشخیص پیشاپیش خطا معلوم نیست منظور هشدار، تشخیص وضعیت یا پیش‌بینی خرابی است. این ادعای ABB تا روشن‌شدن ماهیت و سازوکار فقط در ممیزی باقی می‌ماند.",
+      "audit_ref": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S06_audit.json",
+      "historical_source_record_preserved": true,
+      "is_feature_bank_entry": false
+    }
+  ],
+  "historical_reference_resolution": {
+    "claim_gate_references": [
+      {
+        "claim_id": "ABB12-CLAIM-01",
+        "historical_S03_promoted_record_refs": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I027"
+        ],
+        "linked_imported_feature_ids": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I027"
+        ],
+        "linked_quarantined_record_ids": [],
+        "promoted_record_refs_are_S03_history_not_S07_import_instructions": true
+      },
+      {
+        "claim_id": "ABB12-CLAIM-02",
+        "historical_S03_promoted_record_refs": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I065"
+        ],
+        "linked_imported_feature_ids": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I065"
+        ],
+        "linked_quarantined_record_ids": [],
+        "promoted_record_refs_are_S03_history_not_S07_import_instructions": true
+      },
+      {
+        "claim_id": "ABB12-CLAIM-03",
+        "historical_S03_promoted_record_refs": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I078",
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I079"
+        ],
+        "linked_imported_feature_ids": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I078",
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I079"
+        ],
+        "linked_quarantined_record_ids": [],
+        "promoted_record_refs_are_S03_history_not_S07_import_instructions": true
+      },
+      {
+        "claim_id": "ABB12-CLAIM-04",
+        "historical_S03_promoted_record_refs": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I086",
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I087",
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I088"
+        ],
+        "linked_imported_feature_ids": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I087",
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I088"
+        ],
+        "linked_quarantined_record_ids": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I086"
+        ],
+        "promoted_record_refs_are_S03_history_not_S07_import_instructions": true
+      },
+      {
+        "claim_id": "ABB12-CLAIM-05",
+        "historical_S03_promoted_record_refs": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I083"
+        ],
+        "linked_imported_feature_ids": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I083"
+        ],
+        "linked_quarantined_record_ids": [],
+        "promoted_record_refs_are_S03_history_not_S07_import_instructions": true
+      },
+      {
+        "claim_id": "ABB12-CLAIM-06",
+        "historical_S03_promoted_record_refs": [],
+        "linked_imported_feature_ids": [],
+        "linked_quarantined_record_ids": [],
+        "promoted_record_refs_are_S03_history_not_S07_import_instructions": true
+      },
+      {
+        "claim_id": "ABB12-CLAIM-07",
+        "historical_S03_promoted_record_refs": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I100"
+        ],
+        "linked_imported_feature_ids": [],
+        "linked_quarantined_record_ids": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I100"
+        ],
+        "promoted_record_refs_are_S03_history_not_S07_import_instructions": true
+      },
+      {
+        "claim_id": "ABB12-CLAIM-08",
+        "historical_S03_promoted_record_refs": [],
+        "linked_imported_feature_ids": [],
+        "linked_quarantined_record_ids": [],
+        "promoted_record_refs_are_S03_history_not_S07_import_instructions": true
+      },
+      {
+        "claim_id": "ABB12-CLAIM-09",
+        "historical_S03_promoted_record_refs": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I105",
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I106",
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I107",
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I108",
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I109"
+        ],
+        "linked_imported_feature_ids": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I105",
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I106",
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I107",
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I108",
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I109"
+        ],
+        "linked_quarantined_record_ids": [],
+        "promoted_record_refs_are_S03_history_not_S07_import_instructions": true
+      }
+    ],
+    "image_links_to_held_records": [
+      {
+        "image_id": "ABB12_31_service_and_card_controls",
+        "linked_quarantined_record_ids": [
+          "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I086"
+        ]
+      }
+    ]
+  },
+  "baseline_mirror_discrepancy_resolved": {
+    "json_pointer": "/catalogs/5/original_editorial_structure",
+    "authoritative_JSON_value_preserved": "Portfolio Instruction/HELP.json",
+    "old_JS_value": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "resolution": "Preserve all six existing JSON catalog objects exactly; regenerate the whole JavaScript mirror from final JSON.",
+    "changed_existing_JSON_catalogs": 0
+  },
+  "checks": {
+    "source_hash_chain_matched": true,
+    "IDs_S03_S05_S06_matched": true,
+    "all_106_eligible_source_quotes_preserved": true,
+    "all_18_image_provenances_and_alias_bytes_verified": true,
+    "all_4_quarantined_records_excluded_from_features": true,
+    "Hyatt_correction_applied_to_all_derived_display_fields": true,
+    "five_connector_metadata_errata_carried_into_effective_context": true,
+    "seven_unassigned_records_keep_null_target_and_empty_secondary_targets": true,
+    "all_18_visuals_internal_only": true,
+    "six_preexisting_JSON_catalogs_preserved": true,
+    "all_preexisting_non_version_top_level_fields_preserved": true,
+    "feature_js_json_mirror_exact": true,
+    "current_image_path_allowlist_accepts_all_18_alias_paths": true,
+    "no_synthetic_features_created_to_display_unlinked_visuals": true,
+    "verified_NSP_capability_count": 0,
+    "full_PDF_text_not_republished": true,
+    "new_categories_created": 0
+  },
+  "output_bank_files": [
+    {
+      "path": "Portfolio Instruction/feature.json",
+      "bytes": 1931639,
+      "sha256": "2359b64a4cb59406f729edd8c11928dde73d0ad51006f1bedb1a09cbd14e7e9e",
+      "git_blob_sha": "d4c152db274b879ef24ce4a1b3519568b39ab9ef"
+    },
+    {
+      "path": "Portfolio Instruction/feature.js",
+      "bytes": 1583240,
+      "sha256": "de9feb20f360d88291b0e7f3acfd35cff40e9fce9fcd3161185917efed6a3d24",
+      "git_blob_sha": "217701a4f20f165e83116596a216b26745c24398"
+    }
+  ],
+  "counts": {
+    "library_version_before": 6,
+    "library_version_after": 7,
+    "catalogs_before": 6,
+    "catalogs_after": 7,
+    "feature_import_count": 106,
+    "mapped_research_count": 99,
+    "unassigned_research_count": 7,
+    "blocked_held_count": 4,
+    "visual_import_count": 18,
+    "mapped_visual_count": 16,
+    "unassigned_style_visual_count": 2,
+    "distinct_style_families": 15,
+    "display_alias_files_created": 18,
+    "aliases_are_not_additional_catalog_image_entries": true,
+    "visual_references_without_native_feature_links": 5,
+    "translation_records_corrected": 1,
+    "metadata_errata_applied": 5,
+    "old_features": 370,
+    "new_features": 476,
+    "old_images": 55,
+    "new_images": 73,
+    "existing_categories_preserved": 21
+  },
+  "consumer_compatibility": {
+    "feature_schema_accepted_by_existing_workFeatureValid": true,
+    "display_alias_path_policy": "^Portfolio Instruction/assets/[a-z0-9-]+\\.webp$",
+    "application_source_modified": false,
+    "live_browser_UI_test_performed": false,
+    "limitation_fa": "نمایشگر فعلی فقط تصویرهایی را در کارت متن نشان می‌دهد که در image_ids آن رکورد باشند. پنج مرجع صرفاً سبک/زمینه در catalog.images و شاخص خانواده‌های سبک موجودند، اما برای نمایش آن‌ها فیچر ساختگی ساخته نشده است."
+  },
+  "release_policy": {
+    "is_NSP_catalog_publication": false,
+    "NSP_capabilities_confirmed": false,
+    "images_internal_reference_only": true,
+    "unassigned_research_not_a_new_NSP_system": true,
+    "competitor_certifications_and_projects_not_NSP": true,
+    "editorial_and_technical_review_required": true,
+    "Portfolio_Builder_application_source_not_modified": true,
+    "SECTIONS_STRUCTURE_json_not_modified": true,
+    "General_Portfolio_json_not_modified": true,
+    "historical_S01_S06_not_modified": true,
+    "final_attachment_to_printed_pages_deferred_to_Defrag": true
+  },
+  "completion_commit_record": "Actual stage commit SHA is recorded in CATALOG_RESEARCH_N_QUEUE.json documents[6].steps[6].commit_sha after remote readback; no self-referential commit SHA is fabricated here.",
+  "next_queue_cursor": {
+    "document_index": 7,
+    "document_id": "14",
+    "step_index": 0,
+    "step_id": "S01"
+  },
+  "next_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+  "next_document_stage_executed": false
+}
