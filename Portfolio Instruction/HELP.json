@@ -1,0 +1,912 @@
+{
+  "schema": "nsp-portfolio-editorial-structure-v1",
+  "schema_version": 1,
+  "revision": "1.0.0",
+  "updated_on": "2026-11-23",
+  "language": "fa",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "files": {
+    "human_readable_source": "Portfolio Instruction/HELP.md",
+    "source_blob_sha_at_creation": "525e1f06601ab436ad79c59e4cf96d1da940b2c2",
+    "structured_companion": "Portfolio Instruction/HELP.json",
+    "research_queue": "project evolution/CATALOG_RESEARCH_N_QUEUE.json",
+    "feature_library": "Portfolio Instruction/feature.json",
+    "portfolio_pages": "project file/General-Portfolio.json"
+  },
+  "document_roles_fa": {
+    "HELP_md": "سند مرجع قابل‌خواندن و تاریخچه تصمیم‌ها؛ حذف یا جایگزین نمی‌شود.",
+    "HELP_json": "نمای ساختارمند تصمیم‌ها، داده‌های لازم و وضعیت سکشن‌ها برای مصرف در Work/Portfolio Builder؛ در تعارض با سند مرجع، بازبینی دستی لازم است.",
+    "feature_json": "بانک ایده‌ها و شواهد پژوهش؛ به صورت مستقل توسعه می‌یابد.",
+    "General_Portfolio_json": "صفحات واقعی موجود در نرم‌افزار؛ این HELP.json به‌خودی‌خود صفحه‌ای ایجاد نمی‌کند."
+  },
+  "project": {
+    "title_fa": "کاتالوگ/پورتفولیوی راهکارهای هتلی NSP",
+    "publisher": "NSP Electronics / نگین سامانه هوشمند پاژ",
+    "expected_medium": "زونکن فیزیکی با صفحات داخلی قابل تعویض",
+    "approximate_page_target": 60,
+    "page_count_fixed": false,
+    "systems_in_scope": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ],
+    "systems_excluded": [
+      "SMART_HOME"
+    ],
+    "foundational_story_fa": [
+      "معرفی شرکت",
+      "ارزش راهکار هتلی",
+      "نقشهٔ جامع سه سیستم",
+      "فصل‌های سیستم و محصول"
+    ],
+    "editorial_priority": "اعتمادسازی و تجربه مهمان؛ سپس توضیح سیستم، اجزا و شواهد فنی"
+  },
+  "approval_states": {
+    "approved_fa": "صریحاً مورد قبول مالک",
+    "proposed_fa": "پیشنهاد تحریری هنوز تأیید نشده",
+    "open_fa": "موضوع باز/نیازمند اطلاعات",
+    "verified_fa": "با سند معتبر NSP بررسی شده",
+    "research_only_fa": "نمونه رقبا؛ قابلیت NSP را ثابت نمی‌کند"
+  },
+  "content_levels": [
+    {
+      "id": "COMPANY",
+      "meaning_fa": "دربارهٔ شرکت NSP و توانمندی‌ها؛ نه راهکار/سیستم/محصول"
+    },
+    {
+      "id": "SOLUTION",
+      "meaning_fa": "راهکار کلان هتلی و ارزش/تجربهٔ آن"
+    },
+    {
+      "id": "SYSTEM",
+      "meaning_fa": "سامانه مشخص؛ GRMS، IPTV، مشاعات و زیرموضوعات همان سیستم"
+    },
+    {
+      "id": "PRODUCT",
+      "meaning_fa": "محصولات/مدل‌های واقعی زیر هر سیستم؛ فقط با مشخصات و عکس مستند"
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "BINDER_COVER",
+      "title_fa": "جلد بیرونی زونکن",
+      "kind": "physical_cover",
+      "content_level": null,
+      "order": 0,
+      "page_ids": [],
+      "included_in_numbered_catalog_pages": false,
+      "page_count_locked": false,
+      "purpose_fa": "طراحی جلد فیزیکی مستقل از صفحات کاتالوگ؛ شامل روی جلد، عطف و پشت جلد.",
+      "user_decisions_fa": [
+        {
+          "text": "زونکن فیزیکی برای مجموعهٔ مفصل حدوداً ۶۰ صفحه‌ای است؛ جلد بیرونی باید سکشن مستقل باشد.",
+          "status": "approved"
+        },
+        {
+          "text": "طراحی جلد فعلاً نهایی نشود؛ ایده‌ها و داده‌ها ثبت شوند و بعداً دربارهٔ نسخهٔ چاپی تصمیم‌گیری شود.",
+          "status": "approved"
+        },
+        {
+          "text": "جلد بیرونی نباید با کاور داخلی کاتالوگ یکی گرفته شود.",
+          "status": "approved"
+        }
+      ],
+      "analyst_proposals_fa": [
+        {
+          "text": "جلد خلوت و حرفه‌ای؛ در نسخهٔ مفهومی تمرکز روی هویت NSP و سه حوزهٔ GRMS، IPTV و مشاعات باشد.",
+          "status": "proposed"
+        },
+        {
+          "text": "روایت نسخهٔ چاپی، تب‌ها و ناوبری بخش‌ها بر اساس نیاز زونکن بررسی شود.",
+          "status": "proposed"
+        }
+      ],
+      "required_data": [
+        {
+          "key": "approved_logo",
+          "description_fa": "فایل برداری/تصویری لوگوی معتبر NSP برای جایگزینی تایپ‌لوگوی موقت",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "binder_dimensions",
+          "description_fa": "مدل فیزیکی زونکن، ابعاد روی جلد، پشت جلد و عرض واقعی عطف",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "print_spec",
+          "description_fa": "حاشیه امن، Bleed، محدودیت چاپ، پانچ و صحافی",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "front_message",
+          "description_fa": "عنوان و پیام اصلی روی جلد، زبان و سلسله‌مراتب متن",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "spine_title",
+          "description_fa": "متن کوتاه عطف که در قفسه خوانا بماند",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "back_cover_content",
+          "description_fa": "حداقل محتوای پشت جلد و احتمال استفاده از اطلاعات تماس/وب‌سایت",
+          "priority": "optional",
+          "status": "open"
+        },
+        {
+          "key": "brand_palette",
+          "description_fa": "رنگ‌های اصلی و قواعد استفاده از هویت بصری تأییدشده",
+          "priority": "required",
+          "status": "open"
+        }
+      ],
+      "unresolved_fa": [
+        "ابعاد دقیق، نوع زونکن، رنگ نهایی و تأیید طرح برای چاپ مشخص نشده است.",
+        "کانسپت SVG موجود، ماکت پیشنهادی است و ابعاد چاپی معتبر ندارد."
+      ],
+      "research_references": [
+        {
+          "type": "existing_concept",
+          "path": "Portfolio Instruction/binder-cover/NSP_Binder_Cover_Flat_Concept_V1.svg",
+          "status": "concept_only_not_print_ready"
+        },
+        {
+          "type": "design_notes",
+          "path": "Portfolio Instruction/binder-cover/README_FA.md",
+          "status": "draft"
+        }
+      ],
+      "attached_idea_ids": [],
+      "design_selection_status": "not_selected"
+    },
+    {
+      "section_id": "COVER",
+      "title_fa": "کاور داخلی کاتالوگ",
+      "kind": "catalog_section",
+      "content_level": null,
+      "order": 1,
+      "page_ids": [
+        "nsp-general-page-01-20261122"
+      ],
+      "included_in_numbered_catalog_pages": true,
+      "page_count_locked": false,
+      "purpose_fa": "اولین صفحهٔ داخل زونکن؛ ایجاد تصویر هویت‌ساز و معرفی کلی کاتالوگ.",
+      "user_decisions_fa": [
+        {
+          "text": "کاور داخلی مستقل از جلد زونکن است.",
+          "status": "approved"
+        },
+        {
+          "text": "کاور باید مبنایی برای بررسی چند ایدهٔ واقعی از کاتالوگ رقبا داشته باشد؛ طرح نهایی از قبل انتخاب نشده است.",
+          "status": "approved"
+        }
+      ],
+      "analyst_proposals_fa": [
+        {
+          "text": "به جای معرفی جزئیات فنی در کاور، می‌توان پیام آسایش مهمان و راهکار هتلی را برجسته کرد.",
+          "status": "proposed"
+        }
+      ],
+      "required_data": [
+        {
+          "key": "approved_logo",
+          "description_fa": "لوگوی اصلی NSP",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "catalog_title",
+          "description_fa": "عنوان فارسی/انگلیسی نهایی کاتالوگ",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "hero_image",
+          "description_fa": "تصویر اصلی اختصاصی/مجاز مرتبط با هتل",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "tagline",
+          "description_fa": "شعار آغازین، در صورت انتخاب",
+          "priority": "optional",
+          "status": "open"
+        },
+        {
+          "key": "visual_direction",
+          "description_fa": "انتخاب سبک بصری بر اساس ایده‌های دارای منبع",
+          "priority": "required",
+          "status": "open"
+        }
+      ],
+      "unresolved_fa": [
+        "شعار، تصویر، ساختار تیتر، رنگ و تایپوگرافی باز هستند."
+      ],
+      "research_references": [
+        {
+          "company": "Honeywell",
+          "document": "INNCOM Hospitality IoT",
+          "pdf_pages": [
+            1
+          ],
+          "note_fa": "الگوی تجربه‌محور؛ بررسی به عنوان الهام نه کپی"
+        }
+      ],
+      "attached_idea_ids": [],
+      "design_selection_status": "not_selected"
+    },
+    {
+      "section_id": "BISMILLAH",
+      "title_fa": "بسم‌الله / In the Name of God",
+      "kind": "catalog_section",
+      "content_level": null,
+      "order": 2,
+      "page_ids": [
+        "nsp-general-page-02-20261122"
+      ],
+      "included_in_numbered_catalog_pages": true,
+      "page_count_locked": false,
+      "purpose_fa": "صفحهٔ مستقل و کم‌تراکم با پیام آغازین.",
+      "user_decisions_fa": [
+        {
+          "text": "وجود سکشن مستقل بسم‌الله پذیرفته شده است.",
+          "status": "approved"
+        },
+        {
+          "text": "برای بانک ایده، مفهومِ صفحهٔ خلوت و جملهٔ کوتاه را از سبک‌های شعارمحور نیز می‌توان بررسی کرد؛ این تطبیق به معنای جایگزینی مفهوم مذهبی نیست.",
+          "status": "approved"
+        }
+      ],
+      "analyst_proposals_fa": [
+        {
+          "text": "از ایده‌های slogan/minimal statement صرفاً برای تحلیل چیدمان استفاده شود.",
+          "status": "proposed"
+        }
+      ],
+      "required_data": [
+        {
+          "key": "approved_phrase",
+          "description_fa": "عبارت فارسی/عربی/انگلیسی و ترجمهٔ تأییدشده",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "typography",
+          "description_fa": "فونت، ترکیب‌بندی و فضای خالی",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "background",
+          "description_fa": "رنگ زمینه یا طرح بسیار خلوت",
+          "priority": "optional",
+          "status": "open"
+        }
+      ],
+      "unresolved_fa": [
+        "متن، زبان، خوشنویسی/تایپوگرافی و طرح نهایی بازند."
+      ],
+      "research_references": [],
+      "attached_idea_ids": [],
+      "design_selection_status": "not_selected"
+    },
+    {
+      "section_id": "COMPANY_INTRO",
+      "title_fa": "معرفی شرکت NSP",
+      "kind": "catalog_section",
+      "content_level": "COMPANY",
+      "order": 3,
+      "page_ids": [
+        "nsp-general-page-03-20261122"
+      ],
+      "included_in_numbered_catalog_pages": true,
+      "page_count_locked": false,
+      "purpose_fa": "اینکه NSP چه شرکتی است؛ هویت، توان طراحی و تولید، سابقه و اعتبار قابل استناد.",
+      "user_decisions_fa": [
+        {
+          "text": "معرفی شرکت با معرفی راهکار یا معرفی محصول متفاوت است.",
+          "status": "approved"
+        },
+        {
+          "text": "این بخش دربارهٔ خود شرکت است، نه خصوصیات یک سیستم مشخص.",
+          "status": "approved"
+        }
+      ],
+      "analyst_proposals_fa": [
+        {
+          "text": "معرفی کوتاه، مرتبط با مخاطب هتلی و مبتنی بر اعتبار مستند باشد؛ شرح تاریخچهٔ طولانی ضروری نیست.",
+          "status": "proposed"
+        }
+      ],
+      "required_data": [
+        {
+          "key": "verified_identity",
+          "description_fa": "نام حقوقی و نام برند تأییدشده",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "company_story",
+          "description_fa": "متن کوتاه معرفی فعالیت و جایگاه شرکت",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "verified_capabilities",
+          "description_fa": "شواهد واقعی طراحی/مهندسی/تولید/کنترل کیفیت",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "trust_evidence",
+          "description_fa": "گواهی‌ها، سوابق، عکس‌های واقعی، خدمات یا آمار قابل انتشار",
+          "priority": "optional",
+          "status": "open"
+        },
+        {
+          "key": "company_visuals",
+          "description_fa": "تصویر شرکت، خطوط تولید، تیم یا هویت برند دارای مجوز",
+          "priority": "optional",
+          "status": "open"
+        }
+      ],
+      "unresolved_fa": [
+        "ادعاهای تولید داخل، سابقه، ظرفیت، استانداردها و گارانتی بدون مدرک قابل انتشار نیستند."
+      ],
+      "research_references": [],
+      "attached_idea_ids": [],
+      "design_selection_status": "not_selected"
+    },
+    {
+      "section_id": "CHALLENGES_VALUE",
+      "title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "kind": "catalog_section",
+      "content_level": "SOLUTION",
+      "order": 4,
+      "page_ids": [
+        "nsp-general-page-04-20261122"
+      ],
+      "included_in_numbered_catalog_pages": true,
+      "page_count_locked": false,
+      "purpose_fa": "توصیف مسئله و منفعت راهکار کلان NSP برای مهمان، مدیر و کارکنان.",
+      "user_decisions_fa": [
+        {
+          "text": "این بخش در سطح راهکار کلان است؛ هنوز معرفی محصول و مدل تجهیزات نیست.",
+          "status": "approved"
+        },
+        {
+          "text": "آسایش و تجربهٔ دلپذیر مهمان یکی از محورهای اصلی ارزش پیشنهادی باشد.",
+          "status": "approved"
+        }
+      ],
+      "analyst_proposals_fa": [
+        {
+          "text": "پیام را از زاویه تجربه و نتیجه شروع کنیم، سپس سریع به نقشهٔ سه سیستم برسیم.",
+          "status": "proposed"
+        },
+        {
+          "text": "ایدهٔ تصویر مهمان در حال لمس پنل NSP با تیتر موقت «تجربه‌هایی فراتر از انتظار مهمان» صرفاً پیشنهادی است.",
+          "status": "proposed"
+        }
+      ],
+      "required_data": [
+        {
+          "key": "audiences",
+          "description_fa": "مخاطبان اصلی: مهمان، مدیریت و اپراتور/کارکنان",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "problems",
+          "description_fa": "نیازها و مشکلات واقعی هر مخاطب",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "value_messages",
+          "description_fa": "ارزش‌های کلان قابل پشتیبانی با راهکارهای NSP",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "supporting_evidence",
+          "description_fa": "مستندات واقعی NSP برای ادعاهای کمی یا مشخص",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "illustration",
+          "description_fa": "تصویر یا روایت احساسیِ اختصاصی در صورت انتخاب",
+          "priority": "optional",
+          "status": "open"
+        }
+      ],
+      "unresolved_fa": [
+        "جملات تبلیغاتی و ادعاهای مشخص هنوز تأیید نشده‌اند."
+      ],
+      "research_references": [
+        {
+          "company": "Honeywell",
+          "document": "INNCOM Hospitality IoT",
+          "pdf_pages": [
+            1,
+            2,
+            3
+          ],
+          "note_fa": "الهام از شروع روایت با تجربه مهمان"
+        }
+      ],
+      "attached_idea_ids": [],
+      "design_selection_status": "not_selected"
+    },
+    {
+      "section_id": "HOTEL_OVERVIEW",
+      "title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "kind": "catalog_section",
+      "content_level": "SOLUTION",
+      "order": 5,
+      "page_ids": [
+        "nsp-general-page-05-20261122",
+        "nsp-general-page-06-20261122"
+      ],
+      "included_in_numbered_catalog_pages": true,
+      "page_count_locked": false,
+      "purpose_fa": "نمای یکپارچه هتل و نمایش کاربرد سه سیستم در فضاهای مختلف، بدون ورود به فهرست مدل‌ها.",
+      "user_decisions_fa": [
+        {
+          "text": "نقشهٔ هتل قبل از فصل سیستم‌ها قرار بگیرد.",
+          "status": "approved"
+        },
+        {
+          "text": "سه حوزه GRMS، IPTV و کنترل مشاعات در نقشه دیده شوند.",
+          "status": "approved"
+        }
+      ],
+      "analyst_proposals_fa": [
+        {
+          "text": "الگوی نمای سه‌بعدی با نشانگرها و راهنمای مکان‌ها برای نسخهٔ اختصاصی NSP مناسب است.",
+          "status": "proposed"
+        }
+      ],
+      "required_data": [
+        {
+          "key": "hotel_spaces",
+          "description_fa": "لیست فضاهای واقعی/نمونه در هتل و نقاط استفاده",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "system_mapping",
+          "description_fa": "نگاشت هر فضا به سیستم مرتبط با قابلیت واقعی NSP",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "original_3d_illustration",
+          "description_fa": "دیاگرام یا تصویر اختصاصی و غیرکپی از یک هتل",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "legend",
+          "description_fa": "راهنمای شماره‌ها، علائم و رنگ‌ها",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "application_checks",
+          "description_fa": "تأیید قابلیت‌های قابل ارائه در هر ناحیه",
+          "priority": "required",
+          "status": "open"
+        }
+      ],
+      "unresolved_fa": [
+        "چیدمان گرافیکی و توضیح فضاها هنوز طراحی نشده است."
+      ],
+      "research_references": [
+        {
+          "company": "ABB",
+          "document": "Hospitality Portfolio 2026",
+          "pdf_pages": [
+            7
+          ],
+          "note_fa": "نقشهٔ سه‌بعدی هتل با علائم شماره‌دار، تنها مرجع بصری"
+        }
+      ],
+      "attached_idea_ids": [],
+      "design_selection_status": "not_selected"
+    },
+    {
+      "section_id": "GRMS",
+      "title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "kind": "system_chapter",
+      "content_level": "SYSTEM",
+      "order": 6,
+      "page_ids": [
+        "nsp-general-page-07-20261122"
+      ],
+      "included_in_numbered_catalog_pages": true,
+      "page_count_locked": false,
+      "purpose_fa": "معرفی تعریف، مزایا، سناریوها، نرم‌افزار و محصولات تأییدشدهٔ GRMS.",
+      "user_decisions_fa": [
+        {
+          "text": "یک فصل مستقل و مفصل برای GRMS لازم است.",
+          "status": "approved"
+        },
+        {
+          "text": "نرم‌افزار مدیریت، ارتباط آنلاین، سناریوها و تجهیزات این سیستم در همین فصل قرار بگیرند؛ فصل مستقلِ نرم‌افزار یا سناریو پیش از آن ایجاد نشود.",
+          "status": "approved"
+        },
+        {
+          "text": "خانواده‌های مورد بحث: دوربل هتلی، پاورسوئیچ، ترموستات، پنل‌های هتلی، کنترل روشنایی و عملگرها.",
+          "status": "approved"
+        }
+      ],
+      "analyst_proposals_fa": [
+        {
+          "text": "برای هر خانواده از عکس همراه با آیکون‌های ویژگی استفاده شود؛ سبک نهایی پس از مرجع تصویری مشخص می‌شود.",
+          "status": "proposed"
+        },
+        {
+          "text": "روایت سناریوی خوشامدگویی، پس از اعتبارسنجی محرک‌ها و رفتار تجهیزات معرفی شود.",
+          "status": "proposed"
+        }
+      ],
+      "required_data": [
+        {
+          "key": "system_definition",
+          "description_fa": "تعریف GRMS و کارکرد واقعی NSP",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "guest_benefits",
+          "description_fa": "مزیت برای مهمان، مدیریت، پرسنل و بهره‌برداری",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "product_families",
+          "description_fa": "فهرست خانواده‌های واقعی محصولات NSP و مدل‌های تأییدشده",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "product_images",
+          "description_fa": "عکس اختصاصی محصولات و وضعیت انتشار",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "scenario_logic",
+          "description_fa": "سناریوهای ورود، حضور/غیاب، خواب، نظافت، DND/MUR و خروج با محرک و عملکرد واقعی",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "software",
+          "description_fa": "اسکرین‌شات/قابلیت‌های واقعی نرم‌افزار نظارت GRMS",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "network_architecture",
+          "description_fa": "نقشه ارتباطات و اتصال آنلاین تأییدشده",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "feature_icons",
+          "description_fa": "آیکون‌های خلاصه برای خانواده‌های محصول",
+          "priority": "optional",
+          "status": "open"
+        },
+        {
+          "key": "technical_evidence",
+          "description_fa": "سند سازگاری، مدل‌ها و عملکرد دقیق",
+          "priority": "required",
+          "status": "open"
+        }
+      ],
+      "unresolved_fa": [
+        "قابلیت قطعی کنترل پرده/دما، تریگر حضور، اتصالات خاص و فهرست مدل‌ها هنوز باید تأیید شوند.",
+        "تعداد صفحات فصل باز است."
+      ],
+      "research_references": [],
+      "attached_idea_ids": [],
+      "design_selection_status": "not_selected"
+    },
+    {
+      "section_id": "IPTV",
+      "title_fa": "تلویزیون و خدمات تعاملی هتل (IPTV)",
+      "kind": "system_chapter",
+      "content_level": "SYSTEM",
+      "order": 7,
+      "page_ids": [
+        "nsp-general-page-08-20261122"
+      ],
+      "included_in_numbered_catalog_pages": true,
+      "page_count_locked": false,
+      "purpose_fa": "معرفی سیستم IPTV و تجربه خدمات دیجیتال مهمان در هتل.",
+      "user_decisions_fa": [
+        {
+          "text": "IPTV یک فصل مستقل است و زیر GRMS ادغام نمی‌شود.",
+          "status": "approved"
+        }
+      ],
+      "analyst_proposals_fa": [
+        {
+          "text": "سبک آیکون‌ها می‌تواند با GRMS هم‌خانواده باشد.",
+          "status": "proposed"
+        }
+      ],
+      "required_data": [
+        {
+          "key": "definition",
+          "description_fa": "تعریف راهکار IPTV ارائه‌شده توسط NSP",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "guest_experience",
+          "description_fa": "سناریو و تجربهٔ خدمات تعاملی",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "hotel_benefits",
+          "description_fa": "ارزش عملیاتی برای هتل",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "software_ui",
+          "description_fa": "تصاویر واقعی رابط کاربری و عملکرد نرم‌افزار",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "products",
+          "description_fa": "اجزا/تجهیزات/مدل‌های واقعی و معماری نصب",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "function_evidence",
+          "description_fa": "فهرست قابلیت‌های اثبات‌شده",
+          "priority": "required",
+          "status": "open"
+        }
+      ],
+      "unresolved_fa": [
+        "جزئیات نرم‌افزار، تجهیزات، قابلیت‌ها و تعداد صفحات بازند."
+      ],
+      "research_references": [],
+      "attached_idea_ids": [],
+      "design_selection_status": "not_selected"
+    },
+    {
+      "section_id": "PUBLIC_AREAS",
+      "title_fa": "کنترل هوشمند مشاعات هتل",
+      "kind": "system_chapter",
+      "content_level": "SYSTEM",
+      "order": 8,
+      "page_ids": [
+        "nsp-general-page-09-20261122"
+      ],
+      "included_in_numbered_catalog_pages": true,
+      "page_count_locked": false,
+      "purpose_fa": "معرفی کنترل در فضاهای عمومی و مشترک هتل.",
+      "user_decisions_fa": [
+        {
+          "text": "کنترل مشاعات سومین حوزهٔ اصلی مستقل کاتالوگ هتلی است.",
+          "status": "approved"
+        }
+      ],
+      "analyst_proposals_fa": [
+        {
+          "text": "ساختار تعریف، مزایا، کاربردهای فضا و تجهیزات واقعی رعایت شود.",
+          "status": "proposed"
+        }
+      ],
+      "required_data": [
+        {
+          "key": "spaces",
+          "description_fa": "لابی، راهرو، سالن و سایر فضاهای واقعاً تحت پوشش NSP",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "control_scenarios",
+          "description_fa": "سناریوهای مناسب هر فضا و حدود کنترل",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "controllers",
+          "description_fa": "کنترلرها/اجزای واقعی NSP",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "benefits",
+          "description_fa": "ارزش برای مدیر، نگهداری و کاربران",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "evidence",
+          "description_fa": "شواهد قابلیت و عکس/دیاگرام مرتبط",
+          "priority": "required",
+          "status": "open"
+        }
+      ],
+      "unresolved_fa": [
+        "دامنهٔ فضاها و جایگاه آن نسبت به رزومه هنوز نهایی نیست."
+      ],
+      "research_references": [],
+      "attached_idea_ids": [],
+      "design_selection_status": "not_selected"
+    },
+    {
+      "section_id": "CASE_STUDIES",
+      "title_fa": "رزومه و پروژه‌های اجراشده",
+      "kind": "catalog_section",
+      "content_level": null,
+      "order": 9,
+      "page_ids": [
+        "nsp-general-page-10-20261122"
+      ],
+      "included_in_numbered_catalog_pages": true,
+      "page_count_locked": false,
+      "purpose_fa": "اعتمادسازی با معرفی پروژه‌های واقعی و قابل انتشار NSP.",
+      "user_decisions_fa": [
+        {
+          "text": "وجود فصل رزومه و پروژه‌های اجراشده قطعی است.",
+          "status": "approved"
+        },
+        {
+          "text": "جایگاه دقیق این فصل نسبت به مشاعات هنوز باز است.",
+          "status": "approved"
+        }
+      ],
+      "analyst_proposals_fa": [
+        {
+          "text": "برای هر پروژه، چالش، راهکار، شواهد و نتیجه در قالب مطالعات موردی کوتاه ارائه شود.",
+          "status": "proposed"
+        }
+      ],
+      "required_data": [
+        {
+          "key": "project_names",
+          "description_fa": "نام پروژه‌هایی که مجوز ذکر دارند",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "scope",
+          "description_fa": "نوع راهکار و دامنه اجرا",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "verified_counts",
+          "description_fa": "تعداد اتاق/تجهیزات/دستاورد در صورت وجود مستند",
+          "priority": "optional",
+          "status": "open"
+        },
+        {
+          "key": "images",
+          "description_fa": "عکس‌های واقعی دارای مجوز انتشار",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "client_approval",
+          "description_fa": "رضایت‌نامه یا مجوز استفاده از نام و تصویر",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "outcomes",
+          "description_fa": "نتایج مستند و محدودیت تعمیم",
+          "priority": "optional",
+          "status": "open"
+        }
+      ],
+      "unresolved_fa": [
+        "ترتیب قطعی، فهرست پروژه‌ها، آمار و مجوزهای انتشار تکمیل نشده‌اند."
+      ],
+      "research_references": [],
+      "attached_idea_ids": [],
+      "design_selection_status": "not_selected"
+    }
+  ],
+  "linked_content_rules": {
+    "research_independent": true,
+    "attach_ideas_in_defrag_stage": true,
+    "many_to_many": true,
+    "no_duplicate_source_record": true,
+    "card_count_example": 6,
+    "card_count_hard_requirement": false,
+    "fields_per_idea": [
+      "idea_id",
+      "company",
+      "pdf_filename",
+      "pdf_page",
+      "source_text_en",
+      "translation_fa",
+      "source_image_path",
+      "source_type",
+      "content_level",
+      "presentation_style",
+      "target_section_types",
+      "key_takeaway_fa",
+      "analyst_assessment_fa",
+      "strengths_fa",
+      "weaknesses_fa",
+      "reuse_recommendation",
+      "publication_validation",
+      "selection_state"
+    ],
+    "distinguished_fields_fa": {
+      "key_takeaway_fa": "مهم‌ترین نکته به تشخیص تحلیل‌گر؛ حتی اگر منطق کل پیام خوب باشد یا نکته مهمی وجود نداشته باشد.",
+      "analyst_assessment_fa": "ارزیابی مستقل از اینکه چرا ایده مناسب/نامناسب NSP است و چه چیزی باید اقتباس شود.",
+      "publication_validation": "پژوهش رقیب/نیازمند مدرک NSP/تأییدشده؛ هرگز از شباهت فیچر، تأیید محصول NSP نتیجه گرفته نشود."
+    },
+    "research_queue_section_type_policy": "شناسه BINDER_COVER فقط برای خروجی طراحی مستقل است و فعلاً وارد section_types پژوهش S05 یا فایل صفحات نمی‌شود.",
+    "cross_section_style_tag": "CROSS_SECTION_STYLE",
+    "competitor_technical_specs_excluded": true,
+    "exact_competitor_copy_prohibited": true
+  },
+  "proposed_future_sections_not_approved": [
+    {
+      "id": "TABLE_OF_CONTENTS",
+      "title_fa": "فهرست یا راهنمای فصل‌های زونکن",
+      "reason_fa": "کمک به دسترسی سریع در مجموعهٔ حدوداً ۶۰ صفحه‌ای",
+      "status": "proposed",
+      "page_ids": []
+    },
+    {
+      "id": "SECTION_DIVIDERS",
+      "title_fa": "جداکننده‌های تب‌دار/رنگی فصل‌ها",
+      "reason_fa": "راهبری نسخهٔ فیزیکی و امکان تعویض فصل‌ها",
+      "status": "proposed",
+      "page_ids": []
+    }
+  ],
+  "global_user_decisions_fa": [
+    "ساختار بر اساس سکشن/تیتر باشد، نه تعداد صفحات؛ اسکلت فعلاً مبنای گفتگو است.",
+    "پژوهش PDFها مستقل و بدون تغییر ادامه یابد؛ پس از استخراج، ایده‌ها با Defrag به سکشن‌ها وصل شوند.",
+    "با انتخاب سکشن، چند ایدهٔ متفاوت با تصویر، منبع و نظر تحلیل‌گر دیده شود.",
+    "سطوح دربارهٔ شرکت، دربارهٔ راهکار، دربارهٔ سیستم و دربارهٔ محصول یکی نیستند.",
+    "برای هر ایده نکتهٔ برجسته و نظر تحلیلی مستقل ثبت شود.",
+    "جلد زونکن سکشن مستقل از کاور داخلی باشد و طراحی آن بعداً نهایی شود.",
+    "این فایل داده‌ای نباید خودکار سورس برنامه، صفحات واقعی، صف N یا feature.json را تغییر دهد."
+  ],
+  "style_and_evidence_rules_fa": [
+    "هیچ مشخصات فنی/ادعای عددی رقیب بدون سند NSP به محصولات NSP نسبت داده نشود.",
+    "رنگ مشکی پس‌زمینهٔ لوگو، رنگ تأییدشدهٔ برند نیست.",
+    "تصاویر رقبای پژوهشی فقط برای الهام داخلی هستند؛ متن و تصویر اختصاصی NSP تولید شود.",
+    "متن‌های شرکت و رزومه باید متکی به اطلاعات واقعی و مجوز نشر باشند.",
+    "نسخهٔ زونکن به ابعاد، عرض عطف و حاشیه امن چاپ وابسته است؛ کانسپت فعلی چاپ‌پذیر اعلام نشده."
+  ],
+  "change_policy": {
+    "revalidate_when_help_md_changes": true,
+    "update_both_on_approved_decisions": true,
+    "no_automatic_rewrite_of": [
+      "Portfolio Instruction/feature.json",
+      "Portfolio Instruction/feature.js",
+      "project file/General-Portfolio.json",
+      "project evolution/CATALOG_RESEARCH_N_QUEUE.json",
+      "Portfolio Builder source"
+    ],
+    "section_id_compatibility": "شناسه‌های اصلی از واژگان فعلی صف N گرفته شده‌اند؛ BINDER_COVER فقط به این فایل اضافه شده است."
+  }
+}
