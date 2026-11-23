@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 104,
+    "total_pending_steps": 103,
     "completed_new_documents": 3,
     "remaining_new_documents": 15
   },
   "cursor": {
     "document_index": 6,
     "document_id": "12",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -766,11 +766,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S02_english_text.json"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "36f97f408323c5007ef2c78e84a01066e7710e5e",
+          "notes": "هر ۴۲ صفحه بررسی شد؛ ۲۲۳ گزیدهٔ انگلیسی در ۳۵ صفحهٔ دارای متن محتوایی با متن اصل PDF تطبیق دقیق دارد. ۱۰ برچسب خوانا از تصویر صفحهٔ ۳۷ جدا از گزیده‌های native ثبت شد؛ ترتیب شش‌مرحله‌ای پیکربندی، ۹ مورد ادعا/ابهام و شرط ادعای انرژی و سه وضعیت کارت مستند شد. مرجع ساختار جاری SECTIONS_STRUCTURE.json نسخهٔ ۲.۳.۰ است. ترجمه و S03 اجرا نشده و بانک feature نسخهٔ ۶ باقی است."
         },
         {
           "id": "S03",
@@ -1879,6 +1881,13 @@
     "no_background_execution": true,
     "unconfirmed_steps_never_completed": true,
     "ui_button_location": "ChatGPT assistant message; not a control embedded inside Portfolio Builder",
-    "source_library_file_ids_are_not_persisted_in_public_repo": true
+    "source_library_file_ids_are_not_persisted_in_public_repo": true,
+    "ui_continue_control": {
+      "type": "chatgpt_tappable_reply_option",
+      "label": "N — ادامه",
+      "action": "Send N to execute exactly the current queued stage; do not auto-run additional stages.",
+      "requested_on": "2026-11-23",
+      "location": "ChatGPT assistant final response"
+    }
   }
 }
