@@ -1,0 +1,1048 @@
+{
+  "schema": "nsp-catalog-research-s01-source-inventory-v1",
+  "stage": "S01",
+  "stage_key": "source_inventory",
+  "status": "completed_source_verified",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "document_id": "12",
+  "date_checked": "2026-11-23",
+  "continuation_recovery": {
+    "base_main_commit": "2b4038567a6e1aab13f705885a91b42637eb8812",
+    "previous_completed_stage": "11/S07",
+    "previous_stage_commit": "4dc2179b070a53231666f0e16441befbc115233b",
+    "previous_stage_manifest": "Portfolio Instruction/research/11_ABB_Hospitality_Portfolio_S07_ingest_manifest.json",
+    "full_file_readback_verified": true,
+    "previous_stage_reexecuted": false,
+    "feature_library_version": 6,
+    "catalogs": 6,
+    "features": 370,
+    "images": 55,
+    "feature_json_js_data_equal": true,
+    "abb11_imported_records": 88,
+    "abb11_quarantined_records_excluded": 13,
+    "abb11_translation_corrections_applied": 3,
+    "all_referenced_assets_present_and_recorded_hashes_match": true,
+    "recovery_note_fa": "بازخوانی کامل مخزن ابهام پاسخ ناقص گفت‌وگوی قبلی را برطرف کرد؛ مرحلهٔ ۱۱/S07 کامل است و تکرار نشد."
+  },
+  "source": {
+    "company": "ABB",
+    "publisher": "ABB",
+    "cover_title": "ABB HOSPITALITY",
+    "cover_subtitle": "First class solutions for hotels",
+    "filename": "12_ABB_First Class Solutions for Hotels.pdf",
+    "library_path": "/12_ABB_First Class Solutions for Hotels.pdf",
+    "file_size_bytes": 45212556,
+    "sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+    "availability": "original_pdf_verified_from_user_supplied_library_file",
+    "pdf_format": "PDF 1.4",
+    "pdf_page_count": 42,
+    "page_width_pt": 595.276,
+    "page_height_pt": 841.89,
+    "orientation": "A4 portrait",
+    "all_pages_same_size": true,
+    "pdf_creator": "Adobe InDesign 20.3 (Windows)",
+    "pdf_producer": "Adobe PDF Library 17.0",
+    "pdf_metadata_creation_date": "D:20250611092339+02'00'",
+    "pdf_metadata_modification_date": "D:20250611092456+02'00'",
+    "document_number": "9AKK106930A2119",
+    "revision": "M",
+    "publication_month": "2025-06",
+    "publication_evidence": {
+      "pdf_page": 42,
+      "printed_imprint": "9AKK106930A2119 - Rev. M - 06.25",
+      "copyright_year": 2025,
+      "basis": "publisher_printed_imprint_not_metadata_alone"
+    },
+    "printed_publisher_website": "https://new.abb.com/buildings/hospitality",
+    "encrypted": false,
+    "extractable_text_present": true,
+    "pages_with_native_text": 40,
+    "pages_with_content_beyond_running_header_or_folio": 35,
+    "pages_with_no_native_text": [
+      19,
+      37
+    ],
+    "pages_with_folio_only": [
+      9,
+      13,
+      17
+    ],
+    "pages_with_running_header_only": [
+      6,
+      14
+    ],
+    "bookmark_count": 0,
+    "clickable_link_count": 0
+  },
+  "pagination": {
+    "canonical_reference": "one_based_physical_pdf_page",
+    "printed_folio_matches_physical_where_present": true,
+    "printed_folio_offset": 0,
+    "visible_printed_folio_count": 32,
+    "pages_without_visible_printed_folio": [
+      1,
+      3,
+      6,
+      7,
+      14,
+      18,
+      19,
+      36,
+      37,
+      42
+    ],
+    "pdf_page_label_rules": [
+      {
+        "startpage": 0,
+        "prefix": "<FEFF0055>",
+        "firstpagenum": 1,
+        "style": "D"
+      },
+      {
+        "startpage": 1,
+        "prefix": "",
+        "firstpagenum": 2,
+        "style": "D"
+      }
+    ],
+    "pdf_label_note": "Page-label metadata is separate from visible folios; the first label has an unusual prefix. Cite physical PDF pages regardless of labels."
+  },
+  "section_inventory": [
+    {
+      "group_id": "COVER",
+      "pdf_pages": [
+        1,
+        1
+      ],
+      "page_count": 1,
+      "original_heading_or_theme_en": "ABB HOSPITALITY - First class solutions for hotels",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "جلد، عنوان و معرفی سه محور اصلی بروشور",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "COMPANY_VALUES",
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Bright prospects for all",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "معرفی ABB، ارزش‌های شرکت و محورهای ارزش ساختمان",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "INTEGRATED_HOTEL",
+      "pdf_pages": [
+        4,
+        5
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "For the entire hotel ABB provides a complete solution",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "راهکار یکپارچه و نقشهٔ اجزای هتل از زیرساخت تا اتاق",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "STAKEHOLDER_OPENING",
+      "pdf_pages": [
+        6,
+        7
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Hotel entrance and stakeholder expectations",
+      "heading_kind": "analyst_structural_theme",
+      "topic_fa": "میان‌صفحهٔ تصویری و نگاه مهمان، مدیر و سرمایه‌گذار",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "DESIGN",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Inviting design",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "هماهنگی طراحی و نمایش رابط‌ها در محیط",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "CUSTOM_CONFIGURATION",
+      "pdf_pages": [
+        10,
+        11
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "ABB tacteo - The individual touch",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "فرآیند پیکربندی و شخصی‌سازی رابط اتاق",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "COMFORT",
+      "pdf_pages": [
+        12,
+        13
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Maximum comfort",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "هماهنگی نور، پرده و تهویه در تجربهٔ مهمان",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "INTUITIVE_SOLUTIONS",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Intelligent solutions",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "کاربری ساده، ارتباط مهمان و کارکنان و کنترل مبتنی بر کارت",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "EFFICIENCY",
+      "pdf_pages": [
+        16,
+        17
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Measurable efficiency",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "هماهنگی مصرف، حضور و نور روز",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "SOLUTION_BRIDGE",
+      "pdf_pages": [
+        18,
+        19
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Solutions for changing expectations",
+      "heading_kind": "analyst_structural_theme",
+      "topic_fa": "میان‌صفحهٔ معرفی تنوع و توسعه‌پذیری راهکارها",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "ARRIVAL",
+      "pdf_pages": [
+        20,
+        21
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "First impressions",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "ورودی هتل، ارتباط درب و روشنایی و ایمنی محوطه",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "LOBBY",
+      "pdf_pages": [
+        22,
+        23
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "An inviting atmosphere",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "لابی، رابط کنترل و اتصال دستگاه‌های مهمان",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "RESTAURANT",
+      "pdf_pages": [
+        24,
+        25
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Savour the moment",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "رستوران، دما، کیفیت هوا و سناریوهای روشنایی",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "CORRIDORS",
+      "pdf_pages": [
+        26,
+        27
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Discrete service",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "راهرو، جهت‌یابی و نشانه‌های روشنایی و اضطراری",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "STANDARD_ROOM",
+      "pdf_pages": [
+        28,
+        29
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Fully equipped",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "اتاق استاندارد و سناریوی ورود مهمان",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "ROOM_INTERACTION",
+      "pdf_pages": [
+        30,
+        31
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Comfort at its best",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "رابط اتاق، سرگرمی، درخواست خدمت و کارت",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "PREMIUM_SUITE",
+      "pdf_pages": [
+        32,
+        33
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "First class",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "سوئیت، رابط کنترل و شیوهٔ معرفی تجهیزات",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "INFRASTRUCTURE",
+      "pdf_pages": [
+        34,
+        35
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "A stable foundation",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "توزیع برق، شارژ خودرو، برق اضطراری و تأسیسات",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "NETWORKED_VALUE",
+      "pdf_pages": [
+        36,
+        37
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Modular and complete",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "پیام یکپارچگی و تصویر رابط کنترل",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "PRODUCT_PRESENTATION",
+      "pdf_pages": [
+        38,
+        39
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Impressive products",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "سبک ارائهٔ کاربرد تجهیزات و داشبورد ساختمان",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "HOTEL_REFERENCES",
+      "pdf_pages": [
+        40,
+        41
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Perfect arguments",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "روایت تجربه و پنج مرجع هتلی ABB",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "BACK_COVER",
+      "pdf_pages": [
+        42,
+        42
+      ],
+      "page_count": 1,
+      "original_heading_or_theme_en": "Publisher imprint",
+      "heading_kind": "analyst_structural_theme",
+      "topic_fa": "پشت جلد، شناسهٔ سند، ویرایش و حق‌نشر",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    }
+  ],
+  "page_index": [
+    {
+      "pdf_page": 1,
+      "printed_page": null,
+      "printed_page_evidence": "no_visible_printed_folio",
+      "section_group": "COVER",
+      "topic_fa": "جلد و معرفی بروشور",
+      "native_text_character_count": 183,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 2,
+      "printed_page": 2,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "COMPANY_VALUES",
+      "topic_fa": "چشم‌انداز شرکت، چهار ارزش و تجربهٔ کاربر",
+      "native_text_character_count": 1381,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 3,
+      "printed_page": null,
+      "printed_page_evidence": "no_visible_printed_folio",
+      "section_group": "COMPANY_VALUES",
+      "topic_fa": "ارزش‌های ساختمان در کنار تصویر معماری",
+      "native_text_character_count": 1079,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 4,
+      "printed_page": 4,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "INTEGRATED_HOTEL",
+      "topic_fa": "پیام راهکار جامع و همکاری اجزای هتل",
+      "native_text_character_count": 1143,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 5,
+      "printed_page": 5,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "INTEGRATED_HOTEL",
+      "topic_fa": "نقشهٔ هتل و جانمایی موضوعات در پیرامون آن",
+      "native_text_character_count": 2255,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 6,
+      "printed_page": null,
+      "printed_page_evidence": "no_visible_printed_folio",
+      "section_group": "STAKEHOLDER_OPENING",
+      "topic_fa": "تصویر تمام‌صفحهٔ ورودی هتل",
+      "native_text_character_count": 49,
+      "text_inventory_state": "running_header_only",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 7,
+      "printed_page": null,
+      "printed_page_evidence": "no_visible_printed_folio",
+      "section_group": "STAKEHOLDER_OPENING",
+      "topic_fa": "انتظارات مهمان، مدیر و سرمایه‌گذار روی تصویر",
+      "native_text_character_count": 398,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 8,
+      "printed_page": 8,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "DESIGN",
+      "topic_fa": "منطق طراحی، تجربهٔ کاربری و نشان‌های طراحی",
+      "native_text_character_count": 1363,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 9,
+      "printed_page": 9,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "DESIGN",
+      "topic_fa": "چیدمان تصویری کلیدها و پنل در فضای داخلی",
+      "native_text_character_count": 1,
+      "text_inventory_state": "printed_folio_only",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 10,
+      "printed_page": 10,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "CUSTOM_CONFIGURATION",
+      "topic_fa": "معرفی فرآیند شخصی‌سازی و آغاز پیکربندی",
+      "native_text_character_count": 1524,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 11,
+      "printed_page": 11,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "CUSTOM_CONFIGURATION",
+      "topic_fa": "ادامهٔ فرآیند پیکربندی و نمونهٔ سفارشی‌سازی",
+      "native_text_character_count": 351,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 12,
+      "printed_page": 12,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "COMFORT",
+      "topic_fa": "آسایش و هماهنگی عوامل محیطی",
+      "native_text_character_count": 1619,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 13,
+      "printed_page": 13,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "COMFORT",
+      "topic_fa": "نمونهٔ تصویری پنل و اتاق",
+      "native_text_character_count": 2,
+      "text_inventory_state": "printed_folio_only",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 14,
+      "printed_page": null,
+      "printed_page_evidence": "no_visible_printed_folio",
+      "section_group": "INTUITIVE_SOLUTIONS",
+      "topic_fa": "چیدمان تصویری رابط‌ها در اتاق",
+      "native_text_character_count": 49,
+      "text_inventory_state": "running_header_only",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 15,
+      "printed_page": 15,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "INTUITIVE_SOLUTIONS",
+      "topic_fa": "کاربری ساده، ارتباط خدمات و کنترل مبتنی بر کارت",
+      "native_text_character_count": 1313,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 16,
+      "printed_page": 16,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "EFFICIENCY",
+      "topic_fa": "کنترل یکپارچهٔ مصرف و هماهنگی حضور و نور روز",
+      "native_text_character_count": 1872,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 17,
+      "printed_page": 17,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "EFFICIENCY",
+      "topic_fa": "چیدمان تصویری حسگر، کنترل دما و راهرو",
+      "native_text_character_count": 2,
+      "text_inventory_state": "printed_folio_only",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 18,
+      "printed_page": null,
+      "printed_page_evidence": "no_visible_printed_folio",
+      "section_group": "SOLUTION_BRIDGE",
+      "topic_fa": "پیام توسعهٔ راهکار برای انتظارات متغیر",
+      "native_text_character_count": 395,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 19,
+      "printed_page": null,
+      "printed_page_evidence": "no_visible_printed_folio",
+      "section_group": "SOLUTION_BRIDGE",
+      "topic_fa": "تصویر تمام‌صفحهٔ فضای نشیمن",
+      "native_text_character_count": 0,
+      "text_inventory_state": "image_only_no_native_text",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 20,
+      "printed_page": 20,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "ARRIVAL",
+      "topic_fa": "ورودی و ارتباط درب",
+      "native_text_character_count": 937,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 21,
+      "printed_page": 21,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "ARRIVAL",
+      "topic_fa": "کنترل حرکت و ایمنی برق در محوطه",
+      "native_text_character_count": 858,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 22,
+      "printed_page": 22,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "LOBBY",
+      "topic_fa": "تجربهٔ لابی و رابط کنترل مرکزی",
+      "native_text_character_count": 848,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 23,
+      "printed_page": 23,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "LOBBY",
+      "topic_fa": "اتصال اینترنت و دستگاه‌های مهمان در لابی",
+      "native_text_character_count": 1351,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 24,
+      "printed_page": 24,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "RESTAURANT",
+      "topic_fa": "رستوران و کنترل دما؛ محل ادعای عددی مصرف",
+      "native_text_character_count": 1124,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 25,
+      "printed_page": 25,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "RESTAURANT",
+      "topic_fa": "کیفیت هوا، روشنایی و رابط کارکنان رستوران",
+      "native_text_character_count": 1288,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 26,
+      "printed_page": 26,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "CORRIDORS",
+      "topic_fa": "راهرو و جهت‌یابی",
+      "native_text_character_count": 997,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 27,
+      "printed_page": 27,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "CORRIDORS",
+      "topic_fa": "پیام آسایش و نشانه‌های ایمنی روی تصویر راهرو",
+      "native_text_character_count": 186,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 28,
+      "printed_page": 28,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "STANDARD_ROOM",
+      "topic_fa": "اتاق استاندارد و نمایش تجهیزات کنترل و توزیع",
+      "native_text_character_count": 834,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 29,
+      "printed_page": 29,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "STANDARD_ROOM",
+      "topic_fa": "سناریوی ورود، حضور، سرگرمی و دمای اتاق",
+      "native_text_character_count": 1447,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 30,
+      "printed_page": 30,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "ROOM_INTERACTION",
+      "topic_fa": "رابط‌های اتاق و اتصال چندرسانه‌ای",
+      "native_text_character_count": 922,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 31,
+      "printed_page": 31,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "ROOM_INTERACTION",
+      "topic_fa": "درخواست خدمت و سناریوی کارت اتاق",
+      "native_text_character_count": 918,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 32,
+      "printed_page": 32,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "PREMIUM_SUITE",
+      "topic_fa": "سوئیت و رابط کنترل در محیط",
+      "native_text_character_count": 1020,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 33,
+      "printed_page": 33,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "PREMIUM_SUITE",
+      "topic_fa": "سرگرمی و انعطاف‌پذیری رابط‌های سوئیت",
+      "native_text_character_count": 1534,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 34,
+      "printed_page": 34,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "INFRASTRUCTURE",
+      "topic_fa": "زیرساخت برق و شارژ خودرو",
+      "native_text_character_count": 1191,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 35,
+      "printed_page": 35,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "INFRASTRUCTURE",
+      "topic_fa": "همکاری تجهیزات، برق اضطراری و تأسیسات",
+      "native_text_character_count": 1199,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 36,
+      "printed_page": null,
+      "printed_page_evidence": "no_visible_printed_folio",
+      "section_group": "NETWORKED_VALUE",
+      "topic_fa": "پیام یکپارچگی و توسعه‌پذیری",
+      "native_text_character_count": 448,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 37,
+      "printed_page": null,
+      "printed_page_evidence": "no_visible_printed_folio",
+      "section_group": "NETWORKED_VALUE",
+      "topic_fa": "تصویر تمام‌صفحهٔ رابط کنترل لمسی",
+      "native_text_character_count": 0,
+      "text_inventory_state": "image_only_no_native_text",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 38,
+      "printed_page": 38,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "PRODUCT_PRESENTATION",
+      "topic_fa": "ردیف‌های مقایسهٔ کاربرد و نمایش تجهیزات",
+      "native_text_character_count": 1589,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 39,
+      "printed_page": 39,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "PRODUCT_PRESENTATION",
+      "topic_fa": "داشبورد ساختمان و ادامهٔ نمایش زیرساخت برق",
+      "native_text_character_count": 768,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 40,
+      "printed_page": 40,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "HOTEL_REFERENCES",
+      "topic_fa": "آغاز فصل نمونه‌پروژه‌ها",
+      "native_text_character_count": 605,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 41,
+      "printed_page": 41,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "section_group": "HOTEL_REFERENCES",
+      "topic_fa": "پنج مرجع هتلی و روایت عملکرد ABB",
+      "native_text_character_count": 2813,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 42,
+      "printed_page": null,
+      "printed_page_evidence": "no_visible_printed_folio",
+      "section_group": "BACK_COVER",
+      "topic_fa": "شناسه و ویرایش چاپی، ناشر و حق‌نشر",
+      "native_text_character_count": 161,
+      "text_inventory_state": "native_content_text_present",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    }
+  ],
+  "visual_and_content_inventory_method": {
+    "method": "Original PDF byte/hash inspection, PyMuPDF page and text-position enumeration, manual visual review of all four contact sheets, and independent structural review.",
+    "page_count_verified": 42,
+    "all_pages_checked_in_contact_sheets": true,
+    "contact_sheet_ranges": [
+      [
+        1,
+        12
+      ],
+      [
+        13,
+        24
+      ],
+      [
+        25,
+        36
+      ],
+      [
+        37,
+        42
+      ]
+    ],
+    "section_group_count": 22,
+    "two_page_editorial_spreads": 20,
+    "individual_cover_pages": [
+      1,
+      42
+    ],
+    "render_used_for_structure_only": true,
+    "source_page_image_crop_exported_to_repository": false,
+    "detailed_image_audit_not_done_in_S01": true,
+    "later_visual_review_candidates": [
+      5,
+      7,
+      9,
+      10,
+      11,
+      13,
+      15,
+      16,
+      20,
+      22,
+      24,
+      26,
+      27,
+      28,
+      30,
+      32,
+      37,
+      38,
+      39,
+      41
+    ],
+    "reading_order_note_fa": "تیترهای اصلی در متن قابل استخراج وجود دارند، اما گاهی پس از متن بدنه قرار می‌گیرند. S02 باید ترتیب خواندن تیتر، ستون‌ها و زیرنویس‌ها را با تصویر صفحه کنترل کند؛ نبودن تیتر در خطوط اول دلیل تصویری‌بودن آن نیست."
+  },
+  "restrictions_and_audit_flags": [
+    {
+      "pdf_pages": [
+        1,
+        42
+      ],
+      "issue": "Revision and publication date are printed in the brochure.",
+      "control": "Use Rev. M, June 2025 as this document edition; do not equate its claims with current product availability."
+    },
+    {
+      "pdf_pages": [
+        5
+      ],
+      "issue": "Whole-hotel diagram includes ABB infrastructure beyond the approved NSP systems.",
+      "control": "Retain architectural presentation as research; no automatic expansion of the NSP scope."
+    },
+    {
+      "pdf_pages": [
+        10,
+        11
+      ],
+      "issue": "Product configurator and customisation workflow.",
+      "control": "Later stages may study the workflow as a software/presentation idea; competitor hardware names and capabilities do not prove NSP support."
+    },
+    {
+      "pdf_pages": [
+        19,
+        37
+      ],
+      "issue": "No native text is extractable.",
+      "control": "Page 19 is a full-page photograph; page 37 is a control-interface photograph. Inspect pixels when needed; neither page is missing."
+    },
+    {
+      "pdf_pages": [
+        24
+      ],
+      "issue": "An energy-saving percentage is tied to a temperature change.",
+      "control": "At S02 retain the precise ABB wording and conditions with page evidence; do not convert it to NSP performance or a general verified engineering rule."
+    },
+    {
+      "pdf_pages": [
+        20,
+        21,
+        23,
+        25,
+        28,
+        29,
+        30,
+        31,
+        33,
+        34,
+        35,
+        38,
+        39
+      ],
+      "issue": "Competitor hardware names, ranges, electrical details, ratings or standards occur alongside scenarios.",
+      "control": "Exclude competitor hardware specifications from the S03 feature bank; scenarios and presentation styles remain separately reviewable."
+    },
+    {
+      "pdf_pages": [
+        34,
+        35,
+        38,
+        39
+      ],
+      "issue": "Power distribution, charging, emergency power and motors are represented.",
+      "control": "These do not authorize additional NSP system chapters; retain only in-scope ideas or clearly labelled out-of-scope research."
+    },
+    {
+      "pdf_pages": [
+        29,
+        30,
+        32,
+        33,
+        37,
+        39
+      ],
+      "issue": "Multimedia connections, entertainment and control dashboards may look similar to other catalog systems.",
+      "control": "Do not infer IPTV, PMS integration, GuestFlow or a named GRMS software product from these visuals or generic functions."
+    },
+    {
+      "pdf_pages": [
+        40,
+        41
+      ],
+      "issue": "The five hotel references and their numeric/project statements belong to ABB.",
+      "control": "Study the case-study presentation only; no attribution to NSP projects, certifications or results."
+    },
+    {
+      "pdf_pages": [
+        42
+      ],
+      "issue": "The publisher reserves copyright and states that specifications may change.",
+      "control": "Competitor images are internal research references; final NSP publication requires original or separately authorized assets and verified NSP evidence."
+    }
+  ],
+  "native_text_scope_checks": {
+    "method": "Case-insensitive term search over native PDF text; not OCR or a claim about unstated capabilities.",
+    "not_found_terms": [
+      "IPTV",
+      "PMS",
+      "GRMS",
+      "GuestFlow",
+      "INTERNAL",
+      "CONFIDENTIAL"
+    ],
+    "no_claim_of_comprehensive_software_or_capability_extraction": true
+  },
+  "project_alignment": {
+    "help_file": "Portfolio Instruction/HELP.json",
+    "help_revision": "2.1.0",
+    "fixed_three_systems": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ],
+    "content_levels": [
+      "COMPANY",
+      "SOLUTION",
+      "SYSTEM",
+      "PRODUCT"
+    ],
+    "current_cover_title_fa": "صفحه اول کاتالوگ",
+    "current_identity_section_id": "IDENTITY_PAGES",
+    "current_identity_section_title_fa": "صفحات هویتی",
+    "historical_queue_and_mapping_vocabulary_not_rewritten_in_S01": true,
+    "final_idea_attachment_stage": "Defrag",
+    "nsp_product_capabilities_verified": 0,
+    "new_page_layouts_approved": 0,
+    "scope": "source_inventory_only",
+    "feature_library_changed": false,
+    "application_source_changed": false,
+    "portfolio_page_file_changed": false
+  },
+  "stage_contract": {
+    "S01_outputs_only": true,
+    "S02": "Extract exact English text with physical PDF page references and visual reading-order checks; keep numeric conditions and competitor attribution; inspect image-only pages when relevant.",
+    "S03": "Translate and classify eligible slogans, scenarios and software ideas, excluding competitor hardware specifications.",
+    "S04": "Review distinct presentation styles and representative images with provenance and research-only rights.",
+    "S05": "Propose mappings with current HELP.json and stable identifiers; retain source type separately and do not create new systems.",
+    "S06": "Audit quotes, translations, page references, image provenance, mapping and claim boundaries.",
+    "S07": "Import only audited records into feature.json/feature.js with an actual commit and readback.",
+    "next_queue_cursor": {
+      "document_index": 6,
+      "document_id": "12",
+      "step_index": 1,
+      "step_id": "S02"
+    },
+    "next_stage": "S02 — استخراج متن دقیق انگلیسی",
+    "next_stage_requires_new_user_N_or_continue": true
+  }
+}
