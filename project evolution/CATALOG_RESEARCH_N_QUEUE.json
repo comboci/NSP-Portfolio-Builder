@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 110,
+    "total_pending_steps": 109,
     "completed_new_documents": 2,
     "remaining_new_documents": 16
   },
   "cursor": {
     "document_index": 5,
     "document_id": "11",
-    "step_index": 2,
-    "step_id": "S03"
+    "step_index": 3,
+    "step_id": "S04"
   },
   "section_types": [
     {
@@ -664,11 +664,13 @@
         {
           "id": "S03",
           "key": "feature_software_translation",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/11_ABB_Hospitality_Portfolio_S03_features_fa.json"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "c0040cc8eec381868047d44ee30d7387f5d884ce",
+          "notes": "از ۲۰۸ گزیدهٔ S02، تعداد ۱۰۱ رکورد دوزبانه با ترجمه دستی و نوع/دسته‌بندی پژوهشی ثبت شد؛ ۱۰۷ مورد نامناسب با علت مستند کنار گذاشته شد؛ هفت وضعیت اتاق ABB به‌صورت جدول مستقل، ۱۵ ادعای نیازمند شواهد قرنطینه؛ صفحه داخلی ۸۷ حذف و بدون انتساب قابلیت به NSP."
         },
         {
           "id": "S04",
@@ -707,7 +709,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S02"
+      "last_successful_stage": "S03"
     },
     {
       "id": "12",
