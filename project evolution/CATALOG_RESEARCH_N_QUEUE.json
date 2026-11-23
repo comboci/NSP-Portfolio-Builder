@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 103,
+    "total_pending_steps": 102,
     "completed_new_documents": 3,
     "remaining_new_documents": 15
   },
   "cursor": {
     "document_index": 6,
     "document_id": "12",
-    "step_index": 2,
-    "step_id": "S03"
+    "step_index": 3,
+    "step_id": "S04"
   },
   "section_types": [
     {
@@ -777,11 +777,13 @@
         {
           "id": "S03",
           "key": "feature_software_translation",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S03_features_fa.json"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "66073f0572a8ad7f5906814a97c53290b4531bcc",
+          "notes": "از ۲۲۳ گزیدهٔ S02، ۱۱۰ رکورد دوزبانه در ۱۵ دسته از ۳۳ صفحه انتخاب شد؛ شامل ۱۹ سناریو و ۵ کارکرد رابط/نرم‌افزار. برای ۱۱۳ گزیدهٔ دیگر علت عدم ورود به فهرست فیچر ثبت شد. متن انگلیسی و صفحه‌ها با اصل PDF تطبیق دارد و هر ۱۱۰ ترجمه بازبینی شد. ۹ مورد ادعا/ابهام، شش گام پیکربندی و ۱۰ برچسب تصویری با زمینهٔ مستقل نگهداری می‌شوند؛ ابهام کارت، قید انرژی و نسبت پروژه‌ها به ABB حفظ شده است. هیچ قابلیت NSP تأیید نشده، S04 اجرا نشده و بانک feature نسخهٔ ۶ باقی است."
         },
         {
           "id": "S04",
