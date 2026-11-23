@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 102,
+    "total_pending_steps": 101,
     "completed_new_documents": 3,
     "remaining_new_documents": 15
   },
   "cursor": {
     "document_index": 6,
     "document_id": "12",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -788,11 +788,32 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S04_visual_styles.json",
+            "Portfolio Instruction/research/assets/abb12/ABB12_01_cover_photo_title.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_02_company_intro_photo.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_03_company_value_grid.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_05_schematic_hotel_overview.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_07_photo_narrative.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_08_design_award_marks.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_09_product_interior_collage.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_10_configurator_steps_1_3.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_11_configurator_steps_4_6.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_11_custom_panel_callouts.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_15_icons_and_benefit_columns.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_29_room_and_function_cards.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_31_service_and_card_controls.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_32_suite_touchscreen_context.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_37_hand_touchscreen_closeup.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_38_paired_product_function_rows.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_39_building_dashboard_row.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_41_numbered_hotel_gallery.webp",
+            "Portfolio Instruction/research/assets/abb12/ABB12_S04_reference_overview.webp"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "47bca09ce33f6e9bad5f3e998428f66ca5645709",
+          "notes": "هر ۴۲ صفحه بصری مرور شد؛ ۱۸ تصویر WebP واقعی از ۱۷ صفحه در ۱۵ خانوادهٔ سبک، همراه یک نمای کلی استخراج شد. صفحه، محدودهٔ برش، اندازه، هش، پیوندهای S03 و تحلیل فارسی هر تصویر ثبت شد و بایت‌های هر ۱۹ فایل تصویری از GitHub بازخوانی و تطبیق داده شد. سه اشکال برش اصلاح شد؛ قیدهای شش گام، شماره‌های پنج پروژه، پوشیدگی اصلی صفحهٔ ۳۷ و مرز توضیحات تجهیزات حفظ شدند. توصیف خط اتصال/نقطه به‌جای فلش برای تطبیق سندهای قبلی در S06 ثبت شد. S05 اجرا نشده و بانک feature نسخهٔ ۶ باقی است."
         },
         {
           "id": "S05",
