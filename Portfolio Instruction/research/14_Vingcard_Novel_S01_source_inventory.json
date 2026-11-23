@@ -1,0 +1,896 @@
+{
+  "schema": "nsp-catalog-research-s01-source-inventory-v1",
+  "stage": "S01",
+  "stage_key": "source_inventory",
+  "status": "completed_source_verified",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "document_id": "14",
+  "date_checked": "2026-11-23",
+  "continuation_recovery": {
+    "base_main_commit": "526aa967141f1e7782ce038a2d7605e75c72f06c",
+    "previous_completed_stage": "12/S07",
+    "previous_stage_commit": "d7c224347faf0c690f05e54566860a18b37ed21b",
+    "previous_stage_manifest": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S07_ingest_manifest.json",
+    "current_queue_verified": true,
+    "previous_stage_reexecuted": false,
+    "feature_library_version": 7,
+    "catalogs": 7,
+    "features": 476,
+    "images": 73,
+    "feature_json_js_data_equal": true
+  },
+  "source": {
+    "company": "Vingcard",
+    "publisher": "Vingcard / ASSA ABLOY",
+    "publisher_evidence_pdf_pages": [
+      1,
+      16
+    ],
+    "cover_title": "Vingcard Novel",
+    "cover_tagline": "Experience a safer and more open world",
+    "filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+    "library_path": "/14_Vingcard_Vingcard Novel Brochure.pdf",
+    "file_size_bytes": 3735147,
+    "queued_file_size_bytes": 3735147,
+    "file_size_matches_queue": true,
+    "sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+    "availability": "original_pdf_verified_from_user_supplied_library_file",
+    "identity_basis": "Exact uploaded filename and byte count; title and publisher visually matched on cover and back cover; original bytes fingerprinted with SHA-256.",
+    "external_publisher_site_verification_performed": false,
+    "pdf_format": "PDF 1.7",
+    "pdf_page_count": 16,
+    "page_width_pt": 612,
+    "page_height_pt": 792,
+    "page_size_name": "US Letter",
+    "orientation": "portrait",
+    "all_pages_same_size": true,
+    "all_pages_rotation_zero": true,
+    "pdf_creator": "Adobe InDesign 20.2 (Windows)",
+    "pdf_producer": "Adobe PDF Library 17.0",
+    "pdf_metadata_creation_date": "D:20250407142306+02'00'",
+    "pdf_metadata_modification_date": "D:20250407142933+02'00'",
+    "printed_document_version": "04/2025",
+    "document_number": null,
+    "separate_revision_identifier": null,
+    "publication_month": "2025-04",
+    "publication_evidence": {
+      "pdf_page": 16,
+      "printed_version_label": "Doc. Version: 04/2025",
+      "printed_copyright_label": "Copyright ASSA ABLOY ©",
+      "separate_copyright_year_printed": null,
+      "basis": "publisher_printed_document_version_visually_verified_not_metadata_alone",
+      "date_interpretation": "April 2025 document version; no exact publication day or separate copyright year is asserted."
+    },
+    "printed_publisher_website": "https://vingcard.com",
+    "language": "English",
+    "encrypted": false,
+    "extractable_text_present": true,
+    "pages_with_native_text": 16,
+    "pages_with_content_beyond_running_header_or_folio": 16,
+    "pages_with_no_native_text": [],
+    "pages_with_folio_only": [],
+    "bookmark_count": 0,
+    "clickable_link_count": 0,
+    "embedded_raster_image_resource_occurrences": 42,
+    "image_resource_count_is_not_extracted_style_reference_count": true,
+    "original_pdf_modified": false
+  },
+  "pagination": {
+    "canonical_reference": "one_based_physical_pdf_page",
+    "printed_folio_matches_physical_where_present": true,
+    "printed_folio_offset": 0,
+    "visible_printed_folio_count": 14,
+    "visible_printed_folio_range": [
+      2,
+      15
+    ],
+    "pages_without_visible_printed_folio": [
+      1,
+      16
+    ],
+    "native_folio_not_visibly_printed_pages": [
+      1
+    ],
+    "native_repeated_folio_pages": [
+      3,
+      5,
+      7,
+      9,
+      11,
+      12,
+      13,
+      15
+    ],
+    "native_repeated_folio_max_occurrences": 3,
+    "partly_covered_running_footer_label_pages": [],
+    "pdf_page_label_rules": [],
+    "page_label_note": "No custom PDF page-label rules; pypdf fallback labels 1-16 are logical defaults, not evidence of visible printed folios.",
+    "completeness_basis": "All 16 supplied pages parsed and rendered; cover, continuous visible folios 2-15, coherent paired topics and back cover observed. No blank, duplicate or apparently missing page detected within the supplied file.",
+    "external_master_copy_comparison_performed": false
+  },
+  "contents_index": [
+    {
+      "heading_en": "Sustainability",
+      "contents_pdf_page": 2,
+      "target_pdf_page": 6,
+      "target_heading_visually_matched": true
+    },
+    {
+      "heading_en": "Design & style",
+      "contents_pdf_page": 3,
+      "target_pdf_page": 8,
+      "target_heading_visually_matched": true
+    },
+    {
+      "heading_en": "Installation",
+      "contents_pdf_page": 2,
+      "target_pdf_page": 10,
+      "target_heading_visually_matched": true
+    },
+    {
+      "heading_en": "Operation",
+      "contents_pdf_page": 3,
+      "target_pdf_page": 12,
+      "target_heading_visually_matched": true
+    },
+    {
+      "heading_en": "Security & compliance",
+      "contents_pdf_page": 3,
+      "target_pdf_page": 14,
+      "target_heading_visually_matched": true
+    }
+  ],
+  "section_inventory": [
+    {
+      "group_id": "COVER",
+      "pdf_pages": [
+        1,
+        1
+      ],
+      "page_count": 1,
+      "original_heading_or_theme_en": "Vingcard Novel",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "جلد، نام بروشور و هویت ناشر",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "INTRODUCTION_AND_CONTENTS",
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Opening the Door to New Possibilities in Hotel Security & Guest Satisfaction",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "مقدمهٔ نیازهای امنیت و تجربهٔ مهمان و فهرست پنج محور بروشور",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "OVERVIEW",
+      "pdf_pages": [
+        4,
+        5
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Vingcard Novel Overview",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "نمای کلی مزایا، مقیاس‌پذیری، دسترسی و شیوهٔ ارائهٔ ویژگی‌ها",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "SUSTAINABILITY",
+      "pdf_pages": [
+        6,
+        7
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Environmentally Conscious by Design",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "روایت پایداری، بسته‌بندی، کاهش نگهداری و مواد قابل بازیافت",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "DESIGN_AND_STYLE",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Sleek Design Embodying Ultimate Elegance",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "طراحی ظاهری، ارائهٔ گزینه‌های پرداخت و صفحهٔ تصویری همراه شعار",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "INSTALLATION_AND_MOBILE_ACCESS",
+      "pdf_pages": [
+        10,
+        11
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Installation and Mobile Access adoption",
+      "heading_kind": "analyst_structural_theme",
+      "topic_fa": "روایت نصب ساده و معرفی تجربهٔ دسترسی موبایلی",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "OPERATION",
+      "pdf_pages": [
+        12,
+        13
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Operational efficiency and environmental exposure",
+      "heading_kind": "analyst_structural_theme",
+      "topic_fa": "روایت دوام، نگهداری، حفاظت از در و شرایط محیطی محصول",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "SECURITY_AND_COMPLIANCE",
+      "pdf_pages": [
+        14,
+        15
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Surpassing Industry Expectations for Advanced Security",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "امنیت، انطباق، مدیریت دسترسی ابری و نمایش ویژگی‌های امنیتی",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    },
+    {
+      "group_id": "BACK_COVER",
+      "pdf_pages": [
+        16,
+        16
+      ],
+      "page_count": 1,
+      "original_heading_or_theme_en": "Publisher imprint and contact information",
+      "heading_kind": "analyst_structural_theme",
+      "topic_fa": "پشت‌جلد، نسخهٔ چاپی، ناشر، وب‌سایت و اطلاعات تماس منطقه‌ای",
+      "classification_status": "source_inventory_only_not_S05_mapping"
+    }
+  ],
+  "page_index": [
+    {
+      "pdf_page": 1,
+      "printed_page": null,
+      "printed_page_evidence": "no_visible_printed_folio",
+      "native_folio_strings": [
+        "Vingcard Novel | 1"
+      ],
+      "native_folio_occurrences": 1,
+      "section_group": "COVER",
+      "page_role": "cover",
+      "original_heading_or_theme_en": "Vingcard Novel",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "جلد تصویری و عنوان بروشور؛ شعار و لوگوی Vingcard / ASSA ABLOY",
+      "native_text_character_count": 74,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "لایهٔ متن شامل folio شمارهٔ ۱ است، اما در تصویر جلد شمارهٔ چاپی قابل مشاهده نیست؛ متن پنهان یا پوشیده نباید به‌عنوان محتوای قابل مشاهده نقل شود."
+      ]
+    },
+    {
+      "pdf_page": 2,
+      "printed_page": 2,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "2 | Vingcard Novel"
+      ],
+      "native_folio_occurrences": 1,
+      "section_group": "INTRODUCTION_AND_CONTENTS",
+      "page_role": "introduction_and_contents",
+      "original_heading_or_theme_en": "Opening the Door to New Possibilities in Hotel Security & Guest Satisfaction",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "مقدمهٔ امنیت و رضایت مهمان؛ بخش اول فهرست با ارجاع به صفحات ۶ و ۱۰",
+      "native_text_character_count": 1934,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "ترتیب تیتر، ستون‌ها، کارت‌ها و زیرنویس‌ها در مرحلهٔ S02 باید با تصویر کنترل شود؛ ترتیب خام استخراج، ترتیب نهایی خواندن نیست."
+      ]
+    },
+    {
+      "pdf_page": 3,
+      "printed_page": 3,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "Vingcard Novel | 3",
+        "Vingcard Novel | 3"
+      ],
+      "native_folio_occurrences": 2,
+      "section_group": "INTRODUCTION_AND_CONTENTS",
+      "page_role": "contents_continuation",
+      "original_heading_or_theme_en": "Design & style; Operation; Security & compliance",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "ادامهٔ فهرست با ارجاع به صفحات ۸، ۱۲ و ۱۴ و تصویر استفاده از دستگیره",
+      "native_text_character_count": 595,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "پانوشت در لایهٔ متن تکرار شده است؛ این تکرار نه صفحهٔ تکراری است و نه رکورد محتوایی مستقل.",
+        "ترتیب تیتر، ستون‌ها، کارت‌ها و زیرنویس‌ها در مرحلهٔ S02 باید با تصویر کنترل شود؛ ترتیب خام استخراج، ترتیب نهایی خواندن نیست."
+      ]
+    },
+    {
+      "pdf_page": 4,
+      "printed_page": 4,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "4 | Vingcard Novel"
+      ],
+      "native_folio_occurrences": 1,
+      "section_group": "OVERVIEW",
+      "page_role": "overview_with_image_cards",
+      "original_heading_or_theme_en": "Vingcard Novel Overview",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "نمای کلی و کارت‌های تصویری مزایا و طراحی",
+      "native_text_character_count": 1026,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "ترتیب تیتر، ستون‌ها، کارت‌ها و زیرنویس‌ها در مرحلهٔ S02 باید با تصویر کنترل شود؛ ترتیب خام استخراج، ترتیب نهایی خواندن نیست."
+      ]
+    },
+    {
+      "pdf_page": 5,
+      "printed_page": 5,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "Vingcard Novel | 5",
+        "Vingcard Novel | 5"
+      ],
+      "native_folio_occurrences": 2,
+      "section_group": "OVERVIEW",
+      "page_role": "overview_with_icon_list",
+      "original_heading_or_theme_en": "Flexible Scalability Meets Enhanced Security",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "فهرست ویژگی‌های همراه آیکون؛ نام‌های Mobile Access و Vostio Access Management در زمینهٔ محصول رقیب",
+      "native_text_character_count": 611,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "پانوشت در لایهٔ متن تکرار شده است؛ این تکرار نه صفحهٔ تکراری است و نه رکورد محتوایی مستقل.",
+        "ترتیب تیتر، ستون‌ها، کارت‌ها و زیرنویس‌ها در مرحلهٔ S02 باید با تصویر کنترل شود؛ ترتیب خام استخراج، ترتیب نهایی خواندن نیست."
+      ]
+    },
+    {
+      "pdf_page": 6,
+      "printed_page": 6,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "6 | Vingcard Novel"
+      ],
+      "native_folio_occurrences": 1,
+      "section_group": "SUSTAINABILITY",
+      "page_role": "sustainability_claims_and_components",
+      "original_heading_or_theme_en": "Environmentally Conscious by Design",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "پایداری و سبک‌سازی؛ نمودارهای درصدی بسته‌بندی و وزن؛ نصب و نگهداری",
+      "native_text_character_count": 1991,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "ترتیب تیتر، ستون‌ها، کارت‌ها و زیرنویس‌ها در مرحلهٔ S02 باید با تصویر کنترل شود؛ ترتیب خام استخراج، ترتیب نهایی خواندن نیست."
+      ]
+    },
+    {
+      "pdf_page": 7,
+      "printed_page": 7,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "Vingcard Novel | 7",
+        "Vingcard Novel | 7"
+      ],
+      "native_folio_occurrences": 2,
+      "section_group": "SUSTAINABILITY",
+      "page_role": "sustainability_columns",
+      "original_heading_or_theme_en": "Bringing an End to Battery Waste & Replacement",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "گزینهٔ تغذیهٔ بدون باتری، مواد قابل بازیافت و بسته‌بندی پایدار",
+      "native_text_character_count": 1562,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "پانوشت در لایهٔ متن تکرار شده است؛ این تکرار نه صفحهٔ تکراری است و نه رکورد محتوایی مستقل.",
+        "ترتیب تیتر، ستون‌ها، کارت‌ها و زیرنویس‌ها در مرحلهٔ S02 باید با تصویر کنترل شود؛ ترتیب خام استخراج، ترتیب نهایی خواندن نیست."
+      ]
+    },
+    {
+      "pdf_page": 8,
+      "printed_page": 8,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "8 | Vingcard Novel"
+      ],
+      "native_folio_occurrences": 1,
+      "section_group": "DESIGN_AND_STYLE",
+      "page_role": "finish_options_and_customization",
+      "original_heading_or_theme_en": "Sleek Design Embodying Ultimate Elegance",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "شبکهٔ تصاویر گزینه‌های ظاهری و کادر سفارشی‌سازی پرداخت",
+      "native_text_character_count": 1057,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "ترتیب تیتر، ستون‌ها، کارت‌ها و زیرنویس‌ها در مرحلهٔ S02 باید با تصویر کنترل شود؛ ترتیب خام استخراج، ترتیب نهایی خواندن نیست."
+      ]
+    },
+    {
+      "pdf_page": 9,
+      "printed_page": 9,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "Vingcard Novel | 9",
+        "Vingcard Novel | 9"
+      ],
+      "native_folio_occurrences": 2,
+      "section_group": "DESIGN_AND_STYLE",
+      "page_role": "image_led_slogan",
+      "original_heading_or_theme_en": "Your style. Spot on.",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "تصویر غالب محصول همراه شعار کوتاه؛ صفحه خالی یا فاقد متن نیست",
+      "native_text_character_count": 61,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "پانوشت در لایهٔ متن تکرار شده است؛ این تکرار نه صفحهٔ تکراری است و نه رکورد محتوایی مستقل.",
+        "صفحهٔ غالباً تصویری است، ولی شعار کوتاه متن native دارد و نباید image-only ثبت شود."
+      ]
+    },
+    {
+      "pdf_page": 10,
+      "printed_page": 10,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "10 | Vingcard Novel"
+      ],
+      "native_folio_occurrences": 1,
+      "section_group": "INSTALLATION_AND_MOBILE_ACCESS",
+      "page_role": "installation_sequence",
+      "original_heading_or_theme_en": "Redefining the Concept of Effortless Installation",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "شرح نصب و چیدمان چهار تصویر شماره‌دار از مراحل نصب",
+      "native_text_character_count": 962,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "ترتیب تیتر، ستون‌ها، کارت‌ها و زیرنویس‌ها در مرحلهٔ S02 باید با تصویر کنترل شود؛ ترتیب خام استخراج، ترتیب نهایی خواندن نیست."
+      ]
+    },
+    {
+      "pdf_page": 11,
+      "printed_page": 11,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "Vingcard Novel | 11",
+        "Vingcard Novel | 11"
+      ],
+      "native_folio_occurrences": 2,
+      "section_group": "INSTALLATION_AND_MOBILE_ACCESS",
+      "page_role": "mobile_access_experience",
+      "original_heading_or_theme_en": "Mobile Access Adoption Made Simple",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "تجربهٔ ورود با موبایل و شرط فعال‌سازی با توافق مجوز نرم‌افزار",
+      "native_text_character_count": 872,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "پانوشت در لایهٔ متن تکرار شده است؛ این تکرار نه صفحهٔ تکراری است و نه رکورد محتوایی مستقل.",
+        "ترتیب تیتر، ستون‌ها، کارت‌ها و زیرنویس‌ها در مرحلهٔ S02 باید با تصویر کنترل شود؛ ترتیب خام استخراج، ترتیب نهایی خواندن نیست."
+      ]
+    },
+    {
+      "pdf_page": 12,
+      "printed_page": 12,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "12 | Vingcard Novel",
+        "12 | Vingcard Novel"
+      ],
+      "native_folio_occurrences": 2,
+      "section_group": "OPERATION",
+      "page_role": "operational_claims_and_scenario",
+      "original_heading_or_theme_en": "Setting a New Standard in Operational Efficiency",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "دوام، نگهداری و جلوگیری از آسیب در سناریوی نظافت؛ ادعاهای کمّی محدود به محصول منبع",
+      "native_text_character_count": 1324,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "پانوشت در لایهٔ متن تکرار شده است؛ این تکرار نه صفحهٔ تکراری است و نه رکورد محتوایی مستقل.",
+        "ترتیب تیتر، ستون‌ها، کارت‌ها و زیرنویس‌ها در مرحلهٔ S02 باید با تصویر کنترل شود؛ ترتیب خام استخراج، ترتیب نهایی خواندن نیست."
+      ]
+    },
+    {
+      "pdf_page": 13,
+      "printed_page": 13,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "Vingcard Novel | 13",
+        "Vingcard Novel | 13",
+        "Vingcard Novel | 13"
+      ],
+      "native_folio_occurrences": 3,
+      "section_group": "OPERATION",
+      "page_role": "environmental_specification_presentation",
+      "original_heading_or_theme_en": "Built to Withstand the Elements",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "شیوهٔ ارائهٔ مقاومت محیطی همراه تصاویر و اعداد دما؛ مشخصات سخت‌افزار رقیب",
+      "native_text_character_count": 585,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "پانوشت در لایهٔ متن تکرار شده است؛ این تکرار نه صفحهٔ تکراری است و نه رکورد محتوایی مستقل."
+      ]
+    },
+    {
+      "pdf_page": 14,
+      "printed_page": 14,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "14 | Vingcard Novel"
+      ],
+      "native_folio_occurrences": 1,
+      "section_group": "SECURITY_AND_COMPLIANCE",
+      "page_role": "security_compliance_and_cloud_management",
+      "original_heading_or_theme_en": "Surpassing Industry Expectations for Advanced Security",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "ادعاهای امنیت و گواهی‌ها؛ بخش مستقل دربارهٔ مدیریت دسترسی ابری و به‌روزرسانی نرم‌افزار",
+      "native_text_character_count": 1841,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "ترتیب تیتر، ستون‌ها، کارت‌ها و زیرنویس‌ها در مرحلهٔ S02 باید با تصویر کنترل شود؛ ترتیب خام استخراج، ترتیب نهایی خواندن نیست."
+      ]
+    },
+    {
+      "pdf_page": 15,
+      "printed_page": 15,
+      "printed_page_evidence": "visible_folio_matches_physical_page",
+      "native_folio_strings": [
+        "Vingcard Novel | 15",
+        "Vingcard Novel | 15"
+      ],
+      "native_folio_occurrences": 2,
+      "section_group": "SECURITY_AND_COMPLIANCE",
+      "page_role": "security_icon_list_and_cutaway",
+      "original_heading_or_theme_en": "Main Safety- and Security Features",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "فهرست آیکونی ویژگی‌های امنیتی و شرط گزینهٔ Online برای هشدار رویداد بلادرنگ",
+      "native_text_character_count": 725,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": [
+        "پانوشت در لایهٔ متن تکرار شده است؛ این تکرار نه صفحهٔ تکراری است و نه رکورد محتوایی مستقل.",
+        "ترتیب تیتر، ستون‌ها، کارت‌ها و زیرنویس‌ها در مرحلهٔ S02 باید با تصویر کنترل شود؛ ترتیب خام استخراج، ترتیب نهایی خواندن نیست."
+      ]
+    },
+    {
+      "pdf_page": 16,
+      "printed_page": null,
+      "printed_page_evidence": "no_visible_printed_folio",
+      "native_folio_strings": [],
+      "native_folio_occurrences": 0,
+      "section_group": "BACK_COVER",
+      "page_role": "back_cover_imprint",
+      "original_heading_or_theme_en": "Doc. Version: 04/2025",
+      "heading_kind": "source_heading_normalized",
+      "topic_fa": "پشت‌جلد با مشخصات نسخهٔ سند، ناشر، حق‌نشر و تماس‌های منطقه‌ای",
+      "native_text_character_count": 613,
+      "native_text_character_count_method": "len(PyMuPDF page.get_text(\"text\").strip()); includes repeated and covered native text",
+      "text_inventory_state": "native_content_text_present",
+      "width_pt": 612,
+      "height_pt": 792,
+      "rotation_degrees": 0,
+      "visual_review_status": "reviewed_no_blank_or_duplicate_page_detected",
+      "source_reference_type": "one_based_physical_pdf_page",
+      "publication_status": "research_only",
+      "reading_order_and_quality_notes_fa": []
+    }
+  ],
+  "visual_and_content_inventory_method": {
+    "method": "Original PDF byte/hash inspection; PyMuPDF and pypdf page parsing; Poppler pdfinfo and successful 100-dpi page renders; manual visual review of all four contact sheets; detailed footer/imprint views; independent full-page visual review.",
+    "page_count_verified": 16,
+    "all_pages_checked_in_contact_sheets": true,
+    "contact_sheet_ranges": [
+      [
+        1,
+        4
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        9,
+        12
+      ],
+      [
+        13,
+        16
+      ]
+    ],
+    "all_page_renders_unique": true,
+    "section_group_count": 9,
+    "paired_editorial_page_groups": 7,
+    "individual_cover_pages": [
+      1,
+      16
+    ],
+    "render_used_for_structure_only": true,
+    "source_page_image_crop_exported_to_repository": false,
+    "detailed_image_audit_not_done_in_S01": true,
+    "OCR_required_for_main_body_text": false,
+    "embedded_photo_or_UI_text_still_requires_visual_review_in_later_stages": true,
+    "later_visual_review_candidates": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reading_order_note_fa": "بروشور دارای ستون‌ها، کارت‌ها، فهرست دوصفحه‌ای، تصاویر شماره‌دار و متن روی عکس است. تیتر بعضی صفحات پس از بدنه در متن خام آمده است. S02 باید جایگاه و ترتیب دیداری را مبنا قرار دهد و پانوشت‌های تکراری یا پوشیده را جدا نگه دارد.",
+    "parser_compatibility_notes": [
+      {
+        "tool": "pypdf strict reader",
+        "observed_warning": "Xref table not zero-indexed. ID numbers for objects will be corrected.",
+        "severity": "non_blocking_parser_compatibility_note",
+        "observed_outcome": "All 16 pages parsed and text extracted successfully. No source bytes rewritten."
+      },
+      {
+        "tool": "PyMuPDF",
+        "is_repaired": false,
+        "observed_outcome": "All 16 pages opened and inspected; no password required."
+      },
+      {
+        "tool": "Poppler",
+        "observed_outcome": "pdfinfo succeeded and all 16 pages rendered with no command error."
+      }
+    ]
+  },
+  "restrictions_and_audit_flags": [
+    {
+      "pdf_pages": [
+        1,
+        16
+      ],
+      "issue": "This is the uploaded Vingcard Novel brochure with printed document version 04/2025.",
+      "control": "Use this edition as the source; do not infer current product availability, current certification status, an exact publication day or a separate copyright year."
+    },
+    {
+      "pdf_pages": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        12,
+        13,
+        15
+      ],
+      "issue": "Native extraction includes a covered cover-page folio and repeated running footers on several interior pages.",
+      "control": "Cite physical PDF pages; do not turn hidden or repeated running text into content records or duplicate pages."
+    },
+    {
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "issue": "The contents entries are distributed across the introductory spread, not in simple raw-text reading order.",
+      "control": "Preserve the five actual destination pages 6, 8, 10, 12 and 14 when indexing; these are source topics, not NSP section assignments."
+    },
+    {
+      "pdf_pages": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        13,
+        14,
+        15
+      ],
+      "issue": "Competitor hardware, materials, certifications, protocols and physical-performance claims are mixed with benefits and presentation ideas.",
+      "control": "In S02 retain source evidence with attribution as needed; exclude competitor models, hardware specifications and certificates from the S03 NSP feature bank. Hardware product identity is retained only as source identity."
+    },
+    {
+      "pdf_pages": [
+        6,
+        7,
+        12,
+        13
+      ],
+      "issue": "Quantitative environmental, durability, battery-life and temperature statements belong to this competitor product and include comparison or usage context.",
+      "control": "Later extraction must keep the original units, comparison basis and conditions. These figures are not NSP performance evidence or generic verified engineering rules."
+    },
+    {
+      "pdf_pages": [
+        5,
+        11,
+        14,
+        15
+      ],
+      "issue": "Mobile Access, Vostio Access Management, Apple Wallet and online event alarms appear alongside product-specific conditions.",
+      "control": "Software and guest-experience ideas may be researched with exact wording and page references. Preserve the software license condition on page 11 and the requires Online option condition on page 15. Do not infer equivalent NSP support or automatic GRMS/PMS/IPTV integration."
+    },
+    {
+      "pdf_pages": [
+        4,
+        14,
+        15
+      ],
+      "issue": "The overview visibly prints ANS BHMA while later security pages use ANSI BHMA and specific standard identifiers.",
+      "control": "Do not silently normalize the source wording in S02; record the local wording and flag any editorial correction separately. No certification is attributed to NSP."
+    },
+    {
+      "pdf_pages": [
+        9,
+        10,
+        11,
+        15
+      ],
+      "issue": "A photo-led slogan page, four installation photographs, a phone interface image and product cutaway contain presentation ideas.",
+      "control": "S04 may inspect these as visual references. Do not create hardware or software capabilities merely from appearance; do not treat this S01 inventory as completed image extraction."
+    },
+    {
+      "pdf_pages": [
+        16
+      ],
+      "issue": "The printed note says specifications may change and brochure image colors may differ from actual colors.",
+      "control": "Keep source limitations; competitor artwork is internal research material and requires original or separately authorized replacement for final NSP publication."
+    }
+  ],
+  "project_alignment": {
+    "editorial_structure_file": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "editorial_structure_revision": "2.3.0",
+    "editorial_structure_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "fixed_three_systems": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ],
+    "content_levels": [
+      "COMPANY",
+      "SOLUTION",
+      "SYSTEM",
+      "PRODUCT"
+    ],
+    "current_cover_title_fa": "صفحه اول کاتالوگ",
+    "current_identity_section_id": "IDENTITY_PAGES",
+    "current_identity_section_title_fa": "صفحات تنفس",
+    "historical_queue_and_mapping_vocabulary_not_rewritten_in_S01": true,
+    "final_idea_attachment_stage": "Defrag",
+    "source_page_format_is_not_target_NSP_page_format": true,
+    "nsp_product_capabilities_verified": 0,
+    "new_page_layouts_approved": 0,
+    "scope": "source_inventory_only",
+    "feature_library_changed": false,
+    "application_source_changed": false,
+    "portfolio_page_file_changed": false
+  },
+  "stage_contract": {
+    "S01_outputs_only": true,
+    "S02": "Extract exact English text with physical PDF page references and visual reading-order checks; separate visible content from hidden/repeated footers and keep all source conditions.",
+    "S03": "Translate and classify eligible slogans, scenarios and software ideas; exclude competitor hardware specifications from the feature bank.",
+    "S04": "Review distinct presentation styles and representative images with provenance and research-only rights.",
+    "S05": "Propose mappings using the current SECTIONS_STRUCTURE.json and stable identifiers; retain source type separately and do not create new system chapters.",
+    "S06": "Audit quotes, translations, page references, image provenance, mapping and claim boundaries.",
+    "S07": "Import only audited records into feature.json and feature.js with an actual commit and exact readback.",
+    "next_queue_cursor": {
+      "document_index": 7,
+      "document_id": "14",
+      "step_index": 1,
+      "step_id": "S02"
+    },
+    "next_stage": "S02 — استخراج متن دقیق",
+    "next_stage_requires_new_user_N_or_continue": true,
+    "next_stage_executed": false
+  }
+}
