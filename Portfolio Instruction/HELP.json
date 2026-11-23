@@ -1,7 +1,7 @@
 {
   "schema": "nsp-portfolio-editorial-structure-v1",
   "schema_version": 2,
-  "revision": "2.0.0",
+  "revision": "2.1.0",
   "updated_on": "2026-11-23",
   "language": "fa",
   "repository": "comboci/NSP-Portfolio-Builder",
@@ -165,7 +165,7 @@
     },
     {
       "section_id": "COVER",
-      "title_fa": "کاور داخلی کاتالوگ",
+      "title_fa": "صفحه اول کاتالوگ",
       "kind": "catalog_section",
       "content_level": null,
       "order": 2,
@@ -177,7 +177,7 @@
       "purpose_fa": "اولین صفحهٔ داخل زونکن؛ ایجاد تصویر هویت‌ساز و معرفی کلی کاتالوگ.",
       "user_decisions_fa": [
         {
-          "text": "کاور داخلی مستقل از جلد زونکن است.",
+          "text": "صفحه اول کاتالوگ پس از جلد بیرونی زونکن قرار می‌گیرد؛ این صفحه مستقل از جلد فیزیکی است.",
           "status": "approved"
         },
         {
@@ -241,8 +241,8 @@
       "row": 2
     },
     {
-      "section_id": "BISMILLAH",
-      "title_fa": "بسم‌الله / In the Name of God",
+      "section_id": "IDENTITY_PAGES",
+      "title_fa": "صفحات هویتی",
       "kind": "catalog_section",
       "content_level": null,
       "order": 3,
@@ -251,50 +251,77 @@
       ],
       "included_in_numbered_catalog_pages": true,
       "page_count_locked": false,
-      "purpose_fa": "صفحهٔ مستقل و کم‌تراکم با پیام آغازین.",
+      "purpose_fa": "سکشن عمومی برای یک یا چند صفحهٔ مستقل و کم‌تراکمِ هویتی یا شعارمحور؛ می‌تواند حامل نماد ملی، پیام فرهنگی یا معنوی، شعار یا جملهٔ الهام‌بخش باشد. انتخاب مصداق، متن، تصویر و تعداد صفحات هنوز باز است.",
       "user_decisions_fa": [
         {
-          "text": "وجود سکشن مستقل بسم‌الله پذیرفته شده است.",
+          "text": "عنوان عمومی این سکشن «صفحات هویتی» است؛ نه سکشن اختصاصی «بسم‌الله» و نه محدود به یک شعار.",
           "status": "approved"
         },
         {
-          "text": "برای بانک ایده، مفهومِ صفحهٔ خلوت و جملهٔ کوتاه را از سبک‌های شعارمحور نیز می‌توان بررسی کرد؛ این تطبیق به معنای جایگزینی مفهوم مذهبی نیست.",
+          "text": "بسم‌الله، پرچم ایران، شعار کوتاه و جملهٔ الهام‌بخش نمونه‌های احتمالی محتوای این صفحات هستند؛ هیچ‌یک هنوز به‌عنوان محتوای قطعی انتخاب نشده‌اند.",
+          "status": "approved"
+        },
+        {
+          "text": "این بخش در ردیف سوم ساختار قرار دارد و می‌تواند بیش از یک صفحه داشته باشد؛ تغییر عنوان، جای صفحات واقعی کاتالوگ را به‌طور خودکار عوض نمی‌کند.",
           "status": "approved"
         }
       ],
       "analyst_proposals_fa": [
         {
-          "text": "از ایده‌های slogan/minimal statement صرفاً برای تحلیل چیدمان استفاده شود.",
+          "text": "هر صفحه را خلوت، تصویرمحور یا تایپوگرافی‌محور نگه داریم؛ ترکیب متن/نماد و جای قرارگیری با بررسی نمونه‌ها و تأیید نهایی تعیین شود.",
           "status": "proposed"
         }
       ],
       "required_data": [
         {
-          "key": "approved_phrase",
-          "description_fa": "عبارت فارسی/عربی/انگلیسی و ترجمهٔ تأییدشده",
+          "key": "content_choice",
+          "description_fa": "برای هر صفحه انتخاب نوع محتوا: نماد، عبارت، شعار، یا تصویر هویتی",
           "priority": "required",
           "status": "open"
         },
         {
-          "key": "typography",
-          "description_fa": "فونت، ترکیب‌بندی و فضای خالی",
+          "key": "approved_text_or_visual",
+          "description_fa": "متن نهایی و/یا فایل تصویری معتبر و دارای مجوز (از جمله پرچم ایران در صورت انتخاب)",
           "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "visual_style",
+          "description_fa": "تایپوگرافی، ترکیب‌بندی و میزان فضای خالی متناسب با هر پیام",
+          "priority": "required",
+          "status": "open"
+        },
+        {
+          "key": "page_placement",
+          "description_fa": "تعداد و جایگاه صفحه‌های هویتی در معماری کاتالوگ",
+          "priority": "optional",
           "status": "open"
         },
         {
           "key": "background",
-          "description_fa": "رنگ زمینه یا طرح بسیار خلوت",
+          "description_fa": "رنگ زمینه یا سبک تصویر در صورت نیاز",
           "priority": "optional",
           "status": "open"
         }
       ],
       "unresolved_fa": [
-        "متن، زبان، خوشنویسی/تایپوگرافی و طرح نهایی بازند."
+        "کدام نمونه‌ها واقعاً استفاده شوند، چند صفحه لازم است و هر صفحه کجا قرار گیرد؟",
+        "متن، تصویر، زبان، اصالت فایل‌ها و طراحی نهایی هنوز تأیید نشده‌اند."
       ],
       "research_references": [],
       "attached_idea_ids": [],
       "design_selection_status": "not_selected",
-      "row": 3
+      "row": 3,
+      "legacy_section_ids": [
+        "BISMILLAH"
+      ],
+      "content_examples_fa": [
+        "بسم‌الله یا پیام فرهنگی/معنوی",
+        "پرچم ایران یا دیگر نمادهای هویت ملی",
+        "شعار کوتاه مرتبط با برند",
+        "جملهٔ الهام‌بخش یا پیام ارزشی"
+      ],
+      "repeatable": true
     },
     {
       "section_id": "COMPANY_INTRO",
@@ -897,7 +924,8 @@
     "جلد زونکن سکشن مستقل از کاور داخلی باشد و طراحی آن بعداً نهایی شود.",
     "این فایل داده‌ای نباید خودکار سورس برنامه، صفحات واقعی، صف N یا feature.json را تغییر دهد.",
     "HELP.md پس از انتقال کامل محتوا به HELP.json از مخزن حذف شود و دو سند موازی نگهداری نشوند.",
-    "هر سکشن دارای ردیف یک‌مبنایی باشد؛ ترتیب با Drag & Drop در Portfolio Builder قابل تغییر و در پروژه ذخیره شود."
+    "هر سکشن دارای ردیف یک‌مبنایی باشد؛ ترتیب با Drag & Drop در Portfolio Builder قابل تغییر و در پروژه ذخیره شود.",
+    "نام سکشن دوم «صفحه اول کاتالوگ» و نام سکشن سوم «صفحات هویتی» است؛ این سکشن می‌تواند شامل بسم‌الله، پرچم ایران، شعار یا جملات الهام‌بخش باشد و به یک نمونه محدود نمی‌شود."
   ],
   "style_and_evidence_rules_fa": [
     "هیچ مشخصات فنی/ادعای عددی رقیب بدون سند NSP به محصولات NSP نسبت داده نشود.",
@@ -915,7 +943,7 @@
       "project file/General-Portfolio.json",
       "project evolution/CATALOG_RESEARCH_N_QUEUE.json"
     ],
-    "section_id_compatibility": "شناسه‌های اصلی از واژگان فعلی صف N گرفته شده‌اند؛ BINDER_COVER فقط به این فایل اضافه شده است.",
+    "section_id_compatibility": "شناسهٔ سکشن عمومی هویتی به IDENTITY_PAGES تغییر یافت؛ شناسهٔ تاریخی BISMILLAH در legacy_section_ids حفظ شده و نمایشگر برای ترتیب‌های ذخیره‌شدهٔ قدیمی نگاشت سازگاری دارد. سند migrated_help_md فقط آرشیو تاریخی است.",
     "update_only_help_json": true
   },
   "migrated_help_md": {
@@ -1090,7 +1118,7 @@
     "contiguous": true,
     "stable_identifier": "section_id",
     "reordering_effect_fa": "جابه‌جایی فقط ترتیب مفهومی سکشن‌ها را تغییر می‌دهد؛ شناسه‌ها و صفحه‌های واقعی ثابت می‌مانند.",
-    "physical_cover_rule_fa": "BINDER_COVER سکشن نخست مستقل از کاور داخلی COVER است و در شمارش صفحات داخلی قرار نمی‌گیرد.",
+    "physical_cover_rule_fa": "BINDER_COVER جلد بیرونی زونکن است و در شمارش صفحات داخلی قرار نمی‌گیرد؛ COVER نخستین صفحهٔ داخلی کاتالوگ است.",
     "builder_persistence_fa": "تغییرات ترتیب در پروژهٔ مرورگر ذخیره می‌شود؛ برای انتقال تغییر به GitHub باید HELP.json صادرشده جایگزین فایل مخزن شود."
   },
   "section_ui_spec": {
