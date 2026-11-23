@@ -2,7 +2,7 @@
   "schema": "nsp-catalog-research-n-queue-v1",
   "schema_version": 1,
   "created_on": "2026-11-22",
-  "last_updated_on": "2026-11-22",
+  "last_updated_on": "2026-11-23",
   "project": "NSP Portfolio Builder",
   "repository": "comboci/NSP-Portfolio-Builder",
   "branch": "main",
@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 116,
+    "total_pending_steps": 115,
     "completed_new_documents": 1,
     "remaining_new_documents": 17
   },
   "cursor": {
     "document_index": 4,
     "document_id": "10",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -569,11 +569,25 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/10_ABB_Hospitality_GRMS_S04_visual_styles.json",
+            "Portfolio Instruction/research/assets/abb10/ABB10_01_hero_hospitality_cover.webp",
+            "Portfolio Instruction/research/assets/abb10/ABB10_02_configurable_panel_callouts.webp",
+            "Portfolio Instruction/research/assets/abb10/ABB10_02_color_finish_swatches.webp",
+            "Portfolio Instruction/research/assets/abb10/ABB10_03_central_monitoring_hero.webp",
+            "Portfolio Instruction/research/assets/abb10/ABB10_03_room_modes_iconography.webp",
+            "Portfolio Instruction/research/assets/abb10/ABB10_04_integration_three_systems_flow.webp",
+            "Portfolio Instruction/research/assets/abb10/ABB10_05_guest_app_iptv_lifestyle.webp",
+            "Portfolio Instruction/research/assets/abb10/ABB10_06_network_security_topology.webp",
+            "Portfolio Instruction/research/assets/abb10/ABB10_07_occupancy_timing_flow.webp",
+            "Portfolio Instruction/research/assets/abb10/ABB10_07_hotel_room_3d_map.webp",
+            "Portfolio Instruction/research/assets/abb10/ABB10_08_equipment_family_comparison_grid.webp",
+            "Portfolio Instruction/research/assets/abb10/ABB10_09_hospitality_closing_editorial.webp"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "d866c2f3a20fd6f061297436cb6424f38806e532",
+          "notes": "بررسی تصویری ۱۲ صفحه PDF ABB؛ ثبت ۱۲ مرجع کوچک از ۹ صفحه شامل پنل، داشبورد، حالت‌های اتاق، PMS، IPTV، امنیت، حضور، مدل سه‌بعدی و سبک نمایش تجهیزات؛ تصاویر فاقد رمز ورود و QR؛ فقط پژوهش داخلی."
         },
         {
           "id": "S05",
