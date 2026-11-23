@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 111,
+    "total_pending_steps": 110,
     "completed_new_documents": 2,
     "remaining_new_documents": 16
   },
   "cursor": {
     "document_index": 5,
     "document_id": "11",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -653,11 +653,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/11_ABB_Hospitality_Portfolio_S02_english_text.json"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "5b8248a2178cdddd205cc5e74ce3e3946167d131",
+          "notes": "بررسی ۱۰۰ صفحه فیزیکی، استخراج ۲۰۸ گزیده انگلیسی با تطبیق مستقیم متن، ۱۵ هشدار ادعا/عدد و ۱۸ گروه جدول/نمودار؛ اسلاید ۸۷ داخلی کاملاً مستثنا و متن اسلاید ۱۰۰ غیرقابل استخراج؛ هیچ فیچر NSP تأیید نشد."
         },
         {
           "id": "S03",
@@ -705,7 +707,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S01"
+      "last_successful_stage": "S02"
     },
     {
       "id": "12",
