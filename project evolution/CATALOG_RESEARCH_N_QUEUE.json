@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 114,
+    "total_pending_steps": 113,
     "completed_new_documents": 1,
     "remaining_new_documents": 17
   },
   "cursor": {
     "document_index": 4,
     "document_id": "10",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -603,11 +603,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/10_ABB_Hospitality_GRMS_S06_audit.json"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "4b46813e2cbc4c3adbcd60167744cf6926612e72",
+          "notes": "ممیزی ۱۲ صفحه، تطبیق ۱۰۱ رکورد متنی و ۱۲ تصویر؛ ۹۶ مورد مجاز فقط برای پژوهش، ۵ مورد قرنطینه و اصلاح دقیق ۶ ترجمه وضعیت اتاق برای S07؛ ادعای تایید شده NSP صفر."
         },
         {
           "id": "S07",
