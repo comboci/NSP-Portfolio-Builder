@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 109,
+    "total_pending_steps": 108,
     "completed_new_documents": 2,
     "remaining_new_documents": 16
   },
   "cursor": {
     "document_index": 5,
     "document_id": "11",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -675,11 +675,32 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/11_ABB_Hospitality_Portfolio_S04_visual_styles.json",
+            "Portfolio Instruction/research/assets/abb11/ABB11_01_hotel_cover_photo.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_05_value_icon_modules.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_07_hotel_axonometric_map.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_08_architecture_layers.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_14_benefits_considerations.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_15_custom_panel_interface.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_16_monitoring_context_photo.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_18_room_mode_icons.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_22_finishes_matrix.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_23_room_device_callouts.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_29_guestflow_holistic.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_30_room_cutaway.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_34_vision_dashboard.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_35_editor_commissioning.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_39_presence_layout.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_40_lighting_room_photo.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_71_energy_architecture.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_79_energy_cloud_dashboard.webp",
+            "Portfolio Instruction/research/assets/abb11/ABB11_97_hotel_case_photo.webp"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "b084b947c7e6f1cd9a2deb37d642823db39a23a2",
+          "notes": "بازبینی تصویری ۱۰۰ اسلاید و استخراج ۱۹ برش سبک متمایز WebP با شماره صفحه، محدوده برش، SHA256 و Git Blob؛ حذف اسلاید داخلی ۸۷ و نواحی QR/اطلاعات حساس؛ صرفاً پژوهش و فاقد حق بازنشر تجاری یا تأیید قابلیت NSP."
         },
         {
           "id": "S05",
@@ -709,7 +730,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S03"
+      "last_successful_stage": "S04"
     },
     {
       "id": "12",
