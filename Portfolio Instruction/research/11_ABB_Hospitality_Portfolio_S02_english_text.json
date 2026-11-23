@@ -1,0 +1,2764 @@
+{
+  "schema": "nsp-catalog-research-s02-english-extract-v1",
+  "stage": "S02",
+  "stage_key": "source_text_extraction",
+  "status": "completed_with_source_claim_gates",
+  "created_on": "2026-11-23",
+  "project": "NSP Portfolio Builder",
+  "repo": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "document_id": "11",
+  "source_pdf": {
+    "company": "ABB",
+    "filename": "11_ABB_Hospitality Portfolio 2026.pdf",
+    "library_path": "/11_ABB_Hospitality Portfolio 2026.pdf",
+    "pdf_pages": 100,
+    "source_sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+    "publication_year_from_cover": 2026,
+    "publication_month_verified": false,
+    "S01_inventory": "Portfolio Instruction/research/11_ABB_Hospitality_Portfolio_S01_source_inventory.json"
+  },
+  "scope": {
+    "all_100_PDF_pages_accounted_for": true,
+    "native_text_read_for_99_pages": true,
+    "slide_100_empty_text_layer": true,
+    "slide_87_excluded_from_excerpts_and_source_text_storage": true,
+    "original_pdf_text_not_republished": true,
+    "method": "Selected short exact English phrase matches from native PDF page text; original PDF remains the full text source.",
+    "all_selected_quotes_checked_against_original_native_text": true,
+    "no_OCR_used": true,
+    "demo_credentials_or_QR_payloads_republished": false,
+    "competitor_device_model_spec_lists_republished": false,
+    "no_competitor_certification_attributed_to_NSP": true,
+    "no_translation_until_S03": true,
+    "no_images_until_S04": true,
+    "no_source_or_application_code_changes": true
+  },
+  "statistics": {
+    "PDF_pages_read_and_mapped": 100,
+    "pages_with_native_text": 99,
+    "zero_text_pages": [
+      100
+    ],
+    "pages_restricted_from_quotation": [
+      87
+    ],
+    "total_native_extracted_characters_excluding_restricted": 110372,
+    "pages_with_curated_fragments": 62,
+    "short_verified_English_source_fragments": 208,
+    "exact_normalized_quote_matches": 208,
+    "source_claims_and_cautions_flagged": 15,
+    "claim_evidence_partial_matches": 0,
+    "source_visual_table_diagram_structures": 18,
+    "S01_group_count": 23,
+    "new_NSP_capabilities_verified": 0
+  },
+  "pages": [
+    {
+      "pdf_page": 1,
+      "section_group": "COVER",
+      "S01_topic_en": "Thinking Hotels — Portfolio 2026",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 1",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "THINKING HOTELS",
+        "Built to think. Designed to impress.",
+        "PORTFOLIO 2026"
+      ],
+      "fragment_count": 3,
+      "source_headlines_en": [
+        "PORTFOLIO 2026"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 105,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 2,
+      "section_group": "INDUSTRY_CONTEXT",
+      "S01_topic_en": "Hospitality overview, statistics and ABB benefits",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 2",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "HOSPITALITY"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text"
+      ],
+      "native_text_char_count": 20,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 3,
+      "section_group": "INDUSTRY_CONTEXT",
+      "S01_topic_en": "Hospitality overview, statistics and ABB benefits",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 3",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Sustainability and energy consumption – 2025 stats",
+        "By 2050",
+        "Around 60%",
+        "Hospitality HOTELS"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "sector_metrics_are_third_party_source_claims"
+      ],
+      "native_text_char_count": 900,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 4,
+      "section_group": "INDUSTRY_CONTEXT",
+      "S01_topic_en": "Hospitality overview, statistics and ABB benefits",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 4",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Thinking Hotels",
+        "guest experience",
+        "operational efficiency",
+        "guest experience while promoting sustainability and"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "Thinking Hotels"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 435,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 5,
+      "section_group": "INDUSTRY_CONTEXT",
+      "S01_topic_en": "Hospitality overview, statistics and ABB benefits",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 5",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Key benefits",
+        "Sustainability",
+        "Operational efficiency",
+        "Design aesthetics"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 1884,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 6,
+      "section_group": "HOTEL_OVERVIEW",
+      "S01_topic_en": "Comprehensive hotel solutions and integrated architecture",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 6",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "2026 Portfolio"
+      ],
+      "fragment_count": 1,
+      "source_headlines_en": [
+        "ABB"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text"
+      ],
+      "native_text_char_count": 40,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 7,
+      "section_group": "HOTEL_OVERVIEW",
+      "S01_topic_en": "Comprehensive hotel solutions and integrated architecture",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 7",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Comprehensive ABB solutions",
+        "Guest room",
+        "Front desk",
+        "For every area of your hotel"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 1139,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 8,
+      "section_group": "HOTEL_OVERVIEW",
+      "S01_topic_en": "Comprehensive hotel solutions and integrated architecture",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 8",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Smart and scalable: our integrated system architecture",
+        "property management systems",
+        "room entertainment",
+        "concierge services"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 1583,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 9,
+      "section_group": "GRMS_INTRO",
+      "S01_topic_en": "Guest Room Management Solutions",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 9",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "SOLUTIONS (GRMS)"
+      ],
+      "fragment_count": 1,
+      "source_headlines_en": [
+        "GUEST ROOM"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text"
+      ],
+      "native_text_char_count": 38,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 10,
+      "section_group": "GRMS_INTRO",
+      "S01_topic_en": "Guest Room Management Solutions",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 10",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Guest room management system",
+        "Smart hotel rooms",
+        "Hospitality enabling products HOTELS",
+        "Smart hotel rooms offer"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 503,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 11,
+      "section_group": "GRMS_INTRO",
+      "S01_topic_en": "Guest Room Management Solutions",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 11",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Our approach to GRMS",
+        "Curtains / blinds control",
+        "Room Energy management",
+        "Do not disturb"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "Our approach to GRMS"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 885,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 12,
+      "section_group": "KNX_GRMS",
+      "S01_topic_en": "KNX-based room design and GRMS approach",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 12",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "GRMS SOLUTION"
+      ],
+      "fragment_count": 1,
+      "source_headlines_en": [
+        "GRMS SOLUTION"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text"
+      ],
+      "native_text_char_count": 23,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 13,
+      "section_group": "KNX_GRMS",
+      "S01_topic_en": "KNX-based room design and GRMS approach",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 13",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Flexibility",
+        "Reliability",
+        "Energy efficiency",
+        "Integration"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "General room design"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 951,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 14,
+      "section_group": "KNX_GRMS",
+      "S01_topic_en": "KNX-based room design and GRMS approach",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 14",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Guest Room Management System (GRMS)",
+        "Benefits",
+        "Considerations and challenges",
+        "Guest Room Management System (GRMS) HOTELS"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 2089,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 15,
+      "section_group": "ROOM_UI_SOFTWARE",
+      "S01_topic_en": "Guest experience and central monitoring software",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 15",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Guest experience",
+        "Customization and control",
+        "Fully customizable",
+        "Guest experience HOTELS"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 3167,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 16,
+      "section_group": "ROOM_UI_SOFTWARE",
+      "S01_topic_en": "Guest experience and central monitoring software",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 16",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Guest Room Management Software",
+        "Central monitoring",
+        "One configuration view",
+        "Detail view on every room"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 985,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 17,
+      "section_group": "ROOM_MODES",
+      "S01_topic_en": "Occupancy detection and room modes",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 17",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "DETECTION AND"
+      ],
+      "fragment_count": 1,
+      "source_headlines_en": [
+        "OCCUPANCY"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text"
+      ],
+      "native_text_char_count": 34,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 18,
+      "section_group": "ROOM_MODES",
+      "S01_topic_en": "Occupancy detection and room modes",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 18",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Occupancy detection and room modes",
+        "4 MAIN ROOM MODES",
+        "3 ADDITIONAL ROOM MODES",
+        "typically 10 minutes"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "room_modes_and_timer_are_ABB_specific"
+      ],
+      "native_text_char_count": 2811,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 19,
+      "section_group": "ROOM_INTEGRATIONS",
+      "S01_topic_en": "PMS integrations, guest convenience, security",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 19",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Integrations",
+        "Property Management System (PMS)",
+        "Certified integration",
+        "Guest check-in"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "demo_credentials_and_partner_certification_excluded"
+      ],
+      "native_text_char_count": 1865,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 20,
+      "section_group": "ROOM_INTEGRATIONS",
+      "S01_topic_en": "PMS integrations, guest convenience, security",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 20",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Guest convenience",
+        "mySmartSuite app",
+        "Valid only during the booked period",
+        "Make up my room"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "QR_and_guest_auth_payload_not_retained"
+      ],
+      "native_text_char_count": 2087,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 21,
+      "section_group": "ROOM_INTEGRATIONS",
+      "S01_topic_en": "PMS integrations, guest convenience, security",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 21",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Security and convenience",
+        "four-layered security",
+        "KNX IP-Secure",
+        "Network segmentation"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 1348,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 22,
+      "section_group": "GRMS_COMPONENTS",
+      "S01_topic_en": "Room panels, sensor portfolio, BYOD, wiring aesthetics",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 22",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "ABB Guest room sensor portfolio",
+        "A world of design choices",
+        "ABB Guest room sensor portfolio HOTELS",
+        "Unmatched variety: A world of design choices"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 1244,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 23,
+      "section_group": "GRMS_COMPONENTS",
+      "S01_topic_en": "Room panels, sensor portfolio, BYOD, wiring aesthetics",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 23",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Guest Room Management System (GRMS)",
+        "Guest Room Management System (GRMS)​ HOTELS",
+        "Bathroom Room thermostat Bathroom Room thermostat",
+        "GP-1: GRCP: Guest room GP-1: GRCP: Guest room Outside"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 1519,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 24,
+      "section_group": "GRMS_COMPONENTS",
+      "S01_topic_en": "Room panels, sensor portfolio, BYOD, wiring aesthetics",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 24",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "GRMS third-party integration",
+        "room controls from lighting",
+        "Here guest uses this own smart device (IOS/Android) when guest checks-in",
+        "room they are provided with QR code either via email or located in room"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "GRMS third-party integration"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "QR_and_guest_auth_payload_not_retained"
+      ],
+      "native_text_char_count": 855,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 25,
+      "section_group": "GRMS_COMPONENTS",
+      "S01_topic_en": "Room panels, sensor portfolio, BYOD, wiring aesthetics",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 25",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Wiring accessories",
+        "Design ranges",
+        "Wiring accessories HOTELS",
+        "VDE Standard British Standard (BS) Italian Standard American Standard"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 395,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 26,
+      "section_group": "GUESTFLOW",
+      "S01_topic_en": "ABB GuestFlow hardware and software suite",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 26",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "ABB GuestFlow",
+        "GRMS SOLUTION"
+      ],
+      "fragment_count": 2,
+      "source_headlines_en": [
+        "GRMS SOLUTION"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text"
+      ],
+      "native_text_char_count": 27,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 27,
+      "section_group": "GUESTFLOW",
+      "S01_topic_en": "ABB GuestFlow hardware and software suite",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 27",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "ABB GuestFlow",
+        "Smarter rooms. Better stays.",
+        "Guest Room Management System (GRMS)",
+        "ABB GuestFlow HOTELS"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 894,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 28,
+      "section_group": "GUESTFLOW",
+      "S01_topic_en": "ABB GuestFlow hardware and software suite",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 28",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "GuestFlow",
+        "Purpose-built Design",
+        "GuestFlow HOTELS",
+        "Purpose-built Design: Stable and Reliable: Premium value: Cost Efficiency: Easy installation"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 1213,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 29,
+      "section_group": "GUESTFLOW",
+      "S01_topic_en": "ABB GuestFlow hardware and software suite",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 29",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "GRMS visualization",
+        "Secure IP Connection",
+        "GuestFlow HOTELS",
+        "Control Panel"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "PMS_partner_certification_not_NSP"
+      ],
+      "native_text_char_count": 2110,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 30,
+      "section_group": "GUESTFLOW",
+      "S01_topic_en": "ABB GuestFlow hardware and software suite",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 30",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Standard Room offering",
+        "Room Energy and HVAC control",
+        "Occupancy Detection",
+        "Lighting Control"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "GuestFlow"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 559,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 31,
+      "section_group": "GUESTFLOW",
+      "S01_topic_en": "ABB GuestFlow hardware and software suite",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 31",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "GuestFlow HOTELS",
+        "Frontend devices | Room control",
+        "Glass & Metal Glass",
+        "High Quality Finishes Black"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 929,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 32,
+      "section_group": "GUESTFLOW",
+      "S01_topic_en": "ABB GuestFlow hardware and software suite",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 32",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "GuestFlow",
+        "Backend Devices",
+        "Controllers",
+        "GuestFlow HOTELS"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 2025,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 33,
+      "section_group": "GUESTFLOW",
+      "S01_topic_en": "ABB GuestFlow hardware and software suite",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 33",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "GuestFlow HOTELS",
+        "Controller specifications",
+        "Model Image I/O Power supply LED Size Certification Protocol support Mechanical structure",
+        "23 Relay, 3 AO,"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded"
+      ],
+      "native_text_char_count": 2677,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 34,
+      "section_group": "GUESTFLOW",
+      "S01_topic_en": "ABB GuestFlow hardware and software suite",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 34",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "GuestFlow Vision",
+        "Guest Room Management Software Overview",
+        "Real-Time Room Visualization",
+        "GuestFlow Vision HOTELS"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 1197,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 35,
+      "section_group": "GUESTFLOW",
+      "S01_topic_en": "ABB GuestFlow hardware and software suite",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 35",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "GuestFlow Editor",
+        "Commissioning software",
+        "Ready-made templates",
+        "GuestFlow Editor HOTELS"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 545,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 36,
+      "section_group": "GUESTFLOW",
+      "S01_topic_en": "ABB GuestFlow hardware and software suite",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 36",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "GuestFlow HOTELS",
+        "Complementary WA Ranges from ABB – British Standard",
+        "Millenium Glass",
+        "Real Glass , Ultra Thin, Modular Design"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 1153,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 37,
+      "section_group": "LIGHTING",
+      "S01_topic_en": "Lighting, shading and presence detection",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 37",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "LIGHTING AND",
+        "SHADING CONTROL"
+      ],
+      "fragment_count": 2,
+      "source_headlines_en": [
+        "LIGHTING AND"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text"
+      ],
+      "native_text_char_count": 28,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 38,
+      "section_group": "LIGHTING",
+      "S01_topic_en": "Lighting, shading and presence detection",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 38",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Field layer"
+      ],
+      "fragment_count": 1,
+      "source_headlines_en": [
+        "Energy management Guest room management"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "recurring_hotel_architecture_diagram_not_new_feature"
+      ],
+      "native_text_char_count": 2013,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 39,
+      "section_group": "LIGHTING",
+      "S01_topic_en": "Lighting, shading and presence detection",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 39",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Presence and Movement detection",
+        "Smart lighting",
+        "Climate control",
+        "High-frequency presence & Smart lighting & Climate control"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "Presence and Movement detection"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 1021,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 40,
+      "section_group": "LIGHTING",
+      "S01_topic_en": "Lighting, shading and presence detection",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 40",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Lighting and shading control",
+        "Automated daylight control",
+        "Automated daylight control Premium DALI Gateway",
+        "The JSB/S controller, the FW/S programmer, ABB’s Gateway Premium allows for variable"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "Lighting and shading control"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 976,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 41,
+      "section_group": "HVAC",
+      "S01_topic_en": "HVAC control and building automation",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 41",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "HVAC CONTROL"
+      ],
+      "fragment_count": 1,
+      "source_headlines_en": [
+        "HVAC CONTROL"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text"
+      ],
+      "native_text_char_count": 12,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 42,
+      "section_group": "HVAC",
+      "S01_topic_en": "HVAC control and building automation",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 42",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "system workstation ABB Cloud system workstation"
+      ],
+      "fragment_count": 1,
+      "source_headlines_en": [
+        "Energy management Guest room management"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "recurring_hotel_architecture_diagram_not_new_feature"
+      ],
+      "native_text_char_count": 2013,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 43,
+      "section_group": "HVAC",
+      "S01_topic_en": "HVAC control and building automation",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 43",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "HVAC Building Automation & Control",
+        "open protocol",
+        "HVAC Building Automation & Control HOTELS",
+        "building solutions, open protocol building controls, and maximizes ROI by allowing buildings to scale and adapt as"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 904,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 44,
+      "section_group": "HVAC",
+      "S01_topic_en": "HVAC control and building automation",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 44",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "HVAC Building Automation & Control",
+        "HVAC Building Automation & Control HOTELS",
+        "building controller designed to operate on design with option modules for expanded",
+        "Controller (B-BC) for integration with hardware security module (HSM), role-"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 1133,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 45,
+      "section_group": "POWER_OVERVIEW",
+      "S01_topic_en": "Power distribution overview",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 45",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Enabling Solutions"
+      ],
+      "fragment_count": 1,
+      "source_headlines_en": [
+        "POWER"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text"
+      ],
+      "native_text_char_count": 37,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 46,
+      "section_group": "POWER_OVERVIEW",
+      "S01_topic_en": "Power distribution overview",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 46",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "system workstation ABB Cloud system workstation"
+      ],
+      "fragment_count": 1,
+      "source_headlines_en": [
+        "Energy management Guest room management"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "recurring_hotel_architecture_diagram_not_new_feature"
+      ],
+      "native_text_char_count": 2013,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 47,
+      "section_group": "POWER_OVERVIEW",
+      "S01_topic_en": "Power distribution overview",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 47",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Power Distribution",
+        "• Computers, lights, heating, and ventilation systems",
+        "and energy-efficient distribution system.",
+        "consumption monitored and optimized."
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "Power Distribution"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 552,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 48,
+      "section_group": "MEDIUM_VOLTAGE",
+      "S01_topic_en": "Medium voltage, SF6-free switchgear",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 48",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "MEDIUM VOLTAGE"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text",
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 34,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 49,
+      "section_group": "MEDIUM_VOLTAGE",
+      "S01_topic_en": "Medium voltage, SF6-free switchgear",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 49",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "The next stage in the SF6-Free journey"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 613,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 50,
+      "section_group": "MEDIUM_VOLTAGE",
+      "S01_topic_en": "Medium voltage, SF6-free switchgear",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 50",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Main functional units"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 510,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 51,
+      "section_group": "MEDIUM_VOLTAGE",
+      "S01_topic_en": "Medium voltage, SF6-free switchgear",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 51",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Service continuity"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 1834,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 52,
+      "section_group": "MEDIUM_VOLTAGE",
+      "S01_topic_en": "Medium voltage, SF6-free switchgear",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 52",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Main benefits"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 773,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 53,
+      "section_group": "MEDIUM_VOLTAGE",
+      "S01_topic_en": "Medium voltage, SF6-free switchgear",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 53",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Main benefits"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 771,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 54,
+      "section_group": "MEDIUM_VOLTAGE",
+      "S01_topic_en": "Medium voltage, SF6-free switchgear",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 54",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "UniSec Air Smart Solution"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 2073,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 55,
+      "section_group": "MEDIUM_VOLTAGE",
+      "S01_topic_en": "Medium voltage, SF6-free switchgear",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 55",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "MEDIUM VOLTAGE"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text",
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 50,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 56,
+      "section_group": "MEDIUM_VOLTAGE",
+      "S01_topic_en": "Medium voltage, SF6-free switchgear",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 56",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "SafeRing/SafePlus product portfolio"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 1559,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 57,
+      "section_group": "MEDIUM_VOLTAGE",
+      "S01_topic_en": "Medium voltage, SF6-free switchgear",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 57",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "SafeRing/SafePlus Air 24kV"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 1690,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 58,
+      "section_group": "MEDIUM_VOLTAGE",
+      "S01_topic_en": "Medium voltage, SF6-free switchgear",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 58",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "SafeRing/SafePlus Air 24kV"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 1910,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 59,
+      "section_group": "MEDIUM_VOLTAGE",
+      "S01_topic_en": "Medium voltage, SF6-free switchgear",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 59",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Safety"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 820,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 60,
+      "section_group": "LOW_VOLTAGE",
+      "S01_topic_en": "Low voltage distribution",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 60",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "LOW VOLTAGE"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 24,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 61,
+      "section_group": "LOW_VOLTAGE",
+      "S01_topic_en": "Low voltage distribution",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 61",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 1619,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 62,
+      "section_group": "LOW_VOLTAGE",
+      "S01_topic_en": "Low voltage distribution",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 62",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 1474,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 63,
+      "section_group": "LOW_VOLTAGE",
+      "S01_topic_en": "Low voltage distribution",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 63",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "LOW VOLTAGE"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 28,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 64,
+      "section_group": "SUB_DISTRIBUTION",
+      "S01_topic_en": "Sub/final distribution protection and enclosures",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 64",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "PRODUCTS AND"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 73,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 65,
+      "section_group": "SUB_DISTRIBUTION",
+      "S01_topic_en": "Sub/final distribution protection and enclosures",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 65",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Products and Solutions for Sub and Final Distribution"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 580,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 66,
+      "section_group": "SUB_DISTRIBUTION",
+      "S01_topic_en": "Sub/final distribution protection and enclosures",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 66",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Products and Solutions for Sub and Final Distribution"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 1355,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 67,
+      "section_group": "SUB_DISTRIBUTION",
+      "S01_topic_en": "Sub/final distribution protection and enclosures",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 67",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Protection devices"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 876,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 68,
+      "section_group": "SUB_DISTRIBUTION",
+      "S01_topic_en": "Sub/final distribution protection and enclosures",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 68",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Enclosures for Sub and Final Distribution"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 432,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 69,
+      "section_group": "ENERGY_MONITORING",
+      "S01_topic_en": "InSite energy management, meters and cloud",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 69",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "ENERGY"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text"
+      ],
+      "native_text_char_count": 17,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 70,
+      "section_group": "ENERGY_MONITORING",
+      "S01_topic_en": "InSite energy management, meters and cloud",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 70",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Energy management"
+      ],
+      "fragment_count": 1,
+      "source_headlines_en": [
+        "Energy management Guest room management"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "recurring_hotel_architecture_diagram_not_new_feature"
+      ],
+      "native_text_char_count": 2013,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 71,
+      "section_group": "ENERGY_MONITORING",
+      "S01_topic_en": "InSite energy management, meters and cloud",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 71",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "InSite Energy Management System",
+        "Smart auxiliary",
+        "InSite Energy Management System provide immediate, on-site",
+        "straight-forward system"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "Local HMI Local webserver"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 5080,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 72,
+      "section_group": "ENERGY_MONITORING",
+      "S01_topic_en": "InSite energy management, meters and cloud",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 72",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "InSite energy management system",
+        "KEY BENEFITS",
+        "The InSite energy management system optimizes your installation by",
+        "protecting, monitoring, measuring, and ensuring smart connectivity. It is Control unit Control unit"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "InSite energy management system"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded"
+      ],
+      "native_text_char_count": 2431,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 73,
+      "section_group": "ENERGY_MONITORING",
+      "S01_topic_en": "InSite energy management, meters and cloud",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 73",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Key functionalities of InSite energy management system",
+        "Local monitoring",
+        "Third party SCADA/EMS",
+        "Third party field devices Local monitoring Third party SCADA/EMS"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "Key functionalities of InSite energy management system"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 1135,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 74,
+      "section_group": "ENERGY_MONITORING",
+      "S01_topic_en": "InSite energy management, meters and cloud",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 74",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Branch monitoring sensors",
+        "real-time system status",
+        "Efficient energy use and continuous service are essential, and CMS branch",
+        "monitoring sensors offer a compact solution for ensuring energy efficiency"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Solid-core sensor"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded"
+      ],
+      "native_text_char_count": 1666,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 75,
+      "section_group": "ENERGY_MONITORING",
+      "S01_topic_en": "InSite energy management, meters and cloud",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 75",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Smart accessories",
+        "monitoring, alerts",
+        "The integration of smart and digital devices into the InSite",
+        "energy management system enhances monitoring, alerts,"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "Smart accessories"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded"
+      ],
+      "native_text_char_count": 1626,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 76,
+      "section_group": "ENERGY_MONITORING",
+      "S01_topic_en": "InSite energy management, meters and cloud",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 76",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "MID Energy Meters",
+        "energy consumption",
+        "ABB Energy meters provide a detailed picture of the energy",
+        "consumption and the specific areas where energy is used."
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "MID Energy Meters"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded"
+      ],
+      "native_text_char_count": 1299,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 77,
+      "section_group": "ENERGY_MONITORING",
+      "S01_topic_en": "InSite energy management, meters and cloud",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 77",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "M4M Network Analyzers",
+        "Real-time monitoring",
+        "As energy costs rise, tracking electricity consumption is essential for businesses.",
+        "ABB’s network analyzers enable real-time monitoring of power consumption and power"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "M4M Network Analyzers"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "competitor_hardware_models_and_specs_excluded"
+      ],
+      "native_text_char_count": 1758,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 78,
+      "section_group": "ENERGY_MONITORING",
+      "S01_topic_en": "InSite energy management, meters and cloud",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 78",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "InSite Energy Pro",
+        "cloud-based solution",
+        "upcoming fw release 1.4",
+        "Elevating energy efficiency from ground to cloud!"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "InSite Energy Pro"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "forward_looking_firmware_release_unverified"
+      ],
+      "native_text_char_count": 735,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 79,
+      "section_group": "ENERGY_MONITORING",
+      "S01_topic_en": "InSite energy management, meters and cloud",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 79",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "InSite Energy Pro",
+        "Functionalities & Structure",
+        "Customize your Energy Dashboards",
+        "Export and share Reports"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "InSite Energy Pro"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 743,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 80,
+      "section_group": "EV_CHARGING",
+      "S01_topic_en": "EV charging and Red Sea case study",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 80",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "EV CHARGING"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 11,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 81,
+      "section_group": "EV_CHARGING",
+      "S01_topic_en": "EV charging and Red Sea case study",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 81",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Energy management Guest room management"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "recurring_hotel_architecture_diagram_not_new_feature",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 2013,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 82,
+      "section_group": "EV_CHARGING",
+      "S01_topic_en": "EV charging and Red Sea case study",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 82",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Electric vehicle charging",
+        "Destination charging",
+        "Scalability",
+        "Load management"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "Electric vehicle charging"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 1109,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 83,
+      "section_group": "EV_CHARGING",
+      "S01_topic_en": "EV charging and Red Sea case study",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 83",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Red Sea Project, Saudi Arabia",
+        "Over 1,200 EV chargers are planned on-site."
+      ],
+      "fragment_count": 2,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "planned_EV_quantity_is_competitor_case_study",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 859,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 84,
+      "section_group": "EMERGENCY_LIGHTING",
+      "S01_topic_en": "Emergency lighting and Naveo Pro",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 84",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "EMERGENCY"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 18,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 85,
+      "section_group": "EMERGENCY_LIGHTING",
+      "S01_topic_en": "Emergency lighting and Naveo Pro",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 85",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Energy management Guest room management"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "recurring_hotel_architecture_diagram_not_new_feature",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 2013,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 86,
+      "section_group": "EMERGENCY_LIGHTING",
+      "S01_topic_en": "Emergency lighting and Naveo Pro",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 86",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Complete and connected"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 1593,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 87,
+      "section_group": "EMERGENCY_LIGHTING",
+      "S01_topic_en": "Emergency lighting and Naveo Pro",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 87",
+      "source_text_method": "Native text read only for confidentiality screening; contents deliberately not retained",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [],
+      "excerpt_verification": "not_applicable",
+      "content_handling": "blocked_no_public_excerpt_or_personal_info",
+      "quality_flags": [
+        "explicit_internal_ABB_use_only",
+        "personal_contact_information_present",
+        "entire_page_excluded_from_quote_bank"
+      ],
+      "native_text_char_count": null,
+      "native_text_status": "restricted_internal_slide_omitted"
+    },
+    {
+      "pdf_page": 88,
+      "section_group": "EMERGENCY_LIGHTING",
+      "S01_topic_en": "Emergency lighting and Naveo Pro",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 88",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Solution"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "publisher_numeric_or_superlative_claim_not_NSP",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 2664,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 89,
+      "section_group": "EMERGENCY_LIGHTING",
+      "S01_topic_en": "Emergency lighting and Naveo Pro",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 89",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "publisher_numeric_or_superlative_claim_not_NSP",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 1715,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 90,
+      "section_group": "MOTORS_DRIVES",
+      "S01_topic_en": "Motors and drives in hospitality",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 90",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "MOTORS"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 17,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 91,
+      "section_group": "MOTORS_DRIVES",
+      "S01_topic_en": "Motors and drives in hospitality",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 91",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Energy management Guest room management"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "recurring_hotel_architecture_diagram_not_new_feature",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 2013,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 92,
+      "section_group": "MOTORS_DRIVES",
+      "S01_topic_en": "Motors and drives in hospitality",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 92",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 1679,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 93,
+      "section_group": "INSTALLATION_PRODUCTS",
+      "S01_topic_en": "Electrical installation products",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 93",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "INSTALLATION"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 20,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 94,
+      "section_group": "INSTALLATION_PRODUCTS",
+      "S01_topic_en": "Electrical installation products",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 94",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "Energy management Guest room management"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "recurring_hotel_architecture_diagram_not_new_feature",
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 2013,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 95,
+      "section_group": "INSTALLATION_PRODUCTS",
+      "S01_topic_en": "Electrical installation products",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 95",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [
+        "— Glands, cable protection & installation boxes"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "no_competitor_hardware_feature_import"
+      ],
+      "native_text_char_count": 347,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 96,
+      "section_group": "SUCCESS_STORIES",
+      "S01_topic_en": "Case studies and further materials",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 96",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "and other useful resources"
+      ],
+      "fragment_count": 1,
+      "source_headlines_en": [
+        "SUCCESS"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "chapter_divider_or_low_text"
+      ],
+      "native_text_char_count": 42,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 97,
+      "section_group": "SUCCESS_STORIES",
+      "S01_topic_en": "Case studies and further materials",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 97",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "InterContinental Hotel Madrid",
+        "Case study",
+        "energy savings on the affected systems",
+        "InterContinental Hotel Madrid HOTELS"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "publisher_numeric_or_superlative_claim_not_NSP"
+      ],
+      "native_text_char_count": 1345,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 98,
+      "section_group": "SUCCESS_STORIES",
+      "S01_topic_en": "Case studies and further materials",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 98",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "ABB Hospitality",
+        "Success stories",
+        "AI-generated content may be incorrect.",
+        "ABB Hospitality HOTELS"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "— Thinking"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "AI_generated_caption_warning_visual_not_independent_evidence"
+      ],
+      "native_text_char_count": 1937,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 99,
+      "section_group": "SUCCESS_STORIES",
+      "S01_topic_en": "Case studies and further materials",
+      "nsp_scope": "relevant_for_research",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 99",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [
+        "Additional materials",
+        "Tools",
+        "Resources",
+        "Thinking Hotels -"
+      ],
+      "fragment_count": 4,
+      "source_headlines_en": [
+        "Smart Buildings"
+      ],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "native_text_char_count": 427,
+      "native_text_status": "extracted_native"
+    },
+    {
+      "pdf_page": 100,
+      "section_group": "BACK_COVER",
+      "S01_topic_en": "ABB end page",
+      "nsp_scope": "outside_approved_NSP_product_scope",
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 100",
+      "source_text_method": "Native extracted PDF text (no OCR); layout order may be multi-column",
+      "short_english_fragments_en": [],
+      "fragment_count": 0,
+      "source_headlines_en": [],
+      "excerpt_verification": "normalized exact substring of original PDF native text",
+      "content_handling": "research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "vector_logo_only_no_extractable_text"
+      ],
+      "native_text_char_count": 0,
+      "native_text_status": "no_native_text_visual_only"
+    }
+  ],
+  "numeric_and_claim_evidence": [
+    {
+      "pdf_page": 3,
+      "category": "sector_statistic",
+      "evidence_tokens": [
+        "90%",
+        "2050"
+      ],
+      "claim_description_fa": "هدف/برآورد کربن صنعت هتل تا ۲۰۵۰ با مقایسه با ۲۰۱۰؛ در PDF به Sustainable Hospitality Alliance ارجاع داده شده است.",
+      "publication_gate": "third_party_sector_statistic_verify_original_methodology",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 3,
+      "category": "sector_statistic",
+      "evidence_tokens": [
+        "60%"
+      ],
+      "claim_description_fa": "سهم تقریبی انرژی در ردپای کربنی هتل طبق داده مورد استناد ABB؛ شاخص عملکرد NSP نیست.",
+      "publication_gate": "third_party_sector_statistic_verify_original_methodology",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 18,
+      "category": "illustrative_room_mode_delay",
+      "evidence_tokens": [
+        "10 minutes"
+      ],
+      "claim_description_fa": "تأخیر نمونه برای تشخیص عدم حضور در منطق اتاق ABB؛ پارامتر ثابت یا پیش‌فرض NSP نیست.",
+      "publication_gate": "competitor_scenario_not_NSP_config",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 29,
+      "category": "partner_certification",
+      "evidence_tokens": [
+        "certified"
+      ],
+      "claim_description_fa": "ادعای گواهی یکپارچگی با PMS در اکوسیستم ABB؛ نباید به NSP نسبت داده شود.",
+      "publication_gate": "blocked_competitor_partner_certification",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 78,
+      "category": "future_release",
+      "evidence_tokens": [
+        "1.4"
+      ],
+      "claim_description_fa": "ارجاع سند به انتشار بعدی Firmware 1.4؛ وضعیت عرضه کنونی از این PDF قابل اثبات نیست.",
+      "publication_gate": "future_roadmap_not_verified",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 79,
+      "category": "feature_release_scope",
+      "evidence_tokens": [
+        "1st Release"
+      ],
+      "claim_description_fa": "محدودیت قابلیت کنترل شارژر به نسخه نخست طبق توضیح ABB؛ برای NSP نامعتبر است.",
+      "publication_gate": "competitor_release_scope_only",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 83,
+      "category": "planned_project_quantity",
+      "evidence_tokens": [
+        "1,200"
+      ],
+      "claim_description_fa": "بیش از ۱۲۰۰ شارژر برقی برنامه‌ریزی‌شده برای پروژه Red Sea؛ نصب قطعی/پروژه NSP محسوب نمی‌شود.",
+      "publication_gate": "planned_competitor_case_study_not_actual_installation",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 83,
+      "category": "project_site_size",
+      "evidence_tokens": [
+        "28,000"
+      ],
+      "claim_description_fa": "مساحت سایت پروژه معرفی‌شده ABB؛ مربوط به پروژه دیگر است.",
+      "publication_gate": "competitor_project_only",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 88,
+      "category": "equipment_lifecycle_claim",
+      "evidence_tokens": [
+        "12 years",
+        "100,000"
+      ],
+      "claim_description_fa": "ادعای عمر خدمت چراغ اضطراری رقیب؛ مشخصات محصول NSP نیست و نباید وارد بانک فیچر شود.",
+      "publication_gate": "competitor_equipment_spec_excluded",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 88,
+      "category": "case_study_device_count",
+      "evidence_tokens": [
+        "200"
+      ],
+      "claim_description_fa": "تعداد تجهیزات نمونه موردی روشنایی اضطراری رقیب؛ شاهد پروژه NSP نیست.",
+      "publication_gate": "competitor_project_only",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 89,
+      "category": "marketing_superlative",
+      "evidence_tokens": [
+        "100% free"
+      ],
+      "claim_description_fa": "ادعای بازاریابی قیمت/رایگان‌بودن اپ رقیب؛ وضعیت جاری و هزینه NSP را نشان نمی‌دهد.",
+      "publication_gate": "marketing_claim_unverified",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 97,
+      "category": "case_study_savings",
+      "evidence_tokens": [
+        "40%"
+      ],
+      "claim_description_fa": "صرفه‌جویی حدود ۴۰ درصد در زیرسیستم‌های مورد اشاره مطالعه ABB؛ نه کل هتل و نه عملکرد NSP.",
+      "publication_gate": "competitor_case_study_requires_attribution",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 97,
+      "category": "case_study_energy",
+      "evidence_tokens": [
+        "445,000"
+      ],
+      "claim_description_fa": "ادعای حدود ۴۴۵ هزار کیلووات‌ساعت صرفه‌جویی سالانه در مطالعه ABB؛ قابل تعمیم به NSP نیست.",
+      "publication_gate": "competitor_case_study_requires_attribution",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 97,
+      "category": "case_study_payback",
+      "evidence_tokens": [
+        "2 years"
+      ],
+      "claim_description_fa": "ادعای بازگشت سرمایه کمتر از تقریباً دو سال در همان مطالعه؛ بدون مبنای مالی قابل تعمیم نیست.",
+      "publication_gate": "competitor_case_study_requires_attribution",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    },
+    {
+      "pdf_page": 98,
+      "category": "visual_provenance_warning",
+      "evidence_tokens": [
+        "AI-generated content may be incorrect"
+      ],
+      "claim_description_fa": "متن کاتالوگ درباره امکان خطا در تصاویر/توصیف‌های تولیدشده با AI هشدار می‌دهد؛ نمونه پروژه قابل تأیید مستقل نیست.",
+      "publication_gate": "visual_provenance_requires_check",
+      "source_evidence_token_check": "verified_in_native_PDF_text",
+      "missing_evidence_tokens": [],
+      "competitor_or_third_party_only": true,
+      "verified_NSP_claim": false,
+      "S03_handling": "record_as_source_context_only_or_exclude_if_hardware_or_certification"
+    }
+  ],
+  "structured_tables_and_diagrams_inventory": [
+    {
+      "pdf_page": 7,
+      "source_kind": "illustrated_hotel_zone_map",
+      "handling": "Keep named hotel areas and map layout for visual S04; numbers are location indices, not quantitative claims."
+    },
+    {
+      "pdf_page": 8,
+      "source_kind": "hotel_system_architecture_diagram",
+      "handling": "Research only; do not assume supported NSP integrations."
+    },
+    {
+      "pdf_page": 14,
+      "source_kind": "benefits_vs_considerations_two_column",
+      "handling": "Track editorial contrast only; do not present savings/complexity as independently measured."
+    },
+    {
+      "pdf_page": 18,
+      "source_kind": "room_state_taxonomy_and_timing_flow",
+      "main_modes_en": [
+        "Vacant",
+        "Occupied",
+        "Unoccupied",
+        "Long term vacant"
+      ],
+      "additional_modes_en": [
+        "Night",
+        "Cleaning",
+        "Guest arrives"
+      ],
+      "timing_example": "typically 10 minutes",
+      "handling": "ABB taxonomy; avoid mixing Vacant and Unoccupied. Comparison to ABB10 previous research needed."
+    },
+    {
+      "pdf_page": 23,
+      "source_kind": "isometric_guest_room_control_zones",
+      "handling": "Use diagram type only; preserve no competitor model claims."
+    },
+    {
+      "pdf_page": 29,
+      "source_kind": "GRMS_integration_topology",
+      "handling": "PMS certification and model identifiers remain competitor-only."
+    },
+    {
+      "pdf_page": 33,
+      "source_kind": "guestflow_hardware_specification_comparison_table",
+      "handling": "Table structure noted, model IDs/electrical specs suppressed."
+    },
+    {
+      "pdf_page": 35,
+      "source_kind": "commissioning_software_capability_list",
+      "handling": "ABB software feature research only, not NSP functionality."
+    },
+    {
+      "pdf_pages": [
+        38,
+        42,
+        46,
+        70,
+        81,
+        85,
+        91,
+        94
+      ],
+      "source_kind": "repeated_multilayer_hotel_architecture_diagram",
+      "handling": "Repeated layout, not eight independent technical evidence sources."
+    },
+    {
+      "pdf_pages": [
+        48,
+        59
+      ],
+      "source_kind": "medium_voltage_product_catalog_matrix",
+      "handling": "Outside approved NSP scope; no specific model/SKU/spec transcription."
+    },
+    {
+      "pdf_pages": [
+        64,
+        68
+      ],
+      "source_kind": "low_voltage_protection_and_enclosure_matrix",
+      "handling": "Outside approved NSP scope; display style only."
+    },
+    {
+      "pdf_page": 71,
+      "source_kind": "energy_monitoring_ecosystem_topology",
+      "handling": "ABB topology, software and device roles only."
+    },
+    {
+      "pdf_page": 78,
+      "source_kind": "energy_cloud_dashboard_preview",
+      "handling": "Review visual style later in S04; roadmap is not current functionality."
+    },
+    {
+      "pdf_page": 79,
+      "source_kind": "cloud_UI_feature_overview",
+      "handling": "Commercial product capabilities ABB only."
+    },
+    {
+      "pdf_page": 83,
+      "source_kind": "competitor_EV_charging_project_card",
+      "handling": "Planned counts; no NSP project or delivered charger inference."
+    },
+    {
+      "pdf_page": 87,
+      "source_kind": "restricted_internal_employee_directory",
+      "handling": "Entire slide excluded; no PII or internal text stored."
+    },
+    {
+      "pdf_page": 97,
+      "source_kind": "competitor_case_study_KPI",
+      "handling": "System-specific savings only; no extrapolation to other hotels."
+    },
+    {
+      "pdf_page": 98,
+      "source_kind": "case_study_thumbnail_grid_with_AI_caption_warning",
+      "handling": "Caption reliability unverified; source image may require independent provenance."
+    }
+  ],
+  "source_reuse_cautions_fa": [
+    "اسلاید ۱۸ و اسلاید ۳ بروشور ABB شماره ۱۰ موضوعاً هم‌پوشانی دارند؛ در S03 باید رکوردهای مفهومی تکراری به‌جای تولید شواهد مستقل مضاعف، مرتبط شوند.",
+    "متن اسلایدهای چندستونه و کادرهای جداول ممکن است در خروجی ماشینی از لحاظ ترتیب خواندن با صفحه چاپی متفاوت باشد؛ S06 تطبیق بصری گزیده‌های حساس را کنترل کند.",
+    "اسلاید ۱۹ داده ورود نمایشی دارد؛ هیچ نام‌کاربری/گذرواژه و URL عملیاتی در این بانک ثبت نشده است.",
+    "اسلاید ۸۷ به علت علامت صریح INTERNAL ABB USE ONLY و اطلاعات تماس کارکنان کاملاً قرنطینه شده است.",
+    "اسلاید ۹۸ هشدار درباره داده‌های AI-generated دارد و تصاویر آن به‌تنهایی سند واقعی‌بودن یا اجرای پروژه نیستند.",
+    "قدرت/مدل، ادعای امنیت/گواهی و ارقام رقبا هیچ‌کدام قابلیت تأیید شده NSP نیستند.",
+    "این مرحله S02 فقط متن انگلیسی کوتاه و شواهد تحریری را ثبت می‌کند؛ هیچ ترجمه، فیچر جدید یا تصویر در feature.json وارد نمی‌کند."
+  ],
+  "quality_assurance": {
+    "exact_quote_validation": "All stored short fragments are normalized-whitespace substrings of the source page PDF extraction.",
+    "source_hash_baseline_s01_verified": true,
+    "source_processing_without_public_fulltext": true,
+    "unverified_anchor_candidates_omitted": [
+      {
+        "pdf_page": 5,
+        "anchor": "Personalized guest experience"
+      },
+      {
+        "pdf_page": 29,
+        "anchor": "PMS"
+      },
+      {
+        "pdf_page": 72,
+        "anchor": "Comprehensive monitoring"
+      }
+    ],
+    "numerical_claims_with_missing_evidence_token": [],
+    "all_page_numbers_1_to_100_present": true,
+    "restricted_text_or_contacts_persisted": false,
+    "competitor_excerpts_not_verified_for_NSP": true,
+    "need_future_S06_editorial_recheck": true
+  },
+  "next_stage": "S03 — feature extraction, source type classification and Persian translation",
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "portfolio_builder_app_source_changed": false
+}
