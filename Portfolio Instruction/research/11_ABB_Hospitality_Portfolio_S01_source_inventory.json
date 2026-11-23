@@ -1,0 +1,1101 @@
+{
+  "schema": "nsp-catalog-research-s01-source-inventory-v1",
+  "stage": "S01",
+  "stage_key": "source_inventory",
+  "status": "completed_source_verified",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "document_id": "11",
+  "date_checked": "2026-11-23",
+  "source": {
+    "company": "ABB",
+    "publisher": "ABB",
+    "cover_title": "Thinking Hotels — Portfolio 2026",
+    "chapter_opening_title": "ABB Hospitality Solutions — 2026 Portfolio",
+    "filename": "11_ABB_Hospitality Portfolio 2026.pdf",
+    "library_path": "/11_ABB_Hospitality Portfolio 2026.pdf",
+    "file_size_bytes": 9951131,
+    "sha256": "ec3961335b22a1213eab7595b30f2158968cbd3a5f93911614a3dca2af223310",
+    "pdf_format": "PDF 1.7",
+    "pdf_page_count": 100,
+    "page_width_pt": 960,
+    "page_height_pt": 540,
+    "aspect_ratio": "16:9 landscape",
+    "source_type": "Microsoft 365 PowerPoint-exported presentation",
+    "pdf_creator": "Microsoft PowerPoint for Microsoft 365",
+    "pdf_metadata_creation_date": "2026-07-16 15:48:54 -04:00",
+    "cover_year": 2026,
+    "publisher_month_unconfirmed": true,
+    "pdf_metadata_warning": "The PDF creation timestamp does not establish an official publication date.",
+    "encrypted": false,
+    "extractable_text_present": true,
+    "per_slide_PDF_bookmark_count": 100,
+    "pdf_bookmarks_are_auto_generated": "Slide 1 ... Slide 100",
+    "pagination_policy": "Use physical PDF page number, not slide-footer or printed pagination, as the canonical citation.",
+    "pages_with_no_extracted_text": [
+      100
+    ],
+    "short_text_only_pages_under_20_characters": [
+      41,
+      69,
+      80,
+      84,
+      90,
+      100
+    ]
+  },
+  "section_inventory": [
+    {
+      "group_id": "COVER",
+      "pdf_pages": [
+        1,
+        1
+      ],
+      "page_count": 1,
+      "original_heading_or_theme_en": "Thinking Hotels — Portfolio 2026",
+      "topic_fa": "جلد و معرفی برند",
+      "provisional_nsp_target": "COVER",
+      "provisional_only": true
+    },
+    {
+      "group_id": "INDUSTRY_CONTEXT",
+      "pdf_pages": [
+        2,
+        5
+      ],
+      "page_count": 4,
+      "original_heading_or_theme_en": "Hospitality overview, statistics and ABB benefits",
+      "topic_fa": "فضای صنعت هتل، پایداری و مزایا",
+      "provisional_nsp_target": "CHALLENGES_VALUE",
+      "provisional_only": true
+    },
+    {
+      "group_id": "HOTEL_OVERVIEW",
+      "pdf_pages": [
+        6,
+        8
+      ],
+      "page_count": 3,
+      "original_heading_or_theme_en": "Comprehensive hotel solutions and integrated architecture",
+      "topic_fa": "نقشه جامع هتل و معماری سیستم‌ها",
+      "provisional_nsp_target": "HOTEL_OVERVIEW",
+      "provisional_only": true
+    },
+    {
+      "group_id": "GRMS_INTRO",
+      "pdf_pages": [
+        9,
+        11
+      ],
+      "page_count": 3,
+      "original_heading_or_theme_en": "Guest Room Management Solutions",
+      "topic_fa": "معرفی مدیریت هوشمند اتاق",
+      "provisional_nsp_target": "GRMS",
+      "provisional_only": true
+    },
+    {
+      "group_id": "KNX_GRMS",
+      "pdf_pages": [
+        12,
+        14
+      ],
+      "page_count": 3,
+      "original_heading_or_theme_en": "KNX-based room design and GRMS approach",
+      "topic_fa": "سناریوهای اتاق و معماری KNX شرکت ABB",
+      "provisional_nsp_target": "GRMS",
+      "provisional_only": true
+    },
+    {
+      "group_id": "ROOM_UI_SOFTWARE",
+      "pdf_pages": [
+        15,
+        16
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Guest experience and central monitoring software",
+      "topic_fa": "رابط مهمان و نرم‌افزار پایش مرکزی",
+      "provisional_nsp_target": "GRMS",
+      "provisional_only": true
+    },
+    {
+      "group_id": "ROOM_MODES",
+      "pdf_pages": [
+        17,
+        18
+      ],
+      "page_count": 2,
+      "original_heading_or_theme_en": "Occupancy detection and room modes",
+      "topic_fa": "حالت‌های اتاق و تشخیص حضور",
+      "provisional_nsp_target": "GRMS",
+      "provisional_only": true
+    },
+    {
+      "group_id": "ROOM_INTEGRATIONS",
+      "pdf_pages": [
+        19,
+        21
+      ],
+      "page_count": 3,
+      "original_heading_or_theme_en": "PMS integrations, guest convenience, security",
+      "topic_fa": "یکپارچه‌سازی، اپ مهمان و ملاحظات امنیت",
+      "provisional_nsp_target": "GRMS",
+      "provisional_only": true
+    },
+    {
+      "group_id": "GRMS_COMPONENTS",
+      "pdf_pages": [
+        22,
+        25
+      ],
+      "page_count": 4,
+      "original_heading_or_theme_en": "Room panels, sensor portfolio, BYOD, wiring aesthetics",
+      "topic_fa": "سبک معرفی پنل‌ها، حسگرها و اتصال دستگاه مهمان",
+      "provisional_nsp_target": "GRMS",
+      "provisional_only": true
+    },
+    {
+      "group_id": "GUESTFLOW",
+      "pdf_pages": [
+        26,
+        36
+      ],
+      "page_count": 11,
+      "original_heading_or_theme_en": "ABB GuestFlow hardware and software suite",
+      "topic_fa": "خانواده GuestFlow و نرم‌افزار Vision/Editor",
+      "provisional_nsp_target": "GRMS",
+      "provisional_only": true
+    },
+    {
+      "group_id": "LIGHTING",
+      "pdf_pages": [
+        37,
+        40
+      ],
+      "page_count": 4,
+      "original_heading_or_theme_en": "Lighting, shading and presence detection",
+      "topic_fa": "روشنایی، پرده و تشخیص حضور",
+      "provisional_nsp_target": "GRMS",
+      "provisional_only": true
+    },
+    {
+      "group_id": "HVAC",
+      "pdf_pages": [
+        41,
+        44
+      ],
+      "page_count": 4,
+      "original_heading_or_theme_en": "HVAC control and building automation",
+      "topic_fa": "کنترل تهویه و اتوماسیون ساختمان",
+      "provisional_nsp_target": "GRMS",
+      "provisional_only": true
+    },
+    {
+      "group_id": "POWER_OVERVIEW",
+      "pdf_pages": [
+        45,
+        47
+      ],
+      "page_count": 3,
+      "original_heading_or_theme_en": "Power distribution overview",
+      "topic_fa": "مقدمه سیستم توزیع برق",
+      "provisional_nsp_target": "HOTEL_OVERVIEW",
+      "provisional_only": true
+    },
+    {
+      "group_id": "MEDIUM_VOLTAGE",
+      "pdf_pages": [
+        48,
+        59
+      ],
+      "page_count": 12,
+      "original_heading_or_theme_en": "Medium voltage, SF6-free switchgear",
+      "topic_fa": "راهکارهای برق فشار متوسط",
+      "provisional_nsp_target": "OUT_OF_SCOPE_REFERENCE",
+      "provisional_only": true
+    },
+    {
+      "group_id": "LOW_VOLTAGE",
+      "pdf_pages": [
+        60,
+        63
+      ],
+      "page_count": 4,
+      "original_heading_or_theme_en": "Low voltage distribution",
+      "topic_fa": "راهکارهای برق فشار ضعیف",
+      "provisional_nsp_target": "OUT_OF_SCOPE_REFERENCE",
+      "provisional_only": true
+    },
+    {
+      "group_id": "SUB_DISTRIBUTION",
+      "pdf_pages": [
+        64,
+        68
+      ],
+      "page_count": 5,
+      "original_heading_or_theme_en": "Sub/final distribution protection and enclosures",
+      "topic_fa": "تجهیزات حفاظت و تابلوهای توزیع",
+      "provisional_nsp_target": "OUT_OF_SCOPE_REFERENCE",
+      "provisional_only": true
+    },
+    {
+      "group_id": "ENERGY_MONITORING",
+      "pdf_pages": [
+        69,
+        79
+      ],
+      "page_count": 11,
+      "original_heading_or_theme_en": "InSite energy management, meters and cloud",
+      "topic_fa": "پایش انرژی، داشبورد و مدیریت داده",
+      "provisional_nsp_target": "HOTEL_OVERVIEW",
+      "provisional_only": true
+    },
+    {
+      "group_id": "EV_CHARGING",
+      "pdf_pages": [
+        80,
+        83
+      ],
+      "page_count": 4,
+      "original_heading_or_theme_en": "EV charging and Red Sea case study",
+      "topic_fa": "شارژ خودروی برقی و نمونه پروژه",
+      "provisional_nsp_target": "OUT_OF_SCOPE_REFERENCE",
+      "provisional_only": true
+    },
+    {
+      "group_id": "EMERGENCY_LIGHTING",
+      "pdf_pages": [
+        84,
+        89
+      ],
+      "page_count": 6,
+      "original_heading_or_theme_en": "Emergency lighting and Naveo Pro",
+      "topic_fa": "روشنایی اضطراری و نرم‌افزار مدیریت",
+      "provisional_nsp_target": "OUT_OF_SCOPE_REFERENCE",
+      "provisional_only": true
+    },
+    {
+      "group_id": "MOTORS_DRIVES",
+      "pdf_pages": [
+        90,
+        92
+      ],
+      "page_count": 3,
+      "original_heading_or_theme_en": "Motors and drives in hospitality",
+      "topic_fa": "موتورها و درایوهای تأسیسات",
+      "provisional_nsp_target": "OUT_OF_SCOPE_REFERENCE",
+      "provisional_only": true
+    },
+    {
+      "group_id": "INSTALLATION_PRODUCTS",
+      "pdf_pages": [
+        93,
+        95
+      ],
+      "page_count": 3,
+      "original_heading_or_theme_en": "Electrical installation products",
+      "topic_fa": "تجهیزات نصب و کابل‌کشی",
+      "provisional_nsp_target": "OUT_OF_SCOPE_REFERENCE",
+      "provisional_only": true
+    },
+    {
+      "group_id": "SUCCESS_STORIES",
+      "pdf_pages": [
+        96,
+        99
+      ],
+      "page_count": 4,
+      "original_heading_or_theme_en": "Case studies and further materials",
+      "topic_fa": "نمونه پروژه‌ها و منابع تکمیلی",
+      "provisional_nsp_target": "CASE_STUDIES",
+      "provisional_only": true
+    },
+    {
+      "group_id": "BACK_COVER",
+      "pdf_pages": [
+        100,
+        100
+      ],
+      "page_count": 1,
+      "original_heading_or_theme_en": "ABB end page",
+      "topic_fa": "صفحه پایانی نشان ABB",
+      "provisional_nsp_target": "CROSS_SECTION_STYLE",
+      "provisional_only": true
+    }
+  ],
+  "page_index": [
+    {
+      "pdf_page": 1,
+      "section_group": "COVER",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 2,
+      "section_group": "INDUSTRY_CONTEXT",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 3,
+      "section_group": "INDUSTRY_CONTEXT",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 4,
+      "section_group": "INDUSTRY_CONTEXT",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 5,
+      "section_group": "INDUSTRY_CONTEXT",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 6,
+      "section_group": "HOTEL_OVERVIEW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 7,
+      "section_group": "HOTEL_OVERVIEW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 8,
+      "section_group": "HOTEL_OVERVIEW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 9,
+      "section_group": "GRMS_INTRO",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 10,
+      "section_group": "GRMS_INTRO",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 11,
+      "section_group": "GRMS_INTRO",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 12,
+      "section_group": "KNX_GRMS",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 13,
+      "section_group": "KNX_GRMS",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 14,
+      "section_group": "KNX_GRMS",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 15,
+      "section_group": "ROOM_UI_SOFTWARE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 16,
+      "section_group": "ROOM_UI_SOFTWARE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 17,
+      "section_group": "ROOM_MODES",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 18,
+      "section_group": "ROOM_MODES",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 19,
+      "section_group": "ROOM_INTEGRATIONS",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 20,
+      "section_group": "ROOM_INTEGRATIONS",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 21,
+      "section_group": "ROOM_INTEGRATIONS",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 22,
+      "section_group": "GRMS_COMPONENTS",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 23,
+      "section_group": "GRMS_COMPONENTS",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 24,
+      "section_group": "GRMS_COMPONENTS",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 25,
+      "section_group": "GRMS_COMPONENTS",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 26,
+      "section_group": "GUESTFLOW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 27,
+      "section_group": "GUESTFLOW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 28,
+      "section_group": "GUESTFLOW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 29,
+      "section_group": "GUESTFLOW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 30,
+      "section_group": "GUESTFLOW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 31,
+      "section_group": "GUESTFLOW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 32,
+      "section_group": "GUESTFLOW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 33,
+      "section_group": "GUESTFLOW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 34,
+      "section_group": "GUESTFLOW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 35,
+      "section_group": "GUESTFLOW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 36,
+      "section_group": "GUESTFLOW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 37,
+      "section_group": "LIGHTING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 38,
+      "section_group": "LIGHTING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 39,
+      "section_group": "LIGHTING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 40,
+      "section_group": "LIGHTING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 41,
+      "section_group": "HVAC",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 42,
+      "section_group": "HVAC",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 43,
+      "section_group": "HVAC",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 44,
+      "section_group": "HVAC",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 45,
+      "section_group": "POWER_OVERVIEW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 46,
+      "section_group": "POWER_OVERVIEW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 47,
+      "section_group": "POWER_OVERVIEW",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 48,
+      "section_group": "MEDIUM_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 49,
+      "section_group": "MEDIUM_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 50,
+      "section_group": "MEDIUM_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 51,
+      "section_group": "MEDIUM_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 52,
+      "section_group": "MEDIUM_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 53,
+      "section_group": "MEDIUM_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 54,
+      "section_group": "MEDIUM_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 55,
+      "section_group": "MEDIUM_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 56,
+      "section_group": "MEDIUM_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 57,
+      "section_group": "MEDIUM_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 58,
+      "section_group": "MEDIUM_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 59,
+      "section_group": "MEDIUM_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 60,
+      "section_group": "LOW_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 61,
+      "section_group": "LOW_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 62,
+      "section_group": "LOW_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 63,
+      "section_group": "LOW_VOLTAGE",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 64,
+      "section_group": "SUB_DISTRIBUTION",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 65,
+      "section_group": "SUB_DISTRIBUTION",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 66,
+      "section_group": "SUB_DISTRIBUTION",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 67,
+      "section_group": "SUB_DISTRIBUTION",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 68,
+      "section_group": "SUB_DISTRIBUTION",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 69,
+      "section_group": "ENERGY_MONITORING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 70,
+      "section_group": "ENERGY_MONITORING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 71,
+      "section_group": "ENERGY_MONITORING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 72,
+      "section_group": "ENERGY_MONITORING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 73,
+      "section_group": "ENERGY_MONITORING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 74,
+      "section_group": "ENERGY_MONITORING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 75,
+      "section_group": "ENERGY_MONITORING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 76,
+      "section_group": "ENERGY_MONITORING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 77,
+      "section_group": "ENERGY_MONITORING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 78,
+      "section_group": "ENERGY_MONITORING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 79,
+      "section_group": "ENERGY_MONITORING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 80,
+      "section_group": "EV_CHARGING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 81,
+      "section_group": "EV_CHARGING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 82,
+      "section_group": "EV_CHARGING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 83,
+      "section_group": "EV_CHARGING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 84,
+      "section_group": "EMERGENCY_LIGHTING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 85,
+      "section_group": "EMERGENCY_LIGHTING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 86,
+      "section_group": "EMERGENCY_LIGHTING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 87,
+      "section_group": "EMERGENCY_LIGHTING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "internal_ABB_only_blocked"
+    },
+    {
+      "pdf_page": 88,
+      "section_group": "EMERGENCY_LIGHTING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 89,
+      "section_group": "EMERGENCY_LIGHTING",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 90,
+      "section_group": "MOTORS_DRIVES",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 91,
+      "section_group": "MOTORS_DRIVES",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 92,
+      "section_group": "MOTORS_DRIVES",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 93,
+      "section_group": "INSTALLATION_PRODUCTS",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 94,
+      "section_group": "INSTALLATION_PRODUCTS",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 95,
+      "section_group": "INSTALLATION_PRODUCTS",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 96,
+      "section_group": "SUCCESS_STORIES",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 97,
+      "section_group": "SUCCESS_STORIES",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 98,
+      "section_group": "SUCCESS_STORIES",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 99,
+      "section_group": "SUCCESS_STORIES",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    },
+    {
+      "pdf_page": 100,
+      "section_group": "BACK_COVER",
+      "source_reference_type": "physical_pdf_page",
+      "publication_status": "research_only"
+    }
+  ],
+  "visual_and_content_inventory_method": {
+    "method": "PyMuPDF on original PDF bytes and manual inspection of four page contact sheets",
+    "page_count_verified": 100,
+    "all_pages_checked_in_contact_sheets": true,
+    "contact_sheet_ranges": [
+      [
+        1,
+        25
+      ],
+      [
+        26,
+        50
+      ],
+      [
+        51,
+        75
+      ],
+      [
+        76,
+        100
+      ]
+    ],
+    "render_used_for_structure_only": true,
+    "source_page_image_crop_exported_to_repository": false,
+    "selected_bookmark_crosscheck": {
+      "1": "Thinking Hotels",
+      "7": "Comprehensive ABB solutions",
+      "8": "Smart and scalable: our integrated system architecture",
+      "16": "Guest Room Management Software",
+      "18": "Guest Room Management Software",
+      "27": "ABB GuestFlow",
+      "34": "GuestFlow Vision",
+      "35": "GuestFlow Editor",
+      "43": "HVAC Building Automation & Control",
+      "71": "InSite Energy Management System",
+      "83": "Red Sea Project, Saudi Arabia",
+      "87": "Emergency lighting organization",
+      "97": "InterContinental Hotel Madrid",
+      "98": "ABB Hospitality",
+      "100": "untitled closing slide"
+    },
+    "notable_visual_pages": [
+      1,
+      7,
+      8,
+      15,
+      16,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      29,
+      34,
+      35,
+      38,
+      42,
+      46,
+      70,
+      71,
+      78,
+      79,
+      81,
+      85,
+      86,
+      89,
+      91,
+      94,
+      97,
+      98,
+      99
+    ],
+    "repeated_architecture_diagram_page_candidates": [
+      8,
+      10,
+      38,
+      42,
+      46,
+      70,
+      81,
+      85,
+      91,
+      94
+    ],
+    "detailed_image_audit_not_done_in_S01": true
+  },
+  "restrictions_and_audit_flags": [
+    {
+      "pdf_page": 3,
+      "issue": "2025 sector metrics and 2050 forecasts",
+      "control": "Competitor-sourced industry assertions only; check footnotes during S02. Never treat as NSP performance."
+    },
+    {
+      "pdf_page": 7,
+      "issue": "Axonometric hotel diagram",
+      "control": "Structural inspiration for NSP page 5-6 only, using new original artwork and verified NSP coverage."
+    },
+    {
+      "pdf_pages": [
+        19,
+        21
+      ],
+      "issue": "PMS, partner integration, and security methods",
+      "control": "No unverified NSP interoperability or security certification inference."
+    },
+    {
+      "pdf_pages": [
+        22,
+        25,
+        29,
+        32,
+        33
+      ],
+      "issue": "ABB hardware catalogs, controllers and specifications",
+      "control": "Do not import competitor SKUs or electrical specifications to NSP feature bank."
+    },
+    {
+      "pdf_page": 78,
+      "issue": "Forward-looking ABB firmware release reference",
+      "control": "Future roadmap is time-sensitive and must not be assumed shipped."
+    },
+    {
+      "pdf_page": 83,
+      "issue": "Project-specific planned EV charger quantity",
+      "control": "Not a confirmed installed count or an NSP project."
+    },
+    {
+      "pdf_page": 87,
+      "issue": "Slide explicitly marked INTERNAL ABB USE ONLY and contains employee/contact data",
+      "control": "Exclude entire slide from publication-oriented extraction, images and public dataset; do not copy names/emails."
+    },
+    {
+      "pdf_page": 97,
+      "issue": "Case-study savings claims",
+      "control": "ABB-only competitor figures; no NSP case-study or performance attribution."
+    },
+    {
+      "pdf_page": 98,
+      "issue": "Auto-generated image-description text includes warnings of possible inaccuracies",
+      "control": "Do not treat captions or images as independently verified project facts."
+    },
+    {
+      "pdf_page": 100,
+      "issue": "No native extractable text",
+      "control": "Vector/logo closing slide, not a missing PDF page."
+    }
+  ],
+  "project_alignment": {
+    "help_file": "Portfolio Instruction/HELP.md",
+    "fixed_three_systems": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ],
+    "GRMS_software_and_room_modes_remain_under_GRMS": true,
+    "power_distribution_EV_emergency_lighting_and_motors_not_approved_as_additional_NSP_systems": true,
+    "nsp_product_capabilities_verified": 0,
+    "no_new_page_layout_approved": true,
+    "scope": "research_inventory_only",
+    "no_copyrighted_competitor_image_reuse": true,
+    "no_source_application_or_feature_library_changes": true
+  },
+  "stage_contract": {
+    "S02": "Transcribe English source text page-by-page with page citations, keep numeric claims labeled as ABB/third-party, omit internal slide 87 personal data, distinguish diagram repetition.",
+    "S03": "Translate/category scenarios, software, marketing without competitor hardware specifications.",
+    "S04": "Analyze visually distinct examples with provenance and research-only rights.",
+    "S05": "Propose mapping to approved NSP section types without inventing new systems.",
+    "S06": "Audit all sources, translations, visuals and claim boundaries.",
+    "S07": "Import only audited records into feature.json and feature.js after approval checks.",
+    "S01_outputs_only": true,
+    "next_stage": "S02 — source English text extraction"
+  }
+}
