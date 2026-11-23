@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 115,
+    "total_pending_steps": 114,
     "completed_new_documents": 1,
     "remaining_new_documents": 17
   },
   "cursor": {
     "document_index": 4,
     "document_id": "10",
-    "step_index": 4,
-    "step_id": "S05"
+    "step_index": 5,
+    "step_id": "S06"
   },
   "section_types": [
     {
@@ -592,11 +592,13 @@
         {
           "id": "S05",
           "key": "section_type_mapping",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/10_ABB_Hospitality_GRMS_S05_section_mapping.json"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "216c3fbbaa09610ed69a77664e5bf051ec7a7c8f",
+          "notes": "۱۰۱ متن دوزبانه و ۱۲ تصویر ABB به سکشن‌های مصوب NSP نگاشت شد؛ ۵ مورد با مانع انتشار واضح، سایر موارد فقط پیشنهاد پژوهشی. نرم‌افزار مرتبط درون GRMS و IPTV جداگانه باقی ماند."
         },
         {
           "id": "S06",
