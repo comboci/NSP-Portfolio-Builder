@@ -1,0 +1,1900 @@
+{
+  "schema": "nsp-catalog-research-s02-english-extract-v1",
+  "stage": "S02",
+  "stage_key": "source_text_extraction",
+  "status": "completed_with_source_claim_gates",
+  "created_on": "2026-11-23",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "e7abafaf7aebe0e53610e1e59475e0d01b8852d9",
+  "document_id": "12",
+  "source_pdf": {
+    "company": "ABB",
+    "title": "ABB HOSPITALITY - First class solutions for hotels",
+    "filename": "12_ABB_First Class Solutions for Hotels.pdf",
+    "library_path": "/12_ABB_First Class Solutions for Hotels.pdf",
+    "pdf_pages": 42,
+    "source_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+    "file_size_bytes": 45212556,
+    "document_number": "9AKK106930A2119",
+    "revision": "M",
+    "publication_month": "2025-06",
+    "publication_evidence_pdf_page": 42,
+    "S01_inventory": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S01_source_inventory.json",
+    "S01_inventory_git_commit_at_creation": "7b1e0a6fdc4f6b4ad863905f6dbe02decb0d04ec"
+  },
+  "scope": {
+    "all_42_PDF_pages_accounted_for": true,
+    "all_native_text_pages_read": true,
+    "source_coverage_is_page_based": true,
+    "original_pdf_text_not_republished": true,
+    "method": "Curated short source-language excerpts, exact page verification, explicit claim conditions and separate manual screenshot labels; original PDF remains the complete source.",
+    "no_OCR_used": true,
+    "competitor_device_model_spec_lists_republished": false,
+    "demo_credentials_or_QR_payloads_republished": false,
+    "hardware_titles_retained_only_as_source_context": true,
+    "no_source_excerpt_is_verified_NSP_capability_evidence": true,
+    "no_feature_translation_or_S03_records_created": true,
+    "no_image_assets_or_S04_analysis_created": true,
+    "no_S05_mapping_or_final_idea_attachment": true
+  },
+  "statistics": {
+    "PDF_pages_read_and_mapped": 42,
+    "pages_with_native_text": 40,
+    "zero_native_text_pages": [
+      19,
+      37
+    ],
+    "folio_only_pages": [
+      9,
+      13,
+      17
+    ],
+    "running_header_only_pages": [
+      6,
+      14
+    ],
+    "native_character_count_all_pages": 38017,
+    "pages_with_curated_native_fragments": 35,
+    "short_verified_English_source_fragments": 223,
+    "exact_normalized_quote_matches": 223,
+    "source_headline_entries": 49,
+    "manual_visual_transcription_pages": [
+      37
+    ],
+    "manual_visually_verified_unique_labels": 10,
+    "claim_and_context_gates": 9,
+    "structured_source_diagram_and_layout_groups": 10,
+    "S01_group_count": 22,
+    "new_NSP_capabilities_verified": 0
+  },
+  "pages": [
+    {
+      "pdf_page": 1,
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 1",
+      "section_group": "COVER",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 183,
+      "native_page_text_sha256": "7d4977dcd157717fbaa373d44d87ac52d036d951f3a31806f53fab5b45297e05",
+      "source_headlines_en": [
+        "ABB HOSPITALITY",
+        "First class solutions for hotels"
+      ],
+      "short_english_fragments_en": [
+        "ABB HOSPITALITY",
+        "First class solutions for hotels",
+        "Individually customizable room sensors",
+        "Integrated access control solution",
+        "Complete portfolio through the energy value chain"
+      ],
+      "fragment_ids": [
+        "ABB12-P01-E01",
+        "ABB12-P01-E02",
+        "ABB12-P01-E03",
+        "ABB12-P01-E04",
+        "ABB12-P01-E05"
+      ],
+      "fragment_count": 5,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 2,
+      "printed_page_number": 2,
+      "canonical_reference": "PDF page 2",
+      "section_group": "COMPANY_VALUES",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1381,
+      "native_page_text_sha256": "08a5b2c418bc5193da4e34ba546d921b8160bbf98f283ab2a9282997f294e915",
+      "source_headlines_en": [
+        "BRIGHT PROSPECTS FOR ALL"
+      ],
+      "short_english_fragments_en": [
+        "BRIGHT PROSPECTS FOR ALL",
+        "Building automation from ABB governed by our core values",
+        "Courage, Care, Curiosity and Collaboration",
+        "bringing people and technology together",
+        "A vision for the perfect building"
+      ],
+      "fragment_ids": [
+        "ABB12-P02-E01",
+        "ABB12-P02-E02",
+        "ABB12-P02-E03",
+        "ABB12-P02-E04",
+        "ABB12-P02-E05"
+      ],
+      "fragment_count": 5,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 3,
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 3",
+      "section_group": "COMPANY_VALUES",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1079,
+      "native_page_text_sha256": "fa42c79dddf0c94b9a5c1a498a16d8f0960616d672297defe764095895d93b0e",
+      "source_headlines_en": [
+        "Economic efficiency",
+        "Safety",
+        "Energy efficiency",
+        "Durability",
+        "Design",
+        "Sustainability"
+      ],
+      "short_english_fragments_en": [
+        "Economic efficiency",
+        "Safety",
+        "Energy efficiency",
+        "Durability",
+        "Design",
+        "Sustainability",
+        "combine all energy-saving capabilities with occupant comfort"
+      ],
+      "fragment_ids": [
+        "ABB12-P03-E01",
+        "ABB12-P03-E02",
+        "ABB12-P03-E03",
+        "ABB12-P03-E04",
+        "ABB12-P03-E05",
+        "ABB12-P03-E06",
+        "ABB12-P03-E07"
+      ],
+      "fragment_count": 7,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Broad benefit statements are ABB marketing wording, not independently verified performance."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 4,
+      "printed_page_number": 4,
+      "canonical_reference": "PDF page 4",
+      "section_group": "INTEGRATED_HOTEL",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1143,
+      "native_page_text_sha256": "e418c27024ab01513c659e91de882ad50219ae2813f7748b8ba859620833b704",
+      "source_headlines_en": [
+        "FOR THE ENTIRE HOTEL ABB PROVIDES A COMPLETE SOLUTION",
+        "Exemplary cooperation"
+      ],
+      "short_english_fragments_en": [
+        "FOR THE ENTIRE HOTEL ABB PROVIDES A COMPLETE SOLUTION",
+        "Exemplary cooperation",
+        "The whole package is greater than the sum of its parts",
+        "all technological components complement one another seamlessly and function together",
+        "all data can be managed, controlled and scheduled in a networked system"
+      ],
+      "fragment_ids": [
+        "ABB12-P04-E01",
+        "ABB12-P04-E02",
+        "ABB12-P04-E03",
+        "ABB12-P04-E04",
+        "ABB12-P04-E05"
+      ],
+      "fragment_count": 5,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 5,
+      "printed_page_number": 5,
+      "canonical_reference": "PDF page 5",
+      "section_group": "INTEGRATED_HOTEL",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 2255,
+      "native_page_text_sha256": "74556edf4f1f706204c8a778431582c059d6433627773da78eb24fa71121ef77",
+      "source_headlines_en": [
+        "Complete networking",
+        "From the foundation right up to the roof"
+      ],
+      "short_english_fragments_en": [
+        "Complete networking",
+        "From the foundation right up to the roof",
+        "Light",
+        "Shading control",
+        "Access management",
+        "Energy management",
+        "Hotel guests love impressive light scenes.",
+        "Access cards and transponders ensure a seamless process",
+        "Increased energy efficiency through presence-controlled lighting and HVAC."
+      ],
+      "fragment_ids": [
+        "ABB12-P05-E01",
+        "ABB12-P05-E02",
+        "ABB12-P05-E03",
+        "ABB12-P05-E04",
+        "ABB12-P05-E05",
+        "ABB12-P05-E06",
+        "ABB12-P05-E07",
+        "ABB12-P05-E08",
+        "ABB12-P05-E09"
+      ],
+      "fragment_count": 9,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Hotel-map labels mix approved NSP topics with ABB-only power and charging infrastructure."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 6,
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 6",
+      "section_group": "STAKEHOLDER_OPENING",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "running_header_only",
+      "native_text_char_count": 49,
+      "native_page_text_sha256": "e49a88f3d3aa18b31ae8f794eaba48202c10f9903d3623d3a4b6543865455a48",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [],
+      "fragment_ids": [],
+      "fragment_count": 0,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "running_header_only"
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 7,
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 7",
+      "section_group": "STAKEHOLDER_OPENING",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 398,
+      "native_page_text_sha256": "ecbee28e989eba6bed0032b71e21cb6d3edb2a6ff86bd7636b52a87747fb466c",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "How do you get the perfect hotel?",
+        "the best possible experience",
+        "the management want everything to run smoothly",
+        "the investors focus on the income"
+      ],
+      "fragment_ids": [
+        "ABB12-P07-E01",
+        "ABB12-P07-E02",
+        "ABB12-P07-E03",
+        "ABB12-P07-E04"
+      ],
+      "fragment_count": 4,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 8,
+      "printed_page_number": 8,
+      "canonical_reference": "PDF page 8",
+      "section_group": "DESIGN",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1363,
+      "native_page_text_sha256": "586ffa8dd21c08def0a6418b68c5bb16c52db08f62412984ba259069c1617a96",
+      "source_headlines_en": [
+        "INVITING DESIGN",
+        "The best reason to return"
+      ],
+      "short_english_fragments_en": [
+        "INVITING DESIGN",
+        "The best reason to return",
+        "The design meets the demands",
+        "logical user guidance right through to functional surfaces",
+        "different colours from discreet to intensive",
+        "different surfaces from matt to glossy",
+        "A warm welcome",
+        "As soon as the hotel guest opens the door, they are immediately greeted by a cosily lit room.",
+        "operate and automate entire scenes"
+      ],
+      "fragment_ids": [
+        "ABB12-P08-E01",
+        "ABB12-P08-E02",
+        "ABB12-P08-E03",
+        "ABB12-P08-E04",
+        "ABB12-P08-E05",
+        "ABB12-P08-E06",
+        "ABB12-P08-E07",
+        "ABB12-P08-E08",
+        "ABB12-P08-E09"
+      ],
+      "fragment_count": 9,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Design awards and their implied certification are not transferred to NSP.",
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 9,
+      "printed_page_number": 9,
+      "canonical_reference": "PDF page 9",
+      "section_group": "DESIGN",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "printed_folio_only",
+      "native_text_char_count": 1,
+      "native_page_text_sha256": "2e6d31a5983a91251bfae5aefa1c0a19d8ba3cf601d0e8a706b4cfa9661a6b8a",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [],
+      "fragment_ids": [],
+      "fragment_count": 0,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "printed_folio_only"
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 10,
+      "printed_page_number": 10,
+      "canonical_reference": "PDF page 10",
+      "section_group": "CUSTOM_CONFIGURATION",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1524,
+      "native_page_text_sha256": "fee1f55e319dc2209ed9d90a8cd5d19a335cd0233f46e8438aaa61622c497d66",
+      "source_headlines_en": [
+        "ABB TACTEO®",
+        "The individual touch"
+      ],
+      "short_english_fragments_en": [
+        "The individual touch",
+        "Design your own individual KNX sensor with the ABB tacteo® configurator",
+        "Getting started – click on the “Customized for You” button and fill in the form",
+        "(premium configuration)",
+        "ABB is setting up your individual configuration area",
+        "Configure your sensors",
+        "with your own brand icons, fonts and logos",
+        "which can be placed freely (up to three elements)"
+      ],
+      "fragment_ids": [
+        "ABB12-P10-E01",
+        "ABB12-P10-E02",
+        "ABB12-P10-E03",
+        "ABB12-P10-E04",
+        "ABB12-P10-E05",
+        "ABB12-P10-E06",
+        "ABB12-P10-E07",
+        "ABB12-P10-E08"
+      ],
+      "fragment_count": 8,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Configurator flow must follow visible arrows; native block order places Configure before Getting started.",
+        "The three-element customization limit belongs to the ABB configurator only.",
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 11,
+      "printed_page_number": 11,
+      "canonical_reference": "PDF page 11",
+      "section_group": "CUSTOM_CONFIGURATION",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 351,
+      "native_page_text_sha256": "e5a5b6dad0a8af5a19d25c8008506ee22a2fb082ba650aaa729e1ec802c46d68",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "individual text field",
+        "customized icon/ logo",
+        "icon/ logo can be freely positioned",
+        "individual glass color",
+        "Save your sensor and get your unique design ID",
+        "Add the sensor to the parts list",
+        "Forward the list to your wholesaler"
+      ],
+      "fragment_ids": [
+        "ABB12-P11-E01",
+        "ABB12-P11-E02",
+        "ABB12-P11-E03",
+        "ABB12-P11-E04",
+        "ABB12-P11-E05",
+        "ABB12-P11-E06",
+        "ABB12-P11-E07"
+      ],
+      "fragment_count": 7,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Workflow steps and panel callouts are separate groups; printed URL and QR payload are not part of the excerpt corpus."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 12,
+      "printed_page_number": 12,
+      "canonical_reference": "PDF page 12",
+      "section_group": "COMFORT",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1619,
+      "native_page_text_sha256": "24dcc3b9fede5b0b8e82ab08c327dbc8b11cf06d82d2e3d4ddc5d163f53f8410",
+      "source_headlines_en": [
+        "MAXIMUM COMFORT",
+        "All factors working together"
+      ],
+      "short_english_fragments_en": [
+        "MAXIMUM COMFORT",
+        "All factors working together",
+        "Cosy light effects",
+        "Perfect climate",
+        "operating several light sources together with blinds and air conditioning remains intuitive and simple",
+        "the different light sources can be controlled and automated in entire scenes",
+        "The blinds move automatically depending on the position of the sun.",
+        "control the heating, ventilation and air conditioning with the touch of a finger"
+      ],
+      "fragment_ids": [
+        "ABB12-P12-E01",
+        "ABB12-P12-E02",
+        "ABB12-P12-E03",
+        "ABB12-P12-E04",
+        "ABB12-P12-E05",
+        "ABB12-P12-E06",
+        "ABB12-P12-E07",
+        "ABB12-P12-E08"
+      ],
+      "fragment_count": 8,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 13,
+      "printed_page_number": 13,
+      "canonical_reference": "PDF page 13",
+      "section_group": "COMFORT",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "printed_folio_only",
+      "native_text_char_count": 2,
+      "native_page_text_sha256": "1a252402972f6057fa53cc172b52b9ffca698e18311facd0f3b06ecaaef79e17",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [],
+      "fragment_ids": [],
+      "fragment_count": 0,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "printed_folio_only"
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 14,
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 14",
+      "section_group": "INTUITIVE_SOLUTIONS",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "running_header_only",
+      "native_text_char_count": 49,
+      "native_page_text_sha256": "e49a88f3d3aa18b31ae8f794eaba48202c10f9903d3623d3a4b6543865455a48",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [],
+      "fragment_ids": [],
+      "fragment_count": 0,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "running_header_only"
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 15,
+      "printed_page_number": 15,
+      "canonical_reference": "PDF page 15",
+      "section_group": "INTUITIVE_SOLUTIONS",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1313,
+      "native_page_text_sha256": "253d89fb9ac846cef0eb6c4534d4be10c8cb9d32f0ba9d354f447a60eb61739c",
+      "source_headlines_en": [
+        "INTELLIGENT SOLUTIONS",
+        "Energy-efficiency with discreet charm"
+      ],
+      "short_english_fragments_en": [
+        "INTELLIGENT SOLUTIONS",
+        "Energy-efficiency with discreet charm",
+        "Maximum simplicity in operation, ideally intuitive",
+        "Maximum comfort for guests, improved energy efficiency of hotel processes and efficient workflows for staff",
+        "Smooth communication",
+        "Do not disturb and Make up room devices",
+        "as they indicates the guests wish.",
+        "automatically switch the circuits for example lighting, heating and air-conditioning in the room."
+      ],
+      "fragment_ids": [
+        "ABB12-P15-E01",
+        "ABB12-P15-E02",
+        "ABB12-P15-E03",
+        "ABB12-P15-E04",
+        "ABB12-P15-E05",
+        "ABB12-P15-E06",
+        "ABB12-P15-E07",
+        "ABB12-P15-E08"
+      ],
+      "fragment_count": 8,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Original source grammar such as as they indicates the guests wish is retained; no silent copy-editing."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 16,
+      "printed_page_number": 16,
+      "canonical_reference": "PDF page 16",
+      "section_group": "EFFICIENCY",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1872,
+      "native_page_text_sha256": "be09a4e05dbdfd82fca1bf39af6e8a51731df6fb40645b7bf88c3017f3244ad4",
+      "source_headlines_en": [
+        "MEASURABLE EFFICIENCY",
+        "All costs under control"
+      ],
+      "short_english_fragments_en": [
+        "MEASURABLE EFFICIENCY",
+        "All costs under control",
+        "Comfortable cost reductions",
+        "Luxurious energy saving",
+        "all of the hotel functions intertwine and are controlled in one complete system",
+        "The indoor climate and lighting are influenced by windows monitored by sensors.",
+        "adjust the resources to the occupancy level in order to increase efficiency",
+        "adjust the indoor climate and light sensitively",
+        "More power with less energy."
+      ],
+      "fragment_ids": [
+        "ABB12-P16-E01",
+        "ABB12-P16-E02",
+        "ABB12-P16-E03",
+        "ABB12-P16-E04",
+        "ABB12-P16-E05",
+        "ABB12-P16-E06",
+        "ABB12-P16-E07",
+        "ABB12-P16-E08",
+        "ABB12-P16-E09"
+      ],
+      "fragment_count": 9,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Savings are qualitative in the selected text; no percentage or measurement baseline is supplied here.",
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 17,
+      "printed_page_number": 17,
+      "canonical_reference": "PDF page 17",
+      "section_group": "EFFICIENCY",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "printed_folio_only",
+      "native_text_char_count": 2,
+      "native_page_text_sha256": "54183f4323f377b737433a1e98229ead0fdc686f93bab057ecb612daa94002b5",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [],
+      "fragment_ids": [],
+      "fragment_count": 0,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "printed_folio_only"
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 18,
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 18",
+      "section_group": "SOLUTION_BRIDGE",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 395,
+      "native_page_text_sha256": "4d0ebf1e7478371ab3d660b2ead4d9d891c746295c12d0802ae676d445584cd1",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "How many solutions can there be?",
+        "increasing demands of guests and the increasing expectations in terms of profits.",
+        "for every concept, for every hotel."
+      ],
+      "fragment_ids": [
+        "ABB12-P18-E01",
+        "ABB12-P18-E02",
+        "ABB12-P18-E03"
+      ],
+      "fragment_count": 3,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 19,
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 19",
+      "section_group": "SOLUTION_BRIDGE",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "image_only_no_native_text",
+      "native_text_char_count": 0,
+      "native_page_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [],
+      "fragment_ids": [],
+      "fragment_count": 0,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "image_only_no_native_text"
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 20,
+      "printed_page_number": 20,
+      "canonical_reference": "PDF page 20",
+      "section_group": "ARRIVAL",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 937,
+      "native_page_text_sha256": "fe2a120e39df7bb6ebb43a55ce241a6658165afaa4c34abb8163fad6a0d6d9ae",
+      "source_headlines_en": [
+        "FIRST IMPRESSIONS",
+        "The lobby and everything before"
+      ],
+      "short_english_fragments_en": [
+        "FIRST IMPRESSIONS",
+        "The lobby and everything before",
+        "Flexible door communication",
+        "At times when there are no staff on-site, calls are simply forwarded to an employee’s smartphone.",
+        "Before you even step into the hotel, you feel like you’re in good hands.",
+        "When it’s dark, the orientation lights go beyond fulfilling their purpose – they are also a design element which welcomes everyone."
+      ],
+      "fragment_ids": [
+        "ABB12-P20-E01",
+        "ABB12-P20-E02",
+        "ABB12-P20-E03",
+        "ABB12-P20-E04",
+        "ABB12-P20-E05",
+        "ABB12-P20-E06"
+      ],
+      "fragment_count": 6,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Forwarding of calls is source-specific; no NSP interoperability or access-control support is inferred.",
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 21,
+      "printed_page_number": 21,
+      "canonical_reference": "PDF page 21",
+      "section_group": "ARRIVAL",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 858,
+      "native_page_text_sha256": "7c64ac9d16a28a7bf4ac56dcdd09e6af1c8fd4280d837cb5ceacff2c71d88dfa",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "Constant vigilance",
+        "Safety begins with visibility.",
+        "They ensure that no one has to stumble around in the dark and that uninvited guests are not ignored.",
+        "Safe power",
+        "Even outside the hotel, safe power and light sources are essential."
+      ],
+      "fragment_ids": [
+        "ABB12-P21-E01",
+        "ABB12-P21-E02",
+        "ABB12-P21-E03",
+        "ABB12-P21-E04",
+        "ABB12-P21-E05"
+      ],
+      "fragment_count": 5,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Detection range and protection ratings excluded from the curated corpus."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 22,
+      "printed_page_number": 22,
+      "canonical_reference": "PDF page 22",
+      "section_group": "LOBBY",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 848,
+      "native_page_text_sha256": "4119e48b71354d373951d848c23440fda480123981c10a0cce568c550a17c29b",
+      "source_headlines_en": [
+        "AN INVITING ATMOSPHERE",
+        "A warm welcome in the lobby"
+      ],
+      "short_english_fragments_en": [
+        "AN INVITING ATMOSPHERE",
+        "A warm welcome in the lobby",
+        "Clear operation",
+        "The networked technology controls all factors precisely: the blinds improve the level of sunlight, the light remains constant, the air conditioning ensures that the air remains comfortable.",
+        "Light scenes can be managed and controlled.",
+        "Information such as temperature values acts as guidance.",
+        "Alarms and error messages mean that the management on-site are able to act."
+      ],
+      "fragment_ids": [
+        "ABB12-P22-E01",
+        "ABB12-P22-E02",
+        "ABB12-P22-E03",
+        "ABB12-P22-E04",
+        "ABB12-P22-E05",
+        "ABB12-P22-E06",
+        "ABB12-P22-E07"
+      ],
+      "fragment_count": 7,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 23,
+      "printed_page_number": 23,
+      "canonical_reference": "PDF page 23",
+      "section_group": "LOBBY",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1351,
+      "native_page_text_sha256": "65292995e2072cad8086b3c61e3beeefb49b84db6c6d2c62f624067386715a7e",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "Wireless atmosphere",
+        "Even in the lobby, a complete wireless connection is a must.",
+        "Immediate connection",
+        "The warm welcome is reflected in the fact that the technology is available to the guests immediately.",
+        "Convenient Internet",
+        "Even in the lobby, the hotel can shine by offering a complete service.",
+        "Wireless Internet access with the very best reception quality is part of the comfortable lounge furniture."
+      ],
+      "fragment_ids": [
+        "ABB12-P23-E01",
+        "ABB12-P23-E02",
+        "ABB12-P23-E03",
+        "ABB12-P23-E04",
+        "ABB12-P23-E05",
+        "ABB12-P23-E06",
+        "ABB12-P23-E07"
+      ],
+      "fragment_count": 7,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Wireless connectivity and charging do not establish IPTV or PMS capability."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 24,
+      "printed_page_number": 24,
+      "canonical_reference": "PDF page 24",
+      "section_group": "RESTAURANT",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1124,
+      "native_page_text_sha256": "751f3885a91495a8fef8e57dba19caf8c4b17e66cc49b045952fc3ef1555925a",
+      "source_headlines_en": [
+        "SAVOUR THE MOMENT",
+        "Exceptional catering"
+      ],
+      "short_english_fragments_en": [
+        "SAVOUR THE MOMENT",
+        "Exceptional catering",
+        "Ideal room temperature",
+        "As a result, the heating requirement changes depending on how busy the restaurant is.",
+        "If you want the hotel to be energy efficient, simply ensure that it is never too warm – you generally save six per cent of energy by lowering it by one degree.",
+        "The room temperature and air quality are regulated depending on the number of guests, creating consistently beautiful surroundings."
+      ],
+      "fragment_ids": [
+        "ABB12-P24-E01",
+        "ABB12-P24-E02",
+        "ABB12-P24-E03",
+        "ABB12-P24-E04",
+        "ABB12-P24-E05",
+        "ABB12-P24-E06"
+      ],
+      "fragment_count": 6,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Keep six per cent, one degree and generally together; source gives no explicit temperature unit or measurement baseline.",
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 25,
+      "printed_page_number": 25,
+      "canonical_reference": "PDF page 25",
+      "section_group": "RESTAURANT",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1288,
+      "native_page_text_sha256": "5b272d60da6a8aed7516221f478c58687aef439912c9215a2cecbada37f86c3d",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "Optimum air quality",
+        "It measures air quality and humidity and regulates the incoming fresh air.",
+        "It switches the ventilation on automatically or opens the window as soon as the maximum CO₂ value has been exceeded in the room.",
+        "Detailed light",
+        "Clear control",
+        "You can regulate all light scenes and the room climate here with just a few touches.",
+        "The measured values are displayed clearly to ensure comfort for the guest and profitability for the hotel."
+      ],
+      "fragment_ids": [
+        "ABB12-P25-E01",
+        "ABB12-P25-E02",
+        "ABB12-P25-E03",
+        "ABB12-P25-E04",
+        "ABB12-P25-E05",
+        "ABB12-P25-E06",
+        "ABB12-P25-E07"
+      ],
+      "fragment_count": 7,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 26,
+      "printed_page_number": 26,
+      "canonical_reference": "PDF page 26",
+      "section_group": "CORRIDORS",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 997,
+      "native_page_text_sha256": "188d043520b3247bf972eca3b9647a9a29d84e481871633b8eadca4c45e4a7d2",
+      "source_headlines_en": [
+        "DISCRETE SERVICE",
+        "Helpful technology in the corridors"
+      ],
+      "short_english_fragments_en": [
+        "DISCRETE SERVICE",
+        "Helpful technology in the corridors",
+        "Clear orientation",
+        "Guests appreciate the superior welcome they experience through clear signals.",
+        "The route to the hotel room is a business card for every hotel.",
+        "First impressions also count here: clarity, orientation, brightness, friendliness, help and safety in the event of an emergency.",
+        "all functions must be self-explanatory to the greatest possible extent."
+      ],
+      "fragment_ids": [
+        "ABB12-P26-E01",
+        "ABB12-P26-E02",
+        "ABB12-P26-E03",
+        "ABB12-P26-E04",
+        "ABB12-P26-E05",
+        "ABB12-P26-E06",
+        "ABB12-P26-E07"
+      ],
+      "fragment_count": 7,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 27,
+      "printed_page_number": 27,
+      "canonical_reference": "PDF page 27",
+      "section_group": "CORRIDORS",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 186,
+      "native_page_text_sha256": "12a3609cf312fb062591fe53ca24b9a60ec93159d84e25aebf353a6b32121ddf",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "Guests comfort begins out of the room.",
+        "A perfect orientation, clear visibility, and sharp indication in case of emergency",
+        "make their stay a fully safe and delightful experience."
+      ],
+      "fragment_ids": [
+        "ABB12-P27-E01",
+        "ABB12-P27-E02",
+        "ABB12-P27-E03"
+      ],
+      "fragment_count": 3,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Original source wording Guests comfort begins out of the room is retained."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 28,
+      "printed_page_number": 28,
+      "canonical_reference": "PDF page 28",
+      "section_group": "STANDARD_ROOM",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 834,
+      "native_page_text_sha256": "8a501b0ce8d48119a2b2026cdaf354a62c940a1eddbbb70e2cc9d97540e3d8aa",
+      "source_headlines_en": [
+        "FULLY EQUIPPED",
+        "The new standard for the standard room"
+      ],
+      "short_english_fragments_en": [
+        "FULLY EQUIPPED",
+        "The new standard for the standard room",
+        "Smart energy distribution",
+        "It’s a harmonious blend of technology and design, clear and pleasant right down to the smallest detail",
+        "The intelligent building control also demonstrates its capabilities locally in each hotel room.",
+        "On top of this, it controls other comfort and safety functions."
+      ],
+      "fragment_ids": [
+        "ABB12-P28-E01",
+        "ABB12-P28-E02",
+        "ABB12-P28-E03",
+        "ABB12-P28-E04",
+        "ABB12-P28-E05",
+        "ABB12-P28-E06"
+      ],
+      "fragment_count": 6,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 29,
+      "printed_page_number": 29,
+      "canonical_reference": "PDF page 29",
+      "section_group": "STANDARD_ROOM",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1447,
+      "native_page_text_sha256": "af54f35c0d53b62094ddaa911c76ecb40ad792368625957ad57a8ec825841c94",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "A friendly welcome",
+        "If you insert the card here, a light scene switches on automatically.",
+        "The temperature is regulated immediately.",
+        "The integrated bell switch indicates to the service personnel whether the guest wishes to not be disturbed or for their room to be made up.",
+        "Compact multimedia technology",
+        "Hotel guests can enjoy their own taste in music.",
+        "Ideal room climate",
+        "Clear safety"
+      ],
+      "fragment_ids": [
+        "ABB12-P29-E01",
+        "ABB12-P29-E02",
+        "ABB12-P29-E03",
+        "ABB12-P29-E04",
+        "ABB12-P29-E05",
+        "ABB12-P29-E06",
+        "ABB12-P29-E07",
+        "ABB12-P29-E08"
+      ],
+      "fragment_count": 8,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Card-insertion scenario is distinct from page 31 before-entering wording; hardware detector range excluded."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 30,
+      "printed_page_number": 30,
+      "canonical_reference": "PDF page 30",
+      "section_group": "ROOM_INTERACTION",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 922,
+      "native_page_text_sha256": "229f63cd518278cba139aae0b1b4b918dd68f4363712f4e6b78387093e4b8f84",
+      "source_headlines_en": [
+        "COMFORT AT ITS BEST",
+        "Intuitive operation in silent service"
+      ],
+      "short_english_fragments_en": [
+        "COMFORT AT ITS BEST",
+        "Intuitive operation in silent service",
+        "Electronic push-buttons",
+        "different functions: lights, blinds, scenes.",
+        "Multimedia Connector",
+        "Make your guest feel right at home - no matter whether in the guest room or the conference room.",
+        "Streaming of audio and video as well as charging of various terminal devices."
+      ],
+      "fragment_ids": [
+        "ABB12-P30-E01",
+        "ABB12-P30-E02",
+        "ABB12-P30-E03",
+        "ABB12-P30-E04",
+        "ABB12-P30-E05",
+        "ABB12-P30-E06",
+        "ABB12-P30-E07"
+      ],
+      "fragment_count": 7,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Audio/video streaming and connection examples do not establish IPTV; connector-specific technical specifications excluded."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 31,
+      "printed_page_number": 31,
+      "canonical_reference": "PDF page 31",
+      "section_group": "ROOM_INTERACTION",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 918,
+      "native_page_text_sha256": "6fbbde40ca91c8c8f2941aa745e2b1eadaf6204687c4b44d0db9641b9d98b315",
+      "source_headlines_en": [
+        "Service switches",
+        "RFID Card Switch"
+      ],
+      "short_english_fragments_en": [
+        "Service switches",
+        "“Do not disturb” and “Make up room”",
+        "Switched inside, the message is displayed outside.",
+        "RFID Card Switch",
+        "Before entering the room, it activates the lights and heating, and creates a welcoming reception.",
+        "Once the card is inserted into the card switch inside the room it activates e.g. the air-conditioning or heating system.",
+        "Once the card is removed, the functions sequentially end according to the defined mode such as eco, standard or extended mode.",
+        "A genuine contribution to environmental protection and energy saving."
+      ],
+      "fragment_ids": [
+        "ABB12-P31-E01",
+        "ABB12-P31-E02",
+        "ABB12-P31-E03",
+        "ABB12-P31-E04",
+        "ABB12-P31-E05",
+        "ABB12-P31-E06",
+        "ABB12-P31-E07",
+        "ABB12-P31-E08"
+      ],
+      "fragment_count": 8,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Visible left-to-right column order is Service switches then RFID Card Switch, unlike native block order.",
+        "Before entry, card insertion and card removal are separate source statements; no engineered timing or delay is supplied.",
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 32,
+      "printed_page_number": 32,
+      "canonical_reference": "PDF page 32",
+      "section_group": "PREMIUM_SUITE",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1020,
+      "native_page_text_sha256": "3300f1067aa69f02efd3bb1af0ec331bfd0a2936d290eb50972b192cb1b2299a",
+      "source_headlines_en": [
+        "FIRST CLASS",
+        "The modern-day premium suite"
+      ],
+      "short_english_fragments_en": [
+        "FIRST CLASS",
+        "The modern-day premium suite",
+        "Invisible energy",
+        "All parts can be integrated quickly and flexibly and the system can be expanded at any time.",
+        "The result is true harmony between technology and design.",
+        "Dim the lighting, regulate the room temperature and shading, switch entire light scenes with the touch of a finger",
+        "The highest level of functionality contained within an elegant design."
+      ],
+      "fragment_ids": [
+        "ABB12-P32-E01",
+        "ABB12-P32-E02",
+        "ABB12-P32-E03",
+        "ABB12-P32-E04",
+        "ABB12-P32-E05",
+        "ABB12-P32-E06",
+        "ABB12-P32-E07"
+      ],
+      "fragment_count": 7,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 33,
+      "printed_page_number": 33,
+      "canonical_reference": "PDF page 33",
+      "section_group": "PREMIUM_SUITE",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1534,
+      "native_page_text_sha256": "4ca79e7840ab178e80d20e1297f6167daa0a3805e9aa1bbac1f7afbf43177841",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "Creative freedom",
+        "Fully connected",
+        "There can’t be anything missing that the guests may wish to use.",
+        "Flexible and modular for diverse architectures",
+        "The cutting-edge sensor combines functionality with flexibility, offering a sleek and contemporary interface.",
+        "ability to expand or customize control points according to their specific needs."
+      ],
+      "fragment_ids": [
+        "ABB12-P33-E01",
+        "ABB12-P33-E02",
+        "ABB12-P33-E03",
+        "ABB12-P33-E04",
+        "ABB12-P33-E05",
+        "ABB12-P33-E06"
+      ],
+      "fragment_count": 6,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Touch-sensor technical variants and competitor hardware models are not feature candidates."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 34,
+      "printed_page_number": 34,
+      "canonical_reference": "PDF page 34",
+      "section_group": "INFRASTRUCTURE",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1191,
+      "native_page_text_sha256": "7b84ba1875937375ac6196494a411deaa1de5464d607b6cd7551ba02a934d982",
+      "source_headlines_en": [
+        "A STABLE FOUNDATION",
+        "From energy distribution right through to usage"
+      ],
+      "short_english_fragments_en": [
+        "A STABLE FOUNDATION",
+        "From energy distribution right through to usage",
+        "Reliable medium and low-voltage distribution",
+        "Current multi-standard quick charging",
+        "This means that all guests can easily recharge their vehicles in the hotel garage.",
+        "back offices, payment platforms or energy management solutions",
+        "Energy with service."
+      ],
+      "fragment_ids": [
+        "ABB12-P34-E01",
+        "ABB12-P34-E02",
+        "ABB12-P34-E03",
+        "ABB12-P34-E04",
+        "ABB12-P34-E05",
+        "ABB12-P34-E06",
+        "ABB12-P34-E07"
+      ],
+      "fragment_count": 7,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Power and EV content is contextual research outside the three approved NSP systems.",
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 35,
+      "printed_page_number": 35,
+      "canonical_reference": "PDF page 35",
+      "section_group": "INFRASTRUCTURE",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1199,
+      "native_page_text_sha256": "6e8569f2c0809fd8bc1e475dcbd5999bd911123560ef8d72bad6611e8dd291e4",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "Efficient cooperation",
+        "If all applications and devices build on one another and intertwine, then the technology can achieve maximum efficiency, reliability, safety and cost effectiveness.",
+        "Efficient electric motors",
+        "Good air quality is key when it comes to the comfort requirements in a hotel.",
+        "the control system can significantly lower energy usage without a loss in comfort.",
+        "Safety in a matter of seconds",
+        "In the event of a general power failure, the emergency lighting is activated reliably and the key building functions are supplied with power."
+      ],
+      "fragment_ids": [
+        "ABB12-P35-E01",
+        "ABB12-P35-E02",
+        "ABB12-P35-E03",
+        "ABB12-P35-E04",
+        "ABB12-P35-E05",
+        "ABB12-P35-E06",
+        "ABB12-P35-E07"
+      ],
+      "fragment_count": 7,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Motors, emergency power and quantitative reaction times are not approved NSP system or product claims."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 36,
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 36",
+      "section_group": "NETWORKED_VALUE",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 448,
+      "native_page_text_sha256": "664bda0d16df5a3b0c2cd9aab71bb80fdbdbe43f8ea3ad37b920923836e6a2e1",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "Modular and complete.",
+        "All technological components are networked and can be expanded seamlessly.",
+        "This results in increased comfort for the guests and for the operators – opening up new potential for adding value for the investor.",
+        "Everybody wins."
+      ],
+      "fragment_ids": [
+        "ABB12-P36-E01",
+        "ABB12-P36-E02",
+        "ABB12-P36-E03",
+        "ABB12-P36-E04"
+      ],
+      "fragment_count": 4,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 37,
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 37",
+      "section_group": "NETWORKED_VALUE",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "image_only_no_native_text",
+      "native_text_char_count": 0,
+      "native_page_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [],
+      "fragment_ids": [],
+      "fragment_count": 0,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "image_only_no_native_text"
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 38,
+      "printed_page_number": 38,
+      "canonical_reference": "PDF page 38",
+      "section_group": "PRODUCT_PRESENTATION",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1589,
+      "native_page_text_sha256": "14829ef0b7a32f46a08d21b33d9ab76aed410fd17f72fea94fef408e422f36d8",
+      "source_headlines_en": [
+        "IMPRESSIVE PRODUCTS",
+        "For countless possibilities"
+      ],
+      "short_english_fragments_en": [
+        "IMPRESSIVE PRODUCTS",
+        "For countless possibilities",
+        "Variable shading",
+        "Versatile lighting",
+        "Clear operation",
+        "Consistent protection",
+        "What’s more, versatile automation means that you save on costs.",
+        "Errors are detected in advance as all data can be managed, controlled and scheduled in a networked system."
+      ],
+      "fragment_ids": [
+        "ABB12-P38-E01",
+        "ABB12-P38-E02",
+        "ABB12-P38-E03",
+        "ABB12-P38-E04",
+        "ABB12-P38-E05",
+        "ABB12-P38-E06",
+        "ABB12-P38-E07",
+        "ABB12-P38-E08"
+      ],
+      "fragment_count": 8,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Prediction/diagnostic wording is an ABB claim; no independent verification or NSP feature inference.",
+        "Native extraction order is not the intended editorial reading order; source headlines and excerpts are explicitly separated."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 39,
+      "printed_page_number": 39,
+      "canonical_reference": "PDF page 39",
+      "section_group": "PRODUCT_PRESENTATION",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 768,
+      "native_page_text_sha256": "cd92496cbf027a4ccfca981c3c65e3cf32743f50c260dc9a68f1c138e110d5ac",
+      "source_headlines_en": [
+        "Building dashboard",
+        "Universal energy distribution",
+        "Powerful energy input"
+      ],
+      "short_english_fragments_en": [
+        "Building dashboard",
+        "a room or entire building are centrally visualized, easy and intuitively operated in a comfortable and efficient manner.",
+        "Universal energy distribution",
+        "thanks to the modular design, they are flexible, clear and maintenance-free.",
+        "Powerful energy input",
+        "Switchgear and transformer solutions can be adapted to local standards."
+      ],
+      "fragment_ids": [
+        "ABB12-P39-E01",
+        "ABB12-P39-E02",
+        "ABB12-P39-E03",
+        "ABB12-P39-E04",
+        "ABB12-P39-E05",
+        "ABB12-P39-E06"
+      ],
+      "fragment_count": 6,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Maintenance-free describes ABB distribution equipment; dashboard wording is kept separate."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 40,
+      "printed_page_number": 40,
+      "canonical_reference": "PDF page 40",
+      "section_group": "HOTEL_REFERENCES",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 605,
+      "native_page_text_sha256": "f8d842852a1970a0dd370a2676d9e807ec901765b2e27bb46b75c490686a481a",
+      "source_headlines_en": [
+        "PERFECT ARGUMENTS",
+        "Today’s successful hotels"
+      ],
+      "short_english_fragments_en": [
+        "PERFECT ARGUMENTS",
+        "Today’s successful hotels",
+        "Architecture is more than just four walls.",
+        "Today, it’s not just about having a comfortable place to sleep, it’s about the stay as an experience.",
+        "You have everything in the palm of your hand."
+      ],
+      "fragment_ids": [
+        "ABB12-P40-E01",
+        "ABB12-P40-E02",
+        "ABB12-P40-E03",
+        "ABB12-P40-E04",
+        "ABB12-P40-E05"
+      ],
+      "fragment_count": 5,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 41,
+      "printed_page_number": 41,
+      "canonical_reference": "PDF page 41",
+      "section_group": "HOTEL_REFERENCES",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 2813,
+      "native_page_text_sha256": "a99c083717a79d44758da7a6cb7fde61f1d39eab676499e53112e548411ec4c0",
+      "source_headlines_en": [
+        "Maximum performance and efficiency"
+      ],
+      "short_english_fragments_en": [
+        "01 Yas Hotel, Abu Dhabi",
+        "02 Hyatt Capital Gate, Abu Dhabi",
+        "03 Çırağan Palace Kempinski, Istanbul",
+        "04 Hotel Silken Puerta América, Madrid",
+        "05 Panorama Landscape Hotel Finland, Tahko Hills",
+        "Maximum performance and efficiency",
+        "the networked system provides transparency with regard to all parts of the technology as a whole."
+      ],
+      "fragment_ids": [
+        "ABB12-P41-E01",
+        "ABB12-P41-E02",
+        "ABB12-P41-E03",
+        "ABB12-P41-E04",
+        "ABB12-P41-E05",
+        "ABB12-P41-E06",
+        "ABB12-P41-E07"
+      ],
+      "fragment_count": 7,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "The five hotel references belong to ABB; source architectural records, dates and counts were not validated or imported as NSP facts.",
+        "The printed typo thataof occurs in unselected body text; do not silently turn it into that of if quoted later.",
+        "Image labels 01-05 are reference indices, not PDF page numbers."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 42,
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 42",
+      "section_group": "BACK_COVER",
+      "source_text_method": "Native PDF text with explicit typography normalization; source page remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 161,
+      "native_page_text_sha256": "3a17b38ba1d04a946a50396896400ac21293d93ff1ca22105f846b73aeabf6c0",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "9AKK106930A2119 - Rev. M - 06.25",
+        "Specifications subject to change without notice."
+      ],
+      "fragment_ids": [
+        "ABB12-P42-E01",
+        "ABB12-P42-E02"
+      ],
+      "fragment_count": 2,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_typography_normalization",
+      "content_handling": "ABB_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Publisher imprint and change notice are provenance, not feature candidates."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    }
+  ],
+  "structured_source_facts": [
+    {
+      "id": "ABB12-FLOW-CONFIGURATOR",
+      "pdf_pages": [
+        10,
+        11
+      ],
+      "kind": "configuration_workflow",
+      "source_order_method": "Visible arrows and captions, manually verified against page renders.",
+      "steps": [
+        {
+          "step": 1,
+          "pdf_page": 10,
+          "source_text_en": "Getting started – click on the “Customized for You” button and fill in the form",
+          "qualifier_en": "premium configuration"
+        },
+        {
+          "step": 2,
+          "pdf_page": 10,
+          "source_text_en": "ABB is setting up your individual configuration area",
+          "qualifier_en": "premium configuration"
+        },
+        {
+          "step": 3,
+          "pdf_page": 10,
+          "source_text_en": "Configure your sensors",
+          "qualifier_en": null
+        },
+        {
+          "step": 4,
+          "pdf_page": 11,
+          "source_text_en": "Save your sensor and get your unique design ID",
+          "qualifier_en": null
+        },
+        {
+          "step": 5,
+          "pdf_page": 11,
+          "source_text_en": "Add the sensor to the parts list",
+          "qualifier_en": null
+        },
+        {
+          "step": 6,
+          "pdf_page": 11,
+          "source_text_en": "Forward the list to your wholesaler",
+          "qualifier_en": null
+        }
+      ],
+      "source_specific": true,
+      "NSP_workflow_approved": false
+    },
+    {
+      "id": "ABB12-CUSTOM-PANEL-LABELS",
+      "pdf_pages": [
+        11
+      ],
+      "kind": "customization_labels",
+      "source_text_en": [
+        "individual text field",
+        "customized icon/ logo",
+        "icon/ logo can be freely positioned",
+        "individual glass color"
+      ],
+      "source_specific": true
+    }
+  ],
+  "numeric_and_claim_evidence": [
+    {
+      "id": "ABB12-CLAIM-01",
+      "pdf_page": 10,
+      "kind": "configurator_limit",
+      "evidence_en": [
+        "with your own brand icons, fonts and logos",
+        "which can be placed freely (up to three elements)"
+      ],
+      "publication_gate": "ABB-configurator limit only; no NSP configuration or hardware limit inferred.",
+      "source_evidence_check": "exact_normalized_page_match",
+      "verified_NSP_claim": false
+    },
+    {
+      "id": "ABB12-CLAIM-02",
+      "pdf_page": 24,
+      "kind": "energy_saving_percentage",
+      "evidence_en": [
+        "As a result, the heating requirement changes depending on how busy the restaurant is.",
+        "If you want the hotel to be energy efficient, simply ensure that it is never too warm – you generally save six per cent of energy by lowering it by one degree."
+      ],
+      "source_numeric_value_percent": 6,
+      "source_temperature_change_text": "one degree",
+      "explicit_temperature_unit": null,
+      "measurement_baseline_or_test_method_in_cited_passage": null,
+      "publication_gate": "Retain ABB attribution and generally; no Celsius unit, generic engineering guarantee or NSP performance claim added.",
+      "source_evidence_check": "exact_normalized_page_match",
+      "verified_NSP_claim": false
+    },
+    {
+      "id": "ABB12-CLAIM-03",
+      "pdf_page": 29,
+      "kind": "card_insertion_scenario",
+      "evidence_en": [
+        "If you insert the card here, a light scene switches on automatically.",
+        "The temperature is regulated immediately."
+      ],
+      "publication_gate": "ABB scenario wording; immediately is not a measured latency or an NSP response-time guarantee.",
+      "source_evidence_check": "exact_normalized_page_match",
+      "verified_NSP_claim": false
+    },
+    {
+      "id": "ABB12-CLAIM-04",
+      "pdf_page": 31,
+      "kind": "card_timing_ambiguity",
+      "evidence_en": [
+        "Before entering the room, it activates the lights and heating, and creates a welcoming reception.",
+        "Once the card is inserted into the card switch inside the room it activates e.g. the air-conditioning or heating system.",
+        "Once the card is removed, the functions sequentially end according to the defined mode such as eco, standard or extended mode."
+      ],
+      "technical_delay_specified": false,
+      "ambiguity_resolved": false,
+      "publication_gate": "Preserve the three source conditions separately; do not invent how before entry is detected or reconcile timing without further evidence.",
+      "source_evidence_check": "exact_normalized_page_match",
+      "verified_NSP_claim": false
+    },
+    {
+      "id": "ABB12-CLAIM-05",
+      "pdf_page": 30,
+      "kind": "multimedia_not_protocol_evidence",
+      "evidence_en": [
+        "Streaming of audio and video as well as charging of various terminal devices."
+      ],
+      "publication_gate": "Generic multimedia connection is not proof of IPTV, PMS integration or a named GRMS software product.",
+      "source_evidence_check": "exact_normalized_page_match",
+      "verified_NSP_claim": false
+    },
+    {
+      "id": "ABB12-CLAIM-06",
+      "pdf_page": 34,
+      "kind": "out_of_scope_infrastructure_integration",
+      "evidence_en": [
+        "back offices, payment platforms or energy management solutions"
+      ],
+      "publication_gate": "Context is ABB electric-vehicle charging; do not convert it into an NSP software integration claim.",
+      "source_evidence_check": "exact_normalized_page_match",
+      "verified_NSP_claim": false
+    },
+    {
+      "id": "ABB12-CLAIM-07",
+      "pdf_page": 38,
+      "kind": "predictive_diagnostic_marketing",
+      "evidence_en": [
+        "Errors are detected in advance as all data can be managed, controlled and scheduled in a networked system."
+      ],
+      "publication_gate": "ABB marketing assertion; no predictive-maintenance capability of NSP has been verified.",
+      "source_evidence_check": "exact_normalized_page_match",
+      "verified_NSP_claim": false
+    },
+    {
+      "id": "ABB12-CLAIM-08",
+      "pdf_page": 39,
+      "kind": "distribution_equipment_marketing",
+      "evidence_en": [
+        "thanks to the modular design, they are flexible, clear and maintenance-free."
+      ],
+      "publication_gate": "Describes ABB distribution equipment; not a property of the dashboard, GRMS or NSP products.",
+      "source_evidence_check": "exact_normalized_page_match",
+      "verified_NSP_claim": false
+    },
+    {
+      "id": "ABB12-CLAIM-09",
+      "pdf_page": 41,
+      "kind": "competitor_project_references",
+      "evidence_en": [
+        "01 Yas Hotel, Abu Dhabi",
+        "02 Hyatt Capital Gate, Abu Dhabi",
+        "03 Çırağan Palace Kempinski, Istanbul",
+        "04 Hotel Silken Puerta América, Madrid",
+        "05 Panorama Landscape Hotel Finland, Tahko Hills"
+      ],
+      "publication_gate": "Five ABB references; no independent checking of architectural ranking, room counts or performance and no NSP attribution.",
+      "source_evidence_check": "exact_normalized_page_match",
+      "verified_NSP_claim": false
+    }
+  ],
+  "manual_visual_supplements": [
+    {
+      "pdf_page": 37,
+      "source_method": "Manual reading from rendered pixels; not native PDF text or OCR",
+      "clearly_legible_labels_en": [
+        "Main menu",
+        "Living room",
+        "Dining table",
+        "Garden lighting",
+        "Ambient light",
+        "Cinema lights",
+        "Guest room",
+        "Ventilation",
+        "Scene",
+        "Cosy"
+      ],
+      "sample_display_values": [
+        "22,5",
+        "100%",
+        "1/3"
+      ],
+      "partial_or_occluded_labels_not_completed": [
+        "Living room ... terrace door",
+        "Kitchen...",
+        "Energy...",
+        "Mo 13/01/..."
+      ],
+      "cautions": [
+        "Do not infer temperature units or technical specifications from these demonstration UI values.",
+        "Hand occlusion and page-edge cropping prevent complete transcription.",
+        "Source screenshot labels do not prove NSP support."
+      ],
+      "native_excerpt_count": 0,
+      "included_in_native_excerpt_statistics": false,
+      "verification": "Independently read from rendered page by both primary and secondary reviewer; partially occluded labels not completed.",
+      "software_product_identity_verified": false
+    }
+  ],
+  "structured_tables_and_diagrams_inventory": [
+    {
+      "pdf_pages": [
+        5
+      ],
+      "source_kind": "hotel_map_with_callouts",
+      "handling": "Separate the labels and hotel-system relationships from equipment specifications."
+    },
+    {
+      "pdf_pages": [
+        10,
+        11
+      ],
+      "source_kind": "six_step_configurator_flow",
+      "handling": "Arrow order visually verified; recorded in structured_source_facts, not native block order."
+    },
+    {
+      "pdf_pages": [
+        11
+      ],
+      "source_kind": "custom_panel_callouts",
+      "handling": "Text, logo/icon and colour callouts are independent labels."
+    },
+    {
+      "pdf_pages": [
+        15,
+        16
+      ],
+      "source_kind": "benefit_icon_rows",
+      "handling": "Icons and design analysis deferred to S04."
+    },
+    {
+      "pdf_pages": [
+        22,
+        25,
+        32
+      ],
+      "source_kind": "control_interface_in_environment",
+      "handling": "Source text describes operation; do not infer named software or interoperability."
+    },
+    {
+      "pdf_pages": [
+        30
+      ],
+      "source_kind": "multimedia_bullet_list",
+      "handling": "Capture user scenario; connector specifications excluded from feature candidates."
+    },
+    {
+      "pdf_pages": [
+        31
+      ],
+      "source_kind": "two_parallel_device_scenarios",
+      "handling": "Keep service signalling separate from card insertion/removal narrative."
+    },
+    {
+      "pdf_pages": [
+        37
+      ],
+      "source_kind": "image_only_touch_panel",
+      "handling": "Ten legible labels stored as manual visual transcription; no native-text match claimed."
+    },
+    {
+      "pdf_pages": [
+        38,
+        39
+      ],
+      "source_kind": "equipment_presentation_rows",
+      "handling": "Visual style and product pairing deferred to S04; no specification table imported."
+    },
+    {
+      "pdf_pages": [
+        41
+      ],
+      "source_kind": "numbered_hotel_reference_gallery",
+      "handling": "01-05 are local image/case indices; each source reference remains ABB-only."
+    }
+  ],
+  "editorial_context_snapshot": {
+    "canonical_structure_file": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "systems_in_scope": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ],
+    "content_levels": [
+      "COMPANY",
+      "SOLUTION",
+      "SYSTEM",
+      "PRODUCT"
+    ],
+    "cover_title_fa": "صفحه اول کاتالوگ",
+    "identity_section_id": "IDENTITY_PAGES",
+    "identity_section_title_fa": "صفحات تنفس",
+    "identity_pages_may_be_blank": true,
+    "final_attachment_stage": "Defrag",
+    "historical_reference_note": "Queue BISMILLAH/HELP.md references and older-stage names are legacy vocabulary; read the live canonical structure during S05. No global rewrite was performed in S02."
+  },
+  "quality_assurance": {
+    "source_hash_baseline_s01_verified": true,
+    "all_physical_page_numbers_1_to_42_present_once": true,
+    "normalization": [
+      "Unicode NFKC for comparison only",
+      "Remove discretionary soft hyphen U+00AD and zero-width space U+200B",
+      "Join whitespace after an intra-word hard hyphen while retaining that hyphen",
+      "Collapse remaining whitespace",
+      "Do not case-fold, alter punctuation, fix source grammar, or invent missing text"
+    ],
+    "stored_quote_typography": "Line breaks normalized; the two visible line-wrap forms on- site and air- conditioning are stored as on-site and air-conditioning, preserving the hard hyphen.",
+    "exact_quote_match_failures": [],
+    "source_headline_match_failures": [],
+    "claim_evidence_match_failures": [],
+    "manual_transcription_counted_separately_from_native_text": true,
+    "visually_rechecked_sensitive_pages": [
+      10,
+      11,
+      24,
+      31,
+      37,
+      41
+    ],
+    "source_spelling_errors_not_silently_corrected": true,
+    "unreadable_image_text_not_guessed": true,
+    "full_editorial_audit_still_due_in_S06": true
+  },
+  "next_stage": "S03 — feature extraction and Persian translation",
+  "next_queue_cursor": {
+    "document_index": 6,
+    "document_id": "12",
+    "step_index": 2,
+    "step_id": "S03"
+  },
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "portfolio_builder_app_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false
+}
