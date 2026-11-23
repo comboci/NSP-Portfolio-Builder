@@ -1,0 +1,1735 @@
+{
+  "schema": "nsp-catalog-research-s04-visual-styles-v1",
+  "stage": "S04",
+  "stage_key": "visuals_and_styles",
+  "document_id": "12",
+  "source_id": "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS",
+  "status": "completed_source_render_and_remote_blobs_verified",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "verified_on": "2026-11-23",
+  "base_main_commit": "164101f591fdb63ddc97e53e6f6a373f16ad6a3d",
+  "source_pdf": {
+    "company": "ABB",
+    "title": "ABB HOSPITALITY - First class solutions for hotels",
+    "filename": "12_ABB_First Class Solutions for Hotels.pdf",
+    "library_path": "/12_ABB_First Class Solutions for Hotels.pdf",
+    "pdf_pages": 42,
+    "source_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+    "file_size_bytes": 45212556,
+    "document_number": "9AKK106930A2119",
+    "revision": "M",
+    "publication_month": "2025-06",
+    "publication_evidence_pdf_page": 42,
+    "S01_inventory": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S01_source_inventory.json",
+    "S01_inventory_git_commit_at_creation": "7b1e0a6fdc4f6b4ad863905f6dbe02decb0d04ec",
+    "sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+    "source_orientation": "A4 portrait; target catalog layout is not derived from source orientation"
+  },
+  "upstream_research": {
+    "S01": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S01_source_inventory.json",
+    "S02": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S02_english_text.json",
+    "S03": "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S03_features_fa.json"
+  },
+  "S03_artifact_commit": "66073f0572a8ad7f5906814a97c53290b4531bcc",
+  "editorial_context_snapshot": {
+    "canonical_structure_file": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "systems_in_scope": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ],
+    "content_levels": [
+      "COMPANY",
+      "SOLUTION",
+      "SYSTEM",
+      "PRODUCT"
+    ],
+    "cover_title_fa": "صفحه اول کاتالوگ",
+    "identity_section_id": "IDENTITY_PAGES",
+    "identity_section_title_fa": "صفحات تنفس",
+    "identity_pages_may_be_blank": true,
+    "final_attachment_stage": "Defrag",
+    "historical_reference_note": "Queue BISMILLAH/HELP.md references and older-stage names are legacy vocabulary; read the live canonical structure during S05. No global rewrite was performed in S02.",
+    "read_at_main_commit": "e293a0548e187db3f6583d46cfab0c7636c818ba",
+    "mapping_state": "S05_pending_no_final_attachment"
+  },
+  "visual_review": {
+    "pages_visually_reviewed_via_contact_sheets": 42,
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "pages_with_selected_visual_references": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      15,
+      29,
+      31,
+      32,
+      37,
+      38,
+      39,
+      41
+    ],
+    "reference_image_count": 18,
+    "unique_style_types": 15,
+    "derived_overview_count": 1,
+    "all_pages_accounted_for_by_selection_or_exclusion": true,
+    "original_PDF_sha256_verified": true,
+    "reference_crops_direct_from_original_PDF": true,
+    "all_final_crops_visually_inspected": true,
+    "git_blob_SHA_matches_local_Git_object": true,
+    "all_19_image_files_remote_bytes_verified": true,
+    "no_image_generation_or_missing_region_reconstruction": true,
+    "no_specification_tables_imported": true,
+    "QR_configurator_region_excluded": true,
+    "page_37_original_occlusion_and_page_edge_crop_preserved": true,
+    "software_identity_not_inferred_from_images": true,
+    "S03_record_links_are_context_not_independent_capability_proof": true,
+    "image_format": "RGB WebP, quality 88, direct PDF clip rendering, no annotations",
+    "image_size_limit_note": "Longest edge targeted at 1200 or 1500 px; render rounding can add one pixel",
+    "formal_S06_audit_pending": true
+  },
+  "images": [
+    {
+      "id": "ABB12_01_cover_photo_title",
+      "reference_order": 1,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 1,
+      "source_printed_page": null,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_01_cover_photo_title.webp",
+      "asset_filename": "ABB12_01_cover_photo_title.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 151202,
+      "asset_sha256": "c320d6d37750f5545a09c18248b4f442c47d5200271cf3f2daeab6f0dcb231cd",
+      "git_blob_sha": "5671542972b16f1936d46783a4f9890a8873f4eb",
+      "rendered_size_px": [
+        1035,
+        1200
+      ],
+      "base64_length": 201604,
+      "normalized_pdf_crop": [
+        0,
+        0,
+        1,
+        0.82
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 1.738249,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "hero_photo_title_band",
+      "title_fa": "عکس اصلی و نوار عنوان جلد",
+      "observed_content_in_crop_fa": "عکس معماری در بخش بالایی و نوار سفید عنوان، زیرعنوان و لوگوی ABB در پایین برش دیده می‌شوند. پیام‌های ریز پایین جلد بیرون برش هستند.",
+      "key_takeaway_fa": "جداسازی عکس غالب از نوار سادهٔ عنوان، هم تجربهٔ بصری و هم خوانایی معرفی را حفظ می‌کند.",
+      "analyst_assessment_fa": "منطق دو بخش عکس و عنوان قابل استفاده است؛ برای معرفی راهکار اتاق، عکس واقعی فضای اقامت می‌تواند ارتباط روشن‌تری از یک برج عمومی ایجاد کند.",
+      "strengths_fa": [
+        "عنوان و لوگو روی زمینهٔ ساده خوانا هستند.",
+        "عکس اصلی بدون متنِ روی تصویر دیده می‌شود."
+      ],
+      "weaknesses_fa": [
+        "تصویر عمومی معماری، تجربهٔ اتاق و خدمات مهمان را مستقیم نشان نمی‌دهد.",
+        "برای کاتالوگ افقی، نسبت عکس و نوار عنوان به بازچینی نیاز دارد."
+      ],
+      "nsp_visual_adaptation_fa": "اصل جداسازی عکس و اطلاعات قابل اقتباس است؛ از عکس مجاز/اختصاصی، هویت بصری NSP و پیام‌های مستند استفاده شود. فرم برج، لوگو و ترکیب دقیق برند ABB کپی نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I001"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [
+        "ABB12-P01-E02"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection"
+    },
+    {
+      "id": "ABB12_02_company_intro_photo",
+      "reference_order": 2,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 2,
+      "source_printed_page": 2,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_02_company_intro_photo.webp",
+      "asset_filename": "ABB12_02_company_intro_photo.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 84678,
+      "asset_sha256": "c4b9556deefb3bed0132f31d704cd2d3c6b8b7df09bdda618d0ee642fc2dbd30",
+      "git_blob_sha": "7c34d4557aa24c4060c590d181202f0ff6d4f5db",
+      "rendered_size_px": [
+        1201,
+        1048
+      ],
+      "base64_length": 112904,
+      "normalized_pdf_crop": [
+        0.05,
+        0.05,
+        0.99,
+        0.63
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 2.144544,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "company_story_and_value_grid",
+      "title_fa": "معرفی شرکت در کنار برش عمودی عکس",
+      "observed_content_in_crop_fa": "تیتر و پاراگراف معرفی در چپ و بخش عمودی عکس معماری در راست دیده می‌شوند؛ این تصویر با صفحهٔ ۳ زمینهٔ مشترک دارد، ولی دو صفحه به هم چسبانده نشده‌اند.",
+      "key_takeaway_fa": "یک تصویر پیوسته، معرفی شرکت و فهرست ارزش‌ها را در یک گسترهٔ دوصفحه‌ای به هم مرتبط می‌کند.",
+      "analyst_assessment_fa": "جداکردن روایت شرکت و ارزش‌های آن خواندن را مرحله‌بندی می‌کند؛ در زونکن بهتر است هر صفحه به‌تنهایی معنا داشته باشد تا قطع تصویر در عطف، پیام را ناقص نکند.",
+      "strengths_fa": [
+        "روایت و فهرست ارزش‌ها از نظر اندازه و جایگاه تفکیک شده‌اند.",
+        "تداوم تصویر میان دو صفحه، پیوستگی بصری ایجاد می‌کند."
+      ],
+      "weaknesses_fa": [
+        "متن ارزش‌ها در صفحهٔ کامل منبع ریز و نسبتاً متراکم است.",
+        "پیوستگی عکس بین صفحات کامل منبع در زونکن وابسته به فاصلهٔ حلقه‌هاست؛ دو برش حاضر فقط قسمت‌های منتخب را نشان می‌دهند."
+      ],
+      "nsp_visual_adaptation_fa": "فقط منطق سلسله‌مراتب و ترکیب روایت با ارزش‌ها اقتباس شود؛ عکس و ارزش‌های رسمی NSP جایگزین شوند. عناصر مهم از محل عطف/حلقه دور بمانند و ادعاهای شرکت ABB منتقل نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I003",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I006"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [
+        "ABB12-P02-E01",
+        "ABB12-P02-E04"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection",
+      "paired_reference_group": "ABB12_COMPANY_VALUES_SPREAD"
+    },
+    {
+      "id": "ABB12_03_company_value_grid",
+      "reference_order": 3,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 3,
+      "source_printed_page": null,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_03_company_value_grid.webp",
+      "asset_filename": "ABB12_03_company_value_grid.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 147272,
+      "asset_sha256": "45cc7dd5f64732de87a3ec170d15c91e5e169698c9b77e6c081c221dbec9e1c8",
+      "git_blob_sha": "8c698eeaae197d9de0842d86fb4647e7ad83daff",
+      "rendered_size_px": [
+        1200,
+        731
+      ],
+      "base64_length": 196364,
+      "normalized_pdf_crop": [
+        0,
+        0.53,
+        1,
+        0.96
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 2.015872,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "company_story_and_value_grid",
+      "title_fa": "شش محور ارزش در دو ستون زیر تصویر",
+      "observed_content_in_crop_fa": "بخش پایینی عکس معماری و شش عنوان و شرح ارزش در دو ستون دیده می‌شوند؛ برش مکمل صفحهٔ ۲ است و بخش بالای عکس را نمایش نمی‌دهد.",
+      "key_takeaway_fa": "یک تصویر پیوسته، معرفی شرکت و فهرست ارزش‌ها را در یک گسترهٔ دوصفحه‌ای به هم مرتبط می‌کند.",
+      "analyst_assessment_fa": "جداکردن روایت شرکت و ارزش‌های آن خواندن را مرحله‌بندی می‌کند؛ در زونکن بهتر است هر صفحه به‌تنهایی معنا داشته باشد تا قطع تصویر در عطف، پیام را ناقص نکند.",
+      "strengths_fa": [
+        "روایت و فهرست ارزش‌ها از نظر اندازه و جایگاه تفکیک شده‌اند.",
+        "تداوم تصویر میان دو صفحه، پیوستگی بصری ایجاد می‌کند."
+      ],
+      "weaknesses_fa": [
+        "متن ارزش‌ها در صفحهٔ کامل منبع ریز و نسبتاً متراکم است.",
+        "پیوستگی عکس بین صفحات کامل منبع در زونکن وابسته به فاصلهٔ حلقه‌هاست؛ دو برش حاضر فقط قسمت‌های منتخب را نشان می‌دهند."
+      ],
+      "nsp_visual_adaptation_fa": "فقط منطق سلسله‌مراتب و ترکیب روایت با ارزش‌ها اقتباس شود؛ عکس و ارزش‌های رسمی NSP جایگزین شوند. عناصر مهم از محل عطف/حلقه دور بمانند و ادعاهای شرکت ABB منتقل نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I008"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [
+        "structured_context_translations.ABB_value_framework"
+      ],
+      "related_source_fragment_refs": [
+        "ABB12-P03-E07"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection",
+      "paired_reference_group": "ABB12_COMPANY_VALUES_SPREAD"
+    },
+    {
+      "id": "ABB12_05_schematic_hotel_overview",
+      "reference_order": 4,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 5,
+      "source_printed_page": 5,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_05_schematic_hotel_overview.webp",
+      "asset_filename": "ABB12_05_schematic_hotel_overview.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 115640,
+      "asset_sha256": "cba08563aa9a3f6e2f2cfe73bcac857c359af1bab4c4a16de713be751b0200ea",
+      "git_blob_sha": "ceb575967cabef29266d9b5eea0d94e4e5c276c5",
+      "rendered_size_px": [
+        1091,
+        1501
+      ],
+      "base64_length": 154188,
+      "normalized_pdf_crop": [
+        0.04,
+        0.075,
+        0.96,
+        0.97
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 1.990732,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "schematic_hotel_callouts",
+      "title_fa": "نمای خطی هتل با خطوط راهنما",
+      "observed_content_in_crop_fa": "نمای خطی برج، ساختمان مجاور و زیرزمین با خطوط قرمز راهنما، آیکون و توضیح پیرامونی دیده می‌شود؛ این نمودار ایزومتریک یا نقشهٔ فنی NSP نیست.",
+      "key_takeaway_fa": "تصویر واحد هتل می‌تواند رابطهٔ موضوعات پراکنده را نشان دهد، مشروط به خوانابودن خطوط و گروه‌بندی موضوعات.",
+      "analyst_assessment_fa": "برای مرور دامنهٔ راهکار مفید است، اما تراکم ده توضیح، خوانایی را محدود می‌کند. نمونهٔ NSP باید به سه سیستم مصوب و روابط دارای مدرک محدود شود.",
+      "strengths_fa": [
+        "ارتباط هر توضیح با یک نقطهٔ تصویر با خط راهنما مشخص است.",
+        "آیکون، تیتر و شرح کوتاه ساختار تکرارشونده‌ای دارند."
+      ],
+      "weaknesses_fa": [
+        "تعداد زیاد توضیحات و متن ریز، مرور سریع را دشوار می‌کند.",
+        "منبع موضوعاتی مانند توزیع برق، شارژ خودرو و موتور را کنار کنترل اتاق قرار می‌دهد؛ همه در دامنهٔ NSP نیستند."
+      ],
+      "nsp_visual_adaptation_fa": "برای NSP یک تصویر کاملاً تازه و متناسب با سه سیستم تأییدشده ساخته شود؛ تنها محل و عملکرد دارای مدرک در آن قرار گیرد. خطوط، هندسهٔ برج، آیکون‌ها و ادعاهای همین نمودار عیناً منتقل نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I013",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I014",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I015"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [
+        "ABB12-P05-E07",
+        "ABB12-P05-E08",
+        "ABB12-P05-E09"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection"
+    },
+    {
+      "id": "ABB12_07_photo_narrative",
+      "reference_order": 5,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 7,
+      "source_printed_page": null,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_07_photo_narrative.webp",
+      "asset_filename": "ABB12_07_photo_narrative.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 201556,
+      "asset_sha256": "fe7ce45d47093a1f9e9745c9ef33ac948a155a6dcfa56d89fdd9e6928cc93584",
+      "git_blob_sha": "8b2139c23d329f58754af6e35bbf8b9b6335f3f8",
+      "rendered_size_px": [
+        858,
+        1201
+      ],
+      "base64_length": 268744,
+      "normalized_pdf_crop": [
+        0.03,
+        0.04,
+        0.97,
+        0.97
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 1.53265,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "large_narrative_on_photo",
+      "title_fa": "روایت درشت روی عکس ورودی هتل",
+      "observed_content_in_crop_fa": "دو بلوک متن درشت تیره روی بخش روشن عکس ورودی و محوطه دیده می‌شوند؛ زمینهٔ عکس به صفحهٔ ۶ ادامه دارد و فقط صفحهٔ ۷ استخراج شده است.",
+      "key_takeaway_fa": "یک صفحهٔ عکس‌محور می‌تواند میان بخش‌های متنی، مکث بصری و پیام محوری ایجاد کند.",
+      "analyst_assessment_fa": "برای تغییر ریتم میان صفحات توضیحی مناسب است؛ کوتاه‌کردن پیام و انتخاب ناحیهٔ خلوت عکس، خوانایی فارسی را از نسخهٔ منبع بهتر می‌کند.",
+      "strengths_fa": [
+        "متن و عکس یک زمینهٔ معنایی مشترک دارند.",
+        "نمای تمام‌صفحه، ریتم صفحات را از چیدمان معمول متن و محصول جدا می‌کند."
+      ],
+      "weaknesses_fa": [
+        "متن روایی نسبتاً بلند است و بخش مهمی از عکس را می‌پوشاند.",
+        "خوانایی به روشنایی و خلوت‌بودن همان ناحیهٔ عکس وابسته است."
+      ],
+      "nsp_visual_adaptation_fa": "از عکس اختصاصی یا مجاز و پیام کوتاه تازه استفاده شود؛ عکس رقیب به‌عنوان پروژهٔ NSP معرفی نشود. برای چاپ زونکن و فارسی، ناحیهٔ متن و حاشیهٔ امن دوباره طراحی شوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I016",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I017",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I018",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I019"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [
+        "ABB12-P07-E01",
+        "ABB12-P07-E02",
+        "ABB12-P07-E03",
+        "ABB12-P07-E04"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection"
+    },
+    {
+      "id": "ABB12_08_design_award_marks",
+      "reference_order": 6,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 8,
+      "source_printed_page": 8,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_08_design_award_marks.webp",
+      "asset_filename": "ABB12_08_design_award_marks.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 20406,
+      "asset_sha256": "31c69e16d1c88c0d26c689d3c98eb7cf69838642d7fa04570326c9e58ed83329",
+      "git_blob_sha": "6d1ca40162c2ee3b80c77dfee2449e5e1e6af269",
+      "rendered_size_px": [
+        660,
+        1201
+      ],
+      "base64_length": 27208,
+      "normalized_pdf_crop": [
+        0.17,
+        0.535,
+        0.5,
+        0.96
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 3.353798,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "design_recognition_mark_matrix",
+      "title_fa": "شبکهٔ نشان‌های طراحی",
+      "observed_content_in_crop_fa": "چند نشان طراحی با رنگ خاکستری یا سیاه در یک شبکهٔ چندردیفی دیده می‌شوند؛ این تصویر فقط شیوهٔ چیدمان نشان‌ها را ثبت می‌کند و صحت یا دامنهٔ اعتبار آن‌ها را تأیید نمی‌کند.",
+      "key_takeaway_fa": "ارائهٔ شواهد اعتبار در یک بلوک منظم، از پراکندگی لوگوها در صفحه جلوگیری می‌کند.",
+      "analyst_assessment_fa": "بلوک منظم نشان‌ها تنها زمانی برای NSP ارزش اثباتی دارد که نشان معتبر و دامنهٔ مشخصِ قابل انتشار موجود باشد؛ فعلاً صرفاً یک ایدهٔ چیدمان است.",
+      "strengths_fa": [
+        "یک محل مشخص برای نشانه‌های اعتبار تعریف شده است.",
+        "نشانه‌ها از متن اصلی جدا هستند و در اسکن سریع دیده می‌شوند."
+      ],
+      "weaknesses_fa": [
+        "بعضی نشان‌ها و نوشته‌های آن‌ها کوچک‌اند.",
+        "بدون توضیح دامنه و مدرک، خواننده ممکن است نشان را به همهٔ محصولات یا کل شرکت تعمیم دهد."
+      ],
+      "nsp_visual_adaptation_fa": "فقط نشان‌ها و گواهی‌های واقعی، معتبر و دارای حق استفادهٔ NSP با توضیح دامنه و تاریخ ارائه شوند؛ این نشان‌های ABB برای NSP بازاستفاده نشوند.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection"
+    },
+    {
+      "id": "ABB12_09_product_interior_collage",
+      "reference_order": 7,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 9,
+      "source_printed_page": 9,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_09_product_interior_collage.webp",
+      "asset_filename": "ABB12_09_product_interior_collage.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 41946,
+      "asset_sha256": "ba507ba1ddae96c3746f7a4418fbaac8f6d6d94b8d1aa4fb007162d26cbfb0f5",
+      "git_blob_sha": "2e97651fcb93466eb949fb6b33e90dfa71698bd6",
+      "rendered_size_px": [
+        849,
+        1200
+      ],
+      "base64_length": 55928,
+      "normalized_pdf_crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 1.425364,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "product_detail_and_installed_context_collage",
+      "title_fa": "کلاژ نمای نزدیک و نصب در اتاق",
+      "observed_content_in_crop_fa": "تصاویر نزدیک چند تجهیز در بالا و نمای نصب یک پنل در فضای داخلی در پایین دیده می‌شوند؛ اندازهٔ تصاویر بیانگر ابعاد واقعی محصولات نیست.",
+      "key_takeaway_fa": "ترکیب نمای نزدیک محصول و نمای کاربرد در محیط، هم ظاهر محصول و هم مقیاس و زمینهٔ استفاده را نشان می‌دهد.",
+      "analyst_assessment_fa": "ترکیب نمای نزدیک و نصب‌شده به فهم ظاهر و زمینهٔ استفاده کمک می‌کند؛ افزودن نام کوتاه و پیوند روشن میان تصاویر، ضعف بی‌عنوان‌بودن منبع را کاهش می‌دهد.",
+      "strengths_fa": [
+        "تصاویر نزدیک، تنوع ظاهر و جزئیات طراحی را برجسته می‌کنند.",
+        "نمای نصب در اتاق به فهم جایگاه محصول کمک می‌کند."
+      ],
+      "weaknesses_fa": [
+        "نسبت اندازهٔ تصاویر معیار ابعاد واقعی محصولات نیست.",
+        "نبود عنوان و شناسهٔ کوتاه، تطبیق محصول کوچک با عکس کاربرد را مبهم می‌کند."
+      ],
+      "nsp_visual_adaptation_fa": "با عکس واقعی محصولات NSP و عکس نصب مجاز، کلاژ تازه طراحی شود؛ یک نام یا نقش کوتاه و ارتباط روشن بین عکس محصول و محیط اضافه شود. تصویر محصول ABB یا مقیاس آن به NSP نسبت داده نشود.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I022",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I023",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I024"
+      ],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [
+        "ABB12-P08-E04",
+        "ABB12-P08-E05",
+        "ABB12-P08-E06"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection"
+    },
+    {
+      "id": "ABB12_10_configurator_steps_1_3",
+      "reference_order": 8,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 10,
+      "source_printed_page": 10,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_10_configurator_steps_1_3.webp",
+      "asset_filename": "ABB12_10_configurator_steps_1_3.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 25530,
+      "asset_sha256": "5348d0e7891d566d053da2915ed4b242247d4d0375c501dcab429281dcf9554a",
+      "git_blob_sha": "90727cd1913261da135ea356796e7151f87e84ac",
+      "rendered_size_px": [
+        1501,
+        436
+      ],
+      "base64_length": 34040,
+      "normalized_pdf_crop": [
+        0.055,
+        0.515,
+        0.98,
+        0.705
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 2.724151,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "icon_connector_configuration_flow",
+      "title_fa": "فرایند پیکربندی؛ گام‌های ۱ تا ۳",
+      "observed_content_in_crop_fa": "سه آیکون، خطوط اتصال قرمز با نقطهٔ انتهایی و شرح آغاز فرایند، آماده‌سازی فضای اختصاصی و پیکربندی دیده می‌شوند. قید premium configuration زیر دو گام اول حفظ شده است.",
+      "key_takeaway_fa": "فرآیند پیچیده به گام‌های قابل‌مرور تبدیل می‌شود؛ قیدهای هر مرحله باید همراه همان مرحله باقی بمانند.",
+      "analyst_assessment_fa": "منطق آیکون، خط اتصال و شرح کوتاه برای یک فرایند واقعی مناسب است؛ در نسخهٔ فارسی باید جهت خواندن و قیدهای هر مرحله دوباره طراحی شود و خود فرایند ABB به NSP نسبت داده نشود.",
+      "strengths_fa": [
+        "قرارگیری گام‌ها در یک ردیف و خطوط اتصال، توالی را قابل مرور می‌کند.",
+        "آیکون و شرح کوتاه در جایگاه ثابت تکرار شده‌اند."
+      ],
+      "weaknesses_fa": [
+        "تقسیم یک جریان روی دو صفحه می‌تواند پیگیری را در زونکن دشوار کند.",
+        "استخراج ترتیب متن native با ترتیب بصری یکی نیست؛ همچنین قید premium کوچک‌تر چاپ شده است."
+      ],
+      "nsp_visual_adaptation_fa": "فقط اگر فرآیند واقعی و مستند NSP وجود دارد، نمودار جدید با واژگان و مراحل همان فرآیند ساخته شود. وجود configurator یا شناسهٔ طراحی برای NSP از این تصویر نتیجه گرفته نشود؛ آیکون‌ها و متن منبع کپی نشوند.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [
+        "structured_context_translations.ABB_configurator_workflow"
+      ],
+      "related_source_fragment_refs": [
+        "ABB12-P10-E03",
+        "ABB12-P10-E05",
+        "ABB12-P10-E06"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection",
+      "paired_reference_group": "ABB12_CONFIGURATION_FLOW_SIX_STEPS",
+      "source_workflow_step_numbers": [
+        1,
+        2,
+        3
+      ],
+      "workflow_order_basis": "Left-to-right layout and consecutive captions on physical page 10, then page 11; red connectors end in dots, not arrowheads"
+    },
+    {
+      "id": "ABB12_11_configurator_steps_4_6",
+      "reference_order": 9,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 11,
+      "source_printed_page": 11,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_11_configurator_steps_4_6.webp",
+      "asset_filename": "ABB12_11_configurator_steps_4_6.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 16822,
+      "asset_sha256": "e9616d6dee9bf21d1373c4e5a2161fdd29e59f9235a815e95e25fad143aebe0b",
+      "git_blob_sha": "69b13ce564a38275a93f8e03e91fda329656ad89",
+      "rendered_size_px": [
+        1501,
+        446
+      ],
+      "base64_length": 22432,
+      "normalized_pdf_crop": [
+        0.055,
+        0.515,
+        0.96,
+        0.705
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 2.784353,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "icon_connector_configuration_flow",
+      "title_fa": "فرایند پیکربندی؛ گام‌های ۴ تا ۶",
+      "observed_content_in_crop_fa": "سه آیکون و خطوط اتصال قرمز با نقطهٔ انتهایی برای ذخیره و شناسهٔ طرح، افزودن به فهرست و ارسال فهرست دیده می‌شوند؛ ترتیب اصلی صفحات ۱۰ سپس ۱۱ حفظ شده است.",
+      "key_takeaway_fa": "فرآیند پیچیده به گام‌های قابل‌مرور تبدیل می‌شود؛ قیدهای هر مرحله باید همراه همان مرحله باقی بمانند.",
+      "analyst_assessment_fa": "منطق آیکون، خط اتصال و شرح کوتاه برای یک فرایند واقعی مناسب است؛ در نسخهٔ فارسی باید جهت خواندن و قیدهای هر مرحله دوباره طراحی شود و خود فرایند ABB به NSP نسبت داده نشود.",
+      "strengths_fa": [
+        "قرارگیری گام‌ها در یک ردیف و خطوط اتصال، توالی را قابل مرور می‌کند.",
+        "آیکون و شرح کوتاه در جایگاه ثابت تکرار شده‌اند."
+      ],
+      "weaknesses_fa": [
+        "تقسیم یک جریان روی دو صفحه می‌تواند پیگیری را در زونکن دشوار کند.",
+        "استخراج ترتیب متن native با ترتیب بصری یکی نیست؛ همچنین قید premium کوچک‌تر چاپ شده است."
+      ],
+      "nsp_visual_adaptation_fa": "فقط اگر فرآیند واقعی و مستند NSP وجود دارد، نمودار جدید با واژگان و مراحل همان فرآیند ساخته شود. وجود configurator یا شناسهٔ طراحی برای NSP از این تصویر نتیجه گرفته نشود؛ آیکون‌ها و متن منبع کپی نشوند.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [
+        "structured_context_translations.ABB_configurator_workflow"
+      ],
+      "related_source_fragment_refs": [
+        "ABB12-P11-E05",
+        "ABB12-P11-E06",
+        "ABB12-P11-E07"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection",
+      "paired_reference_group": "ABB12_CONFIGURATION_FLOW_SIX_STEPS",
+      "source_workflow_step_numbers": [
+        4,
+        5,
+        6
+      ],
+      "workflow_order_basis": "Left-to-right layout and consecutive captions on physical page 10, then page 11; red connectors end in dots, not arrowheads"
+    },
+    {
+      "id": "ABB12_11_custom_panel_callouts",
+      "reference_order": 10,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 11,
+      "source_printed_page": 11,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_11_custom_panel_callouts.webp",
+      "asset_filename": "ABB12_11_custom_panel_callouts.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 21644,
+      "asset_sha256": "d39b9bdd28c0792e6bc2141392d7e011922c1168b32567b8b93582443eae3ef9",
+      "git_blob_sha": "ad10257b89f6fbbafe64b256b9138cd4f8246cc7",
+      "rendered_size_px": [
+        1501,
+        680
+      ],
+      "base64_length": 28860,
+      "normalized_pdf_crop": [
+        0.085,
+        0.7,
+        0.85,
+        0.945
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 3.293908,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "customization_callouts_on_product",
+      "title_fa": "چهار راهنمای شخصی‌سازی پنل",
+      "observed_content_in_crop_fa": "تصویر پنل تیره با چهار خط راهنمای قرمز و برچسب‌های متن، آیکون/لوگو، جای‌گذاری و رنگ شیشه دیده می‌شود؛ QR و نشانی پیکربندیِ بالای صفحه بیرون این برش هستند.",
+      "key_takeaway_fa": "جداکردن محورهای شخصی‌سازی و اشارهٔ مستقیم به محل هرکدام، حدود گزینه‌های طراحی را قابل‌فهم‌تر می‌کند.",
+      "analyst_assessment_fa": "راهنمای نقطه‌به‌نقطه از عبارت کلی «قابل شخصی‌سازی» روشن‌تر است؛ کنار هر محور باید حدود و گزینه‌های واقعاً قابل ساخت NSP بیان شوند.",
+      "strengths_fa": [
+        "ارتباط هر توضیح با نقطهٔ مربوط روی محصول روشن است.",
+        "چهار محور به‌جای یک ادعای کلی «قابل سفارشی‌سازی» نمایش داده شده‌اند."
+      ],
+      "weaknesses_fa": [
+        "برخی خطوط و نوشته‌ها روی زمینهٔ روشن کم‌کنتراست‌اند.",
+        "تصویر به‌تنهایی حدود فنی، گزینه‌های مجاز و محدودیت ساخت را نشان نمی‌دهد."
+      ],
+      "nsp_visual_adaptation_fa": "تنها گزینه‌های شخصی‌سازی واقعاً پشتیبانی‌شدهٔ NSP روی عکس/رندر اختصاصی نمایش داده شوند؛ رنگ، لوگو، محل آیکون و آزادی طراحی محصول ABB وعدهٔ NSP تلقی نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I028",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I029",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I030"
+      ],
+      "related_S03_record_ids_context_pages": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I027"
+      ],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [
+        "ABB12-P11-E01",
+        "ABB12-P11-E03",
+        "ABB12-P11-E04",
+        "ABB12-P10-E07"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection"
+    },
+    {
+      "id": "ABB12_15_icons_and_benefit_columns",
+      "reference_order": 11,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 15,
+      "source_printed_page": 15,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_15_icons_and_benefit_columns.webp",
+      "asset_filename": "ABB12_15_icons_and_benefit_columns.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 109788,
+      "asset_sha256": "92d3877396cb6c57a084184e60208ec44e78dd440205a1f71a3d81581938df06",
+      "git_blob_sha": "db4bc91c8e5bab0f871bd503b4e1635ca36f4cc5",
+      "rendered_size_px": [
+        1501,
+        1103
+      ],
+      "base64_length": 146384,
+      "normalized_pdf_crop": [
+        0.18,
+        0.54,
+        0.95,
+        0.94
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 3.272519,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "icon_summary_and_benefit_columns",
+      "title_fa": "آیکون‌های کارکرد و دو ستون مزیت",
+      "observed_content_in_crop_fa": "ردیف چهار آیکون خطی، جمع‌بندی زیر آن و دو ستون توضیح ارتباط مهمان و کارایی انرژی دیده می‌شوند؛ تیتر و مقدمهٔ بالای صفحه در این برش نیستند.",
+      "key_takeaway_fa": "ردیف آیکون، جمع‌بندی کوتاه و دو ستون توضیح، پیام را در چند سطح قابل مرور ارائه می‌کنند.",
+      "analyst_assessment_fa": "این بخش برای توضیح چند منفعت مرتبط مناسب است؛ عنوان کوتاه برای هر آیکون و متن در اندازهٔ خوانا، به درک سریع‌تر فارسی کمک می‌کند.",
+      "strengths_fa": [
+        "آیکون‌های هم‌سبک موضوع را سریع معرفی می‌کنند.",
+        "جمع‌بندی کوتاه از دو توضیح جزئی‌تر جدا شده است."
+      ],
+      "weaknesses_fa": [
+        "فضای سفید زیاد همراه با نوشتهٔ ریز پایین صفحه، تعادل خوانایی را ضعیف می‌کند.",
+        "آیکون‌های بدون عنوان کوتاه ممکن است برای خواننده چندمعنا باشند."
+      ],
+      "nsp_visual_adaptation_fa": "الگوی سلسله‌مراتب با آیکون‌های تازه و عنوان‌های کوتاه فارسی اقتباس شود؛ متن پایین در اندازهٔ خوانا و با ادعاهای مستند NSP طراحی شود. تعداد یا معنای آیکون‌های منبع الزام طراحی نیست.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I038",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I039",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I040"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [
+        "ABB12-P15-E04",
+        "ABB12-P15-E06",
+        "ABB12-P15-E08"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection"
+    },
+    {
+      "id": "ABB12_29_room_and_function_cards",
+      "reference_order": 12,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 29,
+      "source_printed_page": 29,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_29_room_and_function_cards.webp",
+      "asset_filename": "ABB12_29_room_and_function_cards.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 85192,
+      "asset_sha256": "1200da51564e6e2970e03a508449f8e9239b16c990fca5547e9271edf796604d",
+      "git_blob_sha": "8b4683f44349cdc1fc1abb8ef4a377e44245e138",
+      "rendered_size_px": [
+        854,
+        1200
+      ],
+      "base64_length": 113592,
+      "normalized_pdf_crop": [
+        0.01,
+        0,
+        1,
+        0.985
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 1.44707,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "room_photo_with_function_cards",
+      "title_fa": "عکس اتاق و سه ستون توضیح کارکرد",
+      "observed_content_in_crop_fa": "عکس اتاق در بالای راست، متن خوشامدگویی زیر عکس و سه تصویر محصول با ستون‌های توضیح در پایین دیده می‌شوند؛ متن و تصویر فقط زمینهٔ منبع ABB هستند.",
+      "key_takeaway_fa": "ابتدا جایگاه فناوری در تجربهٔ واقعی اتاق نشان داده می‌شود و سپس هر کارکرد با یک تصویر و توضیح مستقل معرفی می‌شود.",
+      "analyst_assessment_fa": "نمونهٔ مناسبی برای مطالعهٔ رابطهٔ عکس محیط و معرفی کارکرد است؛ تنها دیدن این چیدمان هیچ سازگاری یا قابلیت محصول NSP را ثابت نمی‌کند.",
+      "strengths_fa": [
+        "ارتباط میان تجهیزات و فضای داخلی قابل‌فهم است.",
+        "عنوان‌های کوتاه، خواننده را از تصویر محصول به منفعت هدایت می‌کنند.",
+        "سه ستون پایین امکان مقایسهٔ نوع کارکرد را فراهم می‌کنند."
+      ],
+      "weaknesses_fa": [
+        "اندازهٔ تصاویر محصولات یکسان نیست.",
+        "فضای سفید بزرگ در بالای چپ، تعادل صفحه را وابسته به صفحهٔ مقابل می‌کند.",
+        "متن منبع شامل نام‌ها و مشخصات تجهیزات رقیب است و نباید به بانک مشخصات NSP منتقل شود."
+      ],
+      "nsp_visual_adaptation_fa": "ساختار عکس محیط همراه با سه کارت کارکرد را با عکاسی، محصولات و متن اختصاصی NSP بازطراحی کنید. تصویر و ادعاهای ABB صرفاً مرجع پژوهشی بمانند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I078",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I079",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I080"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [
+        "ABB12-P29-E02",
+        "ABB12-P29-E03",
+        "ABB12-P29-E06"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection"
+    },
+    {
+      "id": "ABB12_31_service_and_card_controls",
+      "reference_order": 13,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 31,
+      "source_printed_page": 31,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_31_service_and_card_controls.webp",
+      "asset_filename": "ABB12_31_service_and_card_controls.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 11768,
+      "asset_sha256": "dda19a7d13d39f36af285151fe0078fbd6c5e3e9a832a738b6899387fae7fcbf",
+      "git_blob_sha": "aa3da0c6f2f60629aab7426f6f9e0271b24e9894",
+      "rendered_size_px": [
+        1201,
+        355
+      ],
+      "base64_length": 15692,
+      "normalized_pdf_crop": [
+        0.2,
+        0.66,
+        0.78,
+        0.781
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 3.475641,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "physical_control_comparison",
+      "title_fa": "مقایسهٔ کلیدهای خدمات و کلید کارتی",
+      "observed_content_in_crop_fa": "دو نمونهٔ کلید خدمات در چپ و یک کلید کارتی در راست با عنوان‌های گروه‌ها دیده می‌شوند؛ بدنهٔ توضیحات و مشخصات الکتریکی پایین آن‌ها از برش کنار گذاشته شده است.",
+      "key_takeaway_fa": "چیدمان کنارهم، تفاوت گروه کارکردیِ اعلام درخواست مهمان و کنترل مبتنی بر کارت را سریع نشان می‌دهد.",
+      "analyst_assessment_fa": "برای مطالعهٔ نمایش انواع کنترل فیزیکی مناسب است. این تصویر نمودار سیم‌کشی یا توالی عملکرد کارت نیست و ابهام زمان‌بندی صفحهٔ ۳۱ را حل نمی‌کند.",
+      "strengths_fa": [
+        "هم‌ترازی و اندازهٔ نزدیک تصاویر مقایسه را ساده می‌کند.",
+        "نمادهای روی کلید، بدون نیاز به توضیح زیاد به کارکرد اشاره می‌کنند.",
+        "برش محدود از تکرار عکس اتاق جلوگیری می‌کند."
+      ],
+      "weaknesses_fa": [
+        "تفاوت دقیق نقش دو کلید خدمات از تصویر به‌تنهایی کاملاً مشخص نیست.",
+        "برش فقط تصاویر و عنوان‌ها را نشان می‌دهد و شرح عملکرد در آن نیست.",
+        "تصویر قابلیت نرم‌افزاری، PMS یا ترتیب قطع مدارها را نشان نمی‌دهد."
+      ],
+      "nsp_visual_adaptation_fa": "از اصل نمایش کنارهم و نمادگذاری خوانا الهام بگیرید و برای محصول واقعی NSP، تصاویر و شرح نقش تأییدشده تهیه کنید.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I084",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I085",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I086",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I087",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I088"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [
+        "ABB12-P31-E02",
+        "ABB12-P31-E03",
+        "ABB12-P31-E05",
+        "ABB12-P31-E06",
+        "ABB12-P31-E07"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection"
+    },
+    {
+      "id": "ABB12_32_suite_touchscreen_context",
+      "reference_order": 14,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 32,
+      "source_printed_page": 32,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_32_suite_touchscreen_context.webp",
+      "asset_filename": "ABB12_32_suite_touchscreen_context.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 45824,
+      "asset_sha256": "129cca91cc77aaab6fa9e428f66de141edca80f4b75dc77782b1e853626998f2",
+      "git_blob_sha": "925635f09fba07165f63fcfdc4ba84ed1ec6f0af",
+      "rendered_size_px": [
+        1201,
+        696
+      ],
+      "base64_length": 61100,
+      "normalized_pdf_crop": [
+        0.07,
+        0.242,
+        1,
+        0.623
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 2.167604,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "room_context_with_prominent_control_interface",
+      "title_fa": "نمایشگر در زمینهٔ سوئیت",
+      "observed_content_in_crop_fa": "تخت و دکور چوبی در چپ و نمایشگر دیواری بزرگ با پرسپکتیو در راست دیده می‌شوند؛ تصاویر توزیع برق و متن پایین صفحه در برش نیستند.",
+      "key_takeaway_fa": "نمایش بزرگ رابط در کنار فضای اقامت، کنترل را به بخشی از تجربهٔ اتاق تبدیل می‌کند.",
+      "analyst_assessment_fa": "مقایسهٔ مقیاس اتاق و رابط برای ارائهٔ تجربه مفید است؛ عکس تنها ظاهر رابط را نشان می‌دهد و مدرک مستقلِ قابلیت‌های آن نیست.",
+      "strengths_fa": [
+        "رابط محصول در مقیاس خواناتر از یک عکس کوچک معرفی می‌شود.",
+        "زمینهٔ اتاق به کاربرد نمایشگر معنا می‌دهد.",
+        "تفکیک فضایی تصویر محصول و دکور، تمرکز بصری خوبی دارد."
+      ],
+      "weaknesses_fa": [
+        "پرسپکتیو و ریزبودن نوشته‌ها مانع استناد دقیق به همهٔ عناصر رابط می‌شود.",
+        "وجود نمایشگر در عکس قابلیت‌های NSP یا هویت یک نرم‌افزار مشخص را ثابت نمی‌کند.",
+        "برش، تیتر و توضیحات صفحه را ندارد؛ این بخش‌ها باید در فرادادهٔ پژوهش ارجاع داده شوند."
+      ],
+      "nsp_visual_adaptation_fa": "برای NSP یک ترکیب تصویری اختصاصی از اتاق و رابط واقعیِ تأییدشده بسازید؛ از تقلید دقیق ترکیب، رابط و تصاویر ABB پرهیز کنید.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I090",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I091"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [
+        "ABB12-P32-E06",
+        "ABB12-P32-E07"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection"
+    },
+    {
+      "id": "ABB12_37_hand_touchscreen_closeup",
+      "reference_order": 15,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 37,
+      "source_printed_page": null,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_37_hand_touchscreen_closeup.webp",
+      "asset_filename": "ABB12_37_hand_touchscreen_closeup.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 97762,
+      "asset_sha256": "20dae7649c7bf34d4b2664d6a9d41fab7362a40fa6830312f97052a89dde2379",
+      "git_blob_sha": "3b63c6ab1004ef69ce3b2f1b483cbd5f7baa080a",
+      "rendered_size_px": [
+        849,
+        1200
+      ],
+      "base64_length": 130352,
+      "normalized_pdf_crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 1.425364,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "human_interaction_closeup",
+      "title_fa": "نمای نزدیک تعامل دست با نمایشگر",
+      "observed_content_in_crop_fa": "عکس تمام‌صفحهٔ نمایشگر نصب‌شده روی دیوار با دست در حال لمس دیده می‌شود؛ بخش‌هایی زیر دست پوشیده‌اند و سمت راست نمایشگر در خود منبع بریده شده است. این یک اسکرین‌شات کامل نیست.",
+      "key_takeaway_fa": "حضور دست، نحوهٔ تعامل و مقیاس واقعی ابزار کنترل را نشان می‌دهد و از یک تصویر بی‌زمینهٔ محصول فراتر می‌رود.",
+      "analyst_assessment_fa": "برای مطالعهٔ سبک عکاسی تعامل مناسب است؛ عنوان «اسکرین‌شات کامل داشبورد» برای آن نادرست است. تنها ۱۰ برچسب واضحی که در S02 ثبت شده‌اند مبنای متن‌خوانی هستند.",
+      "strengths_fa": [
+        "حرکت دست، مفهوم کنترل لمسی را مستقیم منتقل می‌کند.",
+        "کادر نزدیک، ساختار خانه‌های کنترل را قابل مشاهده می‌کند.",
+        "دیوار و قاب دستگاه زمینهٔ نصب واقعی را نشان می‌دهند."
+      ],
+      "weaknesses_fa": [
+        "دست بخش مهمی از رابط را پوشانده است.",
+        "لبهٔ راست صفحه نمایش در خود منبع کامل نیست.",
+        "اعداد نمونهٔ ۲۲٫۵، ۱۰۰٪ و ۱/۳ مشخصات فنی یا حدود عملکرد نیستند.",
+        "هویت محصول نرم‌افزاری از این عکس مستقلاً تأیید نشده است."
+      ],
+      "nsp_visual_adaptation_fa": "سبک عکاسی تعامل را با سخت‌افزار و رابط واقعی NSP بازآفرینی کنید. برای توضیح قابلیت‌ها از نمای جداگانه و خوانای رابط استفاده شود؛ قسمت پنهان تصویر رقیب بازسازی یا حدس زده نشود.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [
+        "structured_context_translations.visual_UI_labels_page_37"
+      ],
+      "related_source_fragment_refs": [],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection",
+      "native_text_status": "no_native_text",
+      "source_occlusions_preserved": true,
+      "software_identity_verified": false,
+      "source_sample_values_are_specifications": false
+    },
+    {
+      "id": "ABB12_38_paired_product_function_rows",
+      "reference_order": 16,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 38,
+      "source_printed_page": 38,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_38_paired_product_function_rows.webp",
+      "asset_filename": "ABB12_38_paired_product_function_rows.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 150248,
+      "asset_sha256": "0744fd5c7d3f7918b2683b45cc46cac763e3e87727ec1d5f35e08ffca58f3b53",
+      "git_blob_sha": "5e2c783bd9bc70a519b7adb4970f745f9de2d42a",
+      "rendered_size_px": [
+        1501,
+        1368
+      ],
+      "base64_length": 200332,
+      "normalized_pdf_crop": [
+        0.055,
+        0.36,
+        0.955,
+        0.94
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 2.799822,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "product_function_rows",
+      "title_fa": "ردیف‌های معرفی با تصاویر مکمل محصول",
+      "observed_content_in_crop_fa": "چهار ردیف با تصویر تجهیز، تصویر کنترل یا تجهیز قابل مشاهده برای کاربر، و عنوان و شرح در راست دیده می‌شوند؛ تیتر و مقدمهٔ بالای صفحه، شامل ادعای تشخیص پیشاپیش خطا، بیرون برش هستند.",
+      "key_takeaway_fa": "هر ردیف یک کارکرد را با تصاویر مکمل و توضیح کوتاه معرفی می‌کند؛ این روش میان اجزای پنهان و بخش قابل‌مشاهدهٔ کاربر رابطهٔ روایی ایجاد می‌کند.",
+      "analyst_assessment_fa": "از متمایزترین سبک‌های معرفی تجهیزات در این بازه است. کنارهم‌آمدن تصاویر را نباید نقشهٔ اتصال، معماری فنی یا سازگاری اثبات‌شده تلقی کرد.",
+      "strengths_fa": [
+        "الگوی تکرارشوندهٔ ردیف‌ها مرور و مقایسه را آسان می‌کند.",
+        "تصویر کنترل کاربر در کنار تجهیز پشت‌صحنه، روایت کارکرد را کامل‌تر می‌کند.",
+        "عناوین کوتاه، تمرکز را بر نتیجهٔ کاربردی نگه می‌دارند."
+      ],
+      "weaknesses_fa": [
+        "متن‌ها نسبتاً متراکم‌اند و در چاپ کوچک به خوانایی آسیب می‌زنند.",
+        "اندازه و زاویهٔ تصاویر محصولات کاملاً یکسان نیست.",
+        "مقدمهٔ صفحهٔ کامل منبع، بیرون از این برش، ادعای تشخیص پیشاپیش خطا دارد. نشان‌ها و اطلاعات روی تجهیزاتِ داخل تصویر نیز صرفاً متعلق به رقیب‌اند."
+      ],
+      "nsp_visual_adaptation_fa": "قالب ردیفِ تصویرهای مکمل و توضیح کارکرد را با تصاویر و روابط فنیِ مستند NSP از نو طراحی کنید. مشخصات، برندها و ادعاهای ABB به متن NSP منتقل نشوند.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection"
+    },
+    {
+      "id": "ABB12_39_building_dashboard_row",
+      "reference_order": 17,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 39,
+      "source_printed_page": 39,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_39_building_dashboard_row.webp",
+      "asset_filename": "ABB12_39_building_dashboard_row.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 25582,
+      "asset_sha256": "c1f5807883d5574f87468525effaa513ab157cc6aa5d6bf1ae4550e4b88b195d",
+      "git_blob_sha": "03784af168bd015f732dc1a00ddf77922738775a",
+      "rendered_size_px": [
+        1201,
+        332
+      ],
+      "base64_length": 34112,
+      "normalized_pdf_crop": [
+        0.21,
+        0.47,
+        0.95,
+        0.614
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 2.724151,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "product_function_rows",
+      "title_fa": "گونهٔ تک‌ردیفی معرفی نمایش مرکزی",
+      "observed_content_in_crop_fa": "نمای روبه‌روی نمایشگر با قاب کامل و عنوان Building dashboard و شرح کوتاه در راست دیده می‌شود؛ ردیف‌های توزیع برق و ادعای maintenance-free پایین آن حذف شده‌اند. این گونه، سبک مستقل تازه شمرده نشده است.",
+      "key_takeaway_fa": "رابط با یک تصویر مستقل و یک توضیح کوتاه معرفی می‌شود و از موضوعات توزیع برق در ردیف‌های بعد جدا می‌ماند.",
+      "analyst_assessment_fa": "در صورت نیاز به مرجع تصویر بدون پوشیدگی دست، مکمل صفحهٔ ۳۷ است؛ از نظر ساختار ردیفی با صفحهٔ ۳۸ هم‌خانواده است و استخراج آن الزامی نیست.",
+      "strengths_fa": [
+        "قاب دستگاه کامل و بدون دست دیده می‌شود.",
+        "متن کوتاه کنار تصویر نقش نمایش مرکزی را مشخص می‌کند."
+      ],
+      "weaknesses_fa": [
+        "اندازهٔ رابط در منبع کوچک است و همهٔ نوشته‌ها با قطعیت خوانا نیستند.",
+        "ساختار کلی با ردیف‌های صفحهٔ ۳۸ تکرار می‌شود.",
+        "عبارت maintenance-free در ردیف بعد به توزیع برق مربوط است و نباید به این تصویر الصاق شود."
+      ],
+      "nsp_visual_adaptation_fa": "فقط اگر برای نشان‌دادن اصل تصویر رابط و توضیح کوتاه به مرجعی جدا نیاز است، این برش ثبت شود؛ برای NSP از رابط و متن واقعی استفاده شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I101"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [
+        "ABB12-P39-E02"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection",
+      "style_counting_note": "Complementary single-device variant of product_function_rows, not an additional unique style"
+    },
+    {
+      "id": "ABB12_41_numbered_hotel_gallery",
+      "reference_order": 18,
+      "source_company": "ABB",
+      "original_pdf": "12_ABB_First Class Solutions for Hotels.pdf",
+      "original_pdf_sha256": "225305e70844f2c3d78f3bd382ebd9e3c62834e76cf885645053c392864d1425",
+      "source_pdf_page": 41,
+      "source_printed_page": 41,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_41_numbered_hotel_gallery.webp",
+      "asset_filename": "ABB12_41_numbered_hotel_gallery.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 244948,
+      "asset_sha256": "5e614982f0c83507f8826001da11019e3b48e42d0028f0c9005b412909d86466",
+      "git_blob_sha": "b18bfe398a5c6829bb7a96e91abad5c51f64d0e8",
+      "rendered_size_px": [
+        975,
+        1501
+      ],
+      "base64_length": 326600,
+      "normalized_pdf_crop": [
+        0.278,
+        0.033,
+        0.945,
+        0.759
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to unrotated visible PDF page",
+      "render_scale": 2.45414,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "numbered_project_gallery",
+      "title_fa": "گالری شماره‌دار پنج مرجع هتلی",
+      "observed_content_in_crop_fa": "پنج عکس معماری و فضای داخلی با برچسب‌های ۰۱ تا ۰۵ در شبکه‌ای نامتقارن دیده می‌شوند؛ ستون متن و ادعاهای معماری و عملکرد کنار تصاویر وارد برش نشده‌اند. نام هر مرجع در S03 قابل پیگیری است.",
+      "key_takeaway_fa": "شماره‌گذاری مشترکِ تصویر و توضیح، چند مرجع پروژه را در یک صفحه قابل پیگیری می‌کند.",
+      "analyst_assessment_fa": "برای پژوهش شیوهٔ ارائهٔ گالری مرجع مفید است؛ این صفحه مطالعهٔ موردی کامل با مسئله، راهکار و نتیجهٔ سنجیده نیست. همهٔ مرجع‌ها متعلق به ABB هستند.",
+      "strengths_fa": [
+        "پیوند شماره‌های تصاویر و توضیحات، شناسایی هر مرجع را ساده می‌کند.",
+        "تنوع اندازهٔ تصاویر به گالری ریتم می‌دهد.",
+        "تصاویر نما و فضای داخلی، دامنهٔ تصویری متنوعی دارند."
+      ],
+      "weaknesses_fa": [
+        "ستون توضیح در صفحهٔ کامل منبع باریک و متراکم است؛ از برش حاضر حذف شده و نام‌ها باید از ارجاع‌های S03 خوانده شوند.",
+        "اعداد، رکوردهای معماری و ادعاهای عملکرد در متن مستقلاً بررسی نشده‌اند.",
+        "عددهای ۰۱ تا ۰۵ شناسهٔ عکس‌اند، نه شمارهٔ صفحه یا ترتیب اعتبار پروژه."
+      ],
+      "nsp_visual_adaptation_fa": "برای رزومهٔ واقعی NSP، گالری اختصاصی با تصاویر دارای مجوز و شرح دامنهٔ کار مستند بسازید؛ فقط اصل شماره‌گذاری و اتصال تصویر به توضیح الهام گرفته شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I105",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I106",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I107",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I108",
+        "CAT012_ABB_FIRST_CLASS_SOLUTIONS_FOR_HOTELS:I109"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_S03_structured_context_paths": [],
+      "related_source_fragment_refs": [
+        "ABB12-P41-E01",
+        "ABB12-P41-E02",
+        "ABB12-P41-E03",
+        "ABB12-P41-E04",
+        "ABB12-P41-E05"
+      ],
+      "record_link_meaning": "Topic or layout context only; source image does not independently prove described behavior",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct crop rendered from the original PDF page; no generative reconstruction or removal within crop",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به ABB یا صاحبان حقوق آن‌ها هستند؛ مجوز استفادهٔ تجاری در کاتالوگ NSP از این پژوهش نتیجه نمی‌شود.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names or technical text; not imported as structured specifications or NSP claims",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection"
+    }
+  ],
+  "style_catalog": [
+    {
+      "style_id": "hero_photo_title_band",
+      "representative_reference_ids": [
+        "ABB12_01_cover_photo_title"
+      ],
+      "physical_pdf_pages": [
+        1
+      ],
+      "key_takeaway_fa": "جداسازی عکس غالب از نوار سادهٔ عنوان، هم تجربهٔ بصری و هم خوانایی معرفی را حفظ می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "company_story_and_value_grid",
+      "representative_reference_ids": [
+        "ABB12_02_company_intro_photo",
+        "ABB12_03_company_value_grid"
+      ],
+      "physical_pdf_pages": [
+        2,
+        3
+      ],
+      "key_takeaway_fa": "یک تصویر پیوسته، معرفی شرکت و فهرست ارزش‌ها را در یک گسترهٔ دوصفحه‌ای به هم مرتبط می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "schematic_hotel_callouts",
+      "representative_reference_ids": [
+        "ABB12_05_schematic_hotel_overview"
+      ],
+      "physical_pdf_pages": [
+        5
+      ],
+      "key_takeaway_fa": "تصویر واحد هتل می‌تواند رابطهٔ موضوعات پراکنده را نشان دهد، مشروط به خوانابودن خطوط و گروه‌بندی موضوعات.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "large_narrative_on_photo",
+      "representative_reference_ids": [
+        "ABB12_07_photo_narrative"
+      ],
+      "physical_pdf_pages": [
+        7
+      ],
+      "key_takeaway_fa": "یک صفحهٔ عکس‌محور می‌تواند میان بخش‌های متنی، مکث بصری و پیام محوری ایجاد کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "design_recognition_mark_matrix",
+      "representative_reference_ids": [
+        "ABB12_08_design_award_marks"
+      ],
+      "physical_pdf_pages": [
+        8
+      ],
+      "key_takeaway_fa": "ارائهٔ شواهد اعتبار در یک بلوک منظم، از پراکندگی لوگوها در صفحه جلوگیری می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "product_detail_and_installed_context_collage",
+      "representative_reference_ids": [
+        "ABB12_09_product_interior_collage"
+      ],
+      "physical_pdf_pages": [
+        9
+      ],
+      "key_takeaway_fa": "ترکیب نمای نزدیک محصول و نمای کاربرد در محیط، هم ظاهر محصول و هم مقیاس و زمینهٔ استفاده را نشان می‌دهد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "icon_connector_configuration_flow",
+      "representative_reference_ids": [
+        "ABB12_10_configurator_steps_1_3",
+        "ABB12_11_configurator_steps_4_6"
+      ],
+      "physical_pdf_pages": [
+        10,
+        11
+      ],
+      "key_takeaway_fa": "فرآیند پیچیده به گام‌های قابل‌مرور تبدیل می‌شود؛ قیدهای هر مرحله باید همراه همان مرحله باقی بمانند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "customization_callouts_on_product",
+      "representative_reference_ids": [
+        "ABB12_11_custom_panel_callouts"
+      ],
+      "physical_pdf_pages": [
+        11
+      ],
+      "key_takeaway_fa": "جداکردن محورهای شخصی‌سازی و اشارهٔ مستقیم به محل هرکدام، حدود گزینه‌های طراحی را قابل‌فهم‌تر می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "icon_summary_and_benefit_columns",
+      "representative_reference_ids": [
+        "ABB12_15_icons_and_benefit_columns"
+      ],
+      "physical_pdf_pages": [
+        15
+      ],
+      "key_takeaway_fa": "ردیف آیکون، جمع‌بندی کوتاه و دو ستون توضیح، پیام را در چند سطح قابل مرور ارائه می‌کنند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "room_photo_with_function_cards",
+      "representative_reference_ids": [
+        "ABB12_29_room_and_function_cards"
+      ],
+      "physical_pdf_pages": [
+        29
+      ],
+      "key_takeaway_fa": "ابتدا جایگاه فناوری در تجربهٔ واقعی اتاق نشان داده می‌شود و سپس هر کارکرد با یک تصویر و توضیح مستقل معرفی می‌شود.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "physical_control_comparison",
+      "representative_reference_ids": [
+        "ABB12_31_service_and_card_controls"
+      ],
+      "physical_pdf_pages": [
+        31
+      ],
+      "key_takeaway_fa": "چیدمان کنارهم، تفاوت گروه کارکردیِ اعلام درخواست مهمان و کنترل مبتنی بر کارت را سریع نشان می‌دهد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "room_context_with_prominent_control_interface",
+      "representative_reference_ids": [
+        "ABB12_32_suite_touchscreen_context"
+      ],
+      "physical_pdf_pages": [
+        32
+      ],
+      "key_takeaway_fa": "نمایش بزرگ رابط در کنار فضای اقامت، کنترل را به بخشی از تجربهٔ اتاق تبدیل می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "human_interaction_closeup",
+      "representative_reference_ids": [
+        "ABB12_37_hand_touchscreen_closeup"
+      ],
+      "physical_pdf_pages": [
+        37
+      ],
+      "key_takeaway_fa": "حضور دست، نحوهٔ تعامل و مقیاس واقعی ابزار کنترل را نشان می‌دهد و از یک تصویر بی‌زمینهٔ محصول فراتر می‌رود.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "product_function_rows",
+      "representative_reference_ids": [
+        "ABB12_38_paired_product_function_rows",
+        "ABB12_39_building_dashboard_row"
+      ],
+      "physical_pdf_pages": [
+        38,
+        39
+      ],
+      "key_takeaway_fa": "هر ردیف یک کارکرد را با تصاویر مکمل و توضیح کوتاه معرفی می‌کند؛ این روش میان اجزای پنهان و بخش قابل‌مشاهدهٔ کاربر رابطهٔ روایی ایجاد می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "numbered_project_gallery",
+      "representative_reference_ids": [
+        "ABB12_41_numbered_hotel_gallery"
+      ],
+      "physical_pdf_pages": [
+        41
+      ],
+      "key_takeaway_fa": "شماره‌گذاری مشترکِ تصویر و توضیح، چند مرجع پروژه را در یک صفحه قابل پیگیری می‌کند.",
+      "final_section_mapping": "pending_S05"
+    }
+  ],
+  "reference_overview": {
+    "asset_path": "Portfolio Instruction/research/assets/abb12/ABB12_S04_reference_overview.webp",
+    "asset_filename": "ABB12_S04_reference_overview.webp",
+    "mime_type": "image/webp",
+    "asset_bytes": 196954,
+    "asset_sha256": "151097bbae427d05ce8a74dab716ea8a91f1aff09c53e56d66864d05209c9aca",
+    "git_blob_sha": "9e451f208912ac663e80f77c8d2ecf5a2bea90b3",
+    "rendered_size_px": [
+      1364,
+      1848
+    ],
+    "base64_length": 262608,
+    "role": "Derived contact sheet for navigation and visual QA; not an additional source image or style",
+    "source_reference_ids": [
+      "ABB12_01_cover_photo_title",
+      "ABB12_02_company_intro_photo",
+      "ABB12_03_company_value_grid",
+      "ABB12_05_schematic_hotel_overview",
+      "ABB12_07_photo_narrative",
+      "ABB12_08_design_award_marks",
+      "ABB12_09_product_interior_collage",
+      "ABB12_10_configurator_steps_1_3",
+      "ABB12_11_configurator_steps_4_6",
+      "ABB12_11_custom_panel_callouts",
+      "ABB12_15_icons_and_benefit_columns",
+      "ABB12_29_room_and_function_cards",
+      "ABB12_31_service_and_card_controls",
+      "ABB12_32_suite_touchscreen_context",
+      "ABB12_37_hand_touchscreen_closeup",
+      "ABB12_38_paired_product_function_rows",
+      "ABB12_39_building_dashboard_row",
+      "ABB12_41_numbered_hotel_gallery"
+    ]
+  },
+  "design_observations_fa": [
+    "قابلیت اصلی این بروشور، حرکت میان تصویر معماری، تجربهٔ مهمان، نمای محصول و کارکرد است؛ برای NSP باید هر رابطه به محصول و تجربهٔ مستند خود شرکت متصل شود.",
+    "نقشهٔ صفحهٔ ۵ یک نمای خطی با توضیح پیرامونی است؛ نمایش ایزومتریک، معماری فنی مصوب یا نقشهٔ اتصال NSP نیست.",
+    "دو بخش فرایند در صفحات ۱۰ و ۱۱ یک سبک واحد و یک جریان شش‌مرحله‌ای‌اند؛ وجود دو فایل تصویر، تعداد سبک‌ها را دو برابر نمی‌کند.",
+    "صفحات ۲ و ۳ دو نمای مکمل از یک خانوادهٔ روایت شرکت و ارزش‌ها هستند؛ برش‌ها جدا ذخیره شده‌اند و گسترهٔ مصنوعی ساخته نشده است.",
+    "ردیف نمایش مرکزی صفحهٔ ۳۹ مکمل تصویر دارای پوشیدگی صفحهٔ ۳۷ است، اما با خانوادهٔ ردیف‌های محصول صفحهٔ ۳۸ یک سبک حساب می‌شود.",
+    "صفحهٔ ۳۷ عکس تعامل با نمایشگر است؛ داده‌های زیر دست یا بیرون کادر تکمیل نشده‌اند و نام نرم‌افزار یا حوزهٔ خانهٔ هوشمند از آن نتیجه گرفته نمی‌شود.",
+    "ماتریس نشان‌های صفحهٔ ۸ تنها الگوی چیدمان است؛ به معنای داشتن این نشان‌ها توسط NSP یا تأیید مستقل اعتبار آن‌ها نیست.",
+    "گالری صفحهٔ ۴۱ پنج مرجع ABB با شمارهٔ تصویر دارد؛ یک مطالعهٔ موردی کامل با مسئله، راهکار و نتیجهٔ سنجیده محسوب نمی‌شود.",
+    "منبع A4 عمودی است؛ اقتباس برای کاتالوگ افقیِ زونکن به بازچینی مستقل نیاز دارد. محتوای مهم باید از سمت حلقه دور بماند و پس‌زمینهٔ دیجیتال پیوسته حفظ شود؛ این مرحله طرح چاپ نهایی نمی‌سازد."
+  ],
+  "excluded_visuals": [
+    {
+      "physical_pdf_pages": [
+        4,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        28,
+        30,
+        33,
+        40
+      ],
+      "reason_fa": "گونه‌های تکراری عکس محیط و شرح کارکرد؛ صفحهٔ ۲۹ نمایندهٔ این خانواده است و صفحهٔ ۳۲ نمایش برجستهٔ رابط را جدا پوشش می‌دهد."
+    },
+    {
+      "physical_pdf_pages": [
+        6,
+        18,
+        19,
+        27,
+        36
+      ],
+      "reason_fa": "صفحهٔ مکمل یا گونهٔ عکس/بافت همراه روایت؛ صفحهٔ ۷ نمایندهٔ روایت روی عکس است و زمینهٔ صفحهٔ ۳۷ جدا ثبت شده است."
+    },
+    {
+      "physical_pdf_pages": [
+        12,
+        16
+      ],
+      "reason_fa": "تکرار قالب آیکون و مزیت؛ مرجع صفحهٔ ۱۵ انتخاب شده است."
+    },
+    {
+      "physical_pdf_pages": [
+        13,
+        14,
+        17
+      ],
+      "reason_fa": "گونه‌های کلاژ تجهیز، انسان و محیط؛ نمایندهٔ اصلی کلاژ صفحهٔ ۹ است."
+    },
+    {
+      "physical_pdf_pages": [
+        34,
+        35
+      ],
+      "reason_fa": "توزیع برق، شارژ خودرو، موتور و برق اضطراری خارج از سه سیستم مصوب؛ چیدمان آن‌ها نیز نمایندهٔ مشابه دارد."
+    },
+    {
+      "physical_pdf_pages": [
+        42
+      ],
+      "reason_fa": "پشت‌جلد و اطلاعات نشر؛ شناسنامه در S01 و S02 ثبت شده و سبک تازهٔ مرتبطی برای این بانک انتخاب نشد."
+    },
+    {
+      "physical_pdf_pages": [
+        11
+      ],
+      "region": "upper-right QR and configurator URL",
+      "reason_fa": "QR و نشانی ابزار پیکربندی، جزو هدف برش‌های فرایند و شخصی‌سازی نیستند و استخراج نشده‌اند."
+    },
+    {
+      "physical_pdf_pages": [
+        31
+      ],
+      "region": "body copy below control images/headings",
+      "reason_fa": "شرح طولانی و مشخصات الکتریکی برای مقایسهٔ ظاهری کلیدها لازم نیستند؛ تصاویر و عنوان‌ها کافی‌اند."
+    },
+    {
+      "physical_pdf_pages": [
+        38
+      ],
+      "region": "introductory paragraph",
+      "reason_fa": "مقدمهٔ حاوی ادعای تشخیص پیشاپیش خطا بیرون برش ردیف‌های محصول است؛ ادعا در S03 با محدودیت مستقل ثبت شده است."
+    },
+    {
+      "physical_pdf_pages": [
+        39
+      ],
+      "region": "lower distribution and energy-input rows",
+      "reason_fa": "ردیف‌های توزیع برق و عبارت maintenance-free به نمایش مرکزی مربوط نیستند و در برش آن وارد نمی‌شوند."
+    },
+    {
+      "physical_pdf_pages": [
+        41
+      ],
+      "region": "left project narratives and lower-right performance paragraph",
+      "reason_fa": "گالری و شماره‌ها حفظ شده‌اند؛ ادعاهای معماری، آمار و عملکرد در تصویر مرجع لازم نیستند و نام‌ها در S03 پیوند دارند."
+    }
+  ],
+  "restrictions_fa": [
+    "تصاویر مرجع برای پژوهش سبک‌اند؛ عکس، نشان، متن و جانمایی اختصاصی رقیب نباید عیناً در خروجی تجاری NSP منتشر شود.",
+    "اطلاعات قابل مشاهده روی تجهیزاتِ داخل عکس به مدل، SKU، مشخصات الکتریکی یا قابلیت تأییدشدهٔ NSP تبدیل نمی‌شود.",
+    "هیچ تصویر، پشتیبانی نرم‌افزار، IPTV، PMS، پروتکل یا عملکرد محصول NSP را تأیید نمی‌کند.",
+    "انتساب نهایی به سکشن‌ها در S05 و اتصال ایده‌ها در Defrag انجام می‌شود؛ سه سیستم مصوب همچنان GRMS، IPTV و PUBLIC_AREAS هستند.",
+    "بانک feature و آینهٔ JavaScript تا S07 به‌روزرسانی نمی‌شوند؛ این مرحله فقط سند پژوهش، تصاویر واقعی مرجع و وضعیت صف را تولید می‌کند."
+  ],
+  "quality_assurance_notes": [
+    "همهٔ ۴۲ صفحه در نماهای تماس مرور شدند و هر ۱۸ تصویر منتخب به‌صورت مستقیم بازبینی شد؛ تصاویر با منبع و توضیح برش مطابقت دارند.",
+    "سه اشکال برش اصلاح شد: پایین تصویر صفحهٔ ۲ تا ۰٫۶۳ کوتاه شد، بالای صفحهٔ ۵ تا ۰٫۰۷۵ گسترش یافت و پایین صفحهٔ ۲۹ تا ۰٫۹۸۵ ادامه یافت؛ نسخهٔ اصلاح‌شدهٔ هر سه دوباره دیده و پذیرفته شد.",
+    "هر شش گام فرایند و دو قید premium configuration سالم‌اند. رابط‌های گام‌ها خطوط قرمز با نقطهٔ انتهایی هستند، نه سرپیکان؛ این اصلاح توصیفی برای تطبیق سندهای پیشین در S06 ثبت شده است.",
+    "چهار برچسب شخصی‌سازی و خطوط مربوط کامل‌اند؛ QR و نشانی پیکربندی بالای صفحهٔ ۱۱ در تصاویر منتخب وارد نشده‌اند.",
+    "عنوان‌های دو گروه کنترل صفحهٔ ۳۱ کامل‌اند و متن بدنه و ولتاژ در برش نیست؛ ردیف‌های توزیع برق پایین صفحهٔ ۳۹ نیز جدا مانده‌اند.",
+    "هر پنج عکس و برچسب ۰۱ تا ۰۵ صفحهٔ ۴۱ کامل‌اند؛ ستون توضیح و ادعاهای عددی/عملکردی وارد تصویر گالری نشده‌اند.",
+    "پوشیدگی دست و برش سمت راست صفحهٔ ۳۷ همان وضعیت اصل منبع است؛ هیچ بخش پنهان، برچسب یا عددی بازسازی نشده است.",
+    "دو برش معرفی شرکت، دو برش فرایند و دو گونهٔ ردیف محصول به‌عنوان سه خانواده حساب شده‌اند؛ ۱۸ تصویر برابر با ۱۵ سبک است."
+  ],
+  "upstream_review_notes_for_S06": [
+    {
+      "id": "ABB12-VISUAL-NOTE-01",
+      "physical_pdf_pages": [
+        10,
+        11
+      ],
+      "kind": "source_description_wording_refinement",
+      "finding_fa": "بررسی مستقیم برش‌ها نشان می‌دهد رابط گام‌ها خط قرمز با نقطهٔ انتهایی است، نه سرپیکان. ترتیب شش گام و قیدها صحیح باقی می‌ماند.",
+      "upstream_locations": [
+        "S02.structured_source_facts[ABB12-FLOW-CONFIGURATOR].source_order_method",
+        "S03.quality_assurance.review_notes_fa"
+      ],
+      "next_action_fa": "در ممیزی S06 توصیف قبلی «فلش/arrow» با مشاهدهٔ جدید تطبیق داده شود؛ در S04 توصیف درست ثبت شده و سندهای قبلی بازنویسی نشده‌اند.",
+      "blocks_S04_completion": false,
+      "workflow_order_changed": false
+    }
+  ],
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false,
+  "S03_artifact_changed": false,
+  "next_stage": "S05 — section_type_mapping",
+  "next_queue_cursor": {
+    "document_index": 6,
+    "document_id": "12",
+    "step_index": 4,
+    "step_id": "S05"
+  }
+}
