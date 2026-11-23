@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 98,
+    "total_pending_steps": 97,
     "completed_new_documents": 4,
     "remaining_new_documents": 14
   },
   "cursor": {
     "document_index": 7,
     "document_id": "14",
-    "step_index": 0,
-    "step_id": "S01"
+    "step_index": 1,
+    "step_id": "S02"
   },
   "section_types": [
     {
@@ -879,17 +879,19 @@
       "library_path": "/14_Vingcard_Vingcard Novel Brochure.pdf",
       "bytes": 3735147,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "queued",
+      "status": "in_progress",
       "prior_import": null,
       "steps": [
         {
           "id": "S01",
           "key": "source_inventory",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/14_Vingcard_Novel_S01_source_inventory.json"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "69b1ce8cfeee255afa444f45315e6602212ca314",
+          "notes": "فایل اصلی ۳٬۷۳۵٬۱۴۷ بایتی با SHA-256 ثبت‌شده بررسی شد؛ ۱۶ صفحهٔ Letter عمودی، نسخهٔ چاپی 04/2025 و ناشر Vingcard / ASSA ABLOY تأیید شد. فهرست ۱۶ صفحه در ۹ گروه ثبت و همهٔ صفحات رندر و بازبینی شدند؛ شماره‌های چاپی ۲ تا ۱۵، folio پنهان جلد و تکرارهای native تفکیک شدند. گزارش از GitHub با تطبیق کامل محتوا بازخوانی شد. فقط S01 اجرا شد؛ S02 در انتظار N بعدی است."
         },
         {
           "id": "S02",
@@ -945,7 +947,8 @@
           "commit_sha": null,
           "notes": null
         }
-      ]
+      ],
+      "last_successful_stage": "S01"
     },
     {
       "id": "15",
