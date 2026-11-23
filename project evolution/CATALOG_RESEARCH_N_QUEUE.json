@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 113,
-    "completed_new_documents": 1,
-    "remaining_new_documents": 17
+    "total_pending_steps": 112,
+    "completed_new_documents": 2,
+    "remaining_new_documents": 16
   },
   "cursor": {
-    "document_index": 4,
-    "document_id": "10",
-    "step_index": 6,
-    "step_id": "S07"
+    "document_index": 5,
+    "document_id": "11",
+    "step_index": 0,
+    "step_id": "S01"
   },
   "section_types": [
     {
@@ -530,7 +530,7 @@
       "library_path": "/10_ABB_Hospitality GRMS Brochure 2025.pdf",
       "bytes": 1466009,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "in_progress",
+      "status": "completed",
       "prior_import": null,
       "steps": [
         {
@@ -614,13 +614,20 @@
         {
           "id": "S07",
           "key": "feature_json_and_commit",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/feature.json",
+            "Portfolio Instruction/feature.js",
+            "Portfolio Instruction/research/10_ABB_Hospitality_GRMS_S07_ingest_manifest.json"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "e9cd26e86a6f568bda44a8fb3faf3788cee07eb0",
+          "notes": "۹۶ رکورد پژوهشی ABB و ۱۲ مرجع تصویر داخلی پس از S06 وارد feature.json نسخه ۵ و feature.js شدند؛ ۶ اصلاح ترجمه اعمال شد؛ ۵ مورد قرنطینه باقی ماندند؛ بدون تغییر سورس یا تأیید قابلیت NSP."
         }
-      ]
+      ],
+      "completed_at": "2026-11-23",
+      "completed_at_commit": "e9cd26e86a6f568bda44a8fb3faf3788cee07eb0",
+      "last_successful_stage": "S07"
     },
     {
       "id": "11",
