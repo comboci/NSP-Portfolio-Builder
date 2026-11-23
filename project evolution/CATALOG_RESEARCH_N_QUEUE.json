@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 106,
-    "completed_new_documents": 2,
-    "remaining_new_documents": 16
+    "total_pending_steps": 105,
+    "completed_new_documents": 3,
+    "remaining_new_documents": 15
   },
   "cursor": {
-    "document_index": 5,
-    "document_id": "11",
-    "step_index": 6,
-    "step_id": "S07"
+    "document_index": 6,
+    "document_id": "12",
+    "step_index": 0,
+    "step_id": "S01"
   },
   "section_types": [
     {
@@ -636,7 +636,7 @@
       "library_path": "/11_ABB_Hospitality Portfolio 2026.pdf",
       "bytes": 9951131,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "in_progress",
+      "status": "completed",
       "prior_import": null,
       "steps": [
         {
@@ -727,14 +727,20 @@
         {
           "id": "S07",
           "key": "feature_json_and_commit",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/feature.json",
+            "Portfolio Instruction/feature.js",
+            "Portfolio Instruction/research/11_ABB_Hospitality_Portfolio_S07_ingest_manifest.json"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "4dc2179b070a53231666f0e16441befbc115233b",
+          "notes": "۸۸ رکورد ممیزی‌شده (۷۱ دارای سکشن پیشنهادی و ۱۷ فقط پژوهش داخلی بدون سکشن)، ۱۹ تصویر مرجع داخلی و ۳ اصلاح ترجمه به feature.json نسخه ۶ و آینه feature.js وارد شدند؛ ۱۳ رکورد قرنطینه وارد بانک نشدند؛ ۵ کاتالوگ قبلی حفظ شد و هیچ قابلیت NSP تأیید نشد."
         }
       ],
-      "last_successful_stage": "S06"
+      "last_successful_stage": "S07",
+      "completed_at": "2026-11-23",
+      "completed_at_commit": "4dc2179b070a53231666f0e16441befbc115233b"
     },
     {
       "id": "12",
