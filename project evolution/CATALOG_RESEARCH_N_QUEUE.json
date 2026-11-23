@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 100,
+    "total_pending_steps": 99,
     "completed_new_documents": 3,
     "remaining_new_documents": 15
   },
   "cursor": {
     "document_index": 6,
     "document_id": "12",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -829,11 +829,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/12_ABB_First_Class_Solutions_for_Hotels_S06_audit.json"
+          ],
+          "completed_at": "2026-11-23",
+          "commit_sha": "c275851c6fac4315699ebe6ee07fc44eeb81292e",
+          "notes": "ممیزی ۴۲ صفحه، ۲۲۳ گزیدهٔ انگلیسی، ۱۱۰ رکورد دوزبانه و ۱۸ تصویر انجام شد؛ همهٔ گزیده‌ها و پیوندهای S02/S03/S05 تطبیق دارند و بازاستخراج هر ۱۸ برش PDF بایت‌به‌بایت با دارایی ثبت‌شده یکسان است. نقص اساسی نقل‌قول، ترجمه، برش یا نگاشت یافت نشد. پنج اصلاح توصیف خط با نقطهٔ انتهایی به‌جای فلش و یک یکسان‌سازی نام فارسی Hyatt برای خروجی S07 در گزارش ثبت شد؛ تاریخچهٔ S01 تا S05 ثابت ماند. ۱۰۶ رکورد برای ورود صرفاً پژوهشی واجد شرایط‌اند: ۹۹ با مقصد و ۷ داخلیِ بی‌مقصد. I005، I046، I086 و I100 فقط در تاریخچهٔ ممیزی می‌مانند و وارد بانک نمی‌شوند. هر ۱۸ تصویر فقط مرجع داخلی‌اند. فایل ممیزی از GitHub دقیقاً بازخوانی شد؛ S07 اجرا نشده و بانک feature نسخهٔ ۶ با ۳۷۰ رکورد ثابت است."
         },
         {
           "id": "S07",
