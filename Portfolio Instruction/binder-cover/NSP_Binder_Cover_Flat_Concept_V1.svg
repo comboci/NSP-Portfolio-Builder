@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="750" viewBox="0 0 1600 750" role="img" aria-labelledby="title desc">
+<title id="title">NSP Hospitality Solutions - conceptual binder wrap: back cover, spine, front cover</title>
+<desc id="desc">Editable vector concept only. Panel sizes are schematic, not print die lines. Replace NSP text with approved logo, determine actual binder dimensions and bleed before print.</desc>
+<defs>
+ <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9f6ee"/><stop offset=".6" stop-color="#efeadf"/><stop offset="1" stop-color="#e5dfd3"/></linearGradient>
+ <linearGradient id="hotel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d8c3a2"/><stop offset=".55" stop-color="#8f8171"/><stop offset="1" stop-color="#474843"/></linearGradient>
+ <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#323431"/><stop offset="1" stop-color="#202221"/></linearGradient>
+ <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#afa99b" stroke-width=".65" opacity=".18"/></pattern>
+ <clipPath id="front"><path d="M880,0 H1600 V750 H880 Z"/></clipPath>
+ <clipPath id="back"><path d="M0,0 H720 V750 H0 Z"/></clipPath>
+</defs>
+<rect width="1600" height="750" fill="#ddd8cf"/>
+<!-- BACK COVER -->
+<rect width="720" height="750" fill="url(#paper)"/>
+<rect width="720" height="750" fill="url(#grid)" opacity=".45"/>
+<g clip-path="url(#back)" fill="none" stroke="#b3aa99" stroke-width="2" opacity=".55">
+ <path d="M80 190 L340 60 L635 166 L635 460 L335 570 L80 465 Z"/>
+ <path d="M154 218 L340 125 L564 213 L564 430 L335 516 L154 435 Z"/>
+ <path d="M221 245 L340 190 L493 250 L493 402 L335 458 L221 405 Z"/>
+ <path d="M80 315 L635 315 M154 365 L565 365 M335 60 L335 570"/>
+</g>
+<path d="M0 557 Q200 451 406 567 T720 532 V750 H0Z" fill="#d4cabe" opacity=".76"/>
+<path d="M0 645 Q264 576 448 660 T720 626 V750 H0Z" fill="#30312f"/>
+<path d="M0 557 Q200 451 406 567 T720 532" fill="none" stroke="#b77629" stroke-width="5"/>
+<g fill="#30312f" font-family="Arial, Helvetica, sans-serif">
+ <text x="68" y="80" font-size="38" font-weight="700" letter-spacing="2">NSP</text>
+ <text x="68" y="116" font-size="13" letter-spacing="3">HOSPITALITY SOLUTIONS</text>
+</g>
+<g stroke="#e5b569" fill="none" stroke-width="1.5" opacity=".85">
+ <path d="M84 693 H590"/><circle cx="130" cy="693" r="7" fill="#e5b569"/><circle cx="345" cy="693" r="7" fill="#e5b569"/><circle cx="556" cy="693" r="7" fill="#e5b569"/>
+</g>
+<text x="84" y="725" fill="#f5eee5" font-size="16" font-family="Arial">GRMS   •   IPTV   •   PUBLIC AREAS</text>
+<!-- SPINE -->
+<rect x="720" width="160" height="750" fill="url(#dark)"/>
+<path d="M732 0V750 M868 0V750" stroke="#807e75" stroke-width="1" opacity=".5"/>
+<text x="800" y="115" fill="#f7f1e8" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="45" text-anchor="middle">NSP</text>
+<rect x="756" y="137" width="88" height="7" fill="#c98636"/>
+<text transform="translate(810 205) rotate(90)" fill="#f5efe6" font-family="Arial, Helvetica, sans-serif" letter-spacing="3" font-size="26" font-weight="500">HOSPITALITY SOLUTIONS</text>
+<path d="M758 667H842" stroke="#c98636" stroke-width="4"/>
+<circle cx="800" cy="704" r="17" fill="none" stroke="#d1c8ba" stroke-width="3"/>
+<!-- FRONT -->
+<rect x="880" width="720" height="750" fill="url(#paper)"/>
+<rect x="880" width="720" height="750" fill="url(#grid)" opacity=".4"/>
+<g clip-path="url(#front)">
+ <g stroke="#aaa596" stroke-width="1.5" fill="none" opacity=".46">
+  <path d="M1290 130l200 -95l165 60v210l-165 75l-200 -82z"/>
+  <path d="M1290 192l200 -95l165 62M1290 260l200 -90l165 58M1490 35v345M1390 78v258M1570 66v277"/>
+  <path d="M1370 135v192M1440 105v243M1550 74v285"/>
+ </g>
+ <path d="M880 522 Q1100 410 1347 487 Q1491 532 1600 441 L1600 750 H880Z" fill="url(#hotel)"/>
+ <path d="M1100 490 L1170 470 L1170 735 L1100 735Z M1208 482 L1277 484 L1277 735 L1208 735Z M1320 485 L1393 504 L1393 735 L1320 735Z" fill="#403f3a" opacity=".52"/>
+ <path d="M1100 490L1170 470M1208 482L1277 484M1320 485L1393 504" stroke="#f7ddb2" stroke-width="6"/>
+ <path d="M880 610 Q1100 517 1354 608 Q1490 652 1600 577 V750H880Z" fill="#2e302e" opacity=".93"/>
+ <path d="M880 522 Q1100 410 1347 487 Q1491 532 1600 441" fill="none" stroke="#bd7d34" stroke-width="6"/>
+ <g fill="none" stroke="#c58d48" stroke-width="2" opacity=".75">
+  <path d="M960 690 C1112 644 1251 666 1410 699L1570 698"/>
+  <circle cx="1084" cy="666" r="8" fill="#d6a15b"/><circle cx="1299" cy="682" r="8" fill="#d6a15b"/><circle cx="1489" cy="700" r="8" fill="#d6a15b"/>
+ </g>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" fill="#282b29">
+ <text x="951" y="137" font-size="96" font-weight="700" letter-spacing="-2">NSP</text>
+ <rect x="953" y="165" width="90" height="9" fill="#bd7d34"/>
+ <text x="950" y="238" font-size="45" font-weight="300" letter-spacing="2">HOSPITALITY</text>
+ <text x="950" y="292" font-size="45" font-weight="300" letter-spacing="2">SOLUTIONS</text>
+</g>
+<text x="950" y="368" font-family="Vazirmatn, 'Noto Naskh Arabic', Tahoma, sans-serif" font-size="34" fill="#282b29" direction="rtl" unicode-bidi="plaintext" text-anchor="end" transform="translate(594 0)">راهکارهای هوشمند هتلی</text>
+<text x="955" y="429" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" letter-spacing="1" fill="#343734">GRMS  <tspan fill="#b7772d"> | </tspan>  IPTV  <tspan fill="#b7772d"> | </tspan>  PUBLIC AREAS</text>
+<!-- Non-print construction guides intentionally absent. Separate panels are schematic. -->
+</svg>
