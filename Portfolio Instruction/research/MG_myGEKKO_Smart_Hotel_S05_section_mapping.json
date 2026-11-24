@@ -1,0 +1,334 @@
+{
+  "schema": "nsp-catalog-research-editorial-section-mapping-v1",
+  "stage": "MG/S05",
+  "reviewed_on": "2026-11-24",
+  "source": {
+    "filename": "myGEKKO_Smart Hotel_EN.pdf",
+    "document_id": "MG",
+    "title": "Smart Hotel",
+    "brand": "myGEKKO",
+    "pdf_pages": 17,
+    "sha256": "106c685004a79a43c2cae2a0ae2a4127d717f25cd98f67d96dcc753bbcdc1d73",
+    "inventory": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S01_source_inventory.json",
+    "edition_note": "No printed edition date verified; 2021-05-14 PDF metadata is not a publication date.",
+    "folio_basis": "1-based physical PDF pages; each spread is cited by a single PDF folio.",
+    "summary_artifact": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S02_page_linked_summaries.json",
+    "summary_artifact_commit": "1709a29316fa3e4a73d03e01f4db0f7a0a074c12",
+    "translation_artifact": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S03_editorial_summaries_fa.json",
+    "visual_artifact": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S04_original_visual_concepts.json"
+  },
+  "taxonomy": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "revision": "2.3.0",
+    "schema_version": 2
+  },
+  "purpose": "Proposals for editorial sequencing only. Source subject, validated NSP capabilities and real project evidence are separate.",
+  "counts": {
+    "editorial_proposals": 9,
+    "context_not_mapped": 5,
+    "original_concepts_mapped": 2,
+    "source_images_added": 0,
+    "sections_with_editorial_proposals": 4
+  },
+  "editorial_mappings": [
+    {
+      "evidence_id": "MG-E01",
+      "source_pages": [
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "95b630b831918952027bec1244111e788c43346852594f0d6190a54bb68f00f3"
+        },
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "590a9f56da28025b1755741313a12eca166bee9a2f737926befaa7263b503064"
+        }
+      ],
+      "section_id": "CHALLENGES_VALUE",
+      "disposition": "proposed_internal_editorial_only",
+      "adaptation_fa": "تفکیک خوانندهٔ بهره‌بردار و تجربهٔ مهمان در صورت‌بندی مسئله؛ بدون وعدهٔ نتیجه یا پوشش خدمات.",
+      "source_boundary_fa": "این چارچوب ارائه است؛ صرفه‌جویی، وفاداری مهمان یا پوشش همهٔ سامانه‌ها را اثبات نمی‌کند.",
+      "no_capability_approval": true
+    },
+    {
+      "evidence_id": "MG-E02",
+      "source_pages": [
+        {
+          "pdf_page": 4,
+          "native_text_sha256": "9bafe6619324a7e98bf7bed418628cd758d921666529fa83e5b539ee766eb7fb"
+        },
+        {
+          "pdf_page": 6,
+          "native_text_sha256": "f183cc2114a670124046a3a0df99dffacc5d27914086c971c8aa211d4be382f7"
+        }
+      ],
+      "section_id": "CHALLENGES_VALUE",
+      "disposition": "proposed_internal_editorial_only",
+      "adaptation_fa": "استفاده از توسعهٔ مرحله‌ای به‌عنوان یک پرسش در فصل نیازها و ارزش، نه وعدهٔ امکان توسعه یا بازسازی NSP.",
+      "source_boundary_fa": "سازگاری با تجهیزات موجود، امکان بازسازی یک ملک معین یا پشتیبانی از هر رابط احراز نشده است.",
+      "no_capability_approval": true
+    },
+    {
+      "evidence_id": "MG-E03",
+      "source_pages": [
+        {
+          "pdf_page": 4,
+          "native_text_sha256": "9bafe6619324a7e98bf7bed418628cd758d921666529fa83e5b539ee766eb7fb"
+        },
+        {
+          "pdf_page": 6,
+          "native_text_sha256": "f183cc2114a670124046a3a0df99dffacc5d27914086c971c8aa211d4be382f7"
+        }
+      ],
+      "section_id": "HOTEL_OVERVIEW",
+      "disposition": "proposed_internal_editorial_only",
+      "adaptation_fa": "در طرح روایت، سطح معرفی کار روزمره را از سطح معرفی نقش متخصص جدا کنید؛ بدون نمایش رابط یا تأیید روش پیکربندی.",
+      "source_boundary_fa": "نه آموزش پیکربندی است، نه ادعای بی‌نیازی از تخصص یا مجوز بازنشر رابط.",
+      "no_capability_approval": true
+    },
+    {
+      "evidence_id": "MG-E04",
+      "source_pages": [
+        {
+          "pdf_page": 5,
+          "native_text_sha256": "639401ac746b5e9fe9e72e6de9ff72c5eee8976efbb22435968cf763c73553bc"
+        }
+      ],
+      "section_id": null,
+      "disposition": "context_only_not_mapped",
+      "adaptation_fa": "امکان و گسترهٔ اتصال فروشنده یا NSP بررسی نشده؛ صرفاً زمینهٔ برنامه‌ریزی.",
+      "source_boundary_fa": "یادداشت زمینه‌ای؛ نه جدول سازگاری، گواهی استاندارد، توصیهٔ اجرا یا تعهد NSP.",
+      "no_capability_approval": true
+    },
+    {
+      "evidence_id": "MG-E05",
+      "source_pages": [
+        {
+          "pdf_page": 7,
+          "native_text_sha256": "a25431ba08395964d2f5398eb42213161060a8b3cc4384ebbdc482d6bbe723bc"
+        },
+        {
+          "pdf_page": 8,
+          "native_text_sha256": "c08f388dbc9c79775a4b03fa32f76abd7e0ac4c8a43fb218d55230d438f06d96"
+        }
+      ],
+      "section_id": "HOTEL_OVERVIEW",
+      "disposition": "proposed_internal_editorial_only",
+      "adaptation_fa": "مطالب را بر اساس دغدغهٔ گروه‌های خواننده مرتب کنید؛ از نمای نقش‌های فروشنده، مدل دسترسی یا امنیت NSP برداشت نشود.",
+      "source_boundary_fa": "الگوی ارائهٔ اطلاعات است؛ ارزیابی امنیت، طراحی کنترل دسترسی یا دستور دسترسی از راه دور نیست.",
+      "no_capability_approval": true
+    },
+    {
+      "evidence_id": "MG-E06",
+      "source_pages": [
+        {
+          "pdf_page": 8,
+          "native_text_sha256": "c08f388dbc9c79775a4b03fa32f76abd7e0ac4c8a43fb218d55230d438f06d96"
+        },
+        {
+          "pdf_page": 9,
+          "native_text_sha256": "eda9bfcdfe6eef223d55806551d2d5884f50f2fad17432ff9b1f24057231de98"
+        }
+      ],
+      "section_id": "HOTEL_OVERVIEW",
+      "disposition": "proposed_internal_editorial_only",
+      "adaptation_fa": "از نمای موضوعی کلی به نمونه‌های اطلاعات وضعیت بروید؛ بدون بازسازی داشبورد، قابلیت پایش یا پوشش توابع.",
+      "source_boundary_fa": "نه بازسازی داشبورد است، نه پوشش همهٔ خدمات یا تضمین کشف و رفع خرابی.",
+      "no_capability_approval": true
+    },
+    {
+      "evidence_id": "MG-E07",
+      "source_pages": [
+        {
+          "pdf_page": 9,
+          "native_text_sha256": "eda9bfcdfe6eef223d55806551d2d5884f50f2fad17432ff9b1f24057231de98"
+        }
+      ],
+      "section_id": null,
+      "disposition": "context_only_not_mapped",
+      "adaptation_fa": "اشارهٔ فروشنده به نرم‌افزار مدیریت مهمان اثبات سازگاری یا قابلیت نیست.",
+      "source_boundary_fa": "یادداشت زمینه‌ای؛ نام محصولِ سازگار، دامنهٔ تبادل داده، روش اتصال و قابلیت NSP احراز نشده‌اند.",
+      "no_capability_approval": true
+    },
+    {
+      "evidence_id": "MG-E08",
+      "source_pages": [
+        {
+          "pdf_page": 8,
+          "native_text_sha256": "c08f388dbc9c79775a4b03fa32f76abd7e0ac4c8a43fb218d55230d438f06d96"
+        },
+        {
+          "pdf_page": 10,
+          "native_text_sha256": "4d422b969da6963df53ec069098631386e375fc0133b027ed8b92906516249dd"
+        }
+      ],
+      "section_id": "GRMS",
+      "disposition": "proposed_internal_editorial_only",
+      "adaptation_fa": "فصل اتاق را با جدایی تجربهٔ آسایش مهمان از نمای کلی بهره‌بردار سامان دهید؛ تنها قابلیت‌های جداگانه تأییدشدهٔ NSP در متن واقعی بیایند.",
+      "source_boundary_fa": "این تمایز جایگزین اندازه‌گیری، منطق خودکار یا تأیید قابلیت سامانهٔ NSP نیست.",
+      "no_capability_approval": true
+    },
+    {
+      "evidence_id": "MG-E09",
+      "source_pages": [
+        {
+          "pdf_page": 10,
+          "native_text_sha256": "4d422b969da6963df53ec069098631386e375fc0133b027ed8b92906516249dd"
+        }
+      ],
+      "section_id": "GRMS",
+      "disposition": "proposed_internal_editorial_only",
+      "adaptation_fa": "برای توضیح سناریوی آسایش، حضور در اتاق را زمینهٔ روایت قرار دهید؛ بدون تنظیمات، منطق کنترل یا ادعای اثر انرژی.",
+      "source_boundary_fa": "بدون قاعدهٔ اجرایی، تنظیمات، اعداد صرفه‌جویی یا انتساب به NSP.",
+      "no_capability_approval": true
+    },
+    {
+      "evidence_id": "MG-E10",
+      "source_pages": [
+        {
+          "pdf_page": 11,
+          "native_text_sha256": "913c252d662edcb9ed5d416bdfda2e375f12128086d65f96c1ec17d75b91c125"
+        }
+      ],
+      "section_id": "PUBLIC_AREAS",
+      "disposition": "proposed_internal_editorial_only",
+      "adaptation_fa": "برای بخش روایت فضاها به تجربهٔ نوری و شنیداری مهمان در تندرستی توجه شود؛ هیچ تجهیز، نظارت، کنترل یا دستور ایمنی برداشت نشود.",
+      "source_boundary_fa": "یادداشت طراحی ارائه، نه دستور بهره‌برداری استخر، پایش آب، مراقبت یا ایمنی.",
+      "no_capability_approval": true
+    },
+    {
+      "evidence_id": "MG-E11",
+      "source_pages": [
+        {
+          "pdf_page": 8,
+          "native_text_sha256": "c08f388dbc9c79775a4b03fa32f76abd7e0ac4c8a43fb218d55230d438f06d96"
+        },
+        {
+          "pdf_page": 12,
+          "native_text_sha256": "767a82395a00640cfccedcc1c3b5e490108962b32474a7b1513c27127f8bc3ea"
+        }
+      ],
+      "section_id": null,
+      "disposition": "context_only_not_mapped",
+      "adaptation_fa": "پایش محیط آشپزخانه مدرک انطباق یا ایمنی غذا نیست.",
+      "source_boundary_fa": "یادداشت زمینه‌ای؛ نه معیار ایمنی غذا، انطباق یا گواهی HACCP، راهنمای قانونی یا تضمین جلوگیری از خرابی.",
+      "no_capability_approval": true
+    },
+    {
+      "evidence_id": "MG-E12",
+      "source_pages": [
+        {
+          "pdf_page": 13,
+          "native_text_sha256": "b0dd4a6d721c251bd1a2db76972d1a29a75741db77951531a2aba5a45e960adf"
+        }
+      ],
+      "section_id": "PUBLIC_AREAS",
+      "disposition": "proposed_internal_editorial_only",
+      "adaptation_fa": "نور را به تفکیک فضاهای عمومی روایت کنید؛ چیدمان فروشنده، روش نصب و ادعای عملکرد به سکشن واقعی منتقل نشود.",
+      "source_boundary_fa": "پیشنهاد برای طبقه‌بندی محتوای معرفی است، نه روش طراحی یا نصب، سنجش عملکرد یا قابلیت NSP.",
+      "no_capability_approval": true
+    },
+    {
+      "evidence_id": "MG-E13",
+      "source_pages": [
+        {
+          "pdf_page": 14,
+          "native_text_sha256": "b08c25369d61f65713d925d6a1fcedaa9f6cd38d06bac29820379a73b05f9811"
+        }
+      ],
+      "section_id": null,
+      "disposition": "context_only_not_mapped",
+      "adaptation_fa": "نمونه‌های بیرونی، برنامهٔ اجرا، ادعای ارائه خدمات شارژ یا راهنمای دسترسی نیستند.",
+      "source_boundary_fa": "یادداشت زمینه‌ای؛ بدون دستور دسترسی، شارژ، تسویه یا طراحی برق و بدون وعدهٔ قابلیت.",
+      "no_capability_approval": true
+    },
+    {
+      "evidence_id": "MG-E14",
+      "source_pages": [
+        {
+          "pdf_page": 15,
+          "native_text_sha256": "b519a96f8fbd4ca4b9b48eb6c2e4c3b1abc6597f8001d939226d73b245581ef7"
+        },
+        {
+          "pdf_page": 16,
+          "native_text_sha256": "5ed5699ce409d640f3e453cbc000835e6bade7f1ebfa885bb8605bbff7ff868c"
+        }
+      ],
+      "section_id": null,
+      "disposition": "context_only_not_mapped",
+      "adaptation_fa": "گالری فروشنده و توضیح هماهنگی پروژه به رزومهٔ NSP یا مجوز استفاده از تصاویر وارد نمی‌شوند.",
+      "source_boundary_fa": "یادداشت زمینه‌ای؛ نه سابقهٔ NSP، نه گواه مستقل استقرار یا نتایج و نه مجوز استفاده از عکس‌های اعتباردهی‌شده.",
+      "no_capability_approval": true
+    }
+  ],
+  "original_concept_mappings": [
+    {
+      "concept_id": "MG_C01_editorial_view_layers",
+      "section_id": "HOTEL_OVERVIEW",
+      "artifact_path": "Portfolio Instruction/research/assets/mygekko/MG_C01_editorial_view_layers.webp",
+      "git_blob_sha": "b9fb70cc8cae6ada1ff27313172ef48a1a0346cc",
+      "source_subject_pages": [
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "590a9f56da28025b1755741313a12eca166bee9a2f737926befaa7263b503064"
+        },
+        {
+          "pdf_page": 7,
+          "native_text_sha256": "a25431ba08395964d2f5398eb42213161060a8b3cc4384ebbdc482d6bbe723bc"
+        },
+        {
+          "pdf_page": 8,
+          "native_text_sha256": "c08f388dbc9c79775a4b03fa32f76abd7e0ac4c8a43fb218d55230d438f06d96"
+        },
+        {
+          "pdf_page": 9,
+          "native_text_sha256": "eda9bfcdfe6eef223d55806551d2d5884f50f2fad17432ff9b1f24057231de98"
+        },
+        {
+          "pdf_page": 10,
+          "native_text_sha256": "4d422b969da6963df53ec069098631386e375fc0133b027ed8b92906516249dd"
+        }
+      ],
+      "usage_fa": "طرح مستقل و داخلی برای تفکیک سطوح روایت؛ نه تصویر رابط، طرح فنی یا مدل دسترسی.",
+      "use_status": "internal_review_only; no public-use or source-artwork permission implied"
+    },
+    {
+      "concept_id": "MG_C02_editorial_room_public",
+      "section_id": "HOTEL_OVERVIEW",
+      "artifact_path": "Portfolio Instruction/research/assets/mygekko/MG_C02_editorial_room_public.webp",
+      "git_blob_sha": "a616df5a9706fe474148b8821e88d3218e5de110",
+      "source_subject_pages": [
+        {
+          "pdf_page": 8,
+          "native_text_sha256": "c08f388dbc9c79775a4b03fa32f76abd7e0ac4c8a43fb218d55230d438f06d96"
+        },
+        {
+          "pdf_page": 10,
+          "native_text_sha256": "4d422b969da6963df53ec069098631386e375fc0133b027ed8b92906516249dd"
+        },
+        {
+          "pdf_page": 13,
+          "native_text_sha256": "b0dd4a6d721c251bd1a2db76972d1a29a75741db77951531a2aba5a45e960adf"
+        }
+      ],
+      "usage_fa": "طرح نوشتاری دو زمینهٔ تجربه؛ نه نقشهٔ نصب یا پوشش سامانهٔ NSP.",
+      "use_status": "internal_review_only; no public-use or source-artwork permission implied"
+    }
+  ],
+  "sections_without_recommendations": [
+    "BINDER_COVER",
+    "COVER",
+    "IDENTITY_PAGES",
+    "COMPANY_INTRO",
+    "IPTV",
+    "CASE_STUDIES"
+  ],
+  "explicit_exclusions": {
+    "IPTV": "Source discusses ambient audio without evidence of an IPTV system; no mapping.",
+    "CASE_STUDIES": "Vendor examples are not NSP reference projects; no mapping.",
+    "assets": "No source image, logo, screen, visual layout, or text reuse approved.",
+    "bank_and_app": "No changes to feature bank, section taxonomy, Portfolio Builder or General Portfolio project."
+  },
+  "approval": "Pending S06 original-source/result audit; not approval for catalogue release, compliance, security, performance or technical operation.",
+  "next_stage": "MG/S06"
+}
