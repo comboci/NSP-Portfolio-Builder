@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 65,
+    "total_pending_steps": 64,
     "completed_new_documents": 8,
     "remaining_new_documents": 10
   },
   "cursor": {
     "document_index": 11,
     "document_id": "34",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -1412,11 +1412,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/34_Legrand_SYS219006_S06_original_source_audit.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "aaf2b41ab47adcf5b4137118305b420ef3d8af86",
+          "notes": "اصل SYS219006، ۲۰۸ صفحه، ۴۹ گزیده‌ و ترجمهٔ فارسی، و ۹ برش بازتولید و ممیزی شدند. اختلاف استخراج چیدمان ص ۱۳۰ با اصل دیداری رفع شد. ۲۸ رکورد و ۹ تصویر فقط برای بانک داخلیِ S07 مجازند؛ ۳ برچسب جدا فقط زمینه‌اند. بانک V11 و برنامه ثابت‌اند."
         },
         {
           "id": "S07",
@@ -1428,7 +1430,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S05"
+      "last_successful_stage": "S06"
     },
     {
       "id": "46",
