@@ -1,0 +1,2259 @@
+{
+  "schema": "nsp-catalog-research-s04-visual-styles-v1",
+  "stage": "S04",
+  "stage_key": "visuals_and_styles",
+  "document_id": "14",
+  "source_id": "CAT014_VINGCARD_NOVEL",
+  "status": "completed_source_render_and_visual_review",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "verified_on": "2026-11-24",
+  "base_main_commit": "399bdd3c1cdc64a9ff941d45ff946d3662962bc5",
+  "source_pdf": {
+    "company": "Vingcard",
+    "publisher": "Vingcard / ASSA ABLOY",
+    "title": "Vingcard Novel",
+    "filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+    "library_path": "/14_Vingcard_Vingcard Novel Brochure.pdf",
+    "pdf_pages": 16,
+    "source_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+    "file_size_bytes": 3735147,
+    "printed_document_version": "04/2025",
+    "document_version_month": "2025-04",
+    "publication_evidence_pdf_page": 16,
+    "date_basis": "Printed document version; not an exact first-publication date or current product-status verification.",
+    "S01_inventory": "Portfolio Instruction/research/14_Vingcard_Novel_S01_source_inventory.json",
+    "S01_inventory_git_commit_at_creation": "69b1ce8cfeee255afa444f45315e6602212ca314",
+    "S01_inventory_git_blob_sha": "d278c8856a697a2f7d6f1d69aefd95eca49d14c7",
+    "sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+    "source_orientation": "US Letter portrait, 612 x 792 pt; the NSP target A4 landscape layout is a separate design constraint."
+  },
+  "upstream_research": {
+    "S01": "Portfolio Instruction/research/14_Vingcard_Novel_S01_source_inventory.json",
+    "S02": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json",
+    "S03": "Portfolio Instruction/research/14_Vingcard_Novel_S03_features_fa.json"
+  },
+  "upstream_fingerprints": {
+    "S01": {
+      "path": "Portfolio Instruction/research/14_Vingcard_Novel_S01_source_inventory.json",
+      "sha256": "79b51f16d246c3156bdc7bab3f67da8b68a51c6b04f7dcc99175f52c8d0a6c00",
+      "git_blob_sha": "d278c8856a697a2f7d6f1d69aefd95eca49d14c7"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json",
+      "sha256": "410754f0a8cc78887c3f15888a2eab88073f978f6ad7c33792257974df59be87",
+      "git_blob_sha": "5115cbd9c73996848920fc007b89449990401b76"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/14_Vingcard_Novel_S03_features_fa.json",
+      "sha256": "d3d30bc9eecfe28a53880c98738b7e8c954283f4546c5b11f294ee687df46765",
+      "git_blob_sha": "f33035ea3c11be53cb2cab60ceb8f9fea97db813"
+    }
+  },
+  "S03_artifact_commit": "1238cfa34800ca28d4c0c6d0279b05844fd6c164",
+  "editorial_context_snapshot": {
+    "canonical_structure_file": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "canonical_structure_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "revision": "2.3.0",
+    "systems_in_scope": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ],
+    "content_levels": [
+      "COMPANY",
+      "SOLUTION",
+      "SYSTEM",
+      "PRODUCT"
+    ],
+    "cover_title_fa": "صفحه اول کاتالوگ",
+    "identity_section_id": "IDENTITY_PAGES",
+    "identity_section_title_fa": "صفحات تنفس",
+    "identity_pages_may_be_blank": true,
+    "final_attachment_stage": "Defrag",
+    "historical_reference_note": "Legacy queue vocabulary is preserved; use the current canonical structure at S05. This extraction does not create new NSP systems, subsections or page attachments.",
+    "read_at_main_commit": "399bdd3c1cdc64a9ff941d45ff946d3662962bc5",
+    "mapping_state": "S05_pending_no_final_attachment"
+  },
+  "target_catalog_constraints": {
+    "format": "A4 landscape binder sheets",
+    "punch_safe_important_content": true,
+    "continuous_background_through_punch_side": true,
+    "physical_punch_margin_mm": null,
+    "print_ready_layout_approved": false,
+    "adaptation_scope_fa": "این مرحله اصل قابل اقتباس هر سبک را توضیح می‌دهد؛ بازچینی نهایی، اندازهٔ حاشیه و تأیید چاپ انجام نشده‌اند."
+  },
+  "visual_review": {
+    "pages_visually_reviewed_via_contact_sheets": 16,
+    "pages_individually_reviewed_by_source_reviewers": 16,
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "pages_with_selected_visual_references": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "reference_image_count": 18,
+    "unique_style_types": 17,
+    "derived_overview_count": 1,
+    "total_image_files": 19,
+    "all_pages_accounted_for_by_selection_or_exclusion": true,
+    "all_12_S02_layout_groups_accounted_for": true,
+    "original_PDF_sha256_verified": true,
+    "reference_crops_direct_from_original_PDF": true,
+    "all_final_crops_visually_inspected": true,
+    "independent_cross_reviewed_final_crops": 18,
+    "visual_crop_review_failures": 0,
+    "git_blob_SHA_matches_local_Git_object": true,
+    "remote_byte_verification_required_before_committed_queue_advance": true,
+    "no_image_generation_or_missing_region_reconstruction": true,
+    "no_structured_hardware_finish_protocol_or_specification_lists_imported": true,
+    "software_identity_not_inferred_from_images": true,
+    "no_system_architecture_diagram_observed": true,
+    "product_parts_and_cutaway_are_not_system_architecture": true,
+    "S03_record_links_are_context_not_independent_capability_proof": true,
+    "image_format": "RGB WebP, quality 88, method 6, direct PDF clip rendering with no added annotations.",
+    "image_size_limit_note": "Longest edge targeted at 1200 or 1500 px; render rounding can add one pixel.",
+    "formal_S06_audit_pending": true
+  },
+  "images": [
+    {
+      "id": "VINGCARD14_01_cover_product_hero",
+      "reference_order": 1,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 1,
+      "source_printed_page": null,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_01_cover_product_hero.webp",
+      "asset_filename": "VINGCARD14_01_cover_product_hero.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 40726,
+      "asset_sha256": "986cf9cb49f4c1584a52bf661d630ca2f533d03ef9cba629da1c59a2ee5a6ec1",
+      "git_blob_sha": "3f9a30fda76dac1e0ddf39725d0f73a4d4718bb3",
+      "rendered_size_px": [
+        1160,
+        1500
+      ],
+      "base64_length": 54304,
+      "normalized_pdf_crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        0.0,
+        0.0,
+        612.0,
+        792.0
+      ],
+      "render_scale": 1.893939393939394,
+      "target_longest_edge_px": 1500,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "product_hero_with_geometric_title",
+      "title_fa": "عکس اصلی محصول و عنوان در قاب هندسی",
+      "observed_content_in_crop_fa": "عکس بزرگ دستگیره روی در روشن، عنوان در قاب آبی تیرهٔ گوشه‌گرد، چند سطح رنگی و خط پیرامونی و نوار آبی پایین با شعار و نشان ناشر دیده می‌شوند.",
+      "key_takeaway_fa": "یک موضوع تصویری واضح با عنوان کوتاه و ناحیهٔ جدا برای هویت ناشر، جلد را سریع قابل تشخیص می‌کند.",
+      "analyst_assessment_fa": "نقطهٔ قوت، تمرکز روی یک محصول واقعی در محل نصب است. ترکیب برای معرفی یک محصول روشن‌تر از معرفی کل راهکار هتل عمل می‌کند؛ در اقتباس باید دامنهٔ پیام با موضوع عکس هماهنگ باشد.",
+      "strengths_fa": [
+        "سلسله‌مراتب روشن میان عنوان بزرگ، عکس و هویت ناشر.",
+        "فضای روشن اطراف محصول از ازدحام جلوگیری می‌کند."
+      ],
+      "weaknesses_fa": [
+        "چند شکل رنگی می‌تواند در نسخهٔ کوچک با تصویر رقابت کند.",
+        "حضور تنها یک دستگیره، تنوع یک راهکار جامع هتل را نشان نمی‌دهد."
+      ],
+      "nsp_visual_adaptation_fa": "برای نمونهٔ NSP از عکس مجازِ محصول یا موقعیت واقعی استفاده شود؛ نسبت‌های افقی دوباره طراحی شوند. عنوان، لوگو و خود محصول در حاشیهٔ امن حلقه‌ها قرار نگیرند و پس‌زمینه تا لبه ادامه داشته باشد.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT014_VINGCARD_NOVEL:I001"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P01-E01",
+        "VINGCARD14-P01-E02"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "ارجاع‌های متنی، زمینهٔ موضوع یا چیدمان‌اند؛ حضور عکس به‌تنهایی شاهد قابلیت یا ادعای نوشته‌شده نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_03_numbered_contents_panel",
+      "reference_order": 2,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 3,
+      "source_printed_page": 3,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_03_numbered_contents_panel.webp",
+      "asset_filename": "VINGCARD14_03_numbered_contents_panel.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 58350,
+      "asset_sha256": "1e8eea74e993db2704c33f855110ed3546328e0e8bb1caa116f63ae5bd4d9014",
+      "git_blob_sha": "187405eaf90561ca2cc7a87d787b0519af768625",
+      "rendered_size_px": [
+        1500,
+        787
+      ],
+      "base64_length": 77800,
+      "normalized_pdf_crop": [
+        0,
+        0,
+        1,
+        0.405
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        0.0,
+        0.0,
+        612.0,
+        320.76000000000005
+      ],
+      "render_scale": 2.450980392156863,
+      "target_longest_edge_px": 1500,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "numbered_topic_navigation",
+      "title_fa": "فهرست موضوعی با شماره‌های رنگی",
+      "observed_content_in_crop_fa": "سه عنوان موضوعی همراه با شمارهٔ مقصد و شرح کوتاه روی زمینهٔ روشن دیده می‌شوند؛ یک تصویر محصول در کاشی زرد بالای سمت راست قرار دارد. دو عنوان دیگر این فهرست در صفحهٔ ۲ هستند و در این برش حضور ندارند.",
+      "key_takeaway_fa": "شماره، عنوان و توضیح کوتاه کنار هم مسیر مرور کاتالوگ را روشن می‌کنند.",
+      "analyst_assessment_fa": "این برش نمایندهٔ فهرست گسترده در صفحات ۲ و ۳ است. شماره‌ها مقصد صفحه‌اند و هرگز تعداد قابلیت یا شاخص عملکرد محسوب نمی‌شوند. در تصویر موجود ترتیب فضایی با ترتیب عددی یکی نیست.",
+      "strengths_fa": [
+        "کد رنگی و شماره‌های درشت، یافتن موضوع را آسان می‌کنند.",
+        "شرح کوتاه پیش از ورود به بخش، انتظار خواننده را تنظیم می‌کند."
+      ],
+      "weaknesses_fa": [
+        "تقسیم فهرست در دو صفحه برای مرور یک‌صفحه‌ای کافی نیست.",
+        "تصویر محصول بخشی از فضای ناوبری را می‌گیرد و الزام عملکردی ندارد."
+      ],
+      "nsp_visual_adaptation_fa": "ساختار شماره/عنوان/توضیح را برای فهرست واقعی NSP بازچینی کنید؛ تعداد و مقصدها از ساختار نهایی پروژه گرفته شوند. در A4 افقی، فهرست کامل می‌تواند در شبکه‌ای خوانا قرار گیرد؛ هیچ نگاشت سکشن در S04 قطعی نمی‌شود.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P02-E09",
+        "VINGCARD14-P02-E11",
+        "VINGCARD14-P03-E01",
+        "VINGCARD14-P03-E03",
+        "VINGCARD14-P03-E05"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "ارجاع‌های متنی، زمینهٔ موضوع یا چیدمان‌اند؛ حضور عکس به‌تنهایی شاهد قابلیت یا ادعای نوشته‌شده نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": [
+        "structured_context_translations.contents_framework"
+      ]
+    },
+    {
+      "id": "VINGCARD14_04_photo_benefit_grid",
+      "reference_order": 3,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 4,
+      "source_printed_page": 4,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_04_photo_benefit_grid.webp",
+      "asset_filename": "VINGCARD14_04_photo_benefit_grid.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 76626,
+      "asset_sha256": "b09916dd9ed9355c95547f61231bc91daa7eade583d289f478214e02c7591e4e",
+      "git_blob_sha": "87afdcadab3aec235377c593e680eafe3dc798a7",
+      "rendered_size_px": [
+        1501,
+        1302
+      ],
+      "base64_length": 102168,
+      "normalized_pdf_crop": [
+        0.06,
+        0.32,
+        0.97,
+        0.93
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        36.72,
+        253.44,
+        593.64,
+        736.5600000000001
+      ],
+      "render_scale": 2.693385046326223,
+      "target_longest_edge_px": 1500,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "photo_benefit_pair_grid",
+      "title_fa": "شبکهٔ جفت‌های عکس و توضیح",
+      "observed_content_in_crop_fa": "یک تیتر بزرگ و پنج جفت عکسِ نزدیک از محصول با توضیح کوتاه، در دو ستون و سه ردیف نامتقارن دیده می‌شوند. عکس‌ها قاب گوشه‌گرد دارند و بعضی نواحی با رنگ پس‌زمینه مشخص شده‌اند.",
+      "key_takeaway_fa": "هر پیام کوتاه کنار عکسی مرتبط قرار می‌گیرد و مرور تصویری مزیت‌ها را ساده می‌کند.",
+      "analyst_assessment_fa": "رابطهٔ عکس و متن برای معرفی تجهیزات قابل مطالعه است، اما عکس نزدیک از محصول به‌خودی‌خود اثبات‌کنندهٔ دوام، مقاومت یا گواهی نوشته‌شده کنار آن نیست.",
+      "strengths_fa": [
+        "تکرار اندازهٔ عکس‌ها ریتم منظم می‌سازد.",
+        "پیام‌ها به قطعه‌های کوتاه و قابل مرور شکسته شده‌اند."
+      ],
+      "weaknesses_fa": [
+        "متن انگلیسی نسبتاً ریز است و در نمای کوچک افت خوانایی دارد.",
+        "همهٔ عکس‌ها شاهد مستقیم ادعای کنار خود نیستند."
+      ],
+      "nsp_visual_adaptation_fa": "برای NSP عکس اختصاصی و پیام مستند هر مورد کنار هم قرار گیرند. ترکیب دو ستونی در صفحهٔ افقی با فاصله و اندازهٔ متن مناسب بازطراحی شود؛ ادعاهای فنی موجود در پیکسل‌های مرجع به دادهٔ محصول NSP منتقل نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT014_VINGCARD_NOVEL:I007"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P04-E02",
+        "VINGCARD14-P04-E05",
+        "VINGCARD14-P04-E06",
+        "VINGCARD14-P04-E07",
+        "VINGCARD14-P04-E08",
+        "VINGCARD14-P04-E09",
+        "VINGCARD14-P04-E10"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "ارجاع‌های متنی، زمینهٔ موضوع یا چیدمان‌اند؛ حضور عکس به‌تنهایی شاهد قابلیت یا ادعای نوشته‌شده نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_05_icon_feature_rows",
+      "reference_order": 4,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 5,
+      "source_printed_page": 5,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_05_icon_feature_rows.webp",
+      "asset_filename": "VINGCARD14_05_icon_feature_rows.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 61304,
+      "asset_sha256": "73bfbb420d0728a61fe8e2fffd4336ee50fb18685d67f473567a732701a8c06f",
+      "git_blob_sha": "1b9a917e4a5b7dc600b7846e31a7d45a085dfa28",
+      "rendered_size_px": [
+        712,
+        1500
+      ],
+      "base64_length": 81740,
+      "normalized_pdf_crop": [
+        0.03,
+        0.18,
+        0.49,
+        0.93
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        18.36,
+        142.56,
+        299.88,
+        736.5600000000001
+      ],
+      "render_scale": 2.525252525252525,
+      "target_longest_edge_px": 1500,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "vertical_icon_text_rows",
+      "title_fa": "ردیف‌های عمودی آیکون و توضیح",
+      "observed_content_in_crop_fa": "هفت ردیف روی یک پنل روشن دیده می‌شود؛ هر ردیف آیکون کوچک در خانهٔ سفید گوشه‌گرد و متن توضیحی در کنار آن دارد. ردیف نخست بیش از یک گزارهٔ سازگاری را در خود دارد.",
+      "key_takeaway_fa": "یک ستون آیکونِ ثابت، اسکن سریع چند پیام متفاوت را آسان می‌کند.",
+      "analyst_assessment_fa": "این الگو برای فهرست کوتاه قابلیت‌ها مناسب است؛ هفت ردیف تصویر برابر با هفت قابلیت نرم‌افزاری نیست. آیکون‌ها و متن سخت‌افزاری منبع فقط پیکسل مرجعند.",
+      "strengths_fa": [
+        "جایگاه یکسان آیکون در هر ردیف نظم ایجاد می‌کند.",
+        "جداسازی با فضای خالی بدون خط‌کشی شلوغ انجام شده است."
+      ],
+      "weaknesses_fa": [
+        "بلندی ستون برای A4 افقی به بازچینی نیاز دارد.",
+        "تفاوت وزن و رنگ آیکون‌ها می‌تواند یکپارچگی بصری را کاهش دهد."
+      ],
+      "nsp_visual_adaptation_fa": "برای NSP یک مجموعهٔ آیکون هماهنگ و اختصاصی ساخته شود و هر ردیف فقط پیام مستند خود را بیان کند. در صفحهٔ افقی می‌توان تعداد محدودی ردیف را در دو ستون چید؛ شرط‌ها در همان ردیف بمانند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT014_VINGCARD_NOVEL:I009"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P05-E02",
+        "VINGCARD14-P05-E03",
+        "VINGCARD14-P05-E04",
+        "VINGCARD14-P05-E05",
+        "VINGCARD14-P05-E06",
+        "VINGCARD14-P05-E07",
+        "VINGCARD14-P05-E08"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-01",
+        "VINGCARD14-CLAIM-23"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD14-CONTEXT-VOSTIO",
+        "VINGCARD14-CONTEXT-MECHANICAL-OVERRIDE"
+      ],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "ارجاع‌های متنی، زمینهٔ موضوع یا چیدمان‌اند؛ حضور عکس به‌تنهایی شاهد قابلیت یا ادعای نوشته‌شده نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_05_layered_variants",
+      "reference_order": 5,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 5,
+      "source_printed_page": 5,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_05_layered_variants.webp",
+      "asset_filename": "VINGCARD14_05_layered_variants.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 18056,
+      "asset_sha256": "8ec6bc37e62992f7a53cffce82f3b2b9582ade48e3b9a2dcd894cde8a15f2ece",
+      "git_blob_sha": "47993abfbd62b3d2b0dca370106bc0a04a39cf22",
+      "rendered_size_px": [
+        621,
+        1201
+      ],
+      "base64_length": 24076,
+      "normalized_pdf_crop": [
+        0.545,
+        0.26,
+        1,
+        0.94
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        333.54,
+        205.92000000000002,
+        612.0,
+        744.4799999999999
+      ],
+      "render_scale": 2.2281639928698755,
+      "target_longest_edge_px": 1200,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "layered_product_variant_photos",
+      "title_fa": "نماهای هم‌پوشان از نصب محصول",
+      "observed_content_in_crop_fa": "دو نمای هم‌پوشان از محصول روی در با قاب‌های گوشه‌گرد و یک نوار آبی نام‌گذاری دیده می‌شوند. برش، عکس کوچک بالای صفحه و پانوشت پایین را کنار می‌گذارد.",
+      "key_takeaway_fa": "هم‌پوشانی کنترل‌شدهٔ دو عکس، تفاوت ظاهری گزینه‌ها را با مصرف فضای کمتر نشان می‌دهد.",
+      "analyst_assessment_fa": "ارزش این نمونه در رابطهٔ دو نمای نصب است؛ از تصویر نباید مدل، اندازه، پروتکل یا امکان عرضهٔ گزینه‌های NSP استخراج شود.",
+      "strengths_fa": [
+        "عمق بصری بدون افکت پیچیده ایجاد شده است.",
+        "دو نمای نصب در یک قاب مشترک مقایسه می‌شوند."
+      ],
+      "weaknesses_fa": [
+        "هم‌پوشانی بخشی از نمای عقب را می‌پوشاند.",
+        "این چیدمان برای مقایسهٔ دقیق ابعاد یا ویژگی‌ها مناسب نیست."
+      ],
+      "nsp_visual_adaptation_fa": "اگر NSP واقعاً دو گزینهٔ مستند دارد، با عکس‌های خود آن‌ها این اصل آزمایش شود. برای مقایسهٔ فنی، تصاویر هم‌اندازه و اطلاعات مستند جدا لازم است؛ عکس مرجع جای جدول مشخصات را نمی‌گیرد.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P05-E01"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "ارجاع‌های متنی، زمینهٔ موضوع یا چیدمان‌اند؛ حضور عکس به‌تنهایی شاهد قابلیت یا ادعای نوشته‌شده نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_06_metric_badges_context",
+      "reference_order": 6,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 6,
+      "source_printed_page": 6,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_06_metric_badges_context.webp",
+      "asset_filename": "VINGCARD14_06_metric_badges_context.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 110126,
+      "asset_sha256": "06d517abff33009bcefd47c92b207d03e8a0e946069fd55330f4c4c7bd00eaea",
+      "git_blob_sha": "c03bd451a7701ee0b646134c84f31edabf52b4b8",
+      "rendered_size_px": [
+        1175,
+        1501
+      ],
+      "base64_length": 146836,
+      "normalized_pdf_crop": [
+        0.065,
+        0.515,
+        0.46,
+        0.905
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        39.78,
+        407.88,
+        281.52000000000004,
+        716.76
+      ],
+      "render_scale": 4.856254856254856,
+      "target_longest_edge_px": 1500,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "metric_badges_with_caption_and_baseline",
+      "title_fa": "نشان‌های عددی با عنوان و مبنای مقایسه",
+      "observed_content_in_crop_fa": "تیتر وزن، دو بند توضیحی و سه نشان دایره‌ای با عدد درصد و عنوان زیر آن‌ها دیده می‌شوند. شرح بالای نشان‌ها مبنای مقایسهٔ وزن محصول و بسته‌بندی را مشخص می‌کند.",
+      "key_takeaway_fa": "عدد برجسته باید همراه نام شاخص و مبنای مقایسه دیده شود.",
+      "analyst_assessment_fa": "حلقه‌های گرافیکی اینجا نشانهٔ بصری‌اند؛ تناسب هندسی قوس‌ها به‌عنوان نمودار محاسباتی تأیید نشده است. سه شاخص متفاوت‌اند و هیچ عدد آن‌ها دادهٔ NSP محسوب نمی‌شود.",
+      "strengths_fa": [
+        "عدد و نام شاخص به‌صورت یک واحد دیداری خوانده می‌شوند.",
+        "شرح مقایسه در همان برش باقی می‌ماند."
+      ],
+      "weaknesses_fa": [
+        "سه شاخص با ظاهر یکسان ممکن است بدون خواندن عنوان‌ها جابه‌جا برداشت شوند.",
+        "هویت دقیق نمونه‌های مبنا و روش اندازه‌گیری در تصویر معلوم نیست."
+      ],
+      "nsp_visual_adaptation_fa": "در صورت وجود دادهٔ معتبر NSP، اصل عدد/نام شاخص/مبنای مقایسه قابل استفاده است. قالب عددی بدون دادهٔ واقعی یا صرفاً با انتقال درصدهای رقیب پر نشود.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P06-E04",
+        "VINGCARD14-P06-E06"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-02",
+        "VINGCARD14-CLAIM-03",
+        "VINGCARD14-CLAIM-04"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "ارجاع‌های متنی، زمینهٔ موضوع یا چیدمان‌اند؛ حضور عکس به‌تنهایی شاهد قابلیت یا ادعای نوشته‌شده نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_06_parts_flatlay",
+      "reference_order": 7,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 6,
+      "source_printed_page": 6,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_06_parts_flatlay.webp",
+      "asset_filename": "VINGCARD14_06_parts_flatlay.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 31874,
+      "asset_sha256": "20c27d481cf879cdbbb372bb02182290cc49b522ae65372cb26dd8813abcf75a",
+      "git_blob_sha": "c3e11ccee5b3d8a216daeee45183daa57a83a089",
+      "rendered_size_px": [
+        1201,
+        815
+      ],
+      "base64_length": 42500,
+      "normalized_pdf_crop": [
+        0.53,
+        0.68,
+        0.94,
+        0.895
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        324.36,
+        538.5600000000001,
+        575.28,
+        708.84
+      ],
+      "render_scale": 4.782400765184123,
+      "target_longest_edge_px": 1200,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "product_parts_flatlay",
+      "title_fa": "نمای چیدمان قطعات روی زمینهٔ روشن",
+      "observed_content_in_crop_fa": "عکس قطعات بازشده و مرتب محصول در یک قاب سفید گوشه‌گرد، همراه با زیرنویس کوتاه دیده می‌شود؛ فلش اتصال یا شمارهٔ مراحل در این برش وجود ندارد.",
+      "key_takeaway_fa": "نمای قطعات می‌تواند ساختار فیزیکی محصول را بدون نمودار پیچیده معرفی کند.",
+      "analyst_assessment_fa": "این عکس، چیدمان قطعات است و دستور مونتاژ یا نمای انفجاریِ شماره‌گذاری‌شده نیست. تعداد و نوع قطعات به فهرست مشخصات NSP منتقل نمی‌شود.",
+      "strengths_fa": [
+        "زمینهٔ ساده از رقابت با قطعات جلوگیری می‌کند.",
+        "دید کلی از مجموعهٔ فیزیکی در یک تصویر فراهم می‌شود."
+      ],
+      "weaknesses_fa": [
+        "قطعات کوچک بدون برچسب برای خوانندهٔ غیرمتخصص مبهم می‌مانند.",
+        "تصویر هیچ ترتیب نصب یا ارتباط سیم‌کشی را تعیین نمی‌کند."
+      ],
+      "nsp_visual_adaptation_fa": "در صورت نیاز به معرفی ساختار یک محصول واقعی NSP، عکس اختصاصی با قطعات مجاز تهیه شود. برچسب‌های ضروری و توضیح هدف تصویر افزوده شوند؛ نمایش جزئیات تولید یا مونتاژ باید با دامنهٔ واقعی ارائه سازگار باشد.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P06-E07",
+        "VINGCARD14-P06-E08",
+        "VINGCARD14-P06-E09",
+        "VINGCARD14-P06-E10"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "ارجاع‌های متنی، زمینهٔ موضوع یا چیدمان‌اند؛ حضور عکس به‌تنهایی شاهد قابلیت یا ادعای نوشته‌شده نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_07_material_story_columns",
+      "reference_order": 8,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 7,
+      "source_printed_page": 7,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_07_material_story_columns.webp",
+      "asset_filename": "VINGCARD14_07_material_story_columns.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 133736,
+      "asset_sha256": "a7e547fbbd075558fe84ecc3b44e6bbdf5c5a80f1c933b08a8e2660e7a0011b3",
+      "git_blob_sha": "bfe4aeed2464140e68a62948efccda19cedf55f5",
+      "rendered_size_px": [
+        1501,
+        1477
+      ],
+      "base64_length": 178316,
+      "normalized_pdf_crop": [
+        0.07,
+        0.065,
+        0.925,
+        0.715
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        42.84,
+        51.480000000000004,
+        566.1,
+        566.28
+      ],
+      "render_scale": 2.8666437335167987,
+      "target_longest_edge_px": 1500,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "illustrated_material_story_columns",
+      "title_fa": "دو ستون روایت با عکس موضوعی",
+      "observed_content_in_crop_fa": "دو ستون با عکس در بالا، تیتر و چند بند متن دیده می‌شوند؛ ستون راست زمینهٔ رنگی دارد و روی عکس آن نشانه‌ای شبیه خانهٔ جدول عناصر قرار گرفته است. ستون چپ به مسئلهٔ نگهداری و ستون راست به مواد می‌پردازد.",
+      "key_takeaway_fa": "عکس موضوعی در بالای هر ستون به تفکیک دو پیام نزدیک کمک می‌کند.",
+      "analyst_assessment_fa": "دو پیام نباید با هم ادغام شوند: مسئلهٔ پسماند و وقت کارکنان با ادعای بازیافت‌پذیری بخشی از محصول فرق دارد. نوشته‌های تزئینی روی عکس ماده، شاخص عملکرد یا شناسهٔ مدل نیستند.",
+      "strengths_fa": [
+        "هر موضوع عکس و تیتر مستقل دارد.",
+        "زمینهٔ رنگی یک ستون به ایجاد سلسله‌مراتب کمک می‌کند."
+      ],
+      "weaknesses_fa": [
+        "تراکم متن بالا است و برای صفحهٔ معرفی سریع نیاز به خلاصه‌سازی دارد.",
+        "نشان علمی‌نما ممکن است بیش از شواهد واقعی منبع اعتبار القا کند."
+      ],
+      "nsp_visual_adaptation_fa": "برای روایت دو موضوع واقعی NSP می‌توان از دو ستون عکس/تیتر/شرح استفاده کرد؛ متن کوتاه‌تر، عکس مجاز و ادعاهای مستند لازم‌اند. نشانهٔ علمی یا مواد فقط وقتی وارد طرح شود که موضوع واقعی و مستند باشد.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT014_VINGCARD_NOVEL:I012"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P07-E02",
+        "VINGCARD14-P07-E03",
+        "VINGCARD14-P07-E04",
+        "VINGCARD14-P07-E06"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-05",
+        "VINGCARD14-CLAIM-06"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD14-CONTEXT-BATTERY-OPTIONS"
+      ],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "ارجاع‌های متنی، زمینهٔ موضوع یا چیدمان‌اند؛ حضور عکس به‌تنهایی شاهد قابلیت یا ادعای نوشته‌شده نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_07_packaging_banner",
+      "reference_order": 9,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 7,
+      "source_printed_page": 7,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_07_packaging_banner.webp",
+      "asset_filename": "VINGCARD14_07_packaging_banner.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 43578,
+      "asset_sha256": "d210a038582f7e23bb6f4e7b697d184d3ef836b20c3c083c8bf2be95cabe43b8",
+      "git_blob_sha": "87d1f0aae6963b268a8efaf4ce7bed4aa69ca00e",
+      "rendered_size_px": [
+        1501,
+        398
+      ],
+      "base64_length": 58104,
+      "normalized_pdf_crop": [
+        0.037,
+        0.738,
+        1,
+        0.935
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        22.644,
+        584.496,
+        612.0,
+        740.5200000000001
+      ],
+      "render_scale": 2.545150978356036,
+      "target_longest_edge_px": 1500,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "themed_photo_text_banner",
+      "title_fa": "نوار افقی عکس و متن",
+      "observed_content_in_crop_fa": "پنل افقی آبی با عکس بسته‌بندی در خانهٔ سفید، عنوان و بند توضیحی در کنار آن دیده می‌شود. یک تصویر محو در پس‌زمینه امتداد دارد؛ پانوشت صفحه خارج برش است.",
+      "key_takeaway_fa": "یک نوار افقی می‌تواند پیام مکمل را از متن اصلی صفحه جدا کند.",
+      "analyst_assessment_fa": "این بخش برای روایت کوتاه فرایند یا خدمت مناسب است. ادعای بسته‌بندی بازیافتی به جعبهٔ منبع محدود می‌ماند و از عکس نتیجهٔ محیط‌زیستی NSP استخراج نمی‌شود.",
+      "strengths_fa": [
+        "جهت افقی با صفحهٔ A4 افقی سازگارتر است.",
+        "عکس کوچک و متن در یک ناحیهٔ مشترک به هم مرتبط شده‌اند."
+      ],
+      "weaknesses_fa": [
+        "بافت پس‌زمینه در صورت پررنگ‌شدن خوانایی متن را کم می‌کند.",
+        "متن منبع برای یک بنر کوچک نسبتاً طولانی است."
+      ],
+      "nsp_visual_adaptation_fa": "برای NSP می‌توان پیام مکمل مستند دربارهٔ تحویل، نصب یا خدمت را با عکس اختصاصی در یک بنر آرام قرار داد. در سمت پانچ، فقط پس‌زمینه امتداد یابد و عکس، عنوان و متن مهم از حلقه‌ها فاصله داشته باشند.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P07-E08",
+        "VINGCARD14-P07-E09"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-07"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "ارجاع‌های متنی، زمینهٔ موضوع یا چیدمان‌اند؛ حضور عکس به‌تنهایی شاهد قابلیت یا ادعای نوشته‌شده نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_08_finish_gallery_custom_panel",
+      "reference_order": 10,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 8,
+      "source_printed_page": 8,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_08_finish_gallery_custom_panel.webp",
+      "asset_filename": "VINGCARD14_08_finish_gallery_custom_panel.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 87038,
+      "asset_sha256": "98d9ae0dc77c05e0930c669aca9ed818443aae20746542535e6835d61d9bbc95",
+      "git_blob_sha": "cb7b86dc5dc8661cbde4855eac4a300480f6d98c",
+      "rendered_size_px": [
+        1501,
+        1340
+      ],
+      "base64_length": 116052,
+      "normalized_pdf_crop": [
+        0.06,
+        0.29,
+        1,
+        0.938
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        36.72,
+        229.67999999999998,
+        612.0,
+        742.896
+      ],
+      "render_scale": 2.6074259491030456,
+      "target_longest_edge_px": 1500,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "option_gallery_with_conditional_custom_panel",
+      "title_fa": "گالری گزینه‌ها و پنل سفارشی‌سازی",
+      "observed_content_in_crop_fa": "پنج نمونهٔ تصویری در شبکه، یک تصویر مفهومی رنگی و پنل زردِ توضیح سفارشی‌سازی دیده می‌شوند. متن پنل شرط نیاز مشخص مشتری و تعداد سفارش را حفظ می‌کند.",
+      "key_takeaway_fa": "گزینه‌های استاندارد و امکان درخواست سفارشی‌سازی در دو بخش متفاوت معرفی می‌شوند.",
+      "analyst_assessment_fa": "این الگو برای نمایش تنوع واقعی مناسب است؛ تعداد، نام و ظاهر گزینه‌های رقیب وارد فهرست محصولات NSP نمی‌شود. تصویر رنگی پایین، نمونهٔ ششم استاندارد یا تضمین عرضهٔ همهٔ رنگ‌ها نیست.",
+      "strengths_fa": [
+        "اندازه و زاویهٔ نزدیک عکس‌ها مقایسهٔ بصری را آسان می‌کند.",
+        "پنل مستقل، درخواست سفارشی‌سازی را از گزینه‌های استاندارد جدا می‌کند."
+      ],
+      "weaknesses_fa": [
+        "پنل زرد بخشی از ترکیب تصویر پایین را می‌پوشاند.",
+        "رنگ تصویر بروشور معادل قطعی رنگ یا پرداخت واقعی محصول نیست."
+      ],
+      "nsp_visual_adaptation_fa": "تنها گزینه‌های واقعی و مستند NSP با عکس اختصاصی و نور یکسان نمایش داده شوند؛ شرایط سفارش سفارشی در کنار همان بخش نوشته شود. شبکه در نسبت افقی بازچینی شود و حاشیهٔ امن پانچ برای متن و نمونه‌های مهم حفظ گردد.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT014_VINGCARD_NOVEL:I014"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P08-E04",
+        "VINGCARD14-P08-E05",
+        "VINGCARD14-P08-E06"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-08"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "ارجاع‌های متنی، زمینهٔ موضوع یا چیدمان‌اند؛ حضور عکس به‌تنهایی شاهد قابلیت یا ادعای نوشته‌شده نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_09_photo_slogan",
+      "reference_order": 11,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 9,
+      "source_printed_page": 9,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_09_photo_slogan.webp",
+      "asset_filename": "VINGCARD14_09_photo_slogan.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 40450,
+      "asset_sha256": "80078c40e8d1bd2ea684f02abc4e0ec009a3e170613f7d7b8e0db178b28ea4e4",
+      "git_blob_sha": "4d8765b194e16633e3604cfa0eb454b621ff6167",
+      "rendered_size_px": [
+        1054,
+        1200
+      ],
+      "base64_length": 53936,
+      "normalized_pdf_crop": [
+        0,
+        0,
+        1,
+        0.88
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        0.0,
+        0.0,
+        612.0,
+        696.96
+      ],
+      "render_scale": 1.721763085399449,
+      "target_longest_edge_px": 1200,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "product_photo_with_translucent_slogan",
+      "title_fa": "عکس محصول در محل نصب با شعار روی پنل نیمه‌شفاف",
+      "observed_content_in_crop_fa": "نمای نزدیک دستگیره روی درِ چوبی، لبهٔ در و ناحیهٔ آبیِ کناری، همراه شعار سفید داخل مستطیل نیمه‌شفاف گوشه‌گرد دیده می‌شوند. نشانهٔ هندسی نارنجی در لبهٔ چپ جزئی از طرح صفحه است. شمارهٔ صفحه بیرون برش قرار دارد.",
+      "key_takeaway_fa": "عکسِ محصول در محل استفاده می‌تواند یک صفحهٔ کم‌متن بسازد و شعار کوتاه را روی سطحی آرام نگه دارد.",
+      "analyst_assessment_fa": "این نمونه برای مطالعهٔ مکث تصویری و بیان زیبایی‌شناسی محصول مناسب است. پنل نیمه‌شفاف متن را از بافت چوب جدا می‌کند؛ اما سهم زیاد در و فضای خالی، اطلاعات کاربردی کمی منتقل می‌کند.",
+      "strengths_fa": [
+        "کاربرد محصول روی در بلافاصله دیده می‌شود.",
+        "شعار کوتاه در محل نسبتاً آرام و با کنتراست مناسب قرار گرفته است."
+      ],
+      "weaknesses_fa": [
+        "این عکس، فرایند نرم‌افزاری یا تجربهٔ کامل ورود مهمان را نشان نمی‌دهد.",
+        "چیدمان عمودی و لبهٔ باز در برای قالب افقی نیازمند عکاسی یا بازچینی اختصاصی است."
+      ],
+      "nsp_visual_adaptation_fa": "از عکس اختصاصی محصول واقعی NSP در محیط استفاده و یک پیام کوتاه مستند بهره گرفته شود. در صفحهٔ A4 افقی، متن و محصول اصلی از ناحیهٔ پانچ فاصله بگیرند و پس‌زمینه تا لبه ادامه یابد؛ جایگاه سکشن در S05 تعیین می‌شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT014_VINGCARD_NOVEL:I015"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P09-E01"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "خود شعار در برش حضور دارد؛ عبارت تصویری نمونه، هویت برند منبع است.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_10_numbered_installation_grid",
+      "reference_order": 12,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 10,
+      "source_printed_page": 10,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_10_numbered_installation_grid.webp",
+      "asset_filename": "VINGCARD14_10_numbered_installation_grid.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 22704,
+      "asset_sha256": "6c7da9b65c1580217007111a06953061ded70113599c451c1cf1beedcf293d67",
+      "git_blob_sha": "3ec8d88d1117be9ed5999c9ec1d608f7ebceeb0f",
+      "rendered_size_px": [
+        751,
+        1201
+      ],
+      "base64_length": 30272,
+      "normalized_pdf_crop": [
+        0.49,
+        0.34,
+        0.955,
+        0.915
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        299.88,
+        269.28000000000003,
+        584.4599999999999,
+        724.6800000000001
+      ],
+      "render_scale": 2.6350461133069825,
+      "target_longest_edge_px": 1200,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "numbered_four_photo_workflow",
+      "title_fa": "چهار عکس شماره‌دار در شبکهٔ دو در دو",
+      "observed_content_in_crop_fa": "ستون راست صفحه با عنوان Installation steps و چهار عکس گوشه‌گرد دیده می‌شود. برچسب‌های آبی ۱ و ۲ در ردیف بالا و ۳ و ۴ در ردیف پایین هستند. در این برش فلشِ اتصال یا متن دستور مستقل برای هر گام وجود ندارد.",
+      "key_takeaway_fa": "شماره‌گذاری ثابت روی عکس‌های هم‌اندازه، ترتیب یک فرایند را بدون نمودار پیچیده نشان می‌دهد.",
+      "analyst_assessment_fa": "این سبک می‌تواند نمونهٔ مناسبی برای آموزش کوتاه نصب یا استفاده باشد؛ ولی تصاویر منبع به‌تنهایی برای نوشتن دستور فنی یا تضمین سادگی نصب NSP کافی نیستند.",
+      "strengths_fa": [
+        "ترتیب گام‌ها با شمارهٔ چاپی روشن است.",
+        "اندازه و فاصلهٔ عکس‌ها منظم و قابل اسکن است."
+      ],
+      "weaknesses_fa": [
+        "برای مخاطب ناآشنا توضیح نوشتاری هر گام کم است.",
+        "این برش بخش معرفی سمت چپ را کنار می‌گذارد و نمایندهٔ ستون فرایند است، نه کل صفحه."
+      ],
+      "nsp_visual_adaptation_fa": "برای فرایند واقعی و آزموده‌شدهٔ NSP، عکس‌های اختصاصی و زیرنویس کوتاه تهیه شود. ترتیب شماره‌ها صریح بماند؛ در چیدمان فارسی RTL ترتیب خواندن بدون تغییر خودسرانهٔ ترتیب فنی روشن شود. ناحیهٔ پانچ از شماره‌ها و بخش مهم عکس‌ها خالی بماند و زمینه پیوسته باشد.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT014_VINGCARD_NOVEL:I016"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P10-E01",
+        "VINGCARD14-P10-E06"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-10",
+        "VINGCARD14-CLAIM-11"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "تیتر منتخب S03 در بالای صفحه و بیرون این برش است؛ ارتباط آن فقط زمینهٔ همان موضوع است. عنوان و شماره‌های داخل برش، توالی عکس را نشان می‌دهند و دستور فنی بازسازی نشده است.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_11_phone_access_photo",
+      "reference_order": 13,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 11,
+      "source_printed_page": 11,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_11_phone_access_photo.webp",
+      "asset_filename": "VINGCARD14_11_phone_access_photo.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 98428,
+      "asset_sha256": "8db6b4f009e8f402a2b556f2c758d33b261a5f1124baf74ac8fa708bac2e91fb",
+      "git_blob_sha": "9dcf4a8712c7d801d7a8ce9b7a303f10b2db2824",
+      "rendered_size_px": [
+        1251,
+        1501
+      ],
+      "base64_length": 131240,
+      "normalized_pdf_crop": [
+        0.035,
+        0.035,
+        1,
+        0.93
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        21.42,
+        27.720000000000002,
+        612.0,
+        736.5600000000001
+      ],
+      "render_scale": 2.116133401049602,
+      "target_longest_edge_px": 1500,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "human_phone_interaction_with_context_panels",
+      "title_fa": "عکس تعامل دست، گوشی و محصول با دو پنل توضیح",
+      "observed_content_in_crop_fa": "عکس بزرگِ دستی که گوشی را نزدیک دستگیره گرفته است بین پنل عنوان بالا و پنل توضیح پایین قرار دارد. عبارت Room access granted روی گوشی خواناست. عنوان Mobile Access و بند پایین شامل شرط مجوز نرم‌افزار در برش باقی می‌مانند؛ بخش‌هایی از دست در تصویر اصلی از لبهٔ صفحه بیرون می‌روند.",
+      "key_takeaway_fa": "نمایش کنش واقعی کاربر، ارتباط میان قابلیت دیجیتال و نقطهٔ استفادهٔ فیزیکی را سریع توضیح می‌دهد.",
+      "analyst_assessment_fa": "قوی‌ترین نمونهٔ این نیمهٔ بروشور برای روایت تجربهٔ کاربر است. حفظ توضیح پایین مانع جداشدن تصویر سادهٔ استفاده از شرط فعال‌سازی می‌شود؛ عکس به‌تنهایی هویت اپلیکیشن یا پشتیبانی NSP را ثابت نمی‌کند.",
+      "strengths_fa": [
+        "رابطهٔ دست، گوشی و محصول در یک قاب قابل فهم است.",
+        "پنل‌های روشن، عنوان و توضیح را از عکس تفکیک می‌کنند."
+      ],
+      "weaknesses_fa": [
+        "متن پایین در اندازهٔ کوچک یا تصویر بندانگشتی ریز می‌شود.",
+        "عکسِ نمایشی، مسیر کامل پذیرش هتل، هویت اپ یا شرایط پلتفرم را نشان نمی‌دهد."
+      ],
+      "nsp_visual_adaptation_fa": "تنها با رابط و قابلیت واقعی NSP، عکس اختصاصی از کنش کاربر تهیه شود؛ پیام کوتاه و شرط فعال‌سازی در نزدیکی هم قرار گیرند. در A4 افقی می‌توان عکس و توضیح را بازچید، با حفظ ناحیهٔ امن پانچ و پس‌زمینهٔ یکپارچه.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT014_VINGCARD_NOVEL:I017",
+        "CAT014_VINGCARD_NOVEL:I018",
+        "CAT014_VINGCARD_NOVEL:I019"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P11-E01",
+        "VINGCARD14-P11-E02",
+        "VINGCARD14-P11-E03",
+        "VINGCARD14-P11-E04",
+        "VINGCARD14-P11-E05"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-12",
+        "VINGCARD14-CLAIM-13"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD14-CONTEXT-MOBILE-LICENSE"
+      ],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "نوشتهٔ گوشی متن دیداری جدا از native است. تصویر، شاهد Apple Wallet یا نام اپلیکیشن مشخص نیست. بریدگی دست از لبهٔ راست متعلق به منبع است و بازسازی نشود.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": [
+        "structured_context_translations.manual_visual_labels[0]",
+        "source_context_bindings[VINGCARD14-CONTEXT-MOBILE-LICENSE]"
+      ]
+    },
+    {
+      "id": "VINGCARD14_12_staggered_operation_cards",
+      "reference_order": 14,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 12,
+      "source_printed_page": 12,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_12_staggered_operation_cards.webp",
+      "asset_filename": "VINGCARD14_12_staggered_operation_cards.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 96674,
+      "asset_sha256": "84751beb8b5071942b47a6b4ea461e90ae28732b8391b5e30a9e1de971ca2b5f",
+      "git_blob_sha": "457bd0dd163a22ee802d83631f32b1e0bd234e2e",
+      "rendered_size_px": [
+        1500,
+        1305
+      ],
+      "base64_length": 128900,
+      "normalized_pdf_crop": [
+        0,
+        0.285,
+        0.96,
+        0.93
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        0.0,
+        225.71999999999997,
+        587.52,
+        736.5600000000001
+      ],
+      "render_scale": 2.553104575163399,
+      "target_longest_edge_px": 1500,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "staggered_full_width_benefit_panels",
+      "title_fa": "سه پنل پلکانی با عنوان، توضیح و تصویر کوچک",
+      "observed_content_in_crop_fa": "سه نوار گوشه‌گرد با عرض‌های افزایشی روی هم قرار گرفته‌اند. هر نوار عنوان و متن در چپ و یک تصویر/نشان کوچک در راست دارد؛ زمینه‌ها از روشن به آبی پررنگ می‌روند. نماد مثلثی زرد کنار تصویر نوار پایین شبیه نشان پخش است، بدون تأیید عملکرد تعاملی.",
+      "key_takeaway_fa": "تغییر کنترل‌شدهٔ عرض و رنگِ پنل‌های هم‌ساختار، چند پیام عملیاتی را از هم جدا و مسیر عمودی مرور را مشخص می‌کند.",
+      "analyst_assessment_fa": "الگوی پنل‌های تکرارشونده قابل اقتباس است. محتوای عددی، تغذیه و رفتار مکانیکی این صفحه فقط متعلق به محصول منبع است و در پژوهش NSP به مشخصات یا قابلیت نرم‌افزاری تبدیل نمی‌شود.",
+      "strengths_fa": [
+        "یک الگوی ثابت برای عنوان، شرح و تصویر در هر ردیف وجود دارد.",
+        "رنگ و عرضِ متفاوت، سه موضوع را واضح از هم جدا می‌کند."
+      ],
+      "weaknesses_fa": [
+        "اختلاف عرض پنل‌ها می‌تواند نسبت به اهمیت واقعی محتوا سلسله‌مراتب ناخواسته بسازد.",
+        "اعداد و ادعاهای سخت‌افزاری در پیکسل منبع حضور دارند و بدون مدرک اختصاصی قابل بازنشر در کاتالوگ NSP نیستند."
+      ],
+      "nsp_visual_adaptation_fa": "برای سه مزیت مستند NSP، پنل‌های هم‌ساختار با عکس و متن اختصاصی ساخته شود. سلسله‌مراتب بر اساس اهمیت واقعی تنظیم شود؛ اجزای کلیدی از حاشیهٔ پانچ فاصله بگیرند و رنگ زمینه در آن ناحیه قطع نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT014_VINGCARD_NOVEL:I020"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P12-E01",
+        "VINGCARD14-P12-E03",
+        "VINGCARD14-P12-E04",
+        "VINGCARD14-P12-E05",
+        "VINGCARD14-P12-E06",
+        "VINGCARD14-P12-E07"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-14",
+        "VINGCARD14-CLAIM-15",
+        "VINGCARD14-CLAIM-16"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD14-CONTEXT-BATTERY-OPTIONS",
+        "VINGCARD14-CONTEXT-HOUSEKEEPING"
+      ],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "تیتر منتخب S03 خارج برش و در بالای همین صفحه است. برش فقط ساختار پنل‌ها را نمایندگی می‌کند؛ مقادیر و مکانیزم‌ها دادهٔ فیچر NSP نیستند. نشان مثلثی به‌عنوان فلش فرایند یا لینک ویدیوی آزموده‌شده معرفی نشود.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_13_paired_climate_photos",
+      "reference_order": 15,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 13,
+      "source_printed_page": 13,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_13_paired_climate_photos.webp",
+      "asset_filename": "VINGCARD14_13_paired_climate_photos.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 72546,
+      "asset_sha256": "d0bc005311c6b9b5049344d421ea5924984823bcb4e5d2f83752bcea59c77f6d",
+      "git_blob_sha": "4a0224c1690aab037c2b3e520a839f8a4ae7ce49",
+      "rendered_size_px": [
+        1160,
+        1500
+      ],
+      "base64_length": 96728,
+      "normalized_pdf_crop": [
+        0.035,
+        0,
+        0.965,
+        0.93
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        21.42,
+        0.0,
+        590.5799999999999,
+        736.5600000000001
+      ],
+      "render_scale": 2.0364939719778428,
+      "target_longest_edge_px": 1500,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "paired_environment_photos_with_badges",
+      "title_fa": "دو تصویر هم‌قاب برای نمایش دو وضعیت محیطی",
+      "observed_content_in_crop_fa": "دو نمای مشابه محصول در بالا و پایین با حس رنگی گرم و سرد، نشان‌های دماسنج و برچسب‌های عددیِ رنگی دیده می‌شوند. عنوان و توضیح میانی دو تصویر را از هم جدا می‌کنند؛ شمارهٔ صفحه از برش کنار گذاشته شده است.",
+      "key_takeaway_fa": "ثابت‌ماندن زاویه و سوژه، مقایسهٔ دو وضعیت را روشن می‌کند؛ رنگ و نشانهٔ کوچک تفاوت موضوع را نشان می‌دهند.",
+      "analyst_assessment_fa": "این سبک، قیاس تصویری دو موقعیت را به‌خوبی بیان می‌کند. اعداد، واحدها و ادعاهای مقاومت در همین محصول رقیب محدود می‌مانند؛ عکس مدرک آزمون محیطی یا شرایط کاری NSP نیست.",
+      "strengths_fa": [
+        "هم‌قاب‌بودن سوژه، تفاوت دو وضعیت را سریع قابل تشخیص می‌کند.",
+        "نشان‌ها در هر دو تصویر جایگاه مشابه دارند."
+      ],
+      "weaknesses_fa": [
+        "چنین تصویری بدون روش آزمون، عملکرد واقعی را اثبات نمی‌کند.",
+        "دو تصویر بزرگ و متن میانی برای صفحهٔ افقی به بازچینی نیاز دارند."
+      ],
+      "nsp_visual_adaptation_fa": "اگر دو وضعیت واقعی و مستند برای NSP وجود داشت، از دو عکس با زاویه و مقیاس یکسان استفاده شود. مقدار عددی فقط از سند خود NSP بیاید؛ در چیدمان افقی می‌توان دو قاب را کنار هم گذاشت و محتوای مهم را از ناحیهٔ پانچ دور نگه داشت.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P13-E01",
+        "VINGCARD14-P13-E02"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-17",
+        "VINGCARD14-CLAIM-18"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "این صفحه رکورد منتخب S03 ندارد. مشاهدهٔ دماها در تصویر صرفاً جزء شاهد سبک است؛ هیچ فهرست مشخصات، درجهٔ حفاظت یا محدودهٔ دمای NSP استخراج نشود.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_14_cloud_security_panel",
+      "reference_order": 16,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 14,
+      "source_printed_page": 14,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_14_cloud_security_panel.webp",
+      "asset_filename": "VINGCARD14_14_cloud_security_panel.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 66006,
+      "asset_sha256": "0c81116864be0408fc161450b434a6a5040cbfe72cd8368a26266b83c81f7910",
+      "git_blob_sha": "842e4e912493cb7a2a15824f06f1bd65b8ede208",
+      "rendered_size_px": [
+        1200,
+        449
+      ],
+      "base64_length": 88008,
+      "normalized_pdf_crop": [
+        0,
+        0.63,
+        0.97,
+        0.91
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        0.0,
+        498.96,
+        593.64,
+        720.72
+      ],
+      "render_scale": 2.0214271275520517,
+      "target_longest_edge_px": 1200,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "themed_photo_text_banner",
+      "title_fa": "پنل موضوعی نرم‌افزار با زمینهٔ تصویری و عکس مکمل",
+      "observed_content_in_crop_fa": "پنل افقی آبیِ پایین صفحه با گوشه‌های گرد، عنوان و متن سفید در چپ و عکس فرد در حال کار با لپ‌تاپ در راست دیده می‌شود. بند منبع دربارهٔ Vostio و دریافت به‌روزرسانی منظم در برش باقی می‌ماند. بخش‌های بالایی گواهی و مکانیزم قفل بیرون برش هستند.",
+      "key_takeaway_fa": "برای یک موضوع نرم‌افزاری، می‌توان زمینهٔ موضوعی، عنوان کوتاه و یک تصویر انسانی مکمل را در یک پنل مستقل جمع کرد.",
+      "analyst_assessment_fa": "برش پایین صفحه زبان بصری نرم‌افزار را از عکس مکانیکیِ بالای صفحه جدا می‌کند. عکس لپ‌تاپ در این نمونه تصویر توضیحی است؛ داشبورد Vostio یا مدرک یکپارچگی نیست. فاعل به‌روزرسانی‌ها در متن، Vostio باقی می‌ماند.",
+      "strengths_fa": [
+        "موضوع سایبری با پنل آبی از موضوع مکانیکی صفحه جدا شده است.",
+        "عکس کوچک نقش مکمل دارد و جریان خواندن متن را قطع نمی‌کند."
+      ],
+      "weaknesses_fa": [
+        "زمینهٔ تصویری زیر نوشته می‌تواند در اندازهٔ کوچک به خوانایی آسیب بزند.",
+        "عکس عمومی لپ‌تاپ اطلاعات مشخصی از رابط کاربری یا گردش کار ارائه نمی‌دهد."
+      ],
+      "nsp_visual_adaptation_fa": "برای قابلیت نرم‌افزاری مستند NSP، پنل موضوعی با زمینهٔ کم‌جزئیات و تصویر مجاز یا اسکرین‌شات واقعی ساخته شود. متن به نرم‌افزار درست منتسب بماند و شرط‌ها حذف نشوند؛ محتوا در ناحیهٔ امن پانچ قرار گیرد و پس‌زمینه ادامه داشته باشد.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT014_VINGCARD_NOVEL:I021",
+        "CAT014_VINGCARD_NOVEL:I022"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P14-E05",
+        "VINGCARD14-P14-E06",
+        "VINGCARD14-P14-E07"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-23"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD14-CONTEXT-VOSTIO"
+      ],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "عنوان و بند نرم‌افزاری با هم حفظ شده‌اند. روش تحویل خودکار/OTA، رابط Vostio یا معماری شبکه از عکس لپ‌تاپ نتیجه نمی‌شود.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_15_security_icon_grid",
+      "reference_order": 17,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 15,
+      "source_printed_page": 15,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_15_security_icon_grid.webp",
+      "asset_filename": "VINGCARD14_15_security_icon_grid.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 50066,
+      "asset_sha256": "9ba789b85e999993313c89e5ad44bc88a00e8bdc303584750105b64e88fad88f",
+      "git_blob_sha": "dfa6ae8f8adf50bbd98badc076bc610a02a5f0a0",
+      "rendered_size_px": [
+        1501,
+        857
+      ],
+      "base64_length": 66756,
+      "normalized_pdf_crop": [
+        0.035,
+        0.055,
+        0.965,
+        0.465
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        21.42,
+        43.56,
+        590.5799999999999,
+        368.28000000000003
+      ],
+      "render_scale": 2.635462787265444,
+      "target_longest_edge_px": 1500,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "two_column_icon_caption_summary",
+      "title_fa": "شبکهٔ دو ستونی آیکون و شرح کوتاه",
+      "observed_content_in_crop_fa": "عنوان بالای یک پنل روشن و پنج مورد آیکون‌دار در دو ستون دیده می‌شود؛ ستون چپ سه مورد و ستون راست دو مورد دارد. آیکون‌ها در مربع‌های سفید گوشه‌گرد قرار گرفته‌اند. شرط requires Online option کنار شرح هشدار رویداد در بالا سمت راست کامل است.",
+      "key_takeaway_fa": "پنج پیام را می‌توان در یک شبکهٔ کوتاه و قابل اسکن، با جایگاه ثابت آیکون و متن خلاصه کرد.",
+      "analyst_assessment_fa": "ساختار برای جمع‌بندی چند قابلیت مناسب است؛ تعداد نامساوی ردیف‌ها فضای خالی ایجاد می‌کند. شرط هر مورد باید همان کنار بماند. محتوای مکانیکی و امنیتی این تصویر، مدرک قابلیت NSP نیست.",
+      "strengths_fa": [
+        "آیکون‌های با کادر ثابت، اسکن سریع موضوع‌ها را آسان می‌کنند.",
+        "قید Online در متن همان مورد دیده می‌شود."
+      ],
+      "weaknesses_fa": [
+        "ترکیب موضوع‌های نرم‌افزاری و مکانیکی ممکن است دامنهٔ هر مورد را مبهم کند.",
+        "نشان اعلان می‌تواند در نگاه سریع با شاخص عملکرد اشتباه گرفته شود؛ معنای آن باید محدود بماند."
+      ],
+      "nsp_visual_adaptation_fa": "برای فهرست مستند قابلیت‌های NSP، مجموعه آیکون اختصاصی و هم‌سبک با جملهٔ کوتاه و شرط مربوط به هر قابلیت استفاده شود. شبکه برای RTL بازچینی شود؛ لوگو، آیکون و متن رقیب عیناً کپی نشوند و ناحیهٔ پانچ خالی از اطلاعات کلیدی بماند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT014_VINGCARD_NOVEL:I023"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD14-P15-E01",
+        "VINGCARD14-P15-E02",
+        "VINGCARD14-P15-E03",
+        "VINGCARD14-P15-E04",
+        "VINGCARD14-P15-E05"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-24",
+        "VINGCARD14-CLAIM-25",
+        "VINGCARD14-CLAIM-01",
+        "VINGCARD14-CLAIM-20"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD14-CONTEXT-MECHANICAL-OVERRIDE"
+      ],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "عدد روی نشان اعلان زمان پاسخ نیست. Online فقط شرط هشدار رویداد است؛ عنوان مکانیکیِ کوتاه باید با زمینهٔ اختیاری‌بودن سیلندر در صفحات دیگر خوانده شود. تصویر ساختار آیکون‌ها را نشان می‌دهد و فهرست فیچر جدید ایجاد نمی‌کند.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    },
+    {
+      "id": "VINGCARD14_15_transparent_product_cutaway",
+      "reference_order": 18,
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "original_pdf_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+      "source_pdf_page": 15,
+      "source_printed_page": 15,
+      "source_page_size_points": [
+        612.0,
+        792.0
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_15_transparent_product_cutaway.webp",
+      "asset_filename": "VINGCARD14_15_transparent_product_cutaway.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 23736,
+      "asset_sha256": "76dee63ee046f1040a1db38cecdd7412474b6b9d773a65f7fbd8f836dc8f2d2c",
+      "git_blob_sha": "cb608dc4800707aa62e50813c34f6f96e9bbfdeb",
+      "rendered_size_px": [
+        1201,
+        555
+      ],
+      "base64_length": 31648,
+      "normalized_pdf_crop": [
+        0.1,
+        0.5,
+        0.8,
+        0.75
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible PDF page.",
+      "pdf_crop_points": [
+        61.2,
+        396.0,
+        489.6,
+        594.0
+      ],
+      "render_scale": 2.8011204481792715,
+      "target_longest_edge_px": 1200,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "transparent_product_cutaway",
+      "title_fa": "نمای نیمه‌شفاف برای نشان‌دادن ساختار داخلی محصول",
+      "observed_content_in_crop_fa": "تصویر نیمه‌شفاف دستگیره روی زمینهٔ خنثی، پوسته و چند جزء داخلی را در یک زاویهٔ ثابت نشان می‌دهد. برش فقط تصویر محصول را در بر می‌گیرد و پنل آیکون‌ها و نوار گواهی بیرون آن هستند.",
+      "key_takeaway_fa": "نمای نیمه‌شفاف می‌تواند رابطهٔ شکل بیرونی و اجزای داخلی محصول را بدون جداکردن آن‌ها در یک نمای انفجاری نشان دهد.",
+      "analyst_assessment_fa": "یک خانوادهٔ مستقل برای معرفی تجهیزات است. این تصویر نمودار معماری سامانه یا نقشهٔ ساخت نیست؛ از آن نام قطعات، ابعاد، جنس یا مشخصات NSP استخراج نمی‌شود.",
+      "strengths_fa": [
+        "شکل کلی محصول حفظ می‌شود و هم‌زمان ساختار درون آن دیده می‌شود.",
+        "پس‌زمینهٔ خنثی توجه را روی خود محصول نگه می‌دارد."
+      ],
+      "weaknesses_fa": [
+        "بدون راهنما یا برچسب، معنای اجزای رنگی برای مخاطب عمومی روشن نیست.",
+        "در اندازهٔ کوچک، جزئیات نیمه‌شفاف ممکن است شلوغ یا مبهم شوند."
+      ],
+      "nsp_visual_adaptation_fa": "در صورت وجود مدل سه‌بعدی یا تصویر فنی معتبر از محصول واقعی NSP، نمای نیمه‌شفاف اختصاصی تهیه شود و تنها اجزای لازم برای پیام انتخاب شوند. هیچ جزء غایب حدس زده یا از محصول رقیب بازسازی نشود؛ تصویر اصلی از ناحیهٔ پانچ فاصله داشته باشد.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Topic or layout context only; a source image does not independently prove the described behavior or identify a software product.",
+      "crop_context_note_fa": "تصویر فقط شاهد شیوهٔ معرفی تجهیزات است. هیچ زیرنویس فنی یا هویت قطعه از رنگ و شکل اجزا ساخته نشده است.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "candidate_target_section_types_for_S05": [],
+      "extracted_from": "Direct clip rendered from the original PDF page; no generative reconstruction, compositing or removal inside the source crop.",
+      "renderer": "PyMuPDF page.get_pixmap, RGB, alpha=False, annots=False; Pillow WebP quality=88 method=6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، نوشته‌ها و نشان‌های منبع متعلق به Vingcard / ASSA ABLOY یا صاحبان حقوق آن‌ها هستند؛ این پژوهش مجوز استفادهٔ تجاری در کاتالوگ NSP ایجاد نمی‌کند.",
+      "competitor_hardware_text_in_image": "Source pixels may include competitor names, finishes or technical text; no structured hardware catalogue or NSP claim is imported.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "accepted_after_direct_crop_inspection_and_independent_cross_review",
+      "related_S03_structured_context_paths": []
+    }
+  ],
+  "style_catalog": [
+    {
+      "style_id": "product_hero_with_geometric_title",
+      "title_fa": "عکس اصلی محصول و عنوان در قاب هندسی",
+      "representative_reference_ids": [
+        "VINGCARD14_01_cover_product_hero"
+      ],
+      "physical_pdf_pages": [
+        1
+      ],
+      "key_takeaway_fa": "یک موضوع تصویری واضح با عنوان کوتاه و ناحیهٔ جدا برای هویت ناشر، جلد را سریع قابل تشخیص می‌کند.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "numbered_topic_navigation",
+      "title_fa": "فهرست موضوعی با شماره‌های رنگی",
+      "representative_reference_ids": [
+        "VINGCARD14_03_numbered_contents_panel"
+      ],
+      "physical_pdf_pages": [
+        3
+      ],
+      "key_takeaway_fa": "شماره، عنوان و توضیح کوتاه کنار هم مسیر مرور کاتالوگ را روشن می‌کنند.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "photo_benefit_pair_grid",
+      "title_fa": "شبکهٔ جفت‌های عکس و توضیح",
+      "representative_reference_ids": [
+        "VINGCARD14_04_photo_benefit_grid"
+      ],
+      "physical_pdf_pages": [
+        4
+      ],
+      "key_takeaway_fa": "هر پیام کوتاه کنار عکسی مرتبط قرار می‌گیرد و مرور تصویری مزیت‌ها را ساده می‌کند.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "vertical_icon_text_rows",
+      "title_fa": "ردیف‌های عمودی آیکون و توضیح",
+      "representative_reference_ids": [
+        "VINGCARD14_05_icon_feature_rows"
+      ],
+      "physical_pdf_pages": [
+        5
+      ],
+      "key_takeaway_fa": "یک ستون آیکونِ ثابت، اسکن سریع چند پیام متفاوت را آسان می‌کند.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "layered_product_variant_photos",
+      "title_fa": "نماهای هم‌پوشان از نصب محصول",
+      "representative_reference_ids": [
+        "VINGCARD14_05_layered_variants"
+      ],
+      "physical_pdf_pages": [
+        5
+      ],
+      "key_takeaway_fa": "هم‌پوشانی کنترل‌شدهٔ دو عکس، تفاوت ظاهری گزینه‌ها را با مصرف فضای کمتر نشان می‌دهد.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "metric_badges_with_caption_and_baseline",
+      "title_fa": "نشان‌های عددی با عنوان و مبنای مقایسه",
+      "representative_reference_ids": [
+        "VINGCARD14_06_metric_badges_context"
+      ],
+      "physical_pdf_pages": [
+        6
+      ],
+      "key_takeaway_fa": "عدد برجسته باید همراه نام شاخص و مبنای مقایسه دیده شود.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "product_parts_flatlay",
+      "title_fa": "نمای چیدمان قطعات روی زمینهٔ روشن",
+      "representative_reference_ids": [
+        "VINGCARD14_06_parts_flatlay"
+      ],
+      "physical_pdf_pages": [
+        6
+      ],
+      "key_takeaway_fa": "نمای قطعات می‌تواند ساختار فیزیکی محصول را بدون نمودار پیچیده معرفی کند.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "illustrated_material_story_columns",
+      "title_fa": "دو ستون روایت با عکس موضوعی",
+      "representative_reference_ids": [
+        "VINGCARD14_07_material_story_columns"
+      ],
+      "physical_pdf_pages": [
+        7
+      ],
+      "key_takeaway_fa": "عکس موضوعی در بالای هر ستون به تفکیک دو پیام نزدیک کمک می‌کند.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "themed_photo_text_banner",
+      "title_fa": "بنر موضوعی عکس و متن",
+      "representative_reference_ids": [
+        "VINGCARD14_07_packaging_banner",
+        "VINGCARD14_14_cloud_security_panel"
+      ],
+      "physical_pdf_pages": [
+        7,
+        14
+      ],
+      "key_takeaway_fa": "یک پنل افقی مستقل می‌تواند عکس مکمل، عنوان و شرح موضوع را کنار هم نگه دارد؛ محتوای بسته‌بندی و نرم‌افزار دو مرجع جدا هستند.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "option_gallery_with_conditional_custom_panel",
+      "title_fa": "گالری گزینه‌ها و پنل سفارشی‌سازی",
+      "representative_reference_ids": [
+        "VINGCARD14_08_finish_gallery_custom_panel"
+      ],
+      "physical_pdf_pages": [
+        8
+      ],
+      "key_takeaway_fa": "گزینه‌های استاندارد و امکان درخواست سفارشی‌سازی در دو بخش متفاوت معرفی می‌شوند.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "product_photo_with_translucent_slogan",
+      "title_fa": "عکس محصول در محل نصب با شعار روی پنل نیمه‌شفاف",
+      "representative_reference_ids": [
+        "VINGCARD14_09_photo_slogan"
+      ],
+      "physical_pdf_pages": [
+        9
+      ],
+      "key_takeaway_fa": "عکسِ محصول در محل استفاده می‌تواند یک صفحهٔ کم‌متن بسازد و شعار کوتاه را روی سطحی آرام نگه دارد.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "numbered_four_photo_workflow",
+      "title_fa": "چهار عکس شماره‌دار در شبکهٔ دو در دو",
+      "representative_reference_ids": [
+        "VINGCARD14_10_numbered_installation_grid"
+      ],
+      "physical_pdf_pages": [
+        10
+      ],
+      "key_takeaway_fa": "شماره‌گذاری ثابت روی عکس‌های هم‌اندازه، ترتیب یک فرایند را بدون نمودار پیچیده نشان می‌دهد.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "human_phone_interaction_with_context_panels",
+      "title_fa": "عکس تعامل دست، گوشی و محصول با دو پنل توضیح",
+      "representative_reference_ids": [
+        "VINGCARD14_11_phone_access_photo"
+      ],
+      "physical_pdf_pages": [
+        11
+      ],
+      "key_takeaway_fa": "نمایش کنش واقعی کاربر، ارتباط میان قابلیت دیجیتال و نقطهٔ استفادهٔ فیزیکی را سریع توضیح می‌دهد.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "staggered_full_width_benefit_panels",
+      "title_fa": "سه پنل پلکانی با عنوان، توضیح و تصویر کوچک",
+      "representative_reference_ids": [
+        "VINGCARD14_12_staggered_operation_cards"
+      ],
+      "physical_pdf_pages": [
+        12
+      ],
+      "key_takeaway_fa": "تغییر کنترل‌شدهٔ عرض و رنگِ پنل‌های هم‌ساختار، چند پیام عملیاتی را از هم جدا و مسیر عمودی مرور را مشخص می‌کند.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "paired_environment_photos_with_badges",
+      "title_fa": "دو تصویر هم‌قاب برای نمایش دو وضعیت محیطی",
+      "representative_reference_ids": [
+        "VINGCARD14_13_paired_climate_photos"
+      ],
+      "physical_pdf_pages": [
+        13
+      ],
+      "key_takeaway_fa": "ثابت‌ماندن زاویه و سوژه، مقایسهٔ دو وضعیت را روشن می‌کند؛ رنگ و نشانهٔ کوچک تفاوت موضوع را نشان می‌دهند.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "two_column_icon_caption_summary",
+      "title_fa": "شبکهٔ دو ستونی آیکون و شرح کوتاه",
+      "representative_reference_ids": [
+        "VINGCARD14_15_security_icon_grid"
+      ],
+      "physical_pdf_pages": [
+        15
+      ],
+      "key_takeaway_fa": "پنج پیام را می‌توان در یک شبکهٔ کوتاه و قابل اسکن، با جایگاه ثابت آیکون و متن خلاصه کرد.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "transparent_product_cutaway",
+      "title_fa": "نمای نیمه‌شفاف برای نشان‌دادن ساختار داخلی محصول",
+      "representative_reference_ids": [
+        "VINGCARD14_15_transparent_product_cutaway"
+      ],
+      "physical_pdf_pages": [
+        15
+      ],
+      "key_takeaway_fa": "نمای نیمه‌شفاف می‌تواند رابطهٔ شکل بیرونی و اجزای داخلی محصول را بدون جداکردن آن‌ها در یک نمای انفجاری نشان دهد.",
+      "family_definition_note_fa": "خانواده بر اساس رابطهٔ عکس، متن، آیکون و هندسهٔ چیدمان تعریف شده است؛ تغییر موضوع یا رنگ به‌تنهایی سبک مستقل نمی‌سازد.",
+      "final_section_mapping": "pending_S05"
+    }
+  ],
+  "reference_overview": {
+    "asset_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_S04_reference_overview.webp",
+    "asset_filename": "VINGCARD14_S04_reference_overview.webp",
+    "mime_type": "image/webp",
+    "asset_bytes": 230288,
+    "asset_sha256": "8bc67104b4d02b53fb4d3dd3681f9ea32e526e5296457b4fca1c3af08c59f6d3",
+    "git_blob_sha": "72b1e73b5b65a4df486d499433a5bb36fa631c90",
+    "rendered_size_px": [
+      1494,
+      2250
+    ],
+    "base64_length": 307052,
+    "role": "Derived contact sheet for navigation and visual QA; not an additional source image or style.",
+    "source_reference_ids": [
+      "VINGCARD14_01_cover_product_hero",
+      "VINGCARD14_03_numbered_contents_panel",
+      "VINGCARD14_04_photo_benefit_grid",
+      "VINGCARD14_05_icon_feature_rows",
+      "VINGCARD14_05_layered_variants",
+      "VINGCARD14_06_metric_badges_context",
+      "VINGCARD14_06_parts_flatlay",
+      "VINGCARD14_07_material_story_columns",
+      "VINGCARD14_07_packaging_banner",
+      "VINGCARD14_08_finish_gallery_custom_panel",
+      "VINGCARD14_09_photo_slogan",
+      "VINGCARD14_10_numbered_installation_grid",
+      "VINGCARD14_11_phone_access_photo",
+      "VINGCARD14_12_staggered_operation_cards",
+      "VINGCARD14_13_paired_climate_photos",
+      "VINGCARD14_14_cloud_security_panel",
+      "VINGCARD14_15_security_icon_grid",
+      "VINGCARD14_15_transparent_product_cutaway"
+    ]
+  },
+  "source_layout_inventory_coverage": [
+    {
+      "S02_layout_id": "VINGCARD14-LAYOUT-01",
+      "source_group": "CONTENTS",
+      "physical_pdf_pages": [
+        2,
+        3
+      ],
+      "selected_reference_ids": [
+        "VINGCARD14_03_numbered_contents_panel"
+      ],
+      "handling_fa": "صفحهٔ ۳ نمایندهٔ خانواده است؛ دو عنوان دیگر فهرست در صفحهٔ ۲ با ارجاع زمینه حفظ شده‌اند و تصویر جدا ندارند.",
+      "source_layout_is_not_an_NSP_capability": true
+    },
+    {
+      "S02_layout_id": "VINGCARD14-LAYOUT-02",
+      "source_group": "OVERVIEW_IMAGE_CARDS",
+      "physical_pdf_pages": [
+        4
+      ],
+      "selected_reference_ids": [
+        "VINGCARD14_04_photo_benefit_grid"
+      ],
+      "handling_fa": "خانوادهٔ چیدمان با مرجع مستقیم پوشش داده شد؛ متن فنی داخل تصویر فقط زمینهٔ منبع است.",
+      "source_layout_is_not_an_NSP_capability": true
+    },
+    {
+      "S02_layout_id": "VINGCARD14-LAYOUT-03",
+      "source_group": "OVERVIEW_ICON_LIST",
+      "physical_pdf_pages": [
+        5
+      ],
+      "selected_reference_ids": [
+        "VINGCARD14_05_icon_feature_rows",
+        "VINGCARD14_05_layered_variants"
+      ],
+      "handling_fa": "خانوادهٔ چیدمان با مرجع مستقیم پوشش داده شد؛ متن فنی داخل تصویر فقط زمینهٔ منبع است.",
+      "source_layout_is_not_an_NSP_capability": true
+    },
+    {
+      "S02_layout_id": "VINGCARD14-LAYOUT-04",
+      "source_group": "SUSTAINABILITY_PERCENTAGES",
+      "physical_pdf_pages": [
+        6
+      ],
+      "selected_reference_ids": [
+        "VINGCARD14_06_metric_badges_context",
+        "VINGCARD14_06_parts_flatlay"
+      ],
+      "handling_fa": "نشان‌ها همراه بند مبنای مقایسه حفظ شدند؛ عکس چیدمان قطعات مرجع مکملِ معرفی تجهیزات است.",
+      "source_layout_is_not_an_NSP_capability": true
+    },
+    {
+      "S02_layout_id": "VINGCARD14-LAYOUT-05",
+      "source_group": "MATERIAL_AND_PACKAGING_CONTEXT",
+      "physical_pdf_pages": [
+        7
+      ],
+      "selected_reference_ids": [
+        "VINGCARD14_07_material_story_columns",
+        "VINGCARD14_07_packaging_banner"
+      ],
+      "handling_fa": "خانوادهٔ چیدمان با مرجع مستقیم پوشش داده شد؛ متن فنی داخل تصویر فقط زمینهٔ منبع است.",
+      "source_layout_is_not_an_NSP_capability": true
+    },
+    {
+      "S02_layout_id": "VINGCARD14-LAYOUT-06",
+      "source_group": "FINISH_GALLERY",
+      "physical_pdf_pages": [
+        8
+      ],
+      "selected_reference_ids": [
+        "VINGCARD14_08_finish_gallery_custom_panel"
+      ],
+      "handling_fa": "خانوادهٔ چیدمان با مرجع مستقیم پوشش داده شد؛ متن فنی داخل تصویر فقط زمینهٔ منبع است.",
+      "source_layout_is_not_an_NSP_capability": true
+    },
+    {
+      "S02_layout_id": "VINGCARD14-LAYOUT-07",
+      "source_group": "INSTALLATION_PHOTOS",
+      "physical_pdf_pages": [
+        10
+      ],
+      "selected_reference_ids": [
+        "VINGCARD14_10_numbered_installation_grid"
+      ],
+      "handling_fa": "چهار عکس و شمارهٔ چاپی آن‌ها حفظ شدند؛ فلش اتصال یا دستور نوشتاری برای گام‌ها ساخته نشد.",
+      "source_layout_is_not_an_NSP_capability": true
+    },
+    {
+      "S02_layout_id": "VINGCARD14-LAYOUT-08",
+      "source_group": "MOBILE_ACCESS_PHONE",
+      "physical_pdf_pages": [
+        11
+      ],
+      "selected_reference_ids": [
+        "VINGCARD14_11_phone_access_photo"
+      ],
+      "handling_fa": "عکس گوشی و متن پایین شامل شرط مجوز در یک مرجع باقی ماندند؛ هویت نرم‌افزار از تصویر استنباط نمی‌شود.",
+      "source_layout_is_not_an_NSP_capability": true
+    },
+    {
+      "S02_layout_id": "VINGCARD14-LAYOUT-09",
+      "source_group": "OPERATIONAL_CARDS",
+      "physical_pdf_pages": [
+        12
+      ],
+      "selected_reference_ids": [
+        "VINGCARD14_12_staggered_operation_cards"
+      ],
+      "handling_fa": "خانوادهٔ چیدمان با مرجع مستقیم پوشش داده شد؛ متن فنی داخل تصویر فقط زمینهٔ منبع است.",
+      "source_layout_is_not_an_NSP_capability": true
+    },
+    {
+      "S02_layout_id": "VINGCARD14-LAYOUT-10",
+      "source_group": "ENVIRONMENTAL_BADGES",
+      "physical_pdf_pages": [
+        13
+      ],
+      "selected_reference_ids": [
+        "VINGCARD14_13_paired_climate_photos"
+      ],
+      "handling_fa": "خانوادهٔ چیدمان با مرجع مستقیم پوشش داده شد؛ متن فنی داخل تصویر فقط زمینهٔ منبع است.",
+      "source_layout_is_not_an_NSP_capability": true
+    },
+    {
+      "S02_layout_id": "VINGCARD14-LAYOUT-11",
+      "source_group": "SECURITY_AND_CLOUD_BLOCKS",
+      "physical_pdf_pages": [
+        14
+      ],
+      "selected_reference_ids": [
+        "VINGCARD14_14_cloud_security_panel"
+      ],
+      "handling_fa": "پنل نرم‌افزاری پایین انتخاب شد؛ بلوک‌های گواهی و مکانیکی بالای صفحه با دلیل از تصاویر منتخب کنار گذاشته شدند.",
+      "source_layout_is_not_an_NSP_capability": true
+    },
+    {
+      "S02_layout_id": "VINGCARD14-LAYOUT-12",
+      "source_group": "SECURITY_ICON_GRID",
+      "physical_pdf_pages": [
+        15
+      ],
+      "selected_reference_ids": [
+        "VINGCARD14_15_security_icon_grid",
+        "VINGCARD14_15_transparent_product_cutaway"
+      ],
+      "handling_fa": "شبکهٔ آیکون‌ها و نمای نیمه‌شفاف دو مرجع مستقل‌اند؛ نوار گواهی پایین کنار گذاشته شد. نمای اجزا معماری سیستم نیست.",
+      "source_layout_is_not_an_NSP_capability": true
+    }
+  ],
+  "page_review_coverage": [
+    {
+      "physical_pdf_page": 1,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_01_cover_product_hero"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 2,
+      "visually_reviewed": true,
+      "selected_reference_ids": [],
+      "disposition": "related_spread_context_represented_by_page_3",
+      "reason_fa": "نیمهٔ دیگر فهرست و مقدمهٔ متنی؛ نمایندهٔ خانواده از صفحهٔ ۳ انتخاب شده است."
+    },
+    {
+      "physical_pdf_page": 3,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_03_numbered_contents_panel"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 4,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_04_photo_benefit_grid"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 5,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_05_icon_feature_rows",
+        "VINGCARD14_05_layered_variants"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 6,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_06_metric_badges_context",
+        "VINGCARD14_06_parts_flatlay"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 7,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_07_material_story_columns",
+        "VINGCARD14_07_packaging_banner"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 8,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_08_finish_gallery_custom_panel"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 9,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_09_photo_slogan"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 10,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_10_numbered_installation_grid"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 11,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_11_phone_access_photo"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 12,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_12_staggered_operation_cards"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 13,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_13_paired_climate_photos"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 14,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_14_cloud_security_panel"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 15,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD14_15_security_icon_grid",
+        "VINGCARD14_15_transparent_product_cutaway"
+      ],
+      "disposition": "selected_reference_available",
+      "reason_fa": "حداقل یک نمونهٔ مستقیم برای سبک متمایز این صفحه ثبت شده است."
+    },
+    {
+      "physical_pdf_page": 16,
+      "visually_reviewed": true,
+      "selected_reference_ids": [],
+      "disposition": "excluded_identity_and_contact_back_cover",
+      "reason_fa": "پشت جلد هویتی و تماس‌ها، سبک معرفی تجهیز یا فرایند مستقل تازه‌ای به نمونه‌های منتخب اضافه نمی‌کند."
+    }
+  ],
+  "design_observations_fa": [
+    "برداشت تحلیلی: این بروشور میان عکس بزرگ محصول، توضیح کوتاه، آیکون و نمای استفاده جابه‌جا می‌شود؛ این تنوع، پیام‌های فنی و تجربهٔ کاربر را از هم متمایز می‌کند.",
+    "جلد با عنوان هندسی و صفحهٔ عکس/شعار دو خانوادهٔ متفاوت‌اند؛ اولی هویت و معرفی محصول را می‌سازد و دومی برای یک مکث تصویری کم‌متن مناسب است.",
+    "گالری گزینه‌های استاندارد و پنل درخواست سفارشی در صفحهٔ ۸ جدا هستند؛ تصویر مفهومی رنگی، گزینهٔ استاندارد تازه یا تعهد عرضه ایجاد نمی‌کند.",
+    "عکس استفاده از گوشی در صفحهٔ ۱۱، روشن‌ترین نمونهٔ این منبع برای رابطهٔ کنش کاربر و محل استفاده است؛ شرط فعال‌سازی باید کنار روایت باقی بماند.",
+    "فهرست عمودی آیکون‌ها و شبکهٔ دو ستونی آیکون‌ها دو شیوهٔ متفاوت مرور محتوا هستند؛ آیکون‌های واقعی NSP باید هماهنگ و متناسب با قابلیت مستند خود شرکت باشند.",
+    "نشان‌های عددی فقط با عنوان شاخص و مبنای مقایسه قابل تفسیرند؛ شکل حلقه‌ها در این مرحله نمودار محاسباتی تأییدشده نیست.",
+    "بنر بسته‌بندی و بنر نرم‌افزاری به یک خانوادهٔ عکس/متن تعلق دارند؛ تفاوت موضوع دو تصویر، دلیل ساخت دو سبک مستقل نیست.",
+    "عکس چیدمان قطعات و نمای نیمه‌شفاف، دو روش معرفی ساختار فیزیکی‌اند؛ هیچ‌یک جای نمودار معماری سامانه یا نقشهٔ فنی را نمی‌گیرد.",
+    "برای کاتالوگ افقی NSP، نسبت‌ها و ترتیب خواندن باید بازچینی شوند؛ محتوای مهم از حلقه‌ها فاصله می‌گیرد و پس‌زمینه در ناحیهٔ پانچ پیوسته می‌ماند."
+  ],
+  "excluded_visuals": [
+    {
+      "physical_pdf_pages": [
+        2
+      ],
+      "reason_fa": "صفحهٔ ۲ نیمهٔ دیگر فهرست معرفی در کنار ستون متنی و عکس جزئی محصول است؛ صفحهٔ ۳ نمایندهٔ خواناتر خانوادهٔ فهرست عدددار است. موضوعات و مقصدهای هر دو صفحه در S02/S03 حفظ شده‌اند."
+    },
+    {
+      "physical_pdf_pages": [
+        3
+      ],
+      "region_fa": "عکس بزرگ دست روی دستگیره در نیمهٔ پایین",
+      "reason_fa": "برای جلوگیری از تکرار، استفادهٔ واقعی از محصول می‌تواند با تصویر گوشی و دست در صفحهٔ ۱۱ پوشش داده شود؛ این عکس منبع قابلیت نرم‌افزاری نیست."
+    },
+    {
+      "physical_pdf_pages": [
+        4
+      ],
+      "region_fa": "عنوان و بند مقدمهٔ بالای شبکه",
+      "reason_fa": "تمرکز برش روی جفت‌های عکس و متن است؛ تیتر عمومی و مقدمهٔ طولانی خانوادهٔ تصویری مستقلی نمی‌سازند."
+    },
+    {
+      "physical_pdf_pages": [
+        5
+      ],
+      "region_fa": "تصویر کوچک دستگیره در بالای سمت راست",
+      "reason_fa": "نمای محصول در جلد، شبکهٔ عکس/متن و دو عکس هم‌پوشان پوشش داده می‌شود؛ تصویر کوچک نمونهٔ جداگانه‌ای لازم ندارد."
+    },
+    {
+      "physical_pdf_pages": [
+        6
+      ],
+      "region_fa": "تصویر ترازو و حاشیهٔ تزئینی",
+      "reason_fa": "شاهد آزمون مستقل یا نمودار اندازه‌گیری نیستند؛ برش عددی، شرح مقایسه و عنوان شاخص‌ها را نگه می‌دارد."
+    },
+    {
+      "physical_pdf_pages": [
+        7
+      ],
+      "region_fa": "حاشیهٔ تزئینی آیکون‌های محیط‌زیستی",
+      "reason_fa": "برای ثبت سبک، نمونهٔ دیگری از مجموعهٔ آیکون لازم نیست؛ آیکون‌های حاشیه‌ای جزو قابلیت‌ها نیستند."
+    },
+    {
+      "physical_pdf_pages": [
+        8
+      ],
+      "region_fa": "تیتر بزرگ و بند مقدمهٔ بالای گالری",
+      "reason_fa": "خانوادهٔ منتخب گالری گزینه‌ها و پنل مشروط است؛ محتوای تیتر در S03 حفظ شده و برش گالری به توضیح شرط سفارشی‌سازی صدمه نمی‌زند."
+    },
+    {
+      "physical_pdf_pages": [
+        16
+      ],
+      "region": "entire_page",
+      "reason_fa": "پشت جلد هویتی با زمینهٔ آبی، نشان برند، معرفی ناشر، تماس‌ها و جزئیات نسخه؛ سبک معرفی تجهیز یا فرایند متمایز تازه‌ای نسبت به نمونه‌های منتخب ندارد. فهرست تماس‌ها بازنشر نشود."
+    },
+    {
+      "physical_pdf_pages": [
+        10
+      ],
+      "region": "upper_intro_and_left_hardware_panel",
+      "reason_fa": "برای این صفحه شبکهٔ عکس‌های شماره‌دار نماینده است؛ بندهای قطعات و ساختار فیزیکی در برش منتخب نیامده‌اند."
+    },
+    {
+      "physical_pdf_pages": [
+        14
+      ],
+      "region": "upper_certification_and_mechanical_block",
+      "reason_fa": "بخش گواهی‌ها و تصویر مکانیکی با نشان مثلثی از برش نرم‌افزاری جدا شد؛ متن گواهی و مشخصات، دادهٔ فیچر NSP نیست."
+    },
+    {
+      "physical_pdf_pages": [
+        15
+      ],
+      "region": "lower_certification_panel",
+      "reason_fa": "نشان گواهی و متن پایین صفحه نمایندهٔ سبک منتخب نیستند؛ مجوز استفاده از نشان یا اعتبار فعلی گواهی بررسی نشده است."
+    }
+  ],
+  "restrictions_fa": [
+    "تصاویر فقط مرجع پژوهش سبک‌اند؛ عکس، نشان، متن و ترکیب اختصاصی منبع برای خروجی تجاری NSP به مجوز یا تولید مستقل نیاز دارند.",
+    "مشاهدهٔ نام، عدد یا مشخصات سخت‌افزاری در پیکسل مرجع، مجوز ورود آن‌ها به بانک مشخصات یا ادعای عملکرد NSP نیست.",
+    "عکس گوشی و لپ‌تاپ، هویت اپلیکیشن، داشبورد Vostio یا یکپارچگی نرم‌افزاری NSP را اثبات نمی‌کنند.",
+    "شماره‌های نصب، مقصدهای فهرست و نشان اعلان معناهای متفاوت دارند؛ از شکل یا عددِ تزئینی رفتار فنی یا زمان پاسخ ساخته نشود.",
+    "تخصیص سکشن در S05 و اتصال نهایی ایده‌ها در Defrag انجام می‌شود؛ این مرحله صفحهٔ واقعی پورتفولیو یا سیستم جدیدی ایجاد نمی‌کند."
+  ],
+  "quality_assurance_notes": [
+    "هر ۱۶ صفحه در نماهای کلی و توسط بازبینان در رندر مستقل دیده شد؛ همهٔ ۱۸ فایل نهایی نیز به‌صورت مستقیم و با بازبینی متقابل بررسی شدند.",
+    "عنوان‌ها و توضیح‌های هدف کامل‌اند؛ مبنای مقایسهٔ نشان‌های عددی، شرط سفارش سفارشی، بند مجوز Mobile Access و قید Online در برش‌ها باقی مانده‌اند.",
+    "بریدگی‌های طبیعی دست و محصول در مرز عکس اصلی حفظ شدند؛ ناحیهٔ غایب بازسازی یا تکمیل نشده است.",
+    "چهار عکس نصب ترتیب چاپی مشخص دارند؛ فلش فرایند یا دستور مونتاژ اضافی ساخته نشده است.",
+    "مثلث زرد در پنل عملیاتی صرفاً از نظر ظاهر شبیه نشان پخش است؛ کارکرد ویدیو یا لینک آن آزموده نشده است.",
+    "صفحات ۳ و ۱۳ رکورد منتخب S03 ندارند؛ برای آن‌ها ارجاع ساختگی فیچر ایجاد نشده است.",
+    "نمای کلی مشتق برای مرور و کنترل کیفیت است و در تعداد تصاویر منبع یا سبک‌های مستقل شمرده نمی‌شود.",
+    "پیش از جابه‌جایی صفِ ثبت‌شده، بایت‌های تمام تصاویر و متن JSON باید از GitHub بازخوانی و با نسخهٔ محلی تطبیق کامل داشته باشند."
+  ],
+  "upstream_review_notes_for_S06": [],
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false,
+  "S03_artifact_changed": false,
+  "next_stage": "S05 — section_type_mapping",
+  "next_queue_cursor": {
+    "document_index": 7,
+    "document_id": "14",
+    "step_index": 4,
+    "step_id": "S05"
+  }
+}
