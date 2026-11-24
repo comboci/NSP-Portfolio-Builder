@@ -1,0 +1,2540 @@
+{
+  "schema": "nsp-catalog-research-stage-section-mapping-v1",
+  "stage": "S05",
+  "stage_key": "section_type_mapping",
+  "status": "completed_internal_editorial_proposals_pending_S06",
+  "document_id": "50",
+  "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+  "source_language": "en",
+  "verified_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "8d0906271f79f3c98723f8943a46e8bd9fdd2bbd",
+  "source_document": {
+    "company": "Zenitel",
+    "title": "Public Address and Voice Alarm Solutions",
+    "filename": "50_Zenitel_Work C09.4.pdf",
+    "pdf_pages": 13,
+    "file_size_bytes": 11905037,
+    "source_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+    "printed_edition": null,
+    "printed_publication_date": null,
+    "pdf_metadata_not_publication_date": true,
+    "S01_inventory": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S01_source_inventory.json",
+      "git_blob_sha": "ca8f854480b0ee8d5c730dc6cc7335ba19a25177",
+      "commit_sha": "443440341bd5f5bbe110806a885abd48cbeb9169"
+    },
+    "S02_text_evidence": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S02_english_text.json",
+      "blob_sha": "c3ecf7590413ad965b06ef111e06f743bb8d6ea3",
+      "commit_sha": "c88958c1ead7eef49a294e25a763f6a99f382593"
+    }
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S01_source_inventory.json",
+      "commit_sha": "443440341bd5f5bbe110806a885abd48cbeb9169",
+      "blob_sha": "ca8f854480b0ee8d5c730dc6cc7335ba19a25177"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S02_english_text.json",
+      "commit_sha": "c88958c1ead7eef49a294e25a763f6a99f382593",
+      "blob_sha": "c3ecf7590413ad965b06ef111e06f743bb8d6ea3"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S03_features_fa.json",
+      "commit_sha": "1d1c15943222f45e0d221bd4f4284f067c787d62",
+      "blob_sha": "778225587dd050983c8b4e7bfb9ba16f774222be"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S04_visual_styles.json",
+      "commit_sha": "0214f92ff9147279ae53674bfda09d91ccfef4f8",
+      "blob_sha": "89f901715fee85720f6b8e31711f508f7c633b86"
+    }
+  },
+  "canonical_editorial_policy": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "git_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "valid_research_section_ids": [
+      "COVER",
+      "IDENTITY_PAGES",
+      "COMPANY_INTRO",
+      "CHALLENGES_VALUE",
+      "HOTEL_OVERVIEW",
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS",
+      "CASE_STUDIES"
+    ],
+    "section_snapshot": [
+      {
+        "section_id": "COVER",
+        "title_fa": "صفحه اول کاتالوگ",
+        "row": 2,
+        "content_level": null
+      },
+      {
+        "section_id": "IDENTITY_PAGES",
+        "title_fa": "صفحات تنفس",
+        "row": 3,
+        "content_level": null
+      },
+      {
+        "section_id": "COMPANY_INTRO",
+        "title_fa": "معرفی شرکت NSP",
+        "row": 4,
+        "content_level": "COMPANY"
+      },
+      {
+        "section_id": "CHALLENGES_VALUE",
+        "title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+        "row": 5,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "HOTEL_OVERVIEW",
+        "title_fa": "نقشهٔ جامع راهکارهای هتلی",
+        "row": 6,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "GRMS",
+        "title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+        "row": 7,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "IPTV",
+        "title_fa": "تلویزیون و خدمات تعاملی هتل (IPTV)",
+        "row": 8,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "PUBLIC_AREAS",
+        "title_fa": "کنترل هوشمند مشاعات هتل",
+        "row": 9,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "CASE_STUDIES",
+        "title_fa": "رزومه و پروژه‌های اجراشده",
+        "row": 10,
+        "content_level": null
+      }
+    ],
+    "legacy_aliases_read_only": {
+      "BISMILLAH": "IDENTITY_PAGES"
+    },
+    "CROSS_SECTION_STYLE_is_tag_not_section": true,
+    "BINDER_COVER_excluded": true,
+    "attach_ideas_only_in_Defrag": true,
+    "approved_system_ids": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ]
+  },
+  "rules": {
+    "PUBLIC_AREAS_only_structural_design_comparator_not_PAVA_or_audio_support": true,
+    "grouping_idea_uses_NSP_systems_not_Zenitel_groups": true,
+    "vendor_or_life_safety_and_security_claim_not_verified": true,
+    "ordinary_audio_distinct_from_emergency_voice_alarm": true,
+    "no_new_pava_security_or_other_section": true,
+    "no_NSP_case_or_reuse_approval_or_page_attach": true
+  },
+  "statistics": {
+    "text_candidates_reviewed": 14,
+    "text_with_proposed_section": 9,
+    "text_held_without_section": 5,
+    "additional_context_only_S02_fragments": 13,
+    "visuals_reviewed": 10,
+    "visuals_with_proposed_section": 9,
+    "visuals_style_only_no_target": 1,
+    "text_by_target": {
+      "COVER": 1,
+      "COMPANY_INTRO": 2,
+      "HOTEL_OVERVIEW": 3,
+      "CHALLENGES_VALUE": 1,
+      "NO_TARGET": 5,
+      "PUBLIC_AREAS": 1,
+      "CASE_STUDIES": 1
+    },
+    "visual_by_target": {
+      "COVER": 1,
+      "HOTEL_OVERVIEW": 2,
+      "CHALLENGES_VALUE": 1,
+      "NO_TARGET": 1,
+      "PUBLIC_AREAS": 3,
+      "CASE_STUDIES": 1,
+      "COMPANY_INTRO": 1
+    },
+    "overview_not_counted": 1,
+    "NSP_capabilities_verified": 0,
+    "life_safety_or_security_certification_approved": 0,
+    "publication_approvals": 0,
+    "page_attachments": 0
+  },
+  "mappings": [
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "COVER",
+      "target_section_types": [
+        "COVER"
+      ],
+      "target_section_title_fa": "صفحه اول کاتالوگ",
+      "target_section_row": 2,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "ساختار یک شعار دوپاره برای صفحهٔ اول",
+      "mapping_reason_fa": "تنها الگو؛ واژهٔ اعتماد، قابلیت اطمینان یا سنجش عملکرد نیست. دو نیمه به یک مفهوم تعلق دارند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I001",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I001",
+      "pdf_page": 1,
+      "original_printed_page": null,
+      "source_text_en": "TRUSTED VOICE.",
+      "translation_fa": "صدایی قابل‌اعتماد.",
+      "source_type": "marketing_slogan",
+      "research_category_id": "marketing_slogans",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P01-E01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [
+        "ZENITEL50-P01-E02",
+        "ZENITEL50-P01-E03"
+      ],
+      "source_editorial_limits_fa": "نیمهٔ اول شعار جلد؛ کنار نیمهٔ دوم خوانده شود. ادعای سنجهٔ قابلیت اطمینان، ایمنی یا ویژگی NSP نیست.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-COVER_PAIR",
+      "related_visual_image_ids": [
+        "ZENITEL50_01_environmental_hero"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "ساختار یک شعار دوپاره برای صفحهٔ اول",
+      "analyst_assessment_fa": "تنها الگو؛ واژهٔ اعتماد، قابلیت اطمینان یا سنجش عملکرد نیست. دو نیمه به یک مفهوم تعلق دارند."
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "COMPANY_INTRO",
+      "target_section_types": [
+        "COMPANY_INTRO"
+      ],
+      "target_section_title_fa": "معرفی شرکت NSP",
+      "target_section_row": 4,
+      "content_level": "COMPANY",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "سازمان‌دهی معرفی شرکت پیرامون چند موضوع سطح‌بالا",
+      "mapping_reason_fa": "معرفی کلان ناشر را با تعریف یا عرضهٔ NSP یکی نکن؛ نام‌ها و حوزه‌های PAVA و ایمنی قابل انتقال نیستند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I002",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I002",
+      "pdf_page": 2,
+      "original_printed_page": 2,
+      "source_text_en": "Unified critical Communication",
+      "translation_fa": "ارتباطات حیاتیِ یکپارچه",
+      "source_type": "intro",
+      "research_category_id": "narrative_structure",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P02-E01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-02"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [
+        "ZENITEL50-P02-E02"
+      ],
+      "source_editorial_limits_fa": "تیتر چتری ناشر برای ایمنی، امنیت و عملیات؛ حوزه‌ها را به ۳ مورد مستقلِ NSP یا تضمین عملکرد تبدیل نکن.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-POSITIONING_UMBRELLA",
+      "related_visual_image_ids": [
+        "ZENITEL50_02_four_application_tiles"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "سازمان‌دهی معرفی شرکت پیرامون چند موضوع سطح‌بالا",
+      "analyst_assessment_fa": "معرفی کلان ناشر را با تعریف یا عرضهٔ NSP یکی نکن؛ نام‌ها و حوزه‌های PAVA و ایمنی قابل انتقال نیستند."
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "جداسازی سه گروه در یک نقشهٔ معرفی",
+      "mapping_reason_fa": "فقط گروه‌بندی موضوع‌ها اقتباس می‌شود. PAVA و اینترکامِ صفحهٔ منبع موضوع تأییدشدهٔ نقشه نیستند؛ تنها سه سیستم NSP از سند خودش.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I003",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I003",
+      "pdf_page": 3,
+      "original_printed_page": 3,
+      "source_text_en": "Zenitel Public Address and Voice Alarm Portfolio",
+      "translation_fa": "سبد راهکارهای اعلام عمومی و هشدار صوتی Zenitel",
+      "source_type": "architecture",
+      "research_category_id": "narrative_structure",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P03-E02",
+      "source_S02_fragment_index": 2,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PAVA"
+      ],
+      "related_context_fragment_refs": [
+        "ZENITEL50-P03-E01",
+        "ZENITEL50-P03-E03"
+      ],
+      "source_editorial_limits_fa": "الگوی معرفی خانواده‌های متفاوت؛ اینترکام در منبع خانوادهٔ مجاور است. تفکیک ارائه باقی بماند؛ از ساختار صفحه، مهندسی اتصال یا انطباق نتیجه نشود.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-PORTFOLIO_TAXONOMY",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "جداسازی سه گروه در یک نقشهٔ معرفی",
+      "analyst_assessment_fa": "فقط گروه‌بندی موضوع‌ها اقتباس می‌شود. PAVA و اینترکامِ صفحهٔ منبع موضوع تأییدشدهٔ نقشه نیستند؛ تنها سه سیستم NSP از سند خودش."
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "گروه‌بندی دیداری کاربرد در چند مقیاس",
+      "mapping_reason_fa": "مقیاس عنوان ناشر است؛ نه استقرار، ظرفیت، شبکه، آستانه یا «هر کاربرد» برای NSP.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I004",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I004",
+      "pdf_page": 4,
+      "original_printed_page": 4,
+      "source_text_en": "Scalable PAVA Solutions",
+      "translation_fa": "راهکارهای مقیاس‌پذیر اعلام عمومی و هشدار صوتی (PAVA)",
+      "source_type": "visual_presentation_style",
+      "research_category_id": "architecture_deployment",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P04-E01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "related_context_fragment_refs": [
+        "ZENITEL50-P04-E02",
+        "ZENITEL50-P07-E02"
+      ],
+      "source_editorial_limits_fa": "نمونهٔ روایی نمایش کاربرد در چند مقیاس، نه استاندارد، ظرفیت، تعداد یا شیوهٔ اتصال. عبارت «برای هر کاربرد» عمومی و تأییدنشده است.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-SCALING_PRESENTATION",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "گروه‌بندی دیداری کاربرد در چند مقیاس",
+      "analyst_assessment_fa": "مقیاس عنوان ناشر است؛ نه استقرار، ظرفیت، شبکه، آستانه یا «هر کاربرد» برای NSP."
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "معرفی یک دغدغه با تیتر کوتاه و توضیح محدود",
+      "mapping_reason_fa": "از شکل پیام برای روایت یک مسئلهٔ مستند NSP الهام بگیر؛ هیچ وضوح صوتی، فهم‌پذیری، پوشش یا هشدار اثبات نشد.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I005",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I005",
+      "pdf_page": 5,
+      "original_printed_page": 5,
+      "source_text_en": "We Enhance Clarity",
+      "translation_fa": "وضوح صدا را بهتر می‌کنیم",
+      "source_type": "marketing_slogan",
+      "research_category_id": "marketing_slogans",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P05-E01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-CLAIM-LIMIT"
+      ],
+      "related_context_fragment_refs": [
+        "ZENITEL50-P05-E02"
+      ],
+      "source_editorial_limits_fa": "تیتر جایگاه‌یابی ناشر؛ نیمهٔ دوم دامنهٔ لحن است، نه کمیت. از «وضوح» سنجش فهم‌پذیری، پوشش صوتی، گواهی یا کارکرد هشدار نتیجه نشود.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-CLARITY_POSITIONING",
+      "related_visual_image_ids": [
+        "ZENITEL50_05_radial_artwork"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "معرفی یک دغدغه با تیتر کوتاه و توضیح محدود",
+      "analyst_assessment_fa": "از شکل پیام برای روایت یک مسئلهٔ مستند NSP الهام بگیر؛ هیچ وضوح صوتی، فهم‌پذیری، پوشش یا هشدار اثبات نشد."
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "حفظ تمایز اصطلاحِ صدای عادی از هشدار اضطراری",
+      "mapping_reason_fa": "اعلان‌های معمول و موسیقی زمینه فقط مثال منبع‌اند؛ برای حوزه‌های صوتی یا امنیتی NSP سکشن یا فیچر ساخته نشود.",
+      "unassigned_reason_fa": "اعلان‌های معمول و موسیقی زمینه فقط مثال منبع‌اند؛ برای حوزه‌های صوتی یا امنیتی NSP سکشن یا فیچر ساخته نشود.",
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_context_no_section_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I006",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I006",
+      "pdf_page": 5,
+      "original_printed_page": 5,
+      "source_text_en": "announcements and background music",
+      "translation_fa": "اعلان‌ها و موسیقیِ پس‌زمینه",
+      "source_type": "other",
+      "research_category_id": "guest_comfort",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P05-E03",
+      "source_S02_fragment_index": 3,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PAVA"
+      ],
+      "related_context_fragment_refs": [
+        "ZENITEL50-P01-E03",
+        "ZENITEL50-P08-E02"
+      ],
+      "source_editorial_limits_fa": "دو مثال برای صوت معمول به توصیف ناشر. با هشدار صوتی اضطراری، سامانهٔ ایمنی جانی یا قابلیت قابل عرضه NSP یکسان نشود.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-ORDINARY_AUDIO_VS_ALARM",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "حفظ تمایز اصطلاحِ صدای عادی از هشدار اضطراری",
+      "analyst_assessment_fa": "اعلان‌های معمول و موسیقی زمینه فقط مثال منبع‌اند؛ برای حوزه‌های صوتی یا امنیتی NSP سکشن یا فیچر ساخته نشود."
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نگه‌داشتن عبارت تبلیغاتی امنیت در زمینهٔ بافت",
+      "mapping_reason_fa": "تیتر امنیت/تاب‌آوری مرجع زمینه است؛ جای گواهی، آزمون امنیت یا پیشنهاد قابلیت مستقل نمی‌گیرد.",
+      "unassigned_reason_fa": "تیتر امنیت/تاب‌آوری مرجع زمینه است؛ جای گواهی، آزمون امنیت یا پیشنهاد قابلیت مستقل نمی‌گیرد.",
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_context_no_section_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I007",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I007",
+      "pdf_page": 6,
+      "original_printed_page": 6,
+      "source_text_en": "Designed for Cybersecurity.",
+      "translation_fa": "طراحی‌شده با توجه به امنیت سایبری.",
+      "source_type": "marketing_slogan",
+      "research_category_id": "security_messaging",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P06-E01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-CLAIM-LIMIT"
+      ],
+      "related_context_fragment_refs": [
+        "ZENITEL50-P06-E02",
+        "ZENITEL50-P13-E01"
+      ],
+      "source_editorial_limits_fa": "عبارت جایگاه‌یابی Zenitel با شعار تاب‌آوری در همان صفحه. نه گزارش آزمون، گواهی، اثربخشی دفاعی، وضعیت آسیب‌پذیری یا قابلیت NSP.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-SECURITY_RESILIENCE_POSITIONING",
+      "related_visual_image_ids": [
+        "ZENITEL50_06_symbolic_padlock_photo"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نگه‌داشتن عبارت تبلیغاتی امنیت در زمینهٔ بافت",
+      "analyst_assessment_fa": "تیتر امنیت/تاب‌آوری مرجع زمینه است؛ جای گواهی، آزمون امنیت یا پیشنهاد قابلیت مستقل نمی‌گیرد."
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "شناسهٔ زمینه برای صفحهٔ گالری یک خانواده",
+      "mapping_reason_fa": "نام VIPEDIA خود مرجع چیدمان نیست و عنوان فصل، مدل پیشنهادی یا تجهیز NSP نمی‌شود.",
+      "unassigned_reason_fa": "نام VIPEDIA خود مرجع چیدمان نیست و عنوان فصل، مدل پیشنهادی یا تجهیز NSP نمی‌شود.",
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_context_no_section_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I008",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I008",
+      "pdf_page": 7,
+      "original_printed_page": 7,
+      "source_text_en": "VIPEDIA",
+      "translation_fa": "ویپدیا (VIPEDIA)",
+      "source_type": "visual_presentation_style",
+      "research_category_id": "equipment_presentation_style",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P07-E01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "related_context_fragment_refs": [
+        "ZENITEL50-P07-E02"
+      ],
+      "source_editorial_limits_fa": "نام خانواده فقط شاخص صفحه و مرجع شیوهٔ نمایش نام و محیط است. تعداد دستگاه، ظرفیت، اتصال، خرید یا سازگاری تأیید نشد.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-FAMILY_VISUALS_VIPEDIA",
+      "related_visual_image_ids": [
+        "ZENITEL50_07_offset_environment_montage"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "شناسهٔ زمینه برای صفحهٔ گالری یک خانواده",
+      "analyst_assessment_fa": "نام VIPEDIA خود مرجع چیدمان نیست و عنوان فصل، مدل پیشنهادی یا تجهیز NSP نمی‌شود."
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "شناسهٔ زمینه برای صفحهٔ یک خانواده",
+      "mapping_reason_fa": "نام INTEGRA و فرم محصولِ منبع علت ایجاد سکشن، نتیجهٔ ایمنی یا ویژگی NSP نیست.",
+      "unassigned_reason_fa": "نام INTEGRA و فرم محصولِ منبع علت ایجاد سکشن، نتیجهٔ ایمنی یا ویژگی NSP نیست.",
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_context_no_section_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I009",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I009",
+      "pdf_page": 8,
+      "original_printed_page": 8,
+      "source_text_en": "INTEGRA",
+      "translation_fa": "اینتگرا (INTEGRA)",
+      "source_type": "visual_presentation_style",
+      "research_category_id": "equipment_presentation_style",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P08-E01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "related_context_fragment_refs": [
+        "ZENITEL50-P08-E02"
+      ],
+      "source_editorial_limits_fa": "نام خانواده فقط شاخص شیوهٔ معرفی دیداری است. نوع نصب یا عبارتِ خودکفا، دستور، پوشش، تأییدیه یا مدرک ایمنی جانی نیست.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-FAMILY_VISUALS_INTEGRA",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "شناسهٔ زمینه برای صفحهٔ یک خانواده",
+      "analyst_assessment_fa": "نام INTEGRA و فرم محصولِ منبع علت ایجاد سکشن، نتیجهٔ ایمنی یا ویژگی NSP نیست."
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "شناسهٔ زمینه برای صفحهٔ گالری دیگر",
+      "mapping_reason_fa": "نام VAIA نشان ناشر، نه مشخصات، پتنت، فهرست محصول یا قابلیت NSP است.",
+      "unassigned_reason_fa": "نام VAIA نشان ناشر، نه مشخصات، پتنت، فهرست محصول یا قابلیت NSP است.",
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_context_no_section_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I010",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I010",
+      "pdf_page": 9,
+      "original_printed_page": 9,
+      "source_text_en": "Zenitel VAIA",
+      "translation_fa": "Zenitel VAIA",
+      "source_type": "visual_presentation_style",
+      "research_category_id": "equipment_presentation_style",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P09-E01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "نام تجاری به شکل نشان منبع می‌ماند؛ این ردیف مرجع چیدمان تیره و گالری است، نه مشخصات، ظرفیت، ادعای پتنت یا خروجی NSP.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-FAMILY_VISUALS_VAIA",
+      "related_visual_image_ids": [
+        "ZENITEL50_09_dark_asymmetric_gallery"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "شناسهٔ زمینه برای صفحهٔ گالری دیگر",
+      "analyst_assessment_fa": "نام VAIA نشان ناشر، نه مشخصات، پتنت، فهرست محصول یا قابلیت NSP است."
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "الگوی چند ستون هم‌وزن برای مرور حوزه‌ها",
+      "mapping_reason_fa": "فقط فرم نقشه/مقایسهٔ بصری؛ محتوا باید بر اساس سه حوزهٔ مصوب NSP باشد و هیچ سلول، عدد یا سازگاری PAVA وارد نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I011",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I011",
+      "pdf_page": 10,
+      "original_printed_page": 10,
+      "source_text_en": "Unified PAVA Portfolio",
+      "translation_fa": "سبد یکپارچهٔ اعلام عمومی و هشدار صوتی (PAVA)",
+      "source_type": "visual_presentation_style",
+      "research_category_id": "narrative_structure",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P10-E01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-08"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "عنوان جدول برای مطالعهٔ مقایسهٔ دیداری؛ نه دادهٔ سلول، سنجه، کارکرد مشترک، برتری یا سازگاری تجهیزات.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-COMPARISON_LAYOUT",
+      "related_visual_image_ids": [
+        "ZENITEL50_10_family_column_header_band"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "الگوی چند ستون هم‌وزن برای مرور حوزه‌ها",
+      "analyst_assessment_fa": "فقط فرم نقشه/مقایسهٔ بصری؛ محتوا باید بر اساس سه حوزهٔ مصوب NSP باشد و هیچ سلول، عدد یا سازگاری PAVA وارد نشود."
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "PUBLIC_AREAS",
+      "target_section_types": [
+        "PUBLIC_AREAS"
+      ],
+      "target_section_title_fa": "کنترل هوشمند مشاعات هتل",
+      "target_section_row": 9,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "چیدمان تیتر دوخطی در فصل کنترل مشاعات",
+      "mapping_reason_fa": "صرفاً تایپوگرافی بخش؛ از واژهٔ لوازم جانبی، خانواده، پوشش، سازگاری یا محصول تازه‌ای برای NSP نتیجه نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I012",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I012",
+      "pdf_page": 11,
+      "original_printed_page": 11,
+      "source_text_en": "Wide Range of Accessories",
+      "translation_fa": "گسترهٔ متنوع لوازم جانبی",
+      "source_type": "visual_presentation_style",
+      "research_category_id": "equipment_presentation_style",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P11-E01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-09"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "related_context_fragment_refs": [
+        "ZENITEL50-P11-E02"
+      ],
+      "source_editorial_limits_fa": "فرم گروه‌بندی دیداری را مقایسه کن؛ ادعای سازگاری ناشر زمینه است و به تجهیزات NSP یا یکپارچگی عمومی نسبت داده نمی‌شود.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-ACCESSORY_LAYOUT",
+      "related_visual_image_ids": [
+        "ZENITEL50_11_accessory_heading_block"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "چیدمان تیتر دوخطی در فصل کنترل مشاعات",
+      "analyst_assessment_fa": "صرفاً تایپوگرافی بخش؛ از واژهٔ لوازم جانبی، خانواده، پوشش، سازگاری یا محصول تازه‌ای برای NSP نتیجه نشود."
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "CASE_STUDIES",
+      "target_section_types": [
+        "CASE_STUDIES"
+      ],
+      "target_section_title_fa": "رزومه و پروژه‌های اجراشده",
+      "target_section_row": 10,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "وزن‌دادن دیداری به عنوان بخش معرفی مراجع",
+      "mapping_reason_fa": "فقط معماری روایت؛ نام نقاط شاخص، فرم نقشهٔ رقیب، نتیجه و رزومهٔ Zenitel به NSP منتقل نشوند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I013",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I013",
+      "pdf_page": 12,
+      "original_printed_page": 12,
+      "source_text_en": "THE VOICE BEHIND",
+      "translation_fa": "صدای پشتِ…",
+      "source_type": "visual_presentation_style",
+      "research_category_id": "case_studies",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P12-E01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-10"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "related_context_fragment_refs": [
+        "ZENITEL50-P12-E02"
+      ],
+      "source_editorial_limits_fa": "نیمهٔ نخست تیتر دوخطیِ معرفی مراجع؛ بدون نام‌ها و ادعای پروژه. با جملهٔ همراه معنا پیدا می‌کند؛ شاهد اجرای خود NSP نیست.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-LANDMARK_LAYOUT",
+      "related_visual_image_ids": [
+        "ZENITEL50_12_title_and_soft_map"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "وزن‌دادن دیداری به عنوان بخش معرفی مراجع",
+      "analyst_assessment_fa": "فقط معماری روایت؛ نام نقاط شاخص، فرم نقشهٔ رقیب، نتیجه و رزومهٔ Zenitel به NSP منتقل نشوند."
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "COMPANY_INTRO",
+      "target_section_types": [
+        "COMPANY_INTRO"
+      ],
+      "target_section_title_fa": "معرفی شرکت NSP",
+      "target_section_row": 4,
+      "content_level": "COMPANY",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "سازمان‌دهی یک معرفی کوتاه ثابت از شرکت",
+      "mapping_reason_fa": "عنوان معرفی ناشر مرجع فرم است؛ محتوا، شواهد آزمون، صلاحیت، مشتری و توانایی شرکت NSP مستقل و مجاز باشند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I014",
+      "idea_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I014",
+      "pdf_page": 13,
+      "original_printed_page": null,
+      "source_text_en": "About Zenitel",
+      "translation_fa": "دربارهٔ Zenitel",
+      "source_type": "visual_presentation_style",
+      "research_category_id": "narrative_structure",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "source_S02_fragment_ref": "ZENITEL50-P13-E02",
+      "source_S02_fragment_index": 2,
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-11"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [
+        "ZENITEL50-P13-E01"
+      ],
+      "source_editorial_limits_fa": "عنوان بخش معرفی ناشر در پایان بروشور؛ صرفاً شیوهٔ پایان‌بندی و سبک هویت. ادعای آزمودگی، صلاحیت یا رزومه به NSP نسبت نگیرد.",
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "same_editorial_concept_group": "ZENITEL50-COMPANY_SIGNOFF",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "سازمان‌دهی یک معرفی کوتاه ثابت از شرکت",
+      "analyst_assessment_fa": "عنوان معرفی ناشر مرجع فرم است؛ محتوا، شواهد آزمون، صلاحیت، مشتری و توانایی شرکت NSP مستقل و مجاز باشند."
+    }
+  ],
+  "visual_mappings": [
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "COVER",
+      "target_section_types": [
+        "COVER"
+      ],
+      "target_section_title_fa": "صفحه اول کاتالوگ",
+      "target_section_row": 2,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "کاور محیط‌محور با یک عکس غالب",
+      "mapping_reason_fa": "فقط الگو؛ کنتراست و هویت بصری از نو سنجیده شوند و تصویر، شعار و نشان رقیب کپی نشوند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "ZENITEL50_01_environmental_hero",
+      "idea_id": "ZENITEL50_01_environmental_hero",
+      "pdf_page": 1,
+      "source_pdf_page": 1,
+      "original_printed_page": null,
+      "source_type": "visual_presentation_style",
+      "source_text_en": null,
+      "translation_fa": null,
+      "image_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_01_environmental_hero.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_01_environmental_hero.webp",
+      "image_asset_sha256": "91fd8a751ce0d507c11263fb706e9006f3dd28692f0770d97e2abc775ce39e32",
+      "image_blob_sha": "17a7b276d4f85d25c64dd9f9b55b3f458cce85d2",
+      "normalized_pdf_crop": [
+        0.022,
+        0.03,
+        0.98,
+        0.964
+      ],
+      "rendered_size_px": [
+        1121,
+        773
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "visual_style_type": "full_bleed_people_and_environment_hero",
+      "presentation_style": "full_bleed_people_and_environment_hero",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "عکس سراسری انسان در محیط کاربرد",
+      "observed_content_in_crop_fa": "فرد، نور و تیتر روی تصویر با کنتراست متفاوت.",
+      "key_takeaway_fa": "زمینهٔ واقعی موضوع را پیش از متن معرفی می‌کند.",
+      "analyst_assessment_fa": "عکس و شعار رقیب دارایی قابل بازنشر نیستند؛ کنتراست باید در نمونهٔ تازه سنجیده شود.",
+      "strengths_fa": [
+        "زمینهٔ واقعی موضوع را پیش از متن معرفی می‌کند."
+      ],
+      "weaknesses_fa": [
+        "عکس و شعار رقیب دارایی قابل بازنشر نیستند؛ کنتراست باید در نمونهٔ تازه سنجیده شود."
+      ],
+      "nsp_visual_adaptation_fa": "از عکس مجاز NSP، عنوان اختصاصی و ناحیهٔ امن حلقه‌ها استفاده شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I001"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "ZENITEL50-P01-E01"
+      ],
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-01"
+      ],
+      "related_source_context_set_refs": [],
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، متن، علامت و محصول متعلق به ناشر یا مالک است؛ مجوز بازنشر یا استفادهٔ تجاری احراز نشده.",
+      "reference_does_not_validate_content_claim": true
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "گرید چند موقعیت برای مرور محیط‌ها",
+      "mapping_reason_fa": "چیدمان ۴ عکس دربارهٔ ساختار است؛ هتل NSP، داده‌های پوشش یا حوزهٔ کاربرد از عکس به دست نمی‌آید.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "ZENITEL50_02_four_application_tiles",
+      "idea_id": "ZENITEL50_02_four_application_tiles",
+      "pdf_page": 2,
+      "source_pdf_page": 2,
+      "original_printed_page": 2,
+      "source_type": "visual_presentation_style",
+      "source_text_en": null,
+      "translation_fa": null,
+      "image_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_02_four_application_tiles.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_02_four_application_tiles.webp",
+      "image_asset_sha256": "a6b364668499a09c29aca7aa30b90a2ea2d5fe6395a8f76d5c47f343929cb60a",
+      "image_blob_sha": "e38db034eb456748fbeba0d0c26889fe9c25aedd",
+      "normalized_pdf_crop": [
+        0.395,
+        0.191,
+        0.938,
+        0.819
+      ],
+      "rendered_size_px": [
+        981,
+        803
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "visual_style_type": "four_application_tiles_on_accent_color",
+      "presentation_style": "four_application_tiles_on_accent_color",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "گرید چهار عکس کاربری با زمینهٔ رنگی",
+      "observed_content_in_crop_fa": "چهار قاب با مضمون محیط‌های متفاوت، بدون متن بدنه.",
+      "key_takeaway_fa": "گرید هم‌وزن چند محیط را سریع و بدون نقشهٔ فنی نشان می‌دهد.",
+      "analyst_assessment_fa": "محیط تصویر، خدمات یا پوشش سیستم را اثبات نمی‌کند.",
+      "strengths_fa": [
+        "گرید هم‌وزن چند محیط را سریع و بدون نقشهٔ فنی نشان می‌دهد."
+      ],
+      "weaknesses_fa": [
+        "محیط تصویر، خدمات یا پوشش سیستم را اثبات نمی‌کند."
+      ],
+      "nsp_visual_adaptation_fa": "گرید از فضاهای واقعی و مجاز NSP و رنگ اختصاصی ساخته شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I002"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "ZENITEL50-P02-E01"
+      ],
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-02"
+      ],
+      "related_source_context_set_refs": [],
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، متن، علامت و محصول متعلق به ناشر یا مالک است؛ مجوز بازنشر یا استفادهٔ تجاری احراز نشده.",
+      "reference_does_not_validate_content_claim": true
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "ریتم شعاعی پیرامون تصویر موقعیت",
+      "mapping_reason_fa": "خط گرافیکی شاهد سنجه، الگوی پوشش، نقشه یا وضوح صوت نیست.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "ZENITEL50_05_radial_artwork",
+      "idea_id": "ZENITEL50_05_radial_artwork",
+      "pdf_page": 5,
+      "source_pdf_page": 5,
+      "original_printed_page": 5,
+      "source_type": "visual_presentation_style",
+      "source_text_en": null,
+      "translation_fa": null,
+      "image_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_05_radial_artwork.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_05_radial_artwork.webp",
+      "image_asset_sha256": "428d352a86267e85d27e0ca600926089cf98d0b37a99623970c3bb4bf902d2a8",
+      "image_blob_sha": "4fe749e25221926f3e0d2767080a5a3e9b9838ec",
+      "normalized_pdf_crop": [
+        0.575,
+        0.091,
+        0.976,
+        0.917
+      ],
+      "rendered_size_px": [
+        660,
+        961
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "visual_style_type": "radial_accent_rhythm_around_object",
+      "presentation_style": "radial_accent_rhythm_around_object",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "چیدمان شعاعی دور تصویر یک شیء",
+      "observed_content_in_crop_fa": "خطوط شعاعی و بخشی از عکس شیء؛ بدون روش یا معیار.",
+      "key_takeaway_fa": "شکل شعاعی به عنوان عنصر گرافیکی نگاه را متمرکز می‌کند.",
+      "analyst_assessment_fa": "نمودار یا نقش تزئینی شاهد وضوح، الگوی پوشش یا دادهٔ دستگاه نیست.",
+      "strengths_fa": [
+        "شکل شعاعی به عنوان عنصر گرافیکی نگاه را متمرکز می‌کند."
+      ],
+      "weaknesses_fa": [
+        "نمودار یا نقش تزئینی شاهد وضوح، الگوی پوشش یا دادهٔ دستگاه نیست."
+      ],
+      "nsp_visual_adaptation_fa": "ریتم بصری را با تصویر اختصاصی و بدون نمایش فنی بازطراحی کنید.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I005"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "ZENITEL50-P05-E01"
+      ],
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-05"
+      ],
+      "related_source_context_set_refs": [
+        "ZENITEL50-CTX-CLAIM-LIMIT"
+      ],
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، متن، علامت و محصول متعلق به ناشر یا مالک است؛ مجوز بازنشر یا استفادهٔ تجاری احراز نشده.",
+      "reference_does_not_validate_content_claim": true
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "استعارهٔ گرافیکی برای یک موضوع حساس",
+      "mapping_reason_fa": "عکس قفل مرجع میان‌سکشنی است؛ امنیت، تاب‌آوری، وضعیت فنی یا بخش امنیت مستقل NSP را تأیید نمی‌کند.",
+      "unassigned_reason_fa": "عکس قفل مرجع میان‌سکشنی است؛ امنیت، تاب‌آوری، وضعیت فنی یا بخش امنیت مستقل NSP را تأیید نمی‌کند.",
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_context_no_section_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "ZENITEL50_06_symbolic_padlock_photo",
+      "idea_id": "ZENITEL50_06_symbolic_padlock_photo",
+      "pdf_page": 6,
+      "source_pdf_page": 6,
+      "original_printed_page": 6,
+      "source_type": "visual_presentation_style",
+      "source_text_en": null,
+      "translation_fa": null,
+      "image_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_06_symbolic_padlock_photo.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_06_symbolic_padlock_photo.webp",
+      "image_asset_sha256": "6805f1bf7680707df31ff36de96e2ed74f992096e7d6db4db1cd15f005396bc4",
+      "image_blob_sha": "1a4a5372f9736012b151398069003d0462df24d3",
+      "normalized_pdf_crop": [
+        0.565,
+        0.092,
+        0.956,
+        0.529
+      ],
+      "rendered_size_px": [
+        961,
+        760
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "visual_style_type": "symbolic_object_photo_for_risk_topic",
+      "presentation_style": "symbolic_object_photo_for_risk_topic",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "عکس نمادین قفل در یک موضوع حساس",
+      "observed_content_in_crop_fa": "قفل و زمینهٔ صفحه‌کلید؛ بدون نمودار حلقه، متن فنی یا اطلاعات عملیاتی.",
+      "key_takeaway_fa": "تصویر استعاری می‌تواند بدون نمایش جزئیات فنی یک موضوع را معرفی کند.",
+      "analyst_assessment_fa": "قفل تصویر، گواه امنیت، تاب‌آوری، یا نشان صلاحیت نیست.",
+      "strengths_fa": [
+        "تصویر استعاری می‌تواند بدون نمایش جزئیات فنی یک موضوع را معرفی کند."
+      ],
+      "weaknesses_fa": [
+        "قفل تصویر، گواه امنیت، تاب‌آوری، یا نشان صلاحیت نیست."
+      ],
+      "nsp_visual_adaptation_fa": "از نماد یا عکس اختصاصی استفاده شود و امنیت فقط با سند مستقل مطرح شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I007"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "ZENITEL50-P06-E01"
+      ],
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-06"
+      ],
+      "related_source_context_set_refs": [
+        "ZENITEL50-CTX-CLAIM-LIMIT"
+      ],
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، متن، علامت و محصول متعلق به ناشر یا مالک است؛ مجوز بازنشر یا استفادهٔ تجاری احراز نشده.",
+      "reference_does_not_validate_content_claim": true
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "PUBLIC_AREAS",
+      "target_section_types": [
+        "PUBLIC_AREAS"
+      ],
+      "target_section_title_fa": "کنترل هوشمند مشاعات هتل",
+      "target_section_row": 9,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "گالری پلکانی برای موقعیت‌های واقعی مشاعات",
+      "mapping_reason_fa": "فقط سازمان تصویریِ قابل اقتباس با عکس‌های مجاز NSP؛ مکان‌های دیده‌شده، صوت، هشدار یا پوشش NSP نیستند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "ZENITEL50_07_offset_environment_montage",
+      "idea_id": "ZENITEL50_07_offset_environment_montage",
+      "pdf_page": 7,
+      "source_pdf_page": 7,
+      "original_printed_page": 7,
+      "source_type": "visual_presentation_style",
+      "source_text_en": null,
+      "translation_fa": null,
+      "image_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_07_offset_environment_montage.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_07_offset_environment_montage.webp",
+      "image_asset_sha256": "0a745e7f496c1a20edf4486ad51ae41917bc6a822ecccd488ce47da6960a4f38",
+      "image_blob_sha": "65739cec047198bc2853a54009241ffd84daf64a",
+      "normalized_pdf_crop": [
+        0.544,
+        0.298,
+        0.973,
+        0.902
+      ],
+      "rendered_size_px": [
+        961,
+        957
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "visual_style_type": "offset_industry_environment_montage",
+      "presentation_style": "offset_industry_environment_montage",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "مونتاژ پلکانی محیط‌های کاربرد",
+      "observed_content_in_crop_fa": "قاب‌های هم‌پوشان با اندازه‌های متفاوت؛ شرح ظرفیت خارج برش است.",
+      "key_takeaway_fa": "هم‌پوشانی ریتم و جهت مطالعه را ایجاد می‌کند.",
+      "analyst_assessment_fa": "مصداق تصویری، نصب یا پشتیبانی محصول در آن مکان‌ها را اثبات نمی‌کند.",
+      "strengths_fa": [
+        "هم‌پوشانی ریتم و جهت مطالعه را ایجاد می‌کند."
+      ],
+      "weaknesses_fa": [
+        "مصداق تصویری، نصب یا پشتیبانی محصول در آن مکان‌ها را اثبات نمی‌کند."
+      ],
+      "nsp_visual_adaptation_fa": "از عکس‌های دارای مجوز و بدون ادعای کاربرد ناکافی استفاده شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I008"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "ZENITEL50-P07-E01"
+      ],
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-04"
+      ],
+      "related_source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، متن، علامت و محصول متعلق به ناشر یا مالک است؛ مجوز بازنشر یا استفادهٔ تجاری احراز نشده.",
+      "reference_does_not_validate_content_claim": true
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "PUBLIC_AREAS",
+      "target_section_types": [
+        "PUBLIC_AREAS"
+      ],
+      "target_section_title_fa": "کنترل هوشمند مشاعات هتل",
+      "target_section_row": 9,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "گالری نامتقارن و مرز پنل تصویر",
+      "mapping_reason_fa": "نمای شکلی برای معرفی موقعیت‌های مستند کنترل مشاعات است؛ عنوان محصول، نوع مکان و قابلیت منبع وارد نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "ZENITEL50_09_dark_asymmetric_gallery",
+      "idea_id": "ZENITEL50_09_dark_asymmetric_gallery",
+      "pdf_page": 9,
+      "source_pdf_page": 9,
+      "original_printed_page": 9,
+      "source_type": "visual_presentation_style",
+      "source_text_en": null,
+      "translation_fa": null,
+      "image_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_09_dark_asymmetric_gallery.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_09_dark_asymmetric_gallery.webp",
+      "image_asset_sha256": "d603e8f4715d979fc90dd3057b7389c83be3c986963ea6431fd24356013e2bb2",
+      "image_blob_sha": "07c761e8c33c79c3340f64af14bc7ff9be2f3b60",
+      "normalized_pdf_crop": [
+        0.569,
+        0.272,
+        0.975,
+        0.865
+      ],
+      "rendered_size_px": [
+        931,
+        961
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "visual_style_type": "asymmetric_gallery_with_vertical_boundary",
+      "presentation_style": "asymmetric_gallery_with_vertical_boundary",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "گالری نامتقارن با جداکنندهٔ عمودی",
+      "observed_content_in_crop_fa": "گالری چندقابی با خط عمودی کناری، بدون متن مشخصات.",
+      "key_takeaway_fa": "خط باریک قلمرو گالری را از متن جدا می‌کند و نامتقارن‌بودن ریتم می‌سازد.",
+      "analyst_assessment_fa": "اگر عکس‌ها شلوغ باشند، تمرکز خواننده و خوانایی سمت صحافی کم می‌شود.",
+      "strengths_fa": [
+        "خط باریک قلمرو گالری را از متن جدا می‌کند و نامتقارن‌بودن ریتم می‌سازد."
+      ],
+      "weaknesses_fa": [
+        "اگر عکس‌ها شلوغ باشند، تمرکز خواننده و خوانایی سمت صحافی کم می‌شود."
+      ],
+      "nsp_visual_adaptation_fa": "از پنل اختصاصی و عکس‌های مجاز با فاصله گذاری قابل سنجش استفاده شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I010"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "ZENITEL50-P09-E01"
+      ],
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-07"
+      ],
+      "related_source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، متن، علامت و محصول متعلق به ناشر یا مالک است؛ مجوز بازنشر یا استفادهٔ تجاری احراز نشده.",
+      "reference_does_not_validate_content_claim": true
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "سه ستون هم‌وزن برای مرور گروه‌ها",
+      "mapping_reason_fa": "فقط نسبت، وزن و ریتم ستون‌ها؛ شکل دستگاه یا نوشتهٔ روی آن نه دادهٔ فنی، نه تأییدیه یا محصول NSP است.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "ZENITEL50_10_family_column_header_band",
+      "idea_id": "ZENITEL50_10_family_column_header_band",
+      "pdf_page": 10,
+      "source_pdf_page": 10,
+      "original_printed_page": 10,
+      "source_type": "visual_presentation_style",
+      "source_text_en": null,
+      "translation_fa": null,
+      "image_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_10_family_column_header_band.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_10_family_column_header_band.webp",
+      "image_asset_sha256": "25fb36c54ad1f7b19e67aeb376404abffcb6bc884e8df8f8c66bf0179adeb820",
+      "image_blob_sha": "e8fbfea88d52abdf707dc1ea4cd739a10fed74c2",
+      "normalized_pdf_crop": [
+        0.418,
+        0.069,
+        0.952,
+        0.281
+      ],
+      "rendered_size_px": [
+        951,
+        268
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "visual_style_type": "three_equal_family_picture_columns",
+      "presentation_style": "three_equal_family_picture_columns",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "نوار سه‌ستونهٔ تصاویر خانواده‌ها",
+      "observed_content_in_crop_fa": "سه قاب هم‌وزن در بالای ستون‌ها؛ جدول، سرستون متنی و ردیف مشخصات حذف شده‌اند. نوشتهٔ احتمالی روی بدنه تنها بخشی از عکس است.",
+      "key_takeaway_fa": "الگوی چند سرستون هم‌وزن به مرور چشمی کمک می‌کند.",
+      "analyst_assessment_fa": "بدون دادهٔ مستقل، چیدمان جدول اعتبار مقایسهٔ فنی نمی‌دهد.",
+      "strengths_fa": [
+        "الگوی چند سرستون هم‌وزن به مرور چشمی کمک می‌کند."
+      ],
+      "weaknesses_fa": [
+        "بدون دادهٔ مستقل، چیدمان جدول اعتبار مقایسهٔ فنی نمی‌دهد."
+      ],
+      "nsp_visual_adaptation_fa": "برای داده‌های گروه‌بندی معتبر NSP جدول اختصاصی طراحی شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I011"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "ZENITEL50-P10-E01"
+      ],
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-08"
+      ],
+      "related_source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، متن، علامت و محصول متعلق به ناشر یا مالک است؛ مجوز بازنشر یا استفادهٔ تجاری احراز نشده.",
+      "reference_does_not_validate_content_claim": true
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "PUBLIC_AREAS",
+      "target_section_types": [
+        "PUBLIC_AREAS"
+      ],
+      "target_section_title_fa": "کنترل هوشمند مشاعات هتل",
+      "target_section_row": 9,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "تیتر دوخطی برای زیرموضوعِ موجود",
+      "mapping_reason_fa": "فونت، عنوان و داده از نو با دامنهٔ مصوب NSP تهیه شوند؛ نه افزودن فهرست لوازم یا خدمات هشدار.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "ZENITEL50_11_accessory_heading_block",
+      "idea_id": "ZENITEL50_11_accessory_heading_block",
+      "pdf_page": 11,
+      "source_pdf_page": 11,
+      "original_printed_page": 11,
+      "source_type": "visual_presentation_style",
+      "source_text_en": null,
+      "translation_fa": null,
+      "image_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_11_accessory_heading_block.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_11_accessory_heading_block.webp",
+      "image_asset_sha256": "ea53d2c7d64fa6dff7bac613082c1f2383b8a5c916a13044244889b01ea0f2ae",
+      "image_blob_sha": "cbb4925ee74a82f1226f705fabfa64af563bb0e8",
+      "normalized_pdf_crop": [
+        0.05,
+        0.136,
+        0.462,
+        0.271
+      ],
+      "rendered_size_px": [
+        941,
+        219
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "visual_style_type": "oversize_two_line_accessory_heading_block",
+      "presentation_style": "oversize_two_line_accessory_heading_block",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "تیتر دوخطیِ درشت برای گروه جانبی",
+      "observed_content_in_crop_fa": "عنوان کوتاه و ناحیهٔ تنفس پیرامون؛ بدون QR، ردیف محصول یا تصویر نصب.",
+      "key_takeaway_fa": "تیتر دوخطی بدون گرید مدل‌ها می‌تواند بخش جدید را معرفی کند.",
+      "analyst_assessment_fa": "متن یا طراحی حروف رقیب را عیناً وارد نکنید.",
+      "strengths_fa": [
+        "تیتر دوخطی بدون گرید مدل‌ها می‌تواند بخش جدید را معرفی کند."
+      ],
+      "weaknesses_fa": [
+        "متن یا طراحی حروف رقیب را عیناً وارد نکنید."
+      ],
+      "nsp_visual_adaptation_fa": "عنوان و فضای تنفس با زبان بصری NSP از نو طراحی شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I012"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "ZENITEL50-P11-E01"
+      ],
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-09"
+      ],
+      "related_source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، متن، علامت و محصول متعلق به ناشر یا مالک است؛ مجوز بازنشر یا استفادهٔ تجاری احراز نشده.",
+      "reference_does_not_validate_content_claim": true
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "CASE_STUDIES",
+      "target_section_types": [
+        "CASE_STUDIES"
+      ],
+      "target_section_title_fa": "رزومه و پروژه‌های اجراشده",
+      "target_section_row": 10,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "تیتر بزرگ روی زمینهٔ محو برای معرفی پروژه‌ها",
+      "mapping_reason_fa": "زمینهٔ منبع و فهرست مراجع رقیب مجوز بازنشر یا شاهد جغرافیا و اجرا نیست؛ پروندهٔ واقعی NSP و رضایت لازم‌اند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "ZENITEL50_12_title_and_soft_map",
+      "idea_id": "ZENITEL50_12_title_and_soft_map",
+      "pdf_page": 12,
+      "source_pdf_page": 12,
+      "original_printed_page": 12,
+      "source_type": "visual_presentation_style",
+      "source_text_en": null,
+      "translation_fa": null,
+      "image_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_12_title_and_soft_map.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_12_title_and_soft_map.webp",
+      "image_asset_sha256": "7d4dc5e74c31383ee45b626009de96b3cc7b9e408a6654107bfe50fa59a2f341",
+      "image_blob_sha": "f43452811e91d558a40c67c40df98624e01dbcf0",
+      "normalized_pdf_crop": [
+        0.05,
+        0.134,
+        0.54,
+        0.829
+      ],
+      "rendered_size_px": [
+        958,
+        961
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "visual_style_type": "oversized_typography_over_faint_map",
+      "presentation_style": "oversized_typography_over_faint_map",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "تیتر درشت و نقشهٔ محو برای معرفی مراجع",
+      "observed_content_in_crop_fa": "تیتر چندخطی روی نقشهٔ محو بدون فهرست نام پروژه‌ها.",
+      "key_takeaway_fa": "دو لایهٔ متن و زمینه عنوان مراجع را از جزئیات جدا می‌کنند.",
+      "analyst_assessment_fa": "نقشهٔ محو شاخص جغرافیایی، پروژه اجراشده یا محل واقعی NSP نیست.",
+      "strengths_fa": [
+        "دو لایهٔ متن و زمینه عنوان مراجع را از جزئیات جدا می‌کنند."
+      ],
+      "weaknesses_fa": [
+        "نقشهٔ محو شاخص جغرافیایی، پروژه اجراشده یا محل واقعی NSP نیست."
+      ],
+      "nsp_visual_adaptation_fa": "برای رزومه فقط ادعای مستند، نقشهٔ اختصاصی و پروژهٔ مجاز نمایش داده شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I013"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "ZENITEL50-P12-E01"
+      ],
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-10"
+      ],
+      "related_source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، متن، علامت و محصول متعلق به ناشر یا مالک است؛ مجوز بازنشر یا استفادهٔ تجاری احراز نشده.",
+      "reference_does_not_validate_content_claim": true
+    },
+    {
+      "company": "Zenitel",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_document_edition_printed": null,
+      "pdf_filename": "50_Zenitel_Work C09.4.pdf",
+      "pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "citation_basis": "physical PDF page is canonical; separate printed folio where present",
+      "target_section_type": "COMPANY_INTRO",
+      "target_section_types": [
+        "COMPANY_INTRO"
+      ],
+      "target_section_title_fa": "معرفی شرکت NSP",
+      "target_section_row": 4,
+      "content_level": "COMPANY",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "کاشی‌های هم‌وزن برای مرور موضوع‌های معرفی شرکت",
+      "mapping_reason_fa": "فقط شیوهٔ ارائه؛ نشانه‌ها یا فهرست بخش‌های بازار Zenitel سابقه یا پوشش NSP را ثابت نمی‌کنند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "ایدهٔ تحریریه‌ای/طراحی داخلی فقط؛ هر کارکرد، بخش، نتیجه، عکس یا متن NSP شاهد مستقل و اجازهٔ نشر می‌خواهد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "life_safety_or_security_certification_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "ZENITEL50_13_sector_icon_strip",
+      "idea_id": "ZENITEL50_13_sector_icon_strip",
+      "pdf_page": 13,
+      "source_pdf_page": 13,
+      "original_printed_page": null,
+      "source_type": "visual_presentation_style",
+      "source_text_en": null,
+      "translation_fa": null,
+      "image_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_13_sector_icon_strip.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_13_sector_icon_strip.webp",
+      "image_asset_sha256": "9ce3b84a0dfb1ca5a6cfbe5c4d21a771cb7c0e2271b4bde50305f7787270da34",
+      "image_blob_sha": "58e82abaa00444b4d04d37daa773aaf177b4c29d",
+      "normalized_pdf_crop": [
+        0.091,
+        0.157,
+        0.932,
+        0.351
+      ],
+      "rendered_size_px": [
+        981,
+        161
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "visual_style_type": "repeated_equal_sector_icon_tiles",
+      "presentation_style": "repeated_equal_sector_icon_tiles",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "نوار کاشی‌های هم‌اندازهٔ حوزه‌ها",
+      "observed_content_in_crop_fa": "ردیف آیکون‌های ساده بر زمینهٔ تیره؛ بدون متن بلند معرفی ناشر.",
+      "key_takeaway_fa": "قاب یکسان به خواندن چند حوزه کمک می‌کند.",
+      "analyst_assessment_fa": "آیکون‌ها شاهد تأییدیه، پایگاه مشتری، دامنهٔ سرویس یا بازار NSP نیستند.",
+      "strengths_fa": [
+        "قاب یکسان به خواندن چند حوزه کمک می‌کند."
+      ],
+      "weaknesses_fa": [
+        "آیکون‌ها شاهد تأییدیه، پایگاه مشتری، دامنهٔ سرویس یا بازار NSP نیستند."
+      ],
+      "nsp_visual_adaptation_fa": "آیکون‌های اختصاصی برای حوزه‌های مستند NSP بازطراحی شوند.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، متن، علامت و محصول متعلق به ناشر یا مالک است؛ مجوز بازنشر یا استفادهٔ تجاری احراز نشده.",
+      "reference_does_not_validate_content_claim": true
+    }
+  ],
+  "style_family_mapping_index": [
+    {
+      "style_id": "full_bleed_people_and_environment_hero",
+      "title_fa": "عکس سراسری انسان در محیط کاربرد",
+      "representative_reference_ids": [
+        "ZENITEL50_01_environmental_hero"
+      ],
+      "physical_pdf_pages": [
+        1
+      ],
+      "key_takeaway_fa": "زمینهٔ واقعی موضوع را پیش از متن معرفی می‌کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "COVER"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "four_application_tiles_on_accent_color",
+      "title_fa": "گرید چهار عکس کاربری با زمینهٔ رنگی",
+      "representative_reference_ids": [
+        "ZENITEL50_02_four_application_tiles"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "گرید هم‌وزن چند محیط را سریع و بدون نقشهٔ فنی نشان می‌دهد.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "HOTEL_OVERVIEW"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "radial_accent_rhythm_around_object",
+      "title_fa": "چیدمان شعاعی دور تصویر یک شیء",
+      "representative_reference_ids": [
+        "ZENITEL50_05_radial_artwork"
+      ],
+      "physical_pdf_pages": [
+        5
+      ],
+      "key_takeaway_fa": "شکل شعاعی به عنوان عنصر گرافیکی نگاه را متمرکز می‌کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "CHALLENGES_VALUE"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "symbolic_object_photo_for_risk_topic",
+      "title_fa": "عکس نمادین قفل در یک موضوع حساس",
+      "representative_reference_ids": [
+        "ZENITEL50_06_symbolic_padlock_photo"
+      ],
+      "physical_pdf_pages": [
+        6
+      ],
+      "key_takeaway_fa": "تصویر استعاری می‌تواند بدون نمایش جزئیات فنی یک موضوع را معرفی کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": true,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "offset_industry_environment_montage",
+      "title_fa": "مونتاژ پلکانی محیط‌های کاربرد",
+      "representative_reference_ids": [
+        "ZENITEL50_07_offset_environment_montage"
+      ],
+      "physical_pdf_pages": [
+        7
+      ],
+      "key_takeaway_fa": "هم‌پوشانی ریتم و جهت مطالعه را ایجاد می‌کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "PUBLIC_AREAS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "asymmetric_gallery_with_vertical_boundary",
+      "title_fa": "گالری نامتقارن با جداکنندهٔ عمودی",
+      "representative_reference_ids": [
+        "ZENITEL50_09_dark_asymmetric_gallery"
+      ],
+      "physical_pdf_pages": [
+        9
+      ],
+      "key_takeaway_fa": "خط باریک قلمرو گالری را از متن جدا می‌کند و نامتقارن‌بودن ریتم می‌سازد.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "PUBLIC_AREAS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "three_equal_family_picture_columns",
+      "title_fa": "نوار سه‌ستونهٔ تصاویر خانواده‌ها",
+      "representative_reference_ids": [
+        "ZENITEL50_10_family_column_header_band"
+      ],
+      "physical_pdf_pages": [
+        10
+      ],
+      "key_takeaway_fa": "الگوی چند سرستون هم‌وزن به مرور چشمی کمک می‌کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "HOTEL_OVERVIEW"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "oversize_two_line_accessory_heading_block",
+      "title_fa": "تیتر دوخطیِ درشت برای گروه جانبی",
+      "representative_reference_ids": [
+        "ZENITEL50_11_accessory_heading_block"
+      ],
+      "physical_pdf_pages": [
+        11
+      ],
+      "key_takeaway_fa": "تیتر دوخطی بدون گرید مدل‌ها می‌تواند بخش جدید را معرفی کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "PUBLIC_AREAS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "oversized_typography_over_faint_map",
+      "title_fa": "تیتر درشت و نقشهٔ محو برای معرفی مراجع",
+      "representative_reference_ids": [
+        "ZENITEL50_12_title_and_soft_map"
+      ],
+      "physical_pdf_pages": [
+        12
+      ],
+      "key_takeaway_fa": "دو لایهٔ متن و زمینه عنوان مراجع را از جزئیات جدا می‌کنند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "CASE_STUDIES"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "repeated_equal_sector_icon_tiles",
+      "title_fa": "نوار کاشی‌های هم‌اندازهٔ حوزه‌ها",
+      "representative_reference_ids": [
+        "ZENITEL50_13_sector_icon_strip"
+      ],
+      "physical_pdf_pages": [
+        13
+      ],
+      "key_takeaway_fa": "قاب یکسان به خواندن چند حوزه کمک می‌کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "COMPANY_INTRO"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    }
+  ],
+  "unassigned_text_reasons": [
+    {
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I006",
+      "pdf_page": 5,
+      "reason_fa": "اعلان‌های معمول و موسیقی زمینه فقط مثال منبع‌اند؛ برای حوزه‌های صوتی یا امنیتی NSP سکشن یا فیچر ساخته نشود."
+    },
+    {
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I007",
+      "pdf_page": 6,
+      "reason_fa": "تیتر امنیت/تاب‌آوری مرجع زمینه است؛ جای گواهی، آزمون امنیت یا پیشنهاد قابلیت مستقل نمی‌گیرد."
+    },
+    {
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I008",
+      "pdf_page": 7,
+      "reason_fa": "نام VIPEDIA خود مرجع چیدمان نیست و عنوان فصل، مدل پیشنهادی یا تجهیز NSP نمی‌شود."
+    },
+    {
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I009",
+      "pdf_page": 8,
+      "reason_fa": "نام INTEGRA و فرم محصولِ منبع علت ایجاد سکشن، نتیجهٔ ایمنی یا ویژگی NSP نیست."
+    },
+    {
+      "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I010",
+      "pdf_page": 9,
+      "reason_fa": "نام VAIA نشان ناشر، نه مشخصات، پتنت، فهرست محصول یا قابلیت NSP است."
+    }
+  ],
+  "unassigned_visual_reasons": [
+    {
+      "image_id": "ZENITEL50_06_symbolic_padlock_photo",
+      "pdf_page": 6,
+      "reason_fa": "عکس قفل مرجع میان‌سکشنی است؛ امنیت، تاب‌آوری، وضعیت فنی یا بخش امنیت مستقل NSP را تأیید نمی‌کند."
+    }
+  ],
+  "unproposed_sections_fa": {
+    "IDENTITY_PAGES": "ساخت صفحهٔ تنفس از مرجع الزام نیست.",
+    "GRMS": "PAVA و ادعای امنیت مدرک مدیریت اتاق یا نرم‌افزار NSP نیستند.",
+    "IPTV": "اعلان معمول یا صدای پس‌زمینه، IPTV یا ویژگی تعاملی NSP نیستند."
+  },
+  "source_claim_gates_snapshot": [
+    {
+      "id": "ZENITEL50-CLAIM-01",
+      "kind": "cover_copy_and_scope_not_product_claim",
+      "physical_pdf_pages": [
+        1
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P01-E01",
+        "ZENITEL50-P01-E02",
+        "ZENITEL50-P01-E03"
+      ],
+      "scope_fa": "شعارهای صفحهٔ اول زبان بازاریابی‌اند. عنوان حوزهٔ اعلام عمومی و هشدار صوتی کاربرد یا انطباق هیچ محصولی، به‌ویژه NSP، را ثابت نمی‌کند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I001"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-02",
+      "kind": "critical_communications_positioning",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P02-E01",
+        "ZENITEL50-P02-E02"
+      ],
+      "scope_fa": "«ارتباطات حیاتی» و سه حوزهٔ ایمنی، امنیت و عملیات دسته‌بندی ناشر است؛ کارکرد، پوشش، تضمین ایمنی یا قابلیت NSP نیست.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I002"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-03",
+      "kind": "portfolio_taxonomy_not_product_interoperability",
+      "physical_pdf_pages": [
+        3
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P03-E01",
+        "ZENITEL50-P03-E02",
+        "ZENITEL50-P03-E03"
+      ],
+      "scope_fa": "صفت «منحصربه‌فرد» ادعای ارزش‌گذاری ناشر است. معرفی دو خانوادهٔ PAVA و اینترکام به معنای یکسان‌بودن وظایف، سازگاری همهٔ مدل‌ها یا ارایهٔ سامانهٔ مشابه به دست NSP نیست.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I003"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-04",
+      "kind": "scalability_no_model_or_capacity",
+      "physical_pdf_pages": [
+        4,
+        7
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P04-E01",
+        "ZENITEL50-P04-E02",
+        "ZENITEL50-P07-E01",
+        "ZENITEL50-P07-E02"
+      ],
+      "scope_fa": "مقیاس‌پذیری و «هر کاربرد» زبان معرفی ناشرند. تعداد، توپولوژی، اتصال، دامنهٔ طراحی، مدل و حقانیت فنی NSP استخراج نشده‌اند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I004",
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I008"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-05",
+      "kind": "voice_clarity_and_ordinary_audio_not_life_safety",
+      "physical_pdf_pages": [
+        5
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P05-E01",
+        "ZENITEL50-P05-E02",
+        "ZENITEL50-P05-E03"
+      ],
+      "scope_fa": "وضوح صوت در این گزیده ادعای جایگاه‌یابی است؛ نه سنجش فهم‌پذیری، تضمین پوشش، انطباق یا عملکرد اضطراری. پیام‌ها و موسیقی پس‌زمینه به معنای سامانهٔ هشدار مورد تأیید نیستند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I005",
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I006"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-06",
+      "kind": "cybersecurity_resilience_marketing_not_test_report",
+      "physical_pdf_pages": [
+        6
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P06-E01",
+        "ZENITEL50-P06-E02"
+      ],
+      "scope_fa": "دو شعار دربارهٔ طراحی با توجه به امنیت سایبری و تاب‌آوری‌اند؛ نه نتیجهٔ تست مستقل، قابلیت دفاعی قطعی، انطباق، یا اطلاعات آسیب‌پذیری و پیکربندی. قابلیت NSP ثابت نشده است.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I007"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-07",
+      "kind": "life_safety_family_labels_not_certification",
+      "physical_pdf_pages": [
+        8,
+        9
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P08-E01",
+        "ZENITEL50-P08-E02",
+        "ZENITEL50-P09-E01"
+      ],
+      "scope_fa": "نام خانواده‌ها و عنوان نوع محصول ناشر فقط زمینهٔ دیداری‌اند. واژهٔ هشدار صوتی مدرک انطباق، گواهینامه، پذیرش پروژه، کاربرد ایمنی جانی یا پوشش NSP نیست. مشخصات/نصب/تنظیم خارج است.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I009",
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I010"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-08",
+      "kind": "portfolio_comparison_title_only",
+      "physical_pdf_pages": [
+        10
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P10-E01"
+      ],
+      "scope_fa": "تنها عنوان چیدمان جدول؛ نه سلول، عدد، استاندارد، برتری محصول یا توصیهٔ خرید و اجرا.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I011"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-09",
+      "kind": "accessory_heading_and_publisher_claim",
+      "physical_pdf_pages": [
+        11
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P11-E01",
+        "ZENITEL50-P11-E02"
+      ],
+      "scope_fa": "عنوان و عبارت سازگاری صرفاً ادعای ناشرند؛ نه دلالت بر سازگاری همگانی، استاندارد یا دستگاه NSP. اطلاعات مدل و کدهای QR خارج‌اند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I012"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-10",
+      "kind": "landmark_names_not_portfolio_proof",
+      "physical_pdf_pages": [
+        12
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P12-E01",
+        "ZENITEL50-P12-E02"
+      ],
+      "scope_fa": "این دو خط روش معرفی مراجع ناشرند. فهرست نام‌ها، محدودهٔ نصب، وضعیت جاری، مجوز انتشار یا ارتباط با NSP تأیید نشده‌اند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I013"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-11",
+      "kind": "testing_narrative_not_result",
+      "physical_pdf_pages": [
+        13
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P13-E01",
+        "ZENITEL50-P13-E02"
+      ],
+      "scope_fa": "واژگان «آزموده و اثبات‌شده» بدون گزارش آزمون در گزیده فقط ادعای ناشرند؛ حوزهٔ کاربرد، گواهی، تاریخ نسخه/بازار یا توان NSP نتیجه نمی‌شود.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I014"
+      ]
+    }
+  ],
+  "structured_context_handling": {
+    "source_context_bindings": [
+      {
+        "id": "ZENITEL50-CTX-PAVA",
+        "physical_pdf_pages": [
+          1,
+          3,
+          5,
+          8
+        ],
+        "S02_fragment_refs": [
+          "ZENITEL50-P01-E03",
+          "ZENITEL50-P03-E02",
+          "ZENITEL50-P03-E03",
+          "ZENITEL50-P05-E03",
+          "ZENITEL50-P08-E02"
+        ],
+        "scope_fa": "اعلام معمول، موسیقی پس‌زمینه، اینترکام و هشدار صوتی اضطراری هم‌ارز یا گواه اجرا برای NSP نیستند."
+      },
+      {
+        "id": "ZENITEL50-CTX-CLAIM-LIMIT",
+        "physical_pdf_pages": [
+          5,
+          6,
+          13
+        ],
+        "S02_fragment_refs": [
+          "ZENITEL50-P05-E01",
+          "ZENITEL50-P06-E01",
+          "ZENITEL50-P06-E02",
+          "ZENITEL50-P13-E01"
+        ],
+        "scope_fa": "پیام دربارهٔ وضوح، امنیت، تاب‌آوری یا آزمودگی، آزمون، معیار، تأییدیه یا نتیجهٔ مستقل نیست."
+      },
+      {
+        "id": "ZENITEL50-CTX-PRESENTATION",
+        "physical_pdf_pages": [
+          4,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "S02_fragment_refs": [
+          "ZENITEL50-P04-E01",
+          "ZENITEL50-P07-E01",
+          "ZENITEL50-P08-E01",
+          "ZENITEL50-P09-E01",
+          "ZENITEL50-P10-E01",
+          "ZENITEL50-P11-E01",
+          "ZENITEL50-P12-E01",
+          "ZENITEL50-P12-E02"
+        ],
+        "scope_fa": "نام خانواده و رفتار چیدمان، نه مشخصات، مهندسی، ظرفیت، پیشنهاد خرید یا اجرای فهرست مراجع."
+      }
+    ],
+    "excluded_S02_fragments": [
+      {
+        "S02_fragment_ref": "ZENITEL50-P01-E02",
+        "pdf_page": 1,
+        "translation_fa": "وضوح، بی‌چون‌وچرا.",
+        "scope_fa": "نیمهٔ دوم شعار جلد؛ معیار فهم‌پذیری یا تضمین نیست و ردیف مستقلِ ویژگی ندارد.",
+        "source_type": "vendor_marketing_headline",
+        "source_S02_fragment_ref": "ZENITEL50-P01-E02",
+        "source_claim_gate_refs": [
+          "ZENITEL50-CLAIM-01"
+        ],
+        "source_context_set_refs": [],
+        "not_independent_feature": true
+      },
+      {
+        "S02_fragment_ref": "ZENITEL50-P01-E03",
+        "pdf_page": 1,
+        "translation_fa": "راهکارهای اعلام عمومی و هشدار صوتی",
+        "scope_fa": "نام حوزهٔ سند است، نه نوع تأییدشدهٔ سیستم NSP یا گواهی ایمنی.",
+        "source_type": "document_scope_label",
+        "source_S02_fragment_ref": "ZENITEL50-P01-E03",
+        "source_claim_gate_refs": [
+          "ZENITEL50-CLAIM-01"
+        ],
+        "source_context_set_refs": [
+          "ZENITEL50-CTX-PAVA"
+        ],
+        "not_independent_feature": true
+      },
+      {
+        "S02_fragment_ref": "ZENITEL50-P02-E02",
+        "pdf_page": 2,
+        "translation_fa": "برای ایمنی، امنیت و عملیات",
+        "scope_fa": "ادامهٔ تیتر چتری؛ فهرست قابلیت یا شاهد ایمنی جانی نیست.",
+        "source_type": "vendor_sector_positioning",
+        "source_S02_fragment_ref": "ZENITEL50-P02-E02",
+        "source_claim_gate_refs": [
+          "ZENITEL50-CLAIM-02"
+        ],
+        "source_context_set_refs": [],
+        "not_independent_feature": true
+      },
+      {
+        "S02_fragment_ref": "ZENITEL50-P03-E01",
+        "pdf_page": 3,
+        "translation_fa": "به‌راستی بازیگری متمایز در بازار",
+        "scope_fa": "خودتوصیفی تبلیغاتی فروشنده است؛ برتری یا مقایسهٔ مستقل نتیجه نمی‌شود.",
+        "source_type": "vendor_positioning_heading",
+        "source_S02_fragment_ref": "ZENITEL50-P03-E01",
+        "source_claim_gate_refs": [
+          "ZENITEL50-CLAIM-03"
+        ],
+        "source_context_set_refs": [],
+        "not_independent_feature": true
+      },
+      {
+        "S02_fragment_ref": "ZENITEL50-P03-E03",
+        "pdf_page": 3,
+        "translation_fa": "سبد راهکارهای اینترکام Zenitel",
+        "scope_fa": "عنوان خانوادهٔ مجاور؛ یکسان با PAVA یا نشان‌گر اتصال تأییدشده نیست.",
+        "source_type": "vendor_portfolio_heading",
+        "source_S02_fragment_ref": "ZENITEL50-P03-E03",
+        "source_claim_gate_refs": [
+          "ZENITEL50-CLAIM-03"
+        ],
+        "source_context_set_refs": [
+          "ZENITEL50-CTX-PAVA"
+        ],
+        "not_independent_feature": true
+      },
+      {
+        "S02_fragment_ref": "ZENITEL50-P04-E02",
+        "pdf_page": 4,
+        "translation_fa": "برای هر کاربرد",
+        "scope_fa": "عبارت تبلیغاتی همراه تیتر، نه پوشش فراگیر، تعیین ظرفیت یا دستور نصب.",
+        "source_type": "vendor_scope_heading_qualifier",
+        "source_S02_fragment_ref": "ZENITEL50-P04-E02",
+        "source_claim_gate_refs": [
+          "ZENITEL50-CLAIM-04"
+        ],
+        "source_context_set_refs": [],
+        "not_independent_feature": true
+      },
+      {
+        "S02_fragment_ref": "ZENITEL50-P05-E02",
+        "pdf_page": 5,
+        "translation_fa": "آنجا که بیشترین اهمیت را دارد",
+        "scope_fa": "بخش دوم همان تیترِ وضوح، نه محدوده یا نتیجهٔ آزمون.",
+        "source_type": "vendor_clarity_positioning_qualifier",
+        "source_S02_fragment_ref": "ZENITEL50-P05-E02",
+        "source_claim_gate_refs": [
+          "ZENITEL50-CLAIM-05"
+        ],
+        "source_context_set_refs": [],
+        "not_independent_feature": true
+      },
+      {
+        "S02_fragment_ref": "ZENITEL50-P06-E02",
+        "pdf_page": 6,
+        "translation_fa": "ساخته‌شده با هدف تاب‌آوری.",
+        "scope_fa": "نیمهٔ دوم همان پیام بازاریابی؛ نه تضمین تداوم سرویس، آزمون یا گواهی.",
+        "source_type": "vendor_resilience_positioning_heading",
+        "source_S02_fragment_ref": "ZENITEL50-P06-E02",
+        "source_claim_gate_refs": [
+          "ZENITEL50-CLAIM-06"
+        ],
+        "source_context_set_refs": [
+          "ZENITEL50-CTX-CLAIM-LIMIT"
+        ],
+        "not_independent_feature": true
+      },
+      {
+        "S02_fragment_ref": "ZENITEL50-P07-E02",
+        "pdf_page": 7,
+        "translation_fa": "مقیاس‌پذیر از مرحلهٔ طراحی",
+        "scope_fa": "توصیف ناشر دربارهٔ همان خانواده، نه سنجه، شمار ظرفیت یا دستور فنی.",
+        "source_type": "vendor_family_positioning",
+        "source_S02_fragment_ref": "ZENITEL50-P07-E02",
+        "source_claim_gate_refs": [
+          "ZENITEL50-CLAIM-04"
+        ],
+        "source_context_set_refs": [],
+        "not_independent_feature": true
+      },
+      {
+        "S02_fragment_ref": "ZENITEL50-P08-E02",
+        "pdf_page": 8,
+        "translation_fa": "واحد دیواریِ مستقلِ هشدار صوتی",
+        "scope_fa": "عنوان نوع محصول در منبع؛ «مستقل» ادعای نبود الزام بیرونی، بی‌نیازی از طراحی، یا گواهی عملکرد ایمنی نیست.",
+        "source_type": "vendor_family_product_category_label",
+        "source_S02_fragment_ref": "ZENITEL50-P08-E02",
+        "source_claim_gate_refs": [
+          "ZENITEL50-CLAIM-07"
+        ],
+        "source_context_set_refs": [
+          "ZENITEL50-CTX-PAVA"
+        ],
+        "not_independent_feature": true
+      },
+      {
+        "S02_fragment_ref": "ZENITEL50-P11-E02",
+        "pdf_page": 11,
+        "translation_fa": "میکروفن‌ها و لوازم جانبیِ سازگار با خانواده‌های مختلف",
+        "scope_fa": "ادعای سازگاری بین سبدهای ناشر؛ برای مدل خاص یا NSP تأیید نشده.",
+        "source_type": "vendor_cross_portfolio_positioning",
+        "source_S02_fragment_ref": "ZENITEL50-P11-E02",
+        "source_claim_gate_refs": [
+          "ZENITEL50-CLAIM-09"
+        ],
+        "source_context_set_refs": [],
+        "not_independent_feature": true
+      },
+      {
+        "S02_fragment_ref": "ZENITEL50-P12-E02",
+        "pdf_page": 12,
+        "translation_fa": "بسیاری از بناها و مکان‌های شاخص",
+        "scope_fa": "پایان همان تیتر، نه اثبات اجرا یا مجوز آوردن نام/تصویر پروژه.",
+        "source_type": "vendor_reference_layout_qualifier",
+        "source_S02_fragment_ref": "ZENITEL50-P12-E02",
+        "source_claim_gate_refs": [
+          "ZENITEL50-CLAIM-10"
+        ],
+        "source_context_set_refs": [
+          "ZENITEL50-CTX-PRESENTATION"
+        ],
+        "not_independent_feature": true
+      },
+      {
+        "S02_fragment_ref": "ZENITEL50-P13-E01",
+        "pdf_page": 13,
+        "translation_fa": "اثبات‌شده و آزموده در محیط‌های گوناگون",
+        "scope_fa": "ترجمهٔ لفظی توصیف ناشر؛ هیچ گزارش آزمون، پوشش، گواهی، یا اعتبار مستقل از آن استنباط نشود.",
+        "source_type": "vendor_validation_positioning_only",
+        "source_S02_fragment_ref": "ZENITEL50-P13-E01",
+        "source_claim_gate_refs": [
+          "ZENITEL50-CLAIM-11"
+        ],
+        "source_context_set_refs": [
+          "ZENITEL50-CTX-CLAIM-LIMIT"
+        ],
+        "not_independent_feature": true
+      }
+    ],
+    "excluded_S04_reference_overview": {
+      "asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_S04_reference_overview.webp",
+      "asset_filename": "ZENITEL50_S04_reference_overview.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 73130,
+      "asset_sha256": "05f4c69f5299a54ce98b29979e404e3f3ecea8732f5f6fc870b0ef43dc1a8645",
+      "git_blob_sha": "1de193a50ef462c8f4f5bf7abab99676aac5d089",
+      "rendered_size_px": [
+        1060,
+        1100
+      ],
+      "base64_length": 97508,
+      "role": "derived_navigation_overview_not_a_source_reference",
+      "source_reference_ids": [
+        "ZENITEL50_01_environmental_hero",
+        "ZENITEL50_02_four_application_tiles",
+        "ZENITEL50_05_radial_artwork",
+        "ZENITEL50_06_symbolic_padlock_photo",
+        "ZENITEL50_07_offset_environment_montage",
+        "ZENITEL50_09_dark_asymmetric_gallery",
+        "ZENITEL50_10_family_column_header_band",
+        "ZENITEL50_11_accessory_heading_block",
+        "ZENITEL50_12_title_and_soft_map",
+        "ZENITEL50_13_sector_icon_strip"
+      ],
+      "counted_in_reference_images": false
+    },
+    "context_is_not_an_additional_feature_or_proof": true
+  },
+  "layout_constraint_fa": "برای A4 افقیِ زونکنی NSP می‌توان سلسله‌مراتب و ریتم را بازطراحی کرد. زمینه تا لبهٔ صحافی بماند و عکس/عنوان کلیدی و لوگو دور از ناحیهٔ امن حلقه قرار گیرند. عرض ناحیه یا چاپ‌پذیری تأیید نشده است.",
+  "S06_priorities_fa": [
+    "اصل و شمارهٔ ۱۳ صفحه، هر ۲۷ گزیده و ۱۰ برش مستقیم بازبینی شود.",
+    "پنج متن بدون نگاشت فقط زمینه بمانند؛ عکس قفل حتی اگر در بانک سبک بماند ادعای ایمنی/امنیت یا سکشن نمی‌سازد.",
+    "نگاشت‌های مشاعات فقط فرم تصویر/تیترند؛ هیچ PA، PAVA، اینترکام یا سازگاری از آن‌ها اثبات نشود."
+  ],
+  "next_stage": "S06 — ممیزی منبع و نتیجه",
+  "next_queue_cursor": {
+    "document_index": 13,
+    "document_id": "50",
+    "step_index": 5,
+    "step_id": "S06"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
