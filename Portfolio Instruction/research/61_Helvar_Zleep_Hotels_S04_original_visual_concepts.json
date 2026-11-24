@@ -1,0 +1,237 @@
+{
+  "schema": "nsp-catalog-research-s04-original-visual-concepts-v1",
+  "stage": "S04",
+  "stage_key": "visuals_and_styles",
+  "status": "completed_original_nonreplica_editorial_concepts",
+  "document_id": "61",
+  "source_id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK",
+  "source_language": "en",
+  "visual_label_language": "fa",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "date_checked": "2026-11-24",
+  "base_main_commit": "0528141a8f1ec90034883c41f4dda259e7408162",
+  "source_pdf": {
+    "filename": "61_Helvar_Work C22.1.pdf",
+    "title": "Zleep Hotels",
+    "cover_location": "Denmark",
+    "physical_pdf_pages": 1,
+    "file_size_bytes": 1273929,
+    "sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+    "printed_version_or_date_verified": false
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S01_source_inventory.json",
+      "blob_sha": "31e6fe23db9863998b9e77baa0e35a0b00ce955a",
+      "commit_sha": "95ffda33256c53b1f4fc42b8e503ba1196e7509e"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S02_page_linked_summaries.json",
+      "blob_sha": "3a10b39517e698e8bcf1ebb35925e0149bcda899",
+      "commit_sha": "0dfb7a77f6b0fb48f70dfe6afb0e4117e20126ad"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S03_editorial_summaries_fa.json",
+      "blob_sha": "6fb100b9b326ffc99e58858f047bf6f51c265bfc",
+      "commit_sha": "965c88d97c600df21cf26bc189e8ce380628092d"
+    }
+  },
+  "visual_source_boundary": {
+    "public_repo": true,
+    "source_redistribution_rights_verified": false,
+    "original_diagram_count": 2,
+    "actual_vendor_reference_image_count": 0,
+    "stock_image_count": 0,
+    "source_logo_or_layout_replica_count": 0,
+    "source_PDF_assets_count": 0,
+    "designs_are_our_editorial_concepts_not_vendor_visuals": true
+  },
+  "design_guidance_fa": [
+    "هدف طراحی را جدا از شواهدِ اندازه‌گیری بنویسید؛ جای خالیِ شاهد مجوز ساخت عدد نیست.",
+    "در معرفی هر پروژه روشن کنید چه کسی گزارش کرده، پوشش کجاست و چه چیز مستقلاً تأیید شده است.",
+    "در اقتباس برای صفحهٔ افقی A4، سمت حلقه‌ها ناحیهٔ امن خالی از متن و نشان داشته باشد، با پس‌زمینهٔ پیوسته."
+  ],
+  "original_design_concepts": [
+    {
+      "id": "HELVAR61_C01_intent_evidence_split",
+      "reference_order": 1,
+      "kind": "original_nonreplica_editorial_diagram",
+      "title_fa": "هدف و شاهد",
+      "style_family": "two_column_intention_evidence_split",
+      "theme_inspiration_physical_pdf_pages": [
+        1
+      ],
+      "theme_source_evidence_ids": [
+        "HELVAR61-P001-N04",
+        "HELVAR61-P001-N07",
+        "HELVAR61-P001-N08"
+      ],
+      "theme_source_claim_gate_ids": [
+        "HELVAR61-CLAIM-03"
+      ],
+      "related_internal_S03_theme_record_ids": [
+        "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I001",
+        "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I003",
+        "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I004"
+      ],
+      "source_pdf_sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+      "page_relation": "Page 1 is cited for topics only; this graphic does not appear in the source PDF.",
+      "primary_source_image_page": null,
+      "source_pdf_crop": null,
+      "uses_no_source_or_stock_pixels_or_logos": true,
+      "no_layout_replica_and_no_vendor_slogan": true,
+      "claims_no_performance_or_technical_workflow": true,
+      "original_visual_idea_fa": "دو کادر موازی برای جداکردن هدف طراحی و سطح شواهد؛ بدون رنگ یا تصویری از آن هتل.",
+      "analyst_assessment_fa": "از این قالب برای جدا نوشتن اهداف روشنایی از نتیجهٔ آزمون واقعی استفاده شود. هیچ مکانیسم یا مقدار عملکرد در طرح وجود ندارد.",
+      "risks_or_misreading_fa": "این کادرها نه نتیجهٔ آزمون‌اند، نه ادعای مصرف، رضایت یا خواب و نه شبیه‌سازی عملکرد.",
+      "NSP_capability_verified": false,
+      "requires_NSP_approval_for_adoption": true,
+      "mapping_status": "pending_S05",
+      "app_display_policy": "Track separately. Do not link under the current feature UI's extracted-PDF-images label.",
+      "permitted_use": "internal_research_concept_only_unselected",
+      "asset_path": "Portfolio Instruction/research/assets/helvar61/HELVAR61_C01_intent_evidence_split.webp",
+      "asset_filename": "HELVAR61_C01_intent_evidence_split.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 18014,
+      "asset_sha256": "7a20652b4cb09395e3dbef33b571fd5a73a1556722be2a98d34978de9d7c6474",
+      "git_blob_sha": "ba0e6f78b374b300d576aa340106d6ecaf97c480",
+      "rendered_size_px": [
+        1040,
+        585
+      ],
+      "base64_length": 24020,
+      "render_spec": {
+        "template_key": "intent_evidence",
+        "headline_fa": "هدف و شاهد",
+        "eyebrow_fa": "هر ادعا جای خودش را دارد",
+        "description_fa": "هدف طراحی را از نتیجهٔ اندازه‌گیری‌شده جدا کنید.",
+        "labels_fa": [
+          "هدف طراحی",
+          "نتیجهٔ قابل سنجش"
+        ],
+        "notes_fa": [
+          "توصیف هدف و زمینه",
+          "نیازمند داده و منبع مستقل"
+        ],
+        "palette": "Independent navy, neutral and muted amber",
+        "renderer": "Pillow RGB, DejaVu Sans, RAQM Persian RTL, WebP quality 84 method 6"
+      },
+      "visual_QA_status": "viewed original rendered output; no PDF pixels, stock art, logos, photo, technical diagrams or case claims"
+    },
+    {
+      "id": "HELVAR61_C02_case_scope_annotation",
+      "reference_order": 2,
+      "kind": "original_nonreplica_editorial_diagram",
+      "title_fa": "مرزهای یک پرونده",
+      "style_family": "separate_scope_attribution_and_verification",
+      "theme_inspiration_physical_pdf_pages": [
+        1
+      ],
+      "theme_source_evidence_ids": [
+        "HELVAR61-P001-N03",
+        "HELVAR61-P001-N05"
+      ],
+      "theme_source_claim_gate_ids": [
+        "HELVAR61-CLAIM-02",
+        "HELVAR61-CLAIM-04"
+      ],
+      "related_internal_S03_theme_record_ids": [
+        "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I002"
+      ],
+      "source_pdf_sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+      "page_relation": "Page 1 is cited for topics only; this graphic does not appear in the source PDF.",
+      "primary_source_image_page": null,
+      "source_pdf_crop": null,
+      "uses_no_source_or_stock_pixels_or_logos": true,
+      "no_layout_replica_and_no_vendor_slogan": true,
+      "claims_no_performance_or_technical_workflow": true,
+      "original_visual_idea_fa": "سه جای مستقل برای انتساب، دامنه و شاهد؛ جداسازی پیشینهٔ برند از محدودهٔ هر پروژه.",
+      "analyst_assessment_fa": "فرم کلیِ شرح پرونده‌های واقعی، بدون مرجع به پروژهٔ Helvar یا استفاده از تصویر یا نشان آن.",
+      "risks_or_misreading_fa": "انتساب سازمانی، اجرای سه محل، پوشش کل مجموعه یا تأیید مستقل از این طرح برنمی‌آید.",
+      "NSP_capability_verified": false,
+      "requires_NSP_approval_for_adoption": true,
+      "mapping_status": "pending_S05",
+      "app_display_policy": "Track separately. Do not link under the current feature UI's extracted-PDF-images label.",
+      "permitted_use": "internal_research_concept_only_unselected",
+      "asset_path": "Portfolio Instruction/research/assets/helvar61/HELVAR61_C02_case_scope_annotation.webp",
+      "asset_filename": "HELVAR61_C02_case_scope_annotation.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 20168,
+      "asset_sha256": "7a12b2cf276d8f9f1e7ec34ab3683194435dd7302c078878988584805b551e80",
+      "git_blob_sha": "05948436fe5c7db886489c3665cfb3054aef743d",
+      "rendered_size_px": [
+        1040,
+        585
+      ],
+      "base64_length": 26892,
+      "render_spec": {
+        "template_key": "scope",
+        "headline_fa": "مرزهای یک پرونده",
+        "eyebrow_fa": "یک نمونه را به کل مجموعه تعمیم ندهید",
+        "description_fa": "نام منبع، دامنه و میزان تأیید را جدا بنویسید.",
+        "labels_fa": [
+          "چه کسی گزارش کرده؟",
+          "دربارهٔ کدام دامنه؟",
+          "چه چیزی تأیید شده؟"
+        ],
+        "notes_fa": [
+          "انتساب روشن",
+          "حدِ موضوع",
+          "شاهد مستقل"
+        ],
+        "palette": "Independent navy, neutral and muted amber",
+        "renderer": "Pillow RGB, DejaVu Sans, RAQM Persian RTL, WebP quality 84 method 6"
+      },
+      "visual_QA_status": "viewed original rendered output; no PDF pixels, stock art, logos, photo, technical diagrams or case claims"
+    }
+  ],
+  "style_catalog": [
+    {
+      "style_id": "two_column_intention_evidence_split",
+      "title_fa": "هدف و شاهد",
+      "original_design_concept_ids": [
+        "HELVAR61_C01_intent_evidence_split"
+      ],
+      "theme_physical_pdf_pages": [
+        1
+      ],
+      "placement": "pending_S05",
+      "style_only": true
+    },
+    {
+      "style_id": "separate_scope_attribution_and_verification",
+      "title_fa": "مرزهای یک پرونده",
+      "original_design_concept_ids": [
+        "HELVAR61_C02_case_scope_annotation"
+      ],
+      "theme_physical_pdf_pages": [
+        1
+      ],
+      "placement": "pending_S05",
+      "style_only": true
+    }
+  ],
+  "bank_display_boundary": {
+    "source_reference_images": 0,
+    "original_concepts_tracked_separately": true,
+    "no_concepts_in_source_extracted_image_count": true,
+    "no_concepts_in_existing_renderer_PDF_image_links": true,
+    "keep_application_untouched": true,
+    "admission_to_S07_requires_final_audit": true
+  },
+  "next_stage": "S05 — تطبیق با نوع سکشن NSP",
+  "next_queue_cursor": {
+    "document_index": 18,
+    "document_id": "61",
+    "step_index": 4,
+    "step_id": "S05"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
