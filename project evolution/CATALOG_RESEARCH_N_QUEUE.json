@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 39,
+    "total_pending_steps": 38,
     "completed_new_documents": 12,
     "remaining_new_documents": 6
   },
   "cursor": {
     "document_index": 15,
     "document_id": "54",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -1816,11 +1816,20 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/54_Lutron_Duke_S04_visual_styles.json",
+            "Portfolio Instruction/research/assets/lutron54/LUTRON54_01_building_at_twilight.webp",
+            "Portfolio Instruction/research/assets/lutron54/LUTRON54_01_case_identification_strip.webp",
+            "Portfolio Instruction/research/assets/lutron54/LUTRON54_02_warm_room_context.webp",
+            "Portfolio Instruction/research/assets/lutron54/LUTRON54_02_device_in_room_detail.webp",
+            "Portfolio Instruction/research/assets/lutron54/LUTRON54_02_case_role_ledger.webp",
+            "Portfolio Instruction/research/assets/lutron54/LUTRON54_02_result_label.webp",
+            "Portfolio Instruction/research/assets/lutron54/LUTRON54_S04_reference_overview.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "82c81684fe7d6dce277968aa11ee95e476dd4881",
+          "notes": "۶ برش مستقیم در ۶ سبک از هر دو صفحهٔ The Duke REV A ثبت شد؛ نمای کلی جزو شمار نیست. نمایشگر عددی، متن نتیجه، راهنمای کار و اطلاعات تماس خارج برش‌اند. تصویر و نقش‌ها برای پژوهش داخلی‌اند، نه قابلیت NSP یا مجوز نشر. بانک V15، برنامه و سکشن‌ها ثابت‌اند."
         },
         {
           "id": "S05",
@@ -1850,7 +1859,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S03"
+      "last_successful_stage": "S04"
     },
     {
       "id": "57",
