@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 34,
+    "total_pending_steps": 33,
     "completed_new_documents": 13,
     "remaining_new_documents": 5
   },
   "cursor": {
     "document_index": 16,
     "document_id": "57",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -1899,11 +1899,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/57_Hager_Zweckbau_S02_german_text.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "e89e8a12939597b06e1351646856a35d2e012cf5",
+          "notes": "از اصل Hager im Zweckbau با شناسهٔ 19DE0075_01، ۳۱ گزیدهٔ کوتاه آلمانی از ۲۹ صفحه با دو موتور و حالت چیدمان تأیید شد. همهٔ ۴۰ صفحهٔ فصل هتل بررسی شدند؛ ۲۶ صفحه گزیده دارند و ۳ صفحهٔ بیرونی فقط هویت، فهرست و شناسه‌اند. دستور برق، فراخوان اضطراری، نتیجهٔ تبلیغی و استنباط انطباق وارد نشد؛ بانک V16، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S03",
@@ -1951,7 +1953,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S01"
+      "last_successful_stage": "S02"
     },
     {
       "id": "58",
