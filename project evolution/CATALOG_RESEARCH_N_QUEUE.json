@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 91,
+    "total_pending_steps": 90,
     "completed_new_documents": 5,
     "remaining_new_documents": 13
   },
   "cursor": {
     "document_index": 8,
     "document_id": "15",
-    "step_index": 0,
-    "step_id": "S01"
+    "step_index": 1,
+    "step_id": "S02"
   },
   "section_types": [
     {
@@ -1009,17 +1009,19 @@
       "library_path": "/15_Vingcard_Mobile Access Solution.pdf",
       "bytes": 2973282,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "queued",
+      "status": "in_progress",
       "prior_import": null,
       "steps": [
         {
           "id": "S01",
           "key": "source_inventory",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S01_source_inventory.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "757bf8d8d24c199b4e2eaab14b914482127b8dc9",
+          "notes": "فایل اصلی ۲٬۹۷۳٬۲۸۲ بایتی از Library باز شد؛ SHA-256 بایت‌ها و تمام ۱۲ صفحهٔ A4 خوانده و ۱۲ رندر متمایز بررسی شد. تاریخ چاپ 03/2024 در صفحهٔ فیزیکی ۱۲ ثبت شد؛ نمودارهای مستقل صفحهٔ ۶ و ۹ برای کنترل ترتیب نشانه‌گذاری شدند. هیچ فیچر، تصویر مشتق یا ادعای NSP اضافه نشد؛ بانک V8 و برنامه دست‌نخورده‌اند."
         },
         {
           "id": "S02",
@@ -1075,7 +1077,8 @@
           "commit_sha": null,
           "notes": null
         }
-      ]
+      ],
+      "last_successful_stage": "S01"
     },
     {
       "id": "16",
