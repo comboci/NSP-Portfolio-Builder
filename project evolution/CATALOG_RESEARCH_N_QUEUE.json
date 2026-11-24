@@ -8,23 +8,18 @@
   "branch": "main",
   "trigger": "N",
   "run_mode": "one_stage_per_user_click",
-  "status": "in_progress_awaiting_next_N",
+  "status": "completed",
   "source_scope": "PDFs already present in ChatGPT Library, not website links or missing files",
   "n_queue_policy_fa": "با هر کلیک N تنها مرحلهٔ جاریِ فایل جاری اجرا می‌شود؛ بدون کلیک هیچ مرحله‌ای پیش نمی‌رود. پس از تکمیل مرحله آخر، N بعدی اولین مرحله فایل بعدی را اجرا می‌کند.",
   "counts": {
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 1,
-    "completed_new_documents": 17,
-    "remaining_new_documents": 1
+    "total_pending_steps": 0,
+    "completed_new_documents": 18,
+    "remaining_new_documents": 0
   },
-  "cursor": {
-    "document_index": 20,
-    "document_id": "MG",
-    "step_index": 6,
-    "step_id": "S07"
-  },
+  "cursor": null,
   "section_types": [
     {
       "type": "COVER",
@@ -2277,7 +2272,7 @@
       "library_path": "/myGEKKO_Smart Hotel_EN.pdf",
       "bytes": 3453087,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "in_progress",
+      "status": "completed",
       "prior_import": null,
       "steps": [
         {
@@ -2351,11 +2346,15 @@
         {
           "id": "S07",
           "key": "feature_json_and_commit",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S07_ingest_and_research_closeout.json",
+            "Portfolio Instruction/feature.json",
+            "Portfolio Instruction/feature.js"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "6aa28fe975bdf3064eb3984e69c961999b7a2e4f",
+          "notes": "۹ یادداشت ممیزی‌شدهٔ myGEKKO و دو طرح تحریریهٔ اصیل به‌صورت جدا، با اصلاح نسبت‌دهی فارسی/انگلیسی وارد شدند. بانک V21: ۲۱ کاتالوگ، ۶۷۰ رکورد، ۱۶۳ تصویر منبع و ۱۰ طرح اصیل جداگانه. هر ۱۲۶ مرحلهٔ صف ۱۸ سند انجام شد؛ سه ورودی پیشین بدون اجرای مجدد حفظ شدند."
         }
       ]
     }
