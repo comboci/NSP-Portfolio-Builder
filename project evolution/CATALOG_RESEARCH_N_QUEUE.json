@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 21,
+    "total_pending_steps": 20,
     "completed_new_documents": 15,
     "remaining_new_documents": 3
   },
   "cursor": {
     "document_index": 18,
     "document_id": "61",
-    "step_index": 0,
-    "step_id": "S01"
+    "step_index": 1,
+    "step_id": "S02"
   },
   "section_types": [
     {
@@ -2089,17 +2089,19 @@
       "library_path": "/61_Helvar_Work C22.1.pdf",
       "bytes": 1273929,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "queued",
+      "status": "in_progress",
       "prior_import": null,
       "steps": [
         {
           "id": "S01",
           "key": "source_inventory",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S01_source_inventory.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "95ffda33256c53b1f4fc42b8e503ba1196e7509e",
+          "notes": "اصل یک‌صفحه‌ای مطالعهٔ Helvar برای Zleep Hotels در دانمارک و هویت دو نشان تأیید شد. شمارهٔ نسخه/تاریخ چاپ مشخص نیست؛ سال ۲۰۰۳ مربوط به روایت زمینهٔ هتل است. نقش Vanpee، اجرای مستقل، نتیجه یا حق بازنشر احراز نشد. بانک V18، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S02",
@@ -2155,7 +2157,8 @@
           "commit_sha": null,
           "notes": null
         }
-      ]
+      ],
+      "last_successful_stage": "S01"
     },
     {
       "id": "76",
