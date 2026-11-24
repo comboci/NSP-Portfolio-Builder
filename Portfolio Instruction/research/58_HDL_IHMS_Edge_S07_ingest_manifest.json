@@ -1,0 +1,274 @@
+{
+  "schema": "nsp-catalog-research-s07-paraphrase-and-original-concept-ingest-v1",
+  "status": "validated_import",
+  "stage": "S07",
+  "stage_key": "feature_json_and_commit",
+  "document_id": "58",
+  "date": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "437cb9cfbd66b50a71eb8255c5ffd9285c9c464b",
+  "source_catalog": "CAT058_HDL_IHMS_EDGE_MANUAL_V100",
+  "source_pdf": "58_HDL_Automation_Work C16.1.pdf",
+  "source_pdf_sha256": "0afdcc2ef2f063ef47a6ce1724da2f5260f6b201ee6337fb4fa271fa8c24add4",
+  "source_language": "en",
+  "source_printed_version": "V1.0.0",
+  "source_printed_document_release_date": "2026-03-30",
+  "physical_pdf_pages": 38,
+  "audit_artifact": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S06_source_and_concept_audit.json",
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S01_source_inventory.json",
+      "blob_sha": "fae340966b3e04c1178d45151a1af2fc724f56a3",
+      "commit_sha": "79260f7ac5acfa10f677bf98799e139f1a1e2740"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S02_page_linked_summaries.json",
+      "blob_sha": "cfa5acb8c6cbf150e79b599c26d3715998164dbc",
+      "commit_sha": "dd97b7c283929f8bb721d5889c664feabae9d6bf"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S03_editorial_summaries_fa.json",
+      "blob_sha": "1197cf5b70088cf68e92e84db86cc155486be0c5",
+      "commit_sha": "b867d2f9e1cad7e6692fe694b794190a4de38fd7"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S04_original_visual_concepts.json",
+      "blob_sha": "17c366a66f75617c5fcacdcc19b8697f40b6df63",
+      "commit_sha": "ec9895c23fa4fc5c99024a36c485042e54b5cb79"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S05_section_mapping.json",
+      "blob_sha": "5cdbc5300e88ee62bef4ba2dfe5485203dbcf89a",
+      "commit_sha": "2d8d20168f292b41c2cc7ed1fb6745a1214f05e7"
+    },
+    "S06": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S06_source_and_concept_audit.json",
+      "blob_sha": "c7bdcd709b197b5da4c4bfb2e0d6c4bfc8eec5e8",
+      "commit_sha": "857d6cb690e5cb66de8a53e0618b9595144708ac"
+    }
+  },
+  "updated_bank_files": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js"
+  ],
+  "committed_artifact_paths": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js",
+    "Portfolio Instruction/research/58_HDL_IHMS_Edge_S07_ingest_manifest.json"
+  ],
+  "output_bank_files": [
+    {
+      "path": "Portfolio Instruction/feature.json",
+      "git_blob_sha": "256d85379879f82910eff47175b24a4e046b7d52"
+    },
+    {
+      "path": "Portfolio Instruction/feature.js",
+      "git_blob_sha": "d72847fe1aa8f3e3a83a5099bde1281de49cec49"
+    }
+  ],
+  "imported_editorial_record_ids": [
+    "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I002",
+    "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I003",
+    "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I004",
+    "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I006",
+    "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I007",
+    "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I008",
+    "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I010",
+    "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I011",
+    "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I012",
+    "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I016"
+  ],
+  "imported_editorial_provenance": [
+    {
+      "id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I002",
+      "physical_pdf_page": 10,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P010-N01",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "source_is_analyst_paraphrase_not_manual_text": true
+    },
+    {
+      "id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I003",
+      "physical_pdf_page": 14,
+      "context_physical_pdf_pages": [
+        15
+      ],
+      "S02_evidence_ref": "HDL58-P014-N01",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "target_section_type": "GRMS",
+      "source_is_analyst_paraphrase_not_manual_text": true
+    },
+    {
+      "id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I004",
+      "physical_pdf_page": 15,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P015-N01",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "target_section_type": "GRMS",
+      "source_is_analyst_paraphrase_not_manual_text": true
+    },
+    {
+      "id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I006",
+      "physical_pdf_page": 18,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P018-N01",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "target_section_type": "GRMS",
+      "source_is_analyst_paraphrase_not_manual_text": true
+    },
+    {
+      "id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I007",
+      "physical_pdf_page": 19,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P019-N01",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "target_section_type": "GRMS",
+      "source_is_analyst_paraphrase_not_manual_text": true
+    },
+    {
+      "id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I008",
+      "physical_pdf_page": 20,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P020-N01",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "target_section_type": "GRMS",
+      "source_is_analyst_paraphrase_not_manual_text": true
+    },
+    {
+      "id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I010",
+      "physical_pdf_page": 22,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P022-N01",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "target_section_type": "GRMS",
+      "source_is_analyst_paraphrase_not_manual_text": true
+    },
+    {
+      "id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I011",
+      "physical_pdf_page": 24,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P024-N01",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "target_section_type": "GRMS",
+      "source_is_analyst_paraphrase_not_manual_text": true
+    },
+    {
+      "id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I012",
+      "physical_pdf_page": 26,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P026-N01",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "target_section_type": "GRMS",
+      "source_is_analyst_paraphrase_not_manual_text": true
+    },
+    {
+      "id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I016",
+      "physical_pdf_page": 35,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P035-N01",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "source_is_analyst_paraphrase_not_manual_text": true
+    }
+  ],
+  "original_concepts_added_as_references_only": [
+    {
+      "id": "HDL58_C01_editorial_chapter_map",
+      "path": "Portfolio Instruction/research/assets/hdl58/HDL58_C01_editorial_chapter_map.webp",
+      "source_extracted_image": false,
+      "existing_research_asset_blob_sha": "93ba4c2105240b8cf8a99db0135de4ac5ea7806a",
+      "theme_physical_pdf_pages": [
+        10
+      ],
+      "excluded_from_current_renderer_image_links": true
+    },
+    {
+      "id": "HDL58_C02_service_topic_triptych",
+      "path": "Portfolio Instruction/research/assets/hdl58/HDL58_C02_service_topic_triptych.webp",
+      "source_extracted_image": false,
+      "existing_research_asset_blob_sha": "538131530e34eca6c7edebb6bdd33246186f8b3f",
+      "theme_physical_pdf_pages": [
+        18,
+        19,
+        20
+      ],
+      "excluded_from_current_renderer_image_links": true
+    },
+    {
+      "id": "HDL58_C03_inventory_history_split",
+      "path": "Portfolio Instruction/research/assets/hdl58/HDL58_C03_inventory_history_split.webp",
+      "source_extracted_image": false,
+      "existing_research_asset_blob_sha": "f32ba01604c861396a7cbc22ebc7adaf3e8970b7",
+      "theme_physical_pdf_pages": [
+        22,
+        24
+      ],
+      "excluded_from_current_renderer_image_links": true
+    },
+    {
+      "id": "HDL58_C04_native_external_scope",
+      "path": "Portfolio Instruction/research/assets/hdl58/HDL58_C04_native_external_scope.webp",
+      "source_extracted_image": false,
+      "existing_research_asset_blob_sha": "0a50e4de940ac39edb08a04ab05219f168d7bc98",
+      "theme_physical_pdf_pages": [
+        30,
+        35
+      ],
+      "excluded_from_current_renderer_image_links": true
+    }
+  ],
+  "audited_attribution_corrections_applied": [
+    {
+      "id": "HDL58-CORR-01",
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I003",
+      "primary_physical_pdf_page": 14,
+      "context_physical_pdf_page": 15,
+      "S02_evidence_ref": "HDL58-P014-N01",
+      "original_analyst_summary_en": "The manual groups the operator's room inventory under room administration.",
+      "audited_analyst_summary_en": "The room-administration topic opens here. The separate inventory caption appears on the next physical page.",
+      "original_translation_fa": "راهنما فهرست اتاق‌هایی را که بهره‌بردار می‌بیند زیر موضوع مدیریت اتاق‌ها قرار می‌دهد.",
+      "audited_translation_fa": "راهنما در این صفحه بخش مدیریت اتاق‌ها را آغاز می‌کند. معرفی جداگانهٔ فهرست اتاق‌ها در صفحهٔ بعد آمده است.",
+      "reason_fa": "ص ۱۴ عنوان آغاز موضوع را دارد؛ برچسب فهرست در ص ۱۵ است. اصلاح، محل شاهد را دقیق می‌کند و دربارهٔ رابط یا داده ادعایی ندارد.",
+      "prior_artifacts_unchanged": true,
+      "apply_only_derivative_bank_fields": true
+    }
+  ],
+  "held_s03_context_rows": 7,
+  "additional_S02_context_or_identity_rows_not_counted": 7,
+  "counts": {
+    "prior_version": 17,
+    "version": 18,
+    "prior_catalogs": 17,
+    "catalogs": 18,
+    "prior_records": 644,
+    "records": 654,
+    "prior_source_images": 163,
+    "source_images": 163,
+    "new_editorial_records": 10,
+    "new_source_images": 0,
+    "original_diagram_references_tracked_separately": 4,
+    "new_alias_files": 0
+  },
+  "checks": {
+    "V17_and_V18_JSON_JS_parity": true,
+    "prior_17_catalogs_exact": true,
+    "exact_allowed_S06_ids": true,
+    "physical_page_14_title_and_15_inventory_distinction_preserved": true,
+    "no_source_PDF_prose_screenshot_logos_credentials_or_operational_workflows": true,
+    "original_concepts_not_counted_as_extracted_images_or_added_as_aliases": true,
+    "NSP_capability_and_manual_reuse_not_verified": true,
+    "full_runtime_not_exercised": true,
+    "app_sections_and_portfolio_pages_untouched": true
+  },
+  "next_queue_cursor": {
+    "document_index": 18,
+    "document_id": "61",
+    "step_index": 0,
+    "step_id": "S01"
+  },
+  "next_pdf": "61_Helvar_Work C22.1.pdf",
+  "next_stage_executed": false
+}
