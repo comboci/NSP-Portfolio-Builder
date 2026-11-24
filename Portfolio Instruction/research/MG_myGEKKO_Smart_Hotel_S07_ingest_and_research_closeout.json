@@ -1,0 +1,214 @@
+{
+  "schema": "nsp-catalog-research-ingest-manifest-v1",
+  "stage": "MG/S07",
+  "scope": "Final entry in the original 18-document research queue. Internal editorial evidence only.",
+  "verified_design_date": "2026-11-24",
+  "source": {
+    "catalog_id": "CATMG_MYGEKKO_SMART_HOTEL",
+    "filename": "myGEKKO_Smart Hotel_EN.pdf",
+    "sha256": "106c685004a79a43c2cae2a0ae2a4127d717f25cd98f67d96dcc753bbcdc1d73",
+    "physical_pdf_pages": 17,
+    "source_artifacts": {
+      "S01": {
+        "path": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S01_source_inventory.json",
+        "blob_sha": "afa414af8dc7fe7fcc4bd87318d4a683bb3ab26c",
+        "commit_sha": "cdec4e6c5c2fb81daffe8215eeb2d5b146616031"
+      },
+      "S02": {
+        "path": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S02_page_linked_summaries.json",
+        "blob_sha": "011d3e9d25750bd433a8f3caccd531945052ec45",
+        "commit_sha": "1709a29316fa3e4a73d03e01f4db0f7a0a074c12"
+      },
+      "S03": {
+        "path": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S03_editorial_summaries_fa.json",
+        "blob_sha": "37bce266f3ced2d1d7363e3e532f031704360b94",
+        "commit_sha": "39a96f5be148982e4b8f6856c0cd2e14d0b2b9ee"
+      },
+      "S04": {
+        "path": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S04_original_visual_concepts.json",
+        "blob_sha": "197324ba95794d7d1fb2ea6faaebc3bcead95da5",
+        "commit_sha": "30fbf4ca02a553368a884ca40bbbf3a63009b37d"
+      },
+      "S05": {
+        "path": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S05_section_mapping.json",
+        "blob_sha": "1326befa2de64a8255cba23a4c2712dd1d66ff94",
+        "commit_sha": "bcff51cdbd7d5e91c5c6c789eb7586f0052f7ab3"
+      },
+      "S06": {
+        "path": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S06_source_and_concept_audit.json",
+        "blob_sha": "de1506718587718dfff6db5a6f32f764c51afbec",
+        "commit_sha": "6585743d312a5419e3f4af138f99055c68dac3e7"
+      }
+    },
+    "all_pages_audited_in_S06": true
+  },
+  "integration": {
+    "records_imported": [
+      {
+        "record_id": "CATMG_MYGEKKO_SMART_HOTEL:MG-E01",
+        "evidence_id": "MG-E01",
+        "physical_pdf_pages": [
+          2,
+          3
+        ],
+        "target_section": "CHALLENGES_VALUE"
+      },
+      {
+        "record_id": "CATMG_MYGEKKO_SMART_HOTEL:MG-E02",
+        "evidence_id": "MG-E02",
+        "physical_pdf_pages": [
+          4,
+          6
+        ],
+        "target_section": "CHALLENGES_VALUE"
+      },
+      {
+        "record_id": "CATMG_MYGEKKO_SMART_HOTEL:MG-E03",
+        "evidence_id": "MG-E03",
+        "physical_pdf_pages": [
+          4,
+          6
+        ],
+        "target_section": "HOTEL_OVERVIEW"
+      },
+      {
+        "record_id": "CATMG_MYGEKKO_SMART_HOTEL:MG-E05",
+        "evidence_id": "MG-E05",
+        "physical_pdf_pages": [
+          7,
+          8
+        ],
+        "target_section": "HOTEL_OVERVIEW"
+      },
+      {
+        "record_id": "CATMG_MYGEKKO_SMART_HOTEL:MG-E06",
+        "evidence_id": "MG-E06",
+        "physical_pdf_pages": [
+          8,
+          9
+        ],
+        "target_section": "HOTEL_OVERVIEW"
+      },
+      {
+        "record_id": "CATMG_MYGEKKO_SMART_HOTEL:MG-E08",
+        "evidence_id": "MG-E08",
+        "physical_pdf_pages": [
+          8,
+          10
+        ],
+        "target_section": "GRMS"
+      },
+      {
+        "record_id": "CATMG_MYGEKKO_SMART_HOTEL:MG-E09",
+        "evidence_id": "MG-E09",
+        "physical_pdf_pages": [
+          10
+        ],
+        "target_section": "GRMS"
+      },
+      {
+        "record_id": "CATMG_MYGEKKO_SMART_HOTEL:MG-E10",
+        "evidence_id": "MG-E10",
+        "physical_pdf_pages": [
+          11
+        ],
+        "target_section": "PUBLIC_AREAS"
+      },
+      {
+        "record_id": "CATMG_MYGEKKO_SMART_HOTEL:MG-E12",
+        "evidence_id": "MG-E12",
+        "physical_pdf_pages": [
+          13
+        ],
+        "target_section": "PUBLIC_AREAS"
+      }
+    ],
+    "separate_original_diagrams": [
+      {
+        "id": "MG_C01_editorial_view_layers",
+        "path": "Portfolio Instruction/research/assets/mygekko/MG_C01_editorial_view_layers.webp",
+        "blob_sha": "b9fb70cc8cae6ada1ff27313172ef48a1a0346cc"
+      },
+      {
+        "id": "MG_C02_editorial_room_public",
+        "path": "Portfolio Instruction/research/assets/mygekko/MG_C02_editorial_room_public.webp",
+        "blob_sha": "a616df5a9706fe474148b8821e88d3218e5de110"
+      }
+    ],
+    "context_not_imported": [
+      "MG-E04",
+      "MG-E07",
+      "MG-E11",
+      "MG-E13",
+      "MG-E14"
+    ],
+    "source_images_added": 0,
+    "source_text_quoted": 0,
+    "scope_edits_applied": [
+      {
+        "evidence_id": "MG-E05",
+        "english": true,
+        "persian": true
+      }
+    ],
+    "claim_and_rights": "No NSP capability, certification, deployment, safety, compatibility, marketing outcome or publication permission asserted."
+  },
+  "bank": {
+    "old_version": 20,
+    "new_version": 21,
+    "totals": {
+      "catalogs": 21,
+      "records": 670,
+      "source_images": 163,
+      "original_diagrams": 10
+    },
+    "old_totals": {
+      "catalogs": 20,
+      "records": 661,
+      "source_images": 163,
+      "original_diagrams": 8
+    },
+    "bank_file_blob_shas": {
+      "Portfolio Instruction/feature.json": "b1625ce7d271c9184d4cfd4f6291dbcc970cf339",
+      "Portfolio Instruction/feature.js": "452a09cd6f707c0fab13b551c5101a16ad957b68"
+    },
+    "bank_scope": "Internal editorial research; source images and original diagrams are counted separately."
+  },
+  "original_queue_closeout": {
+    "eligible_uploaded_catalogs": 21,
+    "newly_queued_catalogs": 18,
+    "legacy_catalogs_preserved": 3,
+    "legacy_documents": [
+      {
+        "id": "01",
+        "filename": "01_Honeywell_INNCOM Hospitality IoT.pdf",
+        "legacy_import_id": "CAT001_HONEYWELL_INNCOM_HOSPITALITY_IOT",
+        "new_section_mapping_not_yet_audited": true
+      },
+      {
+        "id": "04",
+        "filename": "04_Crestron_Hotel Renegade Case Study.pdf",
+        "legacy_import_id": "CAT004_CRESTRON_HOTEL_RENEGADE",
+        "new_section_mapping_not_yet_audited": true
+      },
+      {
+        "id": "08",
+        "filename": "08_Legrand_Guest Room Hotel Solutions (official catalogue).pdf",
+        "legacy_import_id": "CAT008_LEGRAND_GUEST_ROOM_HOTEL_SOLUTIONS",
+        "new_section_mapping_not_yet_audited": true
+      }
+    ],
+    "original_new_stage_count": 126,
+    "completed_new_stage_count_after_this_checkpoint": 126,
+    "pending_stages_after_this_checkpoint": 0,
+    "next_catalog": null,
+    "next_stage": null
+  },
+  "remaining_outside_this_queue": [
+    "No public-facing catalog release was made. Rights for source images/text, licensed assets, and claimed permission must be reviewed separately if public reuse is contemplated.",
+    "Competitor-source observations cannot substantiate NSP capabilities, performance, security, conformity, compatibility or real projects; verify any future NSP claims against independent NSP evidence.",
+    "The three previously imported catalogs were preserved, not rerun; their queue flags do not certify a new-section mapping audit.",
+    "No attachment to printed pages, General Portfolio change, runtime release, or browser acceptance is part of this research closeout."
+  ],
+  "verification_plan": "The closing base comparison and non-force remote readback must confirm exact changed paths, bank parity, old records, cursor closure, and unchanged app/project blobs."
+}
