@@ -1,0 +1,372 @@
+{
+  "schema": "nsp-catalog-research-s07-import-v2",
+  "status": "validated_import",
+  "stage": "S07",
+  "stage_key": "feature_json_and_commit",
+  "document_id": "17",
+  "date": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "06ce20ec161595ec4b91a8a990144d7efaa0bf18",
+  "source_catalog": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+  "source_pdf": "17_Honeywell_INNCOM Services Brochure.pdf",
+  "source_pdf_sha256": "35c9be5b519ebfc25df52c169a2a7addc9bbb3120d39811454a951ac1a633859",
+  "source_document_number": "01-00150",
+  "source_edition_label": "01-00150 I 07/20 I LM",
+  "audit_artifact": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S06_audit.json",
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S01_source_inventory.json",
+      "git_blob_sha": "3b4766a7e90969030a262514ce8ee631620b8920"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S02_english_text.json",
+      "git_blob_sha": "a8673e2da687b21e2c1c378aa35c072dd6adae89"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S03_features_fa.json",
+      "git_blob_sha": "fa42cd1db6f766decbde447e4484ed12a459bc77"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S04_visual_styles.json",
+      "git_blob_sha": "3b0470b45a9dc8bb00ee4cda4ed1fa39c37f6327"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S05_section_mapping.json",
+      "git_blob_sha": "3b45d6a90e619363ee31bfa6983fef408941ebba"
+    },
+    "S06": {
+      "path": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S06_audit.json",
+      "git_blob_sha": "7ce1300a8a1453d44475a38f5b1e9a61dae5bd77"
+    }
+  },
+  "editorial_structure": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "git_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "valid_research_section_ids": [
+      "COVER",
+      "IDENTITY_PAGES",
+      "COMPANY_INTRO",
+      "CHALLENGES_VALUE",
+      "HOTEL_OVERVIEW",
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS",
+      "CASE_STUDIES"
+    ],
+    "section_snapshot": [
+      {
+        "section_id": "COVER",
+        "title_fa": "صفحه اول کاتالوگ",
+        "row": 2,
+        "content_level": null
+      },
+      {
+        "section_id": "IDENTITY_PAGES",
+        "title_fa": "صفحات تنفس",
+        "row": 3,
+        "content_level": null
+      },
+      {
+        "section_id": "COMPANY_INTRO",
+        "title_fa": "معرفی شرکت NSP",
+        "row": 4,
+        "content_level": "COMPANY"
+      },
+      {
+        "section_id": "CHALLENGES_VALUE",
+        "title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+        "row": 5,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "HOTEL_OVERVIEW",
+        "title_fa": "نقشهٔ جامع راهکارهای هتلی",
+        "row": 6,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "GRMS",
+        "title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+        "row": 7,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "IPTV",
+        "title_fa": "تلویزیون و خدمات تعاملی هتل (IPTV)",
+        "row": 8,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "PUBLIC_AREAS",
+        "title_fa": "کنترل هوشمند مشاعات هتل",
+        "row": 9,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "CASE_STUDIES",
+        "title_fa": "رزومه و پروژه‌های اجراشده",
+        "row": 10,
+        "content_level": null
+      }
+    ],
+    "legacy_aliases_for_reading_only": {
+      "BISMILLAH": "IDENTITY_PAGES"
+    },
+    "binder_cover_excluded_from_research_mapping": true,
+    "CROSS_SECTION_STYLE_is_tag_not_section": true,
+    "idea_attachment_deferred_to_defrag": true,
+    "proposed_roles_are_not_approved_subsections": true,
+    "systems_in_scope": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ]
+  },
+  "updated_bank_files": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js"
+  ],
+  "committed_artifact_paths": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js",
+    "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S07_ingest_manifest.json",
+    "Portfolio Instruction/assets/honeywell17-01-service-cover.webp",
+    "Portfolio Instruction/assets/honeywell17-02-service-lead.webp",
+    "Portfolio Instruction/assets/honeywell17-02-room-context-photo.webp",
+    "Portfolio Instruction/assets/honeywell17-02-captioned-dashboard.webp",
+    "Portfolio Instruction/assets/honeywell17-03-service-columns.webp",
+    "Portfolio Instruction/assets/honeywell17-04-plan-and-services-matrix.webp",
+    "Portfolio Instruction/assets/honeywell17-04-closing-dual-line.webp"
+  ],
+  "new_display_alias_assets": [
+    {
+      "path": "Portfolio Instruction/assets/honeywell17-01-service-cover.webp",
+      "bytes": 81868,
+      "sha256": "e511c836a1ebb005df6d9b3489a67f64f79634def19e3b8efc7b3352722a9455",
+      "git_blob_sha": "eda5e8bd1d81cda12fd9a0dee0d59a5a9ee51c5d",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_01_service_cover.webp",
+      "source_image_id": "HONEYWELL17_01_service_cover",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/honeywell17-02-service-lead.webp",
+      "bytes": 28886,
+      "sha256": "08314488dbde7f53bb64e697b3d11c66fedc758752eda813a4b386559c023f2e",
+      "git_blob_sha": "4814424ea05571ec2b256223a2d03ef6a688de75",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_02_service_lead.webp",
+      "source_image_id": "HONEYWELL17_02_service_lead",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/honeywell17-02-room-context-photo.webp",
+      "bytes": 19980,
+      "sha256": "4e08c35a9e5f48a6a685f87a5973c0ea062c823954fa24607fff5f4dc2af2a17",
+      "git_blob_sha": "32b402419f156a249262b64edcfdbcf2e0c66cb7",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_02_room_context_photo.webp",
+      "source_image_id": "HONEYWELL17_02_room_context_photo",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/honeywell17-02-captioned-dashboard.webp",
+      "bytes": 29038,
+      "sha256": "71563bd5d6b119fe988150eb656b9e98d4c5dc200060131668b36400ade479e9",
+      "git_blob_sha": "0d66924f12f7acae9168a4cda55d4cc69ba0910b",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_02_captioned_dashboard.webp",
+      "source_image_id": "HONEYWELL17_02_captioned_dashboard",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/honeywell17-03-service-columns.webp",
+      "bytes": 58922,
+      "sha256": "718a01b79d740d93384b2081f1616ac43983c38122985dfbf632ca9422866575",
+      "git_blob_sha": "19bd5efc20e377ee27a8e59a4f450c56402077ba",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_03_service_columns.webp",
+      "source_image_id": "HONEYWELL17_03_service_columns",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/honeywell17-04-plan-and-services-matrix.webp",
+      "bytes": 58428,
+      "sha256": "041cb6dab89ebb707aeb5982fb59138ed14da87c704653c48c6c22fe4b0f86cb",
+      "git_blob_sha": "3454ccfca337218b6dbd294c2fe5c227805ec84c",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_04_plan_and_services_matrix.webp",
+      "source_image_id": "HONEYWELL17_04_plan_and_services_matrix",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/honeywell17-04-closing-dual-line.webp",
+      "bytes": 15320,
+      "sha256": "a1321791f5f20ebc41095f214d2bccc7427ccb4dc7c6473a6321207eb44e4d28",
+      "git_blob_sha": "baed12ce713ee9202fb64521c8852a7ba5fd0df2",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_04_closing_dual_line.webp",
+      "source_image_id": "HONEYWELL17_04_closing_dual_line",
+      "byte_identical_by_shared_git_blob": true
+    }
+  ],
+  "original_research_assets_modified": false,
+  "intended_existing_library_version": 10,
+  "new_library_version": 11,
+  "imported_feature_record_ids": [
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I001",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I002",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I003",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I004",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I005",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I006",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I007",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I008",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I009",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I010",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I011",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I012",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I013",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I014",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I015",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I016",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I017",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I018",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I019",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I020"
+  ],
+  "imported_mapped_record_ids": [
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I001",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I002",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I007",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I008",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I009",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I010",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I011",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I012",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I013",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I017"
+  ],
+  "imported_unassigned_internal_record_ids": [
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I003",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I004",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I005",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I006",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I014",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I015",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I016",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I018",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I019",
+    "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I020"
+  ],
+  "imported_visual_image_ids": [
+    "HONEYWELL17_01_service_cover",
+    "HONEYWELL17_02_service_lead",
+    "HONEYWELL17_02_room_context_photo",
+    "HONEYWELL17_02_captioned_dashboard",
+    "HONEYWELL17_03_service_columns",
+    "HONEYWELL17_04_plan_and_services_matrix",
+    "HONEYWELL17_04_closing_dual_line"
+  ],
+  "visual_references_without_eligible_feature_links": [
+    "HONEYWELL17_02_service_lead",
+    "HONEYWELL17_02_room_context_photo"
+  ],
+  "applied_translation_corrections": [
+    {
+      "correction_id": "HONEYWELL17-CORR-01",
+      "record_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I002",
+      "physical_pdf_page": 1,
+      "S02_fragment_ref": "HONEYWELL17-P01-E02",
+      "original_translation_fa": "شما بر مهمانانتان تمرکز کنید",
+      "corrected_translation_fa": "تمرکز بر مهمانانتان",
+      "reason_fa": "این گزیده در متن جلد ادامهٔ «تا بتوانید» است، نه فرمان مستقیم. در نمایش مستقل، عبارت اسمی بماند و پیوندِ دو نیمهٔ تیتر حفظ شود.",
+      "quote_unchanged": true,
+      "source_artifacts_S03_S05_unchanged": true,
+      "apply_to_S07_derived_fields": [
+        "translation_fa",
+        "meaning_fa"
+      ]
+    }
+  ],
+  "excluded_S02_fragment_ids": [
+    "HONEYWELL17-P01-E03",
+    "HONEYWELL17-P02-E02",
+    "HONEYWELL17-P02-E03",
+    "HONEYWELL17-P02-E05",
+    "HONEYWELL17-P02-E07",
+    "HONEYWELL17-P02-E09",
+    "HONEYWELL17-P03-E04",
+    "HONEYWELL17-P03-E05",
+    "HONEYWELL17-P04-E02",
+    "HONEYWELL17-P04-E03",
+    "HONEYWELL17-P04-E06",
+    "HONEYWELL17-P04-E07",
+    "HONEYWELL17-P04-E09",
+    "HONEYWELL17-P04-E10"
+  ],
+  "source_claim_gates_preserved_count": 10,
+  "overview_excluded_from_images": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_S04_reference_overview.webp",
+  "service_matrix": {
+    "source_context_bundle_id": "HONEYWELL17-P04-PLANS-VS-SERVICES",
+    "physical_page": 4,
+    "left_bundles": 2,
+    "right_standalone_services": 8,
+    "IC5_only_two_starred_plan_rows": true,
+    "base_support_distinct_from_extended_services": true,
+    "not_a_quantitative_HVAC_table_or_app_feature": true,
+    "not_new_feature_records": true
+  },
+  "checks": {
+    "V10_baseline_JSON_JS_parity": true,
+    "all_ten_previous_catalogs_structurally_unchanged": true,
+    "previous_category_definitions_unchanged": true,
+    "new_bank_JSON_JS_parity": true,
+    "only_20_audited_text_records": true,
+    "only_7_audited_source_images": true,
+    "all_aliases_reference_original_immutable_git_blob": true,
+    "all_alias_paths_accepted_by_existing_asset_allowlist": true,
+    "non_record_overview_enforced": true,
+    "prior_01_00139_and_01_00149_unchanged": true,
+    "no_claims_verified_for_NSP": true,
+    "full_browser_runtime_not_exercised": true
+  },
+  "output_bank_files": [
+    {
+      "path": "Portfolio Instruction/feature.json",
+      "git_blob_sha": "62f11d8a8e8b156e758032d72af2d521173125ae"
+    },
+    {
+      "path": "Portfolio Instruction/feature.js",
+      "git_blob_sha": "3ecfcf0b8d7e92570273075ef53497a2c8830814"
+    }
+  ],
+  "counts": {
+    "before_version": 10,
+    "after_version": 11,
+    "before_catalogs": 10,
+    "after_catalogs": 11,
+    "before_records": 541,
+    "after_records": 561,
+    "before_images": 109,
+    "after_images": 116,
+    "new_research_records": 20,
+    "new_visual_references": 7,
+    "new_quantitative_tables": 0,
+    "extra_feature_records_from_service_matrix": 0,
+    "display_alias_files_created": 7,
+    "additional_images_for_aliases": 0,
+    "NSP_capabilities_verified": 0
+  },
+  "release_policy": {
+    "is_commercial_NSP_catalog_publication": false,
+    "no_approval_of_capabilities": true,
+    "images_internal_reference_only": true,
+    "final_attached_pages_count": 0,
+    "application_source_untouched": true
+  },
+  "next_queue_cursor": {
+    "document_index": 11,
+    "document_id": "34",
+    "step_index": 0,
+    "step_id": "S01"
+  },
+  "next_pdf": "34_Legrand_Work C04.3.pdf",
+  "next_document_stage_executed": false
+}
