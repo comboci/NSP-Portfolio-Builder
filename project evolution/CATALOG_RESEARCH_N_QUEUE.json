@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 16,
+    "total_pending_steps": 15,
     "completed_new_documents": 15,
     "remaining_new_documents": 3
   },
   "cursor": {
     "document_index": 18,
     "document_id": "61",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -2152,11 +2152,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S06_source_and_concept_audit.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "74bdcb991da7794e033e1127cad72a870333ece2",
+          "notes": "اصل یک‌صفحه‌ای، هشت خلاصه و ترجمه و دو طرح اصیل ممیزی شد. سه متن و دو ارجاع جداگانه به طرح برای پژوهش داخلی؛ یک روان‌سازیِ نسبت‌دهی فارسی. سه محل روایت Helvar است، نقش Vanpee نامعلوم و صرفه‌جویی یا آسایش اندازه‌گیری نشده. هیچ متن/تصویر منبع، حق نشر یا قابلیت NSP تأیید نشد؛ بانک V18، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S07",
@@ -2168,7 +2170,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S05"
+      "last_successful_stage": "S06"
     },
     {
       "id": "76",
