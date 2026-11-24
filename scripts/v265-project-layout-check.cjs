@@ -42,6 +42,16 @@ for(const a of raw.publicImages){
  assert.strictEqual(packed.files.size,raw.publicImages.length);
  for(const a of raw.publicImages){const name=transport.imageName(a.path);assert(Buffer.from(packed.files.get(name)).equals(fs.readFileSync(path.join(root,'Image',name))))}
  assert(!/data:image\//i.test(packed.json));
+ const refreshed=JSON.parse(JSON.stringify(hydrated.payload));
+ const restored=await transport.pack(refreshed,new Map(),undefined,async name=>getBytes(name));
+ assert.strictEqual(restored.files.size,raw.publicImages.length);
+ for(const a of raw.publicImages){
+  const name=transport.imageName(a.path);assert(Buffer.from(restored.files.get(name)).equals(fs.readFileSync(path.join(root,'Image',name))));
+ }
+ assert(!/repositorySource/.test(restored.json));
+ assert(transport.validFolder('General Portfolio'));
+ assert(!transport.validFolder('../bad'));
+ assert(!transport.validFolder('CON'));
  const zip=Buffer.concat(transport.zipParts(new Map([['project file/General-Portfolio/project.json',new TextEncoder().encode(packed.json)],...Array.from(packed.files,([name,b])=>['Image/'+name,b])])).map(x=>Buffer.from(x)));
  assert.strictEqual(zip.readUInt32LE(0),0x04034b50);assert.strictEqual(zip.readUInt32LE(zip.length-22),0x06054b50);
  assert.strictEqual(transport.crc32(new TextEncoder().encode('123456789')),0xcbf43926);

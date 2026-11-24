@@ -2054,7 +2054,10 @@ function importBackupDependencies(backup,portfolios,components,privateImages,pri
  const styleIds=new Map(),templateIds=new Map(),categoryIds=new Map(),publicIds=new Map();
  for(const asset of backup.publicImages||[]){
   const existing=globalImageLibrary.find(a=>asset.src?a.src===asset.src:asset.hash&&a.hash===asset.hash);
-  if(existing){publicIds.set(asset.id,existing.id);continue;}
+  if(existing){
+   if(asset.repositorySource&&!existing.repositorySource)existing.repositorySource=v13Copy(asset.repositorySource);
+   publicIds.set(asset.id,existing.id);continue;
+  }
   if(typeof asset.src!=='string'||!/^data:image\/(png|jpeg|webp|gif);base64,/i.test(asset.src))
    throw Error('اصل تصویر عمومی موردنیاز در فایل وجود ندارد.');
   const id=uid();publicIds.set(asset.id,id);
@@ -11201,6 +11204,9 @@ function safeFolder(name){
  if(!result||/^(con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\.|$)/i.test(result))return 'Project-'+(result||'NSP');
  return result;
 }
+function validFolder(name){
+ return typeof name==='string'&&name.length>0&&name.length<=180&&!/[\\/:*?"<>|\u0000-\u001f]/.test(name)&&!/[. ]$/.test(name)&&name!=='.'&&name!=='..'&&!/^(con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\.|$)/i.test(name);
+}
 function imageName(path){
  if(typeof path!=='string'||!path.startsWith(prefix))fail('مسیر تصویر باید نسبت به پوشه پروژه و داخل Image باشد.');
  const name=path.slice(prefix.length);
@@ -11255,10 +11261,14 @@ async function hydrate(raw,readFile,convert=decodeImage){
    total+=blob.size;if(total>maxTotal)fail('حجم مجموع تصاویر پروژه بیش از حد مجاز است.');
    const decoded=await convert(blob,name);
    if(!/^data:image\/(?:png|jpeg|webp|gif);base64,/i.test(decoded.src||''))fail('تصویر خوانده نشد: '+name);
-   cache.set(name,{...decoded,blob});
+   const bytes=new Uint8Array(await blob.arrayBuffer());
+   const sourceHash=await digest(bytes),runtimeHash=await digest(dataBytes(decoded.src).bytes);
+   cache.set(name,{...decoded,blob,sourceHash,runtimeHash});
   }
-  const {src,width,height,blob}=cache.get(name);
-  a.src=src;a.width=width;a.height=height;a.size=blob.size;delete a.path;delete a.thumbnail;
+  const {src,width,height,blob,sourceHash,runtimeHash}=cache.get(name);
+  // repositorySource: source metadata, not image data; persist after refresh.
+  a.repositorySource={path:prefix+name,sourceHash,runtimeHash};
+  a.src=src;a.width=width;a.height=height;a.size=dataBytes(src).bytes.length;delete a.path;delete a.thumbnail;
   if(!originals.has(src))originals.set(src,{name,blob});
  }
  // Limit the expanded transport too, including repeated Base64 image data.
@@ -11284,7 +11294,7 @@ async function digest(bytes){
  for(const v of bytes){a=Math.imul(a^v,16777619);b=Math.imul(b^v,2246822519)}
  return [a>>>0,b>>>0,bytes.length].map(n=>n.toString(16)).join('-');
 }
-async function pack(raw,sourceMap=originalImages,hash=digest){
+async function pack(raw,sourceMap=originalImages,hash=digest,readOriginal=null){
  const payload=JSON.parse(JSON.stringify(raw)),files=new Map(),srcCache=new Map();
  let total=0;
  for(const a of arrays(payload)){
@@ -11296,7 +11306,22 @@ async function pack(raw,sourceMap=originalImages,hash=digest){
     file={name,bytes};
    }else{
     const {bytes,ext}=dataBytes(a.src);
-    file={name:'nsp-'+await hash(bytes)+'.'+ext,bytes};
+    const source=a.repositorySource;
+    // Retain prior external originals only if both byte fingerprints match.
+    // A missing or changed original falls back to a new content-named raster.
+    if(readOriginal&&source&&typeof source.sourceHash==='string'&&typeof source.runtimeHash==='string'){
+     try{
+      const name=imageName(source.path);
+      if(await digest(bytes)===source.runtimeHash){
+       const old=await readOriginal(name);
+       if(old&&old.size>0&&old.size<=maxAsset){
+        const oldBytes=new Uint8Array(await old.arrayBuffer());
+        if(await digest(oldBytes)===source.sourceHash)file={name,bytes:oldBytes};
+       }
+      }
+     }catch(e){/* Invalid or unavailable original: export current image. */}
+    }
+    if(!file)file={name:'nsp-'+await hash(bytes)+'.'+ext,bytes};
     imageName(prefix+file.name);
    }
    if(!file.bytes.length||file.bytes.length>maxAsset)fail('حجم فایل تصویر نامعتبر است.');
@@ -11305,7 +11330,7 @@ async function pack(raw,sourceMap=originalImages,hash=digest){
    if(!existing){total+=file.bytes.length;if(total>maxTotal)fail('حجم مجموع تصاویر بیش از حد مجاز است.');files.set(file.name,file.bytes)}
    srcCache.set(a.src,file);
   }
-  a.path=prefix+file.name;a.size=file.bytes.length;delete a.src;delete a.thumbnail;delete a.hash;delete a.repoImagePath;
+  a.path=prefix+file.name;a.size=file.bytes.length;delete a.src;delete a.thumbnail;delete a.hash;delete a.repoImagePath;delete a.repositorySource;
  }
  payload.manifest={...(payload.manifest||{}),format:'NSP-Repository-Project',version:1,relativeImageRoot:prefix,pageCount:payload.project.data.portfolios.reduce((n,p)=>n+(p.pages||[]).length,0),imageCount:files.size};
  const json=JSON.stringify(payload,null,2)+'\n';
@@ -11318,6 +11343,10 @@ function projectPayload(projectId){
  const data=project.active?v76CoreSnapshot():v13Copy(project.data);
  for(const key of ['activeWorkspaceId','activeWorkspaceName','projectWorkspaces','globalTemplates','globalImageLibrary','globalImageAlbums','styleLibrary','templates','templateCategories','projectRegistryEmpty'])delete data[key];
  const shared=backupDependencies(data.portfolios||[],data.customComponents||[],data.imageLibrary||[]);
+ for(const asset of shared.publicImages){
+  const original=(state.globalImageLibrary||[]).find(a=>a.id===asset.id);
+  if(original?.repositorySource)asset.repositorySource=v13Copy(original.repositorySource);
+ }
  const known=new Set([...(data.imageLibrary||[]),...shared.publicImages].map(a=>a.id));
  if([...v111AssetIds(data)].some(id=>!known.has(id)))fail('اصل یکی از تصاویر پروژه در دسترس نیست.');
  return {app:'NSP Portfolio Builder',kind:'NSP-Project-Backup',schemaVersion:2,appVersion:window.V13.appVersion,project:{name:project.name,data},...shared};
@@ -11366,6 +11395,10 @@ async function openChoice(access,owner){
  const ids=new Set(payload.project.data.portfolios.map(p=>p.id));
  const duplicate=v76ListProjects().find(p=>normalizeName(p.name)===normalizeName(name)||(p.data.portfolios||[]).some(pf=>ids.has(pf.id)));
  if(duplicate){
+  if(!(duplicate.data.portfolios||[]).some(p=>ids.has(p.id))){
+   alert('نام پروژه محلی با یک پروژه دیگر یکسان است اما شناسه پورتفولیوها متفاوت است. برای جلوگیری از جایگزینی اشتباه، نام پروژه ثبت‌شده را تغییر دهید.');
+   return;
+  }
   if(!confirm('این پروژه قبلاً در نرم‌افزار ثبت شده است. برای جلوگیری از حذف ویرایش‌های محلی، نسخه ثبت‌شده باز شود؟ فایل روی دیسک جایگزین نمی‌شود.'))return;
   if(await v76SwitchProject(duplicate.id,true)){
    projectFolders.set(duplicate.id,selected.folder);
@@ -11415,8 +11448,15 @@ async function writeImage(dir,name,bytes){
   return;
  }
  const f=await dir.getFileHandle(name,{create:true});
- await writeHandle(f,bytes);
- if(!sameBytes(new Uint8Array(await (await f.getFile()).arrayBuffer()),bytes))fail('بازخوانی تصویر پس از ذخیره ناموفق بود: '+name);
+ const before=new Uint8Array(await (await f.getFile()).arrayBuffer());
+ if(before.length){if(!sameBytes(before,bytes))fail('فایل تصویر در همین فاصله ایجاد شده و متفاوت است؛ بازنویسی نشد: '+name);return}
+ try{
+  await writeHandle(f,bytes);
+  if(!sameBytes(new Uint8Array(await (await f.getFile()).arrayBuffer()),bytes))fail('بازخوانی تصویر پس از ذخیره ناموفق بود: '+name);
+ }catch(e){
+  try{if((await f.getFile()).size===0)await dir.removeEntry(name)}catch(_){}
+  throw e;
+ }
 }
 async function saveToRoot(root,folder,packed){
  // Avoid writing to a mistakenly selected folder outside the checkout.
@@ -11424,7 +11464,15 @@ async function saveToRoot(root,folder,packed){
  const projects=await root.getDirectoryHandle('project file',{create:true});
  const dir=await projects.getDirectoryHandle(folder,{create:true});
  const existing=await findFile(dir,'project.json');
- if(existing&&!confirm('فایل project.json در پوشه «'+folder+'» موجود است. نسخه روی دیسک با نسخه فعلی پروژه جایگزین شود؟'))return false;
+ if(existing){
+  let previous;
+  try{previous=JSON.parse(await (await existing.getFile()).text())}catch(e){fail('فایل project.json موجود معتبر نیست؛ برای جلوگیری از حذف اطلاعات، ابتدا آن را بررسی کنید.')}
+  const priorName=String(previous?.project?.name||''),currentName=String(packed.payload.project.name||'');
+  if(!priorName||!Array.isArray(previous?.project?.data?.portfolios))fail('فایل موجود پروژه NSP معتبر نیست.');
+  const priorIds=new Set(previous.project.data.portfolios.map(p=>p.id));
+  if(normalizeName(priorName)!==normalizeName(currentName)&&!packed.payload.project.data.portfolios.some(p=>priorIds.has(p.id)))fail('این پوشه متعلق به پروژه دیگری است؛ فایل موجود جایگزین نشد.');
+  if(!confirm('فایل project.json پروژه «'+priorName+'» در پوشه «'+folder+'» موجود است. نسخه روی دیسک با نسخه فعلی پروژه جایگزین شود؟'))return false;
+ }
  const images=await root.getDirectoryHandle('Image',{create:true});
  // Verify and write dependencies first; the previous JSON is never touched
  // if any image is missing or collides. The writable stream commits JSON last.
@@ -11463,8 +11511,14 @@ async function saveRepository(projectId){
   const root=typeof window.showDirectoryPicker==='function'?await window.showDirectoryPicker({mode:'readwrite'}):null;
   if(!canApplyBackupImport(owner))return;
   const raw=projectPayload(projectId),folder=projectFolders.get(projectId)||safeFolder(raw.project.name);
-  if(folder!==safeFolder(folder))fail('نام پوشه پروژه برای ذخیره معتبر نیست.');
-  const packed=await pack(raw);
+  if(!validFolder(folder))fail('نام پوشه پروژه برای ذخیره معتبر نیست.');
+  let imageDir=null;
+  if(root){
+   try{imageDir=await root.getDirectoryHandle('Image',{create:false})}
+   catch(e){if(e?.name!=='NotFoundError')throw e}
+  }
+  const readOriginal=imageDir?async name=>{const f=await findFile(imageDir,name);return f?f.getFile():null}:null;
+  const packed=await pack(raw,originalImages,digest,readOriginal);
   if(!canApplyBackupImport(owner))return;
   if(root){
    if(await saveToRoot(root,folder,packed)){
@@ -11482,7 +11536,7 @@ async function saveRepository(projectId){
 window.v265OpenRepository=openRepository;
 window.v265SaveRepository=saveRepository;
 // Pure transport helpers are also exercised by the repository validation script.
-window.V265RepositoryTransport={imageName,safeFolder,hasExternal,hydrate,pack,zipParts,crc32,listRoot,saveToRoot};
+window.V265RepositoryTransport={imageName,safeFolder,validFolder,hasExternal,hydrate,pack,zipParts,crc32,listRoot,saveToRoot};
 })();
 </script>
 </body></html>

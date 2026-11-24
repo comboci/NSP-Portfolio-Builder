@@ -15,7 +15,7 @@
 Image/nsp-*.svg or .webp
 project file/General-Portfolio/project.json
 ```
-The JSON carries only `../../Image/<filename>` refs, not Base64. Original conceptual SVG images are decoded as browser images and rasterized into PNG in the current app image store, which only accepts PNG/JPEG/WebP/GIF. The logo and D05 room image are recovered from the existing D05 project. Newly designed illustrations are conceptual SVGs, not photos of executed NSP installations. Same-session save preserves original image bytes. Otherwise assets are content-named; existing files are verified byte-for-byte and never overwritten when different. Files are written before the JSON; successful direct save includes re-reading the files.
+The JSON carries only `../../Image/<filename>` refs, not Base64. Original conceptual SVG images are decoded as browser images and rasterized into PNG in the current app image store, which only accepts PNG/JPEG/WebP/GIF. The logo and D05 room image are recovered from the existing D05 project. Newly designed illustrations are conceptual SVGs, not photos of executed NSP installations. Same-session save preserves original image bytes. The browser database retains the source-relative path plus source/runtime fingerprints; direct save after refresh can reuse the original SVG/WebP when both fingerprints match. Missing or modified originals fall back to content-named current raster data. Existing files are verified byte-for-byte and are not knowingly overwritten when different. ZIP exported after refresh without original-folder read access may contain the rasterized image instead. Files are written before the JSON; successful direct save includes re-reading the files.
 
 ## Validation status
 
@@ -24,3 +24,9 @@ The JSON carries only `../../Image/<filename>` refs, not Base64. Original concep
 - Actual transport helpers exercised using synthetic image bytes and in-memory file handles: relative path rejection, missing assets, hydrate/pack round trip, ZIP signatures, known CRC-32 and folder-save readback. These checks do not constitute real browser or native runtime acceptance.
 - Reproducible repository check: `node scripts/v265-project-layout-check.cjs` (source + actual file dependencies; mock image decoding).
 - **Outstanding:** full browser runtime with real decoded SVG/WebP images, visual review of all 10 pages, file picker permission, direct Save/reopen, duplicate protection and persistence after refresh. No native Build, test or release performed.
+
+### Follow-up integration checks
+
+Actual V265 import, dependency remap, project switch and normalizer were executed with mocked persistence and image decoding, using the D05 WebP bytes and all nine checked-in SVG sources. The simulated registry preserved the old project, rejected duplicate import, imported all 235 objects and 11 public image references, and round-tripped a text edit and original asset bytes. No full browser runtime is claimed.
+
+Source-fingerprint helpers were exercised with synthetic assets after serializing/restoring the hydrated payload: matching originals were reused; altered originals were not reused; disk JSON remained free of image data and internal source metadata.
