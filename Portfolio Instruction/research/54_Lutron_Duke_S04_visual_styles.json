@@ -1,0 +1,628 @@
+{
+  "schema": "nsp-catalog-research-stage-image-styles-v1",
+  "stage": "S04",
+  "stage_key": "visuals_and_styles",
+  "status": "completed_exact_original_visual_references_internal_design_only",
+  "document_id": "54",
+  "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "verified_on": "2026-11-24",
+  "base_main_commit": "b46c0e0ea6455c09be3975c52663134a437ab422",
+  "source_pdf": {
+    "company": "Lutron",
+    "publisher_as_printed": "Lutron Electronics Co., Inc.",
+    "title": "The Duke Exclusive Suites",
+    "cover_title_evidence_pdf_page": 1,
+    "short_document_type": "Project Overview / hospitality case study",
+    "pdf_metadata_title": "The Duke - A Lutron Case Study",
+    "location_as_printed": "Nistelrode, The Netherlands",
+    "location_evidence_pdf_page": 1,
+    "filename": "54_Lutron_Work C10.4.pdf",
+    "library_path": "/54_Lutron_Work C10.4.pdf",
+    "file_size_bytes": 139544,
+    "queued_file_size_bytes": 139544,
+    "sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+    "pdf_pages": 2,
+    "source_original_from_exact_user_Library_match": true,
+    "pdf_format": "PDF 1.5",
+    "pdf_creator": "Adobe InDesign CC 13.1 (Macintosh)",
+    "pdf_producer": "Adobe PDF Library 15.0",
+    "pdf_creation_metadata": "D:20180911115445-04'00'",
+    "pdf_modification_metadata": "D:20181023122158-04'00'",
+    "metadata_not_publication_date": true,
+    "printed_part_number": "368-5090",
+    "printed_revision": "REV A",
+    "printed_edition_label": "P/N 368-5090 REV A",
+    "printed_copyright_month": "2018-09",
+    "printed_full_publication_date_verified": false,
+    "printed_part_revision_and_copyright_evidence_pdf_page": 2,
+    "work_filename_suffix_not_printed_edition": true,
+    "language": "en",
+    "encrypted": false,
+    "source_original_committed": false,
+    "source_original_modified": false,
+    "external_verification_of_site_or_cases_performed": false
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/54_Lutron_Duke_S01_source_inventory.json",
+      "blob_sha": "16a01f802b7efb17640f94ab7e13de29ae35b07b",
+      "commit_sha": "12521b58dd203454014b7caf0fbff66f6950946e"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/54_Lutron_Duke_S02_english_text.json",
+      "blob_sha": "eaab5156ce6b88f7806195f7f425ad16db57b32e",
+      "commit_sha": "eb0ac810066a0d0aaa046564644c74e53e732dc1"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/54_Lutron_Duke_S03_features_fa.json",
+      "blob_sha": "1e84f86ee90bc6e7aa2870db7bd87f892a48fc72",
+      "commit_sha": "4c8f02d8fb01b83060bd100a221beebfe05ca7ff"
+    }
+  },
+  "visual_review": {
+    "original_PDF_and_both_page_hashes_reverified": true,
+    "both_physical_pages_visually_checked": true,
+    "selected_reference_images": 6,
+    "source_crop_physical_pages": [
+      1,
+      2
+    ],
+    "distinct_styles": 6,
+    "derived_overview_excluded_count": 1,
+    "all_direct_crops_reviewed": true,
+    "NSP_capability_verified": 0,
+    "public_reuse_granted": 0
+  },
+  "images": [
+    {
+      "id": "LUTRON54_01_building_at_twilight",
+      "reference_order": 1,
+      "source_company": "Lutron",
+      "source_language": "en",
+      "original_pdf": "54_Lutron_Work C10.4.pdf",
+      "original_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "original_printed_document_revision": "P/N 368-5090 REV A",
+      "source_pdf_page": 1,
+      "original_printed_folio": null,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/lutron54/LUTRON54_01_building_at_twilight.webp",
+      "asset_filename": "LUTRON54_01_building_at_twilight.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 91528,
+      "asset_sha256": "49fe9d0105e4401d3fc9319483d372e53cbdbec27f15e98c70cb6f2a1a7ebb03",
+      "git_blob_sha": "1afb64d9e6e500dfe12d5053a37f827b09b75146",
+      "rendered_size_px": [
+        1031,
+        520
+      ],
+      "base64_length": 122040,
+      "normalized_pdf_crop": [
+        0.013,
+        0.011,
+        0.986,
+        0.39
+      ],
+      "pdf_crop_points": [
+        7.956,
+        8.712,
+        603.432,
+        308.88
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.729708670038759,
+      "target_longest_edge_px": 1030,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "architectural_twilight_case_hero",
+      "title_fa": "نمای معماری در نور عصر برای آغاز پرونده",
+      "observed_content_in_crop_fa": "نمای محیط و ساختمان در قاب عریض، بیرون از نوار نام و متن.",
+      "key_takeaway_fa": "عکس محیط به خواننده زمینهٔ پروژه می‌دهد و فضای کیس را قبل از متن معرفی می‌کند.",
+      "analyst_assessment_fa": "عکس پروژهٔ رقیب مدرک نصب یا دارایی قابل بازنشر NSP نیست.",
+      "strengths_fa": [
+        "عکس محیط به خواننده زمینهٔ پروژه می‌دهد و فضای کیس را قبل از متن معرفی می‌کند."
+      ],
+      "weaknesses_fa": [
+        "عکس پروژهٔ رقیب مدرک نصب یا دارایی قابل بازنشر NSP نیست."
+      ],
+      "nsp_visual_adaptation_fa": "از عکس مجاز پروژهٔ واقعی NSP با نسبت و حاشیهٔ مناسب طراحی شود.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Physical-page and visual layout context only; not an independent proof of outcome, hardware capability, or NSP implementation.",
+      "crop_context_note_fa": "مرجع دیداری محدود؛ بدون گام فنی، ادعای عملکرد یا قابلیت NSP.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip with no retouching, reconstruction, or generated content.",
+      "renderer": "PyMuPDF RGB direct clip without annotations; Pillow WebP quality 83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس و نام/نشان به صاحب منبع مربوط است؛ صرفاً مرجع داخلی و بدون مجوز بازنشر.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_direct_crop_visually_checked_with_exact_hash_and_dimensions"
+    },
+    {
+      "id": "LUTRON54_01_case_identification_strip",
+      "reference_order": 2,
+      "source_company": "Lutron",
+      "source_language": "en",
+      "original_pdf": "54_Lutron_Work C10.4.pdf",
+      "original_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "original_printed_document_revision": "P/N 368-5090 REV A",
+      "source_pdf_page": 1,
+      "original_printed_folio": null,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/lutron54/LUTRON54_01_case_identification_strip.webp",
+      "asset_filename": "LUTRON54_01_case_identification_strip.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 9702,
+      "asset_sha256": "b369d1ea9f4f4f2208b36a00a0fea933e47a8f67736bbf7ad9ac3122352277a1",
+      "git_blob_sha": "71bc62462c2548b03678b3818cc9c33e84e17688",
+      "rendered_size_px": [
+        1001,
+        152
+      ],
+      "base64_length": 12936,
+      "normalized_pdf_crop": [
+        0.012,
+        0.393,
+        0.987,
+        0.507
+      ],
+      "pdf_crop_points": [
+        7.344,
+        311.256,
+        604.044,
+        401.544
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.6758840288252055,
+      "target_longest_edge_px": 1000,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "thin_case_identification_strip",
+      "title_fa": "نوار فشردهٔ هویت و مکان مطالعهٔ موردی",
+      "observed_content_in_crop_fa": "نوار دوتون با دسته، عنوان و محل پرونده؛ متنی جانبی دربارهٔ اجرا ندارد.",
+      "key_takeaway_fa": "جداکردن هویت ثابت از روایت، مرور موارد را سریع‌تر می‌کند.",
+      "analyst_assessment_fa": "نام و مکان این پرونده یا تایپ Lutron نمی‌تواند دادهٔ NSP شود.",
+      "strengths_fa": [
+        "جداکردن هویت ثابت از روایت، مرور موارد را سریع‌تر می‌کند."
+      ],
+      "weaknesses_fa": [
+        "نام و مکان این پرونده یا تایپ Lutron نمی‌تواند دادهٔ NSP شود."
+      ],
+      "nsp_visual_adaptation_fa": "از نام، نوع فضا و مکان تأییدشده با مجوز مستقل استفاده شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I001"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "LUTRON54-P01-E03"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-01"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Physical-page and visual layout context only; not an independent proof of outcome, hardware capability, or NSP implementation.",
+      "crop_context_note_fa": "مرجع دیداری محدود؛ بدون گام فنی، ادعای عملکرد یا قابلیت NSP.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip with no retouching, reconstruction, or generated content.",
+      "renderer": "PyMuPDF RGB direct clip without annotations; Pillow WebP quality 83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس و نام/نشان به صاحب منبع مربوط است؛ صرفاً مرجع داخلی و بدون مجوز بازنشر.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_direct_crop_visually_checked_with_exact_hash_and_dimensions"
+    },
+    {
+      "id": "LUTRON54_02_warm_room_context",
+      "reference_order": 3,
+      "source_company": "Lutron",
+      "source_language": "en",
+      "original_pdf": "54_Lutron_Work C10.4.pdf",
+      "original_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "original_printed_document_revision": "P/N 368-5090 REV A",
+      "source_pdf_page": 2,
+      "original_printed_folio": null,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/lutron54/LUTRON54_02_warm_room_context.webp",
+      "asset_filename": "LUTRON54_02_warm_room_context.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 36778,
+      "asset_sha256": "3f7d31a3691cb85988ab94cf615aa4921940231866319d0f996c54a4d9d5b62d",
+      "git_blob_sha": "fe7869b9964c723f270acb9c9105af8ba6ec3e49",
+      "rendered_size_px": [
+        901,
+        691
+      ],
+      "base64_length": 49040,
+      "normalized_pdf_crop": [
+        0.66,
+        0.009,
+        0.977,
+        0.197
+      ],
+      "pdf_crop_points": [
+        403.92,
+        7.128,
+        597.924,
+        156.024
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 4.6390796066060505,
+      "target_longest_edge_px": 900,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "room_atmosphere_above_sidebar",
+      "title_fa": "عکس محیط گرم اتاق در ابتدای ستون جانبی",
+      "observed_content_in_crop_fa": "عکس اتاق و نور گرم به شکل قاب فشرده در ستون راست؛ بدون کپشن.",
+      "key_takeaway_fa": "عکس حس فضا می‌دهد و جای نقل‌قول یا عدد فنی را نمی‌گیرد.",
+      "analyst_assessment_fa": "گرمی رنگ به معنای کیفیت روشنایی، کارکرد یا رضایت اندازه‌گیری‌شده نیست.",
+      "strengths_fa": [
+        "عکس حس فضا می‌دهد و جای نقل‌قول یا عدد فنی را نمی‌گیرد."
+      ],
+      "weaknesses_fa": [
+        "گرمی رنگ به معنای کیفیت روشنایی، کارکرد یا رضایت اندازه‌گیری‌شده نیست."
+      ],
+      "nsp_visual_adaptation_fa": "عکس اختصاصی NSP به عرض ستون و زمینهٔ رنگی متناسب شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I004"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "LUTRON54-P02-E03"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-03"
+      ],
+      "related_source_context_set_refs": [
+        "LUTRON54-CTX-REQUIREMENTS"
+      ],
+      "record_link_meaning": "Physical-page and visual layout context only; not an independent proof of outcome, hardware capability, or NSP implementation.",
+      "crop_context_note_fa": "مرجع دیداری محدود؛ بدون گام فنی، ادعای عملکرد یا قابلیت NSP.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip with no retouching, reconstruction, or generated content.",
+      "renderer": "PyMuPDF RGB direct clip without annotations; Pillow WebP quality 83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس و نام/نشان به صاحب منبع مربوط است؛ صرفاً مرجع داخلی و بدون مجوز بازنشر.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_direct_crop_visually_checked_with_exact_hash_and_dimensions"
+    },
+    {
+      "id": "LUTRON54_02_device_in_room_detail",
+      "reference_order": 4,
+      "source_company": "Lutron",
+      "source_language": "en",
+      "original_pdf": "54_Lutron_Work C10.4.pdf",
+      "original_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "original_printed_document_revision": "P/N 368-5090 REV A",
+      "source_pdf_page": 2,
+      "original_printed_folio": null,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/lutron54/LUTRON54_02_device_in_room_detail.webp",
+      "asset_filename": "LUTRON54_02_device_in_room_detail.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 6998,
+      "asset_sha256": "c4d197e2a153171852e560adb36cdf1e20f4a3a8ae1947dd9f072a5741e6ae55",
+      "git_blob_sha": "7b6d4309faa5195aa198b9774d4d12ef1c0d5f39",
+      "rendered_size_px": [
+        901,
+        311
+      ],
+      "base64_length": 9332,
+      "normalized_pdf_crop": [
+        0.661,
+        0.323,
+        0.976,
+        0.407
+      ],
+      "pdf_crop_points": [
+        404.532,
+        255.816,
+        597.312,
+        322.344
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 4.6685340802987865,
+      "target_longest_edge_px": 900,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "closeup_room_control_without_instruction",
+      "title_fa": "نمای نزدیک رابط نمونه به‌عنوان جزئیات دیداری",
+      "observed_content_in_crop_fa": "جزئیات دکمه‌ها و نشانه‌های رابط در عکس؛ نمایشگر عددی، دستور، اتصال و متن فنی خارج برش‌اند.",
+      "key_takeaway_fa": "مقیاس نزدیک برای نمایش شکل رابط به زمینهٔ صفحه کمک می‌کند.",
+      "analyst_assessment_fa": "اعداد/نشانه‌های روی نمایشگر، دادهٔ آزمایش، روش بهره‌برداری یا توان NSP نیستند.",
+      "strengths_fa": [
+        "مقیاس نزدیک برای نمایش شکل رابط به زمینهٔ صفحه کمک می‌کند."
+      ],
+      "weaknesses_fa": [
+        "اعداد/نشانه‌های روی نمایشگر، دادهٔ آزمایش، روش بهره‌برداری یا توان NSP نیستند."
+      ],
+      "nsp_visual_adaptation_fa": "فقط تصویر یا ماکت مجاز و اختصاصی NSP با دادهٔ نمایشی غیرعملیاتی استفاده شود.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Physical-page and visual layout context only; not an independent proof of outcome, hardware capability, or NSP implementation.",
+      "crop_context_note_fa": "مرجع دیداری محدود؛ بدون گام فنی، ادعای عملکرد یا قابلیت NSP.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip with no retouching, reconstruction, or generated content.",
+      "renderer": "PyMuPDF RGB direct clip without annotations; Pillow WebP quality 83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس و نام/نشان به صاحب منبع مربوط است؛ صرفاً مرجع داخلی و بدون مجوز بازنشر.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_direct_crop_visually_checked_with_exact_hash_and_dimensions"
+    },
+    {
+      "id": "LUTRON54_02_case_role_ledger",
+      "reference_order": 5,
+      "source_company": "Lutron",
+      "source_language": "en",
+      "original_pdf": "54_Lutron_Work C10.4.pdf",
+      "original_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "original_printed_document_revision": "P/N 368-5090 REV A",
+      "source_pdf_page": 2,
+      "original_printed_folio": null,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/lutron54/LUTRON54_02_case_role_ledger.webp",
+      "asset_filename": "LUTRON54_02_case_role_ledger.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 28670,
+      "asset_sha256": "6fdedd2eceb773c3ddd964e85bcf3fd8bc19c43803063c65600d98bcb0d7cf21",
+      "git_blob_sha": "864732d9bf1a122c16ce61f7e8e03035eca14fb6",
+      "rendered_size_px": [
+        942,
+        961
+      ],
+      "base64_length": 38228,
+      "normalized_pdf_crop": [
+        0.657,
+        0.523,
+        0.974,
+        0.773
+      ],
+      "pdf_crop_points": [
+        402.084,
+        414.216,
+        596.088,
+        612.216
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 4.848484848484849,
+      "target_longest_edge_px": 960,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "vertical_project_roles_and_credit_ledger",
+      "title_fa": "ستون عمودی نقش‌ها و اعتبارهای پرونده",
+      "observed_content_in_crop_fa": "فیلدهای کوتاه نقش‌ها و نام‌های چاپی در ستون خاکستری؛ بدون آدرس یا تماس.",
+      "key_takeaway_fa": "جداکردن صاحب‌کار، طراح و منبع عکس از متن مانع ادغام نقش‌ها می‌شود.",
+      "analyst_assessment_fa": "نام و اعتبار پرونده فقط برای منبع است؛ مجوز ذکر، حقوق تصویر یا نقش NSP را نشان نمی‌دهد.",
+      "strengths_fa": [
+        "جداکردن صاحب‌کار، طراح و منبع عکس از متن مانع ادغام نقش‌ها می‌شود."
+      ],
+      "weaknesses_fa": [
+        "نام و اعتبار پرونده فقط برای منبع است؛ مجوز ذکر، حقوق تصویر یا نقش NSP را نشان نمی‌دهد."
+      ],
+      "nsp_visual_adaptation_fa": "اعتبار هر نقش برای پروندهٔ مجاز NSP و با اجازهٔ انتشار مستقل ثبت شود.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Physical-page and visual layout context only; not an independent proof of outcome, hardware capability, or NSP implementation.",
+      "crop_context_note_fa": "فرادادهٔ چاپی همان مطالعه جدا از ادعا؛ تأمین‌کننده، طراح و صاحب عکس فقط با این پرونده پیوند دارند.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip with no retouching, reconstruction, or generated content.",
+      "renderer": "PyMuPDF RGB direct clip without annotations; Pillow WebP quality 83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس و نام/نشان به صاحب منبع مربوط است؛ صرفاً مرجع داخلی و بدون مجوز بازنشر.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_direct_crop_visually_checked_with_exact_hash_and_dimensions"
+    },
+    {
+      "id": "LUTRON54_02_result_label",
+      "reference_order": 6,
+      "source_company": "Lutron",
+      "source_language": "en",
+      "original_pdf": "54_Lutron_Work C10.4.pdf",
+      "original_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "original_printed_document_revision": "P/N 368-5090 REV A",
+      "source_pdf_page": 2,
+      "original_printed_folio": null,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/lutron54/LUTRON54_02_result_label.webp",
+      "asset_filename": "LUTRON54_02_result_label.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 2948,
+      "asset_sha256": "0eceaacd6dcd2f2a65442fcf955d1992ede179ecf76ed9c6cca860b7b1e2ff98",
+      "git_blob_sha": "908c5535e34ba79676f7b0961e6bdaa136e0cbe2",
+      "rendered_size_px": [
+        801,
+        157
+      ],
+      "base64_length": 3932,
+      "normalized_pdf_crop": [
+        0.068,
+        0.697,
+        0.247,
+        0.724
+      ],
+      "pdf_crop_points": [
+        41.616,
+        552.024,
+        151.164,
+        573.408
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 7.302734874210393,
+      "target_longest_edge_px": 800,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "isolated_case_result_heading",
+      "title_fa": "تیتر مستقل نتیجه در مطالعهٔ موردی",
+      "observed_content_in_crop_fa": "فقط سرعنوان نتیجه؛ نقل‌قول، طرح آینده و بدنهٔ ادعا خارج برش.",
+      "key_takeaway_fa": "تیتر کوتاه می‌تواند نتیجه را از متن راهکار جدا کند.",
+      "analyst_assessment_fa": "تیتر، نتیجهٔ مستقل یا میزان موفقیت NSP نیست.",
+      "strengths_fa": [
+        "تیتر کوتاه می‌تواند نتیجه را از متن راهکار جدا کند."
+      ],
+      "weaknesses_fa": [
+        "تیتر، نتیجهٔ مستقل یا میزان موفقیت NSP نیست."
+      ],
+      "nsp_visual_adaptation_fa": "جداکنندهٔ اختصاصی و نتیجه‌های صرفاً مستند را به‌کار ببرید.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I010"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "LUTRON54-P02-E13"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-08"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Physical-page and visual layout context only; not an independent proof of outcome, hardware capability, or NSP implementation.",
+      "crop_context_note_fa": "مرجع دیداری محدود؛ بدون گام فنی، ادعای عملکرد یا قابلیت NSP.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip with no retouching, reconstruction, or generated content.",
+      "renderer": "PyMuPDF RGB direct clip without annotations; Pillow WebP quality 83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس و نام/نشان به صاحب منبع مربوط است؛ صرفاً مرجع داخلی و بدون مجوز بازنشر.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_direct_crop_visually_checked_with_exact_hash_and_dimensions"
+    }
+  ],
+  "style_catalog": [
+    {
+      "style_id": "architectural_twilight_case_hero",
+      "title_fa": "نمای معماری در نور عصر برای آغاز پرونده",
+      "representative_reference_ids": [
+        "LUTRON54_01_building_at_twilight"
+      ],
+      "physical_pdf_pages": [
+        1
+      ],
+      "key_takeaway_fa": "عکس محیط به خواننده زمینهٔ پروژه می‌دهد و فضای کیس را قبل از متن معرفی می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "thin_case_identification_strip",
+      "title_fa": "نوار فشردهٔ هویت و مکان مطالعهٔ موردی",
+      "representative_reference_ids": [
+        "LUTRON54_01_case_identification_strip"
+      ],
+      "physical_pdf_pages": [
+        1
+      ],
+      "key_takeaway_fa": "جداکردن هویت ثابت از روایت، مرور موارد را سریع‌تر می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "room_atmosphere_above_sidebar",
+      "title_fa": "عکس محیط گرم اتاق در ابتدای ستون جانبی",
+      "representative_reference_ids": [
+        "LUTRON54_02_warm_room_context"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "عکس حس فضا می‌دهد و جای نقل‌قول یا عدد فنی را نمی‌گیرد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "closeup_room_control_without_instruction",
+      "title_fa": "نمای نزدیک رابط نمونه به‌عنوان جزئیات دیداری",
+      "representative_reference_ids": [
+        "LUTRON54_02_device_in_room_detail"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "مقیاس نزدیک برای نمایش شکل رابط به زمینهٔ صفحه کمک می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "vertical_project_roles_and_credit_ledger",
+      "title_fa": "ستون عمودی نقش‌ها و اعتبارهای پرونده",
+      "representative_reference_ids": [
+        "LUTRON54_02_case_role_ledger"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "جداکردن صاحب‌کار، طراح و منبع عکس از متن مانع ادغام نقش‌ها می‌شود.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "isolated_case_result_heading",
+      "title_fa": "تیتر مستقل نتیجه در مطالعهٔ موردی",
+      "representative_reference_ids": [
+        "LUTRON54_02_result_label"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "تیتر کوتاه می‌تواند نتیجه را از متن راهکار جدا کند.",
+      "final_section_mapping": "pending_S05"
+    }
+  ],
+  "reference_overview": {
+    "asset_path": "Portfolio Instruction/research/assets/lutron54/LUTRON54_S04_reference_overview.webp",
+    "asset_filename": "LUTRON54_S04_reference_overview.webp",
+    "mime_type": "image/webp",
+    "asset_bytes": 42088,
+    "asset_sha256": "5369622755e36614e8909e7a89f9abd91754e10d3730545a42678c22914244ea",
+    "git_blob_sha": "b514dfc6cfa107db3bb51a2d748740ad119bd52c",
+    "rendered_size_px": [
+      948,
+      738
+    ],
+    "base64_length": 56120,
+    "role": "derived_navigation_overview_not_a_source_reference",
+    "source_reference_ids": [
+      "LUTRON54_01_building_at_twilight",
+      "LUTRON54_01_case_identification_strip",
+      "LUTRON54_02_warm_room_context",
+      "LUTRON54_02_device_in_room_detail",
+      "LUTRON54_02_case_role_ledger",
+      "LUTRON54_02_result_label"
+    ],
+    "counted_in_reference_images": false
+  },
+  "exclusions": {
+    "original_PDF_not_committed": true,
+    "no_access_or_temperature_setup_instructions": true,
+    "no_numeric_display_or_testimonial_outcome_body_copied": true,
+    "no_case_contact_or_supplier_footnote_copied": true,
+    "no_Hotel_Xcaret_merge": true,
+    "no_NSP_claim_or_rights": true
+  },
+  "target_catalog_constraint_fa": "A4 افقیِ زونکنی NSP از نسبت عمودی منبع جدا طراحی شود؛ تا لبهٔ صحافی زمینه پیوسته بماند و متن، لوگو و تصویر کلیدی از محدودهٔ امن حلقه فاصله داشته باشند. اندازهٔ ناحیه و چاپ‌پذیری بدون آزمون تأیید نشده‌اند.",
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false,
+  "next_stage": "S05 — تطبیق با نوع سکشن NSP",
+  "next_queue_cursor": {
+    "document_index": 15,
+    "document_id": "54",
+    "step_index": 4,
+    "step_id": "S05"
+  },
+  "next_stage_executed": false
+}
