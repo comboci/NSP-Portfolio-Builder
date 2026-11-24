@@ -1,0 +1,474 @@
+{
+  "schema": "nsp-catalog-research-s03-analyst-paraphrase-translation-v1",
+  "stage": "S03",
+  "stage_key": "feature_software_translation",
+  "status": "completed_Persian_translation_of_own_analytical_summaries",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "b9961bedd766bdd5e0c52497a2c4681d528e667d",
+  "document_id": "61",
+  "source_id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK",
+  "source_language": "en",
+  "translation_language": "fa",
+  "source_pdf": {
+    "filename": "61_Helvar_Work C22.1.pdf",
+    "title": "Zleep Hotels",
+    "cover_location": "Denmark",
+    "physical_pdf_pages": 1,
+    "file_size_bytes": 1273929,
+    "sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+    "printed_version_or_date_verified": false
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S01_source_inventory.json",
+      "blob_sha": "31e6fe23db9863998b9e77baa0e35a0b00ce955a",
+      "commit_sha": "95ffda33256c53b1f4fc42b8e503ba1196e7509e"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S02_page_linked_summaries.json",
+      "blob_sha": "3a10b39517e698e8bcf1ebb35925e0149bcda899",
+      "commit_sha": "0dfb7a77f6b0fb48f70dfe6afb0e4117e20126ad"
+    }
+  },
+  "scope_and_translation_policy_fa": "ترجمهٔ هشت خلاصهٔ تحلیلیِ خودمان، نه بازتولید متن یا شعار ناشر. نقش Vanpee تعیین نشده؛ پیشینهٔ زنجیره و سه محلِ گزارش‌شده یکی نیستند. هیچ نتیجهٔ مستقل دربارهٔ انرژی، آسایش یا خواب، قابلیت NSP یا حق نشر استنباط نشد.",
+  "statistics": {
+    "localized_own_analytical_summaries": 8,
+    "provisional_internal_editorial_candidates": 4,
+    "localized_identity_or_context_only": 4,
+    "verbatim_source_excerpts": 0,
+    "source_visuals_reproduced": 0,
+    "operational_details_added": 0,
+    "claim_gates": 5,
+    "context_sets": 4,
+    "NSP_capabilities_verified": 0
+  },
+  "research_records": [
+    {
+      "source_id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "61_Helvar_Work C22.1.pdf",
+      "source_pdf_sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "S02_evidence_ref": "HELVAR61-P001-N04",
+      "source_evidence_kind": "energy_intention",
+      "analyst_summary_en": "The sheet presents room LEDs in the context of reducing energy demand; it does not provide a measured saving.",
+      "translation_fa": "سند به روشنایی LED اتاق‌ها در چارچوب هدف کاهش مصرف انرژی می‌پردازد، اما مقدار صرفه‌جوییِ اندازه‌گیری‌شده ارائه نمی‌کند.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "HELVAR61-CTX-LIGHTING_GOAL_VS_OUTCOME"
+      ],
+      "scope_fa": "ساختار بیانِ هدف طراحی انرژی را نشان می‌دهد؛ هیچ دامنهٔ پوشش، خط مبنا، کاهش مصرف، محصول یا قابلیت NSP از آن استخراج نمی‌شود.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_or_image_reproduced": true,
+      "id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I001",
+      "category_id": "energy_hvac",
+      "source_type": "case_study",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "narrator_attribution": "Analyst paraphrase of Helvar's statement or presentation in its Zleep Hotels case, physical PDF p. 1",
+      "editorial_relevance_and_limits_fa": "ساختار بیانِ هدف طراحی انرژی را نشان می‌دهد؛ هیچ دامنهٔ پوشش، خط مبنا، کاهش مصرف، محصول یا قابلیت NSP از آن استخراج نمی‌شود.",
+      "same_editorial_concept_group": "HELVAR61-ENERGY_INTENTION",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "mapping_status": "pending_S05",
+      "visual_reference_status": "no_source_image; original concepts only",
+      "further_validation": "S06"
+    },
+    {
+      "source_id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "61_Helvar_Work C22.1.pdf",
+      "source_pdf_sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "S02_evidence_ref": "HELVAR61-P001-N05",
+      "source_evidence_kind": "site_scope",
+      "analyst_summary_en": "Helvar says its controls were chosen at three locations in the case narrative. The sheet does not identify those sites or claim the controls for the entire chain.",
+      "translation_fa": "Helvar در روایت خود می‌گوید سامانهٔ کنترل روشناییِ این شرکت برای سه محل انتخاب شد. نام این محل‌ها نیامده و سند پوشش کل زنجیره را ادعا نمی‌کند.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "HELVAR61-CTX-CHAIN_VS_SELECTED_SITES",
+        "HELVAR61-CTX-CASE_EQUIPMENT_SCOPE"
+      ],
+      "scope_fa": "الگوی شفاف بیان دامنهٔ یک پرونده؛ سه محل صرفاً گزارش ناشر از انتخاب سامانه است، نه تأیید نصب، فهرست شعب، تاریخ بهره‌برداری یا پروژهٔ NSP.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_or_image_reproduced": true,
+      "id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I002",
+      "category_id": "case_studies",
+      "source_type": "case_study",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "narrator_attribution": "Analyst paraphrase of Helvar's statement or presentation in its Zleep Hotels case, physical PDF p. 1",
+      "editorial_relevance_and_limits_fa": "الگوی شفاف بیان دامنهٔ یک پرونده؛ سه محل صرفاً گزارش ناشر از انتخاب سامانه است، نه تأیید نصب، فهرست شعب، تاریخ بهره‌برداری یا پروژهٔ NSP.",
+      "same_editorial_concept_group": "HELVAR61-SITE_SCOPE",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "mapping_status": "pending_S05",
+      "visual_reference_status": "no_source_image; original concepts only",
+      "further_validation": "S06"
+    },
+    {
+      "source_id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "61_Helvar_Work C22.1.pdf",
+      "source_pdf_sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "S02_evidence_ref": "HELVAR61-P001-N07",
+      "source_evidence_kind": "qualitative_ambience",
+      "analyst_summary_en": "The vendor’s description of the resulting lighting emphasizes atmosphere and comfort rather than independent measurements or an outcome for guests.",
+      "translation_fa": "در توصیف ناشر از روشناییِ حاصل، بر حال‌وهوای فضا و حس راحتی تأکید شده است؛ این توصیف نه اندازه‌گیری مستقل است و نه پیامد اثبات‌شده برای مهمان.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "HELVAR61-CTX-LIGHTING_GOAL_VS_OUTCOME"
+      ],
+      "scope_fa": "فقط نمونهٔ بیان کیفیِ هدف فضاسازی است. آسایش تضمین‌شده، رضایت مهمان، کیفیت خواب یا ویژگی NSP به منبع نسبت داده نشود.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_or_image_reproduced": true,
+      "id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I003",
+      "category_id": "guest_comfort",
+      "source_type": "case_study",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "narrator_attribution": "Analyst paraphrase of Helvar's statement or presentation in its Zleep Hotels case, physical PDF p. 1",
+      "editorial_relevance_and_limits_fa": "فقط نمونهٔ بیان کیفیِ هدف فضاسازی است. آسایش تضمین‌شده، رضایت مهمان، کیفیت خواب یا ویژگی NSP به منبع نسبت داده نشود.",
+      "same_editorial_concept_group": "HELVAR61-QUALITATIVE_AMBIENCE",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "mapping_status": "pending_S05",
+      "visual_reference_status": "no_source_image; original concepts only",
+      "further_validation": "S06"
+    },
+    {
+      "source_id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "61_Helvar_Work C22.1.pdf",
+      "source_pdf_sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "S02_evidence_ref": "HELVAR61-P001-N08",
+      "source_evidence_kind": "promotional_opening",
+      "analyst_summary_en": "The headline frames the lighting story around the guest stay, using a play on the hotel name. That is marketing style, not evidence of improved sleep.",
+      "translation_fa": "آغاز روایت روشنایی، تجربهٔ اقامت را محور قرار می‌دهد و از بازی زبانی با نام هتل استفاده می‌کند. این شیوهٔ تبلیغاتی شاهدی بر بهتر شدن خواب نیست.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "HELVAR61-CTX-LIGHTING_GOAL_VS_OUTCOME"
+      ],
+      "scope_fa": "تنها شیوهٔ شروع روایت به عنوان پژوهش مطرح است؛ متن تیتر و بازی با نام برند برای NSP کپی یا اقتباس مستقیم نشود.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_or_image_reproduced": true,
+      "id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I004",
+      "category_id": "narrative_structure",
+      "source_type": "visual_presentation_style",
+      "narrator_role": "ANALYST_OBSERVATION_OF_VENDOR_PRESENTATION",
+      "narrator_attribution": "Analyst paraphrase of Helvar's statement or presentation in its Zleep Hotels case, physical PDF p. 1",
+      "editorial_relevance_and_limits_fa": "تنها شیوهٔ شروع روایت به عنوان پژوهش مطرح است؛ متن تیتر و بازی با نام برند برای NSP کپی یا اقتباس مستقیم نشود.",
+      "same_editorial_concept_group": "HELVAR61-PROMOTIONAL_OPENING",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "mapping_status": "pending_S05",
+      "visual_reference_status": "no_source_image; original concepts only",
+      "further_validation": "S06"
+    }
+  ],
+  "excluded_S02_evidence": [
+    {
+      "source_id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "61_Helvar_Work C22.1.pdf",
+      "source_pdf_sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "S02_evidence_ref": "HELVAR61-P001-N01",
+      "source_evidence_kind": "case_identity",
+      "analyst_summary_en": "Helvar’s one-page study identifies Zleep Hotels in Denmark.",
+      "translation_fa": "مطالعهٔ یک‌صفحه‌ایِ Helvar، پروندهٔ Zleep Hotels در دانمارک را معرفی می‌کند.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-01"
+      ],
+      "source_context_set_refs": [
+        "HELVAR61-CTX-CASE_IDENTITY_AND_MARK"
+      ],
+      "scope_fa": "هویت همین مطالعه است. محل هر اجرا یا نقش طرف‌ها از عنوان به دست نمی‌آید.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_or_image_reproduced": true,
+      "source_context_only": true,
+      "not_independent_feature": true,
+      "review_status": "source_identity_or_context_only"
+    },
+    {
+      "source_id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "61_Helvar_Work C22.1.pdf",
+      "source_pdf_sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "S02_evidence_ref": "HELVAR61-P001-N02",
+      "source_evidence_kind": "cobrand_boundary",
+      "analyst_summary_en": "A second brand mark, Vanpee, appears beside Helvar’s masthead. The sheet does not assign Vanpee a role.",
+      "translation_fa": "نشان Vanpee در کنار سربرگ Helvar دیده می‌شود، اما سند نقشی برای Vanpee مشخص نمی‌کند.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-01"
+      ],
+      "source_context_set_refs": [
+        "HELVAR61-CTX-CASE_IDENTITY_AND_MARK"
+      ],
+      "scope_fa": "هم‌نشینی نشان‌ها به معنای شریک، طراح، پیمانکار، یکپارچه‌ساز یا تأییدکننده نیست. خود نشان بازنشر نشده است.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_or_image_reproduced": true,
+      "source_context_only": true,
+      "not_independent_feature": true,
+      "review_status": "source_identity_or_context_only"
+    },
+    {
+      "source_id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "61_Helvar_Work C22.1.pdf",
+      "source_pdf_sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "S02_evidence_ref": "HELVAR61-P001-N03",
+      "source_evidence_kind": "hotel_chain_background",
+      "analyst_summary_en": "The vendor gives background on the chain, including its reported founding in 2003 and a reference to Stockholm. These are not publication or installation evidence.",
+      "translation_fa": "ناشر در شرح پیشینهٔ زنجیره به تأسیس در ۲۰۰۳ و به استکهلم اشاره می‌کند. این موارد تاریخ انتشار سند یا شواهد محل نصب نیستند.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-02"
+      ],
+      "source_context_set_refs": [
+        "HELVAR61-CTX-CHAIN_VS_SELECTED_SITES"
+      ],
+      "scope_fa": "پیشینهٔ گزارش‌شده دربارهٔ زنجیره است؛ وضعیت فعلی و محل اجرای کنترل روشنایی را ثابت نمی‌کند.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_or_image_reproduced": true,
+      "source_context_only": true,
+      "not_independent_feature": true,
+      "review_status": "source_identity_or_context_only"
+    },
+    {
+      "source_id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "61_Helvar_Work C22.1.pdf",
+      "source_pdf_sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "S02_evidence_ref": "HELVAR61-P001-N06",
+      "source_evidence_kind": "equipment_report",
+      "analyst_summary_en": "The vendor names the 905 router and 454 and 452 dimmer models as examples in this lighting case; that description is not a compatibility or installation recommendation.",
+      "translation_fa": "ناشر در این پروندهٔ روشنایی از روتر 905 و دیمرهای 454 و 452 نام می‌برد. این اشاره، توصیهٔ نصب یا تأیید سازگاری نیست.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "HELVAR61-CTX-CASE_EQUIPMENT_SCOPE"
+      ],
+      "scope_fa": "نام مدل‌ها زمینهٔ تاریخی همین سند است؛ بدون مسیر سیم‌بندی، ویژگی مدل، سنجه، سازگاری، موجودی کنونی یا کاربرد برای NSP.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_or_image_reproduced": true,
+      "source_context_only": true,
+      "not_independent_feature": true,
+      "review_status": "source_identity_or_context_only"
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "HELVAR61-CLAIM-01",
+      "kind": "identity_and_brand_role",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "HELVAR61-P001-N01",
+        "HELVAR61-P001-N02"
+      ],
+      "scope": "Title and location identify the case. The visual mark does not establish a partnership, integrator role, or approval.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "copyright_permissions_verified": false,
+      "related_S03_record_ids": [],
+      "applies_to_analytical_paraphrase_only": true
+    },
+    {
+      "id": "HELVAR61-CLAIM-02",
+      "kind": "historical_chain_background_not_site_scope",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "HELVAR61-P001-N03"
+      ],
+      "scope": "Founding year and Stockholm are case background, not publication date, present footprint, exact site identity, or an installed control location.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "copyright_permissions_verified": false,
+      "related_S03_record_ids": [],
+      "applies_to_analytical_paraphrase_only": true
+    },
+    {
+      "id": "HELVAR61-CLAIM-03",
+      "kind": "lighting_goal_not_measured_result",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "HELVAR61-P001-N04",
+        "HELVAR61-P001-N07",
+        "HELVAR61-P001-N08"
+      ],
+      "scope": "Energy intention, atmosphere language and promotional headline are vendor narrative; no measured energy savings, sleep effect or satisfaction has been shown.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "copyright_permissions_verified": false,
+      "related_S03_record_ids": [
+        "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I001",
+        "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I003",
+        "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I004"
+      ],
+      "applies_to_analytical_paraphrase_only": true
+    },
+    {
+      "id": "HELVAR61-CLAIM-04",
+      "kind": "three_locations_vendor_report_only",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "HELVAR61-P001-N05"
+      ],
+      "scope": "The source names a count for choosing controls but no sites. Do not infer a chain-wide rollout, geography of the sites, or an NSP project.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "copyright_permissions_verified": false,
+      "related_S03_record_ids": [
+        "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I002"
+      ],
+      "applies_to_analytical_paraphrase_only": true
+    },
+    {
+      "id": "HELVAR61-CLAIM-05",
+      "kind": "historical_equipment_not_technical_advice",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "HELVAR61-P001-N06"
+      ],
+      "scope": "Model names are context for this specific case sheet only; no wiring, setting, operating parameter, current availability, safety or compatibility.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "copyright_permissions_verified": false,
+      "related_S03_record_ids": [],
+      "applies_to_analytical_paraphrase_only": true
+    }
+  ],
+  "source_context_bindings": [
+    {
+      "id": "HELVAR61-CTX-CASE_IDENTITY_AND_MARK",
+      "physical_pdf_pages": [
+        1
+      ],
+      "source_evidence_ids": [
+        "HELVAR61-P001-N01",
+        "HELVAR61-P001-N02"
+      ],
+      "scope_fa": "Helvar ناشر معرفی‌شده و Vanpee فقط نشان دوم در تصویر است؛ نقش هیچ سازمان دیگری استنباط نشود."
+    },
+    {
+      "id": "HELVAR61-CTX-CHAIN_VS_SELECTED_SITES",
+      "physical_pdf_pages": [
+        1
+      ],
+      "source_evidence_ids": [
+        "HELVAR61-P001-N03",
+        "HELVAR61-P001-N05"
+      ],
+      "scope_fa": "پیشینهٔ زنجیره مستقل از سه محلِ گزارش‌شده در روایت انتخاب کنترل است. هتل‌های محل اجرا، شهر و پوشش زنجیره مشخص نیستند."
+    },
+    {
+      "id": "HELVAR61-CTX-LIGHTING_GOAL_VS_OUTCOME",
+      "physical_pdf_pages": [
+        1
+      ],
+      "source_evidence_ids": [
+        "HELVAR61-P001-N04",
+        "HELVAR61-P001-N07",
+        "HELVAR61-P001-N08"
+      ],
+      "scope_fa": "هدف کاهش مصرف، بیان کیفی جو فضا و قاب‌بندی تبلیغی سه چیز مستقل از نتیجهٔ اندازه‌گیری، رضایت یا خواب‌اند."
+    },
+    {
+      "id": "HELVAR61-CTX-CASE_EQUIPMENT_SCOPE",
+      "physical_pdf_pages": [
+        1
+      ],
+      "source_evidence_ids": [
+        "HELVAR61-P001-N05",
+        "HELVAR61-P001-N06"
+      ],
+      "scope_fa": "مدل‌ها نام‌های تاریخی در مطالعه‌اند. انتخاب، نصب واقعی، وضعیت جاری، دستور، سازگاری یا هم‌ارزی NSP از آن نتیجه نمی‌شود."
+    }
+  ],
+  "usage_policy": {
+    "no_source_prose_slogan_logo_or_image_in_public_repo": true,
+    "no_current_availability_or_instructions_or_technical_compatibility": true,
+    "case_scope_vendor_only_not_chain_wide_or_NSP": true,
+    "any_S04_concepts_must_be_original_nonreplicas": true
+  },
+  "next_stage": "S04 — مرور سبک و طرح دیداری اصیل",
+  "next_queue_cursor": {
+    "document_index": 18,
+    "document_id": "61",
+    "step_index": 3,
+    "step_id": "S04"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
