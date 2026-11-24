@@ -1,0 +1,832 @@
+{
+  "schema": "nsp-catalog-research-s02-english-extract-v1",
+  "stage": "S02",
+  "stage_key": "source_text_extraction",
+  "status": "completed_with_source_claim_gates",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "6bc6179c3e66715552d451b992502c5695a0482e",
+  "document_id": "17",
+  "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+  "source_pdf": {
+    "company": "Honeywell",
+    "publisher": "Honeywell Building Technologies / Honeywell International Inc.",
+    "title": "INNCOM Services & Support",
+    "filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+    "pdf_pages": 4,
+    "file_size_bytes": 146243,
+    "source_sha256": "35c9be5b519ebfc25df52c169a2a7addc9bbb3120d39811454a951ac1a633859",
+    "document_number": "01-00150",
+    "printed_edition_string": "01-00150 I 07/20 I LM",
+    "printed_edition_month": "2020-07",
+    "publication_evidence_pdf_page": 4,
+    "S01_inventory": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S01_source_inventory.json",
+    "S01_inventory_git_blob_sha": "3b4766a7e90969030a262514ce8ee631620b8920",
+    "S01_inventory_commit": "bab70b680d5eaf511d978772698dc6e5653b5ff6"
+  },
+  "scope": {
+    "all_4_native_text_pages_reviewed": true,
+    "native_body_no_OCR": true,
+    "short_excerpts_only": true,
+    "full_PDF_text_not_republished": true,
+    "other_Honeywell_brochures_not_merged": true,
+    "contact_list_and_QR_not_transcribed": true,
+    "current_vendor_availability_not_verified": true,
+    "no_source_access_entitlement_verified": true,
+    "no_NSP_service_or_capability_claim": true
+  },
+  "statistics": {
+    "PDF_pages_read_and_mapped": 4,
+    "native_text_pages": 4,
+    "short_verified_English_source_fragments": 34,
+    "retained_excerpt_words_by_whitespace_count": 144,
+    "matched_by_both_PDF_engines": 34,
+    "claim_and_context_gates": 10,
+    "plan_bundles": 2,
+    "standalone_service_entries": 8,
+    "new_NSP_capabilities_verified": 0
+  },
+  "pages": [
+    {
+      "pdf_page": 1,
+      "canonical_reference": "physical PDF page, 1-indexed",
+      "section_group": "COVER_AND_SERVICE_POSITIONING",
+      "native_text_status": "present",
+      "native_text_char_count": 223,
+      "native_page_text_sha256": "f920a244118036a857654d30595d4e5c58f00eb485700af84d0cada5b297bc68",
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "WE FOCUS ON YOUR SYSTEM",
+        "FOCUS ON YOUR GUESTS",
+        "INNCOM Services & Support"
+      ],
+      "fragment_ids": [
+        "HONEYWELL17-P01-E01",
+        "HONEYWELL17-P01-E02",
+        "HONEYWELL17-P01-E03"
+      ],
+      "fragment_count": 3,
+      "fragment_audit": [
+        {
+          "id": "HONEYWELL17-P01-E01",
+          "source_type": "cover_phrase",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": false,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P01-E02",
+          "source_type": "cover_phrase",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": false,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P01-E03",
+          "source_type": "source_title",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ],
+      "content_handling": "جلد با تیتر مسئولیت سیستم در برابر توجه هتل‌دار به مهمان؛ تصویر فرد و پیام سطح خدمت شاهد قابلیت NSP نیست.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 2,
+      "canonical_reference": "physical PDF page, 1-indexed",
+      "section_group": "SUPPORT_TIERS_AND_WARRANTY",
+      "native_text_status": "present",
+      "native_text_char_count": 1659,
+      "native_page_text_sha256": "4e21106b177b54c44130b5c40dcd970407845a008b31ee0ed6a325c71d3b9f67",
+      "source_headlines_en": [
+        "FREE BASIC SUPPORT"
+      ],
+      "short_english_fragments_en": [
+        "FREE BASIC SUPPORT",
+        "Every INNCOM system purchase includes the Basic Support Plan",
+        "8:00AM to 8:00PM EST",
+        "24-hour response time",
+        "typically 1-hour response time during normal business hours",
+        "2-YEAR PRODUCT WARRANTY",
+        "defect in workmanship and/or material",
+        "Extended Product Warranty options available for purchase",
+        "Each INNservice plan also includes an Extended Product Warranty",
+        "INNcontrol 5 Dashboard"
+      ],
+      "fragment_ids": [
+        "HONEYWELL17-P02-E01",
+        "HONEYWELL17-P02-E02",
+        "HONEYWELL17-P02-E03",
+        "HONEYWELL17-P02-E04",
+        "HONEYWELL17-P02-E05",
+        "HONEYWELL17-P02-E06",
+        "HONEYWELL17-P02-E07",
+        "HONEYWELL17-P02-E08",
+        "HONEYWELL17-P02-E09",
+        "HONEYWELL17-P02-E10"
+      ],
+      "fragment_count": 10,
+      "fragment_audit": [
+        {
+          "id": "HONEYWELL17-P02-E01",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P02-E02",
+          "source_type": "gated_offer_scope",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P02-E03",
+          "source_type": "gated_phone_hours",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": false,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P02-E04",
+          "source_type": "gated_email_response",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": false,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P02-E05",
+          "source_type": "gated_typical_email_response",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": false,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P02-E06",
+          "source_type": "gated_warranty_period",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P02-E07",
+          "source_type": "gated_warranty_eligibility",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P02-E08",
+          "source_type": "gated_optional_offer",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P02-E09",
+          "source_type": "gated_bundle",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P02-E10",
+          "source_type": "source_image_caption",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ],
+      "content_handling": "پشتیبانی پایه با شروط ساعت و طرح‌های خدمات ۲۴/۷ مستقل‌اند. ضمانت عیب ساخت/مواد و ضمانت تمدیدشده یا سطح خدمت یکی نیستند. تصویر داشبورد از ادعاهای اجرایی جدا مطالعه شود.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 3,
+      "canonical_reference": "physical PDF page, 1-indexed",
+      "section_group": "SERVICE_CATALOGUE",
+      "native_text_status": "present",
+      "native_text_char_count": 3910,
+      "native_page_text_sha256": "ebd67609041cbcb576aab1b590ec0d6c07cc7cd2f5fe631113d20e1cca967503",
+      "source_headlines_en": [
+        "DESIGN ENGINEERING",
+        "INSTALLATION & COMMISSIONING",
+        "CONSULTATION",
+        "TRAINING",
+        "TECHNICAL SUPPORT"
+      ],
+      "short_english_fragments_en": [
+        "DESIGN ENGINEERING",
+        "INSTALLATION & COMMISSIONING",
+        "CONSULTATION",
+        "TRAINING",
+        "TECHNICAL SUPPORT",
+        "Exchange (ASX) reports for IC3",
+        "INNsite Reports for IC5",
+        "One-on-one web training",
+        "24/7 emergency technical assistance",
+        "Technical Service Requests",
+        "Network Operation Center (NOC)"
+      ],
+      "fragment_ids": [
+        "HONEYWELL17-P03-E01",
+        "HONEYWELL17-P03-E02",
+        "HONEYWELL17-P03-E03",
+        "HONEYWELL17-P03-E04",
+        "HONEYWELL17-P03-E05",
+        "HONEYWELL17-P03-E06",
+        "HONEYWELL17-P03-E07",
+        "HONEYWELL17-P03-E08",
+        "HONEYWELL17-P03-E09",
+        "HONEYWELL17-P03-E10",
+        "HONEYWELL17-P03-E11"
+      ],
+      "fragment_count": 11,
+      "fragment_audit": [
+        {
+          "id": "HONEYWELL17-P03-E01",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P03-E02",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": false
+        },
+        {
+          "id": "HONEYWELL17-P03-E03",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P03-E04",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P03-E05",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P03-E06",
+          "source_type": "gated_source_report_context",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P03-E07",
+          "source_type": "gated_source_report_context",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P03-E08",
+          "source_type": "source_delivery_channel",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P03-E09",
+          "source_type": "gated_optional_emergency_service",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": false
+        },
+        {
+          "id": "HONEYWELL17-P03-E10",
+          "source_type": "source_service_reference",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P03-E11",
+          "source_type": "source_service_reference",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": false,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ],
+      "content_handling": "سه ستونِ طراحی/استقرار/مشاوره، آموزش و پشتیبانی. گزارش‌ها، درگاه نسخه‌های IC3 و IC5 و انواع آموزش در S02 منبع‌محور بمانند. NOC نام خدمت ناشر است.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 4,
+      "canonical_reference": "physical PDF page, 1-indexed",
+      "section_group": "PLAN_COMPARISON_AND_AVAILABLE_SERVICES",
+      "native_text_status": "present",
+      "native_text_char_count": 1262,
+      "native_page_text_sha256": "a428456e63d695775a1eff5e650ae74300c548d3d99d03520ca91f9700b76afd",
+      "source_headlines_en": [
+        "FROM SIMPLE ASSISTANCE TO SEAMLESS SERVICE",
+        "INNSERVICE PLANS",
+        "AVAILABLE SERVICES"
+      ],
+      "short_english_fragments_en": [
+        "FROM SIMPLE ASSISTANCE TO SEAMLESS SERVICE",
+        "INNSERVICE PLANS",
+        "AVAILABLE SERVICES",
+        "Performance & Maintenance Plan",
+        "Remote Service & Support Plan",
+        "Quarterly INNsite Report & Consultation Call*",
+        "Annual INNsite Report & Consultation Call*",
+        "24/7 Telephone Technical Support",
+        "for systems with IC5 only",
+        "01-00150 I 07/20 I LM"
+      ],
+      "fragment_ids": [
+        "HONEYWELL17-P04-E01",
+        "HONEYWELL17-P04-E02",
+        "HONEYWELL17-P04-E03",
+        "HONEYWELL17-P04-E04",
+        "HONEYWELL17-P04-E05",
+        "HONEYWELL17-P04-E06",
+        "HONEYWELL17-P04-E07",
+        "HONEYWELL17-P04-E08",
+        "HONEYWELL17-P04-E09",
+        "HONEYWELL17-P04-E10"
+      ],
+      "fragment_count": 10,
+      "fragment_audit": [
+        {
+          "id": "HONEYWELL17-P04-E01",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": false,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P04-E02",
+          "source_type": "source_table_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P04-E03",
+          "source_type": "source_table_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P04-E04",
+          "source_type": "gated_plan_name",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": false,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P04-E05",
+          "source_type": "gated_plan_name",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P04-E06",
+          "source_type": "gated_plan_row",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P04-E07",
+          "source_type": "gated_plan_row",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P04-E08",
+          "source_type": "gated_support_row",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P04-E09",
+          "source_type": "gated_footnote",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL17-P04-E10",
+          "source_type": "source_printed_edition",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ],
+      "content_handling": "دو جدول متفاوت: بسته‌های INNservice و خدمات مستقل. ردیف‌های مشترک و پاورقی IC5 را هنگام استخراج به همان سلول مربوط نسبت بده؛ نشانی، QR و اطلاعات تماس وارد بانک نشوند.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "HONEYWELL17-CLAIM-01",
+      "pdf_page": 1,
+      "kind": "cover_positioning_only",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P01-E01",
+        "HONEYWELL17-P01-E02",
+        "HONEYWELL17-P01-E03"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "تیتر هتل‌دار/مهمان پیام برند است، نه نتیجهٔ اجرایی NSP.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-02",
+      "pdf_page": 2,
+      "kind": "basic_telephone_hours_not_24_7",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P02-E01",
+        "HONEYWELL17-P02-E02",
+        "HONEYWELL17-P02-E03"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "بازه عیناً EST است؛ روزهای هفته، تغییر فصلی ساعت یا پشتیبانی ۲۴/۷ از متن طرح پایه نتیجه نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-03",
+      "pdf_page": 2,
+      "kind": "basic_email_response_target_vs_typical",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P02-E04",
+        "HONEYWELL17-P02-E05"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "۲۴ ساعت زمان پاسخ ایمیل در متن و یک ساعت فقط «معمولاً» در ساعات عادی است؛ هیچ‌کدام پشتیبانی تلفنی ۲۴/۷ یا تعهد NSP نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-04",
+      "pdf_page": 2,
+      "kind": "base_warranty_defect_and_extended_distinct",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P02-E06",
+        "HONEYWELL17-P02-E07",
+        "HONEYWELL17-P02-E08",
+        "HONEYWELL17-P02-E09"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "دو سال برای ضمانت محصول منبع با شرط نقص ساخت/مواد. تمدید هم عرضهٔ جدا دارد و هم در طرح‌های مشخص ذکر شده. حقوق قانونی، کفایت یا سیاست NSP از آن نتیجه نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-05",
+      "pdf_page": 2,
+      "kind": "dashboard_caption_not_capability",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P02-E10"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "عنوان تصویر آن را داشبورد INNcontrol 5 معرفی می‌کند؛ جزئیات داده و قابلیت از پیکسل تصویر استخراج نشده‌اند.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-06",
+      "pdf_page": 3,
+      "kind": "consultation_report_versions",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P03-E03",
+        "HONEYWELL17-P03-E06",
+        "HONEYWELL17-P03-E07"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "ASX برای IC3 و INNsite برای IC5 در متن 01-00150؛ اعلام عرضهٔ امروز یا سازگاری NSP نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-07",
+      "pdf_page": 3,
+      "kind": "training_vs_optional_remote_help",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P03-E04",
+        "HONEYWELL17-P03-E05",
+        "HONEYWELL17-P03-E08",
+        "HONEYWELL17-P03-E09",
+        "HONEYWELL17-P03-E10",
+        "HONEYWELL17-P03-E11"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "آموزش انفرادی، کمک اضطراری ۲۴/۷ و درخواست زمان‌دار معیارهای یکسانی نیستند. کمک اضطراری این صفحه گزینهٔ از راه دور است؛ خدمت پایه و ضمانت NSP نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-08",
+      "pdf_page": 4,
+      "kind": "separate_plan_and_available_columns",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P04-E02",
+        "HONEYWELL17-P04-E03",
+        "HONEYWELL17-P04-E04",
+        "HONEYWELL17-P04-E05",
+        "HONEYWELL17-P04-E08"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "دو طرح سمت چپ و فهرست خدمات در سمت راست؛ تکرار خدمت به معنای ادغام، یکسانی قیمت، یا خدمت پایه نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-09",
+      "pdf_page": 4,
+      "kind": "quarterly_annual_ic5_star_precise",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P04-E06",
+        "HONEYWELL17-P04-E07",
+        "HONEYWELL17-P04-E09"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "فقط دو ردیف ستاره‌دار سمت چپ: گزارش فصلی طرح نگهداری و گزارش سالانه طرح پشتیبانی از راه دور. نبود ستاره در فهرست راست برای نسخه‌های دیگر مدرک سازگاری نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-10",
+      "pdf_page": 4,
+      "kind": "edition_and_no_catalog_merger",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P04-E10"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "سند 01-00150 / 07/20 / LM مستقل از 01-00139 و 01-00149؛ ماه چاپ، نه تاریخ عرضه امروز یا تغییر شرایط.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    }
+  ],
+  "structured_source_facts": [
+    {
+      "id": "HONEYWELL17-P04-PLANS-VS-SERVICES",
+      "pdf_pages": [
+        4
+      ],
+      "kind": "source_plan_and_individually_available_services_matrix",
+      "source_document_number": "01-00150",
+      "source_order_method": "Original page visually inspected. Left x≈45 pt and right x≈229 pt physically separate; row membership verified from original PDF bounding positions, never from interleaved stream.",
+      "left_column_bundles": [
+        {
+          "plan_name_ref": "HONEYWELL17-P04-E04",
+          "plan_header_bbox_points": [
+            45,
+            216.27,
+            207.54,
+            226.6
+          ],
+          "items": [
+            {
+              "row_code": "onsite_training_or_tech_day",
+              "evidence_bbox_points": [
+                45,
+                234.55,
+                146.12,
+                244.12
+              ],
+              "IC5_only_explicitly_marked": false,
+              "derived_semantic_index_not_a_quote": true
+            },
+            {
+              "row_code": "quarterly_INNsite_report_and_call",
+              "evidence_bbox_points": [
+                45,
+                252.55,
+                203.85,
+                262.12
+              ],
+              "IC5_only_explicitly_marked": true,
+              "derived_semantic_index_not_a_quote": true
+            },
+            {
+              "row_code": "telephone_technical_support_24_7",
+              "evidence_bbox_points": [
+                45,
+                270.55,
+                167.17,
+                280.12
+              ],
+              "IC5_only_explicitly_marked": false,
+              "derived_semantic_index_not_a_quote": true
+            },
+            {
+              "row_code": "extended_product_warranty",
+              "evidence_bbox_points": [
+                45,
+                288.55,
+                142.44,
+                298.12
+              ],
+              "IC5_only_explicitly_marked": false,
+              "derived_semantic_index_not_a_quote": true
+            }
+          ]
+        },
+        {
+          "plan_name_ref": "HONEYWELL17-P04-E05",
+          "plan_header_bbox_points": [
+            45,
+            307.35,
+            205.19,
+            317.68
+          ],
+          "items": [
+            {
+              "row_code": "one_to_one_web_training_half_day",
+              "evidence_bbox_points": [
+                45,
+                326.42,
+                174.01,
+                336
+              ],
+              "IC5_only_explicitly_marked": false,
+              "derived_semantic_index_not_a_quote": true
+            },
+            {
+              "row_code": "annual_INNsite_report_and_call",
+              "evidence_bbox_points": [
+                45,
+                344.42,
+                196.17,
+                354
+              ],
+              "IC5_only_explicitly_marked": true,
+              "derived_semantic_index_not_a_quote": true
+            },
+            {
+              "row_code": "telephone_technical_support_24_7",
+              "evidence_bbox_points": [
+                45,
+                362.42,
+                167.17,
+                372
+              ],
+              "IC5_only_explicitly_marked": false,
+              "derived_semantic_index_not_a_quote": true
+            },
+            {
+              "row_code": "extended_product_warranty",
+              "evidence_bbox_points": [
+                45,
+                380.42,
+                142.44,
+                390
+              ],
+              "IC5_only_explicitly_marked": false,
+              "derived_semantic_index_not_a_quote": true
+            }
+          ]
+        }
+      ],
+      "right_column_available_only": [
+        {
+          "row_code": "onsite_technician_visit",
+          "evidence_bbox_points": [
+            229.03,
+            219.14,
+            293.13,
+            228.72
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true
+        },
+        {
+          "row_code": "onsite_training_visit",
+          "evidence_bbox_points": [
+            229.03,
+            241.46,
+            303.17,
+            251.04
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true
+        },
+        {
+          "row_code": "ASX_report_and_call",
+          "evidence_bbox_points": [
+            229.03,
+            263.78,
+            338.43,
+            273.36
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true
+        },
+        {
+          "row_code": "INNsite_report_and_call",
+          "evidence_bbox_points": [
+            229.03,
+            286.1,
+            350.6,
+            295.68
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true
+        },
+        {
+          "row_code": "telephone_technical_support_24_7",
+          "evidence_bbox_points": [
+            229.03,
+            308.42,
+            345,
+            318
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true
+        },
+        {
+          "row_code": "one_to_one_web_training_session",
+          "evidence_bbox_points": [
+            229.03,
+            330.74,
+            351.12,
+            340.32
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true
+        },
+        {
+          "row_code": "technical_service_request",
+          "evidence_bbox_points": [
+            229.03,
+            353.06,
+            320.87,
+            362.64
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true
+        },
+        {
+          "row_code": "extended_product_warranty",
+          "evidence_bbox_points": [
+            229.03,
+            375.38,
+            326.47,
+            384.96
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true
+        }
+      ],
+      "IC5_scope_ref": "HONEYWELL17-P04-E09",
+      "IC5_only_star_is_printed_on_left_quarterly_and_annual_rows_only": true,
+      "right_column_INNsite_row_has_no_star_on_this_page": true,
+      "do_not_infer_right_column_service_availability_for_other_versions_from_absent_star": true,
+      "not_basic_support_terms": true,
+      "not_independent_features": true,
+      "NSP_entitlement_verified": false
+    }
+  ],
+  "quality_assurance": {
+    "original_pdf_byte_hash_matches_S01": true,
+    "all_original_native_page_text_hashes_match_S01": true,
+    "comparison_normalization": "NFKC plus whitespace collapse and join real line-break hyphens only.",
+    "all_short_quotes_independently_verified_in_both_PDF_engines": true,
+    "visually_confirmed_plan_columns_and_asterisks": true,
+    "IC3_ASX_and_IC5_INNsite_not_conflated": true,
+    "basic_support_not_24_7": true,
+    "edition_not_merged": true
+  },
+  "next_queue_cursor": {
+    "document_index": 10,
+    "document_id": "17",
+    "step_index": 2,
+    "step_id": "S03"
+  },
+  "next_stage": "S03 — استخراج فیچر و ترجمه",
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "portfolio_builder_app_source_changed": false,
+  "editorial_structure_changed": false
+}
