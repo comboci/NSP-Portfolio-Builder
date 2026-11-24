@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 75,
+    "total_pending_steps": 74,
     "completed_new_documents": 7,
     "remaining_new_documents": 11
   },
   "cursor": {
     "document_index": 10,
     "document_id": "17",
-    "step_index": 2,
-    "step_id": "S03"
+    "step_index": 3,
+    "step_id": "S04"
   },
   "section_types": [
     {
@@ -1261,11 +1261,13 @@
         {
           "id": "S03",
           "key": "feature_software_translation",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S03_features_fa.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "ea40243d5e9aa62c063a993dbdf6800e26192c9d",
+          "notes": "۲۰ رکورد پژوهشی با متن اصلی، ترجمهٔ فارسی و شمارهٔ صفحه ثبت شد؛ ۱۴ گزیده فقط زمینه/فراداده‌اند. پشتیبانی پایه، کمک اضطراری اختیاری، طرح‌های ۲۴/۷، ضمانت‌ها و شروط IC5 جدا ماندند؛ ۲ بسته و ۸ خدمت فقط زمینهٔ جدول‌اند. هیچ قابلیت یا سیاست NSP ثبت نشد؛ بانک V10 و برنامه ثابت‌اند."
         },
         {
           "id": "S04",
@@ -1304,7 +1306,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S02"
+      "last_successful_stage": "S03"
     },
     {
       "id": "34",
