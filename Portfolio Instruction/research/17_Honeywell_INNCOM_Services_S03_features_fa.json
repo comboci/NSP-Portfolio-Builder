@@ -1,0 +1,1645 @@
+{
+  "schema": "nsp-catalog-research-s03-features-fa-v1",
+  "stage": "S03",
+  "stage_key": "feature_software_translation",
+  "status": "completed_research_only_pending_S04_S06",
+  "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+  "document_id": "17",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "589c374059f76e6e3e6aa67190dda8f86c80a66e",
+  "provenance": {
+    "company": "Honeywell",
+    "publisher": "Honeywell Building Technologies / Honeywell International Inc.",
+    "title": "INNCOM Services & Support",
+    "filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+    "pdf_pages": 4,
+    "file_size_bytes": 146243,
+    "source_sha256": "35c9be5b519ebfc25df52c169a2a7addc9bbb3120d39811454a951ac1a633859",
+    "document_number": "01-00150",
+    "printed_edition_string": "01-00150 I 07/20 I LM",
+    "printed_edition_month": "2020-07",
+    "publication_evidence_pdf_page": 4,
+    "S01_inventory": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S01_source_inventory.json",
+    "S01_inventory_git_blob_sha": "3b4766a7e90969030a262514ce8ee631620b8920",
+    "S01_inventory_commit": "bab70b680d5eaf511d978772698dc6e5653b5ff6",
+    "S02_text_evidence": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S02_english_text.json",
+    "S02_artifact_commit": "766f856745597525d55dae5f1aec4876c0d16ec9",
+    "S02_git_blob_sha": "a8673e2da687b21e2c1c378aa35c072dd6adae89",
+    "S02_total_fragments": 34,
+    "S03_English_source": "Exact S02 short source fragments; physical page 1-indexed."
+  },
+  "statistics": {
+    "records": 20,
+    "verified_English_fragments_used": 20,
+    "S02_fragments_not_promoted_into_S03": 14,
+    "all_S02_fragments_accounted_for": 34,
+    "types": {
+      "marketing_slogan": 3,
+      "intro": 5,
+      "other": 12
+    },
+    "standalone_competitor_software_capabilities_inferred": 0,
+    "source_claim_gates": 10,
+    "context_only_qualifier_translations": 13,
+    "plan_bundles_context_only": 2,
+    "independent_service_rows_context_only": 8,
+    "independently_verified_NSP_features": 0
+  },
+  "editorial_and_safety_policy": {
+    "source_01_00150_not_merged_with_other_Honeywell_brochures": true,
+    "research_only": true,
+    "commercial_reuse_not_approved": true,
+    "NSP_support_or_warranty_not_inferred": true,
+    "basic_phone_and_email_conditions_distinct_from_24_7_offerings": true,
+    "base_warranty_and_extension_not_conflated": true,
+    "IC3_ASX_and_IC5_INNsite_remain_separate": true,
+    "IC5_star_scoped_to_two_left_plan_rows_only": true,
+    "no_hardware_or_software_feature_promoted_from_visual_caption": true,
+    "feature_bank_and_app_unchanged": true
+  },
+  "research_records": [
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I001",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 1,
+      "S02_fragment_ref": "HONEYWELL17-P01-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "WE FOCUS ON YOUR SYSTEM",
+      "translation_fa": "ما بر سامانهٔ شما تمرکز می‌کنیم",
+      "source_type": "marketing_slogan",
+      "category_id": "marketing_slogans",
+      "research_section_group": "COVER_AND_SERVICE_POSITIONING",
+      "editorial_relevance_and_limits_fa": "نیمهٔ اول یک تیتر پیوسته؛ ایفای مسئولیت یا سطح خدمت NSP از شعار ناشر نتیجه نمی‌شود.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P01-E02",
+        "HONEYWELL17-P01-E03"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-01"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-COVER"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I002",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 1,
+      "S02_fragment_ref": "HONEYWELL17-P01-E02",
+      "S02_fragment_index": 2,
+      "original_source_excerpt_en": "FOCUS ON YOUR GUESTS",
+      "translation_fa": "شما بر مهمانانتان تمرکز کنید",
+      "source_type": "marketing_slogan",
+      "category_id": "marketing_slogans",
+      "research_section_group": "COVER_AND_SERVICE_POSITIONING",
+      "editorial_relevance_and_limits_fa": "نیمهٔ دوم همان تیتر در کنار عبارت پیوندی روی جلد خوانده شود؛ نه یک شعار مستقل یا ترجمهٔ پیشنهادی برای انتشار NSP.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P01-E01",
+        "HONEYWELL17-P01-E03"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-01"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-COVER"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I003",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 2,
+      "S02_fragment_ref": "HONEYWELL17-P02-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "FREE BASIC SUPPORT",
+      "translation_fa": "پشتیبانی پایهٔ رایگان",
+      "source_type": "intro",
+      "category_id": "hotel_operations",
+      "research_section_group": "SUPPORT_TIERS_AND_WARRANTY",
+      "editorial_relevance_and_limits_fa": "در منبع به خرید سامانهٔ INNCOM مربوط است. پشتیبانی تلفنی همان طرح ساعات عادی EST دارد و با طرح/خدمت ۲۴/۷ یکی نیست.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P02-E02",
+        "HONEYWELL17-P02-E03"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-02"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-BASIC"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I004",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 2,
+      "S02_fragment_ref": "HONEYWELL17-P02-E04",
+      "S02_fragment_index": 4,
+      "original_source_excerpt_en": "24-hour response time",
+      "translation_fa": "زمان پاسخ‌گویی ۲۴ ساعته",
+      "source_type": "other",
+      "category_id": "hotel_operations",
+      "research_section_group": "SUPPORT_TIERS_AND_WARRANTY",
+      "editorial_relevance_and_limits_fa": "این عبارت وصف پاسخ ایمیلی در طرح پایه است، نه در دسترس بودن تلفن در همهٔ ساعات. پاسخ یک‌ساعته فقط مقدار معمول در ساعات عادی است، نه تعهد قطعی یا سیاست NSP.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P02-E05"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-BASIC"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I005",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 2,
+      "S02_fragment_ref": "HONEYWELL17-P02-E06",
+      "S02_fragment_index": 6,
+      "original_source_excerpt_en": "2-YEAR PRODUCT WARRANTY",
+      "translation_fa": "ضمانت دوسالهٔ محصول",
+      "source_type": "other",
+      "category_id": "hotel_operations",
+      "research_section_group": "SUPPORT_TIERS_AND_WARRANTY",
+      "editorial_relevance_and_limits_fa": "دورهٔ ضمانتِ استاندارد ناشر در نسخهٔ ۲۰۲۰، با زمینهٔ نقص ساخت یا مواد؛ حقوق قانونی، شروط کامل، سیاست NSP یا پوشش خسارت دیگر از این متن نتیجه نمی‌شود.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P02-E07"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-WARRANTY"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I006",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 2,
+      "S02_fragment_ref": "HONEYWELL17-P02-E08",
+      "S02_fragment_index": 8,
+      "original_source_excerpt_en": "Extended Product Warranty options available for purchase",
+      "translation_fa": "گزینه‌های قابل‌خریدِ ضمانت تمدیدشدهٔ محصول",
+      "source_type": "other",
+      "category_id": "hotel_operations",
+      "research_section_group": "SUPPORT_TIERS_AND_WARRANTY",
+      "editorial_relevance_and_limits_fa": "گزینهٔ خرید و گنجاندن تمدید در طرح‌های منبع دو مسیرند. مدت تمدید یا شرایط فراتر از متن و تعهد NSP مشخص نشده.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P02-E09"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-WARRANTY"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I007",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 2,
+      "S02_fragment_ref": "HONEYWELL17-P02-E10",
+      "S02_fragment_index": 10,
+      "original_source_excerpt_en": "INNcontrol 5 Dashboard",
+      "translation_fa": "داشبورد INNcontrol 5",
+      "source_type": "other",
+      "category_id": "management_software",
+      "research_section_group": "SUPPORT_TIERS_AND_WARRANTY",
+      "editorial_relevance_and_limits_fa": "عنوان تصویر منبع است، نه فیچر مستقل. داده، کارکرد و نسخهٔ فعلی نرم‌افزار از تصویر استنباط نشود.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-05"
+      ],
+      "source_context_set_refs": [],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I008",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 3,
+      "S02_fragment_ref": "HONEYWELL17-P03-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "DESIGN ENGINEERING",
+      "translation_fa": "طراحی مهندسی",
+      "source_type": "intro",
+      "category_id": "hotel_operations",
+      "research_section_group": "SERVICE_CATALOGUE",
+      "editorial_relevance_and_limits_fa": "سرفصل خدمت ناشر؛ می‌توان جداسازی طراحی از استقرار و پشتیبانی را مطالعه کرد، نه تیم، سابقه یا نتیجهٔ NSP.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "source_context_set_refs": [],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I009",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 3,
+      "S02_fragment_ref": "HONEYWELL17-P03-E02",
+      "S02_fragment_index": 2,
+      "original_source_excerpt_en": "INSTALLATION & COMMISSIONING",
+      "translation_fa": "نصب و راه‌اندازی",
+      "source_type": "intro",
+      "category_id": "hotel_operations",
+      "research_section_group": "SERVICE_CATALOGUE",
+      "editorial_relevance_and_limits_fa": "عنوان خدمتِ استقرار و تحویل. متن تفکیک نصب توسط تیم هتل/مجری از خدمات خود ناشر را حفظ می‌کند؛ مسئولیت NSP جداگانه بررسی شود.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "source_context_set_refs": [],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I010",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 3,
+      "S02_fragment_ref": "HONEYWELL17-P03-E03",
+      "S02_fragment_index": 3,
+      "original_source_excerpt_en": "CONSULTATION",
+      "translation_fa": "مشاوره",
+      "source_type": "intro",
+      "category_id": "hotel_operations",
+      "research_section_group": "SERVICE_CATALOGUE",
+      "editorial_relevance_and_limits_fa": "سرفصل خدمات و گزارش‌ها در متن ناشر؛ مشاوره، تحلیل نرم‌افزاری و نتیجهٔ انرژی سه چیز جدا هستند.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P03-E06",
+        "HONEYWELL17-P03-E07"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-REPORTS"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I011",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 3,
+      "S02_fragment_ref": "HONEYWELL17-P03-E06",
+      "S02_fragment_index": 6,
+      "original_source_excerpt_en": "Exchange (ASX) reports for IC3",
+      "translation_fa": "گزارش‌های ASX برای IC3",
+      "source_type": "other",
+      "category_id": "management_software",
+      "research_section_group": "SERVICE_CATALOGUE",
+      "editorial_relevance_and_limits_fa": "گزیده از میانهٔ عبارت آغاز می‌شود؛ ASX همان برنامهٔ گزارش ناشر در IC3 است. نسخه، عرضهٔ جاری و قابلیت NSP ثابت نیستند.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P03-E03"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-REPORTS"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I012",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 3,
+      "S02_fragment_ref": "HONEYWELL17-P03-E07",
+      "S02_fragment_index": 7,
+      "original_source_excerpt_en": "INNsite Reports for IC5",
+      "translation_fa": "گزارش‌های INNsite برای IC5",
+      "source_type": "other",
+      "category_id": "management_software",
+      "research_section_group": "SERVICE_CATALOGUE",
+      "editorial_relevance_and_limits_fa": "زمینهٔ مشاوره و گزارش ناشر برای IC5؛ گزارش را با ASXِ IC3 یا دسترس‌پذیری همهٔ طرح‌ها برابر نکن.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P03-E03",
+        "HONEYWELL17-P04-E09"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-06",
+        "HONEYWELL17-CLAIM-09"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-REPORTS",
+        "HONEYWELL17-CTX-PLAN_MATRIX"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I013",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 3,
+      "S02_fragment_ref": "HONEYWELL17-P03-E08",
+      "S02_fragment_index": 8,
+      "original_source_excerpt_en": "One-on-one web training",
+      "translation_fa": "آموزش وبِ انفرادی",
+      "source_type": "intro",
+      "category_id": "hotel_operations",
+      "research_section_group": "SERVICE_CATALOGUE",
+      "editorial_relevance_and_limits_fa": "نمونهٔ روش ارائهٔ آموزش از راه دور است؛ مدت نیم‌روز فقط در طرح صفحهٔ چهار، نه برای تمام جلسات و نه تعهد NSP.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P03-E04"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-SERVICES"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I014",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 3,
+      "S02_fragment_ref": "HONEYWELL17-P03-E09",
+      "S02_fragment_index": 9,
+      "original_source_excerpt_en": "24/7 emergency technical assistance",
+      "translation_fa": "کمک اضطراری فنی به‌صورت ۲۴/۷",
+      "source_type": "other",
+      "category_id": "hotel_operations",
+      "research_section_group": "SERVICE_CATALOGUE",
+      "editorial_relevance_and_limits_fa": "کمک اضطراری یکی از گزینه‌های اختیاری پشتیبانی از راه دورِ منبع است؛ با ساعات پایه یا زمان پاسخ ایمیل، گزارش و آموزش خلط نشود.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P03-E05"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-SERVICES"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I015",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 3,
+      "S02_fragment_ref": "HONEYWELL17-P03-E10",
+      "S02_fragment_index": 10,
+      "original_source_excerpt_en": "Technical Service Requests",
+      "translation_fa": "درخواست‌های خدمات فنی",
+      "source_type": "other",
+      "category_id": "hotel_operations",
+      "research_section_group": "SERVICE_CATALOGUE",
+      "editorial_relevance_and_limits_fa": "در متن نمونهٔ خدمت زمان‌دار در کنار کمک اضطراری است؛ واژهٔ درخواست خودکار، کانال، پاسخ قطعی یا SLA برای NSP نتیجه نمی‌دهد.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P03-E05"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-SERVICES"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I016",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 3,
+      "S02_fragment_ref": "HONEYWELL17-P03-E11",
+      "S02_fragment_index": 11,
+      "original_source_excerpt_en": "Network Operation Center (NOC)",
+      "translation_fa": "مرکز عملیات شبکه (NOC)",
+      "source_type": "other",
+      "category_id": "hotel_operations",
+      "research_section_group": "SERVICE_CATALOGUE",
+      "editorial_relevance_and_limits_fa": "نهاد خدمت ناشر در صفحهٔ ۳، در متن مربوط به اعزام و پشتیبانی؛ اثبات قابلیت نرم‌افزار، مرکز NSP یا دامنهٔ خدمت نیست.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P03-E05"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-SERVICES"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I017",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 4,
+      "S02_fragment_ref": "HONEYWELL17-P04-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "FROM SIMPLE ASSISTANCE TO SEAMLESS SERVICE",
+      "translation_fa": "از کمک ساده تا خدمات یکپارچه",
+      "source_type": "marketing_slogan",
+      "category_id": "marketing_slogans",
+      "research_section_group": "PLAN_COMPARISON_AND_AVAILABLE_SERVICES",
+      "editorial_relevance_and_limits_fa": "تیتر جمع‌بندی ناشر؛ الگوی نمایش طیف خدمات است، نه وعدهٔ ارائهٔ همهٔ خدمات یا تضمین پیوستگی در NSP.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "source_context_set_refs": [],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I018",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 4,
+      "S02_fragment_ref": "HONEYWELL17-P04-E04",
+      "S02_fragment_index": 4,
+      "original_source_excerpt_en": "Performance & Maintenance Plan",
+      "translation_fa": "طرح عملکرد و نگهداری",
+      "source_type": "other",
+      "category_id": "hotel_operations",
+      "research_section_group": "PLAN_COMPARISON_AND_AVAILABLE_SERVICES",
+      "editorial_relevance_and_limits_fa": "بستهٔ چپ اول در نسخهٔ ۲۰۲۰؛ گزارش و تماس فصلیِ نشان‌دار فقط برای سامانه‌های IC5. شروط خدمت، قیمت و ضمانت NSP نتیجه نشوند.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P04-E02",
+        "HONEYWELL17-P04-E06",
+        "HONEYWELL17-P04-E09"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-08",
+        "HONEYWELL17-CLAIM-09"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-WARRANTY",
+        "HONEYWELL17-CTX-REPORTS",
+        "HONEYWELL17-CTX-PLAN_MATRIX"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I019",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 4,
+      "S02_fragment_ref": "HONEYWELL17-P04-E05",
+      "S02_fragment_index": 5,
+      "original_source_excerpt_en": "Remote Service & Support Plan",
+      "translation_fa": "طرح خدمات و پشتیبانی از راه دور",
+      "source_type": "other",
+      "category_id": "hotel_operations",
+      "research_section_group": "PLAN_COMPARISON_AND_AVAILABLE_SERVICES",
+      "editorial_relevance_and_limits_fa": "بستهٔ چپ دوم؛ گزارش و تماس سالانهٔ نشان‌دار برای سامانه‌های IC5. آموزش نیم‌روزه فقط در همان بسته است و با خدمت مستقل یکسان نیست.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P04-E02",
+        "HONEYWELL17-P04-E07",
+        "HONEYWELL17-P04-E09"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-08",
+        "HONEYWELL17-CLAIM-09"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-WARRANTY",
+        "HONEYWELL17-CTX-REPORTS",
+        "HONEYWELL17-CTX-PLAN_MATRIX"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I020",
+      "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+      "source_filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "source_document_number": "01-00150",
+      "source_pdf_page": 4,
+      "S02_fragment_ref": "HONEYWELL17-P04-E08",
+      "S02_fragment_index": 8,
+      "original_source_excerpt_en": "24/7 Telephone Technical Support",
+      "translation_fa": "پشتیبانی فنی تلفنی به‌صورت ۲۴/۷",
+      "source_type": "other",
+      "category_id": "hotel_operations",
+      "research_section_group": "PLAN_COMPARISON_AND_AVAILABLE_SERVICES",
+      "editorial_relevance_and_limits_fa": "این عبارت در هر دو طرح چپ و فهرست مستقل راست دیده می‌شود؛ نه ادغام دو ستون، نه جزء پشتیبانی پایه، نه الزام یا خدمت تأییدشدهٔ NSP.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "printed_01-00150_07_2020",
+        "not_verified_for_NSP"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact S02 source fragment previously verified against two PDF text parsers; physical PDF page quoted.",
+      "translation_style": "Contextual Persian, source quotation unchanged and conditions kept separately.",
+      "related_context_fragment_refs": [
+        "HONEYWELL17-P04-E02",
+        "HONEYWELL17-P04-E03",
+        "HONEYWELL17-P02-E03"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-08",
+        "HONEYWELL17-CLAIM-02"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL17-CTX-BASIC",
+        "HONEYWELL17-CTX-SERVICES",
+        "HONEYWELL17-CTX-PLAN_MATRIX"
+      ],
+      "source_is_service_or_marketing_not_application_function": true,
+      "publisher_claims_are_not_NSP_proof": true,
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    }
+  ],
+  "excluded_S02_fragments": [
+    {
+      "S02_fragment_ref": "HONEYWELL17-P01-E03",
+      "pdf_page": 1,
+      "reason": "title_or_plan_context_not_independent_record",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-01"
+      ]
+    },
+    {
+      "S02_fragment_ref": "HONEYWELL17-P02-E02",
+      "pdf_page": 2,
+      "reason": "base_or_extended_service_condition_not_independent_record",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-02"
+      ]
+    },
+    {
+      "S02_fragment_ref": "HONEYWELL17-P02-E03",
+      "pdf_page": 2,
+      "reason": "base_or_extended_service_condition_not_independent_record",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-02"
+      ]
+    },
+    {
+      "S02_fragment_ref": "HONEYWELL17-P02-E05",
+      "pdf_page": 2,
+      "reason": "base_or_extended_service_condition_not_independent_record",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-03"
+      ]
+    },
+    {
+      "S02_fragment_ref": "HONEYWELL17-P02-E07",
+      "pdf_page": 2,
+      "reason": "base_or_extended_service_condition_not_independent_record",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-04"
+      ]
+    },
+    {
+      "S02_fragment_ref": "HONEYWELL17-P02-E09",
+      "pdf_page": 2,
+      "reason": "base_or_extended_service_condition_not_independent_record",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-04"
+      ]
+    },
+    {
+      "S02_fragment_ref": "HONEYWELL17-P03-E04",
+      "pdf_page": 3,
+      "reason": "title_or_plan_context_not_independent_record",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-07"
+      ]
+    },
+    {
+      "S02_fragment_ref": "HONEYWELL17-P03-E05",
+      "pdf_page": 3,
+      "reason": "title_or_plan_context_not_independent_record",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-07"
+      ]
+    },
+    {
+      "S02_fragment_ref": "HONEYWELL17-P04-E02",
+      "pdf_page": 4,
+      "reason": "title_or_plan_context_not_independent_record",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-08"
+      ]
+    },
+    {
+      "S02_fragment_ref": "HONEYWELL17-P04-E03",
+      "pdf_page": 4,
+      "reason": "title_or_plan_context_not_independent_record",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-08"
+      ]
+    },
+    {
+      "S02_fragment_ref": "HONEYWELL17-P04-E06",
+      "pdf_page": 4,
+      "reason": "starred_plan_condition_context_only",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-09"
+      ]
+    },
+    {
+      "S02_fragment_ref": "HONEYWELL17-P04-E07",
+      "pdf_page": 4,
+      "reason": "starred_plan_condition_context_only",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-09"
+      ]
+    },
+    {
+      "S02_fragment_ref": "HONEYWELL17-P04-E09",
+      "pdf_page": 4,
+      "reason": "starred_plan_condition_context_only",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-09"
+      ]
+    },
+    {
+      "S02_fragment_ref": "HONEYWELL17-P04-E10",
+      "pdf_page": 4,
+      "reason": "edition_only_not_feature",
+      "source_quote_location": "S02 native short-excerpt index",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-10"
+      ]
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "HONEYWELL17-CLAIM-01",
+      "pdf_page": 1,
+      "kind": "cover_positioning_only",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P01-E01",
+        "HONEYWELL17-P01-E02",
+        "HONEYWELL17-P01-E03"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "تیتر هتل‌دار/مهمان پیام برند است، نه نتیجهٔ اجرایی NSP.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I001",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I002"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-02",
+      "pdf_page": 2,
+      "kind": "basic_telephone_hours_not_24_7",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P02-E01",
+        "HONEYWELL17-P02-E02",
+        "HONEYWELL17-P02-E03"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "بازه عیناً EST است؛ روزهای هفته، تغییر فصلی ساعت یا پشتیبانی ۲۴/۷ از متن طرح پایه نتیجه نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I003",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I020"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-03",
+      "pdf_page": 2,
+      "kind": "basic_email_response_target_vs_typical",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P02-E04",
+        "HONEYWELL17-P02-E05"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "۲۴ ساعت زمان پاسخ ایمیل در متن و یک ساعت فقط «معمولاً» در ساعات عادی است؛ هیچ‌کدام پشتیبانی تلفنی ۲۴/۷ یا تعهد NSP نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I004"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-04",
+      "pdf_page": 2,
+      "kind": "base_warranty_defect_and_extended_distinct",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P02-E06",
+        "HONEYWELL17-P02-E07",
+        "HONEYWELL17-P02-E08",
+        "HONEYWELL17-P02-E09"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "دو سال برای ضمانت محصول منبع با شرط نقص ساخت/مواد. تمدید هم عرضهٔ جدا دارد و هم در طرح‌های مشخص ذکر شده. حقوق قانونی، کفایت یا سیاست NSP از آن نتیجه نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I005",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I006"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-05",
+      "pdf_page": 2,
+      "kind": "dashboard_caption_not_capability",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P02-E10"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "عنوان تصویر آن را داشبورد INNcontrol 5 معرفی می‌کند؛ جزئیات داده و قابلیت از پیکسل تصویر استخراج نشده‌اند.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I007"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-06",
+      "pdf_page": 3,
+      "kind": "consultation_report_versions",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P03-E03",
+        "HONEYWELL17-P03-E06",
+        "HONEYWELL17-P03-E07"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "ASX برای IC3 و INNsite برای IC5 در متن 01-00150؛ اعلام عرضهٔ امروز یا سازگاری NSP نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I010",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I011",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I012"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-07",
+      "pdf_page": 3,
+      "kind": "training_vs_optional_remote_help",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P03-E04",
+        "HONEYWELL17-P03-E05",
+        "HONEYWELL17-P03-E08",
+        "HONEYWELL17-P03-E09",
+        "HONEYWELL17-P03-E10",
+        "HONEYWELL17-P03-E11"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "آموزش انفرادی، کمک اضطراری ۲۴/۷ و درخواست زمان‌دار معیارهای یکسانی نیستند. کمک اضطراری این صفحه گزینهٔ از راه دور است؛ خدمت پایه و ضمانت NSP نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I013",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I014",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I015",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I016"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-08",
+      "pdf_page": 4,
+      "kind": "separate_plan_and_available_columns",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P04-E02",
+        "HONEYWELL17-P04-E03",
+        "HONEYWELL17-P04-E04",
+        "HONEYWELL17-P04-E05",
+        "HONEYWELL17-P04-E08"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "دو طرح سمت چپ و فهرست خدمات در سمت راست؛ تکرار خدمت به معنای ادغام، یکسانی قیمت، یا خدمت پایه نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I018",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I019",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I020"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-09",
+      "pdf_page": 4,
+      "kind": "quarterly_annual_ic5_star_precise",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P04-E06",
+        "HONEYWELL17-P04-E07",
+        "HONEYWELL17-P04-E09"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "فقط دو ردیف ستاره‌دار سمت چپ: گزارش فصلی طرح نگهداری و گزارش سالانه طرح پشتیبانی از راه دور. نبود ستاره در فهرست راست برای نسخه‌های دیگر مدرک سازگاری نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I012",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I018",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I019"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL17-CLAIM-10",
+      "pdf_page": 4,
+      "kind": "edition_and_no_catalog_merger",
+      "S02_fragment_refs": [
+        "HONEYWELL17-P04-E10"
+      ],
+      "publication_gate": "source_only_require_independent_NSP_evidence",
+      "context_limits_fa": "سند 01-00150 / 07/20 / LM مستقل از 01-00139 و 01-00149؛ ماه چاپ، نه تاریخ عرضه امروز یا تغییر شرایط.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [],
+      "not_an_independent_feature": true
+    }
+  ],
+  "source_context_bindings": [
+    {
+      "id": "HONEYWELL17-CTX-COVER",
+      "pdf_pages": [
+        1
+      ],
+      "source_fragment_refs": [
+        "HONEYWELL17-P01-E01",
+        "HONEYWELL17-P01-E02",
+        "HONEYWELL17-P01-E03"
+      ],
+      "context_fa": "دو نیمهٔ تیتر پیوسته‌اند و فقط یک مفهوم تحریریه‌ای دارند.",
+      "section_mapping_pending_S05": true,
+      "approved_NSP_capability": false,
+      "not_additional_features": true
+    },
+    {
+      "id": "HONEYWELL17-CTX-BASIC",
+      "pdf_pages": [
+        2
+      ],
+      "source_fragment_refs": [
+        "HONEYWELL17-P02-E01",
+        "HONEYWELL17-P02-E02",
+        "HONEYWELL17-P02-E03",
+        "HONEYWELL17-P02-E04",
+        "HONEYWELL17-P02-E05"
+      ],
+      "context_fa": "شرایط پایهٔ زمان تلفن و پاسخ ایمیل جدا؛ پشتیبانی ۲۴/۷ معادلشان نیست.",
+      "section_mapping_pending_S05": true,
+      "approved_NSP_capability": false,
+      "not_additional_features": true
+    },
+    {
+      "id": "HONEYWELL17-CTX-WARRANTY",
+      "pdf_pages": [
+        2,
+        4
+      ],
+      "source_fragment_refs": [
+        "HONEYWELL17-P02-E06",
+        "HONEYWELL17-P02-E07",
+        "HONEYWELL17-P02-E08",
+        "HONEYWELL17-P02-E09",
+        "HONEYWELL17-P04-E04",
+        "HONEYWELL17-P04-E05"
+      ],
+      "context_fa": "ضمانت محدود محصول، امکان خرید تمدید و تمدیدِ مشمول طرح سه زمینهٔ جدا هستند؛ حقوق قانونی یا سیاست NSP احراز نشد.",
+      "section_mapping_pending_S05": true,
+      "approved_NSP_capability": false,
+      "not_additional_features": true
+    },
+    {
+      "id": "HONEYWELL17-CTX-REPORTS",
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "source_fragment_refs": [
+        "HONEYWELL17-P03-E03",
+        "HONEYWELL17-P03-E06",
+        "HONEYWELL17-P03-E07",
+        "HONEYWELL17-P04-E06",
+        "HONEYWELL17-P04-E07",
+        "HONEYWELL17-P04-E09"
+      ],
+      "context_fa": "ASX در مشاورهٔ IC3 و INNsite در مشاورهٔ IC5. پاورقی ستاره فقط دو ردیف فصلی/سالانهٔ طرح چپ را نشان می‌دهد.",
+      "section_mapping_pending_S05": true,
+      "approved_NSP_capability": false,
+      "not_additional_features": true
+    },
+    {
+      "id": "HONEYWELL17-CTX-SERVICES",
+      "pdf_pages": [
+        3,
+        4
+      ],
+      "source_fragment_refs": [
+        "HONEYWELL17-P03-E05",
+        "HONEYWELL17-P03-E08",
+        "HONEYWELL17-P03-E09",
+        "HONEYWELL17-P03-E10",
+        "HONEYWELL17-P03-E11",
+        "HONEYWELL17-P04-E08"
+      ],
+      "context_fa": "آموزش، کمک اضطراریِ اختیاری، درخواستِ زمان‌دار و تلفن ۲۴/۷ درج‌شده در طرح/فهرست، یک شرط نیستند.",
+      "section_mapping_pending_S05": true,
+      "approved_NSP_capability": false,
+      "not_additional_features": true
+    },
+    {
+      "id": "HONEYWELL17-CTX-PLAN_MATRIX",
+      "pdf_pages": [
+        4
+      ],
+      "source_fragment_refs": [
+        "HONEYWELL17-P04-E02",
+        "HONEYWELL17-P04-E03",
+        "HONEYWELL17-P04-E04",
+        "HONEYWELL17-P04-E05",
+        "HONEYWELL17-P04-E06",
+        "HONEYWELL17-P04-E07",
+        "HONEYWELL17-P04-E08",
+        "HONEYWELL17-P04-E09"
+      ],
+      "context_fa": "دو بستهٔ چپ و فهرست خدمات مستقل راست؛ مهلت/قیمت/پوشش و قابلیت NSP از صورت فهرست نتیجه نمی‌شود.",
+      "section_mapping_pending_S05": true,
+      "approved_NSP_capability": false,
+      "not_additional_features": true
+    }
+  ],
+  "context_qualifier_translations_fa": [
+    {
+      "pdf_page": 1,
+      "source_fragment_ref": "HONEYWELL17-P01-E03",
+      "translation_fa": "خدمات و پشتیبانی INNCOM",
+      "limits_fa": "عنوان بروشور، نه فیچر مستقل.",
+      "not_a_feature": true
+    },
+    {
+      "pdf_page": 2,
+      "source_fragment_ref": "HONEYWELL17-P02-E02",
+      "translation_fa": "خرید هر سامانهٔ INNCOM شامل طرح پشتیبانی پایه است",
+      "limits_fa": "شرط منبع در نسخهٔ چاپ ۲۰۲۰؛ سیاست NSP یا وضعیت فعلی نیست.",
+      "not_a_feature": true
+    },
+    {
+      "pdf_page": 2,
+      "source_fragment_ref": "HONEYWELL17-P02-E03",
+      "translation_fa": "از ۸ صبح تا ۸ شب به وقت EST",
+      "limits_fa": "عین منطقهٔ زمانی چاپی، بدون تعبیر تغییر فصلی یا روزهای هفته.",
+      "not_a_feature": true
+    },
+    {
+      "pdf_page": 2,
+      "source_fragment_ref": "HONEYWELL17-P02-E05",
+      "translation_fa": "معمولاً زمان پاسخ یک ساعت در ساعات عادی کاری است",
+      "limits_fa": "وصف پاسخ ایمیل؛ معمولاً نه SLA قطعی.",
+      "not_a_feature": true
+    },
+    {
+      "pdf_page": 2,
+      "source_fragment_ref": "HONEYWELL17-P02-E07",
+      "translation_fa": "عیب در ساخت و/یا مواد",
+      "limits_fa": "دامنهٔ ذکرشدهٔ ضمانت پایه؛ شروط کامل استنباط نشوند.",
+      "not_a_feature": true
+    },
+    {
+      "pdf_page": 2,
+      "source_fragment_ref": "HONEYWELL17-P02-E09",
+      "translation_fa": "هر طرح INNservice همچنین شامل ضمانت تمدیدشدهٔ محصول است",
+      "limits_fa": "حکم منبع 01-00150؛ عرضهٔ جداگانه و شرایط NSP از آن نتیجه نشوند.",
+      "not_a_feature": true
+    },
+    {
+      "pdf_page": 3,
+      "source_fragment_ref": "HONEYWELL17-P03-E04",
+      "translation_fa": "آموزش",
+      "limits_fa": "تیتر گروه اشکال آموزش.",
+      "not_a_feature": true
+    },
+    {
+      "pdf_page": 3,
+      "source_fragment_ref": "HONEYWELL17-P03-E05",
+      "translation_fa": "پشتیبانی فنی",
+      "limits_fa": "تیتر گروه چند خدمت با شرایط جدا.",
+      "not_a_feature": true
+    },
+    {
+      "pdf_page": 4,
+      "source_fragment_ref": "HONEYWELL17-P04-E02",
+      "translation_fa": "طرح‌های INNservice",
+      "limits_fa": "ستون چپ، نه خدمات مستقل راست.",
+      "not_a_feature": true
+    },
+    {
+      "pdf_page": 4,
+      "source_fragment_ref": "HONEYWELL17-P04-E03",
+      "translation_fa": "خدمات قابل ارائه",
+      "limits_fa": "ستون مجزا، نه اجزای همهٔ طرح‌ها.",
+      "not_a_feature": true
+    },
+    {
+      "pdf_page": 4,
+      "source_fragment_ref": "HONEYWELL17-P04-E06",
+      "translation_fa": "گزارش فصلی INNsite و تماس مشاوره*",
+      "limits_fa": "ستاره در همان ردیف بستهٔ عملکرد و نگهداری.",
+      "not_a_feature": true
+    },
+    {
+      "pdf_page": 4,
+      "source_fragment_ref": "HONEYWELL17-P04-E07",
+      "translation_fa": "گزارش سالانهٔ INNsite و تماس مشاوره*",
+      "limits_fa": "ستاره در همان ردیف بستهٔ از راه دور.",
+      "not_a_feature": true
+    },
+    {
+      "pdf_page": 4,
+      "source_fragment_ref": "HONEYWELL17-P04-E09",
+      "translation_fa": "فقط برای سامانه‌های دارای IC5",
+      "limits_fa": "ستارهٔ ردیف‌های فصلی و سالانهٔ چپ؛ نبود ستاره در سمت راست تأیید نسخه‌های دیگر نیست.",
+      "not_a_feature": true
+    }
+  ],
+  "structured_source_contexts": {
+    "source_service_plans_and_available_services": {
+      "id": "HONEYWELL17-P04-PLANS-VS-SERVICES",
+      "pdf_pages": [
+        4
+      ],
+      "kind": "source_plan_and_individually_available_services_matrix",
+      "source_document_number": "01-00150",
+      "source_order_method": "Original page visually inspected. Left x≈45 pt and right x≈229 pt physically separate; row membership verified from original PDF bounding positions, never from interleaved stream.",
+      "left_column_bundles": [
+        {
+          "plan_name_ref": "HONEYWELL17-P04-E04",
+          "plan_header_bbox_points": [
+            45,
+            216.27,
+            207.54,
+            226.6
+          ],
+          "items": [
+            {
+              "row_code": "onsite_training_or_tech_day",
+              "evidence_bbox_points": [
+                45,
+                234.55,
+                146.12,
+                244.12
+              ],
+              "IC5_only_explicitly_marked": false,
+              "derived_semantic_index_not_a_quote": true,
+              "description_fa": "آموزش حضوری یا روز خدمات فنی"
+            },
+            {
+              "row_code": "quarterly_INNsite_report_and_call",
+              "evidence_bbox_points": [
+                45,
+                252.55,
+                203.85,
+                262.12
+              ],
+              "IC5_only_explicitly_marked": true,
+              "derived_semantic_index_not_a_quote": true,
+              "description_fa": "گزارش فصلی INNsite و تماس مشاوره"
+            },
+            {
+              "row_code": "telephone_technical_support_24_7",
+              "evidence_bbox_points": [
+                45,
+                270.55,
+                167.17,
+                280.12
+              ],
+              "IC5_only_explicitly_marked": false,
+              "derived_semantic_index_not_a_quote": true,
+              "description_fa": "پشتیبانی فنی تلفنی ۲۴/۷"
+            },
+            {
+              "row_code": "extended_product_warranty",
+              "evidence_bbox_points": [
+                45,
+                288.55,
+                142.44,
+                298.12
+              ],
+              "IC5_only_explicitly_marked": false,
+              "derived_semantic_index_not_a_quote": true,
+              "description_fa": "ضمانت تمدیدشدهٔ محصول"
+            }
+          ],
+          "plan_name_fa": "طرح عملکرد و نگهداری"
+        },
+        {
+          "plan_name_ref": "HONEYWELL17-P04-E05",
+          "plan_header_bbox_points": [
+            45,
+            307.35,
+            205.19,
+            317.68
+          ],
+          "items": [
+            {
+              "row_code": "one_to_one_web_training_half_day",
+              "evidence_bbox_points": [
+                45,
+                326.42,
+                174.01,
+                336
+              ],
+              "IC5_only_explicitly_marked": false,
+              "derived_semantic_index_not_a_quote": true,
+              "description_fa": "آموزش وب انفرادی (نیم‌روز)"
+            },
+            {
+              "row_code": "annual_INNsite_report_and_call",
+              "evidence_bbox_points": [
+                45,
+                344.42,
+                196.17,
+                354
+              ],
+              "IC5_only_explicitly_marked": true,
+              "derived_semantic_index_not_a_quote": true,
+              "description_fa": "گزارش سالانهٔ INNsite و تماس مشاوره"
+            },
+            {
+              "row_code": "telephone_technical_support_24_7",
+              "evidence_bbox_points": [
+                45,
+                362.42,
+                167.17,
+                372
+              ],
+              "IC5_only_explicitly_marked": false,
+              "derived_semantic_index_not_a_quote": true,
+              "description_fa": "پشتیبانی فنی تلفنی ۲۴/۷"
+            },
+            {
+              "row_code": "extended_product_warranty",
+              "evidence_bbox_points": [
+                45,
+                380.42,
+                142.44,
+                390
+              ],
+              "IC5_only_explicitly_marked": false,
+              "derived_semantic_index_not_a_quote": true,
+              "description_fa": "ضمانت تمدیدشدهٔ محصول"
+            }
+          ],
+          "plan_name_fa": "طرح خدمات و پشتیبانی از راه دور"
+        }
+      ],
+      "right_column_available_only": [
+        {
+          "row_code": "onsite_technician_visit",
+          "evidence_bbox_points": [
+            229.03,
+            219.14,
+            293.13,
+            228.72
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true,
+          "description_fa": "بازدید حضوری کارشناس فنی"
+        },
+        {
+          "row_code": "onsite_training_visit",
+          "evidence_bbox_points": [
+            229.03,
+            241.46,
+            303.17,
+            251.04
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true,
+          "description_fa": "بازدید حضوری برای آموزش"
+        },
+        {
+          "row_code": "ASX_report_and_call",
+          "evidence_bbox_points": [
+            229.03,
+            263.78,
+            338.43,
+            273.36
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true,
+          "description_fa": "گزارش ASX و تماس مشاوره"
+        },
+        {
+          "row_code": "INNsite_report_and_call",
+          "evidence_bbox_points": [
+            229.03,
+            286.1,
+            350.6,
+            295.68
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true,
+          "description_fa": "گزارش INNsite و تماس مشاوره"
+        },
+        {
+          "row_code": "telephone_technical_support_24_7",
+          "evidence_bbox_points": [
+            229.03,
+            308.42,
+            345,
+            318
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true,
+          "description_fa": "پشتیبانی فنی تلفنی ۲۴/۷"
+        },
+        {
+          "row_code": "one_to_one_web_training_session",
+          "evidence_bbox_points": [
+            229.03,
+            330.74,
+            351.12,
+            340.32
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true,
+          "description_fa": "جلسهٔ آموزش وب انفرادی"
+        },
+        {
+          "row_code": "technical_service_request",
+          "evidence_bbox_points": [
+            229.03,
+            353.06,
+            320.87,
+            362.64
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true,
+          "description_fa": "درخواست خدمات فنی"
+        },
+        {
+          "row_code": "extended_product_warranty",
+          "evidence_bbox_points": [
+            229.03,
+            375.38,
+            326.47,
+            384.96
+          ],
+          "IC5_only_explicitly_marked": false,
+          "derived_semantic_index_not_a_quote": true,
+          "description_fa": "ضمانت تمدیدشدهٔ محصول"
+        }
+      ],
+      "IC5_scope_ref": "HONEYWELL17-P04-E09",
+      "IC5_only_star_is_printed_on_left_quarterly_and_annual_rows_only": true,
+      "right_column_INNsite_row_has_no_star_on_this_page": true,
+      "do_not_infer_right_column_service_availability_for_other_versions_from_absent_star": true,
+      "not_basic_support_terms": true,
+      "not_independent_features": true,
+      "NSP_entitlement_verified": false,
+      "table_translation_scope_fa": "گردآوری معنایی دو طرح سمت چپ و خدمات مستقل سمت راست، نه تأیید عرضه، قیمت‌گذاری، تضمین یا سیاست NSP. شرط «فقط سامانه‌های دارای IC5» فقط بر گزارش دو ردیف نشان‌دار چپ حمل می‌شود.",
+      "not_additional_feature_count": true
+    }
+  },
+  "quality_assurance": {
+    "short_English_preserved": true,
+    "all_34_each_have_one_disposition": true,
+    "all_10_claim_gates_retained": true,
+    "all_references_resolve": true,
+    "qualifiers_are_not_extra_features": true,
+    "plan_items_not_counted_as_features": true,
+    "NSP_capabilities_verified": 0
+  },
+  "next_queue_cursor": {
+    "document_index": 10,
+    "document_id": "17",
+    "step_index": 3,
+    "step_id": "S04"
+  },
+  "next_stage": "S04 — استخراج تصاویر و سبک ارائه",
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false
+}
