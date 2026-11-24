@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 44,
+    "total_pending_steps": 43,
     "completed_new_documents": 11,
     "remaining_new_documents": 7
   },
   "cursor": {
     "document_index": 14,
     "document_id": "53",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -1739,11 +1739,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S06_original_source_audit.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "45ff58e6c4334b925626bca2303bd135e0d8318a",
+          "notes": "اصل REV B، ۲۸ گزیده و ترجمه و ۷ برش به‌صورت دقیق ممیزی شد. ۱۳ رکورد و ۷ تصویر صرفاً برای بانک پژوهش داخلی S07 پذیرفته شدند. Opera و نام خوشامدگویی فقط زمینه باقی ماندند. گواهیِ طراحی گزارش‌شده برای ملک، نه محصول یا NSP؛ بانک V14 و برنامه ثابت‌اند."
         },
         {
           "id": "S07",
@@ -1755,7 +1757,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S05"
+      "last_successful_stage": "S06"
     },
     {
       "id": "54",
