@@ -1,0 +1,313 @@
+{
+  "schema": "nsp-catalog-research-s07-import-v2",
+  "status": "validated_import",
+  "stage": "S07",
+  "stage_key": "feature_json_and_commit",
+  "document_id": "50",
+  "date": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "6ea7951b5b9cb127c075f30a508b648aec13d18e",
+  "source_catalog": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+  "source_pdf": "50_Zenitel_Work C09.4.pdf",
+  "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+  "source_language": "en",
+  "source_printed_edition": null,
+  "physical_pdf_pages": 13,
+  "audit_artifact": "Portfolio Instruction/research/50_Zenitel_PAVA_S06_original_source_audit.json",
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S01_source_inventory.json",
+      "commit_sha": "443440341bd5f5bbe110806a885abd48cbeb9169",
+      "blob_sha": "ca8f854480b0ee8d5c730dc6cc7335ba19a25177"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S02_english_text.json",
+      "commit_sha": "c88958c1ead7eef49a294e25a763f6a99f382593",
+      "blob_sha": "c3ecf7590413ad965b06ef111e06f743bb8d6ea3"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S03_features_fa.json",
+      "commit_sha": "1d1c15943222f45e0d221bd4f4284f067c787d62",
+      "blob_sha": "778225587dd050983c8b4e7bfb9ba16f774222be"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S04_visual_styles.json",
+      "commit_sha": "0214f92ff9147279ae53674bfda09d91ccfef4f8",
+      "blob_sha": "89f901715fee85720f6b8e31711f508f7c633b86"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S05_section_mapping.json",
+      "blob_sha": "329da2fa5845426fe2ab37c2ad1105957f58d602",
+      "commit_sha": "ad0834c7b5b1db682970180897fd8e0630a54963"
+    },
+    "S06": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S06_original_source_audit.json",
+      "blob_sha": "1b0deabd849b395d7bb16d03fdecf8a21e42d53a",
+      "commit_sha": "31551a2775f261575270e05b66acda8be710faa2"
+    }
+  },
+  "updated_bank_files": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js"
+  ],
+  "committed_artifact_paths": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js",
+    "Portfolio Instruction/research/50_Zenitel_PAVA_S07_ingest_manifest.json",
+    "Portfolio Instruction/assets/zenitel50-01-environmental-hero.webp",
+    "Portfolio Instruction/assets/zenitel50-02-four-application-tiles.webp",
+    "Portfolio Instruction/assets/zenitel50-05-radial-artwork.webp",
+    "Portfolio Instruction/assets/zenitel50-06-symbolic-padlock-photo.webp",
+    "Portfolio Instruction/assets/zenitel50-07-offset-environment-montage.webp",
+    "Portfolio Instruction/assets/zenitel50-09-dark-asymmetric-gallery.webp",
+    "Portfolio Instruction/assets/zenitel50-10-family-column-header-band.webp",
+    "Portfolio Instruction/assets/zenitel50-11-accessory-heading-block.webp",
+    "Portfolio Instruction/assets/zenitel50-12-title-and-soft-map.webp",
+    "Portfolio Instruction/assets/zenitel50-13-sector-icon-strip.webp"
+  ],
+  "output_bank_files": [
+    {
+      "path": "Portfolio Instruction/feature.json",
+      "git_blob_sha": "7af023d3d51592f51b73f70946476d17c9e95082"
+    },
+    {
+      "path": "Portfolio Instruction/feature.js",
+      "git_blob_sha": "3b46b56dd57e731a0b59fb923050351242bfff4a"
+    }
+  ],
+  "new_display_alias_assets": [
+    {
+      "path": "Portfolio Instruction/assets/zenitel50-01-environmental-hero.webp",
+      "id": "ZENITEL50_01_environmental_hero",
+      "git_blob_sha": "17a7b276d4f85d25c64dd9f9b55b3f458cce85d2",
+      "sha256": "91fd8a751ce0d507c11263fb706e9006f3dd28692f0770d97e2abc775ce39e32",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_01_environmental_hero.webp",
+      "physical_pdf_page": 1,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/zenitel50-02-four-application-tiles.webp",
+      "id": "ZENITEL50_02_four_application_tiles",
+      "git_blob_sha": "e38db034eb456748fbeba0d0c26889fe9c25aedd",
+      "sha256": "a6b364668499a09c29aca7aa30b90a2ea2d5fe6395a8f76d5c47f343929cb60a",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_02_four_application_tiles.webp",
+      "physical_pdf_page": 2,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/zenitel50-05-radial-artwork.webp",
+      "id": "ZENITEL50_05_radial_artwork",
+      "git_blob_sha": "4fe749e25221926f3e0d2767080a5a3e9b9838ec",
+      "sha256": "428d352a86267e85d27e0ca600926089cf98d0b37a99623970c3bb4bf902d2a8",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_05_radial_artwork.webp",
+      "physical_pdf_page": 5,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/zenitel50-06-symbolic-padlock-photo.webp",
+      "id": "ZENITEL50_06_symbolic_padlock_photo",
+      "git_blob_sha": "1a4a5372f9736012b151398069003d0462df24d3",
+      "sha256": "6805f1bf7680707df31ff36de96e2ed74f992096e7d6db4db1cd15f005396bc4",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_06_symbolic_padlock_photo.webp",
+      "physical_pdf_page": 6,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/zenitel50-07-offset-environment-montage.webp",
+      "id": "ZENITEL50_07_offset_environment_montage",
+      "git_blob_sha": "65739cec047198bc2853a54009241ffd84daf64a",
+      "sha256": "0a745e7f496c1a20edf4486ad51ae41917bc6a822ecccd488ce47da6960a4f38",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_07_offset_environment_montage.webp",
+      "physical_pdf_page": 7,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/zenitel50-09-dark-asymmetric-gallery.webp",
+      "id": "ZENITEL50_09_dark_asymmetric_gallery",
+      "git_blob_sha": "07c761e8c33c79c3340f64af14bc7ff9be2f3b60",
+      "sha256": "d603e8f4715d979fc90dd3057b7389c83be3c986963ea6431fd24356013e2bb2",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_09_dark_asymmetric_gallery.webp",
+      "physical_pdf_page": 9,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/zenitel50-10-family-column-header-band.webp",
+      "id": "ZENITEL50_10_family_column_header_band",
+      "git_blob_sha": "e8fbfea88d52abdf707dc1ea4cd739a10fed74c2",
+      "sha256": "25fb36c54ad1f7b19e67aeb376404abffcb6bc884e8df8f8c66bf0179adeb820",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_10_family_column_header_band.webp",
+      "physical_pdf_page": 10,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/zenitel50-11-accessory-heading-block.webp",
+      "id": "ZENITEL50_11_accessory_heading_block",
+      "git_blob_sha": "cbb4925ee74a82f1226f705fabfa64af563bb0e8",
+      "sha256": "ea53d2c7d64fa6dff7bac613082c1f2383b8a5c916a13044244889b01ea0f2ae",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_11_accessory_heading_block.webp",
+      "physical_pdf_page": 11,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/zenitel50-12-title-and-soft-map.webp",
+      "id": "ZENITEL50_12_title_and_soft_map",
+      "git_blob_sha": "f43452811e91d558a40c67c40df98624e01dbcf0",
+      "sha256": "7d4dc5e74c31383ee45b626009de96b3cc7b9e408a6654107bfe50fa59a2f341",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_12_title_and_soft_map.webp",
+      "physical_pdf_page": 12,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/zenitel50-13-sector-icon-strip.webp",
+      "id": "ZENITEL50_13_sector_icon_strip",
+      "git_blob_sha": "58e82abaa00444b4d04d37daa773aaf177b4c29d",
+      "sha256": "9ce3b84a0dfb1ca5a6cfbe5c4d21a771cb7c0e2271b4bde50305f7787270da34",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/zenitel50/ZENITEL50_13_sector_icon_strip.webp",
+      "physical_pdf_page": 13,
+      "shared_original_immutable_blob": true
+    }
+  ],
+  "imported_feature_record_ids": [
+    "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I001",
+    "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I002",
+    "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I003",
+    "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I004",
+    "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I005",
+    "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I011",
+    "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I012",
+    "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I013",
+    "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I014"
+  ],
+  "imported_feature_provenance": [
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I001",
+      "physical_pdf_page": 1,
+      "printed_folio": null,
+      "S02_fragment_ref": "ZENITEL50-P01-E01",
+      "target_section_type": "COVER"
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I002",
+      "physical_pdf_page": 2,
+      "printed_folio": 2,
+      "S02_fragment_ref": "ZENITEL50-P02-E01",
+      "target_section_type": "COMPANY_INTRO"
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I003",
+      "physical_pdf_page": 3,
+      "printed_folio": 3,
+      "S02_fragment_ref": "ZENITEL50-P03-E02",
+      "target_section_type": "HOTEL_OVERVIEW"
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I004",
+      "physical_pdf_page": 4,
+      "printed_folio": 4,
+      "S02_fragment_ref": "ZENITEL50-P04-E01",
+      "target_section_type": "HOTEL_OVERVIEW"
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I005",
+      "physical_pdf_page": 5,
+      "printed_folio": 5,
+      "S02_fragment_ref": "ZENITEL50-P05-E01",
+      "target_section_type": "CHALLENGES_VALUE"
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I011",
+      "physical_pdf_page": 10,
+      "printed_folio": 10,
+      "S02_fragment_ref": "ZENITEL50-P10-E01",
+      "target_section_type": "HOTEL_OVERVIEW"
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I012",
+      "physical_pdf_page": 11,
+      "printed_folio": 11,
+      "S02_fragment_ref": "ZENITEL50-P11-E01",
+      "target_section_type": "PUBLIC_AREAS"
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I013",
+      "physical_pdf_page": 12,
+      "printed_folio": 12,
+      "S02_fragment_ref": "ZENITEL50-P12-E01",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I014",
+      "physical_pdf_page": 13,
+      "printed_folio": null,
+      "S02_fragment_ref": "ZENITEL50-P13-E02",
+      "target_section_type": "COMPANY_INTRO"
+    }
+  ],
+  "imported_visual_image_ids": [
+    "ZENITEL50_01_environmental_hero",
+    "ZENITEL50_02_four_application_tiles",
+    "ZENITEL50_05_radial_artwork",
+    "ZENITEL50_06_symbolic_padlock_photo",
+    "ZENITEL50_07_offset_environment_montage",
+    "ZENITEL50_09_dark_asymmetric_gallery",
+    "ZENITEL50_10_family_column_header_band",
+    "ZENITEL50_11_accessory_heading_block",
+    "ZENITEL50_12_title_and_soft_map",
+    "ZENITEL50_13_sector_icon_strip"
+  ],
+  "style_only_without_target_image": "ZENITEL50_06_symbolic_padlock_photo",
+  "audited_Persian_copy_edit_applied": {
+    "id": "ZENITEL50-CORR-01",
+    "record_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I013",
+    "physical_pdf_page": 12,
+    "S02_fragment_ref": "ZENITEL50-P12-E01",
+    "original_translation_fa": "صدای پشتِ…",
+    "audited_translation_fa": "صدایی در پسِ…",
+    "reason_fa": "بهبود خوانایی تیترِ ناقص فارسی، بدون تکمیل آن به ادعای پروژه؛ بخش بعدی در زمینه می‌ماند.",
+    "source_quote_changed": false,
+    "prior_artifacts_unchanged": true,
+    "apply_derived_fields_in_S07": [
+      "translation_fa",
+      "meaning_fa"
+    ]
+  },
+  "excluded_s03_context_rows": 5,
+  "additional_S02_context_rows_not_counted": 13,
+  "derived_preview_excluded": true,
+  "counts": {
+    "prior_version": 13,
+    "version": 14,
+    "prior_catalogs": 13,
+    "catalogs": 14,
+    "prior_records": 600,
+    "records": 609,
+    "prior_images": 131,
+    "images": 141,
+    "new_text": 9,
+    "new_internal_visuals": 10,
+    "alias_files": 10,
+    "alias_rows_additional_count": 0
+  },
+  "checks": {
+    "V13_and_V14_JSON_JS_parity": true,
+    "prior_13_catalogs_exact": true,
+    "exact_allowed_S06_ids": true,
+    "source_page_provenance_preserved": true,
+    "context_record_IDs_and_preview_absent": true,
+    "app_asset_paths_match_existing_allowlist": true,
+    "full_runtime_not_exercised": true,
+    "app_and_sections_untouched": true,
+    "no_PAVA_intercom_cybersecurity_or_certification_attribution_to_NSP": true,
+    "internal_style_only_and_no_reuse_rights": true
+  },
+  "next_queue_cursor": {
+    "document_index": 14,
+    "document_id": "53",
+    "step_index": 0,
+    "step_id": "S01"
+  },
+  "next_pdf": "53_Lutron_Work C10.3.pdf",
+  "next_stage_executed": false
+}
