@@ -1,0 +1,359 @@
+{
+  "schema": "nsp-catalog-research-s02-page-linked-paraphrase-evidence-v1",
+  "stage": "S02",
+  "stage_key": "source_text_extraction",
+  "status": "completed_scoped_factual_paraphrase_only_verified",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "a5d2bb1afabfcdb4b74aeffb546cfe766b29f056",
+  "document_id": "76",
+  "source_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+  "source_language": "en",
+  "source_pdf": {
+    "filename": "76_Distech_Controls_Work C47.1.pdf",
+    "title": "Hotel Stary",
+    "cover_location": "Krakow, Poland",
+    "physical_pdf_pages": 1,
+    "file_size_bytes": 1438918,
+    "sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+    "printed_version_or_date_verified": false
+  },
+  "upstream_inventory": {
+    "path": "Portfolio Instruction/research/76_Distech_Hotel_Stary_S01_source_inventory.json",
+    "git_blob_sha": "73b155e7170684427f0515ad7e56f012ed9c1fd6",
+    "commit_sha": "0e14b10ed1a8997b676e4523601ff17a0c01f3ce"
+  },
+  "scope": {
+    "scope_note": "Small selection of original, non-operational paraphrases based on the case sheet. No method, access details, source prose, logo, photo, certification or independently verified result is included.",
+    "physical_pdf_page_count": 1,
+    "repository_visibility": "public",
+    "vendor_case_study_not_independent_verification": true,
+    "editorial_visuals_may_be_original_nonreplicas_only": true
+  },
+  "statistics": {
+    "physical_pages_reverified": 1,
+    "page_linked_summary_count": 9,
+    "text_anchor_verified_summaries": 9,
+    "optional_layout_fully_matched_summaries": 8,
+    "layout_exceptions_resolved_by_raw_native_and_private_inspection": 1,
+    "editorial_research_candidates_possible": 5,
+    "identity_or_context_only": 4,
+    "verbatim_excerpt_count": 0,
+    "copied_visual_or_logo_count": 0,
+    "public_reuse_rights_verified": 0
+  },
+  "coverage": [
+    {
+      "physical_pdf_page": 1,
+      "native_text_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "retained_summary_refs": [
+        "DISTECH76-P001-N01",
+        "DISTECH76-P001-N02",
+        "DISTECH76-P001-N03",
+        "DISTECH76-P001-N04",
+        "DISTECH76-P001-N05",
+        "DISTECH76-P001-N06",
+        "DISTECH76-P001-N07",
+        "DISTECH76-P001-N08",
+        "DISTECH76-P001-N09"
+      ],
+      "status": "whole_page_checked_selective_summaries_only"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "DISTECH76-P001-N01",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "case_identity",
+      "summary_en": "The Distech Controls sheet identifies Hotel Stary in Krakow, Poland.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_sheet_excerpt",
+      "disposition": "identity_only",
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-01"
+      ],
+      "topic_anchors_verified_PyMuPDF_and_Poppler_raw": true,
+      "optional_Poppler_layout_passed": true,
+      "layout_exception": null,
+      "raw_anchors_not_reproduced": true,
+      "no_source_prose_photo_logo_or_privileged_procedure": true,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "DISTECH76-P001-N02",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "refurbishment_scope",
+      "summary_en": "The publisher describes a renovation that added guest rooms. The reported property floor area does not establish the coverage of the controls.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_sheet_excerpt",
+      "disposition": "candidate_editorial_only",
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-01"
+      ],
+      "topic_anchors_verified_PyMuPDF_and_Poppler_raw": true,
+      "optional_Poppler_layout_passed": true,
+      "layout_exception": null,
+      "raw_anchors_not_reproduced": true,
+      "no_source_prose_photo_logo_or_privileged_procedure": true,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "DISTECH76-P001-N03",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "integrator_attribution",
+      "summary_en": "The page credits Distech Controls Poland with the system integration role. That is distinct from the publisher imprint and remains a source attribution.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_sheet_excerpt",
+      "disposition": "candidate_editorial_only",
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-02"
+      ],
+      "topic_anchors_verified_PyMuPDF_and_Poppler_raw": true,
+      "optional_Poppler_layout_passed": true,
+      "layout_exception": null,
+      "raw_anchors_not_reproduced": true,
+      "no_source_prose_photo_logo_or_privileged_procedure": true,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "DISTECH76-P001-N04",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "existing_and_new_system_boundary",
+      "summary_en": "Distech Controls describes a link between the newer and pre-existing building management systems in this case. The sheet is not independent evidence of interoperability.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_sheet_excerpt",
+      "disposition": "candidate_editorial_only",
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-03"
+      ],
+      "topic_anchors_verified_PyMuPDF_and_Poppler_raw": true,
+      "optional_Poppler_layout_passed": false,
+      "layout_exception": "One relationship anchor wraps into the next line of a multi-column page; the other column interleaves it in layout mode. Native and raw text both match, and private layout inspection confirms the line order.",
+      "raw_anchors_not_reproduced": true,
+      "no_source_prose_photo_logo_or_privileged_procedure": true,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "DISTECH76-P001-N05",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "room_scope_topics",
+      "summary_en": "In the case account, room control is discussed under climate equipment, lighting and sunshade functions. The sheet does not establish an identical configuration in all guest rooms.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_sheet_excerpt",
+      "disposition": "candidate_editorial_only",
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-03"
+      ],
+      "topic_anchors_verified_PyMuPDF_and_Poppler_raw": true,
+      "optional_Poppler_layout_passed": true,
+      "layout_exception": null,
+      "raw_anchors_not_reproduced": true,
+      "no_source_prose_photo_logo_or_privileged_procedure": true,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "DISTECH76-P001-N06",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "generic_office_description",
+      "summary_en": "A separate generic product passage mentions office rooms. That wording does not extend the documented hotel scope.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_sheet_excerpt",
+      "disposition": "context_only",
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-03"
+      ],
+      "topic_anchors_verified_PyMuPDF_and_Poppler_raw": true,
+      "optional_Poppler_layout_passed": true,
+      "layout_exception": null,
+      "raw_anchors_not_reproduced": true,
+      "no_source_prose_photo_logo_or_privileged_procedure": true,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "DISTECH76-P001-N07",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "equipment_sidebar_boundary",
+      "summary_en": "The sheet contains a case equipment inventory. Model quantities are omitted here; the list is not a specification, a current compatibility list or NSP evidence.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_sheet_excerpt",
+      "disposition": "context_only",
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-04"
+      ],
+      "topic_anchors_verified_PyMuPDF_and_Poppler_raw": true,
+      "optional_Poppler_layout_passed": true,
+      "layout_exception": null,
+      "raw_anchors_not_reproduced": true,
+      "no_source_prose_photo_logo_or_privileged_procedure": true,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "DISTECH76-P001-N08",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "requirements_not_results",
+      "summary_en": "The publisher describes reliability and short service time as project priorities. The sheet provides no independent measurements of reliability, service time, energy or cost.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_sheet_excerpt",
+      "disposition": "candidate_editorial_only",
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-05"
+      ],
+      "topic_anchors_verified_PyMuPDF_and_Poppler_raw": true,
+      "optional_Poppler_layout_passed": true,
+      "layout_exception": null,
+      "raw_anchors_not_reproduced": true,
+      "no_source_prose_photo_logo_or_privileged_procedure": true,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "DISTECH76-P001-N09",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "property_award_boundary",
+      "summary_en": "The case sheet reports an interior-design distinction for the property. It does not document a controls product certification or an NSP award.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_sheet_excerpt",
+      "disposition": "context_only",
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-02"
+      ],
+      "topic_anchors_verified_PyMuPDF_and_Poppler_raw": true,
+      "optional_Poppler_layout_passed": true,
+      "layout_exception": null,
+      "raw_anchors_not_reproduced": true,
+      "no_source_prose_photo_logo_or_privileged_procedure": true,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "DISTECH76-CLAIM-01",
+      "kind": "case_identity_and_refurbishment_scope",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "DISTECH76-P001-N01",
+        "DISTECH76-P001-N02"
+      ],
+      "scope": "Property name, location and refurbishment are the vendor's case framing. Property area does not measure controls coverage; no installation or publication date is claimed.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "source_rights_verified": false
+    },
+    {
+      "id": "DISTECH76-CLAIM-02",
+      "kind": "published_attribution_not_independent_certification",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "DISTECH76-P001-N03",
+        "DISTECH76-P001-N09"
+      ],
+      "scope": "The case attributes integration to its named local party and reports property recognition. Neither is an independent guarantee, product certification or NSP role.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "source_rights_verified": false
+    },
+    {
+      "id": "DISTECH76-CLAIM-03",
+      "kind": "vendor_system_and_room_description",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "DISTECH76-P001-N04",
+        "DISTECH76-P001-N05",
+        "DISTECH76-P001-N06"
+      ],
+      "scope": "Legacy/new distinction and room topics are case narrative, not interoperability, procedure, room-by-room coverage or NSP. The product passage about offices is not hotel evidence.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "source_rights_verified": false
+    },
+    {
+      "id": "DISTECH76-CLAIM-04",
+      "kind": "historical_inventory_only",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "DISTECH76-P001-N07"
+      ],
+      "scope": "The case sidebar does not establish model quantities independently, current availability, safety, settings or compatibility. No equipment counts, contact data, access or commands are retained.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "source_rights_verified": false
+    },
+    {
+      "id": "DISTECH76-CLAIM-05",
+      "kind": "requirements_not_measured_outcome",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "DISTECH76-P001-N08"
+      ],
+      "scope": "Reliability and service time are described as priorities, not measured results. The source does not provide independent evidence of performance, energy or cost savings. No remote service procedures included.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "source_rights_verified": false
+    }
+  ],
+  "quality_assurance": {
+    "source_pdf_size_hash_and_page_hash_reverified": true,
+    "all_selected_topic_anchors_match_PyMuPDF_and_Poppler_raw": true,
+    "optional_Poppler_layout_exception_n04_resolved": true,
+    "no_six_normalized_token_run_in_paraphrases_against_cited_page": true,
+    "six_token_check_is_secondary_not_a_legal_or_rights_determination": true,
+    "source_assets_kept_private": true
+  },
+  "usage_policy": {
+    "internal_editorial_comparator_only": true,
+    "never_claim_NSP_project_technical_capability_or_independent_measurement": true,
+    "translation_in_S03_from_our_analyst_notes_only": true,
+    "no_remote_service_setup_controls_steps_award_title_copies_or_vendor_images_in_public_repo": true
+  },
+  "next_stage": "S03 — استخراج ایده و ترجمهٔ خلاصه‌ها",
+  "next_queue_cursor": {
+    "document_index": 19,
+    "document_id": "76",
+    "step_index": 2,
+    "step_id": "S03"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
