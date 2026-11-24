@@ -1,0 +1,3123 @@
+{
+  "schema": "nsp-catalog-research-s05-section-mapping-v1",
+  "stage": "S05",
+  "stage_key": "section_type_mapping",
+  "status": "completed_proposed_only_pending_S06",
+  "document_id": "15",
+  "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+  "verified_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "b14ad735eba64d7feb31a168f5df2534516613bb",
+  "source_document": {
+    "company": "Vingcard",
+    "publisher": "Vingcard / ASSA ABLOY",
+    "title": "Mobile Access Solution",
+    "filename": "15_Vingcard_Mobile Access Solution.pdf",
+    "pdf_pages": 12,
+    "file_size_bytes": 2973282,
+    "source_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+    "printed_edition_label": "Doc. Printed: 03/2024",
+    "publication_evidence_pdf_page": 12,
+    "S01_inventory": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S01_source_inventory.json",
+    "S01_inventory_git_blob_sha": "fa9e192bef8a84342d8c9d67f68f5c738b053794",
+    "S01_inventory_commit": "757bf8d8d24c199b4e2eaab14b914482127b8dc9",
+    "S02_text_evidence": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S02_english_text.json",
+    "S02_artifact_commit": "a34ed1f661749f49349eab2140b1aef1dde1e7ad",
+    "S02_git_blob_sha": "f764fa5a091ca5fa850f9ef4f453b0a55335af5a",
+    "S02_total_fragments": 51,
+    "S03_English_source": "Exact unchanged short S02 excerpts; physical page is canonical."
+  },
+  "upstream_artifacts": {
+    "S03": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S03_features_fa.json",
+      "git_blob_sha": "334891c5947c4b4efded6ed9f2b97a0b8c7c5667"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S04_visual_styles.json",
+      "git_blob_sha": "0afcc19915ddb0439d7ba3ccf1cf17b23d1c2f19"
+    }
+  },
+  "canonical_editorial_policy": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "git_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "valid_research_section_ids": [
+      "COVER",
+      "IDENTITY_PAGES",
+      "COMPANY_INTRO",
+      "CHALLENGES_VALUE",
+      "HOTEL_OVERVIEW",
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS",
+      "CASE_STUDIES"
+    ],
+    "section_snapshot": [
+      {
+        "section_id": "COVER",
+        "title_fa": "صفحه اول کاتالوگ",
+        "row": 2,
+        "content_level": null
+      },
+      {
+        "section_id": "IDENTITY_PAGES",
+        "title_fa": "صفحات تنفس",
+        "row": 3,
+        "content_level": null
+      },
+      {
+        "section_id": "COMPANY_INTRO",
+        "title_fa": "معرفی شرکت NSP",
+        "row": 4,
+        "content_level": "COMPANY"
+      },
+      {
+        "section_id": "CHALLENGES_VALUE",
+        "title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+        "row": 5,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "HOTEL_OVERVIEW",
+        "title_fa": "نقشهٔ جامع راهکارهای هتلی",
+        "row": 6,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "GRMS",
+        "title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+        "row": 7,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "IPTV",
+        "title_fa": "تلویزیون و خدمات تعاملی هتل (IPTV)",
+        "row": 8,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "PUBLIC_AREAS",
+        "title_fa": "کنترل هوشمند مشاعات هتل",
+        "row": 9,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "CASE_STUDIES",
+        "title_fa": "رزومه و پروژه‌های اجراشده",
+        "row": 10,
+        "content_level": null
+      }
+    ],
+    "legacy_aliases_for_reading_only": {
+      "BISMILLAH": "IDENTITY_PAGES"
+    },
+    "binder_cover_excluded_from_research_mapping": true,
+    "CROSS_SECTION_STYLE_is_tag_not_section": true,
+    "idea_attachment_deferred_to_defrag": true,
+    "proposed_roles_are_not_approved_subsections": true,
+    "systems_in_scope": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ]
+  },
+  "rules": {
+    "never_infer_NSP_capability": true,
+    "competitive_software_in_GRMS_only_or_unassigned": true,
+    "never_expand_three_system_scope": true,
+    "no_printed_page_attachment": true,
+    "duplicate_brand_slogan_internal_provenance_only_pending_S06": true,
+    "protected_files_unchanged": true,
+    "no_external_reuse_rights": true
+  },
+  "statistics": {
+    "S03_records": 25,
+    "mapped_text": 17,
+    "unassigned_text": 8,
+    "source_text_distribution": {
+      "UNASSIGNED_INTERNAL_RESEARCH": 8,
+      "CHALLENGES_VALUE": 7,
+      "GRMS": 10
+    },
+    "S03_exclusions_preserved_upstream": 26,
+    "visuals": 11,
+    "mapped_visuals": 8,
+    "style_only_visuals": 3,
+    "visual_distribution": {
+      "COVER": 1,
+      "CHALLENGES_VALUE": 3,
+      "GRMS": 3,
+      "UNASSIGNED_INTERNAL_RESEARCH": 3,
+      "IDENTITY_PAGES": 1
+    },
+    "style_families": 11,
+    "overview_excluded_from_visual_idea_count": true,
+    "source_claim_gates": 14,
+    "source_context_groups": 4,
+    "NSP_capabilities_verified": 0,
+    "pages_attached": 0
+  },
+  "mappings": [
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I001",
+      "idea_id": "VINGCARD15-S05-T001",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 1,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P01-E02",
+      "source_S02_fragment_index": 2,
+      "source_text_en": "Experience a safer and more open world",
+      "translation_fa": "جهانی امن‌تر و گشوده‌تر را تجربه کنید.",
+      "source_type": "marketing_slogan",
+      "research_category_id": "marketing_slogans",
+      "research_section_group": "COVER",
+      "source_editorial_limits_fa": "الگوی شعار کوتاه هویتی؛ «گشوده‌تر» استعارهٔ برند است، نه وعدهٔ دسترسی بدون مجوز، تضمین امنیت یا متن NSP.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [
+        "CAT014_VINGCARD_NOVEL:I001"
+      ],
+      "selection_gate": "prior_exact_duplicate_retain_source_provenance_do_not_promote_as_independent_idea",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "شعار با همین متن در سند Vingcard 14 ثبت شده است. این شاهد چاپ دیگر حفظ شود، اما ایدهٔ مستقل یا مقصد تازه ایجاد نکند.",
+      "unassigned_reason_fa": "شعار با همین متن در سند Vingcard 14 ثبت شده است. این شاهد چاپ دیگر حفظ شود، اما ایدهٔ مستقل یا مقصد تازه ایجاد نکند.",
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "unassigned_research_only",
+      "related_visual_image_ids": [
+        "VINGCARD15_01_cover_hero"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "شعار با همین متن در سند Vingcard 14 ثبت شده است. این شاهد چاپ دیگر حفظ شود، اما ایدهٔ مستقل یا مقصد تازه ایجاد نکند."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I002",
+      "idea_id": "VINGCARD15-S05-T002",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 2,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P02-E01",
+      "source_S02_fragment_index": 1,
+      "source_text_en": "The next generation of hospitality",
+      "translation_fa": "نسل تازهٔ مهمان‌نوازی",
+      "source_type": "marketing_slogan",
+      "research_category_id": "marketing_slogans",
+      "research_section_group": "INTRO",
+      "source_editorial_limits_fa": "تیتر آینده‌نگر برای آغاز روایت؛ تغییر نسل فناوری یا عملکرد مزیت برای NSP را اثبات نمی‌کند.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SOLUTION",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "الگوی تیتر کوتاه آینده‌نگر برای ورود به مسئلهٔ تجربهٔ مهمان؛ بدون استفاده از شعار رقیب یا ادعای تحول فناوری.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "الگوی تیتر کوتاه آینده‌نگر برای ورود به مسئلهٔ تجربهٔ مهمان؛ بدون استفاده از شعار رقیب یا ادعای تحول فناوری.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_02_visual_mosaic"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "الگوی تیتر کوتاه آینده‌نگر برای ورود به مسئلهٔ تجربهٔ مهمان؛ بدون استفاده از شعار رقیب یا ادعای تحول فناوری."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I003",
+      "idea_id": "VINGCARD15-S05-T003",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 2,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P02-E02",
+      "source_S02_fragment_index": 2,
+      "source_text_en": "using their smartphone or watch as a secure key",
+      "translation_fa": "با استفاده از گوشی هوشمند یا ساعت به‌عنوان کلید امن",
+      "source_type": "intro",
+      "research_category_id": "digital_guest_services",
+      "research_section_group": "INTRO",
+      "source_editorial_limits_fa": "گزیدهٔ داخل جمله است. صفت «امن» و اشاره به ساعت از متن ناشر می‌آید؛ فهرست دستگاه‌ها، پروتکل، امکان کارکرد و پذیرش NSP را نتیجه نگیر.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-02"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "مرجع مقایسه‌ای برای بیان یک موقعیت ورود مهمان؛ گوشی، ساعت و امنیت از طرف NSP تأیید نشده است.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "مرجع مقایسه‌ای برای بیان یک موقعیت ورود مهمان؛ گوشی، ساعت و امنیت از طرف NSP تأیید نشده است.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_02_visual_mosaic"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "مرجع مقایسه‌ای برای بیان یک موقعیت ورود مهمان؛ گوشی، ساعت و امنیت از طرف NSP تأیید نشده است."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I004",
+      "idea_id": "VINGCARD15-S05-T004",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 3,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P03-E01",
+      "source_S02_fragment_index": 1,
+      "source_text_en": "Unique user experience",
+      "translation_fa": "تجربه‌ای متمایز برای کاربر",
+      "source_type": "benefit",
+      "research_category_id": "guest_comfort",
+      "research_section_group": "BENEFITS",
+      "source_editorial_limits_fa": "مزیت در روایت رقیب؛ وابستگی رزرو و روند ورود و خروج به راهکار مستقر در گزیدهٔ زمینه حفظ شود.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-03"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [
+        "VINGCARD15-P03-E02"
+      ],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SOLUTION",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "الگوی بیان نیاز مهمان در سطح راهکار؛ رزرو و پذیرشِ قیدشده قابلیت عمومی NSP نیست.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "الگوی بیان نیاز مهمان در سطح راهکار؛ رزرو و پذیرشِ قیدشده قابلیت عمومی NSP نیست.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_03_benefit_columns"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "الگوی بیان نیاز مهمان در سطح راهکار؛ رزرو و پذیرشِ قیدشده قابلیت عمومی NSP نیست."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I005",
+      "idea_id": "VINGCARD15-S05-T005",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 3,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P03-E03",
+      "source_S02_fragment_index": 3,
+      "source_text_en": "Skip front desk - No queues",
+      "translation_fa": "بدون مراجعه به پذیرش، بدون انتظار در صف",
+      "source_type": "benefit",
+      "research_category_id": "guest_comfort",
+      "research_section_group": "BENEFITS",
+      "source_editorial_limits_fa": "ترجمهٔ تیتر تجربهٔ مهمان است؛ به معنی حذف الزامات پذیرش، احراز هویت یا امکان آن برای هر هتل یا NSP نیست.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-03"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [
+        "VINGCARD15-P03-E02"
+      ],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SOLUTION",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نشان‌دادن اصطکاک مراجعه و صف از دید مهمان؛ حذف مراحل پذیرش یا احراز هویت نتیجه نمی‌شود.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "نشان‌دادن اصطکاک مراجعه و صف از دید مهمان؛ حذف مراحل پذیرش یا احراز هویت نتیجه نمی‌شود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_03_benefit_columns"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نشان‌دادن اصطکاک مراجعه و صف از دید مهمان؛ حذف مراحل پذیرش یا احراز هویت نتیجه نمی‌شود."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I006",
+      "idea_id": "VINGCARD15-S05-T006",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 3,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P03-E04",
+      "source_S02_fragment_index": 4,
+      "source_text_en": "Better guest experience",
+      "translation_fa": "تجربهٔ بهتر برای مهمان",
+      "source_type": "benefit",
+      "research_category_id": "guest_comfort",
+      "research_section_group": "BENEFITS",
+      "source_editorial_limits_fa": "این تیتر در ستون مزیت برای هتل آمده است. «بهتر» مقایسهٔ اندازه‌گیری‌شده یا تضمین NSP نیست.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-04"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SOLUTION",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "تقابل نگاه مهمان و هتل در بیان مزیت؛ به جای کپی، تجربهٔ واقعی NSP مستقلاً مستند شود.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "تقابل نگاه مهمان و هتل در بیان مزیت؛ به جای کپی، تجربهٔ واقعی NSP مستقلاً مستند شود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_03_benefit_columns"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "تقابل نگاه مهمان و هتل در بیان مزیت؛ به جای کپی، تجربهٔ واقعی NSP مستقلاً مستند شود."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I007",
+      "idea_id": "VINGCARD15-S05-T007",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 3,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P03-E05",
+      "source_S02_fragment_index": 5,
+      "source_text_en": "Operational efficiencies and guest service",
+      "translation_fa": "کارایی عملیاتی و خدمات مهمان",
+      "source_type": "benefit",
+      "research_category_id": "hotel_operations",
+      "research_section_group": "BENEFITS",
+      "source_editorial_limits_fa": "تیتر مزیت برای هتل؛ تغییر نیروی انسانی، هزینه و کیفیت خدمت در NSP نیازمند شواهد جداگانه است.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-04"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SOLUTION",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "چالش کارایی و تجربهٔ خدمت برای مدیر هتل؛ هزینه، کارکنان یا شاخص خدمت باید برای NSP سنجیده شود.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "چالش کارایی و تجربهٔ خدمت برای مدیر هتل؛ هزینه، کارکنان یا شاخص خدمت باید برای NSP سنجیده شود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_03_benefit_columns"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "چالش کارایی و تجربهٔ خدمت برای مدیر هتل؛ هزینه، کارکنان یا شاخص خدمت باید برای NSP سنجیده شود."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I008",
+      "idea_id": "VINGCARD15-S05-T008",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 3,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P03-E06",
+      "source_S02_fragment_index": 6,
+      "source_text_en": "Increased loyalty & profitability",
+      "translation_fa": "افزایش وفاداری و سودآوری",
+      "source_type": "benefit",
+      "research_category_id": "hotel_operations",
+      "research_section_group": "BENEFITS",
+      "source_editorial_limits_fa": "وعدهٔ بازاریابی ناشر است و نتیجهٔ مالی، KPI یا اثر تضمین‌شده برای NSP نیست.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-04"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SOLUTION",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "ساختار ارائهٔ ارزش به مدیر هتل، نه مقدار یا تضمین منفعت؛ سودآوری و وفاداری منبع باید از ادعای NSP جدا بمانند.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "ساختار ارائهٔ ارزش به مدیر هتل، نه مقدار یا تضمین منفعت؛ سودآوری و وفاداری منبع باید از ادعای NSP جدا بمانند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_03_benefit_columns"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "ساختار ارائهٔ ارزش به مدیر هتل، نه مقدار یا تضمین منفعت؛ سودآوری و وفاداری منبع باید از ادعای NSP جدا بمانند."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I009",
+      "idea_id": "VINGCARD15-S05-T009",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 4,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P04-E02",
+      "source_S02_fragment_index": 2,
+      "source_text_en": "Customer Integration",
+      "translation_fa": "یکپارچه‌سازی با سامانه‌های مشتری",
+      "source_type": "software_capability",
+      "research_category_id": "integrations",
+      "research_section_group": "OPTIONS",
+      "source_editorial_limits_fa": "روش عرضه برای هتل دارای اپ خودش؛ متن منبع SDK و خدمات راه‌اندازی ناشر را توضیح می‌دهد. SDK عمومی یا پشتیبانی NSP از اپ/بک‌اند هتل از آن نتیجه نمی‌شود.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD15-P04-E06"
+      ],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "فقط نمونهٔ نحوهٔ ارائهٔ گزینهٔ یکپارچه‌سازی رقیب در بحث راهکار اتاق؛ SDK یا اتصال NSP تأیید نشده است.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "فقط نمونهٔ نحوهٔ ارائهٔ گزینهٔ یکپارچه‌سازی رقیب در بحث راهکار اتاق؛ SDK یا اتصال NSP تأیید نشده است.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_04_option_cards"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "فقط نمونهٔ نحوهٔ ارائهٔ گزینهٔ یکپارچه‌سازی رقیب در بحث راهکار اتاق؛ SDK یا اتصال NSP تأیید نشده است."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I010",
+      "idea_id": "VINGCARD15-S05-T010",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 4,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P04-E03",
+      "source_S02_fragment_index": 3,
+      "source_text_en": "Third Party Certified Partner App",
+      "translation_fa": "اپ ارائه‌شده از سوی شریک ثالثِ مورد تأیید",
+      "source_type": "software_capability",
+      "research_category_id": "integrations",
+      "research_section_group": "OPTIONS",
+      "source_editorial_limits_fa": "«مورد تأیید» متعلق به برنامهٔ شریک Vingcard است، نه نهاد مستقل یا شریک NSP؛ با اپ ناشر و Apple Wallet یکی نیست.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-05",
+        "VINGCARD15-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD15-P04-E07",
+        "VINGCARD15-P05-E01"
+      ],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نمونهٔ تفکیک اپ شریک در گزینه‌های رقیب؛ هیچ شریک یا گواهی NSP وجودش از منبع نتیجه نمی‌شود.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "نمونهٔ تفکیک اپ شریک در گزینه‌های رقیب؛ هیچ شریک یا گواهی NSP وجودش از منبع نتیجه نمی‌شود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_04_option_cards"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نمونهٔ تفکیک اپ شریک در گزینه‌های رقیب؛ هیچ شریک یا گواهی NSP وجودش از منبع نتیجه نمی‌شود."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I011",
+      "idea_id": "VINGCARD15-S05-T011",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 4,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P04-E04",
+      "source_S02_fragment_index": 4,
+      "source_text_en": "Mobile Access App",
+      "translation_fa": "اپ Mobile Access",
+      "source_type": "software_capability",
+      "research_category_id": "digital_guest_services",
+      "research_section_group": "OPTIONS",
+      "source_editorial_limits_fa": "نام گزینهٔ آمادهٔ عرضهٔ ناشر است. انتشار جاری، فروشگاه‌ها و دامنهٔ سازگاری امروز مستقل بررسی نشده‌اند.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نمونهٔ ارائهٔ اپ آمادهٔ رقیب در تجربهٔ اتاق؛ نام، دسترس‌پذیری و دامنهٔ کارکرد متعلق به منبع است.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "نمونهٔ ارائهٔ اپ آمادهٔ رقیب در تجربهٔ اتاق؛ نام، دسترس‌پذیری و دامنهٔ کارکرد متعلق به منبع است.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_04_option_cards"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نمونهٔ ارائهٔ اپ آمادهٔ رقیب در تجربهٔ اتاق؛ نام، دسترس‌پذیری و دامنهٔ کارکرد متعلق به منبع است."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I012",
+      "idea_id": "VINGCARD15-S05-T012",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 4,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P04-E05",
+      "source_S02_fragment_index": 5,
+      "source_text_en": "Room key in Apple Wallet integrates",
+      "translation_fa": "کلید اتاق در Apple Wallet یکپارچه می‌شود",
+      "source_type": "software_capability",
+      "research_category_id": "mobile_access",
+      "research_section_group": "OPTIONS",
+      "source_editorial_limits_fa": "گزیده در میانهٔ جمله پایان می‌یابد؛ گزینهٔ کیف پول در بلوک جداست. از آن سازگاری Apple Wallet، دستگاه، آسانسور یا فضای عمومی NSP نتیجه نشود.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "کیف پول در منبع گزینه‌ای جداست؛ نمونهٔ مقایسه‌ای، بدون نسبت‌دادن کیف پول، ساعت، آسانسور یا کنترل مشاعات به NSP.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "کیف پول در منبع گزینه‌ای جداست؛ نمونهٔ مقایسه‌ای، بدون نسبت‌دادن کیف پول، ساعت، آسانسور یا کنترل مشاعات به NSP.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_04_option_cards"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "کیف پول در منبع گزینه‌ای جداست؛ نمونهٔ مقایسه‌ای، بدون نسبت‌دادن کیف پول، ساعت، آسانسور یا کنترل مشاعات به NSP."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I013",
+      "idea_id": "VINGCARD15-S05-T013",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 4,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P04-E08",
+      "source_S02_fragment_index": 8,
+      "source_text_en": "hotels can customize their digital key graphics",
+      "translation_fa": "هتل‌ها می‌توانند طرح گرافیکی کلید دیجیتال خود را سفارشی کنند",
+      "source_type": "software_capability",
+      "research_category_id": "digital_guest_services",
+      "research_section_group": "OPTIONS",
+      "source_editorial_limits_fa": "قابلیت منسوب به اپ و پنل مدیریتی ناشر است، نه تغییر دسترسی، مجوز عام یا قابلیت NSP.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD15-P04-E04"
+      ],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نمونهٔ نمایش سطح سفارشی‌سازی در اپ رقیب؛ قابلیت واقعی NSP و نحوهٔ مدیریت آن نیازمند شاهد مستقل‌اند.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "نمونهٔ نمایش سطح سفارشی‌سازی در اپ رقیب؛ قابلیت واقعی NSP و نحوهٔ مدیریت آن نیازمند شاهد مستقل‌اند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_04_option_cards"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نمونهٔ نمایش سطح سفارشی‌سازی در اپ رقیب؛ قابلیت واقعی NSP و نحوهٔ مدیریت آن نیازمند شاهد مستقل‌اند."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I014",
+      "idea_id": "VINGCARD15-S05-T014",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 5,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P05-E01",
+      "source_S02_fragment_index": 1,
+      "source_text_en": "Vingcard Partner Program",
+      "translation_fa": "برنامهٔ شرکای Vingcard",
+      "source_type": "intro",
+      "research_category_id": "hotel_operations",
+      "research_section_group": "PARTNER_AND_SECURITY",
+      "source_editorial_limits_fa": "سه پیش‌نیاز نقل‌شده مرتبط با برنامهٔ همین ناشر است: توافق مجوز، آموزش رسمی و تأیید اپ پس از آزمون. گواهی مستقل یا سابقهٔ همکاری NSP نیست.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD15-P05-E02",
+        "VINGCARD15-P05-E03",
+        "VINGCARD15-P05-E04"
+      ],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "فرایند شریک به ناشر تعلق دارد؛ مدرکی برای شریک، مجوز یا گواهی NSP نیست و برای معرفی شرکت مقصد ندارد.",
+      "unassigned_reason_fa": "فرایند شریک به ناشر تعلق دارد؛ مدرکی برای شریک، مجوز یا گواهی NSP نیست و برای معرفی شرکت مقصد ندارد.",
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "unassigned_research_only",
+      "related_visual_image_ids": [
+        "VINGCARD15_05_partner_overlay"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "فرایند شریک به ناشر تعلق دارد؛ مدرکی برای شریک، مجوز یا گواهی NSP نیست و برای معرفی شرکت مقصد ندارد."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I015",
+      "idea_id": "VINGCARD15-S05-T015",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 5,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P05-E06",
+      "source_S02_fragment_index": 6,
+      "source_text_en": "Mobile Access is powered by Seos",
+      "translation_fa": "Mobile Access بر بستر Seos کار می‌کند",
+      "source_type": "software_capability",
+      "research_category_id": "security_messaging",
+      "research_section_group": "PARTNER_AND_SECURITY",
+      "source_editorial_limits_fa": "نام بستر منبع؛ کیفیت امنیت، انطباق، نوع رمزگذاری و قابلیت NSP از نام یا ادعای ناشر نتیجه نمی‌شود.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "نام بستر اختصاصی منبع است. ادعای امنیت، استاندارد، روش یا قابلیت NSP از Seos استخراج نمی‌شود.",
+      "unassigned_reason_fa": "نام بستر اختصاصی منبع است. ادعای امنیت، استاندارد، روش یا قابلیت NSP از Seos استخراج نمی‌شود.",
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "unassigned_research_only",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نام بستر اختصاصی منبع است. ادعای امنیت، استاندارد، روش یا قابلیت NSP از Seos استخراج نمی‌شود."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I016",
+      "idea_id": "VINGCARD15-S05-T016",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 6,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P06-E01",
+      "source_S02_fragment_index": 1,
+      "source_text_en": "How it works",
+      "translation_fa": "نحوهٔ کار",
+      "source_type": "scenario",
+      "research_category_id": "room_scenarios",
+      "research_section_group": "GUEST_FLOW",
+      "source_editorial_limits_fa": "عنوان سناریوی پنج‌گام مهمان؛ به‌عنوان یک سناریوی مصور خوانده شود، نه چند قابلیت. «تقریباً» و قید آماده‌بودن اتاق حفظ شوند؛ نه تضمین زمان و نه گردش کار تأییدشدهٔ NSP.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-08"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD15-CONTEXT-GUEST-FLOW"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD15-P06-E02",
+        "VINGCARD15-P06-E03",
+        "VINGCARD15-P06-E04",
+        "VINGCARD15-P06-E05"
+      ],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قالب تصویری سناریوی مهمان؛ یک رکورد، نه چند قابلیت. شرط زمان تقریبی، آماده‌بودن اتاق و دامنهٔ راهکار منبع حفظ شود.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "قالب تصویری سناریوی مهمان؛ یک رکورد، نه چند قابلیت. شرط زمان تقریبی، آماده‌بودن اتاق و دامنهٔ راهکار منبع حفظ شود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_06_guest_flow"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "قالب تصویری سناریوی مهمان؛ یک رکورد، نه چند قابلیت. شرط زمان تقریبی، آماده‌بودن اتاق و دامنهٔ راهکار منبع حفظ شود."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I017",
+      "idea_id": "VINGCARD15-S05-T017",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 7,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P07-E01",
+      "source_S02_fragment_index": 1,
+      "source_text_en": "convenience of being able to open doors",
+      "translation_fa": "راحتیِ باز کردن درها",
+      "source_type": "marketing_slogan",
+      "research_category_id": "marketing_slogans",
+      "research_section_group": "PHOTO_NARRATIVE",
+      "source_editorial_limits_fa": "تکه‌ای از نقل‌قول تبلیغاتی در صفحهٔ تمام‌عکس است؛ گواه کارکرد یا حق استفاده از عکس نیست.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-09"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SOLUTION",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "الهام از روایت موقعیت و آسایش مهمان؛ نه کپی نقل‌قول و نه تأیید سازوکار ورود.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "الهام از روایت موقعیت و آسایش مهمان؛ نه کپی نقل‌قول و نه تأیید سازوکار ورود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_07_lifestyle_quote"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "الهام از روایت موقعیت و آسایش مهمان؛ نه کپی نقل‌قول و نه تأیید سازوکار ورود."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I018",
+      "idea_id": "VINGCARD15-S05-T018",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 8,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P08-E03",
+      "source_S02_fragment_index": 3,
+      "source_text_en": "The latest version of Visionline is needed",
+      "translation_fa": "به آخرین نسخهٔ Visionline نیاز است",
+      "source_type": "software_capability",
+      "research_category_id": "management_software",
+      "research_section_group": "TECHNICAL_REQUIREMENTS",
+      "source_editorial_limits_fa": "«آخرین» در متن چاپ ۲۰۲۴ آمده و امروز احراز نشده. گزینهٔ مجوز Mobile Access پیش‌نیاز جداست؛ هیچ سخت‌افزار، فهرست سازگاری یا قابلیت NSP ثبت نشود.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-10"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD15-P08-E04"
+      ],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "سرفصل مقایسه‌ای پیش‌نیاز نرم‌افزار رقیب؛ نسخهٔ روز، مجوز NSP، سازگاری و سخت‌افزار نتیجه نشود.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "سرفصل مقایسه‌ای پیش‌نیاز نرم‌افزار رقیب؛ نسخهٔ روز، مجوز NSP، سازگاری و سخت‌افزار نتیجه نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "سرفصل مقایسه‌ای پیش‌نیاز نرم‌افزار رقیب؛ نسخهٔ روز، مجوز NSP، سازگاری و سخت‌افزار نتیجه نشود."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I019",
+      "idea_id": "VINGCARD15-S05-T019",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 9,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P09-E01",
+      "source_S02_fragment_index": 1,
+      "source_text_en": "Issue mobile key",
+      "translation_fa": "صدور کلید موبایلی",
+      "source_type": "architecture",
+      "research_category_id": "architecture_deployment",
+      "research_section_group": "ISSUANCE_DIAGRAM",
+      "source_editorial_limits_fa": "عنوان نمودار نسخهٔ منبع؛ ترتیب نقش‌های ناشر فقط برای فهم چیدمان و معماری مقایسه‌ای حفظ شود، نه راهنمای پیاده‌سازی، تعامل NSP یا اثبات امنیت.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-11"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD15-CONTEXT-ISSUANCE-FLOW",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "شکل بیان نقش‌های یک سناریوی اتاق برای پژوهش مقایسه‌ای؛ نه معماری جامع هتل یا سند تعامل NSP.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "شکل بیان نقش‌های یک سناریوی اتاق برای پژوهش مقایسه‌ای؛ نه معماری جامع هتل یا سند تعامل NSP.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_09_role_loop"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "شکل بیان نقش‌های یک سناریوی اتاق برای پژوهش مقایسه‌ای؛ نه معماری جامع هتل یا سند تعامل NSP."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I020",
+      "idea_id": "VINGCARD15-S05-T020",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 9,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P09-E02",
+      "source_S02_fragment_index": 2,
+      "source_text_en": "VISIONLINE access control software system",
+      "translation_fa": "سامانهٔ نرم‌افزاری کنترل دسترسی Visionline",
+      "source_type": "software_capability",
+      "research_category_id": "management_software",
+      "research_section_group": "ISSUANCE_DIAGRAM",
+      "source_editorial_limits_fa": "میزبانی در محل هتل در همین نمودار به Visionline مربوط است؛ به سرویس ابری ناشر یا NSP تعمیم داده نشود.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-11"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD15-CONTEXT-ISSUANCE-FLOW",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD15-P09-E03"
+      ],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "تعریف نقش نرم‌افزار رقیب برای مقایسهٔ معماری اتاق؛ قید میزبانی محلی فقط متعلق به Visionline در منبع است.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "تعریف نقش نرم‌افزار رقیب برای مقایسهٔ معماری اتاق؛ قید میزبانی محلی فقط متعلق به Visionline در منبع است.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "VINGCARD15_09_role_loop"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "تعریف نقش نرم‌افزار رقیب برای مقایسهٔ معماری اتاق؛ قید میزبانی محلی فقط متعلق به Visionline در منبع است."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I021",
+      "idea_id": "VINGCARD15-S05-T021",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 10,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P10-E03",
+      "source_S02_fragment_index": 3,
+      "source_text_en": "Future-proof Technology",
+      "translation_fa": "فناوریِ آماده برای آینده",
+      "source_type": "marketing_slogan",
+      "research_category_id": "security_messaging",
+      "research_section_group": "VENDOR_SCOPE",
+      "source_editorial_limits_fa": "عبارت بازاریابی است، نه آزمون سازگاری آتی با همهٔ تلفن‌ها یا سیستم‌عامل‌ها و نه وعدهٔ به‌روزرسانی NSP.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-12"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "تیتر عمومی آینده‌نگر به‌تنهایی قابلیت، برنامهٔ به‌روزرسانی یا تعهد سازگاری NSP نیست.",
+      "unassigned_reason_fa": "تیتر عمومی آینده‌نگر به‌تنهایی قابلیت، برنامهٔ به‌روزرسانی یا تعهد سازگاری NSP نیست.",
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "unassigned_research_only",
+      "related_visual_image_ids": [
+        "VINGCARD15_10_dark_feature_stack"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "تیتر عمومی آینده‌نگر به‌تنهایی قابلیت، برنامهٔ به‌روزرسانی یا تعهد سازگاری NSP نیست."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I022",
+      "idea_id": "VINGCARD15-S05-T022",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 10,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P10-E04",
+      "source_S02_fragment_index": 4,
+      "source_text_en": "Reliability",
+      "translation_fa": "قابلیت اتکا",
+      "source_type": "marketing_slogan",
+      "research_category_id": "security_messaging",
+      "research_section_group": "VENDOR_SCOPE",
+      "source_editorial_limits_fa": "تیتر در فصل ناشر؛ معیار کارایی، میزان دسترس‌پذیری، قرارداد سطح خدمت یا تعهد NSP از آن نتیجه نمی‌شود.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-12"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "بدون شاهد مستقل، عنوان اتکاپذیری به شاخص، SLA یا رویهٔ NSP تبدیل نمی‌شود.",
+      "unassigned_reason_fa": "بدون شاهد مستقل، عنوان اتکاپذیری به شاخص، SLA یا رویهٔ NSP تبدیل نمی‌شود.",
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "unassigned_research_only",
+      "related_visual_image_ids": [
+        "VINGCARD15_10_dark_feature_stack"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "بدون شاهد مستقل، عنوان اتکاپذیری به شاخص، SLA یا رویهٔ NSP تبدیل نمی‌شود."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I023",
+      "idea_id": "VINGCARD15-S05-T023",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 10,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P10-E05",
+      "source_S02_fragment_index": 5,
+      "source_text_en": "Security",
+      "translation_fa": "امنیت",
+      "source_type": "marketing_slogan",
+      "research_category_id": "security_messaging",
+      "research_section_group": "VENDOR_SCOPE",
+      "source_editorial_limits_fa": "تیتر منبع است، نه گواهی، ارزیابی کنترل یا امنیت NSP؛ سازوکار فنی منبع به‌عنوان فیچر استخراج نشده است.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-12"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "عنوان امنیت ناشر مدرک گواهی یا عملکرد NSP نیست؛ از آن سازوکار فنی استخراج نشود.",
+      "unassigned_reason_fa": "عنوان امنیت ناشر مدرک گواهی یا عملکرد NSP نیست؛ از آن سازوکار فنی استخراج نشود.",
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "unassigned_research_only",
+      "related_visual_image_ids": [
+        "VINGCARD15_10_dark_feature_stack"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "عنوان امنیت ناشر مدرک گواهی یا عملکرد NSP نیست؛ از آن سازوکار فنی استخراج نشود."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I024",
+      "idea_id": "VINGCARD15-S05-T024",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 10,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P10-E06",
+      "source_S02_fragment_index": 6,
+      "source_text_en": "Onboarding services",
+      "translation_fa": "خدمات راه‌اندازی و همراهی اولیه",
+      "source_type": "intro",
+      "research_category_id": "hotel_operations",
+      "research_section_group": "VENDOR_SCOPE",
+      "source_editorial_limits_fa": "خدمت منسوب به ناشر؛ همراهی استقرار از ویژگی خود نرم‌افزار تفکیک شود و به‌عنوان تعهد خدمت NSP معرفی نشود.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-12"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "خدمت استقرار در منبع متعلق به ناشر است؛ خدمات واقعی NSP بدون سند به معرفی شرکت تخصیص نیابد.",
+      "unassigned_reason_fa": "خدمت استقرار در منبع متعلق به ناشر است؛ خدمات واقعی NSP بدون سند به معرفی شرکت تخصیص نیابد.",
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "unassigned_research_only",
+      "related_visual_image_ids": [
+        "VINGCARD15_10_dark_feature_stack"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "خدمت استقرار در منبع متعلق به ناشر است؛ خدمات واقعی NSP بدون سند به معرفی شرکت تخصیص نیابد."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I025",
+      "idea_id": "VINGCARD15-S05-T025",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 11,
+      "original_printed_page": null,
+      "source_S02_fragment_ref": "VINGCARD15-P11-E01",
+      "source_S02_fragment_index": 1,
+      "source_text_en": "what people will be left with is something intangible",
+      "translation_fa": "آنچه برای مردم می‌ماند، چیزی ناملموس است",
+      "source_type": "marketing_slogan",
+      "research_category_id": "marketing_slogans",
+      "research_section_group": "CLOSING_COPY",
+      "source_editorial_limits_fa": "تکه‌ای از متن پایان‌بندی دربارهٔ تجربه و اعتماد به برند است، نه پیش‌بینی تأییدشدهٔ بازار یا متن آمادهٔ NSP.",
+      "source_context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-13"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [
+        "VINGCARD15-P11-E02"
+      ],
+      "other_source_same_exact_excerpt_records": [],
+      "selection_gate": "pending_S06",
+      "source_quote_verification_inherited_from_S03": "Exact S02 phrase previously verified in uploaded PDF and Library text",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "متن پایان‌بندی و وعدهٔ برندِ ناشر است. اصل مکث و تایپوگرافی از تصویر مطالعه می‌شود، نه این نسخهٔ عبارت.",
+      "unassigned_reason_fa": "متن پایان‌بندی و وعدهٔ برندِ ناشر است. اصل مکث و تایپوگرافی از تصویر مطالعه می‌شود، نه این نسخهٔ عبارت.",
+      "requires_NSP_validation_fa": [
+        "نقل‌قول و ادعای منبع پژوهشی است؛ تألیف مستقل و مدرک معتبر محصول/کاربرد NSP پیش از هر استفاده الزامی است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "unassigned_research_only",
+      "related_visual_image_ids": [
+        "VINGCARD15_11_quiet_closing"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "متن پایان‌بندی و وعدهٔ برندِ ناشر است. اصل مکث و تایپوگرافی از تصویر مطالعه می‌شود، نه این نسخهٔ عبارت."
+    }
+  ],
+  "visual_mappings": [
+    {
+      "image_id": "VINGCARD15_01_cover_hero",
+      "idea_id": "VINGCARD15-S05-V001",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 1,
+      "source_pdf_page": 1,
+      "original_printed_page": null,
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "equipment_presentation_style",
+      "image_text_policy": "Source pixels are not separately transcribed, reused or counted as a new text feature.",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_01_cover_hero.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_01_cover_hero.webp",
+      "image_asset_sha256": "c03580acd159df3564e359909043219fa207861594539bd366e619688788bf64",
+      "image_blob_sha": "7e1fcb5cbeb245566649f474ff20e441383196db",
+      "normalized_pdf_crop": [
+        0,
+        0,
+        1,
+        0.94
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "rendered_size_px": [
+        738,
+        980
+      ],
+      "presentation_style": "hero_full_bleed_product_photo_with_brand_band",
+      "visual_style_type": "hero_full_bleed_product_photo_with_brand_band",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "جلد عکس‌محور با نوار هویت",
+      "observed_content_in_crop_fa": "عکس بزرگ دستگیره و تلفن از پایین، نوار یک‌دست عنوان و نشان در بالا؛ هویت و پیام از بدنه جدا هستند.",
+      "content_level": null,
+      "target_section_type": "COVER",
+      "target_section_title_fa": "صفحه اول کاتالوگ",
+      "target_section_row": 2,
+      "target_section_types": [
+        "COVER"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "الگوی عکس اصلی و نوار عنوان برای کاور داخلی، با تصویر و نشان مستقل NSP؛ جلد بیرونی زونکن مقصد نیست.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "الگوی عکس اصلی و نوار عنوان برای کاور داخلی، با تصویر و نشان مستقل NSP؛ جلد بیرونی زونکن مقصد نیست.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "فقط ساختار بصری قابل مطالعه است؛ رسانه و متن اختصاصی، مجوز، آماده‌سازی راست‌به‌چپ و حاشیهٔ امن لازم است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "editorial_layout_observation",
+      "mapping_status": "proposed_not_approved",
+      "key_takeaway_fa": "جدایی عنوان و عکس، سلسله‌مراتب سریع.",
+      "analyst_assessment_fa": "عکس یک محصول ممکن است دامنهٔ راهکار را کوچک جلوه دهد.",
+      "nsp_visual_adaptation_fa": "با عکس تولیدی NSP و عنوان کوتاه، مسیر چشم از هویت به محصول را بازسازی کن؛ ترکیب و نشان منبع کپی نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I001"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P01-E02"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود."
+    },
+    {
+      "image_id": "VINGCARD15_02_visual_mosaic",
+      "idea_id": "VINGCARD15-S05-V002",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 2,
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "equipment_presentation_style",
+      "image_text_policy": "Source pixels are not separately transcribed, reused or counted as a new text feature.",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_02_visual_mosaic.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_02_visual_mosaic.webp",
+      "image_asset_sha256": "915afe82924bbadf2e98d5053970d8275e5827c376b80af9d465d82ff386f387",
+      "image_blob_sha": "d46534ab33cf5f34d70213618edfc3442896e3fd",
+      "normalized_pdf_crop": [
+        0.043,
+        0.538,
+        0.653,
+        0.97
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "rendered_size_px": [
+        980,
+        981
+      ],
+      "presentation_style": "editorial_mosaic_beneath_introduction",
+      "visual_style_type": "editorial_mosaic_beneath_introduction",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "موزاییک عکس پس از معرفی",
+      "observed_content_in_crop_fa": "تصاویر هم‌قد موضوع‌های مختلف در شبکهٔ فشرده؛ خانهٔ آماری در سمت دیگر بیرون برش قرار می‌گیرد.",
+      "content_level": "SOLUTION",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "موزاییک می‌تواند موقعیت‌های نیاز مهمان و هتل را نمایش بدهد؛ آمار منبع بیرون برش و خارج از ادعای NSP است.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "موزاییک می‌تواند موقعیت‌های نیاز مهمان و هتل را نمایش بدهد؛ آمار منبع بیرون برش و خارج از ادعای NSP است.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "فقط ساختار بصری قابل مطالعه است؛ رسانه و متن اختصاصی، مجوز، آماده‌سازی راست‌به‌چپ و حاشیهٔ امن لازم است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "editorial_layout_observation",
+      "mapping_status": "proposed_not_approved",
+      "key_takeaway_fa": "چهار موقعیت در یک نگاه.",
+      "analyst_assessment_fa": "رابطهٔ تصاویر با پیام به تیتر نیاز دارد؛ قاب افقی بازتراز شود.",
+      "nsp_visual_adaptation_fa": "موزاییک می‌تواند چند موقعیت واقعی هتل را کنار هم نشان دهد؛ اعداد کیفی منبع وارد بازطراحی نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I002",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I003"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P02-E01",
+        "VINGCARD15-P02-E02"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-02"
+      ],
+      "related_source_context_set_refs": [],
+      "crop_context_note_fa": "خانهٔ درصد و آمار بیرون برش است.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود."
+    },
+    {
+      "image_id": "VINGCARD15_03_benefit_columns",
+      "idea_id": "VINGCARD15-S05-V003",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 3,
+      "source_pdf_page": 3,
+      "original_printed_page": null,
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "equipment_presentation_style",
+      "image_text_policy": "Source pixels are not separately transcribed, reused or counted as a new text feature.",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_03_benefit_columns.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_03_benefit_columns.webp",
+      "image_asset_sha256": "5caeb701e3a8305fb1c873fe7e4eb20cea849f8c1880446b3711d9a1aae34395",
+      "image_blob_sha": "2b8acd5a998f5265dca7f48e50cbc607add66070",
+      "normalized_pdf_crop": [
+        0.06,
+        0.09,
+        0.945,
+        0.6
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "rendered_size_px": [
+        981,
+        800
+      ],
+      "presentation_style": "two_audience_benefit_columns_with_pictograms",
+      "visual_style_type": "two_audience_benefit_columns_with_pictograms",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "دو ستون مزیت برای دو مخاطب",
+      "observed_content_in_crop_fa": "پیکتوگرام مهمان و هتل، تیترهای هم‌ردیف و ستون‌های جدا رجوع مخاطب به مزیت خود را ساده می‌کنند.",
+      "content_level": "SOLUTION",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "تفکیک چشم‌انداز مهمان و مدیر هتل با دو ستون؛ داده‌ها و شاخص‌های عملکرد واقعی NSP باید جایگزین شوند.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "تفکیک چشم‌انداز مهمان و مدیر هتل با دو ستون؛ داده‌ها و شاخص‌های عملکرد واقعی NSP باید جایگزین شوند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "فقط ساختار بصری قابل مطالعه است؛ رسانه و متن اختصاصی، مجوز، آماده‌سازی راست‌به‌چپ و حاشیهٔ امن لازم است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "editorial_layout_observation",
+      "mapping_status": "proposed_not_approved",
+      "key_takeaway_fa": "تفکیک مخاطب با تیتر و پیکتوگرام.",
+      "analyst_assessment_fa": "حجم دو ستون یکسان نیست؛ در فارسی بازآرایی شود.",
+      "nsp_visual_adaptation_fa": "برای مهمان و مدیر هتل ستون‌های مستقل و هم‌وزن بساز؛ هر مزیت با متن و شاهد معتبر NSP تأیید شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I004",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I005",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I006",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I007",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I008"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P03-E01",
+        "VINGCARD15-P03-E02",
+        "VINGCARD15-P03-E03",
+        "VINGCARD15-P03-E04",
+        "VINGCARD15-P03-E05",
+        "VINGCARD15-P03-E06"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-03",
+        "VINGCARD15-CLAIM-04"
+      ],
+      "related_source_context_set_refs": [],
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود."
+    },
+    {
+      "image_id": "VINGCARD15_04_option_cards",
+      "idea_id": "VINGCARD15-S05-V004",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 4,
+      "source_pdf_page": 4,
+      "original_printed_page": null,
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "equipment_presentation_style",
+      "image_text_policy": "Source pixels are not separately transcribed, reused or counted as a new text feature.",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_04_option_cards.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_04_option_cards.webp",
+      "image_asset_sha256": "2e41ccd15b6826dfa770758e4b8a9580321b853087071d0b4c15e38e0c2bad64",
+      "image_blob_sha": "c0c8d519a147784b04c31d00f85d5bdc390cd4a0",
+      "normalized_pdf_crop": [
+        0.07,
+        0.26,
+        0.935,
+        0.928
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "rendered_size_px": [
+        898,
+        981
+      ],
+      "presentation_style": "stacked_option_cards_with_pictograms",
+      "visual_style_type": "stacked_option_cards_with_pictograms",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "کارت‌های عمودی گزینه‌ها",
+      "observed_content_in_crop_fa": "چهار نوار با نشانهٔ سمت چپ، عنوان و بدنه؛ گزینهٔ کیف پول به‌صورت یک بلوک جدا دیده می‌شود.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قالب کارت‌های هم‌وزن برای مقایسهٔ گزینه‌های واقعی اتاق؛ گزینه‌های رقیب حتی Apple Wallet به NSP نسبت داده نشوند.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "قالب کارت‌های هم‌وزن برای مقایسهٔ گزینه‌های واقعی اتاق؛ گزینه‌های رقیب حتی Apple Wallet به NSP نسبت داده نشوند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "فقط ساختار بصری قابل مطالعه است؛ رسانه و متن اختصاصی، مجوز، آماده‌سازی راست‌به‌چپ و حاشیهٔ امن لازم است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "editorial_layout_observation",
+      "mapping_status": "proposed_not_approved",
+      "key_takeaway_fa": "قاب تکرارشونده به مقایسه کمک می‌کند.",
+      "analyst_assessment_fa": "بدنهٔ هر کارت بلند است؛ کنتراست و طول سطر بازسنجی شوند.",
+      "nsp_visual_adaptation_fa": "برای مقایسهٔ گزینه‌های واقعی NSP از کارت مستقل و نشانهٔ ساده استفاده شود؛ لوگو و محتوای گزینه‌های رقیب کپی نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I009",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I010",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I011",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I012",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I013"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P04-E02",
+        "VINGCARD15-P04-E06",
+        "VINGCARD15-P04-E03",
+        "VINGCARD15-P04-E07",
+        "VINGCARD15-P04-E04",
+        "VINGCARD15-P04-E05",
+        "VINGCARD15-P04-E08"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-05",
+        "VINGCARD15-CLAIM-06"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود."
+    },
+    {
+      "image_id": "VINGCARD15_05_partner_overlay",
+      "idea_id": "VINGCARD15-S05-V005",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 5,
+      "source_pdf_page": 5,
+      "original_printed_page": null,
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "equipment_presentation_style",
+      "image_text_policy": "Source pixels are not separately transcribed, reused or counted as a new text feature.",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_05_partner_overlay.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_05_partner_overlay.webp",
+      "image_asset_sha256": "c501dbd2a3764f72182049f371f6be9398bf8ea4daf71debc7808de1310bdca7",
+      "image_blob_sha": "8ca85c5fba0653bfb472e39e34fa57a7a6a0f1bc",
+      "normalized_pdf_crop": [
+        0.31,
+        0.043,
+        0.953,
+        0.352
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "rendered_size_px": [
+        981,
+        667
+      ],
+      "presentation_style": "credential_partner_callout_over_photo",
+      "visual_style_type": "credential_partner_callout_over_photo",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "کادر برنامهٔ شریک روی عکس",
+      "observed_content_in_crop_fa": "کادر آبیِ متن و نشان در گوشهٔ عکس قرار دارد و زمینهٔ تصویری خوانش را هدایت می‌کند.",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "تمرکز روی جای کادر روی عکس است؛ نشان شریک و ادعای برنامهٔ همکاری مرجع بازاستفاده نیست.",
+      "unassigned_reason_fa": "تمرکز روی جای کادر روی عکس است؛ نشان شریک و ادعای برنامهٔ همکاری مرجع بازاستفاده نیست.",
+      "requires_NSP_validation_fa": [
+        "فقط ساختار بصری قابل مطالعه است؛ رسانه و متن اختصاصی، مجوز، آماده‌سازی راست‌به‌چپ و حاشیهٔ امن لازم است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "editorial_layout_observation",
+      "mapping_status": "unassigned_research_only",
+      "key_takeaway_fa": "کادر رنگی بر زمینهٔ شلوغ غالب می‌شود.",
+      "analyst_assessment_fa": "هویت و عکس شریک جایگزین نشدنی‌اند مگر با دارایی مجاز NSP.",
+      "nsp_visual_adaptation_fa": "اگر شواهد همکاری NSP وجود دارد، کادر کوتاه روی عکس مجاز و با فاصله از پانچ قرار گیرد؛ نشان منبع و ادعای شریک حذف شوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I014"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P05-E01",
+        "VINGCARD15-P05-E02",
+        "VINGCARD15-P05-E03",
+        "VINGCARD15-P05-E04"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-06"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود."
+    },
+    {
+      "image_id": "VINGCARD15_06_guest_flow",
+      "idea_id": "VINGCARD15-S05-V006",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 6,
+      "source_pdf_page": 6,
+      "original_printed_page": null,
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "equipment_presentation_style",
+      "image_text_policy": "Source pixels are not separately transcribed, reused or counted as a new text feature.",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_06_guest_flow.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_06_guest_flow.webp",
+      "image_asset_sha256": "0e4d2a0d34d043f29f7f633d8c33e02fc57debe055650bf23bd53f9e0c458ff0",
+      "image_blob_sha": "ece932cf54182ef7588f9e2a536aebe25d8502f7",
+      "normalized_pdf_crop": [
+        0.1,
+        0.28,
+        0.945,
+        0.865
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "rendered_size_px": [
+        981,
+        960
+      ],
+      "presentation_style": "numbered_pictogram_guest_journey",
+      "visual_style_type": "numbered_pictogram_guest_journey",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "مسیر مهمان با پیکتوگرام شماره‌دار",
+      "observed_content_in_crop_fa": "پنج گام در دو ردیف، عدد و نماد قبل از متن، ترتیب از راست‌چین یا چیدمان فارسی مستقلاً طراحی شود.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "پیکتوگرام شماره‌دار برای یک سناریوی واقعی اتاق؛ توالی، زمان و محرک‌های منبع نباید به NSP نسبت داده شوند.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "پیکتوگرام شماره‌دار برای یک سناریوی واقعی اتاق؛ توالی، زمان و محرک‌های منبع نباید به NSP نسبت داده شوند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "فقط ساختار بصری قابل مطالعه است؛ رسانه و متن اختصاصی، مجوز، آماده‌سازی راست‌به‌چپ و حاشیهٔ امن لازم است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "editorial_layout_observation",
+      "mapping_status": "proposed_not_approved",
+      "key_takeaway_fa": "عدد و نشانه مسیر را خوانا می‌کنند.",
+      "analyst_assessment_fa": "شکست دو ردیف و تراکم متن برای راست‌به‌چپ نیازمند آزمون است.",
+      "nsp_visual_adaptation_fa": "الگوی عدد+نشانه+شرح کوتاه برای یک سناریوی واقعی NSP؛ ترتیب و زمان راهکار رقیب تعهد NSP نیست.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I016"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P06-E01",
+        "VINGCARD15-P06-E02",
+        "VINGCARD15-P06-E03",
+        "VINGCARD15-P06-E04",
+        "VINGCARD15-P06-E05"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-08"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD15-CONTEXT-GUEST-FLOW"
+      ],
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود."
+    },
+    {
+      "image_id": "VINGCARD15_07_lifestyle_quote",
+      "idea_id": "VINGCARD15-S05-V007",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 7,
+      "source_pdf_page": 7,
+      "original_printed_page": null,
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "equipment_presentation_style",
+      "image_text_policy": "Source pixels are not separately transcribed, reused or counted as a new text feature.",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_07_lifestyle_quote.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_07_lifestyle_quote.webp",
+      "image_asset_sha256": "0e8492d3b43eec13115a7e0a2e534456844010d709c1001eb977d1e669bbdc9a",
+      "image_blob_sha": "7254d8e55c8c36d10bafc5f5208f8801ac670e1a",
+      "normalized_pdf_crop": [
+        0.075,
+        0.08,
+        0.98,
+        0.975
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "rendered_size_px": [
+        701,
+        981
+      ],
+      "presentation_style": "full_bleed_context_photo_with_quote_panel",
+      "visual_style_type": "full_bleed_context_photo_with_quote_panel",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "عکس موقعیت واقعی با کادر نقل‌قول",
+      "observed_content_in_crop_fa": "راهروی هتل و شخص در حال استفاده از تلفن، کادر آبی کوچک پایین عکس در مسیری جدا از موضوع اصلی قرار گرفته.",
+      "content_level": "SOLUTION",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "عکس تجربهٔ هتل با کادر کوتاه برای روایت نیاز؛ اقتباس فقط از روش ترکیب، نه سوژه یا نقل‌قول.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "عکس تجربهٔ هتل با کادر کوتاه برای روایت نیاز؛ اقتباس فقط از روش ترکیب، نه سوژه یا نقل‌قول.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "فقط ساختار بصری قابل مطالعه است؛ رسانه و متن اختصاصی، مجوز، آماده‌سازی راست‌به‌چپ و حاشیهٔ امن لازم است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "editorial_layout_observation",
+      "mapping_status": "proposed_not_approved",
+      "key_takeaway_fa": "جای جدا برای سوژه و نقل‌قول.",
+      "analyst_assessment_fa": "سوژه و نقل‌قول به منبع وابسته‌اند؛ فقط اصل طراحی الهام است.",
+      "nsp_visual_adaptation_fa": "ترجیح با عکاسی اختصاصی و متن NSP؛ سوژه و نقل‌قول از نسخهٔ رقیب اقتباس لفظی نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I017"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P07-E01"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-09"
+      ],
+      "related_source_context_set_refs": [],
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود."
+    },
+    {
+      "image_id": "VINGCARD15_08_product_photo_row",
+      "idea_id": "VINGCARD15-S05-V008",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 8,
+      "source_pdf_page": 8,
+      "original_printed_page": null,
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "equipment_presentation_style",
+      "image_text_policy": "Source pixels are not separately transcribed, reused or counted as a new text feature.",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_08_product_photo_row.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_08_product_photo_row.webp",
+      "image_asset_sha256": "17ac5b89efbb7a997454a7459ac5378162fbb55fe2fa5463faa7f67c63e6fbf6",
+      "image_blob_sha": "dca341abb658c5f7b06265e60145b6d24e1264ee",
+      "normalized_pdf_crop": [
+        0.203,
+        0.303,
+        0.965,
+        0.516
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "rendered_size_px": [
+        981,
+        388
+      ],
+      "presentation_style": "aligned_product_crop_photo_row",
+      "visual_style_type": "aligned_product_crop_photo_row",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "ردیف عکس‌های هم‌ارتفاع محصول",
+      "observed_content_in_crop_fa": "عکس‌ها با قاب هم‌ارتفاع و فاصلهٔ ثابت کنار هم آمده‌اند؛ مشخصات، نام مدل‌ها و متن سازگاری هدف این برش نیست.",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "ردیف قاب‌های هم‌تراز برای مقایسهٔ تصویری؛ فعلاً سیستم یا زیرردهٔ محصول به آن نسبت داده نشود.",
+      "unassigned_reason_fa": "ردیف قاب‌های هم‌تراز برای مقایسهٔ تصویری؛ فعلاً سیستم یا زیرردهٔ محصول به آن نسبت داده نشود.",
+      "requires_NSP_validation_fa": [
+        "فقط ساختار بصری قابل مطالعه است؛ رسانه و متن اختصاصی، مجوز، آماده‌سازی راست‌به‌چپ و حاشیهٔ امن لازم است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "editorial_layout_observation",
+      "mapping_status": "unassigned_research_only",
+      "key_takeaway_fa": "قاب و تراز یکسان مقایسهٔ بصری را ساده می‌کنند.",
+      "analyst_assessment_fa": "عکس و خاکستری بودن، شاهد اندازه، جنس یا مشخصات نیست.",
+      "nsp_visual_adaptation_fa": "برای نمونه‌های واقعی و مجاز NSP قاب و تراز ثابت بساز؛ مدل و شرط سخت‌افزاری رقیب منتقل نشود.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "crop_context_note_fa": "نام‌های چاپ‌شده زیر عکس‌ها و متن مشخصات بیرون برش‌اند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود."
+    },
+    {
+      "image_id": "VINGCARD15_09_role_loop",
+      "idea_id": "VINGCARD15-S05-V009",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 9,
+      "source_pdf_page": 9,
+      "original_printed_page": null,
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "equipment_presentation_style",
+      "image_text_policy": "Source pixels are not separately transcribed, reused or counted as a new text feature.",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_09_role_loop.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_09_role_loop.webp",
+      "image_asset_sha256": "bfd75f84dde4a681c2adbdc2b6e1a7aa2a2a54a88aad4b6ca682fb6e3bc31a67",
+      "image_blob_sha": "2c4f1b5de15911c7578cb2886d334a01ced1c394",
+      "normalized_pdf_crop": [
+        0.045,
+        0.215,
+        0.975,
+        0.79
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "rendered_size_px": [
+        981,
+        858
+      ],
+      "presentation_style": "numbered_role_loop_on_solid_background",
+      "visual_style_type": "numbered_role_loop_on_solid_background",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "نمودار حلقه‌ای نقش‌ها",
+      "observed_content_in_crop_fa": "نقش‌ها با آیکن، خط متصل و اعداد روی زمینهٔ یکنواخت از هم تفکیک شده‌اند؛ نمایش مفهومی منبع است.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "خط و شماره برای بیان یک نقش‌نگاری محدود اتاق؛ بدون تأیید معماری، کلید، امنیت یا یکپارچگی NSP.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "خط و شماره برای بیان یک نقش‌نگاری محدود اتاق؛ بدون تأیید معماری، کلید، امنیت یا یکپارچگی NSP.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "فقط ساختار بصری قابل مطالعه است؛ رسانه و متن اختصاصی، مجوز، آماده‌سازی راست‌به‌چپ و حاشیهٔ امن لازم است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "editorial_layout_observation",
+      "mapping_status": "proposed_not_approved",
+      "key_takeaway_fa": "خط و شماره نقش‌ها را مفهوم‌سازی می‌کنند.",
+      "analyst_assessment_fa": "متن ریز روی زمینهٔ تیره نیازمند کنترل خوانایی است.",
+      "nsp_visual_adaptation_fa": "جهت حرکت و نقش‌ها را فقط با معماری تأییدشدهٔ NSP بازطراحی کن؛ فرایند صدور یا امنیت منبع منتقل نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I019",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I020"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P09-E01",
+        "VINGCARD15-P09-E02",
+        "VINGCARD15-P09-E03"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-11"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD15-CONTEXT-ISSUANCE-FLOW",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود."
+    },
+    {
+      "image_id": "VINGCARD15_10_dark_feature_stack",
+      "idea_id": "VINGCARD15-S05-V010",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 10,
+      "source_pdf_page": 10,
+      "original_printed_page": null,
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "equipment_presentation_style",
+      "image_text_policy": "Source pixels are not separately transcribed, reused or counted as a new text feature.",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_10_dark_feature_stack.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_10_dark_feature_stack.webp",
+      "image_asset_sha256": "bd605d0b153f9282039c7755ab11ce048c3aa370be6eb7a455023c60c63c6221",
+      "image_blob_sha": "b1479c0a94a1d7befa1073b79ee100a4ae8021e1",
+      "normalized_pdf_crop": [
+        0.13,
+        0.125,
+        0.96,
+        0.92
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "rendered_size_px": [
+        724,
+        981
+      ],
+      "presentation_style": "dark_technology_panel_with_icon_rail",
+      "visual_style_type": "dark_technology_panel_with_icon_rail",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "صفحهٔ تیره با ریل نشانه‌ها",
+      "observed_content_in_crop_fa": "زیرعنوان‌های کوتاه در ستون متن و نمادهای خطی در ریل کنار آن؛ زمینهٔ تیره، بافت نورانی و تمرکز نقطه‌ای.",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "ریل آیکن و زمینهٔ تیره تجربهٔ بصری مشترک‌اند؛ متن و نمادهای رقیب مجوز یا مقصد محصول ندارند.",
+      "unassigned_reason_fa": "ریل آیکن و زمینهٔ تیره تجربهٔ بصری مشترک‌اند؛ متن و نمادهای رقیب مجوز یا مقصد محصول ندارند.",
+      "requires_NSP_validation_fa": [
+        "فقط ساختار بصری قابل مطالعه است؛ رسانه و متن اختصاصی، مجوز، آماده‌سازی راست‌به‌چپ و حاشیهٔ امن لازم است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "editorial_layout_observation",
+      "mapping_status": "unassigned_research_only",
+      "key_takeaway_fa": "ریل تکرارشونده از متن جدا می‌ماند.",
+      "analyst_assessment_fa": "تیرگی و بافت برای چاپ و متن کوچک باید آزموده شوند.",
+      "nsp_visual_adaptation_fa": "برای NSP کنتراست دسترس‌پذیر، بندهای کوتاه و نشانه‌های اختصاصی؛ هیچ ادعای امنیت یا SLA از منبع بازیافت نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I021",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I022",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I023",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I024"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P10-E03",
+        "VINGCARD15-P10-E04",
+        "VINGCARD15-P10-E05",
+        "VINGCARD15-P10-E06"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-12"
+      ],
+      "related_source_context_set_refs": [],
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود."
+    },
+    {
+      "image_id": "VINGCARD15_11_quiet_closing",
+      "idea_id": "VINGCARD15-S05-V011",
+      "company": "Vingcard",
+      "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+      "pdf_filename": "15_Vingcard_Mobile Access Solution.pdf",
+      "pdf_page": 11,
+      "source_pdf_page": 11,
+      "original_printed_page": null,
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "equipment_presentation_style",
+      "image_text_policy": "Source pixels are not separately transcribed, reused or counted as a new text feature.",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_11_quiet_closing.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_11_quiet_closing.webp",
+      "image_asset_sha256": "749f89b57be9f1310708f757fe015548508fd8518099c6ff3fe3233f4769edf3",
+      "image_blob_sha": "5dbe6320f7a1d067df1a264465fc86b8ce2d50a0",
+      "normalized_pdf_crop": [
+        0.08,
+        0.19,
+        0.92,
+        0.424
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "rendered_size_px": [
+        981,
+        387
+      ],
+      "presentation_style": "quiet_typographic_closing_with_negative_space",
+      "visual_style_type": "quiet_typographic_closing_with_negative_space",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "پایان‌بندی تایپوگرافیک در فضای منفی",
+      "observed_content_in_crop_fa": "متن کوتاه روشن در بخشی از سطح تیره، بدون ازدحام تصویر، خواننده را به پیام پایانی هدایت می‌کند.",
+      "content_level": null,
+      "target_section_type": "IDENTITY_PAGES",
+      "target_section_title_fa": "صفحات تنفس",
+      "target_section_row": 3,
+      "target_section_types": [
+        "IDENTITY_PAGES"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "ایدهٔ فضاسازی با تایپوگرافی و فضای منفی؛ صفحات تنفس می‌توانند کاملاً خالی بمانند و این ایده به صفحه متصل نیست.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "ایدهٔ فضاسازی با تایپوگرافی و فضای منفی؛ صفحات تنفس می‌توانند کاملاً خالی بمانند و این ایده به صفحه متصل نیست.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "فقط ساختار بصری قابل مطالعه است؛ رسانه و متن اختصاصی، مجوز، آماده‌سازی راست‌به‌چپ و حاشیهٔ امن لازم است."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "editorial_layout_observation",
+      "mapping_status": "proposed_not_approved",
+      "key_takeaway_fa": "فضای منفی مکث بصری ایجاد می‌کند.",
+      "analyst_assessment_fa": "متن کوچک می‌تواند در نمایش دیجیتال گم شود.",
+      "nsp_visual_adaptation_fa": "متن جمع‌بندی اختصاصی و کوتاه با زمینهٔ پیوسته؛ نه ترجمهٔ مستقیم شعار رقیب و نه درج ناخواستهٔ تماس.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I025"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P11-E01",
+        "VINGCARD15-P11-E02"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-13"
+      ],
+      "related_source_context_set_refs": [],
+      "crop_context_note_fa": "پاراگراف دعوت به تماس بیرون برش است.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود."
+    }
+  ],
+  "style_family_mapping_index": [
+    {
+      "style_id": "hero_full_bleed_product_photo_with_brand_band",
+      "title_fa": "جلد عکس‌محور با نوار هویت",
+      "representative_reference_ids": [
+        "VINGCARD15_01_cover_hero"
+      ],
+      "physical_pdf_pages": [
+        1
+      ],
+      "key_takeaway_fa": "جدایی عنوان و عکس، سلسله‌مراتب سریع.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [
+        "COVER"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "editorial_mosaic_beneath_introduction",
+      "title_fa": "موزاییک عکس پس از معرفی",
+      "representative_reference_ids": [
+        "VINGCARD15_02_visual_mosaic"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "چهار موقعیت در یک نگاه.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [
+        "CHALLENGES_VALUE"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "two_audience_benefit_columns_with_pictograms",
+      "title_fa": "دو ستون مزیت برای دو مخاطب",
+      "representative_reference_ids": [
+        "VINGCARD15_03_benefit_columns"
+      ],
+      "physical_pdf_pages": [
+        3
+      ],
+      "key_takeaway_fa": "تفکیک مخاطب با تیتر و پیکتوگرام.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [
+        "CHALLENGES_VALUE"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "stacked_option_cards_with_pictograms",
+      "title_fa": "کارت‌های عمودی گزینه‌ها",
+      "representative_reference_ids": [
+        "VINGCARD15_04_option_cards"
+      ],
+      "physical_pdf_pages": [
+        4
+      ],
+      "key_takeaway_fa": "قاب تکرارشونده به مقایسه کمک می‌کند.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "credential_partner_callout_over_photo",
+      "title_fa": "کادر برنامهٔ شریک روی عکس",
+      "representative_reference_ids": [
+        "VINGCARD15_05_partner_overlay"
+      ],
+      "physical_pdf_pages": [
+        5
+      ],
+      "key_takeaway_fa": "کادر رنگی بر زمینهٔ شلوغ غالب می‌شود.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": true,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "numbered_pictogram_guest_journey",
+      "title_fa": "مسیر مهمان با پیکتوگرام شماره‌دار",
+      "representative_reference_ids": [
+        "VINGCARD15_06_guest_flow"
+      ],
+      "physical_pdf_pages": [
+        6
+      ],
+      "key_takeaway_fa": "عدد و نشانه مسیر را خوانا می‌کنند.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "full_bleed_context_photo_with_quote_panel",
+      "title_fa": "عکس موقعیت واقعی با کادر نقل‌قول",
+      "representative_reference_ids": [
+        "VINGCARD15_07_lifestyle_quote"
+      ],
+      "physical_pdf_pages": [
+        7
+      ],
+      "key_takeaway_fa": "جای جدا برای سوژه و نقل‌قول.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [
+        "CHALLENGES_VALUE"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "aligned_product_crop_photo_row",
+      "title_fa": "ردیف عکس‌های هم‌ارتفاع محصول",
+      "representative_reference_ids": [
+        "VINGCARD15_08_product_photo_row"
+      ],
+      "physical_pdf_pages": [
+        8
+      ],
+      "key_takeaway_fa": "قاب و تراز یکسان مقایسهٔ بصری را ساده می‌کنند.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": true,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "numbered_role_loop_on_solid_background",
+      "title_fa": "نمودار حلقه‌ای نقش‌ها",
+      "representative_reference_ids": [
+        "VINGCARD15_09_role_loop"
+      ],
+      "physical_pdf_pages": [
+        9
+      ],
+      "key_takeaway_fa": "خط و شماره نقش‌ها را مفهوم‌سازی می‌کنند.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "dark_technology_panel_with_icon_rail",
+      "title_fa": "صفحهٔ تیره با ریل نشانه‌ها",
+      "representative_reference_ids": [
+        "VINGCARD15_10_dark_feature_stack"
+      ],
+      "physical_pdf_pages": [
+        10
+      ],
+      "key_takeaway_fa": "ریل تکرارشونده از متن جدا می‌ماند.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": true,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "quiet_typographic_closing_with_negative_space",
+      "title_fa": "پایان‌بندی تایپوگرافیک در فضای منفی",
+      "representative_reference_ids": [
+        "VINGCARD15_11_quiet_closing"
+      ],
+      "physical_pdf_pages": [
+        11
+      ],
+      "key_takeaway_fa": "فضای منفی مکث بصری ایجاد می‌کند.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [
+        "IDENTITY_PAGES"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    }
+  ],
+  "unassigned_text_reasons": [
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I001",
+      "pdf_page": 1,
+      "reason_fa": "شعار با همین متن در سند Vingcard 14 ثبت شده است. این شاهد چاپ دیگر حفظ شود، اما ایدهٔ مستقل یا مقصد تازه ایجاد نکند."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I014",
+      "pdf_page": 5,
+      "reason_fa": "فرایند شریک به ناشر تعلق دارد؛ مدرکی برای شریک، مجوز یا گواهی NSP نیست و برای معرفی شرکت مقصد ندارد."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I015",
+      "pdf_page": 5,
+      "reason_fa": "نام بستر اختصاصی منبع است. ادعای امنیت، استاندارد، روش یا قابلیت NSP از Seos استخراج نمی‌شود."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I021",
+      "pdf_page": 10,
+      "reason_fa": "تیتر عمومی آینده‌نگر به‌تنهایی قابلیت، برنامهٔ به‌روزرسانی یا تعهد سازگاری NSP نیست."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I022",
+      "pdf_page": 10,
+      "reason_fa": "بدون شاهد مستقل، عنوان اتکاپذیری به شاخص، SLA یا رویهٔ NSP تبدیل نمی‌شود."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I023",
+      "pdf_page": 10,
+      "reason_fa": "عنوان امنیت ناشر مدرک گواهی یا عملکرد NSP نیست؛ از آن سازوکار فنی استخراج نشود."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I024",
+      "pdf_page": 10,
+      "reason_fa": "خدمت استقرار در منبع متعلق به ناشر است؛ خدمات واقعی NSP بدون سند به معرفی شرکت تخصیص نیابد."
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I025",
+      "pdf_page": 11,
+      "reason_fa": "متن پایان‌بندی و وعدهٔ برندِ ناشر است. اصل مکث و تایپوگرافی از تصویر مطالعه می‌شود، نه این نسخهٔ عبارت."
+    }
+  ],
+  "unassigned_visual_reasons": [
+    {
+      "image_id": "VINGCARD15_05_partner_overlay",
+      "pdf_page": 5,
+      "reason_fa": "تمرکز روی جای کادر روی عکس است؛ نشان شریک و ادعای برنامهٔ همکاری مرجع بازاستفاده نیست."
+    },
+    {
+      "image_id": "VINGCARD15_08_product_photo_row",
+      "pdf_page": 8,
+      "reason_fa": "ردیف قاب‌های هم‌تراز برای مقایسهٔ تصویری؛ فعلاً سیستم یا زیرردهٔ محصول به آن نسبت داده نشود."
+    },
+    {
+      "image_id": "VINGCARD15_10_dark_feature_stack",
+      "pdf_page": 10,
+      "reason_fa": "ریل آیکن و زمینهٔ تیره تجربهٔ بصری مشترک‌اند؛ متن و نمادهای رقیب مجوز یا مقصد محصول ندارند."
+    }
+  ],
+  "source_claim_gates_snapshot": [
+    {
+      "id": "VINGCARD15-CLAIM-01",
+      "pdf_page": 2,
+      "kind": "market_survey_and_rounded_callout",
+      "S02_fragment_refs": [
+        "VINGCARD15-P02-E03",
+        "VINGCARD15-P02-E04",
+        "VINGCARD15-P02-E05"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "سه بیان دقیق یکسان نیستند؛ «بیش از» و «نزدیک به» را گرد یا با هم جمع نکن. نام مطالعه، نمونه، زمان و مبنای مستقل در این صفحه تأیید نشد. این‌ها نرخ اجرای NSP نیستند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": []
+    },
+    {
+      "id": "VINGCARD15-CLAIM-02",
+      "pdf_page": 2,
+      "kind": "use_and_operational_outcomes",
+      "S02_fragment_refs": [
+        "VINGCARD15-P02-E02"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "کاربرد منبع؛ سازگاری دستگاه، حذف پذیرش، هزینه/درآمد و وفاداری در NSP از این سند تأیید نمی‌شود.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I003"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-03",
+      "pdf_page": 3,
+      "kind": "deployment_specific_guest_services",
+      "S02_fragment_refs": [
+        "VINGCARD15-P03-E02",
+        "VINGCARD15-P03-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "وابستگی به راهکار مستقر حفظ شود. رزرو، پذیرش، خروج و دورزدن صف پذیرش نباید قابلیت عمومی همهٔ راهکارها یا NSP معرفی شوند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I004",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I005"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-04",
+      "pdf_page": 3,
+      "kind": "vendor_benefits_not_measured",
+      "S02_fragment_refs": [
+        "VINGCARD15-P03-E04",
+        "VINGCARD15-P03-E05",
+        "VINGCARD15-P03-E06"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "وفاداری، کارایی، سودآوری یا کاهش هزینه از نوع پیام مزیت‌اند، نه نتیجهٔ اندازه‌گیری مستقل یا طرح قیمت.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I006",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I007",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I008"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-05",
+      "pdf_page": 4,
+      "kind": "three_apps_and_wallet_distinct",
+      "S02_fragment_refs": [
+        "VINGCARD15-P04-E02",
+        "VINGCARD15-P04-E03",
+        "VINGCARD15-P04-E04",
+        "VINGCARD15-P04-E05",
+        "VINGCARD15-P04-E06",
+        "VINGCARD15-P04-E07",
+        "VINGCARD15-P04-E08"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "سه بلوک روش اپ و بلوک جداگانهٔ Apple Wallet در منبع؛ شرایط SDK، شراکت، اپ آماده و کیف پول با هم ادغام نشوند. الزامات امروز Apple یا سازگاری NSP از سند ثابت نمی‌شود.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I009",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I010",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I011",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I012",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I013"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-06",
+      "pdf_page": 5,
+      "kind": "certified_partner_prerequisites",
+      "S02_fragment_refs": [
+        "VINGCARD15-P05-E01",
+        "VINGCARD15-P05-E02",
+        "VINGCARD15-P05-E03",
+        "VINGCARD15-P05-E04"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "سه معیار مربوط به برنامهٔ شریک Vingcard در این نسخه‌اند و هیچ شریک یا نرم‌افزار NSP را گواهی نمی‌کنند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I010",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I014"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-07",
+      "pdf_page": 5,
+      "kind": "seos_vendor_security_context",
+      "S02_fragment_refs": [
+        "VINGCARD15-P05-E05",
+        "VINGCARD15-P05-E06"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "Seos فقط به‌عنوان نام بستر منبع؛ صفت امنیتی یا استاندارد ادعایی تأیید نشده. جزئیات سازوکار یا آزمون امنیتی به این رکورد منتقل نشود.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I015"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-08",
+      "pdf_page": 6,
+      "kind": "conditional_guest_flow_timing",
+      "S02_fragment_refs": [
+        "VINGCARD15-P06-E02",
+        "VINGCARD15-P06-E03",
+        "VINGCARD15-P06-E04",
+        "VINGCARD15-P06-E05"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "تقریباً ۲۴ ساعت به دعوت در سناریوی ترسیمی مربوط است؛ آماده‌بودن اتاق قیدِ نمایش نتیجه است. تضمین زمانی، SLA و جزء عمومی NSP نیست.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I016"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-09",
+      "pdf_page": 7,
+      "kind": "lifestyle_quote_not_evidence",
+      "S02_fragment_refs": [
+        "VINGCARD15-P07-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "نقل‌قول و عکس نمونهٔ روایت‌اند و تأیید فرایند واقعی یا مجوز بازنشر نیستند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I017"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-10",
+      "pdf_page": 8,
+      "kind": "visionline_and_license_conditions",
+      "S02_fragment_refs": [
+        "VINGCARD15-P08-E02",
+        "VINGCARD15-P08-E03",
+        "VINGCARD15-P08-E04"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "Latest متن سال ۲۰۲۴ است، نه شماره نسخهٔ تأییدشدهٔ فعلی. مجوز Mobile Access و نرم‌افزار Visionline در همان متن جداگانه ثبت شوند. مشخصات و مدل‌های سخت‌افزار رقبا در بانک نیایند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I018"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-11",
+      "pdf_page": 9,
+      "kind": "vendor_architecture_document_edition",
+      "S02_fragment_refs": [
+        "VINGCARD15-P09-E01",
+        "VINGCARD15-P09-E02",
+        "VINGCARD15-P09-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "توالی و نقش‌ها در نمودار نسخهٔ ۲۰۲۴ ثبت شوند، نه پیاده‌سازی امنیت یا امکان تعامل NSP. میزبانی محلی برای Visionline است؛ با سرویس ابری منبع یکی نیست.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I019",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I020"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-12",
+      "pdf_page": 10,
+      "kind": "security_reliability_and_platform_scope",
+      "S02_fragment_refs": [
+        "VINGCARD15-P10-E03",
+        "VINGCARD15-P10-E04",
+        "VINGCARD15-P10-E05",
+        "VINGCARD15-P10-E06"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "ادعاهای امنیت، مقیاس، پشتیبانی، سازگاری و SLA متعلق به ناشرند. اشاره به استاندارد، معادل گواهی مستقل یا تأیید امنیت NSP نیست.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I021",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I022",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I023",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I024"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-13",
+      "pdf_page": 11,
+      "kind": "closing_positioning_only",
+      "S02_fragment_refs": [
+        "VINGCARD15-P11-E01",
+        "VINGCARD15-P11-E02"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "بیان آینده‌نگر و حس تجربه است، نه پیش‌بینی بازار آزموده‌شده یا متن تأییدشده NSP.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I025"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-14",
+      "pdf_page": 12,
+      "kind": "edition_and_rights",
+      "S02_fragment_refs": [
+        "VINGCARD15-P12-E01",
+        "VINGCARD15-P12-E02",
+        "VINGCARD15-P12-E03"
+      ],
+      "publication_gate": "provenance_only_not_a_feature",
+      "context_limits_fa": "03/2024 ماه چاپ درج‌شده است، نه تاریخ اولین انتشار یا وضعیت فعلی. نام ناشر، حقوق و سلب مسئولیت حفظ شود؛ دایرکتوری تماس وارد بانک نشود.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": []
+    }
+  ],
+  "structured_context_handling": {
+    "source_context_group_ids": [
+      "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+      "VINGCARD15-CONTEXT-GUEST-FLOW",
+      "VINGCARD15-CONTEXT-ISSUANCE-FLOW",
+      "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+    ],
+    "full_context_preserved_at_S03": true,
+    "excluded_S02_fragments_preserved_at_S03": true,
+    "overview_reference": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_S04_reference_overview.webp"
+  },
+  "S06_priorities_fa": [
+    "تطبیق همهٔ متن‌ها و ترجمه‌ها با شاهد صفحه، و کنترل قیدهای مجوز، زمان و تفکیک Visionline محلی از خدمات ابری.",
+    "ممیزی شیء و بایت تصاویر و جای برش. ثبت شعار تکراری صرفاً به‌عنوان شاهد منبع جدا، نه ایدهٔ مستقل.",
+    "اطمینان از حفظ مرز نرم‌افزار رقیب و NSP و صفر بودن اتصال و تأیید انتشار."
+  ],
+  "next_stage": "S06 — ممیزی منبع و نتیجه",
+  "next_queue_cursor": {
+    "document_index": 8,
+    "document_id": "15",
+    "step_index": 5,
+    "step_id": "S06"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false
+}
