@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 41,
+    "total_pending_steps": 40,
     "completed_new_documents": 12,
     "remaining_new_documents": 6
   },
   "cursor": {
     "document_index": 15,
     "document_id": "54",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -1794,11 +1794,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/54_Lutron_Duke_S02_english_text.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "eb0ac810066a0d0aaa046564644c74e53e732dc1",
+          "notes": "۲۷ گزیدهٔ کوتاه از دو صفحهٔ The Duke REV A با دو موتور تأیید شد؛ دو مورد اختلاف حالت چیدمان با اصل دیداری حل شد. خواستهٔ هتل، نقل‌قول طراح/مدیر، ادعای ناشر و پاورقی لوازم ستاره‌دار جداست. منبع Xcaret جدا؛ بانک V15، برنامه و سکشن‌ها ثابت‌اند."
         },
         {
           "id": "S03",
@@ -1846,7 +1848,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S01"
+      "last_successful_stage": "S02"
     },
     {
       "id": "57",
