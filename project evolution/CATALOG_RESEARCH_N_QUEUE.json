@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 95,
+    "total_pending_steps": 94,
     "completed_new_documents": 4,
     "remaining_new_documents": 14
   },
   "cursor": {
     "document_index": 7,
     "document_id": "14",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -918,11 +918,32 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/14_Vingcard_Novel_S04_visual_styles.json",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_01_cover_product_hero.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_03_numbered_contents_panel.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_04_photo_benefit_grid.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_05_icon_feature_rows.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_05_layered_variants.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_06_metric_badges_context.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_06_parts_flatlay.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_07_material_story_columns.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_07_packaging_banner.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_08_finish_gallery_custom_panel.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_09_photo_slogan.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_10_numbered_installation_grid.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_11_phone_access_photo.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_12_staggered_operation_cards.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_13_paired_climate_photos.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_14_cloud_security_panel.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_15_security_icon_grid.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_15_transparent_product_cutaway.webp",
+            "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_S04_reference_overview.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "3f233ea40d239f9fcd4460f6caf4037646526549",
+          "notes": "هر ۱۶ صفحه بصری بررسی شد؛ ۱۸ تصویر مرجع WebP از ۱۴ صفحه در ۱۷ خانوادهٔ سبک، همراه یک نمای کلی استخراج شد. صفحه، برش، ابعاد، هش، پیوندهای منبع/S03 و تحلیل فارسی هر تصویر ثبت شد. بازبینی مستقل ۳۳ کنترل موفق و صفر خطا داشت؛ هر ۱۸ برش از PDF بازتولید و دقیقاً تطبیق داده شد. بایت‌های هر ۱۹ فایل تصویری و متن JSON از GitHub بازخوانی و تطبیق کامل شدند. شرط سفارش سفارشی، مجوز Mobile Access و گزینهٔ Online در تصاویر حفظ شدند؛ فقط S04 اجرا شد و S05 در انتظار N بعدی است."
         },
         {
           "id": "S05",
@@ -952,7 +973,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S03"
+      "last_successful_stage": "S04"
     },
     {
       "id": "15",
