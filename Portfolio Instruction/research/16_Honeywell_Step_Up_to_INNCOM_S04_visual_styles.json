@@ -1,0 +1,775 @@
+{
+  "schema": "nsp-catalog-research-s04-visual-styles-v1",
+  "stage": "S04",
+  "stage_key": "visuals_and_styles",
+  "document_id": "16",
+  "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+  "status": "completed_source_render_and_visual_review",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "verified_on": "2026-11-24",
+  "base_main_commit": "87b42ba8d3f11e4809d86d0c9e830cc1e5a679e5",
+  "source_pdf": {
+    "company": "Honeywell",
+    "publisher": "Honeywell Hospitality / Honeywell International Inc.",
+    "title": "Step Up to INNCOM",
+    "filename": "16_Honeywell_Step Up to INNCOM.pdf",
+    "pdf_pages": 4,
+    "file_size_bytes": 1487482,
+    "source_sha256": "d9047197296ea81a34778fb79473c59e40d3b92d46d43aebac9d185aa7707303",
+    "printed_document_code": "IN-BR-StepUptoINNCOM",
+    "document_number": "01-00139",
+    "printed_edition_date": "2023-10-12",
+    "publication_evidence_pdf_page": 4,
+    "S01_inventory": "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S01_source_inventory.json",
+    "S01_inventory_git_blob_sha": "5b0f836bfa42b239c044a14ad1e2ac8e2f37bcb8",
+    "S01_inventory_commit": "a8f8ac370a81305d4df06d67414464183ff153ff",
+    "S02_text_evidence": "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S02_english_text.json",
+    "S02_artifact_commit": "65b4e3af089d191565efba6ac0fd8fa01424a133",
+    "S02_git_blob_sha": "75ed84b8a77772eeca0e15e8e461541b959a199e",
+    "S02_total_fragments": 29,
+    "S03_English_source": "Exact unchanged short S02 excerpts; physical PDF page is canonical.",
+    "sha256": "d9047197296ea81a34778fb79473c59e40d3b92d46d43aebac9d185aa7707303",
+    "source_orientation": "US Letter portrait, not NSP target format"
+  },
+  "upstream_fingerprints": {
+    "S01": {
+      "path": "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S01_source_inventory.json",
+      "blob_sha": "5b0f836bfa42b239c044a14ad1e2ac8e2f37bcb8"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S02_english_text.json",
+      "blob_sha": "75ed84b8a77772eeca0e15e8e461541b959a199e"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S03_features_fa.json",
+      "blob_sha": "8f45321ab8b69e873d49293531001a1ec445fef1"
+    }
+  },
+  "target_catalog_constraints": {
+    "format": "A4 landscape",
+    "punch_safe_important_content": true,
+    "continuous_background_through_punch_side": true,
+    "physical_punch_margin_mm": null,
+    "print_ready_layout_approved": false
+  },
+  "visual_review": {
+    "pages_visually_reviewed_via_original_S01_contact_sheets": 4,
+    "pages_with_selected_visual_references": 4,
+    "reference_image_count": 7,
+    "unique_style_types": 7,
+    "derived_overview_count": 1,
+    "total_image_files": 8,
+    "original_PDF_sha256_verified": true,
+    "reference_crops_direct_from_original_PDF": true,
+    "final_contact_sheet_reviewed": true,
+    "full_resolution_HVAC_crop_reviewed": true,
+    "WebP_decodes_all_7": true,
+    "no_image_generation_or_reconstruction": true,
+    "verified_NSP_capability_count": 0
+  },
+  "images": [
+    {
+      "id": "HONEYWELL16_01_cover_guest_hotel",
+      "reference_order": 1,
+      "source_company": "Honeywell",
+      "original_pdf": "16_Honeywell_Step Up to INNCOM.pdf",
+      "original_pdf_sha256": "d9047197296ea81a34778fb79473c59e40d3b92d46d43aebac9d185aa7707303",
+      "original_printed_document_number": "01-00139",
+      "source_pdf_page": 1,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_01_cover_guest_hotel.webp",
+      "asset_filename": "HONEYWELL16_01_cover_guest_hotel.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 48946,
+      "asset_sha256": "1a0935a8072cf3353103ed99bca3af5b6d2189c5d1ad96d521b4fe3229c177b6",
+      "git_blob_sha": "d4af19712a49a174626f5f285b502eaaf70c9d11",
+      "rendered_size_px": [
+        833,
+        980
+      ],
+      "base64_length": 65264,
+      "normalized_pdf_crop": [
+        0,
+        0,
+        1,
+        0.91
+      ],
+      "pdf_crop_points": [
+        0,
+        0,
+        612,
+        720.72
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "render_scale": 1.3597513597513597,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "full_bleed_room_photo_dual_audience_headline",
+      "title_fa": "کاور عکس‌محور با تیتر دو مخاطب",
+      "observed_content_in_crop_fa": "عکس فضای اتاق زیر تیترهای پررنگ برای مهمان و هتل قرار می‌گیرد؛ سلسله‌مراتب دو بخش تیتر با تفاوت رنگ مشخص است.",
+      "key_takeaway_fa": "رنگ و گروه‌بندی برای دو مخاطب بسیار سریع خوانده می‌شود.",
+      "analyst_assessment_fa": "تراکم تیتر در بالا و نسبت تصویرِ پرتره برای A4 افقی بازطراحی شود.",
+      "strengths_fa": [
+        "رنگ و گروه‌بندی برای دو مخاطب بسیار سریع خوانده می‌شود."
+      ],
+      "weaknesses_fa": [
+        "تراکم تیتر در بالا و نسبت تصویرِ پرتره برای A4 افقی بازطراحی شود."
+      ],
+      "nsp_visual_adaptation_fa": "تقابل نیاز مهمان و بهره‌بردار را با عنوان و عکس اختصاصی NSP بازآفرینی کن؛ عکس، تایپِ نمایشی و شعار رقیب کپی نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I001",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I002",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I003"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL16-P01-E01",
+        "HONEYWELL16-P01-E02",
+        "HONEYWELL16-P01-E03"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [
+        "HONEYWELL16-CTX-COVER"
+      ],
+      "related_structured_source_context": null,
+      "record_link_meaning": "Source-page topic/presentation only; the visual does not independently verify a brand claim or an NSP capability.",
+      "crop_context_note_fa": "برش جزئی از چیدمان؛ ادعاها یا روابط زمینه‌ای به NSP نسبت داده نشوند.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no generation, compositing, content removal inside crop or reconstruction.",
+      "renderer": "PyMuPDF direct RGB clip without annotations, Pillow WebP q83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "overview_crop_reviewed_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "HONEYWELL16_02_intro_lead",
+      "reference_order": 2,
+      "source_company": "Honeywell",
+      "original_pdf": "16_Honeywell_Step Up to INNCOM.pdf",
+      "original_pdf_sha256": "d9047197296ea81a34778fb79473c59e40d3b92d46d43aebac9d185aa7707303",
+      "original_printed_document_number": "01-00139",
+      "source_pdf_page": 2,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_02_intro_lead.webp",
+      "asset_filename": "HONEYWELL16_02_intro_lead.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 29142,
+      "asset_sha256": "9a481901673cd74e71b9407975a598177f4b36798ef61b473b9c86753836f4d7",
+      "git_blob_sha": "daa0c1e40663dd2b68a9226c7f28c269be849671",
+      "rendered_size_px": [
+        981,
+        311
+      ],
+      "base64_length": 38856,
+      "normalized_pdf_crop": [
+        0.05,
+        0.029,
+        0.94,
+        0.247
+      ],
+      "pdf_crop_points": [
+        30.6,
+        22.968,
+        575.28,
+        195.624
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "render_scale": 1.7992215612836897,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "high_contrast_intro_heading_and_lead",
+      "title_fa": "تیتر معرفی پرکنتراست و متن آغازین",
+      "observed_content_in_crop_fa": "عنوان کوتاه در دو رنگ و لید نزدیک به آن، پیام اصلی را قبل از بدنهٔ چندستون نشان می‌دهد.",
+      "key_takeaway_fa": "تیتر و لید مستقل قبل از ورود به جزئیات.",
+      "analyst_assessment_fa": "ادعای جایگاه ناشر و سال‌ها تجربه به NSP نسبت داده نشود.",
+      "strengths_fa": [
+        "تیتر و لید مستقل قبل از ورود به جزئیات."
+      ],
+      "weaknesses_fa": [
+        "ادعای جایگاه ناشر و سال‌ها تجربه به NSP نسبت داده نشود."
+      ],
+      "nsp_visual_adaptation_fa": "تیتر مستقل و لید کوتاه برای طرح مسئله؛ لحن و ادعای جایگاه ناشر به NSP منتقل نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I004"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL16-P02-E01"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "related_structured_source_context": null,
+      "record_link_meaning": "Source-page topic/presentation only; the visual does not independently verify a brand claim or an NSP capability.",
+      "crop_context_note_fa": "برش جزئی از چیدمان؛ ادعاها یا روابط زمینه‌ای به NSP نسبت داده نشوند.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no generation, compositing, content removal inside crop or reconstruction.",
+      "renderer": "PyMuPDF direct RGB clip without annotations, Pillow WebP q83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "overview_crop_reviewed_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "HONEYWELL16_02_guest_photo",
+      "reference_order": 3,
+      "source_company": "Honeywell",
+      "original_pdf": "16_Honeywell_Step Up to INNCOM.pdf",
+      "original_pdf_sha256": "d9047197296ea81a34778fb79473c59e40d3b92d46d43aebac9d185aa7707303",
+      "original_printed_document_number": "01-00139",
+      "source_pdf_page": 2,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_02_guest_photo.webp",
+      "asset_filename": "HONEYWELL16_02_guest_photo.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 31202,
+      "asset_sha256": "f1b28f8f14a81bb1527bc6c176c3f6e024e276a62cfe4d9efc44996045ec17f6",
+      "git_blob_sha": "cb5c28e4c908afdba1f62fd976895001007e5c00",
+      "rendered_size_px": [
+        981,
+        462
+      ],
+      "base64_length": 41604,
+      "normalized_pdf_crop": [
+        0.357,
+        0.5,
+        0.943,
+        0.713
+      ],
+      "pdf_crop_points": [
+        218.484,
+        396,
+        577.116,
+        564.696
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "render_scale": 2.7326061254991187,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "wide_hospitality_context_photo",
+      "title_fa": "عکس عریض در زمینهٔ اقامت",
+      "observed_content_in_crop_fa": "مهمان کنار لپ‌تاپ و در حال نگاه به تلفن در اتاق؛ عکس عریض و مستقل از جدول زیر.",
+      "key_takeaway_fa": "برش عریض موقعیت واقعی را بدون شرح عملکرد معرفی می‌کند.",
+      "analyst_assessment_fa": "عکس آدم‌ها و صفحهٔ دستگاه برای انتشار باید مجوز و زمینهٔ روشن داشته باشد.",
+      "strengths_fa": [
+        "برش عریض موقعیت واقعی را بدون شرح عملکرد معرفی می‌کند."
+      ],
+      "weaknesses_fa": [
+        "عکس آدم‌ها و صفحهٔ دستگاه برای انتشار باید مجوز و زمینهٔ روشن داشته باشد."
+      ],
+      "nsp_visual_adaptation_fa": "با عکس مجاز از موقعیت واقعی هتل، زمینه بده؛ تصویر نشان‌دهندهٔ عملکرد تجهیزات یا نتیجهٔ انرژی نیست.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "related_structured_source_context": null,
+      "record_link_meaning": "Source-page topic/presentation only; the visual does not independently verify a brand claim or an NSP capability.",
+      "crop_context_note_fa": "موضوع مهمان کنار لپ‌تاپ و در حال نگاه به تلفن است؛ علت یا نتیجهٔ عملکردی قابل استنباط نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no generation, compositing, content removal inside crop or reconstruction.",
+      "renderer": "PyMuPDF direct RGB clip without annotations, Pillow WebP q83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "overview_crop_reviewed_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "HONEYWELL16_02_hvac_table",
+      "reference_order": 4,
+      "source_company": "Honeywell",
+      "original_pdf": "16_Honeywell_Step Up to INNCOM.pdf",
+      "original_pdf_sha256": "d9047197296ea81a34778fb79473c59e40d3b92d46d43aebac9d185aa7707303",
+      "original_printed_document_number": "01-00139",
+      "source_pdf_page": 2,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_02_hvac_table.webp",
+      "asset_filename": "HONEYWELL16_02_hvac_table.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 46192,
+      "asset_sha256": "f7cab7556c2a4d4bdc07240ce8b0501ac3f8c66f5ce5107fabf51fd1732ac845",
+      "git_blob_sha": "a86d3a1ad5d298c5975d579141205eeb5f2730ed",
+      "rendered_size_px": [
+        1281,
+        636
+      ],
+      "base64_length": 61592,
+      "normalized_pdf_crop": [
+        0.349,
+        0.727,
+        0.949,
+        0.957
+      ],
+      "pdf_crop_points": [
+        213.588,
+        575.784,
+        580.788,
+        757.944
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "render_scale": 3.4858387799564268,
+      "target_longest_edge_px": 1280,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "scenario_comparison_grid_with_quantitative_column_and_scope_footnote",
+      "title_fa": "جدول سناریو با ستون عدد و پاورقی مبنا",
+      "observed_content_in_crop_fa": "پنج ردیف، ستون برجستهٔ درصد، نمادها و دو پاورقی؛ عنوان و شروط متنِ منبع در برش کامل‌اند.",
+      "key_takeaway_fa": "ستون عدد متمایز و پاورقی چسبیده به جدول خواندن را آسان می‌کند.",
+      "analyst_assessment_fa": "رنگ تنها حامل تفاوت نباشد. متریک، مبنا و دامنه در هر بازنمایی حفظ شود.",
+      "strengths_fa": [
+        "ستون عدد متمایز و پاورقی چسبیده به جدول خواندن را آسان می‌کند."
+      ],
+      "weaknesses_fa": [
+        "رنگ تنها حامل تفاوت نباشد. متریک، مبنا و دامنه در هر بازنمایی حفظ شود."
+      ],
+      "nsp_visual_adaptation_fa": "برای NSP فقط شکل جدول با داده و آزمون مستقل قابل الهام است. این اعداد سند 01-00139، کاهش زمان کارکرد HVAC نسبت به ETM در دامنهٔ پاورقی‌اند؛ نه برق، هزینه، عملکرد NSP یا ارقام 01-00149.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I009"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL16-P02-E09",
+        "HONEYWELL16-P02-E10",
+        "HONEYWELL16-P02-E11"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-02",
+        "HONEYWELL16-CLAIM-03"
+      ],
+      "related_source_context_set_refs": [
+        "HONEYWELL16-CTX-ENERGY-CHART"
+      ],
+      "related_structured_source_context": "HONEYWELL16-P02-HVAC-RUNTIME-TABLE",
+      "record_link_meaning": "Source-page topic/presentation only; the visual does not independently verify a brand claim or an NSP capability.",
+      "crop_context_note_fa": "پاورقی ۲ معیار کاهش زمان کارکرد در برابر ETM و حدود دامنه را صریح می‌کند؛ پاورقی ۱ به آمار بازار مستقل مربوط است. سند منبع 01-00139؛ نه 01-00149.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no generation, compositing, content removal inside crop or reconstruction.",
+      "renderer": "PyMuPDF direct RGB clip without annotations, Pillow WebP q83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "overview_and_full_crop_reviewed_title_five_rows_and_both_footnotes_intact"
+    },
+    {
+      "id": "HONEYWELL16_03_matched_device_pair",
+      "reference_order": 5,
+      "source_company": "Honeywell",
+      "original_pdf": "16_Honeywell_Step Up to INNCOM.pdf",
+      "original_pdf_sha256": "d9047197296ea81a34778fb79473c59e40d3b92d46d43aebac9d185aa7707303",
+      "original_printed_document_number": "01-00139",
+      "source_pdf_page": 3,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_03_matched_device_pair.webp",
+      "asset_filename": "HONEYWELL16_03_matched_device_pair.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 5778,
+      "asset_sha256": "4f5f6e60b5960aff5984b570ed4c5e9129735eb6006d6110da31a0e1c5d30d80",
+      "git_blob_sha": "b449afab0065998966c4b74529b355c44139a2cd",
+      "rendered_size_px": [
+        981,
+        382
+      ],
+      "base64_length": 7704,
+      "normalized_pdf_crop": [
+        0.385,
+        0.039,
+        0.861,
+        0.182
+      ],
+      "pdf_crop_points": [
+        235.62,
+        30.888,
+        526.932,
+        144.144
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "render_scale": 3.3640907343329487,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "paired_device_photos_without_model_labels",
+      "title_fa": "جفت تصویر محصول با قاب و تراز همسان",
+      "observed_content_in_crop_fa": "دو نمای مستطیلی روشن و تیره با اندازه و فاصلهٔ مشابه؛ نام‌های چاپی و متن بیرون برش‌اند.",
+      "key_takeaway_fa": "تراز و قاب هم‌اندازه مقایسه را سریع می‌کند.",
+      "analyst_assessment_fa": "تصویر فقط مقایسهٔ ظاهری است؛ جزئیات صفحهٔ دستگاه و شرایط عرضه از آن نتیجه نشود.",
+      "strengths_fa": [
+        "تراز و قاب هم‌اندازه مقایسه را سریع می‌کند."
+      ],
+      "weaknesses_fa": [
+        "تصویر فقط مقایسهٔ ظاهری است؛ جزئیات صفحهٔ دستگاه و شرایط عرضه از آن نتیجه نشود."
+      ],
+      "nsp_visual_adaptation_fa": "از عکس مجازِ نمونه‌های NSP برای مقایسه بصری استفاده شود؛ مدل، اندازه، سخت‌افزار یا رنگ منبع به NSP تعمیم نیابد.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "related_structured_source_context": null,
+      "record_link_meaning": "Source-page topic/presentation only; the visual does not independently verify a brand claim or an NSP capability.",
+      "crop_context_note_fa": "نام‌های چاپی زیر عکس و متن مشخصات بیرون از برش هستند. اعداد نمایشی در خود عکس مشخصات نیستند.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no generation, compositing, content removal inside crop or reconstruction.",
+      "renderer": "PyMuPDF direct RGB clip without annotations, Pillow WebP q83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "overview_crop_reviewed_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "HONEYWELL16_03_analytics_dashboard",
+      "reference_order": 6,
+      "source_company": "Honeywell",
+      "original_pdf": "16_Honeywell_Step Up to INNCOM.pdf",
+      "original_pdf_sha256": "d9047197296ea81a34778fb79473c59e40d3b92d46d43aebac9d185aa7707303",
+      "original_printed_document_number": "01-00139",
+      "source_pdf_page": 3,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_03_analytics_dashboard.webp",
+      "asset_filename": "HONEYWELL16_03_analytics_dashboard.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 31686,
+      "asset_sha256": "61db400767e9ed59cc9367749fea923cec30c15c7331f801a49dffb3c92082e1",
+      "git_blob_sha": "77aa9d74142145c4bcf5914e2877226e8e8b1e3e",
+      "rendered_size_px": [
+        980,
+        631
+      ],
+      "base64_length": 42248,
+      "normalized_pdf_crop": [
+        0.357,
+        0.648,
+        0.945,
+        0.94
+      ],
+      "pdf_crop_points": [
+        218.484,
+        513.216,
+        578.34,
+        744.48
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "render_scale": 2.723311546840959,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "dark_dashboard_snapshot_as_single_visual_anchor",
+      "title_fa": "نمونهٔ داشبورد تیره به‌عنوان نقطهٔ تمرکز",
+      "observed_content_in_crop_fa": "کارت‌ها و نمودارها در یک قاب تیره و هم‌بسته دیده می‌شوند؛ برش مستقل از متن و تیتر مجاور است.",
+      "key_takeaway_fa": "زمینهٔ تیره کارت‌ها را به یک مجموعه بصری تبدیل می‌کند.",
+      "analyst_assessment_fa": "داده و نوشتهٔ ریز خوانایی یکنواخت ندارد؛ هویت نسخه، اعداد و قابلیت‌ها از تصویر نتیجه نشوند.",
+      "strengths_fa": [
+        "زمینهٔ تیره کارت‌ها را به یک مجموعه بصری تبدیل می‌کند."
+      ],
+      "weaknesses_fa": [
+        "داده و نوشتهٔ ریز خوانایی یکنواخت ندارد؛ هویت نسخه، اعداد و قابلیت‌ها از تصویر نتیجه نشوند."
+      ],
+      "nsp_visual_adaptation_fa": "از اسکرین‌شات واقعی و مجاز NSP، با دادهٔ نمایشی روشن و بدون هویت پروژه استفاده شود؛ تصویر رقیب قابلیت، معیار یا کیفیت امنیت را ثابت نمی‌کند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I014",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I016",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I017"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL16-P03-E06",
+        "HONEYWELL16-P03-E07",
+        "HONEYWELL16-P03-E10",
+        "HONEYWELL16-P03-E09",
+        "HONEYWELL16-P03-E11"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-06",
+        "HONEYWELL16-CLAIM-07"
+      ],
+      "related_source_context_set_refs": [
+        "HONEYWELL16-CTX-SOFTWARE"
+      ],
+      "related_structured_source_context": null,
+      "record_link_meaning": "Source-page topic/presentation only; the visual does not independently verify a brand claim or an NSP capability.",
+      "crop_context_note_fa": "نام قابلیت یا برچسب UI از تصویر حدس یا رونویسی نشده است؛ ارجاع به متن همان صفحه صرفاً زمینهٔ قیاسی است.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no generation, compositing, content removal inside crop or reconstruction.",
+      "renderer": "PyMuPDF direct RGB clip without annotations, Pillow WebP q83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "overview_crop_reviewed_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "HONEYWELL16_04_platform_summary",
+      "reference_order": 7,
+      "source_company": "Honeywell",
+      "original_pdf": "16_Honeywell_Step Up to INNCOM.pdf",
+      "original_pdf_sha256": "d9047197296ea81a34778fb79473c59e40d3b92d46d43aebac9d185aa7707303",
+      "original_printed_document_number": "01-00139",
+      "source_pdf_page": 4,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_04_platform_summary.webp",
+      "asset_filename": "HONEYWELL16_04_platform_summary.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 27234,
+      "asset_sha256": "93fda9570f0a95518031bb8445cd1bb9f3410ec5ee169315fb6b83482a7f8aff",
+      "git_blob_sha": "1fbb2b1cbc5a597da759a729ecd68750b48fb959",
+      "rendered_size_px": [
+        981,
+        732
+      ],
+      "base64_length": 36312,
+      "normalized_pdf_crop": [
+        0.046,
+        0.03,
+        0.948,
+        0.55
+      ],
+      "pdf_crop_points": [
+        28.152,
+        23.76,
+        580.176,
+        435.6
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "render_scale": 1.7752851325304702,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "negative_space_summary_heading_and_short_bullets",
+      "title_fa": "خلاصهٔ راهکار با تیتر و فهرست کوتاه",
+      "observed_content_in_crop_fa": "تیتر و فهرست کوتاه در بالا و فضای آزاد در ادامه، ریتم اختتام می‌سازند؛ دعوت به اقدام و تماس خارج برش‌اند.",
+      "key_takeaway_fa": "فضای منفی بین دسته‌ها به خلاصه هویت بصری می‌دهد.",
+      "analyst_assessment_fa": "اگر بولت‌ها زیاد شوند یا حاشیه در پانچ پنهان بماند، اثر خلاصه از دست می‌رود.",
+      "strengths_fa": [
+        "فضای منفی بین دسته‌ها به خلاصه هویت بصری می‌دهد."
+      ],
+      "weaknesses_fa": [
+        "اگر بولت‌ها زیاد شوند یا حاشیه در پانچ پنهان بماند، اثر خلاصه از دست می‌رود."
+      ],
+      "nsp_visual_adaptation_fa": "فقط ادعاهای مستند NSP در چند بولت کوتاه و فاصلهٔ امن روی زمینهٔ پیوسته؛ نشانی، نقل‌قول و هویت رقیب کپی نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I018"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL16-P04-E01",
+        "HONEYWELL16-P04-E02"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-09"
+      ],
+      "related_source_context_set_refs": [],
+      "related_structured_source_context": null,
+      "record_link_meaning": "Source-page topic/presentation only; the visual does not independently verify a brand claim or an NSP capability.",
+      "crop_context_note_fa": "برش جزئی از چیدمان؛ ادعاها یا روابط زمینه‌ای به NSP نسبت داده نشوند.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no generation, compositing, content removal inside crop or reconstruction.",
+      "renderer": "PyMuPDF direct RGB clip without annotations, Pillow WebP q83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "overview_crop_reviewed_and_WebP_decode_dimensions_verified"
+    }
+  ],
+  "style_catalog": [
+    {
+      "style_id": "full_bleed_room_photo_dual_audience_headline",
+      "title_fa": "کاور عکس‌محور با تیتر دو مخاطب",
+      "representative_reference_ids": [
+        "HONEYWELL16_01_cover_guest_hotel"
+      ],
+      "physical_pdf_pages": [
+        1
+      ],
+      "key_takeaway_fa": "رنگ و گروه‌بندی برای دو مخاطب بسیار سریع خوانده می‌شود.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "high_contrast_intro_heading_and_lead",
+      "title_fa": "تیتر معرفی پرکنتراست و متن آغازین",
+      "representative_reference_ids": [
+        "HONEYWELL16_02_intro_lead"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "تیتر و لید مستقل قبل از ورود به جزئیات.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "wide_hospitality_context_photo",
+      "title_fa": "عکس عریض در زمینهٔ اقامت",
+      "representative_reference_ids": [
+        "HONEYWELL16_02_guest_photo"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "برش عریض موقعیت واقعی را بدون شرح عملکرد معرفی می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "scenario_comparison_grid_with_quantitative_column_and_scope_footnote",
+      "title_fa": "جدول سناریو با ستون عدد و پاورقی مبنا",
+      "representative_reference_ids": [
+        "HONEYWELL16_02_hvac_table"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "ستون عدد متمایز و پاورقی چسبیده به جدول خواندن را آسان می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "paired_device_photos_without_model_labels",
+      "title_fa": "جفت تصویر محصول با قاب و تراز همسان",
+      "representative_reference_ids": [
+        "HONEYWELL16_03_matched_device_pair"
+      ],
+      "physical_pdf_pages": [
+        3
+      ],
+      "key_takeaway_fa": "تراز و قاب هم‌اندازه مقایسه را سریع می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "dark_dashboard_snapshot_as_single_visual_anchor",
+      "title_fa": "نمونهٔ داشبورد تیره به‌عنوان نقطهٔ تمرکز",
+      "representative_reference_ids": [
+        "HONEYWELL16_03_analytics_dashboard"
+      ],
+      "physical_pdf_pages": [
+        3
+      ],
+      "key_takeaway_fa": "زمینهٔ تیره کارت‌ها را به یک مجموعه بصری تبدیل می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "negative_space_summary_heading_and_short_bullets",
+      "title_fa": "خلاصهٔ راهکار با تیتر و فهرست کوتاه",
+      "representative_reference_ids": [
+        "HONEYWELL16_04_platform_summary"
+      ],
+      "physical_pdf_pages": [
+        4
+      ],
+      "key_takeaway_fa": "فضای منفی بین دسته‌ها به خلاصه هویت بصری می‌دهد.",
+      "final_section_mapping": "pending_S05"
+    }
+  ],
+  "reference_overview": {
+    "asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_S04_reference_overview.webp",
+    "asset_filename": "HONEYWELL16_S04_reference_overview.webp",
+    "mime_type": "image/webp",
+    "asset_bytes": 26680,
+    "asset_sha256": "5a02290bb4d1955e8e392cefb61ad930ae8b8964dfc876c69232dbdebc5d1cf2",
+    "git_blob_sha": "8e55e38b4a86d85bb8fe4236029aed107bb2e751",
+    "rendered_size_px": [
+      880,
+      524
+    ],
+    "base64_length": 35576,
+    "role": "derived_navigation_overview_not_a_source_reference",
+    "source_reference_ids": [
+      "HONEYWELL16_01_cover_guest_hotel",
+      "HONEYWELL16_02_intro_lead",
+      "HONEYWELL16_02_guest_photo",
+      "HONEYWELL16_02_hvac_table",
+      "HONEYWELL16_03_matched_device_pair",
+      "HONEYWELL16_03_analytics_dashboard",
+      "HONEYWELL16_04_platform_summary"
+    ],
+    "counted_in_reference_images": false
+  },
+  "page_review_coverage": [
+    {
+      "physical_pdf_page": 1,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "HONEYWELL16_01_cover_guest_hotel"
+      ]
+    },
+    {
+      "physical_pdf_page": 2,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "HONEYWELL16_02_intro_lead",
+        "HONEYWELL16_02_guest_photo",
+        "HONEYWELL16_02_hvac_table"
+      ]
+    },
+    {
+      "physical_pdf_page": 3,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "HONEYWELL16_03_matched_device_pair",
+        "HONEYWELL16_03_analytics_dashboard"
+      ]
+    },
+    {
+      "physical_pdf_page": 4,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "HONEYWELL16_04_platform_summary"
+      ]
+    }
+  ],
+  "excluded_visuals": [
+    {
+      "physical_pdf_pages": [
+        3
+      ],
+      "reason_fa": "نام و شرح فنی تجهیزات بیرون برش جفت تصویر نگه داشته شدند؛ متن ریز رابط ثبت تفصیلی نشد."
+    },
+    {
+      "physical_pdf_pages": [
+        4
+      ],
+      "reason_fa": "اطلاعات تماس، لینک و دعوت به اقدام خارج برش خلاصه‌اند."
+    }
+  ],
+  "source_comparison_guard": {
+    "printed_document_number": "01-00139",
+    "separate_in_bank_document_number": "01-00149",
+    "chart_only_HVAC_runtime_reduction_vs_ETM": true,
+    "original_title_and_footnotes_preserved_in_crop": true,
+    "three_chart_rows_differ_from_prior_source": true,
+    "no_chart_merge": true,
+    "should_not_be_published_as_NSP_claim": true
+  },
+  "design_observations_fa": [
+    "کاور با تیتر دو مخاطب و خلاصهٔ انتهایی، ساختار پژوهشی متفاوتی دارند.",
+    "جدولِ عدد فقط با پاورقی خوانده می‌شود؛ چیدمان، جدا از قبول داده و نتیجه است.",
+    "در اقتباس NSP از تصویر مستقل، حاشیهٔ امن و پس‌زمینهٔ پیوسته استفاده شود.",
+    "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP."
+  ],
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false,
+  "next_stage": "S05 — تطبیق با نوع سکشن NSP",
+  "next_queue_cursor": {
+    "document_index": 9,
+    "document_id": "16",
+    "step_index": 4,
+    "step_id": "S05"
+  },
+  "next_stage_executed": false
+}
