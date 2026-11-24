@@ -1,0 +1,655 @@
+{
+  "schema": "nsp-catalog-research-stage-image-styles-v1",
+  "stage": "S04",
+  "stage_key": "visuals_and_styles",
+  "document_id": "46",
+  "source_id": "CAT046_CRESTRON_BLOC_HOTELS",
+  "status": "completed_original_direct_visual_references_internal_only",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "verified_on": "2026-11-24",
+  "base_main_commit": "cfcc315192e99cdf126d9245fb87f3d4aab436a2",
+  "source_pdf": {
+    "company": "Crestron",
+    "publisher": "Crestron Electronics, Inc.",
+    "publisher_evidence_physical_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "cover_title": "Bloc Hotels",
+    "cover_title_evidence_pdf_page": 1,
+    "PDF_metadata_title": "Case Study: Bloc Hotel",
+    "case_study_running_title": "CASE STUDY | BLOC HOTEL",
+    "running_title_physical_pages": [
+      2,
+      3,
+      4
+    ],
+    "filename": "46_Crestron_Work C08.3.pdf",
+    "library_path": "/46_Crestron_Work C08.3.pdf",
+    "file_size_bytes": 1951685,
+    "queued_file_size_bytes": 1951685,
+    "file_size_matches_queue": true,
+    "sha256": "44d493d15827ace20d051beac69da455e2960fee12094920e17212e6f549c611",
+    "source_original_from_exact_user_Library_match": true,
+    "pdf_format": "PDF 1.4",
+    "pdf_creator": "Adobe InDesign 17.3 (Windows)",
+    "pdf_producer": "Adobe PDF Library 16.0.7",
+    "pdf_creation_metadata": "D:20230127093221-05'00'",
+    "pdf_modification_metadata": "D:20230127093230-05'00'",
+    "PDF_metadata_dates_are_not_proven_publication_dates": true,
+    "printed_revision_verbatim": "v. 012723",
+    "printed_revision_evidence_pdf_page": 4,
+    "printed_copyright_year": 2023,
+    "printed_full_publication_date_verified": false,
+    "printed_document_number": null,
+    "filename_Work_C08_3_is_not_printed_revision": true,
+    "language": "en",
+    "case_study_scope": {
+      "location_as_printed": "United Kingdom",
+      "partner_as_printed": "SYMBIoT",
+      "featured_spaces_as_printed": [
+        "Bedroom",
+        "Bathroom"
+      ],
+      "metadata_evidence_pdf_page": 1
+    },
+    "external_publisher_site_checked": false,
+    "encrypted": false,
+    "source_original_modified": false,
+    "source_original_committed": false,
+    "pdf_pages": 4
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S01_source_inventory.json",
+      "blob_sha": "78350841e809a1f146d1f6b4bb96261df903d550"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S02_english_text.json",
+      "blob_sha": "f1f14d8e249f33f83a14aca4632a7568def9a6fe"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S03_features_fa.json",
+      "blob_sha": "2bce57d14b5a1950e25792de15c3cb56c2133e8f"
+    }
+  },
+  "visual_review": {
+    "actual_source_pdf_and_all_4_page_hashes_reverified": true,
+    "reviewed_physical_pdf_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "selected_reference_image_count": 6,
+    "distinct_styles": 6,
+    "derived_overview_count_excluded": 1,
+    "direct_crop_permissions_internal_only": true,
+    "not_exhaustive_raw_embedded_asset_import": true,
+    "public_reuse_rights_verified": 0,
+    "NSP_capability_verified": 0
+  },
+  "images": [
+    {
+      "id": "CRESTRON46_01_facade_hero",
+      "reference_order": 1,
+      "source_company": "Crestron",
+      "source_language": "en",
+      "original_pdf": "46_Crestron_Work C08.3.pdf",
+      "original_pdf_sha256": "44d493d15827ace20d051beac69da455e2960fee12094920e17212e6f549c611",
+      "original_printed_revision": "v. 012723",
+      "source_pdf_page": 1,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_01_facade_hero.webp",
+      "asset_filename": "CRESTRON46_01_facade_hero.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 27030,
+      "asset_sha256": "015e3813f0cbff9764d74e0d77b36b699844f7c8c38fe143af440b5320a6ff6b",
+      "git_blob_sha": "8bc1b390f86d4205d7b7b1e093a5979d152ce241",
+      "rendered_size_px": [
+        1001,
+        520
+      ],
+      "base64_length": 36040,
+      "normalized_pdf_crop": [
+        0.052,
+        0.025,
+        0.947,
+        0.384
+      ],
+      "pdf_crop_points": [
+        31.824,
+        19.8,
+        579.564,
+        304.128
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.8256837185525978,
+      "target_longest_edge_px": 1000,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "facade_led_case_cover",
+      "title_fa": "جلد مطالعهٔ موردی با عکس نمای بیرونی",
+      "observed_content_in_crop_fa": "عکس نمای ساختمان و برند پروژه، بدون توضیح یا ادعای متنی.",
+      "key_takeaway_fa": "تصویر یک مکان واقعی می‌تواند هویت پرونده را پیش از اعداد و متن جا بیندازد.",
+      "analyst_assessment_fa": "برندِ داخل عکس جزو دارایی همان پروژه است و پنجرهٔ عمودی راهنما به نسبت کاتالوگ افقی منتقل نمی‌شود.",
+      "strengths_fa": [
+        "تصویر یک مکان واقعی می‌تواند هویت پرونده را پیش از اعداد و متن جا بیندازد."
+      ],
+      "weaknesses_fa": [
+        "برندِ داخل عکس جزو دارایی همان پروژه است و پنجرهٔ عمودی راهنما به نسبت کاتالوگ افقی منتقل نمی‌شود."
+      ],
+      "nsp_visual_adaptation_fa": "برای پروندهٔ واقعی و مجاز NSP از عکس خود پروژه و هویت بصری NSP استفاده شود؛ عین این نما یا نشان کپی نشود.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "CRESTRON46-P01-E01"
+      ],
+      "source_claim_gate_refs": [
+        "CRESTRON46-CLAIM-01"
+      ],
+      "related_source_context_set_refs": [
+        "CRESTRON46-CTX-IDENTITY"
+      ],
+      "record_link_meaning": "Source-page/topic layout only. No testimonial, performance or feature is validated by an image.",
+      "crop_context_note_fa": "برش محدود برای پژوهش بصری؛ بدون مدرک مستقل دربارهٔ نتیجه، امکانات NSP یا حق بازنشر.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip (no reconstruction, alteration, or generation).",
+      "renderer": "PyMuPDF direct RGB clip without annotations; Pillow WebP quality 83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، نشان و متن متعلق به ناشر یا دارندهٔ حقوق است؛ استفادهٔ کاتالوگی یا تجاری تأیید نشده.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_and_exact_hash_recorded"
+    },
+    {
+      "id": "CRESTRON46_01_project_fact_sidebar",
+      "reference_order": 2,
+      "source_company": "Crestron",
+      "source_language": "en",
+      "original_pdf": "46_Crestron_Work C08.3.pdf",
+      "original_pdf_sha256": "44d493d15827ace20d051beac69da455e2960fee12094920e17212e6f549c611",
+      "original_printed_revision": "v. 012723",
+      "source_pdf_page": 1,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_01_project_fact_sidebar.webp",
+      "asset_filename": "CRESTRON46_01_project_fact_sidebar.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 12702,
+      "asset_sha256": "1e1dfaaec34e68a8d0254a40397615254e0d733817f890ea63789926b3028f7a",
+      "git_blob_sha": "d7f82607a1a03ac5be0a7124a60f002f422474e8",
+      "rendered_size_px": [
+        851,
+        547
+      ],
+      "base64_length": 16936,
+      "normalized_pdf_crop": [
+        0.592,
+        0.505,
+        0.894,
+        0.655
+      ],
+      "pdf_crop_points": [
+        362.304,
+        399.96,
+        547.128,
+        518.76
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 4.598969830757908,
+      "target_longest_edge_px": 850,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "project_fact_key_value_sidebar",
+      "title_fa": "ستون فشردهٔ مشخصات پروژه",
+      "observed_content_in_crop_fa": "برچسب‌های مکان، شریک و فضای مورد اشاره با تفکیک روشن؛ جدا از نقل‌قول.",
+      "key_takeaway_fa": "ساختار سه‌ردیفی راهی سریع برای جداسازی دادهٔ پایه از نتیجهٔ مطالعه است.",
+      "analyst_assessment_fa": "تراکم تایپ در چاپ یا فارسی‌سازی می‌تواند خوانایی را کم کند.",
+      "strengths_fa": [
+        "ساختار سه‌ردیفی راهی سریع برای جداسازی دادهٔ پایه از نتیجهٔ مطالعه است."
+      ],
+      "weaknesses_fa": [
+        "تراکم تایپ در چاپ یا فارسی‌سازی می‌تواند خوانایی را کم کند."
+      ],
+      "nsp_visual_adaptation_fa": "در صورت مجوز، اطلاعات قطعی پروژهٔ خود NSP را با لحن و تایپ اختصاصی بیاورید.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "CRESTRON46-P01-E04",
+        "CRESTRON46-P01-E05"
+      ],
+      "source_claim_gate_refs": [
+        "CRESTRON46-CLAIM-01"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Source-page/topic layout only. No testimonial, performance or feature is validated by an image.",
+      "crop_context_note_fa": "برش محدود برای پژوهش بصری؛ بدون مدرک مستقل دربارهٔ نتیجه، امکانات NSP یا حق بازنشر.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip (no reconstruction, alteration, or generation).",
+      "renderer": "PyMuPDF direct RGB clip without annotations; Pillow WebP quality 83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، نشان و متن متعلق به ناشر یا دارندهٔ حقوق است؛ استفادهٔ کاتالوگی یا تجاری تأیید نشده.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_and_exact_hash_recorded"
+    },
+    {
+      "id": "CRESTRON46_02_room_panorama_divider",
+      "reference_order": 3,
+      "source_company": "Crestron",
+      "source_language": "en",
+      "original_pdf": "46_Crestron_Work C08.3.pdf",
+      "original_pdf_sha256": "44d493d15827ace20d051beac69da455e2960fee12094920e17212e6f549c611",
+      "original_printed_revision": "v. 012723",
+      "source_pdf_page": 2,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_02_room_panorama_divider.webp",
+      "asset_filename": "CRESTRON46_02_room_panorama_divider.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 28536,
+      "asset_sha256": "0307fd6e24901e33e66e3d11529d320a2351df681782b717adee7eaaacca599f",
+      "git_blob_sha": "115f1165e547fd0654c3ba2db45f32621021e0a1",
+      "rendered_size_px": [
+        1001,
+        385
+      ],
+      "base64_length": 38048,
+      "normalized_pdf_crop": [
+        0.05,
+        0.401,
+        0.947,
+        0.667
+      ],
+      "pdf_crop_points": [
+        30.6,
+        317.592,
+        579.564,
+        528.264
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.821613074810006,
+      "target_longest_edge_px": 1000,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "wide_intermission_between_challenge_and_solution",
+      "title_fa": "تصویر عریض اتاق بین چالش و راهکار",
+      "observed_content_in_crop_fa": "عکس محیط خواب با پنجره و نور، مستقل از دو بلوک متن.",
+      "key_takeaway_fa": "یک مکث بصری میان مسئله و پاسخ می‌تواند به خواننده در تغییر تمرکز کمک کند.",
+      "analyst_assessment_fa": "خود تصویر اتاق، پایش یا وجود هیچ اتصال یا تجهیز را تأیید نمی‌کند.",
+      "strengths_fa": [
+        "یک مکث بصری میان مسئله و پاسخ می‌تواند به خواننده در تغییر تمرکز کمک کند."
+      ],
+      "weaknesses_fa": [
+        "خود تصویر اتاق، پایش یا وجود هیچ اتصال یا تجهیز را تأیید نمی‌کند."
+      ],
+      "nsp_visual_adaptation_fa": "از عکس مجاز پروژهٔ NSP برای تغییر ریتم استفاده شود؛ تصویر باید از متن ادعایی مستقل بماند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT046_CRESTRON_BLOC_HOTELS:I002"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "CRESTRON46-P02-E01",
+        "CRESTRON46-P02-E06"
+      ],
+      "source_claim_gate_refs": [
+        "CRESTRON46-CLAIM-03",
+        "CRESTRON46-CLAIM-05"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Source-page/topic layout only. No testimonial, performance or feature is validated by an image.",
+      "crop_context_note_fa": "برش محدود برای پژوهش بصری؛ بدون مدرک مستقل دربارهٔ نتیجه، امکانات NSP یا حق بازنشر.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip (no reconstruction, alteration, or generation).",
+      "renderer": "PyMuPDF direct RGB clip without annotations; Pillow WebP quality 83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، نشان و متن متعلق به ناشر یا دارندهٔ حقوق است؛ استفادهٔ کاتالوگی یا تجاری تأیید نشده.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_and_exact_hash_recorded"
+    },
+    {
+      "id": "CRESTRON46_03_mobile_context_room",
+      "reference_order": 4,
+      "source_company": "Crestron",
+      "source_language": "en",
+      "original_pdf": "46_Crestron_Work C08.3.pdf",
+      "original_pdf_sha256": "44d493d15827ace20d051beac69da455e2960fee12094920e17212e6f549c611",
+      "original_printed_revision": "v. 012723",
+      "source_pdf_page": 3,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_03_mobile_context_room.webp",
+      "asset_filename": "CRESTRON46_03_mobile_context_room.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 49650,
+      "asset_sha256": "4a646db925d64822e915b6bf2cf68ba739f61138a22d1fbdbd23f8a1ea83896b",
+      "git_blob_sha": "773b7d2fd818a2c9b448be51777c1f6a75eb6c71",
+      "rendered_size_px": [
+        1001,
+        539
+      ],
+      "base64_length": 66200,
+      "normalized_pdf_crop": [
+        0.051,
+        0.338,
+        0.947,
+        0.711
+      ],
+      "pdf_crop_points": [
+        31.212,
+        267.696,
+        579.564,
+        563.112
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.8236461251167135,
+      "target_longest_edge_px": 1000,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "device_in_room_context_photograph",
+      "title_fa": "نمای کنترل‌نمای کوچک در بافت اتاق",
+      "observed_content_in_crop_fa": "تصویرِ دست و دستگاه در محیط اتاق؛ نه متن آموزشی، نه شناسه، اعتبارنامه یا روش دسترسی.",
+      "key_takeaway_fa": "محیط ملموس توضیحِ نوع تعامل را آسان‌تر از تصویر رابطِ جداافتاده می‌کند.",
+      "analyst_assessment_fa": "نمایش نمونهٔ رابط فروشنده به معنای اصالت داده یا سازگاری دستگاه نیست.",
+      "strengths_fa": [
+        "محیط ملموس توضیحِ نوع تعامل را آسان‌تر از تصویر رابطِ جداافتاده می‌کند."
+      ],
+      "weaknesses_fa": [
+        "نمایش نمونهٔ رابط فروشنده به معنای اصالت داده یا سازگاری دستگاه نیست."
+      ],
+      "nsp_visual_adaptation_fa": "عکس یا ماکت اختصاصیِ مصوب NSP با محتوای نمایشی ایمن ساخته شود؛ رابط یا دکمه‌های رقیب بازنشر نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT046_CRESTRON_BLOC_HOTELS:I007",
+        "CAT046_CRESTRON_BLOC_HOTELS:I008"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "CRESTRON46-P03-E02",
+        "CRESTRON46-P03-E03"
+      ],
+      "source_claim_gate_refs": [
+        "CRESTRON46-CLAIM-06"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Source-page/topic layout only. No testimonial, performance or feature is validated by an image.",
+      "crop_context_note_fa": "رابط نمونهٔ داخل عکس فقط چیدمان کاشی‌ها را نشان می‌دهد؛ هیچ گردش کار، صدور کلید، تنظیم دسترسی، شناسه یا گواه عملکرد در تصویر پژوهشی نقل نشده.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip (no reconstruction, alteration, or generation).",
+      "renderer": "PyMuPDF direct RGB clip without annotations; Pillow WebP quality 83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، نشان و متن متعلق به ناشر یا دارندهٔ حقوق است؛ استفادهٔ کاتالوگی یا تجاری تأیید نشده.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_and_exact_hash_recorded"
+    },
+    {
+      "id": "CRESTRON46_04_two_zone_room_bath_photo",
+      "reference_order": 5,
+      "source_company": "Crestron",
+      "source_language": "en",
+      "original_pdf": "46_Crestron_Work C08.3.pdf",
+      "original_pdf_sha256": "44d493d15827ace20d051beac69da455e2960fee12094920e17212e6f549c611",
+      "original_printed_revision": "v. 012723",
+      "source_pdf_page": 4,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_04_two_zone_room_bath_photo.webp",
+      "asset_filename": "CRESTRON46_04_two_zone_room_bath_photo.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 26334,
+      "asset_sha256": "256f95a9429d6be5eaaf0ca3f32e28bf8e50b6ee5cb5ef485efedb8bf3db5365",
+      "git_blob_sha": "61781f7eaa150e57870ec327ac834ab4ee0b0887",
+      "rendered_size_px": [
+        1001,
+        356
+      ],
+      "base64_length": 35112,
+      "normalized_pdf_crop": [
+        0.05,
+        0.106,
+        0.947,
+        0.352
+      ],
+      "pdf_crop_points": [
+        30.6,
+        83.952,
+        579.564,
+        278.784
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.821613074810006,
+      "target_longest_edge_px": 1000,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "one_wide_frame_two_room_zones",
+      "title_fa": "قاب عریضِ دو ناحیهٔ خواب و حمام",
+      "observed_content_in_crop_fa": "نمای عریض با مرز عمودیِ روشن بین دو فضای اتاق و حمام؛ بدون ستون محصول.",
+      "key_takeaway_fa": "یک قاب می‌تواند نسبت بین دو ناحیه را بدون نقشهٔ فنی و متن طولانی نشان دهد.",
+      "analyst_assessment_fa": "تقسیم فضایی در این معماری نمونه الزام طراحی یا پوشش NSP نیست.",
+      "strengths_fa": [
+        "یک قاب می‌تواند نسبت بین دو ناحیه را بدون نقشهٔ فنی و متن طولانی نشان دهد."
+      ],
+      "weaknesses_fa": [
+        "تقسیم فضایی در این معماری نمونه الزام طراحی یا پوشش NSP نیست."
+      ],
+      "nsp_visual_adaptation_fa": "در صورت دارایی مجاز و مورد واقعی NSP، پیوستگی زمینه از مقیاس ایمن صحافی پشتیبانی کند.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Source-page/topic layout only. No testimonial, performance or feature is validated by an image.",
+      "crop_context_note_fa": "برش محدود برای پژوهش بصری؛ بدون مدرک مستقل دربارهٔ نتیجه، امکانات NSP یا حق بازنشر.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip (no reconstruction, alteration, or generation).",
+      "renderer": "PyMuPDF direct RGB clip without annotations; Pillow WebP quality 83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، نشان و متن متعلق به ناشر یا دارندهٔ حقوق است؛ استفادهٔ کاتالوگی یا تجاری تأیید نشده.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_and_exact_hash_recorded"
+    },
+    {
+      "id": "CRESTRON46_04_results_and_context_headings",
+      "reference_order": 6,
+      "source_company": "Crestron",
+      "source_language": "en",
+      "original_pdf": "46_Crestron_Work C08.3.pdf",
+      "original_pdf_sha256": "44d493d15827ace20d051beac69da455e2960fee12094920e17212e6f549c611",
+      "original_printed_revision": "v. 012723",
+      "source_pdf_page": 4,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_04_results_and_context_headings.webp",
+      "asset_filename": "CRESTRON46_04_results_and_context_headings.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 2980,
+      "asset_sha256": "987bd6a6b15c5bd1c8ee1ec5492b1d5387dd07e41b27f553b740a252553775f4",
+      "git_blob_sha": "f111b28aafea40ba101b0295cd5bd409e46c317c",
+      "rendered_size_px": [
+        951,
+        81
+      ],
+      "base64_length": 3976,
+      "normalized_pdf_crop": [
+        0.051,
+        0.365,
+        0.927,
+        0.422
+      ],
+      "pdf_crop_points": [
+        31.212,
+        289.08,
+        567.324,
+        334.224
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.7720177873280207,
+      "target_longest_edge_px": 950,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "split_results_header_with_sidebar_hierarchy",
+      "title_fa": "دو تیترِ نتیجه و ستون کناری با وزن متفاوت",
+      "observed_content_in_crop_fa": "خط رنگی، عنوان نتیجه و عنوان سرستونِ جدا؛ هیچ ردیف نام/مدل محصول داخل برش قرار نگیرد.",
+      "key_takeaway_fa": "تفکیک عنوان اصلی و ستون زمینه خواننده را از ادغام نتیجه و فهرست جلوگیری می‌کند.",
+      "analyst_assessment_fa": "چون واژهٔ ستون فروشنده دربارهٔ محصول است، همان متن برای NSP شاهد نتیجه یا محصول نیست.",
+      "strengths_fa": [
+        "تفکیک عنوان اصلی و ستون زمینه خواننده را از ادغام نتیجه و فهرست جلوگیری می‌کند."
+      ],
+      "weaknesses_fa": [
+        "چون واژهٔ ستون فروشنده دربارهٔ محصول است، همان متن برای NSP شاهد نتیجه یا محصول نیست."
+      ],
+      "nsp_visual_adaptation_fa": "سازمان بصری را برای نتیجه و زمینهٔ مشروع NSP بازطراحی کنید و فقط دادهٔ مستند وارد کنید.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT046_CRESTRON_BLOC_HOTELS:I011",
+        "CAT046_CRESTRON_BLOC_HOTELS:I012"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "CRESTRON46-P04-E01",
+        "CRESTRON46-P04-E05"
+      ],
+      "source_claim_gate_refs": [
+        "CRESTRON46-CLAIM-08",
+        "CRESTRON46-CLAIM-10"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Source-page/topic layout only. No testimonial, performance or feature is validated by an image.",
+      "crop_context_note_fa": "برش محدود برای پژوهش بصری؛ بدون مدرک مستقل دربارهٔ نتیجه، امکانات NSP یا حق بازنشر.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip (no reconstruction, alteration, or generation).",
+      "renderer": "PyMuPDF direct RGB clip without annotations; Pillow WebP quality 83 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "حقوق عکس، نشان و متن متعلق به ناشر یا دارندهٔ حقوق است؛ استفادهٔ کاتالوگی یا تجاری تأیید نشده.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_and_exact_hash_recorded"
+    }
+  ],
+  "style_catalog": [
+    {
+      "style_id": "facade_led_case_cover",
+      "title_fa": "جلد مطالعهٔ موردی با عکس نمای بیرونی",
+      "representative_reference_ids": [
+        "CRESTRON46_01_facade_hero"
+      ],
+      "physical_pdf_pages": [
+        1
+      ],
+      "key_takeaway_fa": "تصویر یک مکان واقعی می‌تواند هویت پرونده را پیش از اعداد و متن جا بیندازد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "project_fact_key_value_sidebar",
+      "title_fa": "ستون فشردهٔ مشخصات پروژه",
+      "representative_reference_ids": [
+        "CRESTRON46_01_project_fact_sidebar"
+      ],
+      "physical_pdf_pages": [
+        1
+      ],
+      "key_takeaway_fa": "ساختار سه‌ردیفی راهی سریع برای جداسازی دادهٔ پایه از نتیجهٔ مطالعه است.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "wide_intermission_between_challenge_and_solution",
+      "title_fa": "تصویر عریض اتاق بین چالش و راهکار",
+      "representative_reference_ids": [
+        "CRESTRON46_02_room_panorama_divider"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "یک مکث بصری میان مسئله و پاسخ می‌تواند به خواننده در تغییر تمرکز کمک کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "device_in_room_context_photograph",
+      "title_fa": "نمای کنترل‌نمای کوچک در بافت اتاق",
+      "representative_reference_ids": [
+        "CRESTRON46_03_mobile_context_room"
+      ],
+      "physical_pdf_pages": [
+        3
+      ],
+      "key_takeaway_fa": "محیط ملموس توضیحِ نوع تعامل را آسان‌تر از تصویر رابطِ جداافتاده می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "one_wide_frame_two_room_zones",
+      "title_fa": "قاب عریضِ دو ناحیهٔ خواب و حمام",
+      "representative_reference_ids": [
+        "CRESTRON46_04_two_zone_room_bath_photo"
+      ],
+      "physical_pdf_pages": [
+        4
+      ],
+      "key_takeaway_fa": "یک قاب می‌تواند نسبت بین دو ناحیه را بدون نقشهٔ فنی و متن طولانی نشان دهد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "split_results_header_with_sidebar_hierarchy",
+      "title_fa": "دو تیترِ نتیجه و ستون کناری با وزن متفاوت",
+      "representative_reference_ids": [
+        "CRESTRON46_04_results_and_context_headings"
+      ],
+      "physical_pdf_pages": [
+        4
+      ],
+      "key_takeaway_fa": "تفکیک عنوان اصلی و ستون زمینه خواننده را از ادغام نتیجه و فهرست جلوگیری می‌کند.",
+      "final_section_mapping": "pending_S05"
+    }
+  ],
+  "reference_overview": {
+    "asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_S04_reference_overview.webp",
+    "asset_filename": "CRESTRON46_S04_reference_overview.webp",
+    "mime_type": "image/webp",
+    "asset_bytes": 42310,
+    "asset_sha256": "01e22a1d2c43bf3d24ff1e432db9eab365669a5e50f571936a38f6a15fd00071",
+    "git_blob_sha": "831893284e23062938a3435c0fef5455be4d8e57",
+    "rendered_size_px": [
+      948,
+      738
+    ],
+    "base64_length": 56416,
+    "role": "derived_navigation_overview_not_a_source_reference",
+    "source_reference_ids": [
+      "CRESTRON46_01_facade_hero",
+      "CRESTRON46_01_project_fact_sidebar",
+      "CRESTRON46_02_room_panorama_divider",
+      "CRESTRON46_03_mobile_context_room",
+      "CRESTRON46_04_two_zone_room_bath_photo",
+      "CRESTRON46_04_results_and_context_headings"
+    ],
+    "counted_in_reference_images": false
+  },
+  "exclusions": {
+    "full_PDF_files_and_pages_not_committed": true,
+    "product_model_rows_not_exported": true,
+    "main_text_and_testimonials_not_exported_as_crops": true,
+    "no_credentials_or_access_steps_extracted": true,
+    "case_results_are_not_validated_by_photos": true,
+    "Hotel_Renegade_source_is_distinct": true
+  },
+  "target_catalog_constraint_fa": "فقط الگو را بازطراحی کنید. در A4 افقی پانچ‌دارِ NSP، پس‌زمینه تا لبهٔ صحافی پیوسته و عنوان/عکس کلیدی یا لوگو بیرون ناحیهٔ امن حلقه بمانند؛ هیچ عرض یا چاپ‌پذیری بدون آزمون تأیید نمی‌شود.",
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false,
+  "next_stage": "S05 — تطبیق با نوع سکشن NSP",
+  "next_queue_cursor": {
+    "document_index": 12,
+    "document_id": "46",
+    "step_index": 4,
+    "step_id": "S05"
+  },
+  "next_stage_executed": false
+}
