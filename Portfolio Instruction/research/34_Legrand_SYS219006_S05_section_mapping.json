@@ -1,0 +1,3574 @@
+{
+  "schema": "nsp-catalog-research-stage-section-mapping-v1",
+  "stage": "S05",
+  "stage_key": "section_type_mapping",
+  "document_id": "34",
+  "status": "completed_internal_research_proposals_pending_S06",
+  "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+  "source_language": "fr",
+  "verified_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "18319a13ec78ce3497388aceb668ff91c922f3a4",
+  "source_document": {
+    "company": "Legrand",
+    "publisher": "Legrand",
+    "title": "Chambres d’hôtel – Solutions IP BACnet®",
+    "filename": "34_Legrand_Work C04.3.pdf",
+    "pdf_pages": 208,
+    "file_size_bytes": 37661849,
+    "source_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+    "printed_document_code": "SYS219006",
+    "printed_edition_month": "2019-09",
+    "publication_evidence_pdf_page": 208,
+    "S01_inventory": "Portfolio Instruction/research/34_Legrand_SYS219006_S01_source_inventory.json",
+    "S01_inventory_git_blob_sha": "dabf44ed74fc4c14c1251f64a944f3099ee4f986",
+    "S01_inventory_commit": "541a285c3ea3d2c9a8961eaceb1b1a7ec2a9e558",
+    "S02_text_evidence": "Portfolio Instruction/research/34_Legrand_SYS219006_S02_french_text.json",
+    "S02_artifact_commit": "f02496cf8c4b4e6424f305110f7ce6858112b49a",
+    "S02_git_blob_sha": "c5e4b886cfe91cf0b80cb23a664116a727e3bc66",
+    "S02_total_French_fragments": 49,
+    "S03_original_language_policy": "Canonical French source excerpt must be retained; any compatibility label containing '_en' must be explicitly marked as a legacy field, not an English source quote."
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S01_source_inventory.json",
+      "commit_sha": "541a285c3ea3d2c9a8961eaceb1b1a7ec2a9e558",
+      "blob_sha": "dabf44ed74fc4c14c1251f64a944f3099ee4f986"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S02_french_text.json",
+      "commit_sha": "f02496cf8c4b4e6424f305110f7ce6858112b49a",
+      "blob_sha": "c5e4b886cfe91cf0b80cb23a664116a727e3bc66"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S03_features_fa.json",
+      "commit_sha": "e1d6b8f270327cae5cf84a96e0743011d63a32e1",
+      "blob_sha": "9380f7ebe79b886cf0c189de74ec850ec9532891"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S04_visual_styles.json",
+      "commit_sha": "9a7a44a1726c69caeefcef6a1883510d180c3ecf",
+      "blob_sha": "ea81a7f0f0abd765fff4d4f3ca885b5358a0762f"
+    }
+  },
+  "canonical_editorial_policy": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "git_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "valid_research_section_ids": [
+      "COVER",
+      "IDENTITY_PAGES",
+      "COMPANY_INTRO",
+      "CHALLENGES_VALUE",
+      "HOTEL_OVERVIEW",
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS",
+      "CASE_STUDIES"
+    ],
+    "section_snapshot": [
+      {
+        "section_id": "COVER",
+        "title_fa": "صفحه اول کاتالوگ",
+        "row": 2,
+        "content_level": null
+      },
+      {
+        "section_id": "IDENTITY_PAGES",
+        "title_fa": "صفحات تنفس",
+        "row": 3,
+        "content_level": null
+      },
+      {
+        "section_id": "COMPANY_INTRO",
+        "title_fa": "معرفی شرکت NSP",
+        "row": 4,
+        "content_level": "COMPANY"
+      },
+      {
+        "section_id": "CHALLENGES_VALUE",
+        "title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+        "row": 5,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "HOTEL_OVERVIEW",
+        "title_fa": "نقشهٔ جامع راهکارهای هتلی",
+        "row": 6,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "GRMS",
+        "title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+        "row": 7,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "IPTV",
+        "title_fa": "تلویزیون و خدمات تعاملی هتل (IPTV)",
+        "row": 8,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "PUBLIC_AREAS",
+        "title_fa": "کنترل هوشمند مشاعات هتل",
+        "row": 9,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "CASE_STUDIES",
+        "title_fa": "رزومه و پروژه‌های اجراشده",
+        "row": 10,
+        "content_level": null
+      }
+    ],
+    "legacy_aliases_for_reading_only": {
+      "BISMILLAH": "IDENTITY_PAGES"
+    },
+    "binder_cover_excluded_from_research_mapping": true,
+    "CROSS_SECTION_STYLE_is_tag_not_section": true,
+    "idea_attachment_deferred_to_defrag": true,
+    "proposed_roles_are_not_approved_subsections": true,
+    "systems_in_scope": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ]
+  },
+  "rules": {
+    "research_proposals_only": true,
+    "source_text_fr_only": true,
+    "software_only_in_GRMS": true,
+    "keep_three_approved_systems_only": true,
+    "never_infer_NSP_capability": true,
+    "no_operational_wiring_or_configuration": true,
+    "no_public_reuse_rights": true,
+    "no_printed_page_attachment": true,
+    "unassigned_is_not_deleted": true
+  },
+  "statistics": {
+    "text_records_reviewed": 31,
+    "text_source_pages": 26,
+    "text_with_proposed_section": 28,
+    "text_held_without_section": 3,
+    "S02_additional_context_only_fragments": 18,
+    "visuals_reviewed": 9,
+    "visuals_with_proposed_section": 8,
+    "visuals_style_only_without_section": 1,
+    "style_families": 9,
+    "text_by_target": {
+      "HOTEL_OVERVIEW": 4,
+      "GRMS": 23,
+      "NO_TARGET": 3,
+      "CHALLENGES_VALUE": 1
+    },
+    "visual_by_target": {
+      "COVER": 1,
+      "HOTEL_OVERVIEW": 1,
+      "GRMS": 5,
+      "CHALLENGES_VALUE": 1,
+      "NO_TARGET": 1
+    },
+    "overview_not_counted": 1,
+    "NSP_capabilities_verified": 0,
+    "publication_approvals": 0,
+    "printed_page_attachments": 0
+  },
+  "mappings": [
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "راهنمای موضوعی و شیوهٔ یافتن فصل‌ها",
+      "mapping_reason_fa": "بخش یا صفحهٔ ثابت جدید اضافه نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I001",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I001",
+      "pdf_page": 3,
+      "source_text_fr": "Thématiques",
+      "translation_fa": "موضوع‌ها",
+      "source_type": "visual_presentation_style",
+      "source_S02_fragment_ref": "LEGRAND34-P003-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "narrative_structure",
+      "research_section_group": "THEMATIC_AND_CONTENTS_INDEX",
+      "source_editorial_limits_fa": "الگوی راهنمای ورودی برای یافتن موضوع‌ها، جدا از فهرست ترتیبی؛ نه ویژگی محصول.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-CONTENTS"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P004-E01"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [
+        "LEGRAND34_003_theme_navigation"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "راهنمای موضوعی و شیوهٔ یافتن فصل‌ها",
+      "analyst_assessment_fa": "بخش یا صفحهٔ ثابت جدید اضافه نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "تعریف مستقلِ مفهوم سامانهٔ اتاق",
+      "mapping_reason_fa": "دامنهٔ تعریف فروشنده به NSP نسبت داده نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I002",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I002",
+      "pdf_page": 6,
+      "source_text_fr": "Système de gestion de la chambre",
+      "translation_fa": "سامانهٔ مدیریت اتاق",
+      "source_type": "intro",
+      "source_S02_fragment_ref": "LEGRAND34-P006-E02",
+      "source_S02_fragment_index": 2,
+      "research_category_id": "room_controls",
+      "research_section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "source_editorial_limits_fa": "عبارت تعریف اصطلاح GRMS در راهنماست؛ دامنهٔ امکانات NSP را مشخص نمی‌کند.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-02"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-GRMS-ARCHITECTURE"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P006-E01"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [
+        "LEGRAND34_006_definition_block"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "تعریف مستقلِ مفهوم سامانهٔ اتاق",
+      "analyst_assessment_fa": "دامنهٔ تعریف فروشنده به NSP نسبت داده نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نام‌گذاری حالت‌های اتاق",
+      "mapping_reason_fa": "حسگر، تشخیص یا محرک از عنوان استنباط نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I003",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I003",
+      "pdf_page": 7,
+      "source_text_fr": "Présence/Absence",
+      "translation_fa": "حضور / عدم حضور",
+      "source_type": "scenario",
+      "source_S02_fragment_ref": "LEGRAND34-P007-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "room_scenarios",
+      "research_section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "source_editorial_limits_fa": "برچسب نمودار برای تفکیک وضعیت اتاق؛ محرک، دقت یا فناوری تشخیص NSP را ثابت نمی‌کند.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-02"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-GRMS-ARCHITECTURE"
+      ],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [
+        "LEGRAND34_007_room_topic_panel"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نام‌گذاری حالت‌های اتاق",
+      "analyst_assessment_fa": "حسگر، تشخیص یا محرک از عنوان استنباط نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "بیان روشن دو خدمت نظافت و مزاحم‌نشدن",
+      "mapping_reason_fa": "عملکرد، تحویل پیام و ارتباط با پذیرش نیازمند مدرک مستقل‌اند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I004",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I004",
+      "pdf_page": 7,
+      "source_text_fr": "Faire la chambre / Ne pas déranger",
+      "translation_fa": "اتاق نظافت شود / مزاحم نشوید",
+      "source_type": "scenario",
+      "source_S02_fragment_ref": "LEGRAND34-P007-E02",
+      "source_S02_fragment_index": 2,
+      "research_category_id": "guest_comfort",
+      "research_section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "source_editorial_limits_fa": "دو خدمت در یک برچسب نمایشی؛ معادل‌های منبع در واژه‌نامه حفظ شوند. گردش کار و تعامل با پذیرش NSP تأیید نشده‌اند.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-02",
+        "LEGRAND34-CLAIM-10"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-GRMS-ARCHITECTURE",
+        "LEGRAND34-CTX-ROOM-SCENARIOS"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P206-E02",
+        "LEGRAND34-P206-E03"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [
+        "LEGRAND34_007_room_topic_panel"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "بیان روشن دو خدمت نظافت و مزاحم‌نشدن",
+      "analyst_assessment_fa": "عملکرد، تحویل پیام و ارتباط با پذیرش نیازمند مدرک مستقل‌اند."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "گروه‌بندی کارکردهای اتاق",
+      "mapping_reason_fa": "نوع موتور، سخت‌افزار یا سازگاری از برچسب نتیجه نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I005",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I005",
+      "pdf_page": 7,
+      "source_text_fr": "Rideaux/Volets",
+      "translation_fa": "پرده‌ها / کرکره‌ها",
+      "source_type": "scenario",
+      "source_S02_fragment_ref": "LEGRAND34-P007-E03",
+      "source_S02_fragment_index": 3,
+      "research_category_id": "room_controls",
+      "research_section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "source_editorial_limits_fa": "برچسب دستهٔ خروجی در نمودار منبع، نه سازگاری، نوع موتور یا فهرست تجهیزات NSP.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-02"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-GRMS-ARCHITECTURE"
+      ],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [
+        "LEGRAND34_007_room_topic_panel"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "گروه‌بندی کارکردهای اتاق",
+      "analyst_assessment_fa": "نوع موتور، سخت‌افزار یا سازگاری از برچسب نتیجه نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "روایت چند حوزه در مقیاس هتل",
+      "mapping_reason_fa": "سطح هتل از مقیاس محصول جدا بماند؛ فقط سه حوزهٔ مصوب NSP.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I006",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I006",
+      "pdf_page": 8,
+      "source_text_fr": "un ensemble de plusieurs systèmes",
+      "translation_fa": "مجموعه‌ای از چند سامانه",
+      "source_type": "architecture",
+      "source_S02_fragment_ref": "LEGRAND34-P008-E02",
+      "source_S02_fragment_index": 2,
+      "research_category_id": "architecture_deployment",
+      "research_section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "source_editorial_limits_fa": "راهنما هتل را از چند سامانه تشکیل‌شده نمایش می‌دهد؛ تنها ساختار روایت برای قیاس است، نه فهرست راهکار یا یکپارچگی NSP.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-GRMS-ARCHITECTURE"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P008-E01"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "روایت چند حوزه در مقیاس هتل",
+      "analyst_assessment_fa": "سطح هتل از مقیاس محصول جدا بماند؛ فقط سه حوزهٔ مصوب NSP."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "روایت رابطهٔ مفهومی حوزه‌ها",
+      "mapping_reason_fa": "خط اتصال مفهومی، نوع شبکه، جهت داده یا یکپارچگی واقعی را ثابت نمی‌کند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I007",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I007",
+      "pdf_page": 9,
+      "source_text_fr": "L’interconnexion de plusieurs systèmes",
+      "translation_fa": "اتصال متقابل چند سامانه",
+      "source_type": "architecture",
+      "source_S02_fragment_ref": "LEGRAND34-P009-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "architecture_deployment",
+      "research_section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "source_editorial_limits_fa": "اشارهٔ مفهومی به ارتباط سامانه‌هاست؛ نوع شبکه، پیکربندی، سازگاری و امکان واقعی NSP از آن نتیجه نشود.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-GRMS-ARCHITECTURE"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P008-E02"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "روایت رابطهٔ مفهومی حوزه‌ها",
+      "analyst_assessment_fa": "خط اتصال مفهومی، نوع شبکه، جهت داده یا یکپارچگی واقعی را ثابت نمی‌کند."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نمایش چند الگوی اتاق",
+      "mapping_reason_fa": "مقیاس، تعداد تجهیزات و ظرفیت از نمونهٔ فروشنده برداشت نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I008",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I008",
+      "pdf_page": 10,
+      "source_text_fr": "ADAPTABILITÉ (1)",
+      "translation_fa": "انطباق‌پذیری (۱)",
+      "source_type": "intro",
+      "source_S02_fragment_ref": "LEGRAND34-P010-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "design_integration",
+      "research_section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "source_editorial_limits_fa": "تیتر دسته‌بندی نمونه‌های اتاق است؛ تعداد تجهیزات، ظرفیت و مقیاس NSP از آن نتیجه نمی‌شود.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نمایش چند الگوی اتاق",
+      "analyst_assessment_fa": "مقیاس، تعداد تجهیزات و ظرفیت از نمونهٔ فروشنده برداشت نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نمای مفهومی یک اتاق نمونه",
+      "mapping_reason_fa": "فقط عنوان را مقایسه کن؛ نقشه، سیم‌کشی و شیوهٔ نصب خارج است.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I009",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I009",
+      "pdf_page": 12,
+      "source_text_fr": "EXEMPLE D'INSTALLATION POUR UNE CHAMBRE",
+      "translation_fa": "نمونهٔ نصب برای یک اتاق",
+      "source_type": "architecture",
+      "source_S02_fragment_ref": "LEGRAND34-P012-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "architecture_deployment",
+      "research_section_group": "SYSTEM_ARCHITECTURE",
+      "source_editorial_limits_fa": "تکه‌ای از عنوان نمونهٔ منبع؛ می‌توان سطح ارائهٔ اتاق را مطالعه کرد، نه نقشه، سخت‌افزار یا روش نصب.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-GRMS-ARCHITECTURE"
+      ],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نمای مفهومی یک اتاق نمونه",
+      "analyst_assessment_fa": "فقط عنوان را مقایسه کن؛ نقشه، سیم‌کشی و شیوهٔ نصب خارج است."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "شیوهٔ معرفی مفهوم نظارت چند اتاق",
+      "mapping_reason_fa": "سرور، اتصال و ظرفیت فروشنده به NSP منتقل نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I010",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I010",
+      "pdf_page": 16,
+      "source_text_fr": "ARCHITECTURE GESTION DES CHAMBRES AVEC SUPERVISEUR",
+      "translation_fa": "معماری مدیریت اتاق‌ها با سامانهٔ نظارت مرکزی",
+      "source_type": "architecture",
+      "source_S02_fragment_ref": "LEGRAND34-P016-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "architecture_deployment",
+      "research_section_group": "SYSTEM_ARCHITECTURE",
+      "source_editorial_limits_fa": "نمونهٔ معماریِ منبع؛ سامانهٔ نظارت، روش ارتباط، واسط یا امکان واقعی NSP تأیید نشده.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-GRMS-ARCHITECTURE"
+      ],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "شیوهٔ معرفی مفهوم نظارت چند اتاق",
+      "analyst_assessment_fa": "سرور، اتصال و ظرفیت فروشنده به NSP منتقل نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "مقایسهٔ روایت HVAC محلی",
+      "mapping_reason_fa": "فقط الگوی محلی فروشنده، مستقل از گزینهٔ مرکزی.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I011",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I011",
+      "pdf_page": 18,
+      "source_text_fr": "GESTION LOCALE DU CHAUFFAGE/CLIMATISATION",
+      "translation_fa": "مدیریت محلی گرمایش و سرمایش",
+      "source_type": "architecture",
+      "source_S02_fragment_ref": "LEGRAND34-P018-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "energy_hvac",
+      "research_section_group": "SYSTEM_ARCHITECTURE",
+      "source_editorial_limits_fa": "یکی از مدل‌های ارائه‌شدهٔ منبع و جدا از حالت مرکزی است؛ مشخصات HVAC یا نسخهٔ اجرایی NSP نتیجه نمی‌شود.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-GRMS-ARCHITECTURE"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P020-E01"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "مقایسهٔ روایت HVAC محلی",
+      "analyst_assessment_fa": "فقط الگوی محلی فروشنده، مستقل از گزینهٔ مرکزی."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "مقایسهٔ روایت HVAC مرکزی",
+      "mapping_reason_fa": "فقط الگوی متمرکز فروشنده؛ ادعای پشتیبانی از هر دو حالت ممنوع.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I012",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I012",
+      "pdf_page": 20,
+      "source_text_fr": "GESTION CENTRALISÉE DU CHAUFFAGE/CLIMATISATION",
+      "translation_fa": "مدیریت متمرکز گرمایش و سرمایش",
+      "source_type": "architecture",
+      "source_S02_fragment_ref": "LEGRAND34-P020-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "energy_hvac",
+      "research_section_group": "SYSTEM_ARCHITECTURE",
+      "source_editorial_limits_fa": "بدیل شکل محلی در همان راهنما؛ اتصال، ظرفیت و دامنهٔ واقعی NSP مستقل بررسی شوند.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-GRMS-ARCHITECTURE"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P018-E01"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "مقایسهٔ روایت HVAC مرکزی",
+      "analyst_assessment_fa": "فقط الگوی متمرکز فروشنده؛ ادعای پشتیبانی از هر دو حالت ممنوع."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نمونهٔ غیرجامع ارائهٔ هتل",
+      "mapping_reason_fa": "IPTV صفحهٔ ۲۵ فقط زمینه است؛ شاهد سرویس یا سازگاری نیست.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I013",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I013",
+      "pdf_page": 24,
+      "source_text_fr": "EXEMPLE D'UNE INFRASTRUCTURE IP D'UN HÔTEL (NON-EXHAUSTIVE)",
+      "translation_fa": "نمونه‌ای از زیرساخت IP هتل (غیرجامع)",
+      "source_type": "architecture",
+      "source_S02_fragment_ref": "LEGRAND34-P024-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "architecture_deployment",
+      "research_section_group": "SYSTEM_ARCHITECTURE",
+      "source_editorial_limits_fa": "«غیرجامع» بخش مهم عنوان است. نمودار از جمله برچسب IPTV را در زمینهٔ چندسامانه‌ای دارد؛ خدمات یا یکپارچگی NSP را اثبات نمی‌کند.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-GRMS-ARCHITECTURE"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P025-E01"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نمونهٔ غیرجامع ارائهٔ هتل",
+      "analyst_assessment_fa": "IPTV صفحهٔ ۲۵ فقط زمینه است؛ شاهد سرویس یا سازگاری نیست."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "روش بیان موضوع آسایش دمایی",
+      "mapping_reason_fa": "به دما، تنظیمات، فرمان یا مشخصات محصول تبدیل نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I014",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I014",
+      "pdf_page": 108,
+      "source_text_fr": "Fonction de chauffage et de climatisation",
+      "translation_fa": "عملکرد گرمایش و سرمایش",
+      "source_type": "scenario",
+      "source_S02_fragment_ref": "LEGRAND34-P108-E02",
+      "source_S02_fragment_index": 2,
+      "research_category_id": "energy_hvac",
+      "research_section_group": "THERMOSTAT_OPERATION",
+      "source_editorial_limits_fa": "عنوان حالت دمایی در منبع، نه دستور، محدوده، مدل تجهیزات یا دامنه پشتیبانی NSP.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-ROOM-SCENARIOS"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P108-E01"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "روش بیان موضوع آسایش دمایی",
+      "analyst_assessment_fa": "به دما، تنظیمات، فرمان یا مشخصات محصول تبدیل نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نمونهٔ عنوان سناریوی فصلی",
+      "mapping_reason_fa": "شرط، زمان، محرک و تنظیمات منبع ثبت نشود؛ توان NSP جدا تأیید شود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I015",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I015",
+      "pdf_page": 117,
+      "source_text_fr": "PASSAGE DU MODE ÉTÉ/HIVER EN AUTOMATIQUE",
+      "translation_fa": "تغییر خودکار حالت تابستانی/زمستانی",
+      "source_type": "scenario",
+      "source_S02_fragment_ref": "LEGRAND34-P117-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "energy_hvac",
+      "research_section_group": "THERMOSTAT_OPERATION",
+      "source_editorial_limits_fa": "عنوان سناریو در راهنما؛ شروط منبع یا روش عملی برخلاف هدف این پژوهش به رکورد منتقل نشده‌اند و قابلیت NSP ادعا نمی‌شود.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-ROOM-SCENARIOS"
+      ],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نمونهٔ عنوان سناریوی فصلی",
+      "analyst_assessment_fa": "شرط، زمان، محرک و تنظیمات منبع ثبت نشود؛ توان NSP جدا تأیید شود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "اصطلاح زمینه‌ای برای دو سطر ورود/خروج",
+      "mapping_reason_fa": "کارت مجازیِ وضعیت اتاق در این گزیده، کلید دیجیتال، اعتبارنامه یا دسترسی نیست.",
+      "unassigned_reason_fa": "کارت مجازیِ وضعیت اتاق در این گزیده، کلید دیجیتال، اعتبارنامه یا دسترسی نیست.",
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "internal_reference_only_no_target_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I016",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I016",
+      "pdf_page": 119,
+      "source_text_fr": "BADGE VIRTUEL (VIRTUAL KEYCARD)",
+      "translation_fa": "کارت مجازی اتاق (Virtual Keycard)",
+      "source_type": "scenario",
+      "source_S02_fragment_ref": "LEGRAND34-P119-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "room_scenarios",
+      "research_section_group": "VIRTUAL_BADGE_OPERATION",
+      "source_editorial_limits_fa": "نام سناریوی وابسته به وضعیت اتاق در راهنماست؛ در این پژوهش به معنای کلید دیجیتال ورود، احراز هویت یا امکان فنی NSP نیست.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-ROOM-SCENARIOS"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P119-E02",
+        "LEGRAND34-P119-E03"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "اصطلاح زمینه‌ای برای دو سطر ورود/خروج",
+      "analyst_assessment_fa": "کارت مجازیِ وضعیت اتاق در این گزیده، کلید دیجیتال، اعتبارنامه یا دسترسی نیست."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نام سناریوی ورود در روایت اتاق",
+      "mapping_reason_fa": "هم‌جواری کارت مجازی مکانیسم ورود، دسترسی یا تحریک را ثابت نمی‌کند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I017",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I017",
+      "pdf_page": 119,
+      "source_text_fr": "Scénario d’arrivée",
+      "translation_fa": "سناریوی ورود",
+      "source_type": "scenario",
+      "source_S02_fragment_ref": "LEGRAND34-P119-E02",
+      "source_S02_fragment_index": 2,
+      "research_category_id": "room_scenarios",
+      "research_section_group": "VIRTUAL_BADGE_OPERATION",
+      "source_editorial_limits_fa": "برچسب سناریو در بافت نشانگر کارت اتاق؛ نه ثبت سازوکار محرک، زمان‌بندی یا قابلیت NSP.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-ROOM-SCENARIOS"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P119-E01"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نام سناریوی ورود در روایت اتاق",
+      "analyst_assessment_fa": "هم‌جواری کارت مجازی مکانیسم ورود، دسترسی یا تحریک را ثابت نمی‌کند."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نام مستقل سناریوی خروج",
+      "mapping_reason_fa": "وابستگی، فرمان، ترتیب یا محرک از منبع منتقل نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I018",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I018",
+      "pdf_page": 119,
+      "source_text_fr": "Scénario de départ",
+      "translation_fa": "سناریوی خروج",
+      "source_type": "scenario",
+      "source_S02_fragment_ref": "LEGRAND34-P119-E03",
+      "source_S02_fragment_index": 3,
+      "research_category_id": "room_scenarios",
+      "research_section_group": "VIRTUAL_BADGE_OPERATION",
+      "source_editorial_limits_fa": "برچسب سناریو در همان بافت؛ ارتباط یا ترتیب عملی وابسته به منبع به NSP تعمیم نیابد.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-ROOM-SCENARIOS"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P119-E01"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نام مستقل سناریوی خروج",
+      "analyst_assessment_fa": "وابستگی، فرمان، ترتیب یا محرک از منبع منتقل نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "مقایسهٔ مدل نرم‌افزاریِ الگوی اتاق",
+      "mapping_reason_fa": "با سطح پروژهٔ هتل ادغام نشود؛ نه آموزش پیکربندی.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I019",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I019",
+      "pdf_page": 125,
+      "source_text_fr": "PROGRAMMATION DES CHAMBRES TYPE",
+      "translation_fa": "پیکربندی الگوهای اتاق",
+      "source_type": "software_capability",
+      "source_S02_fragment_ref": "LEGRAND34-P125-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "management_software",
+      "research_section_group": "HOTEL_PROJECT_PROGRAMMING",
+      "source_editorial_limits_fa": "نام موضوع نرم‌افزار راهنما برای اتاق‌های نمونه؛ روش اجرا، سازگاری و پشتیبانی NSP نتیجه نمی‌شود.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-HRC-UI"
+      ],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "مقایسهٔ مدل نرم‌افزاریِ الگوی اتاق",
+      "analyst_assessment_fa": "با سطح پروژهٔ هتل ادغام نشود؛ نه آموزش پیکربندی."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "مقایسهٔ مدل نرم‌افزاریِ پروژهٔ هتل",
+      "mapping_reason_fa": "سطح پروژه از الگوی اتاق جداست؛ ابزار NSP نیازمند سند مستقل است.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I020",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I020",
+      "pdf_page": 128,
+      "source_text_fr": "PROGRAMMATION DU PROJET HÔTEL",
+      "translation_fa": "پیکربندی پروژهٔ هتل",
+      "source_type": "software_capability",
+      "source_S02_fragment_ref": "LEGRAND34-P128-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "management_software",
+      "research_section_group": "HOTEL_PROJECT_PROGRAMMING",
+      "source_editorial_limits_fa": "مقایسهٔ سازمان‌دهی پروژه در سند منبع، جدا از سطح الگوی اتاق؛ دلیل قابلیت NSP نیست.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-HRC-UI"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P125-E01"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "مقایسهٔ مدل نرم‌افزاریِ پروژهٔ هتل",
+      "analyst_assessment_fa": "سطح پروژه از الگوی اتاق جداست؛ ابزار NSP نیازمند سند مستقل است."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "شیوهٔ معرفی یک نرم‌افزار مدیریت اتاق",
+      "mapping_reason_fa": "نام Legrand فقط برای مرجع؛ نسخه و آنلاین/آفلاین NSP ادعا نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I021",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I021",
+      "pdf_page": 130,
+      "source_text_fr": "Hotel Room Controller software",
+      "translation_fa": "نرم‌افزار Hotel Room Controller",
+      "source_type": "intro",
+      "source_S02_fragment_ref": "LEGRAND34-P130-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "management_software",
+      "research_section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "source_editorial_limits_fa": "نام نرم‌افزار منبع؛ حالات آنلاین/آفلاین هدف این ساختار‌اند، نه وضعیت نسخه، شیوه اتصال یا پشتیبانی NSP.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-HRC-UI"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P130-E02",
+        "LEGRAND34-P130-E03",
+        "LEGRAND34-P130-E04"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [
+        "LEGRAND34_130_software_navigation_header"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "شیوهٔ معرفی یک نرم‌افزار مدیریت اتاق",
+      "analyst_assessment_fa": "نام Legrand فقط برای مرجع؛ نسخه و آنلاین/آفلاین NSP ادعا نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قیاسِ جایگاه داشبورد",
+      "mapping_reason_fa": "از عنوان رابط، گزارش، رفتار، دسترسی یا داشبورد NSP نتیجه نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I022",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I022",
+      "pdf_page": 130,
+      "source_text_fr": "Tableau de bord",
+      "translation_fa": "داشبورد",
+      "source_type": "other",
+      "source_S02_fragment_ref": "LEGRAND34-P130-E05",
+      "source_S02_fragment_index": 5,
+      "research_category_id": "management_software",
+      "research_section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "source_editorial_limits_fa": "برچسب رابط کاربری منبع؛ نه ادعای عملیاتی، پشتیبانی کارکرد یا اثبات داشبورد NSP.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-HRC-UI"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P130-E02"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [
+        "LEGRAND34_130_software_navigation_header"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "قیاسِ جایگاه داشبورد",
+      "analyst_assessment_fa": "از عنوان رابط، گزارش، رفتار، دسترسی یا داشبورد NSP نتیجه نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قیاس دسته‌بندیِ نمای پروژه",
+      "mapping_reason_fa": "نحوهٔ استفاده از صفحه یا توان NSP ثبت نشده.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I023",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I023",
+      "pdf_page": 131,
+      "source_text_fr": "ÉCRAN PROJET",
+      "translation_fa": "نمای پروژه",
+      "source_type": "other",
+      "source_S02_fragment_ref": "LEGRAND34-P131-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "management_software",
+      "research_section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "source_editorial_limits_fa": "عنوان نمای رابط کاربری Legrand؛ ساختار مشاهده به‌تنهایی امکان عملیات یا محصول NSP را ثابت نمی‌کند.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-HRC-UI"
+      ],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "قیاس دسته‌بندیِ نمای پروژه",
+      "analyst_assessment_fa": "نحوهٔ استفاده از صفحه یا توان NSP ثبت نشده."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "گروه‌بندی دیداری ماژول‌ها",
+      "mapping_reason_fa": "از عنوان/آیکون، سازگاری و فهرست تجهیزات NSP برداشت نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I024",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I024",
+      "pdf_page": 133,
+      "source_text_fr": "ÉCRAN DES MODULES",
+      "translation_fa": "نمای ماژول‌ها",
+      "source_type": "other",
+      "source_S02_fragment_ref": "LEGRAND34-P133-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "management_software",
+      "research_section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "source_editorial_limits_fa": "عنوان نمای نرم‌افزار منبع؛ فهرست نمایش، دلیل سازگاری سخت‌افزار یا NSP نیست.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-HRC-UI"
+      ],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [
+        "LEGRAND34_133_module_icon_gallery"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "گروه‌بندی دیداری ماژول‌ها",
+      "analyst_assessment_fa": "از عنوان/آیکون، سازگاری و فهرست تجهیزات NSP برداشت نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "دسته‌بندی موضوعِ ابزار پیکربندی",
+      "mapping_reason_fa": "صرفاً نام دسته؛ هیچ گام اجرایی، دسترسی یا فرمانی وارد نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I025",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I025",
+      "pdf_page": 134,
+      "source_text_fr": "LE CONFIGURATEUR",
+      "translation_fa": "ابزار پیکربندی",
+      "source_type": "other",
+      "source_S02_fragment_ref": "LEGRAND34-P134-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "management_software",
+      "research_section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "source_editorial_limits_fa": "عنوان دستهٔ رابط؛ شیوه تنظیم، دسترسی یا قابلیت NSP ثبت نشده.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-HRC-UI"
+      ],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "دسته‌بندی موضوعِ ابزار پیکربندی",
+      "analyst_assessment_fa": "صرفاً نام دسته؛ هیچ گام اجرایی، دسترسی یا فرمانی وارد نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قیاس عنوان زمان‌بندی در نرم‌افزار",
+      "mapping_reason_fa": "زمان، شرط، دستور و پشتیبانی NSP از نام منبع حاصل نمی‌شود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I026",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I026",
+      "pdf_page": 138,
+      "source_text_fr": "Fonction planificateur",
+      "translation_fa": "قابلیت زمان‌بندی",
+      "source_type": "software_capability",
+      "source_S02_fragment_ref": "LEGRAND34-P138-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "management_software",
+      "research_section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "source_editorial_limits_fa": "در منبع ذیل برنامه‌ریزی رویداد زمانی آمده؛ جزئیات، محرک‌ها و پیاده‌سازی NSP موضوع این گزیده نیستند.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-08"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-HRC-UI"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P138-E02"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "قیاس عنوان زمان‌بندی در نرم‌افزار",
+      "analyst_assessment_fa": "زمان، شرط، دستور و پشتیبانی NSP از نام منبع حاصل نمی‌شود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نمونهٔ تفکیک ورودی‌ها در معماری اطلاعات",
+      "mapping_reason_fa": "پورت، سازگاری، پارامتر و فهرست واقعی مستقل‌اند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I027",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I027",
+      "pdf_page": 152,
+      "source_text_fr": "Liste des entrées",
+      "translation_fa": "فهرست ورودی‌ها",
+      "source_type": "other",
+      "source_S02_fragment_ref": "LEGRAND34-P152-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "management_software",
+      "research_section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "source_editorial_limits_fa": "نمونهٔ جداکردن دو فهرست ورودی/خروجی در برنامه؛ پورت، مقادیر یا سازگاری NSP ثبت نشده.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-08"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-HRC-UI"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P152-E02"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نمونهٔ تفکیک ورودی‌ها در معماری اطلاعات",
+      "analyst_assessment_fa": "پورت، سازگاری، پارامتر و فهرست واقعی مستقل‌اند."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قیاس عنوان دستهٔ سناریوهای نرم‌افزار",
+      "mapping_reason_fa": "منطق یا روش ساخت اجرا نمی‌شود؛ فقط عنوان منبع.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I028",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I028",
+      "pdf_page": 156,
+      "source_text_fr": "Créer les scénarios",
+      "translation_fa": "ایجاد سناریوها",
+      "source_type": "software_capability",
+      "source_S02_fragment_ref": "LEGRAND34-P156-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "management_software",
+      "research_section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "source_editorial_limits_fa": "عنوان مرحلهٔ رابط منبع؛ رویداد محرک در حد واژهٔ مرتبط باقی می‌ماند و رفتار NSP تأیید نشده.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-08"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-HRC-UI"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P156-E02"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "قیاس عنوان دستهٔ سناریوهای نرم‌افزار",
+      "analyst_assessment_fa": "منطق یا روش ساخت اجرا نمی‌شود؛ فقط عنوان منبع."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "تفکیک نقش‌ها در سطح روایت مخاطبان",
+      "mapping_reason_fa": "از سرفصل راه‌اندازی، روند، وظیفهٔ قراردادی یا وعده خدمات نتیجه نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I029",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I029",
+      "pdf_page": 177,
+      "source_text_fr": "PROCESS DE MISE EN SERVICE",
+      "translation_fa": "فرایند راه‌اندازی",
+      "source_type": "intro",
+      "source_S02_fragment_ref": "LEGRAND34-P177-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "hotel_operations",
+      "research_section_group": "COMMISSIONING_PROCESS",
+      "source_editorial_limits_fa": "الگوی سازمان‌دهی مرحلهٔ تحویل و راه‌اندازی پروژه؛ مسئولیت و فرایند تأییدشدهٔ NSP مستقل‌اند.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-09"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-LIFECYCLE"
+      ],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [
+        "LEGRAND34_177_commissioning_role_headers"
+      ],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "تفکیک نقش‌ها در سطح روایت مخاطبان",
+      "analyst_assessment_fa": "از سرفصل راه‌اندازی، روند، وظیفهٔ قراردادی یا وعده خدمات نتیجه نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "زمینهٔ داخلیِ سرفصل عیب‌یابی سطح ۱",
+      "mapping_reason_fa": "برای فصل، دستور اجرایی، پوشش یا SLA پیشنهاد نشود.",
+      "unassigned_reason_fa": "برای فصل، دستور اجرایی، پوشش یا SLA پیشنهاد نشود.",
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "internal_reference_only_no_target_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I030",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I030",
+      "pdf_page": 184,
+      "source_text_fr": "DIAGNOSTIC NIVEAU 1",
+      "translation_fa": "عیب‌یابی سطح ۱",
+      "source_type": "other",
+      "source_S02_fragment_ref": "LEGRAND34-P184-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "hotel_operations",
+      "research_section_group": "DIAGNOSTICS_SECTION",
+      "source_editorial_limits_fa": "عنوان تقسیم‌بندی فرایند در راهنما؛ دستور، مسیر عملیاتی، پوشش خدمت یا SLA برای NSP نتیجه نشود.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-09"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-LIFECYCLE"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P189-E01"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "زمینهٔ داخلیِ سرفصل عیب‌یابی سطح ۱",
+      "analyst_assessment_fa": "برای فصل، دستور اجرایی، پوشش یا SLA پیشنهاد نشود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "زمینهٔ داخلیِ سرفصل عیب‌یابی سطح ۲",
+      "mapping_reason_fa": "سطح جداگانهٔ منبع است، نه معیار تداوم، پشتیبانی یا تنظیم شبکه.",
+      "unassigned_reason_fa": "سطح جداگانهٔ منبع است، نه معیار تداوم، پشتیبانی یا تنظیم شبکه.",
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "internal_reference_only_no_target_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I031",
+      "idea_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I031",
+      "pdf_page": 189,
+      "source_text_fr": "DIAGNOSTIC NIVEAU 2",
+      "translation_fa": "عیب‌یابی سطح ۲",
+      "source_type": "other",
+      "source_S02_fragment_ref": "LEGRAND34-P189-E01",
+      "source_S02_fragment_index": 1,
+      "research_category_id": "hotel_operations",
+      "research_section_group": "DIAGNOSTICS_SECTION",
+      "source_editorial_limits_fa": "سطح جداگانه در همان راهنما، نه معیار تداوم خدمت، تنظیم شبکه یا پشتیبانی NSP.",
+      "source_context_tags": [
+        "Legrand_competitor_research_only",
+        "SYS219006_2019_09",
+        "not_verified_for_NSP"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-09"
+      ],
+      "source_context_set_refs": [
+        "LEGRAND34-CTX-LIFECYCLE"
+      ],
+      "related_context_fragment_refs": [
+        "LEGRAND34-P184-E01"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact S02 original-language French; verified by PyMuPDF and Poppler on physical page.",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "زمینهٔ داخلیِ سرفصل عیب‌یابی سطح ۲",
+      "analyst_assessment_fa": "سطح جداگانهٔ منبع است، نه معیار تداوم، پشتیبانی یا تنظیم شبکه."
+    }
+  ],
+  "visual_mappings": [
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "COVER",
+      "target_section_types": [
+        "COVER"
+      ],
+      "target_section_title_fa": "صفحه اول کاتالوگ",
+      "target_section_row": 2,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قیاس سلسله‌مراتب تیتر و تصویر در صفحهٔ اول داخلی",
+      "mapping_reason_fa": "نه جلد بیرونی؛ عکس، نشان، مونتاژ و تیتر عمودی رقیب کپی نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "image_id": "LEGRAND34_001_vertical_technical_cover",
+      "idea_id": "LEGRAND34_001_vertical_technical_cover",
+      "pdf_page": 1,
+      "source_pdf_page": 1,
+      "source_text_fr": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "S04 visual provenance only; no extra quote or capability",
+      "source_image_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_001_vertical_technical_cover.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_001_vertical_technical_cover.webp",
+      "image_asset_sha256": "c3f9a43d2d3584c8bf4784be7b1b3f0e927ffee56fd6b785240a3ef6265fc840",
+      "image_blob_sha": "0a7028f78acf5c650db925e1259a25bee751ab8f",
+      "normalized_pdf_crop": [
+        0,
+        0.036,
+        1,
+        0.903
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "rendered_size_px": [
+        857,
+        1051
+      ],
+      "presentation_style": "vertical_title_with_product_montage",
+      "visual_style_type": "vertical_title_with_product_montage",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "جلد فنی با تیتر عمودی و مونتاژ محصول",
+      "observed_content_in_crop_fa": "عبارت عمودی در کنار عنوان افقی و عکس گروهی تجهیزات؛ شعار حاشیهٔ پایین خارج برش است.",
+      "key_takeaway_fa": "راهنمای فنی و عکس‌ها دو سطح سلسله‌مراتب دارند.",
+      "analyst_assessment_fa": "چسبندگی به محصول رقیب و قالب عمودی برای کاتالوگ افقی مناسب نیست.",
+      "strengths_fa": [
+        "راهنمای فنی و عکس‌ها دو سطح سلسله‌مراتب دارند."
+      ],
+      "weaknesses_fa": [
+        "چسبندگی به محصول رقیب و قالب عمودی برای کاتالوگ افقی مناسب نیست."
+      ],
+      "nsp_visual_adaptation_fa": "عنوان و دارایی اختصاصی را آزمایش کن؛ این فرم مقایسهٔ محصول است، نه مدل، سیم‌کشی یا حق انتشار تصویر رقبا.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "crop_context_note_fa": "مرجع جزئی از شیوهٔ ارائه؛ متن رقیب، شماره مدل و تصویر محصول برای ادعای فنی وارد نشده‌اند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، فونت‌ها، تجهیزات و نشان‌ها متعلق به Legrand یا دارندگان حقوق‌اند؛ فقط مرجع طراحی داخلی. بازنشر، دستور فنی و هیچ قابلیت یا ادعای تجاری NSP از آن‌ها تأیید نمی‌شود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قیاس راهنمای موضوعی دو ستونه",
+      "mapping_reason_fa": "خط و دو ستون فقط از نظر خوانایی؛ نه افزودن یا انتخاب صفحه.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "image_id": "LEGRAND34_003_theme_navigation",
+      "idea_id": "LEGRAND34_003_theme_navigation",
+      "pdf_page": 3,
+      "source_pdf_page": 3,
+      "source_text_fr": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "S04 visual provenance only; no extra quote or capability",
+      "source_image_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_003_theme_navigation.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_003_theme_navigation.webp",
+      "image_asset_sha256": "a0412ffd35ff679633f41a45656941667078e3cd70ae2719004966e009fff004",
+      "image_blob_sha": "e76a8676aaae01ace2ccd606a8fcc2778253b3c5",
+      "normalized_pdf_crop": [
+        0.057,
+        0.052,
+        0.94,
+        0.435
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "rendered_size_px": [
+        1001,
+        614
+      ],
+      "presentation_style": "two_column_topic_navigation_with_section_cues",
+      "visual_style_type": "two_column_topic_navigation_with_section_cues",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "راهنمای موضوعی دو ستونه",
+      "observed_content_in_crop_fa": "تیتر و خط بالایی جدا از دو ستون موضوع‌ها و ارجاع‌های صفحه؛ ترتیب موضوعی مکمل فهرست اصلی است.",
+      "key_takeaway_fa": "خط و دو ستون، مرور سریع موضوعی را ممکن می‌کنند.",
+      "analyst_assessment_fa": "راست‌به‌چپ و شماره‌های صفحه باید پس از صفحه‌بندی NSP تنظیم شوند.",
+      "strengths_fa": [
+        "خط و دو ستون، مرور سریع موضوعی را ممکن می‌کنند."
+      ],
+      "weaknesses_fa": [
+        "راست‌به‌چپ و شماره‌های صفحه باید پس از صفحه‌بندی NSP تنظیم شوند."
+      ],
+      "nsp_visual_adaptation_fa": "برای سند NSP از فهرست موضوعی کوتاه با شماره‌های واقعی پس از طراحی استفاده شود؛ عناوین و رویه‌های منبع منتقل نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I001"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "LEGRAND34-P003-E01"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [
+        "LEGRAND34-CTX-CONTENTS"
+      ],
+      "crop_context_note_fa": "مرجع جزئی از شیوهٔ ارائه؛ متن رقیب، شماره مدل و تصویر محصول برای ادعای فنی وارد نشده‌اند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، فونت‌ها، تجهیزات و نشان‌ها متعلق به Legrand یا دارندگان حقوق‌اند؛ فقط مرجع طراحی داخلی. بازنشر، دستور فنی و هیچ قابلیت یا ادعای تجاری NSP از آن‌ها تأیید نمی‌شود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قیاس قالب تعریف کوتاه و فضای سفید",
+      "mapping_reason_fa": "فاصله‌گذاری مفید است؛ تعریف و دامنهٔ NSP مستقل‌اند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "image_id": "LEGRAND34_006_definition_block",
+      "idea_id": "LEGRAND34_006_definition_block",
+      "pdf_page": 6,
+      "source_pdf_page": 6,
+      "source_text_fr": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "S04 visual provenance only; no extra quote or capability",
+      "source_image_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_006_definition_block.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_006_definition_block.webp",
+      "image_asset_sha256": "b1cae14857ef1f8f7d9d8142c76b6a8a53af79108705093e0b4800bc82474ea8",
+      "image_blob_sha": "e73b4ab89c490977db52256f529814df187f6fb1",
+      "normalized_pdf_crop": [
+        0.063,
+        0.025,
+        0.503,
+        0.247
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "rendered_size_px": [
+        1001,
+        714
+      ],
+      "presentation_style": "compact_definition_band_with_negative_space",
+      "visual_style_type": "compact_definition_band_with_negative_space",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "معرفی کوتاه اصطلاح با فضای تنفس",
+      "observed_content_in_crop_fa": "عنوان معرفی در بالا، فضای سفید و تعریف کوتاه GRMS در پایین همان ستون؛ متن بدنه و تجهیزات بیرون‌اند.",
+      "key_takeaway_fa": "فضای سفید تعریف کوتاه را از متن فنی جدا می‌کند.",
+      "analyst_assessment_fa": "فاصلهٔ زیادی که در راهنما کار می‌کند ممکن است در صفحهٔ کاتالوگ به خلأ تبدیل شود.",
+      "strengths_fa": [
+        "فضای سفید تعریف کوتاه را از متن فنی جدا می‌کند."
+      ],
+      "weaknesses_fa": [
+        "فاصلهٔ زیادی که در راهنما کار می‌کند ممکن است در صفحهٔ کاتالوگ به خلأ تبدیل شود."
+      ],
+      "nsp_visual_adaptation_fa": "تعریف کوتاه و توضیح واژه را در بخش مستقل بنشان؛ تعریف از دامنهٔ قابلیت‌های واقعی NSP جداست.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I002"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "LEGRAND34-P006-E02",
+        "LEGRAND34-P006-E01"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-02"
+      ],
+      "related_source_context_set_refs": [
+        "LEGRAND34-CTX-GRMS-ARCHITECTURE"
+      ],
+      "crop_context_note_fa": "مرجع جزئی از شیوهٔ ارائه؛ متن رقیب، شماره مدل و تصویر محصول برای ادعای فنی وارد نشده‌اند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، فونت‌ها، تجهیزات و نشان‌ها متعلق به Legrand یا دارندگان حقوق‌اند؛ فقط مرجع طراحی داخلی. بازنشر، دستور فنی و هیچ قابلیت یا ادعای تجاری NSP از آن‌ها تأیید نمی‌شود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قیاس چینش برچسب‌های اتاق",
+      "mapping_reason_fa": "دارایی و عدد نمایشی یا مفهوم سیم‌کشی از مرجع منتقل نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "image_id": "LEGRAND34_007_room_topic_panel",
+      "idea_id": "LEGRAND34_007_room_topic_panel",
+      "pdf_page": 7,
+      "source_pdf_page": 7,
+      "source_text_fr": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "S04 visual provenance only; no extra quote or capability",
+      "source_image_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_007_room_topic_panel.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_007_room_topic_panel.webp",
+      "image_asset_sha256": "c6173eb51e160aaac7267c3bf41a4fb19d7c9f24161919a64db783335083dcfb",
+      "image_blob_sha": "b01fbd7498be426936b5a568f8574cee39ed6789",
+      "normalized_pdf_crop": [
+        0.239,
+        0.205,
+        0.48,
+        0.823
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "rendered_size_px": [
+        290,
+        1051
+      ],
+      "presentation_style": "pastel_topic_panel_with_stacked_room_labels",
+      "visual_style_type": "pastel_topic_panel_with_stacked_room_labels",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "پنل رنگی با برچسب‌های دستهٔ اتاق",
+      "observed_content_in_crop_fa": "چند برچسب از جمله پرده، حضور و خدمت در یک ستون رنگی و همراه نمونهٔ تصویری؛ مسیرها و متن بیرونی محدود شده‌اند.",
+      "key_takeaway_fa": "تجمیع تصویری به جای سیم‌کشی، دسته‌های اتاق را برجسته می‌کند.",
+      "analyst_assessment_fa": "نوشته یا عدد نمایشی عکس‌ها معیار فنی یا شماره پروژهٔ NSP نیست.",
+      "strengths_fa": [
+        "تجمیع تصویری به جای سیم‌کشی، دسته‌های اتاق را برجسته می‌کند."
+      ],
+      "weaknesses_fa": [
+        "نوشته یا عدد نمایشی عکس‌ها معیار فنی یا شماره پروژهٔ NSP نیست."
+      ],
+      "nsp_visual_adaptation_fa": "برای NSP برچسب و عکس مجاز از دسته‌های واقعی؛ نه انتقال سازگاری، معماری اتصال یا مشخصات منبع.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I003",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I004",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I005"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "LEGRAND34-P007-E01",
+        "LEGRAND34-P007-E02",
+        "LEGRAND34-P007-E03"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-02",
+        "LEGRAND34-CLAIM-10"
+      ],
+      "related_source_context_set_refs": [
+        "LEGRAND34-CTX-GRMS-ARCHITECTURE",
+        "LEGRAND34-CTX-ROOM-SCENARIOS"
+      ],
+      "crop_context_note_fa": "فقط بلوک دسته‌بندی و عکس؛ پیوندهای معماری و نقشهٔ نصب در برش ارائه نمی‌شوند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، فونت‌ها، تجهیزات و نشان‌ها متعلق به Legrand یا دارندگان حقوق‌اند؛ فقط مرجع طراحی داخلی. بازنشر، دستور فنی و هیچ قابلیت یا ادعای تجاری NSP از آن‌ها تأیید نمی‌شود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قیاس قاب‌های هم‌وزن برای تصاویر ظاهر",
+      "mapping_reason_fa": "عکس، مدل و رنگ/جنس محصول منبع NSP نیست؛ دارایی NSP لازم است.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "image_id": "LEGRAND34_102_finish_photo_strip",
+      "idea_id": "LEGRAND34_102_finish_photo_strip",
+      "pdf_page": 102,
+      "source_pdf_page": 102,
+      "source_text_fr": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "S04 visual provenance only; no extra quote or capability",
+      "source_image_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_102_finish_photo_strip.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_102_finish_photo_strip.webp",
+      "image_asset_sha256": "99b1b3d4cd42ebe36379a263bb50c94179943e7bfef39bd466b228695268d5e7",
+      "image_blob_sha": "3b7b775753930fa2565a49741b69dbd0a0d3ca76",
+      "normalized_pdf_crop": [
+        0.065,
+        0.508,
+        0.497,
+        0.603
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "rendered_size_px": [
+        1001,
+        312
+      ],
+      "presentation_style": "three_consistent_finish_photo_tiles",
+      "visual_style_type": "three_consistent_finish_photo_tiles",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "سه تصویر هم‌قاب از ظاهر محصول",
+      "observed_content_in_crop_fa": "سه عکس کوچک با کادربندی هم‌تراز؛ اطلاعات تماس، متن فروش و توضیح فنی بیرون‌اند.",
+      "key_takeaway_fa": "ظاهر سه گزینه در قاب‌های هم‌وزن مقایسه می‌شود.",
+      "analyst_assessment_fa": "مواد، ابعاد و موجودی محصول از ظاهر عکس نتیجه نشوند.",
+      "strengths_fa": [
+        "ظاهر سه گزینه در قاب‌های هم‌وزن مقایسه می‌شود."
+      ],
+      "weaknesses_fa": [
+        "مواد، ابعاد و موجودی محصول از ظاهر عکس نتیجه نشوند."
+      ],
+      "nsp_visual_adaptation_fa": "هم‌فاصله‌گی و برش متوازن را با نمونهٔ واقعی NSP اجرا کن؛ تصاویر، مواد و گزینه‌های Legrand مجوز عرضه یا استفاده نمی‌دهند.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "crop_context_note_fa": "مرجع جزئی از شیوهٔ ارائه؛ متن رقیب، شماره مدل و تصویر محصول برای ادعای فنی وارد نشده‌اند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، فونت‌ها، تجهیزات و نشان‌ها متعلق به Legrand یا دارندگان حقوق‌اند؛ فقط مرجع طراحی داخلی. بازنشر، دستور فنی و هیچ قابلیت یا ادعای تجاری NSP از آن‌ها تأیید نمی‌شود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قیاس شکل ناوبری نرم‌افزار",
+      "mapping_reason_fa": "فقط توصیف پوستهٔ بصری؛ نه استفاده از تصویر یا تأیید نرم‌افزار.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "image_id": "LEGRAND34_130_software_navigation_header",
+      "idea_id": "LEGRAND34_130_software_navigation_header",
+      "pdf_page": 130,
+      "source_pdf_page": 130,
+      "source_text_fr": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "S04 visual provenance only; no extra quote or capability",
+      "source_image_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_130_software_navigation_header.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_130_software_navigation_header.webp",
+      "image_asset_sha256": "6731b4fa978c3fc85a6366bd678e7af0da290a4cb14f8763493ad2c37ccbd7a6",
+      "image_blob_sha": "a1c6f273c7e954c020bd9f28100e9f2e9402d589",
+      "normalized_pdf_crop": [
+        0.065,
+        0.302,
+        0.938,
+        0.402
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "rendered_size_px": [
+        1081,
+        176
+      ],
+      "presentation_style": "software_header_with_strip_navigation_and_document_caption",
+      "visual_style_type": "software_header_with_strip_navigation_and_document_caption",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "سربرگ ناوبری نرم‌افزار با عنوان مستند",
+      "observed_content_in_crop_fa": "عنوان نمای آغازین و بالای پوستهٔ نرم‌افزار در یک نوار؛ ردیف‌های پروژه و تنظیمات بیرون‌اند.",
+      "key_takeaway_fa": "عنوان مستند را می‌توان با پوستهٔ نرم‌افزار جفت کرد.",
+      "analyst_assessment_fa": "نسخه و حالت فعال UI یا امکان تنظیم شبکه از نوار عنوان نتیجه نشود.",
+      "strengths_fa": [
+        "عنوان مستند را می‌توان با پوستهٔ نرم‌افزار جفت کرد."
+      ],
+      "weaknesses_fa": [
+        "نسخه و حالت فعال UI یا امکان تنظیم شبکه از نوار عنوان نتیجه نشود."
+      ],
+      "nsp_visual_adaptation_fa": "در تصویر نرم‌افزار مجاز NSP، عنوان نما را جدا از نام محصول و ناوبری نشان بده.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I021",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I022"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "LEGRAND34-P130-E01",
+        "LEGRAND34-P130-E02",
+        "LEGRAND34-P130-E03",
+        "LEGRAND34-P130-E04",
+        "LEGRAND34-P130-E05"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-07"
+      ],
+      "related_source_context_set_refs": [
+        "LEGRAND34-CTX-HRC-UI"
+      ],
+      "crop_context_note_fa": "مرجع جزئی از شیوهٔ ارائه؛ متن رقیب، شماره مدل و تصویر محصول برای ادعای فنی وارد نشده‌اند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، فونت‌ها، تجهیزات و نشان‌ها متعلق به Legrand یا دارندگان حقوق‌اند؛ فقط مرجع طراحی داخلی. بازنشر، دستور فنی و هیچ قابلیت یا ادعای تجاری NSP از آن‌ها تأیید نمی‌شود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قیاس کارت‌های آیکن ماژول",
+      "mapping_reason_fa": "دوباره‌طراحی با آیکون و دادهٔ اختصاصی؛ نه کپی نما یا سازگاری.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "image_id": "LEGRAND34_133_module_icon_gallery",
+      "idea_id": "LEGRAND34_133_module_icon_gallery",
+      "pdf_page": 133,
+      "source_pdf_page": 133,
+      "source_text_fr": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "S04 visual provenance only; no extra quote or capability",
+      "source_image_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_133_module_icon_gallery.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_133_module_icon_gallery.webp",
+      "image_asset_sha256": "d56c418c7a2d6798dcd5c31f5aa060d09a5cf04fdeac64dcfbc2e2e146dcfa2c",
+      "image_blob_sha": "de77c66ac961f78b3ef769ceb9228cc072ea4efc",
+      "normalized_pdf_crop": [
+        0.067,
+        0.443,
+        0.936,
+        0.684
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "rendered_size_px": [
+        1081,
+        425
+      ],
+      "presentation_style": "module_icon_cards_and_category_rules",
+      "visual_style_type": "module_icon_cards_and_category_rules",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "چیدمان کارت‌های نماد در نمای ماژول‌ها",
+      "observed_content_in_crop_fa": "نمایش شبکهٔ کارت‌های آیکن و دسته‌بندی در بدنهٔ سفید؛ سربرگ پروژه، شمارهٔ نمایشی اتاق و توضیح تنظیمات پایین خارج‌اند.",
+      "key_takeaway_fa": "آیکن و خط جداکننده سبب خوانایی گروه‌ها می‌شوند.",
+      "analyst_assessment_fa": "برچسب دکمه‌ها، شرح اتصال یا دستور تنظیم نیست؛ امکان معادل NSP تأیید نشده.",
+      "strengths_fa": [
+        "آیکن و خط جداکننده سبب خوانایی گروه‌ها می‌شوند."
+      ],
+      "weaknesses_fa": [
+        "برچسب دکمه‌ها، شرح اتصال یا دستور تنظیم نیست؛ امکان معادل NSP تأیید نشده."
+      ],
+      "nsp_visual_adaptation_fa": "از کارت با عنوان کوتاه و آیکن مستقل در تصویر واقعی NSP استفاده شود؛ نام و عمل دکمه‌های منبع قابلیت NSP نیستند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I024"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "LEGRAND34-P133-E01"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-07"
+      ],
+      "related_source_context_set_refs": [
+        "LEGRAND34-CTX-HRC-UI"
+      ],
+      "crop_context_note_fa": "بدنهٔ کارت‌ها بدون عنوان پروژه، شناسه اتاق و پنجره تنظیم؛ هیچ جریان اجرایی یا مراحل بازنشر نشده‌اند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، فونت‌ها، تجهیزات و نشان‌ها متعلق به Legrand یا دارندگان حقوق‌اند؛ فقط مرجع طراحی داخلی. بازنشر، دستور فنی و هیچ قابلیت یا ادعای تجاری NSP از آن‌ها تأیید نمی‌شود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قیاس ستون‌بندی نقش‌ها",
+      "mapping_reason_fa": "فقط سازمان بصری؛ نه ترتیب فرایند، مسئولیت اجرایی یا وعدهٔ خدمات.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "research_proposal_only_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "image_id": "LEGRAND34_177_commissioning_role_headers",
+      "idea_id": "LEGRAND34_177_commissioning_role_headers",
+      "pdf_page": 177,
+      "source_pdf_page": 177,
+      "source_text_fr": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "S04 visual provenance only; no extra quote or capability",
+      "source_image_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_177_commissioning_role_headers.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_177_commissioning_role_headers.webp",
+      "image_asset_sha256": "31222e61f1fd7aa82771fbb30605ef59f5df364f8279f91892e8cf4008da9f1f",
+      "image_blob_sha": "c5d979073b84bf8b76375dfa68993d025785eac8",
+      "normalized_pdf_crop": [
+        0.066,
+        0.019,
+        0.935,
+        0.133
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "rendered_size_px": [
+        1081,
+        201
+      ],
+      "presentation_style": "role_columns_as_process_header_only",
+      "visual_style_type": "role_columns_as_process_header_only",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "تیتر فرایند و چهار ستون نقش",
+      "observed_content_in_crop_fa": "عنوان فرایند و سطر اول عنوان چهار نقش؛ توضیح هر نقش، ردیف‌ها و دستورها خارج‌اند.",
+      "key_takeaway_fa": "برچسب نقش‌ها قبل از متن بدنه دیده می‌شود.",
+      "analyst_assessment_fa": "تعداد ستون و عنوان عملی فقط پس از اثبات نقش‌های NSP نگه داشته شوند.",
+      "strengths_fa": [
+        "برچسب نقش‌ها قبل از متن بدنه دیده می‌شود."
+      ],
+      "weaknesses_fa": [
+        "تعداد ستون و عنوان عملی فقط پس از اثبات نقش‌های NSP نگه داشته شوند."
+      ],
+      "nsp_visual_adaptation_fa": "اگر نقش‌های واقعی NSP مستند شد، عنوان‌ها با ستون‌های راست‌به‌چپ تنظیم شوند؛ فرایند و تعهد رقیب منتقل نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I029"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "LEGRAND34-P177-E01"
+      ],
+      "source_claim_gate_refs": [
+        "LEGRAND34-CLAIM-09"
+      ],
+      "related_source_context_set_refs": [
+        "LEGRAND34-CTX-LIFECYCLE"
+      ],
+      "crop_context_note_fa": "فقط سربخش و سطر قابل نمایش عنوان نقش‌ها؛ دستورهای فرایند خارج‌اند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، فونت‌ها، تجهیزات و نشان‌ها متعلق به Legrand یا دارندگان حقوق‌اند؛ فقط مرجع طراحی داخلی. بازنشر، دستور فنی و هیچ قابلیت یا ادعای تجاری NSP از آن‌ها تأیید نمی‌شود."
+    },
+    {
+      "company": "Legrand",
+      "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+      "source_language": "fr",
+      "source_document_number": "SYS219006",
+      "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+      "pdf_filename": "34_Legrand_Work C04.3.pdf",
+      "original_printed_page": null,
+      "citation_numbering": "physical_PDF_page_only",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "مرجع عمومی واژه‌نامهٔ فشرده",
+      "mapping_reason_fa": "سبک مرور اصطلاح‌ها میان‌سکشنی است؛ سکشن یا تعریف جدید NSP پیشنهاد نشود.",
+      "unassigned_reason_fa": "سبک مرور اصطلاح‌ها میان‌سکشنی است؛ سکشن یا تعریف جدید NSP پیشنهاد نشود.",
+      "requires_NSP_validation_fa": "هر متن فنی، کارکرد، تصویر، تعهد یا اصطلاح قابل ارائهٔ NSP به مدرک مستقل و اجازهٔ نشر نیاز دارد.",
+      "role_status": "proposal_or_context_not_approved",
+      "selection_state": "not_selected",
+      "mapping_status": "internal_reference_only_no_target_pending_S06",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "image_id": "LEGRAND34_206_glossary_strip",
+      "idea_id": "LEGRAND34_206_glossary_strip",
+      "pdf_page": 206,
+      "source_pdf_page": 206,
+      "source_text_fr": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "S04 visual provenance only; no extra quote or capability",
+      "source_image_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_206_glossary_strip.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_206_glossary_strip.webp",
+      "image_asset_sha256": "9cb3a8615dba34691aa2d52c3b73877a77c02b1295fa71249ffffeceb49a5dc6",
+      "image_blob_sha": "15e8d46954ee10255eb51c2d04b7637fbfcd4cf5",
+      "normalized_pdf_crop": [
+        0.064,
+        0.299,
+        0.496,
+        0.572
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "rendered_size_px": [
+        1001,
+        895
+      ],
+      "presentation_style": "compact_expansion_glossary_type_stack",
+      "visual_style_type": "compact_expansion_glossary_type_stack",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "واژه‌نامهٔ فشرده با ردیف‌های اصطلاح",
+      "observed_content_in_crop_fa": "نام کوتاه و معادل در فهرستی عمودی، بدون عکس و با فاصله‌گذاری برای خوانایی؛ فقط قسمتی از واژه‌نامه.",
+      "key_takeaway_fa": "کوتاه‌نویسی واژه و معادل، مرور را سریع می‌کند.",
+      "analyst_assessment_fa": "اصطلاح و قابلیت عملی یکی نیست؛ واژگان و معادل به زبان هدف کنترل شوند.",
+      "strengths_fa": [
+        "کوتاه‌نویسی واژه و معادل، مرور را سریع می‌کند."
+      ],
+      "weaknesses_fa": [
+        "اصطلاح و قابلیت عملی یکی نیست؛ واژگان و معادل به زبان هدف کنترل شوند."
+      ],
+      "nsp_visual_adaptation_fa": "واژه‌های لازم را در بلوک مستقل با تایپوگرافی فارسی سازگار کن؛ تعریف، قابلیت یا تعهد محصول نیست.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "crop_context_note_fa": "مرجع جزئی از شیوهٔ ارائه؛ متن رقیب، شماره مدل و تصویر محصول برای ادعای فنی وارد نشده‌اند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، فونت‌ها، تجهیزات و نشان‌ها متعلق به Legrand یا دارندگان حقوق‌اند؛ فقط مرجع طراحی داخلی. بازنشر، دستور فنی و هیچ قابلیت یا ادعای تجاری NSP از آن‌ها تأیید نمی‌شود."
+    }
+  ],
+  "style_family_mapping_index": [
+    {
+      "style_id": "vertical_title_with_product_montage",
+      "title_fa": "جلد فنی با تیتر عمودی و مونتاژ محصول",
+      "representative_reference_ids": [
+        "LEGRAND34_001_vertical_technical_cover"
+      ],
+      "physical_pdf_pages": [
+        1
+      ],
+      "key_takeaway_fa": "راهنمای فنی و عکس‌ها دو سطح سلسله‌مراتب دارند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "COVER"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "two_column_topic_navigation_with_section_cues",
+      "title_fa": "راهنمای موضوعی دو ستونه",
+      "representative_reference_ids": [
+        "LEGRAND34_003_theme_navigation"
+      ],
+      "physical_pdf_pages": [
+        3
+      ],
+      "key_takeaway_fa": "خط و دو ستون، مرور سریع موضوعی را ممکن می‌کنند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "HOTEL_OVERVIEW"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "compact_definition_band_with_negative_space",
+      "title_fa": "معرفی کوتاه اصطلاح با فضای تنفس",
+      "representative_reference_ids": [
+        "LEGRAND34_006_definition_block"
+      ],
+      "physical_pdf_pages": [
+        6
+      ],
+      "key_takeaway_fa": "فضای سفید تعریف کوتاه را از متن فنی جدا می‌کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "pastel_topic_panel_with_stacked_room_labels",
+      "title_fa": "پنل رنگی با برچسب‌های دستهٔ اتاق",
+      "representative_reference_ids": [
+        "LEGRAND34_007_room_topic_panel"
+      ],
+      "physical_pdf_pages": [
+        7
+      ],
+      "key_takeaway_fa": "تجمیع تصویری به جای سیم‌کشی، دسته‌های اتاق را برجسته می‌کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "three_consistent_finish_photo_tiles",
+      "title_fa": "سه تصویر هم‌قاب از ظاهر محصول",
+      "representative_reference_ids": [
+        "LEGRAND34_102_finish_photo_strip"
+      ],
+      "physical_pdf_pages": [
+        102
+      ],
+      "key_takeaway_fa": "ظاهر سه گزینه در قاب‌های هم‌وزن مقایسه می‌شود.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "software_header_with_strip_navigation_and_document_caption",
+      "title_fa": "سربرگ ناوبری نرم‌افزار با عنوان مستند",
+      "representative_reference_ids": [
+        "LEGRAND34_130_software_navigation_header"
+      ],
+      "physical_pdf_pages": [
+        130
+      ],
+      "key_takeaway_fa": "عنوان مستند را می‌توان با پوستهٔ نرم‌افزار جفت کرد.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "module_icon_cards_and_category_rules",
+      "title_fa": "چیدمان کارت‌های نماد در نمای ماژول‌ها",
+      "representative_reference_ids": [
+        "LEGRAND34_133_module_icon_gallery"
+      ],
+      "physical_pdf_pages": [
+        133
+      ],
+      "key_takeaway_fa": "آیکن و خط جداکننده سبب خوانایی گروه‌ها می‌شوند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "role_columns_as_process_header_only",
+      "title_fa": "تیتر فرایند و چهار ستون نقش",
+      "representative_reference_ids": [
+        "LEGRAND34_177_commissioning_role_headers"
+      ],
+      "physical_pdf_pages": [
+        177
+      ],
+      "key_takeaway_fa": "برچسب نقش‌ها قبل از متن بدنه دیده می‌شود.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "CHALLENGES_VALUE"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "compact_expansion_glossary_type_stack",
+      "title_fa": "واژه‌نامهٔ فشرده با ردیف‌های اصطلاح",
+      "representative_reference_ids": [
+        "LEGRAND34_206_glossary_strip"
+      ],
+      "physical_pdf_pages": [
+        206
+      ],
+      "key_takeaway_fa": "کوتاه‌نویسی واژه و معادل، مرور را سریع می‌کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": true,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    }
+  ],
+  "unassigned_text_reasons": [
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I016",
+      "pdf_page": 119,
+      "reason_fa": "کارت مجازیِ وضعیت اتاق در این گزیده، کلید دیجیتال، اعتبارنامه یا دسترسی نیست."
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I030",
+      "pdf_page": 184,
+      "reason_fa": "برای فصل، دستور اجرایی، پوشش یا SLA پیشنهاد نشود."
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I031",
+      "pdf_page": 189,
+      "reason_fa": "سطح جداگانهٔ منبع است، نه معیار تداوم، پشتیبانی یا تنظیم شبکه."
+    }
+  ],
+  "unassigned_visual_reasons": [
+    {
+      "image_id": "LEGRAND34_206_glossary_strip",
+      "pdf_page": 206,
+      "reason_fa": "سبک مرور اصطلاح‌ها میان‌سکشنی است؛ سکشن یا تعریف جدید NSP پیشنهاد نشود."
+    }
+  ],
+  "not_proposed_sections_fa": {
+    "IDENTITY_PAGES": "راهنمای موضوعی، صفحهٔ تنفس یا صفحهٔ ثابت نمی‌سازد.",
+    "COMPANY_INTRO": "راهنمای رقیب سند شرکت NSP نیست.",
+    "IPTV": "صفحهٔ ۲۵ فقط اشاره در نمودار غیرجامع است.",
+    "PUBLIC_AREAS": "شاهد مستقل دربارهٔ مشاعات NSP موجود نیست.",
+    "CASE_STUDIES": "نمونهٔ رقیب، پروژهٔ واقعی یا قابل نشر NSP نیست."
+  },
+  "source_claim_gates_snapshot": [
+    {
+      "id": "LEGRAND34-CLAIM-01",
+      "kind": "source_manual_and_named_brochures_distinct",
+      "physical_pdf_pages": [
+        1,
+        208
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P001-E02",
+        "LEGRAND34-P001-E03",
+        "LEGRAND34-P208-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "راهنمای فنی فرانسوی SYS219006 چاپ ۲۰۱۹ است و با کاتالوگ ۲۰۲۵ یا بروشور ۲۰۱۶ Legrand ادغام نمی‌شود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "LEGRAND34-CLAIM-02",
+      "kind": "GRMS_scope_and_service_labels",
+      "physical_pdf_pages": [
+        6,
+        7
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P006-E01",
+        "LEGRAND34-P006-E02",
+        "LEGRAND34-P007-E01",
+        "LEGRAND34-P007-E02",
+        "LEGRAND34-P007-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "تعریف و برچسب‌های نمایشی متعلق به متن مرجع‌اند؛ از آن دامنهٔ عملکرد، پشتیبانی تجهیزات یا کارکرد NSP نتیجه نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I002",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I003",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I004",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I005"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "LEGRAND34-CLAIM-03",
+      "kind": "hotel_architecture_is_conceptual_and_non_exhaustive",
+      "physical_pdf_pages": [
+        8,
+        9,
+        24,
+        25
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P008-E01",
+        "LEGRAND34-P008-E02",
+        "LEGRAND34-P009-E01",
+        "LEGRAND34-P024-E01",
+        "LEGRAND34-P025-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "اجزای دیده‌شده در نمونهٔ غیرجامع معماری، فهرست پروتکل، نقشهٔ شبکه یا احراز یکپارچگی NSP نیستند. IPTV ذکرِ زمینه است، نه مدرک سرویس.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I006",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I007",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I013"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "LEGRAND34-CLAIM-04",
+      "kind": "local_or_central_HVAC_alternatives",
+      "physical_pdf_pages": [
+        16,
+        18,
+        20
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P016-E01",
+        "LEGRAND34-P018-E01",
+        "LEGRAND34-P020-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "گرمایش/سرمایش محلی و مرکزی دو الگوی مجزا در سند هستند؛ تنظیم، سازگاری دستگاه یا راهکار تأییدشدهٔ NSP نتیجه نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I010",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I011",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I012"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "LEGRAND34-CLAIM-05",
+      "kind": "thermostat_source_concepts_not_operational_procedure",
+      "physical_pdf_pages": [
+        108,
+        117
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P108-E01",
+        "LEGRAND34-P108-E02",
+        "LEGRAND34-P117-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "فقط واژه‌ها و عنوان سناریو ثبت شده‌اند؛ روش عمل، تنظیمات، مقدار، سیم‌کشی و عملکرد فنی NSP ثبت نشده.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I014",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I015"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "LEGRAND34-CLAIM-06",
+      "kind": "virtual_badge_labels_not_access_workaround",
+      "physical_pdf_pages": [
+        119
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P119-E01",
+        "LEGRAND34-P119-E02",
+        "LEGRAND34-P119-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "عنوان سناریوهای ورود/خروج در سند منبع‌اند. این گزیده‌ها دلالت بر شیوهٔ کار، دسترسی، ترتیب محرک یا کارکرد NSP ندارند.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I016",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I017",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I018"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "LEGRAND34-CLAIM-07",
+      "kind": "HRC_UI_and_project_model_only",
+      "physical_pdf_pages": [
+        125,
+        128,
+        130,
+        131,
+        133,
+        134
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P125-E01",
+        "LEGRAND34-P128-E01",
+        "LEGRAND34-P130-E01",
+        "LEGRAND34-P130-E02",
+        "LEGRAND34-P130-E03",
+        "LEGRAND34-P130-E04",
+        "LEGRAND34-P130-E05",
+        "LEGRAND34-P131-E01",
+        "LEGRAND34-P133-E01",
+        "LEGRAND34-P134-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "عنوان نرم‌افزار و نام نماها فقط زمینهٔ قیاس رابط‌کاربری‌اند. مسیر نصب، عملِ شبکه و نسخهٔ فعلی احراز یا بازنشر نشده.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I019",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I020",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I021",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I022",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I023",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I024",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I025"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "LEGRAND34-CLAIM-08",
+      "kind": "scenario_UI_labels_not_configuration_steps",
+      "physical_pdf_pages": [
+        138,
+        152,
+        156
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P138-E01",
+        "LEGRAND34-P138-E02",
+        "LEGRAND34-P152-E01",
+        "LEGRAND34-P152-E02",
+        "LEGRAND34-P156-E01",
+        "LEGRAND34-P156-E02"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "صرفاً سرفصل و نام مفاهیم برنامه‌ریزی/فهرست‌ها؛ از این‌ها دستور اجرایی، قابلیت جاری Legrand یا قابلیت NSP نتیجه نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I026",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I027",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I028"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "LEGRAND34-CLAIM-09",
+      "kind": "commissioning_diagnostics_labels_only",
+      "physical_pdf_pages": [
+        177,
+        184,
+        189
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P177-E01",
+        "LEGRAND34-P184-E01",
+        "LEGRAND34-P189-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "تقسیم‌بندی ظاهری خدمت به جای راهنمای پیکربندی، عیب‌یابی عملیاتی، دستور، نفوذ یا SLA.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I029",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I030",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I031"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "LEGRAND34-CLAIM-10",
+      "kind": "definitions_not_NSP_implementation",
+      "physical_pdf_pages": [
+        206
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P206-E01",
+        "LEGRAND34-P206-E02",
+        "LEGRAND34-P206-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "تعریف اصطلاح‌ها شاهد امکان عملکرد واقعی NSP نیست و نباید شاهد فنی تلقی شود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I004"
+      ],
+      "not_an_independent_feature": true
+    }
+  ],
+  "structured_context_handling": {
+    "source_context_bindings": [
+      {
+        "id": "LEGRAND34-CTX-GRMS-ARCHITECTURE",
+        "pdf_pages": [
+          6,
+          7,
+          8,
+          9,
+          12,
+          16,
+          18,
+          20,
+          24,
+          25
+        ],
+        "source_fragment_refs": [
+          "LEGRAND34-P006-E01",
+          "LEGRAND34-P006-E02",
+          "LEGRAND34-P007-E01",
+          "LEGRAND34-P007-E02",
+          "LEGRAND34-P007-E03",
+          "LEGRAND34-P008-E01",
+          "LEGRAND34-P008-E02",
+          "LEGRAND34-P009-E01",
+          "LEGRAND34-P012-E01",
+          "LEGRAND34-P016-E01",
+          "LEGRAND34-P018-E01",
+          "LEGRAND34-P020-E01",
+          "LEGRAND34-P024-E01",
+          "LEGRAND34-P025-E01"
+        ],
+        "scope_fa": "چیدمان تجربهٔ اتاق و روایت چندسامانه‌ای جدا؛ حالت محلی/مرکزی دو بدیل منبع‌اند، نه گسترش سامانه‌های NSP.",
+        "approved_NSP_capability": false,
+        "not_additional_features": true
+      },
+      {
+        "id": "LEGRAND34-CTX-ROOM-SCENARIOS",
+        "pdf_pages": [
+          7,
+          108,
+          117,
+          119,
+          206
+        ],
+        "source_fragment_refs": [
+          "LEGRAND34-P007-E02",
+          "LEGRAND34-P108-E02",
+          "LEGRAND34-P117-E01",
+          "LEGRAND34-P119-E01",
+          "LEGRAND34-P119-E02",
+          "LEGRAND34-P119-E03",
+          "LEGRAND34-P206-E02",
+          "LEGRAND34-P206-E03"
+        ],
+        "scope_fa": "روایت موضوع و نام سناریو یا خدمت؛ دستور اجرا، مدل، کلید دیجیتال و رفتار قطعی NSP ادعا نمی‌شود.",
+        "approved_NSP_capability": false,
+        "not_additional_features": true
+      },
+      {
+        "id": "LEGRAND34-CTX-HRC-UI",
+        "pdf_pages": [
+          125,
+          128,
+          130,
+          131,
+          133,
+          134,
+          138,
+          152,
+          156
+        ],
+        "source_fragment_refs": [
+          "LEGRAND34-P125-E01",
+          "LEGRAND34-P128-E01",
+          "LEGRAND34-P130-E01",
+          "LEGRAND34-P130-E02",
+          "LEGRAND34-P130-E03",
+          "LEGRAND34-P130-E04",
+          "LEGRAND34-P130-E05",
+          "LEGRAND34-P131-E01",
+          "LEGRAND34-P133-E01",
+          "LEGRAND34-P134-E01",
+          "LEGRAND34-P138-E01",
+          "LEGRAND34-P138-E02",
+          "LEGRAND34-P152-E01",
+          "LEGRAND34-P152-E02",
+          "LEGRAND34-P156-E01",
+          "LEGRAND34-P156-E02"
+        ],
+        "scope_fa": "نام نرم‌افزار و الگوی نماها فقط مصدر مقایسه‌اند. گزینهٔ رابط، امکانات تأییدنشده و دستور کار شبکه یکی نیستند.",
+        "approved_NSP_capability": false,
+        "not_additional_features": true
+      },
+      {
+        "id": "LEGRAND34-CTX-LIFECYCLE",
+        "pdf_pages": [
+          177,
+          184,
+          189
+        ],
+        "source_fragment_refs": [
+          "LEGRAND34-P177-E01",
+          "LEGRAND34-P184-E01",
+          "LEGRAND34-P189-E01"
+        ],
+        "scope_fa": "تفکیک تیترهای راه‌اندازی و عیب‌یابی، نه ارائهٔ دستور عملی، سرویس تأییدشده، محدودیت یا SLA.",
+        "approved_NSP_capability": false,
+        "not_additional_features": true
+      },
+      {
+        "id": "LEGRAND34-CTX-CONTENTS",
+        "pdf_pages": [
+          1,
+          3,
+          4,
+          206,
+          208
+        ],
+        "source_fragment_refs": [
+          "LEGRAND34-P001-E01",
+          "LEGRAND34-P001-E02",
+          "LEGRAND34-P001-E03",
+          "LEGRAND34-P003-E01",
+          "LEGRAND34-P004-E01",
+          "LEGRAND34-P206-E01",
+          "LEGRAND34-P208-E01"
+        ],
+        "scope_fa": "فراداده، اصطلاح و پیمایش جدا از محصول. C04.3 بخشی از نام فایل است؛ نسخهٔ چاپی SYS219006 و سپتامبر ۲۰۱۹.",
+        "approved_NSP_capability": false,
+        "not_additional_features": true
+      }
+    ],
+    "excluded_S02_fragments": [
+      {
+        "S02_fragment_ref": "LEGRAND34-P001-E01",
+        "pdf_page": 1,
+        "reason": "original_title_or_manual_type_not_a_capability",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": []
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P001-E02",
+        "pdf_page": 1,
+        "reason": "original_title_or_manual_type_not_a_capability",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-01"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P001-E03",
+        "pdf_page": 1,
+        "reason": "original_title_or_manual_type_not_a_capability",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-01"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P004-E01",
+        "pdf_page": 4,
+        "reason": "supporting_heading_or_scope_condition_not_an_independent_record",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": []
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P006-E01",
+        "pdf_page": 6,
+        "reason": "supporting_heading_or_scope_condition_not_an_independent_record",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-02"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P008-E01",
+        "pdf_page": 8,
+        "reason": "supporting_heading_or_scope_condition_not_an_independent_record",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-03"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P025-E01",
+        "pdf_page": 25,
+        "reason": "IPTV_visual_component_label_not_independent_scope_claim",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-03"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P108-E01",
+        "pdf_page": 108,
+        "reason": "supporting_heading_or_scope_condition_not_an_independent_record",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-05"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P130-E02",
+        "pdf_page": 130,
+        "reason": "supporting_heading_or_scope_condition_not_an_independent_record",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-07"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P130-E03",
+        "pdf_page": 130,
+        "reason": "supporting_heading_or_scope_condition_not_an_independent_record",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-07"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P130-E04",
+        "pdf_page": 130,
+        "reason": "supporting_heading_or_scope_condition_not_an_independent_record",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-07"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P138-E02",
+        "pdf_page": 138,
+        "reason": "supporting_heading_or_scope_condition_not_an_independent_record",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-08"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P152-E02",
+        "pdf_page": 152,
+        "reason": "supporting_heading_or_scope_condition_not_an_independent_record",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-08"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P156-E02",
+        "pdf_page": 156,
+        "reason": "supporting_heading_or_scope_condition_not_an_independent_record",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-08"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P206-E01",
+        "pdf_page": 206,
+        "reason": "glossary_context_not_another_room_feature",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-10"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P206-E02",
+        "pdf_page": 206,
+        "reason": "glossary_context_not_another_room_feature",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-10"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P206-E03",
+        "pdf_page": 206,
+        "reason": "glossary_context_not_another_room_feature",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-10"
+        ]
+      },
+      {
+        "S02_fragment_ref": "LEGRAND34-P208-E01",
+        "pdf_page": 208,
+        "reason": "printed_edition_provenance_only",
+        "source_quote_location": "S02 short French excerpts",
+        "S03_feature_record_created": false,
+        "source_claim_gate_refs": [
+          "LEGRAND34-CLAIM-01"
+        ]
+      }
+    ],
+    "excluded_S04_reference_overview": {
+      "asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_S04_reference_overview.webp",
+      "asset_filename": "LEGRAND34_S04_reference_overview.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 29742,
+      "asset_sha256": "60622465e3ff3342e1a8dd9ed15b06ded339df50e5f7af179b46bf2cc3b8631d",
+      "git_blob_sha": "a9474aabe9447543fd323bf5aa0df671df202341",
+      "rendered_size_px": [
+        888,
+        738
+      ],
+      "base64_length": 39656,
+      "role": "derived_navigation_overview_not_a_source_reference",
+      "source_reference_ids": [
+        "LEGRAND34_001_vertical_technical_cover",
+        "LEGRAND34_003_theme_navigation",
+        "LEGRAND34_006_definition_block",
+        "LEGRAND34_007_room_topic_panel",
+        "LEGRAND34_102_finish_photo_strip",
+        "LEGRAND34_130_software_navigation_header",
+        "LEGRAND34_133_module_icon_gallery",
+        "LEGRAND34_177_commissioning_role_headers",
+        "LEGRAND34_206_glossary_strip"
+      ],
+      "counted_in_reference_images": false
+    },
+    "not_an_additional_feature_or_asset": true,
+    "edition_is_distinct_from_2025_and_2016_Legrand": true
+  },
+  "target_layout_constraint_fa": "A4 عمودیِ منبع فقط برای قیاس سلسله‌مراتب. در A4 افقیِ زونکنی NSP، زمینه تا لبهٔ صحافی پیوسته و لوگو/اطلاعات مهم بیرون ناحیه امن حلقه باشد؛ عرض یا چاپ‌پذیری بی‌آزمون اعلام نشود.",
+  "S06_priorities_fa": [
+    "بازخوانی اصل همان SYS219006 و تطبیق فیزیکی ۲۰۸ صفحه، ۴۹ گزیده و ۹ برش.",
+    "HVAC محلی/مرکزی، Virtual Keycard، برچسب IPTV، عیب‌یابی و نقش‌ها فقط با قیود ثبت‌شده باقی بمانند.",
+    "کنترل عدم انتساب به NSP، عدم حق نشر، و تمایز پیوند تصویری هم‌صفحه از شاهد فنی."
+  ],
+  "next_stage": "S06 — ممیزی منبع و نتیجه",
+  "next_queue_cursor": {
+    "document_index": 11,
+    "document_id": "34",
+    "step_index": 5,
+    "step_id": "S06"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false
+}
