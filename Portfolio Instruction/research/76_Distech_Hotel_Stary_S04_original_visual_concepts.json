@@ -1,0 +1,239 @@
+{
+  "schema": "nsp-catalog-research-s04-original-visual-concepts-v1",
+  "stage": "S04",
+  "stage_key": "visuals_and_styles",
+  "status": "completed_original_nonreplica_editorial_concepts",
+  "document_id": "76",
+  "source_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+  "source_language": "en",
+  "visual_label_language": "fa",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "date_checked": "2026-11-24",
+  "base_main_commit": "4530c4120eca3f9806b5575be1a5448d974b45c1",
+  "source_pdf": {
+    "filename": "76_Distech_Controls_Work C47.1.pdf",
+    "title": "Hotel Stary",
+    "cover_location": "Krakow, Poland",
+    "physical_pdf_pages": 1,
+    "file_size_bytes": 1438918,
+    "sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+    "printed_version_or_date_verified": false
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/76_Distech_Hotel_Stary_S01_source_inventory.json",
+      "blob_sha": "73b155e7170684427f0515ad7e56f012ed9c1fd6",
+      "commit_sha": "0e14b10ed1a8997b676e4523601ff17a0c01f3ce"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/76_Distech_Hotel_Stary_S02_page_linked_summaries.json",
+      "blob_sha": "4b84406e2ce686af88b230a5b56a359be8588314",
+      "commit_sha": "ec954ec47ce6b995314a7d94f58fb3483c1ccbcb"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/76_Distech_Hotel_Stary_S03_editorial_summaries_fa.json",
+      "blob_sha": "b9887d732fc53cee6e2b5e688620a3d123de719a",
+      "commit_sha": "ad7c0d8c517c6dd535ea62d590f7da82aa28bab8"
+    }
+  },
+  "visual_source_boundary": {
+    "public_repo": true,
+    "source_redistribution_rights_verified": false,
+    "original_diagram_count": 2,
+    "actual_vendor_reference_image_count": 0,
+    "stock_image_count": 0,
+    "source_logo_or_layout_replica_count": 0,
+    "source_PDF_assets_count": 0,
+    "designs_are_our_editorial_concepts_not_vendor_visuals": true
+  },
+  "design_guidance_fa": [
+    "برای معرفی بازسازی، صورت مسئله، نقشِ نسبت‌داده‌شده و شواهد را جدا نشان دهید.",
+    "بلوک‌های موضوعی را بدون پیکان یا نمودار فنی نگه دارید؛ ظاهر از سازگاری یا نتیجهٔ اجرا خبر نمی‌دهد.",
+    "در نمونهٔ افقی A4، متن و لوگو از سمت حلقه‌ها دور باشند و پس‌زمینه بدون نوار سفید ادامه یابد."
+  ],
+  "original_design_concepts": [
+    {
+      "id": "DISTECH76_C01_refurbishment_scope_card",
+      "reference_order": 1,
+      "kind": "original_nonreplica_editorial_diagram",
+      "title_fa": "شناسنامهٔ بازسازی",
+      "style_family": "refurbishment_editorial_ledger",
+      "theme_inspiration_physical_pdf_pages": [
+        1
+      ],
+      "theme_source_evidence_ids": [
+        "DISTECH76-P001-N02",
+        "DISTECH76-P001-N03"
+      ],
+      "theme_source_claim_gate_ids": [
+        "DISTECH76-CLAIM-01",
+        "DISTECH76-CLAIM-02"
+      ],
+      "related_internal_S03_theme_record_ids": [
+        "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I001",
+        "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I002"
+      ],
+      "source_pdf_sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+      "page_relation": "Cites independent summaries of themes on page 1, not a graphic or layout present in the source.",
+      "primary_source_image_page": null,
+      "source_pdf_crop": null,
+      "uses_no_source_or_stock_pixels_or_logos": true,
+      "no_layout_replica_and_no_vendor_prose": true,
+      "claims_no_procedure_or_interoperability_or_performance": true,
+      "original_visual_idea_fa": "سه ردیف برای زمینه، نقش گزارش‌شده و شاهد؛ ساختارِ پرونده بدون عکس و لوگو.",
+      "analyst_assessment_fa": "فرم برای توضیح مرز و انتساب یک پروژه مناسب است.",
+      "risks_or_misreading_fa": "نه اثبات پروژه، مساحت سیستم، نصب یا نقش NSP.",
+      "NSP_capability_verified": false,
+      "requires_NSP_approval_for_adoption": true,
+      "mapping_status": "pending_S05",
+      "app_display_policy": "Track as original research concept; not an image extracted from PDF and not a feature image link.",
+      "permitted_use": "internal_research_concept_only_unselected",
+      "asset_path": "Portfolio Instruction/research/assets/distech76/DISTECH76_C01_refurbishment_scope_card.webp",
+      "asset_filename": "DISTECH76_C01_refurbishment_scope_card.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 17290,
+      "asset_sha256": "ab468ab7793b2b97694598d15b856eaf7f28b5f55c46255f03c4da6c942c02c8",
+      "git_blob_sha": "7759b424d3891233bb7eb66c909b235bbf53b635",
+      "rendered_size_px": [
+        1040,
+        585
+      ],
+      "base64_length": 23056,
+      "render_spec": {
+        "template_key": "ledger",
+        "headline_fa": "شناسنامهٔ بازسازی",
+        "eyebrow_fa": "خوانندهٔ پرونده چه بداند؟",
+        "description_fa": "زمینهٔ ملک، نقش گزارش‌شده و حد تأیید جدا بمانند.",
+        "labels_fa": [
+          "زمینهٔ ملک",
+          "نقش گزارش‌شده",
+          "حدِ تأیید"
+        ],
+        "notes_fa": [
+          "موضوع تغییر، نه پوشش تجهیزات",
+          "گوینده و منبع انتساب",
+          "شاهد مستقل، در صورت وجود"
+        ],
+        "ending_fa": "نه معرفیِ پروژهٔ اجراشده و نه اعلام نقش برای NSP",
+        "palette": "Independent olive, antique white and amber",
+        "renderer": "Pillow RGB, DejaVu Sans RAQM Persian RTL, WebP quality 84 method 6."
+      },
+      "visual_QA_status": "visually reviewed original artifact only; no source photos, layouts or operational diagram"
+    },
+    {
+      "id": "DISTECH76_C02_existing_new_topic_pair",
+      "reference_order": 2,
+      "kind": "original_nonreplica_editorial_diagram",
+      "title_fa": "دو موضوع، دو مرز",
+      "style_family": "building_room_editorial_boundary_pair",
+      "theme_inspiration_physical_pdf_pages": [
+        1
+      ],
+      "theme_source_evidence_ids": [
+        "DISTECH76-P001-N04",
+        "DISTECH76-P001-N05",
+        "DISTECH76-P001-N06"
+      ],
+      "theme_source_claim_gate_ids": [
+        "DISTECH76-CLAIM-03"
+      ],
+      "related_internal_S03_theme_record_ids": [
+        "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I003",
+        "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I004"
+      ],
+      "source_pdf_sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+      "page_relation": "Cites independent summaries of themes on page 1, not a graphic or layout present in the source.",
+      "primary_source_image_page": null,
+      "source_pdf_crop": null,
+      "uses_no_source_or_stock_pixels_or_logos": true,
+      "no_layout_replica_and_no_vendor_prose": true,
+      "claims_no_procedure_or_interoperability_or_performance": true,
+      "original_visual_idea_fa": "دو قاب کنار هم، بدون پیکان یا تصویر سخت‌افزار؛ یک قاب برای روایت ساختمان و دیگری برای عنوان‌های کنترل اتاق.",
+      "analyst_assessment_fa": "قاب‌ها طبقه‌بندی‌اند، نه معماری، اتصال یا شماتیک.",
+      "risks_or_misreading_fa": "از هم‌جواری دو قاب نباید پوشش، هماهنگی، عملکرد یا قابلیت NSP برداشت شود.",
+      "NSP_capability_verified": false,
+      "requires_NSP_approval_for_adoption": true,
+      "mapping_status": "pending_S05",
+      "app_display_policy": "Track as original research concept; not an image extracted from PDF and not a feature image link.",
+      "permitted_use": "internal_research_concept_only_unselected",
+      "asset_path": "Portfolio Instruction/research/assets/distech76/DISTECH76_C02_existing_new_topic_pair.webp",
+      "asset_filename": "DISTECH76_C02_existing_new_topic_pair.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 20214,
+      "asset_sha256": "302291ac84527c8af7d57b92636dbf1b53ebfcce3d3686adfbe2e709a36de10a",
+      "git_blob_sha": "aeabd1788f78e12d2ba75078d9f2b2dc55466535",
+      "rendered_size_px": [
+        1040,
+        585
+      ],
+      "base64_length": 26952,
+      "render_spec": {
+        "template_key": "panels",
+        "headline_fa": "دو موضوع، دو مرز",
+        "eyebrow_fa": "مرور یک راهکار بدون جزئیات اجرا",
+        "description_fa": "روایتِ سامانه‌های ساختمان را از موضوع‌های اتاق جدا کنید.",
+        "labels_fa": [
+          "موضوع سامانهٔ ساختمان",
+          "موضوع‌های کنترل اتاق"
+        ],
+        "notes_fa": [
+          "زمینهٔ موجود و تغییرِ گزارش‌شده",
+          "فقط دسته‌ها، نه پوشش و تنظیم"
+        ],
+        "ending_fa": "هیچ اتصال، سازگاری، روند اجرایی یا نتیجه‌ای نشان داده نشده",
+        "palette": "Independent olive, antique white and amber",
+        "renderer": "Pillow RGB, DejaVu Sans RAQM Persian RTL, WebP quality 84 method 6."
+      },
+      "visual_QA_status": "visually reviewed original artifact only; no source photos, layouts or operational diagram"
+    }
+  ],
+  "style_catalog": [
+    {
+      "style_id": "refurbishment_editorial_ledger",
+      "title_fa": "شناسنامهٔ بازسازی",
+      "original_design_concept_ids": [
+        "DISTECH76_C01_refurbishment_scope_card"
+      ],
+      "theme_physical_pdf_pages": [
+        1
+      ],
+      "placement": "pending_S05",
+      "style_only": true
+    },
+    {
+      "style_id": "building_room_editorial_boundary_pair",
+      "title_fa": "دو موضوع، دو مرز",
+      "original_design_concept_ids": [
+        "DISTECH76_C02_existing_new_topic_pair"
+      ],
+      "theme_physical_pdf_pages": [
+        1
+      ],
+      "placement": "pending_S05",
+      "style_only": true
+    }
+  ],
+  "bank_display_boundary": {
+    "source_reference_images": 0,
+    "original_concepts_tracked_separately": true,
+    "no_concepts_in_source_extracted_image_count": true,
+    "no_concepts_in_existing_renderer_PDF_image_links": true,
+    "keep_application_untouched": true,
+    "admission_to_S07_requires_final_audit": true
+  },
+  "next_stage": "S05 — تطبیق با نوع سکشن NSP",
+  "next_queue_cursor": {
+    "document_index": 19,
+    "document_id": "76",
+    "step_index": 4,
+    "step_id": "S05"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
