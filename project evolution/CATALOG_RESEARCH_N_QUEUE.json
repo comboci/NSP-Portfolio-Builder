@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 67,
+    "total_pending_steps": 66,
     "completed_new_documents": 8,
     "remaining_new_documents": 10
   },
   "cursor": {
     "document_index": 11,
     "document_id": "34",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -1380,11 +1380,23 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/34_Legrand_SYS219006_S04_visual_styles.json",
+            "Portfolio Instruction/research/assets/legrand34/LEGRAND34_001_vertical_technical_cover.webp",
+            "Portfolio Instruction/research/assets/legrand34/LEGRAND34_003_theme_navigation.webp",
+            "Portfolio Instruction/research/assets/legrand34/LEGRAND34_006_definition_block.webp",
+            "Portfolio Instruction/research/assets/legrand34/LEGRAND34_007_room_topic_panel.webp",
+            "Portfolio Instruction/research/assets/legrand34/LEGRAND34_102_finish_photo_strip.webp",
+            "Portfolio Instruction/research/assets/legrand34/LEGRAND34_130_software_navigation_header.webp",
+            "Portfolio Instruction/research/assets/legrand34/LEGRAND34_133_module_icon_gallery.webp",
+            "Portfolio Instruction/research/assets/legrand34/LEGRAND34_177_commissioning_role_headers.webp",
+            "Portfolio Instruction/research/assets/legrand34/LEGRAND34_206_glossary_strip.webp",
+            "Portfolio Instruction/research/assets/legrand34/LEGRAND34_S04_reference_overview.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "9a7a44a1726c69caeefcef6a1883510d180c3ecf",
+          "notes": "۹ برش انتخابی در ۹ سبک از اصل SYS219006 و یک نمای کلی خارج از شمار ثبت شدند؛ ۱۷ صفحه برای گزینش دیداری بررسی شدند، نه همهٔ ۲۰۸ صفحه. نقشهٔ سیم‌کشی، تنظیمات اجرایی و داده‌های پروژه خارج برش‌اند. فقط پژوهش طراحی؛ بانک V11 و برنامه ثابت‌اند."
         },
         {
           "id": "S05",
@@ -1414,7 +1426,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S03"
+      "last_successful_stage": "S04"
     },
     {
       "id": "46",
