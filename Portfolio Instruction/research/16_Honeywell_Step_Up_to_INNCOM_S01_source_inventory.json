@@ -1,0 +1,240 @@
+{
+  "schema": "nsp-catalog-research-s01-source-inventory-v1",
+  "stage": "S01",
+  "stage_key": "source_inventory",
+  "status": "completed_source_verified",
+  "document_id": "16",
+  "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+  "date_checked": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "df3e5d803c4dcb13a55498cc0b62e89e7ff8d98f",
+  "continuation_recovery": {
+    "previous_completed_stage": "15/S07",
+    "previous_stage_commit": "f660e6b2d8928ca9a817f5313a1f04535852f36a",
+    "previous_stage_manifest": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S07_ingest_manifest.json",
+    "feature_library_version": 9,
+    "catalogs": 9,
+    "features": 523,
+    "images": 102,
+    "feature_json_js_data_equal": true,
+    "previous_stage_reexecuted": false
+  },
+  "source": {
+    "company": "Honeywell",
+    "publisher": "Honeywell Hospitality / Honeywell International Inc.",
+    "publisher_evidence_pdf_pages": [
+      1,
+      4
+    ],
+    "title": "Step Up to INNCOM",
+    "cover_product_line_en": "INNCOM Energy Management & Hospitality IoT Solutions",
+    "title_evidence_pdf_page": 2,
+    "filename": "16_Honeywell_Step Up to INNCOM.pdf",
+    "library_path": "/16_Honeywell_Step Up to INNCOM.pdf",
+    "file_size_bytes": 1487482,
+    "queued_file_size_bytes": 1487482,
+    "file_size_matches_queue": true,
+    "sha256": "d9047197296ea81a34778fb79473c59e40d3b92d46d43aebac9d185aa7707303",
+    "availability": "exact named Library upload verified against byte size, hash, PDF metadata and all page coverage",
+    "external_publisher_site_verification_performed": false,
+    "pdf_format": "PDF 1.4",
+    "pdf_page_count": 4,
+    "page_width_pt": 612,
+    "page_height_pt": 792,
+    "page_size_name": "US Letter",
+    "orientation": "portrait",
+    "all_pages_same_size": true,
+    "all_pages_unrotated": true,
+    "encrypted": false,
+    "pdf_creator": "Adobe InDesign 19.0 (Macintosh)",
+    "pdf_producer": "Adobe PDF Library 17.0",
+    "pdf_metadata_creation_date": "D:20231018124526-04'00'",
+    "pdf_metadata_modification_date": "D:20231018124528-04'00'",
+    "printed_document_code": "IN-BR-StepUptoINNCOM",
+    "document_number": "01-00139",
+    "printed_edition_date": "2023-10-12",
+    "printed_edition_evidence_pdf_page": 4,
+    "first_publication_date_verified": false,
+    "metadata_creation_distinct_from_printed_edition": true,
+    "language": "en",
+    "pages_with_native_text": 4,
+    "link_annotation_count": 1,
+    "bookmarks": 0,
+    "embedded_raster_occurrences": 5,
+    "image_occurrences_not_visual_idea_count": true,
+    "original_pdf_modified": false
+  },
+  "pagination": {
+    "canonical_reference": "physical PDF page, 1-indexed",
+    "pdf_page_label_rules": [],
+    "no_external_master_copy_comparison": true,
+    "distinct_original_renders": 4
+  },
+  "page_index": [
+    {
+      "pdf_page": 1,
+      "rect_pt": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "native_characters": 118,
+      "native_words": 17,
+      "native_text_sha256": "d7a97b206db87a7bc71ef56fc8153275e2da91bca18b3caf635019779a2a60c7",
+      "embedded_raster_occurrences": 1,
+      "link_annotation_count": 0,
+      "low_resolution_raster_sha256": "18d8809c5d0fd20831fbf821de110fc89280fef6011f84b2847df25d9ac33f18",
+      "key": "COVER",
+      "heads": [
+        "COMFORT AND CONTROL FOR GUESTS",
+        "SAVINGS AND CONVENIENCE FOR HOTELS",
+        "INNCOM Energy Management & Hospitality IoT Solutions"
+      ],
+      "note": "عکس اتاق با تیتر تقابلی مهمان/هتل و هویت ناشر؛ نه ادعای نتیجه برای NSP.",
+      "native_text_hash_basis": "PyMuPDF text, stripped, UTF-8",
+      "visually_checked_in_source_contact_sheet": true
+    },
+    {
+      "pdf_page": 2,
+      "rect_pt": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "native_characters": 2786,
+      "native_words": 406,
+      "native_text_sha256": "4d45f62cbdb91a60638b2db4c3f9da3a46f0e9b0e6471dc7177736e1bb4c221d",
+      "embedded_raster_occurrences": 1,
+      "link_annotation_count": 0,
+      "low_resolution_raster_sha256": "94ad32ac24638e69d8dbb6f7430a30f8223be23a5d33784643fec305e4125a05",
+      "key": "SOLUTION_AND_ENERGY_COMPARISON",
+      "heads": [
+        "STEP UP TO INNCOM",
+        "Scalable EMS & IoT Platform",
+        "Energy Savings on Guestroom HVAC"
+      ],
+      "note": "متن چندستونی، نمونهٔ مقیاس‌پذیری و ادغام، عکس زمینهٔ هتل و جدول HVAC. در S02 ترتیب ستون‌ها و جای اعداد، شرایط پاورقی و تفکیک آمار اشغال از صرفه‌جویی را بررسی کن.",
+      "native_text_hash_basis": "PyMuPDF text, stripped, UTF-8",
+      "visually_checked_in_source_contact_sheet": true
+    },
+    {
+      "pdf_page": 3,
+      "rect_pt": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "native_characters": 3201,
+      "native_words": 461,
+      "native_text_sha256": "baf87a73181d645ba0ab565e77d69c1cdee03f58c1ed6454750160f640650d3a",
+      "embedded_raster_occurrences": 3,
+      "link_annotation_count": 0,
+      "low_resolution_raster_sha256": "287168ad7ff30a14a2a3400db3b46db0c81e920ec5b0b5144445be9583e286fc",
+      "key": "SYSTEM_SOFTWARE_AND_SERVICES",
+      "heads": [
+        "E7 SERIES EMS THERMOSTATS",
+        "GUESTROOM CUSTOMIZATIONS",
+        "INNCONTROL™ 5 EMS",
+        "Push Notifications & EMS Analytics",
+        "WE’RE AT YOUR SERVICE"
+      ],
+      "note": "نمایش تجهیزات و بن‌مایهٔ اتاق از نرم‌افزار INNcontrol 5، اطلاع‌رسانی، تحلیل و خدمات پشتیبانی جدا شود. ظاهر داشبورد فقط نمونهٔ بصری است؛ مشخصات مدل‌های سخت‌افزاری منتقل نشوند.",
+      "native_text_hash_basis": "PyMuPDF text, stripped, UTF-8",
+      "visually_checked_in_source_contact_sheet": true
+    },
+    {
+      "pdf_page": 4,
+      "rect_pt": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "native_characters": 579,
+      "native_words": 73,
+      "native_text_sha256": "8d8ece6f98347c084a84e0e1ec3261fb955cc1970875ed698cf08f9b47ad16f3",
+      "embedded_raster_occurrences": 0,
+      "link_annotation_count": 1,
+      "low_resolution_raster_sha256": "210a3ce64bb782e46d711475845158ed50f1ee4e125816c4c6dd62f78ab073b2",
+      "key": "PLATFORM_SUMMARY",
+      "heads": [
+        "CAPABILITIES AND SAVINGS WITH ROOM TO GROW",
+        "THE INNCOM HOSPITALITY PLATFORM"
+      ],
+      "note": "صفحهٔ واپسین با خلاصهٔ راهکار، دعوت به اقدام، نام ناشر و فرادادهٔ چاپ. ادعاهای خدمات، مقیاس و دسترسی خارج از شواهد NSP‌اند؛ اطلاعات تماس وارد بانک نشود.",
+      "native_text_hash_basis": "PyMuPDF text, stripped, UTF-8",
+      "visually_checked_in_source_contact_sheet": true
+    }
+  ],
+  "separate_document_check": {
+    "related_catalog_already_in_bank": "CAT001_HONEYWELL_INNCOM_HOSPITALITY_IOT",
+    "this_printed_document_number": "01-00139",
+    "visual_layout_and_numeric_rows_need_source_specific_audit": true,
+    "note_fa": "بانک قبلی Honeywell سند جداگانه‌ای است. در صفحهٔ ۲ این فایل جدول HVAC و پاورقی آن را از روی همین نسخه کنترل کن؛ اعداد جدول سند پیشین به این سند منتقل نشوند.",
+    "distinct_documents_with_same_printed_date_must_not_be_merged": true,
+    "prior_document_number_from_bank_provenance": "01-00149"
+  },
+  "restrictions_and_audit_flags": [
+    {
+      "pdf_pages": [
+        2
+      ],
+      "note": "Energy-savings percentages are Honeywell HVAC runtime reduction versus ETM with stated occupancy and hotel-size scope, not verified electrical savings or NSP performance. Hotel occupancy statistics are a different claim."
+    },
+    {
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "note": "Separate architecture and vendor marketing from supported NSP GRMS; no product specifications, integration claims, hardware lists or standards claims imported."
+    },
+    {
+      "pdf_pages": [
+        3
+      ],
+      "note": "INNcontrol 5, NOC, notifications and analytics are source-specific; identify separately from product images and dark dashboard screenshot."
+    },
+    {
+      "pdf_pages": [
+        4
+      ],
+      "note": "Keep edition evidence separate from PDF generation timestamp, link data and contact directory."
+    }
+  ],
+  "visual_and_content_inventory_method": {
+    "Library_native_text_coverage": 4,
+    "original_contact_sheet_pages_seen": 4,
+    "all_source_rasters_distinct": true,
+    "visual_crops_exported": false,
+    "local_contact_sheet_not_added_to_repository": true,
+    "no_OCR_required_for_native_body_text": true,
+    "screen_labels_and_chart_symbols_need_later_manual_check": true
+  },
+  "project_alignment": {
+    "editorial_structure_file": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "editorial_structure_revision": "2.3.0",
+    "NSP_capabilities_verified": 0,
+    "feature_bank_changed": false,
+    "application_source_changed": false
+  },
+  "stage_contract": {
+    "scope": "Source identity and inventory only; no S02 extraction, translation, visual assets or mapping.",
+    "next_queue_cursor": {
+      "document_index": 9,
+      "document_id": "16",
+      "step_index": 1,
+      "step_id": "S02"
+    },
+    "next_stage": "S02 — استخراج متن دقیق",
+    "next_stage_executed": false
+  }
+}
