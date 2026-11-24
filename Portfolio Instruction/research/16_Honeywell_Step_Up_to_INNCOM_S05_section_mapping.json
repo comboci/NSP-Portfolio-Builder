@@ -1,0 +1,2200 @@
+{
+  "schema": "nsp-catalog-research-s05-section-mapping-v1",
+  "stage": "S05",
+  "stage_key": "section_type_mapping",
+  "status": "completed_proposed_only_pending_S06",
+  "document_id": "16",
+  "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+  "verified_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "11bb529ae7baa0e5d13a17dceaff2069a5036c9b",
+  "source_document": {
+    "company": "Honeywell",
+    "publisher": "Honeywell Hospitality / Honeywell International Inc.",
+    "title": "Step Up to INNCOM",
+    "filename": "16_Honeywell_Step Up to INNCOM.pdf",
+    "pdf_pages": 4,
+    "file_size_bytes": 1487482,
+    "source_sha256": "d9047197296ea81a34778fb79473c59e40d3b92d46d43aebac9d185aa7707303",
+    "printed_document_code": "IN-BR-StepUptoINNCOM",
+    "document_number": "01-00139",
+    "printed_edition_date": "2023-10-12",
+    "publication_evidence_pdf_page": 4,
+    "S01_inventory": "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S01_source_inventory.json",
+    "S01_inventory_git_blob_sha": "5b0f836bfa42b239c044a14ad1e2ac8e2f37bcb8",
+    "S01_inventory_commit": "a8f8ac370a81305d4df06d67414464183ff153ff",
+    "S02_text_evidence": "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S02_english_text.json",
+    "S02_artifact_commit": "65b4e3af089d191565efba6ac0fd8fa01424a133",
+    "S02_git_blob_sha": "75ed84b8a77772eeca0e15e8e461541b959a199e",
+    "S02_total_fragments": 29,
+    "S03_English_source": "Exact unchanged short S02 excerpts; physical PDF page is canonical."
+  },
+  "upstream_artifacts": {
+    "S03": {
+      "path": "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S03_features_fa.json",
+      "git_blob_sha": "8f45321ab8b69e873d49293531001a1ec445fef1"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S04_visual_styles.json",
+      "git_blob_sha": "58fd20550fbc9923e9018215303bd7c056ac70f0"
+    }
+  },
+  "canonical_editorial_policy": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "git_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "valid_research_section_ids": [
+      "COVER",
+      "IDENTITY_PAGES",
+      "COMPANY_INTRO",
+      "CHALLENGES_VALUE",
+      "HOTEL_OVERVIEW",
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS",
+      "CASE_STUDIES"
+    ],
+    "section_snapshot": [
+      {
+        "section_id": "COVER",
+        "title_fa": "صفحه اول کاتالوگ",
+        "row": 2,
+        "content_level": null
+      },
+      {
+        "section_id": "IDENTITY_PAGES",
+        "title_fa": "صفحات تنفس",
+        "row": 3,
+        "content_level": null
+      },
+      {
+        "section_id": "COMPANY_INTRO",
+        "title_fa": "معرفی شرکت NSP",
+        "row": 4,
+        "content_level": "COMPANY"
+      },
+      {
+        "section_id": "CHALLENGES_VALUE",
+        "title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+        "row": 5,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "HOTEL_OVERVIEW",
+        "title_fa": "نقشهٔ جامع راهکارهای هتلی",
+        "row": 6,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "GRMS",
+        "title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+        "row": 7,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "IPTV",
+        "title_fa": "تلویزیون و خدمات تعاملی هتل (IPTV)",
+        "row": 8,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "PUBLIC_AREAS",
+        "title_fa": "کنترل هوشمند مشاعات هتل",
+        "row": 9,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "CASE_STUDIES",
+        "title_fa": "رزومه و پروژه‌های اجراشده",
+        "row": 10,
+        "content_level": null
+      }
+    ],
+    "legacy_aliases_for_reading_only": {
+      "BISMILLAH": "IDENTITY_PAGES"
+    },
+    "binder_cover_excluded_from_research_mapping": true,
+    "CROSS_SECTION_STYLE_is_tag_not_section": true,
+    "idea_attachment_deferred_to_defrag": true,
+    "proposed_roles_are_not_approved_subsections": true,
+    "systems_in_scope": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ]
+  },
+  "rules": {
+    "never_infer_NSP_capability": true,
+    "competitive_software_in_GRMS_only": true,
+    "keep_three_systems_only": true,
+    "printed_page_attachment_deferred": true,
+    "keep_catalog_01_00139_and_01_00149_independent": true,
+    "HVAC_runtime_not_energy_cost_or_NSP_performance": true,
+    "new_publication_rights_granted": false
+  },
+  "statistics": {
+    "S03_records": 18,
+    "mapped_text": 15,
+    "unassigned_text": 3,
+    "source_text_distribution": {
+      "COVER": 2,
+      "HOTEL_OVERVIEW": 1,
+      "CHALLENGES_VALUE": 1,
+      "GRMS": 11,
+      "UNASSIGNED_INTERNAL_RESEARCH": 3
+    },
+    "S03_exclusions_preserved_upstream": 11,
+    "visuals": 7,
+    "mapped_visuals": 5,
+    "style_only_visuals": 2,
+    "visual_distribution": {
+      "COVER": 1,
+      "CHALLENGES_VALUE": 1,
+      "UNASSIGNED_INTERNAL_RESEARCH": 2,
+      "GRMS": 2,
+      "HOTEL_OVERVIEW": 1
+    },
+    "style_families": 7,
+    "overview_excluded_from_visual_idea_count": true,
+    "source_claim_gates": 9,
+    "source_context_groups": 5,
+    "NSP_capabilities_verified": 0,
+    "pages_attached": 0
+  },
+  "mappings": [
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I001",
+      "idea_id": "HONEYWELL16-S05-T001",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 1,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P01-E01",
+      "source_S02_fragment_index": 1,
+      "source_text_en": "COMFORT AND CONTROL FOR GUESTS",
+      "translation_fa": "آسایش و کنترل برای مهمانان",
+      "source_type": "marketing_slogan",
+      "research_category_id": "marketing_slogans",
+      "research_section_group": "COVER",
+      "source_editorial_limits_fa": "نیمهٔ اول تیتر کاور و مخاطب مهمان؛ ادعای سنجش آسایش یا عملکرد NSP نیست.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [],
+      "source_context_set_refs": [
+        "HONEYWELL16-CTX-COVER"
+      ],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P01-E02"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": null,
+      "target_section_type": "COVER",
+      "target_section_title_fa": "صفحه اول کاتالوگ",
+      "target_section_row": 2,
+      "target_section_types": [
+        "COVER"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نیمهٔ مهمان از یک تیتر دوجانبه؛ برای کاور فقط الگوی تقارن مخاطب، نه تضمین آسایش یا کنترل.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "نیمهٔ مهمان از یک تیتر دوجانبه؛ برای کاور فقط الگوی تقارن مخاطب، نه تضمین آسایش یا کنترل.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "HONEYWELL16_01_cover_guest_hotel"
+      ],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": "HONEYWELL16-CTX-COVER",
+      "key_takeaway_fa": "نیمهٔ مهمان از یک تیتر دوجانبه؛ برای کاور فقط الگوی تقارن مخاطب، نه تضمین آسایش یا کنترل."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I002",
+      "idea_id": "HONEYWELL16-S05-T002",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 1,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P01-E02",
+      "source_S02_fragment_index": 2,
+      "source_text_en": "SAVINGS AND CONVENIENCE FOR HOTELS",
+      "translation_fa": "صرفه‌جویی و آسودگیِ کار برای هتل‌ها",
+      "source_type": "marketing_slogan",
+      "research_category_id": "marketing_slogans",
+      "research_section_group": "COVER",
+      "source_editorial_limits_fa": "نیمهٔ دوم همان تیتر و نگاه بهره‌بردار؛ نوع، اندازه و نتیجهٔ صرفه‌جویی از تیتر به دست نمی‌آید. در نگارش NSP متن مستقل لازم است.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [],
+      "source_context_set_refs": [
+        "HONEYWELL16-CTX-COVER"
+      ],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P01-E01"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": null,
+      "target_section_type": "COVER",
+      "target_section_title_fa": "صفحه اول کاتالوگ",
+      "target_section_row": 2,
+      "target_section_types": [
+        "COVER"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نیمهٔ مدیریت هتل از همان تیتر؛ از ترجمهٔ مستقیم و وعدهٔ صرفه‌جویی بدون آزمون NSP استفاده نشود.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "نیمهٔ مدیریت هتل از همان تیتر؛ از ترجمهٔ مستقیم و وعدهٔ صرفه‌جویی بدون آزمون NSP استفاده نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "HONEYWELL16_01_cover_guest_hotel"
+      ],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": "HONEYWELL16-CTX-COVER",
+      "key_takeaway_fa": "نیمهٔ مدیریت هتل از همان تیتر؛ از ترجمهٔ مستقیم و وعدهٔ صرفه‌جویی بدون آزمون NSP استفاده نشود."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I003",
+      "idea_id": "HONEYWELL16-S05-T003",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 1,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P01-E03",
+      "source_S02_fragment_index": 3,
+      "source_text_en": "INNCOM Energy Management & Hospitality IoT Solutions",
+      "translation_fa": "راهکارهای مدیریت انرژی و اینترنت اشیای هتلی INNCOM",
+      "source_type": "intro",
+      "research_category_id": "narrative_structure",
+      "research_section_group": "COVER",
+      "source_editorial_limits_fa": "هویت و دامنهٔ خط راهکار ناشر را مشخص می‌کند و به معنی عرضهٔ همهٔ آن اجزا در NSP نیست.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [],
+      "source_context_set_refs": [
+        "HONEYWELL16-CTX-COVER"
+      ],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": "SOLUTION",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "الگوی معرفی دامنهٔ راهکار در یک خط؛ فهرست واقعی NSP فقط سه سامانهٔ مصوب با شواهد مستقل است.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "الگوی معرفی دامنهٔ راهکار در یک خط؛ فهرست واقعی NSP فقط سه سامانهٔ مصوب با شواهد مستقل است.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "HONEYWELL16_01_cover_guest_hotel"
+      ],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "الگوی معرفی دامنهٔ راهکار در یک خط؛ فهرست واقعی NSP فقط سه سامانهٔ مصوب با شواهد مستقل است."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I004",
+      "idea_id": "HONEYWELL16-S05-T004",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 2,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P02-E01",
+      "source_S02_fragment_index": 1,
+      "source_text_en": "STEP UP TO INNCOM",
+      "translation_fa": "به INNCOM ارتقا دهید",
+      "source_type": "marketing_slogan",
+      "research_category_id": "marketing_slogans",
+      "research_section_group": "SOLUTION_AND_ENERGY_COMPARISON",
+      "source_editorial_limits_fa": "تیتر دعوت منبع است؛ اشاره به ارتقا، تعهد مهاجرت، سطح خدمات یا سازگاری NSP نیست.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": "SOLUTION",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "الگوی دعوت کوتاه به بررسی وضعیت فعلی و نیاز هتل؛ ارتقا یا سازگاری محصول NSP در منبع تأیید نشده.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "الگوی دعوت کوتاه به بررسی وضعیت فعلی و نیاز هتل؛ ارتقا یا سازگاری محصول NSP در منبع تأیید نشده.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "HONEYWELL16_02_intro_lead"
+      ],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "الگوی دعوت کوتاه به بررسی وضعیت فعلی و نیاز هتل؛ ارتقا یا سازگاری محصول NSP در منبع تأیید نشده."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I005",
+      "idea_id": "HONEYWELL16-S05-T005",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 2,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P02-E02",
+      "source_S02_fragment_index": 2,
+      "source_text_en": "OCCUPANCY-BASED ENERGY MANAGEMENT",
+      "translation_fa": "مدیریت انرژی بر اساس حضور",
+      "source_type": "intro",
+      "research_category_id": "energy_hvac",
+      "research_section_group": "SOLUTION_AND_ENERGY_COMPARISON",
+      "source_editorial_limits_fa": "تیتر موضوعی؛ حضور فیزیکی اتاق با اجاره‌نرفته بودنِ آن یکی نیست. آمار مربوط به بازار آمریکا در زمینهٔ منبع باقی بماند.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-04",
+        "HONEYWELL16-CLAIM-01"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL16-CTX-MARKET"
+      ],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P02-E03",
+        "HONEYWELL16-P02-E12"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "عنوان پژوهشی مدیریت انرژی اتاق با توجه به حضور؛ اجاره‌نرفتن، حضور، دادهٔ بازار و عملکرد NSP یک مفهوم نیستند.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "عنوان پژوهشی مدیریت انرژی اتاق با توجه به حضور؛ اجاره‌نرفتن، حضور، دادهٔ بازار و عملکرد NSP یک مفهوم نیستند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "عنوان پژوهشی مدیریت انرژی اتاق با توجه به حضور؛ اجاره‌نرفتن، حضور، دادهٔ بازار و عملکرد NSP یک مفهوم نیستند."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I006",
+      "idea_id": "HONEYWELL16-S05-T006",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 2,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P02-E04",
+      "source_S02_fragment_index": 4,
+      "source_text_en": "Scalable EMS & IoT Platform",
+      "translation_fa": "بستر مقیاس‌پذیر مدیریت انرژی و اینترنت اشیا",
+      "source_type": "architecture",
+      "research_category_id": "architecture_deployment",
+      "research_section_group": "SOLUTION_AND_ENERGY_COMPARISON",
+      "source_editorial_limits_fa": "الگوی روایت از پیکربندی مستقل تا راهکار شبکه‌ای در منبع؛ دامنهٔ واقعی معماری NSP جداگانه مستند شود.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL16-CTX-NETWORKED-OCCUPANCY"
+      ],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P02-E06"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "الگوی توضیح مقیاس معماری اتاق و جداکردن حالت مستقل/شبکه‌ای؛ گزینه‌های واقعی NSP در ممیزی فنی جدا تعیین می‌شوند.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "الگوی توضیح مقیاس معماری اتاق و جداکردن حالت مستقل/شبکه‌ای؛ گزینه‌های واقعی NSP در ممیزی فنی جدا تعیین می‌شوند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "الگوی توضیح مقیاس معماری اتاق و جداکردن حالت مستقل/شبکه‌ای؛ گزینه‌های واقعی NSP در ممیزی فنی جدا تعیین می‌شوند."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I007",
+      "idea_id": "HONEYWELL16-S05-T007",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 2,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P02-E05",
+      "source_S02_fragment_index": 5,
+      "source_text_en": "advanced occupancy detection",
+      "translation_fa": "تشخیص پیشرفتهٔ حضور",
+      "source_type": "scenario",
+      "research_category_id": "room_scenarios",
+      "research_section_group": "SOLUTION_AND_ENERGY_COMPARISON",
+      "source_editorial_limits_fa": "شرح کوتاه سناریوی رقیب در متن راهکار است؛ «پیشرفته» نوع الگوریتم، دقت، تجهیزات یا قابلیت NSP را ثابت نمی‌کند.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL16-CTX-NETWORKED-OCCUPANCY"
+      ],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P02-E06"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "مقایسهٔ روایت تشخیص حضور در سناریوی اتاق؛ آشکارسازی، دقت، سخت‌افزار یا محرک NSP از این گزیده ثابت نمی‌شود.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "مقایسهٔ روایت تشخیص حضور در سناریوی اتاق؛ آشکارسازی، دقت، سخت‌افزار یا محرک NSP از این گزیده ثابت نمی‌شود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "مقایسهٔ روایت تشخیص حضور در سناریوی اتاق؛ آشکارسازی، دقت، سخت‌افزار یا محرک NSP از این گزیده ثابت نمی‌شود."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I008",
+      "idea_id": "HONEYWELL16-S05-T008",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 2,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P02-E08",
+      "source_S02_fragment_index": 8,
+      "source_text_en": "INNcontrol software and the Deep Mesh Network",
+      "translation_fa": "نرم‌افزار INNcontrol و شبکهٔ Deep Mesh",
+      "source_type": "architecture",
+      "research_category_id": "architecture_deployment",
+      "research_section_group": "SOLUTION_AND_ENERGY_COMPARISON",
+      "source_editorial_limits_fa": "نام نرم‌افزار و شبکهٔ ناشر در بخش ادغام هستند، نه نتیجهٔ آزمون ارتباط یا قابلیت اتصال NSP. مشخصات شبکه و فهرست دستگاه‌ها وارد نشده‌اند.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-05"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P02-E07"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "معماری نام‌دار Honeywell صرفاً مثال مقایسه‌ای برای توضیح نقش نرم‌افزار و شبکهٔ یک راهکار اتاق؛ مدرک سازگاری NSP نیست.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "معماری نام‌دار Honeywell صرفاً مثال مقایسه‌ای برای توضیح نقش نرم‌افزار و شبکهٔ یک راهکار اتاق؛ مدرک سازگاری NSP نیست.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "معماری نام‌دار Honeywell صرفاً مثال مقایسه‌ای برای توضیح نقش نرم‌افزار و شبکهٔ یک راهکار اتاق؛ مدرک سازگاری NSP نیست."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I009",
+      "idea_id": "HONEYWELL16-S05-T009",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 2,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P02-E09",
+      "source_S02_fragment_index": 9,
+      "source_text_en": "Energy Savings on Guestroom HVAC",
+      "translation_fa": "صرفه‌جویی انرژی در تهویهٔ اتاق مهمان",
+      "source_type": "energy_claim",
+      "research_category_id": "performance_evidence",
+      "research_section_group": "SOLUTION_AND_ENERGY_COMPARISON",
+      "source_editorial_limits_fa": "ترجمه عنوان جدول ناشر. طبق پاورقی، کمیت واقعی کاهش زمان کارکرد HVAC نسبت به ETM در شرایط منبع است، نه درصد برق، هزینه یا عملکرد NSP. جدول 01-00139 با 01-00149 ادغام نشود.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-02",
+        "HONEYWELL16-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL16-CTX-ENERGY-CHART"
+      ],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P02-E10",
+        "HONEYWELL16-P02-E11"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "شاهد پژوهشی طراحی جدول HVAC؛ فقط زمان کارکرد نسبت به ETM، اشغال متوسط و کمتر از ۵۰۰ اتاق. ارقام 01-00139 جدا از 01-00149 و غیرقابل‌انتساب به NSP هستند.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "شاهد پژوهشی طراحی جدول HVAC؛ فقط زمان کارکرد نسبت به ETM، اشغال متوسط و کمتر از ۵۰۰ اتاق. ارقام 01-00139 جدا از 01-00149 و غیرقابل‌انتساب به NSP هستند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "HONEYWELL16_02_hvac_table"
+      ],
+      "presentation_style_tag": null,
+      "related_structured_source_context": "HONEYWELL16-P02-HVAC-RUNTIME-TABLE",
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "شاهد پژوهشی طراحی جدول HVAC؛ فقط زمان کارکرد نسبت به ETM، اشغال متوسط و کمتر از ۵۰۰ اتاق. ارقام 01-00139 جدا از 01-00149 و غیرقابل‌انتساب به NSP هستند."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I010",
+      "idea_id": "HONEYWELL16-S05-T010",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 3,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P03-E01",
+      "source_S02_fragment_index": 1,
+      "source_text_en": "GUESTROOM CUSTOMIZATIONS",
+      "translation_fa": "سفارشی‌سازی‌های اتاق مهمان",
+      "source_type": "intro",
+      "research_category_id": "room_controls",
+      "research_section_group": "SYSTEM_SOFTWARE_AND_SERVICES",
+      "source_editorial_limits_fa": "تیتر دسته‌بندی شاهد است، نه مجوز انتقال خط محصول، مدل یا مشخصات رقیب به NSP.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "الگوی دسته‌بندی گزینه‌های اتاق مهمان؛ به‌جای فهرست محصول رقبا، فقط گزینه‌های واقعی و مجاز NSP معرفی شوند.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "الگوی دسته‌بندی گزینه‌های اتاق مهمان؛ به‌جای فهرست محصول رقبا، فقط گزینه‌های واقعی و مجاز NSP معرفی شوند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "الگوی دسته‌بندی گزینه‌های اتاق مهمان؛ به‌جای فهرست محصول رقبا، فقط گزینه‌های واقعی و مجاز NSP معرفی شوند."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I011",
+      "idea_id": "HONEYWELL16-S05-T011",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 3,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P03-E02",
+      "source_S02_fragment_index": 2,
+      "source_text_en": "do-not-disturb and make-up-room requests",
+      "translation_fa": "درخواست‌های «مزاحم نشوید» و «اتاق نظافت شود»",
+      "source_type": "scenario",
+      "research_category_id": "room_scenarios",
+      "research_section_group": "SYSTEM_SOFTWARE_AND_SERVICES",
+      "source_editorial_limits_fa": "درخواست‌ها از دید مهمان بیان شده‌اند؛ مسیر ارسال، منطق اعلان، ارتباط سامانه‌ها و پشتیبانی NSP از خود عبارت نتیجه نمی‌شوند.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-08"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "موضوع سناریوی مهمان برای درخواست عدم مزاحمت و نظافت؛ ثبت وجود قابلیت، مسیر اعلان یا یکپارچگی NSP نیازمند شاهد است.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "موضوع سناریوی مهمان برای درخواست عدم مزاحمت و نظافت؛ ثبت وجود قابلیت، مسیر اعلان یا یکپارچگی NSP نیازمند شاهد است.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "موضوع سناریوی مهمان برای درخواست عدم مزاحمت و نظافت؛ ثبت وجود قابلیت، مسیر اعلان یا یکپارچگی NSP نیازمند شاهد است."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I012",
+      "idea_id": "HONEYWELL16-S05-T012",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 3,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P03-E04",
+      "source_S02_fragment_index": 4,
+      "source_text_en": "INNCOM Support & Maintenance Program",
+      "translation_fa": "برنامهٔ پشتیبانی و نگهداری INNCOM",
+      "source_type": "intro",
+      "research_category_id": "hotel_operations",
+      "research_section_group": "SYSTEM_SOFTWARE_AND_SERVICES",
+      "source_editorial_limits_fa": "نام خدمت ناشر است. خدمات فنی، مدت خدمت و بازگشت سرمایه را به NSP نسبت نده.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-08"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P03-E03"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "پشتیبانی و نگهداریِ برنامهٔ مشخص Honeywell؛ بدون سند NSP به معرفی شرکت یا نرم‌افزار آن منتسب نشود.",
+      "unassigned_reason_fa": "پشتیبانی و نگهداریِ برنامهٔ مشخص Honeywell؛ بدون سند NSP به معرفی شرکت یا نرم‌افزار آن منتسب نشود.",
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "unassigned_research_only",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "پشتیبانی و نگهداریِ برنامهٔ مشخص Honeywell؛ بدون سند NSP به معرفی شرکت یا نرم‌افزار آن منتسب نشود."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I013",
+      "idea_id": "HONEYWELL16-S05-T013",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 3,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P03-E05",
+      "source_S02_fragment_index": 5,
+      "source_text_en": "Network Operations Center (NOC)",
+      "translation_fa": "مرکز عملیات شبکه (NOC)",
+      "source_type": "intro",
+      "research_category_id": "hotel_operations",
+      "research_section_group": "SYSTEM_SOFTWARE_AND_SERVICES",
+      "source_editorial_limits_fa": "در منبع در زمینهٔ پشتیبانی ناشر آمده است، نه اثبات قابلیت نرم‌افزار، سطح خدمت یا وجود مرکز مشابه در NSP.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-08"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P03-E04"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "مرکز عملیات شبکه متعلق به بافت خدمات ناشر است و هیچ مرکز مشابه، تعهد خدمت یا قابلیت NSP تأیید نشده.",
+      "unassigned_reason_fa": "مرکز عملیات شبکه متعلق به بافت خدمات ناشر است و هیچ مرکز مشابه، تعهد خدمت یا قابلیت NSP تأیید نشده.",
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "unassigned_research_only",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "مرکز عملیات شبکه متعلق به بافت خدمات ناشر است و هیچ مرکز مشابه، تعهد خدمت یا قابلیت NSP تأیید نشده."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I014",
+      "idea_id": "HONEYWELL16-S05-T014",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 3,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P03-E06",
+      "source_S02_fragment_index": 6,
+      "source_text_en": "INNCONTROL™ 5 EMS",
+      "translation_fa": "سامانهٔ مدیریت انرژی INNcontrol 5",
+      "source_type": "software_capability",
+      "research_category_id": "management_software",
+      "research_section_group": "SYSTEM_SOFTWARE_AND_SERVICES",
+      "source_editorial_limits_fa": "عنوان نرم‌افزار، مقید به بستر ابری مدیریت انرژی در منبع؛ نسخهٔ فعلی، جزئیات میزبانی NSP یا سطح عملکرد مستقل تأیید نشده است.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL16-CTX-SOFTWARE"
+      ],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P03-E07"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نمونهٔ نرم‌افزار مدیریت انرژی ابری برای مقایسه در بخش اتاق؛ معماری میزبانی و قابلیت NSP تأیید نشده.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "نمونهٔ نرم‌افزار مدیریت انرژی ابری برای مقایسه در بخش اتاق؛ معماری میزبانی و قابلیت NSP تأیید نشده.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "HONEYWELL16_03_analytics_dashboard"
+      ],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "نمونهٔ نرم‌افزار مدیریت انرژی ابری برای مقایسه در بخش اتاق؛ معماری میزبانی و قابلیت NSP تأیید نشده."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I015",
+      "idea_id": "HONEYWELL16-S05-T015",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 3,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P03-E08",
+      "source_S02_fragment_index": 8,
+      "source_text_en": "IC5 can also integrate with your PMS",
+      "translation_fa": "IC5 همچنین می‌تواند با سامانهٔ مدیریت هتل شما یکپارچه شود",
+      "source_type": "software_capability",
+      "research_category_id": "integrations",
+      "research_section_group": "SYSTEM_SOFTWARE_AND_SERVICES",
+      "source_editorial_limits_fa": "امکان ذکرشده برای IC5 ناشر است. «می‌تواند» به پشتیبانی همهٔ PMSها، راه‌اندازی قطعی یا قابلیت NSP تبدیل نشود.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-06",
+        "HONEYWELL16-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL16-CTX-NETWORKED-OCCUPANCY",
+        "HONEYWELL16-CTX-SOFTWARE"
+      ],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P03-E06",
+        "HONEYWELL16-P02-E06"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "مثال نحوهٔ بیان امکان اتصال با PMS. پشتیبانی همهٔ PMSها و وجود این تعامل در NSP برداشت نشود.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "مثال نحوهٔ بیان امکان اتصال با PMS. پشتیبانی همهٔ PMSها و وجود این تعامل در NSP برداشت نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "مثال نحوهٔ بیان امکان اتصال با PMS. پشتیبانی همهٔ PMSها و وجود این تعامل در NSP برداشت نشود."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I016",
+      "idea_id": "HONEYWELL16-S05-T016",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 3,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P03-E10",
+      "source_S02_fragment_index": 10,
+      "source_text_en": "mobile alerts",
+      "translation_fa": "هشدارهای موبایلی",
+      "source_type": "software_capability",
+      "research_category_id": "management_software",
+      "research_section_group": "SYSTEM_SOFTWARE_AND_SERVICES",
+      "source_editorial_limits_fa": "این عبارت زیر عنوان اعلان و تحلیل برای IC5 آمده؛ کانال، شرط محرک، زمان پاسخ و امکان اجرای NSP از آن نتیجه نشود.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-07",
+        "HONEYWELL16-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL16-CTX-SOFTWARE"
+      ],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P03-E09",
+        "HONEYWELL16-P03-E06"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نمونهٔ نمایش اعلان نرم‌افزار رقیب؛ کانال، محرک و عملکرد واقعی NSP مستقل لازم است.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "نمونهٔ نمایش اعلان نرم‌افزار رقیب؛ کانال، محرک و عملکرد واقعی NSP مستقل لازم است.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "HONEYWELL16_03_analytics_dashboard"
+      ],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "نمونهٔ نمایش اعلان نرم‌افزار رقیب؛ کانال، محرک و عملکرد واقعی NSP مستقل لازم است."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I017",
+      "idea_id": "HONEYWELL16-S05-T017",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 3,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P03-E11",
+      "source_S02_fragment_index": 11,
+      "source_text_en": "in-depth analytics",
+      "translation_fa": "تحلیل‌های عمیق",
+      "source_type": "software_capability",
+      "research_category_id": "management_software",
+      "research_section_group": "SYSTEM_SOFTWARE_AND_SERVICES",
+      "source_editorial_limits_fa": "توصیف توان تحلیل داده در نرم‌افزار ناشر؛ روش، دامنهٔ دسترسی یا بهبود انرژی/تجربه برای NSP تأیید نشده.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-07",
+        "HONEYWELL16-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "HONEYWELL16-CTX-SOFTWARE"
+      ],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P03-E09",
+        "HONEYWELL16-P03-E06"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نمونهٔ دسته‌بندی گزارش و تحلیل نرم‌افزار اتاق رقیب؛ نوع تحلیل، داده و اثر NSP تأیید نشده.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "نمونهٔ دسته‌بندی گزارش و تحلیل نرم‌افزار اتاق رقیب؛ نوع تحلیل، داده و اثر NSP تأیید نشده.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "proposed_not_approved",
+      "related_visual_image_ids": [
+        "HONEYWELL16_03_analytics_dashboard"
+      ],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "نمونهٔ دسته‌بندی گزارش و تحلیل نرم‌افزار اتاق رقیب؛ نوع تحلیل، داده و اثر NSP تأیید نشده."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I018",
+      "idea_id": "HONEYWELL16-S05-T018",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 4,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_S02_fragment_ref": "HONEYWELL16-P04-E01",
+      "source_S02_fragment_index": 1,
+      "source_text_en": "CAPABILITIES AND SAVINGS WITH ROOM TO GROW",
+      "translation_fa": "امکانات و صرفه‌جویی، با ظرفیت رشد",
+      "source_type": "marketing_slogan",
+      "research_category_id": "marketing_slogans",
+      "research_section_group": "PLATFORM_SUMMARY",
+      "source_editorial_limits_fa": "پیام پایانی برای بیان توسعه‌پذیری؛ ارقام، توان عملی یا دامنهٔ خدمت NSP از تیتر به دست نمی‌آید.",
+      "source_context_tags": [
+        "Honeywell_competitor_research_only",
+        "source_01-00139",
+        "not_verified_for_NSP"
+      ],
+      "source_publication_risk": "competitor_research_only",
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-09"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [
+        "HONEYWELL16-P04-E02"
+      ],
+      "source_quote_verification_inherited_from_S03": "Exact unchanged S02 source excerpt, matched by two PDF text engines.",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "تیتر جمع‌بندی و وعدهٔ توسعهٔ ناشر است، بدون معیار مستقل؛ اصل چیدمان از تصویر مطالعه می‌شود، نه ادعای صرفه‌جویی آن.",
+      "unassigned_reason_fa": "تیتر جمع‌بندی و وعدهٔ توسعهٔ ناشر است، بدون معیار مستقل؛ اصل چیدمان از تصویر مطالعه می‌شود، نه ادعای صرفه‌جویی آن.",
+      "requires_NSP_validation_fa": [
+        "پیش از استفاده در NSP، متن مستقل، محدودهٔ واقعی، شواهد فنی و تأیید تحریریه لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "source_topic_and_scope_guard",
+      "mapping_status": "unassigned_research_only",
+      "related_visual_image_ids": [
+        "HONEYWELL16_04_platform_summary"
+      ],
+      "presentation_style_tag": null,
+      "related_structured_source_context": null,
+      "same_editorial_concept_group": null,
+      "key_takeaway_fa": "تیتر جمع‌بندی و وعدهٔ توسعهٔ ناشر است، بدون معیار مستقل؛ اصل چیدمان از تصویر مطالعه می‌شود، نه ادعای صرفه‌جویی آن."
+    }
+  ],
+  "visual_mappings": [
+    {
+      "image_id": "HONEYWELL16_01_cover_guest_hotel",
+      "idea_id": "HONEYWELL16-S05-V001",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 1,
+      "source_pdf_page": 1,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "Source pixels are layout references, not new text records or permitted marketing copy.",
+      "source_image_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_01_cover_guest_hotel.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_01_cover_guest_hotel.webp",
+      "image_asset_sha256": "1a0935a8072cf3353103ed99bca3af5b6d2189c5d1ad96d521b4fe3229c177b6",
+      "image_blob_sha": "d4af19712a49a174626f5f285b502eaaf70c9d11",
+      "normalized_pdf_crop": [
+        0,
+        0,
+        1,
+        0.91
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "rendered_size_px": [
+        833,
+        980
+      ],
+      "presentation_style": "full_bleed_room_photo_dual_audience_headline",
+      "visual_style_type": "full_bleed_room_photo_dual_audience_headline",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "کاور عکس‌محور با تیتر دو مخاطب",
+      "observed_content_in_crop_fa": "عکس فضای اتاق زیر تیترهای پررنگ برای مهمان و هتل قرار می‌گیرد؛ سلسله‌مراتب دو بخش تیتر با تفاوت رنگ مشخص است.",
+      "content_level": null,
+      "target_section_type": "COVER",
+      "target_section_title_fa": "صفحه اول کاتالوگ",
+      "target_section_row": 2,
+      "target_section_types": [
+        "COVER"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "تقابل تصویری نیاز مهمان و مدیر هتل، با عکس و هویت مستقل NSP؛ جلد بیرونی زونکن مقصد نیست.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "تقابل تصویری نیاز مهمان و مدیر هتل، با عکس و هویت مستقل NSP؛ جلد بیرونی زونکن مقصد نیست.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "فقط الگوی طراحی بررسی می‌شود. برای استفادهٔ بیرونی رسانهٔ مستقل، مجوز و آزمون خوانایی لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "observed_source_layout_only",
+      "mapping_status": "proposed_not_approved",
+      "key_takeaway_fa": "رنگ و گروه‌بندی برای دو مخاطب بسیار سریع خوانده می‌شود.",
+      "analyst_assessment_fa": "تراکم تیتر در بالا و نسبت تصویرِ پرتره برای A4 افقی بازطراحی شود.",
+      "nsp_visual_adaptation_fa": "تقابل نیاز مهمان و بهره‌بردار را با عنوان و عکس اختصاصی NSP بازآفرینی کن؛ عکس، تایپِ نمایشی و شعار رقیب کپی نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I001",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I002",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I003"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL16-P01-E01",
+        "HONEYWELL16-P01-E02",
+        "HONEYWELL16-P01-E03"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [
+        "HONEYWELL16-CTX-COVER"
+      ],
+      "related_structured_source_context": null,
+      "crop_context_note_fa": "برش جزئی از چیدمان؛ ادعاها یا روابط زمینه‌ای به NSP نسبت داده نشوند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP."
+    },
+    {
+      "image_id": "HONEYWELL16_02_intro_lead",
+      "idea_id": "HONEYWELL16-S05-V002",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 2,
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "Source pixels are layout references, not new text records or permitted marketing copy.",
+      "source_image_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_02_intro_lead.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_02_intro_lead.webp",
+      "image_asset_sha256": "9a481901673cd74e71b9407975a598177f4b36798ef61b473b9c86753836f4d7",
+      "image_blob_sha": "daa0c1e40663dd2b68a9226c7f28c269be849671",
+      "normalized_pdf_crop": [
+        0.05,
+        0.029,
+        0.94,
+        0.247
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "rendered_size_px": [
+        981,
+        311
+      ],
+      "presentation_style": "high_contrast_intro_heading_and_lead",
+      "visual_style_type": "high_contrast_intro_heading_and_lead",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "تیتر معرفی پرکنتراست و متن آغازین",
+      "observed_content_in_crop_fa": "عنوان کوتاه در دو رنگ و لید نزدیک به آن، پیام اصلی را قبل از بدنهٔ چندستون نشان می‌دهد.",
+      "content_level": "SOLUTION",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "تیتر فشرده و لید برای شروع روایت چالش، بدون نقل سابقه یا وعدهٔ ارتقای ناشر.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "تیتر فشرده و لید برای شروع روایت چالش، بدون نقل سابقه یا وعدهٔ ارتقای ناشر.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "فقط الگوی طراحی بررسی می‌شود. برای استفادهٔ بیرونی رسانهٔ مستقل، مجوز و آزمون خوانایی لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "observed_source_layout_only",
+      "mapping_status": "proposed_not_approved",
+      "key_takeaway_fa": "تیتر و لید مستقل قبل از ورود به جزئیات.",
+      "analyst_assessment_fa": "ادعای جایگاه ناشر و سال‌ها تجربه به NSP نسبت داده نشود.",
+      "nsp_visual_adaptation_fa": "تیتر مستقل و لید کوتاه برای طرح مسئله؛ لحن و ادعای جایگاه ناشر به NSP منتقل نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I004"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL16-P02-E01"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "related_structured_source_context": null,
+      "crop_context_note_fa": "برش جزئی از چیدمان؛ ادعاها یا روابط زمینه‌ای به NSP نسبت داده نشوند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP."
+    },
+    {
+      "image_id": "HONEYWELL16_02_guest_photo",
+      "idea_id": "HONEYWELL16-S05-V003",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 2,
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "Source pixels are layout references, not new text records or permitted marketing copy.",
+      "source_image_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_02_guest_photo.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_02_guest_photo.webp",
+      "image_asset_sha256": "f1b28f8f14a81bb1527bc6c176c3f6e024e276a62cfe4d9efc44996045ec17f6",
+      "image_blob_sha": "cb5c28e4c908afdba1f62fd976895001007e5c00",
+      "normalized_pdf_crop": [
+        0.357,
+        0.5,
+        0.943,
+        0.713
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "rendered_size_px": [
+        981,
+        462
+      ],
+      "presentation_style": "wide_hospitality_context_photo",
+      "visual_style_type": "wide_hospitality_context_photo",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "عکس عریض در زمینهٔ اقامت",
+      "observed_content_in_crop_fa": "مهمان کنار لپ‌تاپ و در حال نگاه به تلفن در اتاق؛ عکس عریض و مستقل از جدول زیر.",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "عکس موقعیت مهمان مرجع ترکیب عریض است؛ نه شاهد عملکرد و نه انتخاب یا تعلق به یک سامانهٔ خاص.",
+      "unassigned_reason_fa": "عکس موقعیت مهمان مرجع ترکیب عریض است؛ نه شاهد عملکرد و نه انتخاب یا تعلق به یک سامانهٔ خاص.",
+      "requires_NSP_validation_fa": [
+        "فقط الگوی طراحی بررسی می‌شود. برای استفادهٔ بیرونی رسانهٔ مستقل، مجوز و آزمون خوانایی لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "observed_source_layout_only",
+      "mapping_status": "unassigned_research_only",
+      "key_takeaway_fa": "برش عریض موقعیت واقعی را بدون شرح عملکرد معرفی می‌کند.",
+      "analyst_assessment_fa": "عکس آدم‌ها و صفحهٔ دستگاه برای انتشار باید مجوز و زمینهٔ روشن داشته باشد.",
+      "nsp_visual_adaptation_fa": "با عکس مجاز از موقعیت واقعی هتل، زمینه بده؛ تصویر نشان‌دهندهٔ عملکرد تجهیزات یا نتیجهٔ انرژی نیست.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "related_structured_source_context": null,
+      "crop_context_note_fa": "موضوع مهمان کنار لپ‌تاپ و در حال نگاه به تلفن است؛ علت یا نتیجهٔ عملکردی قابل استنباط نیست.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP."
+    },
+    {
+      "image_id": "HONEYWELL16_02_hvac_table",
+      "idea_id": "HONEYWELL16-S05-V004",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 2,
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "Source pixels are layout references, not new text records or permitted marketing copy.",
+      "source_image_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_02_hvac_table.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_02_hvac_table.webp",
+      "image_asset_sha256": "f7cab7556c2a4d4bdc07240ce8b0501ac3f8c66f5ce5107fabf51fd1732ac845",
+      "image_blob_sha": "a86d3a1ad5d298c5975d579141205eeb5f2730ed",
+      "normalized_pdf_crop": [
+        0.349,
+        0.727,
+        0.949,
+        0.957
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "rendered_size_px": [
+        1281,
+        636
+      ],
+      "presentation_style": "scenario_comparison_grid_with_quantitative_column_and_scope_footnote",
+      "visual_style_type": "scenario_comparison_grid_with_quantitative_column_and_scope_footnote",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "جدول سناریو با ستون عدد و پاورقی مبنا",
+      "observed_content_in_crop_fa": "پنج ردیف، ستون برجستهٔ درصد، نمادها و دو پاورقی؛ عنوان و شروط متنِ منبع در برش کامل‌اند.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "فقط قالب مقایسهٔ سناریو برای فصل اتاق؛ جدول کامل و شروط 01-00139 بمانند و اعداد در NSP یا میان دو بروشور بازاستفاده نشوند.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "فقط قالب مقایسهٔ سناریو برای فصل اتاق؛ جدول کامل و شروط 01-00139 بمانند و اعداد در NSP یا میان دو بروشور بازاستفاده نشوند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "فقط الگوی طراحی بررسی می‌شود. برای استفادهٔ بیرونی رسانهٔ مستقل، مجوز و آزمون خوانایی لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "observed_source_layout_only",
+      "mapping_status": "proposed_not_approved",
+      "key_takeaway_fa": "ستون عدد متمایز و پاورقی چسبیده به جدول خواندن را آسان می‌کند.",
+      "analyst_assessment_fa": "رنگ تنها حامل تفاوت نباشد. متریک، مبنا و دامنه در هر بازنمایی حفظ شود.",
+      "nsp_visual_adaptation_fa": "برای NSP فقط شکل جدول با داده و آزمون مستقل قابل الهام است. این اعداد سند 01-00139، کاهش زمان کارکرد HVAC نسبت به ETM در دامنهٔ پاورقی‌اند؛ نه برق، هزینه، عملکرد NSP یا ارقام 01-00149.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I009"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL16-P02-E09",
+        "HONEYWELL16-P02-E10",
+        "HONEYWELL16-P02-E11"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-02",
+        "HONEYWELL16-CLAIM-03"
+      ],
+      "related_source_context_set_refs": [
+        "HONEYWELL16-CTX-ENERGY-CHART"
+      ],
+      "related_structured_source_context": "HONEYWELL16-P02-HVAC-RUNTIME-TABLE",
+      "crop_context_note_fa": "پاورقی ۲ معیار کاهش زمان کارکرد در برابر ETM و حدود دامنه را صریح می‌کند؛ پاورقی ۱ به آمار بازار مستقل مربوط است. سند منبع 01-00139؛ نه 01-00149.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP."
+    },
+    {
+      "image_id": "HONEYWELL16_03_matched_device_pair",
+      "idea_id": "HONEYWELL16-S05-V005",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 3,
+      "source_pdf_page": 3,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "Source pixels are layout references, not new text records or permitted marketing copy.",
+      "source_image_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_03_matched_device_pair.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_03_matched_device_pair.webp",
+      "image_asset_sha256": "4f5f6e60b5960aff5984b570ed4c5e9129735eb6006d6110da31a0e1c5d30d80",
+      "image_blob_sha": "b449afab0065998966c4b74529b355c44139a2cd",
+      "normalized_pdf_crop": [
+        0.385,
+        0.039,
+        0.861,
+        0.182
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "rendered_size_px": [
+        981,
+        382
+      ],
+      "presentation_style": "paired_device_photos_without_model_labels",
+      "visual_style_type": "paired_device_photos_without_model_labels",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "جفت تصویر محصول با قاب و تراز همسان",
+      "observed_content_in_crop_fa": "دو نمای مستطیلی روشن و تیره با اندازه و فاصلهٔ مشابه؛ نام‌های چاپی و متن بیرون برش‌اند.",
+      "content_level": null,
+      "target_section_type": null,
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "target_section_types": [],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": null,
+      "role_status": "not_assigned",
+      "mapping_reason_fa": "قاب هم‌اندازه و هم‌تراز فقط سبک مقایسهٔ تجهیز است؛ مدل، رنگ و مشخصات محصول رقبا به NSP منتقل نشوند.",
+      "unassigned_reason_fa": "قاب هم‌اندازه و هم‌تراز فقط سبک مقایسهٔ تجهیز است؛ مدل، رنگ و مشخصات محصول رقبا به NSP منتقل نشوند.",
+      "requires_NSP_validation_fa": [
+        "فقط الگوی طراحی بررسی می‌شود. برای استفادهٔ بیرونی رسانهٔ مستقل، مجوز و آزمون خوانایی لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "observed_source_layout_only",
+      "mapping_status": "unassigned_research_only",
+      "key_takeaway_fa": "تراز و قاب هم‌اندازه مقایسه را سریع می‌کند.",
+      "analyst_assessment_fa": "تصویر فقط مقایسهٔ ظاهری است؛ جزئیات صفحهٔ دستگاه و شرایط عرضه از آن نتیجه نشود.",
+      "nsp_visual_adaptation_fa": "از عکس مجازِ نمونه‌های NSP برای مقایسه بصری استفاده شود؛ مدل، اندازه، سخت‌افزار یا رنگ منبع به NSP تعمیم نیابد.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "related_structured_source_context": null,
+      "crop_context_note_fa": "نام‌های چاپی زیر عکس و متن مشخصات بیرون از برش هستند. اعداد نمایشی در خود عکس مشخصات نیستند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP."
+    },
+    {
+      "image_id": "HONEYWELL16_03_analytics_dashboard",
+      "idea_id": "HONEYWELL16-S05-V006",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 3,
+      "source_pdf_page": 3,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "Source pixels are layout references, not new text records or permitted marketing copy.",
+      "source_image_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_03_analytics_dashboard.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_03_analytics_dashboard.webp",
+      "image_asset_sha256": "61db400767e9ed59cc9367749fea923cec30c15c7331f801a49dffb3c92082e1",
+      "image_blob_sha": "77aa9d74142145c4bcf5914e2877226e8e8b1e3e",
+      "normalized_pdf_crop": [
+        0.357,
+        0.648,
+        0.945,
+        0.94
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "rendered_size_px": [
+        980,
+        631
+      ],
+      "presentation_style": "dark_dashboard_snapshot_as_single_visual_anchor",
+      "visual_style_type": "dark_dashboard_snapshot_as_single_visual_anchor",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "نمونهٔ داشبورد تیره به‌عنوان نقطهٔ تمرکز",
+      "observed_content_in_crop_fa": "کارت‌ها و نمودارها در یک قاب تیره و هم‌بسته دیده می‌شوند؛ برش مستقل از متن و تیتر مجاور است.",
+      "content_level": "SYSTEM",
+      "target_section_type": "GRMS",
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "target_section_types": [
+        "GRMS"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نمایش داشبورد نرم‌افزار اتاق فقط الگوی ترکیب است؛ تصویر اختصاصی NSP جایگزین شود و شکل، امنیت یا عملکرد را ثابت نمی‌کند.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "نمایش داشبورد نرم‌افزار اتاق فقط الگوی ترکیب است؛ تصویر اختصاصی NSP جایگزین شود و شکل، امنیت یا عملکرد را ثابت نمی‌کند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "فقط الگوی طراحی بررسی می‌شود. برای استفادهٔ بیرونی رسانهٔ مستقل، مجوز و آزمون خوانایی لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "observed_source_layout_only",
+      "mapping_status": "proposed_not_approved",
+      "key_takeaway_fa": "زمینهٔ تیره کارت‌ها را به یک مجموعه بصری تبدیل می‌کند.",
+      "analyst_assessment_fa": "داده و نوشتهٔ ریز خوانایی یکنواخت ندارد؛ هویت نسخه، اعداد و قابلیت‌ها از تصویر نتیجه نشوند.",
+      "nsp_visual_adaptation_fa": "از اسکرین‌شات واقعی و مجاز NSP، با دادهٔ نمایشی روشن و بدون هویت پروژه استفاده شود؛ تصویر رقیب قابلیت، معیار یا کیفیت امنیت را ثابت نمی‌کند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I014",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I016",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I017"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL16-P03-E06",
+        "HONEYWELL16-P03-E07",
+        "HONEYWELL16-P03-E10",
+        "HONEYWELL16-P03-E09",
+        "HONEYWELL16-P03-E11"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-06",
+        "HONEYWELL16-CLAIM-07"
+      ],
+      "related_source_context_set_refs": [
+        "HONEYWELL16-CTX-SOFTWARE"
+      ],
+      "related_structured_source_context": null,
+      "crop_context_note_fa": "نام قابلیت یا برچسب UI از تصویر حدس یا رونویسی نشده است؛ ارجاع به متن همان صفحه صرفاً زمینهٔ قیاسی است.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP."
+    },
+    {
+      "image_id": "HONEYWELL16_04_platform_summary",
+      "idea_id": "HONEYWELL16-S05-V007",
+      "company": "Honeywell",
+      "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+      "pdf_filename": "16_Honeywell_Step Up to INNCOM.pdf",
+      "pdf_page": 4,
+      "source_pdf_page": 4,
+      "original_printed_page": null,
+      "source_document_number": "01-00139",
+      "source_text_en": null,
+      "translation_fa": null,
+      "source_type": "visual_presentation_style",
+      "image_text_policy": "Source pixels are layout references, not new text records or permitted marketing copy.",
+      "source_image_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_04_platform_summary.webp",
+      "image_asset_path": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_04_platform_summary.webp",
+      "image_asset_sha256": "93fda9570f0a95518031bb8445cd1bb9f3410ec5ee169315fb6b83482a7f8aff",
+      "image_blob_sha": "1fbb2b1cbc5a597da759a729ecd68750b48fb959",
+      "normalized_pdf_crop": [
+        0.046,
+        0.03,
+        0.948,
+        0.55
+      ],
+      "crop_coordinate_system": "Top-left origin; x0,y0,x1,y1 relative to unrotated visible page.",
+      "rendered_size_px": [
+        981,
+        732
+      ],
+      "presentation_style": "negative_space_summary_heading_and_short_bullets",
+      "visual_style_type": "negative_space_summary_heading_and_short_bullets",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "خلاصهٔ راهکار با تیتر و فهرست کوتاه",
+      "observed_content_in_crop_fa": "تیتر و فهرست کوتاه در بالا و فضای آزاد در ادامه، ریتم اختتام می‌سازند؛ دعوت به اقدام و تماس خارج برش‌اند.",
+      "content_level": "SOLUTION",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "optional_secondary_section_types": [],
+      "optional_secondary_status": "none",
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "not_assigned_attachment_deferred_to_defrag",
+      "proposed_role_within_section_fa": "فضاسازی و فهرست کوتاه برای معرفی کلیِ دامنهٔ تأییدشدهٔ راهکار؛ نه افزودن سامانه یا ادعای مقیاس.",
+      "role_status": "analyst_proposal_not_approved_subsection",
+      "mapping_reason_fa": "فضاسازی و فهرست کوتاه برای معرفی کلیِ دامنهٔ تأییدشدهٔ راهکار؛ نه افزودن سامانه یا ادعای مقیاس.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": [
+        "فقط الگوی طراحی بررسی می‌شود. برای استفادهٔ بیرونی رسانهٔ مستقل، مجوز و آزمون خوانایی لازم‌اند."
+      ],
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "attached_to_printed_page": false,
+      "mapping_basis": "observed_source_layout_only",
+      "mapping_status": "proposed_not_approved",
+      "key_takeaway_fa": "فضای منفی بین دسته‌ها به خلاصه هویت بصری می‌دهد.",
+      "analyst_assessment_fa": "اگر بولت‌ها زیاد شوند یا حاشیه در پانچ پنهان بماند، اثر خلاصه از دست می‌رود.",
+      "nsp_visual_adaptation_fa": "فقط ادعاهای مستند NSP در چند بولت کوتاه و فاصلهٔ امن روی زمینهٔ پیوسته؛ نشانی، نقل‌قول و هویت رقیب کپی نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I018"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL16-P04-E01",
+        "HONEYWELL16-P04-E02"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL16-CLAIM-09"
+      ],
+      "related_source_context_set_refs": [],
+      "related_structured_source_context": null,
+      "crop_context_note_fa": "برش جزئی از چیدمان؛ ادعاها یا روابط زمینه‌ای به NSP نسبت داده نشوند.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر، متن و نشان‌های منبع متعلق به Honeywell یا دارندگان حقوق‌اند؛ مرجع طراحی برای پژوهش داخلی، بدون حق بازنشر تجاری، آزمایش یا تأیید قابلیت NSP."
+    }
+  ],
+  "style_family_mapping_index": [
+    {
+      "style_id": "full_bleed_room_photo_dual_audience_headline",
+      "title_fa": "کاور عکس‌محور با تیتر دو مخاطب",
+      "representative_reference_ids": [
+        "HONEYWELL16_01_cover_guest_hotel"
+      ],
+      "physical_pdf_pages": [
+        1
+      ],
+      "key_takeaway_fa": "رنگ و گروه‌بندی برای دو مخاطب بسیار سریع خوانده می‌شود.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [
+        "COVER"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "high_contrast_intro_heading_and_lead",
+      "title_fa": "تیتر معرفی پرکنتراست و متن آغازین",
+      "representative_reference_ids": [
+        "HONEYWELL16_02_intro_lead"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "تیتر و لید مستقل قبل از ورود به جزئیات.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [
+        "CHALLENGES_VALUE"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "wide_hospitality_context_photo",
+      "title_fa": "عکس عریض در زمینهٔ اقامت",
+      "representative_reference_ids": [
+        "HONEYWELL16_02_guest_photo"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "برش عریض موقعیت واقعی را بدون شرح عملکرد معرفی می‌کند.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": true,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "scenario_comparison_grid_with_quantitative_column_and_scope_footnote",
+      "title_fa": "جدول سناریو با ستون عدد و پاورقی مبنا",
+      "representative_reference_ids": [
+        "HONEYWELL16_02_hvac_table"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "ستون عدد متمایز و پاورقی چسبیده به جدول خواندن را آسان می‌کند.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "paired_device_photos_without_model_labels",
+      "title_fa": "جفت تصویر محصول با قاب و تراز همسان",
+      "representative_reference_ids": [
+        "HONEYWELL16_03_matched_device_pair"
+      ],
+      "physical_pdf_pages": [
+        3
+      ],
+      "key_takeaway_fa": "تراز و قاب هم‌اندازه مقایسه را سریع می‌کند.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": true,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "dark_dashboard_snapshot_as_single_visual_anchor",
+      "title_fa": "نمونهٔ داشبورد تیره به‌عنوان نقطهٔ تمرکز",
+      "representative_reference_ids": [
+        "HONEYWELL16_03_analytics_dashboard"
+      ],
+      "physical_pdf_pages": [
+        3
+      ],
+      "key_takeaway_fa": "زمینهٔ تیره کارت‌ها را به یک مجموعه بصری تبدیل می‌کند.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "negative_space_summary_heading_and_short_bullets",
+      "title_fa": "خلاصهٔ راهکار با تیتر و فهرست کوتاه",
+      "representative_reference_ids": [
+        "HONEYWELL16_04_platform_summary"
+      ],
+      "physical_pdf_pages": [
+        4
+      ],
+      "key_takeaway_fa": "فضای منفی بین دسته‌ها به خلاصه هویت بصری می‌دهد.",
+      "final_section_mapping": "pending_S05",
+      "proposed_primary_sections": [
+        "HOTEL_OVERVIEW"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "style_only_without_section": false,
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    }
+  ],
+  "unassigned_text_reasons": [
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I012",
+      "pdf_page": 3,
+      "reason_fa": "پشتیبانی و نگهداریِ برنامهٔ مشخص Honeywell؛ بدون سند NSP به معرفی شرکت یا نرم‌افزار آن منتسب نشود."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I013",
+      "pdf_page": 3,
+      "reason_fa": "مرکز عملیات شبکه متعلق به بافت خدمات ناشر است و هیچ مرکز مشابه، تعهد خدمت یا قابلیت NSP تأیید نشده."
+    },
+    {
+      "record_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I018",
+      "pdf_page": 4,
+      "reason_fa": "تیتر جمع‌بندی و وعدهٔ توسعهٔ ناشر است، بدون معیار مستقل؛ اصل چیدمان از تصویر مطالعه می‌شود، نه ادعای صرفه‌جویی آن."
+    }
+  ],
+  "unassigned_visual_reasons": [
+    {
+      "image_id": "HONEYWELL16_02_guest_photo",
+      "pdf_page": 2,
+      "reason_fa": "عکس موقعیت مهمان مرجع ترکیب عریض است؛ نه شاهد عملکرد و نه انتخاب یا تعلق به یک سامانهٔ خاص."
+    },
+    {
+      "image_id": "HONEYWELL16_03_matched_device_pair",
+      "pdf_page": 3,
+      "reason_fa": "قاب هم‌اندازه و هم‌تراز فقط سبک مقایسهٔ تجهیز است؛ مدل، رنگ و مشخصات محصول رقبا به NSP منتقل نشوند."
+    }
+  ],
+  "source_claim_gates_snapshot": [
+    {
+      "id": "HONEYWELL16-CLAIM-01",
+      "pdf_page": 2,
+      "kind": "independent_market_statistic_from_table",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P02-E03",
+        "HONEYWELL16-P02-E12"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "آمار اتاق‌های اجاره‌نرفتهٔ آمریکا به Q2 2019 نسبت داده شده است؛ عدد صرفه‌جویی انرژی، اشغال جاری یا شاخص NSP نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I005"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-02",
+      "pdf_page": 2,
+      "kind": "table_HVAC_runtime_only",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P02-E09",
+        "HONEYWELL16-P02-E10",
+        "HONEYWELL16-P02-E11"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "مبنای مقایسه ETM (حالت ترموستات معمولی)، در هتل‌هایی با اشغال میانگین و کمتر از ۵۰۰ اتاق است. درصد زمان کارکرد HVAC را مصرف برق، هزینه یا نتیجهٔ NSP ننام.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I009"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-03",
+      "pdf_page": 2,
+      "kind": "three_table_rows_conflict_with_separate_brochure",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P02-E09",
+        "HONEYWELL16-P02-E10",
+        "HONEYWELL16-P02-E11"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "سه ردیف میانی با سند جداگانه 01-00149 در بانک متفاوت‌اند. هیچ میانگین یا ادغام عددی انجام نشود؛ عدد، صفحه و شناسهٔ سند همراه بماند.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I009"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-04",
+      "pdf_page": 2,
+      "kind": "occupancy_and_renting_are_not_synonyms",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P02-E02",
+        "HONEYWELL16-P02-E05",
+        "HONEYWELL16-P02-E06"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "اجاره‌نرفتن و تشخیص حضور یک مفهوم نیستند؛ شرط هر سناریوی منبع به‌طور مستقل خوانده شود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I005",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I006",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I007",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I015"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-05",
+      "pdf_page": 2,
+      "kind": "named_integration_is_vendor_only",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P02-E07",
+        "HONEYWELL16-P02-E08"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "INNcontrol، شبکهٔ ناشر و معماری ادغام به همان منبع تعلق دارند؛ اتصال دستگاه‌ها، راه‌اندازی یا PMS در NSP احراز نشده.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I008"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-06",
+      "pdf_page": 3,
+      "kind": "cloud_supervisor_and_PMS_scope",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P03-E06",
+        "HONEYWELL16-P03-E07",
+        "HONEYWELL16-P03-E08"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "IC5 مدیریت انرژی ابری منبع است و اتصال PMS به‌صورت ممکن توصیف شده؛ نسخهٔ فعلی، هر PMS و نتیجهٔ NSP مستقل بررسی نشده‌اند.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I014",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I015",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I016",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I017"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-07",
+      "pdf_page": 3,
+      "kind": "notifications_and_analytics_separate",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P03-E09",
+        "HONEYWELL16-P03-E10",
+        "HONEYWELL16-P03-E11"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "اطلاع‌رسانی موبایلی و گزارش تحلیلی در بخش مجزا هستند؛ تصویر داشبورد یا ادعای آینده‌نگر تضمین قابلیت یا امنیت NSP نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I016",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I017"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-08",
+      "pdf_page": 3,
+      "kind": "service_vs_software_and_room_requests",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P03-E02",
+        "HONEYWELL16-P03-E03",
+        "HONEYWELL16-P03-E04",
+        "HONEYWELL16-P03-E05"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "پیام خدمات، پشتیبانی و NOC با نرم‌افزار یا محصولات NSP یکی نیستند؛ درخواست‌های اتاق فقط موضوع پژوهش‌اند نه تأیید عملکرد.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I011",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I012",
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I013"
+      ],
+      "not_an_independent_feature": true
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-09",
+      "pdf_page": 4,
+      "kind": "summary_and_edition",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P04-E02",
+        "HONEYWELL16-P04-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "فرادادهٔ سند و عنوان خلاصهٔ ناشر؛ شمارهٔ 01-00139 را به 01-00149 تغییر نده. ادعای رهبری، مقیاس یا خدمات به NSP منتقل نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT016_HONEYWELL_STEP_UP_TO_INNCOM:I018"
+      ],
+      "not_an_independent_feature": true
+    }
+  ],
+  "structured_context_handling": {
+    "source_context_group_ids": [
+      "HONEYWELL16-CTX-COVER",
+      "HONEYWELL16-CTX-MARKET",
+      "HONEYWELL16-CTX-ENERGY-CHART",
+      "HONEYWELL16-CTX-NETWORKED-OCCUPANCY",
+      "HONEYWELL16-CTX-SOFTWARE"
+    ],
+    "excluded_S02_fragments_preserved_at_S03": true,
+    "chart_bundle_id": "HONEYWELL16-P02-HVAC-RUNTIME-TABLE",
+    "chart_original_doc_no": "01-00139",
+    "chart_prior_different_doc_no": "01-00149",
+    "row_count_for_context_not_independent_features": 5,
+    "overview_reference": "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_S04_reference_overview.webp",
+    "cover_headline_pair_as_one_editorial_concept": true
+  },
+  "S06_priorities_fa": [
+    "تطبیق ۲۹ گزیده و ۱۸ ترجمه با صفحهٔ منبع و ممیزی بایت هر تصویر.",
+    "بازخوانی پنج ردیف و دو پاورقی جدول 01-00139 با ذکر زمان کارکرد، پایهٔ ETM و شرایط؛ نباید با 01-00149 یکسان شود.",
+    "همهٔ مقصدها پیشنهادی و داخلی‌اند. نمونه‌های سرویس و سخت‌افزار مرز جدا دارند؛ هیچ تأیید NSP یا اتصال به صفحه انجام نشود."
+  ],
+  "next_stage": "S06 — ممیزی منبع و نتیجه",
+  "next_queue_cursor": {
+    "document_index": 9,
+    "document_id": "16",
+    "step_index": 5,
+    "step_id": "S06"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false
+}
