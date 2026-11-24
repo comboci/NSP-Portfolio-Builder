@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 10,
+    "total_pending_steps": 9,
     "completed_new_documents": 16,
     "remaining_new_documents": 2
   },
   "cursor": {
     "document_index": 19,
     "document_id": "76",
-    "step_index": 4,
-    "step_id": "S05"
+    "step_index": 5,
+    "step_id": "S06"
   },
   "section_types": [
     {
@@ -2235,11 +2235,13 @@
         {
           "id": "S05",
           "key": "section_type_mapping",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/76_Distech_Hotel_Stary_S05_section_mapping.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "15f2d2a187fc2e920c2faac3f0b14dabd226967c",
+          "notes": "۴ یادداشت و دو طرح اصیل برای معرفی پرونده و مرور راهکار هتل پیشنهاد شدند. قابلیت اطمینان و زمان سرویس، فقط نیازِ گزارش‌شده‌اند. نه‌ عکس، متن، روند، انطباق یا قابلیت NSP وارد شد؛ بانک V19، برنامه و فایل D05 ثابت‌اند."
         },
         {
           "id": "S06",
@@ -2260,7 +2262,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S04"
+      "last_successful_stage": "S05"
     },
     {
       "id": "MG",
