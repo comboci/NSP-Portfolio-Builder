@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 17,
+    "total_pending_steps": 16,
     "completed_new_documents": 15,
     "remaining_new_documents": 3
   },
   "cursor": {
     "document_index": 18,
     "document_id": "61",
-    "step_index": 4,
-    "step_id": "S05"
+    "step_index": 5,
+    "step_id": "S06"
   },
   "section_types": [
     {
@@ -2141,11 +2141,13 @@
         {
           "id": "S05",
           "key": "section_type_mapping",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S05_section_mapping.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "be94651b3b2952e3452bc5a0e73df7c483f523fc",
+          "notes": "۳ متن و دو طرح اصیل برای سکشن‌های ارزش پیشنهادی و نمونه‌پروژه پیشنهاد شدند؛ تیتر تبلیغی و چهار یادداشت منبع فقط زمینه‌اند. سه محل فقط گزارش Helvar است؛ هدف انرژی و توصیف فضا نتیجهٔ اندازه‌گیری نیست. دسترسی نشر، تصویر منبع یا قابلیت NSP تأیید نشد؛ بانک V18، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S06",
@@ -2166,7 +2168,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S04"
+      "last_successful_stage": "S05"
     },
     {
       "id": "76",
