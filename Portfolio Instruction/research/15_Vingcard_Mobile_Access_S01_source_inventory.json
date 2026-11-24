@@ -1,0 +1,352 @@
+{
+  "schema": "nsp-catalog-research-s01-source-inventory-v1",
+  "stage": "S01",
+  "stage_key": "source_inventory",
+  "status": "completed_source_verified",
+  "document_id": "15",
+  "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+  "date_checked": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "931a292459f9f75ddae62800042d12978aaf8f90",
+  "continuation_recovery": {
+    "previous_completed_stage": "14/S07",
+    "previous_stage_commit": "e8333b5be6ffc8d602b4af51ab78846e34039b75",
+    "previous_stage_manifest": "Portfolio Instruction/research/14_Vingcard_Novel_S07_ingest_manifest.json",
+    "current_queue_verified": true,
+    "previous_stage_reexecuted": false,
+    "feature_library_version": 8,
+    "catalogs": 8,
+    "features": 499,
+    "images": 91,
+    "feature_json_js_data_equal": true
+  },
+  "source": {
+    "company": "Vingcard",
+    "publisher": "Vingcard / ASSA ABLOY",
+    "publisher_evidence_pdf_pages": [
+      1,
+      12
+    ],
+    "cover_title": "Mobile Access Solution",
+    "filename": "15_Vingcard_Mobile Access Solution.pdf",
+    "library_path": "/15_Vingcard_Mobile Access Solution.pdf",
+    "file_size_bytes": 2973282,
+    "queued_file_size_bytes": 2973282,
+    "file_size_matches_queue": true,
+    "sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+    "availability": "verified_exact_uploaded_version_via_name_size_PDF_metadata_and_byte_sha256",
+    "identity_basis": "Reopened exact named Library upload; independently checked its local PDF bytes and compared Library native text against page coverage. Original uploaded filename is not the same as the printed title.",
+    "external_publisher_site_verification_performed": false,
+    "pdf_format": "PDF 1.5",
+    "pdf_page_count": 12,
+    "page_width_pt": 595.276,
+    "page_height_pt": 841.89,
+    "page_size_name": "A4",
+    "orientation": "portrait",
+    "all_pages_same_size": true,
+    "all_pages_rotation_zero": true,
+    "pdf_creator": "Adobe InDesign 19.2 (Windows)",
+    "pdf_producer": "Adobe PDF Library 17.0",
+    "pdf_metadata_creation_date": "D:20240312121454+01'00'",
+    "pdf_metadata_modification_date": "D:20240312121653+01'00'",
+    "printed_document_edition_label": "Doc. Printed: 03/2024",
+    "publication_month": "2024-03",
+    "publication_evidence": {
+      "physical_pdf_page": 12,
+      "precision": "printed_edition_month_not_first_publication"
+    },
+    "document_number": null,
+    "separate_revision_identifier": null,
+    "language": "en",
+    "encrypted": false,
+    "extractable_text_present": true,
+    "pages_with_native_text": 12,
+    "bookmarks": 0,
+    "clickable_link_annotations": 0,
+    "embedded_raster_image_resource_occurrences": 20,
+    "image_resource_count_is_not_extracted_style_reference_count": true,
+    "original_pdf_modified": false
+  },
+  "pagination": {
+    "canonical_reference": "physical PDF page, 1-indexed",
+    "page_label_rules": [],
+    "native_footer_candidates_verified_on_physical_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12
+    ],
+    "page_11_has_no_native_footer_folio": true,
+    "page_12_footer_candidates_not_assumed_to_be_two_printed_folios": true,
+    "all_pages_present_and_distinct_in_renders": true,
+    "external_master_copy_comparison_performed": false
+  },
+  "page_index": [
+    {
+      "pdf_page": 1,
+      "native_characters": 63,
+      "native_words": 11,
+      "native_page_text_sha256": "4e25c6902de95c45ab2a924d86acd6efd55d7ac21116f553ded4b9f68b14b401",
+      "native_folio_in_footer_zone": 1,
+      "image_resource_occurrences": 3,
+      "link_annotations": 0,
+      "section_group": "COVER",
+      "heading_en": "Mobile Access Solution",
+      "topic_and_limits_fa": "جلد معرفی، نام راهکار و نشان ناشر؛ نمونهٔ چیدمان، نه تأیید استفاده از نشان رقیب.",
+      "native_page_text_sha256_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "native_text_present": true,
+      "visual_review_status": "checked_in_contact_sheet_rendered_from_original"
+    },
+    {
+      "pdf_page": 2,
+      "native_characters": 1603,
+      "native_words": 242,
+      "native_page_text_sha256": "a384cfee99ae6d0b140398d911f41d919a17e59da06819d4551629050ee10283",
+      "native_folio_in_footer_zone": 1,
+      "image_resource_occurrences": 5,
+      "link_annotations": 0,
+      "section_group": "INTRO",
+      "heading_en": "The next generation of hospitality",
+      "topic_and_limits_fa": "معرفی راهکار و روایت انتظار مهمان؛ درصدها، دورهٔ بررسی و ادعای اثر اقتصادی مستند مستقل NSP نیستند. چیدمان دو ستونه در خواندن حفظ شود.",
+      "native_page_text_sha256_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "native_text_present": true,
+      "visual_review_status": "checked_in_contact_sheet_rendered_from_original"
+    },
+    {
+      "pdf_page": 3,
+      "native_characters": 1523,
+      "native_words": 237,
+      "native_page_text_sha256": "211a1d8184f6a6b3221a6aaa97e825da02d4f3a736c053edd2e70f41a09b2f0f",
+      "native_folio_in_footer_zone": 1,
+      "image_resource_occurrences": 1,
+      "link_annotations": 0,
+      "section_group": "BENEFITS",
+      "heading_en": "Benefits for the hotel guests / Benefits for the hotel",
+      "topic_and_limits_fa": "تفکیک فواید مهمان و هتل؛ فرایند رزرو و پذیرش به راهکار مستقر وابسته است.",
+      "native_page_text_sha256_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "native_text_present": true,
+      "visual_review_status": "checked_in_contact_sheet_rendered_from_original"
+    },
+    {
+      "pdf_page": 4,
+      "native_characters": 1790,
+      "native_words": 284,
+      "native_page_text_sha256": "c976840f48d86716c64240c5c226b9ad139cc21e981b62259f0fdbc4ca2d5bec",
+      "native_folio_in_footer_zone": 1,
+      "image_resource_occurrences": 2,
+      "link_annotations": 0,
+      "section_group": "OPTIONS",
+      "heading_en": "Our Mobile Access options for hotels",
+      "topic_and_limits_fa": "چهار بلوک ارائه دیده می‌شود؛ سه روش عرضهٔ اپ و بخش Apple Wallet جداگانه خوانده شوند. مزیت، دسترسی به فضاها و سرعت، ادعای تأییدشدهٔ NSP نیست.",
+      "native_page_text_sha256_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "native_text_present": true,
+      "visual_review_status": "checked_in_contact_sheet_rendered_from_original"
+    },
+    {
+      "pdf_page": 5,
+      "native_characters": 855,
+      "native_words": 126,
+      "native_page_text_sha256": "72cc50e51d9464613942ca570a8b0ab9a162ee42a5ec82ab0cf70a54a8bead1f",
+      "native_folio_in_footer_zone": 1,
+      "image_resource_occurrences": 2,
+      "link_annotations": 0,
+      "section_group": "PARTNER_AND_SECURITY",
+      "heading_en": "Vingcard Partner Program / Replaces keys with mobile phones",
+      "topic_and_limits_fa": "الزامات برنامهٔ شریک از معرفی Seos جدا بماند؛ نشان‌ها و ادعاهای امنیتی به NSP منتقل نشوند.",
+      "native_page_text_sha256_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "native_text_present": true,
+      "visual_review_status": "checked_in_contact_sheet_rendered_from_original"
+    },
+    {
+      "pdf_page": 6,
+      "native_characters": 870,
+      "native_words": 146,
+      "native_page_text_sha256": "1efee5f30d4a9729428feead8c54e86d4004c552d1432fa6995c39e4dea9dcac",
+      "native_folio_in_footer_zone": 1,
+      "image_resource_occurrences": 0,
+      "link_annotations": 0,
+      "section_group": "GUEST_FLOW",
+      "heading_en": "How it works",
+      "topic_and_limits_fa": "نمودار شماره‌دار پنج‌گام از منظر مهمان و دارای ترتیب تصویری؛ زمان و پیش‌شرط‌ها در S02 جداگانه بررسی شوند.",
+      "native_page_text_sha256_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "native_text_present": true,
+      "visual_review_status": "checked_in_contact_sheet_rendered_from_original"
+    },
+    {
+      "pdf_page": 7,
+      "native_characters": 120,
+      "native_words": 21,
+      "native_page_text_sha256": "db26d2f5a1124cbcfa3d8c64dbd5d945b44132409f77969710ef3417ed113fea",
+      "native_folio_in_footer_zone": 1,
+      "image_resource_occurrences": 1,
+      "link_annotations": 0,
+      "section_group": "PHOTO_NARRATIVE",
+      "heading_en": null,
+      "topic_and_limits_fa": "عکس تمام‌صفحهٔ راهرو و نقل‌قول کوتاه؛ چیدمان برگرفته از متن تبلیغاتی، نه اثبات دسترسی یا کارایی.",
+      "native_page_text_sha256_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "native_text_present": true,
+      "visual_review_status": "checked_in_contact_sheet_rendered_from_original"
+    },
+    {
+      "pdf_page": 8,
+      "native_characters": 681,
+      "native_words": 108,
+      "native_page_text_sha256": "a8e5696eaaf41017005e0017940359d2fc2fca0e9b41b0544a194d5ccdf46e60",
+      "native_folio_in_footer_zone": 1,
+      "image_resource_occurrences": 4,
+      "link_annotations": 0,
+      "section_group": "TECHNICAL_REQUIREMENTS",
+      "heading_en": "Technical requirements",
+      "topic_and_limits_fa": "ملزومات فنی، خانواده‌های سخت‌افزار و نرم‌افزار منبع از هم جدا بمانند؛ نام/مشخصات سخت‌افزار رقبا به بانک فیچر وارد نشود.",
+      "native_page_text_sha256_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "native_text_present": true,
+      "visual_review_status": "checked_in_contact_sheet_rendered_from_original"
+    },
+    {
+      "pdf_page": 9,
+      "native_characters": 848,
+      "native_words": 135,
+      "native_page_text_sha256": "f9ce752be576ef57ea3e99ed0b6af57971aa30aeb1ae2bcd438c8a6089e46838",
+      "native_folio_in_footer_zone": 1,
+      "image_resource_occurrences": 0,
+      "link_annotations": 0,
+      "section_group": "ISSUANCE_DIAGRAM",
+      "heading_en": "Issue mobile key",
+      "topic_and_limits_fa": "نمودار مستقل شماره‌دار شش‌گام با نقش‌های سامانه؛ ترتیب تصویر معیار است، نه ترتیب خطی ابزار. از نمودار، اتصال یا قابلیت NSP نتیجه نشود.",
+      "native_page_text_sha256_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "native_text_present": true,
+      "visual_review_status": "checked_in_contact_sheet_rendered_from_original"
+    },
+    {
+      "pdf_page": 10,
+      "native_characters": 2517,
+      "native_words": 364,
+      "native_page_text_sha256": "603b728c681cf7078d351cde518f59e50a555f7a2ed02426671f421b5cddaece",
+      "native_folio_in_footer_zone": 1,
+      "image_resource_occurrences": 1,
+      "link_annotations": 0,
+      "section_group": "VENDOR_SCOPE",
+      "heading_en": "Mobile Access by Vingcard / Why us?",
+      "topic_and_limits_fa": "معرفی ناشر، پایداری راهکار، امنیت و خدمات استقرار در بلوک‌های جدا؛ ادعاهای کمّی، امنیتی و خدماتی مشروط به منبع و دورهٔ آن‌اند.",
+      "native_page_text_sha256_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "native_text_present": true,
+      "visual_review_status": "checked_in_contact_sheet_rendered_from_original"
+    },
+    {
+      "pdf_page": 11,
+      "native_characters": 449,
+      "native_words": 77,
+      "native_page_text_sha256": "67ce04ce5591180f83455b41d6743cc70dd615eef1df5de73259d612245420b7",
+      "native_folio_in_footer_zone": 0,
+      "image_resource_occurrences": 1,
+      "link_annotations": 0,
+      "section_group": "CLOSING_COPY",
+      "heading_en": null,
+      "topic_and_limits_fa": "صفحهٔ تیره با متن پایانی و دعوت به تماس؛ شمارهٔ ۱۱ در ناحیهٔ فوتر متن PDF مشاهده نشد.",
+      "native_page_text_sha256_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "native_text_present": true,
+      "visual_review_status": "checked_in_contact_sheet_rendered_from_original"
+    },
+    {
+      "pdf_page": 12,
+      "native_characters": 614,
+      "native_words": 94,
+      "native_page_text_sha256": "0e40a5c06b68fa80d973f8a25b8db9c640e8b8fc2a081d93686f426566f114e8",
+      "native_folio_in_footer_zone": 2,
+      "image_resource_occurrences": 0,
+      "link_annotations": 0,
+      "section_group": "BACK_COVER",
+      "heading_en": null,
+      "topic_and_limits_fa": "جلد پشت، نشان ناشر، درج 03/2024 و اطلاعات تماس؛ فقط ماه چاپ و هویت ثبت شود، نه فهرست تماس و نه تاریخ اولین انتشار.",
+      "native_page_text_sha256_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "native_text_present": true,
+      "visual_review_status": "checked_in_contact_sheet_rendered_from_original"
+    }
+  ],
+  "visual_and_content_inventory_method": {
+    "all_12_library_text_pages_read": true,
+    "all_12_original_pages_rendered_into_contact_sheets": true,
+    "distinct_original_page_renders": 12,
+    "visual_review_is_structure_only": true,
+    "visual_crops_exported": false,
+    "no_ocr_required_for_native_body_text": true,
+    "embedded_illustration_UI_text_requires_later_manual_visual_review": true,
+    "five_step_guest_flow_physical_page": 6,
+    "six_step_issuance_diagram_physical_page": 9,
+    "source_layout_not_target_print_geometry": true
+  },
+  "restrictions_and_audit_flags": [
+    {
+      "pages": [
+        2,
+        10
+      ],
+      "control": "Source market figures, vendor scale, comparisons and security assurances remain attributed and context-gated; no NSP metrics."
+    },
+    {
+      "pages": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "control": "Variant, partner and license conditions are not interchangeable; wallet is source-specific; hardware specifications and models are excluded from feature promotion."
+    },
+    {
+      "pages": [
+        6,
+        9
+      ],
+      "control": "Separate guest and system narratives, preserve shown ordering, and do not infer implementable NSP linkage or runtime acceptance."
+    },
+    {
+      "pages": [
+        7,
+        11,
+        12
+      ],
+      "control": "Photos, copy, logo and contact directory are not licensed or imported for commercial use."
+    },
+    {
+      "pages": [
+        1,
+        4,
+        5,
+        8,
+        9
+      ],
+      "control": "Maintain separation from prior CAT014 Novel evidence: related publisher/topic is not an independent claim or an authorization."
+    }
+  ],
+  "project_alignment": {
+    "editorial_structure_file": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "editorial_structure_revision": "2.3.0",
+    "editorial_structure_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "three_systems_only": true,
+    "new_NSP_capabilities_verified": 0,
+    "new_layouts_approved": 0,
+    "application_source_changed": false,
+    "feature_bank_changed": false,
+    "final_attachment_deferred_to_Defrag": true
+  },
+  "stage_contract": {
+    "scope": "Source inventory only, not text extraction, feature promotion, mapping, image selection or cutouts.",
+    "next_queue_cursor": {
+      "document_index": 8,
+      "document_id": "15",
+      "step_index": 1,
+      "step_id": "S02"
+    },
+    "next_stage": "S02 — استخراج متن دقیق",
+    "next_stage_executed": false
+  }
+}
