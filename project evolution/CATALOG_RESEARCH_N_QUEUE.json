@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 23,
+    "total_pending_steps": 22,
     "completed_new_documents": 14,
     "remaining_new_documents": 4
   },
   "cursor": {
     "document_index": 17,
     "document_id": "58",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -2058,11 +2058,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/58_HDL_IHMS_Edge_S06_source_and_concept_audit.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "857d6cb690e5cb66de8a53e0618b9595144708ac",
+          "notes": "اصل و هش هر ۳۸ صفحهٔ HDL V1.0.0، ۲۴ خلاصه و ترجمه و چهار طرح اصیل ممیزی شد. ۱۰ متن و چهار طرح جدا از تصاویر منبع برای پژوهش داخلی پذیرفته شدند. انتساب ص ۱۴ و ۱۵ دقیق‌تر شد؛ تصویر، متن، رمز یا روند منبع و ادعای NSP وارد نشد. بانک V17، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S07",
@@ -2074,7 +2076,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S05"
+      "last_successful_stage": "S06"
     },
     {
       "id": "61",
