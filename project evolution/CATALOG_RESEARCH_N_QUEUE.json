@@ -2,7 +2,7 @@
   "schema": "nsp-catalog-research-n-queue-v1",
   "schema_version": 1,
   "created_on": "2026-11-22",
-  "last_updated_on": "2026-11-23",
+  "last_updated_on": "2026-11-24",
   "project": "NSP Portfolio Builder",
   "repository": "comboci/NSP-Portfolio-Builder",
   "branch": "main",
@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 97,
+    "total_pending_steps": 96,
     "completed_new_documents": 4,
     "remaining_new_documents": 14
   },
   "cursor": {
     "document_index": 7,
     "document_id": "14",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -896,11 +896,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "75734bc24b0d692fda4d2a5aca7642af1b4cdac2",
+          "notes": "هر ۱۶ صفحه بررسی شد؛ ۹۸ گزیدهٔ انگلیسی، ۳۴ تیتر و ۴۶ شاهد/شرط در ۲۵ مورد کنترل ادعا با متن اصلی تطبیق دقیق دارند. پنج گروه زمینه، چهار ساختار منبع و ۱۲ گروه فهرست چیدمان ثبت شد. دو نوشتهٔ تصویری گوشی و نشان گواهی جدا از متن native نگهداری شدند. گزارش از GitHub با تطبیق کامل بازخوانی شد؛ فقط S02 اجرا شد و S03 در انتظار N بعدی است."
         },
         {
           "id": "S03",
@@ -948,7 +950,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S01"
+      "last_successful_stage": "S02"
     },
     {
       "id": "15",
