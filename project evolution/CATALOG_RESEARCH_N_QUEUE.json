@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 57,
-    "completed_new_documents": 9,
-    "remaining_new_documents": 9
+    "total_pending_steps": 56,
+    "completed_new_documents": 10,
+    "remaining_new_documents": 8
   },
   "cursor": {
-    "document_index": 12,
-    "document_id": "46",
-    "step_index": 6,
-    "step_id": "S07"
+    "document_index": 13,
+    "document_id": "50",
+    "step_index": 0,
+    "step_id": "S01"
   },
   "section_types": [
     {
@@ -1452,7 +1452,7 @@
       "library_path": "/46_Crestron_Work C08.3.pdf",
       "bytes": 1951685,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "in_progress",
+      "status": "completed",
       "prior_import": null,
       "steps": [
         {
@@ -1531,14 +1531,24 @@
         {
           "id": "S07",
           "key": "feature_json_and_commit",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/feature.json",
+            "Portfolio Instruction/feature.js",
+            "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S07_ingest_manifest.json",
+            "Portfolio Instruction/assets/crestron46-01-facade-hero.webp",
+            "Portfolio Instruction/assets/crestron46-01-project-fact-sidebar.webp",
+            "Portfolio Instruction/assets/crestron46-02-room-panorama-divider.webp",
+            "Portfolio Instruction/assets/crestron46-03-mobile-context-room.webp",
+            "Portfolio Instruction/assets/crestron46-04-two-zone-room-bath-photo.webp",
+            "Portfolio Instruction/assets/crestron46-04-results-and-context-headings.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "e7ca2f2caff1526f017bf47162a4bef136ccf756",
+          "notes": "بانک پژوهش V13: ۱۳ کاتالوگ، ۶۰۰ رکورد و ۱۳۱ تصویر. از Bloc Hotels فقط ۱۱ رکورد و ۶ برش ممیزی‌شده برای مرجع داخلی افزوده شد؛ گزیدهٔ مسیر بدون کارت و نمای پیش‌نمایش وارد بانک نشدند. ادعای قابلیت یا نشر NSP احراز نشد؛ دادهٔ قبلی، برنامه و سکشن‌ها تغییر نکردند."
         }
       ],
-      "last_successful_stage": "S06"
+      "last_successful_stage": "S07"
     },
     {
       "id": "50",
