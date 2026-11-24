@@ -1,0 +1,250 @@
+{
+  "schema": "nsp-catalog-research-s01-source-inventory-v1",
+  "stage": "S01",
+  "stage_key": "source_inventory",
+  "status": "completed_source_verified",
+  "document_id": "17",
+  "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+  "date_checked": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "ebd4f82d751fa5c1fe445be351cd2026897ad653",
+  "continuation_recovery": {
+    "previous_completed_stage": "16/S07",
+    "previous_stage_commit": "cd293dc1227c0e1aa44ca14de94b4df9c61ad998",
+    "previous_stage_manifest": "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S07_ingest_manifest.json",
+    "feature_library_version": 10,
+    "catalogs": 10,
+    "features": 541,
+    "images": 109,
+    "feature_json_js_data_equal": true,
+    "previous_stage_reexecuted": false
+  },
+  "source": {
+    "company": "Honeywell",
+    "publisher": "Honeywell Building Technologies / Honeywell International Inc.",
+    "publisher_evidence_pdf_pages": [
+      1,
+      4
+    ],
+    "title": "INNCOM Services & Support",
+    "title_evidence_pdf_page": 1,
+    "filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+    "library_path": "/17_Honeywell_INNCOM Services Brochure.pdf",
+    "file_size_bytes": 146243,
+    "queued_file_size_bytes": 146243,
+    "file_size_matches_queue": true,
+    "sha256": "35c9be5b519ebfc25df52c169a2a7addc9bbb3120d39811454a951ac1a633859",
+    "availability": "Exact Library original: filename, size, byte hash and four distinct original page renders verified.",
+    "external_publisher_site_verification_performed": false,
+    "pdf_format": "PDF 1.5",
+    "pdf_page_count": 4,
+    "page_width_pt": 612,
+    "page_height_pt": 792,
+    "page_size_name": "US Letter",
+    "orientation": "portrait",
+    "all_pages_same_size": true,
+    "all_pages_unrotated": true,
+    "encrypted": false,
+    "pdf_creator": "Adobe InDesign 15.0 (Macintosh)",
+    "pdf_producer": "Adobe PDF Library 15.0",
+    "pdf_metadata_creation_date": "D:20200908133352-05'00'",
+    "pdf_metadata_modification_date": "D:20200908133356-05'00'",
+    "printed_edition_string": "01-00150 I 07/20 I LM",
+    "document_number": "01-00150",
+    "printed_edition_month": "2020-07",
+    "printed_edition_suffix": "LM",
+    "suffix_meaning_not_inferred": true,
+    "printed_edition_evidence_pdf_page": 4,
+    "first_publication_date_verified": false,
+    "metadata_creation_distinct_from_printed_edition": true,
+    "language": "en",
+    "pages_with_native_text": 4,
+    "link_annotation_count": 0,
+    "bookmarks": 0,
+    "embedded_raster_occurrences": 4,
+    "image_occurrences_not_visual_idea_count": true,
+    "original_pdf_modified": false
+  },
+  "pagination": {
+    "canonical_reference": "physical PDF page, 1-indexed",
+    "pdf_page_label_rules": [],
+    "all_pages_present_and_distinct_in_renders": true,
+    "no_external_master_copy_comparison": true
+  },
+  "page_index": [
+    {
+      "pdf_page": 1,
+      "rect_pt": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "native_characters": 223,
+      "native_words": 35,
+      "native_text_sha256": "f920a244118036a857654d30595d4e5c58f00eb485700af84d0cada5b297bc68",
+      "embedded_raster_occurrences": 1,
+      "link_annotation_count": 0,
+      "low_resolution_raster_sha256": "64ac7aedb3bb4db9b70ea4c2ec0bbeff824fcbc400fb4d288e9b9d721bce97c8",
+      "key": "COVER_AND_SERVICE_POSITIONING",
+      "heads": [
+        "INNCOM Services & Support"
+      ],
+      "note": "جلد با تیتر مسئولیت سیستم در برابر توجه هتل‌دار به مهمان؛ تصویر فرد و پیام سطح خدمت شاهد قابلیت NSP نیست.",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visually_checked_in_original_contact_sheet": true
+    },
+    {
+      "pdf_page": 2,
+      "rect_pt": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "native_characters": 1659,
+      "native_words": 230,
+      "native_text_sha256": "4e21106b177b54c44130b5c40dcd970407845a008b31ee0ed6a325c71d3b9f67",
+      "embedded_raster_occurrences": 2,
+      "link_annotation_count": 0,
+      "low_resolution_raster_sha256": "9dfd18bedd2f94aa8e519031b5d2b61786bbb88b4a773b318518075cb6633cab",
+      "key": "SUPPORT_TIERS_AND_WARRANTY",
+      "heads": [
+        "INNCOM SERVICES & SUPPORT",
+        "FREE BASIC SUPPORT",
+        "INDUSTRY-LEADING 2-YEAR PRODUCT WARRANTY"
+      ],
+      "note": "پشتیبانی پایه با شروط ساعت و طرح‌های خدمات ۲۴/۷ مستقل‌اند. ضمانت عیب ساخت/مواد و ضمانت تمدیدشده یا سطح خدمت یکی نیستند. تصویر داشبورد از ادعاهای اجرایی جدا مطالعه شود.",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visually_checked_in_original_contact_sheet": true
+    },
+    {
+      "pdf_page": 3,
+      "rect_pt": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "native_characters": 3910,
+      "native_words": 538,
+      "native_text_sha256": "ebd67609041cbcb576aab1b590ec0d6c07cc7cd2f5fe631113d20e1cca967503",
+      "embedded_raster_occurrences": 1,
+      "link_annotation_count": 0,
+      "low_resolution_raster_sha256": "009c3a95a5fb9e9365acc492eef76bbb6a596e28fd88ee01dc0e816580a03d1e",
+      "key": "SERVICE_CATALOGUE",
+      "heads": [
+        "INNCOM SERVICES",
+        "DESIGN ENGINEERING",
+        "INSTALLATION & COMMISSIONING",
+        "CONSULTATION",
+        "TRAINING",
+        "TECHNICAL SUPPORT"
+      ],
+      "note": "سه ستونِ طراحی/استقرار/مشاوره، آموزش و پشتیبانی. گزارش‌ها، درگاه نسخه‌های IC3 و IC5 و انواع آموزش در S02 منبع‌محور بمانند. NOC نام خدمت ناشر است.",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visually_checked_in_original_contact_sheet": true
+    },
+    {
+      "pdf_page": 4,
+      "rect_pt": [
+        0,
+        0,
+        612,
+        792
+      ],
+      "rotation": 0,
+      "native_characters": 1262,
+      "native_words": 164,
+      "native_text_sha256": "a428456e63d695775a1eff5e650ae74300c548d3d99d03520ca91f9700b76afd",
+      "embedded_raster_occurrences": 0,
+      "link_annotation_count": 0,
+      "low_resolution_raster_sha256": "78deed13b6d110c0ddef9502d56b022dd1a1a95348d91b5e2263cb56be55e189",
+      "key": "PLAN_COMPARISON_AND_AVAILABLE_SERVICES",
+      "heads": [
+        "FROM SIMPLE ASSISTANCE TO SEAMLESS SERVICE",
+        "INNSERVICE PLANS",
+        "AVAILABLE SERVICES"
+      ],
+      "note": "دو جدول متفاوت: بسته‌های INNservice و خدمات مستقل. ردیف‌های مشترک و پاورقی IC5 را هنگام استخراج به همان سلول مربوط نسبت بده؛ نشانی، QR و اطلاعات تماس وارد بانک نشوند.",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visually_checked_in_original_contact_sheet": true
+    }
+  ],
+  "separate_document_check": {
+    "this_document_number": "01-00150",
+    "related_catalogs_in_V10": [
+      {
+        "document_number": "01-00139",
+        "catalog_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+        "printed_edition_date": "2023-10-12"
+      },
+      {
+        "document_number": "01-00149",
+        "catalog_id": "CAT001_HONEYWELL_INNCOM_HOSPITALITY_IOT",
+        "printed_edition_date": "2023-10-12"
+      }
+    ],
+    "distinct_sources_must_not_be_merged": true,
+    "note_fa": "این بروشور خدمات و پشتیبانی است؛ داده یا سنجش HVAC از دو بروشور دیگر به آن منتقل نشود."
+  },
+  "restrictions_and_audit_flags": [
+    {
+      "pdf_pages": [
+        2,
+        4
+      ],
+      "control": "Distinguish basic support from source plan or separately available 24/7 offerings; retain original hours or IC5 conditions only in the correct context."
+    },
+    {
+      "pdf_pages": [
+        2
+      ],
+      "control": "Vendor warranty period, defect conditions, exclusions, upgrades and extended warranty are source policy, not law or NSP policy."
+    },
+    {
+      "pdf_pages": [
+        3
+      ],
+      "control": "Keep design and installation, training, reports, NOC and app capabilities separate; software-version references are contextual, not current availability or NSP entitlement."
+    },
+    {
+      "pdf_pages": [
+        4
+      ],
+      "control": "Do not combine plan columns, assume every service is bundled, copy contacts/QR or infer the suffix meaning."
+    }
+  ],
+  "visual_and_content_inventory_method": {
+    "Library_native_text_coverage": 4,
+    "original_contact_sheet_pages_seen": 4,
+    "all_source_rasters_distinct": true,
+    "local_contact_sheet_not_added_to_repository": true,
+    "visual_crops_exported": false,
+    "no_OCR_needed_for_native_body_text": true,
+    "tables_and_dashboard_labels_need_later_local_page_check": true
+  },
+  "project_alignment": {
+    "editorial_structure_file": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "editorial_structure_revision": "2.3.0",
+    "NSP_capabilities_verified": 0,
+    "feature_bank_changed": false,
+    "application_source_changed": false
+  },
+  "stage_contract": {
+    "scope": "Source identity and page inventory only; no S02 extraction, translation, visual assets or mapping.",
+    "next_queue_cursor": {
+      "document_index": 10,
+      "document_id": "17",
+      "step_index": 1,
+      "step_id": "S02"
+    },
+    "next_stage": "S02 — استخراج متن دقیق",
+    "next_stage_executed": false
+  }
+}
