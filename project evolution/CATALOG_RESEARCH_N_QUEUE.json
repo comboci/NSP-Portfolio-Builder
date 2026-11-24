@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 73,
+    "total_pending_steps": 72,
     "completed_new_documents": 7,
     "remaining_new_documents": 11
   },
   "cursor": {
     "document_index": 10,
     "document_id": "17",
-    "step_index": 4,
-    "step_id": "S05"
+    "step_index": 5,
+    "step_id": "S06"
   },
   "section_types": [
     {
@@ -1291,11 +1291,13 @@
         {
           "id": "S05",
           "key": "section_type_mapping",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S05_section_mapping.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "0d8f8684c38edfd8a9fa8793ff13f7beeaba881c",
+          "notes": "۱۰ رکورد از ۲۰ و ۵ تصویر از ۷ مقصد پیشنهادی گرفتند؛ ۱۰ متن و ۲ سبک بی‌مقصد ماندند. ساعت/قیمت/ضمانت و شرط IC5 به NSP نسبت داده نشدند. جدول دو ستون و پاورقی فقط مرجع سبک داخلی است؛ تأیید انتشار یا اتصال به صفحه انجام نشد. بانک V10 و برنامه ثابت‌اند."
         },
         {
           "id": "S06",
@@ -1316,7 +1318,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S04"
+      "last_successful_stage": "S05"
     },
     {
       "id": "34",
