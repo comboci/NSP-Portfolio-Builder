@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 63,
+    "total_pending_steps": 62,
     "completed_new_documents": 9,
     "remaining_new_documents": 9
   },
   "cursor": {
     "document_index": 12,
     "document_id": "46",
-    "step_index": 0,
-    "step_id": "S01"
+    "step_index": 1,
+    "step_id": "S02"
   },
   "section_types": [
     {
@@ -1452,17 +1452,19 @@
       "library_path": "/46_Crestron_Work C08.3.pdf",
       "bytes": 1951685,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "queued",
+      "status": "in_progress",
       "prior_import": null,
       "steps": [
         {
           "id": "S01",
           "key": "source_inventory",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S01_source_inventory.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "026a68e137c876ba2c74c8d7b7a1a8ec3269fe01",
+          "notes": "مطالعهٔ موردی Bloc Hotels از اصل فایل Library تأیید شد: ۴ صفحهٔ فیزیکی، نسخهٔ چاپی v. 012723 و حق نشر ۲۰۲۳ در ص ۴. هر صفحه دیداری کنترل شد؛ با Hotel Renegade ادغام نشد. فقط شناسایی و شاخص صفحه؛ بانک V12، برنامه و سکشن‌ها ثابت‌اند."
         },
         {
           "id": "S02",
@@ -1518,7 +1520,8 @@
           "commit_sha": null,
           "notes": null
         }
-      ]
+      ],
+      "last_successful_stage": "S01"
     },
     {
       "id": "50",
