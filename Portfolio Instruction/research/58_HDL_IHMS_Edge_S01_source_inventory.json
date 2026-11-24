@@ -1,0 +1,1031 @@
+{
+  "schema": "nsp-catalog-research-s01-source-inventory-v1",
+  "stage": "S01",
+  "stage_key": "source_inventory",
+  "status": "completed_verified_original_document_and_physical_page_inventory",
+  "document_id": "58",
+  "source_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100",
+  "date_checked": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "f6390c84cec42ef16c060a1b2e8c18a1d5589bea",
+  "source": {
+    "company": "HDL Automation",
+    "publisher_as_printed": "Guangzhou Hedong Technology Co., Ltd.",
+    "publisher_evidence_pdf_pages": [
+      2,
+      5
+    ],
+    "title": "HDL IHMS Edge Hotel Guest Control System User Manual",
+    "title_evidence_pdf_page": 1,
+    "document_type": "versioned hotel guest-control software user manual, not a marketing product brochure",
+    "filename": "58_HDL_Automation_Work C16.1.pdf",
+    "library_path": "/58_HDL_Automation_Work C16.1.pdf",
+    "file_size_bytes": 2626415,
+    "file_size_matches_queue": true,
+    "pdf_pages": 38,
+    "sha256": "0afdcc2ef2f063ef47a6ce1724da2f5260f6b201ee6337fb4fa271fa8c24add4",
+    "source_original_from_exact_user_Library_match": true,
+    "pdf_format": "PDF 1.7",
+    "pdf_creator": "WPS 文字",
+    "pdf_producer": "macOS 版本15.5（版号24F74） Quartz PDFContext",
+    "pdf_creation_metadata": "D:20260330105430+08'00'",
+    "pdf_modification_metadata": "D:20260330105430+08'00'",
+    "printed_document_version": "V1.0.0",
+    "printed_release_date_iso": "2026-03-30",
+    "printed_release_date_evidence_physical_pages": [
+      1,
+      5
+    ],
+    "revision_history_labels_release_as_first": true,
+    "version_label_is_for_document_not_proof_of_current_product_build": true,
+    "work_filename_suffix_not_document_version": true,
+    "language": "en",
+    "encrypted": false,
+    "external_publisher_site_verification_performed": false,
+    "source_original_committed": false,
+    "source_original_modified": false
+  },
+  "pagination": {
+    "canonical_reference": "1-based physical PDF page",
+    "physical_pages": 38,
+    "orientation": "A4 portrait, unrotated",
+    "page_size_points": [
+      595.3,
+      841.9
+    ],
+    "printed_contents_physical_pages": [
+      2,
+      3
+    ],
+    "roman_folios_observed": {
+      "2": "I",
+      "3": "II",
+      "4": "III",
+      "5": "IV"
+    },
+    "cover_unnumbered": true,
+    "printed_TOC_body_reference_anchor_examples": [
+      {
+        "printed_TOC_reference": "5",
+        "physical_pdf_page": 6
+      },
+      {
+        "printed_TOC_reference": "8",
+        "physical_pdf_page": 9
+      },
+      {
+        "printed_TOC_reference": "20",
+        "physical_pdf_page": 21
+      },
+      {
+        "printed_TOC_reference": "21",
+        "physical_pdf_page": 22
+      },
+      {
+        "printed_TOC_reference": "34",
+        "physical_pdf_page": 35
+      },
+      {
+        "printed_TOC_reference": "37",
+        "physical_pdf_page": 38
+      }
+    ],
+    "verified_pdf_outline_entries": 49,
+    "pdf_page_label_rules": [],
+    "body_TOC_references_not_used_as_canonical_physical_citations": true,
+    "private_contact_sample_viewed_physical_pages": [
+      1,
+      2,
+      3,
+      6,
+      8,
+      10
+    ],
+    "visual_assets_added_count": 0
+  },
+  "chapter_inventory": [
+    {
+      "physical_pdf_page_start": 1,
+      "physical_pdf_page_end": 1,
+      "section_group": "cover",
+      "scope_note_fa": "جلد و شناسهٔ نسخهٔ راهنمای کاربر"
+    },
+    {
+      "physical_pdf_page_start": 2,
+      "physical_pdf_page_end": 3,
+      "section_group": "printed_contents",
+      "scope_note_fa": "فهرست چاپی و موضوعات راهنما"
+    },
+    {
+      "physical_pdf_page_start": 4,
+      "physical_pdf_page_end": 4,
+      "section_group": "rights_notice",
+      "scope_note_fa": "صفحهٔ اعلام حقوق ناشر؛ مجوز بازنشر احراز نشده است"
+    },
+    {
+      "physical_pdf_page_start": 5,
+      "physical_pdf_page_end": 5,
+      "section_group": "revision_history",
+      "scope_note_fa": "تاریخچهٔ نسخه؛ عنوان نسخه و تاریخ انتشار چاپی"
+    },
+    {
+      "physical_pdf_page_start": 6,
+      "physical_pdf_page_end": 6,
+      "section_group": "system_overview",
+      "scope_note_fa": "معرفی ساختار کلی و دسته‌های کارکرد در روایت ناشر"
+    },
+    {
+      "physical_pdf_page_start": 7,
+      "physical_pdf_page_end": 9,
+      "section_group": "deployment_and_login_boundary",
+      "scope_note_fa": "پیش‌نیاز و ورود؛ فقط شاخص موضوع و بدون دادهٔ ورود، آدرس، پیکربندی، سخت‌افزار یا دستور"
+    },
+    {
+      "physical_pdf_page_start": 10,
+      "physical_pdf_page_end": 11,
+      "section_group": "overview_and_card_topic_boundary",
+      "scope_note_fa": "مرور مسئله و آغاز موضوع کارت؛ شاخص عنوان، بدون محتوای عملکرد یا داده"
+    },
+    {
+      "physical_pdf_page_start": 12,
+      "physical_pdf_page_end": 13,
+      "section_group": "credentials_and_cards_workflow_excluded",
+      "scope_note_fa": "موضوع کارت و سوابق؛ هیچ مسیر، شناسه، دادهٔ استفاده یا جزئیات امنیتی استخراج نشود"
+    },
+    {
+      "physical_pdf_page_start": 14,
+      "physical_pdf_page_end": 17,
+      "section_group": "room_management_topics",
+      "scope_note_fa": "گروه‌های معرفی اتاق و کنترل؛ فقط دسته‌بندی، بدون اجرای فردی یا گروهی، تنظیم و جریان احراز"
+    },
+    {
+      "physical_pdf_page_start": 18,
+      "physical_pdf_page_end": 20,
+      "section_group": "services_topics",
+      "scope_note_fa": "موضوع خدمات هتل، نوع و سوابق؛ صرفاً تیتر تحریریه‌ای، بدون نمایهٔ اضطراری یا شیوهٔ پردازش"
+    },
+    {
+      "physical_pdf_page_start": 21,
+      "physical_pdf_page_end": 24,
+      "section_group": "device_management_topics",
+      "scope_note_fa": "معرفی گونه‌های مدیریت تجهیزات و سوابق؛ بدون شناسه، اتصال، فرمان، پیکربندی یا تصویر رابط"
+    },
+    {
+      "physical_pdf_page_start": 25,
+      "physical_pdf_page_end": 28,
+      "section_group": "information_and_hvac_topics",
+      "scope_note_fa": "تنظیمات اطلاعات و تهویه در نمایه؛ جزییات امنیتی، بازه‌ها و منطق بهره‌برداری خارج از پژوهش قابل انتشار"
+    },
+    {
+      "physical_pdf_page_start": 29,
+      "physical_pdf_page_end": 30,
+      "section_group": "optional_guest_experience_and_pms_topics",
+      "scope_note_fa": "نمایهٔ خدمات مهمان و اتصال سامانهٔ مدیریت هتل؛ نه اطلاعات اتصال یا تضمین سازگاری"
+    },
+    {
+      "physical_pdf_page_start": 31,
+      "physical_pdf_page_end": 34,
+      "section_group": "organization_and_logs_topics",
+      "scope_note_fa": "گروه‌بندی اداری و سوابق؛ بدون مجوز نقش، اطلاعات حساب، دادهٔ کارکنان و شیوهٔ کنترل"
+    },
+    {
+      "physical_pdf_page_start": 35,
+      "physical_pdf_page_end": 38,
+      "section_group": "property_management_topics",
+      "scope_note_fa": "معرفی گروه‌های مدیریت اقامت؛ نه دادهٔ مهمان، روند اجرایی، نتیجهٔ پروژه یا قابلیت NSP"
+    }
+  ],
+  "page_index": [
+    {
+      "pdf_page": 1,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": null,
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 96,
+      "native_words": 15,
+      "native_text_sha256": "5fed0076357e1f8ef0901e98213956810f65075edc3d84ae1e94a218452021cc",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 0,
+      "section_group": "cover",
+      "visual_review_status": "inventory contact sample viewed; not retained in repository"
+    },
+    {
+      "pdf_page": 2,
+      "verified_printed_folio": "I",
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": null,
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 3261,
+      "native_words": 100,
+      "native_text_sha256": "5d77bc471320b4d1cbfc1616f968b9889b0a6dd01f9f424d175517752e43691d",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 48,
+      "section_group": "printed_contents",
+      "visual_review_status": "inventory contact sample viewed; not retained in repository"
+    },
+    {
+      "pdf_page": 3,
+      "verified_printed_folio": "II",
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": null,
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 3204,
+      "native_words": 104,
+      "native_text_sha256": "36189080c9951edb41ad25ae081502c6002d8bb557d3197e29f91b5eab134246",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 50,
+      "section_group": "printed_contents",
+      "visual_review_status": "inventory contact sample viewed; not retained in repository"
+    },
+    {
+      "pdf_page": 4,
+      "verified_printed_folio": "III",
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": null,
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 792,
+      "native_words": 111,
+      "native_text_sha256": "a6dd9fbfd639ccd4b304a50d123b88f40e110f8da3c2ecb246c3acecd362bcac",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 0,
+      "section_group": "rights_notice",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 5,
+      "verified_printed_folio": "IV",
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": null,
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 346,
+      "native_words": 52,
+      "native_text_sha256": "fb6e6e94fcb78051db074f1f32e62751ca94125c722233e7ff04255ec3f38d5a",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 0,
+      "section_group": "revision_history",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 6,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1755,
+      "native_words": 233,
+      "native_text_sha256": "745b2176d9636ecb6f0274014d7407b2733c4291fb6dd70611610644f9565877",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 0,
+      "section_group": "system_overview",
+      "visual_review_status": "inventory contact sample viewed; not retained in repository"
+    },
+    {
+      "pdf_page": 7,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1461,
+      "native_words": 220,
+      "native_text_sha256": "747a5fad23077fe7a241070df227b4c59405d9825530a10726827dbfc70a5c9c",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 0,
+      "section_group": "deployment_and_login_boundary",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 8,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 955,
+      "native_words": 154,
+      "native_text_sha256": "53edfd65bca900e94361fc325dbc4778a759b238756153c8ea12d79525c83c98",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "deployment_and_login_boundary",
+      "visual_review_status": "inventory contact sample viewed; not retained in repository"
+    },
+    {
+      "pdf_page": 9,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1014,
+      "native_words": 160,
+      "native_text_sha256": "4971f772809522043ce2e2035f8e8873c81e1c74aaf3d5d0d77e0e11a68f6056",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "deployment_and_login_boundary",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 10,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1361,
+      "native_words": 205,
+      "native_text_sha256": "5f16360df34a941e2c63dee4049bdfa58fa7c186404e9b90bbf6c94bf88a17e8",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "overview_and_card_topic_boundary",
+      "visual_review_status": "inventory contact sample viewed; not retained in repository"
+    },
+    {
+      "pdf_page": 11,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 922,
+      "native_words": 134,
+      "native_text_sha256": "c4958dd642225b9566cfaa8d1f1f69fe1b06265dc0729e9ed5a1862a398a296e",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "overview_and_card_topic_boundary",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 12,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1761,
+      "native_words": 287,
+      "native_text_sha256": "f1ec0af9b166c944cd6c24e34e261dd2af457ccecc23bd30d42f483ee19c2718",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "credentials_and_cards_workflow_excluded",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 13,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 974,
+      "native_words": 145,
+      "native_text_sha256": "4908c07106b6d585faf6806a470eea6327735f3d595f9ac09fbb175969ac2f81",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "credentials_and_cards_workflow_excluded",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 14,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 998,
+      "native_words": 135,
+      "native_text_sha256": "d76161ffca4e09cc85df04911dcea955b4db19d028740c047eaf6f915530d0af",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "room_management_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 15,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 846,
+      "native_words": 137,
+      "native_text_sha256": "81ff9e9f08ea0258973f8c6431c740b7edf2fea20f11611610a9e35f1ae97207",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "room_management_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 16,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1281,
+      "native_words": 196,
+      "native_text_sha256": "781a1e33117d65238bc9d0263e8567cae9ef3e5fa066bb1ea3690764e6d74c34",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "room_management_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 17,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1031,
+      "native_words": 159,
+      "native_text_sha256": "838b133b5a9ad38cfd26c7849491c45fa0e1ab0d1c6224913e98b39087020a60",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "room_management_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 18,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 778,
+      "native_words": 105,
+      "native_text_sha256": "14baae6dc6c60f2f915e8ebdb59cd0d256d09b6d269a115843b52334b609bded",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "services_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 19,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1465,
+      "native_words": 225,
+      "native_text_sha256": "073ae424f651b7a6ab74576ad5a2487ab5dc1cfc7874b40dbce1b7bd43cce18e",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "services_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 20,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 983,
+      "native_words": 150,
+      "native_text_sha256": "0187f22267f652bf210d34d1784e635b6af99bad64f047905b598f1b304a7280",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "services_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 21,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1873,
+      "native_words": 264,
+      "native_text_sha256": "33fa582b90198d601a8a7e6fcd51932075a1e606276ec12ffde4c09db35c7a58",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 0,
+      "section_group": "device_management_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 22,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1016,
+      "native_words": 134,
+      "native_text_sha256": "2710e1ee39c66cd41e8cbb18290b4b4adf19c9d0a18b1f6ce1d4185d6c1c5af9",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "device_management_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 23,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1064,
+      "native_words": 167,
+      "native_text_sha256": "54010fabedece41d115eb4228a1669b69dafe3215eff3a0155531dac2cf3fb9d",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "device_management_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 24,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 974,
+      "native_words": 120,
+      "native_text_sha256": "400681f77f6f0aa616d3c36b1c8e93ea3f01a3395ef3b59bb12cdd7d832e3ae5",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "device_management_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 25,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1558,
+      "native_words": 227,
+      "native_text_sha256": "6e6ccd5932d30483e332b6792953103810e00a92045021de903cb65928804a9e",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "information_and_hvac_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 26,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 932,
+      "native_words": 133,
+      "native_text_sha256": "12bf7b5bb003f8f208e551701a2963afa2227ab090a4f9643bdd5fd6719b5679",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "information_and_hvac_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 27,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1727,
+      "native_words": 275,
+      "native_text_sha256": "7f27f319d397ef292577a05d86070f418db13cecb100c9ceb09a4b973bdfc457",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "information_and_hvac_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 28,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1157,
+      "native_words": 174,
+      "native_text_sha256": "4c101951074cbabc0c810a3aacd678c496509df5795c1380d1d4b27782ccfed6",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "information_and_hvac_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 29,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1229,
+      "native_words": 183,
+      "native_text_sha256": "c94f177c2ff62aa909636e78f8a1174acacfbcaad8f604fb5f8b061d00d96503",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "optional_guest_experience_and_pms_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 30,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 817,
+      "native_words": 128,
+      "native_text_sha256": "8cb7d39214ca36c5dfeeadad0cee2cc5b88c3c006bb07773e73db62d7bdd41dd",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "optional_guest_experience_and_pms_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 31,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1374,
+      "native_words": 191,
+      "native_text_sha256": "6ede09217970c15c3da14d013361a0bceed391655681f8809c7711c8b7678d91",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "organization_and_logs_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 32,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 896,
+      "native_words": 129,
+      "native_text_sha256": "0d0822ac9b7ae8a7d2d9a3731c80bc86c3203b90e7f58c94ea64d7ef60bca4c8",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "organization_and_logs_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 33,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 858,
+      "native_words": 124,
+      "native_text_sha256": "70ef7ec65bd0b502e9677a943e0a559c7e0aee2ca627133f31ae5ffc47c081f5",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "organization_and_logs_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 34,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1476,
+      "native_words": 215,
+      "native_text_sha256": "f2900a19fc7493cb84c3ab0cd10e8c2f82ceed271c3b941a2355036acf4f2440",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "organization_and_logs_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 35,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1474,
+      "native_words": 221,
+      "native_text_sha256": "05f589b336fe33c9bf25a249ec15c541502cffbdaaeea82b4859f00e68dd8dee",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "property_management_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 36,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1284,
+      "native_words": 188,
+      "native_text_sha256": "231e0808e54650b6f2f3641239dd9cc8669105896d232c856c7e71d9d7067632",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "section_group": "property_management_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 37,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 934,
+      "native_words": 132,
+      "native_text_sha256": "66fd4b3dadbd43f3abbbc1e187302b2372c75e5fa93333831452321bcdc34956",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "property_management_topics",
+      "visual_review_status": "native inventory only"
+    },
+    {
+      "pdf_page": 38,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "other_pagination_basis": "Physical PDF page is canonical. TOC label offset is checked at chapter anchors, not entered as an independently observed footer.",
+      "rect_pt": [
+        0,
+        0,
+        595.3,
+        841.9
+      ],
+      "rotation": 0,
+      "native_characters": 1042,
+      "native_words": 128,
+      "native_text_sha256": "c7561063fd7a766e6a078d34fb042bfbe453f8b13e63fb626891b32757b02e79",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()), no page prose copied.",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "section_group": "property_management_topics",
+      "visual_review_status": "native inventory only"
+    }
+  ],
+  "cross_catalog_identity": {
+    "exact_manual_not_generic_HDL_product_catalog": true,
+    "prior_HDL_catalogs_in_V17": [],
+    "release_date_not_proof_of_current_capabilities": true
+  },
+  "research_controls": {
+    "repository_visibility": "public",
+    "public_checkpoint_contains_document_identity_page_hashes_and_paraphrased_index_only": true,
+    "page_4_rights_notice_restricts_third_party_distribution_without_written_permission": true,
+    "authorization_for_redistribution_verified": false,
+    "no_original_PDF_screenshots_or_prose_in_repo": true,
+    "for_next_stages_fa": "فقط دسته‌بندی و الگوی غیرعملیاتی به زبان خودمان و همراه شمارهٔ صفحه. دادهٔ ورود، مراحل راه‌اندازی، جریان کارت/تأیید، اطلاعات شبکه و حساب‌، مسیر امنیتی، دادهٔ نمونه، تصویر رابط و نشان‌های منبع در مخزن عمومی قرار نگیرند. برای مقایسهٔ دیداری از طرح اصیلِ ساده و بی‌نام استفاده شود یا شواهد فقط در فضای خصوصی بمانند. کارکرد توصیف‌شده برای HDL است، نه NSP، نه ادعای سازگاری/ایمنی و نه نتیجهٔ مستقل."
+  },
+  "stage_boundary": {
+    "S01_document_inventory_only": true,
+    "no_text_excerpt_or_translation_or_visual_published": true,
+    "no_app_or_bank_change": true
+  },
+  "next_stage": "S02 — استخراج متن دقیق",
+  "next_queue_cursor": {
+    "document_index": 17,
+    "document_id": "58",
+    "step_index": 1,
+    "step_id": "S02"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
