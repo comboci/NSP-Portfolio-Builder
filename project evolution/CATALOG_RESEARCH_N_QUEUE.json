@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 83,
+    "total_pending_steps": 82,
     "completed_new_documents": 6,
     "remaining_new_documents": 12
   },
   "cursor": {
     "document_index": 9,
     "document_id": "16",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -1142,11 +1142,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S02_english_text.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "65b4e3af089d191565efba6ac0fd8fa01424a133",
+          "notes": "۲۹ گزیدهٔ کوتاه انگلیسی از هر چهار صفحه با دو موتور متن تأیید شد. پنج ردیف جدول HVAC سند 01-00139 از رندر صفحهٔ ۲ کنترل شد؛ سه ردیف با کاتالوگ مجزای 01-00149 فرق دارد. هر جدول با مبنای زمان کارکرد HVAC و شروط منبع جدا ماند؛ نتیجه‌ای به NSP نسبت داده نشد. بانک V9 و برنامه بی‌تغییرند."
         },
         {
           "id": "S03",
@@ -1194,7 +1196,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S01"
+      "last_successful_stage": "S02"
     },
     {
       "id": "17",
