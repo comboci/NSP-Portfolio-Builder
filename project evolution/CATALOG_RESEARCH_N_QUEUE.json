@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 89,
+    "total_pending_steps": 88,
     "completed_new_documents": 5,
     "remaining_new_documents": 13
   },
   "cursor": {
     "document_index": 8,
     "document_id": "15",
-    "step_index": 2,
-    "step_id": "S03"
+    "step_index": 3,
+    "step_id": "S04"
   },
   "section_types": [
     {
@@ -1037,11 +1037,13 @@
         {
           "id": "S03",
           "key": "feature_software_translation",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S03_features_fa.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "75f4676f3a53f14c626d6c876ee5ff3d20a81c91",
+          "notes": "۲۵ رکورد پژوهشی انگلیسی‌ـ‌فارسی با شمارهٔ صفحه ثبت شد: ۸ مورد نرم‌افزار رقیب، یک سناریوی مهمان و یک معماری منبع. ۲۶ گزیده به فیچر تبدیل نشد؛ ۱۳ قید فقط در زمینه ترجمه و ۱۴ قید ادعای ناشر حفظ شدند. همهٔ ۵۱ گزیده تعیین تکلیف شدند. هیچ قابلیت، ادعا یا حق انتشار NSP ثبت نشد و بانک V8 و برنامه بدون تغییرند."
         },
         {
           "id": "S04",
@@ -1080,7 +1082,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S02"
+      "last_successful_stage": "S03"
     },
     {
       "id": "16",
