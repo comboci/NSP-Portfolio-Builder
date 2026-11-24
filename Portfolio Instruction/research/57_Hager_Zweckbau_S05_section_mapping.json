@@ -1,0 +1,2456 @@
+{
+  "schema": "nsp-catalog-research-s05-section-mapping-v1",
+  "stage": "S05",
+  "stage_key": "section_type_mapping",
+  "status": "completed_proposed_internal_editorial_and_style_mapping_only",
+  "document_id": "57",
+  "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+  "source_language": "de",
+  "verified_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "574d407dfdd5db0c4052872f2a2af8db810dd695",
+  "source_document": {
+    "company": "Hager",
+    "title": "Hager im Zweckbau",
+    "filename": "57_Hager_Work C15.1.pdf",
+    "sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+    "pdf_pages": 172,
+    "printed_document_code": "19DE0075_01",
+    "imprint_physical_page": 172,
+    "hotel_physical_page_range": [
+      32,
+      71
+    ],
+    "printed_edition_date_not_verified": true
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S01_source_inventory.json",
+      "commit_sha": "4e0a33e3e30c76cd6a38d59e83519e45d8e3ab35",
+      "blob_sha": "a489cd42cd56523eb8ccda538149a43af511e94a"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S02_german_text.json",
+      "blob_sha": "51e45bae2ba19081d0d1fd6b8882a8d525b04938",
+      "commit_sha": "e89e8a12939597b06e1351646856a35d2e012cf5"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S03_features_fa.json",
+      "blob_sha": "45ed9f53f1d896435739726884baf0ac9b9904af",
+      "commit_sha": "95d16d6a6d6a7713e2ecc57336173dc00fd52f85"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S04_visual_styles.json",
+      "blob_sha": "6c3f33661fc6e9d6d54d9f9de38efa656a46ed20",
+      "commit_sha": "7fc1c42298cf95bbc3e5ec6a28ff19adb3b6ae2a"
+    }
+  },
+  "canonical_editorial_policy": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "git_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "valid_research_section_ids": [
+      "COVER",
+      "IDENTITY_PAGES",
+      "COMPANY_INTRO",
+      "CHALLENGES_VALUE",
+      "HOTEL_OVERVIEW",
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS",
+      "CASE_STUDIES"
+    ],
+    "section_snapshot": [
+      {
+        "section_id": "COVER",
+        "title_fa": "صفحه اول کاتالوگ",
+        "row": 2,
+        "content_level": null
+      },
+      {
+        "section_id": "IDENTITY_PAGES",
+        "title_fa": "صفحات تنفس",
+        "row": 3,
+        "content_level": null
+      },
+      {
+        "section_id": "COMPANY_INTRO",
+        "title_fa": "معرفی شرکت NSP",
+        "row": 4,
+        "content_level": "COMPANY"
+      },
+      {
+        "section_id": "CHALLENGES_VALUE",
+        "title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+        "row": 5,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "HOTEL_OVERVIEW",
+        "title_fa": "نقشهٔ جامع راهکارهای هتلی",
+        "row": 6,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "GRMS",
+        "title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+        "row": 7,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "IPTV",
+        "title_fa": "تلویزیون و خدمات تعاملی هتل (IPTV)",
+        "row": 8,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "PUBLIC_AREAS",
+        "title_fa": "کنترل هوشمند مشاعات هتل",
+        "row": 9,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "CASE_STUDIES",
+        "title_fa": "رزومه و پروژه‌های اجراشده",
+        "row": 10,
+        "content_level": null
+      }
+    ],
+    "CROSS_SECTION_STYLE_is_tag_not_section": true,
+    "BINDER_COVER_excluded": true,
+    "no_new_sections_or_requirements": true,
+    "attach_only_in_Defrag": true
+  },
+  "rules": {
+    "proposed_for_existing_sections_only": true,
+    "internal_design_research_only": true,
+    "source_text_held_without_section_not_bank_choice": true,
+    "images_never_prove_NSP_capability": true,
+    "competitor_examples_not_NSP_projects": true,
+    "no_life_safety_procedure_or_wiring": true,
+    "no_publication_approval": true,
+    "no_new_runtime_or_output_pages": true
+  },
+  "statistics": {
+    "text_candidates_reviewed": 17,
+    "text_with_proposed_section": 12,
+    "text_held_without_section": 5,
+    "additional_S02_context_only": 14,
+    "visuals_reviewed": 9,
+    "visuals_with_proposed_section": 9,
+    "text_by_target": {
+      "HOTEL_OVERVIEW": 4,
+      "CHALLENGES_VALUE": 1,
+      "NO_TARGET": 5,
+      "PUBLIC_AREAS": 2,
+      "GRMS": 4,
+      "CASE_STUDIES": 1
+    },
+    "visual_by_target": {
+      "HOTEL_OVERVIEW": 2,
+      "PUBLIC_AREAS": 2,
+      "GRMS": 4,
+      "CASE_STUDIES": 1
+    },
+    "overview_not_counted": 1,
+    "NSP_capabilities_verified": 0,
+    "approved_publication_count": 0,
+    "page_attachments": 0
+  },
+  "mappings": [
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "مدخل تصویری فصل هتل",
+      "mapping_reason_fa": "الگوی بازکردن یک فصل کاربردی است، نه جلد کل کاتالوگ، معرفی یک ملک یا علامت پوشش NSP.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I001",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I001",
+      "pdf_page": 32,
+      "original_printed_page": 32,
+      "source_text_de": "Hotel",
+      "translation_fa": "هتل",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "visual_presentation_style",
+      "research_category_id": "narrative_structure",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "narrator_attribution": "Hager section-heading taxonomy",
+      "source_S02_fragment_ref": "HAGER57-P032-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "عنوان آغاز فصل یک کاربرد، نه نمونهٔ اجرا یا معرفی اختصاصی ملک.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_CHAPTER_ENTRY",
+      "related_visual_image_ids": [
+        "HAGER57_032_reception_texture"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "مدخل تصویری فصل هتل",
+      "analyst_assessment_fa": "الگوی بازکردن یک فصل کاربردی است، نه جلد کل کاتالوگ، معرفی یک ملک یا علامت پوشش NSP."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "CHALLENGES_VALUE",
+      "target_section_types": [
+        "CHALLENGES_VALUE"
+      ],
+      "target_section_title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+      "target_section_row": 5,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نقل‌قول طراحی با انتساب",
+      "mapping_reason_fa": "گفتهٔ منتسب به Cord Glantz برای JAZ Hotel Stuttgart فقط مقصود طراحی است. نه پیامد مستقل و نه عکس یا پروژهٔ Bikini.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I002",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I002",
+      "pdf_page": 33,
+      "original_printed_page": 33,
+      "source_text_de": "dass der Gast sich wohlfühlt.",
+      "translation_fa": "تا مهمان احساس راحتی کند.",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "case_study",
+      "research_category_id": "guest_comfort",
+      "narrator_role": "DESIGNER_DIRECT_QUOTE",
+      "narrator_attribution": "Cord Glantz, GEPLAN Design, for JAZ Hotel Stuttgart; quoted in the Hager handbook",
+      "source_S02_fragment_ref": "HAGER57-P033-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-02"
+      ],
+      "source_context_set_refs": [
+        "HAGER57-CTX-JAZ_DESIGN"
+      ],
+      "related_context_fragment_refs": [
+        "HAGER57-P033-D02"
+      ],
+      "source_editorial_limits_fa": "خواستهٔ طراح در پروژهٔ JAZ Hotel Stuttgart است؛ نه سنجهٔ آسایش، رضایت ثبت‌شده یا سابقهٔ NSP.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-GUEST_DESIGN_INTENTION",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "نقل‌قول طراحی با انتساب",
+      "analyst_assessment_fa": "گفتهٔ منتسب به Cord Glantz برای JAZ Hotel Stuttgart فقط مقصود طراحی است. نه پیامد مستقل و نه عکس یا پروژهٔ Bikini."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "تیتر نقشهٔ موضوعات هتل",
+      "mapping_reason_fa": "برای قاب‌بندی حوزه‌ها، نه فهرست تجهیزات، اتصال یا خدمات NSP.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I003",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I003",
+      "pdf_page": 34,
+      "original_printed_page": 34,
+      "source_text_de": "Kompetenzfelder im Hotel",
+      "translation_fa": "حوزه‌های تخصصی در هتل",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "visual_presentation_style",
+      "research_category_id": "narrative_structure",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "narrator_attribution": "Hager chapter contents/topic map",
+      "source_S02_fragment_ref": "HAGER57-P034-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-03"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "نقشهٔ تحریریه‌ای موضوعات هتل به روایت Hager؛ نه فهرست توان، خدمات یا پروژهٔ NSP.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_TOPIC_MAP",
+      "related_visual_image_ids": [
+        "HAGER57_034_hotel_topic_header"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "تیتر نقشهٔ موضوعات هتل",
+      "analyst_assessment_fa": "برای قاب‌بندی حوزه‌ها، نه فهرست تجهیزات، اتصال یا خدمات NSP."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "موضوع انرژی در نقشهٔ سامانه‌ها",
+      "mapping_reason_fa": "فقط یک عنوان موضوع در فصل هتل؛ نه سامانهٔ قابل‌عرضهٔ NSP، نتیجهٔ صرفه‌جویی یا حتی کنترل HVAC.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I004",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I004",
+      "pdf_page": 34,
+      "original_printed_page": 34,
+      "source_text_de": "Energieverteilung und Energiemanagement",
+      "translation_fa": "توزیع و مدیریت انرژی",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "architecture",
+      "research_category_id": "energy_hvac",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "source_S02_fragment_ref": "HAGER57-P034-D02",
+      "source_S02_fragment_index": 2,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-03"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "نام یکی از حوزه‌های منبع؛ نه ادعای صرفه‌جویی، مدیریت HVAC، ظرفیت یا معماری مهندسی NSP.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_ENERGY_SUBJECT",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "موضوع انرژی در نقشهٔ سامانه‌ها",
+      "analyst_assessment_fa": "فقط یک عنوان موضوع در فصل هتل؛ نه سامانهٔ قابل‌عرضهٔ NSP، نتیجهٔ صرفه‌جویی یا حتی کنترل HVAC."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "تفکیک خانوادهٔ رابط از کنترل ساختمان",
+      "mapping_reason_fa": "چیدمان دسته‌ها الگوست؛ هیچ جمع‌بندی دربارهٔ کارکرد انواع کلید، پشتیبانی پروتکل یا حضور NSP لازم نیست.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I005",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I005",
+      "pdf_page": 35,
+      "original_printed_page": 35,
+      "source_text_de": "Schalterprogramme und Gebäudesteuerung",
+      "translation_fa": "خانواده‌های کلید و کنترل ساختمان",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "visual_presentation_style",
+      "research_category_id": "design_integration",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "source_S02_fragment_ref": "HAGER57-P035-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "HAGER57-CTX-CONTROL_SCOPE"
+      ],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "دسته‌بندی تحریریه‌ای همین فصل؛ خانواده یا قابلیت NSP به شمار نیاید.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_CONTROLS_TOPIC_MAP",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "تفکیک خانوادهٔ رابط از کنترل ساختمان",
+      "analyst_assessment_fa": "چیدمان دسته‌ها الگوست؛ هیچ جمع‌بندی دربارهٔ کارکرد انواع کلید، پشتیبانی پروتکل یا حضور NSP لازم نیست."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "صورتحساب فقط زمینه",
+      "mapping_reason_fa": "این تیتر به‌تنهایی دامنهٔ اندازه‌گیری، تعرفه، دقت، مقررات یا روش صورتحساب را نشان نمی‌دهد؛ از تطبیق و ورود مستقل صرف‌نظر شود.",
+      "unassigned_reason_fa": "این تیتر به‌تنهایی دامنهٔ اندازه‌گیری، تعرفه، دقت، مقررات یا روش صورتحساب را نشان نمی‌دهد؛ از تطبیق و ورود مستقل صرف‌نظر شود.",
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "source_context_only_no_target_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I006",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I006",
+      "pdf_page": 38,
+      "original_printed_page": 38,
+      "source_text_de": "Intelligent messen und abrechnen",
+      "translation_fa": "اندازه‌گیری و صورتحساب هوشمند",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "case_study",
+      "research_category_id": "hotel_operations",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "source_S02_fragment_ref": "HAGER57-P038-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-03"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "تیتر ناشر برای موضوع اندازه‌گیری انرژی و صورتحساب؛ نه پیاده‌سازی صورتحساب، دقت، تعرفه یا تضمین انطباق.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_ENERGY_BILLING_SUBJECT",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "صورتحساب فقط زمینه",
+      "analyst_assessment_fa": "این تیتر به‌تنهایی دامنهٔ اندازه‌گیری، تعرفه، دقت، مقررات یا روش صورتحساب را نشان نمی‌دهد؛ از تطبیق و ورود مستقل صرف‌نظر شود."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "تابلو بر حسب محل فقط زمینه",
+      "mapping_reason_fa": "تیتر طبقه‌بندی موجود است؛ حوزهٔ توزیع برق راهرو/طبقه بدون شاهد طراحی داخلی یا قابلیت NSP، فعلاً تطبیق نمی‌گیرد.",
+      "unassigned_reason_fa": "تیتر طبقه‌بندی موجود است؛ حوزهٔ توزیع برق راهرو/طبقه بدون شاهد طراحی داخلی یا قابلیت NSP، فعلاً تطبیق نمی‌گیرد.",
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "source_context_only_no_target_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I007",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I007",
+      "pdf_page": 40,
+      "original_printed_page": 40,
+      "source_text_de": "Feldverteiler für Flur und Etage",
+      "translation_fa": "تابلوهای توزیع راهرو و طبقه",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "architecture",
+      "research_category_id": "architecture_deployment",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "source_S02_fragment_ref": "HAGER57-P040-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-03"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "نمونهٔ طبقه‌بندی بر حسب فضا؛ نه توصیهٔ محل نصب، نقشه، سیم‌بندی، ظرفیت یا تجهیزات NSP.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_FLOOR_DISTRIBUTION_SUBJECT",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "تابلو بر حسب محل فقط زمینه",
+      "analyst_assessment_fa": "تیتر طبقه‌بندی موجود است؛ حوزهٔ توزیع برق راهرو/طبقه بدون شاهد طراحی داخلی یا قابلیت NSP، فعلاً تطبیق نمی‌گیرد."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "مسیررسانی زیرکف فقط زمینه",
+      "mapping_reason_fa": "نام دستهٔ تجهیزات نباید پیشنهاد نصب، مسیر کابل یا دستور برق تلقی شود. قاب محیطی صفحهٔ بعد جداگانه مجازِ پژوهش داخلی است.",
+      "unassigned_reason_fa": "نام دستهٔ تجهیزات نباید پیشنهاد نصب، مسیر کابل یا دستور برق تلقی شود. قاب محیطی صفحهٔ بعد جداگانه مجازِ پژوهش داخلی است.",
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "source_context_only_no_target_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I008",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I008",
+      "pdf_page": 44,
+      "original_printed_page": 44,
+      "source_text_de": "Unterflursysteme",
+      "translation_fa": "سامانه‌های زیرکف",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "architecture",
+      "research_category_id": "architecture_deployment",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "source_S02_fragment_ref": "HAGER57-P044-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "HAGER57-CTX-UTILITY_ACCESS"
+      ],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "عنوان حوزهٔ Hager در بخش هتل؛ فقط نحوهٔ دسته‌بندی فضا، بدون مسیر اجرا، کاربرد برق یا ادعای انطباق.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_UNDERFLOOR_SERVICE_FAMILY",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "مسیررسانی زیرکف فقط زمینه",
+      "analyst_assessment_fa": "نام دستهٔ تجهیزات نباید پیشنهاد نصب، مسیر کابل یا دستور برق تلقی شود. قاب محیطی صفحهٔ بعد جداگانه مجازِ پژوهش داخلی است."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "PUBLIC_AREAS",
+      "target_section_types": [
+        "PUBLIC_AREAS"
+      ],
+      "target_section_title_fa": "کنترل هوشمند مشاعات هتل",
+      "target_section_row": 9,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "بیان نیاز به انشعاب در فضای عمومی",
+      "mapping_reason_fa": "معنای دسترسی به انشعاب‌های خدماتی است، نه کنترل ورود. ترکیب عکسِ جلسه و متن صرفاً الگوی تحریریه است؛ نه روش نصب، نیاز فنی قطعی یا دسترسی NSP.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I009",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I009",
+      "pdf_page": 45,
+      "original_printed_page": 45,
+      "source_text_de": "Flexibler Zugriff",
+      "translation_fa": "دسترسی انعطاف‌پذیر [به انشعاب‌های خدماتی]",
+      "translation_literal_fa": "دسترسی انعطاف‌پذیر",
+      "translation_scope_note_fa": "توضیحِ در قلاب از زمینهٔ همان صفحه است و بخشی از عبارت کوتاه آلمانی نیست.",
+      "source_type": "case_study",
+      "research_category_id": "adaptive_event_spaces",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "source_S02_fragment_ref": "HAGER57-P045-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "HAGER57-CTX-UTILITY_ACCESS"
+      ],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "مرجع عبارت، دسترسی به انشعاب در زمینهٔ عمومی هتل است؛ نه کنترل ورود، قفل یا روش نصب. عبارتِ در قلاب، توضیح بافت است.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_PUBLIC_SPACE_SERVICE_SUBJECT",
+      "related_visual_image_ids": [
+        "HAGER57_045_conference_space"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "بیان نیاز به انشعاب در فضای عمومی",
+      "analyst_assessment_fa": "معنای دسترسی به انشعاب‌های خدماتی است، نه کنترل ورود. ترکیب عکسِ جلسه و متن صرفاً الگوی تحریریه است؛ نه روش نصب، نیاز فنی قطعی یا دسترسی NSP."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "PUBLIC_AREAS",
+      "target_section_types": [
+        "PUBLIC_AREAS"
+      ],
+      "target_section_title_fa": "کنترل هوشمند مشاعات هتل",
+      "target_section_row": 9,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "ارائهٔ خط روشنایی در راهرو",
+      "mapping_reason_fa": "قیاس طراحی دیداری از راهرو در یک تیتر شامل راهرو و اتاق. شکل قاب، روش نصب یا عملکرد روشنایی عمومی NSP را تأیید نمی‌کند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I010",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I010",
+      "pdf_page": 48,
+      "original_printed_page": 48,
+      "source_text_de": "LED-Sockelleisten für Korridor und Zimmer",
+      "translation_fa": "قرنیزهای LED برای راهرو و اتاق",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "visual_presentation_style",
+      "research_category_id": "equipment_presentation_style",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "source_S02_fragment_ref": "HAGER57-P048-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-04"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "نمونهٔ ارائهٔ یک موضوع در دو فضای هتل؛ نه طراحی نور، مشخصات فنی، توصیهٔ ایمنی یا محصول NSP.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_CORRIDOR_AND_ROOM_LIGHTING_LAYOUT",
+      "related_visual_image_ids": [
+        "HAGER57_048_corridor_light_context"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "ارائهٔ خط روشنایی در راهرو",
+      "analyst_assessment_fa": "قیاس طراحی دیداری از راهرو در یک تیتر شامل راهرو و اتاق. شکل قاب، روش نصب یا عملکرد روشنایی عمومی NSP را تأیید نمی‌کند."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "مقایسهٔ فرم گرد و زاویه‌دار",
+      "mapping_reason_fa": "فقط روش نشان‌دادن انتخاب ظاهری در نمونه‌های ناشر؛ نه نوع کارت، منطق ورود، تنوع قطعی یا عرضهٔ NSP.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I011",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I011",
+      "pdf_page": 53,
+      "original_printed_page": 53,
+      "source_text_de": "Rund oder eckig – Sie haben die Wahl",
+      "translation_fa": "گرد یا زاویه‌دار؛ انتخاب با شماست",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "visual_presentation_style",
+      "research_category_id": "design_ideas",
+      "narrator_role": "VENDOR_MARKETING_HEADLINE",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "source_S02_fragment_ref": "HAGER57-P053-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "HAGER57-CTX-DESIGN_AND_CUSTOM"
+      ],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "تنوع شکل در بیان فروشنده برای محصولات همان صفحه؛ نه سازگاری، رنگ‌بندی، موجودی یا قابلیت NSP.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_SHAPE_CHOICE_EDITORIAL",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "مقایسهٔ فرم گرد و زاویه‌دار",
+      "analyst_assessment_fa": "فقط روش نشان‌دادن انتخاب ظاهری در نمونه‌های ناشر؛ نه نوع کارت، منطق ورود، تنوع قطعی یا عرضهٔ NSP."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "چندرسانه‌ای فقط زمینه",
+      "mapping_reason_fa": "عنوان اتصالات فیزیکی از فروشنده است؛ هیچ دلیلی برای تطبیق با فصل تلویزیون تعاملی، سازگاری شبکه یا پوشش IPTV نیست.",
+      "unassigned_reason_fa": "عنوان اتصالات فیزیکی از فروشنده است؛ هیچ دلیلی برای تطبیق با فصل تلویزیون تعاملی، سازگاری شبکه یا پوشش IPTV نیست.",
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "source_context_only_no_target_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I012",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I012",
+      "pdf_page": 55,
+      "original_printed_page": 55,
+      "source_text_de": "Multimediaanschlüsse für jeden Anspruch",
+      "translation_fa": "اتصال‌های چندرسانه‌ای برای هر نیاز",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "case_study",
+      "research_category_id": "av_distribution",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "source_S02_fragment_ref": "HAGER57-P055-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-05"
+      ],
+      "source_context_set_refs": [],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "تیتر فروشنده؛ عبارت «هر نیاز» ادعای بازاریابی است، نه تأیید پوشش، شبکه، IPTV یا سازگاری NSP.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_MULTIMEDIA_CONNECTOR_CATEGORY",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "چندرسانه‌ای فقط زمینه",
+      "analyst_assessment_fa": "عنوان اتصالات فیزیکی از فروشنده است؛ هیچ دلیلی برای تطبیق با فصل تلویزیون تعاملی، سازگاری شبکه یا پوشش IPTV نیست."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": null,
+      "target_section_types": [],
+      "target_section_title_fa": null,
+      "target_section_row": null,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "حسگر حضور فقط زمینه",
+      "mapping_reason_fa": "نام موضوع بدون دامنهٔ رفتار و بدون توان NSP. نه منطق کارت/حضور، محرک، تأخیر، اندازه‌گیری یا نتیجهٔ صرفه‌جویی؛ وارد بانک مستقل نشود.",
+      "unassigned_reason_fa": "نام موضوع بدون دامنهٔ رفتار و بدون توان NSP. نه منطق کارت/حضور، محرک، تأخیر، اندازه‌گیری یا نتیجهٔ صرفه‌جویی؛ وارد بانک مستقل نشود.",
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "source_context_only_no_target_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I013",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I013",
+      "pdf_page": 58,
+      "original_printed_page": 58,
+      "source_text_de": "Mit Präsenzmeldern",
+      "translation_fa": "با حسگرهای حضور",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "case_study",
+      "research_category_id": "room_controls",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "source_S02_fragment_ref": "HAGER57-P058-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "HAGER57-CTX-HOTEL_CARD_AND_PRESENCE"
+      ],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "فقط موضوع ناشر در این فصل. نوع تشخیص، محرک، خاموشی، اعداد، سطح دسترسی و صرفه‌جویی استخراج یا تأیید نشده‌اند.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_PRESENCE_SUBJECT_ONLY",
+      "related_visual_image_ids": [],
+      "presentation_style_tag": null,
+      "key_takeaway_fa": "حسگر حضور فقط زمینه",
+      "analyst_assessment_fa": "نام موضوع بدون دامنهٔ رفتار و بدون توان NSP. نه منطق کارت/حضور، محرک، تأخیر، اندازه‌گیری یا نتیجهٔ صرفه‌جویی؛ وارد بانک مستقل نشود."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نمایش ظاهر و ترکیب کنار تخت",
+      "mapping_reason_fa": "الگوی قاب‌بندی رابط در دکور است، نه فرض نصب، سازگاری، روش کنترل یا شکل محصول نهایی NSP.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I014",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I014",
+      "pdf_page": 60,
+      "original_printed_page": 60,
+      "source_text_de": "Flexibel kombiniert",
+      "translation_fa": "ترکیب‌پذیری انعطاف‌پذیر",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "visual_presentation_style",
+      "research_category_id": "design_integration",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "source_S02_fragment_ref": "HAGER57-P060-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "HAGER57-CTX-DESIGN_AND_CUSTOM"
+      ],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "الگوی ارائهٔ ظاهر و ترکیب؛ نه سازگاری فنی، طریقهٔ نصب یا هم‌ارزی برند و NSP.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_MODULAR_DESIGN_EDITORIAL",
+      "related_visual_image_ids": [
+        "HAGER57_060_bedside_integration"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "نمایش ظاهر و ترکیب کنار تخت",
+      "analyst_assessment_fa": "الگوی قاب‌بندی رابط در دکور است، نه فرض نصب، سازگاری، روش کنترل یا شکل محصول نهایی NSP."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "CASE_STUDIES",
+      "target_section_types": [
+        "CASE_STUDIES"
+      ],
+      "target_section_title_fa": "رزومه و پروژه‌های اجراشده",
+      "target_section_row": 10,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قالب کپشن عکس با نام ملک و شهر",
+      "mapping_reason_fa": "فقط نحوۀ انتساب Bikini Hotel به همین عکس. با JAZ یکی نیست و نباید پروژهٔ انجام‌شده یا شاهد اجرا، نتیجه یا حق نشر NSP شمرده شود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I015",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I015",
+      "pdf_page": 61,
+      "original_printed_page": 61,
+      "source_text_de": "Bikini Hotel, Berlin",
+      "translation_fa": "هتل بیکینی، برلین",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "visual_presentation_style",
+      "research_category_id": "case_studies",
+      "narrator_role": "VENDOR_CASE_CAPTION",
+      "narrator_attribution": "Hager picture caption, Bikini Hotel, Berlin, p. 61; independent of the p. 33 JAZ attribution",
+      "source_S02_fragment_ref": "HAGER57-P061-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "HAGER57-CTX-BIKINI_CAPTION"
+      ],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "کپشن محدود به عکس و مکان معرفی‌شده در ص ۶۱ است؛ ربطی به گفتهٔ JAZ، پذیرش نصب، عملکرد یا پروژهٔ NSP ندارد.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-STANDALONE_BIKINI_CASE_CAPTION",
+      "related_visual_image_ids": [
+        "HAGER57_061_bikini_ambient_detail"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "قالب کپشن عکس با نام ملک و شهر",
+      "analyst_assessment_fa": "فقط نحوۀ انتساب Bikini Hotel به همین عکس. با JAZ یکی نیست و نباید پروژهٔ انجام‌شده یا شاهد اجرا، نتیجه یا حق نشر NSP شمرده شود."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "چیدمان تیتر کنترل و عکس اتاق",
+      "mapping_reason_fa": "صرفاً نمونهٔ چیدمان یک موضوع کنترلی با پنل عکس جدا. نام KNX نتیجهٔ فنی، کارکرد جاری، انطباق، رابط یا قابلیت NSP نیست.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I016",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I016",
+      "pdf_page": 66,
+      "original_printed_page": 66,
+      "source_text_de": "Intelligent steuern mit KNX",
+      "translation_fa": "کنترل هوشمند با KNX",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "case_study",
+      "research_category_id": "room_controls",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "source_S02_fragment_ref": "HAGER57-P066-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "HAGER57-CTX-CONTROL_SCOPE"
+      ],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "نام رویکرد در روایت Hager؛ نه دستور یا اتصال فنی، سنجش صرفه‌جویی، گواهی انطباق، عرضهٔ فعلی یا قابلیت NSP.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-HOTEL_KNX_SUBJECT_ONLY",
+      "related_visual_image_ids": [
+        "HAGER57_066_room_lighting_atmosphere"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "چیدمان تیتر کنترل و عکس اتاق",
+      "analyst_assessment_fa": "صرفاً نمونهٔ چیدمان یک موضوع کنترلی با پنل عکس جدا. نام KNX نتیجهٔ فنی، کارکرد جاری، انطباق، رابط یا قابلیت NSP نیست."
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "نشان دادن بافت و پرداخت",
+      "mapping_reason_fa": "الگوی بصری ارائهٔ انتخاب‌های ظاهری؛ Manufaktur نام ناشر است، نه خدمت تولید، فهرست متریال یا تعهد NSP.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I017",
+      "idea_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I017",
+      "pdf_page": 70,
+      "original_printed_page": 70,
+      "source_text_de": "Hager Manufaktur",
+      "translation_fa": "Hager Manufaktur (بخش ساخت سفارشی هاگر)",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "source_type": "visual_presentation_style",
+      "research_category_id": "design_ideas",
+      "narrator_role": "VENDOR_BRANDED_DESIGN_LABEL",
+      "narrator_attribution": "Hager handbook, hotel chapter customization label",
+      "source_S02_fragment_ref": "HAGER57-P070-D01",
+      "source_S02_fragment_index": 1,
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-08"
+      ],
+      "source_context_set_refs": [
+        "HAGER57-CTX-DESIGN_AND_CUSTOM"
+      ],
+      "related_context_fragment_refs": [],
+      "source_editorial_limits_fa": "نام تجاری/تحریریه‌ای ناشر؛ فقط الگوی معرفی زاویهٔ طراحی سفارشی. هیچ متریال، تعهد، موجودی، روش ساخت یا خدمت NSP تأیید نشده است.",
+      "source_quote_verification": "Exact German source excerpt on physical PDF page, verified by PyMuPDF native and Poppler raw and layout during S02.",
+      "same_editorial_concept_group": "HAGER57-CUSTOM_DESIGN_EDITORIAL_PROCESS",
+      "related_visual_image_ids": [
+        "HAGER57_070_finish_samples"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "key_takeaway_fa": "نشان دادن بافت و پرداخت",
+      "analyst_assessment_fa": "الگوی بصری ارائهٔ انتخاب‌های ظاهری؛ Manufaktur نام ناشر است، نه خدمت تولید، فهرست متریال یا تعهد NSP."
+    }
+  ],
+  "visual_mappings": [
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "قاب پذیرش برای افتتاح فصل",
+      "mapping_reason_fa": "بسنده به پس‌زمینه و ریتم فصل، نه شناسایی ملک یا سند برتری و نه جلد کل.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "HAGER57_032_reception_texture",
+      "idea_id": "HAGER57_032_reception_texture",
+      "pdf_page": 32,
+      "source_pdf_page": 32,
+      "original_printed_page": 32,
+      "source_type": "visual_presentation_style",
+      "source_text_de": null,
+      "translation_fa": "نمای عریض پذیرش در آغاز فصل",
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_032_reception_texture.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/hager57/HAGER57_032_reception_texture.webp",
+      "image_asset_sha256": "855e76a511a1552a59a9ffea61b7e473c69552f00dea97dae45e4345477c9031",
+      "image_blob_sha": "379b37c22350b854c5e53fab6b7866616fb26d61",
+      "normalized_pdf_crop": [
+        0.084,
+        0.323,
+        0.892,
+        0.685
+      ],
+      "rendered_size_px": [
+        901,
+        572
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "presentation_style": "hotel_reception_texture",
+      "visual_style_type": "hotel_reception_texture",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "نمای عریض پذیرش در آغاز فصل",
+      "observed_content_in_crop_fa": "برش افقی از نمای پذیرش، با نور و بافت سنگی؛ زبان بصری پیش از ورود به متن.",
+      "key_takeaway_fa": "عکس محیطی وزن فصل را پیش از تیترهای فنی مشخص می‌کند.",
+      "analyst_assessment_fa": "نوشته‌های تبلیغی، شناسایی ملک و شخص در قاب نگهداری نشده‌اند؛ عکس شاهد نصب یا نتیجه نیست.",
+      "strengths_fa": "تضاد بافت سنگ، قاب تیره و فضای خطی برای نقطهٔ ورود مناسب است.",
+      "weaknesses_fa": "در برش عنوان یا انتساب مکانی نیست و باید فقط به صفحهٔ فصل ارجاع داد.",
+      "nsp_visual_adaptation_fa": "در فصل واقعی NSP با عکس اختصاصی و حاشیهٔ امنِ پانچ بازآفرینی شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I001"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P032-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-01"
+      ],
+      "related_source_context_set_refs": [],
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "reference_never_verifies_case_claim_or_NSP_capability": true
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "target_section_types": [
+        "HOTEL_OVERVIEW"
+      ],
+      "target_section_title_fa": "نقشهٔ جامع راهکارهای هتلی",
+      "target_section_row": 6,
+      "content_level": "SOLUTION",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "تیتر دوخطیِ مستقل برای نقشهٔ فصل",
+      "mapping_reason_fa": "بدون تجهیزات و اعداد؛ سلسله‌مراتب تایپی را با متن مستقل فارسی بازآفرینی کنید.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "HAGER57_034_hotel_topic_header",
+      "idea_id": "HAGER57_034_hotel_topic_header",
+      "pdf_page": 34,
+      "source_pdf_page": 34,
+      "original_printed_page": 34,
+      "source_type": "visual_presentation_style",
+      "source_text_de": null,
+      "translation_fa": "تیتر دوخطیِ نقشهٔ موضوعات هتل",
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_034_hotel_topic_header.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/hager57/HAGER57_034_hotel_topic_header.webp",
+      "image_asset_sha256": "f26e0f734adeb867650dce8a4bcea6bbe96c025a6aca354df27e51023d40b892",
+      "image_blob_sha": "73ab90020bc84c4f2c11ddfac034325ed8681b31",
+      "normalized_pdf_crop": [
+        0.07,
+        0.042,
+        0.68,
+        0.14
+      ],
+      "rendered_size_px": [
+        851,
+        194
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "presentation_style": "isolated_topic_map_heading",
+      "visual_style_type": "isolated_topic_map_heading",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "تیتر دوخطیِ نقشهٔ موضوعات هتل",
+      "observed_content_in_crop_fa": "تیترِ آبی از نقشهٔ تحریریه‌ای بدون ردیف تجهیزات و عدد.",
+      "key_takeaway_fa": "تیتر کوتاه دوخطی می‌تواند خواننده را پیش از دیدن دسته‌های فصل آماده کند.",
+      "analyst_assessment_fa": "دسته‌ها یا ظرفیت در این برش نیست؛ نقشهٔ NSP از آن نتیجه نمی‌شود.",
+      "strengths_fa": "وزن تایپوگرافی و رنگ واحد سلسله‌مراتب را بی‌نیاز از متن اضافه نشان می‌دهد.",
+      "weaknesses_fa": "زبان و شکست سطر را نمی‌توان بدون بازطراحی RTL منتقل کرد.",
+      "nsp_visual_adaptation_fa": "صفحهٔ راهنمای موضوعات را با تیتر فارسی مستقل و تایپوگرافی NSP طراحی کنید.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I003"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P034-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-03"
+      ],
+      "related_source_context_set_refs": [],
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "reference_never_verifies_case_claim_or_NSP_capability": true
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "PUBLIC_AREAS",
+      "target_section_types": [
+        "PUBLIC_AREAS"
+      ],
+      "target_section_title_fa": "کنترل هوشمند مشاعات هتل",
+      "target_section_row": 9,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "عکس عمودی فضای جلسه",
+      "mapping_reason_fa": "پیش‌زمینهٔ کاربرد، نه طراحی تأسیسات یا اثبات کنترل دسترسی. پیوند به «انشعاب» فقط رابطهٔ صفحه و موضوع است.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "HAGER57_045_conference_space",
+      "idea_id": "HAGER57_045_conference_space",
+      "pdf_page": 45,
+      "source_pdf_page": 45,
+      "original_printed_page": 45,
+      "source_type": "visual_presentation_style",
+      "source_text_de": null,
+      "translation_fa": "قاب عمودی فضای جلسهٔ عمومی",
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_045_conference_space.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/hager57/HAGER57_045_conference_space.webp",
+      "image_asset_sha256": "dfc3aa6d2873314c7a07b836ea92040acad3f94a3ad4b8fb2e45bde31987fd33",
+      "image_blob_sha": "2321fc038bc8d19d54414ea3ffae39662ef05870",
+      "normalized_pdf_crop": [
+        0.015,
+        0.11,
+        0.61,
+        0.93
+      ],
+      "rendered_size_px": [
+        442,
+        861
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "presentation_style": "tall_public_conference_scene",
+      "visual_style_type": "tall_public_conference_scene",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "قاب عمودی فضای جلسهٔ عمومی",
+      "observed_content_in_crop_fa": "تصویر محیط جلسه پشت جدارهٔ شیشه‌ای؛ تجهیزات و کپشن جانبی خارج قاب‌اند.",
+      "key_takeaway_fa": "یک تصویر عمودیِ عمومی فضای کاربرد را با کمترین متن معرفی می‌کند.",
+      "analyst_assessment_fa": "تصویر نقشهٔ برق، مسیر کف، کنترل ورود یا تأیید تأسیسات نیست.",
+      "strengths_fa": "استفاده از جداره و عمق فضا مرز صورت‌بندی عمومی و اتاق مهمان را روشن می‌کند.",
+      "weaknesses_fa": "قاب تیره و متراکم است؛ قرار گرفتن متن روی عکس ممکن است خوانایی را کم کند.",
+      "nsp_visual_adaptation_fa": "برای مشاعات فقط عکس دارای حق و شرح فضا، بدون استنتاج نوع تجهیزات.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I009"
+      ],
+      "related_S03_record_ids_context_pages": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I008"
+      ],
+      "related_source_fragment_refs": [
+        "HAGER57-P045-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-04"
+      ],
+      "related_source_context_set_refs": [
+        "HAGER57-CTX-UTILITY_ACCESS"
+      ],
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "reference_never_verifies_case_claim_or_NSP_capability": true
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "PUBLIC_AREAS",
+      "target_section_types": [
+        "PUBLIC_AREAS"
+      ],
+      "target_section_title_fa": "کنترل هوشمند مشاعات هتل",
+      "target_section_row": 9,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "خط روشنایی در متن معماری",
+      "mapping_reason_fa": "برای قاب معرفی محیط عمومی؛ نه توصیهٔ نصب یا اندازه‌گیری، و هیچ عکس/شخص بدون حق بازنشر نشود.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "HAGER57_048_corridor_light_context",
+      "idea_id": "HAGER57_048_corridor_light_context",
+      "pdf_page": 48,
+      "source_pdf_page": 48,
+      "original_printed_page": 48,
+      "source_type": "visual_presentation_style",
+      "source_text_de": null,
+      "translation_fa": "خط روشنایی در بافت معماری",
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_048_corridor_light_context.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/hager57/HAGER57_048_corridor_light_context.webp",
+      "image_asset_sha256": "3ca48a9069b6c5d6d9e39a48dde98c8c78ad1c7d7b4cedb768b0c9a93a4cf152",
+      "image_blob_sha": "e194ebed5963d9850bd3d8a4df893d59e8ab8b6c",
+      "normalized_pdf_crop": [
+        0.086,
+        0.464,
+        0.99,
+        0.982
+      ],
+      "rendered_size_px": [
+        861,
+        698
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "presentation_style": "architectural_light_line_context",
+      "visual_style_type": "architectural_light_line_context",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "خط روشنایی در بافت معماری",
+      "observed_content_in_crop_fa": "عکس محیطی صفحهٔ قرنیزِ روشنایی بدون بدنهٔ توضیحات.",
+      "key_takeaway_fa": "نور پایین دیوار در یک عکس محیطی می‌تواند موضوع را بدون دیاگرام نشان دهد.",
+      "analyst_assessment_fa": "نور مشاهده‌شده سنجه، توصیهٔ نصب، تأیید ایمنی یا قابلیت NSP نیست.",
+      "strengths_fa": "خط کوتاهِ نور در قاب واقعی خوانش موضوع را آسان می‌کند.",
+      "weaknesses_fa": "سوژه‌ها در قاب حضور دارند؛ بازنشر عکس یا استفاده از مدل‌ها نیازمند مجوز جداست.",
+      "nsp_visual_adaptation_fa": "برای تصویرسازی NSP از عکس مجازِ بدون دستور، عدد یا ادعای نورسنجی استفاده شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I010"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P048-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-04"
+      ],
+      "related_source_context_set_refs": [],
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "reference_never_verifies_case_claim_or_NSP_capability": true
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "عکس گسترده از رابط و بافت کنار تخت",
+      "mapping_reason_fa": "تنها روال نمایش رابط در محیط. جایگاه دیده‌شده حکم فنی، مدل یا کارکرد NSP نیست.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "HAGER57_060_bedside_integration",
+      "idea_id": "HAGER57_060_bedside_integration",
+      "pdf_page": 60,
+      "source_pdf_page": 60,
+      "original_printed_page": 60,
+      "source_type": "visual_presentation_style",
+      "source_text_de": null,
+      "translation_fa": "ادغام دیداری کلید کنار تخت",
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_060_bedside_integration.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/hager57/HAGER57_060_bedside_integration.webp",
+      "image_asset_sha256": "8ff50731eecceae497365bdcfe8de6651b0ae38106ee9ebc15c663fbac2639f5",
+      "image_blob_sha": "d89be6853e344d0e5148b0cdd359d19799701d09",
+      "normalized_pdf_crop": [
+        0.01,
+        0.493,
+        0.984,
+        0.975
+      ],
+      "rendered_size_px": [
+        871,
+        610
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "presentation_style": "embedded_bedside_detail",
+      "visual_style_type": "embedded_bedside_detail",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "ادغام دیداری کلید کنار تخت",
+      "observed_content_in_crop_fa": "عکس عریض از هدبورد، چراغ و اجزای رابط در یک بافت؛ متن بیرون قاب مانده.",
+      "key_takeaway_fa": "نشاندن اجزای رابط در بافت کنار تخت، نسبت محصول و محیط را با یک قاب نشان می‌دهد.",
+      "analyst_assessment_fa": "نمادها و موقعیت‌های دیده‌شده روش نصب، سازگاری یا الگوی حتمی NSP نیستند.",
+      "strengths_fa": "زاویهٔ عریض بافت، سطح و کاربرپذیری ادعانشدهٔ بصری را بهتر نشان می‌دهد.",
+      "weaknesses_fa": "عکس تنها دربارهٔ نحوهٔ نمایش است؛ محتوا برای اندازه‌گیری ارگونومی کافی نیست.",
+      "nsp_visual_adaptation_fa": "در عکاسی اختصاصی NSP تناسب رابط تأییدشده و مبلمان، بدون فرض عملکرد، ثبت شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I014"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P060-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-05"
+      ],
+      "related_source_context_set_refs": [
+        "HAGER57-CTX-DESIGN_AND_CUSTOM"
+      ],
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "reference_never_verifies_case_claim_or_NSP_capability": true
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "CASE_STUDIES",
+      "target_section_types": [
+        "CASE_STUDIES"
+      ],
+      "target_section_title_fa": "رزومه و پروژه‌های اجراشده",
+      "target_section_row": 10,
+      "content_level": null,
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "الگوی عکس و کپشنِ مستقل پرونده",
+      "mapping_reason_fa": "عکس متعلق به منبع با کپشن Bikini، بدون ادعا دربارهٔ نصب و مستقل از JAZ یا پروژهٔ NSP.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "HAGER57_061_bikini_ambient_detail",
+      "idea_id": "HAGER57_061_bikini_ambient_detail",
+      "pdf_page": 61,
+      "source_pdf_page": 61,
+      "original_printed_page": 61,
+      "source_type": "visual_presentation_style",
+      "source_text_de": null,
+      "translation_fa": "عکس محیطی با کپشنِ مستقل Bikini Hotel",
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_061_bikini_ambient_detail.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/hager57/HAGER57_061_bikini_ambient_detail.webp",
+      "image_asset_sha256": "68bc94ac28f408475490cef95a38147a31dec4c1c05925be7c61c5178c42e8e2",
+      "image_blob_sha": "851b826d03e31c6d54c186d3b16f2dce36cc4e1c",
+      "normalized_pdf_crop": [
+        0.078,
+        0.102,
+        0.478,
+        0.481
+      ],
+      "rendered_size_px": [
+        613,
+        821
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "presentation_style": "named_case_product_in_context",
+      "visual_style_type": "named_case_product_in_context",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "عکس محیطی با کپشنِ مستقل Bikini Hotel",
+      "observed_content_in_crop_fa": "قاب عکس بالای سمت چپ ص ۶۱؛ در اصل، کپشن جدا نام Bikini Hotel, Berlin را می‌دهد.",
+      "key_takeaway_fa": "نام/مکان در کپشن مستقل می‌تواند مرجع تصویر نمونه را روشن کند.",
+      "analyst_assessment_fa": "کپشن همان عکس است، نه JAZ Stuttgart، اثبات نصب، اقتباس عکس یا پروژهٔ NSP.",
+      "strengths_fa": "تفکیک تصویر، کپشن و بدنه به کنترل انتساب کمک می‌کند.",
+      "weaknesses_fa": "اگر کپشن جدا شود حفظ منشأ در دادهٔ عکس ضروری است؛ اجازهٔ نشر یا استفاده از اشخاص احراز نشده.",
+      "nsp_visual_adaptation_fa": "برای نمونه‌های واقعی NSP کپشن جدا و مستند، همراه با مجوز عکاس و مالک تهیه شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I015"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P061-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-06"
+      ],
+      "related_source_context_set_refs": [
+        "HAGER57-CTX-BIKINI_CAPTION"
+      ],
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "reference_never_verifies_case_claim_or_NSP_capability": true
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "عکس نمایشیِ حالت نور اتاق",
+      "mapping_reason_fa": "قاب و رنگ برای سبک‌اند. تجهیزات و دیاگرام کناری خارج شده‌اند؛ تصویر کارکرد، سناریو، توان KNX یا NSP را ثابت نمی‌کند.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "HAGER57_066_room_lighting_atmosphere",
+      "idea_id": "HAGER57_066_room_lighting_atmosphere",
+      "pdf_page": 66,
+      "source_pdf_page": 66,
+      "original_printed_page": 66,
+      "source_type": "visual_presentation_style",
+      "source_text_de": null,
+      "translation_fa": "فضاسازی اتاق بدون نمودار کنترل",
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_066_room_lighting_atmosphere.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/hager57/HAGER57_066_room_lighting_atmosphere.webp",
+      "image_asset_sha256": "f3352c339fd85ae2b921be838b968fb8eb8c70a557065b6d035568e045cd1db8",
+      "image_blob_sha": "d516815bfcffda2b42f681da820f438aee0de839",
+      "normalized_pdf_crop": [
+        0.452,
+        0.687,
+        0.982,
+        0.933
+      ],
+      "rendered_size_px": [
+        851,
+        559
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "presentation_style": "room_atmosphere_photo_only",
+      "visual_style_type": "room_atmosphere_photo_only",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "فضاسازی اتاق بدون نمودار کنترل",
+      "observed_content_in_crop_fa": "عکس اتاق با نور رنگی از بخش کنترل؛ سخت‌افزار، کپشن و متن کناری حذف شده‌اند.",
+      "key_takeaway_fa": "نور و کنتراست در قاب واقعی می‌توانند حوزهٔ اتاق مهمان را از شرح فنی جدا کنند.",
+      "analyst_assessment_fa": "عکس مقدار نور، قابلیت KNX، تنظیم دستگاه، تغییر مصرف یا توان NSP را ثابت نمی‌کند.",
+      "strengths_fa": "افزودن عکس مفهومی به بخش فنی، پیش‌زمینهٔ بصری می‌دهد.",
+      "weaknesses_fa": "اختلاف رنگ از عکس به‌تنهایی با اندازه‌گیری یا ویژگی معادل نیست.",
+      "nsp_visual_adaptation_fa": "تصویر NSP فقط از صحنهٔ اجراشده و دارای مجوز، بدون نتیجه‌گیری دربارهٔ تجهیزات.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I016"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P066-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-07"
+      ],
+      "related_source_context_set_refs": [
+        "HAGER57-CTX-CONTROL_SCOPE"
+      ],
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "reference_never_verifies_case_claim_or_NSP_capability": true
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "جفت‌قاب قیاس بافت و شکل",
+      "mapping_reason_fa": "رکورد متنیِ هم‌صفحه ندارد؛ پیوند ص ۵۳ فقط زمینهٔ طراحی است، نه شاهد مشترک.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "HAGER57_068_material_contrast_pair",
+      "idea_id": "HAGER57_068_material_contrast_pair",
+      "pdf_page": 68,
+      "source_pdf_page": 68,
+      "original_printed_page": 68,
+      "source_type": "visual_presentation_style",
+      "source_text_de": null,
+      "translation_fa": "جفت صحنهٔ متضاد برای ارائهٔ سبک",
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_068_material_contrast_pair.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/hager57/HAGER57_068_material_contrast_pair.webp",
+      "image_asset_sha256": "8a726e8fa97f123c0092e48bbe1ced00700c3dfcee0d9b329496694dd9457284",
+      "image_blob_sha": "3e8ca091fe789d9b5850365700da97517e17e069",
+      "normalized_pdf_crop": [
+        0.23,
+        0.45,
+        0.99,
+        0.784
+      ],
+      "rendered_size_px": [
+        891,
+        554
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "presentation_style": "material_forms_diptych",
+      "visual_style_type": "material_forms_diptych",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "جفت صحنهٔ متضاد برای ارائهٔ سبک",
+      "observed_content_in_crop_fa": "دو نمای هم‌جوار از مصالح و فرم کلید در دکورهای متفاوت؛ متن زیر تصویر بیرون قاب.",
+      "key_takeaway_fa": "ترکیب دو بافت در کنار هم، تفاوت زبان طراحی را بدون جدول مشخصات نشان می‌دهد.",
+      "analyst_assessment_fa": "نام یا گونهٔ دکورها پیشنهاد داده نشده؛ ترکیب، قابلیت یا موجودی قطعی را اثبات نمی‌کند.",
+      "strengths_fa": "تفاوت رنگ، بافت و شکل با چیدمان مقایسه‌ای یکجا خوانده می‌شود.",
+      "weaknesses_fa": "مقایسه برای سبک است، نه آزمون بازدهی و نه تفاوت فنی دو محصول.",
+      "nsp_visual_adaptation_fa": "برای طراحی NSP دو نمونهٔ اختصاصی با قاب هم‌اندازه، پس‌زمینه و انتساب مستقل پیشنهاد شود.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I011"
+      ],
+      "related_source_fragment_refs": [
+        "HAGER57-P068-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-08"
+      ],
+      "related_source_context_set_refs": [
+        "HAGER57-CTX-DESIGN_AND_CUSTOM"
+      ],
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "reference_never_verifies_case_claim_or_NSP_capability": true
+    },
+    {
+      "company": "Hager",
+      "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+      "source_language": "de",
+      "source_printed_document_code": "19DE0075_01",
+      "pdf_filename": "57_Hager_Work C15.1.pdf",
+      "pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "citation_basis": "1-based physical PDF pages; hotel folios match.",
+      "target_section_type": "GRMS",
+      "target_section_types": [
+        "GRMS"
+      ],
+      "target_section_title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+      "target_section_row": 7,
+      "content_level": "SYSTEM",
+      "optional_secondary_section_types": [],
+      "target_page_ids_scaffold": [],
+      "page_ids_status": "none_attached_deferred_to_defrag",
+      "proposed_role_within_section_fa": "چینش شبکه‌ای نمونهٔ پرداخت",
+      "mapping_reason_fa": "قالب ارائه بدون تکرار برند، عکس، گزینه، متریال قطعی، روش ساخت یا حق نشر.",
+      "unassigned_reason_fa": null,
+      "requires_NSP_validation_fa": "قیاس تحریریه‌ای و دیداریِ داخلی؛ ادعای NSP، قابلیت جاری، اجرای برق یا امنیت، نتیجه، استاندارد و بازنشر به شاهد و مجوز مستقل نیاز دارد.",
+      "mapping_status": "internal_editorial_or_design_comparator_only_pending_S06",
+      "role_status": "proposal_not_approved",
+      "selection_state": "not_selected",
+      "NSP_capability_verified": false,
+      "NSP_publication_approved": false,
+      "independent_case_performance_verified": false,
+      "current_offering_verified": false,
+      "attached_to_printed_page": false,
+      "image_id": "HAGER57_070_finish_samples",
+      "idea_id": "HAGER57_070_finish_samples",
+      "pdf_page": 70,
+      "source_pdf_page": 70,
+      "original_printed_page": 70,
+      "source_type": "visual_presentation_style",
+      "source_text_de": null,
+      "translation_fa": "تابلوی نمونهٔ رنگ و پرداخت",
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_070_finish_samples.webp",
+      "source_image_path": "Portfolio Instruction/research/assets/hager57/HAGER57_070_finish_samples.webp",
+      "image_asset_sha256": "8d9b0ed48006eebf6e7c5521422dd01af947c2a56c44fadf894c657747ef17f1",
+      "image_blob_sha": "c00d0036922eceb07dfdae5b17f68cb2a01ab66d",
+      "normalized_pdf_crop": [
+        0.014,
+        0.396,
+        0.697,
+        0.688
+      ],
+      "rendered_size_px": [
+        861,
+        521
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "presentation_style": "finish_samples_material_board",
+      "visual_style_type": "finish_samples_material_board",
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "title_fa": "تابلوی نمونهٔ رنگ و پرداخت",
+      "observed_content_in_crop_fa": "نمای کلوزآپ از نمونه‌های در کنار هم، بدون متن فرآیند یا نشانهٔ عددی.",
+      "key_takeaway_fa": "نمونه‌های کوچک رنگ و پرداخت می‌توانند مسیر انتخاب ظاهری را تصویر کنند.",
+      "analyst_assessment_fa": "عکس اثبات متریال، دوام، روش ساخت، سفارش‌پذیری یا قابلیت NSP نیست.",
+      "strengths_fa": "چینش شبکه‌ای تفاوت سطح‌ها را در فضایی محدود قابل مرور می‌کند.",
+      "weaknesses_fa": "نور عکاسی بر رنگ دیده‌شده اثر دارد؛ شاهد رنگ دقیق یا کیفیت کار نیست.",
+      "nsp_visual_adaptation_fa": "از نمونه‌های واقعی و تأییدشدهٔ NSP در نور ثابت و زیرلایهٔ یکسان عکس اختصاصی گرفته شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I017"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P070-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-08"
+      ],
+      "related_source_context_set_refs": [
+        "HAGER57-CTX-DESIGN_AND_CUSTOM"
+      ],
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "reference_never_verifies_case_claim_or_NSP_capability": true
+    }
+  ],
+  "style_family_mapping_index": [
+    {
+      "style_id": "hotel_reception_texture",
+      "title_fa": "نمای عریض پذیرش در آغاز فصل",
+      "representative_reference_ids": [
+        "HAGER57_032_reception_texture"
+      ],
+      "physical_pdf_pages": [
+        32
+      ],
+      "key_takeaway_fa": "عکس محیطی وزن فصل را پیش از تیترهای فنی مشخص می‌کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "HOTEL_OVERVIEW"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "isolated_topic_map_heading",
+      "title_fa": "تیتر دوخطیِ نقشهٔ موضوعات هتل",
+      "representative_reference_ids": [
+        "HAGER57_034_hotel_topic_header"
+      ],
+      "physical_pdf_pages": [
+        34
+      ],
+      "key_takeaway_fa": "تیتر کوتاه دوخطی می‌تواند خواننده را پیش از دیدن دسته‌های فصل آماده کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "HOTEL_OVERVIEW"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "tall_public_conference_scene",
+      "title_fa": "قاب عمودی فضای جلسهٔ عمومی",
+      "representative_reference_ids": [
+        "HAGER57_045_conference_space"
+      ],
+      "physical_pdf_pages": [
+        45
+      ],
+      "key_takeaway_fa": "یک تصویر عمودیِ عمومی فضای کاربرد را با کمترین متن معرفی می‌کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "PUBLIC_AREAS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "architectural_light_line_context",
+      "title_fa": "خط روشنایی در بافت معماری",
+      "representative_reference_ids": [
+        "HAGER57_048_corridor_light_context"
+      ],
+      "physical_pdf_pages": [
+        48
+      ],
+      "key_takeaway_fa": "نور پایین دیوار در یک عکس محیطی می‌تواند موضوع را بدون دیاگرام نشان دهد.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "PUBLIC_AREAS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "embedded_bedside_detail",
+      "title_fa": "ادغام دیداری کلید کنار تخت",
+      "representative_reference_ids": [
+        "HAGER57_060_bedside_integration"
+      ],
+      "physical_pdf_pages": [
+        60
+      ],
+      "key_takeaway_fa": "نشاندن اجزای رابط در بافت کنار تخت، نسبت محصول و محیط را با یک قاب نشان می‌دهد.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "named_case_product_in_context",
+      "title_fa": "عکس محیطی با کپشنِ مستقل Bikini Hotel",
+      "representative_reference_ids": [
+        "HAGER57_061_bikini_ambient_detail"
+      ],
+      "physical_pdf_pages": [
+        61
+      ],
+      "key_takeaway_fa": "نام/مکان در کپشن مستقل می‌تواند مرجع تصویر نمونه را روشن کند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "CASE_STUDIES"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "room_atmosphere_photo_only",
+      "title_fa": "فضاسازی اتاق بدون نمودار کنترل",
+      "representative_reference_ids": [
+        "HAGER57_066_room_lighting_atmosphere"
+      ],
+      "physical_pdf_pages": [
+        66
+      ],
+      "key_takeaway_fa": "نور و کنتراست در قاب واقعی می‌توانند حوزهٔ اتاق مهمان را از شرح فنی جدا کنند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "material_forms_diptych",
+      "title_fa": "جفت صحنهٔ متضاد برای ارائهٔ سبک",
+      "representative_reference_ids": [
+        "HAGER57_068_material_contrast_pair"
+      ],
+      "physical_pdf_pages": [
+        68
+      ],
+      "key_takeaway_fa": "ترکیب دو بافت در کنار هم، تفاوت زبان طراحی را بدون جدول مشخصات نشان می‌دهد.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    },
+    {
+      "style_id": "finish_samples_material_board",
+      "title_fa": "تابلوی نمونهٔ رنگ و پرداخت",
+      "representative_reference_ids": [
+        "HAGER57_070_finish_samples"
+      ],
+      "physical_pdf_pages": [
+        70
+      ],
+      "key_takeaway_fa": "نمونه‌های کوچک رنگ و پرداخت می‌توانند مسیر انتخاب ظاهری را تصویر کنند.",
+      "final_section_mapping": "not_final_research_only",
+      "proposed_primary_sections": [
+        "GRMS"
+      ],
+      "presentation_style_tag": "CROSS_SECTION_STYLE",
+      "is_new_feature_record": false,
+      "selection_state": "not_selected"
+    }
+  ],
+  "unassigned_text_reasons": [
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I006",
+      "physical_pdf_page": 38,
+      "source_fragment_ref": "HAGER57-P038-D01",
+      "reason_fa": "این تیتر به‌تنهایی دامنهٔ اندازه‌گیری، تعرفه، دقت، مقررات یا روش صورتحساب را نشان نمی‌دهد؛ از تطبیق و ورود مستقل صرف‌نظر شود."
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I007",
+      "physical_pdf_page": 40,
+      "source_fragment_ref": "HAGER57-P040-D01",
+      "reason_fa": "تیتر طبقه‌بندی موجود است؛ حوزهٔ توزیع برق راهرو/طبقه بدون شاهد طراحی داخلی یا قابلیت NSP، فعلاً تطبیق نمی‌گیرد."
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I008",
+      "physical_pdf_page": 44,
+      "source_fragment_ref": "HAGER57-P044-D01",
+      "reason_fa": "نام دستهٔ تجهیزات نباید پیشنهاد نصب، مسیر کابل یا دستور برق تلقی شود. قاب محیطی صفحهٔ بعد جداگانه مجازِ پژوهش داخلی است."
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I012",
+      "physical_pdf_page": 55,
+      "source_fragment_ref": "HAGER57-P055-D01",
+      "reason_fa": "عنوان اتصالات فیزیکی از فروشنده است؛ هیچ دلیلی برای تطبیق با فصل تلویزیون تعاملی، سازگاری شبکه یا پوشش IPTV نیست."
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I013",
+      "physical_pdf_page": 58,
+      "source_fragment_ref": "HAGER57-P058-D01",
+      "reason_fa": "نام موضوع بدون دامنهٔ رفتار و بدون توان NSP. نه منطق کارت/حضور، محرک، تأخیر، اندازه‌گیری یا نتیجهٔ صرفه‌جویی؛ وارد بانک مستقل نشود."
+    }
+  ],
+  "unproposed_sections_fa": {
+    "COVER": "افتتاح فصل، نه مرجع جلد کل کاتالوگ.",
+    "COMPANY_INTRO": "برند رقیب شاهد هویت یا سابقهٔ NSP نیست.",
+    "IDENTITY_PAGES": "نمونه‌ای تخصیص نیافت.",
+    "IPTV": "اتصالات فیزیکیِ ص ۵۵ هیچ‌یک از قابلیت‌ها یا سازگاری IPTV را ثابت نمی‌کند."
+  },
+  "source_claim_gates_snapshot": [
+    {
+      "id": "HAGER57-CLAIM-01",
+      "kind": "identity_and_hotel_only",
+      "physical_pdf_pages": [
+        1,
+        10,
+        32,
+        172
+      ],
+      "fragment_refs": [
+        "HAGER57-P001-D01",
+        "HAGER57-P010-D01",
+        "HAGER57-P032-D01",
+        "HAGER57-P172-D01"
+      ],
+      "scope_fa": "سند آلمانی با شناسهٔ چاپی 19DE0075_01؛ نام فصل، فهرست و کد برای ردیابی منبع‌اند. نسخهٔ کنونی، تاریخ چاپ و قابلیت NSP نتیجه‌گیری نشده‌اند.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P001-D01",
+        "HAGER57-P010-D01",
+        "HAGER57-P032-D01",
+        "HAGER57-P172-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I001"
+      ]
+    },
+    {
+      "id": "HAGER57-CLAIM-02",
+      "kind": "designer_quote_not_property_outcome",
+      "physical_pdf_pages": [
+        33
+      ],
+      "fragment_refs": [
+        "HAGER57-P033-D01",
+        "HAGER57-P033-D02"
+      ],
+      "scope_fa": "گفتهٔ Cord Glantz از GEPLAN Design با انتساب چاپی به پروژهٔ JAZ Hotel Stuttgart فقط قصد طراحی و آسایش است؛ نه اندازه‌گیری رضایت یا پروژهٔ NSP. با عکسِ Bikini Hotel یکی نیست.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P033-D01",
+        "HAGER57-P033-D02"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I002"
+      ]
+    },
+    {
+      "id": "HAGER57-CLAIM-03",
+      "kind": "power_and_room_distribution_topics_not_instructions",
+      "physical_pdf_pages": [
+        34,
+        38,
+        40,
+        42
+      ],
+      "fragment_refs": [
+        "HAGER57-P034-D01",
+        "HAGER57-P034-D02",
+        "HAGER57-P038-D01",
+        "HAGER57-P040-D01",
+        "HAGER57-P042-D01"
+      ],
+      "scope_fa": "موضوع و نام خانواده در بخش هتلِ Hager؛ نه روش سیم‌بندی و اندازه‌گیری، ظرفیت/تضمین یا قابلیت NSP.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P034-D01",
+        "HAGER57-P034-D02",
+        "HAGER57-P038-D01",
+        "HAGER57-P040-D01",
+        "HAGER57-P042-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I003",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I004",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I006",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I007"
+      ]
+    },
+    {
+      "id": "HAGER57-CLAIM-04",
+      "kind": "cable_and_space_editorial_structure_only",
+      "physical_pdf_pages": [
+        44,
+        45,
+        46,
+        48,
+        50
+      ],
+      "fragment_refs": [
+        "HAGER57-P044-D01",
+        "HAGER57-P045-D01",
+        "HAGER57-P046-D01",
+        "HAGER57-P048-D01",
+        "HAGER57-P050-D01"
+      ],
+      "scope_fa": "نام دسته‌ و قالب ارائهٔ فضا در منبع؛ بدون مسیر اجرا، دستور مکانیکی یا الکتریکی، ایمنی و ارزیابی مقررات.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P044-D01",
+        "HAGER57-P045-D01",
+        "HAGER57-P046-D01",
+        "HAGER57-P048-D01",
+        "HAGER57-P050-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I008",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I009",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I010"
+      ]
+    },
+    {
+      "id": "HAGER57-CLAIM-05",
+      "kind": "switch_and_presence_headlines_not_workflow",
+      "physical_pdf_pages": [
+        35,
+        52,
+        53,
+        55,
+        56,
+        58,
+        60,
+        62
+      ],
+      "fragment_refs": [
+        "HAGER57-P035-D01",
+        "HAGER57-P052-D01",
+        "HAGER57-P053-D01",
+        "HAGER57-P055-D01",
+        "HAGER57-P056-D01",
+        "HAGER57-P058-D01",
+        "HAGER57-P060-D01",
+        "HAGER57-P062-D01"
+      ],
+      "scope_fa": "دسته، تیتر یا نام محصول ساختهٔ ناشر در همین فصل؛ از تیتر هیچ منطق کارت، محرک/تنظیم تشخیص حضور، عدد فروشنده یا قابلیت NSP برنمی‌آید.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P035-D01",
+        "HAGER57-P052-D01",
+        "HAGER57-P053-D01",
+        "HAGER57-P055-D01",
+        "HAGER57-P056-D01",
+        "HAGER57-P058-D01",
+        "HAGER57-P060-D01",
+        "HAGER57-P062-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I005",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I011",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I012",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I013",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I014"
+      ]
+    },
+    {
+      "id": "HAGER57-CLAIM-06",
+      "kind": "separate_case_caption_Bikini",
+      "physical_pdf_pages": [
+        61
+      ],
+      "fragment_refs": [
+        "HAGER57-P061-D01"
+      ],
+      "scope_fa": "کپشنِ عکس Bikini Hotel، Berlin فقط همان تصویر/مصداق معرفی‌شده است؛ نه گواه بهره‌برداری، پروژهٔ JAZ، سابقهٔ NSP یا حق بازنشر.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P061-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I015"
+      ]
+    },
+    {
+      "id": "HAGER57-CLAIM-07",
+      "kind": "vendor_KNX_and_controller_as_case_topics",
+      "physical_pdf_pages": [
+        66,
+        67
+      ],
+      "fragment_refs": [
+        "HAGER57-P066-D01",
+        "HAGER57-P067-D01"
+      ],
+      "scope_fa": "نام رویکرد و دستگاه در منبع؛ نه روش پیکربندی یا منطق کنترلی، عدد/نتیجهٔ عملکرد، گواهی انطباق، پشتیبانی روز یا محصول NSP.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P066-D01",
+        "HAGER57-P067-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I016"
+      ]
+    },
+    {
+      "id": "HAGER57-CLAIM-08",
+      "kind": "brand_design_language_and_custom_editorial_style",
+      "physical_pdf_pages": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "fragment_refs": [
+        "HAGER57-P068-D01",
+        "HAGER57-P069-D01",
+        "HAGER57-P070-D01",
+        "HAGER57-P071-D01"
+      ],
+      "scope_fa": "تیترهای طراحی و نام Manufaktur از ناشر‌اند؛ نه دسترس‌پذیری کالا/متریال، تولید NSP، تعهد رسمی یا حق بازنشر.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P068-D01",
+        "HAGER57-P069-D01",
+        "HAGER57-P070-D01",
+        "HAGER57-P071-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I017"
+      ]
+    }
+  ],
+  "structured_context_handling": {
+    "source_context_sets": [
+      {
+        "id": "HAGER57-CTX-JAZ_DESIGN",
+        "physical_pdf_pages": [
+          33
+        ],
+        "S02_fragment_refs": [
+          "HAGER57-P033-D01",
+          "HAGER57-P033-D02"
+        ],
+        "scope_fa": "نقل‌قول و انتساب در یک بلوک منبع‌اند: Cord Glantz، GEPLAN Design، برای JAZ Hotel Stuttgart؛ نه رضایت سنجیده و نه کپشن Bikini Hotel."
+      },
+      {
+        "id": "HAGER57-CTX-BIKINI_CAPTION",
+        "physical_pdf_pages": [
+          61
+        ],
+        "S02_fragment_refs": [
+          "HAGER57-P061-D01"
+        ],
+        "scope_fa": "کپشن مستقل برای همان تصویرِ Bikini Hotel در برلین، نه همان پروندهٔ JAZ، سند اجرا یا حق بازنشر."
+      },
+      {
+        "id": "HAGER57-CTX-UTILITY_ACCESS",
+        "physical_pdf_pages": [
+          44,
+          45,
+          46,
+          50
+        ],
+        "S02_fragment_refs": [
+          "HAGER57-P044-D01",
+          "HAGER57-P045-D01",
+          "HAGER57-P046-D01",
+          "HAGER57-P050-D01"
+        ],
+        "scope_fa": "این «دسترسی» به انشعاب‌های خدماتی است، نه دسترسی امنیتی/ورود. خانواده‌ها فقط نام‌اند و نحوهٔ اجرا یا سیم‌بندی نتیجه‌گیری نشود."
+      },
+      {
+        "id": "HAGER57-CTX-HOTEL_CARD_AND_PRESENCE",
+        "physical_pdf_pages": [
+          52,
+          58
+        ],
+        "S02_fragment_refs": [
+          "HAGER57-P052-D01",
+          "HAGER57-P058-D01"
+        ],
+        "scope_fa": "تیترِ کارت و اشارهٔ جداگانه به حسگر حضور، نه ارتباط اثبات‌شده، منطق کنترل، محرک، سنجه یا کارکرد NSP."
+      },
+      {
+        "id": "HAGER57-CTX-CONTROL_SCOPE",
+        "physical_pdf_pages": [
+          35,
+          66,
+          67
+        ],
+        "S02_fragment_refs": [
+          "HAGER57-P035-D01",
+          "HAGER57-P066-D01",
+          "HAGER57-P067-D01"
+        ],
+        "scope_fa": "دسته، موضوع KNX و نام نقش دستگاه جدا هستند؛ بدون سازگاری، عملیات و عملکرد. ذکر نام استاندارد اثبات انطباق نیست."
+      },
+      {
+        "id": "HAGER57-CTX-DESIGN_AND_CUSTOM",
+        "physical_pdf_pages": [
+          53,
+          56,
+          60,
+          68,
+          69,
+          70,
+          71
+        ],
+        "S02_fragment_refs": [
+          "HAGER57-P053-D01",
+          "HAGER57-P056-D01",
+          "HAGER57-P060-D01",
+          "HAGER57-P068-D01",
+          "HAGER57-P069-D01",
+          "HAGER57-P070-D01",
+          "HAGER57-P071-D01"
+        ],
+        "scope_fa": "انتخاب شکل، قاب‌بندی ترکیب، سبک و برند ساخت سفارشی همان منبع‌اند. هم‌پوشانی اصطلاحات دلیل ورود چند رکورد مستقل همسان، تعهد متریال یا توان NSP نیست."
+      }
+    ],
+    "additional_context_excerpt_refs": [
+      "HAGER57-P001-D01",
+      "HAGER57-P010-D01",
+      "HAGER57-P033-D02",
+      "HAGER57-P042-D01",
+      "HAGER57-P046-D01",
+      "HAGER57-P050-D01",
+      "HAGER57-P052-D01",
+      "HAGER57-P056-D01",
+      "HAGER57-P062-D01",
+      "HAGER57-P067-D01",
+      "HAGER57-P068-D01",
+      "HAGER57-P069-D01",
+      "HAGER57-P071-D01",
+      "HAGER57-P172-D01"
+    ],
+    "contains_no_operational_or_life_safety_items": true,
+    "distinct_JAZ_design_quote_and_Bikini_case_caption": true,
+    "hotel_utility_access_is_not_door_access_or_security": true,
+    "appearance_form_is_not_card_workflow": true,
+    "only_hotel_chapter_for_bank_candidates": true,
+    "no_inferred_NSP_or_reuse": true
+  },
+  "layout_constraint_fa": "پیشنهاد صرفاً الگوست. ناحیهٔ امن پانچِ قالب افقی A4 بدون متن/نشان، با پس‌زمینهٔ پیوسته، بماند؛ هیچ دارایی منبع به صفحه پیوند نخورد.",
+  "S06_priorities_fa": [
+    "هر ۳۱ عبارت و ترجمه و پیوندهای صفحه با اصل، و هر ۹ برش بعلاوهٔ کنارگذاری پیش‌نما کنترل شوند.",
+    "انتساب دو ملک، تفکیک دسترسی به انشعاب از کنترل ورود و نبود دستور برق یا ایمنی کنترل شوند."
+  ],
+  "next_stage": "S06 — ممیزی منبع و نتیجه",
+  "next_queue_cursor": {
+    "document_index": 16,
+    "document_id": "57",
+    "step_index": 5,
+    "step_id": "S06"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false
+}
