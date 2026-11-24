@@ -1,0 +1,719 @@
+{
+  "schema": "nsp-catalog-research-stage-text-extraction-v1",
+  "stage": "S02",
+  "stage_key": "source_text_extraction",
+  "status": "completed_original_English_short_source_excerpts_only",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "f66fcc7b50cd8d8427919444154d85398d0fc901",
+  "document_id": "46",
+  "source_id": "CAT046_CRESTRON_BLOC_HOTELS",
+  "source_language": "en",
+  "source_pdf": {
+    "company": "Crestron",
+    "publisher": "Crestron Electronics, Inc.",
+    "publisher_evidence_physical_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "cover_title": "Bloc Hotels",
+    "cover_title_evidence_pdf_page": 1,
+    "PDF_metadata_title": "Case Study: Bloc Hotel",
+    "case_study_running_title": "CASE STUDY | BLOC HOTEL",
+    "running_title_physical_pages": [
+      2,
+      3,
+      4
+    ],
+    "filename": "46_Crestron_Work C08.3.pdf",
+    "library_path": "/46_Crestron_Work C08.3.pdf",
+    "file_size_bytes": 1951685,
+    "queued_file_size_bytes": 1951685,
+    "file_size_matches_queue": true,
+    "sha256": "44d493d15827ace20d051beac69da455e2960fee12094920e17212e6f549c611",
+    "source_original_from_exact_user_Library_match": true,
+    "pdf_format": "PDF 1.4",
+    "pdf_creator": "Adobe InDesign 17.3 (Windows)",
+    "pdf_producer": "Adobe PDF Library 16.0.7",
+    "pdf_creation_metadata": "D:20230127093221-05'00'",
+    "pdf_modification_metadata": "D:20230127093230-05'00'",
+    "PDF_metadata_dates_are_not_proven_publication_dates": true,
+    "printed_revision_verbatim": "v. 012723",
+    "printed_revision_evidence_pdf_page": 4,
+    "printed_copyright_year": 2023,
+    "printed_full_publication_date_verified": false,
+    "printed_document_number": null,
+    "filename_Work_C08_3_is_not_printed_revision": true,
+    "language": "en",
+    "case_study_scope": {
+      "location_as_printed": "United Kingdom",
+      "partner_as_printed": "SYMBIoT",
+      "featured_spaces_as_printed": [
+        "Bedroom",
+        "Bathroom"
+      ],
+      "metadata_evidence_pdf_page": 1
+    },
+    "external_publisher_site_checked": false,
+    "encrypted": false,
+    "source_original_modified": false,
+    "source_original_committed": false,
+    "pdf_pages": 4
+  },
+  "upstream_inventory": {
+    "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S01_source_inventory.json",
+    "commit_sha": "026a68e137c876ba2c74c8d7b7a1a8ec3269fe01",
+    "git_blob_sha": "78350841e809a1f146d1f6b4bb96261df903d550"
+  },
+  "scope": "Selected short excerpts from all four physical pages of the identified user-provided PDF; not a full source transcription or feature translation.",
+  "statistics": {
+    "physical_pages_inventory_reverified": 4,
+    "physical_pages_with_short_excerpts": 4,
+    "short_verified_original_English_fragments": 28,
+    "total_short_excerpt_words": 94,
+    "matched_PyMuPDF_and_Poppler_raw": 28,
+    "exact_under_optional_Poppler_layout": 27,
+    "optional_layout_exceptions_visually_resolved": 1,
+    "claim_and_context_gates": 10,
+    "new_NSP_capabilities_verified": 0
+  },
+  "pages": [
+    {
+      "pdf_page": 1,
+      "canonical_reference": "physical PDF page",
+      "section_group": "INTRODUCTION",
+      "native_page_text_sha256": "7a733524729be567036b9b6c162084577845aa8a2633fef194d151df0fb7eea8",
+      "fragment_count": 6,
+      "short_source_fragments_en": [
+        "Bloc Hotels",
+        "INTRODUCTION",
+        "Gatwick Airport (United Kingdom)",
+        "SYMBIoT",
+        "Bedroom, Bathroom",
+        "BY REDUCING GUEST CONTACT"
+      ],
+      "fragment_ids": [
+        "CRESTRON46-P01-E01",
+        "CRESTRON46-P01-E02",
+        "CRESTRON46-P01-E03",
+        "CRESTRON46-P01-E04",
+        "CRESTRON46-P01-E05",
+        "CRESTRON46-P01-E06"
+      ],
+      "fragment_audit": [
+        {
+          "id": "CRESTRON46-P01-E01",
+          "source_type": "identity",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P01-E02",
+          "source_type": "heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P01-E03",
+          "source_type": "site",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P01-E04",
+          "source_type": "partner",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P01-E05",
+          "source_type": "spaces",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P01-E06",
+          "source_type": "client_quote",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        }
+      ]
+    },
+    {
+      "pdf_page": 2,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CHALLENGE_AND_SOLUTION",
+      "native_page_text_sha256": "ee4471ba05344edc61cbdaa6ed90712e58a0ea6dba5d79a53819aa3ac47e02d3",
+      "fragment_count": 9,
+      "short_source_fragments_en": [
+        "THE CHALLENGE",
+        "seamless, touchless, and secure",
+        "REAL-TIME MONITORING",
+        "LIGHTING STATUS",
+        "LEAK DETECTION",
+        "THE SOLUTION",
+        "bespoke cloud-based room control management system",
+        "Property Management and Point of Sale systems",
+        "bulky onsite systems architecture"
+      ],
+      "fragment_ids": [
+        "CRESTRON46-P02-E01",
+        "CRESTRON46-P02-E02",
+        "CRESTRON46-P02-E03",
+        "CRESTRON46-P02-E04",
+        "CRESTRON46-P02-E05",
+        "CRESTRON46-P02-E06",
+        "CRESTRON46-P02-E07",
+        "CRESTRON46-P02-E08",
+        "CRESTRON46-P02-E09"
+      ],
+      "fragment_audit": [
+        {
+          "id": "CRESTRON46-P02-E01",
+          "source_type": "heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P02-E02",
+          "source_type": "client_aspiration",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P02-E03",
+          "source_type": "client_monitoring_quote",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P02-E04",
+          "source_type": "client_monitoring_example",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P02-E05",
+          "source_type": "client_monitoring_example",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P02-E06",
+          "source_type": "heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P02-E07",
+          "source_type": "vendor_solution",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P02-E08",
+          "source_type": "vendor_integration",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P02-E09",
+          "source_type": "vendor_architecture_claim",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        }
+      ]
+    },
+    {
+      "pdf_page": 3,
+      "canonical_reference": "physical PDF page",
+      "section_group": "TECHNOLOGY_AND_GUEST_EXPERIENCE",
+      "native_page_text_sha256": "c0cbac3a8e7ed581fe13fe22a3c21811b978caa2907b10499cd8fcdcfcd6cb7b",
+      "fragment_count": 6,
+      "short_source_fragments_en": [
+        "THE TECHNOLOGY",
+        "seamless and touchless experience",
+        "from their own smartphone or tablet",
+        "check in and out",
+        "no need for a key card",
+        "such as key cards"
+      ],
+      "fragment_ids": [
+        "CRESTRON46-P03-E01",
+        "CRESTRON46-P03-E02",
+        "CRESTRON46-P03-E03",
+        "CRESTRON46-P03-E04",
+        "CRESTRON46-P03-E05",
+        "CRESTRON46-P03-E06"
+      ],
+      "fragment_audit": [
+        {
+          "id": "CRESTRON46-P03-E01",
+          "source_type": "heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P03-E02",
+          "source_type": "vendor_guest_experience",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P03-E03",
+          "source_type": "vendor_guest_experience",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P03-E04",
+          "source_type": "vendor_guest_experience",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P03-E05",
+          "source_type": "vendor_case_option",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P03-E06",
+          "source_type": "client_quoted_alternative",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        }
+      ]
+    },
+    {
+      "pdf_page": 4,
+      "canonical_reference": "physical PDF page",
+      "section_group": "RESULTS_AND_VENDOR_CONTEXT",
+      "native_page_text_sha256": "6b3318a04a9222d4aa85de41406970d77550d23f2a7c211e6a63202d2fbab2c5",
+      "fragment_count": 7,
+      "short_source_fragments_en": [
+        "RESULTS",
+        "automation control right in their hands",
+        "reduces contact with surfaces",
+        "plans to open additional hotels",
+        "Featured Products",
+        "About Crestron Hospitality",
+        "v. 012723"
+      ],
+      "fragment_ids": [
+        "CRESTRON46-P04-E01",
+        "CRESTRON46-P04-E02",
+        "CRESTRON46-P04-E03",
+        "CRESTRON46-P04-E04",
+        "CRESTRON46-P04-E05",
+        "CRESTRON46-P04-E06",
+        "CRESTRON46-P04-E07"
+      ],
+      "fragment_audit": [
+        {
+          "id": "CRESTRON46-P04-E01",
+          "source_type": "heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P04-E02",
+          "source_type": "vendor_qualitative_case_outcome",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P04-E03",
+          "source_type": "vendor_qualitative_case_outcome",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": false,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": true,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P04-E04",
+          "source_type": "historical_plan",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P04-E05",
+          "source_type": "heading_only",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P04-E06",
+          "source_type": "heading_only",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        },
+        {
+          "id": "CRESTRON46-P04-E07",
+          "source_type": "edition_metadata",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true,
+          "source_text_matches_render_for_layout_exception": null,
+          "reading_scope": "short_verbatim_excerpt_only"
+        }
+      ]
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "CRESTRON46-CLAIM-01",
+      "kind": "case_edition_and_site_identity",
+      "physical_pdf_pages": [
+        1,
+        4
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P01-E01",
+        "CRESTRON46-P01-E02",
+        "CRESTRON46-P01-E03",
+        "CRESTRON46-P01-E04",
+        "CRESTRON46-P01-E05",
+        "CRESTRON46-P04-E07"
+      ],
+      "scope_fa": "فقط هویت مطالعهٔ Bloc Hotels در Gatwick بریتانیا، نام شریک و شمارهٔ ویرایش چاپی؛ از سند قبلی Hotel Renegade جداست. این داده‌ها محل، پروژه یا امکانات NSP نیستند.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false
+    },
+    {
+      "id": "CRESTRON46-CLAIM-02",
+      "kind": "customer_reported_contact_reduction",
+      "physical_pdf_pages": [
+        1
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P01-E06"
+      ],
+      "scope_fa": "بخش کوتاه نقل‌قول مدیر فناوری پروژهٔ Bloc؛ کاهش تماس به روایت گوینده است، نه اثبات سلامت، نرخ کاهش یا نتیجهٔ مستقل.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false
+    },
+    {
+      "id": "CRESTRON46-CLAIM-03",
+      "kind": "aspirational_challenge_quote",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P02-E01",
+        "CRESTRON46-P02-E02"
+      ],
+      "scope_fa": "صفت‌های روان، بی‌تماس و امن کیفیت مطلوبِ نقل‌قول دربارهٔ چالش‌اند؛ نه ارزیابی امنیت، گواهی یا تأیید عملکرد.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false
+    },
+    {
+      "id": "CRESTRON46-CLAIM-04",
+      "kind": "reported_monitoring_examples",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P02-E03",
+        "CRESTRON46-P02-E04",
+        "CRESTRON46-P02-E05"
+      ],
+      "scope_fa": "سه گزیده از یک نقل‌قول منتسب به مدیر فناوری Bloc؛ وضعیت روشنایی و تشخیص نشتی مثال‌اند، نه اثبات پوشش، دقت، زمان پاسخ، یا قابلیت NSP.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false
+    },
+    {
+      "id": "CRESTRON46-CLAIM-05",
+      "kind": "reported_case_specific_solution_stack",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P02-E06",
+        "CRESTRON46-P02-E07",
+        "CRESTRON46-P02-E08",
+        "CRESTRON46-P02-E09"
+      ],
+      "scope_fa": "مدیریت سفارشی و ابری اتاق به SYMBIoT نسبت داده شده؛ PMS و POS سامانه‌های همین هتل‌اند. فناوری کنترلی Crestron به‌عنوان بخشی از راهکار معرفی شده. ادعای کم‌شدن معماری حجیم محل به همان پروژه محدود است، نه بدون زیرساخت، سازگاری فراگیر یا ادعای NSP.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false
+    },
+    {
+      "id": "CRESTRON46-CLAIM-06",
+      "kind": "reported_guest_experience_not_access_workflow",
+      "physical_pdf_pages": [
+        3
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P03-E01",
+        "CRESTRON46-P03-E02",
+        "CRESTRON46-P03-E03",
+        "CRESTRON46-P03-E04"
+      ],
+      "scope_fa": "توصیف ناشر از تجربهٔ همراه و ورود/خروج هتلی در همین مورد؛ نه دسترسی فیزیکی، روش ورود، فناوری احراز، تنظیمات یا قابلیت NSP. به معنای نیازناپذیری کل زیرساخت نیست.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false
+    },
+    {
+      "id": "CRESTRON46-CLAIM-07",
+      "kind": "alternative_key_card_remained_available",
+      "physical_pdf_pages": [
+        3
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P03-E05",
+        "CRESTRON46-P03-E06"
+      ],
+      "scope_fa": "ناشر مسیر بی‌نیاز از کارت را توصیف می‌کند و نقل‌قول مدیر فناوری گزینهٔ کارت را برای ترجیح روش متداول حفظ می‌کند. کارت حذف یا ممنوع نشده؛ رونوشت سازوکار کلید الکترونیکی و هیچ ادعای قابلیت یا اتصال NSP مجاز نیست.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false
+    },
+    {
+      "id": "CRESTRON46-CLAIM-08",
+      "kind": "case_specific_qualitative_results",
+      "physical_pdf_pages": [
+        4
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P04-E01",
+        "CRESTRON46-P04-E02",
+        "CRESTRON46-P04-E03"
+      ],
+      "scope_fa": "نتایج کیفی در روایت همان پروژه‌اند و خط پایه، مقدار کاهش، مطالعهٔ پیامد عفونت یا تأیید شخص ثالث در این گزیده نیست؛ هیچ ادعای NSP نمی‌سازند.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false
+    },
+    {
+      "id": "CRESTRON46-CLAIM-09",
+      "kind": "future_plans_not_verified_as_completed",
+      "physical_pdf_pages": [
+        4
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P04-E04"
+      ],
+      "scope_fa": "برنامهٔ زمان نگارش برای هتل‌های بیشتر است، نه استقرار انجام‌شده یا پوشش فعلی؛ با نتیجهٔ همین پروژه ادغام نشود.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false
+    },
+    {
+      "id": "CRESTRON46-CLAIM-10",
+      "kind": "featured_products_and_publisher_context_not_records",
+      "physical_pdf_pages": [
+        4
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P04-E05",
+        "CRESTRON46-P04-E06"
+      ],
+      "scope_fa": "فقط تیترها؛ مدل، نقشه، مشخصات، قیمت و ادعاهای کلی فروشنده استخراج یا به NSP نسبت داده نشده.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false
+    }
+  ],
+  "source_context_groups": [
+    {
+      "id": "CRESTRON46-CTX-IDENTITY",
+      "physical_pdf_pages": [
+        1,
+        4
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P01-E01",
+        "CRESTRON46-P04-E07"
+      ],
+      "scope_fa": "این بایگانی از مطالعهٔ Hotel Renegade جداست."
+    },
+    {
+      "id": "CRESTRON46-CTX-SOLUTION",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P02-E07",
+        "CRESTRON46-P02-E08",
+        "CRESTRON46-P02-E09"
+      ],
+      "scope_fa": "توصیف نقش SYMBIoT، PMS/POS پروژه و فناوری کنترلی Crestron بدون ادعای عمومی یا مقایسهٔ عملکرد NSP."
+    },
+    {
+      "id": "CRESTRON46-CTX-CHOICE",
+      "physical_pdf_pages": [
+        3
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P03-E05",
+        "CRESTRON46-P03-E06"
+      ],
+      "scope_fa": "مسیر توصیف‌شده و گزینهٔ حفظ کارت کنار هم؛ بدون نحوهٔ صدور، تحویل یا اجرای دسترسی."
+    },
+    {
+      "id": "CRESTRON46-CTX-OUTCOMES",
+      "physical_pdf_pages": [
+        4
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P04-E02",
+        "CRESTRON46-P04-E03",
+        "CRESTRON46-P04-E04"
+      ],
+      "scope_fa": "نتیجهٔ کیفی همین مورد جدا از طرح برای آینده. هیچ عدد یا اثر سلامت نتیجه نشود."
+    }
+  ],
+  "quality_assurance": {
+    "exact_original_pdf_byte_hash_reverified": true,
+    "all_four_native_page_hashes_match_S01": true,
+    "each_physical_page_has_one_inventory_row": true,
+    "comparison_normalization": "NFKC, replace C0 layout markers with spaces only for comparison; collapse whitespace; stored fragments preserve case and punctuation.",
+    "poppler_layout_discrepancy": {
+      "fragment_id": "CRESTRON46-P04-E03",
+      "physical_pdf_page": 4,
+      "optional_layout_did_not_return_exact_contiguous_phrase": true,
+      "verified_in_two_engines_and_manual_original_render": true,
+      "straddles_printed_line_end": true,
+      "transcription_corrected_or_invented": false
+    }
+  },
+  "usage_policy": {
+    "no_full_page_or_paragraph_transcriptions": true,
+    "no_text_export_of_technical_hardware_or_operational_access_steps": true,
+    "no_extension_to_current_products_or_rollout": true,
+    "no_NSP_feature_contract_health_or_security_claims": true,
+    "no_external_independent_case_verification": true,
+    "no_rights_for_public_catalog_reuse": true,
+    "Hotel_Renegade_remains_distinct": true
+  },
+  "next_stage": "S03 — استخراج فیچر و ترجمه",
+  "next_queue_cursor": {
+    "document_index": 12,
+    "document_id": "46",
+    "step_index": 2,
+    "step_id": "S03"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false
+}
