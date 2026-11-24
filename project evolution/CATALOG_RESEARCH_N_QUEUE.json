@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 87,
+    "total_pending_steps": 86,
     "completed_new_documents": 5,
     "remaining_new_documents": 13
   },
   "cursor": {
     "document_index": 8,
     "document_id": "15",
-    "step_index": 4,
-    "step_id": "S05"
+    "step_index": 5,
+    "step_id": "S06"
   },
   "section_types": [
     {
@@ -1071,11 +1071,13 @@
         {
           "id": "S05",
           "key": "section_type_mapping",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S05_section_mapping.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "e9f3fed17b68077a1649b83fd0289cb9512d645f",
+          "notes": "از ۲۵ رکورد پژوهشی، ۱۷ مورد به‌طور پیشنهادی نگاشت و ۸ مورد داخلیِ بی‌مقصد ماندند. از ۱۱ تصویر، ۸ مقصد پیشنهادی و ۳ سبک بی‌مقصد ثبت شدند. شعار تکراری فقط برای ردگیری منبع حفظ شد. هیچ ادعای NSP، تأیید انتشار یا اتصال به صفحه انجام نشد؛ بانک V8 و برنامه ثابت‌اند."
         },
         {
           "id": "S06",
@@ -1096,7 +1098,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S04"
+      "last_successful_stage": "S05"
     },
     {
       "id": "16",
