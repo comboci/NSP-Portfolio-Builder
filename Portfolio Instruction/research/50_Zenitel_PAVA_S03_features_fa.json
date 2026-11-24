@@ -1,0 +1,1087 @@
+{
+  "schema": "nsp-catalog-research-stage-feature-translation-v1",
+  "stage": "S03",
+  "stage_key": "feature_software_translation",
+  "status": "completed_page_bound_source_concepts_and_Persian_translation_internal_only",
+  "document_id": "50",
+  "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+  "source_language": "en",
+  "translation_language": "fa",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "c3f82c8ad049536ab2c6e01609d3e4500a7b8c6a",
+  "provenance": {
+    "company": "Zenitel",
+    "title": "Public Address and Voice Alarm Solutions",
+    "filename": "50_Zenitel_Work C09.4.pdf",
+    "pdf_pages": 13,
+    "file_size_bytes": 11905037,
+    "source_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+    "printed_edition": null,
+    "printed_publication_date": null,
+    "pdf_metadata_not_publication_date": true,
+    "S01_inventory": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S01_source_inventory.json",
+      "git_blob_sha": "ca8f854480b0ee8d5c730dc6cc7335ba19a25177",
+      "commit_sha": "443440341bd5f5bbe110806a885abd48cbeb9169"
+    },
+    "S02_text_evidence": {
+      "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S02_english_text.json",
+      "blob_sha": "c3ecf7590413ad965b06ef111e06f743bb8d6ea3",
+      "commit_sha": "c88958c1ead7eef49a294e25a763f6a99f382593"
+    }
+  },
+  "statistics": {
+    "physical_source_pages": 13,
+    "selected_english_fragments_reconciled": 27,
+    "Persian_translations_reviewed": 27,
+    "research_candidate_records": 14,
+    "context_only_fragments": 13,
+    "records_by_type": {
+      "marketing_slogan": 3,
+      "intro": 1,
+      "architecture": 1,
+      "visual_presentation_style": 8,
+      "other": 1
+    },
+    "operational_capability_rows": 0,
+    "NSP_capabilities_verified": 0,
+    "life_safety_or_security_certifications_verified": 0
+  },
+  "editorial_and_safety_policy": {
+    "all_claims_remain_vendor_attribution": true,
+    "ordinary_audio_and_emergency_voice_alarm_distinct": true,
+    "no_life_safety_or_cybersecurity_compliance_inference": true,
+    "no_standalone_NSP_system_or_claim": true,
+    "no_hardware_models_or_wiring_or_QR_or_operational_steps": true,
+    "no_claim_of_named_landmark_case_or_performance": true,
+    "no_public_reuse_or_current_availability_inferred": true,
+    "paired_headlines_context_not_double_counted": true
+  },
+  "research_records": [
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I001",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 1,
+      "original_printed_page": null,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P01-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "TRUSTED VOICE.",
+      "translation_fa": "صدایی قابل‌اعتماد.",
+      "source_type": "marketing_slogan",
+      "S02_source_type": "vendor_marketing_headline",
+      "category_id": "marketing_slogans",
+      "related_context_fragment_refs": [
+        "ZENITEL50-P01-E02",
+        "ZENITEL50-P01-E03"
+      ],
+      "source_S02_fragment_ref": "ZENITEL50-P01-E01",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "same_editorial_concept_group": "ZENITEL50-COVER_PAIR",
+      "editorial_relevance_and_limits_fa": "نیمهٔ اول شعار جلد؛ کنار نیمهٔ دوم خوانده شود. ادعای سنجهٔ قابلیت اطمینان، ایمنی یا ویژگی NSP نیست.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I002",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 2,
+      "original_printed_page": 2,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P02-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "Unified critical Communication",
+      "translation_fa": "ارتباطات حیاتیِ یکپارچه",
+      "source_type": "intro",
+      "S02_source_type": "vendor_organisation_positioning",
+      "category_id": "narrative_structure",
+      "related_context_fragment_refs": [
+        "ZENITEL50-P02-E02"
+      ],
+      "source_S02_fragment_ref": "ZENITEL50-P02-E01",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-02"
+      ],
+      "source_context_set_refs": [],
+      "same_editorial_concept_group": "ZENITEL50-POSITIONING_UMBRELLA",
+      "editorial_relevance_and_limits_fa": "تیتر چتری ناشر برای ایمنی، امنیت و عملیات؛ حوزه‌ها را به ۳ مورد مستقلِ NSP یا تضمین عملکرد تبدیل نکن.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I003",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 3,
+      "original_printed_page": 3,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P03-E02",
+      "S02_fragment_index": 2,
+      "original_source_excerpt_en": "Zenitel Public Address and Voice Alarm Portfolio",
+      "translation_fa": "سبد راهکارهای اعلام عمومی و هشدار صوتی Zenitel",
+      "source_type": "architecture",
+      "S02_source_type": "vendor_portfolio_heading",
+      "category_id": "narrative_structure",
+      "related_context_fragment_refs": [
+        "ZENITEL50-P03-E01",
+        "ZENITEL50-P03-E03"
+      ],
+      "source_S02_fragment_ref": "ZENITEL50-P03-E02",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PAVA"
+      ],
+      "same_editorial_concept_group": "ZENITEL50-PORTFOLIO_TAXONOMY",
+      "editorial_relevance_and_limits_fa": "الگوی معرفی خانواده‌های متفاوت؛ اینترکام در منبع خانوادهٔ مجاور است. تفکیک ارائه باقی بماند؛ از ساختار صفحه، مهندسی اتصال یا انطباق نتیجه نشود.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I004",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 4,
+      "original_printed_page": 4,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P04-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "Scalable PAVA Solutions",
+      "translation_fa": "راهکارهای مقیاس‌پذیر اعلام عمومی و هشدار صوتی (PAVA)",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "vendor_scaling_positioning_heading",
+      "category_id": "architecture_deployment",
+      "related_context_fragment_refs": [
+        "ZENITEL50-P04-E02",
+        "ZENITEL50-P07-E02"
+      ],
+      "source_S02_fragment_ref": "ZENITEL50-P04-E01",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "same_editorial_concept_group": "ZENITEL50-SCALING_PRESENTATION",
+      "editorial_relevance_and_limits_fa": "نمونهٔ روایی نمایش کاربرد در چند مقیاس، نه استاندارد، ظرفیت، تعداد یا شیوهٔ اتصال. عبارت «برای هر کاربرد» عمومی و تأییدنشده است.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I005",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 5,
+      "original_printed_page": 5,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P05-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "We Enhance Clarity",
+      "translation_fa": "وضوح صدا را بهتر می‌کنیم",
+      "source_type": "marketing_slogan",
+      "S02_source_type": "vendor_clarity_positioning_heading",
+      "category_id": "marketing_slogans",
+      "related_context_fragment_refs": [
+        "ZENITEL50-P05-E02"
+      ],
+      "source_S02_fragment_ref": "ZENITEL50-P05-E01",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-CLAIM-LIMIT"
+      ],
+      "same_editorial_concept_group": "ZENITEL50-CLARITY_POSITIONING",
+      "editorial_relevance_and_limits_fa": "تیتر جایگاه‌یابی ناشر؛ نیمهٔ دوم دامنهٔ لحن است، نه کمیت. از «وضوح» سنجش فهم‌پذیری، پوشش صوتی، گواهی یا کارکرد هشدار نتیجه نشود.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I006",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 5,
+      "original_printed_page": 5,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P05-E03",
+      "S02_fragment_index": 3,
+      "original_source_excerpt_en": "announcements and background music",
+      "translation_fa": "اعلان‌ها و موسیقیِ پس‌زمینه",
+      "source_type": "other",
+      "S02_source_type": "source_application_context",
+      "category_id": "guest_comfort",
+      "related_context_fragment_refs": [
+        "ZENITEL50-P01-E03",
+        "ZENITEL50-P08-E02"
+      ],
+      "source_S02_fragment_ref": "ZENITEL50-P05-E03",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PAVA"
+      ],
+      "same_editorial_concept_group": "ZENITEL50-ORDINARY_AUDIO_VS_ALARM",
+      "editorial_relevance_and_limits_fa": "دو مثال برای صوت معمول به توصیف ناشر. با هشدار صوتی اضطراری، سامانهٔ ایمنی جانی یا قابلیت قابل عرضه NSP یکسان نشود.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I007",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 6,
+      "original_printed_page": 6,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P06-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "Designed for Cybersecurity.",
+      "translation_fa": "طراحی‌شده با توجه به امنیت سایبری.",
+      "source_type": "marketing_slogan",
+      "S02_source_type": "vendor_cybersecurity_positioning_heading",
+      "category_id": "security_messaging",
+      "related_context_fragment_refs": [
+        "ZENITEL50-P06-E02",
+        "ZENITEL50-P13-E01"
+      ],
+      "source_S02_fragment_ref": "ZENITEL50-P06-E01",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-CLAIM-LIMIT"
+      ],
+      "same_editorial_concept_group": "ZENITEL50-SECURITY_RESILIENCE_POSITIONING",
+      "editorial_relevance_and_limits_fa": "عبارت جایگاه‌یابی Zenitel با شعار تاب‌آوری در همان صفحه. نه گزارش آزمون، گواهی، اثربخشی دفاعی، وضعیت آسیب‌پذیری یا قابلیت NSP.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I008",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 7,
+      "original_printed_page": 7,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P07-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "VIPEDIA",
+      "translation_fa": "ویپدیا (VIPEDIA)",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "vendor_family_heading_only",
+      "category_id": "equipment_presentation_style",
+      "related_context_fragment_refs": [
+        "ZENITEL50-P07-E02"
+      ],
+      "source_S02_fragment_ref": "ZENITEL50-P07-E01",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "same_editorial_concept_group": "ZENITEL50-FAMILY_VISUALS_VIPEDIA",
+      "editorial_relevance_and_limits_fa": "نام خانواده فقط شاخص صفحه و مرجع شیوهٔ نمایش نام و محیط است. تعداد دستگاه، ظرفیت، اتصال، خرید یا سازگاری تأیید نشد.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I009",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 8,
+      "original_printed_page": 8,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P08-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "INTEGRA",
+      "translation_fa": "اینتگرا (INTEGRA)",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "vendor_family_heading_only",
+      "category_id": "equipment_presentation_style",
+      "related_context_fragment_refs": [
+        "ZENITEL50-P08-E02"
+      ],
+      "source_S02_fragment_ref": "ZENITEL50-P08-E01",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "same_editorial_concept_group": "ZENITEL50-FAMILY_VISUALS_INTEGRA",
+      "editorial_relevance_and_limits_fa": "نام خانواده فقط شاخص شیوهٔ معرفی دیداری است. نوع نصب یا عبارتِ خودکفا، دستور، پوشش، تأییدیه یا مدرک ایمنی جانی نیست.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I010",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 9,
+      "original_printed_page": 9,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P09-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "Zenitel VAIA",
+      "translation_fa": "Zenitel VAIA",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "vendor_family_heading_only",
+      "category_id": "equipment_presentation_style",
+      "related_context_fragment_refs": [],
+      "source_S02_fragment_ref": "ZENITEL50-P09-E01",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "same_editorial_concept_group": "ZENITEL50-FAMILY_VISUALS_VAIA",
+      "editorial_relevance_and_limits_fa": "نام تجاری به شکل نشان منبع می‌ماند؛ این ردیف مرجع چیدمان تیره و گالری است، نه مشخصات، ظرفیت، ادعای پتنت یا خروجی NSP.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I011",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 10,
+      "original_printed_page": 10,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P10-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "Unified PAVA Portfolio",
+      "translation_fa": "سبد یکپارچهٔ اعلام عمومی و هشدار صوتی (PAVA)",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "vendor_comparison_presentation_heading",
+      "category_id": "narrative_structure",
+      "related_context_fragment_refs": [],
+      "source_S02_fragment_ref": "ZENITEL50-P10-E01",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-08"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "same_editorial_concept_group": "ZENITEL50-COMPARISON_LAYOUT",
+      "editorial_relevance_and_limits_fa": "عنوان جدول برای مطالعهٔ مقایسهٔ دیداری؛ نه دادهٔ سلول، سنجه، کارکرد مشترک، برتری یا سازگاری تجهیزات.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I012",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 11,
+      "original_printed_page": 11,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P11-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "Wide Range of Accessories",
+      "translation_fa": "گسترهٔ متنوع لوازم جانبی",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "vendor_accessory_presentation_heading",
+      "category_id": "equipment_presentation_style",
+      "related_context_fragment_refs": [
+        "ZENITEL50-P11-E02"
+      ],
+      "source_S02_fragment_ref": "ZENITEL50-P11-E01",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-09"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "same_editorial_concept_group": "ZENITEL50-ACCESSORY_LAYOUT",
+      "editorial_relevance_and_limits_fa": "فرم گروه‌بندی دیداری را مقایسه کن؛ ادعای سازگاری ناشر زمینه است و به تجهیزات NSP یا یکپارچگی عمومی نسبت داده نمی‌شود.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I013",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 12,
+      "original_printed_page": 12,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P12-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "THE VOICE BEHIND",
+      "translation_fa": "صدای پشتِ…",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "vendor_reference_layout_heading",
+      "category_id": "case_studies",
+      "related_context_fragment_refs": [
+        "ZENITEL50-P12-E02"
+      ],
+      "source_S02_fragment_ref": "ZENITEL50-P12-E01",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-10"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "same_editorial_concept_group": "ZENITEL50-LANDMARK_LAYOUT",
+      "editorial_relevance_and_limits_fa": "نیمهٔ نخست تیتر دوخطیِ معرفی مراجع؛ بدون نام‌ها و ادعای پروژه. با جملهٔ همراه معنا پیدا می‌کند؛ شاهد اجرای خود NSP نیست.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I014",
+      "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+      "source_language": "en",
+      "source_filename": "50_Zenitel_Work C09.4.pdf",
+      "source_pdf_sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+      "source_pdf_page": 13,
+      "original_printed_page": null,
+      "source_document_edition_printed": null,
+      "S02_fragment_ref": "ZENITEL50-P13-E02",
+      "S02_fragment_index": 2,
+      "original_source_excerpt_en": "About Zenitel",
+      "translation_fa": "دربارهٔ Zenitel",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "vendor_company_heading_only",
+      "category_id": "narrative_structure",
+      "related_context_fragment_refs": [
+        "ZENITEL50-P13-E01"
+      ],
+      "source_S02_fragment_ref": "ZENITEL50-P13-E02",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-11"
+      ],
+      "source_context_set_refs": [],
+      "same_editorial_concept_group": "ZENITEL50-COMPANY_SIGNOFF",
+      "editorial_relevance_and_limits_fa": "عنوان بخش معرفی ناشر در پایان بروشور؛ صرفاً شیوهٔ پایان‌بندی و سبک هویت. ادعای آزمودگی، صلاحیت یا رزومه به NSP نسبت نگیرد.",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact physical-page English phrase, verified in PyMuPDF and Poppler raw/layout in S02.",
+      "narrator_role": "VENDOR_BROCHURE_NOT_INDEPENDENT_EVIDENCE",
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "life_safety_or_security_compliance_claim_verified": false,
+      "NSP_capability_verified": false
+    }
+  ],
+  "excluded_S02_fragments": [
+    {
+      "S02_fragment_ref": "ZENITEL50-P01-E02",
+      "pdf_page": 1,
+      "translation_fa": "وضوح، بی‌چون‌وچرا.",
+      "scope_fa": "نیمهٔ دوم شعار جلد؛ معیار فهم‌پذیری یا تضمین نیست و ردیف مستقلِ ویژگی ندارد.",
+      "source_type": "vendor_marketing_headline",
+      "source_S02_fragment_ref": "ZENITEL50-P01-E02",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "ZENITEL50-P01-E03",
+      "pdf_page": 1,
+      "translation_fa": "راهکارهای اعلام عمومی و هشدار صوتی",
+      "scope_fa": "نام حوزهٔ سند است، نه نوع تأییدشدهٔ سیستم NSP یا گواهی ایمنی.",
+      "source_type": "document_scope_label",
+      "source_S02_fragment_ref": "ZENITEL50-P01-E03",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-01"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PAVA"
+      ],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "ZENITEL50-P02-E02",
+      "pdf_page": 2,
+      "translation_fa": "برای ایمنی، امنیت و عملیات",
+      "scope_fa": "ادامهٔ تیتر چتری؛ فهرست قابلیت یا شاهد ایمنی جانی نیست.",
+      "source_type": "vendor_sector_positioning",
+      "source_S02_fragment_ref": "ZENITEL50-P02-E02",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-02"
+      ],
+      "source_context_set_refs": [],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "ZENITEL50-P03-E01",
+      "pdf_page": 3,
+      "translation_fa": "به‌راستی بازیگری متمایز در بازار",
+      "scope_fa": "خودتوصیفی تبلیغاتی فروشنده است؛ برتری یا مقایسهٔ مستقل نتیجه نمی‌شود.",
+      "source_type": "vendor_positioning_heading",
+      "source_S02_fragment_ref": "ZENITEL50-P03-E01",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-03"
+      ],
+      "source_context_set_refs": [],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "ZENITEL50-P03-E03",
+      "pdf_page": 3,
+      "translation_fa": "سبد راهکارهای اینترکام Zenitel",
+      "scope_fa": "عنوان خانوادهٔ مجاور؛ یکسان با PAVA یا نشان‌گر اتصال تأییدشده نیست.",
+      "source_type": "vendor_portfolio_heading",
+      "source_S02_fragment_ref": "ZENITEL50-P03-E03",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PAVA"
+      ],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "ZENITEL50-P04-E02",
+      "pdf_page": 4,
+      "translation_fa": "برای هر کاربرد",
+      "scope_fa": "عبارت تبلیغاتی همراه تیتر، نه پوشش فراگیر، تعیین ظرفیت یا دستور نصب.",
+      "source_type": "vendor_scope_heading_qualifier",
+      "source_S02_fragment_ref": "ZENITEL50-P04-E02",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-04"
+      ],
+      "source_context_set_refs": [],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "ZENITEL50-P05-E02",
+      "pdf_page": 5,
+      "translation_fa": "آنجا که بیشترین اهمیت را دارد",
+      "scope_fa": "بخش دوم همان تیترِ وضوح، نه محدوده یا نتیجهٔ آزمون.",
+      "source_type": "vendor_clarity_positioning_qualifier",
+      "source_S02_fragment_ref": "ZENITEL50-P05-E02",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-05"
+      ],
+      "source_context_set_refs": [],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "ZENITEL50-P06-E02",
+      "pdf_page": 6,
+      "translation_fa": "ساخته‌شده با هدف تاب‌آوری.",
+      "scope_fa": "نیمهٔ دوم همان پیام بازاریابی؛ نه تضمین تداوم سرویس، آزمون یا گواهی.",
+      "source_type": "vendor_resilience_positioning_heading",
+      "source_S02_fragment_ref": "ZENITEL50-P06-E02",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-CLAIM-LIMIT"
+      ],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "ZENITEL50-P07-E02",
+      "pdf_page": 7,
+      "translation_fa": "مقیاس‌پذیر از مرحلهٔ طراحی",
+      "scope_fa": "توصیف ناشر دربارهٔ همان خانواده، نه سنجه، شمار ظرفیت یا دستور فنی.",
+      "source_type": "vendor_family_positioning",
+      "source_S02_fragment_ref": "ZENITEL50-P07-E02",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-04"
+      ],
+      "source_context_set_refs": [],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "ZENITEL50-P08-E02",
+      "pdf_page": 8,
+      "translation_fa": "واحد دیواریِ مستقلِ هشدار صوتی",
+      "scope_fa": "عنوان نوع محصول در منبع؛ «مستقل» ادعای نبود الزام بیرونی، بی‌نیازی از طراحی، یا گواهی عملکرد ایمنی نیست.",
+      "source_type": "vendor_family_product_category_label",
+      "source_S02_fragment_ref": "ZENITEL50-P08-E02",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PAVA"
+      ],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "ZENITEL50-P11-E02",
+      "pdf_page": 11,
+      "translation_fa": "میکروفن‌ها و لوازم جانبیِ سازگار با خانواده‌های مختلف",
+      "scope_fa": "ادعای سازگاری بین سبدهای ناشر؛ برای مدل خاص یا NSP تأیید نشده.",
+      "source_type": "vendor_cross_portfolio_positioning",
+      "source_S02_fragment_ref": "ZENITEL50-P11-E02",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-09"
+      ],
+      "source_context_set_refs": [],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "ZENITEL50-P12-E02",
+      "pdf_page": 12,
+      "translation_fa": "بسیاری از بناها و مکان‌های شاخص",
+      "scope_fa": "پایان همان تیتر، نه اثبات اجرا یا مجوز آوردن نام/تصویر پروژه.",
+      "source_type": "vendor_reference_layout_qualifier",
+      "source_S02_fragment_ref": "ZENITEL50-P12-E02",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-10"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-PRESENTATION"
+      ],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "ZENITEL50-P13-E01",
+      "pdf_page": 13,
+      "translation_fa": "اثبات‌شده و آزموده در محیط‌های گوناگون",
+      "scope_fa": "ترجمهٔ لفظی توصیف ناشر؛ هیچ گزارش آزمون، پوشش، گواهی، یا اعتبار مستقل از آن استنباط نشود.",
+      "source_type": "vendor_validation_positioning_only",
+      "source_S02_fragment_ref": "ZENITEL50-P13-E01",
+      "source_claim_gate_refs": [
+        "ZENITEL50-CLAIM-11"
+      ],
+      "source_context_set_refs": [
+        "ZENITEL50-CTX-CLAIM-LIMIT"
+      ],
+      "not_independent_feature": true
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "ZENITEL50-CLAIM-01",
+      "kind": "cover_copy_and_scope_not_product_claim",
+      "physical_pdf_pages": [
+        1
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P01-E01",
+        "ZENITEL50-P01-E02",
+        "ZENITEL50-P01-E03"
+      ],
+      "scope_fa": "شعارهای صفحهٔ اول زبان بازاریابی‌اند. عنوان حوزهٔ اعلام عمومی و هشدار صوتی کاربرد یا انطباق هیچ محصولی، به‌ویژه NSP، را ثابت نمی‌کند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I001"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-02",
+      "kind": "critical_communications_positioning",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P02-E01",
+        "ZENITEL50-P02-E02"
+      ],
+      "scope_fa": "«ارتباطات حیاتی» و سه حوزهٔ ایمنی، امنیت و عملیات دسته‌بندی ناشر است؛ کارکرد، پوشش، تضمین ایمنی یا قابلیت NSP نیست.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I002"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-03",
+      "kind": "portfolio_taxonomy_not_product_interoperability",
+      "physical_pdf_pages": [
+        3
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P03-E01",
+        "ZENITEL50-P03-E02",
+        "ZENITEL50-P03-E03"
+      ],
+      "scope_fa": "صفت «منحصربه‌فرد» ادعای ارزش‌گذاری ناشر است. معرفی دو خانوادهٔ PAVA و اینترکام به معنای یکسان‌بودن وظایف، سازگاری همهٔ مدل‌ها یا ارایهٔ سامانهٔ مشابه به دست NSP نیست.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I003"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-04",
+      "kind": "scalability_no_model_or_capacity",
+      "physical_pdf_pages": [
+        4,
+        7
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P04-E01",
+        "ZENITEL50-P04-E02",
+        "ZENITEL50-P07-E01",
+        "ZENITEL50-P07-E02"
+      ],
+      "scope_fa": "مقیاس‌پذیری و «هر کاربرد» زبان معرفی ناشرند. تعداد، توپولوژی، اتصال، دامنهٔ طراحی، مدل و حقانیت فنی NSP استخراج نشده‌اند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I004",
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I008"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-05",
+      "kind": "voice_clarity_and_ordinary_audio_not_life_safety",
+      "physical_pdf_pages": [
+        5
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P05-E01",
+        "ZENITEL50-P05-E02",
+        "ZENITEL50-P05-E03"
+      ],
+      "scope_fa": "وضوح صوت در این گزیده ادعای جایگاه‌یابی است؛ نه سنجش فهم‌پذیری، تضمین پوشش، انطباق یا عملکرد اضطراری. پیام‌ها و موسیقی پس‌زمینه به معنای سامانهٔ هشدار مورد تأیید نیستند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I005",
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I006"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-06",
+      "kind": "cybersecurity_resilience_marketing_not_test_report",
+      "physical_pdf_pages": [
+        6
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P06-E01",
+        "ZENITEL50-P06-E02"
+      ],
+      "scope_fa": "دو شعار دربارهٔ طراحی با توجه به امنیت سایبری و تاب‌آوری‌اند؛ نه نتیجهٔ تست مستقل، قابلیت دفاعی قطعی، انطباق، یا اطلاعات آسیب‌پذیری و پیکربندی. قابلیت NSP ثابت نشده است.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I007"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-07",
+      "kind": "life_safety_family_labels_not_certification",
+      "physical_pdf_pages": [
+        8,
+        9
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P08-E01",
+        "ZENITEL50-P08-E02",
+        "ZENITEL50-P09-E01"
+      ],
+      "scope_fa": "نام خانواده‌ها و عنوان نوع محصول ناشر فقط زمینهٔ دیداری‌اند. واژهٔ هشدار صوتی مدرک انطباق، گواهینامه، پذیرش پروژه، کاربرد ایمنی جانی یا پوشش NSP نیست. مشخصات/نصب/تنظیم خارج است.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I009",
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I010"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-08",
+      "kind": "portfolio_comparison_title_only",
+      "physical_pdf_pages": [
+        10
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P10-E01"
+      ],
+      "scope_fa": "تنها عنوان چیدمان جدول؛ نه سلول، عدد، استاندارد، برتری محصول یا توصیهٔ خرید و اجرا.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I011"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-09",
+      "kind": "accessory_heading_and_publisher_claim",
+      "physical_pdf_pages": [
+        11
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P11-E01",
+        "ZENITEL50-P11-E02"
+      ],
+      "scope_fa": "عنوان و عبارت سازگاری صرفاً ادعای ناشرند؛ نه دلالت بر سازگاری همگانی، استاندارد یا دستگاه NSP. اطلاعات مدل و کدهای QR خارج‌اند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I012"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-10",
+      "kind": "landmark_names_not_portfolio_proof",
+      "physical_pdf_pages": [
+        12
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P12-E01",
+        "ZENITEL50-P12-E02"
+      ],
+      "scope_fa": "این دو خط روش معرفی مراجع ناشرند. فهرست نام‌ها، محدودهٔ نصب، وضعیت جاری، مجوز انتشار یا ارتباط با NSP تأیید نشده‌اند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I013"
+      ]
+    },
+    {
+      "id": "ZENITEL50-CLAIM-11",
+      "kind": "testing_narrative_not_result",
+      "physical_pdf_pages": [
+        13
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P13-E01",
+        "ZENITEL50-P13-E02"
+      ],
+      "scope_fa": "واژگان «آزموده و اثبات‌شده» بدون گزارش آزمون در گزیده فقط ادعای ناشرند؛ حوزهٔ کاربرد، گواهی، تاریخ نسخه/بازار یا توان NSP نتیجه نمی‌شود.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true,
+      "related_S03_record_ids": [
+        "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM:I014"
+      ]
+    }
+  ],
+  "source_context_bindings": [
+    {
+      "id": "ZENITEL50-CTX-PAVA",
+      "physical_pdf_pages": [
+        1,
+        3,
+        5,
+        8
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P01-E03",
+        "ZENITEL50-P03-E02",
+        "ZENITEL50-P03-E03",
+        "ZENITEL50-P05-E03",
+        "ZENITEL50-P08-E02"
+      ],
+      "scope_fa": "اعلام معمول، موسیقی پس‌زمینه، اینترکام و هشدار صوتی اضطراری هم‌ارز یا گواه اجرا برای NSP نیستند."
+    },
+    {
+      "id": "ZENITEL50-CTX-CLAIM-LIMIT",
+      "physical_pdf_pages": [
+        5,
+        6,
+        13
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P05-E01",
+        "ZENITEL50-P06-E01",
+        "ZENITEL50-P06-E02",
+        "ZENITEL50-P13-E01"
+      ],
+      "scope_fa": "پیام دربارهٔ وضوح، امنیت، تاب‌آوری یا آزمودگی، آزمون، معیار، تأییدیه یا نتیجهٔ مستقل نیست."
+    },
+    {
+      "id": "ZENITEL50-CTX-PRESENTATION",
+      "physical_pdf_pages": [
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P04-E01",
+        "ZENITEL50-P07-E01",
+        "ZENITEL50-P08-E01",
+        "ZENITEL50-P09-E01",
+        "ZENITEL50-P10-E01",
+        "ZENITEL50-P11-E01",
+        "ZENITEL50-P12-E01",
+        "ZENITEL50-P12-E02"
+      ],
+      "scope_fa": "نام خانواده و رفتار چیدمان، نه مشخصات، مهندسی، ظرفیت، پیشنهاد خرید یا اجرای فهرست مراجع."
+    }
+  ],
+  "quality_assurance": {
+    "each_27_S02_source_excerpt_disposed_exactly_once": true,
+    "physical_page_and_printed_folio_distinction_retained": true,
+    "all_English_excerpt_spelling_exact": true,
+    "all_27_Persian_renderings_reviewed": true,
+    "nothing_independently_proved_or_approved": true
+  },
+  "next_stage": "S04 — استخراج تصاویر و سبک ارائه",
+  "next_queue_cursor": {
+    "document_index": 13,
+    "document_id": "50",
+    "step_index": 3,
+    "step_id": "S04"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false
+}
