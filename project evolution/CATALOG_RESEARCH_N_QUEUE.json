@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 36,
-    "completed_new_documents": 12,
-    "remaining_new_documents": 6
+    "total_pending_steps": 35,
+    "completed_new_documents": 13,
+    "remaining_new_documents": 5
   },
   "cursor": {
-    "document_index": 15,
-    "document_id": "54",
-    "step_index": 6,
-    "step_id": "S07"
+    "document_index": 16,
+    "document_id": "57",
+    "step_index": 0,
+    "step_id": "S01"
   },
   "section_types": [
     {
@@ -1777,7 +1777,7 @@
       "library_path": "/54_Lutron_Work C10.4.pdf",
       "bytes": 139544,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "in_progress",
+      "status": "completed",
       "prior_import": null,
       "steps": [
         {
@@ -1856,14 +1856,24 @@
         {
           "id": "S07",
           "key": "feature_json_and_commit",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/feature.json",
+            "Portfolio Instruction/feature.js",
+            "Portfolio Instruction/research/54_Lutron_Duke_S07_ingest_manifest.json",
+            "Portfolio Instruction/assets/lutron54-01-building-at-twilight.webp",
+            "Portfolio Instruction/assets/lutron54-01-case-identification-strip.webp",
+            "Portfolio Instruction/assets/lutron54-02-warm-room-context.webp",
+            "Portfolio Instruction/assets/lutron54-02-device-in-room-detail.webp",
+            "Portfolio Instruction/assets/lutron54-02-case-role-ledger.webp",
+            "Portfolio Instruction/assets/lutron54-02-result-label.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "cb622384c1e1f68cbc41b76800c17b037ec14952",
+          "notes": "بانک پژوهش V16: ۱۶ کاتالوگ، ۶۳۲ رکورد و ۱۵۴ تصویر. ۱۰ رکورد و ۶ برش داخلی The Duke REV A با دو ویرایش فارسی وارد شدند. ادعای کلی اتصال، Grand Welcome و نمای کلی وارد بانک نشدند. روشنایی فقط به ساختمان جدید در روایت Lutron محدود است؛ قابلیت NSP یا حق بازنشر تأیید نشد. داده‌های قبلی، برنامه و سکشن‌ها ثابت‌اند."
         }
       ],
-      "last_successful_stage": "S06"
+      "last_successful_stage": "S07"
     },
     {
       "id": "57",
