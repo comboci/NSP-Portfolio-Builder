@@ -1,0 +1,1037 @@
+{
+  "schema": "nsp-catalog-research-s06-paraphrase-and-original-design-audit-v1",
+  "stage": "S06",
+  "stage_key": "validation_and_review",
+  "status": "completed_verified_for_editorial_research_integration_only",
+  "document_id": "58",
+  "source_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100",
+  "source_language": "en",
+  "verified_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "b6e3fdfabea4ad06ca69a6c61543d1c3e61126d9",
+  "source_document": {
+    "company": "HDL Automation",
+    "title": "HDL IHMS Edge Hotel Guest Control System User Manual",
+    "filename": "58_HDL_Automation_Work C16.1.pdf",
+    "physical_pdf_pages": 38,
+    "file_size_bytes": 2626415,
+    "source_sha256": "0afdcc2ef2f063ef47a6ce1724da2f5260f6b201ee6337fb4fa271fa8c24add4",
+    "printed_document_version": "V1.0.0",
+    "printed_release_date": "2026-03-30",
+    "edition_evidence_physical_pdf_pages": [
+      1,
+      5
+    ],
+    "rights_notice_physical_page": 4,
+    "original_kept_private": true
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S01_source_inventory.json",
+      "blob_sha": "fae340966b3e04c1178d45151a1af2fc724f56a3",
+      "commit_sha": "79260f7ac5acfa10f677bf98799e139f1a1e2740"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S02_page_linked_summaries.json",
+      "blob_sha": "cfa5acb8c6cbf150e79b599c26d3715998164dbc",
+      "commit_sha": "dd97b7c283929f8bb721d5889c664feabae9d6bf"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S03_editorial_summaries_fa.json",
+      "blob_sha": "1197cf5b70088cf68e92e84db86cc155486be0c5",
+      "commit_sha": "b867d2f9e1cad7e6692fe694b794190a4de38fd7"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S04_original_visual_concepts.json",
+      "blob_sha": "17c366a66f75617c5fcacdcc19b8697f40b6df63",
+      "commit_sha": "ec9895c23fa4fc5c99024a36c485042e54b5cb79"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S05_section_mapping.json",
+      "blob_sha": "5cdbc5300e88ee62bef4ba2dfe5485203dbcf89a",
+      "commit_sha": "2d8d20168f292b41c2cc7ed1fb6745a1214f05e7"
+    }
+  },
+  "canonical_section_structure": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "research_proposals_only": true
+  },
+  "statistics": {
+    "source_physical_page_hashes_reverified": 38,
+    "page_linked_paraphrases_and_translations_audited": 24,
+    "editorial_candidates_reviewed": 17,
+    "accepted_internal_editorial_records": 10,
+    "held_mapping_candidates": 7,
+    "additional_identity_or_context_only": 7,
+    "narrowed_page_attribution_count": 1,
+    "original_design_concepts_verified": 4,
+    "vendor_extracted_images_accepted": 0,
+    "manual_paragraphs_quoted": 0,
+    "source_PDF_or_screenshot_files_committed": 0,
+    "credentials_or_operational_details": 0,
+    "NSP_capabilities_verified": 0,
+    "three_extraction_mode_checks_passed": 24
+  },
+  "source_checks": {
+    "original_file_byte_size_and_sha256_reverified": true,
+    "all_S01_page_hashes_reverified": true,
+    "prior_paraphrases_shared_no_seven_normalized_token_run_on_each_cited_manual_page": true,
+    "selected_anchors_checked_with_PyMuPDF_and_Poppler_raw_and_layout": true,
+    "rights_boundary_source_page_checked": true,
+    "room_administration_and_inventory_physical_page_boundary_separately_rechecked": true,
+    "network_credentials_workflows_and_private_sample_data_stay_unpublished": true
+  },
+  "evidence_reviews": [
+    {
+      "evidence_id": "HDL58-P001-N01",
+      "physical_pdf_page": 1,
+      "source_page_native_sha256": "5fed0076357e1f8ef0901e98213956810f65075edc3d84ae1e94a218452021cc",
+      "evidence_kind": "identity",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P004-N01",
+      "physical_pdf_page": 4,
+      "source_page_native_sha256": "a6dd9fbfd639ccd4b304a50d123b88f40e110f8da3c2ecb246c3acecd362bcac",
+      "evidence_kind": "rights_boundary",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P005-N01",
+      "physical_pdf_page": 5,
+      "source_page_native_sha256": "fb6e6e94fcb78051db074f1f32e62751ca94125c722233e7ff04255ec3f38d5a",
+      "evidence_kind": "revision_identity",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P006-N01",
+      "physical_pdf_page": 6,
+      "source_page_native_sha256": "745b2176d9636ecb6f0274014d7407b2733c4291fb6dd70611610644f9565877",
+      "evidence_kind": "system_architecture_subject",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P010-N01",
+      "physical_pdf_page": 10,
+      "source_page_native_sha256": "5f16360df34a941e2c63dee4049bdfa58fa7c186404e9b90bbf6c94bf88a17e8",
+      "evidence_kind": "operations_overview_subject",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P014-N01",
+      "physical_pdf_page": 14,
+      "source_page_native_sha256": "d76161ffca4e09cc85df04911dcea955b4db19d028740c047eaf6f915530d0af",
+      "evidence_kind": "room_organization_subject",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P015-N01",
+      "physical_pdf_page": 15,
+      "source_page_native_sha256": "81ff9e9f08ea0258973f8c6431c740b7edf2fea20f11611610a9e35f1ae97207",
+      "evidence_kind": "room_control_subject",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P017-N01",
+      "physical_pdf_page": 17,
+      "source_page_native_sha256": "838b133b5a9ad38cfd26c7849491c45fa0e1ab0d1c6224913e98b39087020a60",
+      "evidence_kind": "multi_room_scope_subject",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P018-N01",
+      "physical_pdf_page": 18,
+      "source_page_native_sha256": "14baae6dc6c60f2f915e8ebdb59cd0d256d09b6d269a115843b52334b609bded",
+      "evidence_kind": "service_request_subject",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P019-N01",
+      "physical_pdf_page": 19,
+      "source_page_native_sha256": "073ae424f651b7a6ab74576ad5a2487ab5dc1cfc7874b40dbce1b7bd43cce18e",
+      "evidence_kind": "service_category_subject",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P020-N01",
+      "physical_pdf_page": 20,
+      "source_page_native_sha256": "0187f22267f652bf210d34d1784e635b6af99bad64f047905b598f1b304a7280",
+      "evidence_kind": "service_history_subject",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P021-N01",
+      "physical_pdf_page": 21,
+      "source_page_native_sha256": "33fa582b90198d601a8a7e6fcd51932075a1e606276ec12ffde4c09db35c7a58",
+      "evidence_kind": "room_controller_inventory_subject",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P022-N01",
+      "physical_pdf_page": 22,
+      "source_page_native_sha256": "2710e1ee39c66cd41e8cbb18290b4b4adf19c9d0a18b1f6ce1d4185d6c1c5af9",
+      "evidence_kind": "equipment_inventory_subject",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P024-N01",
+      "physical_pdf_page": 24,
+      "source_page_native_sha256": "400681f77f6f0aa616d3c36b1c8e93ea3f01a3395ef3b59bb12cdd7d832e3ae5",
+      "evidence_kind": "equipment_activity_history_subject",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P026-N01",
+      "physical_pdf_page": 26,
+      "source_page_native_sha256": "12bf7b5bb003f8f208e551701a2963afa2227ab090a4f9643bdd5fd6719b5679",
+      "evidence_kind": "climate_topic_categories",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P027-N01",
+      "physical_pdf_page": 27,
+      "source_page_native_sha256": "7f27f319d397ef292577a05d86070f418db13cecb100c9ceb09a4b973bdfc457",
+      "evidence_kind": "seasonal_climate_subject",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P029-N01",
+      "physical_pdf_page": 29,
+      "source_page_native_sha256": "c94f177c2ff62aa909636e78f8a1174acacfbcaad8f604fb5f8b061d00d96503",
+      "evidence_kind": "guest_digital_service_topic",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P030-N01",
+      "physical_pdf_page": 30,
+      "source_page_native_sha256": "8cb7d39214ca36c5dfeeadad0cee2cc5b88c3c006bb07773e73db62d7bdd41dd",
+      "evidence_kind": "external_PMS_scope_boundary",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P031-N01",
+      "physical_pdf_page": 31,
+      "source_page_native_sha256": "6ede09217970c15c3da14d013361a0bceed391655681f8809c7711c8b7678d91",
+      "evidence_kind": "operator_organization_topic",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P034-N01",
+      "physical_pdf_page": 34,
+      "source_page_native_sha256": "f2900a19fc7493cb84c3ab0cd10e8c2f82ceed271c3b941a2355036acf4f2440",
+      "evidence_kind": "operator_activity_history_topic",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P035-N01",
+      "physical_pdf_page": 35,
+      "source_page_native_sha256": "05f589b336fe33c9bf25a249ec15c541502cffbdaaeea82b4859f00e68dd8dee",
+      "evidence_kind": "native_PMS_scope_boundary",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P036-N01",
+      "physical_pdf_page": 36,
+      "source_page_native_sha256": "231e0808e54650b6f2f3641239dd9cc8669105896d232c856c7e71d9d7067632",
+      "evidence_kind": "reservation_scope",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P037-N01",
+      "physical_pdf_page": 37,
+      "source_page_native_sha256": "66fd4b3dadbd43f3abbbc1e187302b2372c75e5fa93333831452321bcdc34956",
+      "evidence_kind": "departure_and_reservation_history_scope",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    },
+    {
+      "evidence_id": "HDL58-P038-N01",
+      "physical_pdf_page": 38,
+      "source_page_native_sha256": "c7561063fd7a766e6a078d34fb042bfbe453f8b13e63fb626891b32757b02e79",
+      "evidence_kind": "arrival_history_scope",
+      "anchor_reconfirmed_PyMuPDF_and_Poppler_raw_and_layout": true,
+      "manual_prose_not_reproduced": true,
+      "independent_case_outcome_verified": false
+    }
+  ],
+  "corrections": [
+    {
+      "id": "HDL58-CORR-01",
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I003",
+      "primary_physical_pdf_page": 14,
+      "context_physical_pdf_page": 15,
+      "S02_evidence_ref": "HDL58-P014-N01",
+      "original_analyst_summary_en": "The manual groups the operator's room inventory under room administration.",
+      "audited_analyst_summary_en": "The room-administration topic opens here. The separate inventory caption appears on the next physical page.",
+      "original_translation_fa": "راهنما فهرست اتاق‌هایی را که بهره‌بردار می‌بیند زیر موضوع مدیریت اتاق‌ها قرار می‌دهد.",
+      "audited_translation_fa": "راهنما در این صفحه بخش مدیریت اتاق‌ها را آغاز می‌کند. معرفی جداگانهٔ فهرست اتاق‌ها در صفحهٔ بعد آمده است.",
+      "reason_fa": "ص ۱۴ عنوان آغاز موضوع را دارد؛ برچسب فهرست در ص ۱۵ است. اصلاح، محل شاهد را دقیق می‌کند و دربارهٔ رابط یا داده ادعایی ندارد.",
+      "prior_artifacts_unchanged": true,
+      "apply_only_derivative_bank_fields": true
+    }
+  ],
+  "S03_record_reviews": [
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I001",
+      "physical_pdf_page": 6,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P006-N01",
+      "target_section_type": null,
+      "narrator_role": "VENDOR_DESCRIPTION_PARAPHRASED",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "The publisher presents the hotel guest-control system as an on-premises system with edge computing.",
+      "audited_translation_fa": "ناشر سامانهٔ کنترل اتاق مهمان را با استقرار در محل و پردازش لبه‌ای معرفی می‌کند.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "طرح استقرار محلی و لبه‌ای نسبت‌داده‌شده به ناشر است؛ این بخش برای NSP شاهد مستقل ندارد و نباید به طرح فنی یا پیاده‌سازی تبدیل شود.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I002",
+      "physical_pdf_page": 10,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P010-N01",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "An overview is presented as its own subject, ahead of detailed room, service, and device sections.",
+      "audited_translation_fa": "در ساختار راهنما، مرور کلی پیش از بخش‌های جداگانهٔ اتاق، خدمات و تجهیزات آمده است.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "accepted_internal_S07_editorial_record",
+      "scope_fa": "نقشهٔ موضوعی پیش از ورود به جزئیات. فقط فصل‌بندی؛ نه تصویر رابط، لایهٔ فنی، یا فهرست قابلیت‌های NSP.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I003",
+      "physical_pdf_page": 14,
+      "context_physical_pdf_pages": [
+        15
+      ],
+      "S02_evidence_ref": "HDL58-P014-N01",
+      "target_section_type": "GRMS",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "The room-administration topic opens here. The separate inventory caption appears on the next physical page.",
+      "audited_translation_fa": "راهنما در این صفحه بخش مدیریت اتاق‌ها را آغاز می‌کند. معرفی جداگانهٔ فهرست اتاق‌ها در صفحهٔ بعد آمده است.",
+      "translation_review": "adjusted_to_match_distinct_physical_page_anchors",
+      "disposition": "accepted_internal_S07_editorial_record",
+      "scope_fa": "فقط تقسیم‌بندیِ تحریریه‌ای مدیریت اتاق و فهرست؛ عنوان در ص ۱۴ و فهرست در ص ۱۵. هیچ نمای نرم‌افزار، داده یا عملکرد NSP تأیید نشده است.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I004",
+      "physical_pdf_page": 15,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P015-N01",
+      "target_section_type": "GRMS",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "Room control is treated as a separate topic within the room administration chapter.",
+      "audited_translation_fa": "راهنما در فصل مدیریت اتاق‌ها، کنترل اتاق را موضوعی جدا در نظر می‌گیرد.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "accepted_internal_S07_editorial_record",
+      "scope_fa": "روایت معرفی کنترل در بلوک مجزا از فهرست؛ هیچ ترتیب اجرایی، احراز، رفتار تجهیز، دسترسی یا قابلیت NSP از منبع پذیرفته نشود.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I005",
+      "physical_pdf_page": 17,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P017-N01",
+      "target_section_type": null,
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "The manual distinguishes an operator topic for multiple rooms from the separate topic for one room.",
+      "audited_translation_fa": "راهنما موضوع مربوط به چند اتاق را جدا از موضوع یک اتاق قرار می‌دهد.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "جداسازی منبع میان یک اتاق و چند اتاق برای فهم سند است. از آن اختیار، زمان‌بندی یا عملکرد گروهی NSP نتیجه نشود.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I006",
+      "physical_pdf_page": 18,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P018-N01",
+      "target_section_type": "GRMS",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "The service chapter distinguishes guest-room requests from the related service definitions and records.",
+      "audited_translation_fa": "راهنما درخواست‌های خدمات اتاق را جدا از تعریف دسته‌های خدمات و سابقهٔ آن‌ها معرفی می‌کند.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "accepted_internal_S07_editorial_record",
+      "scope_fa": "درخواست، دسته و سابقه را به شکل موضوع‌های هم‌تراز معرفی کنید؛ نه گردش کار درخواست یا عناوین امنیتی و اضطراری.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I007",
+      "physical_pdf_page": 19,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P019-N01",
+      "target_section_type": "GRMS",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "Service categories have a separate place in the description of hotel service administration.",
+      "audited_translation_fa": "توصیف مدیریت خدمات هتل، برای دسته‌بندی نوع خدمات بخشی جدا دارد.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "accepted_internal_S07_editorial_record",
+      "scope_fa": "تنها جایگاه دسته‌بندی در روایت؛ بدون فهرست، مقادیر، نتیجه یا ظرفیت، پیکربندی یا عرضهٔ NSP.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I008",
+      "physical_pdf_page": 20,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P020-N01",
+      "target_section_type": "GRMS",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "The manual treats service history as separate from active service administration; no emergency operations are part of this evidence.",
+      "audited_translation_fa": "راهنما سابقهٔ خدمات را جدا از مدیریت جاری آن‌ها معرفی می‌کند. روندهای اضطراری در این یادداشت جایی ندارند.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "accepted_internal_S07_editorial_record",
+      "scope_fa": "فقط معماری ارائه و محل سابقه؛ بدون جزئیات ثبت، رویداد، اولویت، پاسخ اضطراری یا ادعای انطباق.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I009",
+      "physical_pdf_page": 21,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P021-N01",
+      "target_section_type": null,
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "Room control units have their own subject in the device chapter; this is separate from document sections on using room controls.",
+      "audited_translation_fa": "در فصل تجهیزات، کنترل‌گرهای اتاق موضوعی مستقل دارند که از توضیحِ استفاده از کنترل اتاق جداست.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "طبقه‌بندی ابزار نشان داده شده اما مدل، پیاده‌سازی، روش کار و کارکردِ قابل نسبت‌دادن به NSP نیست.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I010",
+      "physical_pdf_page": 22,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P022-N01",
+      "target_section_type": "GRMS",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "The device chapter also describes equipment as a separate topic from the room-controller grouping.",
+      "audited_translation_fa": "فصل تجهیزات، خودِ تجهیزات را نیز جدا از گروه کنترلگرهای اتاق معرفی می‌کند.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "accepted_internal_S07_editorial_record",
+      "scope_fa": "دارایی و فعالیت را از لحاظ بصری جدا کنید. هیچ فهرست یا فیلد حقیقی، وابستگی فنی یا پشتیبانی NSP بازسازی نمی‌شود.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I011",
+      "physical_pdf_page": 24,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P024-N01",
+      "target_section_type": "GRMS",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "Equipment activity history has its own topic, distinct from the device inventory.",
+      "audited_translation_fa": "سابقهٔ فعالیت تجهیزات موضوعی جدا از فهرست تجهیزات در راهنماست.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "accepted_internal_S07_editorial_record",
+      "scope_fa": "عنوان سابقه از فهرست متمایز است؛ نه ثبت حتمی رخداد، امکان پایش، انطباق یا ابزار بهره‌برداری NSP.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I012",
+      "physical_pdf_page": 26,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P026-N01",
+      "target_section_type": "GRMS",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "The guide separates climate-temperature topics from the seasonal grouping.",
+      "audited_translation_fa": "راهنما موضوعات مرتبط با دما را از دسته‌بندی فصلی متمایز می‌کند.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "accepted_internal_S07_editorial_record",
+      "scope_fa": "تقسیم تیترهای دما و فصل، نه عدد، تنظیم، کنترل، رفتار خودکار، عملکرد یا صرفه‌جویی NSP.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I013",
+      "physical_pdf_page": 29,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P029-N01",
+      "target_section_type": null,
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "A guest-facing mini-program topic is presented separately. This does not establish universal availability or any specific communications mechanism.",
+      "audited_translation_fa": "راهنما مینی‌برنامهٔ سمت مهمان را موضوعی جدا معرفی می‌کند. از این اشاره نمی‌توان عرضهٔ همگانی یا سازوکار ارتباطی خاصی را نتیجه گرفت.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "اشارهٔ نسخه به یک قالب دیجیتال، بدون تأیید عرضه یا رابط NSP. این موضوع برای IPTV یا شیوهٔ اتصال مناسب نیست.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I014",
+      "physical_pdf_page": 31,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P031-N01",
+      "target_section_type": null,
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "The platform documentation groups departments, staff organization, and history under administration; no role or permission arrangement is retained.",
+      "audited_translation_fa": "مستندات، واحدهای سازمانی، ساختار نیروی انسانی و سوابق را زیر مدیریت سامانه دسته‌بندی می‌کنند. چیدمان نقش و مجوز در این یادداشت نیامده است.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "گروه اداری در مستندات برای فهم ساختار است. از آن نقش، حق دسترسی یا ساختار تأییدشدهٔ NSP استخراج نشود.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I015",
+      "physical_pdf_page": 34,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P034-N01",
+      "target_section_type": null,
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "Operator activity history is a distinct chapter topic. The heading does not establish monitoring coverage, security, or audit compliance.",
+      "audited_translation_fa": "سابقهٔ فعالیت کاربران بهره‌بردار، موضوعی مجزا در راهنماست. این عنوان به‌تنهایی پوشش نظارت، امنیت یا انطباق را اثبات نمی‌کند.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "عنوان اپراتور، نه اثبات نظارت یا انطباق. در این تطبیق، الگوی سابقه از موضوع تجهیزات کفایت می‌کند.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I016",
+      "physical_pdf_page": 35,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P035-N01",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "HDL’s own stay-management topic is presented separately from the manual's third-party property-management topic.",
+      "audited_translation_fa": "راهنما موضوع مدیریت اقامتِ خود HDL را جدا از موضوع سامانهٔ مدیریت هتلِ شخص ثالث معرفی می‌کند.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "accepted_internal_S07_editorial_record",
+      "scope_fa": "فقط مرزبندی در ارائهٔ سبد موضوعات. اتصال، سازگاری، دادهٔ اقامت، عرضه و توان NSP هنوز نیازمند شواهد مستقل‌اند.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    },
+    {
+      "record_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I017",
+      "physical_pdf_page": 36,
+      "context_physical_pdf_pages": [],
+      "S02_evidence_ref": "HDL58-P036-N01",
+      "target_section_type": null,
+      "narrator_role": "ANALYST_PARAPHRASE_OF_VENDOR_TOPIC",
+      "narrator_attribution": "Page-linked editorial analysis of HDL's V1.0.0 user manual, not verified independent evidence",
+      "audited_analyst_summary_en": "Reservations have a distinct topic within the vendor's stay-management material; no guest data or procedure is retained.",
+      "audited_translation_fa": "رزرو موضوعی جدا در بخش مدیریت اقامتِ ناشر است. هیچ دادهٔ مهمان یا روش اجرایی در این یادداشت نیامده است.",
+      "translation_review": "accepted_as_translation_of_analyst_paraphrase_only",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "اشاره به ردهٔ رزرو در راهنما مبنای ادعای سامانهٔ اقامت NSP نیست؛ روش، داده و روند از آن استخراج نشده‌اند.",
+      "original_manual_text_or_screenshot": false,
+      "operational_or_sensitive_details_included": false,
+      "public_rights_to_manual_verified": false,
+      "NSP_capability_verified": false
+    }
+  ],
+  "S02_context_reviews": [
+    {
+      "evidence_id": "HDL58-P001-N01",
+      "physical_pdf_page": 1,
+      "audited_translation_fa": "ویرایش و تاریخ انتشار فقط همین راهنما را مشخص می‌کنند. از آن‌ها نمی‌توان شمارهٔ نسخهٔ نرم‌افزار یا عرضهٔ فعلی را نتیجه گرفت.",
+      "scope_fa": "شناسهٔ سند است و رکورد طراحی مستقل نیست.",
+      "disposition": "source_identity_or_context_only"
+    },
+    {
+      "evidence_id": "HDL58-P004-N01",
+      "physical_pdf_page": 4,
+      "audited_translation_fa": "ناشر برای واگذاری نسخه به دیگران محدودیت گذاشته است. اجازهٔ بازنشر راهنما یا تصویرهای آن احراز نشده است.",
+      "scope_fa": "حدود منبع را نشان می‌دهد؛ متن اعلامیه نقل نشده است.",
+      "disposition": "source_identity_or_context_only"
+    },
+    {
+      "evidence_id": "HDL58-P005-N01",
+      "physical_pdf_page": 5,
+      "audited_translation_fa": "جدول تاریخچهٔ راهنما، این ویرایشِ تاریخ‌دار را نخستین انتشار همان راهنما معرفی می‌کند.",
+      "scope_fa": "قرینهٔ هویت فایل؛ نه تاریخ محصول، شمارهٔ ساخت یا قابلیت فعلی.",
+      "disposition": "source_identity_or_context_only"
+    },
+    {
+      "evidence_id": "HDL58-P027-N01",
+      "physical_pdf_page": 27,
+      "audited_translation_fa": "راهنما برای موضوع فصلی تهویه عنوانی مستقل دارد. هیچ زمان‌بندی، نقطهٔ تنظیم، آستانه، قاعده یا ادعای عملکرد از آن ثبت نشده است.",
+      "scope_fa": "زیرموضوع تکمیلیِ طبقه‌بندی تهویه؛ نه رکورد مستقل یا دستور.",
+      "disposition": "source_identity_or_context_only"
+    },
+    {
+      "evidence_id": "HDL58-P030-N01",
+      "physical_pdf_page": 30,
+      "audited_translation_fa": "راهنما Opera را در موضوع جداگانهٔ سامانهٔ مدیریت هتلِ شخص ثالث نام می‌برد. این گزارش فروشنده در همان نسخه است، نه تأیید مستقلِ سازگاری یا دستور اتصال.",
+      "scope_fa": "زمینهٔ اتصال بیرونی. در نسخهٔ راهنما نام برده شده است؛ نه فهرست سازگاری، راهنما، دامنهٔ کنونی یا قابلیت NSP.",
+      "disposition": "source_identity_or_context_only"
+    },
+    {
+      "evidence_id": "HDL58-P037-N01",
+      "physical_pdf_page": 37,
+      "audited_translation_fa": "مدیریت خروج و سابقهٔ رزرو، موضوع‌هایی جدا در بخش مدیریت اقامتِ راهنمای ناشرند.",
+      "scope_fa": "فقط زمینهٔ تقسیم‌بندی، نه دستور خروج، کاربری، داده یا شاهد نتیجه.",
+      "disposition": "source_identity_or_context_only"
+    },
+    {
+      "evidence_id": "HDL58-P038-N01",
+      "physical_pdf_page": 38,
+      "audited_translation_fa": "سابقهٔ ورود به‌عنوان موضوعی جدا از مدیریت اقامت جاری آمده است. نه داده‌ای و نه روش جست‌وجویی بازنشر نشده است.",
+      "scope_fa": "سابقهٔ ورود مدرک مدیریت فعلی، ابزار NSP یا نتیجهٔ عملکرد نیست.",
+      "disposition": "source_identity_or_context_only"
+    }
+  ],
+  "original_concept_reviews": [
+    {
+      "concept_id": "HDL58_C01_editorial_chapter_map",
+      "title_fa": "نقشهٔ فصل",
+      "kind": "original_nonreplica_editorial_diagram",
+      "asset_path": "Portfolio Instruction/research/assets/hdl58/HDL58_C01_editorial_chapter_map.webp",
+      "asset_sha256": "1556c017ae5cb24614976b57143d75622756b257b6e9d391766cb4a6243613a9",
+      "git_blob_sha": "93ba4c2105240b8cf8a99db0135de4ac5ea7806a",
+      "theme_inspiration_physical_pdf_pages": [
+        10
+      ],
+      "theme_source_evidence_ids": [
+        "HDL58-P010-N01"
+      ],
+      "original_illustration_uses_no_vendor_image_or_interface_copy": true,
+      "rendered_byte_exact_from_our_spec": true,
+      "actual_remote_bytes_verified": true,
+      "no_vendor_redistribution_rights_claimed": true,
+      "PDF_image_source_page": null,
+      "excluded_from_PDF_extracted_image_total_and_links": true,
+      "target_section_type": "HOTEL_OVERVIEW",
+      "disposition": "accepted_as_separate_original_editorial_reference_metadata_only",
+      "scope_fa": "سه بلوک کوتاه فقط برای خواندن دسته‌ها، نه مدل معماری سامانه یا رابط اصلی."
+    },
+    {
+      "concept_id": "HDL58_C02_service_topic_triptych",
+      "title_fa": "سه موضوعِ خدمات",
+      "kind": "original_nonreplica_editorial_diagram",
+      "asset_path": "Portfolio Instruction/research/assets/hdl58/HDL58_C02_service_topic_triptych.webp",
+      "asset_sha256": "a2649e4817a81e38a123ace1aeb476b6e6871ac2b4bcc9ebcedc18e04a32806e",
+      "git_blob_sha": "538131530e34eca6c7edebb6bdd33246186f8b3f",
+      "theme_inspiration_physical_pdf_pages": [
+        18,
+        19,
+        20
+      ],
+      "theme_source_evidence_ids": [
+        "HDL58-P018-N01",
+        "HDL58-P019-N01",
+        "HDL58-P020-N01"
+      ],
+      "original_illustration_uses_no_vendor_image_or_interface_copy": true,
+      "rendered_byte_exact_from_our_spec": true,
+      "actual_remote_bytes_verified": true,
+      "no_vendor_redistribution_rights_claimed": true,
+      "PDF_image_source_page": null,
+      "excluded_from_PDF_extracted_image_total_and_links": true,
+      "target_section_type": "GRMS",
+      "disposition": "accepted_as_separate_original_editorial_reference_metadata_only",
+      "scope_fa": "سه عنوان هم‌تراز بدون پیکان و شمارهٔ روند. نمونهٔ UX اجرایی یا جریان فراخوان نیست."
+    },
+    {
+      "concept_id": "HDL58_C03_inventory_history_split",
+      "title_fa": "فهرست و سابقه",
+      "kind": "original_nonreplica_editorial_diagram",
+      "asset_path": "Portfolio Instruction/research/assets/hdl58/HDL58_C03_inventory_history_split.webp",
+      "asset_sha256": "2cc720864c89d0be0404d0559dce3b26293a6c0118270abecb9044893c9e711d",
+      "git_blob_sha": "f32ba01604c861396a7cbc22ebc7adaf3e8970b7",
+      "theme_inspiration_physical_pdf_pages": [
+        22,
+        24
+      ],
+      "theme_source_evidence_ids": [
+        "HDL58-P022-N01",
+        "HDL58-P024-N01"
+      ],
+      "original_illustration_uses_no_vendor_image_or_interface_copy": true,
+      "rendered_byte_exact_from_our_spec": true,
+      "actual_remote_bytes_verified": true,
+      "no_vendor_redistribution_rights_claimed": true,
+      "PDF_image_source_page": null,
+      "excluded_from_PDF_extracted_image_total_and_links": true,
+      "target_section_type": "GRMS",
+      "disposition": "accepted_as_separate_original_editorial_reference_metadata_only",
+      "scope_fa": "چیدمان دو کادر بدون فیلد یا شناسهٔ واقعی. نه تصویر نرم‌افزار، داده یا شاهد ثبت رخداد."
+    },
+    {
+      "concept_id": "HDL58_C04_native_external_scope",
+      "title_fa": "مرز دو دامنه",
+      "kind": "original_nonreplica_editorial_diagram",
+      "asset_path": "Portfolio Instruction/research/assets/hdl58/HDL58_C04_native_external_scope.webp",
+      "asset_sha256": "a2cc2ed9c1e5fb3a80230ad27c53f8d1f8788b78d5ca288e922bfd64b1faffc3",
+      "git_blob_sha": "0a50e4de940ac39edb08a04ab05219f168d7bc98",
+      "theme_inspiration_physical_pdf_pages": [
+        30,
+        35
+      ],
+      "theme_source_evidence_ids": [
+        "HDL58-P030-N01",
+        "HDL58-P035-N01"
+      ],
+      "original_illustration_uses_no_vendor_image_or_interface_copy": true,
+      "rendered_byte_exact_from_our_spec": true,
+      "actual_remote_bytes_verified": true,
+      "no_vendor_redistribution_rights_claimed": true,
+      "PDF_image_source_page": null,
+      "excluded_from_PDF_extracted_image_total_and_links": true,
+      "target_section_type": "HOTEL_OVERVIEW",
+      "disposition": "accepted_as_separate_original_editorial_reference_metadata_only",
+      "scope_fa": "جداسازی موضوع داخلی از بیرونی؛ هیچ مسیر ارتباطی، تضمین پشتیبانی یا رابط ادعا نشده است."
+    }
+  ],
+  "source_claim_gates_reviewed": [
+    {
+      "id": "HDL58-CLAIM-01",
+      "kind": "edition_and_onward_use",
+      "physical_pdf_pages": [
+        1,
+        4,
+        5
+      ],
+      "evidence_refs": [
+        "HDL58-P001-N01",
+        "HDL58-P004-N01",
+        "HDL58-P005-N01"
+      ],
+      "scope": "Identity and dated manual edition only. Rights remain unverified; this is not a claim about current live software.",
+      "NSP_capability_verified": false,
+      "independent_performance_or_compliance_verified": false,
+      "copyright_permissions_verified": false,
+      "related_S03_record_ids": [],
+      "applies_to_analyst_summary_only": true,
+      "original_topic_scope_and_attribution_rechecked": true
+    },
+    {
+      "id": "HDL58-CLAIM-02",
+      "kind": "publisher_architecture_and_overview",
+      "physical_pdf_pages": [
+        6,
+        10
+      ],
+      "evidence_refs": [
+        "HDL58-P006-N01",
+        "HDL58-P010-N01"
+      ],
+      "scope": "High-level publisher framing only; no network architecture, configuration, hardware parameters, or granular software controls.",
+      "NSP_capability_verified": false,
+      "independent_performance_or_compliance_verified": false,
+      "copyright_permissions_verified": false,
+      "related_S03_record_ids": [
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I001",
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I002"
+      ],
+      "applies_to_analyst_summary_only": true,
+      "original_topic_scope_and_attribution_rechecked": true
+    },
+    {
+      "id": "HDL58-CLAIM-03",
+      "kind": "room_control_editorial_boundaries",
+      "physical_pdf_pages": [
+        14,
+        15,
+        17
+      ],
+      "evidence_refs": [
+        "HDL58-P014-N01",
+        "HDL58-P015-N01",
+        "HDL58-P017-N01"
+      ],
+      "scope": "Per-room inventory, room control, and a multi-room topic are presented separately. Neither operational instructions nor credentials or control flows are retained.",
+      "NSP_capability_verified": false,
+      "independent_performance_or_compliance_verified": false,
+      "copyright_permissions_verified": false,
+      "related_S03_record_ids": [
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I003",
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I004",
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I005"
+      ],
+      "applies_to_analyst_summary_only": true,
+      "original_topic_scope_and_attribution_rechecked": true
+    },
+    {
+      "id": "HDL58-CLAIM-04",
+      "kind": "service_organization_and_history",
+      "physical_pdf_pages": [
+        18,
+        19,
+        20
+      ],
+      "evidence_refs": [
+        "HDL58-P018-N01",
+        "HDL58-P019-N01",
+        "HDL58-P020-N01"
+      ],
+      "scope": "Separation of request, category and history is conceptual only. Emergency and prioritization mechanisms are excluded.",
+      "NSP_capability_verified": false,
+      "independent_performance_or_compliance_verified": false,
+      "copyright_permissions_verified": false,
+      "related_S03_record_ids": [
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I006",
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I007",
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I008"
+      ],
+      "applies_to_analyst_summary_only": true,
+      "original_topic_scope_and_attribution_rechecked": true
+    },
+    {
+      "id": "HDL58-CLAIM-05",
+      "kind": "device_inventory_and_history",
+      "physical_pdf_pages": [
+        21,
+        22,
+        24
+      ],
+      "evidence_refs": [
+        "HDL58-P021-N01",
+        "HDL58-P022-N01",
+        "HDL58-P024-N01"
+      ],
+      "scope": "Device categories and history only, not commands, wiring, identifiers, registration or endpoint behavior.",
+      "NSP_capability_verified": false,
+      "independent_performance_or_compliance_verified": false,
+      "copyright_permissions_verified": false,
+      "related_S03_record_ids": [
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I009",
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I010",
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I011"
+      ],
+      "applies_to_analyst_summary_only": true,
+      "original_topic_scope_and_attribution_rechecked": true
+    },
+    {
+      "id": "HDL58-CLAIM-06",
+      "kind": "climate_classification",
+      "physical_pdf_pages": [
+        26,
+        27
+      ],
+      "evidence_refs": [
+        "HDL58-P026-N01",
+        "HDL58-P027-N01"
+      ],
+      "scope": "Temperature topics and seasonal groupings do not establish set points, control rules, measured performance, or savings.",
+      "NSP_capability_verified": false,
+      "independent_performance_or_compliance_verified": false,
+      "copyright_permissions_verified": false,
+      "related_S03_record_ids": [
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I012"
+      ],
+      "applies_to_analyst_summary_only": true,
+      "original_topic_scope_and_attribution_rechecked": true
+    },
+    {
+      "id": "HDL58-CLAIM-07",
+      "kind": "digital_guest_service_and_external_native_PMS_distinction",
+      "physical_pdf_pages": [
+        29,
+        30,
+        35,
+        36,
+        37,
+        38
+      ],
+      "evidence_refs": [
+        "HDL58-P029-N01",
+        "HDL58-P030-N01",
+        "HDL58-P035-N01",
+        "HDL58-P036-N01",
+        "HDL58-P037-N01",
+        "HDL58-P038-N01"
+      ],
+      "scope": "Digital guest services and the guide’s explicit distinction between external and native PMS are version-bound. The vendor's Opera mention does not establish interoperability, options or availability or disclose parameters. No guest fields, roles, access sequence or process is retained.",
+      "NSP_capability_verified": false,
+      "independent_performance_or_compliance_verified": false,
+      "copyright_permissions_verified": false,
+      "related_S03_record_ids": [
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I013",
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I016",
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I017"
+      ],
+      "applies_to_analyst_summary_only": true,
+      "original_topic_scope_and_attribution_rechecked": true
+    },
+    {
+      "id": "HDL58-CLAIM-08",
+      "kind": "operator_administration_and_audit_boundaries",
+      "physical_pdf_pages": [
+        31,
+        34
+      ],
+      "evidence_refs": [
+        "HDL58-P031-N01",
+        "HDL58-P034-N01"
+      ],
+      "scope": "Thematic separation of organizational administration and activity history only. Neither permission handling nor coverage or compliance is established.",
+      "NSP_capability_verified": false,
+      "independent_performance_or_compliance_verified": false,
+      "copyright_permissions_verified": false,
+      "related_S03_record_ids": [
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I014",
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I015"
+      ],
+      "applies_to_analyst_summary_only": true,
+      "original_topic_scope_and_attribution_rechecked": true
+    }
+  ],
+  "S07_import_contract": {
+    "accepted_internal_record_ids": [
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I002",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I003",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I004",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I006",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I007",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I008",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I010",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I011",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I012",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I016"
+    ],
+    "held_S03_context_only_ids": [
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I001",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I005",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I009",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I013",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I014",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I015",
+      "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I017"
+    ],
+    "additional_identity_or_context_only_evidence_refs": [
+      "HDL58-P001-N01",
+      "HDL58-P004-N01",
+      "HDL58-P005-N01",
+      "HDL58-P027-N01",
+      "HDL58-P030-N01",
+      "HDL58-P037-N01",
+      "HDL58-P038-N01"
+    ],
+    "accepted_original_concept_reference_ids": [
+      "HDL58_C01_editorial_chapter_map",
+      "HDL58_C02_service_topic_triptych",
+      "HDL58_C03_inventory_history_split",
+      "HDL58_C04_native_external_scope"
+    ],
+    "accepted_source_extracted_image_ids": [],
+    "store_our_concepts_only_as_separate_original_editorial_metadata": true,
+    "not_in_extracted_source_images_totals_or_existing_renderer_image_links": true,
+    "apply_audited_p14_p15_attribution_only_in_derived_fields": true,
+    "English_meaning_must_be_labeled_analyst_paraphrase_not_vendor_quote": true,
+    "no_vendor_images_PDF_prose_credentials_procedure_or_inferred_technical_claims": true,
+    "no_actual_page_attached_no_app_changes": true
+  },
+  "next_stage": "S07 — به‌روزرسانی JSON و Commit",
+  "next_queue_cursor": {
+    "document_index": 17,
+    "document_id": "58",
+    "step_index": 6,
+    "step_id": "S07"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
