@@ -1,0 +1,2313 @@
+{
+  "schema": "nsp-catalog-research-s02-english-extract-v1",
+  "stage": "S02",
+  "stage_key": "source_text_extraction",
+  "status": "completed_with_source_claim_gates",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "e61a97312dbaec7cc48e7fc46d31b2106655701a",
+  "document_id": "14",
+  "source_pdf": {
+    "company": "Vingcard",
+    "publisher": "Vingcard / ASSA ABLOY",
+    "title": "Vingcard Novel",
+    "filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+    "library_path": "/14_Vingcard_Vingcard Novel Brochure.pdf",
+    "pdf_pages": 16,
+    "source_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+    "file_size_bytes": 3735147,
+    "printed_document_version": "04/2025",
+    "document_version_month": "2025-04",
+    "publication_evidence_pdf_page": 16,
+    "date_basis": "Printed document version; not an exact first-publication date or current product-status verification.",
+    "S01_inventory": "Portfolio Instruction/research/14_Vingcard_Novel_S01_source_inventory.json",
+    "S01_inventory_git_commit_at_creation": "69b1ce8cfeee255afa444f45315e6602212ca314",
+    "S01_inventory_git_blob_sha": "d278c8856a697a2f7d6f1d69aefd95eca49d14c7"
+  },
+  "scope": {
+    "all_16_PDF_pages_accounted_for": true,
+    "all_native_text_pages_read": true,
+    "source_coverage_is_page_based": true,
+    "original_pdf_text_not_republished": true,
+    "method": "Curated short English excerpts, exact case-sensitive page verification, visually checked reading order, explicit claim conditions and separately identified image-only labels. The original PDF remains the complete source.",
+    "no_OCR_used": true,
+    "competitor_device_model_spec_lists_republished": false,
+    "restricted_physical_claim_evidence_separated_for_audit": true,
+    "contact_directories_republished": false,
+    "hardware_titles_retained_only_as_source_context": true,
+    "no_source_excerpt_is_verified_NSP_capability_evidence": true,
+    "no_feature_translation_or_S03_records_created": true,
+    "no_image_assets_or_S04_analysis_created": true,
+    "no_S05_mapping_or_final_idea_attachment": true
+  },
+  "statistics": {
+    "PDF_pages_read_and_mapped": 16,
+    "pages_with_native_text": 16,
+    "zero_native_text_pages": [],
+    "folio_only_pages": [],
+    "running_header_only_pages": [],
+    "native_character_count_all_pages": 15864,
+    "native_character_count_method": "Raw PyMuPDF page.get_text(\"text\") lengths, including running folios; no OCR characters included.",
+    "pages_with_curated_native_fragments": 16,
+    "short_verified_English_source_fragments": 98,
+    "exact_normalized_quote_matches": 98,
+    "source_headline_entries": 34,
+    "manual_visual_transcription_pages": [
+      11,
+      15
+    ],
+    "manual_visual_supplement_records": 2,
+    "manual_visually_verified_unique_labels": 2,
+    "manual_UI_status_labels": 1,
+    "manual_certification_artwork_labels": 1,
+    "claim_and_context_gates": 25,
+    "exact_claim_evidence_and_qualifier_matches": 46,
+    "source_context_binding_groups": 5,
+    "structured_source_fact_groups": 4,
+    "structured_source_diagram_and_layout_groups": 12,
+    "S01_group_count": 9,
+    "new_NSP_capabilities_verified": 0
+  },
+  "pages": [
+    {
+      "pdf_page": 1,
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 1",
+      "section_group": "COVER",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 76,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "e7ae6cf836d389e1875d891d9b129b59d53cb0011f03e3d0a7cbc29260ea8169",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Vingcard Novel"
+      ],
+      "short_english_fragments_en": [
+        "Vingcard Novel",
+        "Experience a safer and more open world"
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P01-E01",
+        "VINGCARD14-P01-E02"
+      ],
+      "fragment_count": 2,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "The cover title and slogan were checked against the page render. The bottom-left slogan is a cover identity statement, not a verified product safety result.",
+        "The native page-number/footer string is not visible as such on the rendered cover and is not excerpted."
+      ],
+      "omitted_native_content_notes": [
+        "Page-number/footer string omitted. Brand logos are not separately transcribed or treated as capabilities."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 2,
+      "printed_page_number": 2,
+      "canonical_reference": "PDF page 2",
+      "section_group": "INTRODUCTION_AND_CONTENTS",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1935,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "5c9a346c4ec9ca9014b343b992fcb5507a4869c84824653ee8915e1b75dd53b6",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Vingcard Novel",
+        "Opening the Door to New Possibilities in Hotel Security & Guest Satisfaction",
+        "Sustainability",
+        "Installation"
+      ],
+      "short_english_fragments_en": [
+        "Vingcard Novel",
+        "Keeping pace with new hotel security needs has never been more essential to the running of a successful business.",
+        "Today’s hoteliers require advanced solutions capable of not just perfectly balancing current guest demands for enhanced safety and convenience, but that can also continue to meet such needs far into the future as expectations inevitably evolve.",
+        "Opening the Door to New Possibilities in Hotel Security & Guest Satisfaction",
+        "Vingcard Novel represents hospitality’s ultimate combination of scalable security technology, all encased within a sleek door handle offering timeless design appeal",
+        "With Vingcard Novel, hoteliers gain a vital competitive advantage that can see their property effortlessly update security capabilities and add new features or integrations-all without costly hardware replacement and the hassle of time-consuming installation.",
+        "ideal lock solution for both indoor and outdoor areas",
+        "means to meet sustainability goals thanks to the use of materials and manufacturing processes that minimize its environmental impact.",
+        "Sustainability",
+        "Meeting the industry’s commitment to sustainable practices and lives up to guest expectations for environmentally friendly hotel operations.",
+        "Installation",
+        "Upgrading hotel security made simple: Bypassing installation and retrofit complex-ities using a revolutionary design proven to minimize down-time and ensure a visually appealing end result."
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P02-E01",
+        "VINGCARD14-P02-E02",
+        "VINGCARD14-P02-E03",
+        "VINGCARD14-P02-E04",
+        "VINGCARD14-P02-E05",
+        "VINGCARD14-P02-E06",
+        "VINGCARD14-P02-E07",
+        "VINGCARD14-P02-E08",
+        "VINGCARD14-P02-E09",
+        "VINGCARD14-P02-E10",
+        "VINGCARD14-P02-E11",
+        "VINGCARD14-P02-E12"
+      ],
+      "fragment_count": 12,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Reading order was restored visually: the left introduction column, followed by the right contents/teaser panel. Native block order is different.",
+        "The numbers 6 and 10 are contents-page references for Sustainability and Installation; they are not capabilities or quantitative performance claims.",
+        "Source wording and hard hyphens are preserved, including complex-ities, down-time and integrations-all after the permitted whitespace normalization. The source grammar in the Sustainability teaser is not corrected.",
+        "Future scalability, no costly hardware replacement and environmental-impact wording are attributed competitor claims; neither integration targets nor upgrade conditions are specified here."
+      ],
+      "omitted_native_content_notes": [
+        "Footer, contents-page numerals and the product-photo caption omitted. Repetitive durability/marketing prose not selected in full; its specific overview claims are represented on page 4."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 3,
+      "printed_page_number": 3,
+      "canonical_reference": "PDF page 3",
+      "section_group": "INTRODUCTION_AND_CONTENTS",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 598,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "0d7a7bbdf884b4b4fe722d66efd28f3e95ffda53775579acc9e494df82ab6a86",
+      "native_running_folio_occurrences": 2,
+      "source_headlines_en": [
+        "Design & style",
+        "Operation",
+        "Security & compliance"
+      ],
+      "short_english_fragments_en": [
+        "Design & style",
+        "Combining advanced security with stylish design: Leveraging Vingcard Novel’s sleek appearance and array of handle options to seamlessly blend in with any hotel décor.",
+        "Operation",
+        "Lessening the strain on hotel operations: Depend on a reliable solution able to side-step the need for frequent component and battery replacement.",
+        "Security & compliance",
+        "Redefining the concept of advanced security: With Vingcard Novel, rest assured that both hotel guests and staff are protected using the latest standards in security technology."
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P03-E01",
+        "VINGCARD14-P03-E02",
+        "VINGCARD14-P03-E03",
+        "VINGCARD14-P03-E04",
+        "VINGCARD14-P03-E05",
+        "VINGCARD14-P03-E06"
+      ],
+      "fragment_count": 6,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Visual order is Design & style at upper left, then Operation at lower left, then Security & compliance at lower right; native extraction begins with Security & compliance.",
+        "The numbers 8, 12 and 14 are contents-page references, not feature counts or performance values.",
+        "The source hard hyphen in side-step is preserved. General security and reliability assertions are marketing language without a named standard or performance measure on this page."
+      ],
+      "omitted_native_content_notes": [
+        "Duplicate native footer strings and contents-page numerals omitted. Photograph and hardware appearance are not converted into additional capabilities."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 4,
+      "printed_page_number": 4,
+      "canonical_reference": "PDF page 4",
+      "section_group": "OVERVIEW",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1028,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "cf73ee02ed4c1c3424f6d6d3637a0b5d7205bbc3b8cb9d4f73fd65555b741ec8",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Overview",
+        "A Next Generation Door Lock Designed for the Security Needs of Today and Tomorrow"
+      ],
+      "short_english_fragments_en": [
+        "Overview",
+        "Advanced security, scalable functionality and an eco-friendly attractive design",
+        "Vingcard Novel encases its scalable modules within the handle itself-no extra drilling and no unsightly external hardware.",
+        "Able to upgrade to Mobile Access as well as integrate with third-party platforms, Vingcard Novel with its durable design is a door lock solution that’s built to last.",
+        "A Next Generation Door Lock Designed for the Security Needs of Today and Tomorrow",
+        "A sleek design and a range of handle options able to suit any interior décor need.",
+        "Use of sustainable materials and manufacturing practices.",
+        "Suitable for indoor and outdoor use, with resistance to heat, cold, water, salt and wind.",
+        "Durability tested to withstand many years of repeated use.",
+        "ANS BHMA certified for meeting performance standards."
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P04-E01",
+        "VINGCARD14-P04-E02",
+        "VINGCARD14-P04-E03",
+        "VINGCARD14-P04-E04",
+        "VINGCARD14-P04-E05",
+        "VINGCARD14-P04-E06",
+        "VINGCARD14-P04-E07",
+        "VINGCARD14-P04-E08",
+        "VINGCARD14-P04-E09",
+        "VINGCARD14-P04-E10"
+      ],
+      "fragment_count": 10,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "The render visibly reads ANS BHMA. This spelling is preserved exactly and is not silently changed to ANSI BHMA.",
+        "Overview claims were ordered from the top paragraph, then the large headline and the image/caption grid in row order. The bottom-left durability claim precedes the bottom-right certification claim visually.",
+        "Mobile Access is described as an upgrade capability. Third-party platforms are unnamed; the text does not establish PMS, GRMS or IPTV integration.",
+        "Environmental resistance, durability testing and certification are source claims. This page supplies no test rating, duration, grade, certificate identifier or certification evidence."
+      ],
+      "omitted_native_content_notes": [
+        "Repeated product-name kicker, footer and repetitive promotional sentence portions omitted. No hardware models, dimensions or electrical specifications extracted."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 5,
+      "printed_page_number": 5,
+      "canonical_reference": "PDF page 5",
+      "section_group": "OVERVIEW",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 614,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "02cbc2239d0c498d0f6c4be5cba6f98f8e0c46cf5ea3cd71a94e5d0f235b0ffb",
+      "native_running_folio_occurrences": 2,
+      "source_headlines_en": [
+        "Flexible Scalability Meets Enhanced Security"
+      ],
+      "short_english_fragments_en": [
+        "Flexible Scalability Meets Enhanced Security",
+        "Apple Wallet support.",
+        "Scalable handle hardware able to upgrade to Mobile Access, new security protocols and facilitate third-party integrations.",
+        "Compatible with cloud-based Vostio Access Management.",
+        "Online compatibility for wireless operation.",
+        "ADA compliance ensures accessibility for guests with disabilities.",
+        "Eliminate battery use with alternative power option.",
+        "Emergency opening abilities with service unit and optional mechanical cylinder."
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P05-E01",
+        "VINGCARD14-P05-E02",
+        "VINGCARD14-P05-E03",
+        "VINGCARD14-P05-E04",
+        "VINGCARD14-P05-E05",
+        "VINGCARD14-P05-E06",
+        "VINGCARD14-P05-E07",
+        "VINGCARD14-P05-E08"
+      ],
+      "fragment_count": 8,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "The visual headline is followed by the left-column icon/caption sequence. Hardware photos on the right add no inferred functions.",
+        "Apple Wallet support and compatibility with cloud-based Vostio Access Management are explicit source text. The page does not describe individual management screens, workflows, permissions or data functions.",
+        "Mobile Access is upgradeable, the alternative power supply is an option, and the mechanical cylinder is optional; these conditions are retained.",
+        "The ADA compliance claim is reproduced as a competitor assertion, without inventing a specific standard clause or proof. Online wireless compatibility is not expanded into an unsupported cloud-control scenario."
+      ],
+      "omitted_native_content_notes": [
+        "RFID/NFC/BLE reader-technology list omitted as hardware/protocol specification. Lock variants photo caption and duplicate native footer strings omitted. No model catalogue or physical lock variant list extracted."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 6,
+      "printed_page_number": 6,
+      "canonical_reference": "PDF page 6",
+      "section_group": "SUSTAINABILITY",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1993,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "cd80eb45d708e5ccd425499f966b27ecbf4f2f2fc279093a9549b7d7504bc6d8",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Environmentally Conscious by Design",
+        "As Lightweight as it is Secure",
+        "Easier Installation & Reduced Maintenance"
+      ],
+      "short_english_fragments_en": [
+        "Environmentally Conscious by Design",
+        "Manufactured using sustainable practices and consisting of recyclable components, Vingcard Novel is the door solution of choice for eco-conscious hoteliers.",
+        "As Lightweight as it is Secure",
+        "While capable of withstanding multiple physical break-in attempts, Vingcard Novel’s aluminum design weighs 35 percent less than older lock models.",
+        "Less weight means less to ship and reduced freight costs.",
+        "Vingcard Novel’s 61 percent reduction in packing volume and a 30 percent decrease in packing weight when compared to other lock options.",
+        "Easier Installation & Reduced Maintenance",
+        "Vingcard Novel’s minimalistic handle design doesn’t just translate into a sleeker appearance, it also represents effortless installation and reduced maintenance needs.",
+        "Vingcard Novel drastically cuts down on the number of components and moving parts-resulting in a straightforward and stress-free installation process that takes less time and minimizes the need for drilling.",
+        "Reduced components and moving parts also means that Vingcard Novel is able to withstand wear and tear that often leads to significant downtime as well as hardware replacement and labor costs."
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P06-E01",
+        "VINGCARD14-P06-E02",
+        "VINGCARD14-P06-E03",
+        "VINGCARD14-P06-E04",
+        "VINGCARD14-P06-E05",
+        "VINGCARD14-P06-E06",
+        "VINGCARD14-P06-E07",
+        "VINGCARD14-P06-E08",
+        "VINGCARD14-P06-E09",
+        "VINGCARD14-P06-E10"
+      ],
+      "fragment_count": 10,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Visual reading order is the main heading/introduction, then the left lightweight/comparison column, then the right installation/maintenance panel; the native text sequence differs.",
+        "The three infographic values were checked visually: 61% is reduction in packing volume; 35% is reduction in weight; 30% is reduction in packing weight. The native value tokens and native label blocks are noncontiguous, so no new paired quote was manufactured. The exact prose comparisons were selected instead.",
+        "The 35 percent weight claim is compared with older lock models. The 61 percent packing-volume and 30 percent packing-weight claims are compared with other lock options. Neither baseline identifies a model, sample, date or measurement method on this page.",
+        "The comparison percentages concern physical product and packaging characteristics, not energy savings, operating-cost savings or a general sustainability score. The physical break-in assertion is not treated as a test certification.",
+        "Source grammar and hard hyphens are retained, including parts-resulting and the singular means in Reduced components and moving parts also means."
+      ],
+      "omitted_native_content_notes": [
+        "Footer, loose infographic number/label tokens and the component-photo caption omitted from excerpts. Hardware components visible in the photograph are not inventoried. Repetitive introductory sustainability prose not excerpted in full."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 7,
+      "printed_page_number": 7,
+      "canonical_reference": "PDF page 7",
+      "section_group": "SUSTAINABILITY",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1565,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "f01337a1e48be8eca8719460e8e63fb54362b7014ef9a1ed89d5b22f8c4aa779",
+      "native_running_folio_occurrences": 2,
+      "source_headlines_en": [
+        "Bringing an End to Battery Waste & Replacement",
+        "Minimizing Eco-footprints with Recyclable Materials",
+        "Sustainable packaging"
+      ],
+      "short_english_fragments_en": [
+        "Bringing an End to Battery Waste & Replacement",
+        "Door lock batteries are a recurring source of waste and a loss of employee time whenever one needs to be checked and replaced.",
+        "With Vingcard Novel, hoteliers now have the option to do away with batteries altogether using an innovative and patent pending alternative to powering each lock.",
+        "Capable of wirelessly transferring power from the side door frame to the lock, Vingcard Novel translates into less environmental waste from dead batteries, less overhead expenses and more time for hotel staff to focus on other responsibilities.",
+        "Minimizing Eco-footprints with Recyclable Materials",
+        "With its 100 percent recyclable lock trim that offers superior finish quality, Vingcard Novel extends its minimal environmental impact all the way to the end-of-life product cycle.",
+        "Sustainable packaging",
+        "Each lock is delivered using a fully recycled paper box.",
+        "By significantly reducing the use of harmful plastic packaging materials, Vingcard Novel also works towards ensuring a planet free of micro-plastic waste for us all."
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P07-E01",
+        "VINGCARD14-P07-E02",
+        "VINGCARD14-P07-E03",
+        "VINGCARD14-P07-E04",
+        "VINGCARD14-P07-E05",
+        "VINGCARD14-P07-E06",
+        "VINGCARD14-P07-E07",
+        "VINGCARD14-P07-E08",
+        "VINGCARD14-P07-E09"
+      ],
+      "fragment_count": 9,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "The left battery/power column, right recyclable-materials column and bottom packaging panel were read in visual order.",
+        "Battery elimination is an optional alternative and the source calls it patent pending. Wireless transfer is specifically from the side door frame to the lock; it is not generic wireless networking or mobile-device charging.",
+        "The 100 percent recyclable claim applies specifically to the lock trim, not to the complete lock, all electronics or all packaging.",
+        "Fully recycled paper box is the source wording. Reduction in harmful plastic packaging and the planet free of micro-plastic waste sentence are presented as source aspiration; the text does not say that the complete delivered package contains zero plastic."
+      ],
+      "omitted_native_content_notes": [
+        "Footer and the aluminum element-tile tokens Al, 13 and 26.982 omitted as material/technical decoration. Repeated general security, convenience and environmental marketing prose not selected in full."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 8,
+      "printed_page_number": 8,
+      "canonical_reference": "PDF page 8",
+      "section_group": "DESIGN_AND_STYLE",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1058,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "1a102e18d3ba95790ae24bd0d730745f25ce74e8276b418f41a6ec92c8a86d9a",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Sleek Design Embodying Ultimate Elegance",
+        "Custom-tailored Finishes able to Suit any Interior Design Need"
+      ],
+      "short_english_fragments_en": [
+        "Sleek Design Embodying Ultimate Elegance",
+        "Vingcard Novel is as much about enhancing property style as it is about empowering hoteliers with the latest in security technology.",
+        "Available as a sleek minimalistic lock for new installations as well as a slightly larger version for retrofit project needs, Vingcard Novel nonetheless offers the ability to seamlessly blend in with any hotel décor.",
+        "Custom-tailored Finishes able to Suit any Interior Design Need",
+        "In addition to the lock’s range of standard finishes, customers can also make requests for custom-tailored finishes depending on their specific needs and order quantity.",
+        "With Vingcard Novel, the possibilities for creating a captivating exterior design are virtually limitless."
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P08-E01",
+        "VINGCARD14-P08-E02",
+        "VINGCARD14-P08-E03",
+        "VINGCARD14-P08-E04",
+        "VINGCARD14-P08-E05",
+        "VINGCARD14-P08-E06"
+      ],
+      "fragment_count": 6,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "The main headline and top introduction precede the lower-right custom-finish panel visually; the native extraction places the panel text before the introductory paragraph.",
+        "The source distinguishes new installations from retrofit project needs. No model name, size or compatibility specification is inferred from the photographs.",
+        "Custom-tailored finishes can be requested depending on specific needs and order quantity. This qualification is preserved; universal availability and a minimum order quantity are not invented.",
+        "Virtually limitless is retained as marketing language and not converted into an unconditional customization guarantee."
+      ],
+      "omitted_native_content_notes": [
+        "Standard finish options heading, five finish labels and footer omitted from selected excerpts to avoid importing a hardware variant/finish catalogue. The full native text remains an internal reference. No material specification extracted from the top paragraph."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 9,
+      "printed_page_number": 9,
+      "canonical_reference": "PDF page 9",
+      "section_group": "DESIGN_AND_STYLE",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 63,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "a261c54d6e6d3c22f7e3ad23bb528dd9e87798e1e9cb97e0df8319e28c3c569f",
+      "native_running_folio_occurrences": 2,
+      "source_headlines_en": [
+        "Your style. Spot on."
+      ],
+      "short_english_fragments_en": [
+        "Your style. Spot on."
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P09-E01"
+      ],
+      "fragment_count": 1,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Photo-led page with one native slogan; the page is not text-free.",
+        "The two native copies of the running footer are duplicates of page furniture, not repeated page content."
+      ],
+      "omitted_native_content_notes": [
+        "Duplicate running footer and folio omitted."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 10,
+      "printed_page_number": 10,
+      "canonical_reference": "PDF page 10",
+      "section_group": "INSTALLATION_AND_MOBILE_ACCESS",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 963,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "6d2d0a49a41fe5c93e170593915d12fa2e9198e3312ade9fc35cd46c447c82cf",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Redefining the Concept of Effortless Installation",
+        "Advancing the Benefits of a One Lockcase Design",
+        "Installation steps"
+      ],
+      "short_english_fragments_en": [
+        "Redefining the Concept of Effortless Installation",
+        "a simple, quick and hassle-free installation experience.",
+        "The reduced number of modules means there is less to install",
+        "decreasing the need for drilling but also drastically reducing the time and effort required to implement each lock.",
+        "an easy implementation process also cuts down on the number of needed spare parts.",
+        "Installation steps"
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P10-E01",
+        "VINGCARD14-P10-E02",
+        "VINGCARD14-P10-E03",
+        "VINGCARD14-P10-E04",
+        "VINGCARD14-P10-E05",
+        "VINGCARD14-P10-E06"
+      ],
+      "fragment_count": 6,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Visual reading order: main heading and introductory paragraph, then the left installation/lockcase panel and the right Installation steps panel; native object order begins with the footer and numbers.",
+        "The right panel shows native numbers 1 and 2 in the upper row, then 3 and 4 in the lower row. They identify four photographs; no source-written descriptive step titles are present and none have been invented.",
+        "The source line wrap instal-lation is not silently repaired; the curated excerpts avoid that split word.",
+        "Claims about ease, speed, drilling and spare parts are Vingcard Novel installation claims, not independent performance verification."
+      ],
+      "omitted_native_content_notes": [
+        "Running footer/folio omitted.",
+        "The list of replacement hardware parts, the detailed lockcase implementation sentence and duplicate explanatory wording are omitted.",
+        "Native step numbers are retained as structural context only, not as standalone English feature fragments."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 11,
+      "printed_page_number": 11,
+      "canonical_reference": "PDF page 11",
+      "section_group": "INSTALLATION_AND_MOBILE_ACCESS",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 874,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "b898521958572e7d7b216ad8c355a91d8d395ab80f8e47c21a395cddf93da95a",
+      "native_running_folio_occurrences": 2,
+      "source_headlines_en": [
+        "Mobile Access Adoption Made Simple",
+        "No need for additional installation or hardware replacement for Mobile Access"
+      ],
+      "short_english_fragments_en": [
+        "Mobile Access Adoption Made Simple",
+        "No need for additional installation or hardware replacement for Mobile Access",
+        "By simply activating the feature with a software license agreement",
+        "From bypassing long front desk check-in lines to providing guests with a contactless alternative to receiving their key and gaining room entry",
+        "Compatible with Apple Wallet."
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P11-E01",
+        "VINGCARD14-P11-E02",
+        "VINGCARD14-P11-E03",
+        "VINGCARD14-P11-E04",
+        "VINGCARD14-P11-E05"
+      ],
+      "fragment_count": 5,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Visual reading order puts Mobile Access Adoption Made Simple at the top, followed by the phone/handle photograph, then the lower heading and paragraph; native object order places the main heading last.",
+        "The software license agreement is the source-stated activation condition for Mobile Access. It must remain associated with the no-additional-hardware and guest-use excerpts; hardware readiness alone does not mean the service is active.",
+        "Compatible with Apple Wallet is an explicit source statement, retained without inferring any unspecified implementation or integration.",
+        "The source wraps convenience-en-hancing across a line with a hard hyphen; the curated excerpts avoid that word rather than silently correcting it.",
+        "The phone-screen status text is readable in the rendered photograph but absent from native page text; it is recorded only in manual_visual_supplements."
+      ],
+      "omitted_native_content_notes": [
+        "Duplicate footer/folio omitted.",
+        "The repeated hardware-readiness sentence and the broad assurance that expectations can always be met are omitted from the short excerpt selection.",
+        "Tiny phone status-bar indicators are not transcribed; no application identity is inferred from the photograph."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 12,
+      "printed_page_number": 12,
+      "canonical_reference": "PDF page 12",
+      "section_group": "OPERATION",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1325,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "1f69a93aa29d190172716b2927535ba90f2e54cbcfdab1cbc601fbf8898d257f",
+      "native_running_folio_occurrences": 2,
+      "source_headlines_en": [
+        "Setting a New Standard in Operational Efficiency",
+        "1 million lock cycles",
+        "Battery-free solution",
+        "Protecting Your Door Lock Investment From Avoidable Damage"
+      ],
+      "short_english_fragments_en": [
+        "Setting a New Standard in Operational Efficiency",
+        "Vingcard Novel is a door lock solution offering simplified operation far into the long-term future.",
+        "Battery-free solution",
+        "While available as a battery-free solution, properties that install the locks using batteries can further look forward to two years of operation before replacement is required based on normal usage.",
+        "Protecting Your Door Lock Investment From Avoidable Damage",
+        "Hotel door locks are often unintentionally subjected to damage by housekeeping teams who routinely throw the bolt when the door is open while cleaning a room.",
+        "By allowing the deadbolt to be thrown only when the door is in the frame, Vingcard Novel prevents any damage from being inflicted on either the door frame or lock itself."
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P12-E01",
+        "VINGCARD14-P12-E02",
+        "VINGCARD14-P12-E03",
+        "VINGCARD14-P12-E04",
+        "VINGCARD14-P12-E05",
+        "VINGCARD14-P12-E06",
+        "VINGCARD14-P12-E07"
+      ],
+      "fragment_count": 7,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Visual order is the main heading/introductory paragraph followed by the three vertically stacked cards: lock cycles, battery-free solution, and avoidable damage. Native object order moves the lowest card before the introduction and other cards.",
+        "The two-year battery claim is retained with the battery-powered installation context and the exact based on normal usage condition. The source does not quantify normal usage on this page.",
+        "The housekeeping scenario and deadbolt only-when-in-frame condition are preserved separately. The final sentence is an attributed manufacturer claim about that scenario; its any damage wording is not independently verified.",
+        "The one-million-cycle heading is source-heading inventory only, not a curated feature fragment or verified endurance result.",
+        "The introductory source wording at the forefront innovation is not corrected; that sentence is not selected."
+      ],
+      "omitted_native_content_notes": [
+        "Duplicate footer/folio omitted.",
+        "The minimum-one-million-cycle test claim, numerical badge and moving-parts explanation are omitted from the curated fragment list as technical endurance content.",
+        "The intervening fully resolves / repair-cost assurance and the longer company-history introduction are omitted; no broad repair-cost guarantee is inferred."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 13,
+      "printed_page_number": 13,
+      "canonical_reference": "PDF page 13",
+      "section_group": "OPERATION",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 588,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "62f81af9d85a64a113dc88f51d95d4ab36f7a6899be0490ac8ffc54620d2b885",
+      "native_running_folio_occurrences": 3,
+      "source_headlines_en": [
+        "Built to Withstand the Elements"
+      ],
+      "short_english_fragments_en": [
+        "Built to Withstand the Elements",
+        "Suitable for either indoor and outdoor use"
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P13-E01",
+        "VINGCARD14-P13-E02"
+      ],
+      "fragment_count": 2,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "The visible page is arranged as an upper hot-environment photograph, a central heading and paragraph, and a lower cold-environment photograph.",
+        "The exact source wording either indoor and outdoor use is retained without grammatical correction.",
+        "The indoor/outdoor excerpt is a Vingcard Novel use-context statement within a paragraph specifying environmental conditions; it must not be expanded into an unrestricted suitability guarantee.",
+        "The source line wrap with-out is not silently repaired; the selected excerpts avoid that word.",
+        "Three copies of the running footer occur in native extraction; they are not three distinct content items or pages."
+      ],
+      "omitted_native_content_notes": [
+        "Repeated footer/folio omitted.",
+        "Numerical temperature limits and badges, waterproof/dust protection specifications, and broader all-conditions assurances are omitted from the curated fragment list."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 14,
+      "printed_page_number": 14,
+      "canonical_reference": "PDF page 14",
+      "section_group": "SECURITY_AND_COMPLIANCE",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 1842,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "aa58ab20871d544e7b978e2810bd4fd41fa750e2374029199c0dbe935430f980",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Surpassing Industry Expectations for Advanced Security",
+        "Sidestepping the Risk of Door Lock Manipulation",
+        "Protecting Your Guests and Staff from Online Cyber Threats"
+      ],
+      "short_english_fragments_en": [
+        "Surpassing Industry Expectations for Advanced Security",
+        "With Vingcard Novel’s unmatched scalability, future security enhancements can also be made without requiring the need to purchase and install new hardware.",
+        "Sidestepping the Risk of Door Lock Manipulation",
+        "Featuring an innovative anti-tamper alarm as an added layer of protection",
+        "Protecting Your Guests and Staff from Online Cyber Threats",
+        "Vingcard Novel’s compatibility with Vostio Access Management",
+        "With its cloud-based design, Vostio Access Management is able to receive regular software updates that safeguard against newly discovered vulnerabilities."
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P14-E01",
+        "VINGCARD14-P14-E02",
+        "VINGCARD14-P14-E03",
+        "VINGCARD14-P14-E04",
+        "VINGCARD14-P14-E05",
+        "VINGCARD14-P14-E06",
+        "VINGCARD14-P14-E07"
+      ],
+      "fragment_count": 7,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Visual reading order is the top Advanced Security heading/paragraph, then the middle manipulation section and photograph, then the bottom Online Cyber Threats panel. Native extraction begins with the bottom panel.",
+        "The cloud-based architecture and regular software-update statement belong to Vostio Access Management; the lock is described as compatible with that named platform. These statements do not establish a different software platform or integration.",
+        "The scalability/no-new-hardware statement, anti-tamper statement and cybersecurity statements are attributed source claims, not proof of unconditional security or independently verified guarantees.",
+        "The awkward source wording Vingcard’s Novel’s is not repaired; the curated excerpt begins later in that paragraph."
+      ],
+      "omitted_native_content_notes": [
+        "Running footer/folio omitted.",
+        "The hardware certification standards, optional-cylinder/fire-listing details, and Mortise-variant caption are omitted from curated fragments.",
+        "Absolute manipulation-resistance and hacker-reassurance marketing sentences are omitted; the explicit anti-tamper function, named Vostio compatibility and software-update context remain."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 15,
+      "printed_page_number": 15,
+      "canonical_reference": "PDF page 15",
+      "section_group": "SECURITY_AND_COMPLIANCE",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 727,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "908552a146e9b43fe7e3aa3e1043122bb8c74b3eb48d969e4a293cd40efabe9b",
+      "native_running_folio_occurrences": 2,
+      "source_headlines_en": [
+        "Main Safety- and Security Features"
+      ],
+      "short_english_fragments_en": [
+        "Main Safety- and Security Features",
+        "Advanced Anti-tamper & Encrypted Communication Technology",
+        "Instant response to Security Threats via Real-time Event Alarms (requires Online option)",
+        "Emergency Opening Capabilities with Mechanical Override Cylinder",
+        "Scalable Components Ensuring Future-proof Security"
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P15-E01",
+        "VINGCARD14-P15-E02",
+        "VINGCARD14-P15-E03",
+        "VINGCARD14-P15-E04",
+        "VINGCARD14-P15-E05"
+      ],
+      "fragment_count": 5,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "Visual reading order is the heading, then icon cards by rows from left to right, followed by the handle cutaway and certification panel. Native extraction puts the heading last and lists some cards in column order.",
+        "The suspended hyphen and space in Main Safety- and Security Features are present in the source and retained as displayed; normalization of the comparison string does not constitute a display-text correction.",
+        "The exact requires Online option condition remains inside the same fragment as Instant response ... Real-time Event Alarms.",
+        "The red 1 is a notification-style icon badge next to the event-alarm statement, not an installation step or numbered text heading.",
+        "Emergency opening is explicitly tied to a Mechanical Override Cylinder; it must not be recast as a software or remotely controlled emergency-opening function.",
+        "Future-proof Security and Instant response are manufacturer marketing wording retained without independent validation."
+      ],
+      "omitted_native_content_notes": [
+        "Duplicate running footer/folio omitted.",
+        "The steel-forged-bolt / sawing-resistance material claim and the lower certification/testing paragraph are omitted from curated fragments.",
+        "The standalone badge digit is omitted from excerpts and no invisible functions are inferred from the handle cutaway."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    },
+    {
+      "pdf_page": 16,
+      "printed_page_number": null,
+      "canonical_reference": "PDF page 16",
+      "section_group": "BACK_COVER",
+      "source_text_method": "Curated native PDF excerpts with explicit comparison normalization and visual reading-order review; the original PDF remains authoritative.",
+      "native_text_status": "native_content_text_present",
+      "native_text_char_count": 615,
+      "native_text_char_count_method": "len(PyMuPDF page.get_text(\"text\")); raw page text including native footers, before comparison normalization",
+      "native_page_text_sha256": "0728963d8a64d7003cd65b32f240ba652dc7a791474564be61f22ce29b332d1a",
+      "native_running_folio_occurrences": 0,
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "The ASSA ABLOY Group is the global leader in access solutions.",
+        "Every day we help people feel safe, secure and experience a more open world."
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P16-E01",
+        "VINGCARD14-P16-E02"
+      ],
+      "fragment_count": 2,
+      "excerpt_verification": "case_sensitive_exact_substring_after_documented_comparison_normalization_with_running_folios_excluded",
+      "content_handling": "Vingcard_research_source_only_not_NSP_capability_evidence",
+      "quality_flags": [
+        "The selected corporate paragraph is at the upper left of the back cover; native order places contact blocks before it.",
+        "Both excerpts belong to the ASSA ABLOY Group corporate identity. Global leader is a source self-description, not independent market evidence or a product capability.",
+        "This page has no printed folio; physical PDF page 16 is the reference."
+      ],
+      "omitted_native_content_notes": [
+        "Regional offices, email addresses, telephone numbers and website are omitted.",
+        "Document-version/copyright/footer specification and image-color notices are omitted from curated excerpts; their provenance role was recorded in S01."
+      ],
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "deferred_to_S04"
+    }
+  ],
+  "structured_source_facts": [
+    {
+      "id": "VINGCARD14-CONTENTS",
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "kind": "printed_contents_destinations",
+      "source_order_method": "Entries are sorted by their printed destination page numbers. The visual spread places 6 and 10 on PDF page 2, and 8, 12 and 14 on PDF page 3.",
+      "entries": [
+        {
+          "source_pdf_page": 2,
+          "heading_en": "Sustainability",
+          "printed_destination": "6",
+          "destination_pdf_page": 6
+        },
+        {
+          "source_pdf_page": 3,
+          "heading_en": "Design & style",
+          "printed_destination": "8",
+          "destination_pdf_page": 8
+        },
+        {
+          "source_pdf_page": 2,
+          "heading_en": "Installation",
+          "printed_destination": "10",
+          "destination_pdf_page": 10
+        },
+        {
+          "source_pdf_page": 3,
+          "heading_en": "Operation",
+          "printed_destination": "12",
+          "destination_pdf_page": 12
+        },
+        {
+          "source_pdf_page": 3,
+          "heading_en": "Security & compliance",
+          "printed_destination": "14",
+          "destination_pdf_page": 14
+        }
+      ],
+      "source_specific": true,
+      "NSP_section_mapping_approved": false
+    },
+    {
+      "id": "VINGCARD14-P06-COMPARISON-BADGES",
+      "pdf_pages": [
+        6
+      ],
+      "kind": "numeric_badge_label_association",
+      "source_order_method": "Three circular percentage badges and their captions read left to right in the lower-left column; their comparison bases come from the prose directly above.",
+      "entries": [
+        {
+          "position": "left",
+          "displayed_value_en": "61%",
+          "displayed_caption_en": "reduction in packing volume",
+          "comparison_basis_en": "when compared to other lock options",
+          "basis_named_models": null
+        },
+        {
+          "position": "middle",
+          "displayed_value_en": "35%",
+          "displayed_caption_en": "reduction in weight",
+          "comparison_basis_en": "weighs 35 percent less than older lock models.",
+          "basis_named_models": null
+        },
+        {
+          "position": "right",
+          "displayed_value_en": "30%",
+          "displayed_caption_en": "reduction in packing weight",
+          "comparison_basis_en": "when compared to other lock options",
+          "basis_named_models": null
+        }
+      ],
+      "context_note": "Lock weight, packaging volume and packaging weight are distinct metrics. No denominator, benchmark model list or test method is supplied on this page.",
+      "source_specific": true,
+      "verified_NSP_claim": false,
+      "eligible_for_automatic_S03_feature_import": false
+    },
+    {
+      "id": "VINGCARD14-P10-INSTALLATION-SEQUENCE",
+      "pdf_pages": [
+        10
+      ],
+      "kind": "numbered_photographic_sequence",
+      "source_title_en": "Installation steps",
+      "source_order_method": "The four photos are numbered: top-left 1, top-right 2, bottom-left 3, bottom-right 4. No arrows or written step instructions are asserted.",
+      "steps": [
+        {
+          "step": 1,
+          "pdf_page": 10,
+          "printed_label_en": "1",
+          "position": "top_left",
+          "written_step_instruction_en": null
+        },
+        {
+          "step": 2,
+          "pdf_page": 10,
+          "printed_label_en": "2",
+          "position": "top_right",
+          "written_step_instruction_en": null
+        },
+        {
+          "step": 3,
+          "pdf_page": 10,
+          "printed_label_en": "3",
+          "position": "bottom_left",
+          "written_step_instruction_en": null
+        },
+        {
+          "step": 4,
+          "pdf_page": 10,
+          "printed_label_en": "4",
+          "position": "bottom_right",
+          "written_step_instruction_en": null
+        }
+      ],
+      "source_specific": true,
+      "NSP_workflow_approved": false,
+      "competitor_installation_instructions_generated": false
+    },
+    {
+      "id": "VINGCARD14-NONFEATURE-NUMERIC-LABELS",
+      "pdf_pages": [
+        7,
+        15
+      ],
+      "kind": "decorative_and_interface_numeric_context",
+      "entries": [
+        {
+          "pdf_page": 7,
+          "native_labels_en": [
+            "Al",
+            "13",
+            "26.982"
+          ],
+          "visual_context": "Decorative aluminium periodic-table tile in the recyclable-materials image.",
+          "do_not_interpret_as": [
+            "page number",
+            "software parameter",
+            "NSP performance value"
+          ]
+        },
+        {
+          "pdf_page": 15,
+          "native_labels_en": [
+            "1"
+          ],
+          "visual_context": "Red notification-style badge beside the real-time event-alarm item.",
+          "do_not_interpret_as": [
+            "one-second response time",
+            "performance metric",
+            "section number"
+          ]
+        }
+      ],
+      "source_specific": true,
+      "verified_NSP_claim": false
+    }
+  ],
+  "numeric_and_claim_evidence": [
+    {
+      "pdf_page": 5,
+      "kind": "optional_mechanical_emergency_access",
+      "evidence_en": [
+        "Emergency opening abilities with service unit and optional mechanical cylinder."
+      ],
+      "condition_en": "optional mechanical cylinder",
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "optional مربوط به سیلندر مکانیکی است. این گزینه یا service unit برای NSP ثابت نمی‌شود؛ عنوان کوتاه ص۱۵ نباید اختیاری‌بودن سیلندر را حذف کند.",
+      "related_context_pdf_pages": [
+        14,
+        15
+      ],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        10
+      ],
+      "id": "VINGCARD14-CLAIM-01",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P05-E08"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 6,
+      "kind": "quantitative_product_mass_comparison",
+      "evidence_en": [
+        "Vingcard Novel’s aluminum design weighs 35 percent less than older lock models."
+      ],
+      "condition_en": null,
+      "baseline_en": "older lock models",
+      "qualifier_en": null,
+      "publication_gate": "competitor_quantitative_comparison_source_only_no_NSP_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "۳۵ درصد کاهش وزن طراحی آلومینیومی همین قفل است؛ مدل قدیمی و روش/زمان مقایسه مشخص نیست. با کاهش وزن بسته‌بندی ۳۰ درصد اشتباه نشود.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "baseline_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        6
+      ],
+      "id": "VINGCARD14-CLAIM-02",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P06-E04"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 6,
+      "kind": "quantitative_packaging_volume_comparison",
+      "evidence_en": [
+        "Vingcard Novel’s 61 percent reduction in packing volume"
+      ],
+      "condition_en": null,
+      "baseline_en": "when compared to other lock options.",
+      "qualifier_en": null,
+      "publication_gate": "competitor_quantitative_comparison_source_only_no_NSP_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "۶۱ درصد به حجم بسته‌بندی مربوط است. baseline در ادامهٔ همان جمله آمده؛ محصول مرجع دقیق مشخص نیست. با وزن محصول یا بسته‌بندی جابه‌جا نشود.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "baseline_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        7
+      ],
+      "id": "VINGCARD14-CLAIM-03",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P06-E06"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 6,
+      "kind": "quantitative_packaging_mass_comparison",
+      "evidence_en": [
+        "a 30 percent decrease in packing weight when compared to other lock options."
+      ],
+      "condition_en": null,
+      "baseline_en": "other lock options",
+      "qualifier_en": null,
+      "publication_gate": "competitor_quantitative_comparison_source_only_no_NSP_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "۳۰ درصد به وزن بسته‌بندی مربوط است، نه وزن قفل. روش محاسبه، اندازهٔ بسته یا محصول مرجع دقیق مشخص نشده است.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "baseline_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        7
+      ],
+      "id": "VINGCARD14-CLAIM-04",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P06-E06"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 7,
+      "kind": "optional_wireless_power_implementation",
+      "evidence_en": [
+        "Capable of wirelessly transferring power from the side door frame to the lock"
+      ],
+      "condition_en": "hoteliers now have the option",
+      "baseline_en": null,
+      "qualifier_en": "an innovative and patent pending alternative to powering each lock.",
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "تغذیهٔ بدون باتری یک گزینهٔ همین محصول است، نه حالت الزامی همهٔ نصب‌ها. patent pending وضعیت ادعاشده در نسخهٔ منبع است، نه ثبت نهایی یا وضعیت فعلی پتنت. انتقال توان، Wi-Fi/BLE یا قابلیت نرم‌افزار NSP نیست.",
+      "related_context_pdf_pages": [
+        5,
+        12
+      ],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true,
+        "qualifier_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        11
+      ],
+      "id": "VINGCARD14-CLAIM-05",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P07-E03",
+        "VINGCARD14-P07-E04"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 7,
+      "kind": "quantitative_recyclability_scope",
+      "evidence_en": [
+        "With its 100 percent recyclable lock trim"
+      ],
+      "condition_en": null,
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "competitor_environmental_claim_source_only_no_NSP_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "دامنهٔ ۱۰۰ درصد فقط lock trim است؛ نه کل قفل، مدارها، باتری یا بسته‌بندی. recyclable به معنی ساخته‌شده از مواد recycled نیست.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        14
+      ],
+      "id": "VINGCARD14-CLAIM-06",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P07-E06"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 7,
+      "kind": "recycled_packaging_material_claim",
+      "evidence_en": [
+        "Each lock is delivered using a fully recycled paper box."
+      ],
+      "condition_en": null,
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "competitor_environmental_claim_source_only_no_NSP_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "ادعا دربارهٔ جعبهٔ کاغذی بسته‌بندی است. fully recycled و recyclable lock trim دو گزارهٔ جدا هستند؛ هیچ گواهی یا درصد NSP از آن حاصل نمی‌شود.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        16
+      ],
+      "id": "VINGCARD14-CLAIM-07",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P07-E08"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 8,
+      "kind": "conditional_custom_finish_request",
+      "evidence_en": [
+        "customers can also make requests for custom-tailored finishes depending on their specific needs and order quantity."
+      ],
+      "condition_en": "depending on their specific needs and order quantity.",
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "conditional_design_inspiration_requires_actual_NSP_evidence",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "متن امکان درخواست را مشروط به نیاز و تعداد سفارش بیان می‌کند. حداقل تعداد، زمان تحویل یا پشتیبانی بی‌قید همهٔ رنگ‌ها/پرداخت‌های NSP مشخص نشده است.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        11
+      ],
+      "id": "VINGCARD14-CLAIM-08",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P08-E05"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 8,
+      "kind": "installation_variant_physical_form",
+      "evidence_en": [
+        "Available as a sleek minimalistic lock for new installations as well as a slightly larger version for retrofit project needs"
+      ],
+      "condition_en": "for new installations",
+      "baseline_en": null,
+      "qualifier_en": "a slightly larger version for retrofit project needs",
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "دو زمینهٔ نصب جدید/retrofit و تفاوت اندازه مشخصات محصول رقیب‌اند. مدل یا اندازهٔ NSP از آن ساخته نشود؛ سبک مقایسهٔ دو کاربرد جداگانه قابل مطالعه است.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true,
+        "qualifier_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        15,
+        16
+      ],
+      "id": "VINGCARD14-CLAIM-09",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P08-E03"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 10,
+      "kind": "hardware_component_count",
+      "evidence_en": [
+        "Featuring just one lockcase"
+      ],
+      "condition_en": "for each individual instal-\nlation",
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "یک lockcase برای هر نصب فردیِ این محصول است. شکست سطر instal- / lation در condition عین منبع حفظ شده؛ به تعداد قطعات کل سیستم یا معماری NSP تعمیم داده نشود.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        15
+      ],
+      "id": "VINGCARD14-CLAIM-10",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 10,
+      "kind": "conditional_spare_parts_scope",
+      "evidence_en": [
+        "the only spare parts that may be required include the interior and exterior door handle and lock case."
+      ],
+      "condition_en": "may be required",
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "may و محدودهٔ قطعات همین محصول حفظ شوند؛ گزاره بی‌نیازی از نگهداری، عدم خرابی یا ضمانت تعویض NSP نیست.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        16
+      ],
+      "id": "VINGCARD14-CLAIM-11",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 11,
+      "kind": "licensed_mobile_access_activation",
+      "evidence_en": [
+        "Vingcard Novel comes with all hardware required to activate Mobile Access - no need for additional installation or hardware replacement."
+      ],
+      "condition_en": "By simply activating the feature with a software license agreement",
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "conditional_source_software_research_requires_separate_NSP_evidence",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "وجود سخت‌افزار و فعال‌سازی با قرارداد مجوز دو بخش یک ادعا هستند. Mobile Access لزوماً فعال/رایگان/بدون مجوز نیست. اشاره به عبور از صف پذیرش، مدرک PMS یا check-in کاملاً خودکار نیست.",
+      "related_context_pdf_pages": [
+        5
+      ],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        3
+      ],
+      "id": "VINGCARD14-CLAIM-12",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P11-E03"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 11,
+      "kind": "named_platform_compatibility",
+      "evidence_en": [
+        "Compatible with Apple Wallet."
+      ],
+      "condition_en": null,
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "conditional_source_software_research_requires_separate_NSP_evidence",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "سازگاری مربوط به محصول منبع است؛ نسخهٔ سیستم‌عامل، حساب/پیکربندی یا وضعیت فعلی بررسی نشده. پشتیبانی NSP یا همهٔ تلفن‌ها از آن نتیجه نمی‌شود. شرط مجوزِ همان بند برای Mobile Access جدا حفظ شود.",
+      "related_context_pdf_pages": [
+        5
+      ],
+      "source_match_by_field": {
+        "evidence_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        3
+      ],
+      "id": "VINGCARD14-CLAIM-13",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P11-E05"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 12,
+      "kind": "quantitative_mechanical_endurance",
+      "evidence_en": [
+        "tested to withstand a minimum of 1 million lock cycles."
+      ],
+      "condition_en": null,
+      "baseline_en": null,
+      "qualifier_en": "a minimum of 1 million lock cycles",
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "حداقل یک میلیون چرخهٔ قفل ادعای آزمون منبع است؛ نه تعداد اتاق/کاربر/سال یا آزمون NSP. عدد تصویری 1 000 000 همان ادعاست، نه شاهد عددی مستقل دوم.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "qualifier_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        12
+      ],
+      "id": "VINGCARD14-CLAIM-14",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 12,
+      "kind": "conditional_battery_service_life",
+      "evidence_en": [
+        "two years of operation before replacement is required based on normal usage."
+      ],
+      "condition_en": "properties that install the locks using batteries",
+      "baseline_en": null,
+      "qualifier_en": "based on normal usage.",
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "دو سال فقط برای نصب با باتری و normal usage است. normal usage تعریف عددی ندارد؛ زمان به حالت battery-free، هر نرخ تردد، ضمانت یا عمر باتری NSP تعمیم نیابد.",
+      "related_context_pdf_pages": [
+        5,
+        7
+      ],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true,
+        "qualifier_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        14
+      ],
+      "id": "VINGCARD14-CLAIM-15",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P12-E04"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 12,
+      "kind": "conditional_physical_damage_prevention",
+      "evidence_en": [
+        "allowing the deadbolt to be thrown only when the door is in the frame"
+      ],
+      "condition_en": "only when the door is in the frame",
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "محدودیت مکانیکی deadbolt در زمینهٔ نظافت است؛ حسگر، پروتکل، منطق GRMS یا محرک نرم‌افزاری از آن استنباط نمی‌شود. جلوگیری از هر آسیب برای NSP تأیید نشده است.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        7
+      ],
+      "id": "VINGCARD14-CLAIM-16",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P12-E07"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 13,
+      "kind": "quantitative_operating_environment_extremes",
+      "evidence_en": [
+        "temperatures as high as 70°C (158°F) or as low as -20°C (-4°F)"
+      ],
+      "condition_en": "Suitable for either indoor and outdoor use",
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "چهار عدد، علامت منفی و واحدها عین منبع حفظ شوند. این مشخصات سخت‌افزار فقط evidence محدود خارج feature bank است؛ نقطهٔ اندازه‌گیری، روش آزمون، IP یا محدودهٔ NSP ساخته نشود.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        6
+      ],
+      "id": "VINGCARD14-CLAIM-17",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P13-E02"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 13,
+      "kind": "physical_ingress_resistance_claim",
+      "evidence_en": [
+        "the lock is both waterproof and protected against dust"
+      ],
+      "condition_en": null,
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "توصیف همین قفل است. در این گزیده IP عددی، عمق/مدت آب یا گواهی مشخص ارائه نشده؛ چنین داده‌ای استنتاج نشود.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        6
+      ],
+      "id": "VINGCARD14-CLAIM-18",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 14,
+      "kind": "named_hardware_certifications",
+      "evidence_en": [
+        "Vingcard Novel certifications include ANSI BHMA 156.13, ANSI BHMA 156.25 and EN14846."
+      ],
+      "condition_en": null,
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "شناسه‌ها فقط ادعای منبع‌اند. با ANS BHMA ص۴ بی‌صدا یکسان‌سازی نشوند؛ وجود، دامنه و اعتبار فعلی گواهی مستقلاً بررسی نشده و به NSP منتقل نمی‌شود.",
+      "related_context_pdf_pages": [
+        4,
+        15
+      ],
+      "source_match_by_field": {
+        "evidence_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        9,
+        10
+      ],
+      "id": "VINGCARD14-CLAIM-19",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 14,
+      "kind": "optional_component_certification",
+      "evidence_en": [
+        "EN 1303 certification for its optional mechanical emergency cylinder"
+      ],
+      "condition_en": "optional mechanical emergency cylinder",
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "این ادعای گواهی به سیلندر مکانیکی اضطراری اختیاری مربوط است؛ جزء و شرط از کل قفل جدا نگه داشته شوند.",
+      "related_context_pdf_pages": [
+        5,
+        15
+      ],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        10,
+        11
+      ],
+      "id": "VINGCARD14-CLAIM-20",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 14,
+      "kind": "fire_listing_scope",
+      "evidence_en": [
+        "fire listed (UL & EN) for both wooden and metal doors"
+      ],
+      "condition_en": "for both wooden and metal doors",
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "نقل منبع است؛ زمان مقاومت، ردهٔ آزمون، همهٔ انواع در یا گواهی ایمنی NSP از آن نتیجه نمی‌شود.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        11,
+        12
+      ],
+      "id": "VINGCARD14-CLAIM-21",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 14,
+      "kind": "future_upgrade_without_hardware_replacement_claim",
+      "evidence_en": [
+        "future security enhancements can also be made without requiring the need to purchase and install new hardware."
+      ],
+      "condition_en": null,
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "source_security_marketing_no_NSP_security_or_certification_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "can و موضوع future security enhancements حفظ شوند؛ تضمین نامحدود همهٔ امکانات آینده یا پشتیبانی NSP نیست.",
+      "related_context_pdf_pages": [
+        5,
+        11
+      ],
+      "source_match_by_field": {
+        "evidence_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        12,
+        13
+      ],
+      "id": "VINGCARD14-CLAIM-22",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P14-E02"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 14,
+      "kind": "named_cloud_software_updates",
+      "evidence_en": [
+        "Vostio Access Management is able to receive regular software updates that safeguard against newly discovered vulnerabilities."
+      ],
+      "condition_en": "With its cloud-based design",
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "conditional_source_software_research_requires_separate_NSP_evidence",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "فاعل Vostio Access Management است؛ ارتباط قفل در همان بند compatibility است. regular به معنی automatic/OTA نیست؛ تناوب، روش تحویل و تضمین رفع همهٔ آسیب‌پذیری‌ها ذکر نشده. گواهی امنیت، cloud یا PMS/GRMS متعلق به NSP نیست.",
+      "related_context_pdf_pages": [
+        5
+      ],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        4
+      ],
+      "id": "VINGCARD14-CLAIM-23",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P14-E07"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 15,
+      "kind": "conditional_realtime_security_alarms",
+      "evidence_en": [
+        "Instant response to Security Threats via Real-time Event Alarms (requires Online option)"
+      ],
+      "condition_en": "requires Online option",
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "conditional_source_software_research_requires_separate_NSP_evidence",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "قید فقط به Real-time Event Alarms وصل است. نوع Online، مسیر شبکه یا تأخیر تضمین‌شده مشخص نشده. عدد 1 در badge قرمز، یک ثانیه یا مقدار عملکرد نیست.",
+      "related_context_pdf_pages": [],
+      "source_match_by_field": {
+        "evidence_en": true,
+        "condition_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        8
+      ],
+      "id": "VINGCARD14-CLAIM-24",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P15-E03"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    },
+    {
+      "pdf_page": 15,
+      "kind": "unspecified_security_implementation",
+      "evidence_en": [
+        "Advanced Anti-tamper & Encrypted Communication Technology"
+      ],
+      "condition_en": null,
+      "baseline_en": null,
+      "qualifier_en": null,
+      "publication_gate": "source_security_marketing_no_NSP_security_or_certification_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "context_limits_fa": "الگوریتم، طول کلید، نسخهٔ پروتکل، گواهی رمزنگاری یا تضمین امنیت NSP از عنوان استخراج نشود. شرط Online متعلق به آلارم مقابل است و نباید به همهٔ ویژگی‌های صفحه الصاق شود.",
+      "related_context_pdf_pages": [
+        14
+      ],
+      "source_match_by_field": {
+        "evidence_en": true
+      },
+      "normalized_exact_source_match": true,
+      "native_block_numbers_spanned": [
+        6
+      ],
+      "id": "VINGCARD14-CLAIM-25",
+      "source_evidence_check": "case_sensitive_exact_normalized_page_match",
+      "related_fragment_ids": [
+        "VINGCARD14-P15-E02"
+      ],
+      "related_fragment_scope_note": "Links identify source context for later filtering, not approval or automatic import to S03/NSP features."
+    }
+  ],
+  "source_fragment_context_sets": [
+    {
+      "id": "VINGCARD14-CONTEXT-MOBILE-LICENSE",
+      "pdf_pages": [
+        11
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P11-E02",
+        "VINGCARD14-P11-E03",
+        "VINGCARD14-P11-E04"
+      ],
+      "handling": "Read the no-additional-installation headline and guest-experience excerpt with the software-license activation condition in the same source paragraph.",
+      "claim_ids": [
+        "VINGCARD14-CLAIM-12"
+      ],
+      "approved_NSP_capability": false,
+      "S03_record_created": false
+    },
+    {
+      "id": "VINGCARD14-CONTEXT-BATTERY-OPTIONS",
+      "pdf_pages": [
+        7,
+        12
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P07-E03",
+        "VINGCARD14-P07-E04",
+        "VINGCARD14-P12-E03",
+        "VINGCARD14-P12-E04"
+      ],
+      "handling": "Separate the optional battery-free implementation from the battery-powered two-year claim and its normal-usage condition. Do not generalize either to all installations.",
+      "claim_ids": [
+        "VINGCARD14-CLAIM-05",
+        "VINGCARD14-CLAIM-15"
+      ],
+      "approved_NSP_capability": false,
+      "S03_record_created": false
+    },
+    {
+      "id": "VINGCARD14-CONTEXT-HOUSEKEEPING",
+      "pdf_pages": [
+        12
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P12-E06",
+        "VINGCARD14-P12-E07"
+      ],
+      "handling": "Keep the housekeeping problem and the stated physical deadbolt condition together. No sensor, software trigger or NSP hardware capability is inferred.",
+      "claim_ids": [
+        "VINGCARD14-CLAIM-16"
+      ],
+      "approved_NSP_capability": false,
+      "S03_record_created": false
+    },
+    {
+      "id": "VINGCARD14-CONTEXT-VOSTIO",
+      "pdf_pages": [
+        14
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P14-E06",
+        "VINGCARD14-P14-E07"
+      ],
+      "handling": "The lock is compatible with Vostio Access Management; the cloud design and regular updates are attributed to that named platform. Automatic/OTA delivery is not stated.",
+      "claim_ids": [
+        "VINGCARD14-CLAIM-23"
+      ],
+      "approved_NSP_capability": false,
+      "S03_record_created": false
+    },
+    {
+      "id": "VINGCARD14-CONTEXT-MECHANICAL-OVERRIDE",
+      "pdf_pages": [
+        5,
+        14,
+        15
+      ],
+      "fragment_ids": [
+        "VINGCARD14-P05-E08",
+        "VINGCARD14-P15-E04"
+      ],
+      "handling": "The abbreviated mechanical-override card must be read alongside the source statements identifying the mechanical cylinder as optional. Do not recast it as remote software unlocking.",
+      "claim_ids": [
+        "VINGCARD14-CLAIM-01",
+        "VINGCARD14-CLAIM-20"
+      ],
+      "approved_NSP_capability": false,
+      "S03_record_created": false
+    }
+  ],
+  "source_edition_limitations": {
+    "pdf_page": 16,
+    "evidence_en": "Specifications may change without notice. Image colors in this brochure may differ from actual colors.",
+    "verified_NSP_claim": false,
+    "publication_gate": "source_edition_and_image_limitations_only",
+    "note_fa": "04/2025 نسخهٔ مورد پژوهش است، نه وضعیت فعلی محصول/گواهی؛ رنگ تصویری نمایندهٔ قطعی فینیش واقعی نیست.",
+    "source_evidence_check": "case_sensitive_exact_normalized_page_match"
+  },
+  "manual_visual_supplements": [
+    {
+      "source_method": "Manual reading of rendered page pixels; not native PDF text and not OCR.",
+      "visual_location_en": "Angled phone display in the central photograph.",
+      "included_in_native_excerpt_statistics": false,
+      "native_text_match": false,
+      "interpretation_limit_en": "This is a visible status label in a product-use photograph. It does not identify or verify an application, integration, access workflow or implementation beyond the displayed wording.",
+      "pdf_page": 11,
+      "clearly_legible_labels_en": [
+        "Room access granted"
+      ],
+      "software_product_identity_verified": false,
+      "verification": "Manually read from rendered pixels by the primary reviewer and independent reviewers; not inferred from native text."
+    },
+    {
+      "pdf_page": 15,
+      "source_method": "Manual reading of rendered certification-logo artwork; not native PDF text or OCR.",
+      "visual_location_en": "Certification mark in the lower source panel.",
+      "clearly_legible_labels_en": [
+        "BHMA CERTIFIED"
+      ],
+      "included_in_native_excerpt_statistics": false,
+      "native_text_match": false,
+      "interpretation_limit_en": "This is a manufacturer brochure mark, not an independently verified certificate, a second certification result or permission to use the mark for NSP.",
+      "verification": "Directly observed by the primary reviewer and independent claim reviewer.",
+      "verified_NSP_claim": false
+    }
+  ],
+  "structured_tables_and_diagrams_inventory": [
+    {
+      "id": "VINGCARD14-LAYOUT-01",
+      "source_group": "CONTENTS",
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "source_structure": "Five named topics with destination page numbers across a two-page spread.",
+      "handling": "Match headings to printed destinations; do not read destination numerals as statistics.",
+      "S04_visual_style_family_assigned": false,
+      "image_asset_exported": false,
+      "approved_NSP_capability": false
+    },
+    {
+      "id": "VINGCARD14-LAYOUT-02",
+      "source_group": "OVERVIEW_IMAGE_CARDS",
+      "pdf_pages": [
+        4
+      ],
+      "source_structure": "Overview prose and five product-photo/benefit pairs.",
+      "handling": "Keep picture-caption pairing; do not promote product hardware claims to NSP features.",
+      "S04_visual_style_family_assigned": false,
+      "image_asset_exported": false,
+      "approved_NSP_capability": false
+    },
+    {
+      "id": "VINGCARD14-LAYOUT-03",
+      "source_group": "OVERVIEW_ICON_LIST",
+      "pdf_pages": [
+        5
+      ],
+      "source_structure": "Seven icon-led rows; the first contains more than one compatibility statement.",
+      "handling": "Keep each row and its qualifier together; hardware protocols remain source context.",
+      "S04_visual_style_family_assigned": false,
+      "image_asset_exported": false,
+      "approved_NSP_capability": false
+    },
+    {
+      "id": "VINGCARD14-LAYOUT-04",
+      "source_group": "SUSTAINABILITY_PERCENTAGES",
+      "pdf_pages": [
+        6
+      ],
+      "source_structure": "Three circular percentage badges and two columns of explanatory prose.",
+      "handling": "Preserve each metric and its comparison basis; the three percentages are not interchangeable.",
+      "S04_visual_style_family_assigned": false,
+      "image_asset_exported": false,
+      "approved_NSP_capability": false
+    },
+    {
+      "id": "VINGCARD14-LAYOUT-05",
+      "source_group": "MATERIAL_AND_PACKAGING_CONTEXT",
+      "pdf_pages": [
+        7
+      ],
+      "source_structure": "Two thematic columns, a decorative material tile and a packaging panel.",
+      "handling": "Separate lock-trim recyclability, paper-box material and the optional power arrangement.",
+      "S04_visual_style_family_assigned": false,
+      "image_asset_exported": false,
+      "approved_NSP_capability": false
+    },
+    {
+      "id": "VINGCARD14-LAYOUT-06",
+      "source_group": "FINISH_GALLERY",
+      "pdf_pages": [
+        8
+      ],
+      "source_structure": "Five standard-finish examples and a custom-finish panel.",
+      "handling": "Do not republish a competitor finish/model catalogue; preserve the order-quantity qualifier in the relevant excerpt.",
+      "S04_visual_style_family_assigned": false,
+      "image_asset_exported": false,
+      "approved_NSP_capability": false
+    },
+    {
+      "id": "VINGCARD14-LAYOUT-07",
+      "source_group": "INSTALLATION_PHOTOS",
+      "pdf_pages": [
+        10
+      ],
+      "source_structure": "Four numbered photographs in a 2-by-2 arrangement.",
+      "handling": "Record printed numbers and arrangement only; do not invent written assembly steps.",
+      "S04_visual_style_family_assigned": false,
+      "image_asset_exported": false,
+      "approved_NSP_capability": false
+    },
+    {
+      "id": "VINGCARD14-LAYOUT-08",
+      "source_group": "MOBILE_ACCESS_PHONE",
+      "pdf_pages": [
+        11
+      ],
+      "source_structure": "Photographed phone screen with one clearly legible confirmation label.",
+      "handling": "Keep manual pixel transcription separate from native text and software capability evidence.",
+      "S04_visual_style_family_assigned": false,
+      "image_asset_exported": false,
+      "approved_NSP_capability": false
+    },
+    {
+      "id": "VINGCARD14-LAYOUT-09",
+      "source_group": "OPERATIONAL_CARDS",
+      "pdf_pages": [
+        12
+      ],
+      "source_structure": "Three content panels about durability, power choices and avoidable damage.",
+      "handling": "Keep numeric claims and conditions attached to the correct panel; the battery-free heading does not remove the separate battery-use condition.",
+      "S04_visual_style_family_assigned": false,
+      "image_asset_exported": false,
+      "approved_NSP_capability": false
+    },
+    {
+      "id": "VINGCARD14-LAYOUT-10",
+      "source_group": "ENVIRONMENTAL_BADGES",
+      "pdf_pages": [
+        13
+      ],
+      "source_structure": "Hot/cold images with two paired temperature badges and a middle text block.",
+      "handling": "Retain source signs and units only in restricted audit evidence; no NSP operating specification is created.",
+      "S04_visual_style_family_assigned": false,
+      "image_asset_exported": false,
+      "approved_NSP_capability": false
+    },
+    {
+      "id": "VINGCARD14-LAYOUT-11",
+      "source_group": "SECURITY_AND_CLOUD_BLOCKS",
+      "pdf_pages": [
+        14
+      ],
+      "source_structure": "Certification context, physical tamper protection and a lower cloud-management text panel.",
+      "handling": "Read the upper headline first; the lower cloud panel is first in native extraction order but not in visual reading order.",
+      "S04_visual_style_family_assigned": false,
+      "image_asset_exported": false,
+      "approved_NSP_capability": false
+    },
+    {
+      "id": "VINGCARD14-LAYOUT-12",
+      "source_group": "SECURITY_ICON_GRID",
+      "pdf_pages": [
+        15
+      ],
+      "source_structure": "Five icon-led security items, a product cutaway and a certification panel.",
+      "handling": "Preserve the Online-option qualifier; do not infer a response-time value from the notification badge.",
+      "S04_visual_style_family_assigned": false,
+      "image_asset_exported": false,
+      "approved_NSP_capability": false
+    }
+  ],
+  "restricted_hardware_evidence_handling": [
+    {
+      "category": "product_identity_and_physical_variants",
+      "pdf_pages": [
+        4,
+        5,
+        8,
+        10,
+        14,
+        15
+      ],
+      "S03_constraint_fa": "نام/واریانت فقط provenance است؛ مدل NSP یا فهرست محصولات NSP نشود. سبک نمایش چند گزینه جداگانه قابل مطالعه است."
+    },
+    {
+      "category": "materials_finishes_and_component_shape",
+      "pdf_pages": [
+        6,
+        7,
+        8,
+        15
+      ],
+      "S03_constraint_fa": "جنس، فینیش، اندازه، شکل و فولاد مشخصات رقیب‌اند و فیچر NSP نمی‌شوند. قالب ارائهٔ گزینه‌های طراحی با شرط واقعی می‌تواند جدا بررسی شود."
+    },
+    {
+      "category": "reader_radio_hardware_protocols",
+      "pdf_pages": [
+        5
+      ],
+      "S03_constraint_fa": "پروتکل/سازگاری خوانشگر رقیب به پروتکل یا سازگاری قطعی NSP تبدیل نشود. نوع شبکهٔ Online حدس زده نشود."
+    },
+    {
+      "category": "power_and_battery_specifications",
+      "pdf_pages": [
+        5,
+        7,
+        12
+      ],
+      "S03_constraint_fa": "تغذیهٔ بی‌سیم و عمر باتری فقط شواهد سخت‌افزار منبع‌اند؛ قابلیت نرم‌افزار/GRMS یا عمر باتری NSP نیستند. optional و normal usage حفظ شوند."
+    },
+    {
+      "category": "quantitative_mass_packaging_endurance_temperature",
+      "pdf_pages": [
+        6,
+        12,
+        13
+      ],
+      "S03_constraint_fa": "اعداد فیزیکی/بسته‌بندی/چرخه/دما وارد فیچر NSP نشوند؛ فقط در شواهد با واحد و baseline بمانند. شیوهٔ نمایش می‌تواند سبک S04 باشد."
+    },
+    {
+      "category": "certifications_accessibility_and_patent_status",
+      "pdf_pages": [
+        4,
+        5,
+        7,
+        14,
+        15
+      ],
+      "S03_constraint_fa": "گواهی، ADA و پتنت مخصوص محصول/نسخهٔ منبع‌اند. ANS/ANSI و EN14846/EN 14846 عین محل ثبت شوند؛ هیچ اعتبار فعلی یا گواهی NSP تأیید نشده است."
+    },
+    {
+      "category": "mechanical_protection_fire_and_ingress",
+      "pdf_pages": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "S03_constraint_fa": "عملکرد deadbolt و مقاومت آب/گردوغبار/اره/حریق مشخصات همین قفل‌اند؛ IP، زمان مقاومت آتش، حسگر یا تضمین NSP ساخته نشود."
+    },
+    {
+      "category": "installation_spares_and_customization_limits",
+      "pdf_pages": [
+        8,
+        10
+      ],
+      "S03_constraint_fa": "تعداد اجزا، حدود یدکی و شرط سفارش مشخصات اجرایی منبع‌اند. ایدهٔ کلی سهولت نصب/طراحی از عدد و وعدهٔ سخت‌افزاری جدا بماند؛ S02 انتخاب نهایی S03 انجام نمی‌دهد."
+    }
+  ],
+  "publication_gate_definitions_fa": {
+    "competitor_hardware_spec_source_only_exclude_from_S03_features": "مشخصات/کارکرد/گواهی سخت‌افزار رقیب فقط شاهد منبع؛ به فیچر NSP در S03 منتقل نشود.",
+    "competitor_quantitative_comparison_source_only_no_NSP_claim": "عدد و baseline مقایسهٔ منبع جدا حفظ شود؛ هیچ عملکرد NSP تأیید نشده.",
+    "competitor_environmental_claim_source_only_no_NSP_claim": "ادعای محیط‌زیستی محدود به جزء یا بسته‌بندی منبع؛ ادعای پایداری NSP نیست.",
+    "conditional_design_inspiration_requires_actual_NSP_evidence": "ایدهٔ طراحی همراه شرط؛ گزینهٔ واقعی NSP نیازمند مدرک است.",
+    "conditional_source_software_research_requires_separate_NSP_evidence": "ایده/ادعای نرم‌افزاری محصول نام‌برده با شرط؛ قابلیت یا یکپارچگی NSP نیازمند شاهد مستقل است.",
+    "source_security_marketing_no_NSP_security_or_certification_claim": "عبارت امنیتی/توسعه‌پذیری منبع؛ الگوریتم، تضمین، گواهی یا پشتیبانی NSP نتیجه گرفته نشود."
+  },
+  "independent_reading_order_and_context_notes": [
+    {
+      "pdf_pages": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        12,
+        13,
+        15
+      ],
+      "kind": "covered_or_repeated_running_text",
+      "note_fa": "folio پوشیدهٔ ص۱ و پانوشت‌های تکراری native از محتوا جدا بمانند. تکرار block نشانهٔ صفحه/فیچر مستقل نیست. پانوشت ص۸ کامل و قابل مشاهده است؛ ادعای پوشیدگی قبلی به S02 منتقل نشود."
+    },
+    {
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "kind": "two_page_contents",
+      "note_fa": "۶/۱۰ در ص۲ و ۸/۱۲/۱۴ در ص۳ شمارهٔ مقصد فهرست‌اند، نه آمار. هر عنوان/شرح به مقصد خود متصل شود و ترتیب خام اعداد مبنای ترتیب نهایی نباشد."
+    },
+    {
+      "pdf_pages": [
+        4,
+        5
+      ],
+      "kind": "picture_icon_caption_association",
+      "note_fa": "کارت‌ها/آیکون‌ها جدا بمانند. عنوان اصلی ص۵ دیرتر از فهرست در native آمده؛ bbox/رندر ترتیب عنوان را تعیین می‌کند. optional cylinder، alternative power و Vostio/Apple Wallet در مورد خود حفظ شوند. ANS BHMA ص۴ با ANSI ص۱۴/۱۵ بی‌صدا اصلاح نشود."
+    },
+    {
+      "pdf_pages": [
+        6
+      ],
+      "kind": "three_quantitative_graphic_labels",
+      "note_fa": "ترتیب دیداری پایین ستون چپ: ۶۱٪ حجم بسته‌بندی، ۳۵٪ وزن محصول، ۳۰٪ وزن بسته‌بندی. native اعداد را اول و captionها را آخر می‌آورد. عنوان/مقدمه، ستون چپ مقایسهٔ وزن و ستون راست نصب/نگهداری مستقل بمانند.",
+      "graphic_pairs": [
+        {
+          "value_en": "61%",
+          "caption_en": "reduction in packing volume",
+          "baseline_en": "other lock options"
+        },
+        {
+          "value_en": "35%",
+          "caption_en": "reduction in weight",
+          "baseline_en": "older lock models"
+        },
+        {
+          "value_en": "30%",
+          "caption_en": "reduction in packing weight",
+          "baseline_en": "other lock options"
+        }
+      ]
+    },
+    {
+      "pdf_pages": [
+        7
+      ],
+      "kind": "two_columns_and_packaging_band",
+      "note_fa": "ستون چپ گزینهٔ تغذیه، ستون راست recyclable lock trim و نوار پایین recycled paper box جدا هستند. Al/13/26.982 نقش جدول تناوبی با متن native است؛ شمارهٔ صفحه، معیار بازیافت یا فیچر نرم‌افزار نیست."
+    },
+    {
+      "pdf_pages": [
+        8
+      ],
+      "kind": "finish_gallery_and_conditional_callout",
+      "note_fa": "مقدمه پیش از گالری و کارت زرد سفارشی‌سازی بعد از آن است. captionهای پنج پرداخت از عکس خود در native جدا افتاده‌اند؛ اتصال بصری حفظ شود. شرط نیاز و تعداد سفارش برای درخواست سفارشی‌سازی حذف نشود."
+    },
+    {
+      "pdf_pages": [
+        9
+      ],
+      "kind": "photo_with_native_slogan",
+      "note_fa": "Your style. Spot on. متن native اصلی است؛ صفحه image-only یا blank نیست. پانوشت تکراری به شعار اضافه یا دوباره‌شماری نشود."
+    },
+    {
+      "pdf_pages": [
+        10
+      ],
+      "kind": "numbered_installation_photographs",
+      "note_fa": "شبکهٔ ۲×۲: بالاچپ۱، بالاراست۲، پایین‌چپ۳، پایین‌راست۴. شماره‌ها و Installation steps native‌اند؛ برای هر عکس دستور نصب فنی ساختگی نوشته نشود. شرح One Lockcase در ستون چپ جداست."
+    },
+    {
+      "pdf_pages": [
+        11
+      ],
+      "kind": "heading_photo_body_and_license",
+      "note_fa": "عنوان Mobile Access / Adoption Made Simple بالای عکس ولی آخر native است. تیتر No need ... و بدنهٔ پایین همراه شرط software license agreement خوانده شوند. نوشتهٔ عکس گوشی native نیست و آمار/رکورد جدا می‌خواهد."
+    },
+    {
+      "pdf_pages": [
+        12
+      ],
+      "kind": "three_stacked_operational_cards",
+      "note_fa": "ترتیب دیداری: عنوان/مقدمه، 1 million lock cycles، Battery-free solution، Protecting ... From Avoidable Damage. native بند محافظت را زودتر می‌آورد. دو سال برای نصب باتری‌دار و normal usage است؛ عنوان battery-free نباید دامنهٔ آن را تغییر دهد."
+    },
+    {
+      "pdf_pages": [
+        13
+      ],
+      "kind": "hot_and_cold_graphic_labels",
+      "note_fa": "70°C/158°F روی عکس بالا و -20°C/-4°F روی عکس پایین است؛ بدنهٔ میانی تکرار همان محدوده است. علامت منفی و هر دو واحد حفظ شوند؛ اعداد evidence سخت‌افزار خارج feature bank هستند."
+    },
+    {
+      "pdf_pages": [
+        14
+      ],
+      "kind": "three_security_contexts",
+      "note_fa": "عنوان/گواهی‌ها بالا، دستکاری و عکس Mortise در میانه، کارت Vostio/cloud پایین است؛ native بند Vostio را اول می‌آورد. EN 1303 متعلق به سیلندر اختیاری و regular updates متعلق به Vostio است. عبارت Vingcard’s Novel’s بی‌صدا اصلاح نشود."
+    },
+    {
+      "pdf_pages": [
+        15
+      ],
+      "kind": "icon_list_cutaway_and_certification_band",
+      "note_fa": "عنوان، دو ستون آیکون، تصویر برش محصول و نوار گواهی به ترتیب دیداری جدا شوند. requires Online option فقط به آلارم بالاراست تعلق دارد. عدد native 1 در badge قرمز، پاورقی/مرحله/تأخیر یا تعداد قابلیت نیست. پاراگراف گواهی پایین از فهرست بالا مستقل است."
+    },
+    {
+      "pdf_pages": [
+        16
+      ],
+      "kind": "edition_and_limitations",
+      "note_fa": "04/2025 نسخهٔ سند است؛ copyright سال مستقل ندارد. هشدار تغییر مشخصات و تفاوت رنگ تصویر با محصول حفظ شود؛ وضعیت فعلی محصول از نسخه نتیجه نمی‌شود."
+    }
+  ],
+  "editorial_context_snapshot": {
+    "canonical_structure_file": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "canonical_structure_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "revision": "2.3.0",
+    "systems_in_scope": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ],
+    "content_levels": [
+      "COMPANY",
+      "SOLUTION",
+      "SYSTEM",
+      "PRODUCT"
+    ],
+    "cover_title_fa": "صفحه اول کاتالوگ",
+    "identity_section_id": "IDENTITY_PAGES",
+    "identity_section_title_fa": "صفحات تنفس",
+    "identity_pages_may_be_blank": true,
+    "final_attachment_stage": "Defrag",
+    "historical_reference_note": "Legacy queue vocabulary is preserved; use the current canonical structure at S05. This extraction does not create new NSP systems, subsections or page attachments."
+  },
+  "quality_assurance": {
+    "source_hash_baseline_s01_verified": true,
+    "all_physical_page_numbers_1_to_16_present_once": true,
+    "normalization_for_comparison": [
+      "Unicode NFKC",
+      "Remove discretionary soft hyphen U+00AD and zero-width space U+200B",
+      "Join whitespace after a hard hyphen between word characters while retaining that hyphen",
+      "Collapse remaining whitespace",
+      "Exclude complete running-folio lines from content comparison; preserve the original complete page-text SHA256",
+      "Do not case-fold, alter punctuation, correct source grammar/spelling, or invent missing text"
+    ],
+    "stored_quote_typography": "Excerpts normalize line breaks. Hard hyphens are retained; wrapped forms such as complex-ities remain traceable. A source suspended hyphen such as Safety- and may retain its visible space; comparison normalization is not a source spelling correction.",
+    "exact_quote_match_failures": [],
+    "source_headline_match_failures": [],
+    "claim_evidence_match_failures": [],
+    "manual_transcription_counted_separately_from_native_text": true,
+    "competitor_finish_and_protocol_lists_omitted_from_excerpt_and_exclusion_indexes": true,
+    "all_source_page_renders_reviewed": true,
+    "visually_rechecked_sensitive_pages": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "source_spelling_errors_not_silently_corrected": true,
+    "source_ANS_BHMA_wording_retained_on_page_4": true,
+    "unreadable_image_text_not_guessed": true,
+    "full_editorial_audit_still_due_in_S06": true
+  },
+  "next_stage": "S03 — استخراج فیچر و ترجمه",
+  "next_queue_cursor": {
+    "document_index": 7,
+    "document_id": "14",
+    "step_index": 2,
+    "step_id": "S03"
+  },
+  "next_stage_requires_new_user_N_or_continue": true,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "portfolio_builder_app_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false
+}
