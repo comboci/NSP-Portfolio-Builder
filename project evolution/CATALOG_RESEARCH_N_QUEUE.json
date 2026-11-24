@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 51,
+    "total_pending_steps": 50,
     "completed_new_documents": 10,
     "remaining_new_documents": 8
   },
   "cursor": {
     "document_index": 13,
     "document_id": "50",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -1629,11 +1629,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/50_Zenitel_PAVA_S06_original_source_audit.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "31551a2775f261575270e05b66acda8be710faa2",
+          "notes": "۱۳ صفحه، ۲۷ گزیده و ترجمه، و ۱۰ برش عیناً کنترل شدند. ۹ متن تحریریه‌ای و ۱۰ تصویر فقط برای پژوهش داخلی S07 پذیرفته شدند؛ ۵ متن زمینه‌ای جدا، و قفل بدون سکشن مقصد باقی است. یک ویرایش زبانی فارسی ثبت شد. هیچ گواهی، قابلیت NSP، دستور عملی یا حق نشر تأیید نشد. بانک V13 و برنامه ثابت‌اند."
         },
         {
           "id": "S07",
@@ -1645,7 +1647,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S05"
+      "last_successful_stage": "S06"
     },
     {
       "id": "53",
