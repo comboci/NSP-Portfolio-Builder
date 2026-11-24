@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 72,
+    "total_pending_steps": 71,
     "completed_new_documents": 7,
     "remaining_new_documents": 11
   },
   "cursor": {
     "document_index": 10,
     "document_id": "17",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -1302,11 +1302,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S06_audit.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "85e70fee6de7e17d08e40673fd58c7ede6b9c3b3",
+          "notes": "اصل PDF 01-00150، ۳۴ گزیده با دو موتور، ۲۰ ترجمه و ۷ تصویر ممیزی شدند. بایت‌های رندر دوباره تطبیق دارند؛ ۸ ردیف طرح، ۸ خدمت مستقل و ۲ شرط ستاره‌دار IC5 کنترل شدند. یک اصلاح عنوان فارسی ثبت شد. همهٔ ۲۰ رکورد و ۷ تصویر صرفاً مجاز به ورود پژوهشی‌اند؛ بانک V10 و برنامه ثابت‌اند."
         },
         {
           "id": "S07",
@@ -1318,7 +1320,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S05"
+      "last_successful_stage": "S06"
     },
     {
       "id": "34",
