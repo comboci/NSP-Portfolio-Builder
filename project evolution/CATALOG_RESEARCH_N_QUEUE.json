@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 81,
+    "total_pending_steps": 80,
     "completed_new_documents": 6,
     "remaining_new_documents": 12
   },
   "cursor": {
     "document_index": 9,
     "document_id": "16",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -1164,11 +1164,21 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S04_visual_styles.json",
+            "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_01_cover_guest_hotel.webp",
+            "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_02_intro_lead.webp",
+            "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_02_guest_photo.webp",
+            "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_02_hvac_table.webp",
+            "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_03_matched_device_pair.webp",
+            "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_03_analytics_dashboard.webp",
+            "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_04_platform_summary.webp",
+            "Portfolio Instruction/research/assets/honeywell16/HONEYWELL16_S04_reference_overview.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "726d4e65506c64e9f0b0837c3b3ab3ee3d116bb9",
+          "notes": "۷ برش از چهار صفحهٔ PDF اصلی در ۷ سبک و یک نمای کلیِ خارج از شمار ثبت شدند. برش جدول 01-00139 عنوان، هر پنج ردیف و هر دو پاورقی را دارد؛ فقط کاهش زمان کارکرد HVAC است و به 01-00149 یا NSP نسبت داده نشد. دارایی‌ها صرفاً مرجع طراحی داخلی، بانک V9 و برنامه ثابت‌اند."
         },
         {
           "id": "S05",
@@ -1198,7 +1208,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S03"
+      "last_successful_stage": "S04"
     },
     {
       "id": "17",
