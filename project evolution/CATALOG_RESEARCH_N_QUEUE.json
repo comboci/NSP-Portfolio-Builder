@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 32,
+    "total_pending_steps": 31,
     "completed_new_documents": 13,
     "remaining_new_documents": 5
   },
   "cursor": {
     "document_index": 16,
     "document_id": "57",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -1921,11 +1921,23 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/57_Hager_Zweckbau_S04_visual_styles.json",
+            "Portfolio Instruction/research/assets/hager57/HAGER57_032_reception_texture.webp",
+            "Portfolio Instruction/research/assets/hager57/HAGER57_034_hotel_topic_header.webp",
+            "Portfolio Instruction/research/assets/hager57/HAGER57_045_conference_space.webp",
+            "Portfolio Instruction/research/assets/hager57/HAGER57_048_corridor_light_context.webp",
+            "Portfolio Instruction/research/assets/hager57/HAGER57_060_bedside_integration.webp",
+            "Portfolio Instruction/research/assets/hager57/HAGER57_061_bikini_ambient_detail.webp",
+            "Portfolio Instruction/research/assets/hager57/HAGER57_066_room_lighting_atmosphere.webp",
+            "Portfolio Instruction/research/assets/hager57/HAGER57_068_material_contrast_pair.webp",
+            "Portfolio Instruction/research/assets/hager57/HAGER57_070_finish_samples.webp",
+            "Portfolio Instruction/research/assets/hager57/HAGER57_S04_reference_overview.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "7fc1c42298cf95bbc3e5ec6a28ff19adb3b6ae2a",
+          "notes": "۹ برش در ۹ سبک از ۹ صفحهٔ فصل هتل Hager 19DE0075_01 ثبت شد. نمای کلی فقط برای مرور است و شمارش نمی‌شود. عکس و کپشن Bikini از JAZ جداست؛ نمودار، دستور نصب و فراخوان، نتیجهٔ عملکرد و حق بازنشر وارد نشد. بانک V16، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S05",
@@ -1955,7 +1967,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S03"
+      "last_successful_stage": "S04"
     },
     {
       "id": "58",
