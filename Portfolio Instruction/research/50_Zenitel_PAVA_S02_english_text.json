@@ -1,0 +1,799 @@
+{
+  "schema": "nsp-catalog-research-stage-text-extraction-v1",
+  "stage": "S02",
+  "stage_key": "source_text_extraction",
+  "status": "completed_exact_short_source_excerpts_internal_only",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "08341118e4af7b2f236fd539bdc1d27d2ddc3a58",
+  "document_id": "50",
+  "source_id": "CAT050_ZENITEL_PUBLIC_ADDRESS_VOICE_ALARM",
+  "source_language": "en",
+  "source_pdf": {
+    "company": "Zenitel",
+    "publisher_brand_as_printed": "Zenitel",
+    "publisher_legal_entity_not_confirmed_from_PDF": true,
+    "cover_title": "Public Address and Voice Alarm Solutions",
+    "cover_title_type": "Cover subject label, separate from the marketing headline.",
+    "cover_title_evidence_pdf_page": 1,
+    "cover_headline_lines": [
+      "TRUSTED VOICE.",
+      "UNCOMPROMISING CLARITY."
+    ],
+    "vendor_identity_evidence_physical_pages": [
+      1,
+      13
+    ],
+    "filename": "50_Zenitel_Work C09.4.pdf",
+    "library_path": "/50_Zenitel_Work C09.4.pdf",
+    "file_size_bytes": 11905037,
+    "queued_file_size_bytes": 11905037,
+    "file_size_matches_queue": true,
+    "sha256": "58a85edcc716eda8c97cfa9dd0d6614a2618b90ea3afd348c2b33df6085c25f4",
+    "pdf_pages": 13,
+    "source_original_from_exact_user_Library_match": true,
+    "pdf_format": "PDF 1.6",
+    "pdf_metadata_title": "Zenitel PAVA Brochure_EN.indd",
+    "pdf_creator": "Adobe InDesign 21.3 (Windows)",
+    "pdf_producer": "Adobe PDF Library 18.0",
+    "pdf_creation_date_metadata": "D:20260521101914+02'00'",
+    "pdf_modification_date_metadata": "D:20260521102001+02'00'",
+    "metadata_calendar_date": "2026-05-21",
+    "metadata_not_publication_date": true,
+    "printed_edition_id": null,
+    "printed_document_number": null,
+    "printed_publication_date": null,
+    "printed_revision_not_found": true,
+    "filename_suffix_Work_C09_4_not_printed_edition": true,
+    "edition_fingerprint_basis": "Exact source hash, file bytes, cover and physical pagination; no printed revision/date observed.",
+    "language": "en",
+    "encrypted": false,
+    "source_original_modified": false,
+    "source_original_committed": false,
+    "external_publisher_and_current_offering_not_checked": true
+  },
+  "upstream_inventory": {
+    "path": "Portfolio Instruction/research/50_Zenitel_PAVA_S01_source_inventory.json",
+    "git_blob_sha": "ca8f854480b0ee8d5c730dc6cc7335ba19a25177",
+    "commit_sha": "443440341bd5f5bbe110806a885abd48cbeb9169"
+  },
+  "scope": "Exact brief original English labels and conceptual phrases from 13 physical pages; no full prose, specifications, access or life-safety operating instructions.",
+  "statistics": {
+    "physical_pages_inventory_reverified": 13,
+    "physical_pages_with_short_excerpts": 13,
+    "short_verified_original_English_fragments": 27,
+    "total_short_excerpt_words": 94,
+    "matching_PyMuPDF_and_Poppler_raw": 27,
+    "matching_optional_Poppler_layout": 27,
+    "source_claim_gates": 11,
+    "NSP_capabilities_verified": 0,
+    "life_safety_certifications_verified": 0
+  },
+  "pages": [
+    {
+      "pdf_page": 1,
+      "printed_folio": null,
+      "canonical_reference": "physical PDF page",
+      "section_group": "COVER",
+      "native_page_text_sha256": "fe128af83fa0fd56e950706d410ddd235422b666b4177fbbdecfddb249f50fd2",
+      "fragment_count": 3,
+      "short_source_fragments_en": [
+        "TRUSTED VOICE.",
+        "UNCOMPROMISING CLARITY.",
+        "PUBLIC ADDRESS AND VOICE ALARM SOLUTIONS"
+      ],
+      "fragment_ids": [
+        "ZENITEL50-P01-E01",
+        "ZENITEL50-P01-E02",
+        "ZENITEL50-P01-E03"
+      ],
+      "fragment_audit": [
+        {
+          "id": "ZENITEL50-P01-E01",
+          "source_type": "vendor_marketing_headline",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P01-E02",
+          "source_type": "vendor_marketing_headline",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P01-E03",
+          "source_type": "document_scope_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 2,
+      "printed_folio": 2,
+      "canonical_reference": "physical PDF page",
+      "section_group": "INTRO_CRITICAL_COMMUNICATION",
+      "native_page_text_sha256": "b712ca2dc25b7e69469e3447a98e3a20b47b43ad7e7014a1b7c163b4f34a748b",
+      "fragment_count": 2,
+      "short_source_fragments_en": [
+        "Unified critical Communication",
+        "for safety, security, and operations"
+      ],
+      "fragment_ids": [
+        "ZENITEL50-P02-E01",
+        "ZENITEL50-P02-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "ZENITEL50-P02-E01",
+          "source_type": "vendor_organisation_positioning",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P02-E02",
+          "source_type": "vendor_sector_positioning",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 3,
+      "printed_folio": 3,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PORTFOLIO_RELATIONSHIPS",
+      "native_page_text_sha256": "afb80bd485dfe08aaba32a6dd564f70f92987c0baacdf2ce5932cfaa637b2d30",
+      "fragment_count": 3,
+      "short_source_fragments_en": [
+        "Truly a unique player in the market",
+        "Zenitel Public Address and Voice Alarm Portfolio",
+        "Zenitel Intercom Portfolio"
+      ],
+      "fragment_ids": [
+        "ZENITEL50-P03-E01",
+        "ZENITEL50-P03-E02",
+        "ZENITEL50-P03-E03"
+      ],
+      "fragment_audit": [
+        {
+          "id": "ZENITEL50-P03-E01",
+          "source_type": "vendor_positioning_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P03-E02",
+          "source_type": "vendor_portfolio_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P03-E03",
+          "source_type": "vendor_portfolio_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 4,
+      "printed_folio": 4,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SCALABLE_APPLICATIONS",
+      "native_page_text_sha256": "7da9c43c31f97be4bbd913386780fdfb22780ea4b17087653a7da526f239a19c",
+      "fragment_count": 2,
+      "short_source_fragments_en": [
+        "Scalable PAVA Solutions",
+        "for every application"
+      ],
+      "fragment_ids": [
+        "ZENITEL50-P04-E01",
+        "ZENITEL50-P04-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "ZENITEL50-P04-E01",
+          "source_type": "vendor_scaling_positioning_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P04-E02",
+          "source_type": "vendor_scope_heading_qualifier",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 5,
+      "printed_folio": 5,
+      "canonical_reference": "physical PDF page",
+      "section_group": "AUDIO_CLARITY_POSITIONING",
+      "native_page_text_sha256": "07341e3c0409b0a881cdf361d27beba60a7a5eba8e4e8f6d39890a53c0299728",
+      "fragment_count": 3,
+      "short_source_fragments_en": [
+        "We Enhance Clarity",
+        "Where It Matters Most",
+        "announcements and background music"
+      ],
+      "fragment_ids": [
+        "ZENITEL50-P05-E01",
+        "ZENITEL50-P05-E02",
+        "ZENITEL50-P05-E03"
+      ],
+      "fragment_audit": [
+        {
+          "id": "ZENITEL50-P05-E01",
+          "source_type": "vendor_clarity_positioning_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P05-E02",
+          "source_type": "vendor_clarity_positioning_qualifier",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P05-E03",
+          "source_type": "source_application_context",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 6,
+      "printed_folio": 6,
+      "canonical_reference": "physical PDF page",
+      "section_group": "RESILIENCE_AND_CYBERSECURITY_POSITIONING",
+      "native_page_text_sha256": "999f9ff954c15abbfcb2d886fc7a40e7b65c3dd0293c180ae81ac31eba5307ff",
+      "fragment_count": 2,
+      "short_source_fragments_en": [
+        "Designed for Cybersecurity.",
+        "Built for Resilience."
+      ],
+      "fragment_ids": [
+        "ZENITEL50-P06-E01",
+        "ZENITEL50-P06-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "ZENITEL50-P06-E01",
+          "source_type": "vendor_cybersecurity_positioning_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P06-E02",
+          "source_type": "vendor_resilience_positioning_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 7,
+      "printed_folio": 7,
+      "canonical_reference": "physical PDF page",
+      "section_group": "VIPEDIA_FAMILY_SECTION",
+      "native_page_text_sha256": "90655199b274ceee9af613bf81607cae2b5e5273527de56a90a2045888e4d68b",
+      "fragment_count": 2,
+      "short_source_fragments_en": [
+        "VIPEDIA",
+        "Scalable by design"
+      ],
+      "fragment_ids": [
+        "ZENITEL50-P07-E01",
+        "ZENITEL50-P07-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "ZENITEL50-P07-E01",
+          "source_type": "vendor_family_heading_only",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P07-E02",
+          "source_type": "vendor_family_positioning",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 8,
+      "printed_folio": 8,
+      "canonical_reference": "physical PDF page",
+      "section_group": "INTEGRA_FAMILY_SECTION",
+      "native_page_text_sha256": "c2d2731f062b60c788ac20addca093ca312615cc1b1b94db2faee56c579056a3",
+      "fragment_count": 2,
+      "short_source_fragments_en": [
+        "INTEGRA",
+        "Self-contained Wall Mount Voice Alarm"
+      ],
+      "fragment_ids": [
+        "ZENITEL50-P08-E01",
+        "ZENITEL50-P08-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "ZENITEL50-P08-E01",
+          "source_type": "vendor_family_heading_only",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P08-E02",
+          "source_type": "vendor_family_product_category_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 9,
+      "printed_folio": 9,
+      "canonical_reference": "physical PDF page",
+      "section_group": "VAIA_FAMILY_SECTION",
+      "native_page_text_sha256": "3e6eaf139c60b8b9e5a06007f83bafefd1ae7608fce54084866a43954b7f0725",
+      "fragment_count": 1,
+      "short_source_fragments_en": [
+        "Zenitel VAIA"
+      ],
+      "fragment_ids": [
+        "ZENITEL50-P09-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "ZENITEL50-P09-E01",
+          "source_type": "vendor_family_heading_only",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 10,
+      "printed_folio": 10,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PAVA_PORTFOLIO_COMPARISON",
+      "native_page_text_sha256": "b264d0e92ef5945291c4fd48d5dcd4bbc69f157e067e4dcd33240568fec75f2d",
+      "fragment_count": 1,
+      "short_source_fragments_en": [
+        "Unified PAVA Portfolio"
+      ],
+      "fragment_ids": [
+        "ZENITEL50-P10-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "ZENITEL50-P10-E01",
+          "source_type": "vendor_comparison_presentation_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 11,
+      "printed_folio": 11,
+      "canonical_reference": "physical PDF page",
+      "section_group": "ACCESSORIES_PRESENTATION",
+      "native_page_text_sha256": "688f742ee0e3ebe1d21de43fb5d71002c6329f15d304b52b730956a4beca3acc",
+      "fragment_count": 2,
+      "short_source_fragments_en": [
+        "Wide Range of Accessories",
+        "Cross-compatible microphones and accessories"
+      ],
+      "fragment_ids": [
+        "ZENITEL50-P11-E01",
+        "ZENITEL50-P11-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "ZENITEL50-P11-E01",
+          "source_type": "vendor_accessory_presentation_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P11-E02",
+          "source_type": "vendor_cross_portfolio_positioning",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 12,
+      "printed_folio": 12,
+      "canonical_reference": "physical PDF page",
+      "section_group": "LANDMARK_REFERENCE_LAYOUT",
+      "native_page_text_sha256": "3be7035c0036fdf7ecf1b8f9a9a00e5b51632cd45c09465df5f4d7746f962030",
+      "fragment_count": 2,
+      "short_source_fragments_en": [
+        "THE VOICE BEHIND",
+        "MANY LANDMARKS"
+      ],
+      "fragment_ids": [
+        "ZENITEL50-P12-E01",
+        "ZENITEL50-P12-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "ZENITEL50-P12-E01",
+          "source_type": "vendor_reference_layout_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P12-E02",
+          "source_type": "vendor_reference_layout_qualifier",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 13,
+      "printed_folio": null,
+      "canonical_reference": "physical PDF page",
+      "section_group": "BACK_COVER_SECTORS_AND_VENDOR",
+      "native_page_text_sha256": "5a8c5c313d4b5d9a003d513ee3515de63ed562601b7f96d5df410eedf389653b",
+      "fragment_count": 2,
+      "short_source_fragments_en": [
+        "Proven and tested across diverse environments",
+        "About Zenitel"
+      ],
+      "fragment_ids": [
+        "ZENITEL50-P13-E01",
+        "ZENITEL50-P13-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "ZENITEL50-P13-E01",
+          "source_type": "vendor_validation_positioning_only",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        },
+        {
+          "id": "ZENITEL50-P13-E02",
+          "source_type": "vendor_company_heading_only",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true,
+          "source_excerpt_exact_under_two_engines": true
+        }
+      ]
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "ZENITEL50-CLAIM-01",
+      "kind": "cover_copy_and_scope_not_product_claim",
+      "physical_pdf_pages": [
+        1
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P01-E01",
+        "ZENITEL50-P01-E02",
+        "ZENITEL50-P01-E03"
+      ],
+      "scope_fa": "شعارهای صفحهٔ اول زبان بازاریابی‌اند. عنوان حوزهٔ اعلام عمومی و هشدار صوتی کاربرد یا انطباق هیچ محصولی، به‌ویژه NSP، را ثابت نمی‌کند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true
+    },
+    {
+      "id": "ZENITEL50-CLAIM-02",
+      "kind": "critical_communications_positioning",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P02-E01",
+        "ZENITEL50-P02-E02"
+      ],
+      "scope_fa": "«ارتباطات حیاتی» و سه حوزهٔ ایمنی، امنیت و عملیات دسته‌بندی ناشر است؛ کارکرد، پوشش، تضمین ایمنی یا قابلیت NSP نیست.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true
+    },
+    {
+      "id": "ZENITEL50-CLAIM-03",
+      "kind": "portfolio_taxonomy_not_product_interoperability",
+      "physical_pdf_pages": [
+        3
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P03-E01",
+        "ZENITEL50-P03-E02",
+        "ZENITEL50-P03-E03"
+      ],
+      "scope_fa": "صفت «منحصربه‌فرد» ادعای ارزش‌گذاری ناشر است. معرفی دو خانوادهٔ PAVA و اینترکام به معنای یکسان‌بودن وظایف، سازگاری همهٔ مدل‌ها یا ارایهٔ سامانهٔ مشابه به دست NSP نیست.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true
+    },
+    {
+      "id": "ZENITEL50-CLAIM-04",
+      "kind": "scalability_no_model_or_capacity",
+      "physical_pdf_pages": [
+        4,
+        7
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P04-E01",
+        "ZENITEL50-P04-E02",
+        "ZENITEL50-P07-E01",
+        "ZENITEL50-P07-E02"
+      ],
+      "scope_fa": "مقیاس‌پذیری و «هر کاربرد» زبان معرفی ناشرند. تعداد، توپولوژی، اتصال، دامنهٔ طراحی، مدل و حقانیت فنی NSP استخراج نشده‌اند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true
+    },
+    {
+      "id": "ZENITEL50-CLAIM-05",
+      "kind": "voice_clarity_and_ordinary_audio_not_life_safety",
+      "physical_pdf_pages": [
+        5
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P05-E01",
+        "ZENITEL50-P05-E02",
+        "ZENITEL50-P05-E03"
+      ],
+      "scope_fa": "وضوح صوت در این گزیده ادعای جایگاه‌یابی است؛ نه سنجش فهم‌پذیری، تضمین پوشش، انطباق یا عملکرد اضطراری. پیام‌ها و موسیقی پس‌زمینه به معنای سامانهٔ هشدار مورد تأیید نیستند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true
+    },
+    {
+      "id": "ZENITEL50-CLAIM-06",
+      "kind": "cybersecurity_resilience_marketing_not_test_report",
+      "physical_pdf_pages": [
+        6
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P06-E01",
+        "ZENITEL50-P06-E02"
+      ],
+      "scope_fa": "دو شعار دربارهٔ طراحی با توجه به امنیت سایبری و تاب‌آوری‌اند؛ نه نتیجهٔ تست مستقل، قابلیت دفاعی قطعی، انطباق، یا اطلاعات آسیب‌پذیری و پیکربندی. قابلیت NSP ثابت نشده است.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true
+    },
+    {
+      "id": "ZENITEL50-CLAIM-07",
+      "kind": "life_safety_family_labels_not_certification",
+      "physical_pdf_pages": [
+        8,
+        9
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P08-E01",
+        "ZENITEL50-P08-E02",
+        "ZENITEL50-P09-E01"
+      ],
+      "scope_fa": "نام خانواده‌ها و عنوان نوع محصول ناشر فقط زمینهٔ دیداری‌اند. واژهٔ هشدار صوتی مدرک انطباق، گواهینامه، پذیرش پروژه، کاربرد ایمنی جانی یا پوشش NSP نیست. مشخصات/نصب/تنظیم خارج است.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true
+    },
+    {
+      "id": "ZENITEL50-CLAIM-08",
+      "kind": "portfolio_comparison_title_only",
+      "physical_pdf_pages": [
+        10
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P10-E01"
+      ],
+      "scope_fa": "تنها عنوان چیدمان جدول؛ نه سلول، عدد، استاندارد، برتری محصول یا توصیهٔ خرید و اجرا.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true
+    },
+    {
+      "id": "ZENITEL50-CLAIM-09",
+      "kind": "accessory_heading_and_publisher_claim",
+      "physical_pdf_pages": [
+        11
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P11-E01",
+        "ZENITEL50-P11-E02"
+      ],
+      "scope_fa": "عنوان و عبارت سازگاری صرفاً ادعای ناشرند؛ نه دلالت بر سازگاری همگانی، استاندارد یا دستگاه NSP. اطلاعات مدل و کدهای QR خارج‌اند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true
+    },
+    {
+      "id": "ZENITEL50-CLAIM-10",
+      "kind": "landmark_names_not_portfolio_proof",
+      "physical_pdf_pages": [
+        12
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P12-E01",
+        "ZENITEL50-P12-E02"
+      ],
+      "scope_fa": "این دو خط روش معرفی مراجع ناشرند. فهرست نام‌ها، محدودهٔ نصب، وضعیت جاری، مجوز انتشار یا ارتباط با NSP تأیید نشده‌اند.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true
+    },
+    {
+      "id": "ZENITEL50-CLAIM-11",
+      "kind": "testing_narrative_not_result",
+      "physical_pdf_pages": [
+        13
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P13-E01",
+        "ZENITEL50-P13-E02"
+      ],
+      "scope_fa": "واژگان «آزموده و اثبات‌شده» بدون گزارش آزمون در گزیده فقط ادعای ناشرند؛ حوزهٔ کاربرد، گواهی، تاریخ نسخه/بازار یا توان NSP نتیجه نمی‌شود.",
+      "claim_source": "vendor_brochure_context_not_independent",
+      "verified_NSP_claim": false,
+      "verified_safety_life_safety_compliance_certification_or_security_claim": false,
+      "not_separate_feature_record": true
+    }
+  ],
+  "source_context_groups": [
+    {
+      "id": "ZENITEL50-CTX-PAVA",
+      "physical_pdf_pages": [
+        1,
+        3,
+        5,
+        8
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P01-E03",
+        "ZENITEL50-P03-E02",
+        "ZENITEL50-P03-E03",
+        "ZENITEL50-P05-E03",
+        "ZENITEL50-P08-E02"
+      ],
+      "scope_fa": "اعلام معمول، موسیقی پس‌زمینه، اینترکام و هشدار صوتی اضطراری هم‌ارز یا گواه اجرا برای NSP نیستند."
+    },
+    {
+      "id": "ZENITEL50-CTX-CLAIM-LIMIT",
+      "physical_pdf_pages": [
+        5,
+        6,
+        13
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P05-E01",
+        "ZENITEL50-P06-E01",
+        "ZENITEL50-P06-E02",
+        "ZENITEL50-P13-E01"
+      ],
+      "scope_fa": "پیام دربارهٔ وضوح، امنیت، تاب‌آوری یا آزمودگی، آزمون، معیار، تأییدیه یا نتیجهٔ مستقل نیست."
+    },
+    {
+      "id": "ZENITEL50-CTX-PRESENTATION",
+      "physical_pdf_pages": [
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "S02_fragment_refs": [
+        "ZENITEL50-P04-E01",
+        "ZENITEL50-P07-E01",
+        "ZENITEL50-P08-E01",
+        "ZENITEL50-P09-E01",
+        "ZENITEL50-P10-E01",
+        "ZENITEL50-P11-E01",
+        "ZENITEL50-P12-E01",
+        "ZENITEL50-P12-E02"
+      ],
+      "scope_fa": "نام خانواده و رفتار چیدمان، نه مشخصات، مهندسی، ظرفیت، پیشنهاد خرید یا اجرای فهرست مراجع."
+    }
+  ],
+  "quality_assurance": {
+    "exact_original_pdf_byte_hash_reverified": true,
+    "all_13_physical_page_fingerprints_match_S01": true,
+    "stored_source_retains_source_case_and_punctuation": true,
+    "normalization_for_comparison": "NFKC, remove layout controls by substituting spaces, collapse whitespace.",
+    "no_extraction_mismatch_across_engines": true
+  },
+  "usage_policy": {
+    "normal_announcements_and_music_not_emergency_voice_alarm": true,
+    "no_implication_of_certification_or_NSP_support": true,
+    "no_claim_quantities_or_regulatory_recommendations": true,
+    "no_operational_steps_or_hardware_specs_or_attack_information": true,
+    "model_cells_QR_targets_and_named_landmark_list_excluded": true,
+    "no_public_catalog_reuse_authorized": true,
+    "metadata_date_not_publication_date": true
+  },
+  "next_stage": "S03 — استخراج فیچر و ترجمه",
+  "next_queue_cursor": {
+    "document_index": 13,
+    "document_id": "50",
+    "step_index": 2,
+    "step_id": "S03"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
