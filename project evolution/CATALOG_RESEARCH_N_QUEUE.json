@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 15,
-    "completed_new_documents": 15,
-    "remaining_new_documents": 3
+    "total_pending_steps": 14,
+    "completed_new_documents": 16,
+    "remaining_new_documents": 2
   },
   "cursor": {
-    "document_index": 18,
-    "document_id": "61",
-    "step_index": 6,
-    "step_id": "S07"
+    "document_index": 19,
+    "document_id": "76",
+    "step_index": 0,
+    "step_id": "S01"
   },
   "section_types": [
     {
@@ -2089,7 +2089,7 @@
       "library_path": "/61_Helvar_Work C22.1.pdf",
       "bytes": 1273929,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "in_progress",
+      "status": "completed",
       "prior_import": null,
       "steps": [
         {
@@ -2163,14 +2163,18 @@
         {
           "id": "S07",
           "key": "feature_json_and_commit",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/feature.json",
+            "Portfolio Instruction/feature.js",
+            "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S07_ingest_manifest.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "9c960571819f5e4db542b9092ee43e2b48639820",
+          "notes": "بانک پژوهش V19: ۱۹ کاتالوگ، ۶۵۷ رکورد و ۱۶۳ تصویر منبع. سه متن تحریریهٔ Helvar با یک اصلاح نسبت‌دهی فارسی و دو ارجاع مستقل به طرح اصیل افزوده شدند. عکس، لوگو و متن منبع، نقش Vanpee و نتیجهٔ سنجیده وارد نشد. برنامه و داده‌های قبلی ثابت‌اند."
         }
       ],
-      "last_successful_stage": "S06"
+      "last_successful_stage": "S07"
     },
     {
       "id": "76",
