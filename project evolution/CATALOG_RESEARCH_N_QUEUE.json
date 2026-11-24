@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 49,
+    "total_pending_steps": 48,
     "completed_new_documents": 11,
     "remaining_new_documents": 7
   },
   "cursor": {
     "document_index": 14,
     "document_id": "53",
-    "step_index": 0,
-    "step_id": "S01"
+    "step_index": 1,
+    "step_id": "S02"
   },
   "section_types": [
     {
@@ -1670,17 +1670,19 @@
       "library_path": "/53_Lutron_Work C10.3.pdf",
       "bytes": 837051,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "queued",
+      "status": "in_progress",
       "prior_import": null,
       "steps": [
         {
           "id": "S01",
           "key": "source_inventory",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S01_source_inventory.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "2fe01a3a6c8fb8239ebd8f58cf91f84f95a2562f",
+          "notes": "اصل مطالعهٔ Hotel Xcaret Mexico از Library با هش و ۳ صفحهٔ فیزیکی تأیید شد؛ کد چاپی P/N 368-5134 REV B و حق نشر ۱۲/۲۰۱۸ در ص ۳ است. هر ۳ صفحه دیداری کنترل شدند؛ فقط شاخص منبع، بدون ادعا یا دارایی. بانک V14، برنامه و سکشن‌ها ثابت‌اند."
         },
         {
           "id": "S02",
@@ -1736,7 +1738,8 @@
           "commit_sha": null,
           "notes": null
         }
-      ]
+      ],
+      "last_successful_stage": "S01"
     },
     {
       "id": "54",
