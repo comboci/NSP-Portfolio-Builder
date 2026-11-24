@@ -1,0 +1,1367 @@
+{
+  "schema": "nsp-catalog-research-s02-source-text-evidence-v1",
+  "stage": "S02",
+  "stage_key": "source_text_extraction",
+  "status": "completed_exact_bounded_German_extraction_verified",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "00363f0f9bed914dc4158d45104f1dc00e0b6dfa",
+  "document_id": "57",
+  "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+  "source_language": "de",
+  "source_pdf": {
+    "filename": "57_Hager_Work C15.1.pdf",
+    "title": "Hager im Zweckbau",
+    "size_bytes": 60546700,
+    "sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+    "pdf_pages": 172,
+    "printed_document_code": "19DE0075_01",
+    "printed_code_physical_pdf_page": 172,
+    "printed_edition_date_not_verified": true
+  },
+  "upstream_inventory": {
+    "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S01_source_inventory.json",
+    "git_blob_sha": "a489cd42cd56523eb8ccda538149a43af511e94a",
+    "commit_sha": "4e0a33e3e30c76cd6a38d59e83519e45d8e3ab35"
+  },
+  "scope": {
+    "hotel_physical_pdf_page_range": [
+      32,
+      71
+    ],
+    "identity_navigation_imprint_context_only_physical_pages": [
+      1,
+      10,
+      172
+    ],
+    "out_of_scope_office_retail_healthcare_and_contact_directory": true,
+    "not_transcription_of_172_pages": true,
+    "visual_extraction_in_S04_only": true,
+    "excluded_fa": "جزئیات پروتکل و شیوهٔ نصب، گزینه‌های اجرایی سیم‌بندی و زمین، اقدام ایمنی و فراخوان اضطراری، نتایج کمّی/تبلیغی و استنباط مقرراتی خارج از گزیده‌اند."
+  },
+  "statistics": {
+    "physical_source_pages": 172,
+    "hotel_pages_screened_and_hashed": 40,
+    "selected_hotel_pages": 26,
+    "hotel_pages_without_retained_excerpt": 14,
+    "selected_identity_navigation_imprint_pages": 3,
+    "physical_pages_with_retained_excerpt": 29,
+    "physical_pages_rechecked_against_S01": 43,
+    "exact_short_German_excerpts": 31,
+    "source_excerpt_whitespace_tokens": 101,
+    "matched_PyMuPDF_and_Poppler_raw": 31,
+    "matched_optional_Poppler_layout": 31,
+    "layout_exceptions": 0,
+    "NSP_capability_verified": 0
+  },
+  "coverage": [
+    {
+      "physical_pdf_page": 1,
+      "printed_folio": null,
+      "section_group": "cover",
+      "hotel_subsection": null,
+      "native_text_sha256": "a62c8ffabff539f11f589e434b557bc0507782dec36b89f046eaeff636ae6a4d",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_identity_navigation_or_imprint_only",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 10,
+      "printed_folio": 10,
+      "section_group": "printed_contents",
+      "hotel_subsection": null,
+      "native_text_sha256": "730b5cfef8ff91230b2407ec13a08e57dd6d49a506aa9bc62d003e4682487a6f",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_identity_navigation_or_imprint_only",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 32,
+      "printed_folio": 32,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_chapter_open",
+      "native_text_sha256": "37aec07b52a4a34fc1918d80303928d1da8306df5ff6c4da0f88cfc981cc355c",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 33,
+      "printed_folio": 33,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_chapter_open",
+      "native_text_sha256": "8555ccec65636e83a9add5f228d80f2f1fd760f202d2c3399f04ec044e0d8b2a",
+      "retained_excerpt_count": 2,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 34,
+      "printed_folio": 34,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_scope_overview",
+      "native_text_sha256": "084382a455f0d9596e6c6b543759102bff2621e6eb8810d58cd9c7825f5f0cd2",
+      "retained_excerpt_count": 2,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 35,
+      "printed_folio": 35,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_scope_overview",
+      "native_text_sha256": "288eaa4673968f5182f86a6cbff17f1537801cf2eb8362976e7f6081570d8408",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 36,
+      "printed_folio": 36,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_power_and_energy",
+      "native_text_sha256": "2a4344d6aee1b35d74894f3434ddffb91119cf8740911a85269719f6c0a95176",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "تفکیک گزینه‌های تابلو و جزئیات فنی؛ شکل‌های سازنده برای استخراج کوتاه اولویت ندارند."
+    },
+    {
+      "physical_pdf_page": 37,
+      "printed_folio": 37,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_power_and_energy",
+      "native_text_sha256": "6587515d517ff4a5111ec55a824aadd9f7779203084280032272626af310462f",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "ابعاد و ظرفیت تجهیزات؛ خارج از یادداشت کوتاه."
+    },
+    {
+      "physical_pdf_page": 38,
+      "printed_folio": 38,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_power_and_energy",
+      "native_text_sha256": "bc2071a320a5c6b84833e3c42452ef4e07881fde1c720dd54e042d1c952c113d",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 39,
+      "printed_folio": 39,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_power_and_energy",
+      "native_text_sha256": "4ac083fdc51c24169a144f02faee4aae70fb4ff8f7c8762a09720b1c6b2b9d05",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "رابط‌ها، اعداد فنی و ادعاهای ورودی ناشر؛ خارج از گزیدهٔ غیرعملیاتی."
+    },
+    {
+      "physical_pdf_page": 40,
+      "printed_folio": 40,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_power_and_energy",
+      "native_text_sha256": "7b8cf57125ab74ae2eb5778f0355e69d3887c07ba2d148b8e1f980de29039da7",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 41,
+      "printed_folio": 41,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_power_and_energy",
+      "native_text_sha256": "ccfa5160eb4a07eee97e2574433afc81543f60b79bee4507974f94b4a0a751af",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "داده‌ها و ابعاد مدل تابلو؛ خارج از دامنه."
+    },
+    {
+      "physical_pdf_page": 42,
+      "printed_folio": 42,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_power_and_energy",
+      "native_text_sha256": "cb4fec51908c5a0c302cac475d15d662713a2c3e70173153e4dd2e23d37be95b",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 43,
+      "printed_folio": 43,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_power_and_energy",
+      "native_text_sha256": "44cb730c420480a0477b505ae68af508fb90f96cf0ec54c6ad16949dd427f13a",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "فقط شمارهٔ صفحه در متن بومی؛ نقل‌قول متنی ندارد."
+    },
+    {
+      "physical_pdf_page": 44,
+      "printed_folio": 44,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_cable_routing",
+      "native_text_sha256": "4006f6e4f3abddf3c761673fa765ac8e585f5b2dbb6c5436970a8110d4cf9294",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 45,
+      "printed_folio": 45,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_cable_routing",
+      "native_text_sha256": "f3f0341fdbe28b5cc823d92524d8cbd0b67a64f1cb4e5c0b90366a5564d63d58",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 46,
+      "printed_folio": 46,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_cable_routing",
+      "native_text_sha256": "7eb16013cd2d8051c9eb6b5cb45e941ec2305d0e5ce8a9e217731674449cbb55",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 47,
+      "printed_folio": 47,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_cable_routing",
+      "native_text_sha256": "6506db860a5a527faddeec81865775418acf109d6a9f767d2d689a81645119bd",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "ترکیب نصب، ادعای بار آتش و فن برق؛ خارج از دامنه و بدون انتساب مقررات."
+    },
+    {
+      "physical_pdf_page": 48,
+      "printed_folio": 48,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_cable_routing",
+      "native_text_sha256": "d89bf221d6e44525b6f41f0fbe9de2573755efd2bab5f1245bf9c2bd0a683974",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 49,
+      "printed_folio": 49,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_cable_routing",
+      "native_text_sha256": "b5f508bad37e313a14176829c6b6249a7f68ff1c1d2cb3a3b60ce9b314e1d985",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "جزئیات مونتاژ و راهنمای کاربرد؛ خارج از دامنه."
+    },
+    {
+      "physical_pdf_page": 50,
+      "printed_folio": 50,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_room_connection",
+      "native_text_sha256": "2dd8b20aab8d4dc5474a2d483ebd4f56e8d92f106b01e7c0cfa55de5bb57598c",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 51,
+      "printed_folio": 51,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_room_connection",
+      "native_text_sha256": "96ccf27bb81ffed90278ac75178e14591dd60c1702fd5df51291d55f4f5a2add",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "زمین‌کردن و جزئیات نصب/عرضه؛ خارج از گزیدهٔ غیرعملیاتی."
+    },
+    {
+      "physical_pdf_page": 52,
+      "printed_folio": 52,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "2fe8b9a67bb7fb4d00346b5376769f63e576f4c566b9702b4efcfe80031daa79",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 53,
+      "printed_folio": 53,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "1e8aa1bf8cc9795bfbdd51014081c6e81768e6c508d5dce0544350d153be1850",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 54,
+      "printed_folio": 54,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "9851cf3d86f07438a7f71e6dfea9666dcf6e8d7ecfaeacd447e5ffaeb75071c4",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "تیتر هم‌پوشان؛ شاهد منتخب موضوع رسانه از صفحهٔ ۵۵ نگه داشته شده است."
+    },
+    {
+      "physical_pdf_page": 55,
+      "printed_folio": 55,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "63c7bbbcbc6f557696f313813e4fd8bd679711b29dce92d8f7650e716bf00855",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 56,
+      "printed_folio": 56,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "06c0a2cd996e0284bf7891bb61f91fc0187392a63bb31998a54c70ca968139e2",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 57,
+      "printed_folio": 57,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "92e5b06689599f8dfea8f3c6fc9cba10c30cbcc59abf8553df672cda32b638a6",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "نقل نظر برند/مدل و زمینهٔ روشنایی؛ برای جلوگیری از تکرار، گزیده‌ای انتخاب نشد."
+    },
+    {
+      "physical_pdf_page": 58,
+      "printed_folio": 58,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "d4b12b4ce93b22e1d9a4804b60a891c41e3c6d7ba189d5aee3dd1b697bf46601",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 59,
+      "printed_folio": 59,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "30d2fe26c93184ed0d509610d76a5b4863567c9725549aa789b94ac6c2165e7d",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "شناسه، ظرفیت/عدد و مدل‌های تشخیص حضور خارج از دامنه."
+    },
+    {
+      "physical_pdf_page": 60,
+      "printed_folio": 60,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "c109886ba2dbbe10f0f0c58dc77b0f1fd880db7735163a3326d3b535a77bf21a",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 61,
+      "printed_folio": 61,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "e3613ba5551be054ec9d17a41d6d3d7b6823ca38c53774b878ded7c11585fabd",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 62,
+      "printed_folio": 62,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "b40a9ef20f7d25c0e31ac74a353c69423b4e101eb222461ff3ca97a50f164220",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 63,
+      "printed_folio": 63,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "fbbcd6fe5c2a5d271ef1856a50e2374321d6529f39b268c282aa2075587446a0",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "عمق نصب و ادعای مقایسه‌ای بازار خارج از دامنه."
+    },
+    {
+      "physical_pdf_page": 64,
+      "printed_folio": 64,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "08341ab91d3f37972625dc6aa9f1f0b89686ebb184c95b2cb551d25bf27f3b59",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "نام مجموعه تماس اضطراری و تصویر دسترس‌پذیری؛ متن ایمنی به‌قصد این پژوهش برداشت نشد."
+    },
+    {
+      "physical_pdf_page": 65,
+      "printed_folio": 65,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_text_sha256": "85d2c90136d60c8c0086e34179b37ec75c383e8696e078329d28b7862ec9885f",
+      "retained_excerpt_count": 0,
+      "review_status": "hotel_page_reviewed_no_excerpt_retained",
+      "no_retained_excerpt_reason_fa": "عملکرد و تجهیزات فراخوان اضطراری؛ بدون استخراج یا نتیجهٔ مقرراتی."
+    },
+    {
+      "physical_pdf_page": 66,
+      "printed_folio": 66,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_building_control",
+      "native_text_sha256": "e68b7cd8299e2eaa94166cd19fb18a7fab6d118836a07dc01a841640fb566962",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 67,
+      "printed_folio": 67,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_building_control",
+      "native_text_sha256": "0de80f2c2506853d8157c0809400c67d1d5f7f4a26e861b6ee57ecd73809d2a8",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 68,
+      "printed_folio": 68,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_building_control",
+      "native_text_sha256": "d2cb340f60194523229dfbb714b43341ebea058a6651ddf1a1a9e55cb9d2f443",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 69,
+      "printed_folio": 69,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_building_control",
+      "native_text_sha256": "afa066b728bf2ffe1547f5e53cc510a2769cd1297b709ab7af364fea4e0a57cf",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 70,
+      "printed_folio": 70,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_custom_design",
+      "native_text_sha256": "703d88c81e39d3ef103481d75dfa28deb2c7b0267ad9eb7f20259317d05e5d7b",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 71,
+      "printed_folio": 71,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_custom_design",
+      "native_text_sha256": "35bc7e87d5fdb571f6a0e6a762b384cc1e219dd59e3c6d3aa79eb9ebcf5106b2",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_hotel_page_excerpt",
+      "no_retained_excerpt_reason_fa": null
+    },
+    {
+      "physical_pdf_page": 172,
+      "printed_folio": null,
+      "section_group": "back_cover_imprint",
+      "hotel_subsection": null,
+      "native_text_sha256": "9cf79de87c4d229c57062d3310205fb994955985635364959030087425d16812",
+      "retained_excerpt_count": 1,
+      "review_status": "selected_identity_navigation_or_imprint_only",
+      "no_retained_excerpt_reason_fa": null
+    }
+  ],
+  "pages": [
+    {
+      "pdf_page": 1,
+      "printed_folio": null,
+      "section_group": "cover",
+      "hotel_subsection": null,
+      "native_page_text_sha256": "a62c8ffabff539f11f589e434b557bc0507782dec36b89f046eaeff636ae6a4d",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Hager im Zweckbau"
+      ],
+      "fragment_ids": [
+        "HAGER57-P001-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P001-D01",
+          "source_type": "source_identity",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 10,
+      "printed_folio": 10,
+      "section_group": "printed_contents",
+      "hotel_subsection": null,
+      "native_page_text_sha256": "730b5cfef8ff91230b2407ec13a08e57dd6d49a506aa9bc62d003e4682487a6f",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Inhalt"
+      ],
+      "fragment_ids": [
+        "HAGER57-P010-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P010-D01",
+          "source_type": "source_navigation",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 32,
+      "printed_folio": 32,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_chapter_open",
+      "native_page_text_sha256": "37aec07b52a4a34fc1918d80303928d1da8306df5ff6c4da0f88cfc981cc355c",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Hotel"
+      ],
+      "fragment_ids": [
+        "HAGER57-P032-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P032-D01",
+          "source_type": "source_hotel_chapter_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 33,
+      "printed_folio": 33,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_chapter_open",
+      "native_page_text_sha256": "8555ccec65636e83a9add5f228d80f2f1fd760f202d2c3399f04ec044e0d8b2a",
+      "fragment_count": 2,
+      "short_source_fragments_de": [
+        "dass der Gast sich wohlfühlt.",
+        "Cord Glantz, GEPLAN Design"
+      ],
+      "fragment_ids": [
+        "HAGER57-P033-D01",
+        "HAGER57-P033-D02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P033-D01",
+          "source_type": "source_design_pro_quote",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HAGER57-P033-D02",
+          "source_type": "source_quote_attribution",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 34,
+      "printed_folio": 34,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_scope_overview",
+      "native_page_text_sha256": "084382a455f0d9596e6c6b543759102bff2621e6eb8810d58cd9c7825f5f0cd2",
+      "fragment_count": 2,
+      "short_source_fragments_de": [
+        "Kompetenzfelder im Hotel",
+        "Energieverteilung und Energiemanagement"
+      ],
+      "fragment_ids": [
+        "HAGER57-P034-D01",
+        "HAGER57-P034-D02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P034-D01",
+          "source_type": "source_hotel_scope_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HAGER57-P034-D02",
+          "source_type": "source_vendor_hotel_topic",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 35,
+      "printed_folio": 35,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_scope_overview",
+      "native_page_text_sha256": "288eaa4673968f5182f86a6cbff17f1537801cf2eb8362976e7f6081570d8408",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Schalterprogramme und Gebäudesteuerung"
+      ],
+      "fragment_ids": [
+        "HAGER57-P035-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P035-D01",
+          "source_type": "source_vendor_hotel_topic",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 38,
+      "printed_folio": 38,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_power_and_energy",
+      "native_page_text_sha256": "bc2071a320a5c6b84833e3c42452ef4e07881fde1c720dd54e042d1c952c113d",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Intelligent messen und abrechnen"
+      ],
+      "fragment_ids": [
+        "HAGER57-P038-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P038-D01",
+          "source_type": "source_vendor_hotel_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 40,
+      "printed_folio": 40,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_power_and_energy",
+      "native_page_text_sha256": "7b8cf57125ab74ae2eb5778f0355e69d3887c07ba2d148b8e1f980de29039da7",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Feldverteiler für Flur und Etage"
+      ],
+      "fragment_ids": [
+        "HAGER57-P040-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P040-D01",
+          "source_type": "source_vendor_hotel_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 42,
+      "printed_folio": 42,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_power_and_energy",
+      "native_page_text_sha256": "cb4fec51908c5a0c302cac475d15d662713a2c3e70173153e4dd2e23d37be95b",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "volta und volta.hybrid"
+      ],
+      "fragment_ids": [
+        "HAGER57-P042-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P042-D01",
+          "source_type": "source_vendor_hotel_product_family",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 44,
+      "printed_folio": 44,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_cable_routing",
+      "native_page_text_sha256": "4006f6e4f3abddf3c761673fa765ac8e585f5b2dbb6c5436970a8110d4cf9294",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Unterflursysteme"
+      ],
+      "fragment_ids": [
+        "HAGER57-P044-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P044-D01",
+          "source_type": "source_vendor_hotel_product_topic",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 45,
+      "printed_folio": 45,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_cable_routing",
+      "native_page_text_sha256": "f3f0341fdbe28b5cc823d92524d8cbd0b67a64f1cb4e5c0b90366a5564d63d58",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Flexibler Zugriff"
+      ],
+      "fragment_ids": [
+        "HAGER57-P045-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P045-D01",
+          "source_type": "source_vendor_hotel_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 46,
+      "printed_folio": 46,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_cable_routing",
+      "native_page_text_sha256": "7eb16013cd2d8051c9eb6b5cb45e941ec2305d0e5ce8a9e217731674449cbb55",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Versorgungs- und Einbaueinheiten"
+      ],
+      "fragment_ids": [
+        "HAGER57-P046-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P046-D01",
+          "source_type": "source_vendor_hotel_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 48,
+      "printed_folio": 48,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_cable_routing",
+      "native_page_text_sha256": "d89bf221d6e44525b6f41f0fbe9de2573755efd2bab5f1245bf9c2bd0a683974",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "LED-Sockelleisten für Korridor und Zimmer"
+      ],
+      "fragment_ids": [
+        "HAGER57-P048-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P048-D01",
+          "source_type": "source_vendor_hotel_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 50,
+      "printed_folio": 50,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_room_connection",
+      "native_page_text_sha256": "2dd8b20aab8d4dc5474a2d483ebd4f56e8d92f106b01e7c0cfa55de5bb57598c",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "tehalit.DAP | DEP"
+      ],
+      "fragment_ids": [
+        "HAGER57-P050-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P050-D01",
+          "source_type": "source_vendor_hotel_product_family",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 52,
+      "printed_folio": 52,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_page_text_sha256": "2fe8b9a67bb7fb4d00346b5376769f63e576f4c566b9702b4efcfe80031daa79",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Einchecken und abschalten"
+      ],
+      "fragment_ids": [
+        "HAGER57-P052-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P052-D01",
+          "source_type": "source_vendor_hotel_marketing_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 53,
+      "printed_folio": 53,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_page_text_sha256": "1e8aa1bf8cc9795bfbdd51014081c6e81768e6c508d5dce0544350d153be1850",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Rund oder eckig – Sie haben die Wahl"
+      ],
+      "fragment_ids": [
+        "HAGER57-P053-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P053-D01",
+          "source_type": "source_vendor_hotel_marketing_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 55,
+      "printed_folio": 55,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_page_text_sha256": "63c7bbbcbc6f557696f313813e4fd8bd679711b29dce92d8f7650e716bf00855",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Multimediaanschlüsse für jeden Anspruch"
+      ],
+      "fragment_ids": [
+        "HAGER57-P055-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P055-D01",
+          "source_type": "source_vendor_hotel_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 56,
+      "printed_folio": 56,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_page_text_sha256": "06c0a2cd996e0284bf7891bb61f91fc0187392a63bb31998a54c70ca968139e2",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Individuell schalten und gestalten"
+      ],
+      "fragment_ids": [
+        "HAGER57-P056-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P056-D01",
+          "source_type": "source_vendor_hotel_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 58,
+      "printed_folio": 58,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_page_text_sha256": "d4b12b4ce93b22e1d9a4804b60a891c41e3c6d7ba189d5aee3dd1b697bf46601",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Mit Präsenzmeldern"
+      ],
+      "fragment_ids": [
+        "HAGER57-P058-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P058-D01",
+          "source_type": "source_vendor_hotel_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 60,
+      "printed_folio": 60,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_page_text_sha256": "c109886ba2dbbe10f0f0c58dc77b0f1fd880db7735163a3326d3b535a77bf21a",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Flexibel kombiniert"
+      ],
+      "fragment_ids": [
+        "HAGER57-P060-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P060-D01",
+          "source_type": "source_vendor_hotel_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 61,
+      "printed_folio": 61,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_page_text_sha256": "e3613ba5551be054ec9d17a41d6d3d7b6823ca38c53774b878ded7c11585fabd",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Bikini Hotel, Berlin"
+      ],
+      "fragment_ids": [
+        "HAGER57-P061-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P061-D01",
+          "source_type": "source_hotel_case_caption",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 62,
+      "printed_folio": 62,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_switch_ranges",
+      "native_page_text_sha256": "b40a9ef20f7d25c0e31ac74a353c69423b4e101eb222461ff3ca97a50f164220",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Berker Integro Flow"
+      ],
+      "fragment_ids": [
+        "HAGER57-P062-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P062-D01",
+          "source_type": "source_vendor_hotel_product_family",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 66,
+      "printed_folio": 66,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_building_control",
+      "native_page_text_sha256": "e68b7cd8299e2eaa94166cd19fb18a7fab6d118836a07dc01a841640fb566962",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Intelligent steuern mit KNX"
+      ],
+      "fragment_ids": [
+        "HAGER57-P066-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P066-D01",
+          "source_type": "source_vendor_hotel_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 67,
+      "printed_folio": 67,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_building_control",
+      "native_page_text_sha256": "0de80f2c2506853d8157c0809400c67d1d5f7f4a26e861b6ee57ecd73809d2a8",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "KNX-Raumcontroller"
+      ],
+      "fragment_ids": [
+        "HAGER57-P067-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P067-D01",
+          "source_type": "source_vendor_hotel_product_family",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 68,
+      "printed_folio": 68,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_building_control",
+      "native_page_text_sha256": "d2cb340f60194523229dfbb714b43341ebea058a6651ddf1a1a9e55cb9d2f443",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Von gediegen bis modern"
+      ],
+      "fragment_ids": [
+        "HAGER57-P068-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P068-D01",
+          "source_type": "source_vendor_hotel_design_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 69,
+      "printed_folio": 69,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_building_control",
+      "native_page_text_sha256": "afa066b728bf2ffe1547f5e53cc510a2769cd1297b709ab7af364fea4e0a57cf",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Von klassisch bis individuell"
+      ],
+      "fragment_ids": [
+        "HAGER57-P069-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P069-D01",
+          "source_type": "source_vendor_hotel_design_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 70,
+      "printed_folio": 70,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_custom_design",
+      "native_page_text_sha256": "703d88c81e39d3ef103481d75dfa28deb2c7b0267ad9eb7f20259317d05e5d7b",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Hager Manufaktur"
+      ],
+      "fragment_ids": [
+        "HAGER57-P070-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P070-D01",
+          "source_type": "source_vendor_hotel_custom_design_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 71,
+      "printed_folio": 71,
+      "section_group": "hotel",
+      "hotel_subsection": "hotel_custom_design",
+      "native_page_text_sha256": "35bc7e87d5fdb571f6a0e6a762b384cc1e219dd59e3c6d3aa79eb9ebcf5106b2",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "Standard war gestern – Maßanzug ist heute"
+      ],
+      "fragment_ids": [
+        "HAGER57-P071-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P071-D01",
+          "source_type": "source_vendor_hotel_marketing_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 172,
+      "printed_folio": null,
+      "section_group": "back_cover_imprint",
+      "hotel_subsection": null,
+      "native_page_text_sha256": "9cf79de87c4d229c57062d3310205fb994955985635364959030087425d16812",
+      "fragment_count": 1,
+      "short_source_fragments_de": [
+        "19DE0075_01"
+      ],
+      "fragment_ids": [
+        "HAGER57-P172-D01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "HAGER57-P172-D01",
+          "source_type": "source_imprint_document_code",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "HAGER57-CLAIM-01",
+      "kind": "identity_and_hotel_only",
+      "physical_pdf_pages": [
+        1,
+        10,
+        32,
+        172
+      ],
+      "fragment_refs": [
+        "HAGER57-P001-D01",
+        "HAGER57-P010-D01",
+        "HAGER57-P032-D01",
+        "HAGER57-P172-D01"
+      ],
+      "scope_fa": "سند آلمانی با شناسهٔ چاپی 19DE0075_01؛ نام فصل، فهرست و کد برای ردیابی منبع‌اند. نسخهٔ کنونی، تاریخ چاپ و قابلیت NSP نتیجه‌گیری نشده‌اند.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false
+    },
+    {
+      "id": "HAGER57-CLAIM-02",
+      "kind": "designer_quote_not_property_outcome",
+      "physical_pdf_pages": [
+        33
+      ],
+      "fragment_refs": [
+        "HAGER57-P033-D01",
+        "HAGER57-P033-D02"
+      ],
+      "scope_fa": "گفتهٔ Cord Glantz از GEPLAN Design با انتساب چاپی به پروژهٔ JAZ Hotel Stuttgart فقط قصد طراحی و آسایش است؛ نه اندازه‌گیری رضایت یا پروژهٔ NSP. با عکسِ Bikini Hotel یکی نیست.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false
+    },
+    {
+      "id": "HAGER57-CLAIM-03",
+      "kind": "power_and_room_distribution_topics_not_instructions",
+      "physical_pdf_pages": [
+        34,
+        38,
+        40,
+        42
+      ],
+      "fragment_refs": [
+        "HAGER57-P034-D01",
+        "HAGER57-P034-D02",
+        "HAGER57-P038-D01",
+        "HAGER57-P040-D01",
+        "HAGER57-P042-D01"
+      ],
+      "scope_fa": "موضوع و نام خانواده در بخش هتلِ Hager؛ نه روش سیم‌بندی و اندازه‌گیری، ظرفیت/تضمین یا قابلیت NSP.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false
+    },
+    {
+      "id": "HAGER57-CLAIM-04",
+      "kind": "cable_and_space_editorial_structure_only",
+      "physical_pdf_pages": [
+        44,
+        45,
+        46,
+        48,
+        50
+      ],
+      "fragment_refs": [
+        "HAGER57-P044-D01",
+        "HAGER57-P045-D01",
+        "HAGER57-P046-D01",
+        "HAGER57-P048-D01",
+        "HAGER57-P050-D01"
+      ],
+      "scope_fa": "نام دسته‌ و قالب ارائهٔ فضا در منبع؛ بدون مسیر اجرا، دستور مکانیکی یا الکتریکی، ایمنی و ارزیابی مقررات.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false
+    },
+    {
+      "id": "HAGER57-CLAIM-05",
+      "kind": "switch_and_presence_headlines_not_workflow",
+      "physical_pdf_pages": [
+        35,
+        52,
+        53,
+        55,
+        56,
+        58,
+        60,
+        62
+      ],
+      "fragment_refs": [
+        "HAGER57-P035-D01",
+        "HAGER57-P052-D01",
+        "HAGER57-P053-D01",
+        "HAGER57-P055-D01",
+        "HAGER57-P056-D01",
+        "HAGER57-P058-D01",
+        "HAGER57-P060-D01",
+        "HAGER57-P062-D01"
+      ],
+      "scope_fa": "دسته، تیتر یا نام محصول ساختهٔ ناشر در همین فصل؛ از تیتر هیچ منطق کارت، محرک/تنظیم تشخیص حضور، عدد فروشنده یا قابلیت NSP برنمی‌آید.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false
+    },
+    {
+      "id": "HAGER57-CLAIM-06",
+      "kind": "separate_case_caption_Bikini",
+      "physical_pdf_pages": [
+        61
+      ],
+      "fragment_refs": [
+        "HAGER57-P061-D01"
+      ],
+      "scope_fa": "کپشنِ عکس Bikini Hotel، Berlin فقط همان تصویر/مصداق معرفی‌شده است؛ نه گواه بهره‌برداری، پروژهٔ JAZ، سابقهٔ NSP یا حق بازنشر.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false
+    },
+    {
+      "id": "HAGER57-CLAIM-07",
+      "kind": "vendor_KNX_and_controller_as_case_topics",
+      "physical_pdf_pages": [
+        66,
+        67
+      ],
+      "fragment_refs": [
+        "HAGER57-P066-D01",
+        "HAGER57-P067-D01"
+      ],
+      "scope_fa": "نام رویکرد و دستگاه در منبع؛ نه روش پیکربندی یا منطق کنترلی، عدد/نتیجهٔ عملکرد، گواهی انطباق، پشتیبانی روز یا محصول NSP.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false
+    },
+    {
+      "id": "HAGER57-CLAIM-08",
+      "kind": "brand_design_language_and_custom_editorial_style",
+      "physical_pdf_pages": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "fragment_refs": [
+        "HAGER57-P068-D01",
+        "HAGER57-P069-D01",
+        "HAGER57-P070-D01",
+        "HAGER57-P071-D01"
+      ],
+      "scope_fa": "تیترهای طراحی و نام Manufaktur از ناشر‌اند؛ نه دسترس‌پذیری کالا/متریال، تولید NSP، تعهد رسمی یا حق بازنشر.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false
+    }
+  ],
+  "quality_assurance": {
+    "normalization": "Unicode NFC; remove soft-hyphen layout marks; collapse whitespace; case, punctuation, separate words and hard hyphens stay intact; word boundaries enforced.",
+    "independent_extraction_modes": [
+      "PyMuPDF native",
+      "Poppler pdftotext -raw"
+    ],
+    "optional_order_check": "Poppler pdftotext -layout",
+    "exact_source_hash_and_size_reverified": true,
+    "all_selected_exact_in_two_engines": true,
+    "all_layout_checks_pass": true,
+    "no_source_PDF_committed": true
+  },
+  "usage_policy": {
+    "internal_only": true,
+    "translation_not_performed_until_S03": true,
+    "no_publication_no_technical_or_life_safety_instructions": true,
+    "case_study_and_vendor_claims_not_NSP_or_compliance": true
+  },
+  "next_stage": "S03 — استخراج فیچر و ترجمه",
+  "next_queue_cursor": {
+    "document_index": 16,
+    "document_id": "57",
+    "step_index": 2,
+    "step_id": "S03"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
