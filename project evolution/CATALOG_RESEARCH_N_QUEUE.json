@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 8,
-    "completed_new_documents": 16,
-    "remaining_new_documents": 2
+    "total_pending_steps": 7,
+    "completed_new_documents": 17,
+    "remaining_new_documents": 1
   },
   "cursor": {
-    "document_index": 19,
-    "document_id": "76",
-    "step_index": 6,
-    "step_id": "S07"
+    "document_index": 20,
+    "document_id": "MG",
+    "step_index": 0,
+    "step_id": "S01"
   },
   "section_types": [
     {
@@ -2183,7 +2183,7 @@
       "library_path": "/76_Distech_Controls_Work C47.1.pdf",
       "bytes": 1438918,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "in_progress",
+      "status": "completed",
       "prior_import": null,
       "steps": [
         {
@@ -2257,14 +2257,18 @@
         {
           "id": "S07",
           "key": "feature_json_and_commit",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/feature.json",
+            "Portfolio Instruction/feature.js",
+            "Portfolio Instruction/research/76_Distech_Hotel_Stary_S07_ingest_manifest.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "3fb0438ff7d720c2dd0a57990b4e0cee1967ca3d",
+          "notes": "بانک پژوهش V20: ۲۰ کاتالوگ، ۶۶۱ رکورد و ۱۶۳ تصویر منبع. چهار یادداشت Distech با یک قید فارسی دربارهٔ دامنه و دو ارجاع جداگانه به طرح اصیل وارد شد. متن و تصویر اصلی، ادعای سازگاری یا نتیجه افزوده نشد. برنامه، D05 و داده‌های قبلی ثابت‌اند."
         }
       ],
-      "last_successful_stage": "S06"
+      "last_successful_stage": "S07"
     },
     {
       "id": "MG",
