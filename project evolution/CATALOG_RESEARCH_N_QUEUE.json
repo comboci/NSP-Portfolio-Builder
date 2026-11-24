@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 69,
+    "total_pending_steps": 68,
     "completed_new_documents": 8,
     "remaining_new_documents": 10
   },
   "cursor": {
     "document_index": 11,
     "document_id": "34",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -1358,11 +1358,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/34_Legrand_SYS219006_S02_french_text.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "f02496cf8c4b4e6424f305110f7ce6858112b49a",
+          "notes": "هش اصل SYS219006 و شاخص هر ۲۰۸ صفحه با S01 منطبق‌اند؛ ۴۹ گزیدهٔ فرانسوی کوتاه از ۳۱ صفحه با دو موتور تأیید شدند و ۱۷۷ صفحه گزیده ندارند. اصطلاحات و سرفصل‌های منتخب بدون دستور اجرایی، سیم‌کشی یا ادعای NSP ثبت شدند. بانک V11 و برنامه ثابت‌اند."
         },
         {
           "id": "S03",
@@ -1410,7 +1412,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S01"
+      "last_successful_stage": "S02"
     },
     {
       "id": "46",
