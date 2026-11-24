@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 24,
+    "total_pending_steps": 23,
     "completed_new_documents": 14,
     "remaining_new_documents": 4
   },
   "cursor": {
     "document_index": 17,
     "document_id": "58",
-    "step_index": 4,
-    "step_id": "S05"
+    "step_index": 5,
+    "step_id": "S06"
   },
   "section_types": [
     {
@@ -2047,11 +2047,13 @@
         {
           "id": "S05",
           "key": "section_type_mapping",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/58_HDL_IHMS_Edge_S05_section_mapping.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "2d8d20168f292b41c2cc7ed1fb6745a1214f05e7",
+          "notes": "۱۰ پیشنهاد متنی و چهار طرح تحریریه‌ایِ اصیل برای مرور راهکار هتل و GRMS ثبت شد؛ ۷ نامزد و ۷ خلاصه فقط زمینه‌اند. هیچ تصویر یا عبارتِ راهنمای منبع، دستور، سازگاری یا قابلیت NSP پذیرفته نشد. بانک V17، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S06",
@@ -2072,7 +2074,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S04"
+      "last_successful_stage": "S05"
     },
     {
       "id": "61",
