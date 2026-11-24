@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 43,
-    "completed_new_documents": 11,
-    "remaining_new_documents": 7
+    "total_pending_steps": 42,
+    "completed_new_documents": 12,
+    "remaining_new_documents": 6
   },
   "cursor": {
-    "document_index": 14,
-    "document_id": "53",
-    "step_index": 6,
-    "step_id": "S07"
+    "document_index": 15,
+    "document_id": "54",
+    "step_index": 0,
+    "step_id": "S01"
   },
   "section_types": [
     {
@@ -1670,7 +1670,7 @@
       "library_path": "/53_Lutron_Work C10.3.pdf",
       "bytes": 837051,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "in_progress",
+      "status": "completed",
       "prior_import": null,
       "steps": [
         {
@@ -1750,14 +1750,25 @@
         {
           "id": "S07",
           "key": "feature_json_and_commit",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/feature.json",
+            "Portfolio Instruction/feature.js",
+            "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S07_ingest_manifest.json",
+            "Portfolio Instruction/assets/lutron53-01-resort-hero.webp",
+            "Portfolio Instruction/assets/lutron53-01-case-identity-band.webp",
+            "Portfolio Instruction/assets/lutron53-02-side-context-photo.webp",
+            "Portfolio Instruction/assets/lutron53-02-quote-sidebar.webp",
+            "Portfolio Instruction/assets/lutron53-02-icon-closeup.webp",
+            "Portfolio Instruction/assets/lutron53-03-bedside-context-photo.webp",
+            "Portfolio Instruction/assets/lutron53-03-results-label.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "0f4ad675958c45a833f540f47d6c4e50aa37bfde",
+          "notes": "بانک پژوهش V15: ۱۵ کاتالوگ، ۶۲۲ رکورد و ۱۴۸ تصویر. ۱۳ رکورد و ۷ برش ممیزی‌شدهٔ Hotel Xcaret افزوده شدند؛ ویرایش فارسی اعمال شد. Opera و برچسب خوشامدگویی و نمای کلی وارد بانک نشدند. هیچ قابلیت NSP، گواهی محصول یا حق نشر احراز نشد؛ برنامه، سکشن‌ها و داده‌های قبلی ثابت‌اند."
         }
       ],
-      "last_successful_stage": "S06"
+      "last_successful_stage": "S07"
     },
     {
       "id": "54",
