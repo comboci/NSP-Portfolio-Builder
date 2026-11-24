@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 45,
+    "total_pending_steps": 44,
     "completed_new_documents": 11,
     "remaining_new_documents": 7
   },
   "cursor": {
     "document_index": 14,
     "document_id": "53",
-    "step_index": 4,
-    "step_id": "S05"
+    "step_index": 5,
+    "step_id": "S06"
   },
   "section_types": [
     {
@@ -1728,11 +1728,13 @@
         {
           "id": "S05",
           "key": "section_type_mapping",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S05_section_mapping.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "2ba07cbcd3b91fb1f9c77f7c7e9dbaa6ef14185d",
+          "notes": "۱۳ متن از ۱۵ رکورد و هر ۷ تصویر، فقط به‌عنوان قیاس تحریریه‌ای یا طراحی برای سکشن‌های موجود پیشنهاد شدند. نام Opera و برچسب خوشامدگویی فقط زمینه‌اند؛ ادعای طراحیِ ملک گواهی محصول یا NSP نیست. بانک V14، برنامه و سکشن‌ها ثابت‌اند."
         },
         {
           "id": "S06",
@@ -1753,7 +1755,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S04"
+      "last_successful_stage": "S05"
     },
     {
       "id": "54",
