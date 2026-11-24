@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 86,
+    "total_pending_steps": 85,
     "completed_new_documents": 5,
     "remaining_new_documents": 13
   },
   "cursor": {
     "document_index": 8,
     "document_id": "15",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -1082,11 +1082,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S06_audit.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "41343349852c9f9bcde67c4fb3af49190f99b25b",
+          "notes": "ممیزی ۱۲ صفحه، ۵۱ گزیده با دو موتور متن، ۲۵ ترجمه و ۱۴ قید انجام شد. تمام ۱۱ تصویر با رندر دوباره و فایل مخزن بایت‌به‌بایت یکسان بودند. برای S07 فقط ۲۴ رکورد (۱۷ مقصد پیشنهادی و ۷ بی‌مقصد) و ۱۱ تصویر داخلی مجازند؛ شعار تکراری فقط در تاریخچه می‌ماند. یک اصلاح ترجمهٔ Apple Wallet برای دادهٔ مشتق ثبت شد. بانک V8، برنامه و ساختار بی‌تغییرند."
         },
         {
           "id": "S07",
@@ -1098,7 +1100,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S05"
+      "last_successful_stage": "S06"
     },
     {
       "id": "16",
