@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 26,
+    "total_pending_steps": 25,
     "completed_new_documents": 14,
     "remaining_new_documents": 4
   },
   "cursor": {
     "document_index": 17,
     "document_id": "58",
-    "step_index": 2,
-    "step_id": "S03"
+    "step_index": 3,
+    "step_id": "S04"
   },
   "section_types": [
     {
@@ -2021,11 +2021,13 @@
         {
           "id": "S03",
           "key": "feature_software_translation",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/58_HDL_IHMS_Edge_S03_editorial_summaries_fa.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "b867d2f9e1cad7e6692fe694b794190a4de38fd7",
+          "notes": "۲۴ خلاصهٔ خودمان برای HDL V1.0.0 به فارسی ترجمه شد: ۱۷ نامزد تحریریه‌ای و ۷ زمینه یا هویت. تفکیک مدیریت اقامتِ داخل از موضوع اتصال بیرونی حفظ شد. متن، عکس، رمز، روش اجرا یا قابلیت NSP به مخزن افزوده نشد؛ بانک V17، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S04",
@@ -2064,7 +2066,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S02"
+      "last_successful_stage": "S03"
     },
     {
       "id": "61",
