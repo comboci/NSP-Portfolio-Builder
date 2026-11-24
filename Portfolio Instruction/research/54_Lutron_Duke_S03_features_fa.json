@@ -1,0 +1,1018 @@
+{
+  "schema": "nsp-catalog-research-stage-feature-translation-v1",
+  "stage": "S03",
+  "stage_key": "feature_software_translation",
+  "status": "completed_source_bounded_Persian_translation_and_research_candidates_only",
+  "document_id": "54",
+  "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+  "source_language": "en",
+  "translation_language": "fa",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "2448bfc9112d35f1fbf2a8fd758c88d7bb338d21",
+  "provenance": {
+    "company": "Lutron",
+    "title": "The Duke Exclusive Suites",
+    "filename": "54_Lutron_Work C10.4.pdf",
+    "pdf_pages": 2,
+    "file_size_bytes": 139544,
+    "source_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+    "printed_document_part_number": "368-5090",
+    "printed_revision": "REV A",
+    "printed_copyright_month": "2018-09",
+    "S01_inventory": {
+      "path": "Portfolio Instruction/research/54_Lutron_Duke_S01_source_inventory.json",
+      "git_blob_sha": "16a01f802b7efb17640f94ab7e13de29ae35b07b",
+      "commit_sha": "12521b58dd203454014b7caf0fbff66f6950946e"
+    },
+    "S02_text_evidence": {
+      "path": "Portfolio Instruction/research/54_Lutron_Duke_S02_english_text.json",
+      "blob_sha": "eaab5156ce6b88f7806195f7f425ad16db57b32e",
+      "commit_sha": "eb0ac810066a0d0aaa046564644c74e53e732dc1"
+    }
+  },
+  "statistics": {
+    "physical_source_pages": 2,
+    "selected_English_fragments_reconciled": 27,
+    "Persian_translations_reviewed": 27,
+    "research_candidate_records": 12,
+    "context_only_fragments": 15,
+    "records_by_type": {
+      "visual_presentation_style": 3,
+      "case_study": 7,
+      "architecture": 1,
+      "scenario": 1
+    },
+    "NSP_capabilities_verified": 0,
+    "independent_case_outcomes_verified": 0
+  },
+  "editorial_and_safety_policy": {
+    "customer_requirement_designer_intent_vendor_description_manager_feedback_and_plan_distinct": true,
+    "myRoom_plus_is_source_tier_only": true,
+    "Grand_Welcome_is_name_not_trigger_or_same_as_Xcaret": true,
+    "public_lighting_limited_to_new_building_and_not_projectwide_or_NSP": true,
+    "energy_mode_is_label_not_savings_measurement": true,
+    "software_integration_context_not_hardware_independence": true,
+    "TJ_footnote_starred_accessories_only": true,
+    "Duke_REV_A_separate_from_Xcaret_REV_B": true,
+    "no_current_product_or_rights_or_NSP_case_claim": true
+  },
+  "research_records": [
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I001",
+      "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+      "source_language": "en",
+      "source_filename": "54_Lutron_Work C10.4.pdf",
+      "source_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "printed_document_part_number": "368-5090",
+      "printed_document_revision": "REV A",
+      "source_pdf_page": 1,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON54-P01-E03",
+      "S02_fragment_index": 3,
+      "original_source_excerpt_en": "Project Overview",
+      "translation_fa": "نمای کلی پروژه",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "source_editorial_heading",
+      "category_id": "narrative_structure",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "narrator_attribution": "Lutron case-study structure",
+      "same_editorial_concept_group": "LUTRON54-CASE_IDENTITY",
+      "editorial_relevance_and_limits_fa": "الگوی معرفی نام، مکان و زمینهٔ پرونده؛ نه پروژه، پوشش یا سابقهٔ NSP.",
+      "related_context_fragment_refs": [
+        "LUTRON54-P01-E01",
+        "LUTRON54-P01-E02",
+        "LUTRON54-P01-E04",
+        "LUTRON54-P01-E08"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English excerpt on physical page, verified by both PDF extraction engines in S02.",
+      "optional_layout_exception_visually_resolved": false,
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I002",
+      "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+      "source_language": "en",
+      "source_filename": "54_Lutron_Work C10.4.pdf",
+      "source_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "printed_document_part_number": "368-5090",
+      "printed_document_revision": "REV A",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON54-P02-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "The Challenge",
+      "translation_fa": "چالش",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "source_editorial_heading",
+      "category_id": "narrative_structure",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "narrator_attribution": "Lutron case-study structure",
+      "same_editorial_concept_group": "LUTRON54-CASE_STRUCTURE",
+      "editorial_relevance_and_limits_fa": "تفکیک چالش، راهکار و نتیجه به عنوان ساختار روایی؛ نه معیار پذیرفته‌شده یا اثر ثابت‌شده.",
+      "related_context_fragment_refs": [
+        "LUTRON54-P02-E05",
+        "LUTRON54-P02-E13"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-03"
+      ],
+      "source_context_set_refs": [],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English excerpt on physical page, verified by both PDF extraction engines in S02.",
+      "optional_layout_exception_visually_resolved": false,
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I003",
+      "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+      "source_language": "en",
+      "source_filename": "54_Lutron_Work C10.4.pdf",
+      "source_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "printed_document_part_number": "368-5090",
+      "printed_document_revision": "REV A",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON54-P02-E02",
+      "S02_fragment_index": 2,
+      "original_source_excerpt_en": "easy and intuitive",
+      "translation_fa": "آسان و شهودی",
+      "source_type": "case_study",
+      "S02_source_type": "source_reported_customer_requirement",
+      "category_id": "guest_comfort",
+      "narrator_role": "HOTEL_REQUIREMENT_AS_REPORTED",
+      "narrator_attribution": "The Duke management requirements as reported by Lutron",
+      "same_editorial_concept_group": "LUTRON54-CONTROL_USABILITY_GOAL",
+      "editorial_relevance_and_limits_fa": "این توصیف نیاز مدیریت هتل دربارهٔ کنترل روشنایی است؛ آزمون کاربردپذیری، عملکرد نهایی یا قابلیت NSP نیست.",
+      "related_context_fragment_refs": [],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-REQUIREMENTS"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English excerpt on physical page, verified by both PDF extraction engines in S02.",
+      "optional_layout_exception_visually_resolved": false,
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I004",
+      "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+      "source_language": "en",
+      "source_filename": "54_Lutron_Work C10.4.pdf",
+      "source_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "printed_document_part_number": "368-5090",
+      "printed_document_revision": "REV A",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON54-P02-E03",
+      "S02_fragment_index": 3,
+      "original_source_excerpt_en": "warm, cosy",
+      "translation_fa": "گرم و دنج",
+      "source_type": "case_study",
+      "S02_source_type": "source_designer_quote",
+      "category_id": "guest_comfort",
+      "narrator_role": "DESIGNER_DIRECT_QUOTE",
+      "narrator_attribution": "Famke van Eerd-Hinrichs, designer; quoted by Lutron",
+      "same_editorial_concept_group": "LUTRON54-DESIGN_INTENT_PAIR",
+      "editorial_relevance_and_limits_fa": "بخشی از مقصود طراح برای حس خانه‌مانند؛ کیفیت حرارتی اندازه‌گیری‌شده، تجربهٔ تضمینی یا نتیجهٔ NSP نیست.",
+      "related_context_fragment_refs": [
+        "LUTRON54-P02-E04"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-REQUIREMENTS"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English excerpt on physical page, verified by both PDF extraction engines in S02.",
+      "optional_layout_exception_visually_resolved": false,
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I005",
+      "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+      "source_language": "en",
+      "source_filename": "54_Lutron_Work C10.4.pdf",
+      "source_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "printed_document_part_number": "368-5090",
+      "printed_document_revision": "REV A",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON54-P02-E04",
+      "S02_fragment_index": 4,
+      "original_source_excerpt_en": "classical and modern influences",
+      "translation_fa": "تأثیرهای سبک کلاسیک و مدرن",
+      "source_type": "case_study",
+      "S02_source_type": "source_designer_quote",
+      "category_id": "design_integration",
+      "narrator_role": "DESIGNER_DIRECT_QUOTE",
+      "narrator_attribution": "Famke van Eerd-Hinrichs, designer; quoted by Lutron",
+      "same_editorial_concept_group": "LUTRON54-DESIGN_INTENT_PAIR",
+      "editorial_relevance_and_limits_fa": "بخش دوم گفتهٔ طراح دربارهٔ پیوند دو زبان ظاهری؛ نه دستور طراحی، سازگاری یا نتیجهٔ محصول. با عبارت پیشین یکی از دو جنبهٔ همان نقل‌قول است.",
+      "related_context_fragment_refs": [
+        "LUTRON54-P02-E03"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-REQUIREMENTS"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English excerpt on physical page, verified by both PDF extraction engines in S02.",
+      "optional_layout_exception_visually_resolved": false,
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I006",
+      "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+      "source_language": "en",
+      "source_filename": "54_Lutron_Work C10.4.pdf",
+      "source_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "printed_document_part_number": "368-5090",
+      "printed_document_revision": "REV A",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON54-P02-E07",
+      "S02_fragment_index": 7,
+      "original_source_excerpt_en": "control lights, blinds and temperature",
+      "translation_fa": "کنترل روشنایی، پرده‌ها و دما",
+      "source_type": "architecture",
+      "S02_source_type": "source_vendor_family_claim",
+      "category_id": "room_controls",
+      "narrator_role": "VENDOR_TIER_DESCRIPTION",
+      "narrator_attribution": "Lutron description of myRoom plus in this case study",
+      "same_editorial_concept_group": "LUTRON54-TIER_SCOPE",
+      "editorial_relevance_and_limits_fa": "توصیف ناشر از حوزه‌های ردهٔ myRoom plus؛ نه فهرست کارکرد هر مدل، نه همهٔ رده‌ها، نه ظرفیت و نه سامانهٔ NSP.",
+      "related_context_fragment_refs": [
+        "LUTRON54-P02-E06"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-MYROOM"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English excerpt on physical page, verified by both PDF extraction engines in S02.",
+      "optional_layout_exception_visually_resolved": false,
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I007",
+      "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+      "source_language": "en",
+      "source_filename": "54_Lutron_Work C10.4.pdf",
+      "source_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "printed_document_part_number": "368-5090",
+      "printed_document_revision": "REV A",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON54-P02-E08",
+      "S02_fragment_index": 8,
+      "original_source_excerpt_en": "can be integrated with other hotel management systems",
+      "translation_fa": "قابلیت یکپارچه‌سازی با دیگر سامانه‌های مدیریت هتل را دارد",
+      "source_type": "case_study",
+      "S02_source_type": "source_vendor_family_integration_claim",
+      "category_id": "integrations",
+      "narrator_role": "VENDOR_TIER_DESCRIPTION",
+      "narrator_attribution": "Lutron description of myRoom plus in this case study",
+      "same_editorial_concept_group": "LUTRON54-TIER_INTEGRATION_CLAIM",
+      "editorial_relevance_and_limits_fa": "ترجمهٔ مستقیم ادعای ناشر است، نه تضمین امکان اتصال عمومی، فهرست پروتکل، نتیجهٔ پروژه یا قابلیت NSP. هر نسخه یا دامنه باید مستقل ثابت شود.",
+      "related_context_fragment_refs": [
+        "LUTRON54-P02-E06",
+        "LUTRON54-P02-E11"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-MYROOM"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English excerpt on physical page, verified by both PDF extraction engines in S02.",
+      "optional_layout_exception_visually_resolved": false,
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I008",
+      "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+      "source_language": "en",
+      "source_filename": "54_Lutron_Work C10.4.pdf",
+      "source_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "printed_document_part_number": "368-5090",
+      "printed_document_revision": "REV A",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON54-P02-E09",
+      "S02_fragment_index": 9,
+      "original_source_excerpt_en": "Grand Welcome scene",
+      "translation_fa": "صحنهٔ «خوشامدگویی ویژه» (Grand Welcome)",
+      "source_type": "scenario",
+      "S02_source_type": "source_vendor_case_scenario_label",
+      "category_id": "room_scenarios",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "narrator_attribution": "Lutron description of the Duke case",
+      "same_editorial_concept_group": "LUTRON54-SCENE_ONLY_NO_WORKFLOW",
+      "editorial_relevance_and_limits_fa": "فقط نام صحنهٔ این پروژه؛ با برچسب Welcome mode در Xcaret یکی نیست. هیچ زمان/محرک/شدت/شرط کنترل یا قابلیت NSP استخراج نشده.",
+      "related_context_fragment_refs": [
+        "LUTRON54-P02-E10"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-SCENES"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English excerpt on physical page, verified by both PDF extraction engines in S02.",
+      "optional_layout_exception_visually_resolved": false,
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I009",
+      "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+      "source_language": "en",
+      "source_filename": "54_Lutron_Work C10.4.pdf",
+      "source_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "printed_document_part_number": "368-5090",
+      "printed_document_revision": "REV A",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON54-P02-E12",
+      "S02_fragment_index": 12,
+      "original_source_excerpt_en": "lighting in all the public spaces",
+      "translation_fa": "روشنایی در همهٔ فضاهای عمومی",
+      "source_type": "case_study",
+      "S02_source_type": "source_vendor_reported_public_area_scope",
+      "category_id": "hotel_operations",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "narrator_attribution": "Lutron description of the Duke case",
+      "same_editorial_concept_group": "LUTRON54-PUBLIC_SCOPE_CASE_BOUND",
+      "editorial_relevance_and_limits_fa": "«همه» در جمله به فضاهای عمومی ساختمان جدید همان پرونده محدود است. نه کل مجموعه، نه سامانهٔ غیرروشنایی، نه مستند مستقل یا قابلیت NSP.",
+      "related_context_fragment_refs": [
+        "LUTRON54-P01-E07"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-PUBLIC"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English excerpt on physical page, verified by both PDF extraction engines in S02.",
+      "optional_layout_exception_visually_resolved": false,
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I010",
+      "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+      "source_language": "en",
+      "source_filename": "54_Lutron_Work C10.4.pdf",
+      "source_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "printed_document_part_number": "368-5090",
+      "printed_document_revision": "REV A",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON54-P02-E13",
+      "S02_fragment_index": 13,
+      "original_source_excerpt_en": "The Result",
+      "translation_fa": "نتیجه",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "source_editorial_heading",
+      "category_id": "case_studies",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "narrator_attribution": "Lutron case-study structure",
+      "same_editorial_concept_group": "LUTRON54-RESULT_PRESENTATION",
+      "editorial_relevance_and_limits_fa": "عنوان فرم روایت؛ دادهٔ مستقل یا عملکرد اثبات‌شده نمی‌سازد؛ طرح توسعه جدا بماند.",
+      "related_context_fragment_refs": [
+        "LUTRON54-P02-E16"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-08"
+      ],
+      "source_context_set_refs": [],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English excerpt on physical page, verified by both PDF extraction engines in S02.",
+      "optional_layout_exception_visually_resolved": false,
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I011",
+      "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+      "source_language": "en",
+      "source_filename": "54_Lutron_Work C10.4.pdf",
+      "source_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "printed_document_part_number": "368-5090",
+      "printed_document_revision": "REV A",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON54-P02-E14",
+      "S02_fragment_index": 14,
+      "original_source_excerpt_en": "enabling a great guest experience",
+      "translation_fa": "امکان تجربه‌ای بسیار خوب را برای مهمان فراهم می‌کند",
+      "source_type": "case_study",
+      "S02_source_type": "source_quoted_hotel_manager_evaluation",
+      "category_id": "guest_comfort",
+      "narrator_role": "GENERAL_MANAGER_DIRECT_QUOTE",
+      "narrator_attribution": "Marcel Arts, general manager of The Duke; quoted by Lutron",
+      "same_editorial_concept_group": "LUTRON54-MANAGER_FEEDBACK",
+      "editorial_relevance_and_limits_fa": "تحسینِ منتسب به مدیرکل است؛ شاخص رضایت، آزمون مستقل، ثمرهٔ کمّی یا قابلیت NSP ثابت نشده.",
+      "related_context_fragment_refs": [
+        "LUTRON54-P02-E15"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-08"
+      ],
+      "source_context_set_refs": [],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English excerpt on physical page, verified by both PDF extraction engines in S02.",
+      "optional_layout_exception_visually_resolved": true,
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I012",
+      "source_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+      "source_language": "en",
+      "source_filename": "54_Lutron_Work C10.4.pdf",
+      "source_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+      "printed_document_part_number": "368-5090",
+      "printed_document_revision": "REV A",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON54-P02-E15",
+      "S02_fragment_index": 15,
+      "original_source_excerpt_en": "possibility to select lighting scenes",
+      "translation_fa": "امکان انتخاب صحنه‌های روشنایی",
+      "source_type": "case_study",
+      "S02_source_type": "source_quoted_hotel_manager_observation",
+      "category_id": "room_scenarios",
+      "narrator_role": "GENERAL_MANAGER_DIRECT_QUOTE",
+      "narrator_attribution": "Marcel Arts, general manager of The Duke; quoted by Lutron",
+      "same_editorial_concept_group": "LUTRON54-MANAGER_FEEDBACK",
+      "editorial_relevance_and_limits_fa": "به روایت مدیرکل، مهمانان از این امکان استقبال کردند؛ نه آمار استفاده، نه شیوهٔ تغییر صحنه و نه ویژگی NSP.",
+      "related_context_fragment_refs": [
+        "LUTRON54-P02-E14"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-08"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-SCENES"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English excerpt on physical page, verified by both PDF extraction engines in S02.",
+      "optional_layout_exception_visually_resolved": false,
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    }
+  ],
+  "excluded_S02_fragments": [
+    {
+      "S02_fragment_ref": "LUTRON54-P01-E01",
+      "pdf_page": 1,
+      "translation_fa": "سوئیت‌های اختصاصی دوک (The Duke Exclusive Suites)",
+      "scope_fa": "هویت چاپی همان پرونده، نه پروژهٔ NSP.",
+      "source_type": "source_case_title",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P01-E02",
+      "pdf_page": 1,
+      "translation_fa": "نیستلروده، هلند",
+      "scope_fa": "مکان چاپی همان پروژه؛ دامنهٔ جغرافیایی NSP نیست.",
+      "source_type": "source_case_location",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P01-E04",
+      "pdf_page": 1,
+      "translation_fa": "پیشینه",
+      "scope_fa": "عنوان بخش؛ نه قابلیت.",
+      "source_type": "source_editorial_heading",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P01-E05",
+      "pdf_page": 1,
+      "translation_fa": "در سپتامبر ۲۰۱۷",
+      "scope_fa": "ماه افتتاح طبق روایت ناشر؛ نه تاریخ نصب یا تأیید وضعیت جاری.",
+      "source_type": "reported_case_date",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-02"
+      ],
+      "source_context_set_refs": [],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P01-E06",
+      "pdf_page": 1,
+      "translation_fa": "۲۰ سوئیت لوکس",
+      "scope_fa": "شمار توصیفی ملک در متن؛ نه تعداد تجهیز یا پوشش اجرایی.",
+      "source_type": "reported_property_scale",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-02"
+      ],
+      "source_context_set_refs": [],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P01-E07",
+      "pdf_page": 1,
+      "translation_fa": "سالن جشن یا مرکز همایش",
+      "scope_fa": "کاربری ممکنِ فضای چندمنظوره؛ در شمار تجهیزات یا ادعای کنترل NSP وارد نشود.",
+      "source_type": "case_space_type",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-02"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-PUBLIC"
+      ],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P01-E08",
+      "pdf_page": 1,
+      "translation_fa": "باشگاه گلف",
+      "scope_fa": "نوع مجموعه در معرفی، نه حوزهٔ تأییدشدهٔ NSP.",
+      "source_type": "source_property_kind",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P02-E05",
+      "pdf_page": 2,
+      "translation_fa": "راهکار",
+      "scope_fa": "سرفصلِ جفتِ چالش؛ نه منبع دستور اجرا.",
+      "source_type": "source_editorial_heading",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-04"
+      ],
+      "source_context_set_refs": [],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P02-E06",
+      "pdf_page": 2,
+      "translation_fa": "myRoom plus",
+      "scope_fa": "نام ردهٔ ناشر در این روایت؛ نه عرضهٔ فعلی، هم‌ارزی با Xcaret یا ابزار NSP.",
+      "source_type": "source_vendor_case_tier_name",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-MYROOM"
+      ],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P02-E10",
+      "pdf_page": 2,
+      "translation_fa": "حالت صرفه‌جویی در انرژی",
+      "scope_fa": "برچسب منبع دربارهٔ پرونده؛ نه درصد و خط پایهٔ مصرف یا نتیجهٔ اندازه‌گیری.",
+      "source_type": "source_vendor_case_operating_mode_label",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-SCENES"
+      ],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P02-E11",
+      "pdf_page": 2,
+      "translation_fa": "یکپارچه‌سازی مبتنی بر نرم‌افزار به‌جای سخت‌افزار",
+      "scope_fa": "ترجیحِ منتسب به مشتری با نظر مشاوران در روایت ناشر؛ نه بی‌نیازی کل سامانه از سخت‌افزار، دستور فنی یا مزیت ثابت‌شده.",
+      "source_type": "source_vendor_reported_customer_evaluation",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-06"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-MYROOM"
+      ],
+      "optional_layout_exception_visually_resolved": true,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P02-E16",
+      "pdf_page": 2,
+      "translation_fa": "گسترش مجموعه در آینده",
+      "scope_fa": "بیان امید/برنامهٔ زمان انتشار، نه توسعهٔ انجام‌شده یا وضع جاری.",
+      "source_type": "source_historical_future_plan",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-09"
+      ],
+      "source_context_set_refs": [],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P02-E17",
+      "pdf_page": 2,
+      "translation_fa": "ساخته و عرضه‌شده توسط T&J Electric",
+      "scope_fa": "فقط لوازم جانبی ستاره‌دار؛ به رده، ترموستات، کلید، مالکیت محصول یا NSP تعمیم نیابد.",
+      "source_type": "source_accessory_footnote_manufacturer",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-10"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-ACCESSORY"
+      ],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P02-E18",
+      "pdf_page": 2,
+      "translation_fa": "بر پایهٔ مشخصات ظاهری Lutron",
+      "scope_fa": "قید همان پاورقی لوازم جانبی است، نه مشخصات مهندسی، تعهد یا اجازهٔ نشر.",
+      "source_type": "source_accessory_footnote_scope",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-10"
+      ],
+      "source_context_set_refs": [
+        "LUTRON54-CTX-ACCESSORY"
+      ],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON54-P02-E19",
+      "pdf_page": 2,
+      "translation_fa": "شمارهٔ سند 368-5090، ویرایش A",
+      "scope_fa": "کد چاپی سند؛ نه مدل سخت‌افزار، نه تاریخ نصب و نه REV B سند Xcaret.",
+      "source_type": "source_printed_edition",
+      "source_claim_gate_refs": [
+        "LUTRON54-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "optional_layout_exception_visually_resolved": false,
+      "not_independent_feature": true
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "LUTRON54-CLAIM-01",
+      "kind": "exact_case_and_edition_identity",
+      "physical_pdf_pages": [
+        1,
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P01-E01",
+        "LUTRON54-P01-E02",
+        "LUTRON54-P01-E03",
+        "LUTRON54-P01-E04",
+        "LUTRON54-P01-E08",
+        "LUTRON54-P02-E19"
+      ],
+      "scope_fa": "شناسه، مکان و نوع پرونده به مطالعهٔ The Duke در Nistelrode مربوط‌اند؛ REV A با Hotel Xcaret REV B یکی نیست. نه پروندهٔ NSP، نه اثبات زمان عرضهٔ کنونی.",
+      "claim_or_context_only_not_independent_feature": true,
+      "independent_case_outcome_or_current_offering_verified": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I001"
+      ]
+    },
+    {
+      "id": "LUTRON54-CLAIM-02",
+      "kind": "reported_property_opening_and_size",
+      "physical_pdf_pages": [
+        1
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P01-E05",
+        "LUTRON54-P01-E06",
+        "LUTRON54-P01-E07"
+      ],
+      "scope_fa": "ماه افتتاح، شمار سوئیت و کاربری فضای چندمنظوره فقط روایت ناشر از خود ملک‌اند؛ نه تعداد تجهیز، محدودهٔ نصب، عملکرد کالیبره‌شده یا وضعیت جاری.",
+      "claim_or_context_only_not_independent_feature": true,
+      "independent_case_outcome_or_current_offering_verified": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": []
+    },
+    {
+      "id": "LUTRON54-CLAIM-03",
+      "kind": "hotel_requirement_and_designer_intent",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P02-E01",
+        "LUTRON54-P02-E02",
+        "LUTRON54-P02-E03",
+        "LUTRON54-P02-E04"
+      ],
+      "scope_fa": "آسانی/شهودی‌بودن خواستهٔ مدیریت است، و لحن گرم/آمیختن کلاسیک و مدرن نقل‌قول طراح Famke van Eerd-Hinrichs است. هیچ‌کدام نتیجه یا طراحی NSP نیست.",
+      "claim_or_context_only_not_independent_feature": true,
+      "independent_case_outcome_or_current_offering_verified": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I002",
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I003",
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I004",
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I005"
+      ]
+    },
+    {
+      "id": "LUTRON54-CLAIM-04",
+      "kind": "vendor_product_tier_and_described_scope",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P02-E05",
+        "LUTRON54-P02-E06",
+        "LUTRON54-P02-E07",
+        "LUTRON54-P02-E08"
+      ],
+      "scope_fa": "myRoom plus نام ردهٔ انتخاب‌شده در روایت Lutron است. روشنایی، پرده/پوشش پنجره، دما و امکان یکپارچه‌سازی زبان ناشرند، بدون مدل، مراحل، پروتکل، سازگاری تضمین‌شده یا ویژگی NSP. این رده با جلد دیگر یا myRoom Vue یکی نیست.",
+      "claim_or_context_only_not_independent_feature": true,
+      "independent_case_outcome_or_current_offering_verified": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I006",
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I007"
+      ]
+    },
+    {
+      "id": "LUTRON54-CLAIM-05",
+      "kind": "scenario_and_energy_mode_labels_not_workflow_or_savings",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P02-E09",
+        "LUTRON54-P02-E10"
+      ],
+      "scope_fa": "برچسب‌های Grand Welcome و حالت صرفه‌جویی، تابع روایت همین پرونده‌اند. هیچ شرط، محرک، ترتیب ورود یا تنظیمات، سنجه و درصد کاهش ثبت نشده.",
+      "claim_or_context_only_not_independent_feature": true,
+      "independent_case_outcome_or_current_offering_verified": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I008"
+      ]
+    },
+    {
+      "id": "LUTRON54-CLAIM-06",
+      "kind": "software_integration_observation_not_engineering_claim",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P02-E11"
+      ],
+      "scope_fa": "ترجیحِ نسبت‌داده‌شده به مشتری/مشاوران فناوری در روایت ناشر؛ به معنای بی‌نیازی از سخت‌افزار، اطمینان از معماری، پشتیبانی جاری یا قابلیت NSP نیست.",
+      "claim_or_context_only_not_independent_feature": true,
+      "independent_case_outcome_or_current_offering_verified": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": []
+    },
+    {
+      "id": "LUTRON54-CLAIM-07",
+      "kind": "reported_public_area_lighting_case_only",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P02-E12"
+      ],
+      "scope_fa": "عبارت به فضاهای عمومی ساختمان جدید همان پرونده و فقط کنترل روشنایی در روایت انتشاردهنده محدود است. نه تمام مکان‌های مجموعه، تایید اجرا، توان مشاعات NSP یا یکپارچگی کل هتل.",
+      "claim_or_context_only_not_independent_feature": true,
+      "independent_case_outcome_or_current_offering_verified": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I009"
+      ]
+    },
+    {
+      "id": "LUTRON54-CLAIM-08",
+      "kind": "result_testimonial_not_independent_evidence",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P02-E13",
+        "LUTRON54-P02-E14",
+        "LUTRON54-P02-E15"
+      ],
+      "scope_fa": "دو عبارتِ نتیجه، گفتهٔ مدیرکل Marcel Arts هستند. نظر مثبت یا ترجیح صحنه‌ها، رضایت سنجیده، عدد یا نتیجهٔ مستقل و قابل تعمیم به NSP نیست.",
+      "claim_or_context_only_not_independent_feature": true,
+      "independent_case_outcome_or_current_offering_verified": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I010",
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I011",
+        "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I012"
+      ]
+    },
+    {
+      "id": "LUTRON54-CLAIM-09",
+      "kind": "historical_future_plan_not_operating_result",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P02-E16"
+      ],
+      "scope_fa": "امید به گسترش تا زمان نگارش؛ نه انجام، پوشش، فروش فعلی یا نتیجهٔ پروژه.",
+      "claim_or_context_only_not_independent_feature": true,
+      "independent_case_outcome_or_current_offering_verified": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": []
+    },
+    {
+      "id": "LUTRON54-CLAIM-10",
+      "kind": "accessory_footnote_bounded_to_asterisk",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P02-E17",
+        "LUTRON54-P02-E18"
+      ],
+      "scope_fa": "یادداشت ستاره‌دار فقط لوازم جانبیِ علامت‌دار را مشمول ساخت و فروش توسط T&J Electric بر مبنای مشخصات ظاهری Lutron می‌کند. به کل سیستم، همه تجهیزات، مشخصات اجرایی، ضمانت یا NSP تعمیم نیابد.",
+      "claim_or_context_only_not_independent_feature": true,
+      "independent_case_outcome_or_current_offering_verified": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": []
+    }
+  ],
+  "source_context_bindings": [
+    {
+      "id": "LUTRON54-CTX-REQUIREMENTS",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P02-E02",
+        "LUTRON54-P02-E03",
+        "LUTRON54-P02-E04"
+      ],
+      "scope_fa": "خواستهٔ مدیریت، لحن طراحی و آمیختن ظاهر کلاسیک/مدرن را به نتیجه یا خدمت NSP تبدیل نکن."
+    },
+    {
+      "id": "LUTRON54-CTX-MYROOM",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P02-E06",
+        "LUTRON54-P02-E07",
+        "LUTRON54-P02-E08",
+        "LUTRON54-P02-E11"
+      ],
+      "scope_fa": "نام رده و توصیف ناشر را از ترجیح فناوری که به مشتری نسبت داده شده جدا کن. Xcaret و نسخهٔ دیگر منبع جدا بمانند."
+    },
+    {
+      "id": "LUTRON54-CTX-SCENES",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P02-E09",
+        "LUTRON54-P02-E10",
+        "LUTRON54-P02-E15"
+      ],
+      "scope_fa": "نام سناریو و حالت انرژی در شرح ناشر، و ترجیح صحنه‌ها در گفتهٔ مدیرکل؛ بدون شرط، زمان و نتیجه."
+    },
+    {
+      "id": "LUTRON54-CTX-PUBLIC",
+      "physical_pdf_pages": [
+        1,
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P01-E07",
+        "LUTRON54-P02-E12"
+      ],
+      "scope_fa": "کاربری فضا و کنترل روشناییِ گزارش‌شده برای همان ساختمان؛ پوشش، قابلیت NSP یا مستقل از دادهٔ پرونده ثابت نیست."
+    },
+    {
+      "id": "LUTRON54-CTX-ACCESSORY",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON54-P02-E17",
+        "LUTRON54-P02-E18"
+      ],
+      "scope_fa": "دو قطعه از یک پاورقی و یک موضوع؛ فقط لوازم جانبی ستاره‌دار."
+    }
+  ],
+  "quality_assurance": {
+    "all_27_source_phrases_placed_once": true,
+    "two_layout_exceptions_verified_on_source_in_S02": true,
+    "English_case_and_punctuation_retained": true,
+    "translation_keeps_actor_and_scope": true,
+    "no_executable_or_hardware_specifications_added": true
+  },
+  "next_stage": "S04 — استخراج تصاویر و سبک ارائه",
+  "next_queue_cursor": {
+    "document_index": 15,
+    "document_id": "54",
+    "step_index": 3,
+    "step_id": "S04"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
