@@ -1,0 +1,274 @@
+{
+  "schema": "nsp-catalog-research-s07-import-v2",
+  "status": "validated_import",
+  "stage": "S07",
+  "stage_key": "feature_json_and_commit",
+  "document_id": "46",
+  "date": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "f48c3404b917e23e065174e013fefa95ad8b9cc0",
+  "source_catalog": "CAT046_CRESTRON_BLOC_HOTELS",
+  "source_pdf": "46_Crestron_Work C08.3.pdf",
+  "source_pdf_sha256": "44d493d15827ace20d051beac69da455e2960fee12094920e17212e6f549c611",
+  "source_language": "en",
+  "source_printed_revision": "v. 012723",
+  "physical_pdf_pages": 4,
+  "audit_artifact": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S06_original_source_audit.json",
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S01_source_inventory.json",
+      "commit_sha": "026a68e137c876ba2c74c8d7b7a1a8ec3269fe01",
+      "blob_sha": "78350841e809a1f146d1f6b4bb96261df903d550"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S02_english_text.json",
+      "commit_sha": "a5daed4e49f8dda3aa1e095d16d115ed130837ca",
+      "blob_sha": "f1f14d8e249f33f83a14aca4632a7568def9a6fe"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S03_features_fa.json",
+      "commit_sha": "26ee4b21c7514137c761cdca42ffbae6a691095e",
+      "blob_sha": "2bce57d14b5a1950e25792de15c3cb56c2133e8f"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S04_visual_styles.json",
+      "commit_sha": "60f7f8850d96548ec310a4e0e98527d6b37abb3b",
+      "blob_sha": "0c0919bb13df1d7f903c252022a48a1df2eaf597"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S05_section_mapping.json",
+      "blob_sha": "718b2c9f8a528b569737cbc36ea35fbac449614d",
+      "commit_sha": "4b401ed26980f343d71264cb22d8d2375e799dd6"
+    },
+    "S06": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S06_original_source_audit.json",
+      "blob_sha": "0840483b2063b75bb221cef612ad8470d4ecae07",
+      "commit_sha": "545fbfcd34e9fe4234e7c6183660eebec2c9f7c6"
+    }
+  },
+  "updated_bank_files": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js"
+  ],
+  "committed_artifact_paths": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js",
+    "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S07_ingest_manifest.json",
+    "Portfolio Instruction/assets/crestron46-01-facade-hero.webp",
+    "Portfolio Instruction/assets/crestron46-01-project-fact-sidebar.webp",
+    "Portfolio Instruction/assets/crestron46-02-room-panorama-divider.webp",
+    "Portfolio Instruction/assets/crestron46-03-mobile-context-room.webp",
+    "Portfolio Instruction/assets/crestron46-04-two-zone-room-bath-photo.webp",
+    "Portfolio Instruction/assets/crestron46-04-results-and-context-headings.webp"
+  ],
+  "output_bank_files": [
+    {
+      "path": "Portfolio Instruction/feature.json",
+      "git_blob_sha": "61b05b04da630a7511a1c0a3db4113ee4efe4c6b"
+    },
+    {
+      "path": "Portfolio Instruction/feature.js",
+      "git_blob_sha": "afd3718e6cd955d5f598c3db0f75e94e180f5743"
+    }
+  ],
+  "new_display_alias_assets": [
+    {
+      "path": "Portfolio Instruction/assets/crestron46-01-facade-hero.webp",
+      "id": "CRESTRON46_01_facade_hero",
+      "git_blob_sha": "8bc1b390f86d4205d7b7b1e093a5979d152ce241",
+      "sha256": "015e3813f0cbff9764d74e0d77b36b699844f7c8c38fe143af440b5320a6ff6b",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_01_facade_hero.webp",
+      "physical_pdf_page": 1,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/crestron46-01-project-fact-sidebar.webp",
+      "id": "CRESTRON46_01_project_fact_sidebar",
+      "git_blob_sha": "d7f82607a1a03ac5be0a7124a60f002f422474e8",
+      "sha256": "1e1dfaaec34e68a8d0254a40397615254e0d733817f890ea63789926b3028f7a",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_01_project_fact_sidebar.webp",
+      "physical_pdf_page": 1,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/crestron46-02-room-panorama-divider.webp",
+      "id": "CRESTRON46_02_room_panorama_divider",
+      "git_blob_sha": "115f1165e547fd0654c3ba2db45f32621021e0a1",
+      "sha256": "0307fd6e24901e33e66e3d11529d320a2351df681782b717adee7eaaacca599f",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_02_room_panorama_divider.webp",
+      "physical_pdf_page": 2,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/crestron46-03-mobile-context-room.webp",
+      "id": "CRESTRON46_03_mobile_context_room",
+      "git_blob_sha": "773b7d2fd818a2c9b448be51777c1f6a75eb6c71",
+      "sha256": "4a646db925d64822e915b6bf2cf68ba739f61138a22d1fbdbd23f8a1ea83896b",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_03_mobile_context_room.webp",
+      "physical_pdf_page": 3,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/crestron46-04-two-zone-room-bath-photo.webp",
+      "id": "CRESTRON46_04_two_zone_room_bath_photo",
+      "git_blob_sha": "61781f7eaa150e57870ec327ac834ab4ee0b0887",
+      "sha256": "256f95a9429d6be5eaaf0ca3f32e28bf8e50b6ee5cb5ef485efedb8bf3db5365",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_04_two_zone_room_bath_photo.webp",
+      "physical_pdf_page": 4,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/crestron46-04-results-and-context-headings.webp",
+      "id": "CRESTRON46_04_results_and_context_headings",
+      "git_blob_sha": "f111b28aafea40ba101b0295cd5bd409e46c317c",
+      "sha256": "987bd6a6b15c5bd1c8ee1ec5492b1d5387dd07e41b27f553b740a252553775f4",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_04_results_and_context_headings.webp",
+      "physical_pdf_page": 4,
+      "shared_original_immutable_blob": true
+    }
+  ],
+  "imported_feature_record_ids": [
+    "CAT046_CRESTRON_BLOC_HOTELS:I001",
+    "CAT046_CRESTRON_BLOC_HOTELS:I002",
+    "CAT046_CRESTRON_BLOC_HOTELS:I003",
+    "CAT046_CRESTRON_BLOC_HOTELS:I004",
+    "CAT046_CRESTRON_BLOC_HOTELS:I005",
+    "CAT046_CRESTRON_BLOC_HOTELS:I006",
+    "CAT046_CRESTRON_BLOC_HOTELS:I007",
+    "CAT046_CRESTRON_BLOC_HOTELS:I008",
+    "CAT046_CRESTRON_BLOC_HOTELS:I009",
+    "CAT046_CRESTRON_BLOC_HOTELS:I011",
+    "CAT046_CRESTRON_BLOC_HOTELS:I012"
+  ],
+  "imported_feature_provenance": [
+    {
+      "id": "CAT046_CRESTRON_BLOC_HOTELS:I001",
+      "physical_pdf_page": 1,
+      "S02_fragment_ref": "CRESTRON46-P01-E06",
+      "narrator_role": "CLIENT_TESTIMONIAL",
+      "target_section_type": "CHALLENGES_VALUE"
+    },
+    {
+      "id": "CAT046_CRESTRON_BLOC_HOTELS:I002",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "CRESTRON46-P02-E01",
+      "narrator_role": "EDITORIAL_SEQUENCE",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT046_CRESTRON_BLOC_HOTELS:I003",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "CRESTRON46-P02-E02",
+      "narrator_role": "CLIENT_ASPIRATION",
+      "target_section_type": "CHALLENGES_VALUE"
+    },
+    {
+      "id": "CAT046_CRESTRON_BLOC_HOTELS:I004",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "CRESTRON46-P02-E03",
+      "narrator_role": "CLIENT_TESTIMONIAL",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT046_CRESTRON_BLOC_HOTELS:I005",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "CRESTRON46-P02-E07",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT046_CRESTRON_BLOC_HOTELS:I006",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "CRESTRON46-P02-E08",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT046_CRESTRON_BLOC_HOTELS:I007",
+      "physical_pdf_page": 3,
+      "S02_fragment_ref": "CRESTRON46-P03-E02",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT046_CRESTRON_BLOC_HOTELS:I008",
+      "physical_pdf_page": 3,
+      "S02_fragment_ref": "CRESTRON46-P03-E03",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT046_CRESTRON_BLOC_HOTELS:I009",
+      "physical_pdf_page": 3,
+      "S02_fragment_ref": "CRESTRON46-P03-E04",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT046_CRESTRON_BLOC_HOTELS:I011",
+      "physical_pdf_page": 4,
+      "S02_fragment_ref": "CRESTRON46-P04-E02",
+      "narrator_role": "VENDOR_REPORTED_QUALITATIVE_OUTCOME",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT046_CRESTRON_BLOC_HOTELS:I012",
+      "physical_pdf_page": 4,
+      "S02_fragment_ref": "CRESTRON46-P04-E03",
+      "narrator_role": "VENDOR_REPORTED_QUALITATIVE_OUTCOME",
+      "target_section_type": "CASE_STUDIES"
+    }
+  ],
+  "imported_visual_image_ids": [
+    "CRESTRON46_01_facade_hero",
+    "CRESTRON46_01_project_fact_sidebar",
+    "CRESTRON46_02_room_panorama_divider",
+    "CRESTRON46_03_mobile_context_room",
+    "CRESTRON46_04_two_zone_room_bath_photo",
+    "CRESTRON46_04_results_and_context_headings"
+  ],
+  "unlinked_style_references": [
+    "CRESTRON46_01_facade_hero",
+    "CRESTRON46_01_project_fact_sidebar",
+    "CRESTRON46_04_two_zone_room_bath_photo"
+  ],
+  "excluded_context_only_candidate_count": 1,
+  "excluded_additional_context_fragments_count": 16,
+  "derived_preview_excluded": true,
+  "future_plan_excluded_from_feature_count": true,
+  "counts": {
+    "prior_version": 12,
+    "version": 13,
+    "prior_catalogs": 12,
+    "catalogs": 13,
+    "prior_records": 589,
+    "records": 600,
+    "prior_images": 125,
+    "images": 131,
+    "new_records": 11,
+    "new_internal_visuals": 6,
+    "alias_files": 6,
+    "extra_count_for_aliases": 0
+  },
+  "checks": {
+    "V12_and_V13_JSON_JS_parity": true,
+    "prior_12_catalogs_exact": true,
+    "Hotel_Renegade_separate_unchanged": true,
+    "case_actor_and_source_page_provenance_preserved": true,
+    "preview_and_card_free_excerpt_absent_from_bank": true,
+    "asset_aliases_match_existing_program_path_allowlist": true,
+    "full_browser_runtime_not_exercised": true,
+    "app_and_sections_untouched": true,
+    "scope_internal_research_not_NSP_capability_or_public_reuse": true
+  },
+  "next_queue_cursor": {
+    "document_index": 13,
+    "document_id": "50",
+    "step_index": 0,
+    "step_id": "S01"
+  },
+  "next_pdf": "50_Zenitel_Work C09.4.pdf",
+  "next_stage_executed": false
+}
