@@ -1,0 +1,1681 @@
+{
+  "schema": "nsp-catalog-research-s06-audit-v1",
+  "stage": "S06",
+  "stage_key": "validation_and_review",
+  "status": "completed_audited_for_internal_ingest_only",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "document_id": "15",
+  "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+  "audit_date": "2026-11-24",
+  "base_main_commit": "d0563dedfec9fff56b84a9826cdac19ec853fa94",
+  "source_pdf": {
+    "company": "Vingcard",
+    "publisher": "Vingcard / ASSA ABLOY",
+    "title": "Mobile Access Solution",
+    "filename": "15_Vingcard_Mobile Access Solution.pdf",
+    "pdf_pages": 12,
+    "file_size_bytes": 2973282,
+    "source_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+    "printed_edition_label": "Doc. Printed: 03/2024",
+    "publication_evidence_pdf_page": 12,
+    "S01_inventory": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S01_source_inventory.json",
+    "S01_inventory_git_blob_sha": "fa9e192bef8a84342d8c9d67f68f5c738b053794",
+    "S01_inventory_commit": "757bf8d8d24c199b4e2eaab14b914482127b8dc9",
+    "S02_text_evidence": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S02_english_text.json",
+    "S02_artifact_commit": "a34ed1f661749f49349eab2140b1aef1dde1e7ad",
+    "S02_git_blob_sha": "f764fa5a091ca5fa850f9ef4f453b0a55335af5a",
+    "S02_total_fragments": 51,
+    "S03_English_source": "Exact unchanged short S02 excerpts; physical page is canonical.",
+    "source_sha256_basis": "Recomputed from exact materialized original bytes in S06; matches S01 to S05."
+  },
+  "linked_stage_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S01_source_inventory.json",
+      "git_blob_sha": "fa9e192bef8a84342d8c9d67f68f5c738b053794"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S02_english_text.json",
+      "git_blob_sha": "f764fa5a091ca5fa850f9ef4f453b0a55335af5a"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S03_features_fa.json",
+      "git_blob_sha": "334891c5947c4b4efded6ed9f2b97a0b8c7c5667"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S04_visual_styles.json",
+      "git_blob_sha": "0afcc19915ddb0439d7ba3ccf1cf17b23d1c2f19"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S05_section_mapping.json",
+      "git_blob_sha": "38d8064996426c48d5ba385e539ad965092976da"
+    }
+  },
+  "summary": {
+    "checked_pdf_pages": 12,
+    "exact_source_fragments_verified": 51,
+    "parsers": "PyMuPDF native text and Poppler raw/layout; all 51 exact after NFC/whitespace normalization",
+    "claim_groups_checked": 14,
+    "bilingual_records_checked": 25,
+    "source_fragments_excluded_and_not_importable": 26,
+    "reference_images_checked": 11,
+    "visual_style_families_checked": 11,
+    "contact_sheet_checked_separately": true,
+    "text_candidates_mapped": 17,
+    "text_candidates_unassigned": 8,
+    "visual_candidates_mapped": 8,
+    "visual_candidates_style_only": 3,
+    "exact_cross_catalog_slogan_hold_count": 1,
+    "derived_translation_correction_count": 1,
+    "verified_NSP_capabilities": 0,
+    "approved_public_claims": 0,
+    "open_blocking_mismatches": 0,
+    "passed_integrity_checks": true
+  },
+  "quality_assurance": {
+    "source_PDF_bytes_and_hash": true,
+    "source_page_hashes_match_S02": true,
+    "S01_S05_remote_artifacts_exact": true,
+    "source_fragment_partition_exhaustive": true,
+    "all_14_claim_guards_retained": true,
+    "repeat_render_reproduced_all_11_WebP_bytes": true,
+    "all_11_remote_assets_match_repeat_render": true,
+    "prior_guarded_paths_unchanged": [
+      {
+        "path": "Portfolio Instruction/feature.json",
+        "git_blob_sha": "26cef3e23db37967ec80ba9d5dc05e5f3db1eda9"
+      },
+      {
+        "path": "Portfolio Instruction/feature.js",
+        "git_blob_sha": "f44b4479d03c90012f3fe641b7198149707fa7b0"
+      },
+      {
+        "path": "index.html",
+        "git_blob_sha": "71e908c655ec49cdbe7a04762effe73222f0463e"
+      },
+      {
+        "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+        "git_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3"
+      }
+    ],
+    "no_copy_ownership_inferred": true
+  },
+  "S07_disposition_counts": {
+    "eligible_for_S07_mapped_competitor_research_only": 17,
+    "eligible_for_S07_unassigned_internal_research_only": 7,
+    "hold_in_S06_source_audit_only": 1
+  },
+  "S07_eligible_record_ids": [
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I002",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I003",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I004",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I005",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I006",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I007",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I008",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I009",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I010",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I011",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I012",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I013",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I014",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I015",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I016",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I017",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I018",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I019",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I020",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I021",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I022",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I023",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I024",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I025"
+  ],
+  "S07_eligible_mapped_record_ids": [
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I002",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I003",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I004",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I005",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I006",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I007",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I008",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I009",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I010",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I011",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I012",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I013",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I016",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I017",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I018",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I019",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I020"
+  ],
+  "S07_eligible_unassigned_internal_record_ids": [
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I014",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I015",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I021",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I022",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I023",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I024",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I025"
+  ],
+  "S07_eligible_internal_image_ids": [
+    "VINGCARD15_01_cover_hero",
+    "VINGCARD15_02_visual_mosaic",
+    "VINGCARD15_03_benefit_columns",
+    "VINGCARD15_04_option_cards",
+    "VINGCARD15_05_partner_overlay",
+    "VINGCARD15_06_guest_flow",
+    "VINGCARD15_07_lifestyle_quote",
+    "VINGCARD15_08_product_photo_row",
+    "VINGCARD15_09_role_loop",
+    "VINGCARD15_10_dark_feature_stack",
+    "VINGCARD15_11_quiet_closing"
+  ],
+  "quarantined_records": [
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I001",
+      "pdf_page": 1,
+      "reason": "exact_same_short_brand_slogan_already_present_in_feature_bank_V8_from_catalog_14",
+      "existing_bank_record_id": "CAT014_VINGCARD_NOVEL:I001",
+      "disposition": "retain_provenance_in_S03_S06_only_no_new_feature_in_S07",
+      "no_translation_or_source_error": true,
+      "visual_provenance_source_link_preserved_in_history": true
+    }
+  ],
+  "contextual_translation_corrections": [
+    {
+      "correction_id": "VINGCARD15-CORR-01",
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I012",
+      "physical_pdf_page": 4,
+      "S02_fragment_ref": "VINGCARD15-P04-E05",
+      "original_translation_fa": "کلید اتاق در Apple Wallet یکپارچه می‌شود",
+      "corrected_translation_fa": "کلیدِ اتاقِ موجود در Apple Wallet با … یکپارچه می‌شود.",
+      "reason_fa": "عبارت «در Apple Wallet» وصف کلید است، نه محل یکپارچه‌سازی. سه‌نقطه نشان می‌دهد گزیده پیش از متمم تمام می‌شود؛ موضوع کامل را به منبع ارجاع بده و دامنهٔ NSP را نتیجه نگیر.",
+      "quote_unchanged": true,
+      "source_artifacts_S03_S05_unchanged": true,
+      "apply_to_S07_derived_fields": [
+        "translation_fa",
+        "meaning_fa"
+      ],
+      "condition": "Apple Wallet is separate from the three app delivery paths and does not imply NSP support."
+    }
+  ],
+  "source_description_metadata_errata": [],
+  "record_audits": [
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I001",
+      "pdf_page": 1,
+      "source_S02_fragment_ref": "VINGCARD15-P01-E02",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "hold_in_S06_source_audit_only_exact_prior_slogan"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I002",
+      "pdf_page": 2,
+      "source_S02_fragment_ref": "VINGCARD15-P02-E01",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I003",
+      "pdf_page": 2,
+      "source_S02_fragment_ref": "VINGCARD15-P02-E02",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I004",
+      "pdf_page": 3,
+      "source_S02_fragment_ref": "VINGCARD15-P03-E01",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I005",
+      "pdf_page": 3,
+      "source_S02_fragment_ref": "VINGCARD15-P03-E03",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I006",
+      "pdf_page": 3,
+      "source_S02_fragment_ref": "VINGCARD15-P03-E04",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I007",
+      "pdf_page": 3,
+      "source_S02_fragment_ref": "VINGCARD15-P03-E05",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I008",
+      "pdf_page": 3,
+      "source_S02_fragment_ref": "VINGCARD15-P03-E06",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I009",
+      "pdf_page": 4,
+      "source_S02_fragment_ref": "VINGCARD15-P04-E02",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I010",
+      "pdf_page": 4,
+      "source_S02_fragment_ref": "VINGCARD15-P04-E03",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I011",
+      "pdf_page": 4,
+      "source_S02_fragment_ref": "VINGCARD15-P04-E04",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I012",
+      "pdf_page": 4,
+      "source_S02_fragment_ref": "VINGCARD15-P04-E05",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": false,
+      "derived_translation_correction_id": "VINGCARD15-CORR-01",
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I013",
+      "pdf_page": 4,
+      "source_S02_fragment_ref": "VINGCARD15-P04-E08",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I014",
+      "pdf_page": 5,
+      "source_S02_fragment_ref": "VINGCARD15-P05-E01",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I015",
+      "pdf_page": 5,
+      "source_S02_fragment_ref": "VINGCARD15-P05-E06",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I016",
+      "pdf_page": 6,
+      "source_S02_fragment_ref": "VINGCARD15-P06-E01",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I017",
+      "pdf_page": 7,
+      "source_S02_fragment_ref": "VINGCARD15-P07-E01",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I018",
+      "pdf_page": 8,
+      "source_S02_fragment_ref": "VINGCARD15-P08-E03",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I019",
+      "pdf_page": 9,
+      "source_S02_fragment_ref": "VINGCARD15-P09-E01",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I020",
+      "pdf_page": 9,
+      "source_S02_fragment_ref": "VINGCARD15-P09-E02",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I021",
+      "pdf_page": 10,
+      "source_S02_fragment_ref": "VINGCARD15-P10-E03",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I022",
+      "pdf_page": 10,
+      "source_S02_fragment_ref": "VINGCARD15-P10-E04",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I023",
+      "pdf_page": 10,
+      "source_S02_fragment_ref": "VINGCARD15-P10-E05",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I024",
+      "pdf_page": 10,
+      "source_S02_fragment_ref": "VINGCARD15-P10-E06",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    },
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I025",
+      "pdf_page": 11,
+      "source_S02_fragment_ref": "VINGCARD15-P11-E01",
+      "source_pdf_text_check": "exact_in_PyMuPDF_and_Poppler_after_NFC_and_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "derived_translation_correction_id": null,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    }
+  ],
+  "image_audits": [
+    {
+      "image_id": "VINGCARD15_01_cover_hero",
+      "pdf_page": 1,
+      "target_section_type": "COVER",
+      "visual_style_type": "hero_full_bleed_product_photo_with_brand_band",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_01_cover_hero.webp",
+      "git_blob_sha": "7e1fcb5cbeb245566649f474ff20e441383196db",
+      "image_asset_sha256": "c03580acd159df3564e359909043219fa207861594539bd366e619688788bf64",
+      "bytes": 36728,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "repeat_render_same_bytes": true,
+      "metadata_preserved": true,
+      "scope_and_gates": "internal_design_research_only",
+      "disposition": "eligible_for_S07_internal_visual_reference_only"
+    },
+    {
+      "image_id": "VINGCARD15_02_visual_mosaic",
+      "pdf_page": 2,
+      "target_section_type": "CHALLENGES_VALUE",
+      "visual_style_type": "editorial_mosaic_beneath_introduction",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_02_visual_mosaic.webp",
+      "git_blob_sha": "d46534ab33cf5f34d70213618edfc3442896e3fd",
+      "image_asset_sha256": "915afe82924bbadf2e98d5053970d8275e5827c376b80af9d465d82ff386f387",
+      "bytes": 91582,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "repeat_render_same_bytes": true,
+      "metadata_preserved": true,
+      "scope_and_gates": "internal_design_research_only",
+      "disposition": "eligible_for_S07_internal_visual_reference_only"
+    },
+    {
+      "image_id": "VINGCARD15_03_benefit_columns",
+      "pdf_page": 3,
+      "target_section_type": "CHALLENGES_VALUE",
+      "visual_style_type": "two_audience_benefit_columns_with_pictograms",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_03_benefit_columns.webp",
+      "git_blob_sha": "2b8acd5a998f5265dca7f48e50cbc607add66070",
+      "image_asset_sha256": "5caeb701e3a8305fb1c873fe7e4eb20cea849f8c1880446b3711d9a1aae34395",
+      "bytes": 88448,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "repeat_render_same_bytes": true,
+      "metadata_preserved": true,
+      "scope_and_gates": "internal_design_research_only",
+      "disposition": "eligible_for_S07_internal_visual_reference_only"
+    },
+    {
+      "image_id": "VINGCARD15_04_option_cards",
+      "pdf_page": 4,
+      "target_section_type": "GRMS",
+      "visual_style_type": "stacked_option_cards_with_pictograms",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_04_option_cards.webp",
+      "git_blob_sha": "c0c8d519a147784b04c31d00f85d5bdc390cd4a0",
+      "image_asset_sha256": "2e41ccd15b6826dfa770758e4b8a9580321b853087071d0b4c15e38e0c2bad64",
+      "bytes": 80406,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "repeat_render_same_bytes": true,
+      "metadata_preserved": true,
+      "scope_and_gates": "internal_design_research_only",
+      "disposition": "eligible_for_S07_internal_visual_reference_only"
+    },
+    {
+      "image_id": "VINGCARD15_05_partner_overlay",
+      "pdf_page": 5,
+      "target_section_type": null,
+      "visual_style_type": "credential_partner_callout_over_photo",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_05_partner_overlay.webp",
+      "git_blob_sha": "8ca85c5fba0653bfb472e39e34fa57a7a6a0f1bc",
+      "image_asset_sha256": "c501dbd2a3764f72182049f371f6be9398bf8ea4daf71debc7808de1310bdca7",
+      "bytes": 41002,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "repeat_render_same_bytes": true,
+      "metadata_preserved": true,
+      "scope_and_gates": "internal_design_research_only",
+      "disposition": "eligible_for_S07_internal_visual_reference_only"
+    },
+    {
+      "image_id": "VINGCARD15_06_guest_flow",
+      "pdf_page": 6,
+      "target_section_type": "GRMS",
+      "visual_style_type": "numbered_pictogram_guest_journey",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_06_guest_flow.webp",
+      "git_blob_sha": "ece932cf54182ef7588f9e2a536aebe25d8502f7",
+      "image_asset_sha256": "0e4d2a0d34d043f29f7f633d8c33e02fc57debe055650bf23bd53f9e0c458ff0",
+      "bytes": 59470,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "repeat_render_same_bytes": true,
+      "metadata_preserved": true,
+      "scope_and_gates": "internal_design_research_only",
+      "disposition": "eligible_for_S07_internal_visual_reference_only"
+    },
+    {
+      "image_id": "VINGCARD15_07_lifestyle_quote",
+      "pdf_page": 7,
+      "target_section_type": "CHALLENGES_VALUE",
+      "visual_style_type": "full_bleed_context_photo_with_quote_panel",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_07_lifestyle_quote.webp",
+      "git_blob_sha": "7254d8e55c8c36d10bafc5f5208f8801ac670e1a",
+      "image_asset_sha256": "0e8492d3b43eec13115a7e0a2e534456844010d709c1001eb977d1e669bbdc9a",
+      "bytes": 52156,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "repeat_render_same_bytes": true,
+      "metadata_preserved": true,
+      "scope_and_gates": "internal_design_research_only",
+      "disposition": "eligible_for_S07_internal_visual_reference_only"
+    },
+    {
+      "image_id": "VINGCARD15_08_product_photo_row",
+      "pdf_page": 8,
+      "target_section_type": null,
+      "visual_style_type": "aligned_product_crop_photo_row",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_08_product_photo_row.webp",
+      "git_blob_sha": "dca341abb658c5f7b06265e60145b6d24e1264ee",
+      "image_asset_sha256": "17ac5b89efbb7a997454a7459ac5378162fbb55fe2fa5463faa7f67c63e6fbf6",
+      "bytes": 8518,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "repeat_render_same_bytes": true,
+      "metadata_preserved": true,
+      "scope_and_gates": "internal_design_research_only",
+      "disposition": "eligible_for_S07_internal_visual_reference_only"
+    },
+    {
+      "image_id": "VINGCARD15_09_role_loop",
+      "pdf_page": 9,
+      "target_section_type": "GRMS",
+      "visual_style_type": "numbered_role_loop_on_solid_background",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_09_role_loop.webp",
+      "git_blob_sha": "2c4f1b5de15911c7578cb2886d334a01ced1c394",
+      "image_asset_sha256": "bfd75f84dde4a681c2adbdc2b6e1a7aa2a2a54a88aad4b6ca682fb6e3bc31a67",
+      "bytes": 50276,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "repeat_render_same_bytes": true,
+      "metadata_preserved": true,
+      "scope_and_gates": "internal_design_research_only",
+      "disposition": "eligible_for_S07_internal_visual_reference_only"
+    },
+    {
+      "image_id": "VINGCARD15_10_dark_feature_stack",
+      "pdf_page": 10,
+      "target_section_type": null,
+      "visual_style_type": "dark_technology_panel_with_icon_rail",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_10_dark_feature_stack.webp",
+      "git_blob_sha": "b1479c0a94a1d7befa1073b79ee100a4ae8021e1",
+      "image_asset_sha256": "bd605d0b153f9282039c7755ab11ce048c3aa370be6eb7a455023c60c63c6221",
+      "bytes": 113428,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "repeat_render_same_bytes": true,
+      "metadata_preserved": true,
+      "scope_and_gates": "internal_design_research_only",
+      "disposition": "eligible_for_S07_internal_visual_reference_only"
+    },
+    {
+      "image_id": "VINGCARD15_11_quiet_closing",
+      "pdf_page": 11,
+      "target_section_type": "IDENTITY_PAGES",
+      "visual_style_type": "quiet_typographic_closing_with_negative_space",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_11_quiet_closing.webp",
+      "git_blob_sha": "5dbe6320f7a1d067df1a264465fc86b8ce2d50a0",
+      "image_asset_sha256": "749f89b57be9f1310708f757fe015548508fd8518099c6ff3fe3233f4769edf3",
+      "bytes": 30506,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "repeat_render_same_bytes": true,
+      "metadata_preserved": true,
+      "scope_and_gates": "internal_design_research_only",
+      "disposition": "eligible_for_S07_internal_visual_reference_only"
+    }
+  ],
+  "page_inventory_and_S02_fragment_checks": [
+    {
+      "pdf_page": 1,
+      "source_excerpt_ids": [
+        "VINGCARD15-P01-E01",
+        "VINGCARD15-P01-E02"
+      ],
+      "verified_excerpts": 2,
+      "match_detail": [
+        {
+          "id": "VINGCARD15-P01-E01",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P01-E02",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 2,
+      "source_excerpt_ids": [
+        "VINGCARD15-P02-E01",
+        "VINGCARD15-P02-E02",
+        "VINGCARD15-P02-E03",
+        "VINGCARD15-P02-E04",
+        "VINGCARD15-P02-E05"
+      ],
+      "verified_excerpts": 5,
+      "match_detail": [
+        {
+          "id": "VINGCARD15-P02-E01",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P02-E02",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P02-E03",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P02-E04",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P02-E05",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 3,
+      "source_excerpt_ids": [
+        "VINGCARD15-P03-E01",
+        "VINGCARD15-P03-E02",
+        "VINGCARD15-P03-E03",
+        "VINGCARD15-P03-E04",
+        "VINGCARD15-P03-E05",
+        "VINGCARD15-P03-E06"
+      ],
+      "verified_excerpts": 6,
+      "match_detail": [
+        {
+          "id": "VINGCARD15-P03-E01",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P03-E02",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P03-E03",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P03-E04",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P03-E05",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P03-E06",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 4,
+      "source_excerpt_ids": [
+        "VINGCARD15-P04-E01",
+        "VINGCARD15-P04-E02",
+        "VINGCARD15-P04-E03",
+        "VINGCARD15-P04-E04",
+        "VINGCARD15-P04-E05",
+        "VINGCARD15-P04-E06",
+        "VINGCARD15-P04-E07",
+        "VINGCARD15-P04-E08"
+      ],
+      "verified_excerpts": 8,
+      "match_detail": [
+        {
+          "id": "VINGCARD15-P04-E01",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P04-E02",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P04-E03",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P04-E04",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P04-E05",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P04-E06",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P04-E07",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P04-E08",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 5,
+      "source_excerpt_ids": [
+        "VINGCARD15-P05-E01",
+        "VINGCARD15-P05-E02",
+        "VINGCARD15-P05-E03",
+        "VINGCARD15-P05-E04",
+        "VINGCARD15-P05-E05",
+        "VINGCARD15-P05-E06"
+      ],
+      "verified_excerpts": 6,
+      "match_detail": [
+        {
+          "id": "VINGCARD15-P05-E01",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P05-E02",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P05-E03",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P05-E04",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P05-E05",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P05-E06",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 6,
+      "source_excerpt_ids": [
+        "VINGCARD15-P06-E01",
+        "VINGCARD15-P06-E02",
+        "VINGCARD15-P06-E03",
+        "VINGCARD15-P06-E04",
+        "VINGCARD15-P06-E05"
+      ],
+      "verified_excerpts": 5,
+      "match_detail": [
+        {
+          "id": "VINGCARD15-P06-E01",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P06-E02",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P06-E03",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P06-E04",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P06-E05",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 7,
+      "source_excerpt_ids": [
+        "VINGCARD15-P07-E01"
+      ],
+      "verified_excerpts": 1,
+      "match_detail": [
+        {
+          "id": "VINGCARD15-P07-E01",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 8,
+      "source_excerpt_ids": [
+        "VINGCARD15-P08-E01",
+        "VINGCARD15-P08-E02",
+        "VINGCARD15-P08-E03",
+        "VINGCARD15-P08-E04"
+      ],
+      "verified_excerpts": 4,
+      "match_detail": [
+        {
+          "id": "VINGCARD15-P08-E01",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P08-E02",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P08-E03",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P08-E04",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 9,
+      "source_excerpt_ids": [
+        "VINGCARD15-P09-E01",
+        "VINGCARD15-P09-E02",
+        "VINGCARD15-P09-E03"
+      ],
+      "verified_excerpts": 3,
+      "match_detail": [
+        {
+          "id": "VINGCARD15-P09-E01",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P09-E02",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P09-E03",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 10,
+      "source_excerpt_ids": [
+        "VINGCARD15-P10-E01",
+        "VINGCARD15-P10-E02",
+        "VINGCARD15-P10-E03",
+        "VINGCARD15-P10-E04",
+        "VINGCARD15-P10-E05",
+        "VINGCARD15-P10-E06"
+      ],
+      "verified_excerpts": 6,
+      "match_detail": [
+        {
+          "id": "VINGCARD15-P10-E01",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P10-E02",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P10-E03",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P10-E04",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P10-E05",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P10-E06",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 11,
+      "source_excerpt_ids": [
+        "VINGCARD15-P11-E01",
+        "VINGCARD15-P11-E02"
+      ],
+      "verified_excerpts": 2,
+      "match_detail": [
+        {
+          "id": "VINGCARD15-P11-E01",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P11-E02",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 12,
+      "source_excerpt_ids": [
+        "VINGCARD15-P12-E01",
+        "VINGCARD15-P12-E02",
+        "VINGCARD15-P12-E03"
+      ],
+      "verified_excerpts": 3,
+      "match_detail": [
+        {
+          "id": "VINGCARD15-P12-E01",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P12-E02",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        },
+        {
+          "id": "VINGCARD15-P12-E03",
+          "PyMuPDF": true,
+          "Poppler_raw": true,
+          "Poppler_layout": true
+        }
+      ]
+    }
+  ],
+  "source_claim_gates_snapshot": [
+    {
+      "id": "VINGCARD15-CLAIM-01",
+      "pdf_page": 2,
+      "kind": "market_survey_and_rounded_callout",
+      "S02_fragment_refs": [
+        "VINGCARD15-P02-E03",
+        "VINGCARD15-P02-E04",
+        "VINGCARD15-P02-E05"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "سه بیان دقیق یکسان نیستند؛ «بیش از» و «نزدیک به» را گرد یا با هم جمع نکن. نام مطالعه، نمونه، زمان و مبنای مستقل در این صفحه تأیید نشد. این‌ها نرخ اجرای NSP نیستند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": []
+    },
+    {
+      "id": "VINGCARD15-CLAIM-02",
+      "pdf_page": 2,
+      "kind": "use_and_operational_outcomes",
+      "S02_fragment_refs": [
+        "VINGCARD15-P02-E02"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "کاربرد منبع؛ سازگاری دستگاه، حذف پذیرش، هزینه/درآمد و وفاداری در NSP از این سند تأیید نمی‌شود.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I003"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-03",
+      "pdf_page": 3,
+      "kind": "deployment_specific_guest_services",
+      "S02_fragment_refs": [
+        "VINGCARD15-P03-E02",
+        "VINGCARD15-P03-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "وابستگی به راهکار مستقر حفظ شود. رزرو، پذیرش، خروج و دورزدن صف پذیرش نباید قابلیت عمومی همهٔ راهکارها یا NSP معرفی شوند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I004",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I005"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-04",
+      "pdf_page": 3,
+      "kind": "vendor_benefits_not_measured",
+      "S02_fragment_refs": [
+        "VINGCARD15-P03-E04",
+        "VINGCARD15-P03-E05",
+        "VINGCARD15-P03-E06"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "وفاداری، کارایی، سودآوری یا کاهش هزینه از نوع پیام مزیت‌اند، نه نتیجهٔ اندازه‌گیری مستقل یا طرح قیمت.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I006",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I007",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I008"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-05",
+      "pdf_page": 4,
+      "kind": "three_apps_and_wallet_distinct",
+      "S02_fragment_refs": [
+        "VINGCARD15-P04-E02",
+        "VINGCARD15-P04-E03",
+        "VINGCARD15-P04-E04",
+        "VINGCARD15-P04-E05",
+        "VINGCARD15-P04-E06",
+        "VINGCARD15-P04-E07",
+        "VINGCARD15-P04-E08"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "سه بلوک روش اپ و بلوک جداگانهٔ Apple Wallet در منبع؛ شرایط SDK، شراکت، اپ آماده و کیف پول با هم ادغام نشوند. الزامات امروز Apple یا سازگاری NSP از سند ثابت نمی‌شود.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I009",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I010",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I011",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I012",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I013"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-06",
+      "pdf_page": 5,
+      "kind": "certified_partner_prerequisites",
+      "S02_fragment_refs": [
+        "VINGCARD15-P05-E01",
+        "VINGCARD15-P05-E02",
+        "VINGCARD15-P05-E03",
+        "VINGCARD15-P05-E04"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "سه معیار مربوط به برنامهٔ شریک Vingcard در این نسخه‌اند و هیچ شریک یا نرم‌افزار NSP را گواهی نمی‌کنند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I010",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I014"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-07",
+      "pdf_page": 5,
+      "kind": "seos_vendor_security_context",
+      "S02_fragment_refs": [
+        "VINGCARD15-P05-E05",
+        "VINGCARD15-P05-E06"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "Seos فقط به‌عنوان نام بستر منبع؛ صفت امنیتی یا استاندارد ادعایی تأیید نشده. جزئیات سازوکار یا آزمون امنیتی به این رکورد منتقل نشود.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I015"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-08",
+      "pdf_page": 6,
+      "kind": "conditional_guest_flow_timing",
+      "S02_fragment_refs": [
+        "VINGCARD15-P06-E02",
+        "VINGCARD15-P06-E03",
+        "VINGCARD15-P06-E04",
+        "VINGCARD15-P06-E05"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "تقریباً ۲۴ ساعت به دعوت در سناریوی ترسیمی مربوط است؛ آماده‌بودن اتاق قیدِ نمایش نتیجه است. تضمین زمانی، SLA و جزء عمومی NSP نیست.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I016"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-09",
+      "pdf_page": 7,
+      "kind": "lifestyle_quote_not_evidence",
+      "S02_fragment_refs": [
+        "VINGCARD15-P07-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "نقل‌قول و عکس نمونهٔ روایت‌اند و تأیید فرایند واقعی یا مجوز بازنشر نیستند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I017"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-10",
+      "pdf_page": 8,
+      "kind": "visionline_and_license_conditions",
+      "S02_fragment_refs": [
+        "VINGCARD15-P08-E02",
+        "VINGCARD15-P08-E03",
+        "VINGCARD15-P08-E04"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "Latest متن سال ۲۰۲۴ است، نه شماره نسخهٔ تأییدشدهٔ فعلی. مجوز Mobile Access و نرم‌افزار Visionline در همان متن جداگانه ثبت شوند. مشخصات و مدل‌های سخت‌افزار رقبا در بانک نیایند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I018"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-11",
+      "pdf_page": 9,
+      "kind": "vendor_architecture_document_edition",
+      "S02_fragment_refs": [
+        "VINGCARD15-P09-E01",
+        "VINGCARD15-P09-E02",
+        "VINGCARD15-P09-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "توالی و نقش‌ها در نمودار نسخهٔ ۲۰۲۴ ثبت شوند، نه پیاده‌سازی امنیت یا امکان تعامل NSP. میزبانی محلی برای Visionline است؛ با سرویس ابری منبع یکی نیست.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I019",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I020"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-12",
+      "pdf_page": 10,
+      "kind": "security_reliability_and_platform_scope",
+      "S02_fragment_refs": [
+        "VINGCARD15-P10-E03",
+        "VINGCARD15-P10-E04",
+        "VINGCARD15-P10-E05",
+        "VINGCARD15-P10-E06"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "ادعاهای امنیت، مقیاس، پشتیبانی، سازگاری و SLA متعلق به ناشرند. اشاره به استاندارد، معادل گواهی مستقل یا تأیید امنیت NSP نیست.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I021",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I022",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I023",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I024"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-13",
+      "pdf_page": 11,
+      "kind": "closing_positioning_only",
+      "S02_fragment_refs": [
+        "VINGCARD15-P11-E01",
+        "VINGCARD15-P11-E02"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "بیان آینده‌نگر و حس تجربه است، نه پیش‌بینی بازار آزموده‌شده یا متن تأییدشده NSP.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I025"
+      ]
+    },
+    {
+      "id": "VINGCARD15-CLAIM-14",
+      "pdf_page": 12,
+      "kind": "edition_and_rights",
+      "S02_fragment_refs": [
+        "VINGCARD15-P12-E01",
+        "VINGCARD15-P12-E02",
+        "VINGCARD15-P12-E03"
+      ],
+      "publication_gate": "provenance_only_not_a_feature",
+      "context_limits_fa": "03/2024 ماه چاپ درج‌شده است، نه تاریخ اولین انتشار یا وضعیت فعلی. نام ناشر، حقوق و سلب مسئولیت حفظ شود؛ دایرکتوری تماس وارد بانک نشود.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "retained_as_context_not_independent_feature": true,
+      "related_S03_record_ids": []
+    }
+  ],
+  "structured_context_review": {
+    "preserved_source_context_ids": [
+      "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+      "VINGCARD15-CONTEXT-GUEST-FLOW",
+      "VINGCARD15-CONTEXT-ISSUANCE-FLOW",
+      "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+    ],
+    "promoted_to_additional_features": false
+  },
+  "usage_boundary_audit": [
+    {
+      "id": "vendor_stats",
+      "pages": [
+        2,
+        10
+      ],
+      "status": "source_only",
+      "comment_fa": "بیش از/نزدیک به ۷۰ درصد و گردکردن تزئینی یک نتیجهٔ NSP نیست؛ ادعاهای اطمینان، SLA و گواهی مستقل نیستند."
+    },
+    {
+      "id": "three_paths_and_wallet",
+      "pages": [
+        4
+      ],
+      "status": "conditions_preserved_with_translation_clarification",
+      "comment_fa": "سه مسیر اپ و Apple Wallet در بلوک جدا؛ متمم متن دربارهٔ یکپارچه‌سازی، قابلیت NSP یا گروه دسترسی تازه ایجاد نمی‌کند."
+    },
+    {
+      "id": "partner_security",
+      "pages": [
+        5
+      ],
+      "status": "source_only",
+      "comment_fa": "مجوز برنامهٔ شریک، آموزش و تأیید Vingcard گواهی NSP نیست؛ بستر Seos صرفاً نام منبع است."
+    },
+    {
+      "id": "guest_flow_qualification",
+      "pages": [
+        3,
+        6
+      ],
+      "status": "conditions_preserved",
+      "comment_fa": "زمان «تقریباً ۲۴ ساعت»، آماده‌بودن اتاق و راهکار مستقر به ترتیب همان نمونه محدودند."
+    },
+    {
+      "id": "deployment_and_license",
+      "pages": [
+        8,
+        9
+      ],
+      "status": "conditions_preserved",
+      "comment_fa": "در سند ۲۰۲۴ Visionline و گزینهٔ مجوز جدا هستند؛ میزبانی داخل هتل به Visionline مربوط است، نه بخش ابری و نه NSP."
+    },
+    {
+      "id": "visual_rights",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "status": "internal_only",
+      "comment_fa": "بازنشر commercial یا مجوز جدید تأیید نشد. برای کاتالوگ NSP بازطراحی مستقل با دارایی مجاز لازم است."
+    }
+  ],
+  "reference_overview_audit": {
+    "id": "VINGCARD15_S04_reference_overview.webp",
+    "asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_S04_reference_overview.webp",
+    "blob_sha": "3de1ceef87879b9d0c0d08ea8dc49bea9912805f",
+    "sha256": "21b2a8b33b8d17ba36bde7664f5e18363f89b81c3418ec11c75369e2270b907e",
+    "bytes": 64844,
+    "not_additional_image_or_style": true
+  },
+  "canonical_structure_review": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "git_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "valid_research_section_ids": [
+      "COVER",
+      "IDENTITY_PAGES",
+      "COMPANY_INTRO",
+      "CHALLENGES_VALUE",
+      "HOTEL_OVERVIEW",
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS",
+      "CASE_STUDIES"
+    ],
+    "section_snapshot": [
+      {
+        "section_id": "COVER",
+        "title_fa": "صفحه اول کاتالوگ",
+        "row": 2,
+        "content_level": null
+      },
+      {
+        "section_id": "IDENTITY_PAGES",
+        "title_fa": "صفحات تنفس",
+        "row": 3,
+        "content_level": null
+      },
+      {
+        "section_id": "COMPANY_INTRO",
+        "title_fa": "معرفی شرکت NSP",
+        "row": 4,
+        "content_level": "COMPANY"
+      },
+      {
+        "section_id": "CHALLENGES_VALUE",
+        "title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+        "row": 5,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "HOTEL_OVERVIEW",
+        "title_fa": "نقشهٔ جامع راهکارهای هتلی",
+        "row": 6,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "GRMS",
+        "title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+        "row": 7,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "IPTV",
+        "title_fa": "تلویزیون و خدمات تعاملی هتل (IPTV)",
+        "row": 8,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "PUBLIC_AREAS",
+        "title_fa": "کنترل هوشمند مشاعات هتل",
+        "row": 9,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "CASE_STUDIES",
+        "title_fa": "رزومه و پروژه‌های اجراشده",
+        "row": 10,
+        "content_level": null
+      }
+    ],
+    "legacy_aliases_for_reading_only": {
+      "BISMILLAH": "IDENTITY_PAGES"
+    },
+    "binder_cover_excluded_from_research_mapping": true,
+    "CROSS_SECTION_STYLE_is_tag_not_section": true,
+    "idea_attachment_deferred_to_defrag": true,
+    "proposed_roles_are_not_approved_subsections": true,
+    "systems_in_scope": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ]
+  },
+  "S07_import_contract": {
+    "must_import_only_S07_eligible_record_ids": true,
+    "must_exclude_quarantined_records_from_feature_bank": true,
+    "eligible_record_count": 24,
+    "mapped_record_count": 17,
+    "unassigned_internal_record_count": 7,
+    "internal_visual_reference_count": 11,
+    "distinct_style_family_count": 11,
+    "must_preserve_all_source_claim_gates": true,
+    "must_keep_unassigned_primary_and_secondary_targets_empty": true,
+    "must_keep_CROSS_SECTION_STYLE_as_a_tag_not_a_printed_section": true,
+    "must_apply_derived_Apple_Wallet_translation_clarification": true,
+    "must_keep_held_slogan_as_historical_image_context_only": true,
+    "must_not_promote_26_excluded_fragments_to_new_features": true,
+    "must_not_count_derived_overview_as_twelfth_source_image": true,
+    "legacy_version_expected_before_ingest": 8,
+    "approved_publication_or_NSP_capabilities": 0
+  },
+  "feature_bank_snapshot_before_S07": {
+    "version": 8,
+    "catalog_count": 8,
+    "feature_record_count": 499,
+    "images_array_record_count": 91
+  },
+  "feature_json_untouched": true,
+  "feature_js_untouched": true,
+  "application_source_untouched": true,
+  "SECTIONS_STRUCTURE_json_untouched": true,
+  "next_stage": "S07 — به‌روزرسانی JSON و Commit",
+  "next_queue_cursor": {
+    "document_index": 8,
+    "document_id": "15",
+    "step_index": 6,
+    "step_id": "S07"
+  },
+  "next_stage_executed": false
+}
