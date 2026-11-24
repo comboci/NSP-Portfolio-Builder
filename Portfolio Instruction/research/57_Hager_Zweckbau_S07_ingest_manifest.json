@@ -1,0 +1,346 @@
+{
+  "schema": "nsp-catalog-research-s07-import-v2",
+  "status": "validated_import",
+  "stage": "S07",
+  "stage_key": "feature_json_and_commit",
+  "document_id": "57",
+  "date": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "d19188691c24d7ba4491c7d7d1b4d20c62fdd45c",
+  "source_catalog": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+  "source_pdf": "57_Hager_Work C15.1.pdf",
+  "source_pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+  "source_language": "de",
+  "source_printed_document_code": "19DE0075_01",
+  "physical_pdf_pages": 172,
+  "hotel_physical_pdf_page_range": [
+    32,
+    71
+  ],
+  "audit_artifact": "Portfolio Instruction/research/57_Hager_Zweckbau_S06_original_source_audit.json",
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S01_source_inventory.json",
+      "commit_sha": "4e0a33e3e30c76cd6a38d59e83519e45d8e3ab35",
+      "blob_sha": "a489cd42cd56523eb8ccda538149a43af511e94a"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S02_german_text.json",
+      "blob_sha": "51e45bae2ba19081d0d1fd6b8882a8d525b04938",
+      "commit_sha": "e89e8a12939597b06e1351646856a35d2e012cf5"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S03_features_fa.json",
+      "blob_sha": "45ed9f53f1d896435739726884baf0ac9b9904af",
+      "commit_sha": "95d16d6a6d6a7713e2ecc57336173dc00fd52f85"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S04_visual_styles.json",
+      "blob_sha": "6c3f33661fc6e9d6d54d9f9de38efa656a46ed20",
+      "commit_sha": "7fc1c42298cf95bbc3e5ec6a28ff19adb3b6ae2a"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S05_section_mapping.json",
+      "blob_sha": "30f9ed30eac4696cedbc386c761a1d572d858fc2",
+      "commit_sha": "caf7fe9a42807328ed625923206824b5d0fa990c"
+    },
+    "S06": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S06_original_source_audit.json",
+      "blob_sha": "55584b11e0104c84edf6e12739bc6c64123cd37a",
+      "commit_sha": "dbc3332c74030d0cb725bac33f9a36c16d683584"
+    }
+  },
+  "updated_bank_files": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js"
+  ],
+  "committed_artifact_paths": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js",
+    "Portfolio Instruction/research/57_Hager_Zweckbau_S07_ingest_manifest.json",
+    "Portfolio Instruction/assets/hager57-032-reception-texture.webp",
+    "Portfolio Instruction/assets/hager57-034-hotel-topic-header.webp",
+    "Portfolio Instruction/assets/hager57-045-conference-space.webp",
+    "Portfolio Instruction/assets/hager57-048-corridor-light-context.webp",
+    "Portfolio Instruction/assets/hager57-060-bedside-integration.webp",
+    "Portfolio Instruction/assets/hager57-061-bikini-ambient-detail.webp",
+    "Portfolio Instruction/assets/hager57-066-room-lighting-atmosphere.webp",
+    "Portfolio Instruction/assets/hager57-068-material-contrast-pair.webp",
+    "Portfolio Instruction/assets/hager57-070-finish-samples.webp"
+  ],
+  "output_bank_files": [
+    {
+      "path": "Portfolio Instruction/feature.json",
+      "git_blob_sha": "3933e0b4f3a9704a1adb5d60b60d73573e86059b"
+    },
+    {
+      "path": "Portfolio Instruction/feature.js",
+      "git_blob_sha": "298b24f2f6073cd9ba555dc919e820995d0ca4ab"
+    }
+  ],
+  "new_display_alias_assets": [
+    {
+      "path": "Portfolio Instruction/assets/hager57-032-reception-texture.webp",
+      "id": "HAGER57_032_reception_texture",
+      "git_blob_sha": "379b37c22350b854c5e53fab6b7866616fb26d61",
+      "sha256": "855e76a511a1552a59a9ffea61b7e473c69552f00dea97dae45e4345477c9031",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_032_reception_texture.webp",
+      "physical_pdf_page": 32,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/hager57-034-hotel-topic-header.webp",
+      "id": "HAGER57_034_hotel_topic_header",
+      "git_blob_sha": "73ab90020bc84c4f2c11ddfac034325ed8681b31",
+      "sha256": "f26e0f734adeb867650dce8a4bcea6bbe96c025a6aca354df27e51023d40b892",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_034_hotel_topic_header.webp",
+      "physical_pdf_page": 34,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/hager57-045-conference-space.webp",
+      "id": "HAGER57_045_conference_space",
+      "git_blob_sha": "2321fc038bc8d19d54414ea3ffae39662ef05870",
+      "sha256": "dfc3aa6d2873314c7a07b836ea92040acad3f94a3ad4b8fb2e45bde31987fd33",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_045_conference_space.webp",
+      "physical_pdf_page": 45,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/hager57-048-corridor-light-context.webp",
+      "id": "HAGER57_048_corridor_light_context",
+      "git_blob_sha": "e194ebed5963d9850bd3d8a4df893d59e8ab8b6c",
+      "sha256": "3ca48a9069b6c5d6d9e39a48dde98c8c78ad1c7d7b4cedb768b0c9a93a4cf152",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_048_corridor_light_context.webp",
+      "physical_pdf_page": 48,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/hager57-060-bedside-integration.webp",
+      "id": "HAGER57_060_bedside_integration",
+      "git_blob_sha": "d89be6853e344d0e5148b0cdd359d19799701d09",
+      "sha256": "8ff50731eecceae497365bdcfe8de6651b0ae38106ee9ebc15c663fbac2639f5",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_060_bedside_integration.webp",
+      "physical_pdf_page": 60,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/hager57-061-bikini-ambient-detail.webp",
+      "id": "HAGER57_061_bikini_ambient_detail",
+      "git_blob_sha": "851b826d03e31c6d54c186d3b16f2dce36cc4e1c",
+      "sha256": "68bc94ac28f408475490cef95a38147a31dec4c1c05925be7c61c5178c42e8e2",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_061_bikini_ambient_detail.webp",
+      "physical_pdf_page": 61,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/hager57-066-room-lighting-atmosphere.webp",
+      "id": "HAGER57_066_room_lighting_atmosphere",
+      "git_blob_sha": "d516815bfcffda2b42f681da820f438aee0de839",
+      "sha256": "f3352c339fd85ae2b921be838b968fb8eb8c70a557065b6d035568e045cd1db8",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_066_room_lighting_atmosphere.webp",
+      "physical_pdf_page": 66,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/hager57-068-material-contrast-pair.webp",
+      "id": "HAGER57_068_material_contrast_pair",
+      "git_blob_sha": "3e8ca091fe789d9b5850365700da97517e17e069",
+      "sha256": "8a726e8fa97f123c0092e48bbe1ced00700c3dfcee0d9b329496694dd9457284",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_068_material_contrast_pair.webp",
+      "physical_pdf_page": 68,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/hager57-070-finish-samples.webp",
+      "id": "HAGER57_070_finish_samples",
+      "git_blob_sha": "c00d0036922eceb07dfdae5b17f68cb2a01ab66d",
+      "sha256": "8d9b0ed48006eebf6e7c5521422dd01af947c2a56c44fadf894c657747ef17f1",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_070_finish_samples.webp",
+      "physical_pdf_page": 70,
+      "shared_original_immutable_blob": true
+    }
+  ],
+  "imported_feature_record_ids": [
+    "CAT057_HAGER_ZWECKBAU_19DE0075_01:I001",
+    "CAT057_HAGER_ZWECKBAU_19DE0075_01:I002",
+    "CAT057_HAGER_ZWECKBAU_19DE0075_01:I003",
+    "CAT057_HAGER_ZWECKBAU_19DE0075_01:I004",
+    "CAT057_HAGER_ZWECKBAU_19DE0075_01:I005",
+    "CAT057_HAGER_ZWECKBAU_19DE0075_01:I009",
+    "CAT057_HAGER_ZWECKBAU_19DE0075_01:I010",
+    "CAT057_HAGER_ZWECKBAU_19DE0075_01:I011",
+    "CAT057_HAGER_ZWECKBAU_19DE0075_01:I014",
+    "CAT057_HAGER_ZWECKBAU_19DE0075_01:I015",
+    "CAT057_HAGER_ZWECKBAU_19DE0075_01:I016",
+    "CAT057_HAGER_ZWECKBAU_19DE0075_01:I017"
+  ],
+  "imported_feature_provenance": [
+    {
+      "id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I001",
+      "physical_pdf_page": 32,
+      "printed_pdf_folio": 32,
+      "S02_fragment_ref": "HAGER57-P032-D01",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "target_section_type": "HOTEL_OVERVIEW"
+    },
+    {
+      "id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I002",
+      "physical_pdf_page": 33,
+      "printed_pdf_folio": 33,
+      "S02_fragment_ref": "HAGER57-P033-D01",
+      "narrator_role": "DESIGNER_DIRECT_QUOTE",
+      "target_section_type": "CHALLENGES_VALUE"
+    },
+    {
+      "id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I003",
+      "physical_pdf_page": 34,
+      "printed_pdf_folio": 34,
+      "S02_fragment_ref": "HAGER57-P034-D01",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "target_section_type": "HOTEL_OVERVIEW"
+    },
+    {
+      "id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I004",
+      "physical_pdf_page": 34,
+      "printed_pdf_folio": 34,
+      "S02_fragment_ref": "HAGER57-P034-D02",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "target_section_type": "HOTEL_OVERVIEW"
+    },
+    {
+      "id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I005",
+      "physical_pdf_page": 35,
+      "printed_pdf_folio": 35,
+      "S02_fragment_ref": "HAGER57-P035-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "target_section_type": "HOTEL_OVERVIEW"
+    },
+    {
+      "id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I009",
+      "physical_pdf_page": 45,
+      "printed_pdf_folio": 45,
+      "S02_fragment_ref": "HAGER57-P045-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "target_section_type": "PUBLIC_AREAS"
+    },
+    {
+      "id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I010",
+      "physical_pdf_page": 48,
+      "printed_pdf_folio": 48,
+      "S02_fragment_ref": "HAGER57-P048-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "target_section_type": "PUBLIC_AREAS"
+    },
+    {
+      "id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I011",
+      "physical_pdf_page": 53,
+      "printed_pdf_folio": 53,
+      "S02_fragment_ref": "HAGER57-P053-D01",
+      "narrator_role": "VENDOR_MARKETING_HEADLINE",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I014",
+      "physical_pdf_page": 60,
+      "printed_pdf_folio": 60,
+      "S02_fragment_ref": "HAGER57-P060-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I015",
+      "physical_pdf_page": 61,
+      "printed_pdf_folio": 61,
+      "S02_fragment_ref": "HAGER57-P061-D01",
+      "narrator_role": "VENDOR_CASE_CAPTION",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I016",
+      "physical_pdf_page": 66,
+      "printed_pdf_folio": 66,
+      "S02_fragment_ref": "HAGER57-P066-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I017",
+      "physical_pdf_page": 70,
+      "printed_pdf_folio": 70,
+      "S02_fragment_ref": "HAGER57-P070-D01",
+      "narrator_role": "VENDOR_BRANDED_DESIGN_LABEL",
+      "target_section_type": "GRMS"
+    }
+  ],
+  "imported_visual_image_ids": [
+    "HAGER57_032_reception_texture",
+    "HAGER57_034_hotel_topic_header",
+    "HAGER57_045_conference_space",
+    "HAGER57_048_corridor_light_context",
+    "HAGER57_060_bedside_integration",
+    "HAGER57_061_bikini_ambient_detail",
+    "HAGER57_066_room_lighting_atmosphere",
+    "HAGER57_068_material_contrast_pair",
+    "HAGER57_070_finish_samples"
+  ],
+  "audited_Persian_copy_edits_applied": [
+    {
+      "id": "HAGER57-CORR-01",
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I010",
+      "physical_pdf_page": 48,
+      "S02_fragment_ref": "HAGER57-P048-D01",
+      "original_translation_fa": "قرنیزهای LED برای راهرو و اتاق",
+      "audited_translation_fa": "قرنیزهای مجهز به LED برای راهرو و اتاق",
+      "reason_fa": "روان‌سازی عبارت LED-Sockelleisten و وضوح اینکه قرنیز نوع محصول است؛ بدون افزودن دستور نصب یا ادعای عملکرد.",
+      "source_quote_changed": false,
+      "prior_artifacts_unchanged": true,
+      "apply_derived_fields_in_S07": [
+        "translation_fa",
+        "meaning_fa"
+      ]
+    }
+  ],
+  "excluded_s03_context_rows": 5,
+  "additional_S02_context_rows_not_counted": 14,
+  "derived_preview_excluded": true,
+  "counts": {
+    "prior_version": 16,
+    "version": 17,
+    "prior_catalogs": 16,
+    "catalogs": 17,
+    "prior_records": 632,
+    "records": 644,
+    "prior_images": 154,
+    "images": 163,
+    "new_text": 12,
+    "new_internal_visuals": 9,
+    "alias_files": 9,
+    "alias_rows_additional_count": 0
+  },
+  "checks": {
+    "V16_and_V17_JSON_JS_parity": true,
+    "prior_16_catalogs_exact": true,
+    "exact_allowed_S06_ids": true,
+    "source_page_provenance_preserved": true,
+    "printed_code_not_interpreted_as_date_or_revision": true,
+    "German_source_preserved_legacy_en_fields_explicitly_compatibility_only": true,
+    "JAZ_quote_not_Bikini_caption_or_verified_result": true,
+    "utility_connections_not_entry_security": true,
+    "operational_or_safety_or_IPTV_claims_not_imported": true,
+    "app_asset_paths_match_existing_allowlist": true,
+    "full_runtime_not_exercised": true,
+    "app_sections_and_portfolio_pages_untouched": true,
+    "internal_style_only_and_no_reuse_rights": true
+  },
+  "next_queue_cursor": {
+    "document_index": 17,
+    "document_id": "58",
+    "step_index": 0,
+    "step_id": "S01"
+  },
+  "next_pdf": "58_HDL_Automation_Work C16.1.pdf",
+  "next_stage_executed": false
+}
