@@ -1,0 +1,1677 @@
+{
+  "schema": "nsp-catalog-research-stage-original-source-audit-v1",
+  "stage": "S06",
+  "stage_key": "validation_and_review",
+  "status": "completed_verified_for_internal_research_integration_only",
+  "document_id": "34",
+  "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+  "source_language": "fr",
+  "verified_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "d236feb329157eeffb5c24762d0dcc1af13bf1be",
+  "source_document": {
+    "company": "Legrand",
+    "publisher": "Legrand",
+    "title": "Chambres d’hôtel – Solutions IP BACnet®",
+    "filename": "34_Legrand_Work C04.3.pdf",
+    "pdf_pages": 208,
+    "file_size_bytes": 37661849,
+    "source_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+    "printed_document_code": "SYS219006",
+    "printed_edition_month": "2019-09",
+    "publication_evidence_pdf_page": 208,
+    "S01_inventory": "Portfolio Instruction/research/34_Legrand_SYS219006_S01_source_inventory.json",
+    "S01_inventory_git_blob_sha": "dabf44ed74fc4c14c1251f64a944f3099ee4f986",
+    "S01_inventory_commit": "541a285c3ea3d2c9a8961eaceb1b1a7ec2a9e558",
+    "S02_text_evidence": "Portfolio Instruction/research/34_Legrand_SYS219006_S02_french_text.json",
+    "S02_artifact_commit": "f02496cf8c4b4e6424f305110f7ce6858112b49a",
+    "S02_git_blob_sha": "c5e4b886cfe91cf0b80cb23a664116a727e3bc66",
+    "S02_total_French_fragments": 49,
+    "S03_original_language_policy": "Canonical French source excerpt must be retained; any compatibility label containing '_en' must be explicitly marked as a legacy field, not an English source quote.",
+    "resolved_exact_user_library_source": true,
+    "identity_freshly_reverified": true,
+    "printed_edition_verified_on_physical_page": 208,
+    "article_printed_code": "SYS219006",
+    "other_Legrand_editions_remain_distinct": true,
+    "full_original_pdf_published": false
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S01_source_inventory.json",
+      "commit_sha": "541a285c3ea3d2c9a8961eaceb1b1a7ec2a9e558",
+      "blob_sha": "dabf44ed74fc4c14c1251f64a944f3099ee4f986"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S02_french_text.json",
+      "commit_sha": "f02496cf8c4b4e6424f305110f7ce6858112b49a",
+      "blob_sha": "c5e4b886cfe91cf0b80cb23a664116a727e3bc66"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S03_features_fa.json",
+      "commit_sha": "e1d6b8f270327cae5cf84a96e0743011d63a32e1",
+      "blob_sha": "9380f7ebe79b886cf0c189de74ec850ec9532891"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S04_visual_styles.json",
+      "commit_sha": "9a7a44a1726c69caeefcef6a1883510d180c3ecf",
+      "blob_sha": "ea81a7f0f0abd765fff4d4f3ca885b5358a0762f"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S05_section_mapping.json",
+      "blob_sha": "a721801cc38e14e711fa8c8a6f13ee5c8d3bddf9",
+      "commit_sha": "e9516cc138b1527ffc374fa945ee6b8434b9f594"
+    }
+  },
+  "canonical_section_structure": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "revision": "2.3.0",
+    "all_proposed_targets_checked": true,
+    "legacy_BISMILLAH_excluded_as_target": true,
+    "BINDER_COVER_excluded_as_target": true,
+    "CROSS_SECTION_STYLE_is_presentation_tag_not_section": true,
+    "software_topics_stay_in_GRMS": true,
+    "selected_or_attached_count": 0
+  },
+  "statistics": {
+    "physical_pages_hash_checked": 208,
+    "physical_pages_with_selected_source_excerpts": 31,
+    "physical_pages_without_selected_source_excerpts": 177,
+    "short_original_French_phrases_checked": 49,
+    "PyMuPDF_exact_selected_phrases": 49,
+    "Poppler_raw_exact_selected_phrases": 49,
+    "Poppler_layout_exact_selected_phrases": 48,
+    "optional_layout_quirks_resolved_visually": 1,
+    "Persian_translations_reviewed": 49,
+    "text_records_at_S03": 31,
+    "text_research_rows_eligible_for_S07": 28,
+    "S03_labels_held_as_context_not_feature_rows": 3,
+    "additional_S02_context_fragments": 18,
+    "direct_visuals_exactly_reproduced": 9,
+    "visuals_eligible_for_S07_internal_research_only": 9,
+    "derived_overview_not_counted": 1,
+    "NSP_capabilities_verified": 0,
+    "publication_approval_count": 0,
+    "printed_page_attachments": 0
+  },
+  "physical_source_checks": {
+    "file_bytes": 37661849,
+    "SHA256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+    "physical_page_count": 208,
+    "physical_page_fingerprints_aggregate_sha256": "4b7fbbc5afd9d819f480929c08ebd4bf6c266765a198a8e698d9e5133ebfc4ba",
+    "hash_input_for_aggregate": "ASCII native UTF-8 text SHA-256 of each physical page, joined by newline in page order without trailing newline; page text normalized only by get_text().strip() before hashing.",
+    "all_page_hashes_and_geometry_match_S01_and_S02": true,
+    "physical_page_2_folio_only": true,
+    "physical_page_207_blank": true,
+    "printed_edition_verified_on_pdf_page_208": true,
+    "quote_matching_normalization": "NFKC, C0 layout controls changed to spaces for comparison, whitespace collapsed; canonical spelling is not silently repaired."
+  },
+  "corrections_and_limits": [
+    {
+      "id": "S06-CORR-001",
+      "affected_stage": "S02",
+      "affected_source_ref": "LEGRAND34-P130-E03",
+      "physical_pdf_page": 130,
+      "issue": "Poppler layout extraction loses the initial F in the printed heading beside a PDF control marker. Prior S02 per-layout flag is superseded for this fragment.",
+      "verified_resolution": "PyMuPDF and Poppler raw retain exact wording; manually read the isolated heading rendered from physical page 130. Keep the exact original French and existing Persian translation, context only. No change to S02/S03 history.",
+      "manual_visual_confirmation": true,
+      "blocks_S07": false
+    },
+    {
+      "id": "S06-DEC-002",
+      "affected_stage": "S05",
+      "affected_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I016",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I030",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I031"
+      ],
+      "issue": "Nonmapped source labels are context, not feature rows.",
+      "verified_resolution": "Retain all 3 in audit or structured context; exclude from independent S07 features. No digital credential, diagnostic procedure, SLA or assurance claim.",
+      "blocks_S07": false
+    }
+  ],
+  "fragment_reviews": [
+    {
+      "fragment_id": "LEGRAND34-P001-E01",
+      "pdf_page": 1,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P001-E02",
+      "pdf_page": 1,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P001-E03",
+      "pdf_page": 1,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P003-E01",
+      "pdf_page": 3,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P004-E01",
+      "pdf_page": 4,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P006-E01",
+      "pdf_page": 6,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P006-E02",
+      "pdf_page": 6,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P007-E01",
+      "pdf_page": 7,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P007-E02",
+      "pdf_page": 7,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P007-E03",
+      "pdf_page": 7,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P008-E01",
+      "pdf_page": 8,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P008-E02",
+      "pdf_page": 8,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P009-E01",
+      "pdf_page": 9,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P010-E01",
+      "pdf_page": 10,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P012-E01",
+      "pdf_page": 12,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P016-E01",
+      "pdf_page": 16,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P018-E01",
+      "pdf_page": 18,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P020-E01",
+      "pdf_page": 20,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P024-E01",
+      "pdf_page": 24,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P025-E01",
+      "pdf_page": 25,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P108-E01",
+      "pdf_page": 108,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P108-E02",
+      "pdf_page": 108,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P117-E01",
+      "pdf_page": 117,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P119-E01",
+      "pdf_page": 119,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P119-E02",
+      "pdf_page": 119,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P119-E03",
+      "pdf_page": 119,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P125-E01",
+      "pdf_page": 125,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P128-E01",
+      "pdf_page": 128,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P130-E01",
+      "pdf_page": 130,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P130-E02",
+      "pdf_page": 130,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P130-E03",
+      "pdf_page": 130,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": false,
+      "original_render_visually_confirmed": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P130-E04",
+      "pdf_page": 130,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P130-E05",
+      "pdf_page": 130,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P131-E01",
+      "pdf_page": 131,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P133-E01",
+      "pdf_page": 133,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P134-E01",
+      "pdf_page": 134,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P138-E01",
+      "pdf_page": 138,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P138-E02",
+      "pdf_page": 138,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P152-E01",
+      "pdf_page": 152,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P152-E02",
+      "pdf_page": 152,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P156-E01",
+      "pdf_page": 156,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P156-E02",
+      "pdf_page": 156,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P177-E01",
+      "pdf_page": 177,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P184-E01",
+      "pdf_page": 184,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P189-E01",
+      "pdf_page": 189,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P206-E01",
+      "pdf_page": 206,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P206-E02",
+      "pdf_page": 206,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P206-E03",
+      "pdf_page": 206,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    },
+    {
+      "fragment_id": "LEGRAND34-P208-E01",
+      "pdf_page": 208,
+      "exact_match_PyMuPDF": true,
+      "exact_match_Poppler_raw": true,
+      "exact_match_Poppler_layout": true
+    }
+  ],
+  "S03_record_reviews": [
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I001",
+      "physical_pdf_page": 3,
+      "S02_fragment_ref": "LEGRAND34-P003-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "موضوع‌ها",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "ساختار پیمایش، نه مزیت محصول و نه صفحهٔ مصوب.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I002",
+      "physical_pdf_page": 6,
+      "S02_fragment_ref": "LEGRAND34-P006-E02",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "سامانهٔ مدیریت اتاق",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "عبارت تعریف اصطلاح GRMS در راهنماست؛ دامنهٔ امکانات NSP را مشخص نمی‌کند.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I003",
+      "physical_pdf_page": 7,
+      "S02_fragment_ref": "LEGRAND34-P007-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "حضور / عدم حضور",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "عنوان وضعیت، نه شاهد حسگر، شرط یا دقت تشخیص.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I004",
+      "physical_pdf_page": 7,
+      "S02_fragment_ref": "LEGRAND34-P007-E02",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "اتاق نظافت شود / مزاحم نشوید",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "دو عنوان خدمت؛ پیوند با واژه‌نامه p206 اصطلاحی است و ارتباط با پذیرش را ثابت نمی‌کند.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I005",
+      "physical_pdf_page": 7,
+      "S02_fragment_ref": "LEGRAND34-P007-E03",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "پرده‌ها / کرکره‌ها",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "فقط نام گروه کارکرد؛ نه نوع عملگر یا سازگاری.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I006",
+      "physical_pdf_page": 8,
+      "S02_fragment_ref": "LEGRAND34-P008-E02",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "مجموعه‌ای از چند سامانه",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "راهنما هتل را از چند سامانه تشکیل‌شده نمایش می‌دهد؛ تنها ساختار روایت برای قیاس است، نه فهرست راهکار یا یکپارچگی NSP.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I007",
+      "physical_pdf_page": 9,
+      "S02_fragment_ref": "LEGRAND34-P009-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "اتصال متقابل چند سامانه",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "اشارهٔ مفهومی به ارتباط سامانه‌هاست؛ نوع شبکه، پیکربندی، سازگاری و امکان واقعی NSP از آن نتیجه نشود.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I008",
+      "physical_pdf_page": 10,
+      "S02_fragment_ref": "LEGRAND34-P010-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "انطباق‌پذیری (۱)",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "(۱) در تیتر نشانهٔ پانوشت منبع است، نه مقدار یا ظرفیت.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I009",
+      "physical_pdf_page": 12,
+      "S02_fragment_ref": "LEGRAND34-P012-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "نمونهٔ نصب برای یک اتاق",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "فقط تیتر نمونه؛ نه تصویر/نقشهٔ نصب یا شیوهٔ اجرایی.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I010",
+      "physical_pdf_page": 16,
+      "S02_fragment_ref": "LEGRAND34-P016-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "معماری مدیریت اتاق‌ها با سامانهٔ نظارت مرکزی",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "نمونهٔ معماریِ منبع؛ سامانهٔ نظارت، روش ارتباط، واسط یا امکان واقعی NSP تأیید نشده.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I011",
+      "physical_pdf_page": 18,
+      "S02_fragment_ref": "LEGRAND34-P018-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "مدیریت محلی گرمایش و سرمایش",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "HVAC محلی، فقط یکی از روایت‌های مجزا؛ با p20 جمع یا ادغام نشود.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I012",
+      "physical_pdf_page": 20,
+      "S02_fragment_ref": "LEGRAND34-P020-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "مدیریت متمرکز گرمایش و سرمایش",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "HVAC مرکزی، فقط یکی از روایت‌های مجزا؛ با p18 جمع یا ادغام نشود.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I013",
+      "physical_pdf_page": 24,
+      "S02_fragment_ref": "LEGRAND34-P024-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "نمونه‌ای از زیرساخت IP هتل (غیرجامع)",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "قید «غیرجامع» بخشی از عبارت است؛ برچسب IPTV صفحهٔ ۲۵ نه سرویس، نه یکپارچگی و نه نگاشت IPTV.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I014",
+      "physical_pdf_page": 108,
+      "S02_fragment_ref": "LEGRAND34-P108-E02",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "عملکرد گرمایش و سرمایش",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "عنوان حالت دمایی در منبع، نه دستور، محدوده، مدل تجهیزات یا دامنه پشتیبانی NSP.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I015",
+      "physical_pdf_page": 117,
+      "S02_fragment_ref": "LEGRAND34-P117-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "تغییر خودکار حالت تابستانی/زمستانی",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "عبارت «خودکار» در عنوان منبع است؛ شرط، تنظیم و توان NSP نیست.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I016",
+      "physical_pdf_page": 119,
+      "S02_fragment_ref": "LEGRAND34-P119-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "کارت مجازی اتاق (Virtual Keycard)",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": null,
+      "mapping_status": "context_only_no_target",
+      "disposition": "retained_context_only_exclude_as_independent_S07_feature",
+      "claims_boundary_fa": "نام حالت مجازی در منبع؛ فقط کنار دو عنوان ورود/خروج به عنوان زمینهٔ غیرعملیاتی، نه کلید دیجیتال یا ویژگی مستقل.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I017",
+      "physical_pdf_page": 119,
+      "S02_fragment_ref": "LEGRAND34-P119-E02",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "سناریوی ورود",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "ورود در کنار کارت مجازی متناظر با عنوان سناریو است، نه سازوکار ورود یا تحریک.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I018",
+      "physical_pdf_page": 119,
+      "S02_fragment_ref": "LEGRAND34-P119-E03",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "سناریوی خروج",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "خروج در کنار کارت مجازی عنوان جداگانه است؛ ترتیب و محرک منتقل نشود.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I019",
+      "physical_pdf_page": 125,
+      "S02_fragment_ref": "LEGRAND34-P125-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "پیکربندی الگوهای اتاق",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "پیکربندی در سطح الگوی اتاق؛ با کل پروژهٔ هتل ادغام نشود.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I020",
+      "physical_pdf_page": 128,
+      "S02_fragment_ref": "LEGRAND34-P128-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "پیکربندی پروژهٔ هتل",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "پیکربندی در سطح پروژهٔ هتل؛ جدا از نوع اتاق.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I021",
+      "physical_pdf_page": 130,
+      "S02_fragment_ref": "LEGRAND34-P130-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "نرم‌افزار Hotel Room Controller",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "نام نرم‌افزار Legrand؛ برچسب آنلاین/آفلاین فقط زمینهٔ منبع است.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I022",
+      "physical_pdf_page": 130,
+      "S02_fragment_ref": "LEGRAND34-P130-E05",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "داشبورد",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "برچسب رابط کاربری منبع؛ نه ادعای عملیاتی، پشتیبانی کارکرد یا اثبات داشبورد NSP.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I023",
+      "physical_pdf_page": 131,
+      "S02_fragment_ref": "LEGRAND34-P131-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "نمای پروژه",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "عنوان نمای رابط کاربری Legrand؛ ساختار مشاهده به‌تنهایی امکان عملیات یا محصول NSP را ثابت نمی‌کند.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I024",
+      "physical_pdf_page": 133,
+      "S02_fragment_ref": "LEGRAND34-P133-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "نمای ماژول‌ها",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "عنوان نمای نرم‌افزار منبع؛ فهرست نمایش، دلیل سازگاری سخت‌افزار یا NSP نیست.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I025",
+      "physical_pdf_page": 134,
+      "S02_fragment_ref": "LEGRAND34-P134-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "ابزار پیکربندی",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "عنوان دستهٔ رابط؛ شیوه تنظیم، دسترسی یا قابلیت NSP ثبت نشده.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I026",
+      "physical_pdf_page": 138,
+      "S02_fragment_ref": "LEGRAND34-P138-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "قابلیت زمان‌بندی",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "فقط عنوان مفهوم زمان‌بندی؛ هیچ زمان، مقدار یا دستور.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I027",
+      "physical_pdf_page": 152,
+      "S02_fragment_ref": "LEGRAND34-P152-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "فهرست ورودی‌ها",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "در سطح فهرست رابط، نه پورت یا فهرست سیم‌کشی.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I028",
+      "physical_pdf_page": 156,
+      "S02_fragment_ref": "LEGRAND34-P156-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "ایجاد سناریوها",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "GRMS",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "عنوان رابط؛ رویداد محرک زمینه است؛ شرط، عمل، ترتیب و روش حذف.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I029",
+      "physical_pdf_page": 177,
+      "S02_fragment_ref": "LEGRAND34-P177-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "فرایند راه‌اندازی",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": "CHALLENGES_VALUE",
+      "mapping_status": "accepted_as_internal_research_proposal_not_approved_for_NSP",
+      "disposition": "accepted_internal_S07_research_record",
+      "claims_boundary_fa": "عنوان و نحوهٔ نمایش نقش‌ها، نه فرایند، مسئولیت قراردادی یا وعدهٔ خدمات.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I030",
+      "physical_pdf_page": 184,
+      "S02_fragment_ref": "LEGRAND34-P184-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "عیب‌یابی سطح ۱",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": null,
+      "mapping_status": "context_only_no_target",
+      "disposition": "retained_context_only_exclude_as_independent_S07_feature",
+      "claims_boundary_fa": "فقط عنوان دستهٔ ۱ عیب‌یابی؛ برای روش اجرا، پوشش، SLA یا قابلیت محصول نگهداری نشود.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    },
+    {
+      "record_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I031",
+      "physical_pdf_page": 189,
+      "S02_fragment_ref": "LEGRAND34-P189-E01",
+      "source_language": "fr",
+      "canonical_french_field": "source_text_fr",
+      "translation_fa": "عیب‌یابی سطح ۲",
+      "translation_review": "accepted_without_rewrite_with_documented_context_limit",
+      "target_section_type": null,
+      "mapping_status": "context_only_no_target",
+      "disposition": "retained_context_only_exclude_as_independent_S07_feature",
+      "claims_boundary_fa": "فقط عنوان دستهٔ ۲ عیب‌یابی؛ جدا از عنوان سطح ۱، بدون فرایند یا تعهد پشتیبانی.",
+      "NSP_capability_verified": false,
+      "competing_vendor_text_not_NSP_copy": true
+    }
+  ],
+  "S02_context_reviews": [
+    {
+      "S02_fragment_ref": "LEGRAND34-P001-E01",
+      "physical_pdf_page": 1,
+      "translation_fa": "راهنمای فنی",
+      "claims_boundary_fa": "نوع سند؛ نه عرضه یا مدل محصول.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "original_title_or_manual_type_not_a_capability"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P001-E02",
+      "physical_pdf_page": 1,
+      "translation_fa": "اتاق‌های هتل، راهکارهای IP مبتنی بر BACnet®",
+      "claims_boundary_fa": "عنوان راهنما؛ نه سازگاری یا تأیید استاندارد NSP.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "original_title_or_manual_type_not_a_capability"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P001-E03",
+      "physical_pdf_page": 1,
+      "translation_fa": "راهنمای نصب و استفاده",
+      "claims_boundary_fa": "نوع سند؛ دستورهای آن رونوشت نشده‌اند.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "original_title_or_manual_type_not_a_capability"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P004-E01",
+      "physical_pdf_page": 4,
+      "translation_fa": "فهرست مطالب",
+      "claims_boundary_fa": "سربخش پیمایش، نه فیچر.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "supporting_heading_or_scope_condition_not_an_independent_record"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P006-E01",
+      "physical_pdf_page": 6,
+      "translation_fa": "GRMS چیست؟",
+      "claims_boundary_fa": "عنوان تعریف؛ مقصد کاتالوگی هنوز تعیین نشده.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "supporting_heading_or_scope_condition_not_an_independent_record"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P008-E01",
+      "physical_pdf_page": 8,
+      "translation_fa": "راهکار هتل",
+      "claims_boundary_fa": "عنوان بخش منبع، جدا از ادعای برنامهٔ NSP.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "supporting_heading_or_scope_condition_not_an_independent_record"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P025-E01",
+      "physical_pdf_page": 25,
+      "translation_fa": "تلویزیون مبتنی بر IP (IPTV)",
+      "claims_boundary_fa": "صرفاً برچسب داخل نمودار غیرجامع، نه اثبات عرضه.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "IPTV_visual_component_label_not_independent_scope_claim"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P108-E01",
+      "physical_pdf_page": 108,
+      "translation_fa": "عملکردها و حالت‌های کار",
+      "claims_boundary_fa": "عنوان عمومی بخش؛ روش‌های عملیاتی منتقل نشده‌اند.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "supporting_heading_or_scope_condition_not_an_independent_record"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P130-E02",
+      "physical_pdf_page": 130,
+      "translation_fa": "صفحهٔ آغازین",
+      "claims_boundary_fa": "عنوان بخش رابط نرم‌افزار منبع.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "supporting_heading_or_scope_condition_not_an_independent_record"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P130-E03",
+      "physical_pdf_page": 130,
+      "translation_fa": "عملکرد آنلاین",
+      "claims_boundary_fa": "برچسب بخش راهنما، نه شیوه یا امکان اتصال NSP.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "supporting_heading_or_scope_condition_not_an_independent_record"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P130-E04",
+      "physical_pdf_page": 130,
+      "translation_fa": "عملکرد آفلاین",
+      "claims_boundary_fa": "برچسب بخش راهنما، نه تهیهٔ تنظیمات NSP.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "supporting_heading_or_scope_condition_not_an_independent_record"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P138-E02",
+      "physical_pdf_page": 138,
+      "translation_fa": "فعال‌سازی زمان‌بندی‌شده",
+      "claims_boundary_fa": "فقط عبارت مفهومی مرتبط با زمان‌بند.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "supporting_heading_or_scope_condition_not_an_independent_record"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P152-E02",
+      "physical_pdf_page": 152,
+      "translation_fa": "فهرست خروجی‌ها",
+      "claims_boundary_fa": "همراه نمایش ورودی‌ها؛ نه ثبت تجهیزات.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "supporting_heading_or_scope_condition_not_an_independent_record"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P156-E02",
+      "physical_pdf_page": 156,
+      "translation_fa": "رویداد محرک",
+      "claims_boundary_fa": "اصطلاح رابط؛ سازوکار، ترتیب و شرایط تعریف نشده.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "supporting_heading_or_scope_condition_not_an_independent_record"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P206-E01",
+      "physical_pdf_page": 206,
+      "translation_fa": "واژه‌نامه",
+      "claims_boundary_fa": "متن مرجع، بدون رکورد مستقل.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "glossary_context_not_another_room_feature"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P206-E02",
+      "physical_pdf_page": 206,
+      "translation_fa": "مزاحم نشوید، DND",
+      "claims_boundary_fa": "تعریف واژه در صفحهٔ ۲۰۶، نه قابلیت NSP.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "glossary_context_not_another_room_feature"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P206-E03",
+      "physical_pdf_page": 206,
+      "translation_fa": "اتاق نظافت شود، MUR",
+      "claims_boundary_fa": "تعریف واژه در صفحهٔ ۲۰۶؛ پیوند به همان زوج سرویس.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "glossary_context_not_another_room_feature"
+    },
+    {
+      "S02_fragment_ref": "LEGRAND34-P208-E01",
+      "physical_pdf_page": 208,
+      "translation_fa": "SYS219006، سپتامبر ۲۰۱۹",
+      "claims_boundary_fa": "ماه چاپ؛ از نام فایل یا این تاریخ نسخهٔ جاری نتیجه نشود.",
+      "disposition": "not_an_independent_S07_record",
+      "source_language": "fr",
+      "retained_scope": "printed_edition_provenance_only"
+    }
+  ],
+  "visual_reviews": [
+    {
+      "image_id": "LEGRAND34_001_vertical_technical_cover",
+      "physical_pdf_page": 1,
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_001_vertical_technical_cover.webp",
+      "image_asset_sha256": "c3f9a43d2d3584c8bf4784be7b1b3f0e927ffee56fd6b785240a3ef6265fc840",
+      "image_blob_sha": "0a7028f78acf5c650db925e1259a25bee751ab8f",
+      "target_section_type": "COVER",
+      "disposition": "accepted_internal_S07_research_visual_only",
+      "style_only_without_section": false,
+      "scope_fa": "صفحهٔ ۱ نمونهٔ جلد داخلی؛ تیتر عمودی و تصویر تجهیزات فقط مرجع و غیرمجاز برای بازنشر.",
+      "copyright_or_publication_approval": false,
+      "technical_instructions_included": false,
+      "byte_exact_pdf_rerender": {
+        "image_id": "LEGRAND34_001_vertical_technical_cover",
+        "pdf_page": 1,
+        "exact_rerender_SHA256": "c3f9a43d2d3584c8bf4784be7b1b3f0e927ffee56fd6b785240a3ef6265fc840",
+        "exact_rerender_git_blob_SHA": "0a7028f78acf5c650db925e1259a25bee751ab8f",
+        "decoded_size_px": [
+          857,
+          1051
+        ],
+        "file_size": 49062
+      },
+      "remote_S04_git_blob_verified": true
+    },
+    {
+      "image_id": "LEGRAND34_003_theme_navigation",
+      "physical_pdf_page": 3,
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_003_theme_navigation.webp",
+      "image_asset_sha256": "a0412ffd35ff679633f41a45656941667078e3cd70ae2719004966e009fff004",
+      "image_blob_sha": "e76a8676aaae01ace2ccd606a8fcc2778253b3c5",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "disposition": "accepted_internal_S07_research_visual_only",
+      "style_only_without_section": false,
+      "scope_fa": "صفحهٔ ۳ راهنمای موضوعی؛ صرفاً مقایسهٔ ستون و پیمایش.",
+      "copyright_or_publication_approval": false,
+      "technical_instructions_included": false,
+      "byte_exact_pdf_rerender": {
+        "image_id": "LEGRAND34_003_theme_navigation",
+        "pdf_page": 3,
+        "exact_rerender_SHA256": "a0412ffd35ff679633f41a45656941667078e3cd70ae2719004966e009fff004",
+        "exact_rerender_git_blob_SHA": "e76a8676aaae01ace2ccd606a8fcc2778253b3c5",
+        "decoded_size_px": [
+          1001,
+          614
+        ],
+        "file_size": 36400
+      },
+      "remote_S04_git_blob_verified": true
+    },
+    {
+      "image_id": "LEGRAND34_006_definition_block",
+      "physical_pdf_page": 6,
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_006_definition_block.webp",
+      "image_asset_sha256": "b1cae14857ef1f8f7d9d8142c76b6a8a53af79108705093e0b4800bc82474ea8",
+      "image_blob_sha": "e73b4ab89c490977db52256f529814df187f6fb1",
+      "target_section_type": "GRMS",
+      "disposition": "accepted_internal_S07_research_visual_only",
+      "style_only_without_section": false,
+      "scope_fa": "صفحهٔ ۶ تعریف کوتاه؛ دامنهٔ قابلیت از تصویر نتیجه نشود.",
+      "copyright_or_publication_approval": false,
+      "technical_instructions_included": false,
+      "byte_exact_pdf_rerender": {
+        "image_id": "LEGRAND34_006_definition_block",
+        "pdf_page": 6,
+        "exact_rerender_SHA256": "b1cae14857ef1f8f7d9d8142c76b6a8a53af79108705093e0b4800bc82474ea8",
+        "exact_rerender_git_blob_SHA": "e73b4ab89c490977db52256f529814df187f6fb1",
+        "decoded_size_px": [
+          1001,
+          714
+        ],
+        "file_size": 15362
+      },
+      "remote_S04_git_blob_verified": true
+    },
+    {
+      "image_id": "LEGRAND34_007_room_topic_panel",
+      "physical_pdf_page": 7,
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_007_room_topic_panel.webp",
+      "image_asset_sha256": "c6173eb51e160aaac7267c3bf41a4fb19d7c9f24161919a64db783335083dcfb",
+      "image_blob_sha": "b01fbd7498be426936b5a568f8574cee39ed6789",
+      "target_section_type": "GRMS",
+      "disposition": "accepted_internal_S07_research_visual_only",
+      "style_only_without_section": false,
+      "scope_fa": "صفحهٔ ۷ تصویر مفهومی و نمایش نمونه، بدون مسیر سیم، پایانه یا مشخصات؛ عدد نمایشی معیار نیست.",
+      "copyright_or_publication_approval": false,
+      "technical_instructions_included": false,
+      "byte_exact_pdf_rerender": {
+        "image_id": "LEGRAND34_007_room_topic_panel",
+        "pdf_page": 7,
+        "exact_rerender_SHA256": "c6173eb51e160aaac7267c3bf41a4fb19d7c9f24161919a64db783335083dcfb",
+        "exact_rerender_git_blob_SHA": "b01fbd7498be426936b5a568f8574cee39ed6789",
+        "decoded_size_px": [
+          290,
+          1051
+        ],
+        "file_size": 16380
+      },
+      "remote_S04_git_blob_verified": true
+    },
+    {
+      "image_id": "LEGRAND34_102_finish_photo_strip",
+      "physical_pdf_page": 102,
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_102_finish_photo_strip.webp",
+      "image_asset_sha256": "99b1b3d4cd42ebe36379a263bb50c94179943e7bfef39bd466b228695268d5e7",
+      "image_blob_sha": "3b7b775753930fa2565a49741b69dbd0a0d3ca76",
+      "target_section_type": "GRMS",
+      "disposition": "accepted_internal_S07_research_visual_only",
+      "style_only_without_section": false,
+      "scope_fa": "صفحهٔ ۱۰۲ فرم تصویرهای هم‌وزن؛ رنگ، مدل، جنس و محصول NSP نتیجه نشود.",
+      "copyright_or_publication_approval": false,
+      "technical_instructions_included": false,
+      "byte_exact_pdf_rerender": {
+        "image_id": "LEGRAND34_102_finish_photo_strip",
+        "pdf_page": 102,
+        "exact_rerender_SHA256": "99b1b3d4cd42ebe36379a263bb50c94179943e7bfef39bd466b228695268d5e7",
+        "exact_rerender_git_blob_SHA": "3b7b775753930fa2565a49741b69dbd0a0d3ca76",
+        "decoded_size_px": [
+          1001,
+          312
+        ],
+        "file_size": 25532
+      },
+      "remote_S04_git_blob_verified": true
+    },
+    {
+      "image_id": "LEGRAND34_130_software_navigation_header",
+      "physical_pdf_page": 130,
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_130_software_navigation_header.webp",
+      "image_asset_sha256": "6731b4fa978c3fc85a6366bd678e7af0da290a4cb14f8763493ad2c37ccbd7a6",
+      "image_blob_sha": "a1c6f273c7e954c020bd9f28100e9f2e9402d589",
+      "target_section_type": "GRMS",
+      "disposition": "accepted_internal_S07_research_visual_only",
+      "style_only_without_section": false,
+      "scope_fa": "صفحهٔ ۱۳۰ فقط سربرگ ناوبری؛ بدون جزئیات عمل، آدرس یا دستور نرم‌افزار.",
+      "copyright_or_publication_approval": false,
+      "technical_instructions_included": false,
+      "byte_exact_pdf_rerender": {
+        "image_id": "LEGRAND34_130_software_navigation_header",
+        "pdf_page": 130,
+        "exact_rerender_SHA256": "6731b4fa978c3fc85a6366bd678e7af0da290a4cb14f8763493ad2c37ccbd7a6",
+        "exact_rerender_git_blob_SHA": "a1c6f273c7e954c020bd9f28100e9f2e9402d589",
+        "decoded_size_px": [
+          1081,
+          176
+        ],
+        "file_size": 6258
+      },
+      "remote_S04_git_blob_verified": true
+    },
+    {
+      "image_id": "LEGRAND34_133_module_icon_gallery",
+      "physical_pdf_page": 133,
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_133_module_icon_gallery.webp",
+      "image_asset_sha256": "d56c418c7a2d6798dcd5c31f5aa060d09a5cf04fdeac64dcfbc2e2e146dcfa2c",
+      "image_blob_sha": "de77c66ac961f78b3ef769ceb9228cc072ea4efc",
+      "target_section_type": "GRMS",
+      "disposition": "accepted_internal_S07_research_visual_only",
+      "style_only_without_section": false,
+      "scope_fa": "صفحهٔ ۱۳۳ کارت‌ها و آیکون‌ها؛ نشانِ نمونهٔ پروژه/اتاق خارج برش است، هیچ سازگاری تأیید نشد.",
+      "copyright_or_publication_approval": false,
+      "technical_instructions_included": false,
+      "byte_exact_pdf_rerender": {
+        "image_id": "LEGRAND34_133_module_icon_gallery",
+        "pdf_page": 133,
+        "exact_rerender_SHA256": "d56c418c7a2d6798dcd5c31f5aa060d09a5cf04fdeac64dcfbc2e2e146dcfa2c",
+        "exact_rerender_git_blob_SHA": "de77c66ac961f78b3ef769ceb9228cc072ea4efc",
+        "decoded_size_px": [
+          1081,
+          425
+        ],
+        "file_size": 8634
+      },
+      "remote_S04_git_blob_verified": true
+    },
+    {
+      "image_id": "LEGRAND34_177_commissioning_role_headers",
+      "physical_pdf_page": 177,
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_177_commissioning_role_headers.webp",
+      "image_asset_sha256": "31222e61f1fd7aa82771fbb30605ef59f5df364f8279f91892e8cf4008da9f1f",
+      "image_blob_sha": "c5d979073b84bf8b76375dfa68993d025785eac8",
+      "target_section_type": "CHALLENGES_VALUE",
+      "disposition": "accepted_internal_S07_research_visual_only",
+      "style_only_without_section": false,
+      "scope_fa": "صفحهٔ ۱۷۷ تنها عنوان و نام نقش‌ها؛ مراحل، مسئولیت و دستور اجرایی خارج‌اند.",
+      "copyright_or_publication_approval": false,
+      "technical_instructions_included": false,
+      "byte_exact_pdf_rerender": {
+        "image_id": "LEGRAND34_177_commissioning_role_headers",
+        "pdf_page": 177,
+        "exact_rerender_SHA256": "31222e61f1fd7aa82771fbb30605ef59f5df364f8279f91892e8cf4008da9f1f",
+        "exact_rerender_git_blob_SHA": "c5d979073b84bf8b76375dfa68993d025785eac8",
+        "decoded_size_px": [
+          1081,
+          201
+        ],
+        "file_size": 11154
+      },
+      "remote_S04_git_blob_verified": true
+    },
+    {
+      "image_id": "LEGRAND34_206_glossary_strip",
+      "physical_pdf_page": 206,
+      "image_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_206_glossary_strip.webp",
+      "image_asset_sha256": "9cb3a8615dba34691aa2d52c3b73877a77c02b1295fa71249ffffeceb49a5dc6",
+      "image_blob_sha": "15e8d46954ee10255eb51c2d04b7637fbfcd4cf5",
+      "target_section_type": null,
+      "disposition": "accepted_internal_S07_research_visual_only",
+      "style_only_without_section": true,
+      "scope_fa": "صفحهٔ ۲۰۶ نمونهٔ فرم واژه‌نامه، بدون سکشن؛ اصطلاح‌ها شاهد قابلیت NSP نیستند.",
+      "copyright_or_publication_approval": false,
+      "technical_instructions_included": false,
+      "byte_exact_pdf_rerender": {
+        "image_id": "LEGRAND34_206_glossary_strip",
+        "pdf_page": 206,
+        "exact_rerender_SHA256": "9cb3a8615dba34691aa2d52c3b73877a77c02b1295fa71249ffffeceb49a5dc6",
+        "exact_rerender_git_blob_SHA": "15e8d46954ee10255eb51c2d04b7637fbfcd4cf5",
+        "decoded_size_px": [
+          1001,
+          895
+        ],
+        "file_size": 66354
+      },
+      "remote_S04_git_blob_verified": true
+    }
+  ],
+  "reference_overview": {
+    "git_blob_sha": "a9474aabe9447543fd323bf5aa0df671df202341",
+    "asset_sha256": "60622465e3ff3342e1a8dd9ed15b06ded339df50e5f7af179b46bf2cc3b8631d",
+    "decode_passed": true,
+    "derived_not_counted": true,
+    "remote_git_blob_verified": true,
+    "bank_image_count": 0,
+    "source_crop_count": 0
+  },
+  "source_claim_gates_reviewed": [
+    {
+      "id": "LEGRAND34-CLAIM-01",
+      "kind": "source_manual_and_named_brochures_distinct",
+      "physical_pdf_pages": [
+        1,
+        208
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P001-E02",
+        "LEGRAND34-P001-E03",
+        "LEGRAND34-P208-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "راهنمای فنی فرانسوی SYS219006 چاپ ۲۰۱۹ است و با کاتالوگ ۲۰۲۵ یا بروشور ۲۰۱۶ Legrand ادغام نمی‌شود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [],
+      "not_an_independent_feature": true,
+      "S06_gate_result": "retained_no_NSP_claim_not_a_feature_count"
+    },
+    {
+      "id": "LEGRAND34-CLAIM-02",
+      "kind": "GRMS_scope_and_service_labels",
+      "physical_pdf_pages": [
+        6,
+        7
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P006-E01",
+        "LEGRAND34-P006-E02",
+        "LEGRAND34-P007-E01",
+        "LEGRAND34-P007-E02",
+        "LEGRAND34-P007-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "تعریف و برچسب‌های نمایشی متعلق به متن مرجع‌اند؛ از آن دامنهٔ عملکرد، پشتیبانی تجهیزات یا کارکرد NSP نتیجه نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I002",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I003",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I004",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I005"
+      ],
+      "not_an_independent_feature": true,
+      "S06_gate_result": "retained_no_NSP_claim_not_a_feature_count"
+    },
+    {
+      "id": "LEGRAND34-CLAIM-03",
+      "kind": "hotel_architecture_is_conceptual_and_non_exhaustive",
+      "physical_pdf_pages": [
+        8,
+        9,
+        24,
+        25
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P008-E01",
+        "LEGRAND34-P008-E02",
+        "LEGRAND34-P009-E01",
+        "LEGRAND34-P024-E01",
+        "LEGRAND34-P025-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "اجزای دیده‌شده در نمونهٔ غیرجامع معماری، فهرست پروتکل، نقشهٔ شبکه یا احراز یکپارچگی NSP نیستند. IPTV ذکرِ زمینه است، نه مدرک سرویس.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I006",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I007",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I013"
+      ],
+      "not_an_independent_feature": true,
+      "S06_gate_result": "retained_no_NSP_claim_not_a_feature_count"
+    },
+    {
+      "id": "LEGRAND34-CLAIM-04",
+      "kind": "local_or_central_HVAC_alternatives",
+      "physical_pdf_pages": [
+        16,
+        18,
+        20
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P016-E01",
+        "LEGRAND34-P018-E01",
+        "LEGRAND34-P020-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "گرمایش/سرمایش محلی و مرکزی دو الگوی مجزا در سند هستند؛ تنظیم، سازگاری دستگاه یا راهکار تأییدشدهٔ NSP نتیجه نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I010",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I011",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I012"
+      ],
+      "not_an_independent_feature": true,
+      "S06_gate_result": "retained_no_NSP_claim_not_a_feature_count"
+    },
+    {
+      "id": "LEGRAND34-CLAIM-05",
+      "kind": "thermostat_source_concepts_not_operational_procedure",
+      "physical_pdf_pages": [
+        108,
+        117
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P108-E01",
+        "LEGRAND34-P108-E02",
+        "LEGRAND34-P117-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "فقط واژه‌ها و عنوان سناریو ثبت شده‌اند؛ روش عمل، تنظیمات، مقدار، سیم‌کشی و عملکرد فنی NSP ثبت نشده.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I014",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I015"
+      ],
+      "not_an_independent_feature": true,
+      "S06_gate_result": "retained_no_NSP_claim_not_a_feature_count"
+    },
+    {
+      "id": "LEGRAND34-CLAIM-06",
+      "kind": "virtual_badge_labels_not_access_workaround",
+      "physical_pdf_pages": [
+        119
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P119-E01",
+        "LEGRAND34-P119-E02",
+        "LEGRAND34-P119-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "عنوان سناریوهای ورود/خروج در سند منبع‌اند. این گزیده‌ها دلالت بر شیوهٔ کار، دسترسی، ترتیب محرک یا کارکرد NSP ندارند.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I016",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I017",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I018"
+      ],
+      "not_an_independent_feature": true,
+      "S06_gate_result": "retained_no_NSP_claim_not_a_feature_count"
+    },
+    {
+      "id": "LEGRAND34-CLAIM-07",
+      "kind": "HRC_UI_and_project_model_only",
+      "physical_pdf_pages": [
+        125,
+        128,
+        130,
+        131,
+        133,
+        134
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P125-E01",
+        "LEGRAND34-P128-E01",
+        "LEGRAND34-P130-E01",
+        "LEGRAND34-P130-E02",
+        "LEGRAND34-P130-E03",
+        "LEGRAND34-P130-E04",
+        "LEGRAND34-P130-E05",
+        "LEGRAND34-P131-E01",
+        "LEGRAND34-P133-E01",
+        "LEGRAND34-P134-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "عنوان نرم‌افزار و نام نماها فقط زمینهٔ قیاس رابط‌کاربری‌اند. مسیر نصب، عملِ شبکه و نسخهٔ فعلی احراز یا بازنشر نشده.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I019",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I020",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I021",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I022",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I023",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I024",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I025"
+      ],
+      "not_an_independent_feature": true,
+      "S06_gate_result": "retained_no_NSP_claim_not_a_feature_count"
+    },
+    {
+      "id": "LEGRAND34-CLAIM-08",
+      "kind": "scenario_UI_labels_not_configuration_steps",
+      "physical_pdf_pages": [
+        138,
+        152,
+        156
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P138-E01",
+        "LEGRAND34-P138-E02",
+        "LEGRAND34-P152-E01",
+        "LEGRAND34-P152-E02",
+        "LEGRAND34-P156-E01",
+        "LEGRAND34-P156-E02"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "صرفاً سرفصل و نام مفاهیم برنامه‌ریزی/فهرست‌ها؛ از این‌ها دستور اجرایی، قابلیت جاری Legrand یا قابلیت NSP نتیجه نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I026",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I027",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I028"
+      ],
+      "not_an_independent_feature": true,
+      "S06_gate_result": "retained_no_NSP_claim_not_a_feature_count"
+    },
+    {
+      "id": "LEGRAND34-CLAIM-09",
+      "kind": "commissioning_diagnostics_labels_only",
+      "physical_pdf_pages": [
+        177,
+        184,
+        189
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P177-E01",
+        "LEGRAND34-P184-E01",
+        "LEGRAND34-P189-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "تقسیم‌بندی ظاهری خدمت به جای راهنمای پیکربندی، عیب‌یابی عملیاتی، دستور، نفوذ یا SLA.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I029",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I030",
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I031"
+      ],
+      "not_an_independent_feature": true,
+      "S06_gate_result": "retained_no_NSP_claim_not_a_feature_count"
+    },
+    {
+      "id": "LEGRAND34-CLAIM-10",
+      "kind": "definitions_not_NSP_implementation",
+      "physical_pdf_pages": [
+        206
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P206-E01",
+        "LEGRAND34-P206-E02",
+        "LEGRAND34-P206-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "تعریف اصطلاح‌ها شاهد امکان عملکرد واقعی NSP نیست و نباید شاهد فنی تلقی شود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false,
+      "related_S03_record_ids": [
+        "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I004"
+      ],
+      "not_an_independent_feature": true,
+      "S06_gate_result": "retained_no_NSP_claim_not_a_feature_count"
+    }
+  ],
+  "S07_import_contract": {
+    "accepted_internal_record_ids": [
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I001",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I002",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I003",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I004",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I005",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I006",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I007",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I008",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I009",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I010",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I011",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I012",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I013",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I014",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I015",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I017",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I018",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I019",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I020",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I021",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I022",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I023",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I024",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I025",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I026",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I027",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I028",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I029"
+    ],
+    "source_context_only_S03_ids": [
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I016",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I030",
+      "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I031"
+    ],
+    "accepted_internal_visual_ids": [
+      "LEGRAND34_001_vertical_technical_cover",
+      "LEGRAND34_003_theme_navigation",
+      "LEGRAND34_006_definition_block",
+      "LEGRAND34_007_room_topic_panel",
+      "LEGRAND34_102_finish_photo_strip",
+      "LEGRAND34_130_software_navigation_header",
+      "LEGRAND34_133_module_icon_gallery",
+      "LEGRAND34_177_commissioning_role_headers",
+      "LEGRAND34_206_glossary_strip"
+    ],
+    "exclude_derived_reference_overview": true,
+    "do_not_copy_hardware_or_operational_content": true,
+    "non_french_tool_field_policy": "Preserve canonical source_text_fr and source_language fr. If the unmodified app requires source_text_en, never put bare French under an English-source label: mark it explicitly as a compatibility notice or an English translation derived from French (not original). App/engine changes are outside research scope.",
+    "source_edition_is_distinct": true,
+    "no_public_rights_or_NSP_claims": true,
+    "do_not_attach_to_pages_or_change_editorial_structure": true,
+    "mirror_feature_json_and_js_only_after_S07_authorization": true
+  },
+  "next_stage": "S07 — به‌روزرسانی JSON و Commit",
+  "next_queue_cursor": {
+    "document_index": 11,
+    "document_id": "34",
+    "step_index": 6,
+    "step_id": "S07"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false
+}
