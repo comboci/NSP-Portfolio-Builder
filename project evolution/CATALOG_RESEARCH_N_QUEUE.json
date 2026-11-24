@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 30,
+    "total_pending_steps": 29,
     "completed_new_documents": 13,
     "remaining_new_documents": 5
   },
   "cursor": {
     "document_index": 16,
     "document_id": "57",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -1953,11 +1953,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/57_Hager_Zweckbau_S06_original_source_audit.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "dbc3332c74030d0cb725bac33f9a36c16d683584",
+          "notes": "اصل ۱۷۲صفحه‌ای Hager 19DE0075_01، ۴۳ صفحهٔ دامنه، همهٔ ۳۱ گزیده و ترجمه، و ۹ برش بایت‌به‌بایت ممیزی شدند. ۱۲ متن و ۹ تصویر فقط برای بانک پژوهش داخلی S07؛ یک روان‌سازی فارسی، ۵ نامزد و ۱۴ گزیده فقط زمینه. JAZ و Bikini و دسترسی به انشعاب از ورود جدا. قابلیت NSP، اجرا، انطباق و حق نشر تأیید نشد؛ بانک V16، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S07",
@@ -1969,7 +1971,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S05"
+      "last_successful_stage": "S06"
     },
     {
       "id": "58",
