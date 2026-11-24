@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 71,
-    "completed_new_documents": 7,
-    "remaining_new_documents": 11
+    "total_pending_steps": 70,
+    "completed_new_documents": 8,
+    "remaining_new_documents": 10
   },
   "cursor": {
-    "document_index": 10,
-    "document_id": "17",
-    "step_index": 6,
-    "step_id": "S07"
+    "document_index": 11,
+    "document_id": "34",
+    "step_index": 0,
+    "step_id": "S01"
   },
   "section_types": [
     {
@@ -1233,7 +1233,7 @@
       "library_path": "/17_Honeywell_INNCOM Services Brochure.pdf",
       "bytes": 146243,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "in_progress",
+      "status": "completed",
       "prior_import": null,
       "steps": [
         {
@@ -1313,14 +1313,26 @@
         {
           "id": "S07",
           "key": "feature_json_and_commit",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/feature.json",
+            "Portfolio Instruction/feature.js",
+            "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S07_ingest_manifest.json",
+            "Portfolio Instruction/assets/honeywell17-01-service-cover.webp",
+            "Portfolio Instruction/assets/honeywell17-02-service-lead.webp",
+            "Portfolio Instruction/assets/honeywell17-02-room-context-photo.webp",
+            "Portfolio Instruction/assets/honeywell17-02-captioned-dashboard.webp",
+            "Portfolio Instruction/assets/honeywell17-03-service-columns.webp",
+            "Portfolio Instruction/assets/honeywell17-04-plan-and-services-matrix.webp",
+            "Portfolio Instruction/assets/honeywell17-04-closing-dual-line.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "eb10788abe83a75b9ec3ce998343164582b7277c",
+          "notes": "۲۰ رکورد و ۷ مرجع بصری 01-00150 با اصلاح عنوان فارسی در بانک V11 اضافه شدند. دو طرح و هشت خدمت مستقل فقط زمینهٔ جداگانه‌اند؛ پشتیبانی پایه، ۲۴/۷، ضمانت و دو قید IC5 جدا ماندند. V11: یازده کاتالوگ، ۵۶۱ رکورد و ۱۱۶ تصویر. برنامه و داده‌های پیشین بی‌تغییرند."
         }
       ],
-      "last_successful_stage": "S06"
+      "last_successful_stage": "S07",
+      "completed_at_commit": "eb10788abe83a75b9ec3ce998343164582b7277c"
     },
     {
       "id": "34",
