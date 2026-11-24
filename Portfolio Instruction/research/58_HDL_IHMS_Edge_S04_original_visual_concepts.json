@@ -1,0 +1,402 @@
+{
+  "schema": "nsp-catalog-research-s04-original-visual-concepts-v1",
+  "stage": "S04",
+  "stage_key": "visuals_and_styles",
+  "status": "completed_original_nonreplica_editorial_concepts",
+  "document_id": "58",
+  "source_id": "CAT058_HDL_IHMS_EDGE_MANUAL_V100",
+  "source_language": "en",
+  "visual_label_language": "fa",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "date_checked": "2026-11-24",
+  "base_main_commit": "a96e237970be3b1e6f709167cde163f8853d63b6",
+  "source_pdf": {
+    "filename": "58_HDL_Automation_Work C16.1.pdf",
+    "title": "HDL IHMS Edge Hotel Guest Control System User Manual",
+    "printed_document_version": "V1.0.0",
+    "printed_release_date": "2026-03-30",
+    "physical_pdf_pages": 38,
+    "file_size_bytes": 2626415,
+    "sha256": "0afdcc2ef2f063ef47a6ce1724da2f5260f6b201ee6337fb4fa271fa8c24add4",
+    "edition_evidence_physical_pages": [
+      1,
+      5
+    ],
+    "rights_notice_physical_page": 4
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S01_source_inventory.json",
+      "blob_sha": "fae340966b3e04c1178d45151a1af2fc724f56a3",
+      "commit_sha": "79260f7ac5acfa10f677bf98799e139f1a1e2740"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S02_page_linked_summaries.json",
+      "blob_sha": "cfa5acb8c6cbf150e79b599c26d3715998164dbc",
+      "commit_sha": "dd97b7c283929f8bb721d5889c664feabae9d6bf"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/58_HDL_IHMS_Edge_S03_editorial_summaries_fa.json",
+      "blob_sha": "1197cf5b70088cf68e92e84db86cc155486be0c5",
+      "commit_sha": "b867d2f9e1cad7e6692fe694b794190a4de38fd7"
+    }
+  },
+  "visual_source_boundary": {
+    "public_repo": true,
+    "manual_redistribution_permission_confirmed": false,
+    "manufacturer_logos_images_screenshots_published": false,
+    "manual_prose_or_ui_replica_published": false,
+    "technical_or_credentials_or_operational_diagram_published": false,
+    "original_diagram_count": 4,
+    "actual_vendor_reference_image_count": 0,
+    "source_PDF_assets_count": 0,
+    "designs_are_our_editorial_concepts_not_vendor_visuals": true
+  },
+  "design_guidance_fa": [
+    "نمای کلی، بخش اتاق، خدمات و تجهیزات با فاصلهٔ بصری و بدون عکس یا رابط واقعی از هم جدا شوند.",
+    "کادرهای هم‌تراز برای موضوع‌های موازی‌اند. نبود پیکان مرز بین طبقه‌بندی و روند اجرایی را روشن می‌کند.",
+    "قالب افقی A4 در صورت اقتباس به ناحیهٔ امن سمت حلقه‌ها نیاز دارد؛ رنگ زمینه تا لبه ادامه یابد. چهار دیاگرام خود صفحه یا قالب نهایی نیستند."
+  ],
+  "original_design_concepts": [
+    {
+      "id": "HDL58_C01_editorial_chapter_map",
+      "kind": "original_nonreplica_editorial_diagram",
+      "reference_order": 1,
+      "title_fa": "نقشهٔ فصل",
+      "style_family": "chapter_map_intro",
+      "source_document_version": "V1.0.0",
+      "source_pdf_sha256": "0afdcc2ef2f063ef47a6ce1724da2f5260f6b201ee6337fb4fa271fa8c24add4",
+      "theme_inspiration_physical_pdf_pages": [
+        10
+      ],
+      "theme_source_evidence_ids": [
+        "HDL58-P010-N01"
+      ],
+      "theme_source_claim_gate_ids": [
+        "HDL58-CLAIM-02"
+      ],
+      "related_internal_S03_theme_record_ids": [
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I002"
+      ],
+      "page_relation": "Cites analyst-paraphrased topic grouping only. The PDF has no page containing this graphic.",
+      "primary_source_image_page": null,
+      "source_pdf_crop": null,
+      "uses_no_source_pixels_or_logos": true,
+      "claims_no_screen_behavior_or_technical_workflow": true,
+      "original_visual_idea_fa": "سه بلوک کوتاه برای معرفی فصل به جای نمایش صفحهٔ محصول.",
+      "analyst_assessment_fa": "به کمک سه عنوان مستقل و فضای سفید، خواننده موضوعات را یک‌جا می‌بیند.",
+      "risks_or_misreading_fa": "چیدمان ساده برای فصل کوتاه مفید است، اما پیوستگی راهکار یا درستی محصول را ثابت نمی‌کند.",
+      "NSP_capability_verified": false,
+      "requires_NSP_approval_for_adoption": true,
+      "mapping_status": "pending_S05",
+      "app_display_policy": "Keep out of current feature image links because the existing panel labels linked images as extracted from PDF.",
+      "permitted_use": "internal_research_concept_only_unselected",
+      "asset_path": "Portfolio Instruction/research/assets/hdl58/HDL58_C01_editorial_chapter_map.webp",
+      "asset_filename": "HDL58_C01_editorial_chapter_map.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 14348,
+      "asset_sha256": "1556c017ae5cb24614976b57143d75622756b257b6e9d391766cb4a6243613a9",
+      "git_blob_sha": "93ba4c2105240b8cf8a99db0135de4ac5ea7806a",
+      "rendered_size_px": [
+        960,
+        578
+      ],
+      "base64_length": 19132,
+      "render_spec": {
+        "template_key": "chapter",
+        "headline_fa": "نقشهٔ فصل",
+        "eyebrow_fa": "خواندن از کلیات به موضوعات",
+        "description_fa": "سه عنوان کوتاه برای شروع بخش",
+        "labels_fa": [
+          "اتاق‌ها",
+          "خدمات",
+          "تجهیزات"
+        ],
+        "notes_fa": [
+          "فهرست و کاربرد",
+          "موضوع و سابقه",
+          "گروه و دارایی"
+        ],
+        "color_system": "Warm neutral paper, teal/ochre/olive accents; independent palette.",
+        "renderer": "Pillow RGB, DejaVu Sans with RAQM RTL shaping, WebP quality 84 method 6."
+      },
+      "visual_QA_status": "visually inspected original output; no manual text, images, interface, role matrix or workflows"
+    },
+    {
+      "id": "HDL58_C02_service_topic_triptych",
+      "kind": "original_nonreplica_editorial_diagram",
+      "reference_order": 2,
+      "title_fa": "سه موضوعِ خدمات",
+      "style_family": "parallel_topic_triptych",
+      "source_document_version": "V1.0.0",
+      "source_pdf_sha256": "0afdcc2ef2f063ef47a6ce1724da2f5260f6b201ee6337fb4fa271fa8c24add4",
+      "theme_inspiration_physical_pdf_pages": [
+        18,
+        19,
+        20
+      ],
+      "theme_source_evidence_ids": [
+        "HDL58-P018-N01",
+        "HDL58-P019-N01",
+        "HDL58-P020-N01"
+      ],
+      "theme_source_claim_gate_ids": [
+        "HDL58-CLAIM-04"
+      ],
+      "related_internal_S03_theme_record_ids": [
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I006",
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I007",
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I008"
+      ],
+      "page_relation": "Cites analyst-paraphrased topic grouping only. The PDF has no page containing this graphic.",
+      "primary_source_image_page": null,
+      "source_pdf_crop": null,
+      "uses_no_source_pixels_or_logos": true,
+      "claims_no_screen_behavior_or_technical_workflow": true,
+      "original_visual_idea_fa": "قرار دادن سه موضوع خدمات در ستون‌های هم‌تراز؛ نه ترتیب پردازش.",
+      "analyst_assessment_fa": "بدون پیکان، جدایی موضوع‌ها روشن می‌ماند و نمودار گردش کار تلقی نمی‌شود.",
+      "risks_or_misreading_fa": "اگر به عنوان وضعیت درخواست استفاده شود، از محدودهٔ نمونه بیرون می‌رود.",
+      "NSP_capability_verified": false,
+      "requires_NSP_approval_for_adoption": true,
+      "mapping_status": "pending_S05",
+      "app_display_policy": "Keep out of current feature image links because the existing panel labels linked images as extracted from PDF.",
+      "permitted_use": "internal_research_concept_only_unselected",
+      "asset_path": "Portfolio Instruction/research/assets/hdl58/HDL58_C02_service_topic_triptych.webp",
+      "asset_filename": "HDL58_C02_service_topic_triptych.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 14760,
+      "asset_sha256": "a2649e4817a81e38a123ace1aeb476b6e6871ac2b4bcc9ebcedc18e04a32806e",
+      "git_blob_sha": "538131530e34eca6c7edebb6bdd33246186f8b3f",
+      "rendered_size_px": [
+        960,
+        578
+      ],
+      "base64_length": 19680,
+      "render_spec": {
+        "template_key": "service",
+        "headline_fa": "سه موضوعِ خدمات",
+        "eyebrow_fa": "نمونهٔ چیدمان تحریریه‌ای",
+        "description_fa": "هر موضوع یک جای مستقل دارد",
+        "labels_fa": [
+          "درخواست",
+          "دسته‌بندی",
+          "سابقه"
+        ],
+        "notes_fa": [
+          "موضوع جاری",
+          "تعریف گروه‌ها",
+          "مرور گذشته"
+        ],
+        "color_system": "Warm neutral paper, teal/ochre/olive accents; independent palette.",
+        "renderer": "Pillow RGB, DejaVu Sans with RAQM RTL shaping, WebP quality 84 method 6."
+      },
+      "visual_QA_status": "visually inspected original output; no manual text, images, interface, role matrix or workflows"
+    },
+    {
+      "id": "HDL58_C03_inventory_history_split",
+      "kind": "original_nonreplica_editorial_diagram",
+      "reference_order": 3,
+      "title_fa": "فهرست و سابقه",
+      "style_family": "inventory_history_editorial_pair",
+      "source_document_version": "V1.0.0",
+      "source_pdf_sha256": "0afdcc2ef2f063ef47a6ce1724da2f5260f6b201ee6337fb4fa271fa8c24add4",
+      "theme_inspiration_physical_pdf_pages": [
+        22,
+        24
+      ],
+      "theme_source_evidence_ids": [
+        "HDL58-P022-N01",
+        "HDL58-P024-N01"
+      ],
+      "theme_source_claim_gate_ids": [
+        "HDL58-CLAIM-05"
+      ],
+      "related_internal_S03_theme_record_ids": [
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I010",
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I011"
+      ],
+      "page_relation": "Cites analyst-paraphrased topic grouping only. The PDF has no page containing this graphic.",
+      "primary_source_image_page": null,
+      "source_pdf_crop": null,
+      "uses_no_source_pixels_or_logos": true,
+      "claims_no_screen_behavior_or_technical_workflow": true,
+      "original_visual_idea_fa": "دو قاب موازی برای تمایز فهرست دارایی و سابقه.",
+      "analyst_assessment_fa": "دسته و سابقه با نقش بصری متفاوت دیده می‌شوند؛ هیچ ردیف یا فیلد رابط منبع استفاده نشده است.",
+      "risks_or_misreading_fa": "قاب سابقه نشان‌دهندهٔ پوشش ثبت، مانیتورینگ یا انطباق نیست.",
+      "NSP_capability_verified": false,
+      "requires_NSP_approval_for_adoption": true,
+      "mapping_status": "pending_S05",
+      "app_display_policy": "Keep out of current feature image links because the existing panel labels linked images as extracted from PDF.",
+      "permitted_use": "internal_research_concept_only_unselected",
+      "asset_path": "Portfolio Instruction/research/assets/hdl58/HDL58_C03_inventory_history_split.webp",
+      "asset_filename": "HDL58_C03_inventory_history_split.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 15862,
+      "asset_sha256": "2cc720864c89d0be0404d0559dce3b26293a6c0118270abecb9044893c9e711d",
+      "git_blob_sha": "f32ba01604c861396a7cbc22ebc7adaf3e8970b7",
+      "rendered_size_px": [
+        960,
+        578
+      ],
+      "base64_length": 21152,
+      "render_spec": {
+        "template_key": "inventory",
+        "headline_fa": "فهرست و سابقه",
+        "eyebrow_fa": "تفاوت دو نوع اطلاعات",
+        "description_fa": "دارایی‌ها و رویدادها را در دو بلوک معرفی کنید",
+        "labels_fa": [
+          "فهرست دارایی",
+          "سابقهٔ فعالیت"
+        ],
+        "notes_fa": [
+          "چه چیزهایی معرفی می‌شوند؟",
+          "چه چیزی در بایگانی ثبت شده؟"
+        ],
+        "color_system": "Warm neutral paper, teal/ochre/olive accents; independent palette.",
+        "renderer": "Pillow RGB, DejaVu Sans with RAQM RTL shaping, WebP quality 84 method 6."
+      },
+      "visual_QA_status": "visually inspected original output; no manual text, images, interface, role matrix or workflows"
+    },
+    {
+      "id": "HDL58_C04_native_external_scope",
+      "kind": "original_nonreplica_editorial_diagram",
+      "reference_order": 4,
+      "title_fa": "مرز دو دامنه",
+      "style_family": "internal_external_scope_pair",
+      "source_document_version": "V1.0.0",
+      "source_pdf_sha256": "0afdcc2ef2f063ef47a6ce1724da2f5260f6b201ee6337fb4fa271fa8c24add4",
+      "theme_inspiration_physical_pdf_pages": [
+        30,
+        35
+      ],
+      "theme_source_evidence_ids": [
+        "HDL58-P030-N01",
+        "HDL58-P035-N01"
+      ],
+      "theme_source_claim_gate_ids": [
+        "HDL58-CLAIM-07"
+      ],
+      "related_internal_S03_theme_record_ids": [
+        "CAT058_HDL_IHMS_EDGE_MANUAL_V100:I016"
+      ],
+      "page_relation": "Cites analyst-paraphrased topic grouping only. The PDF has no page containing this graphic.",
+      "primary_source_image_page": null,
+      "source_pdf_crop": null,
+      "uses_no_source_pixels_or_logos": true,
+      "claims_no_screen_behavior_or_technical_workflow": true,
+      "original_visual_idea_fa": "مرزبندی بصری بخش درون‌سامانه‌ای و موضوع سامانهٔ بیرونی بدون پیکان یا اتصال.",
+      "analyst_assessment_fa": "عنوان‌ها در دو بلوک جدا هستند و نیاز به شاهد سازگاری روشن می‌ماند.",
+      "risks_or_misreading_fa": "دلیل پیوند، پشتیبانی، پروتکل یا قابلیت NSP در برداشت مجاز نیست.",
+      "NSP_capability_verified": false,
+      "requires_NSP_approval_for_adoption": true,
+      "mapping_status": "pending_S05",
+      "app_display_policy": "Keep out of current feature image links because the existing panel labels linked images as extracted from PDF.",
+      "permitted_use": "internal_research_concept_only_unselected",
+      "asset_path": "Portfolio Instruction/research/assets/hdl58/HDL58_C04_native_external_scope.webp",
+      "asset_filename": "HDL58_C04_native_external_scope.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 15620,
+      "asset_sha256": "a2cc2ed9c1e5fb3a80230ad27c53f8d1f8788b78d5ca288e922bfd64b1faffc3",
+      "git_blob_sha": "0a50e4de940ac39edb08a04ab05219f168d7bc98",
+      "rendered_size_px": [
+        960,
+        578
+      ],
+      "base64_length": 20828,
+      "render_spec": {
+        "template_key": "boundary",
+        "headline_fa": "مرز دو دامنه",
+        "eyebrow_fa": "معرفی سامانه‌ها بدون ادعای سازگاری",
+        "description_fa": "دو موضوع هم‌سطح، بدون مسیر اتصال",
+        "labels_fa": [
+          "مدیریت درون‌سامانه‌ای",
+          "سامانهٔ بیرونی"
+        ],
+        "notes_fa": [
+          "شرح مستقل",
+          "سازگاری نیازمند شاهد مستقل است"
+        ],
+        "color_system": "Warm neutral paper, teal/ochre/olive accents; independent palette.",
+        "renderer": "Pillow RGB, DejaVu Sans with RAQM RTL shaping, WebP quality 84 method 6."
+      },
+      "visual_QA_status": "visually inspected original output; no manual text, images, interface, role matrix or workflows"
+    }
+  ],
+  "style_catalog": [
+    {
+      "style_id": "chapter_map_intro",
+      "title_fa": "نقشهٔ فصل",
+      "original_design_concept_ids": [
+        "HDL58_C01_editorial_chapter_map"
+      ],
+      "theme_physical_pdf_pages": [
+        10
+      ],
+      "placement": "pending_S05",
+      "style_only": true
+    },
+    {
+      "style_id": "parallel_topic_triptych",
+      "title_fa": "سه موضوعِ خدمات",
+      "original_design_concept_ids": [
+        "HDL58_C02_service_topic_triptych"
+      ],
+      "theme_physical_pdf_pages": [
+        18,
+        19,
+        20
+      ],
+      "placement": "pending_S05",
+      "style_only": true
+    },
+    {
+      "style_id": "inventory_history_editorial_pair",
+      "title_fa": "فهرست و سابقه",
+      "original_design_concept_ids": [
+        "HDL58_C03_inventory_history_split"
+      ],
+      "theme_physical_pdf_pages": [
+        22,
+        24
+      ],
+      "placement": "pending_S05",
+      "style_only": true
+    },
+    {
+      "style_id": "internal_external_scope_pair",
+      "title_fa": "مرز دو دامنه",
+      "original_design_concept_ids": [
+        "HDL58_C04_native_external_scope"
+      ],
+      "theme_physical_pdf_pages": [
+        30,
+        35
+      ],
+      "placement": "pending_S05",
+      "style_only": true
+    }
+  ],
+  "bank_display_boundary": {
+    "source_reference_images": 0,
+    "original_concepts_tracked_separately": true,
+    "no_concepts_in_source_extracted_image_count": true,
+    "no_concepts_in_existing_renderer_PDF_image_links": true,
+    "keep_application_untouched": true,
+    "admission_to_S07_requires_final_audit": true
+  },
+  "next_stage": "S05 — تطبیق با نوع سکشن NSP",
+  "next_queue_cursor": {
+    "document_index": 17,
+    "document_id": "58",
+    "step_index": 4,
+    "step_id": "S05"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
