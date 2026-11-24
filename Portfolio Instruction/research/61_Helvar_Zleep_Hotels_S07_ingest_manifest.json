@@ -1,0 +1,173 @@
+{
+  "schema": "nsp-catalog-research-s07-paraphrase-and-original-concept-ingest-v1",
+  "status": "validated_import",
+  "stage": "S07",
+  "stage_key": "feature_json_and_commit",
+  "document_id": "61",
+  "date": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "39b19b12eb3bc4f29712a5410b21f25dfc5fce25",
+  "source_catalog": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK",
+  "source_pdf": "61_Helvar_Work C22.1.pdf",
+  "source_pdf_sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+  "source_language": "en",
+  "source_printed_revision": null,
+  "source_printed_publication_date": null,
+  "source_cover_location": "Denmark",
+  "physical_pdf_pages": 1,
+  "audit_artifact": "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S06_source_and_concept_audit.json",
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S01_source_inventory.json",
+      "blob_sha": "31e6fe23db9863998b9e77baa0e35a0b00ce955a",
+      "commit_sha": "95ffda33256c53b1f4fc42b8e503ba1196e7509e"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S02_page_linked_summaries.json",
+      "blob_sha": "3a10b39517e698e8bcf1ebb35925e0149bcda899",
+      "commit_sha": "0dfb7a77f6b0fb48f70dfe6afb0e4117e20126ad"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S03_editorial_summaries_fa.json",
+      "blob_sha": "6fb100b9b326ffc99e58858f047bf6f51c265bfc",
+      "commit_sha": "965c88d97c600df21cf26bc189e8ce380628092d"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S04_original_visual_concepts.json",
+      "blob_sha": "7d66af61abbb6db2b5b095f0d4db352cd6357cef",
+      "commit_sha": "8502a3cc148bc68268c36dd8d1f5b8af564cdd86"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S05_section_mapping.json",
+      "blob_sha": "72cad33f5b6ba2df2bc9c3d2a24b0647df098cf5",
+      "commit_sha": "be94651b3b2952e3452bc5a0e73df7c483f523fc"
+    },
+    "S06": {
+      "path": "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S06_source_and_concept_audit.json",
+      "blob_sha": "3d0c43b4a6ec29734abadc971f5f044c3c5f1087",
+      "commit_sha": "74bdcb991da7794e033e1127cad72a870333ece2"
+    }
+  },
+  "committed_artifact_paths": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js",
+    "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S07_ingest_manifest.json"
+  ],
+  "output_bank_files": [
+    {
+      "path": "Portfolio Instruction/feature.json",
+      "git_blob_sha": "08144bfbbd3a159f5152d0b3d55d26a54090f093"
+    },
+    {
+      "path": "Portfolio Instruction/feature.js",
+      "git_blob_sha": "6a065b5f2fe5a86a9f6b56f52216a0628d2a087b"
+    }
+  ],
+  "imported_editorial_record_ids": [
+    "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I001",
+    "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I002",
+    "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I003"
+  ],
+  "imported_editorial_provenance": [
+    {
+      "id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I001",
+      "physical_pdf_page": 1,
+      "S02_evidence_ref": "HELVAR61-P001-N04",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "target_section_type": "CHALLENGES_VALUE",
+      "source_is_analyst_paraphrase_not_case_study_text": true
+    },
+    {
+      "id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I002",
+      "physical_pdf_page": 1,
+      "S02_evidence_ref": "HELVAR61-P001-N05",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "target_section_type": "CASE_STUDIES",
+      "source_is_analyst_paraphrase_not_case_study_text": true
+    },
+    {
+      "id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I003",
+      "physical_pdf_page": 1,
+      "S02_evidence_ref": "HELVAR61-P001-N07",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "target_section_type": "CHALLENGES_VALUE",
+      "source_is_analyst_paraphrase_not_case_study_text": true
+    }
+  ],
+  "original_concepts_added_as_references_only": [
+    {
+      "id": "HELVAR61_C01_intent_evidence_split",
+      "path": "Portfolio Instruction/research/assets/helvar61/HELVAR61_C01_intent_evidence_split.webp",
+      "existing_research_asset_blob_sha": "ba0e6f78b374b300d576aa340106d6ecaf97c480",
+      "source_extracted_image": false,
+      "theme_physical_pdf_pages": [
+        1
+      ],
+      "excluded_from_existing_PDF_renderer_image_links": true
+    },
+    {
+      "id": "HELVAR61_C02_case_scope_annotation",
+      "path": "Portfolio Instruction/research/assets/helvar61/HELVAR61_C02_case_scope_annotation.webp",
+      "existing_research_asset_blob_sha": "05948436fe5c7db886489c3665cfb3054aef743d",
+      "source_extracted_image": false,
+      "theme_physical_pdf_pages": [
+        1
+      ],
+      "excluded_from_existing_PDF_renderer_image_links": true
+    }
+  ],
+  "audited_Persian_attribution_edits_applied": [
+    {
+      "id": "HELVAR61-CORR-01",
+      "record_id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK:I003",
+      "physical_pdf_page": 1,
+      "S02_evidence_ref": "HELVAR61-P001-N07",
+      "original_translation_fa": "در توصیف ناشر از روشناییِ حاصل، بر حال‌وهوای فضا و حس راحتی تأکید شده است؛ این توصیف نه اندازه‌گیری مستقل است و نه پیامد اثبات‌شده برای مهمان.",
+      "audited_translation_fa": "ناشر روشنایی فضا را با تأکید بر حال‌وهوا و حس راحتی توصیف می‌کند. این بیان نه سنجش مستقل است و نه اثر اثبات‌شده بر تجربهٔ مهمان.",
+      "reason_fa": "بیان را صریحاً به توصیف ناشر محدود می‌کند تا «حاصل» به معنی نتیجهٔ سنجش یا رابطهٔ علت و معلول خوانده نشود.",
+      "original_analyst_summary_unchanged": true,
+      "prior_artifacts_unchanged": true,
+      "apply_only_derived_translation_and_meaning_fields": true
+    }
+  ],
+  "held_s03_context_rows": 1,
+  "additional_S02_context_or_identity_rows_not_counted": 4,
+  "counts": {
+    "prior_version": 18,
+    "version": 19,
+    "prior_catalogs": 18,
+    "catalogs": 19,
+    "prior_records": 654,
+    "records": 657,
+    "prior_source_images": 163,
+    "source_images": 163,
+    "new_editorial_records": 3,
+    "new_source_images": 0,
+    "original_diagram_references_tracked_separately": 2,
+    "total_original_diagram_references": 6,
+    "new_alias_files": 0
+  },
+  "checks": {
+    "V18_and_V19_JSON_JS_parity": true,
+    "prior_18_catalogs_exact": true,
+    "exact_allowed_S06_ids": true,
+    "three_locations_vendor_report_not_confirmed_installations_or_chainwide": true,
+    "energy_ambience_and_comfort_not_measured": true,
+    "Vanpee_role_not_inferred": true,
+    "no_source_pdf_prose_photos_logos_slogan_or_operational_details": true,
+    "original_concepts_not_counted_as_extracted_images_or_aliased": true,
+    "NSP_capability_and_publication_rights_not_verified": true,
+    "full_runtime_not_exercised": true,
+    "app_sections_and_portfolio_pages_untouched": true
+  },
+  "next_queue_cursor": {
+    "document_index": 19,
+    "document_id": "76",
+    "step_index": 0,
+    "step_id": "S01"
+  },
+  "next_pdf": "76_Distech_Controls_Work C47.1.pdf",
+  "next_stage_executed": false
+}
