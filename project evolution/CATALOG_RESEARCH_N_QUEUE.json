@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 58,
+    "total_pending_steps": 57,
     "completed_new_documents": 9,
     "remaining_new_documents": 9
   },
   "cursor": {
     "document_index": 12,
     "document_id": "46",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -1520,11 +1520,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S06_original_source_audit.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "545fbfcd34e9fe4234e7c6183660eebec2c9f7c6",
+          "notes": "اصل چهارصفحه‌ای Bloc Hotels، ۲۸ گزیده و ترجمه و ۶ برش بازتولیدشده ممیزی شدند. ۱۱ رکورد و ۶ تصویر برای بانک پژوهش داخلی S07 واجد شرایط‌اند. مسیر بدون کارت در کنار گزینهٔ کارت فقط زمینه است. قابلیت NSP یا حق نشر احراز نشد؛ بانک V12، برنامه و سکشن‌ها ثابت‌اند."
         },
         {
           "id": "S07",
@@ -1536,7 +1538,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S05"
+      "last_successful_stage": "S06"
     },
     {
       "id": "50",
