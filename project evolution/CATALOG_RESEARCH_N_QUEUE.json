@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 48,
+    "total_pending_steps": 47,
     "completed_new_documents": 11,
     "remaining_new_documents": 7
   },
   "cursor": {
     "document_index": 14,
     "document_id": "53",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -1687,11 +1687,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S02_english_text.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "91f3c559593ce048444938287d2bda2d50f42e33",
+          "notes": "۲۸ گزیدهٔ کوتاه از ۳ صفحهٔ اصل REV B با دو موتور تأیید شد. خواستهٔ هتل، روایت عملکردِ Lutron، نقل‌قول یکپارچه‌ساز و تشخیص طراحی خود ملک جدا هستند؛ بدون اطلاعات اجرای دسترسی، اثر مستقل، گواهی محصول یا قابلیت NSP. بانک V14، برنامه و سکشن‌ها ثابت‌اند."
         },
         {
           "id": "S03",
@@ -1739,7 +1741,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S01"
+      "last_successful_stage": "S02"
     },
     {
       "id": "54",
