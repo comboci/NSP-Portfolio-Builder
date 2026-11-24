@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 27,
+    "total_pending_steps": 26,
     "completed_new_documents": 14,
     "remaining_new_documents": 4
   },
   "cursor": {
     "document_index": 17,
     "document_id": "58",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -2010,11 +2010,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/58_HDL_IHMS_Edge_S02_page_linked_summaries.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "dd97b7c283929f8bb721d5889c664feabae9d6bf",
+          "notes": "اصل HDL V1.0.0 و هر ۳۸ صفحه دوباره بررسی شد. ۲۴ خلاصهٔ واقع‌نما به زبان خودمان و با صفحهٔ منبع؛ ۱۷ مورد برای مقایسهٔ تحریریه‌ای و ۷ فقط زمینه/هویت. هیچ جملهٔ نقل‌شده، رمز، دستور یا تصویر از اصل وارد مخزن نشد. بانک V17، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S03",
@@ -2062,7 +2064,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S01"
+      "last_successful_stage": "S02"
     },
     {
       "id": "61",
