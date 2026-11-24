@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 60,
+    "total_pending_steps": 59,
     "completed_new_documents": 9,
     "remaining_new_documents": 9
   },
   "cursor": {
     "document_index": 12,
     "document_id": "46",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -1491,11 +1491,20 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S04_visual_styles.json",
+            "Portfolio Instruction/research/assets/crestron46/CRESTRON46_01_facade_hero.webp",
+            "Portfolio Instruction/research/assets/crestron46/CRESTRON46_01_project_fact_sidebar.webp",
+            "Portfolio Instruction/research/assets/crestron46/CRESTRON46_02_room_panorama_divider.webp",
+            "Portfolio Instruction/research/assets/crestron46/CRESTRON46_03_mobile_context_room.webp",
+            "Portfolio Instruction/research/assets/crestron46/CRESTRON46_04_two_zone_room_bath_photo.webp",
+            "Portfolio Instruction/research/assets/crestron46/CRESTRON46_04_results_and_context_headings.webp",
+            "Portfolio Instruction/research/assets/crestron46/CRESTRON46_S04_reference_overview.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "60f7f8850d96548ec310a4e0e98527d6b37abb3b",
+          "notes": "۶ برش مستقیم در ۶ سبک از ۴ صفحهٔ اصل Bloc Hotels ثبت شد؛ یک نمای کلی ناوبری جزو شمار نیست. رابط نمونه فقط مرجع چیدمان است و مدل محصول، دستور دسترسی، ادعای NSP یا مجوز نشر وارد نشد. بانک V12، برنامه و سکشن‌ها ثابت‌اند."
         },
         {
           "id": "S05",
@@ -1525,7 +1534,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S03"
+      "last_successful_stage": "S04"
     },
     {
       "id": "50",
