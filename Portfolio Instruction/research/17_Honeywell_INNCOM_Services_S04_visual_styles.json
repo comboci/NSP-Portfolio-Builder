@@ -1,0 +1,779 @@
+{
+  "schema": "nsp-catalog-research-s04-visual-styles-v1",
+  "stage": "S04",
+  "stage_key": "visuals_and_styles",
+  "document_id": "17",
+  "source_id": "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT",
+  "status": "completed_source_render_and_visual_review",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "verified_on": "2026-11-24",
+  "base_main_commit": "c8e981ec243ea036c86e11cf29e182ed5521a898",
+  "source_pdf": {
+    "company": "Honeywell",
+    "publisher": "Honeywell Building Technologies / Honeywell International Inc.",
+    "title": "INNCOM Services & Support",
+    "filename": "17_Honeywell_INNCOM Services Brochure.pdf",
+    "pdf_pages": 4,
+    "file_size_bytes": 146243,
+    "source_sha256": "35c9be5b519ebfc25df52c169a2a7addc9bbb3120d39811454a951ac1a633859",
+    "document_number": "01-00150",
+    "printed_edition_string": "01-00150 I 07/20 I LM",
+    "printed_edition_month": "2020-07",
+    "publication_evidence_pdf_page": 4,
+    "S01_inventory": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S01_source_inventory.json",
+    "S01_inventory_git_blob_sha": "3b4766a7e90969030a262514ce8ee631620b8920",
+    "S01_inventory_commit": "bab70b680d5eaf511d978772698dc6e5653b5ff6",
+    "S02_text_evidence": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S02_english_text.json",
+    "S02_artifact_commit": "766f856745597525d55dae5f1aec4876c0d16ec9",
+    "S02_git_blob_sha": "a8673e2da687b21e2c1c378aa35c072dd6adae89",
+    "S02_total_fragments": 34,
+    "S03_English_source": "Exact S02 short source fragments; physical page 1-indexed.",
+    "sha256": "35c9be5b519ebfc25df52c169a2a7addc9bbb3120d39811454a951ac1a633859",
+    "source_orientation": "US Letter portrait, not NSP print geometry"
+  },
+  "upstream_fingerprints": {
+    "S01": {
+      "path": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S01_source_inventory.json",
+      "blob_sha": "3b4766a7e90969030a262514ce8ee631620b8920"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S02_english_text.json",
+      "blob_sha": "a8673e2da687b21e2c1c378aa35c072dd6adae89"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S03_features_fa.json",
+      "blob_sha": "fa42cd1db6f766decbde447e4484ed12a459bc77"
+    }
+  },
+  "target_catalog_constraints": {
+    "format": "A4 landscape",
+    "punch_safe_important_content": true,
+    "continuous_background_through_punch_side": true,
+    "physical_punch_margin_mm": null,
+    "print_ready_layout_approved": false
+  },
+  "visual_review": {
+    "all_4_source_pages_seen": true,
+    "pages_with_selected_visual_references": 4,
+    "reference_image_count": 7,
+    "unique_style_types": 7,
+    "derived_overview_count": 1,
+    "total_image_files": 8,
+    "original_PDF_sha256_verified": true,
+    "all_seven_crops_direct_from_original_PDF": true,
+    "final_contact_sheet_reviewed": true,
+    "full_resolution_service_matrix_reviewed": true,
+    "all_WebP_decodes_verified": true,
+    "contact_and_QR_not_exported": true,
+    "verified_NSP_capability_count": 0
+  },
+  "images": [
+    {
+      "id": "HONEYWELL17_01_service_cover",
+      "reference_order": 1,
+      "source_company": "Honeywell",
+      "original_pdf": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "original_pdf_sha256": "35c9be5b519ebfc25df52c169a2a7addc9bbb3120d39811454a951ac1a633859",
+      "original_printed_document_number": "01-00150",
+      "source_pdf_page": 1,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_01_service_cover.webp",
+      "asset_filename": "HONEYWELL17_01_service_cover.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 81868,
+      "asset_sha256": "e511c836a1ebb005df6d9b3489a67f64f79634def19e3b8efc7b3352722a9455",
+      "git_blob_sha": "eda5e8bd1d81cda12fd9a0dee0d59a5a9ee51c5d",
+      "rendered_size_px": [
+        833,
+        981
+      ],
+      "base64_length": 109160,
+      "normalized_pdf_crop": [
+        0,
+        0.02,
+        1,
+        0.93
+      ],
+      "pdf_crop_points": [
+        0,
+        15.84,
+        612,
+        736.56
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.3597513597513597,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "full_height_staff_portrait_with_two_color_service_headline",
+      "title_fa": "جلد با پرتره و تیتر دو رنگ",
+      "observed_content_in_crop_fa": "پرترهٔ بزرگ در سمت راست، پیام دو بخشی در سمت چپ و تیتر توصیفی کوتاه در پایین تیتر؛ نشان پایین بیرون برش است.",
+      "key_takeaway_fa": "چهره و تضاد دو رنگ پیام خدمت را پیش از متن توضیح می‌دهند.",
+      "analyst_assessment_fa": "در قالب افقی محل چهره، افق متن و پانچ دوباره طراحی شوند.",
+      "strengths_fa": [
+        "چهره و تضاد دو رنگ پیام خدمت را پیش از متن توضیح می‌دهند."
+      ],
+      "weaknesses_fa": [
+        "در قالب افقی محل چهره، افق متن و پانچ دوباره طراحی شوند."
+      ],
+      "nsp_visual_adaptation_fa": "برای کاور NSP اصل تضاد بصری را با پرتره و پیام اختصاصی بازطراحی کن؛ تصویر یا وعدهٔ خدمت رقیب استفاده نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I001",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I002"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL17-P01-E01",
+        "HONEYWELL17-P01-E02",
+        "HONEYWELL17-P01-E03"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-01"
+      ],
+      "related_source_context_set_refs": [
+        "HONEYWELL17-CTX-COVER"
+      ],
+      "related_structured_source_context": null,
+      "record_link_meaning": "Layout or topic evidence only; no product features, service promises or commercial use inferred.",
+      "crop_context_note_fa": "برش محدود چیدمان؛ شاهد اجرای خدمت یا پژوهش عملکرد نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no content reconstruction, generation or retouching.",
+      "renderer": "PyMuPDF direct RGB clip without annotations; Pillow WebP q83 m6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و متن متعلق به Honeywell یا دارندگان حقوق آن‌اند؛ صرفاً مرجع پژوهش داخلی، بدون مجوز تجاری، تأیید تعهد خدمت یا اثبات قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "crop_contact_sheet_and_WebP_dimensions_reviewed"
+    },
+    {
+      "id": "HONEYWELL17_02_service_lead",
+      "reference_order": 2,
+      "source_company": "Honeywell",
+      "original_pdf": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "original_pdf_sha256": "35c9be5b519ebfc25df52c169a2a7addc9bbb3120d39811454a951ac1a633859",
+      "original_printed_document_number": "01-00150",
+      "source_pdf_page": 2,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_02_service_lead.webp",
+      "asset_filename": "HONEYWELL17_02_service_lead.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 28886,
+      "asset_sha256": "08314488dbde7f53bb64e697b3d11c66fedc758752eda813a4b386559c023f2e",
+      "git_blob_sha": "4814424ea05571ec2b256223a2d03ef6a688de75",
+      "rendered_size_px": [
+        981,
+        300
+      ],
+      "base64_length": 38516,
+      "normalized_pdf_crop": [
+        0.045,
+        0.03,
+        0.955,
+        0.244
+      ],
+      "pdf_crop_points": [
+        27.54,
+        23.76,
+        584.46,
+        193.248
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.7596782302664657,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "bold_service_heading_and_lead_block",
+      "title_fa": "تیتر خدمات و لید با خط راهنما",
+      "observed_content_in_crop_fa": "عنوان قرمز، فضای سفید و لید کوتاه با علامت خطی کناری، ورود به متن خدمات را مشخص می‌کنند.",
+      "key_takeaway_fa": "لید جدا از عنوان پیمایش سریع ایجاد می‌کند.",
+      "analyst_assessment_fa": "تراکم متن پایهٔ خدمت در لید را با زبان مستقل و کوتاه NSP جایگزین کن.",
+      "strengths_fa": [
+        "لید جدا از عنوان پیمایش سریع ایجاد می‌کند."
+      ],
+      "weaknesses_fa": [
+        "تراکم متن پایهٔ خدمت در لید را با زبان مستقل و کوتاه NSP جایگزین کن."
+      ],
+      "nsp_visual_adaptation_fa": "مقدمهٔ کوتاه و مبتنی بر خدمات واقعی NSP؛ اشارهٔ منبع به ۲۴/۷ یا گسترهٔ خدمات منتقل نشود.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "related_structured_source_context": null,
+      "record_link_meaning": "Layout or topic evidence only; no product features, service promises or commercial use inferred.",
+      "crop_context_note_fa": "اشارهٔ لید به ۲۴/۷ به معنی پوشش طرح پایه نیست. بخش شرایط پایه و تماس خارج برش است.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no content reconstruction, generation or retouching.",
+      "renderer": "PyMuPDF direct RGB clip without annotations; Pillow WebP q83 m6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و متن متعلق به Honeywell یا دارندگان حقوق آن‌اند؛ صرفاً مرجع پژوهش داخلی، بدون مجوز تجاری، تأیید تعهد خدمت یا اثبات قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "crop_contact_sheet_and_WebP_dimensions_reviewed"
+    },
+    {
+      "id": "HONEYWELL17_02_room_context_photo",
+      "reference_order": 3,
+      "source_company": "Honeywell",
+      "original_pdf": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "original_pdf_sha256": "35c9be5b519ebfc25df52c169a2a7addc9bbb3120d39811454a951ac1a633859",
+      "original_printed_document_number": "01-00150",
+      "source_pdf_page": 2,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_02_room_context_photo.webp",
+      "asset_filename": "HONEYWELL17_02_room_context_photo.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 19980,
+      "asset_sha256": "4e08c35a9e5f48a6a685f87a5973c0ea062c823954fa24607fff5f4dc2af2a17",
+      "git_blob_sha": "32b402419f156a249262b64edcfdbcf2e0c66cb7",
+      "rendered_size_px": [
+        981,
+        300
+      ],
+      "base64_length": 26640,
+      "normalized_pdf_crop": [
+        0.058,
+        0.251,
+        0.942,
+        0.46
+      ],
+      "pdf_crop_points": [
+        35.496,
+        198.792,
+        576.504,
+        364.32
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.8114334723331262,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "wide_room_image_break_between_editorial_text",
+      "title_fa": "عکس عریض میان بخش‌های متن",
+      "observed_content_in_crop_fa": "نمای متقارن تخت و چراغ‌ها در نوار عریض برای مکث بصری میان لید و بدنهٔ خدمات.",
+      "key_takeaway_fa": "تقارن عکس عریض مکثی میان بلوک‌های متن ایجاد می‌کند.",
+      "analyst_assessment_fa": "عکس تصویری از خدمت یا نتیجهٔ رشتهٔ فنی ارائه نمی‌کند.",
+      "strengths_fa": [
+        "تقارن عکس عریض مکثی میان بلوک‌های متن ایجاد می‌کند."
+      ],
+      "weaknesses_fa": [
+        "عکس تصویری از خدمت یا نتیجهٔ رشتهٔ فنی ارائه نمی‌کند."
+      ],
+      "nsp_visual_adaptation_fa": "از عکس هتلِ مجاز و مستقل استفاده شود؛ این نما، اثبات پشتیبانی یا نتیجهٔ انرژی نیست.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "related_structured_source_context": null,
+      "record_link_meaning": "Layout or topic evidence only; no product features, service promises or commercial use inferred.",
+      "crop_context_note_fa": "برش محدود چیدمان؛ شاهد اجرای خدمت یا پژوهش عملکرد نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no content reconstruction, generation or retouching.",
+      "renderer": "PyMuPDF direct RGB clip without annotations; Pillow WebP q83 m6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و متن متعلق به Honeywell یا دارندگان حقوق آن‌اند؛ صرفاً مرجع پژوهش داخلی، بدون مجوز تجاری، تأیید تعهد خدمت یا اثبات قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "crop_contact_sheet_and_WebP_dimensions_reviewed"
+    },
+    {
+      "id": "HONEYWELL17_02_captioned_dashboard",
+      "reference_order": 4,
+      "source_company": "Honeywell",
+      "original_pdf": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "original_pdf_sha256": "35c9be5b519ebfc25df52c169a2a7addc9bbb3120d39811454a951ac1a633859",
+      "original_printed_document_number": "01-00150",
+      "source_pdf_page": 2,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_02_captioned_dashboard.webp",
+      "asset_filename": "HONEYWELL17_02_captioned_dashboard.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 29038,
+      "asset_sha256": "71563bd5d6b119fe988150eb656b9e98d4c5dc200060131668b36400ade479e9",
+      "git_blob_sha": "0d66924f12f7acae9168a4cda55d4cc69ba0910b",
+      "rendered_size_px": [
+        981,
+        768
+      ],
+      "base64_length": 38720,
+      "normalized_pdf_crop": [
+        0.651,
+        0.779,
+        0.95,
+        0.96
+      ],
+      "pdf_crop_points": [
+        398.412,
+        616.968,
+        581.4,
+        760.32
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 5.355542439941418,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "compact_dashboard_capture_with_explicit_source_caption",
+      "title_fa": "تصویر فشردهٔ داشبورد با عنوان منبع",
+      "observed_content_in_crop_fa": "نمای داشبورد و عنوان چاپی همان تصویر در یک قطعهٔ جدا کنار متن؛ متن و تماس ستون چپ خارج‌اند.",
+      "key_takeaway_fa": "کپشن منبع و قاب مستقل مانع حدس دربارهٔ موضوع تصویر می‌شوند.",
+      "analyst_assessment_fa": "نام فعلی نسخه، داده و قابلیت از UI استخراج نشده؛ به عکس مشابه 01-00139 فقط به چشم مرجع جداگانه نگاه شود.",
+      "strengths_fa": [
+        "کپشن منبع و قاب مستقل مانع حدس دربارهٔ موضوع تصویر می‌شوند."
+      ],
+      "weaknesses_fa": [
+        "نام فعلی نسخه، داده و قابلیت از UI استخراج نشده؛ به عکس مشابه 01-00139 فقط به چشم مرجع جداگانه نگاه شود."
+      ],
+      "nsp_visual_adaptation_fa": "فقط منطق عنوان‌گذاری تصویر؛ اسکرین‌شات واقعی NSP با دادهٔ نمایشی روشن و بدون اطلاعات پروژه جایگزین شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I007"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL17-P02-E10"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-05"
+      ],
+      "related_source_context_set_refs": [],
+      "related_structured_source_context": null,
+      "record_link_meaning": "Layout or topic evidence only; no product features, service promises or commercial use inferred.",
+      "crop_context_note_fa": "عنوان چاپی زیر تصویر INNcontrol 5 Dashboard است. این مدرک فقط هویت تصویر در این بروشور است؛ برچسب‌های UI و وضعیت انتشار مستقل ثبت نشده‌اند.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no content reconstruction, generation or retouching.",
+      "renderer": "PyMuPDF direct RGB clip without annotations; Pillow WebP q83 m6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و متن متعلق به Honeywell یا دارندگان حقوق آن‌اند؛ صرفاً مرجع پژوهش داخلی، بدون مجوز تجاری، تأیید تعهد خدمت یا اثبات قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "crop_contact_sheet_and_WebP_dimensions_reviewed"
+    },
+    {
+      "id": "HONEYWELL17_03_service_columns",
+      "reference_order": 5,
+      "source_company": "Honeywell",
+      "original_pdf": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "original_pdf_sha256": "35c9be5b519ebfc25df52c169a2a7addc9bbb3120d39811454a951ac1a633859",
+      "original_printed_document_number": "01-00150",
+      "source_pdf_page": 3,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_03_service_columns.webp",
+      "asset_filename": "HONEYWELL17_03_service_columns.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 58922,
+      "asset_sha256": "718a01b79d740d93384b2081f1616ac43983c38122985dfbf632ca9422866575",
+      "git_blob_sha": "19bd5efc20e377ee27a8e59a4f450c56402077ba",
+      "rendered_size_px": [
+        981,
+        322
+      ],
+      "base64_length": 78564,
+      "normalized_pdf_crop": [
+        0.051,
+        0.036,
+        0.952,
+        0.264
+      ],
+      "pdf_crop_points": [
+        31.212,
+        28.512,
+        582.624,
+        209.088
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.777255482289105,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "three_column_service_taxonomy_with_synchronized_headings",
+      "title_fa": "سه ستون هم‌تراز برای موضوعات خدمات",
+      "observed_content_in_crop_fa": "تیترهای مهندسی طراحی، آموزش و پشتیبانی فنی در سه ستون هم‌سطح‌اند؛ برش بالای صفحه است نه رونوشت کامل خدمات.",
+      "key_takeaway_fa": "سه تیتر هم‌تراز ساختار خواندن را شفاف می‌کنند.",
+      "analyst_assessment_fa": "تراکم بدنه در راست‌به‌چپ و چاپ نیاز به بازچینی دارد.",
+      "strengths_fa": [
+        "سه تیتر هم‌تراز ساختار خواندن را شفاف می‌کنند."
+      ],
+      "weaknesses_fa": [
+        "تراکم بدنه در راست‌به‌چپ و چاپ نیاز به بازچینی دارد."
+      ],
+      "nsp_visual_adaptation_fa": "تقسیم‌بندی بر اساس خدمات مستند NSP و بازآرایی در راست‌به‌چپ؛ هیچ نام بسته یا تعهد ناشر تکرار نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I008"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL17-P03-E01"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "related_structured_source_context": null,
+      "record_link_meaning": "Layout or topic evidence only; no product features, service promises or commercial use inferred.",
+      "crop_context_note_fa": "برش محدود چیدمان؛ شاهد اجرای خدمت یا پژوهش عملکرد نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no content reconstruction, generation or retouching.",
+      "renderer": "PyMuPDF direct RGB clip without annotations; Pillow WebP q83 m6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و متن متعلق به Honeywell یا دارندگان حقوق آن‌اند؛ صرفاً مرجع پژوهش داخلی، بدون مجوز تجاری، تأیید تعهد خدمت یا اثبات قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "crop_contact_sheet_and_WebP_dimensions_reviewed"
+    },
+    {
+      "id": "HONEYWELL17_04_plan_and_services_matrix",
+      "reference_order": 6,
+      "source_company": "Honeywell",
+      "original_pdf": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "original_pdf_sha256": "35c9be5b519ebfc25df52c169a2a7addc9bbb3120d39811454a951ac1a633859",
+      "original_printed_document_number": "01-00150",
+      "source_pdf_page": 4,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_04_plan_and_services_matrix.webp",
+      "asset_filename": "HONEYWELL17_04_plan_and_services_matrix.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 58428,
+      "asset_sha256": "041cb6dab89ebb707aeb5982fb59138ed14da87c704653c48c6c22fe4b0f86cb",
+      "git_blob_sha": "3454ccfca337218b6dbd294c2fe5c227805ec84c",
+      "rendered_size_px": [
+        1281,
+        822
+      ],
+      "base64_length": 77904,
+      "normalized_pdf_crop": [
+        0.052,
+        0.235,
+        0.668,
+        0.54
+      ],
+      "pdf_crop_points": [
+        31.824,
+        186.12,
+        408.816,
+        427.68
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 3.3952975129445715,
+      "target_longest_edge_px": 1280,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "side_by_side_bundle_vs_standalone_matrix_with_scoped_footnote",
+      "title_fa": "مقایسهٔ بسته و خدمت مستقل با پاورقی",
+      "observed_content_in_crop_fa": "سمت چپ دو بسته و سمت راست خدمات مستقل است؛ دو ردیف ستاره‌دار چپ و پاورقی IC5 حفظ شده‌اند.",
+      "key_takeaway_fa": "سربخش و رنگ بسته/خدمت را از هم جدا می‌کند؛ پاورقی نزدیک است.",
+      "analyst_assessment_fa": "شرط‌های واقعی NSP مستقل درج شوند؛ رنگ تنها حامل طبقه‌بندی نباشد.",
+      "strengths_fa": [
+        "سربخش و رنگ بسته/خدمت را از هم جدا می‌کند؛ پاورقی نزدیک است."
+      ],
+      "weaknesses_fa": [
+        "شرط‌های واقعی NSP مستقل درج شوند؛ رنگ تنها حامل طبقه‌بندی نباشد."
+      ],
+      "nsp_visual_adaptation_fa": "برای NSP روابط بسته/خدمت فقط با شرایط تصویب‌شده؛ عدم انتقال گزینه‌های رقیب، پوشش ۲۴/۷، ضمانت و پاورقی به NSP.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I018",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I019",
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I020"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL17-P04-E04",
+        "HONEYWELL17-P04-E02",
+        "HONEYWELL17-P04-E06",
+        "HONEYWELL17-P04-E09",
+        "HONEYWELL17-P04-E05",
+        "HONEYWELL17-P04-E07",
+        "HONEYWELL17-P04-E08",
+        "HONEYWELL17-P04-E03"
+      ],
+      "source_claim_gate_refs": [
+        "HONEYWELL17-CLAIM-08",
+        "HONEYWELL17-CLAIM-09",
+        "HONEYWELL17-CLAIM-02"
+      ],
+      "related_source_context_set_refs": [
+        "HONEYWELL17-CTX-WARRANTY",
+        "HONEYWELL17-CTX-REPORTS",
+        "HONEYWELL17-CTX-PLAN_MATRIX",
+        "HONEYWELL17-CTX-BASIC",
+        "HONEYWELL17-CTX-SERVICES"
+      ],
+      "related_structured_source_context": "HONEYWELL17-P04-PLANS-VS-SERVICES",
+      "record_link_meaning": "Layout or topic evidence only; no product features, service promises or commercial use inferred.",
+      "crop_context_note_fa": "هر دو سربخش، دو بستهٔ چپ، ۸ ردیف راست و پاورقی کامل‌اند. ستاره فقط در دو ردیف گزارش INNsite سمت چپ دیده می‌شود؛ این قید برای همهٔ عرضه‌های راست اعمال یا نفی نمی‌شود.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no content reconstruction, generation or retouching.",
+      "renderer": "PyMuPDF direct RGB clip without annotations; Pillow WebP q83 m6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و متن متعلق به Honeywell یا دارندگان حقوق آن‌اند؛ صرفاً مرجع پژوهش داخلی، بدون مجوز تجاری، تأیید تعهد خدمت یا اثبات قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "full_resolution_headers_16_rows_and_IC5_footnote_visually_reviewed"
+    },
+    {
+      "id": "HONEYWELL17_04_closing_dual_line",
+      "reference_order": 7,
+      "source_company": "Honeywell",
+      "original_pdf": "17_Honeywell_INNCOM Services Brochure.pdf",
+      "original_pdf_sha256": "35c9be5b519ebfc25df52c169a2a7addc9bbb3120d39811454a951ac1a633859",
+      "original_printed_document_number": "01-00150",
+      "source_pdf_page": 4,
+      "source_page_size_points": [
+        612,
+        792
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_04_closing_dual_line.webp",
+      "asset_filename": "HONEYWELL17_04_closing_dual_line.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 15320,
+      "asset_sha256": "a1321791f5f20ebc41095f214d2bccc7427ccb4dc7c6473a6321207eb44e4d28",
+      "git_blob_sha": "baed12ce713ee9202fb64521c8852a7ba5fd0df2",
+      "rendered_size_px": [
+        981,
+        174
+      ],
+      "base64_length": 20428,
+      "normalized_pdf_crop": [
+        0.05,
+        0.028,
+        0.95,
+        0.151
+      ],
+      "pdf_crop_points": [
+        30.6,
+        22.176,
+        581.4,
+        119.592
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.7792302106027598,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "two_line_closing_title_with_color_hierarchy",
+      "title_fa": "تیتر پایانیِ دو ردیفه",
+      "observed_content_in_crop_fa": "دو خط عنوان با تغییر رنگ و وزن یکسان، جمع‌بندی را از جدول و تماس جدا می‌کند.",
+      "key_takeaway_fa": "دو خط عنوان و تضاد رنگ نقش توقف و جمع‌بندی دارد.",
+      "analyst_assessment_fa": "تأکید رنگ و وزن متن بدون کپی شعار ناشر بازطراحی شود.",
+      "strengths_fa": [
+        "دو خط عنوان و تضاد رنگ نقش توقف و جمع‌بندی دارد."
+      ],
+      "weaknesses_fa": [
+        "تأکید رنگ و وزن متن بدون کپی شعار ناشر بازطراحی شود."
+      ],
+      "nsp_visual_adaptation_fa": "تیتر فارسی مستقل، فضای امن و پس‌زمینهٔ پیوسته؛ نشانی و عبارت رقبا بازنشر نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT017_HONEYWELL_INNCOM_SERVICES_SUPPORT:I017"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HONEYWELL17-P04-E01"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "related_structured_source_context": null,
+      "record_link_meaning": "Layout or topic evidence only; no product features, service promises or commercial use inferred.",
+      "crop_context_note_fa": "برش محدود چیدمان؛ شاهد اجرای خدمت یا پژوهش عملکرد نیست.",
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "extracted_from": "Direct original PDF clip; no content reconstruction, generation or retouching.",
+      "renderer": "PyMuPDF direct RGB clip without annotations; Pillow WebP q83 m6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و متن متعلق به Honeywell یا دارندگان حقوق آن‌اند؛ صرفاً مرجع پژوهش داخلی، بدون مجوز تجاری، تأیید تعهد خدمت یا اثبات قابلیت NSP.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "crop_contact_sheet_and_WebP_dimensions_reviewed"
+    }
+  ],
+  "style_catalog": [
+    {
+      "style_id": "full_height_staff_portrait_with_two_color_service_headline",
+      "title_fa": "جلد با پرتره و تیتر دو رنگ",
+      "representative_reference_ids": [
+        "HONEYWELL17_01_service_cover"
+      ],
+      "physical_pdf_pages": [
+        1
+      ],
+      "key_takeaway_fa": "چهره و تضاد دو رنگ پیام خدمت را پیش از متن توضیح می‌دهند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "bold_service_heading_and_lead_block",
+      "title_fa": "تیتر خدمات و لید با خط راهنما",
+      "representative_reference_ids": [
+        "HONEYWELL17_02_service_lead"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "لید جدا از عنوان پیمایش سریع ایجاد می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "wide_room_image_break_between_editorial_text",
+      "title_fa": "عکس عریض میان بخش‌های متن",
+      "representative_reference_ids": [
+        "HONEYWELL17_02_room_context_photo"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "تقارن عکس عریض مکثی میان بلوک‌های متن ایجاد می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "compact_dashboard_capture_with_explicit_source_caption",
+      "title_fa": "تصویر فشردهٔ داشبورد با عنوان منبع",
+      "representative_reference_ids": [
+        "HONEYWELL17_02_captioned_dashboard"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "کپشن منبع و قاب مستقل مانع حدس دربارهٔ موضوع تصویر می‌شوند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "three_column_service_taxonomy_with_synchronized_headings",
+      "title_fa": "سه ستون هم‌تراز برای موضوعات خدمات",
+      "representative_reference_ids": [
+        "HONEYWELL17_03_service_columns"
+      ],
+      "physical_pdf_pages": [
+        3
+      ],
+      "key_takeaway_fa": "سه تیتر هم‌تراز ساختار خواندن را شفاف می‌کنند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "side_by_side_bundle_vs_standalone_matrix_with_scoped_footnote",
+      "title_fa": "مقایسهٔ بسته و خدمت مستقل با پاورقی",
+      "representative_reference_ids": [
+        "HONEYWELL17_04_plan_and_services_matrix"
+      ],
+      "physical_pdf_pages": [
+        4
+      ],
+      "key_takeaway_fa": "سربخش و رنگ بسته/خدمت را از هم جدا می‌کند؛ پاورقی نزدیک است.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "two_line_closing_title_with_color_hierarchy",
+      "title_fa": "تیتر پایانیِ دو ردیفه",
+      "representative_reference_ids": [
+        "HONEYWELL17_04_closing_dual_line"
+      ],
+      "physical_pdf_pages": [
+        4
+      ],
+      "key_takeaway_fa": "دو خط عنوان و تضاد رنگ نقش توقف و جمع‌بندی دارد.",
+      "final_section_mapping": "pending_S05"
+    }
+  ],
+  "reference_overview": {
+    "asset_path": "Portfolio Instruction/research/assets/honeywell17/HONEYWELL17_S04_reference_overview.webp",
+    "asset_filename": "HONEYWELL17_S04_reference_overview.webp",
+    "mime_type": "image/webp",
+    "asset_bytes": 33572,
+    "asset_sha256": "21074714a4b20a6d11c1bbf2fe0a419b6c583ad31c0560c0c721aeaf4ac04fa6",
+    "git_blob_sha": "34556efd644ebd8078686585962a799467cb9da1",
+    "rendered_size_px": [
+      888,
+      540
+    ],
+    "base64_length": 44764,
+    "role": "derived_navigation_overview_not_a_source_reference",
+    "source_reference_ids": [
+      "HONEYWELL17_01_service_cover",
+      "HONEYWELL17_02_service_lead",
+      "HONEYWELL17_02_room_context_photo",
+      "HONEYWELL17_02_captioned_dashboard",
+      "HONEYWELL17_03_service_columns",
+      "HONEYWELL17_04_plan_and_services_matrix",
+      "HONEYWELL17_04_closing_dual_line"
+    ],
+    "counted_in_reference_images": false
+  },
+  "page_review_coverage": [
+    {
+      "physical_pdf_page": 1,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "HONEYWELL17_01_service_cover"
+      ]
+    },
+    {
+      "physical_pdf_page": 2,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "HONEYWELL17_02_service_lead",
+        "HONEYWELL17_02_room_context_photo",
+        "HONEYWELL17_02_captioned_dashboard"
+      ]
+    },
+    {
+      "physical_pdf_page": 3,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "HONEYWELL17_03_service_columns"
+      ]
+    },
+    {
+      "physical_pdf_page": 4,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "HONEYWELL17_04_plan_and_services_matrix",
+        "HONEYWELL17_04_closing_dual_line"
+      ]
+    }
+  ],
+  "source_plan_matrix_guard": {
+    "source_document_number": "01-00150",
+    "source_bundle_scope_preserved": true,
+    "separate_right_availability_column_preserved": true,
+    "two_left_starred_IC5_rows_remain_scoped": true,
+    "IC5_footnote_remains_in_crop": true,
+    "basic_support_distinct_from_24_7": true,
+    "extended_warranty_not_base_warranty": true,
+    "NSP_terms_or_entitlement_inferred": false
+  },
+  "excluded_visuals": [
+    {
+      "physical_pdf_pages": [
+        2,
+        3,
+        4
+      ],
+      "reason_fa": "ایمیل/تلفن/نشانی و QR خارج برش‌ها نگه داشته شده‌اند."
+    },
+    {
+      "physical_pdf_pages": [
+        2
+      ],
+      "reason_fa": "رونوشت برچسب‌های ریز داشبورد و ادعای مستقل نرم‌افزار انجام نشد."
+    }
+  ],
+  "design_observations_fa": [
+    "پرتره، عکس فضا و تصویر داشبورد سه نقش متفاوت دارند؛ تصویر شاهد عملکرد نیست.",
+    "جدول دو ستونهٔ بسته و خدمت مستقل نمونهٔ جای درست شرط و پاورقی است.",
+    "در NSP راست‌چین، گوشهٔ امن پانچ و دارایی اختصاصی لازم است.",
+    "تصاویر و متن متعلق به Honeywell یا دارندگان حقوق آن‌اند؛ صرفاً مرجع پژوهش داخلی، بدون مجوز تجاری، تأیید تعهد خدمت یا اثبات قابلیت NSP."
+  ],
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false,
+  "next_stage": "S05 — تطبیق با نوع سکشن NSP",
+  "next_queue_cursor": {
+    "document_index": 10,
+    "document_id": "17",
+    "step_index": 4,
+    "step_id": "S05"
+  },
+  "next_stage_executed": false
+}
