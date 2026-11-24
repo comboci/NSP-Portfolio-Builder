@@ -1,0 +1,320 @@
+{
+  "schema": "nsp-catalog-research-s02-page-linked-paraphrase-evidence-v1",
+  "stage": "S02",
+  "stage_key": "source_text_extraction",
+  "status": "completed_scoped_factual_paraphrase_only_verified",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "25ee187b37d453095c87248333bf707e606f4f0e",
+  "document_id": "61",
+  "source_id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK",
+  "source_language": "en",
+  "source_pdf": {
+    "filename": "61_Helvar_Work C22.1.pdf",
+    "title": "Zleep Hotels",
+    "cover_location": "Denmark",
+    "physical_pdf_pages": 1,
+    "file_size_bytes": 1273929,
+    "sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+    "printed_version_or_date_verified": false
+  },
+  "upstream_inventory": {
+    "path": "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S01_source_inventory.json",
+    "git_blob_sha": "31e6fe23db9863998b9e77baa0e35a0b00ce955a",
+    "commit_sha": "95ffda33256c53b1f4fc42b8e503ba1196e7509e"
+  },
+  "scope": {
+    "scope_note": "Limited independently worded observations from the archival PDF. No prose, logo or source visual is redistributed. All analytical claims are page-linked, vendor-bound and non-operational.",
+    "physical_pdf_page_count": 1,
+    "repository_visibility": "public",
+    "co_brand_role_unknown": true,
+    "editorial_visuals_may_be_original_nonreplicas_only": true
+  },
+  "statistics": {
+    "physical_pages_reverified": 1,
+    "page_linked_summary_count": 8,
+    "text_anchor_verified_summaries": 7,
+    "private_visual_mark_verified_summaries": 1,
+    "editorial_research_candidates_possible": 4,
+    "identity_or_context_only": 4,
+    "verbatim_excerpt_count": 0,
+    "copied_visual_or_logo_count": 0,
+    "public_reuse_rights_verified": 0
+  },
+  "coverage": [
+    {
+      "physical_pdf_page": 1,
+      "native_text_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "retained_summary_refs": [
+        "HELVAR61-P001-N01",
+        "HELVAR61-P001-N02",
+        "HELVAR61-P001-N03",
+        "HELVAR61-P001-N04",
+        "HELVAR61-P001-N05",
+        "HELVAR61-P001-N06",
+        "HELVAR61-P001-N07",
+        "HELVAR61-P001-N08"
+      ],
+      "status": "whole_page_checked_selective_summaries_only"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "HELVAR61-P001-N01",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "case_identity",
+      "summary_en": "Helvar’s one-page study identifies Zleep Hotels in Denmark.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_study_excerpt",
+      "disposition": "identity_only",
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-01"
+      ],
+      "verification_method": "PyMuPDF and Poppler raw/layout anchor identity",
+      "manual_anchor_text_not_reproduced": true,
+      "source_quote_or_screenshot_included": false,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "HELVAR61-P001-N02",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "cobrand_boundary",
+      "summary_en": "A second brand mark, Vanpee, appears beside Helvar’s masthead. The sheet does not assign Vanpee a role.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_study_excerpt",
+      "disposition": "context_only",
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-01"
+      ],
+      "verification_method": "Private original-page visual review of same archived file; no mark or image copied",
+      "manual_anchor_text_not_reproduced": true,
+      "source_quote_or_screenshot_included": false,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "HELVAR61-P001-N03",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "hotel_chain_background",
+      "summary_en": "The vendor gives background on the chain, including its reported founding in 2003 and a reference to Stockholm. These are not publication or installation evidence.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_study_excerpt",
+      "disposition": "context_only",
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-02"
+      ],
+      "verification_method": "PyMuPDF and Poppler raw/layout anchor identity",
+      "manual_anchor_text_not_reproduced": true,
+      "source_quote_or_screenshot_included": false,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "HELVAR61-P001-N04",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "energy_intention",
+      "summary_en": "The sheet presents room LEDs in the context of reducing energy demand; it does not provide a measured saving.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_study_excerpt",
+      "disposition": "candidate_editorial_only",
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-03"
+      ],
+      "verification_method": "PyMuPDF and Poppler raw/layout anchor identity",
+      "manual_anchor_text_not_reproduced": true,
+      "source_quote_or_screenshot_included": false,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "HELVAR61-P001-N05",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "site_scope",
+      "summary_en": "Helvar says its controls were chosen at three locations in the case narrative. The sheet does not identify those sites or claim the controls for the entire chain.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_study_excerpt",
+      "disposition": "candidate_editorial_only",
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-04"
+      ],
+      "verification_method": "PyMuPDF and Poppler raw/layout anchor identity",
+      "manual_anchor_text_not_reproduced": true,
+      "source_quote_or_screenshot_included": false,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "HELVAR61-P001-N06",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "equipment_report",
+      "summary_en": "The vendor names the 905 router and 454 and 452 dimmer models as examples in this lighting case; that description is not a compatibility or installation recommendation.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_study_excerpt",
+      "disposition": "context_only",
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-05"
+      ],
+      "verification_method": "PyMuPDF and Poppler raw/layout anchor identity",
+      "manual_anchor_text_not_reproduced": true,
+      "source_quote_or_screenshot_included": false,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "HELVAR61-P001-N07",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "qualitative_ambience",
+      "summary_en": "The vendor’s description of the resulting lighting emphasizes atmosphere and comfort rather than independent measurements or an outcome for guests.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_study_excerpt",
+      "disposition": "candidate_editorial_only",
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-03"
+      ],
+      "verification_method": "PyMuPDF and Poppler raw/layout anchor identity",
+      "manual_anchor_text_not_reproduced": true,
+      "source_quote_or_screenshot_included": false,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    },
+    {
+      "evidence_id": "HELVAR61-P001-N08",
+      "physical_pdf_page": 1,
+      "verified_printed_folio": null,
+      "evidence_kind": "promotional_opening",
+      "summary_en": "The headline frames the lighting story around the guest stay, using a play on the hotel name. That is marketing style, not evidence of improved sleep.",
+      "language": "en",
+      "wording": "original_analysis_paraphrase_not_case_study_excerpt",
+      "disposition": "candidate_editorial_only",
+      "source_page_native_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "claim_gate_refs": [
+        "HELVAR61-CLAIM-03"
+      ],
+      "verification_method": "PyMuPDF and Poppler raw/layout anchor identity",
+      "manual_anchor_text_not_reproduced": true,
+      "source_quote_or_screenshot_included": false,
+      "NSP_attribution": false,
+      "independent_result_verified": false
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "HELVAR61-CLAIM-01",
+      "kind": "identity_and_brand_role",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "HELVAR61-P001-N01",
+        "HELVAR61-P001-N02"
+      ],
+      "scope": "Title and location identify the case. The visual mark does not establish a partnership, integrator role, or approval.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "copyright_permissions_verified": false
+    },
+    {
+      "id": "HELVAR61-CLAIM-02",
+      "kind": "historical_chain_background_not_site_scope",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "HELVAR61-P001-N03"
+      ],
+      "scope": "Founding year and Stockholm are case background, not publication date, present footprint, exact site identity, or an installed control location.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "copyright_permissions_verified": false
+    },
+    {
+      "id": "HELVAR61-CLAIM-03",
+      "kind": "lighting_goal_not_measured_result",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "HELVAR61-P001-N04",
+        "HELVAR61-P001-N07",
+        "HELVAR61-P001-N08"
+      ],
+      "scope": "Energy intention, atmosphere language and promotional headline are vendor narrative; no measured energy savings, sleep effect or satisfaction has been shown.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "copyright_permissions_verified": false
+    },
+    {
+      "id": "HELVAR61-CLAIM-04",
+      "kind": "three_locations_vendor_report_only",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "HELVAR61-P001-N05"
+      ],
+      "scope": "The source names a count for choosing controls but no sites. Do not infer a chain-wide rollout, geography of the sites, or an NSP project.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "copyright_permissions_verified": false
+    },
+    {
+      "id": "HELVAR61-CLAIM-05",
+      "kind": "historical_equipment_not_technical_advice",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "HELVAR61-P001-N06"
+      ],
+      "scope": "Model names are context for this specific case sheet only; no wiring, setting, operating parameter, current availability, safety or compatibility.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "copyright_permissions_verified": false
+    }
+  ],
+  "quality_assurance": {
+    "source_pdf_size_hash_and_page_hash_reverified": true,
+    "verified_by_two_extraction_engines_and_layout_mode_for_text_items": true,
+    "visual_cobrand_verified_without_reproducing_logo": true,
+    "no_six_normalized_token_run_in_paraphrases_against_cited_page": true,
+    "six_token_check_is_secondary_not_a_legal_or_rights_determination": true,
+    "exact_original_assets_kept_private": true
+  },
+  "usage_policy": {
+    "internal_design_comparator_only": true,
+    "not_vendor_quote_or_project_role_statement": true,
+    "translation_in_S03_from_our_analyst_notes_only": true,
+    "no_technical_setup_compliance_or_independent_performance_claims": true,
+    "no_extracted_vendor_images_in_public_repo": true
+  },
+  "next_stage": "S03 — استخراج ایده و ترجمهٔ خلاصه‌ها",
+  "next_queue_cursor": {
+    "document_index": 18,
+    "document_id": "61",
+    "step_index": 2,
+    "step_id": "S03"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
