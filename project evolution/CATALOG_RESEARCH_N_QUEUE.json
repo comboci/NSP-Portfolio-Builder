@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 25,
+    "total_pending_steps": 24,
     "completed_new_documents": 14,
     "remaining_new_documents": 4
   },
   "cursor": {
     "document_index": 17,
     "document_id": "58",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -2032,11 +2032,17 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/58_HDL_IHMS_Edge_S04_original_visual_concepts.json",
+            "Portfolio Instruction/research/assets/hdl58/HDL58_C01_editorial_chapter_map.webp",
+            "Portfolio Instruction/research/assets/hdl58/HDL58_C02_service_topic_triptych.webp",
+            "Portfolio Instruction/research/assets/hdl58/HDL58_C03_inventory_history_split.webp",
+            "Portfolio Instruction/research/assets/hdl58/HDL58_C04_native_external_scope.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "ec9895c23fa4fc5c99024a36c485042e54b5cb79",
+          "notes": "چهار طرح تحریریه‌ایِ اصیل با ارجاع موضوعی به صفحات راهنما ساخته شد. تصویر، لوگو، رابط، متن و روند اجرایی منبع بازتولید نشده است. این طرح‌ها در شمار تصویر استخراج‌شده نیستند؛ بانک V17، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S05",
@@ -2066,7 +2072,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S03"
+      "last_successful_stage": "S04"
     },
     {
       "id": "61",
