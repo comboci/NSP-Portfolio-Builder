@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 20,
+    "total_pending_steps": 19,
     "completed_new_documents": 15,
     "remaining_new_documents": 3
   },
   "cursor": {
     "document_index": 18,
     "document_id": "61",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -2106,11 +2106,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S02_page_linked_summaries.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "0dfb7a77f6b0fb48f70dfe6afb0e4117e20126ad",
+          "notes": "۸ خلاصهٔ مستقل و صفحه‌دار از مطالعهٔ Helvar برای Zleep Hotels ثبت شد: ۴ نامزد تحریریه و ۴ زمینه. انتخاب کنترل در سه محل فقط روایت ناشر است، نه کل زنجیره؛ کاهش مصرف اندازه‌گیری نشده، نقش Vanpee نامشخص است. متن و تصویر منبع منتشر نشد؛ بانک V18، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S03",
@@ -2158,7 +2160,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S01"
+      "last_successful_stage": "S02"
     },
     {
       "id": "76",
