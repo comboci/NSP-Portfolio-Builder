@@ -1,0 +1,3127 @@
+{
+  "schema": "nsp-catalog-research-s03-features-fa-v1",
+  "status": "completed_research_only_pending_S04_S06",
+  "stage": "S03",
+  "stage_key": "feature_software_translation",
+  "source_id": "CAT014_VINGCARD_NOVEL",
+  "document_id": "14",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "8462e00cbcf354fba840d6280cb4a17762d5a145",
+  "provenance": {
+    "company": "Vingcard",
+    "publisher": "Vingcard / ASSA ABLOY",
+    "title": "Vingcard Novel",
+    "filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+    "library_path": "/14_Vingcard_Vingcard Novel Brochure.pdf",
+    "pdf_pages": 16,
+    "source_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+    "file_size_bytes": 3735147,
+    "printed_document_version": "04/2025",
+    "document_version_month": "2025-04",
+    "publication_evidence_pdf_page": 16,
+    "date_basis": "Printed document version; not an exact first-publication date or current product-status verification.",
+    "S01_inventory": "Portfolio Instruction/research/14_Vingcard_Novel_S01_source_inventory.json",
+    "S01_inventory_git_commit_at_creation": "69b1ce8cfeee255afa444f45315e6602212ca314",
+    "S01_inventory_git_blob_sha": "d278c8856a697a2f7d6f1d69aefd95eca49d14c7",
+    "S02_text_evidence": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json",
+    "S02_artifact_commit": "75734bc24b0d692fda4d2a5aca7642af1b4cdac2",
+    "S02_git_blob_sha": "5115cbd9c73996848920fc007b89449990401b76",
+    "S02_file_sha256": "410754f0a8cc78887c3f15888a2eab88073f978f6ad7c33792257974df59be87",
+    "S02_total_fragments": 98,
+    "S02_extract_verified_matches": 98,
+    "S03_English_source": "Exact S02 fragment ID and text; normalized original physical PDF page rechecked.",
+    "all_English_source_excerpts_from_S02": true,
+    "physical_PDF_page_is_canonical": true
+  },
+  "statistics": {
+    "records": 23,
+    "verified_English_fragments_used": 23,
+    "S02_fragments_not_promoted_into_S03": 75,
+    "all_S02_fragments_accounted_for": 98,
+    "unique_source_pages": 13,
+    "source_pages_with_features": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      15
+    ],
+    "types": {
+      "benefit": 1,
+      "intro": 4,
+      "marketing_slogan": 12,
+      "scenario": 1,
+      "software_capability": 5
+    },
+    "categories": {
+      "design_integration": 2,
+      "guest_experience_and_security": 1,
+      "hotel_operations": 3,
+      "hotel_security_narrative": 1,
+      "installation_experience": 1,
+      "management_software": 2,
+      "marketing_slogans": 6,
+      "mobile_access": 3,
+      "security_events": 1,
+      "security_messaging": 1,
+      "sustainability_messaging": 2
+    },
+    "records_by_page": {
+      "1": 1,
+      "2": 4,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 1,
+      "8": 2,
+      "9": 1,
+      "10": 1,
+      "11": 3,
+      "12": 1,
+      "14": 2,
+      "15": 1
+    },
+    "software_capability_records": 5,
+    "identified_scenario_records": 1,
+    "claims_from_S02_retained_with_context_gate": 25,
+    "claims_translated_as_context_only": 8,
+    "restricted_claims_retained_by_reference_only": 17,
+    "source_context_binding_groups": 5,
+    "contents_labels_translated_separately": 5,
+    "visual_only_labels_translated_separately": 2,
+    "visual_UI_status_labels": 1,
+    "visual_certification_artwork_labels": 1,
+    "visual_labels_in_native_excerpt_or_feature_count": 0,
+    "independently_verified_NSP_features": 0
+  },
+  "editorial_context_snapshot": {
+    "canonical_structure_file": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "canonical_structure_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "revision": "2.3.0",
+    "systems_in_scope": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ],
+    "content_levels": [
+      "COMPANY",
+      "SOLUTION",
+      "SYSTEM",
+      "PRODUCT"
+    ],
+    "cover_title_fa": "صفحه اول کاتالوگ",
+    "identity_section_id": "IDENTITY_PAGES",
+    "identity_section_title_fa": "صفحات تنفس",
+    "identity_pages_may_be_blank": true,
+    "final_attachment_stage": "Defrag",
+    "historical_reference_note": "Legacy queue vocabulary is preserved; use the current canonical structure at S05. This extraction does not create new NSP systems, subsections or page attachments.",
+    "read_at_main_commit": "8462e00cbcf354fba840d6280cb4a17762d5a145",
+    "mapping_state": "S05_pending_no_final_attachment"
+  },
+  "editorial_and_safety_policy": {
+    "purpose": "Bilingual source research and classification; not an approved NSP product specification or catalog copy.",
+    "three_approved_NSP_systems": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ],
+    "new_systems_from_competitor_portfolio_not_approved": true,
+    "smart_home_out_of_scope": true,
+    "competitor_hardware_models_protocols_skus_electrical_dimensional_and_performance_specs_not_promoted": true,
+    "excluded_fragment_English_not_duplicated_in_exclusion_log": true,
+    "restricted_claim_evidence_not_republished_in_S03": true,
+    "gated_claims_and_structured_context_may_reference_excluded_fragments": true,
+    "context_only_problem_statement_is_not_a_physical_solution_claim": true,
+    "named_software_identity_not_inferred_from_hardware_or_image": true,
+    "Mobile_Access_license_condition_preserved": true,
+    "Apple_Wallet_specific_license_terms_not_inferred": true,
+    "Online_condition_scoped_only_to_realtime_event_alarms": true,
+    "Vostio_updates_not_recast_as_automatic_OTA_or_lock_firmware_updates": true,
+    "PMS_GRMS_IPTV_or_NSP_integration_not_inferred": true,
+    "physical_housekeeping_deadbolt_behavior_not_recast_as_software_scenario": true,
+    "all_source_claims_remain_attributed_to_Vingcard_or_named_source_software": true,
+    "source_quotes_are_short_fragments_not_full_brochure_republication": true,
+    "no_commercial_image_reuse_rights": true,
+    "all_mappings_pending_S05": true,
+    "all_entries_pending_S06_audit": true,
+    "feature_json_and_feature_js_unchanged_until_S07": true,
+    "one_N_one_stage_no_later_stage_executed": true
+  },
+  "research_records": [
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I001",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 1,
+      "original_printed_page": null,
+      "S02_fragment_ref": "VINGCARD14-P01-E02",
+      "S02_fragment_index": 2,
+      "original_source_excerpt_en": "Experience a safer and more open world",
+      "translation_fa": "جهانی امن‌تر و گشوده‌تر را تجربه کنید.",
+      "source_type": "marketing_slogan",
+      "category_id": "marketing_slogans",
+      "research_section_group": "COVER",
+      "highlight_fa": "شعار کوتاه دربارهٔ امنیت و گشودگی",
+      "editorial_relevance_and_limits_fa": "شعار هویتی ناشر است؛ «گشوده‌تر» استعارهٔ برند است و به بازبودن همیشگی در، دسترسی بدون مجوز یا تضمین امنیت تعبیر نمی‌شود. کاربرد پژوهشی آن، بررسی ساختار شعار کوتاه است.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "brand_slogan",
+        "not_verified_for_NSP",
+        "open_world_is_brand_metaphor"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I002",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 2,
+      "original_printed_page": 2,
+      "S02_fragment_ref": "VINGCARD14-P02-E02",
+      "S02_fragment_index": 2,
+      "original_source_excerpt_en": "Keeping pace with new hotel security needs has never been more essential to the running of a successful business.",
+      "translation_fa": "همگام ماندن با نیازهای تازهٔ امنیت هتل، بیش از هر زمان دیگری برای ادارهٔ موفق کسب‌وکار ضروری شده است.",
+      "source_type": "intro",
+      "category_id": "hotel_security_narrative",
+      "research_section_group": "INTRODUCTION_AND_CONTENTS",
+      "highlight_fa": "شروع روایت با نیاز مدیریتی هتل",
+      "editorial_relevance_and_limits_fa": "مقدمهٔ مسئله‌محور برای پیوند امنیت هتل با ادارهٔ کسب‌وکار است؛ جمله، روند آماری یا اثر مالی اندازه‌گیری‌شده‌ای ارائه نمی‌کند.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "business_need",
+        "not_verified_for_NSP",
+        "security_needs"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I003",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 2,
+      "original_printed_page": 2,
+      "S02_fragment_ref": "VINGCARD14-P02-E03",
+      "S02_fragment_index": 3,
+      "original_source_excerpt_en": "Today’s hoteliers require advanced solutions capable of not just perfectly balancing current guest demands for enhanced safety and convenience, but that can also continue to meet such needs far into the future as expectations inevitably evolve.",
+      "translation_fa": "هتل‌داران امروزی به راهکارهای پیشرفته‌ای نیاز دارند که بتوانند میان خواسته‌های کنونی مهمانان برای ایمنی و سهولت بیشتر، توازنی کامل برقرار کنند و با تغییر اجتناب‌ناپذیر انتظارات، در آیندهٔ دور نیز همچنان پاسخ‌گوی این نیازها باشند.",
+      "source_type": "intro",
+      "category_id": "guest_experience_and_security",
+      "research_section_group": "INTRODUCTION_AND_CONTENTS",
+      "highlight_fa": "بیان هم‌زمان نیاز به ایمنی، سهولت و پاسخ‌گویی در آینده",
+      "editorial_relevance_and_limits_fa": "این عبارت خواستهٔ هتل‌دار را توصیف می‌کند. «توازن کامل» و پاسخ‌گویی در آینده، بیان آرمانی منبع هستند؛ از آن‌ها تضمین عملکرد، سازگاری با همهٔ فناوری‌های آینده یا قابلیت مشخص NSP نتیجه نمی‌شود.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "future_needs_not_future_proof_guarantee",
+        "guest_expectations",
+        "not_verified_for_NSP",
+        "safety_and_convenience"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I004",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 2,
+      "original_printed_page": 2,
+      "S02_fragment_ref": "VINGCARD14-P02-E04",
+      "S02_fragment_index": 4,
+      "original_source_excerpt_en": "Opening the Door to New Possibilities in Hotel Security & Guest Satisfaction",
+      "translation_fa": "گشودن دری به امکان‌های تازه در امنیت هتل و رضایت مهمان",
+      "source_type": "marketing_slogan",
+      "category_id": "marketing_slogans",
+      "research_section_group": "INTRODUCTION_AND_CONTENTS",
+      "highlight_fa": "پیوند امنیت و رضایت مهمان در یک تیتر",
+      "editorial_relevance_and_limits_fa": "تیتر استعاری منبع است؛ برای پژوهش شیوهٔ بیان ارزش دوگانهٔ امنیت و رضایت مهمان نگه داشته می‌شود و قابلیت عملیاتی مستقلی را اثبات نمی‌کند.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "door_metaphor",
+        "not_verified_for_NSP",
+        "security_and_guest_satisfaction"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I005",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 2,
+      "original_printed_page": 2,
+      "S02_fragment_ref": "VINGCARD14-P02-E10",
+      "S02_fragment_index": 10,
+      "original_source_excerpt_en": "Meeting the industry’s commitment to sustainable practices and lives up to guest expectations for environmentally friendly hotel operations.",
+      "translation_fa": "عمل به تعهد صنعت به رویه‌های پایدار و برآورده‌کردن انتظار مهمانان از ادارهٔ هتل به شیوه‌ای سازگار با محیط‌زیست.",
+      "source_type": "intro",
+      "category_id": "sustainability_messaging",
+      "research_section_group": "INTRODUCTION_AND_CONTENTS",
+      "highlight_fa": "توضیح پایداری از منظر انتظار مهمان و شیوهٔ ادارهٔ هتل",
+      "editorial_relevance_and_limits_fa": "متن معرفی موضوع پایداری در فهرست کاتالوگ است. این رکورد صرفاً شیوهٔ صورت‌بندی پیام را نگه می‌دارد؛ شواهد مواد، فرایند ساخت، کاهش پسماند یا گواهی محیط‌زیستی NSP از آن به دست نمی‌آید.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "guest_environmental_expectations",
+        "no_environmental_certification_inference",
+        "not_verified_for_NSP",
+        "sustainability_topic_teaser"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I006",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 4,
+      "original_printed_page": 4,
+      "S02_fragment_ref": "VINGCARD14-P04-E02",
+      "S02_fragment_index": 2,
+      "original_source_excerpt_en": "Advanced security, scalable functionality and an eco-friendly attractive design",
+      "translation_fa": "امنیت پیشرفته، قابلیت‌های توسعه‌پذیر و طراحی جذاب و سازگار با محیط‌زیست",
+      "source_type": "marketing_slogan",
+      "category_id": "marketing_slogans",
+      "research_section_group": "OVERVIEW",
+      "highlight_fa": "ارائهٔ چند ارزش در یک عبارت کوتاه",
+      "editorial_relevance_and_limits_fa": "عبارت جایگاه‌سازی منبع، سه محور امنیت، توسعه‌پذیری و طراحی را کنار هم قرار می‌دهد. سازگاری محیط‌زیستی و توسعه‌پذیری در اینجا ادعای ناشر هستند؛ هیچ مشخصات سخت‌افزاری، گواهی یا نتیجهٔ آزمون برای NSP تأیید نمی‌شود.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "environmental_claim_not_verified",
+        "not_verified_for_NSP",
+        "scalability_marketing",
+        "value_combination"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I007",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 4,
+      "original_printed_page": 4,
+      "S02_fragment_ref": "VINGCARD14-P04-E05",
+      "S02_fragment_index": 5,
+      "original_source_excerpt_en": "A Next Generation Door Lock Designed for the Security Needs of Today and Tomorrow",
+      "translation_fa": "نسل تازه‌ای از قفل در، طراحی‌شده برای نیازهای امنیتی امروز و فردا",
+      "source_type": "marketing_slogan",
+      "category_id": "marketing_slogans",
+      "research_section_group": "OVERVIEW",
+      "highlight_fa": "پیوند نیازهای امروز و آینده در تیتر محصول",
+      "editorial_relevance_and_limits_fa": "تیتر جایگاه‌سازی محصول منبع است؛ به‌عنوان الگوی روایت آینده‌نگر نگه داشته می‌شود. «نسل تازه» یک طبقه‌بندی فنی یا مدرک سازگاری نامحدود در آینده نیست و محصول جدیدی برای NSP تعریف نمی‌کند.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP",
+        "product_positioning_only",
+        "today_and_tomorrow"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I008",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 5,
+      "original_printed_page": 5,
+      "S02_fragment_ref": "VINGCARD14-P05-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "Flexible Scalability Meets Enhanced Security",
+      "translation_fa": "توسعه‌پذیری منعطف در کنار امنیت بیشتر",
+      "source_type": "marketing_slogan",
+      "category_id": "marketing_slogans",
+      "research_section_group": "OVERVIEW",
+      "highlight_fa": "ترکیب توسعه‌پذیری و امنیت در تیتر بخش",
+      "editorial_relevance_and_limits_fa": "تیتر کلی منبع است. میزان افزایش امنیت، نوع توسعه، پروتکل یا روش ارتقا را تعیین نمی‌کند؛ قابلیت‌های واقعی باید از عبارت‌های مشخص و مشروط بعدی استخراج شوند.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_verified_for_NSP",
+        "scalability_marketing",
+        "security_marketing"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I009",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 5,
+      "original_printed_page": 5,
+      "S02_fragment_ref": "VINGCARD14-P05-E04",
+      "S02_fragment_index": 4,
+      "original_source_excerpt_en": "Compatible with cloud-based Vostio Access Management.",
+      "translation_fa": "سازگار با نرم‌افزار ابری Vostio Access Management.",
+      "source_type": "software_capability",
+      "category_id": "management_software",
+      "research_section_group": "OVERVIEW",
+      "highlight_fa": "معرفی نرم‌افزار مشخص برای مدیریت دسترسی ابری",
+      "editorial_relevance_and_limits_fa": "سازگاریِ ذکرشده به محصول منبع و نرم‌افزار نام‌برده مربوط است؛ این عبارت، وجود API عمومی، اتصال PMS یا GRMS، روش شبکه یا سازگاری NSP را اثبات نمی‌کند. عبارت صفحهٔ ۱۴ دربارهٔ دریافت به‌روزرسانی منظم به خود نرم‌افزار Vostio مربوط است و رکورد جداگانه دارد.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "cloud_access_management",
+        "named_software",
+        "no_NSP_PMS_GRMS_API_inference",
+        "not_verified_for_NSP"
+      ],
+      "publication_risk": "technical",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-23"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD14-P14-E06",
+        "VINGCARD14-P14-E07"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD14-CONTEXT-VOSTIO"
+      ],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I010",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 6,
+      "original_printed_page": 6,
+      "S02_fragment_ref": "VINGCARD14-P06-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "Environmentally Conscious by Design",
+      "translation_fa": "طراحی با توجه به محیط‌زیست",
+      "source_type": "marketing_slogan",
+      "category_id": "sustainability_messaging",
+      "research_section_group": "SUSTAINABILITY",
+      "highlight_fa": "استفاده از پایداری به‌عنوان موضوع طراحی",
+      "editorial_relevance_and_limits_fa": "تیتر بازاریابی منبع دربارهٔ جهت‌گیری طراحی است. عنوان به‌تنهایی مواد بازیافتی، بازیافت‌پذیری همهٔ اجزا، ارزیابی چرخهٔ عمر یا کاهش انتشار NSP را تأیید نمی‌کند.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "environmental_positioning",
+        "no_lifecycle_assessment_inference",
+        "not_verified_for_NSP"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I011",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 6,
+      "original_printed_page": 6,
+      "S02_fragment_ref": "VINGCARD14-P06-E07",
+      "S02_fragment_index": 7,
+      "original_source_excerpt_en": "Easier Installation & Reduced Maintenance",
+      "translation_fa": "نصب آسان‌تر و نیاز کمتر به نگهداری",
+      "source_type": "marketing_slogan",
+      "category_id": "hotel_operations",
+      "research_section_group": "SUSTAINABILITY",
+      "highlight_fa": "بیان ارزش عملیاتی با دو پیام کوتاه",
+      "editorial_relevance_and_limits_fa": "عنوان بازاریابی منبع دربارهٔ سهولت نصب و کاهش نگهداری است؛ روش، زمان یا هزینهٔ نصب و نگهداری NSP از آن معلوم نمی‌شود. ادعاهای سازوکار و اجزای فیزیکی در گزیده‌های بعدی به رکورد فیچر منتقل نشده‌اند.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "installation_and_maintenance_value_heading",
+        "not_verified_for_NSP",
+        "physical_implementation_excluded"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I012",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 7,
+      "original_printed_page": 7,
+      "S02_fragment_ref": "VINGCARD14-P07-E02",
+      "S02_fragment_index": 2,
+      "original_source_excerpt_en": "Door lock batteries are a recurring source of waste and a loss of employee time whenever one needs to be checked and replaced.",
+      "translation_fa": "باتری قفل‌های در، منبعی تکرارشونده از پسماند هستند و هر بار بررسی و تعویض آن‌ها، بخشی از وقت کارکنان را می‌گیرد.",
+      "source_type": "intro",
+      "category_id": "hotel_operations",
+      "research_section_group": "SUSTAINABILITY",
+      "highlight_fa": "صورت‌بندی مسئلهٔ نگهداری از منظر پسماند و وقت کارکنان",
+      "editorial_relevance_and_limits_fa": "این جمله مسئلهٔ عملیاتیِ مطرح‌شده توسط ناشر را توصیف می‌کند و مقدار زمان یا هزینه ارائه نمی‌دهد. گزینهٔ فیزیکیِ حذف باتری در گزیده‌های بعدی، فیچر نرم‌افزاری یا قابلیت تأییدشدهٔ NSP نیست.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "battery_free_implementation_not_promoted",
+        "maintenance_problem_statement",
+        "not_verified_for_NSP",
+        "staff_time"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-05"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD14-P07-E03",
+        "VINGCARD14-P07-E04"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD14-CONTEXT-BATTERY-OPTIONS"
+      ],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I013",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 8,
+      "original_printed_page": 8,
+      "S02_fragment_ref": "VINGCARD14-P08-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "Sleek Design Embodying Ultimate Elegance",
+      "translation_fa": "طراحی ظریف، جلوه‌ای از نهایت زیبایی",
+      "source_type": "marketing_slogan",
+      "category_id": "design_integration",
+      "research_section_group": "DESIGN_AND_STYLE",
+      "highlight_fa": "تیتر مستقل برای زیبایی‌شناسی محصول",
+      "editorial_relevance_and_limits_fa": "عبارت تبلیغاتی دربارهٔ ظاهر محصول منبع است؛ «نهایت» بیان کیفی و اغراق‌آمیز است و رتبه‌بندی، جایزهٔ طراحی یا برتری اندازه‌گیری‌شده را نشان نمی‌دهد.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "aesthetic_hyperbole",
+        "design_positioning",
+        "not_verified_for_NSP"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I014",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 8,
+      "original_printed_page": 8,
+      "S02_fragment_ref": "VINGCARD14-P08-E05",
+      "S02_fragment_index": 5,
+      "original_source_excerpt_en": "In addition to the lock’s range of standard finishes, customers can also make requests for custom-tailored finishes depending on their specific needs and order quantity.",
+      "translation_fa": "علاوه بر پرداخت‌های سطحی استانداردِ قفل، مشتریان می‌توانند با توجه به نیازهای مشخص خود و تعداد سفارش، پرداخت سطح سفارشی نیز درخواست کنند.",
+      "source_type": "benefit",
+      "category_id": "design_integration",
+      "research_section_group": "DESIGN_AND_STYLE",
+      "highlight_fa": "ثبت امکان درخواست سفارشی‌سازی همراه با شرط‌های آن",
+      "editorial_relevance_and_limits_fa": "منبع فقط امکان درخواست پرداخت سطح سفارشی را با توجه به نیاز و تعداد سفارش مطرح می‌کند. پذیرش درخواست، دسترسی به همهٔ رنگ‌ها یا بافت‌ها، حداقل تعداد سفارش و زمان تحویل مشخص نشده است؛ هیچ گزینهٔ سفارشی NSP تأیید نمی‌شود. «پرداخت سطح» ترجمهٔ finish است و به پرداخت پول اشاره ندارد.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "conditional_custom_finish_request",
+        "no_MOQ_or_availability_inference",
+        "not_verified_for_NSP",
+        "order_quantity_condition"
+      ],
+      "publication_risk": "technical",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-08"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD14-P08-E04",
+        "VINGCARD14-P08-E06"
+      ],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I015",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 9,
+      "original_printed_page": 9,
+      "S02_fragment_ref": "VINGCARD14-P09-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "Your style. Spot on.",
+      "translation_fa": "دقیقاً مطابق سبک شما.",
+      "source_type": "marketing_slogan",
+      "category_id": "marketing_slogans",
+      "research_section_group": "DESIGN_AND_STYLE",
+      "highlight_fa": "بیان بسیار کوتاهِ هماهنگی طراحی با سبک مخاطب",
+      "editorial_relevance_and_limits_fa": "شعار کوتاه صفحهٔ طراحی؛ Spot on در این زمینه به معنای دقیقاً متناسب یا درست است. فقط الگوی بیان شخصی‌سازی سبک است و تعهدی دربارهٔ تنوع محصولات یا فینیش‌های NSP ایجاد نمی‌کند.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "design_style",
+        "not_verified_for_NSP",
+        "short_editorial_slogan"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I016",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 10,
+      "original_printed_page": 10,
+      "S02_fragment_ref": "VINGCARD14-P10-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "Redefining the Concept of Effortless Installation",
+      "translation_fa": "بازتعریف مفهوم نصب بی‌دردسر",
+      "source_type": "marketing_slogan",
+      "category_id": "installation_experience",
+      "research_section_group": "INSTALLATION_AND_MOBILE_ACCESS",
+      "highlight_fa": "نصب آسان به‌عنوان یک پیام ارزش مستقل",
+      "editorial_relevance_and_limits_fa": "تیتر بازاریابی دربارهٔ تجربهٔ نصب محصول منبع؛ فقط ساختار پیام قابل مطالعه است. زمان نصب، تعداد قطعات، نیاز به سوراخ‌کاری یا نصب بدون تخصص برای NSP از آن نتیجه نمی‌شود.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "installation_editorial_message",
+        "not_installation_performance_evidence",
+        "not_verified_for_NSP"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I017",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 11,
+      "original_printed_page": 11,
+      "S02_fragment_ref": "VINGCARD14-P11-E03",
+      "S02_fragment_index": 3,
+      "original_source_excerpt_en": "By simply activating the feature with a software license agreement",
+      "translation_fa": "صرفاً با فعال‌سازی این قابلیت از طریق توافق‌نامهٔ مجوز نرم‌افزار",
+      "source_type": "software_capability",
+      "category_id": "mobile_access",
+      "research_section_group": "INSTALLATION_AND_MOBILE_ACCESS",
+      "highlight_fa": "فعال‌سازی Mobile Access همراه با شرط مجوز نرم‌افزار",
+      "editorial_relevance_and_limits_fa": "این قابلیت در همان بند به Mobile Access اشاره دارد. متن، فعال‌سازی را به توافق‌نامهٔ مجوز نرم‌افزار مرتبط می‌کند؛ آمادگی سخت‌افزاری به معنی فعال‌بودن سرویس یا رایگان‌بودن مجوز نیست. شرایط قیمت، نسخه یا پیاده‌سازی NSP بررسی نشده‌اند.",
+      "context_tags": [
+        "Mobile_Access",
+        "Vingcard_competitor_research_only",
+        "licensed_activation",
+        "mandatory_license_context",
+        "not_verified_for_NSP"
+      ],
+      "publication_risk": "source_software_claim_requires_separate_NSP_evidence",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-12"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD14-P11-E02",
+        "VINGCARD14-P11-E04"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD14-CONTEXT-MOBILE-LICENSE"
+      ],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I018",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 11,
+      "original_printed_page": 11,
+      "S02_fragment_ref": "VINGCARD14-P11-E04",
+      "S02_fragment_index": 4,
+      "original_source_excerpt_en": "From bypassing long front desk check-in lines to providing guests with a contactless alternative to receiving their key and gaining room entry",
+      "translation_fa": "از بی‌نیازی به انتظار در صف‌های طولانی پذیرش هنگام ورود به هتل تا فراهم‌کردن گزینه‌ای بدون تماس برای دریافت کلید و ورود مهمانان به اتاق",
+      "source_type": "scenario",
+      "category_id": "mobile_access",
+      "research_section_group": "INSTALLATION_AND_MOBILE_ACCESS",
+      "highlight_fa": "پیوند تجربهٔ پذیرش، دریافت کلید و ورود بدون تماس",
+      "editorial_relevance_and_limits_fa": "سناریوی تجربهٔ مهمان در بخش Mobile Access است و باید همراه شرط توافق‌نامهٔ مجوز همان بند خوانده شود. این عبارت به‌تنهایی، فرایند کامل پذیرش خودکار، احراز هویت، تخصیص اتاق، اتصال PMS یا پیاده‌سازی این مسیر در NSP را ثابت نمی‌کند.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "contactless_key_and_room_entry",
+        "guest_arrival",
+        "mandatory_license_context",
+        "not_verified_for_NSP"
+      ],
+      "publication_risk": "conditional_guest_journey_source_claim",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-12"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD14-P11-E02",
+        "VINGCARD14-P11-E03"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD14-CONTEXT-MOBILE-LICENSE"
+      ],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I019",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 11,
+      "original_printed_page": 11,
+      "S02_fragment_ref": "VINGCARD14-P11-E05",
+      "S02_fragment_index": 5,
+      "original_source_excerpt_en": "Compatible with Apple Wallet.",
+      "translation_fa": "سازگار با Apple Wallet.",
+      "source_type": "software_capability",
+      "category_id": "mobile_access",
+      "research_section_group": "INSTALLATION_AND_MOBILE_ACCESS",
+      "highlight_fa": "نام‌بردن روشن از پلتفرم سازگار، با حفظ دامنهٔ محصول منبع",
+      "editorial_relevance_and_limits_fa": "سازگاری اعلام‌شده برای محصول منبع در بخش Mobile Access است. مجوز Mobile Access به‌عنوان زمینهٔ همان بخش حفظ می‌شود؛ متن شرایط اختصاصی مجوز Apple Wallet را تعیین نمی‌کند. نسخهٔ سیستم‌عامل، دستگاه‌های پشتیبانی‌شده، حساب، پیکربندی و وضعیت فعلی بررسی نشده‌اند و هیچ پشتیبانی Apple Wallet برای NSP تأیید نمی‌شود.",
+      "context_tags": [
+        "Apple_Wallet",
+        "Vingcard_competitor_research_only",
+        "mandatory_license_context",
+        "named_platform_compatibility",
+        "not_verified_for_NSP",
+        "source_product_only"
+      ],
+      "publication_risk": "source_software_claim_requires_separate_NSP_evidence",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-12",
+        "VINGCARD14-CLAIM-13"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD14-P11-E03"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD14-CONTEXT-MOBILE-LICENSE"
+      ],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I020",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 12,
+      "original_printed_page": 12,
+      "S02_fragment_ref": "VINGCARD14-P12-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "Setting a New Standard in Operational Efficiency",
+      "translation_fa": "تعیین معیاری تازه برای بهره‌وری عملیاتی",
+      "source_type": "marketing_slogan",
+      "category_id": "hotel_operations",
+      "research_section_group": "OPERATION",
+      "highlight_fa": "طرح بهره‌وری عملیاتی در یک تیتر کوتاه",
+      "editorial_relevance_and_limits_fa": "تیتر جایگاه‌سازی عملیاتی منبع است. فقط الگوی پیام ارزش بررسی می‌شود؛ هیچ سنجهٔ تازه، مقدار بهبود، عمر باتری، دوام مکانیکی یا نتیجهٔ آزمون NSP از آن به دست نمی‌آید.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "not_measured_performance",
+        "not_verified_for_NSP",
+        "operational_efficiency_message"
+      ],
+      "publication_risk": "editorial",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I021",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 14,
+      "original_printed_page": 14,
+      "S02_fragment_ref": "VINGCARD14-P14-E05",
+      "S02_fragment_index": 5,
+      "original_source_excerpt_en": "Protecting Your Guests and Staff from Online Cyber Threats",
+      "translation_fa": "محافظت از مهمانان و کارکنان شما در برابر تهدیدهای سایبری در فضای آنلاین",
+      "source_type": "marketing_slogan",
+      "category_id": "security_messaging",
+      "research_section_group": "SECURITY_AND_COMPLIANCE",
+      "highlight_fa": "بیان امنیت سایبری از دید مهمان و کارکنان",
+      "editorial_relevance_and_limits_fa": "تیتر بخش مربوط به سازگاری با Vostio Access Management و به‌روزرسانی نرم‌افزار آن است. دامنهٔ متن به این زمینه محدود می‌ماند و به تضمین امنیت همهٔ خدمات، نبود آسیب‌پذیری یا امنیت تأییدشدهٔ NSP تبدیل نمی‌شود.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "cybersecurity_message",
+        "named_Vostio_context",
+        "not_verified_for_NSP"
+      ],
+      "publication_risk": "source_security_marketing_requires_evidence",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-23"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD14-P05-E04",
+        "VINGCARD14-P14-E06",
+        "VINGCARD14-P14-E07"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD14-CONTEXT-VOSTIO"
+      ],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I022",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 14,
+      "original_printed_page": 14,
+      "S02_fragment_ref": "VINGCARD14-P14-E07",
+      "S02_fragment_index": 7,
+      "original_source_excerpt_en": "With its cloud-based design, Vostio Access Management is able to receive regular software updates that safeguard against newly discovered vulnerabilities.",
+      "translation_fa": "Vostio Access Management با طراحی مبتنی بر فضای ابری خود، می‌تواند به‌روزرسانی‌های منظم نرم‌افزاری دریافت کند که در برابر آسیب‌پذیری‌های تازه کشف‌شده محافظت ایجاد می‌کنند.",
+      "source_type": "software_capability",
+      "category_id": "management_software",
+      "research_section_group": "SECURITY_AND_COMPLIANCE",
+      "highlight_fa": "ارتباط معماری ابری و به‌روزرسانی منظم، با فاعل نرم‌افزاری مشخص",
+      "editorial_relevance_and_limits_fa": "فاعل این قابلیت Vostio Access Management است؛ محصول قفل در همان بند سازگار با آن معرفی می‌شود. منظم به معنی خودکار یا OTA نیست؛ تناوب و روش تحویل مشخص نشده و تضمین رفع همهٔ آسیب‌پذیری‌ها ارائه نشده است. هیچ معماری ابری یا اتصال نرم‌افزاری NSP تأیید نمی‌شود.",
+      "context_tags": [
+        "Vingcard_competitor_research_only",
+        "Vostio_Access_Management",
+        "cloud_based_design",
+        "not_automatic_or_OTA_claim",
+        "not_verified_for_NSP",
+        "regular_software_updates"
+      ],
+      "publication_risk": "source_software_claim_requires_separate_NSP_evidence",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-23"
+      ],
+      "related_context_fragment_refs": [
+        "VINGCARD14-P05-E04",
+        "VINGCARD14-P14-E06"
+      ],
+      "source_context_set_refs": [
+        "VINGCARD14-CONTEXT-VOSTIO"
+      ],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    },
+    {
+      "id": "CAT014_VINGCARD_NOVEL:I023",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "source_filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+      "source_pdf_page": 15,
+      "original_printed_page": 15,
+      "S02_fragment_ref": "VINGCARD14-P15-E03",
+      "S02_fragment_index": 3,
+      "original_source_excerpt_en": "Instant response to Security Threats via Real-time Event Alarms (requires Online option)",
+      "translation_fa": "واکنش فوری به تهدیدهای امنیتی از طریق هشدارهای بلادرنگ رویداد (نیازمند گزینهٔ Online)",
+      "source_type": "software_capability",
+      "category_id": "security_events",
+      "research_section_group": "SECURITY_AND_COMPLIANCE",
+      "highlight_fa": "قرارگرفتن شرط Online در کنار ادعای هشدار رویداد",
+      "editorial_relevance_and_limits_fa": "هشدارهای رویداد به گزینهٔ Online مشروط‌اند؛ این شرط فقط به همین قابلیت مربوط است. نام نرم‌افزار کنترل هشدار، عامل واکنش، اقدام خودکار، مسیر شبکه و زمان پاسخ عددی در این عبارت مشخص نشده‌اند؛ فوری واژهٔ توصیفی و بازاریابی منبع است و مداخلهٔ تضمین‌شده را ثابت نمی‌کند. عدد روی نماد اعلان، زمان پاسخ نیست و این گزاره پشتیبانی NSP را تأیید نمی‌کند.",
+      "context_tags": [
+        "Online_option_required",
+        "Vingcard_competitor_research_only",
+        "instant_response_is_source_wording",
+        "not_verified_for_NSP",
+        "realtime_event_alarms",
+        "software_product_identity_unspecified"
+      ],
+      "publication_risk": "conditional_realtime_alarm_source_claim",
+      "source_quote_in_S02": true,
+      "source_quote_verification": "S02_exact_string_and_original_PDF_normalized_exact_match_confirmed",
+      "translation_style": "contextual_Persian_translation_of_one_short_source_fragment",
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-24"
+      ],
+      "related_context_fragment_refs": [],
+      "source_context_set_refs": [],
+      "NSP_feature_status": "competitor_research_only_not_verified_for_NSP",
+      "publisher_claims_are_not_NSP_proof": true,
+      "duplicate_topic_policy": "within_document_duplicates_resolved_cross_catalog_matching_deferred_to_S06_S07",
+      "source_section_mapping": "pending_S05",
+      "requires_further_validation": "S06",
+      "visual_reference_status": "pending_S04",
+      "publication_status": "not_approved_for_NSP_catalog"
+    }
+  ],
+  "excluded_S02_fragments": [
+    {
+      "S02_fragment_ref": "VINGCARD14-P01-E01",
+      "pdf_page": 1,
+      "reason": "hardware_product_identity_not_feature",
+      "context_and_limit_fa": "نام محصول فقط در اطلاعات منبع باقی می‌ماند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P01-E01",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P02-E01",
+      "pdf_page": 2,
+      "reason": "repeated_hardware_product_identity_not_feature",
+      "context_and_limit_fa": "تکرار نام محصول منبع است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P02-E01",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P02-E05",
+      "pdf_page": 2,
+      "reason": "competitor_hardware_handle_and_module_description",
+      "context_and_limit_fa": "شرح محصول و جای‌گیری فناوری در دستگیره، فیچر نرم‌افزاری نیست.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P02-E05",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P02-E06",
+      "pdf_page": 2,
+      "reason": "unbounded_hardware_avoidance_and_future_integration_claim",
+      "context_and_limit_fa": "وعدهٔ وسیع ارتقا و افزودن یکپارچگی بدون تعویض سخت‌افزار، به قابلیت مشخص NSP تبدیل نمی‌شود؛ شواهد مشروط Mobile Access در صفحهٔ ۱۱ جدا بررسی می‌شوند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P02-E06",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-12"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P02-E07",
+      "pdf_page": 2,
+      "reason": "competitor_indoor_outdoor_hardware_use_claim",
+      "context_and_limit_fa": "دامنهٔ کاربری محیطی محصول رقیب است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P02-E07",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P02-E08",
+      "pdf_page": 2,
+      "reason": "competitor_material_and_manufacturing_environmental_claim",
+      "context_and_limit_fa": "ادعای مواد و فرایند ساخت منبع، بدون شاهد مستقل برای NSP است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P02-E08",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P02-E09",
+      "pdf_page": 2,
+      "reason": "contents_topic_label_not_independent_feature",
+      "context_and_limit_fa": "عنوان فهرست؛ در صورت نیاز فقط در ترجمهٔ ساختار منبع نگه داشته شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P02-E09",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P02-E11",
+      "pdf_page": 2,
+      "reason": "contents_topic_label_not_independent_feature",
+      "context_and_limit_fa": "عنوان فهرست؛ ویژگی مستقلی بیان نمی‌کند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P02-E11",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P02-E12",
+      "pdf_page": 2,
+      "reason": "competitor_physical_installation_and_retrofit_performance_claim",
+      "context_and_limit_fa": "توصیف نصب و بازسازی محصول فیزیکی و ادعای کاهش توقف، بدون معیار آزمون است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P02-E12",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P03-E01",
+      "pdf_page": 3,
+      "reason": "contents_topic_label_not_independent_feature",
+      "context_and_limit_fa": "عنوان فهرست مربوط به طراحی و سبک است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P03-E01",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P03-E02",
+      "pdf_page": 3,
+      "reason": "competitor_handle_options_and_unbounded_decor_compatibility",
+      "context_and_limit_fa": "شرح گزینه‌های دستگیره و ادعای سازگاری با هر دکور؛ رکورد شرط‌دار درخواست پرداخت سطح در صفحهٔ ۸ دقیق‌تر است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P03-E02",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P03-E03",
+      "pdf_page": 3,
+      "reason": "contents_topic_label_not_independent_feature",
+      "context_and_limit_fa": "عنوان فهرست مربوط به بهره‌برداری است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P03-E03",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P03-E04",
+      "pdf_page": 3,
+      "reason": "competitor_component_and_battery_maintenance_claim",
+      "context_and_limit_fa": "وعدهٔ اتکا به دوام اجزا و کاهش تعویض باتری، کارکرد فیزیکی محصول منبع است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P03-E04",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P03-E05",
+      "pdf_page": 3,
+      "reason": "contents_topic_label_not_independent_feature",
+      "context_and_limit_fa": "عنوان فهرست امنیت و انطباق است؛ گواهی مستقلی از آن حاصل نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P03-E05",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P03-E06",
+      "pdf_page": 3,
+      "reason": "unqualified_product_security_standards_claim",
+      "context_and_limit_fa": "عبارت برتری امنیتی و جدیدترین استانداردها بدون جزئیات؛ امنیت یا انطباق NSP را ثابت نمی‌کند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P03-E06",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P04-E01",
+      "pdf_page": 4,
+      "reason": "generic_section_heading_not_independent_feature",
+      "context_and_limit_fa": "عنوان عمومی نمای کلی است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P04-E01",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P04-E03",
+      "pdf_page": 4,
+      "reason": "competitor_physical_module_placement_and_drilling_claim",
+      "context_and_limit_fa": "محل اجزا و الزامات فیزیکی نصب قفل رقیب است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P04-E03",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P04-E04",
+      "pdf_page": 4,
+      "reason": "mixed_hardware_durability_and_unqualified_platform_claim",
+      "context_and_limit_fa": "ادعای دوام سخت‌افزار با ارتقای موبایل و یکپارچگی نامشخص مخلوط شده؛ قابلیت‌های نرم‌افزاری مشخص از شواهد دقیق‌تر استخراج می‌شوند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P04-E04",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-12"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P04-E06",
+      "pdf_page": 4,
+      "reason": "competitor_handle_variants_and_unbounded_design_fit",
+      "context_and_limit_fa": "گزینه‌های دستگیره و تناسب بی‌قید با دکور، فهرست قابلیت نرم‌افزاری نیستند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P04-E06",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P04-E07",
+      "pdf_page": 4,
+      "reason": "competitor_material_and_manufacturing_environmental_claim",
+      "context_and_limit_fa": "ادعای مواد و روش ساخت منبع است؛ تیتر عمومی پایداری جدا به‌عنوان الگوی بیان نگه داشته شده است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P04-E07",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P04-E08",
+      "pdf_page": 4,
+      "reason": "competitor_environmental_resistance_hardware_spec",
+      "context_and_limit_fa": "مقاومت محیطی محصول رقیب؛ ردهٔ حفاظتی یا مشخصهٔ NSP از آن ساخته نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P04-E08",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P04-E09",
+      "pdf_page": 4,
+      "reason": "competitor_physical_durability_test_claim",
+      "context_and_limit_fa": "ادعای دوام فیزیکی محصول منبع، بدون تبدیل به نتیجهٔ آزمون NSP.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P04-E09",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P04-E10",
+      "pdf_page": 4,
+      "reason": "competitor_hardware_certification_claim",
+      "context_and_limit_fa": "نام و املای گواهی فقط در منبع S02 محفوظ است؛ گواهی سخت‌افزار رقیب فیچر NSP نیست.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P04-E10",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P05-E02",
+      "pdf_page": 5,
+      "reason": "software_compatibility_teaser_duplicate_of_P11_E05",
+      "context_and_limit_fa": "بیان کامل‌تر سازگاری Apple Wallet در صفحهٔ ۱۱ همراه با زمینهٔ Mobile Access نگه داشته می‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P05-E02",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-13"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P05-E03",
+      "pdf_page": 5,
+      "reason": "competitor_hardware_and_protocol_scalability_claim",
+      "context_and_limit_fa": "ادعای ارتقای سخت‌افزار و پروتکل‌های امنیتی و اتصال طرف ثالث بدون محدودهٔ مشخص است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P05-E03",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-12"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P05-E05",
+      "pdf_page": 5,
+      "reason": "underspecified_wireless_Online_hardware_compatibility",
+      "context_and_limit_fa": "عبارت کلی سازگاری Online، نوع شبکه یا قابلیت نرم‌افزاری مستقل را مشخص نمی‌کند؛ شرط هشدارهای رویداد در صفحهٔ ۱۵ جدا حفظ می‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P05-E05",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-24"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P05-E06",
+      "pdf_page": 5,
+      "reason": "competitor_accessibility_compliance_claim",
+      "context_and_limit_fa": "ادعای انطباق دسترس‌پذیری محصول رقیب؛ به گواهی یا پشتیبانی NSP تبدیل نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P05-E06",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P05-E07",
+      "pdf_page": 5,
+      "reason": "competitor_optional_power_hardware_implementation",
+      "context_and_limit_fa": "گزینهٔ تغذیهٔ فیزیکی است و اختیاری‌بودن آن باید در منبع حفظ شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P05-E07",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-05"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P05-E08",
+      "pdf_page": 5,
+      "reason": "competitor_optional_mechanical_emergency_access",
+      "context_and_limit_fa": "دسترسی اضطراری مکانیکی و واحد سرویس، فرمان بازکردن نرم‌افزاری یا قابلیت NSP نیستند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P05-E08",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-01"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P06-E02",
+      "pdf_page": 6,
+      "reason": "competitor_material_recyclability_and_manufacturing_claim",
+      "context_and_limit_fa": "ادعای اجزای قابل‌بازیافت و فرایند ساختِ همین محصول است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P06-E02",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P06-E03",
+      "pdf_page": 6,
+      "reason": "physical_weight_security_heading_tied_to_excluded_comparison",
+      "context_and_limit_fa": "تیتر بر مقایسهٔ وزن و ایمنی محصول فیزیکی تکیه دارد؛ عدد و مبنای مقایسه در کنترل ادعاها باقی می‌مانند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P06-E03",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-02"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P06-E04",
+      "pdf_page": 6,
+      "reason": "competitor_mass_comparison_and_physical_resistance_claim",
+      "context_and_limit_fa": "مقایسهٔ وزن و مقاومت در برابر ورود فیزیکی؛ مدل‌های مرجع یا روش مقایسه مشخص نیستند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P06-E04",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-02"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P06-E05",
+      "pdf_page": 6,
+      "reason": "dependent_shipping_cost_benefit_of_excluded_weight_claim",
+      "context_and_limit_fa": "پیام هزینهٔ حمل به ادعای وزن محصول وابسته است؛ صرفه‌جویی مستقل یا عددی برای NSP نتیجه نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P06-E05",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-02"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P06-E06",
+      "pdf_page": 6,
+      "reason": "competitor_packaging_volume_and_mass_comparisons",
+      "context_and_limit_fa": "دو مقایسهٔ حجم و وزن بسته‌بندی در کنترل ادعاها جدا باقی می‌مانند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P06-E06",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-03",
+        "VINGCARD14-CLAIM-04"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P06-E08",
+      "pdf_page": 6,
+      "reason": "competitor_handle_design_installation_and_maintenance_claim",
+      "context_and_limit_fa": "پیام نصب و نگهداری به طراحی فیزیکی دستگیرهٔ منبع وابسته است؛ تیتر کلی آن جدا و صرفاً به‌عنوان الگوی بیان نگه داشته شده است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P06-E08",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P06-E09",
+      "pdf_page": 6,
+      "reason": "competitor_component_count_and_drilling_installation_claim",
+      "context_and_limit_fa": "شرح تعداد اجزا، قطعات متحرک و نیاز سوراخ‌کاری، از فیچرها کنار گذاشته می‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P06-E09",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P06-E10",
+      "pdf_page": 6,
+      "reason": "competitor_wear_resistance_downtime_and_hardware_cost_claim",
+      "context_and_limit_fa": "ادعاهای استهلاک و توقف و هزینه به سازوکار فیزیکی محصول رقیب وابسته‌اند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P06-E10",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P07-E01",
+      "pdf_page": 7,
+      "reason": "optional_battery_free_hardware_heading",
+      "context_and_limit_fa": "تیتر حذف باتری نباید اختیاری‌بودن راهکار فیزیکی منبع را پنهان کند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P07-E01",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-05"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P07-E03",
+      "pdf_page": 7,
+      "reason": "competitor_optional_power_hardware_and_patent_claim",
+      "context_and_limit_fa": "روش تغذیهٔ جایگزین، گزینهٔ فیزیکی محصول منبع است؛ وضعیت ادعاشدهٔ پتنت در نسخهٔ منبع، وضعیت فعلی یا ثبت نهایی نیست.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P07-E03",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-05"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P07-E04",
+      "pdf_page": 7,
+      "reason": "competitor_wireless_power_implementation_and_derived_benefits",
+      "context_and_limit_fa": "انتقال توان بی‌سیم، اتصال نرم‌افزاری یا پروتکل داده نیست؛ منافع وابسته به این گزینه به NSP تعمیم داده نمی‌شوند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P07-E04",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-05"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P07-E05",
+      "pdf_page": 7,
+      "reason": "environmental_heading_dependent_on_recyclability_claim",
+      "context_and_limit_fa": "تیتر به ادعای مواد قابل‌بازیافت وابسته است؛ پیام کلی پایداری قبلاً نگه داشته شده و دامنهٔ جزء در کنترل ادعا محفوظ است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P07-E05",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-06"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P07-E06",
+      "pdf_page": 7,
+      "reason": "competitor_lock_trim_recyclability_claim",
+      "context_and_limit_fa": "دامنهٔ بازیافت‌پذیری به پوشش قفل محدود است؛ کل قفل یا استفاده از مواد بازیافتی از آن نتیجه نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P07-E06",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-06"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P07-E07",
+      "pdf_page": 7,
+      "reason": "generic_packaging_heading_not_independent_feature",
+      "context_and_limit_fa": "عنوان بسته‌بندی فقط زمینهٔ ادعای مواد بسته‌بندی است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P07-E07",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-07"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P07-E08",
+      "pdf_page": 7,
+      "reason": "competitor_recycled_packaging_material_claim",
+      "context_and_limit_fa": "ادعا مربوط به جنس جعبهٔ بسته‌بندی است و با بازیافت‌پذیری پوشش قفل تفاوت دارد.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P07-E08",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-07"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P07-E09",
+      "pdf_page": 7,
+      "reason": "unbounded_microplastic_environmental_marketing_claim",
+      "context_and_limit_fa": "عبارت محیط‌زیستی بسیار گسترده و وابسته به بسته‌بندی محصول منبع است؛ نتیجهٔ اندازه‌گیری‌شده‌ای برای NSP نیست.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P07-E09",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-07"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P08-E02",
+      "pdf_page": 8,
+      "reason": "redundant_design_and_latest_security_product_positioning",
+      "context_and_limit_fa": "پیام طراحی و امنیت در تیترهای مستقل دیگر پوشش داده شده؛ ادعای جدیدترین فناوری به قابلیت مشخص تبدیل نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P08-E02",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P08-E03",
+      "pdf_page": 8,
+      "reason": "competitor_installation_variant_and_physical_form",
+      "context_and_limit_fa": "تفاوت نسخهٔ نصب جدید و بازسازی و اندازهٔ فیزیکی، مشخصهٔ محصول رقیب است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P08-E03",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-09"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P08-E04",
+      "pdf_page": 8,
+      "reason": "unbounded_custom_finish_heading_expanded_by_conditional_P08_E05",
+      "context_and_limit_fa": "عبارت دقیق‌ترِ امکان درخواست در گزیدهٔ بعد، شرط نیاز و تعداد سفارش را حفظ می‌کند؛ پوشش هر نیاز تضمین نشده است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P08-E04",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-08"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P08-E06",
+      "pdf_page": 8,
+      "reason": "unbounded_design_hyperbole_duplicate",
+      "context_and_limit_fa": "«تقریباً نامحدود» اغراق بازاریابی است و تنوع یا سفارشی‌سازی بی‌قید را تأیید نمی‌کند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P08-E06",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-08"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P10-E02",
+      "pdf_page": 10,
+      "reason": "duplicate_installation_ease_message",
+      "context_and_limit_fa": "مضمون نصب آسان در تیتر همین صفحه پوشش داده شد؛ ادعای سرعت نصب برای NSP ایجاد نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P10-E02",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P10-E03",
+      "pdf_page": 10,
+      "reason": "competitor_physical_component_and_installation_claim",
+      "context_and_limit_fa": "تعداد ماژول‌ها و اثر آن بر نصب، ویژگی سخت‌افزار منبع است؛ به فیچر NSP منتقل نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P10-E03",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-10"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P10-E04",
+      "pdf_page": 10,
+      "reason": "competitor_physical_installation_and_drilling_claim",
+      "context_and_limit_fa": "ادعای کاهش سوراخ‌کاری و زمان و زحمت نصب مخصوص قفل منبع است؛ سنجه یا قابلیت نرم‌افزاری نیست.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P10-E04",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-10"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P10-E05",
+      "pdf_page": 10,
+      "reason": "competitor_spare_parts_claim",
+      "context_and_limit_fa": "ادعای تعداد قطعات یدکی و زمینهٔ شرطی آن در شواهد S02 باقی می‌ماند؛ به بی‌نیازی از نگهداری تبدیل نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P10-E05",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-11"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P10-E06",
+      "pdf_page": 10,
+      "reason": "installation_figure_heading_not_independent_feature",
+      "context_and_limit_fa": "عنوان چهار تصویر شماره‌دار نصب است؛ متن دستور گام‌ها در منبع وجود ندارد و ساخته نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P10-E06",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P11-E01",
+      "pdf_page": 11,
+      "reason": "duplicate_Mobile_Access_adoption_heading",
+      "context_and_limit_fa": "محتوای فعال‌سازی و سناریوی مهمان در گزیده‌های E03 و E04 همین صفحه ثبت می‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P11-E01",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-12"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P11-E02",
+      "pdf_page": 11,
+      "reason": "hardware_readiness_retained_as_license_bound_context",
+      "context_and_limit_fa": "آمادگی سخت‌افزاری محصول فقط زمینهٔ فعال‌سازی Mobile Access است؛ شرط توافق‌نامهٔ مجوز در E03 باید همراه آن بماند. این عبارت فیچر سخت‌افزاری مستقلی برای NSP نیست.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P11-E02",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-12"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P12-E02",
+      "pdf_page": 12,
+      "reason": "competitor_lock_model_intro_not_software_feature",
+      "context_and_limit_fa": "معرفی محصول فیزیکی و ادعای کلی بهره‌برداری بلندمدت؛ موضوع اصلی در تیتر ارزش عملیاتی حفظ شده است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P12-E02",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P12-E03",
+      "pdf_page": 12,
+      "reason": "competitor_battery_free_hardware_option",
+      "context_and_limit_fa": "گزینهٔ منبع تغذیهٔ سخت‌افزار رقیب است؛ با حالت باتری‌دار و عمر آن مخلوط نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P12-E03",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-05",
+        "VINGCARD14-CLAIM-15"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P12-E04",
+      "pdf_page": 12,
+      "reason": "competitor_conditional_battery_life_spec",
+      "context_and_limit_fa": "عمر باتری با شرط نصب باتری‌دار و استفادهٔ معمول فقط در شواهد محدود S02 نگه داشته می‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P12-E04",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-15"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P12-E05",
+      "pdf_page": 12,
+      "reason": "heading_for_restricted_physical_damage_prevention_claim",
+      "context_and_limit_fa": "تیتر به مکانیسم فیزیکی جلوگیری از آسیب در همان صفحه مربوط است و قابلیت نرم‌افزاری مستقلی ایجاد نمی‌کند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P12-E05",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-16"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P12-E06",
+      "pdf_page": 12,
+      "reason": "restricted_mechanical_housekeeping_context",
+      "context_and_limit_fa": "سناریوی نظافت، زمینهٔ مکانیکی زبانهٔ قفل است؛ سناریوی GRMS، حسگر یا گردش کار نرم‌افزاری از آن استنباط نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P12-E06",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-16"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P12-E07",
+      "pdf_page": 12,
+      "reason": "competitor_mechanical_interlock_claim",
+      "context_and_limit_fa": "رفتار مکانیکی قفل و ادعای جلوگیری از آسیب، فقط شاهد منبع است. شرط قرارداشتن لنگهٔ در داخل چارچوب باید در زمینه حفظ شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P12-E07",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-16"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P13-E01",
+      "pdf_page": 13,
+      "reason": "heading_for_restricted_environmental_resistance",
+      "context_and_limit_fa": "تیتر زمینهٔ مقاومت فیزیکی در شرایط محیطی است؛ بدون مشخصات و آزمون NSP به پیام عملکردی NSP تبدیل نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P13-E01",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-17",
+        "VINGCARD14-CLAIM-18"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P13-E02",
+      "pdf_page": 13,
+      "reason": "competitor_physical_environment_suitability",
+      "context_and_limit_fa": "کاربری داخل و خارج با شرایط محیطی همان قفل مرتبط است؛ گواهی یا مناسب‌بودن نامحدود محیطی NSP نیست.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P13-E02",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-17",
+        "VINGCARD14-CLAIM-18"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P14-E01",
+      "pdf_page": 14,
+      "reason": "generic_security_superiority_heading",
+      "context_and_limit_fa": "تیتر برتری امنیتی فاقد سنجهٔ مستقل است؛ پیام مشخص‌تر امنیت سایبری و هشدار مشروط جدا ثبت می‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P14-E01",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P14-E02",
+      "pdf_page": 14,
+      "reason": "competitor_hardware_upgrade_and_future_security_claim",
+      "context_and_limit_fa": "توسعه‌پذیری و ارتقای آتی بدون تعویض سخت‌افزار ادعای محصول منبع است؛ در کنترل ادعا باقی می‌ماند و تضمین نامحدود آینده برای NSP نیست.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P14-E02",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-22"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P14-E03",
+      "pdf_page": 14,
+      "reason": "physical_anti_tamper_heading",
+      "context_and_limit_fa": "عنوان زمینهٔ ضد دست‌کاری قفل است؛ تعریف نرم‌افزار یا سناریوی مستقل ندارد. پیام عمومی امنیتی جدا در صفحهٔ ۱۵ ثبت می‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P14-E03",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-25"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P14-E04",
+      "pdf_page": 14,
+      "reason": "competitor_hardware_anti_tamper_alarm_context",
+      "context_and_limit_fa": "هشدار ضد دست‌کاری قفل نباید بدون مدرک به قابلیت نرم‌افزاری یا سازوکار تشخیص NSP تبدیل شود؛ هشدار رویداد مشروط صفحهٔ ۱۵ جدا ثبت شده است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P14-E04",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-25"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P14-E06",
+      "pdf_page": 14,
+      "reason": "duplicate_named_Vostio_compatibility_P05_E04",
+      "context_and_limit_fa": "سازگاری نام‌برده در P05-E04 ثبت می‌شود؛ این گزیده همچنان زمینهٔ فاعل و دامنهٔ به‌روزرسانی‌های P14-E07 است.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P14-E06",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-23"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P15-E01",
+      "pdf_page": 15,
+      "reason": "section_heading_not_independent_feature",
+      "context_and_limit_fa": "عنوان گروه کارت‌های ایمنی و امنیت است؛ به شمار فیچرهای مستقل افزوده نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P15-E01",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P15-E02",
+      "pdf_page": 15,
+      "reason": "generic_security_technology_title_retained_as_claim_context",
+      "context_and_limit_fa": "عنوان عمومی فناوری امنیت، نرم‌افزار مشخص یا پیاده‌سازی قابل‌ارزیابی مستقلی معرفی نمی‌کند؛ ترجمه و محدودیت آن در کنترل ادعای ۲۵ باقی می‌ماند و به شمار فیچرها افزوده نمی‌شود. شرط Online کارت مجاور به این عنوان منتقل نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P15-E02",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-25"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P15-E04",
+      "pdf_page": 15,
+      "reason": "competitor_optional_mechanical_emergency_override",
+      "context_and_limit_fa": "بازکردن اضطراری به جزء مکانیکی اختیاری مربوط است؛ کنترل از راه دور یا قابلیت اضطراری نرم‌افزار تلقی نمی‌شود.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P15-E04",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-01",
+        "VINGCARD14-CLAIM-20"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P15-E05",
+      "pdf_page": 15,
+      "reason": "duplicate_hardware_scalability_and_unbounded_future_security_message",
+      "context_and_limit_fa": "عنوانِ اجزای توسعه‌پذیر با ادعای امنیت آینده، تکرار زمینهٔ ارتقای سخت‌افزاری منبع است؛ تضمین امنیت آیندهٔ NSP نیست.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P15-E05",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-22"
+      ]
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P16-E01",
+      "pdf_page": 16,
+      "reason": "publisher_corporate_leadership_self_description",
+      "context_and_limit_fa": "توصیف جایگاه تجاری ناشر است؛ تحقیق مستقل بازار یا معرفی هویت NSP نیست.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P16-E01",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    },
+    {
+      "S02_fragment_ref": "VINGCARD14-P16-E02",
+      "pdf_page": 16,
+      "reason": "publisher_identity_slogan_duplicate_cover_theme",
+      "context_and_limit_fa": "شعار هویت ناشر در پشت جلد با مضمون جلد هم‌پوشان است و در این صفحه فیچر تازه‌ای ایجاد نمی‌کند.",
+      "source_excerpt_location": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-P16-E02",
+      "S03_feature_record_created": false,
+      "source_claim_gate_refs": []
+    }
+  ],
+  "excluded_reasons_counts": {
+    "competitor_accessibility_compliance_claim": 1,
+    "competitor_battery_free_hardware_option": 1,
+    "competitor_component_and_battery_maintenance_claim": 1,
+    "competitor_component_count_and_drilling_installation_claim": 1,
+    "competitor_conditional_battery_life_spec": 1,
+    "competitor_environmental_resistance_hardware_spec": 1,
+    "competitor_handle_design_installation_and_maintenance_claim": 1,
+    "competitor_handle_options_and_unbounded_decor_compatibility": 1,
+    "competitor_handle_variants_and_unbounded_design_fit": 1,
+    "competitor_hardware_and_protocol_scalability_claim": 1,
+    "competitor_hardware_anti_tamper_alarm_context": 1,
+    "competitor_hardware_certification_claim": 1,
+    "competitor_hardware_handle_and_module_description": 1,
+    "competitor_hardware_upgrade_and_future_security_claim": 1,
+    "competitor_indoor_outdoor_hardware_use_claim": 1,
+    "competitor_installation_variant_and_physical_form": 1,
+    "competitor_lock_model_intro_not_software_feature": 1,
+    "competitor_lock_trim_recyclability_claim": 1,
+    "competitor_mass_comparison_and_physical_resistance_claim": 1,
+    "competitor_material_and_manufacturing_environmental_claim": 2,
+    "competitor_material_recyclability_and_manufacturing_claim": 1,
+    "competitor_mechanical_interlock_claim": 1,
+    "competitor_optional_mechanical_emergency_access": 1,
+    "competitor_optional_mechanical_emergency_override": 1,
+    "competitor_optional_power_hardware_and_patent_claim": 1,
+    "competitor_optional_power_hardware_implementation": 1,
+    "competitor_packaging_volume_and_mass_comparisons": 1,
+    "competitor_physical_component_and_installation_claim": 1,
+    "competitor_physical_durability_test_claim": 1,
+    "competitor_physical_environment_suitability": 1,
+    "competitor_physical_installation_and_drilling_claim": 1,
+    "competitor_physical_installation_and_retrofit_performance_claim": 1,
+    "competitor_physical_module_placement_and_drilling_claim": 1,
+    "competitor_recycled_packaging_material_claim": 1,
+    "competitor_spare_parts_claim": 1,
+    "competitor_wear_resistance_downtime_and_hardware_cost_claim": 1,
+    "competitor_wireless_power_implementation_and_derived_benefits": 1,
+    "contents_topic_label_not_independent_feature": 5,
+    "dependent_shipping_cost_benefit_of_excluded_weight_claim": 1,
+    "duplicate_Mobile_Access_adoption_heading": 1,
+    "duplicate_hardware_scalability_and_unbounded_future_security_message": 1,
+    "duplicate_installation_ease_message": 1,
+    "duplicate_named_Vostio_compatibility_P05_E04": 1,
+    "environmental_heading_dependent_on_recyclability_claim": 1,
+    "generic_packaging_heading_not_independent_feature": 1,
+    "generic_section_heading_not_independent_feature": 1,
+    "generic_security_superiority_heading": 1,
+    "generic_security_technology_title_retained_as_claim_context": 1,
+    "hardware_product_identity_not_feature": 1,
+    "hardware_readiness_retained_as_license_bound_context": 1,
+    "heading_for_restricted_environmental_resistance": 1,
+    "heading_for_restricted_physical_damage_prevention_claim": 1,
+    "installation_figure_heading_not_independent_feature": 1,
+    "mixed_hardware_durability_and_unqualified_platform_claim": 1,
+    "optional_battery_free_hardware_heading": 1,
+    "physical_anti_tamper_heading": 1,
+    "physical_weight_security_heading_tied_to_excluded_comparison": 1,
+    "publisher_corporate_leadership_self_description": 1,
+    "publisher_identity_slogan_duplicate_cover_theme": 1,
+    "redundant_design_and_latest_security_product_positioning": 1,
+    "repeated_hardware_product_identity_not_feature": 1,
+    "restricted_mechanical_housekeeping_context": 1,
+    "section_heading_not_independent_feature": 1,
+    "software_compatibility_teaser_duplicate_of_P11_E05": 1,
+    "unbounded_custom_finish_heading_expanded_by_conditional_P08_E05": 1,
+    "unbounded_design_hyperbole_duplicate": 1,
+    "unbounded_hardware_avoidance_and_future_integration_claim": 1,
+    "unbounded_microplastic_environmental_marketing_claim": 1,
+    "underspecified_wireless_Online_hardware_compatibility": 1,
+    "unqualified_product_security_standards_claim": 1
+  },
+  "S02_evidence_claims_gate": [
+    {
+      "id": "VINGCARD14-CLAIM-01",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 5,
+      "kind": "optional_mechanical_emergency_access",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-01",
+      "S02_fragment_refs": [
+        "VINGCARD14-P05-E08"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "دسترسی اضطراری با تجهیزات و جزء مکانیکی محصول رقیب فقط با ارجاع به S02 نگهداری می‌شود. اختیاری‌بودن سیلندر از عنوان کوتاه صفحهٔ بعد حذف نشود؛ این مورد بازکردن نرم‌افزاری یا از راه دور را ثابت نمی‌کند.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-02",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 6,
+      "kind": "quantitative_product_mass_comparison",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-02",
+      "S02_fragment_refs": [
+        "VINGCARD14-P06-E04"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "baseline_en"
+      ],
+      "publication_gate": "competitor_quantitative_comparison_source_only_no_NSP_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "مقایسهٔ وزن خود قفل، مشخصهٔ فیزیکی محصول رقیب است و با ارجاع به S02 حفظ می‌شود. مبنای مقایسه، مدل‌های قدیمی قفل است؛ مدل مرجع و روش آزمون دقیق روشن نیست. با وزن بسته‌بندی جابه‌جا نشود.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-03",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 6,
+      "kind": "quantitative_packaging_volume_comparison",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-03",
+      "S02_fragment_refs": [
+        "VINGCARD14-P06-E06"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "baseline_en"
+      ],
+      "publication_gate": "competitor_quantitative_comparison_source_only_no_NSP_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "مقایسهٔ حجم بسته‌بندی به‌صورت شاهد محدود در S02 باقی می‌ماند. مبنای آن گزینه‌های دیگر قفل است؛ حجم بسته‌بندی با وزن محصول یا وزن بسته‌بندی یکی نیست.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-04",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 6,
+      "kind": "quantitative_packaging_mass_comparison",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-04",
+      "S02_fragment_refs": [
+        "VINGCARD14-P06-E06"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "baseline_en"
+      ],
+      "publication_gate": "competitor_quantitative_comparison_source_only_no_NSP_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "مقایسهٔ وزن بسته‌بندی فقط در S02 نگهداری می‌شود. گزینه‌های دیگر قفل مبنای مقایسه‌اند و روش محاسبه یا نمونهٔ مرجع دقیق مشخص نشده است؛ این مورد وزن خود قفل نیست.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-05",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 7,
+      "kind": "optional_wireless_power_implementation",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-05",
+      "S02_fragment_refs": [
+        "VINGCARD14-P07-E03",
+        "VINGCARD14-P07-E04"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en",
+        "qualifier_en"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "گزینهٔ تغذیهٔ بی‌نیاز از باتری، جزئیات سخت‌افزاری منبع است و به فیچر S03 منتقل نمی‌شود. اختیاری‌بودن گزینه و ادعای در انتظار ثبت بودن اختراع در همان نسخه حفظ شوند؛ ثبت نهایی یا وضعیت فعلی اختراع و هیچ فناوری ارتباطی NSP تأیید نمی‌شود.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I012"
+      ],
+      "linked_research_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I012"
+      ],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-06",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 7,
+      "kind": "quantitative_recyclability_scope",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-06",
+      "S02_fragment_refs": [
+        "VINGCARD14-P07-E06"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en"
+      ],
+      "publication_gate": "competitor_environmental_claim_source_only_no_NSP_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "ادعای بازیافت‌پذیری فقط به پوشش قفل مربوط است؛ مقدار و عبارت اصلی با ارجاع به S02 حفظ می‌شود. دامنهٔ آن به کل قفل، مدار، باتری یا بسته‌بندی تعمیم نیابد. قابل‌بازیافت با ساخته‌شده از مواد بازیافتی متفاوت است.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-07",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 7,
+      "kind": "recycled_packaging_material_claim",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-07",
+      "S02_fragment_refs": [
+        "VINGCARD14-P07-E08"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en"
+      ],
+      "publication_gate": "competitor_environmental_claim_source_only_no_NSP_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "translated_source_context_not_independent_feature",
+      "evidence_en": [
+        "Each lock is delivered using a fully recycled paper box."
+      ],
+      "translation_fa": [
+        "هر قفل در جعبه‌ای کاغذی عرضه می‌شود که تمام کاغذ آن بازیافتی است."
+      ],
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "ادعای منبع به جنس جعبهٔ بسته‌بندی محدود است. بازیافتی‌بودن کاغذ با قابل‌بازیافت‌بودن پوشش قفل دو موضوع جداست؛ این مورد زمینهٔ پژوهش محیط‌زیستی است و فیچر یا گواهی NSP محسوب نمی‌شود.",
+      "restricted_hardware_fields_republished": false,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-08",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 8,
+      "kind": "conditional_custom_finish_request",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-08",
+      "S02_fragment_refs": [
+        "VINGCARD14-P08-E05"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en"
+      ],
+      "publication_gate": "conditional_design_inspiration_requires_actual_NSP_evidence",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I014"
+      ],
+      "handling_mode": "translated_source_context_not_independent_feature",
+      "evidence_en": [
+        "customers can also make requests for custom-tailored finishes depending on their specific needs and order quantity."
+      ],
+      "translation_fa": [
+        "مشتریان همچنین می‌توانند با توجه به نیازهای مشخص خود و تعداد سفارش، پرداخت‌های سطحی سفارشی درخواست کنند."
+      ],
+      "condition_en": "depending on their specific needs and order quantity.",
+      "condition_fa": "با توجه به نیازهای مشخص آن‌ها و تعداد سفارش.",
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "امکان درخواست مشروط است؛ متن، پذیرش قطعی سفارش، حداقل تعداد، زمان تحویل یا امکان همهٔ پرداخت‌های سطحی را تضمین نمی‌کند. برای گزینه‌های واقعی NSP شاهد مستقل لازم است.",
+      "restricted_hardware_fields_republished": false,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I014"
+      ],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-09",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 8,
+      "kind": "installation_variant_physical_form",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-09",
+      "S02_fragment_refs": [
+        "VINGCARD14-P08-E03"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en",
+        "qualifier_en"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "واریانت‌های فیزیکی محصول برای نصب جدید و بازسازی، همراه تفاوت اندازه، فقط با ارجاع به S02 باقی می‌مانند. این جزئیات مدل یا اندازهٔ NSP نیستند؛ سبک نمایش دو کاربرد موضوع مرحلهٔ بعد است.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-10",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 10,
+      "kind": "hardware_component_count",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-10",
+      "S02_fragment_refs": [],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "تعداد جزء و نسبت آن به هر نصب، مشخصهٔ سخت‌افزاری محصول رقیب است و در S02 باقی می‌ماند. از آن تعداد قطعات کل سیستم یا معماری NSP استخراج نشود.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-11",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 10,
+      "kind": "conditional_spare_parts_scope",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-11",
+      "S02_fragment_refs": [],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "فهرست قطعات یدکی مخصوص محصول رقیب در S02 باقی می‌ماند. احتمال نیاز به قطعه با بی‌نیازی قطعی از نگهداری، نبود خرابی یا ضمانت NSP برابر نیست.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-12",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 11,
+      "kind": "licensed_mobile_access_activation",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-12",
+      "S02_fragment_refs": [
+        "VINGCARD14-P11-E03"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en"
+      ],
+      "publication_gate": "conditional_source_software_research_requires_separate_NSP_evidence",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I017"
+      ],
+      "handling_mode": "translated_source_context_not_independent_feature",
+      "evidence_en": [
+        "Vingcard Novel comes with all hardware required to activate Mobile Access - no need for additional installation or hardware replacement."
+      ],
+      "translation_fa": [
+        "Vingcard Novel تمام سخت‌افزار لازم برای فعال‌سازی Mobile Access را دارد؛ برای آن به نصب اضافی یا تعویض سخت‌افزار نیاز نیست."
+      ],
+      "condition_en": "By simply activating the feature with a software license agreement",
+      "condition_fa": "صرفاً با فعال‌سازی این قابلیت از طریق توافق‌نامهٔ مجوز نرم‌افزار.",
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "این عبارت آمادگی محصول منبع را توصیف می‌کند و باید همراه شرط فعال‌سازی با مجوز نرم‌افزار خوانده شود. فعال‌بودن پیش‌فرض، رایگان‌بودن، بی‌نیازی از مجوز، یکپارچگی PMS یا پذیرش کاملاً خودکار از آن نتیجه نمی‌شود.",
+      "restricted_hardware_fields_republished": false,
+      "context_only_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I018",
+        "CAT014_VINGCARD_NOVEL:I019"
+      ],
+      "linked_research_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I017",
+        "CAT014_VINGCARD_NOVEL:I018",
+        "CAT014_VINGCARD_NOVEL:I019"
+      ],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-13",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 11,
+      "kind": "named_platform_compatibility",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-13",
+      "S02_fragment_refs": [
+        "VINGCARD14-P11-E05"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en"
+      ],
+      "publication_gate": "conditional_source_software_research_requires_separate_NSP_evidence",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I019"
+      ],
+      "handling_mode": "translated_source_context_not_independent_feature",
+      "evidence_en": [
+        "Compatible with Apple Wallet."
+      ],
+      "translation_fa": [
+        "سازگار با Apple Wallet."
+      ],
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "سازگاری به محصول منبع منتسب است. نسخهٔ سیستم‌عامل، حساب و پیکربندی لازم یا وضعیت فعلی سازگاری در این مرحله بررسی نشده است. شرط مجوز Mobile Access در همان بند جداگانه حفظ می‌شود؛ هیچ سازگاری NSP تأیید نمی‌شود.",
+      "restricted_hardware_fields_republished": false,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I019"
+      ],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-14",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 12,
+      "kind": "quantitative_mechanical_endurance",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-14",
+      "S02_fragment_refs": [],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "qualifier_en"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "ادعای آزمون چرخهٔ مکانیکی و حداقل ذکرشده فقط با ارجاع به S02 نگهداری می‌شود. تعداد چرخه، تعداد اتاق، کاربر، سال یا آزمون NSP نیست؛ تکرار عدد در گرافیک نیز شاهد آزمون مستقل دیگری نمی‌سازد.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-15",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 12,
+      "kind": "conditional_battery_service_life",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-15",
+      "S02_fragment_refs": [
+        "VINGCARD14-P12-E04"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en",
+        "qualifier_en"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "عمر باتری، مشخصهٔ سخت‌افزاری منبع است و به فیچر S03 منتقل نمی‌شود. نصب با باتری و استفادهٔ معمول شروط ادعا هستند؛ منبع برای استفادهٔ معمول تعریف عددی ندارد و این ادعا به نصب بدون باتری یا ضمانت NSP تعمیم نمی‌یابد.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-16",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 12,
+      "kind": "conditional_physical_damage_prevention",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-16",
+      "S02_fragment_refs": [
+        "VINGCARD14-P12-E07"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "رفتار زبانهٔ قفل در شرایط بسته‌بودن در، یک مکانیزم فیزیکی در زمینهٔ نظافت اتاق است و فقط با ارجاع به S02 حفظ می‌شود. از آن حسگر، محرک نرم‌افزاری، منطق GRMS یا جلوگیری قطعی از هر آسیب در NSP نتیجه گرفته نشود.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-17",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 13,
+      "kind": "quantitative_operating_environment_extremes",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-17",
+      "S02_fragment_refs": [
+        "VINGCARD14-P13-E02"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "کران‌های دمایی و واحدهای دقیق فقط در شاهد S02 باقی می‌مانند. زمینهٔ استفادهٔ داخلی و بیرونی به همان سخت‌افزار محدود است؛ روش آزمون، محل اندازه‌گیری، درجهٔ حفاظت یا محدودهٔ کاری NSP ساخته نشود.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-18",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 13,
+      "kind": "physical_ingress_resistance_claim",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-18",
+      "S02_fragment_refs": [],
+      "S02_evidence_field_refs": [
+        "evidence_en"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "توصیف مقاومت در برابر آب و گردوغبار، ادعای فیزیکی محصول منبع است و به S02 ارجاع داده می‌شود. درجهٔ حفاظت عددی، عمق یا مدت تماس با آب و گواهی مشخص از این عبارت استنتاج نمی‌شود.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-19",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 14,
+      "kind": "named_hardware_certifications",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-19",
+      "S02_fragment_refs": [],
+      "S02_evidence_field_refs": [
+        "evidence_en"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "نام‌ها و شناسه‌های گواهی سخت‌افزار فقط در شاهد S02 باقی می‌مانند. وجود، دامنه و اعتبار فعلی آن‌ها مستقلاً بررسی نشده است؛ اختلاف نگارش منبع بین صفحات نیز نباید بی‌صدا اصلاح شود.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-20",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 14,
+      "kind": "optional_component_certification",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-20",
+      "S02_fragment_refs": [],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "ادعای گواهی فقط به جزء مکانیکی اضطراری اختیاری مربوط است و با ارجاع به S02 نگهداری می‌شود. دامنهٔ جزء با کل قفل و وضعیت اختیاری با تجهیز استاندارد یکسان نیست.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-21",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 14,
+      "kind": "fire_listing_scope",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-21",
+      "S02_fragment_refs": [],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "restricted_reference_only_not_translated_into_S03_features",
+      "evidence_en": null,
+      "translation_fa": null,
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "ادعای فهرست‌شدن مرتبط با حریق و نوع در فقط به منبع ارجاع داده می‌شود. مدت مقاومت، ردهٔ آزمون، پوشش همهٔ انواع در و گواهی ایمنی NSP از آن استخراج نمی‌شود.",
+      "restricted_hardware_fields_republished": false,
+      "full_original_evidence_remains_in_S02": true,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-22",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 14,
+      "kind": "future_upgrade_without_hardware_replacement_claim",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-22",
+      "S02_fragment_refs": [
+        "VINGCARD14-P14-E02"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en"
+      ],
+      "publication_gate": "source_security_marketing_no_NSP_security_or_certification_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "translated_source_context_not_independent_feature",
+      "evidence_en": [
+        "future security enhancements can also be made without requiring the need to purchase and install new hardware."
+      ],
+      "translation_fa": [
+        "بهبودهای امنیتی آینده را نیز می‌توان بدون نیاز به خرید و نصب سخت‌افزار جدید اعمال کرد."
+      ],
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "وجه امکان در can و محدودبودن موضوع به بهبودهای امنیتی آینده حفظ شود. عبارت، تضمین همهٔ قابلیت‌های آینده یا تأیید توسعه‌پذیری NSP نیست؛ روش اعمال بهبود نیز مشخص نشده است.",
+      "restricted_hardware_fields_republished": false,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-23",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 14,
+      "kind": "named_cloud_software_updates",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-23",
+      "S02_fragment_refs": [
+        "VINGCARD14-P14-E07"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en"
+      ],
+      "publication_gate": "conditional_source_software_research_requires_separate_NSP_evidence",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I022"
+      ],
+      "handling_mode": "translated_source_context_not_independent_feature",
+      "evidence_en": [
+        "Vostio Access Management is able to receive regular software updates that safeguard against newly discovered vulnerabilities."
+      ],
+      "translation_fa": [
+        "Vostio Access Management می‌تواند به‌روزرسانی‌های نرم‌افزاری منظم دریافت کند که در برابر آسیب‌پذیری‌های تازه‌شناسایی‌شده حفاظت فراهم می‌کنند."
+      ],
+      "condition_en": "With its cloud-based design",
+      "condition_fa": "با طراحی مبتنی بر ابرِ آن.",
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "فاعلِ طراحی ابری و دریافت به‌روزرسانی، Vostio Access Management است و ارتباط قفل با آن در بند منبع، سازگاری است. منظم‌بودن به معنی خودکار یا OTA نیست؛ تناوب، مسیر تحویل، تضمین رفع همهٔ آسیب‌پذیری‌ها یا قابلیت NSP مشخص نشده است.",
+      "restricted_hardware_fields_republished": false,
+      "context_only_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I009",
+        "CAT014_VINGCARD_NOVEL:I021"
+      ],
+      "linked_research_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I009",
+        "CAT014_VINGCARD_NOVEL:I021",
+        "CAT014_VINGCARD_NOVEL:I022"
+      ],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-24",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 15,
+      "kind": "conditional_realtime_security_alarms",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-24",
+      "S02_fragment_refs": [
+        "VINGCARD14-P15-E03"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en",
+        "condition_en"
+      ],
+      "publication_gate": "conditional_source_software_research_requires_separate_NSP_evidence",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I023"
+      ],
+      "handling_mode": "translated_source_context_not_independent_feature",
+      "evidence_en": [
+        "Instant response to Security Threats via Real-time Event Alarms (requires Online option)"
+      ],
+      "translation_fa": [
+        "واکنش فوری به تهدیدهای امنیتی از طریق هشدارهای رویداد در لحظه (نیازمند گزینهٔ Online)."
+      ],
+      "condition_en": "requires Online option",
+      "condition_fa": "نیازمند گزینهٔ Online.",
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "شرط Online فقط به هشدارهای رویداد در لحظه مربوط است. واکنش فوری زبان توصیفی منبع است؛ عامل واکنش، اقدام خودکار، مداخلهٔ تضمین‌شده، نوع اتصال، مسیر شبکه یا تأخیر عددی سنجیده‌شده بیان نشده است. نشان تصویری اعلان نیز زمان پاسخ یا معیار عملکرد نیست.",
+      "restricted_hardware_fields_republished": false,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I023"
+      ],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    },
+    {
+      "id": "VINGCARD14-CLAIM-25",
+      "source_id": "CAT014_VINGCARD_NOVEL",
+      "pdf_page": 15,
+      "kind": "unspecified_security_implementation",
+      "S02_claim_reference": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json#VINGCARD14-CLAIM-25",
+      "S02_fragment_refs": [
+        "VINGCARD14-P15-E02"
+      ],
+      "S02_evidence_field_refs": [
+        "evidence_en"
+      ],
+      "publication_gate": "source_security_marketing_no_NSP_security_or_certification_claim",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false,
+      "feature_promotion_does_not_release_publication_gate": true,
+      "promoted_record_refs": [],
+      "handling_mode": "translated_source_context_not_independent_feature",
+      "evidence_en": [
+        "Advanced Anti-tamper & Encrypted Communication Technology"
+      ],
+      "translation_fa": [
+        "فناوری پیشرفتهٔ مقابله با دست‌کاری و ارتباطات رمزگذاری‌شده."
+      ],
+      "condition_en": null,
+      "condition_fa": null,
+      "baseline_en": null,
+      "baseline_fa": null,
+      "qualifier_en": null,
+      "qualifier_fa": null,
+      "context_and_publication_limit_fa": "این عبارت عنوان بازاریابی امنیتی منبع است و هویت نرم‌افزار یا پیاده‌سازی مشخصی را اثبات نمی‌کند. الگوریتم، طول کلید، نسخهٔ پروتکل، گواهی رمزنگاری یا تضمین امنیت NSP از آن استخراج نمی‌شود. شرط Online فقط به هشدارهای رویداد مجاور مربوط است.",
+      "restricted_hardware_fields_republished": false,
+      "context_only_record_refs": [],
+      "linked_research_record_refs": [],
+      "link_semantics": "A direct or context-only research link does not verify or approve the source claim for NSP."
+    }
+  ],
+  "source_context_bindings": [
+    {
+      "id": "VINGCARD14-CONTEXT-MOBILE-LICENSE",
+      "pdf_pages": [
+        11
+      ],
+      "S02_fragment_refs": [
+        "VINGCARD14-P11-E02",
+        "VINGCARD14-P11-E03",
+        "VINGCARD14-P11-E04"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-12"
+      ],
+      "handling_mode": "translated_research_context",
+      "handling_fa": "تیتر بی‌نیازی از نصب اضافه و عبارت تجربهٔ مهمان، همراه شرط فعال‌سازی با توافق‌نامهٔ مجوز نرم‌افزار در همان بند خوانده شوند. این گروه به صورت پیش‌فرض فعال‌بودن یا رایگان‌بودن قابلیت را بیان نمی‌کند.",
+      "approved_NSP_capability": false,
+      "is_separate_feature_count": false,
+      "S03_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I017",
+        "CAT014_VINGCARD_NOVEL:I018",
+        "CAT014_VINGCARD_NOVEL:I019"
+      ],
+      "unpromoted_source_fragments_may_remain_context_only": true,
+      "additional_context_fragment_refs": [
+        "VINGCARD14-P11-E05"
+      ],
+      "restricted_mechanism_promoted_as_feature": false,
+      "context_link_limit_fa": "مجوز، شرط فعال‌سازی Mobile Access است. ارجاع Apple Wallet به زمینهٔ همان بخش، شرایط اختصاصی مجوز آن پلتفرم را اثبات نمی‌کند."
+    },
+    {
+      "id": "VINGCARD14-CONTEXT-BATTERY-OPTIONS",
+      "pdf_pages": [
+        7,
+        12
+      ],
+      "S02_fragment_refs": [
+        "VINGCARD14-P07-E03",
+        "VINGCARD14-P07-E04",
+        "VINGCARD14-P12-E03",
+        "VINGCARD14-P12-E04"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-05",
+        "VINGCARD14-CLAIM-15"
+      ],
+      "handling_mode": "restricted_reference_only",
+      "handling_fa": "گزینهٔ سخت‌افزاری بدون باتری از ادعای عمر نصب باتری‌دار و شرط استفادهٔ معمول جدا نگه داشته شود. هر دو فقط زمینهٔ سخت‌افزاری S02 هستند؛ هیچ‌کدام به همهٔ نصب‌ها یا NSP تعمیم نمی‌یابند.",
+      "approved_NSP_capability": false,
+      "is_separate_feature_count": false,
+      "S03_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I012"
+      ],
+      "unpromoted_source_fragments_may_remain_context_only": true,
+      "additional_context_fragment_refs": [
+        "VINGCARD14-P07-E02"
+      ],
+      "restricted_mechanism_promoted_as_feature": false,
+      "context_link_limit_fa": "رکورد منتخب فقط مسئلهٔ وقت کارکنان و پسماند را صورت‌بندی می‌کند؛ روش تغذیه یا عمر باتری به رکورد فیچر تبدیل نشده است."
+    },
+    {
+      "id": "VINGCARD14-CONTEXT-HOUSEKEEPING",
+      "pdf_pages": [
+        12
+      ],
+      "S02_fragment_refs": [
+        "VINGCARD14-P12-E06",
+        "VINGCARD14-P12-E07"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-16"
+      ],
+      "handling_mode": "restricted_reference_only",
+      "handling_fa": "مسئلهٔ آسیب در جریان نظافت و شرط فیزیکی زبانه کنار هم خوانده شوند. این گروه سناریوی نرم‌افزاری، حسگر یا منطق GRMS را اثبات نمی‌کند.",
+      "approved_NSP_capability": false,
+      "is_separate_feature_count": false,
+      "S03_record_refs": [],
+      "unpromoted_source_fragments_may_remain_context_only": true,
+      "additional_context_fragment_refs": [],
+      "restricted_mechanism_promoted_as_feature": false
+    },
+    {
+      "id": "VINGCARD14-CONTEXT-VOSTIO",
+      "pdf_pages": [
+        14
+      ],
+      "S02_fragment_refs": [
+        "VINGCARD14-P14-E06",
+        "VINGCARD14-P14-E07"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-23"
+      ],
+      "handling_mode": "translated_research_context",
+      "handling_fa": "قفل منبع با Vostio Access Management سازگار معرفی شده است؛ طراحی مبتنی بر ابر و دریافت به‌روزرسانی‌های منظم به همان نرم‌افزار منتسب‌اند. روش خودکار یا OTA در منبع بیان نشده است.",
+      "approved_NSP_capability": false,
+      "is_separate_feature_count": false,
+      "S03_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I009",
+        "CAT014_VINGCARD_NOVEL:I021",
+        "CAT014_VINGCARD_NOVEL:I022"
+      ],
+      "unpromoted_source_fragments_may_remain_context_only": true,
+      "additional_context_fragment_refs": [
+        "VINGCARD14-P05-E04",
+        "VINGCARD14-P14-E05"
+      ],
+      "restricted_mechanism_promoted_as_feature": false
+    },
+    {
+      "id": "VINGCARD14-CONTEXT-MECHANICAL-OVERRIDE",
+      "pdf_pages": [
+        5,
+        14,
+        15
+      ],
+      "S02_fragment_refs": [
+        "VINGCARD14-P05-E08",
+        "VINGCARD14-P15-E04"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD14-CLAIM-01",
+        "VINGCARD14-CLAIM-20"
+      ],
+      "handling_mode": "restricted_reference_only",
+      "handling_fa": "عنوان کوتاه بازکردن اضطراری همراه گفتهٔ منبع دربارهٔ اختیاری‌بودن سیلندر مکانیکی خوانده شود. این گروه در S02 می‌ماند و بازکردن از راه دور یا قابلیت نرم‌افزاری نمی‌شود.",
+      "approved_NSP_capability": false,
+      "is_separate_feature_count": false,
+      "S03_record_refs": [],
+      "unpromoted_source_fragments_may_remain_context_only": true,
+      "additional_context_fragment_refs": [],
+      "restricted_mechanism_promoted_as_feature": false
+    }
+  ],
+  "structured_context_translations": {
+    "contents_framework": {
+      "source_group_id": "VINGCARD14-CONTENTS",
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "entries": [
+        {
+          "source_pdf_page": 2,
+          "heading_en": "Sustainability",
+          "printed_destination": "6",
+          "destination_pdf_page": 6,
+          "translation_fa": "پایداری"
+        },
+        {
+          "source_pdf_page": 3,
+          "heading_en": "Design & style",
+          "printed_destination": "8",
+          "destination_pdf_page": 8,
+          "translation_fa": "طراحی و سبک"
+        },
+        {
+          "source_pdf_page": 2,
+          "heading_en": "Installation",
+          "printed_destination": "10",
+          "destination_pdf_page": 10,
+          "translation_fa": "نصب"
+        },
+        {
+          "source_pdf_page": 3,
+          "heading_en": "Operation",
+          "printed_destination": "12",
+          "destination_pdf_page": 12,
+          "translation_fa": "بهره‌برداری"
+        },
+        {
+          "source_pdf_page": 3,
+          "heading_en": "Security & compliance",
+          "printed_destination": "14",
+          "destination_pdf_page": 14,
+          "translation_fa": "امنیت و انطباق با الزامات"
+        }
+      ],
+      "is_separate_feature_count": false,
+      "note_fa": "عنوان‌ها و مقصدهای چاپی فهرست بروشور؛ این ترجمه نگاشت سکشن NSP یا فیچر مستقل نیست."
+    },
+    "manual_visual_labels": [
+      {
+        "pdf_page": 11,
+        "source_method": "Manual reading of rendered page pixels; not native PDF text and not OCR.",
+        "source_labels_en": [
+          "Room access granted"
+        ],
+        "translated_labels_fa": [
+          "اجازهٔ ورود به اتاق صادر شد."
+        ],
+        "included_in_native_excerpt_statistics": false,
+        "is_separate_feature_count": false,
+        "software_product_identity_verified": false,
+        "verified_NSP_claim": false,
+        "source_image_extraction": "pending_S04",
+        "context_and_publication_limit_fa": "فقط نوشتهٔ خوانای نمایشگر گوشی در عکس محصول است؛ هویت نرم‌افزار، گردش کار، یکپارچگی یا پیاده‌سازی از این عبارت مشخص نمی‌شود."
+      },
+      {
+        "pdf_page": 15,
+        "source_method": "Manual reading of rendered certification-logo artwork; not native PDF text or OCR.",
+        "source_labels_en": [
+          "BHMA CERTIFIED"
+        ],
+        "translated_labels_fa": [
+          "دارای گواهی BHMA"
+        ],
+        "included_in_native_excerpt_statistics": false,
+        "is_separate_feature_count": false,
+        "software_product_identity_verified": false,
+        "verified_NSP_claim": false,
+        "source_image_extraction": "pending_S04",
+        "context_and_publication_limit_fa": "ترجمه صرفاً خوانش نشان در بروشور است؛ گواهی مستقل بررسی نشده، نتیجهٔ آزمون تازه‌ای ایجاد نمی‌شود و مجوز استفادهٔ نشان برای NSP نیست."
+      }
+    ],
+    "source_edition_limitations": {
+      "pdf_page": 16,
+      "evidence_en": "Specifications may change without notice. Image colors in this brochure may differ from actual colors.",
+      "translation_fa": "مشخصات ممکن است بدون اطلاع قبلی تغییر کنند. رنگ تصاویر این بروشور ممکن است با رنگ‌های واقعی متفاوت باشد.",
+      "publication_gate": "source_edition_and_image_limitations_only",
+      "is_separate_feature_count": false,
+      "note_fa": "محدودیت‌های نسخهٔ منبع و بازنمایی رنگ؛ هیچ وضعیت فعلی محصول یا گواهی در این مرحله بررسی نشده است."
+    }
+  },
+  "integration_scoping_notes": [
+    "قابلیت نرم‌افزاری و یکپارچگی به محصول نام‌برده در منبع منتسب بمانند؛ سازگاری Vostio یا Apple Wallet خودبه‌خود قابلیت NSP نمی‌شود.",
+    "دسترسی موبایلی با شرط مجوز همراه باشد. عبارت تجربهٔ مهمان، بررسی هویت، پرداخت، PMS یا فرایند کامل پذیرش خودکار را ثابت نمی‌کند.",
+    "عنوان امنیت رمزگذاری‌شده به‌تنهایی مشخصات الگوریتم یا هویت نرم‌افزار نیست؛ نوع مناسب برای آن بسته به رکورد، پیام امنیتی منبع یا شعار است.",
+    "شرط Online فقط برای هشدارهای رویداد است؛ به رمزگذاری، همهٔ قابلیت‌ها یا همهٔ صفحات تعمیم داده نشود.",
+    "صفت‌های unmatched، ultimate، any و virtually limitless زبان بازاریابی‌اند؛ در توضیح فارسی دامنهٔ ادعا روشن بماند و به تضمین اجرایی تبدیل نشود.",
+    "گزینهٔ تغذیه، چرخهٔ مکانیکی، دما، مقاومت، فهرست گواهی و مکانیزم زبانه، دادهٔ سخت‌افزاری محدود S02 هستند؛ در شمار فیچرهای S03 نیایند.",
+    "پرداخت سطحی سفارشی صرفاً امکان درخواست با شرط نیاز و تعداد سفارش است؛ تأیید سفارش، زمان تحویل و حداقل تعداد از منبع حدس زده نشوند.",
+    "واژه‌های بازیافتی و قابل‌بازیافت از نظر معنایی جدا نگه داشته شوند و دامنهٔ پوشش قفل با جعبه یا کل دستگاه جابه‌جا نشود.",
+    "ترجمهٔ نشانهٔ روی گوشی و نشان گواهی، متن دیداری جدا از native و فیچر مستقل است.",
+    "نگاشت سکشن، دارایی تصویری و ممیزی رسمی S06 در این مرحله انجام نمی‌شوند.",
+    "عبارت رهبری جهانی در صفحهٔ آخر، خودتوصیفی شرکت ناشر است و در شمار هویت یا مزیت NSP نمی‌آید؛ به عنوان فرادادهٔ شرکت منبع کنار گذاشته شود.",
+    "واکنش فوری در عنوان هشدارها، عامل واکنش یا اقدام خودکار معینی را معرفی نمی‌کند؛ تأخیر سنجیده‌شده یا مداخلهٔ تضمین‌شده از آن استخراج نشود."
+  ],
+  "quality_assurance": {
+    "source_pdf_hash_matches_S01_and_S02": true,
+    "S02_file_hash_verified_before_translation": true,
+    "all_98_S02_fragments_partitioned_once": true,
+    "duplicate_or_missing_fragment_refs": [],
+    "English_record_text_exactly_matches_S02": true,
+    "original_PDF_normalized_English_record_matches": 23,
+    "English_record_match_failures": [],
+    "source_claim_gates_preserved_count": 25,
+    "all_research_records_have_Persian_translation_highlight_and_analyst_limit": true,
+    "restricted_claims_not_promoted_to_feature_records": true,
+    "within_document_duplicate_Apple_Wallet_and_Vostio_fragments_resolved": true,
+    "source_condition_context_links_preserved": true,
+    "manual_visual_labels_separate_from_native_records": true,
+    "source_edition_disclaimer_translated_as_context_only": true,
+    "source_types_distinct_from_future_target_section_mapping": true,
+    "full_editorial_audit_still_due_in_S06": true,
+    "translation_review_notes_fa": [
+      "گزیده‌های انگلیسی بدون ویرایش از S02 گرفته شدند؛ ترجمه و توضیح تحلیل‌گر در فیلدهای جدا قرار دارند.",
+      "گزیده‌های تکراریِ موضوعات نرم‌افزاری با شناسهٔ منبع و زمینه به هم پیوند خوردند؛ تکرار Apple Wallet و سازگاری Vostio رکورد جدید نساخت.",
+      "واژهٔ finish به پرداخت سطح ترجمه شد؛ امکان درخواست سفارشی‌سازی با نیاز مشخص و تعداد سفارش همراه است و تضمین تحویل نیست.",
+      "شعارهای مربوط به امنیت، نصب، نگهداری، پایداری و آینده فقط از نظر شیوهٔ بیان بررسی می‌شوند و اندازه‌گیری عملکرد NSP نیستند.",
+      "بیان مسئلهٔ وقت کارکنان و پسماند باتری، مقدمهٔ موضوع است؛ گزینهٔ تغذیه یا عمر باتری به فیچر نرم‌افزاری تبدیل نشده است.",
+      "با حفظ شرط مجوز Mobile Access، تجربهٔ دریافت کلید و ورود بدون تماس ترجمه شد؛ پذیرش کامل خودکار یا اتصال PMS از آن ساخته نشد.",
+      "سازگاری Apple Wallet به محصول منبع محدود است؛ متن شرایط اختصاصی مجوز آن پلتفرم را تعیین نمی‌کند.",
+      "فاعل طراحی ابری و دریافت به‌روزرسانی منظم، Vostio Access Management است؛ خودکار یا OTA بودن و تضمین رفع همهٔ آسیب‌پذیری‌ها از منبع نتیجه نمی‌شود.",
+      "شرط Online فقط به هشدارهای رویداد مربوط است؛ عامل واکنش، اقدام خودکار و تأخیر عددی در منبع تعیین نشده‌اند.",
+      "نوشتهٔ تصویر گوشی و نشان گواهی جدا ترجمه شدند؛ هیچ نرم‌افزار، گواهی یا قابلیت NSP با آن‌ها تأیید نمی‌شود.",
+      "نگاشت سکشن، استخراج دارایی تصویری و ممیزی رسمی S06 در این نوبت انجام نشده‌اند؛ فقط S03 تکمیل می‌شود."
+    ]
+  },
+  "next_stages": [
+    "S04 — visuals_and_styles",
+    "S05 — section_type_mapping",
+    "S06 — validation_and_review",
+    "S07 — feature_json_and_commit"
+  ],
+  "next_queue_cursor": {
+    "document_index": 7,
+    "document_id": "14",
+    "step_index": 3,
+    "step_id": "S04"
+  },
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "app_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false
+}
