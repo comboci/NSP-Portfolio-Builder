@@ -1,0 +1,133 @@
+{
+  "schema": "nsp-catalog-research-s01-source-inventory-v1",
+  "stage": "S01",
+  "stage_key": "source_inventory",
+  "status": "completed_verified_original_document_and_physical_page_inventory",
+  "document_id": "61",
+  "source_id": "CAT061_HELVAR_ZLEEP_HOTELS_DENMARK",
+  "date_checked": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "8da2d2c163ebf828ab2d79cf0c603d1dda86e2a4",
+  "source": {
+    "company": "Helvar",
+    "publisher_brand_as_shown": "Helvar",
+    "cobrand_as_shown": "Vanpee",
+    "cobrand_role_not_stated_here": true,
+    "title": "Zleep Hotels",
+    "title_prefix_on_cover": "A Helvar Case Study",
+    "cover_location": "Denmark",
+    "title_and_attribution_evidence_physical_page": 1,
+    "document_type": "one-page English vendor case study for hospitality lighting",
+    "filename": "61_Helvar_Work C22.1.pdf",
+    "library_path": "/61_Helvar_Work C22.1.pdf",
+    "file_size_bytes": 1273929,
+    "file_size_matches_queue": true,
+    "pdf_pages": 1,
+    "sha256": "894f6304c60da95b199b4e56e78dfd387873168e6cf585dfe03818c71bd144cb",
+    "source_original_from_exact_user_Library_match": true,
+    "pdf_format": "PDF 1.4",
+    "pdf_creator": "Adobe InDesign 16.1 (Macintosh)",
+    "pdf_producer": "Adobe PDF Library 15.0",
+    "pdf_creation_metadata": "D:20210225102958Z",
+    "pdf_modification_metadata": "D:20210225103003Z",
+    "printed_document_code": null,
+    "printed_edition_revision": null,
+    "printed_publication_date": null,
+    "metadata_dates_not_used_as_publication_date": true,
+    "the_year_2003_on_page_is_vendor_hotel_background_not_publication_date": true,
+    "work_filename_suffix_not_printed_edition": true,
+    "language": "en",
+    "encrypted": false,
+    "source_original_committed": false,
+    "source_original_modified": false,
+    "external_publisher_site_verification_performed": false
+  },
+  "pagination": {
+    "canonical_reference": "1-based physical PDF page",
+    "physical_pages": 1,
+    "orientation": "A4 portrait, unrotated",
+    "page_size_points": [
+      595.276,
+      841.89
+    ],
+    "printed_folios_observed": [],
+    "pdf_page_label_rules": [],
+    "pdf_outline_present": false,
+    "private_visual_review_physical_pages": [
+      1
+    ],
+    "original_visual_regions_seen": 3,
+    "visual_regions_not_candidate_image_count": true
+  },
+  "page_index": [
+    {
+      "pdf_page": 1,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1181,
+      "native_words": 187,
+      "native_text_sha256": "daac7cc9ac2bc53b21b7d585a05dac18b80f5ea44577fadcdccd116447f563cd",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()); no page prose is reproduced.",
+      "embedded_image_resource_occurrences": 5,
+      "link_annotation_count": 0,
+      "section_group": "one_page_case_study",
+      "analyst_region_inventory": [
+        "neutrally described visual masthead and paired brand marks",
+        "hotel and chain-background passage",
+        "lighting aim and reported project scope passage",
+        "vendor description of selected equipment and perceived ambience",
+        "three photo/illustration regions; private style observation only"
+      ],
+      "visual_review_status": "full page inspected privately; no capture committed"
+    }
+  ],
+  "cross_catalog_identity": {
+    "exact_content_Zleep_Hotels_Denmark_vs_generic_Helvar_material": true,
+    "preexisting_Helvar_or_Zleep_catalog_rows_in_V18": [],
+    "Stockholm_reference_in_chain_background_not_installation_evidence": true,
+    "physical_sites_reported_in_vendor_text_not_independently_verified": true
+  },
+  "claim_boundary": {
+    "publisher_describes_lighting_context_not_NSP_case_or_capability": true,
+    "branding_marks_not_proof_of_cobrand_role": true,
+    "reported_installation_scope_must_not_be_expanded_to_all_chain_properties": true,
+    "energy_and_comfort_lang_not_test_outcomes_or_quantitative_evidence": true,
+    "marketing_wordplay_not_verbatim_reused_or_NSP_slogan": true,
+    "product_mentions_not_current_compatibility_support_or_electrical_instruction": true
+  },
+  "research_controls": {
+    "repository_visibility": "public",
+    "page_image_text_or_logos_republication_rights_verified": false,
+    "explicit_open_license_observed": false,
+    "source_content_kept_private": true,
+    "public_research_boundary": "Commit source identity page hashes and analyst paraphrases only; for visual comparison use private observation or our original non-replica concepts. Do not publish source photos/logos, headline copy, wiring or performance claims.",
+    "no_reuse_rights_inferred_from_user_upload_or_vendor_case_study_format": true
+  },
+  "stage_boundary": {
+    "S01_document_inventory_only": true,
+    "no_copied_prose_or_asset_published": true,
+    "no_app_or_bank_change": true
+  },
+  "next_stage": "S02 — خلاصه‌های دقیق و صفحه‌دار",
+  "next_queue_cursor": {
+    "document_index": 18,
+    "document_id": "61",
+    "step_index": 1,
+    "step_id": "S02"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
