@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 92,
-    "completed_new_documents": 4,
-    "remaining_new_documents": 14
+    "total_pending_steps": 91,
+    "completed_new_documents": 5,
+    "remaining_new_documents": 13
   },
   "cursor": {
-    "document_index": 7,
-    "document_id": "14",
-    "step_index": 6,
-    "step_id": "S07"
+    "document_index": 8,
+    "document_id": "15",
+    "step_index": 0,
+    "step_id": "S01"
   },
   "section_types": [
     {
@@ -879,7 +879,7 @@
       "library_path": "/14_Vingcard_Vingcard Novel Brochure.pdf",
       "bytes": 3735147,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "in_progress",
+      "status": "completed",
       "prior_import": null,
       "steps": [
         {
@@ -970,14 +970,37 @@
         {
           "id": "S07",
           "key": "feature_json_and_commit",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/feature.json",
+            "Portfolio Instruction/feature.js",
+            "Portfolio Instruction/research/14_Vingcard_Novel_S07_ingest_manifest.json",
+            "Portfolio Instruction/assets/vingcard14-01-cover-product-hero.webp",
+            "Portfolio Instruction/assets/vingcard14-03-numbered-contents-panel.webp",
+            "Portfolio Instruction/assets/vingcard14-04-photo-benefit-grid.webp",
+            "Portfolio Instruction/assets/vingcard14-05-icon-feature-rows.webp",
+            "Portfolio Instruction/assets/vingcard14-05-layered-variants.webp",
+            "Portfolio Instruction/assets/vingcard14-06-metric-badges-context.webp",
+            "Portfolio Instruction/assets/vingcard14-06-parts-flatlay.webp",
+            "Portfolio Instruction/assets/vingcard14-07-material-story-columns.webp",
+            "Portfolio Instruction/assets/vingcard14-07-packaging-banner.webp",
+            "Portfolio Instruction/assets/vingcard14-08-finish-gallery-custom-panel.webp",
+            "Portfolio Instruction/assets/vingcard14-09-photo-slogan.webp",
+            "Portfolio Instruction/assets/vingcard14-10-numbered-installation-grid.webp",
+            "Portfolio Instruction/assets/vingcard14-11-phone-access-photo.webp",
+            "Portfolio Instruction/assets/vingcard14-12-staggered-operation-cards.webp",
+            "Portfolio Instruction/assets/vingcard14-13-paired-climate-photos.webp",
+            "Portfolio Instruction/assets/vingcard14-14-cloud-security-panel.webp",
+            "Portfolio Instruction/assets/vingcard14-15-security-icon-grid.webp",
+            "Portfolio Instruction/assets/vingcard14-15-transparent-product-cutaway.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "e8333b5be6ffc8d602b4af51ab78846e34039b75",
+          "notes": "ادغام پژوهشی Vingcard 14 تکمیل شد: ۲۳ رکورد ممیزی‌شده (۱۶ با مقصد پیشنهادی، ۷ بی‌مقصد) و ۱۸ تصویر مرجع (۱۳ با مقصد پیشنهادی، ۵ صرفاً سبک) در ۱۷ خانواده. بانک V8: هشت کاتالوگ، ۴۹۹ رکورد، ۹۱ تصویر. هیچ ادعای NSP، مجوز انتشار، یا اتصال به صفحهٔ چاپی تأیید نشد. ۲۵ قید منبع حفظ شد؛ ۷۵ گزیدهٔ حذف‌شده، دو برچسب دیداری و نمای کلی به شمار وارد نشدند. داده‌های قبلی، سورس برنامه و ساختار مصوب حفظ شدند."
         }
       ],
-      "last_successful_stage": "S06"
+      "last_successful_stage": "S07",
+      "completed_at_commit": "e8333b5be6ffc8d602b4af51ab78846e34039b75"
     },
     {
       "id": "15",
