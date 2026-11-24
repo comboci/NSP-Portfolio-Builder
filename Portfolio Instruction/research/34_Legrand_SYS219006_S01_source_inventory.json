@@ -1,0 +1,4534 @@
+{
+  "schema": "nsp-catalog-research-s01-source-inventory-v1",
+  "stage": "S01",
+  "stage_key": "source_inventory",
+  "status": "completed_source_verified",
+  "document_id": "34",
+  "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+  "date_checked": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "9bcce05c0db7a7d881f790a8956ecbabec02be0b",
+  "continuation_recovery": {
+    "previous_completed_stage": "17/S07",
+    "previous_stage_commit": "eb10788abe83a75b9ec3ce998343164582b7277c",
+    "previous_stage_manifest": "Portfolio Instruction/research/17_Honeywell_INNCOM_Services_S07_ingest_manifest.json",
+    "feature_library_version": 11,
+    "catalogs": 11,
+    "features": 561,
+    "images": 116,
+    "feature_json_js_data_equal": true,
+    "previous_stage_reexecuted": false
+  },
+  "source": {
+    "company": "Legrand",
+    "publisher": "Legrand",
+    "publisher_evidence_pdf_pages": [
+      1,
+      208
+    ],
+    "title": "Chambres d’hôtel – Solutions IP BACnet®",
+    "cover_document_type_en": "Installation and user guide / technical guide",
+    "title_evidence_pdf_page": 1,
+    "filename": "34_Legrand_Work C04.3.pdf",
+    "library_path": "/34_Legrand_Work C04.3.pdf",
+    "file_size_bytes": 37661849,
+    "queued_file_size_bytes": 37661849,
+    "file_size_matches_queue": true,
+    "sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+    "availability": "Exact original Library PDF resolved by filename; bytes, hash and physical page count verified.",
+    "external_publisher_site_verification_performed": false,
+    "pdf_format": "PDF 1.6",
+    "pdf_page_count": 208,
+    "orientation": "portrait",
+    "page_size_name": "A4",
+    "page_width_pt": 595.276,
+    "page_height_pt": 841.89,
+    "all_pages_same_reported_size": true,
+    "all_pages_unrotated": true,
+    "encrypted": false,
+    "pdf_creator": "Adobe InDesign 14.0 (Macintosh)",
+    "pdf_producer": "Adobe PDF Library 15.0",
+    "pdf_metadata_creation_date": "D:20190829142617+02'00'",
+    "pdf_metadata_modification_date": "D:20190913161107+02'00'",
+    "printed_document_code": "SYS219006",
+    "printed_edition_month": "2019-09",
+    "printed_edition_string": "SYS219006 - Septembre 2019",
+    "printed_edition_evidence_pdf_page": 208,
+    "filename_Work_C04_3_not_a_printed_revision_label": true,
+    "first_publication_date_verified": false,
+    "language": "fr",
+    "pages_with_native_text_including_folio_only": 207,
+    "pages_with_content_beyond_isolated_folio": 206,
+    "bookmarks": 11,
+    "link_annotation_count": 285,
+    "embedded_raster_occurrences": 16337,
+    "embedded_raster_occurrences_not_visual_idea_count": true,
+    "original_pdf_modified": false
+  },
+  "pagination": {
+    "canonical_reference": "1-based physical PDF page",
+    "page_label_rules": [],
+    "native_text_absent_physical_pages": [
+      207
+    ],
+    "folio_only_physical_pages": [
+      2
+    ],
+    "printed_contents_checked_pages": [
+      3,
+      4,
+      5
+    ],
+    "PDF_bookmark_chunk_starts": [
+      1,
+      23,
+      39,
+      55,
+      71,
+      87,
+      103,
+      119,
+      131,
+      151,
+      191
+    ],
+    "PDF_bookmarks_are_source_assembly_chunks_not_chapter_headings": true,
+    "sampled_native_page_number_tokens_matching_physical_indices": [
+      3,
+      4,
+      5,
+      6,
+      12,
+      26,
+      102,
+      104,
+      108,
+      119,
+      122,
+      125,
+      130,
+      163,
+      164,
+      177,
+      178,
+      183,
+      184,
+      194,
+      197,
+      203,
+      205,
+      206
+    ]
+  },
+  "chapter_inventory": [
+    {
+      "physical_pdf_page_start": 1,
+      "physical_pdf_page_end": 1,
+      "section_group": "COVER",
+      "scope_note_fa": "عنوان و نشان راهنمای فنی، نه اثبات مشخصات یا عرضهٔ فعلی."
+    },
+    {
+      "physical_pdf_page_start": 2,
+      "physical_pdf_page_end": 2,
+      "section_group": "FOLIO_ONLY",
+      "scope_note_fa": "در لایهٔ متن فقط شمارهٔ ۲ است؛ رندر تقریباً خالی."
+    },
+    {
+      "physical_pdf_page_start": 3,
+      "physical_pdf_page_end": 5,
+      "section_group": "THEMATIC_AND_CONTENTS_INDEX",
+      "scope_note_fa": "فهرست موضوعی و دو صفحه فهرست مطالب برای مرزبندی."
+    },
+    {
+      "physical_pdf_page_start": 6,
+      "physical_pdf_page_end": 11,
+      "section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "scope_note_fa": "تعریف GRMS، دستهٔ سناریو و سازگاری روایت؛ نه قابلیت NSP."
+    },
+    {
+      "physical_pdf_page_start": 12,
+      "physical_pdf_page_end": 25,
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "scope_note_fa": "نمونه‌های معماری هتل و اتاق در سطح معماری پژوهشی؛ جزئیات پیاده‌سازی و ادعای سازگاری رقیب منتقل نشوند."
+    },
+    {
+      "physical_pdf_page_start": 26,
+      "physical_pdf_page_end": 101,
+      "section_group": "PRODUCT_SHEETS",
+      "scope_note_fa": "برگه‌های تجهیزات؛ مدل، دیتاشیت و مشخصات عددی برای بانک فیچر NSP حذف می‌شوند."
+    },
+    {
+      "physical_pdf_page_start": 102,
+      "physical_pdf_page_end": 103,
+      "section_group": "ART_D_ARNOULD_PRODUCT_PRESENTATION",
+      "scope_note_fa": "صفحه‌بندی نمایش خانوادهٔ محصول؛ در صورت نیاز فقط الگوی ارائه، نه مدل یا حق استفاده."
+    },
+    {
+      "physical_pdf_page_start": 104,
+      "physical_pdf_page_end": 107,
+      "section_group": "ROOM_WIRING_DIAGRAMS",
+      "scope_note_fa": "نقشهٔ سیم‌کشی صرفاً نوع محتوا/طرز نمایش؛ نقشه، ترمینال‌ها یا دستور نصب بازنشر نشوند."
+    },
+    {
+      "physical_pdf_page_start": 108,
+      "physical_pdf_page_end": 118,
+      "section_group": "THERMOSTAT_OPERATION",
+      "scope_note_fa": "شرح عملکرد و تنظیم محلی؛ فقط نمونهٔ روایت سناریو در مراحل بعد، بدون رونوشت پارامترها."
+    },
+    {
+      "physical_pdf_page_start": 119,
+      "physical_pdf_page_end": 121,
+      "section_group": "VIRTUAL_BADGE_OPERATION",
+      "scope_note_fa": "نمونهٔ تعریف عملکرد؛ نه ادعای NSP یا دستور پیکربندی."
+    },
+    {
+      "physical_pdf_page_start": 122,
+      "physical_pdf_page_end": 124,
+      "section_group": "SOFTWARE_INSTALLATION",
+      "scope_note_fa": "آغاز بخش نرم‌افزار؛ فقط شناسایی نحوهٔ ارائه، بدون مراحل یا تنظیمات اجرایی."
+    },
+    {
+      "physical_pdf_page_start": 125,
+      "physical_pdf_page_end": 129,
+      "section_group": "HOTEL_PROJECT_PROGRAMMING",
+      "scope_note_fa": "ساختار جریان مهندسی/پروژه برای نگاه مقایسه‌ای؛ جزئیات عملیات منتقل نشوند."
+    },
+    {
+      "physical_pdf_page_start": 130,
+      "physical_pdf_page_end": 162,
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "scope_note_fa": "نماهای نرم‌افزار، نقش صفحه و اصطلاحات؛ نام/نسخه و ابزار فقط منبعی و بدون دستور عملیاتی یا داده پروژه."
+    },
+    {
+      "physical_pdf_page_start": 163,
+      "physical_pdf_page_end": 163,
+      "section_group": "LEGACY_CONFIGURATION_RECOVERY_SECTION",
+      "scope_note_fa": "صفحهٔ فرایند بازیابی، فقط مکان‌یابی بخش در فهرست."
+    },
+    {
+      "physical_pdf_page_start": 164,
+      "physical_pdf_page_end": 176,
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "scope_note_fa": "نمونه‌های ساختاری و زمینهٔ معماری؛ دستورها، وزن اولویت‌ها یا تنظیمات به بانک وارد نشوند."
+    },
+    {
+      "physical_pdf_page_start": 177,
+      "physical_pdf_page_end": 183,
+      "section_group": "COMMISSIONING_PROCESS",
+      "scope_note_fa": "چک‌لیست و تقسیم نقش نصب/راه‌اندازی در حد طرح ارائه، نه مراحل منتسب به NSP."
+    },
+    {
+      "physical_pdf_page_start": 184,
+      "physical_pdf_page_end": 193,
+      "section_group": "DIAGNOSTICS_SECTION",
+      "scope_note_fa": "تفکیک ساختاری عیب‌یابی اتاق و پروژه؛ نه روش عملیاتی یا بازتولید خطا."
+    },
+    {
+      "physical_pdf_page_start": 194,
+      "physical_pdf_page_end": 196,
+      "section_group": "MAINTENANCE_SECTION",
+      "scope_note_fa": "ساختار محتوایی نگهداری؛ مسیرهای عملیاتی و جزئیات محصول منبع کپی نشوند."
+    },
+    {
+      "physical_pdf_page_start": 197,
+      "physical_pdf_page_end": 202,
+      "section_group": "INTEGRATION_REFERENCE_TABLES",
+      "scope_note_fa": "جداول اصطلاحات و زمینهٔ استاندارد؛ شمارهٔ اشیا/مقادیر اجرایی و ادعای NSP منتقل نشوند."
+    },
+    {
+      "physical_pdf_page_start": 203,
+      "physical_pdf_page_end": 204,
+      "section_group": "TROUBLESHOOTING_SECTION",
+      "scope_note_fa": "عامل‌یابی در سطح نوع محتوا، بدون بازتولید خطا یا مسیر فنی."
+    },
+    {
+      "physical_pdf_page_start": 205,
+      "physical_pdf_page_end": 205,
+      "section_group": "TECHNICAL_CHANGE_LOG",
+      "scope_note_fa": "تاریخچهٔ فنی ناشر، نه نسخهٔ جاری یا مشخصات تأییدشدهٔ NSP."
+    },
+    {
+      "physical_pdf_page_start": 206,
+      "physical_pdf_page_end": 206,
+      "section_group": "GLOSSARY",
+      "scope_note_fa": "تعریف اصطلاحات پژوهشی و نسبت‌ندادن آن‌ها به محصول."
+    },
+    {
+      "physical_pdf_page_start": 207,
+      "physical_pdf_page_end": 207,
+      "section_group": "BLANK",
+      "scope_note_fa": "بدون متن و در رندر سفید؛ صفحه در شمار فیزیکی حفظ شود."
+    },
+    {
+      "physical_pdf_page_start": 208,
+      "physical_pdf_page_end": 208,
+      "section_group": "BACK_COVER_EDITION_AND_CONTACTS",
+      "scope_note_fa": "کد و ماه چاپ؛ فهرست تماس و اطلاعات فروش خارج دامنه."
+    }
+  ],
+  "page_index": [
+    {
+      "pdf_page": 1,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 171,
+      "native_words": 20,
+      "native_text_sha256": "b52f1772e9434138c18f0b96831a3c652eff67df0efda4f37a91d8b0e98bdc42",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 0,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "COVER",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 2,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1,
+      "native_words": 1,
+      "native_text_sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 0,
+      "folio_sole_text": true,
+      "native_text_state": "physical_folio_only",
+      "section_group": "FOLIO_ONLY",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 3,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1322,
+      "native_words": 238,
+      "native_text_sha256": "4c892717bd26f9c6f8222264005523ead4cacf373724732dfb80ca8e843e3967",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 0,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THEMATIC_AND_CONTENTS_INDEX",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 4,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 6109,
+      "native_words": 1073,
+      "native_text_sha256": "1e07bf86580cfb2d271fdc5cf12a1dbc030857faec724ba3f5e1b7f2e0503597",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 50,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THEMATIC_AND_CONTENTS_INDEX",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 5,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 3682,
+      "native_words": 578,
+      "native_text_sha256": "985c7908be80373a3afc5b32238a3b06875c056003181a2df21e25c194094636",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 34,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THEMATIC_AND_CONTENTS_INDEX",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 6,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1598,
+      "native_words": 226,
+      "native_text_sha256": "97efd2799ca2ca14578cb4b50f3ff3ab83e2bcea4a711c575d96754c71a649d3",
+      "image_resource_occurrences": 8,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 7,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1682,
+      "native_words": 256,
+      "native_text_sha256": "1cb8bc2d28c183f9deb606bc978f205eafbb1fb866be15d3e74017958cf0c164",
+      "image_resource_occurrences": 4,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 8,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2087,
+      "native_words": 313,
+      "native_text_sha256": "31bf70defdf9e11761f188f0cce00e95bdca0e52f4e96054648bb6da43928801",
+      "image_resource_occurrences": 2517,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 9,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2069,
+      "native_words": 333,
+      "native_text_sha256": "ff0903de069e2fd4484c84276ce4fc6aafc94827395c52bbde0f80c71ba503ce",
+      "image_resource_occurrences": 4120,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 10,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1247,
+      "native_words": 192,
+      "native_text_sha256": "e2a5c1759979994cba67e008560e689fbe505c41e57283d1c2cb5715bd4d9e53",
+      "image_resource_occurrences": 84,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 11,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1364,
+      "native_words": 195,
+      "native_text_sha256": "5d4f1e7575030cb62ab3b8f8ffcaf448e8f88487adc4691a5e01e5112cdc76b6",
+      "image_resource_occurrences": 104,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 12,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 569,
+      "native_words": 101,
+      "native_text_sha256": "e273bea0cf4e5253df5240e316ecd840fb8f9d5a0e77036492907ad138bfcb97",
+      "image_resource_occurrences": 15,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 13,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 331,
+      "native_words": 55,
+      "native_text_sha256": "760d7ad20c371a37b58c22e9853cd178e13931dabf02724a371c18136c7d35e0",
+      "image_resource_occurrences": 12,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 14,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 507,
+      "native_words": 90,
+      "native_text_sha256": "e1a96b7b2a63f8aa1669dd5af3005d2cdcf0580a2406a77bca2ea2fe5bec2cdf",
+      "image_resource_occurrences": 14,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 15,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 327,
+      "native_words": 60,
+      "native_text_sha256": "c843367cac2ad27836b126d9f3363a877a6acbbea4fa774ebace4048cd13e616",
+      "image_resource_occurrences": 12,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 16,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 531,
+      "native_words": 89,
+      "native_text_sha256": "a7086dd9f9214868fd1cd6db403af0146a70eef46dce18c1990c6ea1432aadfa",
+      "image_resource_occurrences": 315,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 17,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 475,
+      "native_words": 78,
+      "native_text_sha256": "253a929de891f0da11bc0b79057eedd5da83e44633dec6b56879421dc5fb1136",
+      "image_resource_occurrences": 315,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 18,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 577,
+      "native_words": 94,
+      "native_text_sha256": "66b6e222cdaf460d8ce85cdc0bff8ca56cf072b93b29f5527c1672000f32994f",
+      "image_resource_occurrences": 398,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 19,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 510,
+      "native_words": 86,
+      "native_text_sha256": "499064c3ee63df1da114382a2038406b22553ea68f25a25e4e582ead9b27dfe4",
+      "image_resource_occurrences": 398,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 20,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 702,
+      "native_words": 112,
+      "native_text_sha256": "6c8954b05ab7b33a7800e6f76bfda8e2a0eb0e1ccafc007b39a9478b91e3c946",
+      "image_resource_occurrences": 386,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 21,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 722,
+      "native_words": 114,
+      "native_text_sha256": "cf5ddea6361688efcbdb53d3dfa3f1807c0edef09ec1e916ddc83027c09ddd32",
+      "image_resource_occurrences": 386,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 22,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 912,
+      "native_words": 139,
+      "native_text_sha256": "4e94574d41de688707ca4f2aa59d1a26a5b5658a4f79180592faa692b704cbd4",
+      "image_resource_occurrences": 1608,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 23,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 874,
+      "native_words": 134,
+      "native_text_sha256": "db1839f38d189d7f86a44476b30d435481765985ec19f412fabd020b86961e48",
+      "image_resource_occurrences": 1610,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 24,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 519,
+      "native_words": 76,
+      "native_text_sha256": "ffb096d84da1486ff35c40bb58bee577696efb2e473f79d15c84ac4674db8a36",
+      "image_resource_occurrences": 836,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 25,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 535,
+      "native_words": 80,
+      "native_text_sha256": "9243841237d368e31423d62d282af5514c0a72e47850775fc96928b1e60efb0c",
+      "image_resource_occurrences": 836,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 26,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2923,
+      "native_words": 504,
+      "native_text_sha256": "53d20995a335de5737437c2ee8d7af16c91af33ba2d64d4df42c9639c0ce3c9f",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 27,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2164,
+      "native_words": 546,
+      "native_text_sha256": "9c22b988ef31d91c9db824c4003c99d2037a72c4de17d11cc9696b39edddb7bc",
+      "image_resource_occurrences": 7,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 28,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2651,
+      "native_words": 451,
+      "native_text_sha256": "1e522eaa672e4d7fb0c1b0e3b467f399ebda0e1366fa9bfcb864207ce5d221f0",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 29,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1942,
+      "native_words": 475,
+      "native_text_sha256": "d48295328912050354641b68bbab1281cfca017b63711e6e852997275e395414",
+      "image_resource_occurrences": 7,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 30,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 963,
+      "native_words": 178,
+      "native_text_sha256": "a00ab5897eb774c9d6ab38fdf833ff00d1efe55a71c6e1196705ff522de50b44",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 31,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 577,
+      "native_words": 102,
+      "native_text_sha256": "47ad9af45e42191694ea613d6fd592a48938956aa3981bd0975153985e5a05ed",
+      "image_resource_occurrences": 503,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 32,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1333,
+      "native_words": 216,
+      "native_text_sha256": "412de0347014a8cbed17235bae2dabd3b0dd4a38cb6783ff0ed249d7472ade1b",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 33,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 697,
+      "native_words": 124,
+      "native_text_sha256": "c92bf5083ebe9733f5059ceaaad81cab18c1d86a118ebe6f47696e9d149c3105",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 34,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1327,
+      "native_words": 210,
+      "native_text_sha256": "9e916163b8c253b8a469f8a337808a1c8441c5b538a95be6cee3499708797eb3",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 35,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 696,
+      "native_words": 124,
+      "native_text_sha256": "76ed8781d36e2b335e6fe4508d1e2bf6e3ccc89b67e6b3fc5ab5a078a5991684",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 36,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1404,
+      "native_words": 226,
+      "native_text_sha256": "aa6ebb14b897830775d6a2ae5e597df1d8505e7ed1b1aa11dde77524b596633e",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 37,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 280,
+      "native_words": 58,
+      "native_text_sha256": "6eb6f08dd065f889a47dde35aacef52e1b339aae3889e744a164849029d3abdc",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 38,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1528,
+      "native_words": 252,
+      "native_text_sha256": "9af71ea89754d5e3db87baa7965ad28bf71e02b4aacadb78a18afefb192666ad",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 39,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 227,
+      "native_words": 34,
+      "native_text_sha256": "6fc28b177bec58ceb5ca4feb8014dfcfe1553789bc95bac9f7b938339392cb41",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 40,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1545,
+      "native_words": 286,
+      "native_text_sha256": "911c028412e073e34e1f9291f4bdfa434f2ac664736d729d19a8f2bb84497add",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 41,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 299,
+      "native_words": 42,
+      "native_text_sha256": "f729d432df7bb513fa60faf4c8b5d29e7a070dc503e8a04759ad51f8e35f80be",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 42,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1146,
+      "native_words": 214,
+      "native_text_sha256": "ebca812d5e0cf4f7dba090abbb0c153c332ffa8e9ec5a20595a5951b61915c11",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 43,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 210,
+      "native_words": 40,
+      "native_text_sha256": "df44fcf83b03607fd66ee90272d8907d0efcb25f0493fddfe07a6cde2d09b0e7",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 44,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1665,
+      "native_words": 277,
+      "native_text_sha256": "1e7945375293d58d68fdcb3badc14dfd644bf222c2306bb9bc95c9aa0986fee3",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 45,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 177,
+      "native_words": 25,
+      "native_text_sha256": "fb4511a968523f7322ca8bd1a75fe607c985b5d2f3c37e80a215ab222c5f8d35",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 46,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2167,
+      "native_words": 368,
+      "native_text_sha256": "b019edeb0441dc170d96e503c3db9e8aaa94f044da2a3e6d952e4201f53feb72",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 47,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 192,
+      "native_words": 36,
+      "native_text_sha256": "bb56967d4152bb46062eaf1747098b0fb91f52a88127a08d6f90ea45885e3f8b",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 48,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1650,
+      "native_words": 269,
+      "native_text_sha256": "e67eed3279f874f42492f5fe5d0498bc58bf45a727e090325ca0cf32d25a5251",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 49,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 689,
+      "native_words": 112,
+      "native_text_sha256": "c7880301fc1c6b603486d177ce0f1897a3eb4d4ce89e9fd53f7ec3d80f039994",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 50,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1893,
+      "native_words": 308,
+      "native_text_sha256": "e8e914e5cc229831695fb841611f373a1b5151849bba55585590d7e65b7fd1dc",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 51,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 294,
+      "native_words": 53,
+      "native_text_sha256": "d6c0eb513a7b6edb9dbd3162e0048f94dd10298ec738dbfec7d338f17328a47a",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 52,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 463,
+      "native_words": 82,
+      "native_text_sha256": "3eb067e8c2d377ca8b6820a3a754f1ed8d7cc19c1bb7daaadaa5c2dc885f39b9",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 53,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 623,
+      "native_words": 106,
+      "native_text_sha256": "b267c6446afe94d5005874fb87a7f217ed3d54ff8c3dc52c8b03c0bad135080c",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 54,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2287,
+      "native_words": 374,
+      "native_text_sha256": "340b836f7393f7325245342d2df9f0593846f9ade52e7da634dbe1411c2deca3",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 55,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 394,
+      "native_words": 64,
+      "native_text_sha256": "a6fa4b8cde3109674c113b75dea20b56430c0644fe129fe387f9f5a9dd3b701c",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 56,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1255,
+      "native_words": 206,
+      "native_text_sha256": "c3f4c4a32129a81bb0c13f6e38f56ce19d3a5a270defb493ee9a2d3096d78f4a",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 57,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1249,
+      "native_words": 212,
+      "native_text_sha256": "3d0c4f28b68644ceabfa3ccb7e847a320df0b8d807c90161b271a64480a66bf7",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 58,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1475,
+      "native_words": 239,
+      "native_text_sha256": "48a432639e99c90c1f72fbe80ee7a88e48faf28eaea0308301bda7ca024a5f1a",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 59,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 553,
+      "native_words": 105,
+      "native_text_sha256": "0fa6c2b1046b74e201567beffcf62840c6e43c2004ae80dab949a29cbde62ac1",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 60,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1539,
+      "native_words": 252,
+      "native_text_sha256": "6547db10f145e23bf71df1ce1056d4c3569af350d112391d2696c57ad914bb45",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 61,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 539,
+      "native_words": 85,
+      "native_text_sha256": "e6319e3db0742f1d5ccc63fac822b5763bd075e4f94ca7d15df6d6f649db215b",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 62,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 329,
+      "native_words": 52,
+      "native_text_sha256": "8a4a515bb2fc6cdeb7f9fcf03aaa74fb64312a5068ac64fc9b0d308a4ca658af",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 63,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 384,
+      "native_words": 56,
+      "native_text_sha256": "5f7b6f2a5b912ad54141ded8a270398db3a200a6eaf8bdf3d396847a80f285da",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 64,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2144,
+      "native_words": 359,
+      "native_text_sha256": "1330e163c630648850dccc81f0606193cce81b9db507afb8f75828f7a8ea86e1",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 65,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2248,
+      "native_words": 362,
+      "native_text_sha256": "19cfa4f93a9dd9fec51ccc5e991a36fa8752e404a6fd49690e4afa9b9b3b5dc2",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 66,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 626,
+      "native_words": 96,
+      "native_text_sha256": "abee9e459dad983c24d7937aca0c59fac6286460e02a44e4c06346792a0cbe3a",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 67,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1308,
+      "native_words": 346,
+      "native_text_sha256": "e913aaf66255482fb061d47c3a61996e958fbb07fde78fabaaf6ae612a5f78f2",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 68,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1311,
+      "native_words": 245,
+      "native_text_sha256": "b9a68d936a7ec58ffa1cea234064d237c5e3c7229866cf97d8e79c9da9ff7ad9",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 69,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1743,
+      "native_words": 349,
+      "native_text_sha256": "51b9ef9bedbc7bd5a42aa3d71db393e3d8d7eb43b454d046cb44be714b067d22",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 70,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1678,
+      "native_words": 314,
+      "native_text_sha256": "1e3483ad31ab5dc124f30d9db5074854a5606f60360e8a79c243424d74226898",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 71,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 256,
+      "native_words": 36,
+      "native_text_sha256": "633bcfe8e0e06b9f33aab46dfe6f16c2d5715527ef92d20e09785148b57a75a4",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 72,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 898,
+      "native_words": 164,
+      "native_text_sha256": "7e66b3d43afdba0a5d611053ccae8b2a02db5fcdacb295cc869d311d4004f180",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 73,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1240,
+      "native_words": 209,
+      "native_text_sha256": "60babc408625ce9808d0534510b0bf9af9cf6a63bcc46a8f48f9e48d87552afa",
+      "image_resource_occurrences": 1039,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 74,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1562,
+      "native_words": 268,
+      "native_text_sha256": "b53e659665028c3f152897abd12ea6963259a523194969184b009196891c4f22",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 75,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 609,
+      "native_words": 91,
+      "native_text_sha256": "d854658b2fa07d87d174804296c4de5f0db392540d6eff8efa867be34b9b8a1c",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 76,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1192,
+      "native_words": 203,
+      "native_text_sha256": "094a21276d2c0d48b7f67934d0a51611d50aa1c40697b4dd66ae3dc5ff927b12",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 77,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1517,
+      "native_words": 241,
+      "native_text_sha256": "325babe4c15184171a5f0de199bf33625bd01feebcc3833bfa99659716eec156",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 78,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2159,
+      "native_words": 353,
+      "native_text_sha256": "0f4c1b5c76e52c998af467109148e5c0ff01e7cb49fa1e82d8317532795ac82d",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 79,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 707,
+      "native_words": 105,
+      "native_text_sha256": "18dac055e7b67c1e9f819d5168e5ff9945d5befd8228306d6b5f40dc4b985c13",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 80,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 325,
+      "native_words": 68,
+      "native_text_sha256": "7cc783b290c4f077930732fd0e684fb549552445e50a0f3c245f67e7d391695b",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 81,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1077,
+      "native_words": 186,
+      "native_text_sha256": "faca164451bc3123c6961d43bca72c0646005d38f592716d2565c37c982e3cb7",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 82,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1220,
+      "native_words": 199,
+      "native_text_sha256": "c39a9699043bdc98c50eb3a725d8ed0c163bcc0e62ea6e5b71617a0013562d99",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 83,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1298,
+      "native_words": 296,
+      "native_text_sha256": "f9efc8ab6b2fc6950090d0630832caeed5bc426055932e9ed4a2bab21680f0a5",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 84,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1168,
+      "native_words": 285,
+      "native_text_sha256": "9a5bcef413d634d65b9481667d1c7cf2adbe9feb034c7d49c4581bae6c9e78b6",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 85,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 901,
+      "native_words": 119,
+      "native_text_sha256": "301be461d74099825f66e5189710bc485c989cb94203e06c7315d102ad4b617a",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 86,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1167,
+      "native_words": 157,
+      "native_text_sha256": "c7be707d3e94117153bf911ac629304cc6c3bc348a436b6372149ca868d8cc6b",
+      "image_resource_occurrences": 5,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 87,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1031,
+      "native_words": 134,
+      "native_text_sha256": "ab57d20706c083f8ceb46a94c7b8a917c36e40ed8366e964e87627eb25b90ee5",
+      "image_resource_occurrences": 5,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 88,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1806,
+      "native_words": 304,
+      "native_text_sha256": "7b371dc56ea72f8b6a1a63b3a72e540127356506e4062d60489500233cbce5ee",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 89,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1006,
+      "native_words": 173,
+      "native_text_sha256": "e33ebef931f794a510e29f9efbb7b9c4af0c1129f78818a81af1d244f0ab6c43",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 90,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2185,
+      "native_words": 336,
+      "native_text_sha256": "3ffad34b6c31048472aec13c99e6e42efe6c25511c97d809360daf8710d0d68e",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 91,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 779,
+      "native_words": 126,
+      "native_text_sha256": "a3ef159fab374b5b83ab5da47c332afa51c536fe079316e30b5e4bfb731a9cb9",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 92,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1407,
+      "native_words": 232,
+      "native_text_sha256": "71a3cd81f9d93d680f9d10c92547025b316e5f75c7dbcf07ec182342f93f8365",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 93,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 550,
+      "native_words": 107,
+      "native_text_sha256": "837e1e384a56aaade94c0b1c01a2668f49be523a6a4d48047c0b414652bccdfe",
+      "image_resource_occurrences": 4,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 94,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2436,
+      "native_words": 543,
+      "native_text_sha256": "73db5378079c064e230751242e99112808f2c6ff98e328a716e23cd07b1a34c3",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 95,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2367,
+      "native_words": 523,
+      "native_text_sha256": "ef122caaaa0e6d33ae2b0f6e0f74abc5e7019298234d50fec54bb3a28a353c68",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 96,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1681,
+      "native_words": 345,
+      "native_text_sha256": "e1ab8d314f2ecfca12f1fbcddb6443e8bf6351a8b1fcd33b92031ab7c42cfd29",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 97,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 747,
+      "native_words": 169,
+      "native_text_sha256": "d64ef4b2ffdd9faaae8c33f527d5cd874f23ebe138fcabe9725e9b52052ae73e",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 98,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 519,
+      "native_words": 84,
+      "native_text_sha256": "a1eb3843e797b353474b85ca39738f3317c7492ba89a70659aa6eff225466abf",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 99,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 610,
+      "native_words": 93,
+      "native_text_sha256": "cc22267a443d9202e60f52efc76cde9cfd6fd69b76f90cdddaa6f86a053d8881",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 100,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 930,
+      "native_words": 208,
+      "native_text_sha256": "57b751673f5f823616bbcbc0eae526257bf1e54b51f8749b95b144ff0e2af164",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 101,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 668,
+      "native_words": 163,
+      "native_text_sha256": "0f10d7bdcf802c7b7c0f3c7ddc6dfa3b5c1da07808bf4daf49f1f8e67f03c10e",
+      "image_resource_occurrences": 5,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 102,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 980,
+      "native_words": 162,
+      "native_text_sha256": "7465e131a52beb5317e268d42fa763a6a7714216bd04d46e650c2496b365892b",
+      "image_resource_occurrences": 4,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "ART_D_ARNOULD_PRODUCT_PRESENTATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 103,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1120,
+      "native_words": 200,
+      "native_text_sha256": "6c9d5425dc8285afff09854d3da87b0b29cc5f399a1226f6e81ecd7eff514503",
+      "image_resource_occurrences": 5,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "ART_D_ARNOULD_PRODUCT_PRESENTATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 104,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 550,
+      "native_words": 106,
+      "native_text_sha256": "61e892ae9b444922a45092700d1eea689d5022f8064f1b529adcf82b6367a6a4",
+      "image_resource_occurrences": 39,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "ROOM_WIRING_DIAGRAMS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 105,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 809,
+      "native_words": 196,
+      "native_text_sha256": "c13501b899ca1c1b4f38cd063a37142a54708b24379226377705ec21cf44d98c",
+      "image_resource_occurrences": 28,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "ROOM_WIRING_DIAGRAMS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 106,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 465,
+      "native_words": 107,
+      "native_text_sha256": "5dde08b5e974f5ce42b9fffbedb1d19d28ef0ecef3111ffb0120aacbb70a72ff",
+      "image_resource_occurrences": 37,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "ROOM_WIRING_DIAGRAMS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 107,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 720,
+      "native_words": 182,
+      "native_text_sha256": "ee1a6dc396c40f2291cf725bd05072925f3b225cf3beb4d97f2cdc595fa6cf8d",
+      "image_resource_occurrences": 26,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "ROOM_WIRING_DIAGRAMS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 108,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1508,
+      "native_words": 231,
+      "native_text_sha256": "ed0375ee76d6e5e33a7557a9176e62a7ae33dcce38885523e135f49155787356",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 109,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2402,
+      "native_words": 636,
+      "native_text_sha256": "48b74b97f8cc33e1ac935f9437bd19f5ea14ab21c4a58618720925725be76a38",
+      "image_resource_occurrences": 97,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 110,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2381,
+      "native_words": 635,
+      "native_text_sha256": "0be5d5f19735e7a648606f3be55d5e1f77e97ddaf973fd3786db4e63430ef922",
+      "image_resource_occurrences": 97,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 111,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1702,
+      "native_words": 257,
+      "native_text_sha256": "fe284f4beb07860cd9c8030414023fb9b183d4e5494de1b051ea899c7b31f746",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 112,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1024,
+      "native_words": 168,
+      "native_text_sha256": "623fabcb0bd53c1dfc564acbd0e0ede3a9492239f2b3e7f979ccd1a598c5770e",
+      "image_resource_occurrences": 5,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 113,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 479,
+      "native_words": 78,
+      "native_text_sha256": "905c6d29527a9b8c785cb6521a05ce15f631568acd936f2b7c88717fe89c8e32",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 114,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 564,
+      "native_words": 97,
+      "native_text_sha256": "51eab6302df85011ae4c6c9fbed4cb96486e05ffb2df089cdc9bb04ed6f8fe41",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 115,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1211,
+      "native_words": 190,
+      "native_text_sha256": "7fd3f5b7aa92d155b24ea6af71911765da1352168dfff837ac846aa9d12183dd",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 116,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 630,
+      "native_words": 90,
+      "native_text_sha256": "c896b9953f9fc7638308caa6e5ef05426b3418bd377d8dcdbdaf1968aa1fe23c",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 117,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 470,
+      "native_words": 72,
+      "native_text_sha256": "217a0e30c0ed12d996a08095d20b7a5ce0bf03dd8b92e124c7cfeccb1134be43",
+      "image_resource_occurrences": 4,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 118,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 402,
+      "native_words": 72,
+      "native_text_sha256": "a1c1c2ef329e0451d321fa3440f4032860730b716dab24919f4efa8ab49f9cc4",
+      "image_resource_occurrences": 5,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 119,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 3744,
+      "native_words": 597,
+      "native_text_sha256": "e7c3d27e1ec5c6d2ac34c00b2f3a9acd4b9c9545ad4cac93f266c1b734d714e1",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "VIRTUAL_BADGE_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 120,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1944,
+      "native_words": 316,
+      "native_text_sha256": "3467b22f70c6bade57fe4563e533e0a2fa54f9c9fce90436e16f0430b7482e07",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "VIRTUAL_BADGE_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 121,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 705,
+      "native_words": 152,
+      "native_text_sha256": "1499cc929d31d19bb1d2bcfa2e0407bb7260e6d1fe0bef599d7e1b9bb22df18a",
+      "image_resource_occurrences": 105,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "VIRTUAL_BADGE_OPERATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 122,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 804,
+      "native_words": 118,
+      "native_text_sha256": "da5f4a2f38ae5e334e5c13356afbf42214fe6f7fc5f1dc42898624a1836c6fe4",
+      "image_resource_occurrences": 8,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SOFTWARE_INSTALLATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 123,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 148,
+      "native_words": 21,
+      "native_text_sha256": "5244140ad10edb6b5f71c934de8110ca243d2b38965492b4a14c4318e7eaa086",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SOFTWARE_INSTALLATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 124,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 309,
+      "native_words": 48,
+      "native_text_sha256": "bbf6330c1a82786918461b05ce77dcda042135bac49b3e8f5a36a4932a7118c1",
+      "image_resource_occurrences": 4,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "SOFTWARE_INSTALLATION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 125,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1074,
+      "native_words": 167,
+      "native_text_sha256": "f5a3f9b63cba03ca29700ed83658a1de20a6bb7d7a84454664f7bbf6b298efe3",
+      "image_resource_occurrences": 7,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "HOTEL_PROJECT_PROGRAMMING",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 126,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1107,
+      "native_words": 167,
+      "native_text_sha256": "69f71c8b06527cd33be8aee7509561137a9f8f1810409f5e699d6dd5df53f689",
+      "image_resource_occurrences": 5,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "HOTEL_PROJECT_PROGRAMMING",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 127,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 305,
+      "native_words": 44,
+      "native_text_sha256": "fe30485305e165fd5f82a29cb0045bb1f96adaf5c24ca34847631181e4a75cf0",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "HOTEL_PROJECT_PROGRAMMING",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 128,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 491,
+      "native_words": 75,
+      "native_text_sha256": "74df3ae66da04a7fa27624bf9ecb739e145860e4898628d07b627c76d42287fe",
+      "image_resource_occurrences": 6,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "HOTEL_PROJECT_PROGRAMMING",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 129,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 619,
+      "native_words": 95,
+      "native_text_sha256": "589253206192a80c98d6a6acf3a9190a3a877a30734f8bd5c41ce844aca79af1",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "HOTEL_PROJECT_PROGRAMMING",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 130,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 930,
+      "native_words": 151,
+      "native_text_sha256": "57a919276641946ce497f40de172d27b83fc8dd1ffd1167e1e5b6218ebd1601c",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 131,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 614,
+      "native_words": 98,
+      "native_text_sha256": "91362de6048369b29ab76b1853bbf47af9d9a38a1f16814d3721e70fa8459c7d",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 132,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 967,
+      "native_words": 153,
+      "native_text_sha256": "0d93e26c923a3752ec88d96ce1013258adad0004002e0ed35d53d4d9c6fa2bcb",
+      "image_resource_occurrences": 6,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 133,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 825,
+      "native_words": 128,
+      "native_text_sha256": "7eaeef5a9c88e0d1f16e225348bdb1e821782e76dbdac98963c57300bbb50900",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 134,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 752,
+      "native_words": 121,
+      "native_text_sha256": "2e9af4d10b80a570645e96c3b79014c8c588b4b00581e77c7cd2563206ada5d9",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 135,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 924,
+      "native_words": 152,
+      "native_text_sha256": "51501d1a5e8a70653bf1fb5106ce08ae77a22c179b1f94040a503948b77be914",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 136,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 819,
+      "native_words": 133,
+      "native_text_sha256": "76170a91c995fa53ab5f718e5999d5a7a7375f3247cf5720e286bff38e12422c",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 137,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1354,
+      "native_words": 220,
+      "native_text_sha256": "835c07a01ab542bf3ce3882bc5fd9b88a8698de178bd42032ecf8a71439f3ede",
+      "image_resource_occurrences": 4,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 138,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 686,
+      "native_words": 96,
+      "native_text_sha256": "813d247282bbbeca91995c087e449894058176ba16b589ddd27a3a7f1be526b3",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 139,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 882,
+      "native_words": 135,
+      "native_text_sha256": "ebbcc26adacb7fc7e8bfd8025c6f40f4518ab6804596231437d35b5fa9153e07",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 140,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 645,
+      "native_words": 105,
+      "native_text_sha256": "0a9f6dc936317d0677e5e0ae883d300fbf1d06f99aab3183af784a8166e4e4d7",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 141,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 590,
+      "native_words": 100,
+      "native_text_sha256": "a24baf6228a33232bcd29aabf0fea10ac17bac0d62ce6e5616556dff0bfb433c",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 142,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 575,
+      "native_words": 96,
+      "native_text_sha256": "0a40674ca327335dc4afe154c250cbd4021e9321ff536fcaeec61adce11a65b2",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 143,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 849,
+      "native_words": 145,
+      "native_text_sha256": "7f5eace4ef758bb3eaf8a9ba3c5b096833551eb25d59f3c3777ab3dd2088b4db",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 144,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 836,
+      "native_words": 139,
+      "native_text_sha256": "934c82286a2427945d0cd6eba079167a4b3bc733a26932f7a438ea5d26bb8149",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 145,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1185,
+      "native_words": 184,
+      "native_text_sha256": "54e51d68d340af15e91ade7134fb14a0e1a703f5b80b4f052b28cde89ac3aeaa",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 146,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 753,
+      "native_words": 125,
+      "native_text_sha256": "f115da22b1573ed1f7b19f427f7d75556f9153867aeda24f778b79270c5f427a",
+      "image_resource_occurrences": 6,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 147,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2085,
+      "native_words": 338,
+      "native_text_sha256": "b0c6220925172756b623ad18c63944e69aff96c02dd36af6887613b5d46fe9ca",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 148,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 740,
+      "native_words": 127,
+      "native_text_sha256": "290627aceed111915e695a7193de9f86c2aa8064be1a6776f51273b741f918b1",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 149,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 753,
+      "native_words": 146,
+      "native_text_sha256": "8006d09cedfacc365ec26ba1db7523caeb7ec2b946abdb011a28f3a2a908290e",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 150,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1246,
+      "native_words": 198,
+      "native_text_sha256": "118ef70f82ed6de263a0781db0946f348eb927fdf91a1ff4ad8f2652cab6873a",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 151,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 614,
+      "native_words": 103,
+      "native_text_sha256": "5c760d26d70f72b4d974eef44bb6a7108c081516c1aef6391fa6d0323b1e59cb",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 152,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 304,
+      "native_words": 48,
+      "native_text_sha256": "67f3e31da12a163ab656b412903effcdb4a66d86b8ad65471fc096385661b0a4",
+      "image_resource_occurrences": 6,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 153,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 715,
+      "native_words": 118,
+      "native_text_sha256": "8c36adba69d9ca56b4c458da7290614b7ff15b079ac9ab6f281578dafc9fe612",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 154,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2343,
+      "native_words": 388,
+      "native_text_sha256": "7b2d26f32a308690a31c00b4ddd1a7167aff04cd358ff0c6b93ed4cdf1c27728",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 155,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1126,
+      "native_words": 173,
+      "native_text_sha256": "cd8d17c57fb2a842d51227ba64eb624a8b7eb4ab3a2e914be3645e9d555d0fa6",
+      "image_resource_occurrences": 9,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 156,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 603,
+      "native_words": 84,
+      "native_text_sha256": "8d3da78d1fa8cf7255a5a01f0e526fa4884bab6ff5ff4f2043cc93270bfe6220",
+      "image_resource_occurrences": 13,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 157,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 672,
+      "native_words": 113,
+      "native_text_sha256": "756cff2877a76bda2f9900cfe1f2f7e310f218da1bb074bf068eb23c6c38f098",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 158,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 780,
+      "native_words": 109,
+      "native_text_sha256": "b15e756b2e4d5717c575e1e51eb271f71533d436ef9efd36a29579c84c7e0898",
+      "image_resource_occurrences": 4,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 159,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1243,
+      "native_words": 190,
+      "native_text_sha256": "6efb2f1cadd5268e5a28f937058b395f3f1237789224c73d9a285899ffaab445",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 160,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 390,
+      "native_words": 64,
+      "native_text_sha256": "478da7f813b1591f6fe1d4927f13a8269385e67187540a082973fad86993020c",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 161,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 549,
+      "native_words": 87,
+      "native_text_sha256": "2a5a4a5010e03db38a4cc24ca5b34b4b86576f1fdecd8d78132eb5af2a9a09bf",
+      "image_resource_occurrences": 4,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 162,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 561,
+      "native_words": 102,
+      "native_text_sha256": "1b93d8e7e95ccbe7f9c1fb70a9c6dc2c93fe4f102f6f280ca8a29a75ecffa517",
+      "image_resource_occurrences": 6,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 163,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 855,
+      "native_words": 123,
+      "native_text_sha256": "6ae6fc4dbf8d9205fd314224f2e0cc3e29ea6bd83d28e17f12419a5b780f66de",
+      "image_resource_occurrences": 8,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "LEGACY_CONFIGURATION_RECOVERY_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 164,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 270,
+      "native_words": 51,
+      "native_text_sha256": "8643c52e690c543a1e6272297ffbe0d7486bd27b08f4c02e38625906ddc233c0",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 165,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1215,
+      "native_words": 175,
+      "native_text_sha256": "2f36eee32148bb6d6f57d3a3a3444d370017c7c91717e512a1865524e3820e0a",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 166,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 277,
+      "native_words": 42,
+      "native_text_sha256": "ca3beeb0e647796c43da4e200debb545b6cbc80c7ddb591c6f7edc07cd61e198",
+      "image_resource_occurrences": 7,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 167,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 343,
+      "native_words": 54,
+      "native_text_sha256": "eecc451447400430e98370385b7efb12f90a25962a3cc1a5d667c9fa326d1344",
+      "image_resource_occurrences": 4,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 168,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 371,
+      "native_words": 59,
+      "native_text_sha256": "5a741d80c3f9c3090f8295d1e0188eceb46459e2534ecc27495bb580e38faf4a",
+      "image_resource_occurrences": 5,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 169,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 850,
+      "native_words": 135,
+      "native_text_sha256": "39d2704c1de87e7f9b3ba0cc480c7382ffc055e593ed60e8e6e8f92bac1b3a53",
+      "image_resource_occurrences": 4,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 170,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1229,
+      "native_words": 211,
+      "native_text_sha256": "458c6c461d6d3f2215988bd43eb3ad06741a42af65a887837f5a2dba7585b889",
+      "image_resource_occurrences": 3,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 171,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2323,
+      "native_words": 402,
+      "native_text_sha256": "dea34aff12da7f0c2112b904235939f6a38adf41a9e0200df0a3cc498205b511",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 172,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1465,
+      "native_words": 289,
+      "native_text_sha256": "c4fc015132f65288630edc62255339e5001e811318c787911c4f21651b8abac9",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 173,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 579,
+      "native_words": 114,
+      "native_text_sha256": "4d46e5542a253bb588bf99560fa606a6b159266b39e36132d59f2f288cadd626",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 174,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2076,
+      "native_words": 250,
+      "native_text_sha256": "09ce29e5393c6edb9b940c01e0b940785551041dec88227b9e286fecc1dcda7a",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 175,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 238,
+      "native_words": 35,
+      "native_text_sha256": "dcf633a9425622da83cdad18fe17460040fff080e146be719e172c5154685e77",
+      "image_resource_occurrences": 6,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 176,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 115,
+      "native_words": 20,
+      "native_text_sha256": "8c65fa973983500e3f3ff50eccc796b5873ebba37d5fae562aaf1e3bd523b463",
+      "image_resource_occurrences": 7,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 177,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2479,
+      "native_words": 384,
+      "native_text_sha256": "76ad7f4597bb398fc2b610898b7bfad0aa0d935ee398f1967a457493034e108d",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 178,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 725,
+      "native_words": 116,
+      "native_text_sha256": "eb84296af3dc4453d11ab0cd0f89463bc93a360e3248fafbe198631d433c7ac5",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 179,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 549,
+      "native_words": 95,
+      "native_text_sha256": "4cd5e5ef02ba9f2e47a7ed469b27fabcb1a954df2fc6fe5e446d2f8e966d3b29",
+      "image_resource_occurrences": 12,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 180,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2122,
+      "native_words": 371,
+      "native_text_sha256": "ae90c680631377f3da14dd8a43ff4db82ca364f8f7fd357428686f74ba66455d",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 181,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 3887,
+      "native_words": 558,
+      "native_text_sha256": "063bab11cce61a69fd6c36de76a6eb82281f729c49003f47e841ff4082973896",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 182,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 569,
+      "native_words": 80,
+      "native_text_sha256": "f622e01604968fa57e5d4180607c3e8b6b236c34aae3fcc9cd46aa6e60b4616c",
+      "image_resource_occurrences": 4,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 183,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1146,
+      "native_words": 197,
+      "native_text_sha256": "fb47eb0833876545a2c10304c8883178a86e50311468fa1f197525cd70051395",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 184,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 439,
+      "native_words": 78,
+      "native_text_sha256": "9c9ce9d5e9335b38bf30908cad85a03a1f24859ea56f6cca69a83d8b16234cb2",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 185,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 188,
+      "native_words": 33,
+      "native_text_sha256": "81e38cf28992a7b44dd553991ce9fc281a9ced10a4efb0b02ab5b5b3af049ca2",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 186,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 232,
+      "native_words": 39,
+      "native_text_sha256": "90399c68d03cc23f34040a6ea8f6d792d28ff2d945cc4bc62c9a34dd31c95452",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 187,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 189,
+      "native_words": 31,
+      "native_text_sha256": "025e2b5e439b7195cf91229c601dfff6c576cec4d34a811e0f9264e28e268979",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 188,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 216,
+      "native_words": 39,
+      "native_text_sha256": "05582a284fc074498336615e328f98b1010f3cb9eb16da01db298e9398106386",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 189,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 997,
+      "native_words": 172,
+      "native_text_sha256": "d0a5d02eaea4521742374ddde29bda0f1e0c07ddb79845c18f5611fa45220bdf",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 190,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 669,
+      "native_words": 106,
+      "native_text_sha256": "52e81e2da7edc388e4d5840fedc7beeb1eecd9d573c6cd952165d6a3ab310899",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 191,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 345,
+      "native_words": 59,
+      "native_text_sha256": "539f75a808a9544c84ec9b364359d8ac7afa979c3f548ef12e773b63d01881bb",
+      "image_resource_occurrences": 5,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 192,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 287,
+      "native_words": 43,
+      "native_text_sha256": "5d995b13eb836a8ec926ab682054e4f4d29f4e21c9672451db24232ac3577984",
+      "image_resource_occurrences": 6,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 193,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 791,
+      "native_words": 139,
+      "native_text_sha256": "0e90f7a1af68e2d04a271ea874d6fea656a1da213c6810c73a8e86e8427d9428",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 194,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1066,
+      "native_words": 165,
+      "native_text_sha256": "3513f43227a69990039c8a292f123697b394487dbffe68fd33b0bfaf8c4dd667",
+      "image_resource_occurrences": 7,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "MAINTENANCE_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 195,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 570,
+      "native_words": 92,
+      "native_text_sha256": "b92965081a850a61159dadbfab2e3fa5668ea7cc11f359f54af46c0f1a2aa067",
+      "image_resource_occurrences": 6,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "MAINTENANCE_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 196,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 494,
+      "native_words": 81,
+      "native_text_sha256": "1897df442d3d1279f108097deaa04c424c381958413d4967651de25e86a13303",
+      "image_resource_occurrences": 7,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "MAINTENANCE_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 197,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2347,
+      "native_words": 361,
+      "native_text_sha256": "49798631c3270c76ba71e0dea083d619eb5e3f79a35f5e6eec0a1651d2016eeb",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "INTEGRATION_REFERENCE_TABLES",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 198,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2292,
+      "native_words": 341,
+      "native_text_sha256": "f3d44c92c38aa54d266c76292a62fc01cd3d927bd3be45e23807d4704382d6b6",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "INTEGRATION_REFERENCE_TABLES",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 199,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2277,
+      "native_words": 343,
+      "native_text_sha256": "bacb3e4cfa36cc565d6ee211b166a909d9c8b24c04e360fae829e203da80ef97",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "INTEGRATION_REFERENCE_TABLES",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 200,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 3133,
+      "native_words": 571,
+      "native_text_sha256": "3214b16c288215ed76dd4a797414e3882eeda13ed62686ef0076c9ef81444653",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "INTEGRATION_REFERENCE_TABLES",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 201,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 3051,
+      "native_words": 538,
+      "native_text_sha256": "7724fca737f25d73079dcce95962e4512f4c70b4e18b9231d12f7a8704cf9218",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "INTEGRATION_REFERENCE_TABLES",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 202,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 3678,
+      "native_words": 642,
+      "native_text_sha256": "d58aa6e8b6f4f7f13b2aef6a3c133ce34a555b3bd3aef6be267c5af2ccae6afe",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "INTEGRATION_REFERENCE_TABLES",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 203,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2539,
+      "native_words": 406,
+      "native_text_sha256": "ccf1e7650b15444f53bdcc2f739d0d42d96610b36962db02ea4e27b7a95a7edf",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "TROUBLESHOOTING_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 204,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2007,
+      "native_words": 322,
+      "native_text_sha256": "d0b197679206282b289b30eef497709c48e9fba0932ac35e3605f8e2d1c8afdd",
+      "image_resource_occurrences": 1,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "TROUBLESHOOTING_SECTION",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "not_individually_visual_reviewed_in_S01"
+    },
+    {
+      "pdf_page": 205,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 1239,
+      "native_words": 195,
+      "native_text_sha256": "29c4f8572a5f70f5940c326ef601ebb994e0faf7a8c233a1f1b47693c0f5a11c",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "TECHNICAL_CHANGE_LOG",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 206,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 900,
+      "native_words": 143,
+      "native_text_sha256": "a976f8e3b4fa49550afea0b45539e0c5192e75c251c6d050e2d0f4a467a3542e",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 1,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "GLOSSARY",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 207,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 0,
+      "native_words": 0,
+      "native_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "image_resource_occurrences": 0,
+      "link_annotation_count": 0,
+      "folio_sole_text": false,
+      "native_text_state": "blank",
+      "section_group": "BLANK",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    },
+    {
+      "pdf_page": 208,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2652,
+      "native_words": 547,
+      "native_text_sha256": "5ace619daef568aa1390a4af9c47dc91d3189281a9f9560ee2e92e12914c5e27",
+      "image_resource_occurrences": 2,
+      "link_annotation_count": 0,
+      "folio_sole_text": false,
+      "native_text_state": "native_text_present",
+      "section_group": "BACK_COVER_EDITION_AND_CONTACTS",
+      "native_text_hash_basis": "PyMuPDF get_text() stripped, UTF-8",
+      "visual_review_status": "contact_sheet_checked_source_page"
+    }
+  ],
+  "cross_catalog_identity": {
+    "source_code_this": "SYS219006",
+    "existing_distinct_catalogs": [
+      {
+        "id": "CAT008_LEGRAND_GUEST_ROOM_HOTEL_SOLUTIONS",
+        "title": "Guest Room Hotel Solutions",
+        "source_document_date": "2025-03 (footer reference 202503)",
+        "source_file_sha256": "913f670cc951f7168adad72c609410f095ac1f666e0369f1b152881594857661",
+        "page_count": 27
+      },
+      {
+        "id": "CAT009_LEGRAND_HOSPITALITY_BUILDINGS",
+        "title": "Hospitality Buildings — Integrated Solutions",
+        "source_document_date": "2016-03",
+        "source_file_sha256": "bab386c249c43f79005e8e0edbc02ca71e9fa9d28fb3b5e5c35beefca8ef6ade",
+        "page_count": 52
+      }
+    ],
+    "must_keep_sources_separate": true,
+    "source_scope": "French technical manual. Do not substitute content from 2025 showroom catalogue or 2016 hospitality solutions brochure."
+  },
+  "visual_and_content_inventory_method": {
+    "native_text_structure_hashed_all_208_physical_pages": true,
+    "source_contact_sheet_reviewed_physical_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      12,
+      26,
+      102,
+      104,
+      108,
+      119,
+      122,
+      125,
+      130,
+      163,
+      164,
+      177,
+      178,
+      183,
+      184,
+      194,
+      197,
+      203,
+      205,
+      206,
+      207,
+      208
+    ],
+    "visual_contact_sheet_sample_count": 28,
+    "full_manual_not_republished": true,
+    "no_source_crops_exported_in_S01": true,
+    "local_contact_sheets_not_committed": true,
+    "large_technical_manual_selective_research_scope": true,
+    "technical_content_and_competitor_details_not_adopted_as_NSP": true
+  },
+  "restrictions_and_audit_flags": [
+    {
+      "pages": [
+        26,
+        107
+      ],
+      "meaning": "Inclusive page range; product-only lists, spec values and wiring details are not feature candidates."
+    },
+    {
+      "pages": [
+        122,
+        205
+      ],
+      "meaning": "Selective software/interface and chapter-style analysis only. Do not transcribe implementation procedures, configuration secrets, addresses, diagnostic commands or technical reproduction."
+    },
+    {
+      "pages": [
+        207,
+        208
+      ],
+      "meaning": "Blank page in numbering and printed edition only; contact directory excluded."
+    }
+  ],
+  "project_alignment": {
+    "editorial_structure_file": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "editorial_structure_revision": "2.3.0",
+    "NSP_capabilities_verified": 0,
+    "feature_bank_changed": false,
+    "application_source_changed": false
+  },
+  "stage_contract": {
+    "scope": "Exact source identity and inventory, no S02 short excerpt extraction or S03-S07 work.",
+    "next_queue_cursor": {
+      "document_index": 11,
+      "document_id": "34",
+      "step_index": 1,
+      "step_id": "S02"
+    },
+    "next_stage": "S02 — استخراج متن دقیق",
+    "next_stage_executed": false
+  }
+}
