@@ -1,0 +1,313 @@
+{
+  "schema": "nsp-catalog-research-s07-import-v2",
+  "status": "validated_import",
+  "stage": "S07",
+  "stage_key": "feature_json_and_commit",
+  "document_id": "53",
+  "date": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "20cc35d25ef09a42e4adeed6da06d6c899ba63d8",
+  "source_catalog": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+  "source_pdf": "53_Lutron_Work C10.3.pdf",
+  "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+  "source_language": "en",
+  "source_part_number": "368-5134",
+  "source_printed_revision": "REV B",
+  "physical_pdf_pages": 3,
+  "audit_artifact": "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S06_original_source_audit.json",
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S01_source_inventory.json",
+      "commit_sha": "2fe01a3a6c8fb8239ebd8f58cf91f84f95a2562f",
+      "blob_sha": "a4f416886ea8b4f38d303c3caea01999029a5547"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S02_english_text.json",
+      "commit_sha": "91f3c559593ce048444938287d2bda2d50f42e33",
+      "blob_sha": "9b72c457eda2bb662c05b4fd8171fc117702320b"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S03_features_fa.json",
+      "commit_sha": "85cb503c93527890aa06dc109a7ebb61e110fce0",
+      "blob_sha": "44ee3013468474ac9172410fb49f9483a1c99fc3"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S04_visual_styles.json",
+      "commit_sha": "0086fa8eb3144814b1823cae9f5108a6ef0bfa7f",
+      "blob_sha": "d5beb9931532b2f38177ca9020def68478eec342"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S05_section_mapping.json",
+      "blob_sha": "db2ad69194c6f425d70bbf5a6489a1d7d574433b",
+      "commit_sha": "2ba07cbcd3b91fb1f9c77f7c7e9dbaa6ef14185d"
+    },
+    "S06": {
+      "path": "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S06_original_source_audit.json",
+      "blob_sha": "04e3dbe7649684c5fc4fd9a720cc3eff19c0b2d5",
+      "commit_sha": "45ff58e6c4334b925626bca2303bd135e0d8318a"
+    }
+  },
+  "updated_bank_files": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js"
+  ],
+  "committed_artifact_paths": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js",
+    "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S07_ingest_manifest.json",
+    "Portfolio Instruction/assets/lutron53-01-resort-hero.webp",
+    "Portfolio Instruction/assets/lutron53-01-case-identity-band.webp",
+    "Portfolio Instruction/assets/lutron53-02-side-context-photo.webp",
+    "Portfolio Instruction/assets/lutron53-02-quote-sidebar.webp",
+    "Portfolio Instruction/assets/lutron53-02-icon-closeup.webp",
+    "Portfolio Instruction/assets/lutron53-03-bedside-context-photo.webp",
+    "Portfolio Instruction/assets/lutron53-03-results-label.webp"
+  ],
+  "output_bank_files": [
+    {
+      "path": "Portfolio Instruction/feature.json",
+      "git_blob_sha": "f90f01e0138c52125cd8cfdffb68a3a2f5652713"
+    },
+    {
+      "path": "Portfolio Instruction/feature.js",
+      "git_blob_sha": "27965124ab040a4d11296b20a8e13cb08e344e7d"
+    }
+  ],
+  "new_display_alias_assets": [
+    {
+      "path": "Portfolio Instruction/assets/lutron53-01-resort-hero.webp",
+      "id": "LUTRON53_01_resort_hero",
+      "git_blob_sha": "304da0b75c32b208bebe468bbb27f5146811552f",
+      "sha256": "493cc4c034a24b9ca05567799601eb64fe8b3ffe85bf256086eee7c99fdc63ce",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/lutron53/LUTRON53_01_resort_hero.webp",
+      "physical_pdf_page": 1,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/lutron53-01-case-identity-band.webp",
+      "id": "LUTRON53_01_case_identity_band",
+      "git_blob_sha": "7cad675e2215c031f8215a90831fcd25e5782b7f",
+      "sha256": "8023435166640df2c94d0974b1460daeb97375f3d7e6118ac1d3a8b3753d48ce",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/lutron53/LUTRON53_01_case_identity_band.webp",
+      "physical_pdf_page": 1,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/lutron53-02-side-context-photo.webp",
+      "id": "LUTRON53_02_side_context_photo",
+      "git_blob_sha": "0e9abec31bd07257b7d736bb9da34c72c743f905",
+      "sha256": "61bf373455c22d3465f354f44231da37fbdca474818800da16f0fdae4f7712e3",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/lutron53/LUTRON53_02_side_context_photo.webp",
+      "physical_pdf_page": 2,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/lutron53-02-quote-sidebar.webp",
+      "id": "LUTRON53_02_quote_sidebar",
+      "git_blob_sha": "811069c024acba0e39f87cceaeb23832142a1219",
+      "sha256": "1b59ffce5394a7bd2b5607d1f02fdda996352bcfb4f7c477dda3bb7e77d54deb",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/lutron53/LUTRON53_02_quote_sidebar.webp",
+      "physical_pdf_page": 2,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/lutron53-02-icon-closeup.webp",
+      "id": "LUTRON53_02_icon_closeup",
+      "git_blob_sha": "f2c76b00d367d346cf2753a4b386b62ab792804b",
+      "sha256": "3a83c55079ae74c126cf7bdd199c8ee56324f3e8c28f0f0b4f92fc34b377f4d1",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/lutron53/LUTRON53_02_icon_closeup.webp",
+      "physical_pdf_page": 2,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/lutron53-03-bedside-context-photo.webp",
+      "id": "LUTRON53_03_bedside_context_photo",
+      "git_blob_sha": "455cf3a6e8ad9062122016ca61b539c0be141292",
+      "sha256": "eb4c6cd70958b007a417362ede861d936b8ff7bae5315f802c85718dd95d4124",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/lutron53/LUTRON53_03_bedside_context_photo.webp",
+      "physical_pdf_page": 3,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/lutron53-03-results-label.webp",
+      "id": "LUTRON53_03_results_label",
+      "git_blob_sha": "4881c1dceaff170d15ad3e0c66e2046501d5ad82",
+      "sha256": "3db0e667cfa5e2b47d8a6e44e623f41ff9ae18034fe334b6b69094ecc5aebaf3",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/lutron53/LUTRON53_03_results_label.webp",
+      "physical_pdf_page": 3,
+      "shared_original_immutable_blob": true
+    }
+  ],
+  "imported_feature_record_ids": [
+    "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I001",
+    "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I002",
+    "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I003",
+    "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I004",
+    "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I005",
+    "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I006",
+    "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I007",
+    "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I008",
+    "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I011",
+    "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I012",
+    "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I013",
+    "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I014",
+    "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I015"
+  ],
+  "imported_feature_provenance": [
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I001",
+      "physical_pdf_page": 1,
+      "S02_fragment_ref": "LUTRON53-P01-E03",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I002",
+      "physical_pdf_page": 1,
+      "S02_fragment_ref": "LUTRON53-P01-E05",
+      "narrator_role": "CUSTOMER_DIRECT_QUOTE",
+      "target_section_type": "CHALLENGES_VALUE"
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I003",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON53-P02-E01",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I004",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON53-P02-E02",
+      "narrator_role": "CUSTOMER_REQUIREMENT_REPORTED_BY_VENDOR",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I005",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON53-P02-E03",
+      "narrator_role": "CUSTOMER_REQUIREMENT_REPORTED_BY_VENDOR",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I006",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON53-P02-E04",
+      "narrator_role": "CUSTOMER_REQUIREMENT_REPORTED_BY_VENDOR",
+      "target_section_type": "CHALLENGES_VALUE"
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I007",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON53-P02-E05",
+      "narrator_role": "VENDOR_FAMILY_DESCRIPTION",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I008",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON53-P02-E09",
+      "narrator_role": "VENDOR_FAMILY_DESCRIPTION",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I011",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON53-P02-E13",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I012",
+      "physical_pdf_page": 3,
+      "S02_fragment_ref": "LUTRON53-P03-E01",
+      "narrator_role": "CUSTOMER_DIRECT_QUOTE",
+      "target_section_type": "CHALLENGES_VALUE"
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I013",
+      "physical_pdf_page": 3,
+      "S02_fragment_ref": "LUTRON53-P03-E02",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I014",
+      "physical_pdf_page": 3,
+      "S02_fragment_ref": "LUTRON53-P03-E04",
+      "narrator_role": "INTEGRATOR_DIRECT_QUOTE",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I015",
+      "physical_pdf_page": 3,
+      "S02_fragment_ref": "LUTRON53-P03-E05",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "target_section_type": "CASE_STUDIES"
+    }
+  ],
+  "imported_visual_image_ids": [
+    "LUTRON53_01_resort_hero",
+    "LUTRON53_01_case_identity_band",
+    "LUTRON53_02_side_context_photo",
+    "LUTRON53_02_quote_sidebar",
+    "LUTRON53_02_icon_closeup",
+    "LUTRON53_03_bedside_context_photo",
+    "LUTRON53_03_results_label"
+  ],
+  "audited_Persian_copy_edit_applied": {
+    "id": "LUTRON53-CORR-01",
+    "record_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I008",
+    "physical_pdf_page": 2,
+    "S02_fragment_ref": "LUTRON53-P02-E09",
+    "original_translation_fa": "داشبوردِ رابط کاربر مبتنی بر وب",
+    "audited_translation_fa": "داشبوردِ رابط کاربریِ تحت وب",
+    "reason_fa": "روان‌سازی ترجمهٔ عبارت داشبورد، بدون تغییر نقل‌قول انگلیسی یا اختیاری‌بودن Vue.",
+    "source_quote_changed": false,
+    "prior_artifacts_unchanged": true,
+    "apply_derived_fields_in_S07": [
+      "translation_fa",
+      "meaning_fa"
+    ]
+  },
+  "excluded_s03_context_rows": 2,
+  "additional_S02_context_rows_not_counted": 13,
+  "derived_preview_excluded": true,
+  "counts": {
+    "prior_version": 14,
+    "version": 15,
+    "prior_catalogs": 14,
+    "catalogs": 15,
+    "prior_records": 609,
+    "records": 622,
+    "prior_images": 141,
+    "images": 148,
+    "new_text": 13,
+    "new_internal_visuals": 7,
+    "alias_files": 7,
+    "alias_rows_additional_count": 0
+  },
+  "checks": {
+    "V14_and_V15_JSON_JS_parity": true,
+    "prior_14_catalogs_exact": true,
+    "exact_allowed_S06_ids": true,
+    "source_page_provenance_preserved": true,
+    "context_only_Opera_Welcome_and_preview_absent": true,
+    "optional_Vue_and_all_case_actor_limits_preserved": true,
+    "property_design_recognition_not_product_or_NSP_claim": true,
+    "app_asset_paths_match_existing_allowlist": true,
+    "full_runtime_not_exercised": true,
+    "app_and_sections_untouched": true,
+    "internal_style_only_and_no_reuse_rights": true
+  },
+  "next_queue_cursor": {
+    "document_index": 15,
+    "document_id": "54",
+    "step_index": 0,
+    "step_id": "S01"
+  },
+  "next_pdf": "54_Lutron_Work C10.4.pdf",
+  "next_stage_executed": false
+}
