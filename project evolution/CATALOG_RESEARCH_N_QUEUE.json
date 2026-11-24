@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 94,
+    "total_pending_steps": 93,
     "completed_new_documents": 4,
     "remaining_new_documents": 14
   },
   "cursor": {
     "document_index": 7,
     "document_id": "14",
-    "step_index": 4,
-    "step_id": "S05"
+    "step_index": 5,
+    "step_id": "S06"
   },
   "section_types": [
     {
@@ -948,11 +948,13 @@
         {
           "id": "S05",
           "key": "section_type_mapping",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/14_Vingcard_Novel_S05_section_mapping.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "07603be1bf2cd435b84c46a3085f2aaf64891c4a",
+          "notes": "تطبیق ۲۳ رکورد دوزبانه (۱۶ پیشنهاد و ۷ بدون مقصد) و ۱۸ مرجع تصویری (۱۳ پیشنهاد و ۵ فقط سبک) در ۱۷ خانواده با ساختار مصوب ۲٫۳٫۰؛ حفظ ۲۵ قید ادعا، ۵ گروه زمینه و مرز پژوهش/قابلیت NSP. متن، ترجمه، صفحات و ارجاع‌های تصویر از S03/S04 حفظ و سند از GitHub بازخوانی شد؛ هیچ انتخاب، اتصال به صفحه یا انتشار تأیید نشد. S06 برای ممیزی مستقل باز است."
         },
         {
           "id": "S06",
@@ -973,7 +975,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S04"
+      "last_successful_stage": "S05"
     },
     {
       "id": "15",
