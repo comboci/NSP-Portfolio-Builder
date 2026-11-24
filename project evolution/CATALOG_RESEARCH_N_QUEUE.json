@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 96,
+    "total_pending_steps": 95,
     "completed_new_documents": 4,
     "remaining_new_documents": 14
   },
   "cursor": {
     "document_index": 7,
     "document_id": "14",
-    "step_index": 2,
-    "step_id": "S03"
+    "step_index": 3,
+    "step_id": "S04"
   },
   "section_types": [
     {
@@ -907,11 +907,13 @@
         {
           "id": "S03",
           "key": "feature_software_translation",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/14_Vingcard_Novel_S03_features_fa.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "1238cfa34800ca28d4c0c6d0279b05844fd6c164",
+          "notes": "هر ۹۸ گزیدهٔ S02 تعیین تکلیف شد: ۲۳ رکورد دوزبانه شامل ۱۲ شعار، چهار مقدمه، پنج قابلیت نرم‌افزاری، یک مزیت مشروط و یک سناریو؛ ۷۵ مورد دیگر با دلیل کنار گذاشته شدند. ۲۵ کنترل ادعا و پنج گروه زمینه حفظ شد؛ هشت ادعا فقط در زمینه ترجمه و ۱۷ مورد محدود به S02 ارجاع شدند. شرط مجوز Mobile Access، دامنهٔ Vostio و شرط Online حفظ شد. گزارش از GitHub با تطبیق کامل بازخوانی شد؛ فقط S03 اجرا شد و S04 در انتظار N بعدی است."
         },
         {
           "id": "S04",
@@ -950,7 +952,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S02"
+      "last_successful_stage": "S03"
     },
     {
       "id": "15",
