@@ -1,0 +1,295 @@
+{
+  "schema": "nsp-catalog-research-s07-import-v2",
+  "status": "validated_import",
+  "stage": "S07",
+  "stage_key": "feature_json_and_commit",
+  "document_id": "54",
+  "date": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "5cb11dd04513231dc5c8e35bf1c3da6b46763479",
+  "source_catalog": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES",
+  "source_pdf": "54_Lutron_Work C10.4.pdf",
+  "source_pdf_sha256": "e5eefd8bcc3875465fc8508d2b1dd1b67068d19aa84dfb9ebe0387f92fad0eb8",
+  "source_language": "en",
+  "source_part_number": "368-5090",
+  "source_printed_revision": "REV A",
+  "physical_pdf_pages": 2,
+  "audit_artifact": "Portfolio Instruction/research/54_Lutron_Duke_S06_original_source_audit.json",
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/54_Lutron_Duke_S01_source_inventory.json",
+      "commit_sha": "12521b58dd203454014b7caf0fbff66f6950946e",
+      "blob_sha": "16a01f802b7efb17640f94ab7e13de29ae35b07b"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/54_Lutron_Duke_S02_english_text.json",
+      "commit_sha": "eb0ac810066a0d0aaa046564644c74e53e732dc1",
+      "blob_sha": "eaab5156ce6b88f7806195f7f425ad16db57b32e"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/54_Lutron_Duke_S03_features_fa.json",
+      "commit_sha": "4c8f02d8fb01b83060bd100a221beebfe05ca7ff",
+      "blob_sha": "1e84f86ee90bc6e7aa2870db7bd87f892a48fc72"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/54_Lutron_Duke_S04_visual_styles.json",
+      "commit_sha": "82c81684fe7d6dce277968aa11ee95e476dd4881",
+      "blob_sha": "e486b9ebf919433d2d839c60b87dbfc9dc95d0e5"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/54_Lutron_Duke_S05_section_mapping.json",
+      "commit_sha": "de96e9b2d96032e23ab428e14712d7309d475421",
+      "blob_sha": "bcfbe1088bd3a8a84d284464296e2c9c776ce192"
+    },
+    "S06": {
+      "path": "Portfolio Instruction/research/54_Lutron_Duke_S06_original_source_audit.json",
+      "blob_sha": "33ed66045d1f9831d6a5d651523b1341b565117a",
+      "commit_sha": "bc0f54b200fd192a6249dbb0282769b799eca589"
+    }
+  },
+  "updated_bank_files": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js"
+  ],
+  "committed_artifact_paths": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js",
+    "Portfolio Instruction/research/54_Lutron_Duke_S07_ingest_manifest.json",
+    "Portfolio Instruction/assets/lutron54-01-building-at-twilight.webp",
+    "Portfolio Instruction/assets/lutron54-01-case-identification-strip.webp",
+    "Portfolio Instruction/assets/lutron54-02-warm-room-context.webp",
+    "Portfolio Instruction/assets/lutron54-02-device-in-room-detail.webp",
+    "Portfolio Instruction/assets/lutron54-02-case-role-ledger.webp",
+    "Portfolio Instruction/assets/lutron54-02-result-label.webp"
+  ],
+  "output_bank_files": [
+    {
+      "path": "Portfolio Instruction/feature.json",
+      "git_blob_sha": "5af2e4f394a62185a54b4ddea7a9320e7267346b"
+    },
+    {
+      "path": "Portfolio Instruction/feature.js",
+      "git_blob_sha": "d700fe5da56d230f2d5b13c5e4a592a3ec2d81e8"
+    }
+  ],
+  "new_display_alias_assets": [
+    {
+      "path": "Portfolio Instruction/assets/lutron54-01-building-at-twilight.webp",
+      "id": "LUTRON54_01_building_at_twilight",
+      "git_blob_sha": "1afb64d9e6e500dfe12d5053a37f827b09b75146",
+      "sha256": "49fe9d0105e4401d3fc9319483d372e53cbdbec27f15e98c70cb6f2a1a7ebb03",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/lutron54/LUTRON54_01_building_at_twilight.webp",
+      "physical_pdf_page": 1,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/lutron54-01-case-identification-strip.webp",
+      "id": "LUTRON54_01_case_identification_strip",
+      "git_blob_sha": "71bc62462c2548b03678b3818cc9c33e84e17688",
+      "sha256": "b369d1ea9f4f4f2208b36a00a0fea933e47a8f67736bbf7ad9ac3122352277a1",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/lutron54/LUTRON54_01_case_identification_strip.webp",
+      "physical_pdf_page": 1,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/lutron54-02-warm-room-context.webp",
+      "id": "LUTRON54_02_warm_room_context",
+      "git_blob_sha": "fe7869b9964c723f270acb9c9105af8ba6ec3e49",
+      "sha256": "3f7d31a3691cb85988ab94cf615aa4921940231866319d0f996c54a4d9d5b62d",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/lutron54/LUTRON54_02_warm_room_context.webp",
+      "physical_pdf_page": 2,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/lutron54-02-device-in-room-detail.webp",
+      "id": "LUTRON54_02_device_in_room_detail",
+      "git_blob_sha": "7b6d4309faa5195aa198b9774d4d12ef1c0d5f39",
+      "sha256": "c4d197e2a153171852e560adb36cdf1e20f4a3a8ae1947dd9f072a5741e6ae55",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/lutron54/LUTRON54_02_device_in_room_detail.webp",
+      "physical_pdf_page": 2,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/lutron54-02-case-role-ledger.webp",
+      "id": "LUTRON54_02_case_role_ledger",
+      "git_blob_sha": "864732d9bf1a122c16ce61f7e8e03035eca14fb6",
+      "sha256": "6fdedd2eceb773c3ddd964e85bcf3fd8bc19c43803063c65600d98bcb0d7cf21",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/lutron54/LUTRON54_02_case_role_ledger.webp",
+      "physical_pdf_page": 2,
+      "shared_original_immutable_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/lutron54-02-result-label.webp",
+      "id": "LUTRON54_02_result_label",
+      "git_blob_sha": "908c5535e34ba79676f7b0961e6bdaa136e0cbe2",
+      "sha256": "0eceaacd6dcd2f2a65442fcf955d1992ede179ecf76ed9c6cca860b7b1e2ff98",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/lutron54/LUTRON54_02_result_label.webp",
+      "physical_pdf_page": 2,
+      "shared_original_immutable_blob": true
+    }
+  ],
+  "imported_feature_record_ids": [
+    "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I001",
+    "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I002",
+    "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I003",
+    "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I004",
+    "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I005",
+    "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I006",
+    "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I009",
+    "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I010",
+    "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I011",
+    "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I012"
+  ],
+  "imported_feature_provenance": [
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I001",
+      "physical_pdf_page": 1,
+      "S02_fragment_ref": "LUTRON54-P01-E03",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I002",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON54-P02-E01",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I003",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON54-P02-E02",
+      "narrator_role": "HOTEL_REQUIREMENT_AS_REPORTED",
+      "target_section_type": "CHALLENGES_VALUE"
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I004",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON54-P02-E03",
+      "narrator_role": "DESIGNER_DIRECT_QUOTE",
+      "target_section_type": "CHALLENGES_VALUE"
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I005",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON54-P02-E04",
+      "narrator_role": "DESIGNER_DIRECT_QUOTE",
+      "target_section_type": "CHALLENGES_VALUE"
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I006",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON54-P02-E07",
+      "narrator_role": "VENDOR_TIER_DESCRIPTION",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I009",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON54-P02-E12",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "target_section_type": "PUBLIC_AREAS"
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I010",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON54-P02-E13",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I011",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON54-P02-E14",
+      "narrator_role": "GENERAL_MANAGER_DIRECT_QUOTE",
+      "target_section_type": "CASE_STUDIES"
+    },
+    {
+      "id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I012",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON54-P02-E15",
+      "narrator_role": "GENERAL_MANAGER_DIRECT_QUOTE",
+      "target_section_type": "GRMS"
+    }
+  ],
+  "imported_visual_image_ids": [
+    "LUTRON54_01_building_at_twilight",
+    "LUTRON54_01_case_identification_strip",
+    "LUTRON54_02_warm_room_context",
+    "LUTRON54_02_device_in_room_detail",
+    "LUTRON54_02_case_role_ledger",
+    "LUTRON54_02_result_label"
+  ],
+  "audited_Persian_copy_edits_applied": [
+    {
+      "id": "LUTRON54-CORR-01",
+      "record_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I003",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON54-P02-E02",
+      "original_translation_fa": "آسان و شهودی",
+      "audited_translation_fa": "آسان و سرراست",
+      "reason_fa": "بیان طبیعی‌تر برای کاربری آسان و سرراست؛ همچنان فقط خواستهٔ مدیریت است.",
+      "source_quote_changed": false,
+      "prior_artifacts_unchanged": true,
+      "apply_derived_fields_in_S07": [
+        "translation_fa",
+        "meaning_fa"
+      ]
+    },
+    {
+      "id": "LUTRON54-CORR-02",
+      "record_id": "CAT054_LUTRON_DUKE_EXCLUSIVE_SUITES:I005",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "LUTRON54-P02-E04",
+      "original_translation_fa": "تأثیرهای سبک کلاسیک و مدرن",
+      "audited_translation_fa": "تأثیرپذیری از سبک‌های کلاسیک و مدرن",
+      "reason_fa": "روان‌سازی بیان تأثیرپذیری از دو سبک در گفتهٔ طراح؛ نقل‌قول انگلیسی و نسبت‌دهی دست‌نخورده‌اند.",
+      "source_quote_changed": false,
+      "prior_artifacts_unchanged": true,
+      "apply_derived_fields_in_S07": [
+        "translation_fa",
+        "meaning_fa"
+      ]
+    }
+  ],
+  "excluded_s03_context_rows": 2,
+  "additional_S02_context_rows_not_counted": 15,
+  "derived_preview_excluded": true,
+  "counts": {
+    "prior_version": 15,
+    "version": 16,
+    "prior_catalogs": 15,
+    "catalogs": 16,
+    "prior_records": 622,
+    "records": 632,
+    "prior_images": 148,
+    "images": 154,
+    "new_text": 10,
+    "new_internal_visuals": 6,
+    "alias_files": 6,
+    "alias_rows_additional_count": 0
+  },
+  "checks": {
+    "V15_and_V16_JSON_JS_parity": true,
+    "prior_15_catalogs_exact": true,
+    "exact_allowed_S06_ids": true,
+    "source_page_provenance_preserved": true,
+    "broad_integration_Grand_Welcome_and_preview_absent_as_records": true,
+    "Duke_public_lighting_scope_new_building_and_attribution_displayed": true,
+    "hotel_designer_vendor_and_manager_roles_distinct": true,
+    "app_asset_paths_match_existing_allowlist": true,
+    "full_runtime_not_exercised": true,
+    "app_and_sections_untouched": true,
+    "internal_style_only_and_no_reuse_rights": true
+  },
+  "next_queue_cursor": {
+    "document_index": 16,
+    "document_id": "57",
+    "step_index": 0,
+    "step_id": "S01"
+  },
+  "next_pdf": "57_Hager_Work C15.1.pdf",
+  "next_stage_executed": false
+}
