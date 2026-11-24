@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 2,
+    "total_pending_steps": 1,
     "completed_new_documents": 17,
     "remaining_new_documents": 1
   },
   "cursor": {
     "document_index": 20,
     "document_id": "MG",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -2340,11 +2340,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S06_source_and_concept_audit.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "6585743d312a5419e3f4af138f99055c68dac3e7",
+          "notes": "هر ۱۷ برگ PDF و اثرانگشت متن آن‌ها با اصل تطبیق یافت. ۹ یادداشت و دو طرح اصیل جداگانه برای پژوهش داخلی واجد شرایط‌اند؛ پنج یادداشت زمینه‌ای، تمام تصاویر منبع و هر ادعای فنی یا NSP خارج ماند. یک اصلاح فارسی/انگلیسی پیش از ورود لازم است؛ بانک V20، برنامه و پروژه‌ها ثابت‌اند."
         },
         {
           "id": "S07",
