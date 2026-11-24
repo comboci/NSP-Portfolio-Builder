@@ -1,0 +1,454 @@
+{
+  "schema": "nsp-catalog-research-s07-import-v2",
+  "stage": "S07",
+  "stage_key": "feature_json_and_commit",
+  "document_id": "15",
+  "status": "validated_import",
+  "date": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "ad64b4baa3360a0cce274d2e2e3b9422945e3d89",
+  "source_catalog": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+  "source_pdf": "15_Vingcard_Mobile Access Solution.pdf",
+  "source_pdf_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+  "source_publication": {
+    "printed_edition": "Doc. Printed: 03/2024",
+    "evidence_pdf_page": 12,
+    "not_verified_first_publication_date": true
+  },
+  "audit_artifact": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S06_audit.json",
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S01_source_inventory.json",
+      "git_blob_sha": "fa9e192bef8a84342d8c9d67f68f5c738b053794"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S02_english_text.json",
+      "git_blob_sha": "f764fa5a091ca5fa850f9ef4f453b0a55335af5a"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S03_features_fa.json",
+      "git_blob_sha": "334891c5947c4b4efded6ed9f2b97a0b8c7c5667"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S04_visual_styles.json",
+      "git_blob_sha": "0afcc19915ddb0439d7ba3ccf1cf17b23d1c2f19"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S05_section_mapping.json",
+      "git_blob_sha": "38d8064996426c48d5ba385e539ad965092976da"
+    },
+    "S06": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S06_audit.json",
+      "git_blob_sha": "d620457d2f0667e98070c2965792d338ea882c75"
+    }
+  },
+  "editorial_structure": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "git_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "valid_research_section_ids": [
+      "COVER",
+      "IDENTITY_PAGES",
+      "COMPANY_INTRO",
+      "CHALLENGES_VALUE",
+      "HOTEL_OVERVIEW",
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS",
+      "CASE_STUDIES"
+    ],
+    "section_snapshot": [
+      {
+        "section_id": "COVER",
+        "title_fa": "صفحه اول کاتالوگ",
+        "row": 2,
+        "content_level": null
+      },
+      {
+        "section_id": "IDENTITY_PAGES",
+        "title_fa": "صفحات تنفس",
+        "row": 3,
+        "content_level": null
+      },
+      {
+        "section_id": "COMPANY_INTRO",
+        "title_fa": "معرفی شرکت NSP",
+        "row": 4,
+        "content_level": "COMPANY"
+      },
+      {
+        "section_id": "CHALLENGES_VALUE",
+        "title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+        "row": 5,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "HOTEL_OVERVIEW",
+        "title_fa": "نقشهٔ جامع راهکارهای هتلی",
+        "row": 6,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "GRMS",
+        "title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+        "row": 7,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "IPTV",
+        "title_fa": "تلویزیون و خدمات تعاملی هتل (IPTV)",
+        "row": 8,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "PUBLIC_AREAS",
+        "title_fa": "کنترل هوشمند مشاعات هتل",
+        "row": 9,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "CASE_STUDIES",
+        "title_fa": "رزومه و پروژه‌های اجراشده",
+        "row": 10,
+        "content_level": null
+      }
+    ],
+    "legacy_aliases_for_reading_only": {
+      "BISMILLAH": "IDENTITY_PAGES"
+    },
+    "binder_cover_excluded_from_research_mapping": true,
+    "CROSS_SECTION_STYLE_is_tag_not_section": true,
+    "idea_attachment_deferred_to_defrag": true,
+    "proposed_roles_are_not_approved_subsections": true,
+    "systems_in_scope": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ]
+  },
+  "updated_bank_files": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js"
+  ],
+  "committed_artifact_paths": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js",
+    "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S07_ingest_manifest.json",
+    "Portfolio Instruction/assets/vingcard15-01-cover-hero.webp",
+    "Portfolio Instruction/assets/vingcard15-02-visual-mosaic.webp",
+    "Portfolio Instruction/assets/vingcard15-03-benefit-columns.webp",
+    "Portfolio Instruction/assets/vingcard15-04-option-cards.webp",
+    "Portfolio Instruction/assets/vingcard15-05-partner-overlay.webp",
+    "Portfolio Instruction/assets/vingcard15-06-guest-flow.webp",
+    "Portfolio Instruction/assets/vingcard15-07-lifestyle-quote.webp",
+    "Portfolio Instruction/assets/vingcard15-08-product-photo-row.webp",
+    "Portfolio Instruction/assets/vingcard15-09-role-loop.webp",
+    "Portfolio Instruction/assets/vingcard15-10-dark-feature-stack.webp",
+    "Portfolio Instruction/assets/vingcard15-11-quiet-closing.webp"
+  ],
+  "new_display_alias_assets": [
+    {
+      "path": "Portfolio Instruction/assets/vingcard15-01-cover-hero.webp",
+      "bytes": 36728,
+      "sha256": "c03580acd159df3564e359909043219fa207861594539bd366e619688788bf64",
+      "git_blob_sha": "7e1fcb5cbeb245566649f474ff20e441383196db",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_01_cover_hero.webp",
+      "source_image_id": "VINGCARD15_01_cover_hero",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/vingcard15-02-visual-mosaic.webp",
+      "bytes": 91582,
+      "sha256": "915afe82924bbadf2e98d5053970d8275e5827c376b80af9d465d82ff386f387",
+      "git_blob_sha": "d46534ab33cf5f34d70213618edfc3442896e3fd",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_02_visual_mosaic.webp",
+      "source_image_id": "VINGCARD15_02_visual_mosaic",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/vingcard15-03-benefit-columns.webp",
+      "bytes": 88448,
+      "sha256": "5caeb701e3a8305fb1c873fe7e4eb20cea849f8c1880446b3711d9a1aae34395",
+      "git_blob_sha": "2b8acd5a998f5265dca7f48e50cbc607add66070",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_03_benefit_columns.webp",
+      "source_image_id": "VINGCARD15_03_benefit_columns",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/vingcard15-04-option-cards.webp",
+      "bytes": 80406,
+      "sha256": "2e41ccd15b6826dfa770758e4b8a9580321b853087071d0b4c15e38e0c2bad64",
+      "git_blob_sha": "c0c8d519a147784b04c31d00f85d5bdc390cd4a0",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_04_option_cards.webp",
+      "source_image_id": "VINGCARD15_04_option_cards",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/vingcard15-05-partner-overlay.webp",
+      "bytes": 41002,
+      "sha256": "c501dbd2a3764f72182049f371f6be9398bf8ea4daf71debc7808de1310bdca7",
+      "git_blob_sha": "8ca85c5fba0653bfb472e39e34fa57a7a6a0f1bc",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_05_partner_overlay.webp",
+      "source_image_id": "VINGCARD15_05_partner_overlay",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/vingcard15-06-guest-flow.webp",
+      "bytes": 59470,
+      "sha256": "0e4d2a0d34d043f29f7f633d8c33e02fc57debe055650bf23bd53f9e0c458ff0",
+      "git_blob_sha": "ece932cf54182ef7588f9e2a536aebe25d8502f7",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_06_guest_flow.webp",
+      "source_image_id": "VINGCARD15_06_guest_flow",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/vingcard15-07-lifestyle-quote.webp",
+      "bytes": 52156,
+      "sha256": "0e8492d3b43eec13115a7e0a2e534456844010d709c1001eb977d1e669bbdc9a",
+      "git_blob_sha": "7254d8e55c8c36d10bafc5f5208f8801ac670e1a",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_07_lifestyle_quote.webp",
+      "source_image_id": "VINGCARD15_07_lifestyle_quote",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/vingcard15-08-product-photo-row.webp",
+      "bytes": 8518,
+      "sha256": "17ac5b89efbb7a997454a7459ac5378162fbb55fe2fa5463faa7f67c63e6fbf6",
+      "git_blob_sha": "dca341abb658c5f7b06265e60145b6d24e1264ee",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_08_product_photo_row.webp",
+      "source_image_id": "VINGCARD15_08_product_photo_row",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/vingcard15-09-role-loop.webp",
+      "bytes": 50276,
+      "sha256": "bfd75f84dde4a681c2adbdc2b6e1a7aa2a2a54a88aad4b6ca682fb6e3bc31a67",
+      "git_blob_sha": "2c4f1b5de15911c7578cb2886d334a01ced1c394",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_09_role_loop.webp",
+      "source_image_id": "VINGCARD15_09_role_loop",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/vingcard15-10-dark-feature-stack.webp",
+      "bytes": 113428,
+      "sha256": "bd605d0b153f9282039c7755ab11ce048c3aa370be6eb7a455023c60c63c6221",
+      "git_blob_sha": "b1479c0a94a1d7befa1073b79ee100a4ae8021e1",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_10_dark_feature_stack.webp",
+      "source_image_id": "VINGCARD15_10_dark_feature_stack",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/vingcard15-11-quiet-closing.webp",
+      "bytes": 30506,
+      "sha256": "749f89b57be9f1310708f757fe015548508fd8518099c6ff3fe3233f4769edf3",
+      "git_blob_sha": "5dbe6320f7a1d067df1a264465fc86b8ce2d50a0",
+      "source_research_asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_11_quiet_closing.webp",
+      "source_image_id": "VINGCARD15_11_quiet_closing",
+      "byte_identical_by_shared_git_blob": true
+    }
+  ],
+  "original_research_assets_modified": false,
+  "intended_existing_library_version": 8,
+  "new_library_version": 9,
+  "imported_feature_record_ids": [
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I002",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I003",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I004",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I005",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I006",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I007",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I008",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I009",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I010",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I011",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I012",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I013",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I014",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I015",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I016",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I017",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I018",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I019",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I020",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I021",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I022",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I023",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I024",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I025"
+  ],
+  "imported_mapped_record_ids": [
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I002",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I003",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I004",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I005",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I006",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I007",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I008",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I009",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I010",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I011",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I012",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I013",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I016",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I017",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I018",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I019",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I020"
+  ],
+  "imported_unassigned_internal_record_ids": [
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I014",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I015",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I021",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I022",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I023",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I024",
+    "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I025"
+  ],
+  "imported_visual_image_ids": [
+    "VINGCARD15_01_cover_hero",
+    "VINGCARD15_02_visual_mosaic",
+    "VINGCARD15_03_benefit_columns",
+    "VINGCARD15_04_option_cards",
+    "VINGCARD15_05_partner_overlay",
+    "VINGCARD15_06_guest_flow",
+    "VINGCARD15_07_lifestyle_quote",
+    "VINGCARD15_08_product_photo_row",
+    "VINGCARD15_09_role_loop",
+    "VINGCARD15_10_dark_feature_stack",
+    "VINGCARD15_11_quiet_closing"
+  ],
+  "visual_references_without_eligible_feature_links": [
+    "VINGCARD15_01_cover_hero",
+    "VINGCARD15_08_product_photo_row"
+  ],
+  "applied_translation_corrections": [
+    {
+      "correction_id": "VINGCARD15-CORR-01",
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I012",
+      "physical_pdf_page": 4,
+      "S02_fragment_ref": "VINGCARD15-P04-E05",
+      "original_translation_fa": "کلید اتاق در Apple Wallet یکپارچه می‌شود",
+      "corrected_translation_fa": "کلیدِ اتاقِ موجود در Apple Wallet با … یکپارچه می‌شود.",
+      "reason_fa": "عبارت «در Apple Wallet» وصف کلید است، نه محل یکپارچه‌سازی. سه‌نقطه نشان می‌دهد گزیده پیش از متمم تمام می‌شود؛ موضوع کامل را به منبع ارجاع بده و دامنهٔ NSP را نتیجه نگیر.",
+      "quote_unchanged": true,
+      "source_artifacts_S03_S05_unchanged": true,
+      "apply_to_S07_derived_fields": [
+        "translation_fa",
+        "meaning_fa"
+      ],
+      "condition": "Apple Wallet is separate from the three app delivery paths and does not imply NSP support."
+    }
+  ],
+  "excluded_record_ids": [
+    {
+      "record_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I001",
+      "pdf_page": 1,
+      "reason": "exact_same_short_brand_slogan_already_present_in_feature_bank_V8_from_catalog_14",
+      "existing_bank_record_id": "CAT014_VINGCARD_NOVEL:I001",
+      "disposition": "retain_provenance_in_S03_S06_only_no_new_feature_in_S07",
+      "no_translation_or_source_error": true,
+      "visual_provenance_source_link_preserved_in_history": true
+    }
+  ],
+  "excluded_source_fragment_ids": [
+    "VINGCARD15-P01-E01",
+    "VINGCARD15-P02-E03",
+    "VINGCARD15-P02-E04",
+    "VINGCARD15-P02-E05",
+    "VINGCARD15-P03-E02",
+    "VINGCARD15-P04-E01",
+    "VINGCARD15-P04-E06",
+    "VINGCARD15-P04-E07",
+    "VINGCARD15-P05-E02",
+    "VINGCARD15-P05-E03",
+    "VINGCARD15-P05-E04",
+    "VINGCARD15-P05-E05",
+    "VINGCARD15-P06-E02",
+    "VINGCARD15-P06-E03",
+    "VINGCARD15-P06-E04",
+    "VINGCARD15-P06-E05",
+    "VINGCARD15-P08-E01",
+    "VINGCARD15-P08-E02",
+    "VINGCARD15-P08-E04",
+    "VINGCARD15-P09-E03",
+    "VINGCARD15-P10-E01",
+    "VINGCARD15-P10-E02",
+    "VINGCARD15-P11-E02",
+    "VINGCARD15-P12-E01",
+    "VINGCARD15-P12-E02",
+    "VINGCARD15-P12-E03"
+  ],
+  "held_slogan_visual_context_preserved_in_history_only": true,
+  "source_claim_gates_preserved_count": 14,
+  "overview_excluded_from_images": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_S04_reference_overview.webp",
+  "checks": {
+    "V8_bank_and_shell_mirror_matched": true,
+    "prior_eight_catalogs_all_records_images_and_categories_structurally_unchanged": true,
+    "all_24_eligible_native_English_quotes_untouched": true,
+    "Apple_Wallet_Persian_correction_matches_audit": true,
+    "held_duplicate_excluded_from_new_features": true,
+    "all_11_aliases_reuse_exact_source_git_blob": true,
+    "alias_paths_pass_current_loader_allowlist": true,
+    "feature_json_JS_exact_structural_parity": true,
+    "all_unassigned_targets_empty": true,
+    "invented_records_to_attach_images": 0,
+    "NSP_capability_approvals": 0
+  },
+  "output_bank_files": [
+    {
+      "path": "Portfolio Instruction/feature.json",
+      "git_blob_sha": "92380cbf59b33033c8aa67bfbecb31d18b8e3f41"
+    },
+    {
+      "path": "Portfolio Instruction/feature.js",
+      "git_blob_sha": "9949c39b9781a673c9be078682d573d3fc2c1698"
+    }
+  ],
+  "counts": {
+    "library_version_before": 8,
+    "library_version_after": 9,
+    "catalogs_before": 8,
+    "catalogs_after": 9,
+    "old_features": 499,
+    "new_features": 523,
+    "old_images": 91,
+    "new_images": 102,
+    "feature_import_count": 24,
+    "mapped_research_count": 17,
+    "unassigned_research_count": 7,
+    "blocked_held_duplicate_count": 1,
+    "visual_import_count": 11,
+    "mapped_visual_count": 8,
+    "unassigned_style_visual_count": 3,
+    "distinct_style_families": 11,
+    "display_alias_files_created": 11,
+    "aliases_not_counted_as_an_extra_reference": true,
+    "prior_category_labels_preserved": 28,
+    "new_category_labels": 0,
+    "new_NSP_sections": 0
+  },
+  "consumer_compatibility": {
+    "same_schema": true,
+    "current_loader_contract_shape_verified": true,
+    "app_source_untouched": true,
+    "live_browser_runtime_test_performed": false
+  },
+  "release_policy": {
+    "is_commercial_NSP_catalog_publication": false,
+    "NSP_capabilities_confirmed": 0,
+    "images_internal_reference_only": true,
+    "final_attached_pages": 0,
+    "upstream_artifacts_unchanged": true,
+    "full_PDF_text_not_republished": true
+  },
+  "next_queue_cursor": {
+    "document_index": 9,
+    "document_id": "16",
+    "step_index": 0,
+    "step_id": "S01"
+  },
+  "next_pdf": "16_Honeywell_Step Up to INNCOM.pdf",
+  "next_document_stage_executed": false
+}
