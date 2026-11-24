@@ -1,0 +1,238 @@
+{
+  "schema": "nsp-catalog-research-source-inventory-v1",
+  "stage": "MG/S01",
+  "reviewed_on": "2026-11-24",
+  "scope": "source identity, print-spread-aware PDF folios and rights; not a feature, equipment or deployment audit",
+  "source": {
+    "document_id": "MG",
+    "library_filename": "myGEKKO_Smart Hotel_EN.pdf",
+    "language": "en",
+    "title_on_cover": "Smart Hotel",
+    "brand_on_cover": "myGEKKO",
+    "companies_named_on_back_cover": [
+      "myGEKKO | Ekon GmbH",
+      "myGEKKO | EKON Vertriebs GmbH"
+    ],
+    "bytes": 3453087,
+    "sha256": "106c685004a79a43c2cae2a0ae2a4127d717f25cd98f67d96dcc753bbcdc1d73",
+    "pdf_format": "PDF 1.5",
+    "pdf_pages": 17,
+    "pdf_created_metadata": "D:20210514110817+02'00'",
+    "pdf_modified_metadata": "D:20210514110908+02'00'",
+    "printed_edition_or_issue_date": null,
+    "milestone_years_do_not_identify_edition": true,
+    "duplicate_filenames_not_substituted": true,
+    "pagination_basis": "1-based physical PDF page objects, not individual panels or arbitrary printed leaves; p2 is an extra-wide foldout layout, pp3–16 standard two-panel spreads, p1 and p17 single covers",
+    "native_page_labels": []
+  },
+  "checks": {
+    "native_text_pages": 17,
+    "directly_reviewed_page_renders": 17,
+    "alternate_pdf_metadata_check": "Poppler confirms PDF 1.5, 17 unencrypted page objects and exact byte count",
+    "source_release_date_not_verified": true
+  },
+  "pages": [
+    {
+      "pdf_page": 1,
+      "extent_points": [
+        680.315,
+        963.78
+      ],
+      "native_text_sha256": "d98665bb1a6fc93ce4f623483187611c28fba6119abee11c5357b3faa7f3783f",
+      "layout": "single_cover",
+      "inventory_role": "front_cover",
+      "subject_note_fa": "عنوان و هویت بروشور؛ عکس جلد مرجع سبک داخلی است."
+    },
+    {
+      "pdf_page": 2,
+      "extent_points": [
+        2026.77,
+        963.78
+      ],
+      "native_text_sha256": "95b630b831918952027bec1244111e788c43346852594f0d6190a54bb68f00f3",
+      "layout": "extra_wide_three_panel",
+      "inventory_role": "vendor_intro_foldout",
+      "subject_note_fa": "معرفی هتل شبکه‌شده و نقاط عطف فروشنده؛ تاریخ‌های خط زمانی تاریخ انتشار نیستند."
+    },
+    {
+      "pdf_page": 3,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "590a9f56da28025b1755741313a12eca166bee9a2f737926befaa7263b503064",
+      "layout": "double_spread",
+      "inventory_role": "benefit_positioning",
+      "subject_note_fa": "جایگاه‌یابی دیجیتالی‌سازی؛ ادعاهای هزینه یا تجربه، نتیجهٔ سنجش‌شده نیستند."
+    },
+    {
+      "pdf_page": 4,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "9bafe6619324a7e98bf7bed418628cd758d921666529fa83e5b539ee766eb7fb",
+      "layout": "double_spread",
+      "inventory_role": "platform_overview",
+      "subject_note_fa": "روایت فروشنده دربارهٔ myGEKKO OS و توسعهٔ تدریجی؛ رابط‌ها و تصاویر منبع وارد نمی‌شوند."
+    },
+    {
+      "pdf_page": 5,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "639401ac746b5e9fe9e72e6de9ff72c5eee8976efbb22435968cf763c73553bc",
+      "layout": "double_spread",
+      "inventory_role": "planning",
+      "subject_note_fa": "طبقه‌بندی موضوع طراحی و همکاری؛ لوگوها و تصویر سازگاری، گواهی یا تعهد فنی نیستند."
+    },
+    {
+      "pdf_page": 6,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "f183cc2114a670124046a3a0df99dffacc5d27914086c971c8aa211d4be382f7",
+      "layout": "double_spread",
+      "inventory_role": "implementation",
+      "subject_note_fa": "مرور موضوع اجرای پروژه و پشتیبانی؛ بدون جزئیات اجرایی یا تعهد خدمات."
+    },
+    {
+      "pdf_page": 7,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "a25431ba08395964d2f5398eb42213161060a8b3cc4384ebbdc482d6bbe723bc",
+      "layout": "double_spread",
+      "inventory_role": "operations",
+      "subject_note_fa": "معرفی کاربرد مدیریتی و دید داشبورد؛ ادعای دسترسی از راه دور به قابلیت NSP تعمیم ندارد."
+    },
+    {
+      "pdf_page": 8,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "c08f388dbc9c79775a4b03fa32f76abd7e0ac4c8a43fb218d55230d438f06d96",
+      "layout": "double_spread",
+      "inventory_role": "system_overview",
+      "subject_note_fa": "نمای دسته‌های کاربرد در هتل؛ بدون اسکرین‌شات، توصیهٔ اجرایی یا استنباط انطباق."
+    },
+    {
+      "pdf_page": 9,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "eda9bfcdfe6eef223d55806551d2d5884f50f2fad17432ff9b1f24057231de98",
+      "layout": "double_spread",
+      "inventory_role": "central_dashboard",
+      "subject_note_fa": "نمای مدیریت مرکزی و اشاره به اتصال نرم‌افزار مدیریت مهمان؛ نه اثبات سازگاری عمومی."
+    },
+    {
+      "pdf_page": 10,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "4d422b969da6963df53ec069098631386e375fc0133b027ed8b92906516249dd",
+      "layout": "double_spread",
+      "inventory_role": "guest_room",
+      "subject_note_fa": "نمونهٔ آسایش اتاق مهمان به روایت بروشور؛ نه گزارش استقرار یا کارایی."
+    },
+    {
+      "pdf_page": 11,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "913c252d662edcb9ed5d416bdfda2e375f12128086d65f96c1ec17d75b91c125",
+      "layout": "double_spread",
+      "inventory_role": "wellness",
+      "subject_note_fa": "موضوع فضاهای تندرستی و محیط؛ بدون دستور بهره‌برداری استخر یا تجهیزات."
+    },
+    {
+      "pdf_page": 12,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "767a82395a00640cfccedcc1c3b5e490108962b32474a7b1513c27127f8bc3ea",
+      "layout": "double_spread",
+      "inventory_role": "kitchen_operations",
+      "subject_note_fa": "موضوع پایش محیط آشپزخانه؛ بدون اثبات الزامات بهداشت، ثبت مقررات یا رهنمود اجرایی."
+    },
+    {
+      "pdf_page": 13,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "b0dd4a6d721c251bd1a2db76972d1a29a75741db77951531a2aba5a45e960adf",
+      "layout": "double_spread",
+      "inventory_role": "public_area_lighting",
+      "subject_note_fa": "جایگاه نورپردازی فضاهای عمومی در روایت برند؛ نه طرح عملیاتی."
+    },
+    {
+      "pdf_page": 14,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "b08c25369d61f65713d925d6a1fcedaa9f6cd38d06bac29820379a73b05f9811",
+      "layout": "double_spread",
+      "inventory_role": "property_periphery",
+      "subject_note_fa": "گوناگونی کاربردهای پیرامونی؛ طرح دسترسی، شارژ خودرو و زیرساخت، ادعای ایمنی یا انطباق نیست."
+    },
+    {
+      "pdf_page": 15,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "b519a96f8fbd4ca4b9b48eb6c2e4c3b1abc6597f8001d939226d73b245581ef7",
+      "layout": "double_spread",
+      "inventory_role": "example_gallery",
+      "subject_note_fa": "گالری پروژه‌های فروشنده؛ عکس‌ها شاهد نتیجه یا کارنامهٔ NSP نیستند."
+    },
+    {
+      "pdf_page": 16,
+      "extent_points": [
+        1360.63,
+        963.78
+      ],
+      "native_text_sha256": "5ed5699ce409d640f3e453cbc000835e6bade7f1ebfa885bb8605bbff7ff868c",
+      "layout": "double_spread",
+      "inventory_role": "project_sequence",
+      "subject_note_fa": "قالب ارائهٔ مراحل پروژه؛ بدون تماس یا کپی متن/توصیهٔ اجرایی."
+    },
+    {
+      "pdf_page": 17,
+      "extent_points": [
+        680.315,
+        963.78
+      ],
+      "native_text_sha256": "fc3e00b057c454dbb09e5946711caf46a7d7da66928b063f101d2c5a30204f67",
+      "layout": "single_cover",
+      "inventory_role": "back_cover_credits",
+      "subject_note_fa": "جلد پشت؛ نام سازمان‌های فروشنده و اعتباردهی به منابع عکس. اعتباردهی مجوز بازنشر نیست."
+    }
+  ],
+  "rights": {
+    "credits_pdf_page": 17,
+    "credit_indications": [
+      "Shutterstock",
+      "Adobe Stock",
+      "other named contributors"
+    ],
+    "republication_grant_found": false,
+    "source_pdf_or_images_committed": false,
+    "planned_visuals": "Only separately authored original non-replica concepts absent verified permission; no artwork, logos, photos, scans, screenshots, or source layout copies.",
+    "planned_text": "Independently worded, source-attributed, non-operational factual summaries only. No brochure copy; no validation of marketing metrics, integrations, standards, legal compliance, safety, or NSP capabilities."
+  },
+  "research_bank_changed": false,
+  "portfolio_app_or_project_changed": false,
+  "next_stage": "MG/S02"
+}
