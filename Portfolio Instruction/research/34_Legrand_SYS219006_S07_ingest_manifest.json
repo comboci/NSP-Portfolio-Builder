@@ -1,0 +1,447 @@
+{
+  "schema": "nsp-catalog-research-s07-import-v2",
+  "status": "validated_import",
+  "stage": "S07",
+  "stage_key": "feature_json_and_commit",
+  "document_id": "34",
+  "date": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "a169e40a37b3a4f2854ea44f3f23e59fc345ab6a",
+  "source_catalog": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+  "source_pdf": "34_Legrand_Work C04.3.pdf",
+  "source_pdf_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+  "source_document_number": "SYS219006",
+  "source_edition_label": "SYS219006 / Septembre 2019",
+  "source_language": "fr",
+  "physical_pdf_pages": 208,
+  "audit_artifact": "Portfolio Instruction/research/34_Legrand_SYS219006_S06_original_source_audit.json",
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S01_source_inventory.json",
+      "commit_sha": "541a285c3ea3d2c9a8961eaceb1b1a7ec2a9e558",
+      "blob_sha": "dabf44ed74fc4c14c1251f64a944f3099ee4f986"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S02_french_text.json",
+      "commit_sha": "f02496cf8c4b4e6424f305110f7ce6858112b49a",
+      "blob_sha": "c5e4b886cfe91cf0b80cb23a664116a727e3bc66"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S03_features_fa.json",
+      "commit_sha": "e1d6b8f270327cae5cf84a96e0743011d63a32e1",
+      "blob_sha": "9380f7ebe79b886cf0c189de74ec850ec9532891"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S04_visual_styles.json",
+      "commit_sha": "9a7a44a1726c69caeefcef6a1883510d180c3ecf",
+      "blob_sha": "ea81a7f0f0abd765fff4d4f3ca885b5358a0762f"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S05_section_mapping.json",
+      "blob_sha": "a721801cc38e14e711fa8c8a6f13ee5c8d3bddf9",
+      "commit_sha": "e9516cc138b1527ffc374fa945ee6b8434b9f594"
+    },
+    "S06": {
+      "path": "Portfolio Instruction/research/34_Legrand_SYS219006_S06_original_source_audit.json",
+      "blob_sha": "35314bbd125fdf3bf9322c9f10af2ba9ec9ce1ac",
+      "commit_sha": "aaf2b41ab47adcf5b4137118305b420ef3d8af86"
+    }
+  },
+  "editorial_structure": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "revision": "2.3.0",
+    "all_proposed_targets_checked": true,
+    "legacy_BISMILLAH_excluded_as_target": true,
+    "BINDER_COVER_excluded_as_target": true,
+    "CROSS_SECTION_STYLE_is_presentation_tag_not_section": true,
+    "software_topics_stay_in_GRMS": true,
+    "selected_or_attached_count": 0
+  },
+  "updated_bank_files": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js"
+  ],
+  "committed_artifact_paths": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js",
+    "Portfolio Instruction/research/34_Legrand_SYS219006_S07_ingest_manifest.json",
+    "Portfolio Instruction/assets/legrand34-001-vertical-technical-cover.webp",
+    "Portfolio Instruction/assets/legrand34-003-theme-navigation.webp",
+    "Portfolio Instruction/assets/legrand34-006-definition-block.webp",
+    "Portfolio Instruction/assets/legrand34-007-room-topic-panel.webp",
+    "Portfolio Instruction/assets/legrand34-102-finish-photo-strip.webp",
+    "Portfolio Instruction/assets/legrand34-130-software-navigation-header.webp",
+    "Portfolio Instruction/assets/legrand34-133-module-icon-gallery.webp",
+    "Portfolio Instruction/assets/legrand34-177-commissioning-role-headers.webp",
+    "Portfolio Instruction/assets/legrand34-206-glossary-strip.webp"
+  ],
+  "new_display_alias_assets": [
+    {
+      "path": "Portfolio Instruction/assets/legrand34-001-vertical-technical-cover.webp",
+      "sha256": "c3f9a43d2d3584c8bf4784be7b1b3f0e927ffee56fd6b785240a3ef6265fc840",
+      "git_blob_sha": "0a7028f78acf5c650db925e1259a25bee751ab8f",
+      "bytes": 49062,
+      "physical_pdf_page": 1,
+      "source_research_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_001_vertical_technical_cover.webp",
+      "source_image_id": "LEGRAND34_001_vertical_technical_cover",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/legrand34-003-theme-navigation.webp",
+      "sha256": "a0412ffd35ff679633f41a45656941667078e3cd70ae2719004966e009fff004",
+      "git_blob_sha": "e76a8676aaae01ace2ccd606a8fcc2778253b3c5",
+      "bytes": 36400,
+      "physical_pdf_page": 3,
+      "source_research_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_003_theme_navigation.webp",
+      "source_image_id": "LEGRAND34_003_theme_navigation",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/legrand34-006-definition-block.webp",
+      "sha256": "b1cae14857ef1f8f7d9d8142c76b6a8a53af79108705093e0b4800bc82474ea8",
+      "git_blob_sha": "e73b4ab89c490977db52256f529814df187f6fb1",
+      "bytes": 15362,
+      "physical_pdf_page": 6,
+      "source_research_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_006_definition_block.webp",
+      "source_image_id": "LEGRAND34_006_definition_block",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/legrand34-007-room-topic-panel.webp",
+      "sha256": "c6173eb51e160aaac7267c3bf41a4fb19d7c9f24161919a64db783335083dcfb",
+      "git_blob_sha": "b01fbd7498be426936b5a568f8574cee39ed6789",
+      "bytes": 16380,
+      "physical_pdf_page": 7,
+      "source_research_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_007_room_topic_panel.webp",
+      "source_image_id": "LEGRAND34_007_room_topic_panel",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/legrand34-102-finish-photo-strip.webp",
+      "sha256": "99b1b3d4cd42ebe36379a263bb50c94179943e7bfef39bd466b228695268d5e7",
+      "git_blob_sha": "3b7b775753930fa2565a49741b69dbd0a0d3ca76",
+      "bytes": 25532,
+      "physical_pdf_page": 102,
+      "source_research_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_102_finish_photo_strip.webp",
+      "source_image_id": "LEGRAND34_102_finish_photo_strip",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/legrand34-130-software-navigation-header.webp",
+      "sha256": "6731b4fa978c3fc85a6366bd678e7af0da290a4cb14f8763493ad2c37ccbd7a6",
+      "git_blob_sha": "a1c6f273c7e954c020bd9f28100e9f2e9402d589",
+      "bytes": 6258,
+      "physical_pdf_page": 130,
+      "source_research_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_130_software_navigation_header.webp",
+      "source_image_id": "LEGRAND34_130_software_navigation_header",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/legrand34-133-module-icon-gallery.webp",
+      "sha256": "d56c418c7a2d6798dcd5c31f5aa060d09a5cf04fdeac64dcfbc2e2e146dcfa2c",
+      "git_blob_sha": "de77c66ac961f78b3ef769ceb9228cc072ea4efc",
+      "bytes": 8634,
+      "physical_pdf_page": 133,
+      "source_research_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_133_module_icon_gallery.webp",
+      "source_image_id": "LEGRAND34_133_module_icon_gallery",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/legrand34-177-commissioning-role-headers.webp",
+      "sha256": "31222e61f1fd7aa82771fbb30605ef59f5df364f8279f91892e8cf4008da9f1f",
+      "git_blob_sha": "c5d979073b84bf8b76375dfa68993d025785eac8",
+      "bytes": 11154,
+      "physical_pdf_page": 177,
+      "source_research_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_177_commissioning_role_headers.webp",
+      "source_image_id": "LEGRAND34_177_commissioning_role_headers",
+      "byte_identical_by_shared_git_blob": true
+    },
+    {
+      "path": "Portfolio Instruction/assets/legrand34-206-glossary-strip.webp",
+      "sha256": "9cb3a8615dba34691aa2d52c3b73877a77c02b1295fa71249ffffeceb49a5dc6",
+      "git_blob_sha": "15e8d46954ee10255eb51c2d04b7637fbfcd4cf5",
+      "bytes": 66354,
+      "physical_pdf_page": 206,
+      "source_research_asset_path": "Portfolio Instruction/research/assets/legrand34/LEGRAND34_206_glossary_strip.webp",
+      "source_image_id": "LEGRAND34_206_glossary_strip",
+      "byte_identical_by_shared_git_blob": true
+    }
+  ],
+  "original_research_assets_modified": false,
+  "prior_bank_version": 11,
+  "new_library_version": 12,
+  "imported_feature_record_ids": [
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I001",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I002",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I003",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I004",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I005",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I006",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I007",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I008",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I009",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I010",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I011",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I012",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I013",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I014",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I015",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I017",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I018",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I019",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I020",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I021",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I022",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I023",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I024",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I025",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I026",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I027",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I028",
+    "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I029"
+  ],
+  "imported_feature_provenance": [
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I001",
+      "source_page": 3,
+      "source_fragment_ref": "LEGRAND34-P003-E01",
+      "target_section_type": "HOTEL_OVERVIEW"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I002",
+      "source_page": 6,
+      "source_fragment_ref": "LEGRAND34-P006-E02",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I003",
+      "source_page": 7,
+      "source_fragment_ref": "LEGRAND34-P007-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I004",
+      "source_page": 7,
+      "source_fragment_ref": "LEGRAND34-P007-E02",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I005",
+      "source_page": 7,
+      "source_fragment_ref": "LEGRAND34-P007-E03",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I006",
+      "source_page": 8,
+      "source_fragment_ref": "LEGRAND34-P008-E02",
+      "target_section_type": "HOTEL_OVERVIEW"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I007",
+      "source_page": 9,
+      "source_fragment_ref": "LEGRAND34-P009-E01",
+      "target_section_type": "HOTEL_OVERVIEW"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I008",
+      "source_page": 10,
+      "source_fragment_ref": "LEGRAND34-P010-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I009",
+      "source_page": 12,
+      "source_fragment_ref": "LEGRAND34-P012-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I010",
+      "source_page": 16,
+      "source_fragment_ref": "LEGRAND34-P016-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I011",
+      "source_page": 18,
+      "source_fragment_ref": "LEGRAND34-P018-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I012",
+      "source_page": 20,
+      "source_fragment_ref": "LEGRAND34-P020-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I013",
+      "source_page": 24,
+      "source_fragment_ref": "LEGRAND34-P024-E01",
+      "target_section_type": "HOTEL_OVERVIEW"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I014",
+      "source_page": 108,
+      "source_fragment_ref": "LEGRAND34-P108-E02",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I015",
+      "source_page": 117,
+      "source_fragment_ref": "LEGRAND34-P117-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I017",
+      "source_page": 119,
+      "source_fragment_ref": "LEGRAND34-P119-E02",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I018",
+      "source_page": 119,
+      "source_fragment_ref": "LEGRAND34-P119-E03",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I019",
+      "source_page": 125,
+      "source_fragment_ref": "LEGRAND34-P125-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I020",
+      "source_page": 128,
+      "source_fragment_ref": "LEGRAND34-P128-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I021",
+      "source_page": 130,
+      "source_fragment_ref": "LEGRAND34-P130-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I022",
+      "source_page": 130,
+      "source_fragment_ref": "LEGRAND34-P130-E05",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I023",
+      "source_page": 131,
+      "source_fragment_ref": "LEGRAND34-P131-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I024",
+      "source_page": 133,
+      "source_fragment_ref": "LEGRAND34-P133-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I025",
+      "source_page": 134,
+      "source_fragment_ref": "LEGRAND34-P134-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I026",
+      "source_page": 138,
+      "source_fragment_ref": "LEGRAND34-P138-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I027",
+      "source_page": 152,
+      "source_fragment_ref": "LEGRAND34-P152-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I028",
+      "source_page": 156,
+      "source_fragment_ref": "LEGRAND34-P156-E01",
+      "target_section_type": "GRMS"
+    },
+    {
+      "id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006:I029",
+      "source_page": 177,
+      "source_fragment_ref": "LEGRAND34-P177-E01",
+      "target_section_type": "CHALLENGES_VALUE"
+    }
+  ],
+  "excluded_context_only_S03_label_count": 3,
+  "excluded_context_definition_location": "Portfolio Instruction/research/34_Legrand_SYS219006_S06_original_source_audit.json",
+  "excluded_S02_context_fragments_count": 18,
+  "imported_visual_image_ids": [
+    "LEGRAND34_001_vertical_technical_cover",
+    "LEGRAND34_003_theme_navigation",
+    "LEGRAND34_006_definition_block",
+    "LEGRAND34_007_room_topic_panel",
+    "LEGRAND34_102_finish_photo_strip",
+    "LEGRAND34_130_software_navigation_header",
+    "LEGRAND34_133_module_icon_gallery",
+    "LEGRAND34_177_commissioning_role_headers",
+    "LEGRAND34_206_glossary_strip"
+  ],
+  "visual_references_without_eligible_feature_links": [
+    "LEGRAND34_001_vertical_technical_cover",
+    "LEGRAND34_102_finish_photo_strip",
+    "LEGRAND34_206_glossary_strip"
+  ],
+  "overview_excluded_from_images": true,
+  "source_audit_note": "French headings from original source, directly translated to Persian. P130 context only; optional layout extractor quirk logged in S06 and is not an extra feature.",
+  "checks": {
+    "V11_baseline_parity_and_all_eleven_prior_catalogs_exact": true,
+    "category_definitions_unchanged": true,
+    "V12_feature_json_JS_structural_parity": true,
+    "exactly_28_audited_text_and_9_byte_exact_visuals": true,
+    "source_page_provenance_reverified": true,
+    "S06_context_labels_not_in_bank": true,
+    "visual_alias_names_match_existing_app_allowlist": true,
+    "full_browser_runtime_not_exercised": true,
+    "source_language_explicit_and_legacy_English_field_notice_only": true,
+    "legacy_other_Legrand_editions_unmodified": true,
+    "application_source_untouched": true,
+    "editorial_structure_unchanged": true,
+    "NSP_capabilities_verified": 0,
+    "publication_rights_approved": 0,
+    "page_attachments": 0
+  },
+  "output_bank_files": [
+    {
+      "path": "Portfolio Instruction/feature.json",
+      "git_blob_sha": "d4fcfee5b964528cfbd8143665f48e7b85afdbac"
+    },
+    {
+      "path": "Portfolio Instruction/feature.js",
+      "git_blob_sha": "971413ada1dbdad9f915a5ee7671ec5496c91b62"
+    }
+  ],
+  "counts": {
+    "before_version": 11,
+    "after_version": 12,
+    "before_catalogs": 11,
+    "after_catalogs": 12,
+    "before_records": 561,
+    "after_records": 589,
+    "before_images": 116,
+    "after_images": 125,
+    "new_research_records": 28,
+    "new_visual_references": 9,
+    "display_alias_files_created": 9,
+    "additional_image_count_from_aliases": 0,
+    "new_quantitative_tables": 0
+  },
+  "next_queue_cursor": {
+    "document_index": 12,
+    "document_id": "46",
+    "step_index": 0,
+    "step_id": "S01"
+  },
+  "next_pdf": "46_Crestron_Work C08.3.pdf",
+  "next_document_stage_executed": false
+}
