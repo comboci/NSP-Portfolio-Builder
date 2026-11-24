@@ -1,0 +1,516 @@
+{
+  "schema": "nsp-catalog-research-s03-analyst-paraphrase-translation-v1",
+  "stage": "S03",
+  "stage_key": "feature_software_translation",
+  "status": "completed_Persian_translation_of_own_analytical_summaries",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "08eb9661da87bb5d93b1b7726b848a8200f0347f",
+  "document_id": "76",
+  "source_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+  "source_language": "en",
+  "translation_language": "fa",
+  "source_pdf": {
+    "filename": "76_Distech_Controls_Work C47.1.pdf",
+    "title": "Hotel Stary",
+    "cover_location": "Krakow, Poland",
+    "physical_pdf_pages": 1,
+    "file_size_bytes": 1438918,
+    "sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+    "printed_version_or_date_verified": false
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/76_Distech_Hotel_Stary_S01_source_inventory.json",
+      "blob_sha": "73b155e7170684427f0515ad7e56f012ed9c1fd6",
+      "commit_sha": "0e14b10ed1a8997b676e4523601ff17a0c01f3ce"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/76_Distech_Hotel_Stary_S02_page_linked_summaries.json",
+      "blob_sha": "4b84406e2ce686af88b230a5b56a359be8588314",
+      "commit_sha": "ec954ec47ce6b995314a7d94f58fb3483c1ccbcb"
+    }
+  },
+  "scope_and_translation_policy_fa": "ترجمهٔ نه یادداشت تحلیلیِ خودمان، با تفکیک نام ناشر و یکپارچه‌ساز، سابقهٔ بازسازی، سامانهٔ موجود/جدید و نیازهای گزارش‌شده از کارکرد تأییدشده. هیچ ادعا دربارهٔ توان NSP، سازگاری، نتیجه، روش و حق نشر استنباط نشده است.",
+  "statistics": {
+    "localized_own_analytical_summaries": 9,
+    "provisional_internal_editorial_candidates": 5,
+    "localized_identity_or_context_only": 4,
+    "verbatim_source_excerpts": 0,
+    "source_visuals_reproduced": 0,
+    "operational_details_added": 0,
+    "unverified_capability_or_performance_assertions_added": 0,
+    "claim_gates": 5,
+    "context_sets": 4,
+    "NSP_capabilities_verified": 0
+  },
+  "research_records": [
+    {
+      "source_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "76_Distech_Controls_Work C47.1.pdf",
+      "source_pdf_sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "S02_evidence_ref": "DISTECH76-P001-N02",
+      "source_evidence_kind": "refurbishment_scope",
+      "analyst_summary_en": "The publisher describes a renovation that added guest rooms. The reported property floor area does not establish the coverage of the controls.",
+      "translation_fa": "ناشر از بازسازی همراه با افزودن اتاق‌های مهمان گزارش می‌دهد. مساحت درج‌شده برای ملک، حوزهٔ پوششِ تجهیزات کنترلی را مشخص نمی‌کند.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-01"
+      ],
+      "source_context_set_refs": [
+        "DISTECH76-CTX-REFURBISHMENT_BOUNDARY"
+      ],
+      "scope_fa": "الگوی توضیح مرز پروژهٔ بازسازی. نه تاریخ، تعداد اتاق، دامنهٔ پوشش کنترل، نصب قطعی یا نقش NSP.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_image_or_operational_detail_reproduced": true,
+      "id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I001",
+      "category_id": "case_studies",
+      "source_type": "analyst_editorial_paraphrase",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "narrator_attribution": "Analyst paraphrase of the Distech Controls Hotel Stary case sheet, physical PDF p. 1; not independent evidence.",
+      "editorial_relevance_and_limits_fa": "الگوی توضیح مرز پروژهٔ بازسازی. نه تاریخ، تعداد اتاق، دامنهٔ پوشش کنترل، نصب قطعی یا نقش NSP.",
+      "same_editorial_concept_group": "DISTECH76-REFURBISHMENT_SCOPE",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "mapping_status": "pending_S05",
+      "visual_reference_status": "no_source_image; original concepts only if useful",
+      "further_validation": "S06"
+    },
+    {
+      "source_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "76_Distech_Controls_Work C47.1.pdf",
+      "source_pdf_sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "S02_evidence_ref": "DISTECH76-P001-N03",
+      "source_evidence_kind": "integrator_attribution",
+      "analyst_summary_en": "The page credits Distech Controls Poland with the system integration role. That is distinct from the publisher imprint and remains a source attribution.",
+      "translation_fa": "در صفحه، Distech Controls Poland به‌عنوان یکپارچه‌ساز معرفی شده است. این انتسابِ خودِ منبع است؛ نامِ چاپ‌شده در شناسنامهٔ ناشر متفاوت است.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-02"
+      ],
+      "source_context_set_refs": [
+        "DISTECH76-CTX-INTEGRATOR_AND_PROPERTY_RECOGNITION"
+      ],
+      "scope_fa": "الگوی انتساب نقش اجرا به شاهدِ آن؛ نه احراز مستقل صلاحیت یا تأیید مشارکتِ NSP.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_image_or_operational_detail_reproduced": true,
+      "id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I002",
+      "category_id": "project_evidence",
+      "source_type": "analyst_editorial_paraphrase",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "narrator_attribution": "Analyst paraphrase of the Distech Controls Hotel Stary case sheet, physical PDF p. 1; not independent evidence.",
+      "editorial_relevance_and_limits_fa": "الگوی انتساب نقش اجرا به شاهدِ آن؛ نه احراز مستقل صلاحیت یا تأیید مشارکتِ NSP.",
+      "same_editorial_concept_group": "DISTECH76-INTEGRATOR_ATTRIBUTION",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "mapping_status": "pending_S05",
+      "visual_reference_status": "no_source_image; original concepts only if useful",
+      "further_validation": "S06"
+    },
+    {
+      "source_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "76_Distech_Controls_Work C47.1.pdf",
+      "source_pdf_sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "S02_evidence_ref": "DISTECH76-P001-N04",
+      "source_evidence_kind": "existing_and_new_system_boundary",
+      "analyst_summary_en": "Distech Controls describes a link between the newer and pre-existing building management systems in this case. The sheet is not independent evidence of interoperability.",
+      "translation_fa": "Distech Controls در روایت همین پرونده از ارتباط میان بخش جدید و سامانهٔ موجودِ مدیریت ساختمان خبر می‌دهد. این صفحه شاهد مستقلِ سازگاری یا تعامل‌پذیری نیست.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "DISTECH76-CTX-EXISTING_SYSTEM_AND_ROOM_TOPICS"
+      ],
+      "scope_fa": "موضوع هم‌زیستیِ بخش جدید و سامانهٔ موجود، بدون جزئیات اتصال یا تنظیم. هیچ درگاه، مسیر مدیریت از راه دور، پروتکل یا سازگاری NSP از آن نتیجه نمی‌شود.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_image_or_operational_detail_reproduced": true,
+      "id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I003",
+      "category_id": "integrations",
+      "source_type": "analyst_editorial_paraphrase",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "narrator_attribution": "Analyst paraphrase of the Distech Controls Hotel Stary case sheet, physical PDF p. 1; not independent evidence.",
+      "editorial_relevance_and_limits_fa": "موضوع هم‌زیستیِ بخش جدید و سامانهٔ موجود، بدون جزئیات اتصال یا تنظیم. هیچ درگاه، مسیر مدیریت از راه دور، پروتکل یا سازگاری NSP از آن نتیجه نمی‌شود.",
+      "same_editorial_concept_group": "DISTECH76-EXISTING_AND_NEW_SYSTEM_BOUNDARY",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "mapping_status": "pending_S05",
+      "visual_reference_status": "no_source_image; original concepts only if useful",
+      "further_validation": "S06"
+    },
+    {
+      "source_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "76_Distech_Controls_Work C47.1.pdf",
+      "source_pdf_sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "S02_evidence_ref": "DISTECH76-P001-N05",
+      "source_evidence_kind": "room_scope_topics",
+      "analyst_summary_en": "In the case account, room control is discussed under climate equipment, lighting and sunshade functions. The sheet does not establish an identical configuration in all guest rooms.",
+      "translation_fa": "در روایت پرونده، کنترل اتاق ذیل موضوع‌های گرمایش، تهویه و تهویهٔ مطبوع، روشنایی و آفتاب‌گیر شرح داده می‌شود. سند یکسان‌بودن پیکربندی در همهٔ اتاق‌ها را ثابت نمی‌کند.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "DISTECH76-CTX-EXISTING_SYSTEM_AND_ROOM_TOPICS"
+      ],
+      "scope_fa": "صرفاً دسته‌بندی گزارش فروشنده. متن عمومیِ اتاق‌های اداری دلیل پوشش همهٔ اتاق‌ها، روش کنترل، انتخاب تجهیزات NSP یا قابلیت قطعی نیست.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_image_or_operational_detail_reproduced": true,
+      "id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I004",
+      "category_id": "room_controls",
+      "source_type": "analyst_editorial_paraphrase",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "narrator_attribution": "Analyst paraphrase of the Distech Controls Hotel Stary case sheet, physical PDF p. 1; not independent evidence.",
+      "editorial_relevance_and_limits_fa": "صرفاً دسته‌بندی گزارش فروشنده. متن عمومیِ اتاق‌های اداری دلیل پوشش همهٔ اتاق‌ها، روش کنترل، انتخاب تجهیزات NSP یا قابلیت قطعی نیست.",
+      "same_editorial_concept_group": "DISTECH76-ROOM_SCOPE_TOPICS",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "mapping_status": "pending_S05",
+      "visual_reference_status": "no_source_image; original concepts only if useful",
+      "further_validation": "S06"
+    },
+    {
+      "source_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "76_Distech_Controls_Work C47.1.pdf",
+      "source_pdf_sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "S02_evidence_ref": "DISTECH76-P001-N08",
+      "source_evidence_kind": "requirements_not_results",
+      "analyst_summary_en": "The publisher describes reliability and short service time as project priorities. The sheet provides no independent measurements of reliability, service time, energy or cost.",
+      "translation_fa": "ناشر قابلیت اطمینان و کوتاه‌بودن زمان سرویس را دغدغه‌های پروژه توصیف می‌کند. صفحه اندازه‌گیری مستقلی از قابلیت اطمینان، زمان سرویس، انرژی یا هزینه ارائه نمی‌دهد.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "DISTECH76-CTX-REQUIREMENTS_NOT_PERFORMANCE"
+      ],
+      "scope_fa": "چارچوب بیانِ نیاز، نه تأیید زمان یا هزینهٔ خدمت، سنجش عملکرد، شیوهٔ مدیریت از راه دور یا قابلیت NSP.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_image_or_operational_detail_reproduced": true,
+      "id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I005",
+      "category_id": "hotel_operations",
+      "source_type": "analyst_editorial_paraphrase",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "narrator_attribution": "Analyst paraphrase of the Distech Controls Hotel Stary case sheet, physical PDF p. 1; not independent evidence.",
+      "editorial_relevance_and_limits_fa": "چارچوب بیانِ نیاز، نه تأیید زمان یا هزینهٔ خدمت، سنجش عملکرد، شیوهٔ مدیریت از راه دور یا قابلیت NSP.",
+      "same_editorial_concept_group": "DISTECH76-REQUIREMENTS_NOT_RESULTS",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "mapping_status": "pending_S05",
+      "visual_reference_status": "no_source_image; original concepts only if useful",
+      "further_validation": "S06"
+    }
+  ],
+  "excluded_S02_evidence": [
+    {
+      "source_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "76_Distech_Controls_Work C47.1.pdf",
+      "source_pdf_sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "S02_evidence_ref": "DISTECH76-P001-N01",
+      "source_evidence_kind": "case_identity",
+      "analyst_summary_en": "The Distech Controls sheet identifies Hotel Stary in Krakow, Poland.",
+      "translation_fa": "مطالعهٔ Distech Controls، هتل استاری در کراکوفِ لهستان را معرفی می‌کند.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-01"
+      ],
+      "source_context_set_refs": [
+        "DISTECH76-CTX-REFURBISHMENT_BOUNDARY"
+      ],
+      "scope_fa": "فقط هویت پرونده در صفحهٔ منبع؛ نه محل نصب تجهیزات، تاریخ یا پروژهٔ NSP.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_image_or_operational_detail_reproduced": true,
+      "source_context_only": true,
+      "not_independent_feature": true,
+      "review_status": "source_identity_or_context_only"
+    },
+    {
+      "source_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "76_Distech_Controls_Work C47.1.pdf",
+      "source_pdf_sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "S02_evidence_ref": "DISTECH76-P001-N06",
+      "source_evidence_kind": "generic_office_description",
+      "analyst_summary_en": "A separate generic product passage mentions office rooms. That wording does not extend the documented hotel scope.",
+      "translation_fa": "بخش عمومی توضیح محصول به اتاق‌های اداری اشاره دارد. این عبارت دامنهٔ مستندِ پروندهٔ هتل را گسترش نمی‌دهد.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-03"
+      ],
+      "source_context_set_refs": [
+        "DISTECH76-CTX-EXISTING_SYSTEM_AND_ROOM_TOPICS"
+      ],
+      "scope_fa": "زمینه برای تفکیک زبان بازاریابی عمومی از پروندهٔ خاص؛ نه قابلیت یا شاهد کنترل هتلی.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_image_or_operational_detail_reproduced": true,
+      "source_context_only": true,
+      "not_independent_feature": true,
+      "review_status": "source_identity_or_context_only"
+    },
+    {
+      "source_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "76_Distech_Controls_Work C47.1.pdf",
+      "source_pdf_sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "S02_evidence_ref": "DISTECH76-P001-N07",
+      "source_evidence_kind": "equipment_sidebar_boundary",
+      "analyst_summary_en": "The sheet contains a case equipment inventory. Model quantities are omitted here; the list is not a specification, a current compatibility list or NSP evidence.",
+      "translation_fa": "در حاشیهٔ صفحه، فهرست تجهیزاتی برای همین پرونده درج شده است. تعداد اقلام هر مدل اینجا نیامده و آن فهرست مشخصات، مرجع سازگاری فعلی یا شاهدی برای NSP نیست.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "DISTECH76-CTX-EXISTING_SYSTEM_AND_ROOM_TOPICS"
+      ],
+      "scope_fa": "نام یا تعداد مدل به توصیهٔ خرید، عرضه، نصب یا مشخصات مهندسی تبدیل نشود.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_image_or_operational_detail_reproduced": true,
+      "source_context_only": true,
+      "not_independent_feature": true,
+      "review_status": "source_identity_or_context_only"
+    },
+    {
+      "source_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+      "source_language": "en",
+      "translation_language": "fa",
+      "source_filename": "76_Distech_Controls_Work C47.1.pdf",
+      "source_pdf_sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+      "source_pdf_page": 1,
+      "verified_printed_folio": null,
+      "source_page_native_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "S02_evidence_ref": "DISTECH76-P001-N09",
+      "source_evidence_kind": "property_award_boundary",
+      "analyst_summary_en": "The case sheet reports an interior-design distinction for the property. It does not document a controls product certification or an NSP award.",
+      "translation_fa": "سند از یک عنوانِ مربوط به طراحی داخلیِ خود ملک یاد می‌کند. این اشاره گواهی محصول کنترلی یا جایزه‌ای برای NSP نیست.",
+      "translation_basis": "Persian translation of our S02 analytical paraphrase; not a quote or translation of vendor prose.",
+      "claim_gate_refs": [
+        "DISTECH76-CLAIM-02"
+      ],
+      "source_context_set_refs": [
+        "DISTECH76-CTX-INTEGRATOR_AND_PROPERTY_RECOGNITION"
+      ],
+      "scope_fa": "ادعای ناشر دربارهٔ ملک؛ نه تأیید جایزه، رتبه، گواهی فنی، عملکرد کنترل یا اعتبار NSP.",
+      "NSP_capability_verified": false,
+      "independent_case_result_or_certification_verified": false,
+      "public_reuse_of_source_verified": false,
+      "no_original_prose_image_or_operational_detail_reproduced": true,
+      "source_context_only": true,
+      "not_independent_feature": true,
+      "review_status": "source_identity_or_context_only"
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "DISTECH76-CLAIM-01",
+      "kind": "case_identity_and_refurbishment_scope",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "DISTECH76-P001-N01",
+        "DISTECH76-P001-N02"
+      ],
+      "scope": "Property name, location and refurbishment are the vendor's case framing. Property area does not measure controls coverage; no installation or publication date is claimed.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "source_rights_verified": false,
+      "related_S03_record_ids": [
+        "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I001"
+      ],
+      "applies_to_analytical_paraphrase_only": true
+    },
+    {
+      "id": "DISTECH76-CLAIM-02",
+      "kind": "published_attribution_not_independent_certification",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "DISTECH76-P001-N03",
+        "DISTECH76-P001-N09"
+      ],
+      "scope": "The case attributes integration to its named local party and reports property recognition. Neither is an independent guarantee, product certification or NSP role.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "source_rights_verified": false,
+      "related_S03_record_ids": [
+        "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I002"
+      ],
+      "applies_to_analytical_paraphrase_only": true
+    },
+    {
+      "id": "DISTECH76-CLAIM-03",
+      "kind": "vendor_system_and_room_description",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "DISTECH76-P001-N04",
+        "DISTECH76-P001-N05",
+        "DISTECH76-P001-N06"
+      ],
+      "scope": "Legacy/new distinction and room topics are case narrative, not interoperability, procedure, room-by-room coverage or NSP. The product passage about offices is not hotel evidence.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "source_rights_verified": false,
+      "related_S03_record_ids": [
+        "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I003",
+        "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I004"
+      ],
+      "applies_to_analytical_paraphrase_only": true
+    },
+    {
+      "id": "DISTECH76-CLAIM-04",
+      "kind": "historical_inventory_only",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "DISTECH76-P001-N07"
+      ],
+      "scope": "The case sidebar does not establish model quantities independently, current availability, safety, settings or compatibility. No equipment counts, contact data, access or commands are retained.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "source_rights_verified": false,
+      "related_S03_record_ids": [],
+      "applies_to_analytical_paraphrase_only": true
+    },
+    {
+      "id": "DISTECH76-CLAIM-05",
+      "kind": "requirements_not_measured_outcome",
+      "physical_pdf_pages": [
+        1
+      ],
+      "evidence_refs": [
+        "DISTECH76-P001-N08"
+      ],
+      "scope": "Reliability and service time are described as priorities, not measured results. The source does not provide independent evidence of performance, energy or cost savings. No remote service procedures included.",
+      "NSP_capability_verified": false,
+      "independent_result_verified": false,
+      "source_rights_verified": false,
+      "related_S03_record_ids": [
+        "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I005"
+      ],
+      "applies_to_analytical_paraphrase_only": true
+    }
+  ],
+  "source_context_bindings": [
+    {
+      "id": "DISTECH76-CTX-REFURBISHMENT_BOUNDARY",
+      "physical_pdf_pages": [
+        1
+      ],
+      "source_evidence_ids": [
+        "DISTECH76-P001-N01",
+        "DISTECH76-P001-N02"
+      ],
+      "scope_fa": "عنوان، بازسازی و افزودن اتاق در روایت منبع است. مساحت ملک، تعداد اتاق یا درصد کنترل را ثابت نمی‌کند."
+    },
+    {
+      "id": "DISTECH76-CTX-INTEGRATOR_AND_PROPERTY_RECOGNITION",
+      "physical_pdf_pages": [
+        1
+      ],
+      "source_evidence_ids": [
+        "DISTECH76-P001-N03",
+        "DISTECH76-P001-N09"
+      ],
+      "scope_fa": "نام یکپارچه‌ساز و اشاره به عنوان طراحی ملک فقط گزارش ناشرند؛ گواهی فنی، احراز مستقل نقش، یا پروژهٔ NSP نیستند."
+    },
+    {
+      "id": "DISTECH76-CTX-EXISTING_SYSTEM_AND_ROOM_TOPICS",
+      "physical_pdf_pages": [
+        1
+      ],
+      "source_evidence_ids": [
+        "DISTECH76-P001-N04",
+        "DISTECH76-P001-N05",
+        "DISTECH76-P001-N06",
+        "DISTECH76-P001-N07"
+      ],
+      "scope_fa": "سامانهٔ موجود و بخش جدید، حوزه‌های اتاق، زبان عمومیِ اتاق اداری و فهرست زمینه‌ای تجهیزات از هم جدا هستند. مسیر، تنظیم و سازگاری یا اجرای واقعی در NSP وارد نمی‌شود."
+    },
+    {
+      "id": "DISTECH76-CTX-REQUIREMENTS_NOT_PERFORMANCE",
+      "physical_pdf_pages": [
+        1
+      ],
+      "source_evidence_ids": [
+        "DISTECH76-P001-N08"
+      ],
+      "scope_fa": "قابلیت اطمینان و زمان سرویس الزام‌های شرح پرونده‌اند. صرفه‌جویی انرژی/هزینه، سرعت پاسخ یا کیفیت مستقل تأیید نشده است."
+    }
+  ],
+  "usage_policy": {
+    "no_source_prose_images_or_logos_in_public_repo": true,
+    "no_wiring_remote_management_procedures_or_parameters": true,
+    "no_current_availability_or_interoperability_assertion": true,
+    "case_topics_and_role_vendor_only_not_NSP": true,
+    "future_concepts_must_be_original_nonreplicas": true
+  },
+  "next_stage": "S04 — مرور سبک و طرح دیداری اصیل",
+  "next_queue_cursor": {
+    "document_index": 19,
+    "document_id": "76",
+    "step_index": 3,
+    "step_id": "S04"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
