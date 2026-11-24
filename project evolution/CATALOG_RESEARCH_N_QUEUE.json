@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 78,
-    "completed_new_documents": 6,
-    "remaining_new_documents": 12
+    "total_pending_steps": 77,
+    "completed_new_documents": 7,
+    "remaining_new_documents": 11
   },
   "cursor": {
-    "document_index": 9,
-    "document_id": "16",
-    "step_index": 6,
-    "step_id": "S07"
+    "document_index": 10,
+    "document_id": "17",
+    "step_index": 0,
+    "step_id": "S01"
   },
   "section_types": [
     {
@@ -1125,7 +1125,7 @@
       "library_path": "/16_Honeywell_Step Up to INNCOM.pdf",
       "bytes": 1487482,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "in_progress",
+      "status": "completed",
       "prior_import": null,
       "steps": [
         {
@@ -1205,14 +1205,26 @@
         {
           "id": "S07",
           "key": "feature_json_and_commit",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/feature.json",
+            "Portfolio Instruction/feature.js",
+            "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S07_ingest_manifest.json",
+            "Portfolio Instruction/assets/honeywell16-01-cover-guest-hotel.webp",
+            "Portfolio Instruction/assets/honeywell16-02-intro-lead.webp",
+            "Portfolio Instruction/assets/honeywell16-02-guest-photo.webp",
+            "Portfolio Instruction/assets/honeywell16-02-hvac-table.webp",
+            "Portfolio Instruction/assets/honeywell16-03-matched-device-pair.webp",
+            "Portfolio Instruction/assets/honeywell16-03-analytics-dashboard.webp",
+            "Portfolio Instruction/assets/honeywell16-04-platform-summary.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "cd293dc1227c0e1aa44ca14de94b4df9c61ad998",
+          "notes": "۱۸ رکورد و ۷ مرجع بصری Honeywell 16 در V10 اضافه شدند. عنوان فارسی HVAC اصلاح و جدول مستقل 01-00139 با پنج ردیف و هشدار نسبت به ETM از 01-00149 جدا ماند. بانک V10: ده کاتالوگ، ۵۴۱ رکورد، ۱۰۹ تصویر. داده‌های پیشین، برنامه و ساختار ثابت‌اند؛ ادعای NSP، حق انتشار یا اتصال صفحه اضافه نشد."
         }
       ],
-      "last_successful_stage": "S06"
+      "last_successful_stage": "S07",
+      "completed_at_commit": "cd293dc1227c0e1aa44ca14de94b4df9c61ad998"
     },
     {
       "id": "17",
