@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 66,
+    "total_pending_steps": 65,
     "completed_new_documents": 8,
     "remaining_new_documents": 10
   },
   "cursor": {
     "document_index": 11,
     "document_id": "34",
-    "step_index": 4,
-    "step_id": "S05"
+    "step_index": 5,
+    "step_id": "S06"
   },
   "section_types": [
     {
@@ -1401,11 +1401,13 @@
         {
           "id": "S05",
           "key": "section_type_mapping",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/34_Legrand_SYS219006_S05_section_mapping.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "e9516cc138b1527ffc374fa945ee6b8434b9f594",
+          "notes": "۳۱ رکورد فرانسوی‌ـ‌فارسی و ۹ مرجع تصویری تعیین‌تکلیف شدند: ۲۸ متن و ۸ تصویر نگاشت پیشنهادی به سکشن‌های موجود؛ ۳ متن و یک تصویر فقط زمینه/سبک‌اند. مرجع IPTV فقط زمینه است؛ هیچ قابلیت NSP، دستور اجرایی، مجوز بازنشر یا صفحه‌ای تأیید نشده. بانک V11 و برنامه ثابت‌اند."
         },
         {
           "id": "S06",
@@ -1426,7 +1428,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S04"
+      "last_successful_stage": "S05"
     },
     {
       "id": "46",
