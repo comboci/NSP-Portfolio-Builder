@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 9,
+    "total_pending_steps": 8,
     "completed_new_documents": 16,
     "remaining_new_documents": 2
   },
   "cursor": {
     "document_index": 19,
     "document_id": "76",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -2246,11 +2246,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/76_Distech_Hotel_Stary_S06_source_and_concept_audit.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "98007907a8f22daedecb76be72547b0cea7cc1b5",
+          "notes": "اصل، ۹ خلاصه و ترجمه و دو طرح اصیل ممیزی شد؛ ۴ یادداشت و دو ارجاع مستقل برای S07، با یک توضیح فارسی دربارهٔ دامنهٔ اتاق. یکپارچه‌ساز و سامانهٔ قدیم/جدید فقط به روایت منبع‌اند؛ نتیجه، حق بازنشر و قابلیت NSP تأیید نشده. بانک V19، برنامه و D05 ثابت‌اند."
         },
         {
           "id": "S07",
@@ -2262,7 +2264,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S05"
+      "last_successful_stage": "S06"
     },
     {
       "id": "MG",
