@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 59,
+    "total_pending_steps": 58,
     "completed_new_documents": 9,
     "remaining_new_documents": 9
   },
   "cursor": {
     "document_index": 12,
     "document_id": "46",
-    "step_index": 4,
-    "step_id": "S05"
+    "step_index": 5,
+    "step_id": "S06"
   },
   "section_types": [
     {
@@ -1509,11 +1509,13 @@
         {
           "id": "S05",
           "key": "section_type_mapping",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S05_section_mapping.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "4b401ed26980f343d71264cb22d8d2375e799dd6",
+          "notes": "۱۲ رکورد و ۶ مرجع دیداری Bloc Hotels تعیین‌تکلیف شدند؛ ۱۱ رکورد و هر ۶ مرجع نگاشت پیشنهادی، و یک گزیدهٔ مربوط به مسیر بدون کارت فقط زمینه است. همهٔ کیس‌ها/نتایج متعلق به منبع رقیب‌اند؛ بدون انتساب به NSP، مجوز نشر، صفحه‌چسبانی یا تغییر بانک V12، برنامه و سکشن‌ها."
         },
         {
           "id": "S06",
@@ -1534,7 +1536,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S04"
+      "last_successful_stage": "S05"
     },
     {
       "id": "50",
