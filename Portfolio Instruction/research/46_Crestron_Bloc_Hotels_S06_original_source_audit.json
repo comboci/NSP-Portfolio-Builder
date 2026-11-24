@@ -1,0 +1,1065 @@
+{
+  "schema": "nsp-catalog-research-stage-original-source-audit-v1",
+  "stage": "S06",
+  "stage_key": "validation_and_review",
+  "status": "completed_verified_for_internal_research_integration_only",
+  "document_id": "46",
+  "source_id": "CAT046_CRESTRON_BLOC_HOTELS",
+  "source_language": "en",
+  "verified_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "f4b0c0fdec28942fb6bae6c9900e5543d55a76e6",
+  "source_document": {
+    "company": "Crestron",
+    "title": "Bloc Hotels",
+    "filename": "46_Crestron_Work C08.3.pdf",
+    "pdf_pages": 4,
+    "file_size_bytes": 1951685,
+    "source_sha256": "44d493d15827ace20d051beac69da455e2960fee12094920e17212e6f549c611",
+    "printed_revision": "v. 012723",
+    "printed_copyright_year": 2023,
+    "S01_inventory": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S01_source_inventory.json",
+      "commit_sha": "026a68e137c876ba2c74c8d7b7a1a8ec3269fe01",
+      "git_blob_sha": "78350841e809a1f146d1f6b4bb96261df903d550"
+    },
+    "S02_text_evidence": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S02_english_text.json",
+      "blob_sha": "f1f14d8e249f33f83a14aca4632a7568def9a6fe",
+      "commit_sha": "a5daed4e49f8dda3aa1e095d16d115ed130837ca"
+    },
+    "physical_source_page_count": 4,
+    "original_sha256_reverified": true,
+    "original_size_reverified": true,
+    "printed_revision_confirmed_again": true,
+    "distinct_from_Hotel_Renegade": true
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S01_source_inventory.json",
+      "commit_sha": "026a68e137c876ba2c74c8d7b7a1a8ec3269fe01",
+      "blob_sha": "78350841e809a1f146d1f6b4bb96261df903d550"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S02_english_text.json",
+      "commit_sha": "a5daed4e49f8dda3aa1e095d16d115ed130837ca",
+      "blob_sha": "f1f14d8e249f33f83a14aca4632a7568def9a6fe"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S03_features_fa.json",
+      "commit_sha": "26ee4b21c7514137c761cdca42ffbae6a691095e",
+      "blob_sha": "2bce57d14b5a1950e25792de15c3cb56c2133e8f"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S04_visual_styles.json",
+      "commit_sha": "60f7f8850d96548ec310a4e0e98527d6b37abb3b",
+      "blob_sha": "0c0919bb13df1d7f903c252022a48a1df2eaf597"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S05_section_mapping.json",
+      "blob_sha": "718b2c9f8a528b569737cbc36ea35fbac449614d",
+      "commit_sha": "4b401ed26980f343d71264cb22d8d2375e799dd6"
+    }
+  },
+  "canonical_section_structure": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "git_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "valid_research_section_ids": [
+      "COVER",
+      "IDENTITY_PAGES",
+      "COMPANY_INTRO",
+      "CHALLENGES_VALUE",
+      "HOTEL_OVERVIEW",
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS",
+      "CASE_STUDIES"
+    ],
+    "section_snapshot": [
+      {
+        "section_id": "COVER",
+        "title_fa": "صفحه اول کاتالوگ",
+        "row": 2,
+        "content_level": null
+      },
+      {
+        "section_id": "IDENTITY_PAGES",
+        "title_fa": "صفحات تنفس",
+        "row": 3,
+        "content_level": null
+      },
+      {
+        "section_id": "COMPANY_INTRO",
+        "title_fa": "معرفی شرکت NSP",
+        "row": 4,
+        "content_level": "COMPANY"
+      },
+      {
+        "section_id": "CHALLENGES_VALUE",
+        "title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+        "row": 5,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "HOTEL_OVERVIEW",
+        "title_fa": "نقشهٔ جامع راهکارهای هتلی",
+        "row": 6,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "GRMS",
+        "title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+        "row": 7,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "IPTV",
+        "title_fa": "تلویزیون و خدمات تعاملی هتل (IPTV)",
+        "row": 8,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "PUBLIC_AREAS",
+        "title_fa": "کنترل هوشمند مشاعات هتل",
+        "row": 9,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "CASE_STUDIES",
+        "title_fa": "رزومه و پروژه‌های اجراشده",
+        "row": 10,
+        "content_level": null
+      }
+    ],
+    "legacy_aliases_for_reading_only": {
+      "BISMILLAH": "IDENTITY_PAGES"
+    },
+    "CROSS_SECTION_STYLE_is_tag_not_section": true,
+    "BINDER_COVER_excluded": true,
+    "idea_attachment_deferred_to_Defrag": true,
+    "proposed_roles_not_approved_subsections": true,
+    "all_proposed_targets_checked": true,
+    "software_in_GRMS_only": true,
+    "no_page_attachments_or_selections": true
+  },
+  "statistics": {
+    "physical_page_hashes_reverified": 4,
+    "exact_original_English_excerpts_checked": 28,
+    "Persian_translations_reviewed": 28,
+    "matching_PyMuPDF_and_Poppler_raw": 28,
+    "matching_optional_Poppler_layout": 27,
+    "prior_visually_resolved_optional_layout_exceptions": 1,
+    "source_candidates_reviewed": 12,
+    "text_records_eligible_for_S07": 11,
+    "source_candidate_held_context_only": 1,
+    "additional_S02_fragments_held_as_context": 16,
+    "direct_source_visuals_reproduced_byte_exact": 6,
+    "eligible_internal_S07_visuals": 6,
+    "derived_overview_not_counted": 1,
+    "NSP_capabilities_verified": 0,
+    "public_reuse_approvals": 0,
+    "printed_page_attachments": 0
+  },
+  "physical_verification": {
+    "source_size_bytes": 1951685,
+    "source_sha256": "44d493d15827ace20d051beac69da455e2960fee12094920e17212e6f549c611",
+    "source_page_checks": [
+      {
+        "physical_page": 1,
+        "native_text_sha256": "7a733524729be567036b9b6c162084577845aa8a2633fef194d151df0fb7eea8"
+      },
+      {
+        "physical_page": 2,
+        "native_text_sha256": "ee4471ba05344edc61cbdaa6ed90712e58a0ea6dba5d79a53819aa3ac47e02d3"
+      },
+      {
+        "physical_page": 3,
+        "native_text_sha256": "c0cbac3a8e7ed581fe13fe22a3c21811b978caa2907b10499cd8fcdcfcd6cb7b"
+      },
+      {
+        "physical_page": 4,
+        "native_text_sha256": "6b3318a04a9222d4aa85de41406970d77550d23f2a7c211e6a63202d2fbab2c5"
+      }
+    ],
+    "clause_attribution_context_check": {
+      "P02_client_monitoring_before_challenge": true,
+      "P02_vendor_partner_stack_in_solution": true,
+      "P03_card_option_two_actors": true,
+      "P04_qualitative_outcome_separate_from_future_plan": true,
+      "P04_printed_edition_confirmed": true
+    },
+    "rechecked_original_edition_is_not_current_product_or_publication_claim": true
+  },
+  "layout_exception": {
+    "id": "CRESTRON46-P04-E03",
+    "physical_pdf_page": 4,
+    "scope": "Printed line wrap; optional Poppler layout does not return the contiguous phrase.",
+    "resolution": "Original render previously read visually in S02. Fresh audit confirmed the same original PDF and page hash and exact clause in PyMuPDF and Poppler raw.",
+    "not_an_additional_record": true
+  },
+  "fragment_reviews": [
+    {
+      "id": "CRESTRON46-P01-E01",
+      "source_type": "identity",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 1
+    },
+    {
+      "id": "CRESTRON46-P01-E02",
+      "source_type": "heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 1
+    },
+    {
+      "id": "CRESTRON46-P01-E03",
+      "source_type": "site",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 1
+    },
+    {
+      "id": "CRESTRON46-P01-E04",
+      "source_type": "partner",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 1
+    },
+    {
+      "id": "CRESTRON46-P01-E05",
+      "source_type": "spaces",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 1
+    },
+    {
+      "id": "CRESTRON46-P01-E06",
+      "source_type": "client_quote",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 1
+    },
+    {
+      "id": "CRESTRON46-P02-E01",
+      "source_type": "heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 2
+    },
+    {
+      "id": "CRESTRON46-P02-E02",
+      "source_type": "client_aspiration",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 2
+    },
+    {
+      "id": "CRESTRON46-P02-E03",
+      "source_type": "client_monitoring_quote",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 2
+    },
+    {
+      "id": "CRESTRON46-P02-E04",
+      "source_type": "client_monitoring_example",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 2
+    },
+    {
+      "id": "CRESTRON46-P02-E05",
+      "source_type": "client_monitoring_example",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 2
+    },
+    {
+      "id": "CRESTRON46-P02-E06",
+      "source_type": "heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 2
+    },
+    {
+      "id": "CRESTRON46-P02-E07",
+      "source_type": "vendor_solution",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 2
+    },
+    {
+      "id": "CRESTRON46-P02-E08",
+      "source_type": "vendor_integration",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 2
+    },
+    {
+      "id": "CRESTRON46-P02-E09",
+      "source_type": "vendor_architecture_claim",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 2
+    },
+    {
+      "id": "CRESTRON46-P03-E01",
+      "source_type": "heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 3
+    },
+    {
+      "id": "CRESTRON46-P03-E02",
+      "source_type": "vendor_guest_experience",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 3
+    },
+    {
+      "id": "CRESTRON46-P03-E03",
+      "source_type": "vendor_guest_experience",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 3
+    },
+    {
+      "id": "CRESTRON46-P03-E04",
+      "source_type": "vendor_guest_experience",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 3
+    },
+    {
+      "id": "CRESTRON46-P03-E05",
+      "source_type": "vendor_case_option",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 3
+    },
+    {
+      "id": "CRESTRON46-P03-E06",
+      "source_type": "client_quoted_alternative",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 3
+    },
+    {
+      "id": "CRESTRON46-P04-E01",
+      "source_type": "heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 4
+    },
+    {
+      "id": "CRESTRON46-P04-E02",
+      "source_type": "vendor_qualitative_case_outcome",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 4
+    },
+    {
+      "id": "CRESTRON46-P04-E03",
+      "source_type": "vendor_qualitative_case_outcome",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": false,
+      "physical_pdf_page": 4
+    },
+    {
+      "id": "CRESTRON46-P04-E04",
+      "source_type": "historical_plan",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 4
+    },
+    {
+      "id": "CRESTRON46-P04-E05",
+      "source_type": "heading_only",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 4
+    },
+    {
+      "id": "CRESTRON46-P04-E06",
+      "source_type": "heading_only",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 4
+    },
+    {
+      "id": "CRESTRON46-P04-E07",
+      "source_type": "edition_metadata",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true,
+      "physical_pdf_page": 4
+    }
+  ],
+  "S03_record_reviews": [
+    {
+      "record_id": "CAT046_CRESTRON_BLOC_HOTELS:I001",
+      "physical_pdf_page": 1,
+      "S02_fragment_ref": "CRESTRON46-P01-E06",
+      "attribution": "Olivier Delaunoy, Bloc Hotel Chief Technology Officer; attributed by the publisher",
+      "narrator_role": "CLIENT_TESTIMONIAL",
+      "translation_review": "accepted_preserves_context_and_case_scope",
+      "target_section_type": "CHALLENGES_VALUE",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "گفتهٔ مشتری دربارهٔ همین پروژه؛ نه درصد، سنجه یا نتیجهٔ پزشکی.",
+      "NSP_capability_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT046_CRESTRON_BLOC_HOTELS:I002",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "CRESTRON46-P02-E01",
+      "attribution": "Crestron case study structure",
+      "narrator_role": "EDITORIAL_SEQUENCE",
+      "translation_review": "accepted_preserves_context_and_case_scope",
+      "target_section_type": "CASE_STUDIES",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "فقط شیوهٔ روایت چالش/راهکار/فناوری/نتیجه. زیرعنوان یا صفحهٔ مصوب نیست.",
+      "NSP_capability_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT046_CRESTRON_BLOC_HOTELS:I003",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "CRESTRON46-P02-E02",
+      "attribution": "Olivier Delaunoy, Bloc Hotel Chief Technology Officer; attributed by the publisher",
+      "narrator_role": "CLIENT_ASPIRATION",
+      "translation_review": "accepted_preserves_context_and_case_scope",
+      "target_section_type": "CHALLENGES_VALUE",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "واژهٔ امن در خواستهٔ مشتری است، نه گواهی امنیت یا شاهد انجام آزمون.",
+      "NSP_capability_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT046_CRESTRON_BLOC_HOTELS:I004",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "CRESTRON46-P02-E03",
+      "attribution": "Olivier Delaunoy, Bloc Hotel Chief Technology Officer; attributed by the publisher",
+      "narrator_role": "CLIENT_TESTIMONIAL",
+      "translation_review": "accepted_preserves_context_and_case_scope",
+      "target_section_type": "GRMS",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "نقل‌قول منتسب به مشتری، با دو مثال وضعیت روشنایی و تشخیص نشتی؛ تأخیر، دامنه و قابلیت NSP را ثابت نمی‌کند.",
+      "NSP_capability_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT046_CRESTRON_BLOC_HOTELS:I005",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "CRESTRON46-P02-E07",
+      "attribution": "Crestron (case study publisher)",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "translation_review": "accepted_preserves_context_and_case_scope",
+      "target_section_type": "GRMS",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "نرم‌افزار ابری سفارشی در شرح به SYMBIoT، و نقش فناوری کنترلی به Crestron نسبت دارد؛ نه بدون زیرساخت یا سیستم NSP.",
+      "NSP_capability_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT046_CRESTRON_BLOC_HOTELS:I006",
+      "physical_pdf_page": 2,
+      "S02_fragment_ref": "CRESTRON46-P02-E08",
+      "attribution": "Crestron (case study publisher)",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "translation_review": "accepted_preserves_context_and_case_scope",
+      "target_section_type": "GRMS",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "PMS/POS مربوط به سامانه‌های پروژه‌اند؛ نام اِعمال‌شده، نسخه، سازگاری یا راهکار NSP از متن نتیجه نشود.",
+      "NSP_capability_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT046_CRESTRON_BLOC_HOTELS:I007",
+      "physical_pdf_page": 3,
+      "S02_fragment_ref": "CRESTRON46-P03-E02",
+      "attribution": "Crestron (case study publisher)",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "translation_review": "accepted_preserves_context_and_case_scope",
+      "target_section_type": "CASE_STUDIES",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "توصیف ناشر از تجربه با هدف بیان‌شده از مشتری متفاوت است؛ جای اثبات مستقل را نمی‌گیرد.",
+      "NSP_capability_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT046_CRESTRON_BLOC_HOTELS:I008",
+      "physical_pdf_page": 3,
+      "S02_fragment_ref": "CRESTRON46-P03-E03",
+      "attribution": "Crestron (case study publisher)",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "translation_review": "accepted_preserves_context_and_case_scope",
+      "target_section_type": "CASE_STUDIES",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "دستگاه شخصی در روایت تجربه؛ نه شیوهٔ ورود، صدور دسترسی یا پشتیبانی.",
+      "NSP_capability_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT046_CRESTRON_BLOC_HOTELS:I009",
+      "physical_pdf_page": 3,
+      "S02_fragment_ref": "CRESTRON46-P03-E04",
+      "attribution": "Crestron (case study publisher)",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "translation_review": "accepted_preserves_context_and_case_scope",
+      "target_section_type": "CASE_STUDIES",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "ثبت چک‌این/چک‌اوت هتلی است، نه دسترسی فیزیکی یا عملکرد راهکار NSP.",
+      "NSP_capability_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT046_CRESTRON_BLOC_HOTELS:I010",
+      "physical_pdf_page": 3,
+      "S02_fragment_ref": "CRESTRON46-P03-E05",
+      "attribution": "Crestron for the no-card route; Olivier Delaunoy provides the retained card option",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION_WITH_CUSTOMER_QUALIFIER",
+      "translation_review": "accepted_preserves_context_and_case_scope",
+      "target_section_type": null,
+      "disposition": "retained_context_only_no_independent_S07_record",
+      "scope_fa": "عبارتِ مسیر بدون کارت تنها کنار گزینهٔ کارت و با دو انتساب مشخص بماند. ردیف مستقل بانک، روش ورود و ادعای حذف کارت نباشد.",
+      "NSP_capability_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT046_CRESTRON_BLOC_HOTELS:I011",
+      "physical_pdf_page": 4,
+      "S02_fragment_ref": "CRESTRON46-P04-E02",
+      "attribution": "Crestron (case study publisher)",
+      "narrator_role": "VENDOR_REPORTED_QUALITATIVE_OUTCOME",
+      "translation_review": "accepted_preserves_context_and_case_scope",
+      "target_section_type": "CASE_STUDIES",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "ادعای کیفی ناشر دربارهٔ مهمانان همان پروژه؛ پوشش یا نتیجهٔ NSP نیست.",
+      "NSP_capability_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT046_CRESTRON_BLOC_HOTELS:I012",
+      "physical_pdf_page": 4,
+      "S02_fragment_ref": "CRESTRON46-P04-E03",
+      "attribution": "Crestron (case study publisher)",
+      "narrator_role": "VENDOR_REPORTED_QUALITATIVE_OUTCOME",
+      "translation_review": "accepted_preserves_context_and_case_scope",
+      "target_section_type": "CASE_STUDIES",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "کاهش تماس با سطوح کیفی، محدود به روایت ناشر؛ بدون خط پایه، اندازه، یا اثبات پیامد سلامت. برنامهٔ آینده ادغام نشود.",
+      "NSP_capability_verified": false,
+      "public_reuse_approved": false
+    }
+  ],
+  "S02_context_reviews": [
+    {
+      "S02_fragment_ref": "CRESTRON46-P01-E01",
+      "physical_pdf_page": 1,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "عنوان پرونده، نه ویژگی.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P01-E02",
+      "physical_pdf_page": 1,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "عنوان بخش منبع؛ در الگوی روایت نگه داشته شود.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P01-E03",
+      "physical_pdf_page": 1,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "مکان همین پروژهٔ منبع، نه شعبه یا پروژهٔ NSP.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P01-E04",
+      "physical_pdf_page": 1,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "نام تجاری شریک؛ نه نرم‌افزار یا برند NSP.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P01-E05",
+      "physical_pdf_page": 1,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "فضاهای معرفی‌شده در این نمونه؛ نه فهرست پوشش سامانه.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P02-E04",
+      "physical_pdf_page": 2,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "مثال در نقل‌قول پایش لحظه‌ای؛ ادعای جدا ایجاد نشود.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P02-E05",
+      "physical_pdf_page": 2,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "مثال همان نقل‌قول؛ نوع حسگر، دامنه، دقت یا امکانات NSP اثبات نشده.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P02-E06",
+      "physical_pdf_page": 2,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "تیتر ساختار روایت، نه سند اجرای NSP.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P02-E09",
+      "physical_pdf_page": 2,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "عبارت اسمی در توصیف ناشر؛ با نبود کلی زیرساخت یا وعدهٔ معماری NSP برابر نیست.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P03-E01",
+      "physical_pdf_page": 3,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "تیتر بخش؛ نه یک قابلیت.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P03-E06",
+      "physical_pdf_page": 3,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "گزینهٔ متداول در نقل‌قول مشتری؛ جدا از ادعای وجود مسیر بدون کارت. هیچ روش دسترسی نقل نشده.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P04-E01",
+      "physical_pdf_page": 4,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "عنوان روایت نتیجهٔ فروشنده؛ گواهی یا سنجش مستقل نیست.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P04-E04",
+      "physical_pdf_page": 4,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "اظهار آینده‌نگر در متن چاپی؛ نه تکمیل، استقرارنامه یا وضعیت فعلی.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P04-E05",
+      "physical_pdf_page": 4,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "صرفاً تیتر؛ هیچ‌یک از مدل‌ها، مشخصات یا تصاویر اجزای فنی وارد متن نشده.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P04-E06",
+      "physical_pdf_page": 4,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "عنوان معرفی فروشنده؛ شاهد اطلاعات شرکت NSP نیست.",
+      "disposition": "not_an_independent_S07_record"
+    },
+    {
+      "S02_fragment_ref": "CRESTRON46-P04-E07",
+      "physical_pdf_page": 4,
+      "translation_review": "accepted_as_context_only",
+      "scope_fa": "رشتهٔ چاپی عیناً در S02؛ تاریخ انتشار قطعی یا نسخهٔ امروز استنباط نشود.",
+      "disposition": "not_an_independent_S07_record"
+    }
+  ],
+  "visual_reviews": [
+    {
+      "image_id": "CRESTRON46_01_facade_hero",
+      "physical_pdf_page": 1,
+      "image_asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_01_facade_hero.webp",
+      "image_blob_sha": "8bc1b390f86d4205d7b7b1e093a5979d152ce241",
+      "image_asset_sha256": "015e3813f0cbff9764d74e0d77b36b699844f7c8c38fe143af440b5320a6ff6b",
+      "target_section_type": "CASE_STUDIES",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "نمای پروژه و نشان رقیب؛ فرم آغاز مطالعه بدون کپی دارایی.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "byte_exact_original_pdf_render_sha256": "015e3813f0cbff9764d74e0d77b36b699844f7c8c38fe143af440b5320a6ff6b",
+      "byte_exact_original_pdf_render_git_blob": "8bc1b390f86d4205d7b7b1e093a5979d152ce241",
+      "exact_remote_asset_bytes_verified": true
+    },
+    {
+      "image_id": "CRESTRON46_01_project_fact_sidebar",
+      "physical_pdf_page": 1,
+      "image_asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_01_project_fact_sidebar.webp",
+      "image_blob_sha": "d7f82607a1a03ac5be0a7124a60f002f422474e8",
+      "image_asset_sha256": "1e1dfaaec34e68a8d0254a40397615254e0d733817f890ea63789926b3028f7a",
+      "target_section_type": "CASE_STUDIES",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "فرادادهٔ چاپی همین پرونده، نه نقش یا اجرای NSP.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "byte_exact_original_pdf_render_sha256": "1e1dfaaec34e68a8d0254a40397615254e0d733817f890ea63789926b3028f7a",
+      "byte_exact_original_pdf_render_git_blob": "d7f82607a1a03ac5be0a7124a60f002f422474e8",
+      "exact_remote_asset_bytes_verified": true
+    },
+    {
+      "image_id": "CRESTRON46_02_room_panorama_divider",
+      "physical_pdf_page": 2,
+      "image_asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_02_room_panorama_divider.webp",
+      "image_blob_sha": "115f1165e547fd0654c3ba2db45f32621021e0a1",
+      "image_asset_sha256": "0307fd6e24901e33e66e3d11529d320a2351df681782b717adee7eaaacca599f",
+      "target_section_type": "CASE_STUDIES",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "جداسازی بصری دو بلوک؛ بدون اثبات ادعا یا معماری.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "byte_exact_original_pdf_render_sha256": "0307fd6e24901e33e66e3d11529d320a2351df681782b717adee7eaaacca599f",
+      "byte_exact_original_pdf_render_git_blob": "115f1165e547fd0654c3ba2db45f32621021e0a1",
+      "exact_remote_asset_bytes_verified": true
+    },
+    {
+      "image_id": "CRESTRON46_03_mobile_context_room",
+      "physical_pdf_page": 3,
+      "image_asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_03_mobile_context_room.webp",
+      "image_blob_sha": "773b7d2fd818a2c9b448be51777c1f6a75eb6c71",
+      "image_asset_sha256": "4a646db925d64822e915b6bf2cf68ba739f61138a22d1fbdbd23f8a1ea83896b",
+      "target_section_type": "GRMS",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "فقط چیدمان نمونهٔ رابط همراه در بافت، بدون دستور، شناسه یا گواهی کارکرد.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "byte_exact_original_pdf_render_sha256": "4a646db925d64822e915b6bf2cf68ba739f61138a22d1fbdbd23f8a1ea83896b",
+      "byte_exact_original_pdf_render_git_blob": "773b7d2fd818a2c9b448be51777c1f6a75eb6c71",
+      "exact_remote_asset_bytes_verified": true
+    },
+    {
+      "image_id": "CRESTRON46_04_two_zone_room_bath_photo",
+      "physical_pdf_page": 4,
+      "image_asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_04_two_zone_room_bath_photo.webp",
+      "image_blob_sha": "61781f7eaa150e57870ec327ac834ab4ee0b0887",
+      "image_asset_sha256": "256f95a9429d6be5eaaf0ca3f32e28bf8e50b6ee5cb5ef485efedb8bf3db5365",
+      "target_section_type": "CASE_STUDIES",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "نمای دو ناحیه‌؛ بدون توصیف محصول یا پوشش سامانه.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "byte_exact_original_pdf_render_sha256": "256f95a9429d6be5eaaf0ca3f32e28bf8e50b6ee5cb5ef485efedb8bf3db5365",
+      "byte_exact_original_pdf_render_git_blob": "61781f7eaa150e57870ec327ac834ab4ee0b0887",
+      "exact_remote_asset_bytes_verified": true
+    },
+    {
+      "image_id": "CRESTRON46_04_results_and_context_headings",
+      "physical_pdf_page": 4,
+      "image_asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_04_results_and_context_headings.webp",
+      "image_blob_sha": "f111b28aafea40ba101b0295cd5bd409e46c317c",
+      "image_asset_sha256": "987bd6a6b15c5bd1c8ee1ec5492b1d5387dd07e41b27f553b740a252553775f4",
+      "target_section_type": "CASE_STUDIES",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "تیترها و سلسله‌مراتب فقط؛ ردیف‌های فنی/مدل و متن نتیجه خارج برش‌اند.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "byte_exact_original_pdf_render_sha256": "987bd6a6b15c5bd1c8ee1ec5492b1d5387dd07e41b27f553b740a252553775f4",
+      "byte_exact_original_pdf_render_git_blob": "f111b28aafea40ba101b0295cd5bd409e46c317c",
+      "exact_remote_asset_bytes_verified": true
+    }
+  ],
+  "reference_overview": {
+    "asset_path": "Portfolio Instruction/research/assets/crestron46/CRESTRON46_S04_reference_overview.webp",
+    "asset_filename": "CRESTRON46_S04_reference_overview.webp",
+    "mime_type": "image/webp",
+    "asset_bytes": 42310,
+    "asset_sha256": "01e22a1d2c43bf3d24ff1e432db9eab365669a5e50f571936a38f6a15fd00071",
+    "git_blob_sha": "831893284e23062938a3435c0fef5455be4d8e57",
+    "rendered_size_px": [
+      948,
+      738
+    ],
+    "base64_length": 56416,
+    "role": "derived_navigation_overview_not_a_source_reference",
+    "source_reference_ids": [
+      "CRESTRON46_01_facade_hero",
+      "CRESTRON46_01_project_fact_sidebar",
+      "CRESTRON46_02_room_panorama_divider",
+      "CRESTRON46_03_mobile_context_room",
+      "CRESTRON46_04_two_zone_room_bath_photo",
+      "CRESTRON46_04_results_and_context_headings"
+    ],
+    "counted_in_reference_images": false,
+    "recreated_byte_exact": true,
+    "exact_remote_bytes_verified": true,
+    "excluded_from_bank_image_count": true
+  },
+  "source_claim_gates_reviewed": [
+    {
+      "id": "CRESTRON46-CLAIM-01",
+      "kind": "case_edition_and_site_identity",
+      "physical_pdf_pages": [
+        1,
+        4
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P01-E01",
+        "CRESTRON46-P01-E02",
+        "CRESTRON46-P01-E03",
+        "CRESTRON46-P01-E04",
+        "CRESTRON46-P01-E05",
+        "CRESTRON46-P04-E07"
+      ],
+      "scope_fa": "فقط هویت مطالعهٔ Bloc Hotels در Gatwick بریتانیا، نام شریک و شمارهٔ ویرایش چاپی؛ از سند قبلی Hotel Renegade جداست. این داده‌ها محل، پروژه یا امکانات NSP نیستند.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false,
+      "related_S03_record_ids": [],
+      "S06_gate_result": "retained_with_no_NSP_claim_and_no_additional_feature"
+    },
+    {
+      "id": "CRESTRON46-CLAIM-02",
+      "kind": "customer_reported_contact_reduction",
+      "physical_pdf_pages": [
+        1
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P01-E06"
+      ],
+      "scope_fa": "بخش کوتاه نقل‌قول مدیر فناوری پروژهٔ Bloc؛ کاهش تماس به روایت گوینده است، نه اثبات سلامت، نرخ کاهش یا نتیجهٔ مستقل.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false,
+      "related_S03_record_ids": [
+        "CAT046_CRESTRON_BLOC_HOTELS:I001"
+      ],
+      "S06_gate_result": "retained_with_no_NSP_claim_and_no_additional_feature"
+    },
+    {
+      "id": "CRESTRON46-CLAIM-03",
+      "kind": "aspirational_challenge_quote",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P02-E01",
+        "CRESTRON46-P02-E02"
+      ],
+      "scope_fa": "صفت‌های روان، بی‌تماس و امن کیفیت مطلوبِ نقل‌قول دربارهٔ چالش‌اند؛ نه ارزیابی امنیت، گواهی یا تأیید عملکرد.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false,
+      "related_S03_record_ids": [
+        "CAT046_CRESTRON_BLOC_HOTELS:I002",
+        "CAT046_CRESTRON_BLOC_HOTELS:I003"
+      ],
+      "S06_gate_result": "retained_with_no_NSP_claim_and_no_additional_feature"
+    },
+    {
+      "id": "CRESTRON46-CLAIM-04",
+      "kind": "reported_monitoring_examples",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P02-E03",
+        "CRESTRON46-P02-E04",
+        "CRESTRON46-P02-E05"
+      ],
+      "scope_fa": "سه گزیده از یک نقل‌قول منتسب به مدیر فناوری Bloc؛ وضعیت روشنایی و تشخیص نشتی مثال‌اند، نه اثبات پوشش، دقت، زمان پاسخ، یا قابلیت NSP.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false,
+      "related_S03_record_ids": [
+        "CAT046_CRESTRON_BLOC_HOTELS:I004"
+      ],
+      "S06_gate_result": "retained_with_no_NSP_claim_and_no_additional_feature"
+    },
+    {
+      "id": "CRESTRON46-CLAIM-05",
+      "kind": "reported_case_specific_solution_stack",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P02-E06",
+        "CRESTRON46-P02-E07",
+        "CRESTRON46-P02-E08",
+        "CRESTRON46-P02-E09"
+      ],
+      "scope_fa": "مدیریت سفارشی و ابری اتاق به SYMBIoT نسبت داده شده؛ PMS و POS سامانه‌های همین هتل‌اند. فناوری کنترلی Crestron به‌عنوان بخشی از راهکار معرفی شده. ادعای کم‌شدن معماری حجیم محل به همان پروژه محدود است، نه بدون زیرساخت، سازگاری فراگیر یا ادعای NSP.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false,
+      "related_S03_record_ids": [
+        "CAT046_CRESTRON_BLOC_HOTELS:I005",
+        "CAT046_CRESTRON_BLOC_HOTELS:I006"
+      ],
+      "S06_gate_result": "retained_with_no_NSP_claim_and_no_additional_feature"
+    },
+    {
+      "id": "CRESTRON46-CLAIM-06",
+      "kind": "reported_guest_experience_not_access_workflow",
+      "physical_pdf_pages": [
+        3
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P03-E01",
+        "CRESTRON46-P03-E02",
+        "CRESTRON46-P03-E03",
+        "CRESTRON46-P03-E04"
+      ],
+      "scope_fa": "توصیف ناشر از تجربهٔ همراه و ورود/خروج هتلی در همین مورد؛ نه دسترسی فیزیکی، روش ورود، فناوری احراز، تنظیمات یا قابلیت NSP. به معنای نیازناپذیری کل زیرساخت نیست.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false,
+      "related_S03_record_ids": [
+        "CAT046_CRESTRON_BLOC_HOTELS:I007",
+        "CAT046_CRESTRON_BLOC_HOTELS:I008",
+        "CAT046_CRESTRON_BLOC_HOTELS:I009"
+      ],
+      "S06_gate_result": "retained_with_no_NSP_claim_and_no_additional_feature"
+    },
+    {
+      "id": "CRESTRON46-CLAIM-07",
+      "kind": "alternative_key_card_remained_available",
+      "physical_pdf_pages": [
+        3
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P03-E05",
+        "CRESTRON46-P03-E06"
+      ],
+      "scope_fa": "ناشر مسیر بی‌نیاز از کارت را توصیف می‌کند و نقل‌قول مدیر فناوری گزینهٔ کارت را برای ترجیح روش متداول حفظ می‌کند. کارت حذف یا ممنوع نشده؛ رونوشت سازوکار کلید الکترونیکی و هیچ ادعای قابلیت یا اتصال NSP مجاز نیست.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false,
+      "related_S03_record_ids": [
+        "CAT046_CRESTRON_BLOC_HOTELS:I010"
+      ],
+      "S06_gate_result": "retained_with_no_NSP_claim_and_no_additional_feature"
+    },
+    {
+      "id": "CRESTRON46-CLAIM-08",
+      "kind": "case_specific_qualitative_results",
+      "physical_pdf_pages": [
+        4
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P04-E01",
+        "CRESTRON46-P04-E02",
+        "CRESTRON46-P04-E03"
+      ],
+      "scope_fa": "نتایج کیفی در روایت همان پروژه‌اند و خط پایه، مقدار کاهش، مطالعهٔ پیامد عفونت یا تأیید شخص ثالث در این گزیده نیست؛ هیچ ادعای NSP نمی‌سازند.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false,
+      "related_S03_record_ids": [
+        "CAT046_CRESTRON_BLOC_HOTELS:I011",
+        "CAT046_CRESTRON_BLOC_HOTELS:I012"
+      ],
+      "S06_gate_result": "retained_with_no_NSP_claim_and_no_additional_feature"
+    },
+    {
+      "id": "CRESTRON46-CLAIM-09",
+      "kind": "future_plans_not_verified_as_completed",
+      "physical_pdf_pages": [
+        4
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P04-E04"
+      ],
+      "scope_fa": "برنامهٔ زمان نگارش برای هتل‌های بیشتر است، نه استقرار انجام‌شده یا پوشش فعلی؛ با نتیجهٔ همین پروژه ادغام نشود.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false,
+      "related_S03_record_ids": [],
+      "S06_gate_result": "retained_with_no_NSP_claim_and_no_additional_feature"
+    },
+    {
+      "id": "CRESTRON46-CLAIM-10",
+      "kind": "featured_products_and_publisher_context_not_records",
+      "physical_pdf_pages": [
+        4
+      ],
+      "S02_fragment_refs": [
+        "CRESTRON46-P04-E05",
+        "CRESTRON46-P04-E06"
+      ],
+      "scope_fa": "فقط تیترها؛ مدل، نقشه، مشخصات، قیمت و ادعاهای کلی فروشنده استخراج یا به NSP نسبت داده نشده.",
+      "verified_NSP_claim": false,
+      "not_separate_feature_record": true,
+      "independent_verification_of_vendor_claim": false,
+      "related_S03_record_ids": [],
+      "S06_gate_result": "retained_with_no_NSP_claim_and_no_additional_feature"
+    }
+  ],
+  "S07_import_contract": {
+    "accepted_internal_record_ids": [
+      "CAT046_CRESTRON_BLOC_HOTELS:I001",
+      "CAT046_CRESTRON_BLOC_HOTELS:I002",
+      "CAT046_CRESTRON_BLOC_HOTELS:I003",
+      "CAT046_CRESTRON_BLOC_HOTELS:I004",
+      "CAT046_CRESTRON_BLOC_HOTELS:I005",
+      "CAT046_CRESTRON_BLOC_HOTELS:I006",
+      "CAT046_CRESTRON_BLOC_HOTELS:I007",
+      "CAT046_CRESTRON_BLOC_HOTELS:I008",
+      "CAT046_CRESTRON_BLOC_HOTELS:I009",
+      "CAT046_CRESTRON_BLOC_HOTELS:I011",
+      "CAT046_CRESTRON_BLOC_HOTELS:I012"
+    ],
+    "source_context_only_S03_ids": [
+      "CAT046_CRESTRON_BLOC_HOTELS:I010"
+    ],
+    "accepted_internal_visual_ids": [
+      "CRESTRON46_01_facade_hero",
+      "CRESTRON46_01_project_fact_sidebar",
+      "CRESTRON46_02_room_panorama_divider",
+      "CRESTRON46_03_mobile_context_room",
+      "CRESTRON46_04_two_zone_room_bath_photo",
+      "CRESTRON46_04_results_and_context_headings"
+    ],
+    "case_study_subject_is_not_NSP_project": true,
+    "do_not_import_standalone_card_free_excerpt_or_derived_overview": true,
+    "do_not_count_future_plans_or_unmapped_fragments": true,
+    "keep_client_goal_testimonial_vendor_outcome_and_future_plan_separate": true,
+    "no_IPTV_security_or_NSP_claims_and_no_operational_access_steps": true,
+    "no_public_reuse_or_page_attachment": true,
+    "feature_json_JS_mirror_only_after_S07_authority": true
+  },
+  "next_stage": "S07 — به‌روزرسانی JSON و Commit",
+  "next_queue_cursor": {
+    "document_index": 12,
+    "document_id": "46",
+    "step_index": 6,
+    "step_id": "S07"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false
+}
