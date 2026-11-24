@@ -1,0 +1,317 @@
+{
+  "schema": "nsp-catalog-research-original-source-audit-v1",
+  "stage": "MG/S06",
+  "audit_date": "2026-11-24",
+  "source": {
+    "filename": "myGEKKO_Smart Hotel_EN.pdf",
+    "document_id": "MG",
+    "title": "Smart Hotel",
+    "sha256": "106c685004a79a43c2cae2a0ae2a4127d717f25cd98f67d96dcc753bbcdc1d73",
+    "physical_pdf_pages": 17,
+    "meaning_of_pagination": "1-based physical PDF page objects, not individual panels or arbitrary printed leaves; p2 is an extra-wide foldout layout, pp3–16 standard two-panel spreads, p1 and p17 single covers",
+    "source_metadata_note": "PDF file dated May 2021; actual publication date, edition and print run unverified.",
+    "rights_credits_pdf_page": 17,
+    "source_text_republication_granted": false,
+    "source_visual_reuse_granted": false
+  },
+  "evidence_artifacts": [
+    {
+      "path": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S01_source_inventory.json",
+      "blob_sha": "afa414af8dc7fe7fcc4bd87318d4a683bb3ab26c",
+      "stage_commit": "cdec4e6c5c2fb81daffe8215eeb2d5b146616031"
+    },
+    {
+      "path": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S02_page_linked_summaries.json",
+      "blob_sha": "011d3e9d25750bd433a8f3caccd531945052ec45",
+      "stage_commit": "1709a29316fa3e4a73d03e01f4db0f7a0a074c12"
+    },
+    {
+      "path": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S03_editorial_summaries_fa.json",
+      "blob_sha": "37bce266f3ced2d1d7363e3e532f031704360b94",
+      "stage_commit": "39a96f5be148982e4b8f6856c0cd2e14d0b2b9ee"
+    },
+    {
+      "path": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S04_original_visual_concepts.json",
+      "blob_sha": "197324ba95794d7d1fb2ea6faaebc3bcead95da5",
+      "stage_commit": "30fbf4ca02a553368a884ca40bbbf3a63009b37d"
+    },
+    {
+      "path": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S05_section_mapping.json",
+      "blob_sha": "1326befa2de64a8255cba23a4c2712dd1d66ff94",
+      "stage_commit": "bcff51cdbd7d5e91c5c6c789eb7586f0052f7ab3"
+    }
+  ],
+  "checks": {
+    "physical_pdf_pages_verified": 17,
+    "native_text_hashes_match_all_pages": true,
+    "selected_content_pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "identity_rights_pages": [
+      1,
+      17
+    ],
+    "exact_vendor_raster_duplicates_found": 0,
+    "reproduced_brochure_excerpts": 0,
+    "comparison_note": "No substantive quoted passage; the longest pre-edit overlap was a short sequence of generic job labels in MG-E05. Replace the English and Persian as specified."
+  },
+  "counts": {
+    "eligible_internal_editorial_records": 9,
+    "context_records_not_imported": 5,
+    "original_concepts_eligible_separately": 2,
+    "source_images_eligible": 0,
+    "required_scope_edits": 1
+  },
+  "editorial_record_decisions": [
+    {
+      "id": "MG-E01",
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "source_checks": "pp. 2–3 present coordinated building operations and the guest-facing value separately. No result or coverage inferred.",
+      "internal_section_id": "CHALLENGES_VALUE",
+      "disposition": "eligible_internal_editorial_only",
+      "translation_status": "source_and_scope_confirmed",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG-E02",
+      "pdf_pages": [
+        4,
+        6
+      ],
+      "source_checks": "pp. 4 and 6 present an expandable platform and phased scope as sales positioning. No feasibility, product combination or adoption inferred.",
+      "internal_section_id": "CHALLENGES_VALUE",
+      "disposition": "eligible_internal_editorial_only",
+      "translation_status": "source_and_scope_confirmed",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG-E03",
+      "pdf_pages": [
+        4,
+        6
+      ],
+      "source_checks": "pp. 4 and 6 distinguish front-end operations, interface tailoring and specialist parameterization. No instruction or no-skills promise retained.",
+      "internal_section_id": "HOTEL_OVERVIEW",
+      "disposition": "eligible_internal_editorial_only",
+      "translation_status": "source_and_scope_confirmed",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG-E04",
+      "pdf_pages": [
+        5
+      ],
+      "source_checks": "p. 5 includes supplier and interface examples. Context only; the sales text is not an interoperable device list.",
+      "internal_section_id": null,
+      "disposition": "retain_context_not_for_import",
+      "translation_status": "source_and_scope_confirmed",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG-E05",
+      "pdf_pages": [
+        7,
+        8
+      ],
+      "source_checks": "pp. 7–8 refer to distinct staff responsibilities and audience types. Accept as an editorial audience distinction only, not an authorization or cybersecurity finding.",
+      "internal_section_id": "HOTEL_OVERVIEW",
+      "disposition": "eligible_internal_editorial_only",
+      "translation_status": "eligible_after_scope_edit",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG-E06",
+      "pdf_pages": [
+        8,
+        9
+      ],
+      "source_checks": "pp. 8–9 distinguish grouping hotel topics from an operations view with status or anomalies. No exhaustive monitoring or incident outcome inferred.",
+      "internal_section_id": "HOTEL_OVERVIEW",
+      "disposition": "eligible_internal_editorial_only",
+      "translation_status": "source_and_scope_confirmed",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG-E07",
+      "pdf_pages": [
+        9
+      ],
+      "source_checks": "p. 9 mentions one generic software-link category, not a verified product or interface. Context only; not an integration recommendation.",
+      "internal_section_id": null,
+      "disposition": "retain_context_not_for_import",
+      "translation_status": "source_and_scope_confirmed",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG-E08",
+      "pdf_pages": [
+        8,
+        10
+      ],
+      "source_checks": "pp. 8 and 10 support the contrast between guests’ room adjustment and the central operations view. Not an inventory of NSP features.",
+      "internal_section_id": "GRMS",
+      "disposition": "eligible_internal_editorial_only",
+      "translation_status": "source_and_scope_confirmed",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG-E09",
+      "pdf_pages": [
+        10
+      ],
+      "source_checks": "p. 10 uses presence as context for discussing room lighting, shading and indoor comfort. No rules, systems design, or savings evidence retained.",
+      "internal_section_id": "GRMS",
+      "disposition": "eligible_internal_editorial_only",
+      "translation_status": "source_and_scope_confirmed",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG-E10",
+      "pdf_pages": [
+        11
+      ],
+      "source_checks": "p. 11 includes ambient lighting and audio in the wellness discussion. Accept only as a guest-experience topic; no pool, environment, safety or surveillance instructions.",
+      "internal_section_id": "PUBLIC_AREAS",
+      "disposition": "eligible_internal_editorial_only",
+      "translation_status": "source_and_scope_confirmed",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG-E11",
+      "pdf_pages": [
+        8,
+        12
+      ],
+      "source_checks": "pp. 8 and 12 set apart the kitchen and storage monitoring examples. Context only; no legal, food-safety or standards compliance inferred.",
+      "internal_section_id": null,
+      "disposition": "retain_context_not_for_import",
+      "translation_status": "source_and_scope_confirmed",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG-E12",
+      "pdf_pages": [
+        13
+      ],
+      "source_checks": "p. 13 lists distinct public-area settings when describing lighting atmosphere. Accept solely as a content-grouping idea.",
+      "internal_section_id": "PUBLIC_AREAS",
+      "disposition": "eligible_internal_editorial_only",
+      "translation_status": "source_and_scope_confirmed",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG-E13",
+      "pdf_pages": [
+        14
+      ],
+      "source_checks": "p. 14 includes selected topics at the hotel's periphery. Context only; no access, charging, billing, or utility procedure retained.",
+      "internal_section_id": null,
+      "disposition": "retain_context_not_for_import",
+      "translation_status": "source_and_scope_confirmed",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG-E14",
+      "pdf_pages": [
+        15,
+        16
+      ],
+      "source_checks": "pp. 15–16 separate the vendor’s examples from a generic coordination outline. Context only; no project, service promise, photo reuse, or NSP claim.",
+      "internal_section_id": null,
+      "disposition": "retain_context_not_for_import",
+      "translation_status": "source_and_scope_confirmed",
+      "claim_level": "vendor document editorial attribution only",
+      "catalog_publication_approved": false
+    }
+  ],
+  "original_concept_decisions": [
+    {
+      "id": "MG_C01_editorial_view_layers",
+      "path": "Portfolio Instruction/research/assets/mygekko/MG_C01_editorial_view_layers.webp",
+      "sha256": "bba11940b311a42c91248749475db2496c7b9f373758e8ccc12b3eba99c5de4e",
+      "git_blob_sha": "b9fb70cc8cae6ada1ff27313172ef48a1a0346cc",
+      "topic_reference_pages": [
+        3,
+        7,
+        8,
+        9,
+        10
+      ],
+      "nsp_section_id": "HOTEL_OVERVIEW",
+      "source_artwork_copied": false,
+      "independent_rerender_byte_identical": true,
+      "disposition": "eligible_separate_original_editorial_concept_internal_only",
+      "feature_image_count_effect": 0,
+      "catalog_publication_approved": false
+    },
+    {
+      "id": "MG_C02_editorial_room_public",
+      "path": "Portfolio Instruction/research/assets/mygekko/MG_C02_editorial_room_public.webp",
+      "sha256": "5d8d3b046f1d9ddfa9803e0d8dd4d982cffe66f60eb3e0694fd4e5c48903efdc",
+      "git_blob_sha": "a616df5a9706fe474148b8821e88d3218e5de110",
+      "topic_reference_pages": [
+        8,
+        10,
+        13
+      ],
+      "nsp_section_id": "HOTEL_OVERVIEW",
+      "source_artwork_copied": false,
+      "independent_rerender_byte_identical": true,
+      "disposition": "eligible_separate_original_editorial_concept_internal_only",
+      "feature_image_count_effect": 0,
+      "catalog_publication_approved": false
+    }
+  ],
+  "required_corrections": [
+    {
+      "evidence_id": "MG-E05",
+      "field_names": [
+        "summary_en",
+        "summary_fa"
+      ],
+      "apply_before_integration": true,
+      "summary_en": "The brochure frames hotel information around three audiences: operations staff, technical teams and the people who maintain the property.",
+      "summary_fa": "بروشور myGEKKO در معرفی نمای هتل سه گروه را از هم جدا می‌کند: کارکنان بهره‌برداری، تیم فنی و نیروهای نگهداری. این تفکیک، مدل مجوزدهی یا دسترسی NSP را تأیید نمی‌کند.",
+      "reason": "Preserve the audience distinction, avoid fingerprinting the supplier's role-label sequence, and prevent reading it as verified software permissions."
+    }
+  ],
+  "integration_guardrails": [
+    "Include only audited eligible editorial records, with the required language edits and exact physical folio citations.",
+    "Track original concepts in the separate object family; do not add them to source images or assign them as such.",
+    "No source PDF, text excerpts, logos, screenshots, stock photos or layout reproduction.",
+    "No technical, installation, performance, compatibility, legal, food-safety, access, or NSP capability assertions. Keep the five context records out of the bank.",
+    "Preserve previous catalog records and JSON/JS parity and all independent app or portfolio changes."
+  ],
+  "bank_or_app_changed": false,
+  "next_stage": "MG/S07"
+}
