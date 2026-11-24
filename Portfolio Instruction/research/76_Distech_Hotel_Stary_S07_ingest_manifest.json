@@ -1,0 +1,183 @@
+{
+  "schema": "nsp-catalog-research-s07-paraphrase-and-original-concept-ingest-v1",
+  "status": "validated_import",
+  "stage": "S07",
+  "stage_key": "feature_json_and_commit",
+  "document_id": "76",
+  "date": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "c2659f87d17ffa80b658f2ad9d087e97ca8ccf0b",
+  "source_catalog": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+  "source_pdf": "76_Distech_Controls_Work C47.1.pdf",
+  "source_pdf_sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+  "source_language": "en",
+  "source_printed_revision": null,
+  "source_printed_publication_date": null,
+  "source_cover_location": "Krakow, Poland",
+  "physical_pdf_pages": 1,
+  "audit_artifact": "Portfolio Instruction/research/76_Distech_Hotel_Stary_S06_source_and_concept_audit.json",
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/76_Distech_Hotel_Stary_S01_source_inventory.json",
+      "blob_sha": "73b155e7170684427f0515ad7e56f012ed9c1fd6",
+      "commit_sha": "0e14b10ed1a8997b676e4523601ff17a0c01f3ce"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/76_Distech_Hotel_Stary_S02_page_linked_summaries.json",
+      "blob_sha": "4b84406e2ce686af88b230a5b56a359be8588314",
+      "commit_sha": "ec954ec47ce6b995314a7d94f58fb3483c1ccbcb"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/76_Distech_Hotel_Stary_S03_editorial_summaries_fa.json",
+      "blob_sha": "b9887d732fc53cee6e2b5e688620a3d123de719a",
+      "commit_sha": "ad7c0d8c517c6dd535ea62d590f7da82aa28bab8"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/76_Distech_Hotel_Stary_S04_original_visual_concepts.json",
+      "blob_sha": "d1a623df29924d0dd3c02b92c69cb344da99ff22",
+      "commit_sha": "cddb459e0d11be322b70c3b51d7b8de5bcdd7ecb"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/76_Distech_Hotel_Stary_S05_section_mapping.json",
+      "blob_sha": "464c8bc78f6695157a4212d21e7444a6f373c726",
+      "commit_sha": "15f2d2a187fc2e920c2faac3f0b14dabd226967c"
+    },
+    "S06": {
+      "path": "Portfolio Instruction/research/76_Distech_Hotel_Stary_S06_source_and_concept_audit.json",
+      "blob_sha": "ab9e5e7b987bc750973987c33262525870c525f7",
+      "commit_sha": "98007907a8f22daedecb76be72547b0cea7cc1b5"
+    }
+  },
+  "committed_artifact_paths": [
+    "Portfolio Instruction/feature.json",
+    "Portfolio Instruction/feature.js",
+    "Portfolio Instruction/research/76_Distech_Hotel_Stary_S07_ingest_manifest.json"
+  ],
+  "output_bank_files": [
+    {
+      "path": "Portfolio Instruction/feature.json",
+      "git_blob_sha": "4a73a68f529534653a63c4b7851e12bbe2058e00"
+    },
+    {
+      "path": "Portfolio Instruction/feature.js",
+      "git_blob_sha": "e6b8e5ff2fb384c9efb859f0b559a7ee1f91fd9f"
+    }
+  ],
+  "imported_editorial_record_ids": [
+    "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I001",
+    "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I002",
+    "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I003",
+    "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I004"
+  ],
+  "imported_editorial_provenance": [
+    {
+      "id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I001",
+      "physical_pdf_page": 1,
+      "S02_evidence_ref": "DISTECH76-P001-N02",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "target_section_type": "CASE_STUDIES",
+      "source_is_analyst_paraphrase_not_case_sheet_text": true
+    },
+    {
+      "id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I002",
+      "physical_pdf_page": 1,
+      "S02_evidence_ref": "DISTECH76-P001-N03",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "target_section_type": "CASE_STUDIES",
+      "source_is_analyst_paraphrase_not_case_sheet_text": true
+    },
+    {
+      "id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I003",
+      "physical_pdf_page": 1,
+      "S02_evidence_ref": "DISTECH76-P001-N04",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "source_is_analyst_paraphrase_not_case_sheet_text": true
+    },
+    {
+      "id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I004",
+      "physical_pdf_page": 1,
+      "S02_evidence_ref": "DISTECH76-P001-N05",
+      "narrator_role": "VENDOR_CASE_STUDY_NARRATIVE_PARAPHRASED",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "source_is_analyst_paraphrase_not_case_sheet_text": true
+    }
+  ],
+  "original_concepts_added_as_references_only": [
+    {
+      "id": "DISTECH76_C01_refurbishment_scope_card",
+      "path": "Portfolio Instruction/research/assets/distech76/DISTECH76_C01_refurbishment_scope_card.webp",
+      "existing_research_asset_blob_sha": "7759b424d3891233bb7eb66c909b235bbf53b635",
+      "source_extracted_image": false,
+      "theme_physical_pdf_pages": [
+        1
+      ],
+      "excluded_from_existing_PDF_renderer_image_links": true
+    },
+    {
+      "id": "DISTECH76_C02_existing_new_topic_pair",
+      "path": "Portfolio Instruction/research/assets/distech76/DISTECH76_C02_existing_new_topic_pair.webp",
+      "existing_research_asset_blob_sha": "aeabd1788f78e12d2ba75078d9f2b2dc55466535",
+      "source_extracted_image": false,
+      "theme_physical_pdf_pages": [
+        1
+      ],
+      "excluded_from_existing_PDF_renderer_image_links": true
+    }
+  ],
+  "audited_Persian_scope_copy_edits_applied": [
+    {
+      "id": "DISTECH76-CORR-01",
+      "record_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW:I004",
+      "physical_pdf_page": 1,
+      "S02_evidence_ref": "DISTECH76-P001-N05",
+      "original_translation_fa": "در روایت پرونده، کنترل اتاق ذیل موضوع‌های گرمایش، تهویه و تهویهٔ مطبوع، روشنایی و آفتاب‌گیر شرح داده می‌شود. سند یکسان‌بودن پیکربندی در همهٔ اتاق‌ها را ثابت نمی‌کند.",
+      "audited_translation_fa": "ناشر در روایت این پرونده سه موضوع را برای کنترل اتاق مطرح می‌کند: تأسیسات گرمایش و تهویهٔ مطبوع (HVAC)، روشنایی و آفتاب‌گیر. از این شرح نمی‌توان پیکربندی یکسان برای همهٔ اتاق‌ها را نتیجه گرفت.",
+      "reason_fa": "تفکیک سه دستهٔ مبحث و نسبت‌دادن به ناشر روشن‌تر شد؛ اتاق اداریِ بخش فروش، شاهد دامنهٔ اتاق‌های هتل نیست.",
+      "original_analyst_summary_unchanged": true,
+      "prior_artifacts_unchanged": true,
+      "apply_only_derived_translation_and_meaning_fields": true
+    }
+  ],
+  "held_s03_context_rows": 1,
+  "additional_S02_context_or_identity_rows_not_counted": 4,
+  "counts": {
+    "prior_version": 19,
+    "version": 20,
+    "prior_catalogs": 19,
+    "catalogs": 20,
+    "prior_records": 657,
+    "records": 661,
+    "prior_source_images": 163,
+    "source_images": 163,
+    "new_editorial_records": 4,
+    "new_source_images": 0,
+    "original_diagram_references_tracked_separately": 2,
+    "total_original_diagram_references": 8,
+    "new_alias_files": 0
+  },
+  "checks": {
+    "V19_and_V20_JSON_JS_parity": true,
+    "prior_19_catalogs_exact": true,
+    "exact_allowed_S06_ids": true,
+    "reported_integrator_not_independently_verified": true,
+    "scope_generic_office_passage_not_hotel_coverage": true,
+    "legacy_new_BMS_description_not_interoperability_technical_or_NSP_claim": true,
+    "award_and_service_requirements_not_independent_performance": true,
+    "no_source_pdf_prose_photos_logos_or_operational_details": true,
+    "original_concepts_not_counted_as_extracted_images_or_aliased": true,
+    "rights_not_verified": true,
+    "full_runtime_not_exercised": true,
+    "app_sections_and_Fresh_D05_untouched": true
+  },
+  "next_queue_cursor": {
+    "document_index": 20,
+    "document_id": "MG",
+    "step_index": 0,
+    "step_id": "S01"
+  },
+  "next_pdf": "myGEKKO_Smart Hotel_EN.pdf",
+  "next_stage_executed": false
+}
