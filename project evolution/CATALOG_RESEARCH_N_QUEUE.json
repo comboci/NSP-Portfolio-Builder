@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 84,
+    "total_pending_steps": 83,
     "completed_new_documents": 6,
     "remaining_new_documents": 12
   },
   "cursor": {
     "document_index": 9,
     "document_id": "16",
-    "step_index": 0,
-    "step_id": "S01"
+    "step_index": 1,
+    "step_id": "S02"
   },
   "section_types": [
     {
@@ -1125,17 +1125,19 @@
       "library_path": "/16_Honeywell_Step Up to INNCOM.pdf",
       "bytes": 1487482,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "queued",
+      "status": "in_progress",
       "prior_import": null,
       "steps": [
         {
           "id": "S01",
           "key": "source_inventory",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S01_source_inventory.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "a8f8ac370a81305d4df06d67414464183ff153ff",
+          "notes": "PDF اصلی Honeywell با SHA-256 و ۴ صفحهٔ متمایز US Letter تأیید شد. شمارهٔ سند 01-00139 و تاریخ چاپ 2023-10-12 در صفحهٔ ۴ ثبت شدند. سند Honeywell قبلی (01-00149) مستقل است؛ جدول HVAC و پاورقی این سند باید از روی همان صفحهٔ ۲ خوانده شوند. بانک V9 و برنامه بی‌تغییرند."
         },
         {
           "id": "S02",
@@ -1191,7 +1193,8 @@
           "commit_sha": null,
           "notes": null
         }
-      ]
+      ],
+      "last_successful_stage": "S01"
     },
     {
       "id": "17",
