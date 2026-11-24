@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 31,
+    "total_pending_steps": 30,
     "completed_new_documents": 13,
     "remaining_new_documents": 5
   },
   "cursor": {
     "document_index": 16,
     "document_id": "57",
-    "step_index": 4,
-    "step_id": "S05"
+    "step_index": 5,
+    "step_id": "S06"
   },
   "section_types": [
     {
@@ -1942,11 +1942,13 @@
         {
           "id": "S05",
           "key": "section_type_mapping",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/57_Hager_Zweckbau_S05_section_mapping.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "caf7fe9a42807328ed625923206824b5d0fa990c",
+          "notes": "۱۲ پیشنهاد متنی و ۹ پیشنهاد دیداریِ صفحه‌دار برای سکشن‌های موجود؛ ۵ نامزد و ۱۴ گزیده بدون پیشنهاد و فقط زمینه. JAZ و Bikini جدا؛ دسترسی به انشعاب، کنترل ورود نیست. هیچ دستور، نتیجه، قابلیت NSP یا اجازهٔ بازنشر تأیید نشد. بانک V16، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S06",
@@ -1967,7 +1969,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S04"
+      "last_successful_stage": "S05"
     },
     {
       "id": "58",
