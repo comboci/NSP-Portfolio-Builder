@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 64,
-    "completed_new_documents": 8,
-    "remaining_new_documents": 10
+    "total_pending_steps": 63,
+    "completed_new_documents": 9,
+    "remaining_new_documents": 9
   },
   "cursor": {
-    "document_index": 11,
-    "document_id": "34",
-    "step_index": 6,
-    "step_id": "S07"
+    "document_index": 12,
+    "document_id": "46",
+    "step_index": 0,
+    "step_id": "S01"
   },
   "section_types": [
     {
@@ -1341,7 +1341,7 @@
       "library_path": "/34_Legrand_Work C04.3.pdf",
       "bytes": 37661849,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "in_progress",
+      "status": "completed",
       "prior_import": null,
       "steps": [
         {
@@ -1423,14 +1423,27 @@
         {
           "id": "S07",
           "key": "feature_json_and_commit",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/feature.json",
+            "Portfolio Instruction/feature.js",
+            "Portfolio Instruction/research/34_Legrand_SYS219006_S07_ingest_manifest.json",
+            "Portfolio Instruction/assets/legrand34-001-vertical-technical-cover.webp",
+            "Portfolio Instruction/assets/legrand34-003-theme-navigation.webp",
+            "Portfolio Instruction/assets/legrand34-006-definition-block.webp",
+            "Portfolio Instruction/assets/legrand34-007-room-topic-panel.webp",
+            "Portfolio Instruction/assets/legrand34-102-finish-photo-strip.webp",
+            "Portfolio Instruction/assets/legrand34-130-software-navigation-header.webp",
+            "Portfolio Instruction/assets/legrand34-133-module-icon-gallery.webp",
+            "Portfolio Instruction/assets/legrand34-177-commissioning-role-headers.webp",
+            "Portfolio Instruction/assets/legrand34-206-glossary-strip.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "de013254254118ec96472c5cf424b5e57a408462",
+          "notes": "نسخه V12 بانک: ۱۲ کاتالوگ، ۵۸۹ رکورد و ۱۲۵ تصویر. از راهنمای فرانسوی SYS219006 فقط ۲۸ رکورد ممیزی‌شده و ۹ تصویر مرجع داخلی افزوده شد؛ سه برچسب زمینه‌ای و نمای کلی وارد بانک نشدند. نسخهٔ برنامه، داده‌های قبلی و ساختار سکشن‌ها ثابت‌اند؛ هیچ قابلیت NSP یا حق نشر تأیید نشد."
         }
       ],
-      "last_successful_stage": "S06"
+      "last_successful_stage": "S07"
     },
     {
       "id": "46",
