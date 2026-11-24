@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 18,
+    "total_pending_steps": 17,
     "completed_new_documents": 15,
     "remaining_new_documents": 3
   },
   "cursor": {
     "document_index": 18,
     "document_id": "61",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -2128,11 +2128,15 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S04_original_visual_concepts.json",
+            "Portfolio Instruction/research/assets/helvar61/HELVAR61_C01_intent_evidence_split.webp",
+            "Portfolio Instruction/research/assets/helvar61/HELVAR61_C02_case_scope_annotation.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "8502a3cc148bc68268c36dd8d1f5b8af564cdd86",
+          "notes": "دو طرح اصیل برای تفکیک هدف از شاهد و مرزهای پرونده ثبت شد. هیچ عکس منبع یا استوک، نشان، شعار، چینش تقلیدی، دستور فنی یا ادعای عملکرد بازتولید نشد. طرح‌ها از شمار تصاویر استخراجی جدا هستند؛ بانک V18، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S05",
@@ -2162,7 +2166,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S03"
+      "last_successful_stage": "S04"
     },
     {
       "id": "76",
