@@ -1,0 +1,1182 @@
+{
+  "schema": "nsp-catalog-research-s04-visual-styles-v1",
+  "stage": "S04",
+  "stage_key": "visuals_and_styles",
+  "document_id": "15",
+  "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+  "status": "completed_source_render_and_visual_review",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "verified_on": "2026-11-24",
+  "base_main_commit": "46c41255034997ff6fca77260948bc4fa92429ba",
+  "source_pdf": {
+    "company": "Vingcard",
+    "publisher": "Vingcard / ASSA ABLOY",
+    "title": "Mobile Access Solution",
+    "filename": "15_Vingcard_Mobile Access Solution.pdf",
+    "pdf_pages": 12,
+    "file_size_bytes": 2973282,
+    "source_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+    "printed_edition_label": "Doc. Printed: 03/2024",
+    "publication_evidence_pdf_page": 12,
+    "S01_inventory": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S01_source_inventory.json",
+    "S01_inventory_git_blob_sha": "fa9e192bef8a84342d8c9d67f68f5c738b053794",
+    "S01_inventory_commit": "757bf8d8d24c199b4e2eaab14b914482127b8dc9",
+    "S02_text_evidence": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S02_english_text.json",
+    "S02_artifact_commit": "a34ed1f661749f49349eab2140b1aef1dde1e7ad",
+    "S02_git_blob_sha": "f764fa5a091ca5fa850f9ef4f453b0a55335af5a",
+    "S02_total_fragments": 51,
+    "S03_English_source": "Exact unchanged short S02 excerpts; physical page is canonical.",
+    "sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+    "source_orientation": "A4 portrait; not NSP target geometry"
+  },
+  "upstream_fingerprints": {
+    "S01": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S01_source_inventory.json",
+      "blob_sha": "fa9e192bef8a84342d8c9d67f68f5c738b053794"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S02_english_text.json",
+      "blob_sha": "f764fa5a091ca5fa850f9ef4f453b0a55335af5a"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S03_features_fa.json",
+      "blob_sha": "334891c5947c4b4efded6ed9f2b97a0b8c7c5667"
+    }
+  },
+  "target_catalog_constraints": {
+    "format": "A4 landscape",
+    "punch_safe_important_content": true,
+    "continuous_background_through_punch_side": true,
+    "physical_punch_margin_mm": null,
+    "print_ready_layout_approved": false
+  },
+  "visual_review": {
+    "pages_visually_reviewed_via_original_S01_contact_sheets": 12,
+    "pages_with_selected_visual_references": 11,
+    "reference_image_count": 11,
+    "unique_style_types": 11,
+    "derived_overview_count": 1,
+    "total_image_files": 12,
+    "original_PDF_sha256_verified": true,
+    "reference_crops_direct_from_original_PDF": true,
+    "final_overview_rereviewed_after_recropping": true,
+    "WebP_decodes_all_11": true,
+    "no_image_generation_or_missing_region_reconstruction": true,
+    "verified_NSP_capabilities": 0
+  },
+  "images": [
+    {
+      "id": "VINGCARD15_01_cover_hero",
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "15_Vingcard_Mobile Access Solution.pdf",
+      "original_pdf_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+      "source_pdf_page": 1,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_01_cover_hero.webp",
+      "asset_filename": "VINGCARD15_01_cover_hero.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 36728,
+      "asset_sha256": "c03580acd159df3564e359909043219fa207861594539bd366e619688788bf64",
+      "git_blob_sha": "7e1fcb5cbeb245566649f474ff20e441383196db",
+      "rendered_size_px": [
+        738,
+        980
+      ],
+      "base64_length": 48972,
+      "normalized_pdf_crop": [
+        0,
+        0,
+        1,
+        0.94
+      ],
+      "pdf_crop_points": [
+        0,
+        0,
+        595.276001,
+        791.376614
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "render_scale": 1.2383484461740748,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "hero_full_bleed_product_photo_with_brand_band",
+      "title_fa": "جلد عکس‌محور با نوار هویت",
+      "observed_content_in_crop_fa": "عکس بزرگ دستگیره و تلفن از پایین، نوار یک‌دست عنوان و نشان در بالا؛ هویت و پیام از بدنه جدا هستند.",
+      "key_takeaway_fa": "جدایی عنوان و عکس، سلسله‌مراتب سریع.",
+      "analyst_assessment_fa": "عکس یک محصول ممکن است دامنهٔ راهکار را کوچک جلوه دهد.",
+      "strengths_fa": [
+        "جدایی عنوان و عکس، سلسله‌مراتب سریع."
+      ],
+      "weaknesses_fa": [
+        "عکس یک محصول ممکن است دامنهٔ راهکار را کوچک جلوه دهد."
+      ],
+      "nsp_visual_adaptation_fa": "با عکس تولیدی NSP و عنوان کوتاه، مسیر چشم از هویت به محصول را بازسازی کن؛ ترکیب و نشان منبع کپی نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I001"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P01-E02"
+      ],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "record_link_meaning": "Page-local topic or presentation link only; not proof of competitor or NSP functionality.",
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "extracted_from": "Direct clip, RGB, no annotations, no generative reconstruction or element changes inside crop.",
+      "renderer": "PyMuPDF direct clip; Pillow WebP quality 81 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_in_contact_sheet_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "VINGCARD15_02_visual_mosaic",
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "15_Vingcard_Mobile Access Solution.pdf",
+      "original_pdf_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+      "source_pdf_page": 2,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_02_visual_mosaic.webp",
+      "asset_filename": "VINGCARD15_02_visual_mosaic.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 91582,
+      "asset_sha256": "915afe82924bbadf2e98d5053970d8275e5827c376b80af9d465d82ff386f387",
+      "git_blob_sha": "d46534ab33cf5f34d70213618edfc3442896e3fd",
+      "rendered_size_px": [
+        980,
+        981
+      ],
+      "base64_length": 122112,
+      "normalized_pdf_crop": [
+        0.043,
+        0.538,
+        0.653,
+        0.97
+      ],
+      "pdf_crop_points": [
+        25.596868,
+        452.936828,
+        388.715229,
+        816.633314
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "render_scale": 2.6945544893602564,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "editorial_mosaic_beneath_introduction",
+      "title_fa": "موزاییک عکس پس از معرفی",
+      "observed_content_in_crop_fa": "تصاویر هم‌قد موضوع‌های مختلف در شبکهٔ فشرده؛ خانهٔ آماری در سمت دیگر بیرون برش قرار می‌گیرد.",
+      "key_takeaway_fa": "چهار موقعیت در یک نگاه.",
+      "analyst_assessment_fa": "رابطهٔ تصاویر با پیام به تیتر نیاز دارد؛ قاب افقی بازتراز شود.",
+      "strengths_fa": [
+        "چهار موقعیت در یک نگاه."
+      ],
+      "weaknesses_fa": [
+        "رابطهٔ تصاویر با پیام به تیتر نیاز دارد؛ قاب افقی بازتراز شود."
+      ],
+      "nsp_visual_adaptation_fa": "موزاییک می‌تواند چند موقعیت واقعی هتل را کنار هم نشان دهد؛ اعداد کیفی منبع وارد بازطراحی نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I002",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I003"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P02-E01",
+        "VINGCARD15-P02-E02"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-02"
+      ],
+      "related_source_context_set_refs": [],
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "record_link_meaning": "Page-local topic or presentation link only; not proof of competitor or NSP functionality.",
+      "crop_context_note_fa": "خانهٔ درصد و آمار بیرون برش است.",
+      "extracted_from": "Direct clip, RGB, no annotations, no generative reconstruction or element changes inside crop.",
+      "renderer": "PyMuPDF direct clip; Pillow WebP quality 81 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_in_contact_sheet_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "VINGCARD15_03_benefit_columns",
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "15_Vingcard_Mobile Access Solution.pdf",
+      "original_pdf_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+      "source_pdf_page": 3,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_03_benefit_columns.webp",
+      "asset_filename": "VINGCARD15_03_benefit_columns.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 88448,
+      "asset_sha256": "5caeb701e3a8305fb1c873fe7e4eb20cea849f8c1880446b3711d9a1aae34395",
+      "git_blob_sha": "2b8acd5a998f5265dca7f48e50cbc607add66070",
+      "rendered_size_px": [
+        981,
+        800
+      ],
+      "base64_length": 117932,
+      "normalized_pdf_crop": [
+        0.06,
+        0.09,
+        0.945,
+        0.6
+      ],
+      "pdf_crop_points": [
+        35.71656,
+        75.770101,
+        562.535821,
+        505.134009
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "render_scale": 1.860220521156136,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "two_audience_benefit_columns_with_pictograms",
+      "title_fa": "دو ستون مزیت برای دو مخاطب",
+      "observed_content_in_crop_fa": "پیکتوگرام مهمان و هتل، تیترهای هم‌ردیف و ستون‌های جدا رجوع مخاطب به مزیت خود را ساده می‌کنند.",
+      "key_takeaway_fa": "تفکیک مخاطب با تیتر و پیکتوگرام.",
+      "analyst_assessment_fa": "حجم دو ستون یکسان نیست؛ در فارسی بازآرایی شود.",
+      "strengths_fa": [
+        "تفکیک مخاطب با تیتر و پیکتوگرام."
+      ],
+      "weaknesses_fa": [
+        "حجم دو ستون یکسان نیست؛ در فارسی بازآرایی شود."
+      ],
+      "nsp_visual_adaptation_fa": "برای مهمان و مدیر هتل ستون‌های مستقل و هم‌وزن بساز؛ هر مزیت با متن و شاهد معتبر NSP تأیید شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I004",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I005",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I006",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I007",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I008"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P03-E01",
+        "VINGCARD15-P03-E02",
+        "VINGCARD15-P03-E03",
+        "VINGCARD15-P03-E04",
+        "VINGCARD15-P03-E05",
+        "VINGCARD15-P03-E06"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-03",
+        "VINGCARD15-CLAIM-04"
+      ],
+      "related_source_context_set_refs": [],
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "record_link_meaning": "Page-local topic or presentation link only; not proof of competitor or NSP functionality.",
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "extracted_from": "Direct clip, RGB, no annotations, no generative reconstruction or element changes inside crop.",
+      "renderer": "PyMuPDF direct clip; Pillow WebP quality 81 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_in_contact_sheet_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "VINGCARD15_04_option_cards",
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "15_Vingcard_Mobile Access Solution.pdf",
+      "original_pdf_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+      "source_pdf_page": 4,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_04_option_cards.webp",
+      "asset_filename": "VINGCARD15_04_option_cards.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 80406,
+      "asset_sha256": "2e41ccd15b6826dfa770758e4b8a9580321b853087071d0b4c15e38e0c2bad64",
+      "git_blob_sha": "c0c8d519a147784b04c31d00f85d5bdc390cd4a0",
+      "rendered_size_px": [
+        898,
+        981
+      ],
+      "base64_length": 107208,
+      "normalized_pdf_crop": [
+        0.07,
+        0.26,
+        0.935,
+        0.928
+      ],
+      "pdf_crop_points": [
+        41.66932,
+        218.891404,
+        556.583061,
+        781.273934
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "render_scale": 1.7425861368317819,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "stacked_option_cards_with_pictograms",
+      "title_fa": "کارت‌های عمودی گزینه‌ها",
+      "observed_content_in_crop_fa": "چهار نوار با نشانهٔ سمت چپ، عنوان و بدنه؛ گزینهٔ کیف پول به‌صورت یک بلوک جدا دیده می‌شود.",
+      "key_takeaway_fa": "قاب تکرارشونده به مقایسه کمک می‌کند.",
+      "analyst_assessment_fa": "بدنهٔ هر کارت بلند است؛ کنتراست و طول سطر بازسنجی شوند.",
+      "strengths_fa": [
+        "قاب تکرارشونده به مقایسه کمک می‌کند."
+      ],
+      "weaknesses_fa": [
+        "بدنهٔ هر کارت بلند است؛ کنتراست و طول سطر بازسنجی شوند."
+      ],
+      "nsp_visual_adaptation_fa": "برای مقایسهٔ گزینه‌های واقعی NSP از کارت مستقل و نشانهٔ ساده استفاده شود؛ لوگو و محتوای گزینه‌های رقیب کپی نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I009",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I010",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I011",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I012",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I013"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P04-E02",
+        "VINGCARD15-P04-E06",
+        "VINGCARD15-P04-E03",
+        "VINGCARD15-P04-E07",
+        "VINGCARD15-P04-E04",
+        "VINGCARD15-P04-E05",
+        "VINGCARD15-P04-E08"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-05",
+        "VINGCARD15-CLAIM-06"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "record_link_meaning": "Page-local topic or presentation link only; not proof of competitor or NSP functionality.",
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "extracted_from": "Direct clip, RGB, no annotations, no generative reconstruction or element changes inside crop.",
+      "renderer": "PyMuPDF direct clip; Pillow WebP quality 81 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_in_contact_sheet_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "VINGCARD15_05_partner_overlay",
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "15_Vingcard_Mobile Access Solution.pdf",
+      "original_pdf_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+      "source_pdf_page": 5,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_05_partner_overlay.webp",
+      "asset_filename": "VINGCARD15_05_partner_overlay.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 41002,
+      "asset_sha256": "c501dbd2a3764f72182049f371f6be9398bf8ea4daf71debc7808de1310bdca7",
+      "git_blob_sha": "8ca85c5fba0653bfb472e39e34fa57a7a6a0f1bc",
+      "rendered_size_px": [
+        981,
+        667
+      ],
+      "base64_length": 54672,
+      "normalized_pdf_crop": [
+        0.31,
+        0.043,
+        0.953,
+        0.352
+      ],
+      "pdf_crop_points": [
+        184.53556,
+        36.201271,
+        567.298029,
+        296.345285
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "render_scale": 2.5603346208758637,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "credential_partner_callout_over_photo",
+      "title_fa": "کادر برنامهٔ شریک روی عکس",
+      "observed_content_in_crop_fa": "کادر آبیِ متن و نشان در گوشهٔ عکس قرار دارد و زمینهٔ تصویری خوانش را هدایت می‌کند.",
+      "key_takeaway_fa": "کادر رنگی بر زمینهٔ شلوغ غالب می‌شود.",
+      "analyst_assessment_fa": "هویت و عکس شریک جایگزین نشدنی‌اند مگر با دارایی مجاز NSP.",
+      "strengths_fa": [
+        "کادر رنگی بر زمینهٔ شلوغ غالب می‌شود."
+      ],
+      "weaknesses_fa": [
+        "هویت و عکس شریک جایگزین نشدنی‌اند مگر با دارایی مجاز NSP."
+      ],
+      "nsp_visual_adaptation_fa": "اگر شواهد همکاری NSP وجود دارد، کادر کوتاه روی عکس مجاز و با فاصله از پانچ قرار گیرد؛ نشان منبع و ادعای شریک حذف شوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I014"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P05-E01",
+        "VINGCARD15-P05-E02",
+        "VINGCARD15-P05-E03",
+        "VINGCARD15-P05-E04"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-06"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "record_link_meaning": "Page-local topic or presentation link only; not proof of competitor or NSP functionality.",
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "extracted_from": "Direct clip, RGB, no annotations, no generative reconstruction or element changes inside crop.",
+      "renderer": "PyMuPDF direct clip; Pillow WebP quality 81 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_in_contact_sheet_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "VINGCARD15_06_guest_flow",
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "15_Vingcard_Mobile Access Solution.pdf",
+      "original_pdf_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+      "source_pdf_page": 6,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_06_guest_flow.webp",
+      "asset_filename": "VINGCARD15_06_guest_flow.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 59470,
+      "asset_sha256": "0e4d2a0d34d043f29f7f633d8c33e02fc57debe055650bf23bd53f9e0c458ff0",
+      "git_blob_sha": "ece932cf54182ef7588f9e2a536aebe25d8502f7",
+      "rendered_size_px": [
+        981,
+        960
+      ],
+      "base64_length": 79296,
+      "normalized_pdf_crop": [
+        0.1,
+        0.28,
+        0.945,
+        0.865
+      ],
+      "pdf_crop_points": [
+        59.5276,
+        235.729204,
+        562.535821,
+        728.234863
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "render_scale": 1.9482782973055393,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "numbered_pictogram_guest_journey",
+      "title_fa": "مسیر مهمان با پیکتوگرام شماره‌دار",
+      "observed_content_in_crop_fa": "پنج گام در دو ردیف، عدد و نماد قبل از متن، ترتیب از راست‌چین یا چیدمان فارسی مستقلاً طراحی شود.",
+      "key_takeaway_fa": "عدد و نشانه مسیر را خوانا می‌کنند.",
+      "analyst_assessment_fa": "شکست دو ردیف و تراکم متن برای راست‌به‌چپ نیازمند آزمون است.",
+      "strengths_fa": [
+        "عدد و نشانه مسیر را خوانا می‌کنند."
+      ],
+      "weaknesses_fa": [
+        "شکست دو ردیف و تراکم متن برای راست‌به‌چپ نیازمند آزمون است."
+      ],
+      "nsp_visual_adaptation_fa": "الگوی عدد+نشانه+شرح کوتاه برای یک سناریوی واقعی NSP؛ ترتیب و زمان راهکار رقیب تعهد NSP نیست.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I016"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P06-E01",
+        "VINGCARD15-P06-E02",
+        "VINGCARD15-P06-E03",
+        "VINGCARD15-P06-E04",
+        "VINGCARD15-P06-E05"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-08"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD15-CONTEXT-GUEST-FLOW"
+      ],
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "record_link_meaning": "Page-local topic or presentation link only; not proof of competitor or NSP functionality.",
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "extracted_from": "Direct clip, RGB, no annotations, no generative reconstruction or element changes inside crop.",
+      "renderer": "PyMuPDF direct clip; Pillow WebP quality 81 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_in_contact_sheet_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "VINGCARD15_07_lifestyle_quote",
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "15_Vingcard_Mobile Access Solution.pdf",
+      "original_pdf_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+      "source_pdf_page": 7,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_07_lifestyle_quote.webp",
+      "asset_filename": "VINGCARD15_07_lifestyle_quote.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 52156,
+      "asset_sha256": "0e8492d3b43eec13115a7e0a2e534456844010d709c1001eb977d1e669bbdc9a",
+      "git_blob_sha": "7254d8e55c8c36d10bafc5f5208f8801ac670e1a",
+      "rendered_size_px": [
+        701,
+        981
+      ],
+      "base64_length": 69544,
+      "normalized_pdf_crop": [
+        0.075,
+        0.08,
+        0.98,
+        0.975
+      ],
+      "pdf_crop_points": [
+        44.6457,
+        67.351201,
+        583.370481,
+        820.842764
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "render_scale": 1.300611775869978,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "full_bleed_context_photo_with_quote_panel",
+      "title_fa": "عکس موقعیت واقعی با کادر نقل‌قول",
+      "observed_content_in_crop_fa": "راهروی هتل و شخص در حال استفاده از تلفن، کادر آبی کوچک پایین عکس در مسیری جدا از موضوع اصلی قرار گرفته.",
+      "key_takeaway_fa": "جای جدا برای سوژه و نقل‌قول.",
+      "analyst_assessment_fa": "سوژه و نقل‌قول به منبع وابسته‌اند؛ فقط اصل طراحی الهام است.",
+      "strengths_fa": [
+        "جای جدا برای سوژه و نقل‌قول."
+      ],
+      "weaknesses_fa": [
+        "سوژه و نقل‌قول به منبع وابسته‌اند؛ فقط اصل طراحی الهام است."
+      ],
+      "nsp_visual_adaptation_fa": "ترجیح با عکاسی اختصاصی و متن NSP؛ سوژه و نقل‌قول از نسخهٔ رقیب اقتباس لفظی نشوند.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I017"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P07-E01"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-09"
+      ],
+      "related_source_context_set_refs": [],
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "record_link_meaning": "Page-local topic or presentation link only; not proof of competitor or NSP functionality.",
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "extracted_from": "Direct clip, RGB, no annotations, no generative reconstruction or element changes inside crop.",
+      "renderer": "PyMuPDF direct clip; Pillow WebP quality 81 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_in_contact_sheet_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "VINGCARD15_08_product_photo_row",
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "15_Vingcard_Mobile Access Solution.pdf",
+      "original_pdf_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+      "source_pdf_page": 8,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_08_product_photo_row.webp",
+      "asset_filename": "VINGCARD15_08_product_photo_row.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 8518,
+      "asset_sha256": "17ac5b89efbb7a997454a7459ac5378162fbb55fe2fa5463faa7f67c63e6fbf6",
+      "git_blob_sha": "dca341abb658c5f7b06265e60145b6d24e1264ee",
+      "rendered_size_px": [
+        981,
+        388
+      ],
+      "base64_length": 11360,
+      "normalized_pdf_crop": [
+        0.203,
+        0.303,
+        0.965,
+        0.516
+      ],
+      "pdf_crop_points": [
+        120.841028,
+        255.092674,
+        574.441341,
+        434.415248
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "render_scale": 2.160492337563229,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "aligned_product_crop_photo_row",
+      "title_fa": "ردیف عکس‌های هم‌ارتفاع محصول",
+      "observed_content_in_crop_fa": "عکس‌ها با قاب هم‌ارتفاع و فاصلهٔ ثابت کنار هم آمده‌اند؛ مشخصات، نام مدل‌ها و متن سازگاری هدف این برش نیست.",
+      "key_takeaway_fa": "قاب و تراز یکسان مقایسهٔ بصری را ساده می‌کنند.",
+      "analyst_assessment_fa": "عکس و خاکستری بودن، شاهد اندازه، جنس یا مشخصات نیست.",
+      "strengths_fa": [
+        "قاب و تراز یکسان مقایسهٔ بصری را ساده می‌کنند."
+      ],
+      "weaknesses_fa": [
+        "عکس و خاکستری بودن، شاهد اندازه، جنس یا مشخصات نیست."
+      ],
+      "nsp_visual_adaptation_fa": "برای نمونه‌های واقعی و مجاز NSP قاب و تراز ثابت بساز؛ مدل و شرط سخت‌افزاری رقیب منتقل نشود.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [],
+      "source_claim_gate_refs": [],
+      "related_source_context_set_refs": [],
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "record_link_meaning": "Page-local topic or presentation link only; not proof of competitor or NSP functionality.",
+      "crop_context_note_fa": "نام‌های چاپ‌شده زیر عکس‌ها و متن مشخصات بیرون برش‌اند.",
+      "extracted_from": "Direct clip, RGB, no annotations, no generative reconstruction or element changes inside crop.",
+      "renderer": "PyMuPDF direct clip; Pillow WebP quality 81 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_in_contact_sheet_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "VINGCARD15_09_role_loop",
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "15_Vingcard_Mobile Access Solution.pdf",
+      "original_pdf_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+      "source_pdf_page": 9,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_09_role_loop.webp",
+      "asset_filename": "VINGCARD15_09_role_loop.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 50276,
+      "asset_sha256": "bfd75f84dde4a681c2adbdc2b6e1a7aa2a2a54a88aad4b6ca682fb6e3bc31a67",
+      "git_blob_sha": "2c4f1b5de15911c7578cb2886d334a01ced1c394",
+      "rendered_size_px": [
+        981,
+        858
+      ],
+      "base64_length": 67036,
+      "normalized_pdf_crop": [
+        0.045,
+        0.215,
+        0.975,
+        0.79
+      ],
+      "pdf_crop_points": [
+        26.78742,
+        181.006353,
+        580.394101,
+        665.093112
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "render_scale": 1.7702098507776134,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "numbered_role_loop_on_solid_background",
+      "title_fa": "نمودار حلقه‌ای نقش‌ها",
+      "observed_content_in_crop_fa": "نقش‌ها با آیکن، خط متصل و اعداد روی زمینهٔ یکنواخت از هم تفکیک شده‌اند؛ نمایش مفهومی منبع است.",
+      "key_takeaway_fa": "خط و شماره نقش‌ها را مفهوم‌سازی می‌کنند.",
+      "analyst_assessment_fa": "متن ریز روی زمینهٔ تیره نیازمند کنترل خوانایی است.",
+      "strengths_fa": [
+        "خط و شماره نقش‌ها را مفهوم‌سازی می‌کنند."
+      ],
+      "weaknesses_fa": [
+        "متن ریز روی زمینهٔ تیره نیازمند کنترل خوانایی است."
+      ],
+      "nsp_visual_adaptation_fa": "جهت حرکت و نقش‌ها را فقط با معماری تأییدشدهٔ NSP بازطراحی کن؛ فرایند صدور یا امنیت منبع منتقل نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I019",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I020"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P09-E01",
+        "VINGCARD15-P09-E02",
+        "VINGCARD15-P09-E03"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-11"
+      ],
+      "related_source_context_set_refs": [
+        "VINGCARD15-CONTEXT-ISSUANCE-FLOW",
+        "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK"
+      ],
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "record_link_meaning": "Page-local topic or presentation link only; not proof of competitor or NSP functionality.",
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "extracted_from": "Direct clip, RGB, no annotations, no generative reconstruction or element changes inside crop.",
+      "renderer": "PyMuPDF direct clip; Pillow WebP quality 81 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_in_contact_sheet_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "VINGCARD15_10_dark_feature_stack",
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "15_Vingcard_Mobile Access Solution.pdf",
+      "original_pdf_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+      "source_pdf_page": 10,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_10_dark_feature_stack.webp",
+      "asset_filename": "VINGCARD15_10_dark_feature_stack.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 113428,
+      "asset_sha256": "bd605d0b153f9282039c7755ab11ce048c3aa370be6eb7a455023c60c63c6221",
+      "git_blob_sha": "b1479c0a94a1d7befa1073b79ee100a4ae8021e1",
+      "rendered_size_px": [
+        724,
+        981
+      ],
+      "base64_length": 151240,
+      "normalized_pdf_crop": [
+        0.13,
+        0.125,
+        0.96,
+        0.92
+      ],
+      "pdf_crop_points": [
+        77.38588,
+        105.236252,
+        571.464961,
+        774.538813
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "render_scale": 1.4642107413882144,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "dark_technology_panel_with_icon_rail",
+      "title_fa": "صفحهٔ تیره با ریل نشانه‌ها",
+      "observed_content_in_crop_fa": "زیرعنوان‌های کوتاه در ستون متن و نمادهای خطی در ریل کنار آن؛ زمینهٔ تیره، بافت نورانی و تمرکز نقطه‌ای.",
+      "key_takeaway_fa": "ریل تکرارشونده از متن جدا می‌ماند.",
+      "analyst_assessment_fa": "تیرگی و بافت برای چاپ و متن کوچک باید آزموده شوند.",
+      "strengths_fa": [
+        "ریل تکرارشونده از متن جدا می‌ماند."
+      ],
+      "weaknesses_fa": [
+        "تیرگی و بافت برای چاپ و متن کوچک باید آزموده شوند."
+      ],
+      "nsp_visual_adaptation_fa": "برای NSP کنتراست دسترس‌پذیر، بندهای کوتاه و نشانه‌های اختصاصی؛ هیچ ادعای امنیت یا SLA از منبع بازیافت نشود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I021",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I022",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I023",
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I024"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P10-E03",
+        "VINGCARD15-P10-E04",
+        "VINGCARD15-P10-E05",
+        "VINGCARD15-P10-E06"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-12"
+      ],
+      "related_source_context_set_refs": [],
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "record_link_meaning": "Page-local topic or presentation link only; not proof of competitor or NSP functionality.",
+      "crop_context_note_fa": "برش چیدمان؛ ممکن است بخشی از متن اطراف بیرون باشد.",
+      "extracted_from": "Direct clip, RGB, no annotations, no generative reconstruction or element changes inside crop.",
+      "renderer": "PyMuPDF direct clip; Pillow WebP quality 81 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_in_contact_sheet_and_WebP_decode_dimensions_verified"
+    },
+    {
+      "id": "VINGCARD15_11_quiet_closing",
+      "source_company": "Vingcard / ASSA ABLOY",
+      "original_pdf": "15_Vingcard_Mobile Access Solution.pdf",
+      "original_pdf_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+      "source_pdf_page": 11,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_11_quiet_closing.webp",
+      "asset_filename": "VINGCARD15_11_quiet_closing.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 30506,
+      "asset_sha256": "749f89b57be9f1310708f757fe015548508fd8518099c6ff3fe3233f4769edf3",
+      "git_blob_sha": "5dbe6320f7a1d067df1a264465fc86b8ce2d50a0",
+      "rendered_size_px": [
+        981,
+        387
+      ],
+      "base64_length": 40676,
+      "normalized_pdf_crop": [
+        0.08,
+        0.19,
+        0.92,
+        0.424
+      ],
+      "pdf_crop_points": [
+        47.62208,
+        159.959103,
+        547.653921,
+        356.961366
+      ],
+      "crop_coordinate_system": "Top-left origin; [x0,y0,x1,y1] relative to the unrotated visible page.",
+      "render_scale": 1.9598751919323576,
+      "target_longest_edge_px": 980,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "quiet_typographic_closing_with_negative_space",
+      "title_fa": "پایان‌بندی تایپوگرافیک در فضای منفی",
+      "observed_content_in_crop_fa": "متن کوتاه روشن در بخشی از سطح تیره، بدون ازدحام تصویر، خواننده را به پیام پایانی هدایت می‌کند.",
+      "key_takeaway_fa": "فضای منفی مکث بصری ایجاد می‌کند.",
+      "analyst_assessment_fa": "متن کوچک می‌تواند در نمایش دیجیتال گم شود.",
+      "strengths_fa": [
+        "فضای منفی مکث بصری ایجاد می‌کند."
+      ],
+      "weaknesses_fa": [
+        "متن کوچک می‌تواند در نمایش دیجیتال گم شود."
+      ],
+      "nsp_visual_adaptation_fa": "متن جمع‌بندی اختصاصی و کوتاه با زمینهٔ پیوسته؛ نه ترجمهٔ مستقیم شعار رقیب و نه درج ناخواستهٔ تماس.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION:I025"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "VINGCARD15-P11-E01",
+        "VINGCARD15-P11-E02"
+      ],
+      "source_claim_gate_refs": [
+        "VINGCARD15-CLAIM-13"
+      ],
+      "related_source_context_set_refs": [],
+      "mapping_status": "pending_S05_no_target_section_assigned",
+      "record_link_meaning": "Page-local topic or presentation link only; not proof of competitor or NSP functionality.",
+      "crop_context_note_fa": "پاراگراف دعوت به تماس بیرون برش است.",
+      "extracted_from": "Direct clip, RGB, no annotations, no generative reconstruction or element changes inside crop.",
+      "renderer": "PyMuPDF direct clip; Pillow WebP quality 81 method 6.",
+      "permitted_use": "internal_design_research_only",
+      "copyright_notice_fa": "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود.",
+      "capability_of_NSP_verified": false,
+      "visual_QA_status": "final_crop_reviewed_in_contact_sheet_and_WebP_decode_dimensions_verified"
+    }
+  ],
+  "style_catalog": [
+    {
+      "style_id": "hero_full_bleed_product_photo_with_brand_band",
+      "title_fa": "جلد عکس‌محور با نوار هویت",
+      "representative_reference_ids": [
+        "VINGCARD15_01_cover_hero"
+      ],
+      "physical_pdf_pages": [
+        1
+      ],
+      "key_takeaway_fa": "جدایی عنوان و عکس، سلسله‌مراتب سریع.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "editorial_mosaic_beneath_introduction",
+      "title_fa": "موزاییک عکس پس از معرفی",
+      "representative_reference_ids": [
+        "VINGCARD15_02_visual_mosaic"
+      ],
+      "physical_pdf_pages": [
+        2
+      ],
+      "key_takeaway_fa": "چهار موقعیت در یک نگاه.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "two_audience_benefit_columns_with_pictograms",
+      "title_fa": "دو ستون مزیت برای دو مخاطب",
+      "representative_reference_ids": [
+        "VINGCARD15_03_benefit_columns"
+      ],
+      "physical_pdf_pages": [
+        3
+      ],
+      "key_takeaway_fa": "تفکیک مخاطب با تیتر و پیکتوگرام.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "stacked_option_cards_with_pictograms",
+      "title_fa": "کارت‌های عمودی گزینه‌ها",
+      "representative_reference_ids": [
+        "VINGCARD15_04_option_cards"
+      ],
+      "physical_pdf_pages": [
+        4
+      ],
+      "key_takeaway_fa": "قاب تکرارشونده به مقایسه کمک می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "credential_partner_callout_over_photo",
+      "title_fa": "کادر برنامهٔ شریک روی عکس",
+      "representative_reference_ids": [
+        "VINGCARD15_05_partner_overlay"
+      ],
+      "physical_pdf_pages": [
+        5
+      ],
+      "key_takeaway_fa": "کادر رنگی بر زمینهٔ شلوغ غالب می‌شود.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "numbered_pictogram_guest_journey",
+      "title_fa": "مسیر مهمان با پیکتوگرام شماره‌دار",
+      "representative_reference_ids": [
+        "VINGCARD15_06_guest_flow"
+      ],
+      "physical_pdf_pages": [
+        6
+      ],
+      "key_takeaway_fa": "عدد و نشانه مسیر را خوانا می‌کنند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "full_bleed_context_photo_with_quote_panel",
+      "title_fa": "عکس موقعیت واقعی با کادر نقل‌قول",
+      "representative_reference_ids": [
+        "VINGCARD15_07_lifestyle_quote"
+      ],
+      "physical_pdf_pages": [
+        7
+      ],
+      "key_takeaway_fa": "جای جدا برای سوژه و نقل‌قول.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "aligned_product_crop_photo_row",
+      "title_fa": "ردیف عکس‌های هم‌ارتفاع محصول",
+      "representative_reference_ids": [
+        "VINGCARD15_08_product_photo_row"
+      ],
+      "physical_pdf_pages": [
+        8
+      ],
+      "key_takeaway_fa": "قاب و تراز یکسان مقایسهٔ بصری را ساده می‌کنند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "numbered_role_loop_on_solid_background",
+      "title_fa": "نمودار حلقه‌ای نقش‌ها",
+      "representative_reference_ids": [
+        "VINGCARD15_09_role_loop"
+      ],
+      "physical_pdf_pages": [
+        9
+      ],
+      "key_takeaway_fa": "خط و شماره نقش‌ها را مفهوم‌سازی می‌کنند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "dark_technology_panel_with_icon_rail",
+      "title_fa": "صفحهٔ تیره با ریل نشانه‌ها",
+      "representative_reference_ids": [
+        "VINGCARD15_10_dark_feature_stack"
+      ],
+      "physical_pdf_pages": [
+        10
+      ],
+      "key_takeaway_fa": "ریل تکرارشونده از متن جدا می‌ماند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "quiet_typographic_closing_with_negative_space",
+      "title_fa": "پایان‌بندی تایپوگرافیک در فضای منفی",
+      "representative_reference_ids": [
+        "VINGCARD15_11_quiet_closing"
+      ],
+      "physical_pdf_pages": [
+        11
+      ],
+      "key_takeaway_fa": "فضای منفی مکث بصری ایجاد می‌کند.",
+      "final_section_mapping": "pending_S05"
+    }
+  ],
+  "reference_overview": {
+    "asset_filename": "VINGCARD15_S04_reference_overview.webp",
+    "rendered_size_px": [
+      848,
+      828
+    ],
+    "asset_bytes": 64844,
+    "asset_sha256": "21b2a8b33b8d17ba36bde7664f5e18363f89b81c3418ec11c75369e2270b907e",
+    "git_blob_sha": "3de1ceef87879b9d0c0d08ea8dc49bea9912805f",
+    "base64_length": 86460,
+    "asset_path": "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_S04_reference_overview.webp",
+    "mime_type": "image/webp",
+    "role": "derived_navigation_overview_not_a_source_reference",
+    "source_reference_ids": [
+      "VINGCARD15_01_cover_hero",
+      "VINGCARD15_02_visual_mosaic",
+      "VINGCARD15_03_benefit_columns",
+      "VINGCARD15_04_option_cards",
+      "VINGCARD15_05_partner_overlay",
+      "VINGCARD15_06_guest_flow",
+      "VINGCARD15_07_lifestyle_quote",
+      "VINGCARD15_08_product_photo_row",
+      "VINGCARD15_09_role_loop",
+      "VINGCARD15_10_dark_feature_stack",
+      "VINGCARD15_11_quiet_closing"
+    ],
+    "counted_in_reference_images": false
+  },
+  "page_review_coverage": [
+    {
+      "physical_pdf_page": 1,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD15_01_cover_hero"
+      ],
+      "disposition": "selected_internal_research_crop"
+    },
+    {
+      "physical_pdf_page": 2,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD15_02_visual_mosaic"
+      ],
+      "disposition": "selected_internal_research_crop"
+    },
+    {
+      "physical_pdf_page": 3,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD15_03_benefit_columns"
+      ],
+      "disposition": "selected_internal_research_crop"
+    },
+    {
+      "physical_pdf_page": 4,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD15_04_option_cards"
+      ],
+      "disposition": "selected_internal_research_crop"
+    },
+    {
+      "physical_pdf_page": 5,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD15_05_partner_overlay"
+      ],
+      "disposition": "selected_internal_research_crop"
+    },
+    {
+      "physical_pdf_page": 6,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD15_06_guest_flow"
+      ],
+      "disposition": "selected_internal_research_crop"
+    },
+    {
+      "physical_pdf_page": 7,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD15_07_lifestyle_quote"
+      ],
+      "disposition": "selected_internal_research_crop"
+    },
+    {
+      "physical_pdf_page": 8,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD15_08_product_photo_row"
+      ],
+      "disposition": "selected_internal_research_crop"
+    },
+    {
+      "physical_pdf_page": 9,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD15_09_role_loop"
+      ],
+      "disposition": "selected_internal_research_crop"
+    },
+    {
+      "physical_pdf_page": 10,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD15_10_dark_feature_stack"
+      ],
+      "disposition": "selected_internal_research_crop"
+    },
+    {
+      "physical_pdf_page": 11,
+      "visually_reviewed": true,
+      "selected_reference_ids": [
+        "VINGCARD15_11_quiet_closing"
+      ],
+      "disposition": "selected_internal_research_crop"
+    },
+    {
+      "physical_pdf_page": 12,
+      "visually_reviewed": true,
+      "selected_reference_ids": [],
+      "disposition": "not_exported_contact_directory_and_brand_identification_only"
+    }
+  ],
+  "excluded_visuals": [
+    {
+      "physical_pdf_pages": [
+        2
+      ],
+      "reason_fa": "باکس درصد ناشر؛ شاهد عددی مستقل یا نتیجهٔ NSP نیست."
+    },
+    {
+      "physical_pdf_pages": [
+        8
+      ],
+      "reason_fa": "نام‌های چاپی مدل و متن مشخصات و سازگاری در برش نهایی نیستند."
+    },
+    {
+      "physical_pdf_pages": [
+        11,
+        12
+      ],
+      "reason_fa": "دعوت به تماس، فهرست تماس و جلد پشتی هویتی منتقل نمی‌شوند."
+    }
+  ],
+  "design_observations_fa": [
+    "عکس گسترده، قاب‌های هم‌تراز و مکث تایپوگرافیک سه ریتم متفاوت می‌سازند.",
+    "نمودار مهمان و نمودار نقش‌ها دو هدف متفاوت دارند؛ شکل از قابلیت جداست.",
+    "قالب راست‌به‌چپ و حاشیهٔ امن باید مستقل برای NSP طراحی شوند.",
+    "تصاویر و نوشته‌های منبع متعلق به Vingcard / ASSA ABLOY یا دارندگان حقوق‌اند. استفاده فقط برای پژوهش طراحی؛ هیچ حق بازنشر یا استفادهٔ تجاری و هیچ قابلیت NSP تأیید نمی‌شود."
+  ],
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false,
+  "next_stage": "S05 — تطبیق با نوع سکشن NSP",
+  "next_queue_cursor": {
+    "document_index": 8,
+    "document_id": "15",
+    "step_index": 4,
+    "step_id": "S05"
+  },
+  "next_stage_executed": false
+}
