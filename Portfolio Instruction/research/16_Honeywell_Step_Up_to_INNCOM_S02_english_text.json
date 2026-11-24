@@ -1,0 +1,753 @@
+{
+  "schema": "nsp-catalog-research-s02-english-extract-v1",
+  "stage": "S02",
+  "stage_key": "source_text_extraction",
+  "status": "completed_with_source_claim_gates",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "b32897678efb26e2d5553f6d96e4673730f9f110",
+  "document_id": "16",
+  "source_id": "CAT016_HONEYWELL_STEP_UP_TO_INNCOM",
+  "source_pdf": {
+    "company": "Honeywell",
+    "publisher": "Honeywell Hospitality / Honeywell International Inc.",
+    "title": "Step Up to INNCOM",
+    "filename": "16_Honeywell_Step Up to INNCOM.pdf",
+    "pdf_pages": 4,
+    "file_size_bytes": 1487482,
+    "source_sha256": "d9047197296ea81a34778fb79473c59e40d3b92d46d43aebac9d185aa7707303",
+    "printed_document_code": "IN-BR-StepUptoINNCOM",
+    "document_number": "01-00139",
+    "printed_edition_date": "2023-10-12",
+    "publication_evidence_pdf_page": 4,
+    "S01_inventory": "Portfolio Instruction/research/16_Honeywell_Step_Up_to_INNCOM_S01_source_inventory.json",
+    "S01_inventory_git_blob_sha": "5b0f836bfa42b239c044a14ad1e2ac8e2f37bcb8",
+    "S01_inventory_commit": "a8f8ac370a81305d4df06d67414464183ff153ff"
+  },
+  "scope": {
+    "all_4_native_text_pages_reviewed": true,
+    "native_body_no_OCR": true,
+    "short_excerpts_only": true,
+    "full_PDF_text_not_republished": true,
+    "source_claims_not_NSP_claims": true,
+    "current_vendor_availability_not_verified": true,
+    "no_competitor_hardware_spec_or_model_list_promoted": true,
+    "full_dashboard_screenshot_labels_not_transcribed": true
+  },
+  "statistics": {
+    "PDF_pages_read_and_mapped": 4,
+    "native_text_pages": 4,
+    "short_verified_English_source_fragments": 29,
+    "retained_short_excerpt_words": 133,
+    "exact_normalized_matches_using_both_PDF_engines": 29,
+    "claim_and_context_gates": 9,
+    "chart_rows": 5,
+    "chart_rows_differing_from_prior_brochure": 3,
+    "new_NSP_capabilities_verified": 0
+  },
+  "pages": [
+    {
+      "pdf_page": 1,
+      "canonical_reference": "physical PDF page",
+      "section_group": "COVER",
+      "native_text_status": "present",
+      "native_text_char_count": 118,
+      "native_page_text_sha256": "d7a97b206db87a7bc71ef56fc8153275e2da91bca18b3caf635019779a2a60c7",
+      "source_headlines_en": [
+        "COMFORT AND CONTROL FOR GUESTS",
+        "SAVINGS AND CONVENIENCE FOR HOTELS"
+      ],
+      "short_english_fragments_en": [
+        "COMFORT AND CONTROL FOR GUESTS",
+        "SAVINGS AND CONVENIENCE FOR HOTELS",
+        "INNCOM Energy Management & Hospitality IoT Solutions"
+      ],
+      "fragment_ids": [
+        "HONEYWELL16-P01-E01",
+        "HONEYWELL16-P01-E02",
+        "HONEYWELL16-P01-E03"
+      ],
+      "fragment_count": 3,
+      "fragment_audit": [
+        {
+          "id": "HONEYWELL16-P01-E01",
+          "source_type": "cover_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": false,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P01-E02",
+          "source_type": "cover_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": false,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P01-E03",
+          "source_type": "product_line",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ],
+      "content_handling": "عکس اتاق با تیتر تقابلی مهمان/هتل و هویت ناشر؛ نه ادعای نتیجه برای NSP.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 2,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SOLUTION_AND_ENERGY_COMPARISON",
+      "native_text_status": "present",
+      "native_text_char_count": 2786,
+      "native_page_text_sha256": "4d45f62cbdb91a60638b2db4c3f9da3a46f0e9b0e6471dc7177736e1bb4c221d",
+      "source_headlines_en": [
+        "STEP UP TO INNCOM",
+        "Scalable EMS & IoT Platform",
+        "Hospitality IoT",
+        "Energy Savings on Guestroom HVAC"
+      ],
+      "short_english_fragments_en": [
+        "STEP UP TO INNCOM",
+        "OCCUPANCY-BASED ENERGY MANAGEMENT",
+        "more than 30% of hotel rooms in the U.S. are unrented",
+        "Scalable EMS & IoT Platform",
+        "advanced occupancy detection",
+        "when rooms are unrented",
+        "Hospitality IoT",
+        "INNcontrol software and the Deep Mesh Network",
+        "Energy Savings on Guestroom HVAC",
+        "HVAC runtime reduction vs. ETM",
+        "average occupancy and < 500 rooms",
+        "U.S. hotel performance for Q2 2019"
+      ],
+      "fragment_ids": [
+        "HONEYWELL16-P02-E01",
+        "HONEYWELL16-P02-E02",
+        "HONEYWELL16-P02-E03",
+        "HONEYWELL16-P02-E04",
+        "HONEYWELL16-P02-E05",
+        "HONEYWELL16-P02-E06",
+        "HONEYWELL16-P02-E07",
+        "HONEYWELL16-P02-E08",
+        "HONEYWELL16-P02-E09",
+        "HONEYWELL16-P02-E10",
+        "HONEYWELL16-P02-E11",
+        "HONEYWELL16-P02-E12"
+      ],
+      "fragment_count": 12,
+      "fragment_audit": [
+        {
+          "id": "HONEYWELL16-P02-E01",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": false,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P02-E02",
+          "source_type": "source_topic",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": false
+        },
+        {
+          "id": "HONEYWELL16-P02-E03",
+          "source_type": "gated_market_statistic",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": false
+        },
+        {
+          "id": "HONEYWELL16-P02-E04",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P02-E05",
+          "source_type": "source_specific_scenario",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P02-E06",
+          "source_type": "source_condition",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P02-E07",
+          "source_type": "source_heading_fragment",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P02-E08",
+          "source_type": "gated_named_architecture",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": false
+        },
+        {
+          "id": "HONEYWELL16-P02-E09",
+          "source_type": "source_chart_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": false,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P02-E10",
+          "source_type": "source_chart_method",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P02-E11",
+          "source_type": "source_chart_scope",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P02-E12",
+          "source_type": "source_market_attribution",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ],
+      "content_handling": "متن چندستونی، نمونهٔ مقیاس‌پذیری و ادغام، عکس زمینهٔ هتل و جدول HVAC. در S02 ترتیب ستون‌ها و جای اعداد، شرایط پاورقی و تفکیک آمار اشغال از صرفه‌جویی را بررسی کن.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 3,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_SOFTWARE_AND_SERVICES",
+      "native_text_status": "present",
+      "native_text_char_count": 3201,
+      "native_page_text_sha256": "baf87a73181d645ba0ab565e77d69c1cdee03f58c1ed6454750160f640650d3a",
+      "source_headlines_en": [
+        "GUESTROOM CUSTOMIZATIONS",
+        "WE’RE AT YOUR SERVICE",
+        "INNCONTROL™ 5 EMS",
+        "Push Notiﬁcations & EMS Analytics"
+      ],
+      "short_english_fragments_en": [
+        "GUESTROOM CUSTOMIZATIONS",
+        "do-not-disturb and make-up-room requests",
+        "WE’RE AT YOUR SERVICE",
+        "INNCOM Support & Maintenance Program",
+        "Network Operations Center (NOC)",
+        "INNCONTROL™ 5 EMS",
+        "cloud-based energy-management supervisor",
+        "IC5 can also integrate with your PMS",
+        "Push Notiﬁcations & EMS Analytics",
+        "mobile alerts",
+        "in-depth analytics"
+      ],
+      "fragment_ids": [
+        "HONEYWELL16-P03-E01",
+        "HONEYWELL16-P03-E02",
+        "HONEYWELL16-P03-E03",
+        "HONEYWELL16-P03-E04",
+        "HONEYWELL16-P03-E05",
+        "HONEYWELL16-P03-E06",
+        "HONEYWELL16-P03-E07",
+        "HONEYWELL16-P03-E08",
+        "HONEYWELL16-P03-E09",
+        "HONEYWELL16-P03-E10",
+        "HONEYWELL16-P03-E11"
+      ],
+      "fragment_count": 11,
+      "fragment_audit": [
+        {
+          "id": "HONEYWELL16-P03-E01",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": false,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P03-E02",
+          "source_type": "gated_room_service_topic",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": false
+        },
+        {
+          "id": "HONEYWELL16-P03-E03",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P03-E04",
+          "source_type": "gated_source_service_name",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P03-E05",
+          "source_type": "gated_source_service_name",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P03-E06",
+          "source_type": "source_software_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P03-E07",
+          "source_type": "gated_software_context",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": false
+        },
+        {
+          "id": "HONEYWELL16-P03-E08",
+          "source_type": "gated_named_integration",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P03-E09",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P03-E10",
+          "source_type": "gated_software_context",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P03-E11",
+          "source_type": "gated_software_context",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ],
+      "content_handling": "نمایش تجهیزات و بن‌مایهٔ اتاق از نرم‌افزار INNcontrol 5، اطلاع‌رسانی، تحلیل و خدمات پشتیبانی جدا شود. ظاهر داشبورد فقط نمونهٔ بصری است؛ مشخصات مدل‌های سخت‌افزاری منتقل نشوند.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 4,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PLATFORM_SUMMARY",
+      "native_text_status": "present",
+      "native_text_char_count": 579,
+      "native_page_text_sha256": "8d8ece6f98347c084a84e0e1ec3261fb955cc1970875ed698cf08f9b47ad16f3",
+      "source_headlines_en": [
+        "CAPABILITIES AND SAVINGS WITH ROOM TO GROW",
+        "THE INNCOM HOSPITALITY PLATFORM"
+      ],
+      "short_english_fragments_en": [
+        "CAPABILITIES AND SAVINGS WITH ROOM TO GROW",
+        "THE INNCOM HOSPITALITY PLATFORM",
+        "01-00139 I 2023-10-12"
+      ],
+      "fragment_ids": [
+        "HONEYWELL16-P04-E01",
+        "HONEYWELL16-P04-E02",
+        "HONEYWELL16-P04-E03"
+      ],
+      "fragment_count": 3,
+      "fragment_audit": [
+        {
+          "id": "HONEYWELL16-P04-E01",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P04-E02",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "HONEYWELL16-P04-E03",
+          "source_type": "printed_metadata",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ],
+      "content_handling": "صفحهٔ واپسین با خلاصهٔ راهکار، دعوت به اقدام، نام ناشر و فرادادهٔ چاپ. ادعاهای خدمات، مقیاس و دسترسی خارج از شواهد NSP‌اند؛ اطلاعات تماس وارد بانک نشود.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    }
+  ],
+  "structured_source_facts": [
+    {
+      "id": "HONEYWELL16-P02-HVAC-RUNTIME-TABLE",
+      "pdf_pages": [
+        2
+      ],
+      "kind": "source_specific_quantitative_comparison",
+      "source_order_method": "Rendered original p2 chart checked visually cell by cell, with unique labels and values independently matched to native text. Standalone EMS left cell spans two rows; Traditional Thermostat configuration cell is blank.",
+      "source_chart_heading_ref": "HONEYWELL16-P02-E09",
+      "metric_method_ref": "HONEYWELL16-P02-E10",
+      "hotel_examples_scope_ref": "HONEYWELL16-P02-E11",
+      "baseline_fa": "کاهش زمان کارکرد HVAC در مقایسه با ETM، حالت ترموستات معمولی؛ هتل با اشغال متوسط و کمتر از ۵۰۰ اتاق.",
+      "scope_comparison_fa": "زمان کارکرد ≠ برق، هزینه یا نتیجهٔ NSP. ادعای بازار Q2 2019 در پاورقی جداست.",
+      "rows": [
+        {
+          "row_id": "HONEYWELL16-P02-CHART-R01",
+          "physical_pdf_page": 2,
+          "system_en": "Networked EMS",
+          "system_label_evidence": "printed",
+          "display_range": "25-40%",
+          "runtime_reduction_percent_min": 25,
+          "runtime_reduction_percent_max": 40,
+          "configuration_en": "Property-wide Hospitality IoT with PMS integration",
+          "caption_cell_blank": false,
+          "related_prior_bank_row_id": "H1",
+          "prior_bank_range_reference_only": "25–40%",
+          "same_range_as_prior_brochure": true
+        },
+        {
+          "row_id": "HONEYWELL16-P02-CHART-R02",
+          "physical_pdf_page": 2,
+          "system_en": "Integrated Room Automation System",
+          "system_label_evidence": "printed",
+          "display_range": "15-25%",
+          "runtime_reduction_percent_min": 15,
+          "runtime_reduction_percent_max": 25,
+          "configuration_en": "Hospitality IoT in the Guestroom",
+          "caption_cell_blank": false,
+          "related_prior_bank_row_id": "H2",
+          "prior_bank_range_reference_only": "20–30%",
+          "same_range_as_prior_brochure": false
+        },
+        {
+          "row_id": "HONEYWELL16-P02-CHART-R03",
+          "physical_pdf_page": 2,
+          "system_en": "Standalone EMS",
+          "system_label_evidence": "printed",
+          "display_range": "15-25%",
+          "runtime_reduction_percent_min": 15,
+          "runtime_reduction_percent_max": 25,
+          "configuration_en": "Motion Detection + Door Sensor",
+          "caption_cell_blank": false,
+          "related_prior_bank_row_id": "H3",
+          "prior_bank_range_reference_only": "20–30%",
+          "same_range_as_prior_brochure": false
+        },
+        {
+          "row_id": "HONEYWELL16-P02-CHART-R04",
+          "physical_pdf_page": 2,
+          "system_en": "Standalone EMS",
+          "system_label_evidence": "inherited_from_shared_visual_cell",
+          "display_range": "10-20%",
+          "runtime_reduction_percent_min": 10,
+          "runtime_reduction_percent_max": 20,
+          "configuration_en": "Motion Detection Only",
+          "caption_cell_blank": false,
+          "related_prior_bank_row_id": "H4",
+          "prior_bank_range_reference_only": "15–25%",
+          "same_range_as_prior_brochure": false
+        },
+        {
+          "row_id": "HONEYWELL16-P02-CHART-R05",
+          "physical_pdf_page": 2,
+          "system_en": "Traditional Thermostat",
+          "system_label_evidence": "printed",
+          "display_range": "0%",
+          "runtime_reduction_percent_min": 0,
+          "runtime_reduction_percent_max": 0,
+          "configuration_en": null,
+          "caption_cell_blank": true,
+          "related_prior_bank_row_id": "H5",
+          "prior_bank_range_reference_only": "0%",
+          "same_range_as_prior_brochure": true
+        }
+      ],
+      "related_previous_brochure": {
+        "document_number": "01-00149",
+        "catalog_id": "CAT001_HONEYWELL_INNCOM_HOSPITALITY_IOT",
+        "existing_table_id": "CAT001_HONEYWELL_INNCOM_HOSPITALITY_IOT:T01",
+        "used_to_check_source_difference_only": true,
+        "changes_to_existing_table": false,
+        "distinct_printed_document_numbers": true
+      },
+      "printed_chart_cell_content_audit": [
+        {
+          "cell_text": "Networked EMS",
+          "matches": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "cell_text": "25-40%",
+          "matches": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "cell_text": "Property-wide Hospitality IoT with PMS integration",
+          "matches": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "cell_text": "Integrated Room Automation System",
+          "matches": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "cell_text": "15-25%",
+          "matches": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "cell_text": "Hospitality IoT in the Guestroom",
+          "matches": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "cell_text": "Standalone EMS",
+          "matches": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "cell_text": "Motion Detection + Door Sensor",
+          "matches": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "cell_text": "10-20%",
+          "matches": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "cell_text": "Motion Detection Only",
+          "matches": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "cell_text": "Traditional Thermostat",
+          "matches": [
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "cell_text": "0%",
+          "matches": [
+            true,
+            true,
+            true
+          ]
+        }
+      ],
+      "source_specific": true,
+      "verified_NSP_claim": false
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "HONEYWELL16-CLAIM-01",
+      "pdf_page": 2,
+      "kind": "independent_market_statistic_from_table",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P02-E03",
+        "HONEYWELL16-P02-E12"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "آمار اتاق‌های اجاره‌نرفتهٔ آمریکا به Q2 2019 نسبت داده شده است؛ عدد صرفه‌جویی انرژی، اشغال جاری یا شاخص NSP نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-02",
+      "pdf_page": 2,
+      "kind": "table_HVAC_runtime_only",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P02-E09",
+        "HONEYWELL16-P02-E10",
+        "HONEYWELL16-P02-E11"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "مبنای مقایسه ETM (حالت ترموستات معمولی)، در هتل‌هایی با اشغال میانگین و کمتر از ۵۰۰ اتاق است. درصد زمان کارکرد HVAC را مصرف برق، هزینه یا نتیجهٔ NSP ننام.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-03",
+      "pdf_page": 2,
+      "kind": "three_table_rows_conflict_with_separate_brochure",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P02-E09",
+        "HONEYWELL16-P02-E10",
+        "HONEYWELL16-P02-E11"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "سه ردیف میانی با سند جداگانه 01-00149 در بانک متفاوت‌اند. هیچ میانگین یا ادغام عددی انجام نشود؛ عدد، صفحه و شناسهٔ سند همراه بماند.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-04",
+      "pdf_page": 2,
+      "kind": "occupancy_and_renting_are_not_synonyms",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P02-E02",
+        "HONEYWELL16-P02-E05",
+        "HONEYWELL16-P02-E06"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "اجاره‌نرفتن و تشخیص حضور یک مفهوم نیستند؛ شرط هر سناریوی منبع به‌طور مستقل خوانده شود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-05",
+      "pdf_page": 2,
+      "kind": "named_integration_is_vendor_only",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P02-E07",
+        "HONEYWELL16-P02-E08"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "INNcontrol، شبکهٔ ناشر و معماری ادغام به همان منبع تعلق دارند؛ اتصال دستگاه‌ها، راه‌اندازی یا PMS در NSP احراز نشده.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-06",
+      "pdf_page": 3,
+      "kind": "cloud_supervisor_and_PMS_scope",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P03-E06",
+        "HONEYWELL16-P03-E07",
+        "HONEYWELL16-P03-E08"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "IC5 مدیریت انرژی ابری منبع است و اتصال PMS به‌صورت ممکن توصیف شده؛ نسخهٔ فعلی، هر PMS و نتیجهٔ NSP مستقل بررسی نشده‌اند.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-07",
+      "pdf_page": 3,
+      "kind": "notifications_and_analytics_separate",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P03-E09",
+        "HONEYWELL16-P03-E10",
+        "HONEYWELL16-P03-E11"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "اطلاع‌رسانی موبایلی و گزارش تحلیلی در بخش مجزا هستند؛ تصویر داشبورد یا ادعای آینده‌نگر تضمین قابلیت یا امنیت NSP نیست.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-08",
+      "pdf_page": 3,
+      "kind": "service_vs_software_and_room_requests",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P03-E02",
+        "HONEYWELL16-P03-E03",
+        "HONEYWELL16-P03-E04",
+        "HONEYWELL16-P03-E05"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "پیام خدمات، پشتیبانی و NOC با نرم‌افزار یا محصولات NSP یکی نیستند؛ درخواست‌های اتاق فقط موضوع پژوهش‌اند نه تأیید عملکرد.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "HONEYWELL16-CLAIM-09",
+      "pdf_page": 4,
+      "kind": "summary_and_edition",
+      "S02_fragment_refs": [
+        "HONEYWELL16-P04-E02",
+        "HONEYWELL16-P04-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "فرادادهٔ سند و عنوان خلاصهٔ ناشر؛ شمارهٔ 01-00139 را به 01-00149 تغییر نده. ادعای رهبری، مقیاس یا خدمات به NSP منتقل نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    }
+  ],
+  "reading_order_and_scope_notes_fa": [
+    "صفحات ۲ و ۳ چندستونی‌اند؛ خروجی خام Library می‌تواند ستون‌ها را در هم آورد. گزیده‌ها از خطوط خودشان در PDF اصلی استخراج و با موتور دوم تأیید شده‌اند.",
+    "عنوان آمار در جدول، بازهٔ برداشت عملکرد است. پاورقی برای محل/حد و ETM نگه‌داشته می‌شود؛ هیچ بازه‌ای به ادعای NSP یا نسخهٔ فعلی Honeywell تبدیل نشود.",
+    "در صفحهٔ ۳ واژهٔ Notifications با لیگاتور چاپی ثبت شده و جست‌وجوی موتور متن با NFKC انجام شده؛ hyphen شکسته در خط فقط برای مقایسه چسبانده شده است."
+  ],
+  "quality_assurance": {
+    "actual_pdf_byte_hash_matches_S01": true,
+    "all_native_page_text_hashes_match_S01": true,
+    "normalization_for_comparison": "NFKC (incl. typographic ligatures), join real line-break hyphens, collapse whitespace; stored excerpts keep source wording.",
+    "all_four_pages_once": true,
+    "both_pdf_engine_exact_check": true,
+    "chart_values_and_order_checked_visually": true,
+    "per_source_comparison_not_overwritten": true,
+    "exact_quote_match_failures": 0
+  },
+  "next_queue_cursor": {
+    "document_index": 9,
+    "document_id": "16",
+    "step_index": 2,
+    "step_id": "S03"
+  },
+  "next_stage": "S03 — استخراج فیچر و ترجمه",
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "portfolio_builder_app_source_changed": false,
+  "editorial_structure_changed": false
+}
