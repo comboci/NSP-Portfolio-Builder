@@ -1,0 +1,936 @@
+{
+  "schema": "nsp-catalog-research-s04-visual-style-evidence-v1",
+  "stage": "S04",
+  "stage_key": "visuals_and_styles",
+  "status": "completed_page_scoped_non_operational_visual_research",
+  "document_id": "57",
+  "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "verified_on": "2026-11-24",
+  "base_main_commit": "0765852f9014f223c59b7d08f5bfe0f737db1a90",
+  "source_pdf": {
+    "filename": "57_Hager_Work C15.1.pdf",
+    "title": "Hager im Zweckbau",
+    "size_bytes": 60546700,
+    "sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+    "pdf_pages": 172,
+    "printed_document_code": "19DE0075_01",
+    "printed_code_physical_pdf_page": 172,
+    "printed_edition_date_not_verified": true
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S01_source_inventory.json",
+      "commit_sha": "4e0a33e3e30c76cd6a38d59e83519e45d8e3ab35",
+      "blob_sha": "a489cd42cd56523eb8ccda538149a43af511e94a"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S02_german_text.json",
+      "blob_sha": "51e45bae2ba19081d0d1fd6b8882a8d525b04938",
+      "commit_sha": "e89e8a12939597b06e1351646856a35d2e012cf5"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S03_features_fa.json",
+      "blob_sha": "45ed9f53f1d896435739726884baf0ac9b9904af",
+      "commit_sha": "95d16d6a6d6a7713e2ecc57336173dc00fd52f85"
+    }
+  },
+  "visual_review": {
+    "scope": "S01 indexed all 172 pages; S04 inspected selected hotel-chapter pages only, not a full visual survey of this source.",
+    "physical_pdf_pages_reviewed": [
+      32,
+      33,
+      34,
+      35,
+      38,
+      40,
+      44,
+      45,
+      48,
+      53,
+      55,
+      56,
+      58,
+      60,
+      61,
+      66,
+      68,
+      69,
+      70,
+      71
+    ],
+    "visual_source_pdf_pages": [
+      32,
+      34,
+      45,
+      48,
+      60,
+      61,
+      66,
+      68,
+      70
+    ],
+    "direct_reference_count": 9,
+    "style_family_count": 9,
+    "overview_excluded_from_count": true,
+    "exact_source_size_sha256_and_each_selected_page_hash_verified": true,
+    "no_diagrams_no_operational_claims_no_publication_rights": true,
+    "notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است."
+  },
+  "images": [
+    {
+      "id": "HAGER57_032_reception_texture",
+      "reference_order": 1,
+      "source_company": "Hager",
+      "source_language": "de",
+      "original_pdf": "57_Hager_Work C15.1.pdf",
+      "original_pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "original_printed_document_code": "19DE0075_01",
+      "source_pdf_page": 32,
+      "original_printed_folio": 32,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_032_reception_texture.webp",
+      "asset_filename": "HAGER57_032_reception_texture.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 36266,
+      "asset_sha256": "855e76a511a1552a59a9ffea61b7e473c69552f00dea97dae45e4345477c9031",
+      "git_blob_sha": "379b37c22350b854c5e53fab6b7866616fb26d61",
+      "rendered_size_px": [
+        901,
+        572
+      ],
+      "base64_length": 48356,
+      "normalized_pdf_crop": [
+        0.084,
+        0.323,
+        0.892,
+        0.685
+      ],
+      "pdf_crop_points": [
+        50.003184,
+        271.930475,
+        530.986193,
+        576.69466
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.8711679696666779,
+      "target_longest_edge_px": 900,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "hotel_reception_texture",
+      "title_fa": "نمای عریض پذیرش در آغاز فصل",
+      "observed_content_in_crop_fa": "برش افقی از نمای پذیرش، با نور و بافت سنگی؛ زبان بصری پیش از ورود به متن.",
+      "key_takeaway_fa": "عکس محیطی وزن فصل را پیش از تیترهای فنی مشخص می‌کند.",
+      "analyst_assessment_fa": "نوشته‌های تبلیغی، شناسایی ملک و شخص در قاب نگهداری نشده‌اند؛ عکس شاهد نصب یا نتیجه نیست.",
+      "strengths_fa": "تضاد بافت سنگ، قاب تیره و فضای خطی برای نقطهٔ ورود مناسب است.",
+      "weaknesses_fa": "در برش عنوان یا انتساب مکانی نیست و باید فقط به صفحهٔ فصل ارجاع داد.",
+      "nsp_visual_adaptation_fa": "در فصل واقعی NSP با عکس اختصاصی و حاشیهٔ امنِ پانچ بازآفرینی شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I001"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P032-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-01"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Page/layout relationship only; not independent evidence or a product or system capability.",
+      "crop_context_note_fa": "نوشته‌های تبلیغی، شناسایی ملک و شخص در قاب نگهداری نشده‌اند؛ عکس شاهد نصب یا نتیجه نیست.",
+      "mapping_status": "pending_S05",
+      "extracted_from": "direct page crop from user-supplied source, not a standalone manufacturer asset",
+      "renderer": "PyMuPDF RGB, no annotations + Pillow WebP quality 81 method 6",
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "capability_of_NSP_verified": false,
+      "operational_or_compliance_instructions_included": false,
+      "visual_QA_status": "reviewed_against_original_page_and_tight_crop"
+    },
+    {
+      "id": "HAGER57_034_hotel_topic_header",
+      "reference_order": 2,
+      "source_company": "Hager",
+      "source_language": "de",
+      "original_pdf": "57_Hager_Work C15.1.pdf",
+      "original_pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "original_printed_document_code": "19DE0075_01",
+      "source_pdf_page": 34,
+      "original_printed_folio": 34,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_034_hotel_topic_header.webp",
+      "asset_filename": "HAGER57_034_hotel_topic_header.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 9876,
+      "asset_sha256": "f26e0f734adeb867650dce8a4bcea6bbe96c025a6aca354df27e51023d40b892",
+      "git_blob_sha": "73ab90020bc84c4f2c11ddfac034325ed8681b31",
+      "rendered_size_px": [
+        851,
+        194
+      ],
+      "base64_length": 13168,
+      "normalized_pdf_crop": [
+        0.07,
+        0.042,
+        0.68,
+        0.14
+      ],
+      "pdf_crop_points": [
+        41.66932,
+        35.359381,
+        404.787681,
+        117.864602
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 2.3408345383735414,
+      "target_longest_edge_px": 850,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "isolated_topic_map_heading",
+      "title_fa": "تیتر دوخطیِ نقشهٔ موضوعات هتل",
+      "observed_content_in_crop_fa": "تیترِ آبی از نقشهٔ تحریریه‌ای بدون ردیف تجهیزات و عدد.",
+      "key_takeaway_fa": "تیتر کوتاه دوخطی می‌تواند خواننده را پیش از دیدن دسته‌های فصل آماده کند.",
+      "analyst_assessment_fa": "دسته‌ها یا ظرفیت در این برش نیست؛ نقشهٔ NSP از آن نتیجه نمی‌شود.",
+      "strengths_fa": "وزن تایپوگرافی و رنگ واحد سلسله‌مراتب را بی‌نیاز از متن اضافه نشان می‌دهد.",
+      "weaknesses_fa": "زبان و شکست سطر را نمی‌توان بدون بازطراحی RTL منتقل کرد.",
+      "nsp_visual_adaptation_fa": "صفحهٔ راهنمای موضوعات را با تیتر فارسی مستقل و تایپوگرافی NSP طراحی کنید.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I003"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P034-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-03"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Page/layout relationship only; not independent evidence or a product or system capability.",
+      "crop_context_note_fa": "دسته‌ها یا ظرفیت در این برش نیست؛ نقشهٔ NSP از آن نتیجه نمی‌شود.",
+      "mapping_status": "pending_S05",
+      "extracted_from": "direct page crop from user-supplied source, not a standalone manufacturer asset",
+      "renderer": "PyMuPDF RGB, no annotations + Pillow WebP quality 81 method 6",
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "capability_of_NSP_verified": false,
+      "operational_or_compliance_instructions_included": false,
+      "visual_QA_status": "reviewed_against_original_page_and_tight_crop"
+    },
+    {
+      "id": "HAGER57_045_conference_space",
+      "reference_order": 3,
+      "source_company": "Hager",
+      "source_language": "de",
+      "original_pdf": "57_Hager_Work C15.1.pdf",
+      "original_pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "original_printed_document_code": "19DE0075_01",
+      "source_pdf_page": 45,
+      "original_printed_folio": 45,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_045_conference_space.webp",
+      "asset_filename": "HAGER57_045_conference_space.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 20738,
+      "asset_sha256": "dfc3aa6d2873314c7a07b836ea92040acad3f94a3ad4b8fb2e45bde31987fd33",
+      "git_blob_sha": "2321fc038bc8d19d54414ea3ffae39662ef05870",
+      "rendered_size_px": [
+        442,
+        861
+      ],
+      "base64_length": 27652,
+      "normalized_pdf_crop": [
+        0.015,
+        0.11,
+        0.61,
+        0.93
+      ],
+      "pdf_crop_points": [
+        8.92914,
+        92.607902,
+        363.118361,
+        782.957714
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.2457452512283747,
+      "target_longest_edge_px": 860,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "tall_public_conference_scene",
+      "title_fa": "قاب عمودی فضای جلسهٔ عمومی",
+      "observed_content_in_crop_fa": "تصویر محیط جلسه پشت جدارهٔ شیشه‌ای؛ تجهیزات و کپشن جانبی خارج قاب‌اند.",
+      "key_takeaway_fa": "یک تصویر عمودیِ عمومی فضای کاربرد را با کمترین متن معرفی می‌کند.",
+      "analyst_assessment_fa": "تصویر نقشهٔ برق، مسیر کف، کنترل ورود یا تأیید تأسیسات نیست.",
+      "strengths_fa": "استفاده از جداره و عمق فضا مرز صورت‌بندی عمومی و اتاق مهمان را روشن می‌کند.",
+      "weaknesses_fa": "قاب تیره و متراکم است؛ قرار گرفتن متن روی عکس ممکن است خوانایی را کم کند.",
+      "nsp_visual_adaptation_fa": "برای مشاعات فقط عکس دارای حق و شرح فضا، بدون استنتاج نوع تجهیزات.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I009"
+      ],
+      "related_S03_record_ids_context_pages": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I008"
+      ],
+      "related_source_fragment_refs": [
+        "HAGER57-P045-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-04"
+      ],
+      "related_source_context_set_refs": [
+        "HAGER57-CTX-UTILITY_ACCESS"
+      ],
+      "record_link_meaning": "Page/layout relationship only; not independent evidence or a product or system capability.",
+      "crop_context_note_fa": "تصویر نقشهٔ برق، مسیر کف، کنترل ورود یا تأیید تأسیسات نیست.",
+      "mapping_status": "pending_S05",
+      "extracted_from": "direct page crop from user-supplied source, not a standalone manufacturer asset",
+      "renderer": "PyMuPDF RGB, no annotations + Pillow WebP quality 81 method 6",
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "capability_of_NSP_verified": false,
+      "operational_or_compliance_instructions_included": false,
+      "visual_QA_status": "reviewed_against_original_page_and_tight_crop"
+    },
+    {
+      "id": "HAGER57_048_corridor_light_context",
+      "reference_order": 4,
+      "source_company": "Hager",
+      "source_language": "de",
+      "original_pdf": "57_Hager_Work C15.1.pdf",
+      "original_pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "original_printed_document_code": "19DE0075_01",
+      "source_pdf_page": 48,
+      "original_printed_folio": 48,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_048_corridor_light_context.webp",
+      "asset_filename": "HAGER57_048_corridor_light_context.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 34418,
+      "asset_sha256": "3ca48a9069b6c5d6d9e39a48dde98c8c78ad1c7d7b4cedb768b0c9a93a4cf152",
+      "git_blob_sha": "e194ebed5963d9850bd3d8a4df893d59e8ab8b6c",
+      "rendered_size_px": [
+        861,
+        698
+      ],
+      "base64_length": 45892,
+      "normalized_pdf_crop": [
+        0.086,
+        0.464,
+        0.99,
+        0.982
+      ],
+      "pdf_crop_points": [
+        51.193736,
+        390.636967,
+        589.323241,
+        826.735994
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.5981283170624154,
+      "target_longest_edge_px": 860,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "architectural_light_line_context",
+      "title_fa": "خط روشنایی در بافت معماری",
+      "observed_content_in_crop_fa": "عکس محیطی صفحهٔ قرنیزِ روشنایی بدون بدنهٔ توضیحات.",
+      "key_takeaway_fa": "نور پایین دیوار در یک عکس محیطی می‌تواند موضوع را بدون دیاگرام نشان دهد.",
+      "analyst_assessment_fa": "نور مشاهده‌شده سنجه، توصیهٔ نصب، تأیید ایمنی یا قابلیت NSP نیست.",
+      "strengths_fa": "خط کوتاهِ نور در قاب واقعی خوانش موضوع را آسان می‌کند.",
+      "weaknesses_fa": "سوژه‌ها در قاب حضور دارند؛ بازنشر عکس یا استفاده از مدل‌ها نیازمند مجوز جداست.",
+      "nsp_visual_adaptation_fa": "برای تصویرسازی NSP از عکس مجازِ بدون دستور، عدد یا ادعای نورسنجی استفاده شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I010"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P048-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-04"
+      ],
+      "related_source_context_set_refs": [],
+      "record_link_meaning": "Page/layout relationship only; not independent evidence or a product or system capability.",
+      "crop_context_note_fa": "نور مشاهده‌شده سنجه، توصیهٔ نصب، تأیید ایمنی یا قابلیت NSP نیست.",
+      "mapping_status": "pending_S05",
+      "extracted_from": "direct page crop from user-supplied source, not a standalone manufacturer asset",
+      "renderer": "PyMuPDF RGB, no annotations + Pillow WebP quality 81 method 6",
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "capability_of_NSP_verified": false,
+      "operational_or_compliance_instructions_included": false,
+      "visual_QA_status": "reviewed_against_original_page_and_tight_crop"
+    },
+    {
+      "id": "HAGER57_060_bedside_integration",
+      "reference_order": 5,
+      "source_company": "Hager",
+      "source_language": "de",
+      "original_pdf": "57_Hager_Work C15.1.pdf",
+      "original_pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "original_printed_document_code": "19DE0075_01",
+      "source_pdf_page": 60,
+      "original_printed_folio": 60,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_060_bedside_integration.webp",
+      "asset_filename": "HAGER57_060_bedside_integration.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 15840,
+      "asset_sha256": "8ff50731eecceae497365bdcfe8de6651b0ae38106ee9ebc15c663fbac2639f5",
+      "git_blob_sha": "d89be6853e344d0e5148b0cdd359d19799701d09",
+      "rendered_size_px": [
+        871,
+        610
+      ],
+      "base64_length": 21120,
+      "normalized_pdf_crop": [
+        0.01,
+        0.493,
+        0.984,
+        0.975
+      ],
+      "pdf_crop_points": [
+        5.95276,
+        415.051777,
+        585.751585,
+        820.842764
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.5005204608223681,
+      "target_longest_edge_px": 870,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "embedded_bedside_detail",
+      "title_fa": "ادغام دیداری کلید کنار تخت",
+      "observed_content_in_crop_fa": "عکس عریض از هدبورد، چراغ و اجزای رابط در یک بافت؛ متن بیرون قاب مانده.",
+      "key_takeaway_fa": "نشاندن اجزای رابط در بافت کنار تخت، نسبت محصول و محیط را با یک قاب نشان می‌دهد.",
+      "analyst_assessment_fa": "نمادها و موقعیت‌های دیده‌شده روش نصب، سازگاری یا الگوی حتمی NSP نیستند.",
+      "strengths_fa": "زاویهٔ عریض بافت، سطح و کاربرپذیری ادعانشدهٔ بصری را بهتر نشان می‌دهد.",
+      "weaknesses_fa": "عکس تنها دربارهٔ نحوهٔ نمایش است؛ محتوا برای اندازه‌گیری ارگونومی کافی نیست.",
+      "nsp_visual_adaptation_fa": "در عکاسی اختصاصی NSP تناسب رابط تأییدشده و مبلمان، بدون فرض عملکرد، ثبت شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I014"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P060-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-05"
+      ],
+      "related_source_context_set_refs": [
+        "HAGER57-CTX-DESIGN_AND_CUSTOM"
+      ],
+      "record_link_meaning": "Page/layout relationship only; not independent evidence or a product or system capability.",
+      "crop_context_note_fa": "نمادها و موقعیت‌های دیده‌شده روش نصب، سازگاری یا الگوی حتمی NSP نیستند.",
+      "mapping_status": "pending_S05",
+      "extracted_from": "direct page crop from user-supplied source, not a standalone manufacturer asset",
+      "renderer": "PyMuPDF RGB, no annotations + Pillow WebP quality 81 method 6",
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "capability_of_NSP_verified": false,
+      "operational_or_compliance_instructions_included": false,
+      "visual_QA_status": "reviewed_against_original_page_and_tight_crop"
+    },
+    {
+      "id": "HAGER57_061_bikini_ambient_detail",
+      "reference_order": 6,
+      "source_company": "Hager",
+      "source_language": "de",
+      "original_pdf": "57_Hager_Work C15.1.pdf",
+      "original_pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "original_printed_document_code": "19DE0075_01",
+      "source_pdf_page": 61,
+      "original_printed_folio": 61,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_061_bikini_ambient_detail.webp",
+      "asset_filename": "HAGER57_061_bikini_ambient_detail.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 64526,
+      "asset_sha256": "68bc94ac28f408475490cef95a38147a31dec4c1c05925be7c61c5178c42e8e2",
+      "git_blob_sha": "851b826d03e31c6d54c186d3b16f2dce36cc4e1c",
+      "rendered_size_px": [
+        613,
+        821
+      ],
+      "base64_length": 86036,
+      "normalized_pdf_crop": [
+        0.078,
+        0.102,
+        0.478,
+        0.481
+      ],
+      "pdf_crop_points": [
+        46.431528,
+        85.872781,
+        284.541928,
+        404.949097
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 2.5699181043319608,
+      "target_longest_edge_px": 820,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "named_case_product_in_context",
+      "title_fa": "عکس محیطی با کپشنِ مستقل Bikini Hotel",
+      "observed_content_in_crop_fa": "قاب عکس بالای سمت چپ ص ۶۱؛ در اصل، کپشن جدا نام Bikini Hotel, Berlin را می‌دهد.",
+      "key_takeaway_fa": "نام/مکان در کپشن مستقل می‌تواند مرجع تصویر نمونه را روشن کند.",
+      "analyst_assessment_fa": "کپشن همان عکس است، نه JAZ Stuttgart، اثبات نصب، اقتباس عکس یا پروژهٔ NSP.",
+      "strengths_fa": "تفکیک تصویر، کپشن و بدنه به کنترل انتساب کمک می‌کند.",
+      "weaknesses_fa": "اگر کپشن جدا شود حفظ منشأ در دادهٔ عکس ضروری است؛ اجازهٔ نشر یا استفاده از اشخاص احراز نشده.",
+      "nsp_visual_adaptation_fa": "برای نمونه‌های واقعی NSP کپشن جدا و مستند، همراه با مجوز عکاس و مالک تهیه شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I015"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P061-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-06"
+      ],
+      "related_source_context_set_refs": [
+        "HAGER57-CTX-BIKINI_CAPTION"
+      ],
+      "record_link_meaning": "Page/layout relationship only; not independent evidence or a product or system capability.",
+      "crop_context_note_fa": "کپشن همان عکس است، نه JAZ Stuttgart، اثبات نصب، اقتباس عکس یا پروژهٔ NSP.",
+      "mapping_status": "pending_S05",
+      "extracted_from": "direct page crop from user-supplied source, not a standalone manufacturer asset",
+      "renderer": "PyMuPDF RGB, no annotations + Pillow WebP quality 81 method 6",
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "capability_of_NSP_verified": false,
+      "operational_or_compliance_instructions_included": false,
+      "visual_QA_status": "reviewed_against_original_page_and_tight_crop"
+    },
+    {
+      "id": "HAGER57_066_room_lighting_atmosphere",
+      "reference_order": 7,
+      "source_company": "Hager",
+      "source_language": "de",
+      "original_pdf": "57_Hager_Work C15.1.pdf",
+      "original_pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "original_printed_document_code": "19DE0075_01",
+      "source_pdf_page": 66,
+      "original_printed_folio": 66,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_066_room_lighting_atmosphere.webp",
+      "asset_filename": "HAGER57_066_room_lighting_atmosphere.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 18218,
+      "asset_sha256": "f3352c339fd85ae2b921be838b968fb8eb8c70a557065b6d035568e045cd1db8",
+      "git_blob_sha": "d516815bfcffda2b42f681da820f438aee0de839",
+      "rendered_size_px": [
+        851,
+        559
+      ],
+      "base64_length": 24292,
+      "normalized_pdf_crop": [
+        0.452,
+        0.687,
+        0.982,
+        0.933
+      ],
+      "pdf_crop_points": [
+        269.064752,
+        578.37844,
+        584.561033,
+        785.483384
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 2.694168053599737,
+      "target_longest_edge_px": 850,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "room_atmosphere_photo_only",
+      "title_fa": "فضاسازی اتاق بدون نمودار کنترل",
+      "observed_content_in_crop_fa": "عکس اتاق با نور رنگی از بخش کنترل؛ سخت‌افزار، کپشن و متن کناری حذف شده‌اند.",
+      "key_takeaway_fa": "نور و کنتراست در قاب واقعی می‌توانند حوزهٔ اتاق مهمان را از شرح فنی جدا کنند.",
+      "analyst_assessment_fa": "عکس مقدار نور، قابلیت KNX، تنظیم دستگاه، تغییر مصرف یا توان NSP را ثابت نمی‌کند.",
+      "strengths_fa": "افزودن عکس مفهومی به بخش فنی، پیش‌زمینهٔ بصری می‌دهد.",
+      "weaknesses_fa": "اختلاف رنگ از عکس به‌تنهایی با اندازه‌گیری یا ویژگی معادل نیست.",
+      "nsp_visual_adaptation_fa": "تصویر NSP فقط از صحنهٔ اجراشده و دارای مجوز، بدون نتیجه‌گیری دربارهٔ تجهیزات.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I016"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P066-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-07"
+      ],
+      "related_source_context_set_refs": [
+        "HAGER57-CTX-CONTROL_SCOPE"
+      ],
+      "record_link_meaning": "Page/layout relationship only; not independent evidence or a product or system capability.",
+      "crop_context_note_fa": "عکس مقدار نور، قابلیت KNX، تنظیم دستگاه، تغییر مصرف یا توان NSP را ثابت نمی‌کند.",
+      "mapping_status": "pending_S05",
+      "extracted_from": "direct page crop from user-supplied source, not a standalone manufacturer asset",
+      "renderer": "PyMuPDF RGB, no annotations + Pillow WebP quality 81 method 6",
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "capability_of_NSP_verified": false,
+      "operational_or_compliance_instructions_included": false,
+      "visual_QA_status": "reviewed_against_original_page_and_tight_crop"
+    },
+    {
+      "id": "HAGER57_068_material_contrast_pair",
+      "reference_order": 8,
+      "source_company": "Hager",
+      "source_language": "de",
+      "original_pdf": "57_Hager_Work C15.1.pdf",
+      "original_pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "original_printed_document_code": "19DE0075_01",
+      "source_pdf_page": 68,
+      "original_printed_folio": 68,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_068_material_contrast_pair.webp",
+      "asset_filename": "HAGER57_068_material_contrast_pair.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 42114,
+      "asset_sha256": "8a726e8fa97f123c0092e48bbe1ced00700c3dfcee0d9b329496694dd9457284",
+      "git_blob_sha": "3e8ca091fe789d9b5850365700da97517e17e069",
+      "rendered_size_px": [
+        891,
+        554
+      ],
+      "base64_length": 56152,
+      "normalized_pdf_crop": [
+        0.23,
+        0.45,
+        0.99,
+        0.784
+      ],
+      "pdf_crop_points": [
+        136.91348,
+        378.850507,
+        589.323241,
+        660.041771
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 1.967243143781727,
+      "target_longest_edge_px": 890,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "material_forms_diptych",
+      "title_fa": "جفت صحنهٔ متضاد برای ارائهٔ سبک",
+      "observed_content_in_crop_fa": "دو نمای هم‌جوار از مصالح و فرم کلید در دکورهای متفاوت؛ متن زیر تصویر بیرون قاب.",
+      "key_takeaway_fa": "ترکیب دو بافت در کنار هم، تفاوت زبان طراحی را بدون جدول مشخصات نشان می‌دهد.",
+      "analyst_assessment_fa": "نام یا گونهٔ دکورها پیشنهاد داده نشده؛ ترکیب، قابلیت یا موجودی قطعی را اثبات نمی‌کند.",
+      "strengths_fa": "تفاوت رنگ، بافت و شکل با چیدمان مقایسه‌ای یکجا خوانده می‌شود.",
+      "weaknesses_fa": "مقایسه برای سبک است، نه آزمون بازدهی و نه تفاوت فنی دو محصول.",
+      "nsp_visual_adaptation_fa": "برای طراحی NSP دو نمونهٔ اختصاصی با قاب هم‌اندازه، پس‌زمینه و انتساب مستقل پیشنهاد شود.",
+      "related_S03_record_ids_same_pdf_page": [],
+      "related_S03_record_ids_context_pages": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I011"
+      ],
+      "related_source_fragment_refs": [
+        "HAGER57-P068-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-08"
+      ],
+      "related_source_context_set_refs": [
+        "HAGER57-CTX-DESIGN_AND_CUSTOM"
+      ],
+      "record_link_meaning": "Page/layout relationship only; not independent evidence or a product or system capability.",
+      "crop_context_note_fa": "نام یا گونهٔ دکورها پیشنهاد داده نشده؛ ترکیب، قابلیت یا موجودی قطعی را اثبات نمی‌کند.",
+      "mapping_status": "pending_S05",
+      "extracted_from": "direct page crop from user-supplied source, not a standalone manufacturer asset",
+      "renderer": "PyMuPDF RGB, no annotations + Pillow WebP quality 81 method 6",
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "capability_of_NSP_verified": false,
+      "operational_or_compliance_instructions_included": false,
+      "visual_QA_status": "reviewed_against_original_page_and_tight_crop"
+    },
+    {
+      "id": "HAGER57_070_finish_samples",
+      "reference_order": 9,
+      "source_company": "Hager",
+      "source_language": "de",
+      "original_pdf": "57_Hager_Work C15.1.pdf",
+      "original_pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+      "original_printed_document_code": "19DE0075_01",
+      "source_pdf_page": 70,
+      "original_printed_folio": 70,
+      "source_page_size_points": [
+        595.276,
+        841.89
+      ],
+      "asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_070_finish_samples.webp",
+      "asset_filename": "HAGER57_070_finish_samples.webp",
+      "mime_type": "image/webp",
+      "asset_bytes": 41668,
+      "asset_sha256": "8d9b0ed48006eebf6e7c5521422dd01af947c2a56c44fadf894c657747ef17f1",
+      "git_blob_sha": "c00d0036922eceb07dfdae5b17f68cb2a01ab66d",
+      "rendered_size_px": [
+        861,
+        521
+      ],
+      "base64_length": 55560,
+      "normalized_pdf_crop": [
+        0.014,
+        0.396,
+        0.697,
+        0.688
+      ],
+      "pdf_crop_points": [
+        8.333864,
+        333.388446,
+        414.907373,
+        579.22033
+      ],
+      "crop_coordinate_system": "Top-left x0,y0,x1,y1 relative to unrotated visible PDF page.",
+      "render_scale": 2.1152386509874432,
+      "target_longest_edge_px": 860,
+      "source_rotation_degrees": 0,
+      "visual_style_type": "finish_samples_material_board",
+      "title_fa": "تابلوی نمونهٔ رنگ و پرداخت",
+      "observed_content_in_crop_fa": "نمای کلوزآپ از نمونه‌های در کنار هم، بدون متن فرآیند یا نشانهٔ عددی.",
+      "key_takeaway_fa": "نمونه‌های کوچک رنگ و پرداخت می‌توانند مسیر انتخاب ظاهری را تصویر کنند.",
+      "analyst_assessment_fa": "عکس اثبات متریال، دوام، روش ساخت، سفارش‌پذیری یا قابلیت NSP نیست.",
+      "strengths_fa": "چینش شبکه‌ای تفاوت سطح‌ها را در فضایی محدود قابل مرور می‌کند.",
+      "weaknesses_fa": "نور عکاسی بر رنگ دیده‌شده اثر دارد؛ شاهد رنگ دقیق یا کیفیت کار نیست.",
+      "nsp_visual_adaptation_fa": "از نمونه‌های واقعی و تأییدشدهٔ NSP در نور ثابت و زیرلایهٔ یکسان عکس اختصاصی گرفته شود.",
+      "related_S03_record_ids_same_pdf_page": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I017"
+      ],
+      "related_S03_record_ids_context_pages": [],
+      "related_source_fragment_refs": [
+        "HAGER57-P070-D01"
+      ],
+      "source_claim_gate_refs": [
+        "HAGER57-CLAIM-08"
+      ],
+      "related_source_context_set_refs": [
+        "HAGER57-CTX-DESIGN_AND_CUSTOM"
+      ],
+      "record_link_meaning": "Page/layout relationship only; not independent evidence or a product or system capability.",
+      "crop_context_note_fa": "عکس اثبات متریال، دوام، روش ساخت، سفارش‌پذیری یا قابلیت NSP نیست.",
+      "mapping_status": "pending_S05",
+      "extracted_from": "direct page crop from user-supplied source, not a standalone manufacturer asset",
+      "renderer": "PyMuPDF RGB, no annotations + Pillow WebP quality 81 method 6",
+      "permitted_use": "internal_research_reference_only",
+      "copyright_notice_fa": "حقوق عکس، متن و نشان متعلق به صاحبان حقوق است؛ مجوز بازنشر، استفادهٔ تجاری یا درج در پورتفولیوی NSP احراز نشده است.",
+      "capability_of_NSP_verified": false,
+      "operational_or_compliance_instructions_included": false,
+      "visual_QA_status": "reviewed_against_original_page_and_tight_crop"
+    }
+  ],
+  "style_catalog": [
+    {
+      "style_id": "hotel_reception_texture",
+      "title_fa": "نمای عریض پذیرش در آغاز فصل",
+      "representative_reference_ids": [
+        "HAGER57_032_reception_texture"
+      ],
+      "physical_pdf_pages": [
+        32
+      ],
+      "key_takeaway_fa": "عکس محیطی وزن فصل را پیش از تیترهای فنی مشخص می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "isolated_topic_map_heading",
+      "title_fa": "تیتر دوخطیِ نقشهٔ موضوعات هتل",
+      "representative_reference_ids": [
+        "HAGER57_034_hotel_topic_header"
+      ],
+      "physical_pdf_pages": [
+        34
+      ],
+      "key_takeaway_fa": "تیتر کوتاه دوخطی می‌تواند خواننده را پیش از دیدن دسته‌های فصل آماده کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "tall_public_conference_scene",
+      "title_fa": "قاب عمودی فضای جلسهٔ عمومی",
+      "representative_reference_ids": [
+        "HAGER57_045_conference_space"
+      ],
+      "physical_pdf_pages": [
+        45
+      ],
+      "key_takeaway_fa": "یک تصویر عمودیِ عمومی فضای کاربرد را با کمترین متن معرفی می‌کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "architectural_light_line_context",
+      "title_fa": "خط روشنایی در بافت معماری",
+      "representative_reference_ids": [
+        "HAGER57_048_corridor_light_context"
+      ],
+      "physical_pdf_pages": [
+        48
+      ],
+      "key_takeaway_fa": "نور پایین دیوار در یک عکس محیطی می‌تواند موضوع را بدون دیاگرام نشان دهد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "embedded_bedside_detail",
+      "title_fa": "ادغام دیداری کلید کنار تخت",
+      "representative_reference_ids": [
+        "HAGER57_060_bedside_integration"
+      ],
+      "physical_pdf_pages": [
+        60
+      ],
+      "key_takeaway_fa": "نشاندن اجزای رابط در بافت کنار تخت، نسبت محصول و محیط را با یک قاب نشان می‌دهد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "named_case_product_in_context",
+      "title_fa": "عکس محیطی با کپشنِ مستقل Bikini Hotel",
+      "representative_reference_ids": [
+        "HAGER57_061_bikini_ambient_detail"
+      ],
+      "physical_pdf_pages": [
+        61
+      ],
+      "key_takeaway_fa": "نام/مکان در کپشن مستقل می‌تواند مرجع تصویر نمونه را روشن کند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "room_atmosphere_photo_only",
+      "title_fa": "فضاسازی اتاق بدون نمودار کنترل",
+      "representative_reference_ids": [
+        "HAGER57_066_room_lighting_atmosphere"
+      ],
+      "physical_pdf_pages": [
+        66
+      ],
+      "key_takeaway_fa": "نور و کنتراست در قاب واقعی می‌توانند حوزهٔ اتاق مهمان را از شرح فنی جدا کنند.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "material_forms_diptych",
+      "title_fa": "جفت صحنهٔ متضاد برای ارائهٔ سبک",
+      "representative_reference_ids": [
+        "HAGER57_068_material_contrast_pair"
+      ],
+      "physical_pdf_pages": [
+        68
+      ],
+      "key_takeaway_fa": "ترکیب دو بافت در کنار هم، تفاوت زبان طراحی را بدون جدول مشخصات نشان می‌دهد.",
+      "final_section_mapping": "pending_S05"
+    },
+    {
+      "style_id": "finish_samples_material_board",
+      "title_fa": "تابلوی نمونهٔ رنگ و پرداخت",
+      "representative_reference_ids": [
+        "HAGER57_070_finish_samples"
+      ],
+      "physical_pdf_pages": [
+        70
+      ],
+      "key_takeaway_fa": "نمونه‌های کوچک رنگ و پرداخت می‌توانند مسیر انتخاب ظاهری را تصویر کنند.",
+      "final_section_mapping": "pending_S05"
+    }
+  ],
+  "reference_overview": {
+    "asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_S04_reference_overview.webp",
+    "asset_filename": "HAGER57_S04_reference_overview.webp",
+    "mime_type": "image/webp",
+    "asset_bytes": 69696,
+    "asset_sha256": "c89c233076fadfa79aa961ac11ceecc14abf6cdc470f292bbe49a6405d06339d",
+    "git_blob_sha": "87919736beb1a2e11b30cbc92c2b815752c3d0b9",
+    "rendered_size_px": [
+      1170,
+      864
+    ],
+    "base64_length": 92928,
+    "role": "derived_navigation_overview_not_a_source_reference",
+    "source_reference_ids": [
+      "HAGER57_032_reception_texture",
+      "HAGER57_034_hotel_topic_header",
+      "HAGER57_045_conference_space",
+      "HAGER57_048_corridor_light_context",
+      "HAGER57_060_bedside_integration",
+      "HAGER57_061_bikini_ambient_detail",
+      "HAGER57_066_room_lighting_atmosphere",
+      "HAGER57_068_material_contrast_pair",
+      "HAGER57_070_finish_samples"
+    ],
+    "counted_in_reference_images": false,
+    "renderer": "Pillow montage WebP quality 78 method 6, derived solely from the reference crops"
+  },
+  "exclusions": [
+    {
+      "physical_pdf_pages": [
+        34,
+        35,
+        38,
+        40,
+        44,
+        45,
+        53,
+        55,
+        58,
+        64,
+        65,
+        66,
+        67
+      ],
+      "scope_fa": "کنارگذاری تجهیزات نمایانِ توصیفی، نقشه شناسه‌های ساختمانی، داشبورد، نمونهٔ اعداد، نمودار نصب یا اتصالات، عملکرد کارت/حضور، نمودار فراخوان، جزئیات استاندارد و دستور کنترل."
+    },
+    {
+      "physical_pdf_pages": [
+        33
+      ],
+      "scope_fa": "نقل‌قول کامل یا عکسی از spread به‌عنوان پاسخ JAZ وارد نشد؛ نقل‌قول محدود و انتساب در S02/S03 جداست."
+    },
+    {
+      "physical_pdf_pages": [
+        61
+      ],
+      "scope_fa": "برش تنها تصویر دارای کپشن جداگانه Bikini در همان صفحه است؛ سایر عکس‌ها را هم‌مکان فرض نمی‌کند."
+    },
+    {
+      "physical_pdf_pages": [
+        1,
+        10,
+        11,
+        12,
+        72,
+        108,
+        134,
+        154,
+        170,
+        171,
+        172
+      ],
+      "scope_fa": "صفحات هویت، فهرست، فصل‌های دیگر و تماس به‌عنوان تصویر مقایسهٔ اختصاصی هتل وارد نشدند."
+    }
+  ],
+  "target_catalog_constraint_fa": "صرفاً ارجاع داخلی برای شناخت نحوۀ ارائه؛ برای تطبیق S05 فقط سکانس و سبک اصیل مجازِ NSP پیشنهاد شود. هیچ صفحه، قابلیت، اعتبار، دستور یا اجازهٔ بازنشر NSP از نمونه‌ها نتیجه نمی‌شود. ناحیهٔ امن پانچ در A4 افقی با پس‌زمینهٔ پیوسته لحاظ شود.",
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "portfolio_pages_changed": false,
+  "editorial_structure_changed": false,
+  "next_stage": "S05 — تطبیق با نوع سکشن NSP",
+  "next_queue_cursor": {
+    "document_index": 16,
+    "document_id": "57",
+    "step_index": 4,
+    "step_id": "S05"
+  },
+  "next_stage_executed": false
+}
