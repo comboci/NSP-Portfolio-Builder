@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 88,
+    "total_pending_steps": 87,
     "completed_new_documents": 5,
     "remaining_new_documents": 13
   },
   "cursor": {
     "document_index": 8,
     "document_id": "15",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -1048,11 +1048,25 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S04_visual_styles.json",
+            "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_01_cover_hero.webp",
+            "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_02_visual_mosaic.webp",
+            "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_03_benefit_columns.webp",
+            "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_04_option_cards.webp",
+            "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_05_partner_overlay.webp",
+            "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_06_guest_flow.webp",
+            "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_07_lifestyle_quote.webp",
+            "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_08_product_photo_row.webp",
+            "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_09_role_loop.webp",
+            "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_10_dark_feature_stack.webp",
+            "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_11_quiet_closing.webp",
+            "Portfolio Instruction/research/assets/vingcard15/VINGCARD15_S04_reference_overview.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "202dca6b6db0e1851bcf5d6796f9f34ca1ff9f91",
+          "notes": "از PDF اصلی با هش تطبیق‌یافته، ۱۱ برش در ۱۱ سبک ارائه ثبت شد. نمای کلی جدا و خارج از شمار است. صفحهٔ ۱۲، آمار بازاریابی، متن مشخصات و نام‌های چاپ‌شده زیر تصاویر مدل و متن تماس کنار گذاشته شدند. مبدأ صفحه، مختصات و هش همهٔ تصاویر ثبت و نمای نهایی بازبینی شد. تصاویر صرفاً مرجع طراحی‌اند؛ بانک V8، برنامه، ساختار و صفحات NSP بی‌تغییرند."
         },
         {
           "id": "S05",
@@ -1082,7 +1096,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S03"
+      "last_successful_stage": "S04"
     },
     {
       "id": "16",
