@@ -1,0 +1,2850 @@
+{
+  "schema": "nsp-catalog-research-s02-source-language-extract-v1",
+  "stage": "S02",
+  "stage_key": "source_text_extraction",
+  "status": "completed_scoped_source_excerpts_with_claim_gates",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "020ae70f268478cd6f0736e87e39ade2fd4f7001",
+  "document_id": "34",
+  "source_id": "CAT034_LEGRAND_CHAMBRES_HOTEL_IP_BACNET_SYS219006",
+  "source_language": "fr",
+  "source_pdf": {
+    "company": "Legrand",
+    "publisher": "Legrand",
+    "title": "Chambres d’hôtel – Solutions IP BACnet®",
+    "filename": "34_Legrand_Work C04.3.pdf",
+    "pdf_pages": 208,
+    "file_size_bytes": 37661849,
+    "source_sha256": "84856452e00cc9fce5d6eff43ae5decd9e8eca6ad64c8e75c6975e4df305ec61",
+    "printed_document_code": "SYS219006",
+    "printed_edition_month": "2019-09",
+    "publication_evidence_pdf_page": 208,
+    "S01_inventory": "Portfolio Instruction/research/34_Legrand_SYS219006_S01_source_inventory.json",
+    "S01_inventory_git_blob_sha": "dabf44ed74fc4c14c1251f64a944f3099ee4f986",
+    "S01_inventory_commit": "541a285c3ea3d2c9a8961eaceb1b1a7ec2a9e558"
+  },
+  "scope": {
+    "all_208_physical_pages_have_inventory_disposition": true,
+    "all_native_text_page_hashes_rematched_not_full_editorial_read": true,
+    "selective_49_short_French_excerpts_only": true,
+    "source_language_not_assumed_English": true,
+    "no_full_manual_republished": true,
+    "product_specs_wiring_network_parameters_operational_steps_or_contact_material_not_republished": true,
+    "other_Legrand_sources_not_merged": true,
+    "current_vendor_support_or_NSP_functionality_not_verified": true
+  },
+  "statistics": {
+    "physical_pages_with_inventory_disposition": 208,
+    "physical_pages_with_short_excerpts": 31,
+    "physical_pages_without_short_excerpts": 177,
+    "native_text_page_hashes_reverified": 208,
+    "short_verified_original_French_fragments": 49,
+    "retained_short_excerpt_words": 175,
+    "matched_by_two_PDF_text_engines": 49,
+    "claim_and_context_gates": 10,
+    "blank_pages": [
+      207
+    ],
+    "folio_only_pages": [
+      2
+    ],
+    "new_NSP_capabilities_verified": 0
+  },
+  "chapter_inventory_reference": "Portfolio Instruction/research/34_Legrand_SYS219006_S01_source_inventory.json",
+  "pages": [
+    {
+      "pdf_page": 1,
+      "canonical_reference": "physical PDF page",
+      "section_group": "COVER",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "b52f1772e9434138c18f0b96831a3c652eff67df0efda4f37a91d8b0e98bdc42",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 3,
+      "short_source_fragments_fr": [
+        "GUIDE TECHNIQUE",
+        "CHAMBRES D’HÔTEL SOLUTIONS IP BACnet®",
+        "GUIDE D’INSTALLATION ET D’UTILISATION"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P001-E01",
+        "LEGRAND34-P001-E02",
+        "LEGRAND34-P001-E03"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P001-E01",
+          "source_type": "document_role",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P001-E02",
+          "source_type": "source_title",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P001-E03",
+          "source_type": "document_role",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 2,
+      "canonical_reference": "physical PDF page",
+      "section_group": "FOLIO_ONLY",
+      "native_text_status": "physical_folio_only",
+      "native_page_text_sha256": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+      "disposition": "folio_only_preserved",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 3,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THEMATIC_AND_CONTENTS_INDEX",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "4c892717bd26f9c6f8222264005523ead4cacf373724732dfb80ca8e843e3967",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "Thématiques"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P003-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P003-E01",
+          "source_type": "visual_navigator_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 4,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THEMATIC_AND_CONTENTS_INDEX",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "1e07bf86580cfb2d271fdc5cf12a1dbc030857faec724ba3f5e1b7f2e0503597",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "Sommaire"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P004-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P004-E01",
+          "source_type": "index_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 5,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THEMATIC_AND_CONTENTS_INDEX",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "985c7908be80373a3afc5b32238a3b06875c056003181a2df21e25c194094636",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 6,
+      "canonical_reference": "physical PDF page",
+      "section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "97efd2799ca2ca14578cb4b50f3ff3ab83e2bcea4a711c575d96754c71a649d3",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 2,
+      "short_source_fragments_fr": [
+        "QU'EST-CE QUE LE GRMS ?",
+        "Système de gestion de la chambre"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P006-E01",
+        "LEGRAND34-P006-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P006-E01",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P006-E02",
+          "source_type": "source_term",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 7,
+      "canonical_reference": "physical PDF page",
+      "section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "1cb8bc2d28c183f9deb606bc978f205eafbb1fb866be15d3e74017958cf0c164",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 3,
+      "short_source_fragments_fr": [
+        "Présence/Absence",
+        "Faire la chambre / Ne pas déranger",
+        "Rideaux/Volets"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P007-E01",
+        "LEGRAND34-P007-E02",
+        "LEGRAND34-P007-E03"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P007-E01",
+          "source_type": "diagram_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P007-E02",
+          "source_type": "diagram_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P007-E03",
+          "source_type": "diagram_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 8,
+      "canonical_reference": "physical PDF page",
+      "section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "31bf70defdf9e11761f188f0cce00e95bdca0e52f4e96054648bb6da43928801",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 2,
+      "short_source_fragments_fr": [
+        "La solution hôtel",
+        "un ensemble de plusieurs systèmes"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P008-E01",
+        "LEGRAND34-P008-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P008-E01",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P008-E02",
+          "source_type": "source_architecture_concept",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 9,
+      "canonical_reference": "physical PDF page",
+      "section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "ff0903de069e2fd4484c84276ce4fc6aafc94827395c52bbde0f80c71ba503ce",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "L’interconnexion de plusieurs systèmes"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P009-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P009-E01",
+          "source_type": "source_architecture_concept",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 10,
+      "canonical_reference": "physical PDF page",
+      "section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "e2a5c1759979994cba67e008560e689fbe505c41e57283d1c2cb5715bd4d9e53",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "ADAPTABILITÉ (1)"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P010-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P010-E01",
+          "source_type": "source_presentation_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 11,
+      "canonical_reference": "physical PDF page",
+      "section_group": "GRMS_INTRO_AND_HOTEL_SOLUTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "5d4f1e7575030cb62ab3b8f8ffcaf448e8f88487adc4691a5e01e5112cdc76b6",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 12,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "e273bea0cf4e5253df5240e316ecd840fb8f9d5a0e77036492907ad138bfcb97",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "EXEMPLE D'INSTALLATION POUR UNE CHAMBRE"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P012-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P012-E01",
+          "source_type": "source_diagram_heading_fragment",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 13,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "760d7ad20c371a37b58c22e9853cd178e13931dabf02724a371c18136c7d35e0",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 14,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "e1a96b7b2a63f8aa1669dd5af3005d2cdcf0580a2406a77bca2ea2fe5bec2cdf",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 15,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "c843367cac2ad27836b126d9f3363a877a6acbbea4fa774ebace4048cd13e616",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 16,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "a7086dd9f9214868fd1cd6db403af0146a70eef46dce18c1990c6ea1432aadfa",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "ARCHITECTURE GESTION DES CHAMBRES AVEC SUPERVISEUR"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P016-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P016-E01",
+          "source_type": "source_architecture_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 17,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "253a929de891f0da11bc0b79057eedd5da83e44633dec6b56879421dc5fb1136",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 18,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "66b6e222cdaf460d8ce85cdc0bff8ca56cf072b93b29f5527c1672000f32994f",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "GESTION LOCALE DU CHAUFFAGE/CLIMATISATION"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P018-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P018-E01",
+          "source_type": "source_architecture_heading_fragment",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 19,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "499064c3ee63df1da114382a2038406b22553ea68f25a25e4e582ead9b27dfe4",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 20,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "6c8954b05ab7b33a7800e6f76bfda8e2a0eb0e1ccafc007b39a9478b91e3c946",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "GESTION CENTRALISÉE DU CHAUFFAGE/CLIMATISATION"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P020-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P020-E01",
+          "source_type": "source_architecture_heading_fragment",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 21,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "cf5ddea6361688efcbdb53d3dfa3f1807c0edef09ec1e916ddc83027c09ddd32",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 22,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "4e94574d41de688707ca4f2aa59d1a26a5b5658a4f79180592faa692b704cbd4",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 23,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "db1839f38d189d7f86a44476b30d435481765985ec19f412fabd020b86961e48",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 24,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "ffb096d84da1486ff35c40bb58bee577696efb2e473f79d15c84ac4674db8a36",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "EXEMPLE D'UNE INFRASTRUCTURE IP D'UN HÔTEL (NON-EXHAUSTIVE)"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P024-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P024-E01",
+          "source_type": "source_scope_qualified_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 25,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SYSTEM_ARCHITECTURE",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "9243841237d368e31423d62d282af5514c0a72e47850775fc96928b1e60efb0c",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "IPTV"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P025-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P025-E01",
+          "source_type": "source_component_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 26,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "53d20995a335de5737437c2ee8d7af16c91af33ba2d64d4df42c9639c0ce3c9f",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 27,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "9c22b988ef31d91c9db824c4003c99d2037a72c4de17d11cc9696b39edddb7bc",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 28,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "1e522eaa672e4d7fb0c1b0e3b467f399ebda0e1366fa9bfcb864207ce5d221f0",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 29,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "d48295328912050354641b68bbab1281cfca017b63711e6e852997275e395414",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 30,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "a00ab5897eb774c9d6ab38fdf833ff00d1efe55a71c6e1196705ff522de50b44",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 31,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "47ad9af45e42191694ea613d6fd592a48938956aa3981bd0975153985e5a05ed",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 32,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "412de0347014a8cbed17235bae2dabd3b0dd4a38cb6783ff0ed249d7472ade1b",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 33,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "c92bf5083ebe9733f5059ceaaad81cab18c1d86a118ebe6f47696e9d149c3105",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 34,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "9e916163b8c253b8a469f8a337808a1c8441c5b538a95be6cee3499708797eb3",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 35,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "76ed8781d36e2b335e6fe4508d1e2bf6e3ccc89b67e6b3fc5ab5a078a5991684",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 36,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "aa6ebb14b897830775d6a2ae5e597df1d8505e7ed1b1aa11dde77524b596633e",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 37,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "6eb6f08dd065f889a47dde35aacef52e1b339aae3889e744a164849029d3abdc",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 38,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "9af71ea89754d5e3db87baa7965ad28bf71e02b4aacadb78a18afefb192666ad",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 39,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "6fc28b177bec58ceb5ca4feb8014dfcfe1553789bc95bac9f7b938339392cb41",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 40,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "911c028412e073e34e1f9291f4bdfa434f2ac664736d729d19a8f2bb84497add",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 41,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "f729d432df7bb513fa60faf4c8b5d29e7a070dc503e8a04759ad51f8e35f80be",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 42,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "ebca812d5e0cf4f7dba090abbb0c153c332ffa8e9ec5a20595a5951b61915c11",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 43,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "df44fcf83b03607fd66ee90272d8907d0efcb25f0493fddfe07a6cde2d09b0e7",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 44,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "1e7945375293d58d68fdcb3badc14dfd644bf222c2306bb9bc95c9aa0986fee3",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 45,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "fb4511a968523f7322ca8bd1a75fe607c985b5d2f3c37e80a215ab222c5f8d35",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 46,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "b019edeb0441dc170d96e503c3db9e8aaa94f044da2a3e6d952e4201f53feb72",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 47,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "bb56967d4152bb46062eaf1747098b0fb91f52a88127a08d6f90ea45885e3f8b",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 48,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "e67eed3279f874f42492f5fe5d0498bc58bf45a727e090325ca0cf32d25a5251",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 49,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "c7880301fc1c6b603486d177ce0f1897a3eb4d4ce89e9fd53f7ec3d80f039994",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 50,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "e8e914e5cc229831695fb841611f373a1b5151849bba55585590d7e65b7fd1dc",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 51,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "d6c0eb513a7b6edb9dbd3162e0048f94dd10298ec738dbfec7d338f17328a47a",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 52,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "3eb067e8c2d377ca8b6820a3a754f1ed8d7cc19c1bb7daaadaa5c2dc885f39b9",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 53,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "b267c6446afe94d5005874fb87a7f217ed3d54ff8c3dc52c8b03c0bad135080c",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 54,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "340b836f7393f7325245342d2df9f0593846f9ade52e7da634dbe1411c2deca3",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 55,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "a6fa4b8cde3109674c113b75dea20b56430c0644fe129fe387f9f5a9dd3b701c",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 56,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "c3f4c4a32129a81bb0c13f6e38f56ce19d3a5a270defb493ee9a2d3096d78f4a",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 57,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "3d0c4f28b68644ceabfa3ccb7e847a320df0b8d807c90161b271a64480a66bf7",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 58,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "48a432639e99c90c1f72fbe80ee7a88e48faf28eaea0308301bda7ca024a5f1a",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 59,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "0fa6c2b1046b74e201567beffcf62840c6e43c2004ae80dab949a29cbde62ac1",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 60,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "6547db10f145e23bf71df1ce1056d4c3569af350d112391d2696c57ad914bb45",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 61,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "e6319e3db0742f1d5ccc63fac822b5763bd075e4f94ca7d15df6d6f649db215b",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 62,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "8a4a515bb2fc6cdeb7f9fcf03aaa74fb64312a5068ac64fc9b0d308a4ca658af",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 63,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "5f7b6f2a5b912ad54141ded8a270398db3a200a6eaf8bdf3d396847a80f285da",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 64,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "1330e163c630648850dccc81f0606193cce81b9db507afb8f75828f7a8ea86e1",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 65,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "19cfa4f93a9dd9fec51ccc5e991a36fa8752e404a6fd49690e4afa9b9b3b5dc2",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 66,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "abee9e459dad983c24d7937aca0c59fac6286460e02a44e4c06346792a0cbe3a",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 67,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "e913aaf66255482fb061d47c3a61996e958fbb07fde78fabaaf6ae612a5f78f2",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 68,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "b9a68d936a7ec58ffa1cea234064d237c5e3c7229866cf97d8e79c9da9ff7ad9",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 69,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "51b9ef9bedbc7bd5a42aa3d71db393e3d8d7eb43b454d046cb44be714b067d22",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 70,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "1e3483ad31ab5dc124f30d9db5074854a5606f60360e8a79c243424d74226898",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 71,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "633bcfe8e0e06b9f33aab46dfe6f16c2d5715527ef92d20e09785148b57a75a4",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 72,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "7e66b3d43afdba0a5d611053ccae8b2a02db5fcdacb295cc869d311d4004f180",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 73,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "60babc408625ce9808d0534510b0bf9af9cf6a63bcc46a8f48f9e48d87552afa",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 74,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "b53e659665028c3f152897abd12ea6963259a523194969184b009196891c4f22",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 75,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "d854658b2fa07d87d174804296c4de5f0db392540d6eff8efa867be34b9b8a1c",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 76,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "094a21276d2c0d48b7f67934d0a51611d50aa1c40697b4dd66ae3dc5ff927b12",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 77,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "325babe4c15184171a5f0de199bf33625bd01feebcc3833bfa99659716eec156",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 78,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "0f4c1b5c76e52c998af467109148e5c0ff01e7cb49fa1e82d8317532795ac82d",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 79,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "18dac055e7b67c1e9f819d5168e5ff9945d5befd8228306d6b5f40dc4b985c13",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 80,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "7cc783b290c4f077930732fd0e684fb549552445e50a0f3c245f67e7d391695b",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 81,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "faca164451bc3123c6961d43bca72c0646005d38f592716d2565c37c982e3cb7",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 82,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "c39a9699043bdc98c50eb3a725d8ed0c163bcc0e62ea6e5b71617a0013562d99",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 83,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "f9efc8ab6b2fc6950090d0630832caeed5bc426055932e9ed4a2bab21680f0a5",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 84,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "9a5bcef413d634d65b9481667d1c7cf2adbe9feb034c7d49c4581bae6c9e78b6",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 85,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "301be461d74099825f66e5189710bc485c989cb94203e06c7315d102ad4b617a",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 86,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "c7be707d3e94117153bf911ac629304cc6c3bc348a436b6372149ca868d8cc6b",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 87,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "ab57d20706c083f8ceb46a94c7b8a917c36e40ed8366e964e87627eb25b90ee5",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 88,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "7b371dc56ea72f8b6a1a63b3a72e540127356506e4062d60489500233cbce5ee",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 89,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "e33ebef931f794a510e29f9efbb7b9c4af0c1129f78818a81af1d244f0ab6c43",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 90,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "3ffad34b6c31048472aec13c99e6e42efe6c25511c97d809360daf8710d0d68e",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 91,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "a3ef159fab374b5b83ab5da47c332afa51c536fe079316e30b5e4bfb731a9cb9",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 92,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "71a3cd81f9d93d680f9d10c92547025b316e5f75c7dbcf07ec182342f93f8365",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 93,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "837e1e384a56aaade94c0b1c01a2668f49be523a6a4d48047c0b414652bccdfe",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 94,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "73db5378079c064e230751242e99112808f2c6ff98e328a716e23cd07b1a34c3",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 95,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "ef122caaaa0e6d33ae2b0f6e0f74abc5e7019298234d50fec54bb3a28a353c68",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 96,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "e1ab8d314f2ecfca12f1fbcddb6443e8bf6351a8b1fcd33b92031ab7c42cfd29",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 97,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "d64ef4b2ffdd9faaae8c33f527d5cd874f23ebe138fcabe9725e9b52052ae73e",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 98,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "a1eb3843e797b353474b85ca39738f3317c7492ba89a70659aa6eff225466abf",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 99,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "cc22267a443d9202e60f52efc76cde9cfd6fd69b76f90cdddaa6f86a053d8881",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 100,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "57b751673f5f823616bbcbc0eae526257bf1e54b51f8749b95b144ff0e2af164",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 101,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PRODUCT_SHEETS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "0f10d7bdcf802c7b7c0f3c7ddc6dfa3b5c1da07808bf4daf49f1f8e67f03c10e",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 102,
+      "canonical_reference": "physical PDF page",
+      "section_group": "ART_D_ARNOULD_PRODUCT_PRESENTATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "7465e131a52beb5317e268d42fa763a6a7714216bd04d46e650c2496b365892b",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 103,
+      "canonical_reference": "physical PDF page",
+      "section_group": "ART_D_ARNOULD_PRODUCT_PRESENTATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "6c9d5425dc8285afff09854d3da87b0b29cc5f399a1226f6e81ecd7eff514503",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 104,
+      "canonical_reference": "physical PDF page",
+      "section_group": "ROOM_WIRING_DIAGRAMS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "61e892ae9b444922a45092700d1eea689d5022f8064f1b529adcf82b6367a6a4",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 105,
+      "canonical_reference": "physical PDF page",
+      "section_group": "ROOM_WIRING_DIAGRAMS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "c13501b899ca1c1b4f38cd063a37142a54708b24379226377705ec21cf44d98c",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 106,
+      "canonical_reference": "physical PDF page",
+      "section_group": "ROOM_WIRING_DIAGRAMS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "5dde08b5e974f5ce42b9fffbedb1d19d28ef0ecef3111ffb0120aacbb70a72ff",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 107,
+      "canonical_reference": "physical PDF page",
+      "section_group": "ROOM_WIRING_DIAGRAMS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "ee1a6dc396c40f2291cf725bd05072925f3b225cf3beb4d97f2cdc595fa6cf8d",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 108,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "ed0375ee76d6e5e33a7557a9176e62a7ae33dcce38885523e135f49155787356",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 2,
+      "short_source_fragments_fr": [
+        "FONCTIONS ET MODES DE FONCTIONNEMENT",
+        "Fonction de chauffage et de climatisation"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P108-E01",
+        "LEGRAND34-P108-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P108-E01",
+          "source_type": "source_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P108-E02",
+          "source_type": "source_scenario_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 109,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "48b74b97f8cc33e1ac935f9437bd19f5ea14ab21c4a58618720925725be76a38",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 110,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "0be5d5f19735e7a648606f3be55d5e1f77e97ddaf973fd3786db4e63430ef922",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 111,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "fe284f4beb07860cd9c8030414023fb9b183d4e5494de1b051ea899c7b31f746",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 112,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "623fabcb0bd53c1dfc564acbd0e0ede3a9492239f2b3e7f979ccd1a598c5770e",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 113,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "905c6d29527a9b8c785cb6521a05ce15f631568acd936f2b7c88717fe89c8e32",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 114,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "51eab6302df85011ae4c6c9fbed4cb96486e05ffb2df089cdc9bb04ed6f8fe41",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 115,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "7fd3f5b7aa92d155b24ea6af71911765da1352168dfff837ac846aa9d12183dd",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 116,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "c896b9953f9fc7638308caa6e5ef05426b3418bd377d8dcdbdaf1968aa1fe23c",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 117,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "217a0e30c0ed12d996a08095d20b7a5ce0bf03dd8b92e124c7cfeccb1134be43",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "PASSAGE DU MODE ÉTÉ/HIVER EN AUTOMATIQUE"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P117-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P117-E01",
+          "source_type": "source_scenario_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 118,
+      "canonical_reference": "physical PDF page",
+      "section_group": "THERMOSTAT_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "a1c1c2ef329e0451d321fa3440f4032860730b716dab24919f4efa8ab49f9cc4",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 119,
+      "canonical_reference": "physical PDF page",
+      "section_group": "VIRTUAL_BADGE_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "e7c3d27e1ec5c6d2ac34c00b2f3a9acd4b9c9545ad4cac93f266c1b734d714e1",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 3,
+      "short_source_fragments_fr": [
+        "BADGE VIRTUEL (VIRTUAL KEYCARD)",
+        "Scénario d’arrivée",
+        "Scénario de départ"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P119-E01",
+        "LEGRAND34-P119-E02",
+        "LEGRAND34-P119-E03"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P119-E01",
+          "source_type": "source_scenario_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P119-E02",
+          "source_type": "source_scenario_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P119-E03",
+          "source_type": "source_scenario_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 120,
+      "canonical_reference": "physical PDF page",
+      "section_group": "VIRTUAL_BADGE_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "3467b22f70c6bade57fe4563e533e0a2fa54f9c9fce90436e16f0430b7482e07",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 121,
+      "canonical_reference": "physical PDF page",
+      "section_group": "VIRTUAL_BADGE_OPERATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "1499cc929d31d19bb1d2bcfa2e0407bb7260e6d1fe0bef599d7e1b9bb22df18a",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 122,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SOFTWARE_INSTALLATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "da5f4a2f38ae5e334e5c13356afbf42214fe6f7fc5f1dc42898624a1836c6fe4",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 123,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SOFTWARE_INSTALLATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "5244140ad10edb6b5f71c934de8110ca243d2b38965492b4a14c4318e7eaa086",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 124,
+      "canonical_reference": "physical PDF page",
+      "section_group": "SOFTWARE_INSTALLATION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "bbf6330c1a82786918461b05ce77dcda042135bac49b3e8f5a36a4932a7118c1",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 125,
+      "canonical_reference": "physical PDF page",
+      "section_group": "HOTEL_PROJECT_PROGRAMMING",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "f5a3f9b63cba03ca29700ed83658a1de20a6bb7d7a84454664f7bbf6b298efe3",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "PROGRAMMATION DES CHAMBRES TYPE"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P125-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P125-E01",
+          "source_type": "source_software_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 126,
+      "canonical_reference": "physical PDF page",
+      "section_group": "HOTEL_PROJECT_PROGRAMMING",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "69f71c8b06527cd33be8aee7509561137a9f8f1810409f5e699d6dd5df53f689",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 127,
+      "canonical_reference": "physical PDF page",
+      "section_group": "HOTEL_PROJECT_PROGRAMMING",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "fe30485305e165fd5f82a29cb0045bb1f96adaf5c24ca34847631181e4a75cf0",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 128,
+      "canonical_reference": "physical PDF page",
+      "section_group": "HOTEL_PROJECT_PROGRAMMING",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "74df3ae66da04a7fa27624bf9ecb739e145860e4898628d07b627c76d42287fe",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "PROGRAMMATION DU PROJET HÔTEL"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P128-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P128-E01",
+          "source_type": "source_software_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 129,
+      "canonical_reference": "physical PDF page",
+      "section_group": "HOTEL_PROJECT_PROGRAMMING",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "589253206192a80c98d6a6acf3a9190a3a877a30734f8bd5c41ce844aca79af1",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 130,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "57a919276641946ce497f40de172d27b83fc8dd1ffd1167e1e5b6218ebd1601c",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 5,
+      "short_source_fragments_fr": [
+        "Hotel Room Controller software",
+        "ÉCRAN D'ACCUEIL",
+        "Fonction ON line",
+        "Fonction OFF line",
+        "Tableau de bord"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P130-E01",
+        "LEGRAND34-P130-E02",
+        "LEGRAND34-P130-E03",
+        "LEGRAND34-P130-E04",
+        "LEGRAND34-P130-E05"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P130-E01",
+          "source_type": "source_software_name",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P130-E02",
+          "source_type": "source_UI_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P130-E03",
+          "source_type": "source_UI_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": false
+        },
+        {
+          "id": "LEGRAND34-P130-E04",
+          "source_type": "source_UI_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P130-E05",
+          "source_type": "source_UI_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 131,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "91362de6048369b29ab76b1853bbf47af9d9a38a1f16814d3721e70fa8459c7d",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "ÉCRAN PROJET"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P131-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P131-E01",
+          "source_type": "source_UI_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 132,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "0d93e26c923a3752ec88d96ce1013258adad0004002e0ed35d53d4d9c6fa2bcb",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 133,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "7eaeef5a9c88e0d1f16e225348bdb1e821782e76dbdac98963c57300bbb50900",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "ÉCRAN DES MODULES"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P133-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P133-E01",
+          "source_type": "source_UI_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 134,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "2e9af4d10b80a570645e96c3b79014c8c588b4b00581e77c7cd2563206ada5d9",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "LE CONFIGURATEUR"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P134-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P134-E01",
+          "source_type": "source_UI_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 135,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "51501d1a5e8a70653bf1fb5106ce08ae77a22c179b1f94040a503948b77be914",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 136,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "76170a91c995fa53ab5f718e5999d5a7a7375f3247cf5720e286bff38e12422c",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 137,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "835c07a01ab542bf3ce3882bc5fd9b88a8698de178bd42032ecf8a71439f3ede",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 138,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "813d247282bbbeca91995c087e449894058176ba16b589ddd27a3a7f1be526b3",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 2,
+      "short_source_fragments_fr": [
+        "Fonction planificateur",
+        "déclenchement horaire"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P138-E01",
+        "LEGRAND34-P138-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P138-E01",
+          "source_type": "source_UI_feature_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P138-E02",
+          "source_type": "source_scenario_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 139,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "ebbcc26adacb7fc7e8bfd8025c6f40f4518ab6804596231437d35b5fa9153e07",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 140,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "0a9f6dc936317d0677e5e0ae883d300fbf1d06f99aab3183af784a8166e4e4d7",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 141,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "a24baf6228a33232bcd29aabf0fea10ac17bac0d62ce6e5616556dff0bfb433c",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 142,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "0a40674ca327335dc4afe154c250cbd4021e9321ff536fcaeec61adce11a65b2",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 143,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "7f5eace4ef758bb3eaf8a9ba3c5b096833551eb25d59f3c3777ab3dd2088b4db",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 144,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "934c82286a2427945d0cd6eba079167a4b3bc733a26932f7a438ea5d26bb8149",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 145,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "54e51d68d340af15e91ade7134fb14a0e1a703f5b80b4f052b28cde89ac3aeaa",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 146,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "f115da22b1573ed1f7b19f427f7d75556f9153867aeda24f778b79270c5f427a",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 147,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "b0c6220925172756b623ad18c63944e69aff96c02dd36af6887613b5d46fe9ca",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 148,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "290627aceed111915e695a7193de9f86c2aa8064be1a6776f51273b741f918b1",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 149,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "8006d09cedfacc365ec26ba1db7523caeb7ec2b946abdb011a28f3a2a908290e",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 150,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "118ef70f82ed6de263a0781db0946f348eb927fdf91a1ff4ad8f2652cab6873a",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 151,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "5c760d26d70f72b4d974eef44bb6a7108c081516c1aef6391fa6d0323b1e59cb",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 152,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "67f3e31da12a163ab656b412903effcdb4a66d86b8ad65471fc096385661b0a4",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 2,
+      "short_source_fragments_fr": [
+        "Liste des entrées",
+        "Liste des sorties"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P152-E01",
+        "LEGRAND34-P152-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P152-E01",
+          "source_type": "source_UI_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P152-E02",
+          "source_type": "source_UI_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 153,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "8c36adba69d9ca56b4c458da7290614b7ff15b079ac9ab6f281578dafc9fe612",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 154,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "7b2d26f32a308690a31c00b4ddd1a7167aff04cd358ff0c6b93ed4cdf1c27728",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 155,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "cd8d17c57fb2a842d51227ba64eb624a8b7eb4ab3a2e914be3645e9d555d0fa6",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 156,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "8d3da78d1fa8cf7255a5a01f0e526fa4884bab6ff5ff4f2043cc93270bfe6220",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 2,
+      "short_source_fragments_fr": [
+        "Créer les scénarios",
+        "Évènement déclencheur"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P156-E01",
+        "LEGRAND34-P156-E02"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P156-E01",
+          "source_type": "source_UI_feature_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P156-E02",
+          "source_type": "source_UI_label",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 157,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "756cff2877a76bda2f9900cfe1f2f7e310f218da1bb074bf068eb23c6c38f098",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 158,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "b15e756b2e4d5717c575e1e51eb271f71533d436ef9efd36a29579c84c7e0898",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 159,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "6efb2f1cadd5268e5a28f937058b395f3f1237789224c73d9a285899ffaab445",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 160,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "478da7f813b1591f6fe1d4927f13a8269385e67187540a082973fad86993020c",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 161,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "2a5a4a5010e03db38a4cc24ca5b34b4b86576f1fdecd8d78132eb5af2a9a09bf",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 162,
+      "canonical_reference": "physical PDF page",
+      "section_group": "CONFIGURATION_SOFTWARE_OVERVIEW",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "1b93d8e7e95ccbe7f9c1fb70a9c6dc2c93fe4f102f6f280ca8a29a75ecffa517",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 163,
+      "canonical_reference": "physical PDF page",
+      "section_group": "LEGACY_CONFIGURATION_RECOVERY_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "6ae6fc4dbf8d9205fd314224f2e0cc3e29ea6bd83d28e17f12419a5b780f66de",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 164,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "8643c52e690c543a1e6272297ffbe0d7486bd27b08f4c02e38625906ddc233c0",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 165,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "2f36eee32148bb6d6f57d3a3a3444d370017c7c91717e512a1865524e3820e0a",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 166,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "ca3beeb0e647796c43da4e200debb545b6cbc80c7ddb591c6f7edc07cd61e198",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 167,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "eecc451447400430e98370385b7efb12f90a25962a3cc1a5d667c9fa326d1344",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 168,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "5a741d80c3f9c3090f8295d1e0188eceb46459e2534ecc27495bb580e38faf4a",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 169,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "39d2704c1de87e7f9b3ba0cc480c7382ffc055e593ed60e8e6e8f92bac1b3a53",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 170,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "458c6c461d6d3f2215988bd43eb3ad06741a42af65a887837f5a2dba7585b889",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 171,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "dea34aff12da7f0c2112b904235939f6a38adf41a9e0200df0a3cc498205b511",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 172,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "c4fc015132f65288630edc62255339e5001e811318c787911c4f21651b8abac9",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 173,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "4d46e5542a253bb588bf99560fa606a6b159266b39e36132d59f2f288cadd626",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 174,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "09ce29e5393c6edb9b940c01e0b940785551041dec88227b9e286fecc1dcda7a",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 175,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "dcf633a9425622da83cdad18fe17460040fff080e146be719e172c5154685e77",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 176,
+      "canonical_reference": "physical PDF page",
+      "section_group": "PROGRAMMING_EXAMPLE_SECTIONS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "8c65fa973983500e3f3ff50eccc796b5873ebba37d5fae562aaf1e3bd523b463",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 177,
+      "canonical_reference": "physical PDF page",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "76ad7f4597bb398fc2b610898b7bfad0aa0d935ee398f1967a457493034e108d",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "PROCESS DE MISE EN SERVICE"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P177-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P177-E01",
+          "source_type": "source_process_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 178,
+      "canonical_reference": "physical PDF page",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "eb84296af3dc4453d11ab0cd0f89463bc93a360e3248fafbe198631d433c7ac5",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 179,
+      "canonical_reference": "physical PDF page",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "4cd5e5ef02ba9f2e47a7ed469b27fabcb1a954df2fc6fe5e446d2f8e966d3b29",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 180,
+      "canonical_reference": "physical PDF page",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "ae90c680631377f3da14dd8a43ff4db82ca364f8f7fd357428686f74ba66455d",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 181,
+      "canonical_reference": "physical PDF page",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "063bab11cce61a69fd6c36de76a6eb82281f729c49003f47e841ff4082973896",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 182,
+      "canonical_reference": "physical PDF page",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "f622e01604968fa57e5d4180607c3e8b6b236c34aae3fcc9cd46aa6e60b4616c",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 183,
+      "canonical_reference": "physical PDF page",
+      "section_group": "COMMISSIONING_PROCESS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "fb47eb0833876545a2c10304c8883178a86e50311468fa1f197525cd70051395",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 184,
+      "canonical_reference": "physical PDF page",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "9c9ce9d5e9335b38bf30908cad85a03a1f24859ea56f6cca69a83d8b16234cb2",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "DIAGNOSTIC NIVEAU 1"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P184-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P184-E01",
+          "source_type": "source_service_heading_fragment",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 185,
+      "canonical_reference": "physical PDF page",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "81e38cf28992a7b44dd553991ce9fc281a9ced10a4efb0b02ab5b5b3af049ca2",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 186,
+      "canonical_reference": "physical PDF page",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "90399c68d03cc23f34040a6ea8f6d792d28ff2d945cc4bc62c9a34dd31c95452",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 187,
+      "canonical_reference": "physical PDF page",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "025e2b5e439b7195cf91229c601dfff6c576cec4d34a811e0f9264e28e268979",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 188,
+      "canonical_reference": "physical PDF page",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "05582a284fc074498336615e328f98b1010f3cb9eb16da01db298e9398106386",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 189,
+      "canonical_reference": "physical PDF page",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "d0a5d02eaea4521742374ddde29bda0f1e0c07ddb79845c18f5611fa45220bdf",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "DIAGNOSTIC NIVEAU 2"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P189-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P189-E01",
+          "source_type": "source_service_heading_fragment",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 190,
+      "canonical_reference": "physical PDF page",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "52e81e2da7edc388e4d5840fedc7beeb1eecd9d573c6cd952165d6a3ab310899",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 191,
+      "canonical_reference": "physical PDF page",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "539f75a808a9544c84ec9b364359d8ac7afa979c3f548ef12e773b63d01881bb",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 192,
+      "canonical_reference": "physical PDF page",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "5d995b13eb836a8ec926ab682054e4f4d29f4e21c9672451db24232ac3577984",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 193,
+      "canonical_reference": "physical PDF page",
+      "section_group": "DIAGNOSTICS_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "0e90f7a1af68e2d04a271ea874d6fea656a1da213c6810c73a8e86e8427d9428",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 194,
+      "canonical_reference": "physical PDF page",
+      "section_group": "MAINTENANCE_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "3513f43227a69990039c8a292f123697b394487dbffe68fd33b0bfaf8c4dd667",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 195,
+      "canonical_reference": "physical PDF page",
+      "section_group": "MAINTENANCE_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "b92965081a850a61159dadbfab2e3fa5668ea7cc11f359f54af46c0f1a2aa067",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 196,
+      "canonical_reference": "physical PDF page",
+      "section_group": "MAINTENANCE_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "1897df442d3d1279f108097deaa04c424c381958413d4967651de25e86a13303",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 197,
+      "canonical_reference": "physical PDF page",
+      "section_group": "INTEGRATION_REFERENCE_TABLES",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "49798631c3270c76ba71e0dea083d619eb5e3f79a35f5e6eec0a1651d2016eeb",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 198,
+      "canonical_reference": "physical PDF page",
+      "section_group": "INTEGRATION_REFERENCE_TABLES",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "f3d44c92c38aa54d266c76292a62fc01cd3d927bd3be45e23807d4704382d6b6",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 199,
+      "canonical_reference": "physical PDF page",
+      "section_group": "INTEGRATION_REFERENCE_TABLES",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "bacb3e4cfa36cc565d6ee211b166a909d9c8b24c04e360fae829e203da80ef97",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 200,
+      "canonical_reference": "physical PDF page",
+      "section_group": "INTEGRATION_REFERENCE_TABLES",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "3214b16c288215ed76dd4a797414e3882eeda13ed62686ef0076c9ef81444653",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 201,
+      "canonical_reference": "physical PDF page",
+      "section_group": "INTEGRATION_REFERENCE_TABLES",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "7724fca737f25d73079dcce95962e4512f4c70b4e18b9231d12f7a8704cf9218",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 202,
+      "canonical_reference": "physical PDF page",
+      "section_group": "INTEGRATION_REFERENCE_TABLES",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "d58aa6e8b6f4f7f13b2aef6a3c133ce34a555b3bd3aef6be267c5af2ccae6afe",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 203,
+      "canonical_reference": "physical PDF page",
+      "section_group": "TROUBLESHOOTING_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "ccf1e7650b15444f53bdcc2f739d0d42d96610b36962db02ea4e27b7a95a7edf",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 204,
+      "canonical_reference": "physical PDF page",
+      "section_group": "TROUBLESHOOTING_SECTION",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "d0b197679206282b289b30eef497709c48e9fba0932ac35e3605f8e2d1c8afdd",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 205,
+      "canonical_reference": "physical PDF page",
+      "section_group": "TECHNICAL_CHANGE_LOG",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "29c4f8572a5f70f5940c326ef601ebb994e0faf7a8c233a1f1b47693c0f5a11c",
+      "disposition": "indexed_no_excerpts_selected",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 206,
+      "canonical_reference": "physical PDF page",
+      "section_group": "GLOSSARY",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "a976f8e3b4fa49550afea0b45539e0c5192e75c251c6d050e2d0f4a467a3542e",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 3,
+      "short_source_fragments_fr": [
+        "GLOSSAIRE",
+        "Do Not Disturb - Ne pas déranger",
+        "Make Up Room - Faire la chambre"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P206-E01",
+        "LEGRAND34-P206-E02",
+        "LEGRAND34-P206-E03"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P206-E01",
+          "source_type": "source_navigator_heading",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P206-E02",
+          "source_type": "source_glossary_term",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        },
+        {
+          "id": "LEGRAND34-P206-E03",
+          "source_type": "source_glossary_term",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    },
+    {
+      "pdf_page": 207,
+      "canonical_reference": "physical PDF page",
+      "section_group": "BLANK",
+      "native_text_status": "blank",
+      "native_page_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "blank_page_preserved",
+      "fragment_count": 0
+    },
+    {
+      "pdf_page": 208,
+      "canonical_reference": "physical PDF page",
+      "section_group": "BACK_COVER_EDITION_AND_CONTACTS",
+      "native_text_status": "native_text_present",
+      "native_page_text_sha256": "5ace619daef568aa1390a4af9c47dc91d3189281a9f9560ee2e92e12914c5e27",
+      "disposition": "selected_short_research_excerpts_only",
+      "fragment_count": 1,
+      "short_source_fragments_fr": [
+        "SYS219006 - Septembre 2019"
+      ],
+      "fragment_ids": [
+        "LEGRAND34-P208-E01"
+      ],
+      "fragment_audit": [
+        {
+          "id": "LEGRAND34-P208-E01",
+          "source_type": "printed_edition_reference",
+          "PyMuPDF_exact_normalized_match": true,
+          "Poppler_raw_exact_normalized_match": true,
+          "Poppler_layout_exact_normalized_match": true
+        }
+      ]
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "LEGRAND34-CLAIM-01",
+      "kind": "source_manual_and_named_brochures_distinct",
+      "physical_pdf_pages": [
+        1,
+        208
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P001-E02",
+        "LEGRAND34-P001-E03",
+        "LEGRAND34-P208-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "راهنمای فنی فرانسوی SYS219006 چاپ ۲۰۱۹ است و با کاتالوگ ۲۰۲۵ یا بروشور ۲۰۱۶ Legrand ادغام نمی‌شود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "LEGRAND34-CLAIM-02",
+      "kind": "GRMS_scope_and_service_labels",
+      "physical_pdf_pages": [
+        6,
+        7
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P006-E01",
+        "LEGRAND34-P006-E02",
+        "LEGRAND34-P007-E01",
+        "LEGRAND34-P007-E02",
+        "LEGRAND34-P007-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "تعریف و برچسب‌های نمایشی متعلق به متن مرجع‌اند؛ از آن دامنهٔ عملکرد، پشتیبانی تجهیزات یا کارکرد NSP نتیجه نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "LEGRAND34-CLAIM-03",
+      "kind": "hotel_architecture_is_conceptual_and_non_exhaustive",
+      "physical_pdf_pages": [
+        8,
+        9,
+        24,
+        25
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P008-E01",
+        "LEGRAND34-P008-E02",
+        "LEGRAND34-P009-E01",
+        "LEGRAND34-P024-E01",
+        "LEGRAND34-P025-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "اجزای دیده‌شده در نمونهٔ غیرجامع معماری، فهرست پروتکل، نقشهٔ شبکه یا احراز یکپارچگی NSP نیستند. IPTV ذکرِ زمینه است، نه مدرک سرویس.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "LEGRAND34-CLAIM-04",
+      "kind": "local_or_central_HVAC_alternatives",
+      "physical_pdf_pages": [
+        16,
+        18,
+        20
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P016-E01",
+        "LEGRAND34-P018-E01",
+        "LEGRAND34-P020-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "گرمایش/سرمایش محلی و مرکزی دو الگوی مجزا در سند هستند؛ تنظیم، سازگاری دستگاه یا راهکار تأییدشدهٔ NSP نتیجه نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "LEGRAND34-CLAIM-05",
+      "kind": "thermostat_source_concepts_not_operational_procedure",
+      "physical_pdf_pages": [
+        108,
+        117
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P108-E01",
+        "LEGRAND34-P108-E02",
+        "LEGRAND34-P117-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "فقط واژه‌ها و عنوان سناریو ثبت شده‌اند؛ روش عمل، تنظیمات، مقدار، سیم‌کشی و عملکرد فنی NSP ثبت نشده.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "LEGRAND34-CLAIM-06",
+      "kind": "virtual_badge_labels_not_access_workaround",
+      "physical_pdf_pages": [
+        119
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P119-E01",
+        "LEGRAND34-P119-E02",
+        "LEGRAND34-P119-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "عنوان سناریوهای ورود/خروج در سند منبع‌اند. این گزیده‌ها دلالت بر شیوهٔ کار، دسترسی، ترتیب محرک یا کارکرد NSP ندارند.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "LEGRAND34-CLAIM-07",
+      "kind": "HRC_UI_and_project_model_only",
+      "physical_pdf_pages": [
+        125,
+        128,
+        130,
+        131,
+        133,
+        134
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P125-E01",
+        "LEGRAND34-P128-E01",
+        "LEGRAND34-P130-E01",
+        "LEGRAND34-P130-E02",
+        "LEGRAND34-P130-E03",
+        "LEGRAND34-P130-E04",
+        "LEGRAND34-P130-E05",
+        "LEGRAND34-P131-E01",
+        "LEGRAND34-P133-E01",
+        "LEGRAND34-P134-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "عنوان نرم‌افزار و نام نماها فقط زمینهٔ قیاس رابط‌کاربری‌اند. مسیر نصب، عملِ شبکه و نسخهٔ فعلی احراز یا بازنشر نشده.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "LEGRAND34-CLAIM-08",
+      "kind": "scenario_UI_labels_not_configuration_steps",
+      "physical_pdf_pages": [
+        138,
+        152,
+        156
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P138-E01",
+        "LEGRAND34-P138-E02",
+        "LEGRAND34-P152-E01",
+        "LEGRAND34-P152-E02",
+        "LEGRAND34-P156-E01",
+        "LEGRAND34-P156-E02"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "صرفاً سرفصل و نام مفاهیم برنامه‌ریزی/فهرست‌ها؛ از این‌ها دستور اجرایی، قابلیت جاری Legrand یا قابلیت NSP نتیجه نشود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "LEGRAND34-CLAIM-09",
+      "kind": "commissioning_diagnostics_labels_only",
+      "physical_pdf_pages": [
+        177,
+        184,
+        189
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P177-E01",
+        "LEGRAND34-P184-E01",
+        "LEGRAND34-P189-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "تقسیم‌بندی ظاهری خدمت به جای راهنمای پیکربندی، عیب‌یابی عملیاتی، دستور، نفوذ یا SLA.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "LEGRAND34-CLAIM-10",
+      "kind": "definitions_not_NSP_implementation",
+      "physical_pdf_pages": [
+        206
+      ],
+      "S02_fragment_refs": [
+        "LEGRAND34-P206-E01",
+        "LEGRAND34-P206-E02",
+        "LEGRAND34-P206-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "تعریف اصطلاح‌ها شاهد امکان عملکرد واقعی NSP نیست و نباید شاهد فنی تلقی شود.",
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    }
+  ],
+  "source_context_groups": [
+    {
+      "id": "LEGRAND34-CTX-GRMS-ARCHITECTURE",
+      "pdf_pages": [
+        6,
+        7,
+        8,
+        9,
+        16,
+        18,
+        20,
+        24,
+        25
+      ],
+      "purpose": "Separate conceptual topology, room service terms and alternate HVAC scope. Do not treat diagram as wiring or NSP behavior.",
+      "source_fragment_refs": [
+        "LEGRAND34-P006-E01",
+        "LEGRAND34-P007-E02",
+        "LEGRAND34-P008-E02",
+        "LEGRAND34-P018-E01",
+        "LEGRAND34-P020-E01",
+        "LEGRAND34-P024-E01"
+      ],
+      "approved_NSP_capability": false,
+      "not_additional_features": true
+    },
+    {
+      "id": "LEGRAND34-CTX-ROOM-SCENARIOS",
+      "pdf_pages": [
+        108,
+        117,
+        119
+      ],
+      "purpose": "Thermal mode and virtual badge scenario headings only; excludes actuation methods and settings.",
+      "source_fragment_refs": [
+        "LEGRAND34-P108-E02",
+        "LEGRAND34-P117-E01",
+        "LEGRAND34-P119-E01",
+        "LEGRAND34-P119-E02",
+        "LEGRAND34-P119-E03"
+      ],
+      "approved_NSP_capability": false,
+      "not_additional_features": true
+    },
+    {
+      "id": "LEGRAND34-CTX-CONFIGURATOR-LABELS",
+      "pdf_pages": [
+        125,
+        128,
+        130,
+        131,
+        133,
+        134,
+        138,
+        152,
+        156
+      ],
+      "purpose": "Navigation and presentation vocabulary; no network or device operations, secrets or steps.",
+      "source_fragment_refs": [
+        "LEGRAND34-P125-E01",
+        "LEGRAND34-P128-E01",
+        "LEGRAND34-P130-E01",
+        "LEGRAND34-P130-E02",
+        "LEGRAND34-P131-E01",
+        "LEGRAND34-P133-E01",
+        "LEGRAND34-P134-E01",
+        "LEGRAND34-P138-E01",
+        "LEGRAND34-P156-E01"
+      ],
+      "approved_NSP_capability": false,
+      "not_additional_features": true
+    }
+  ],
+  "content_exclusion_policy_fa": [
+    "دیتاشیت‌ها، مدل، شناسه، پارامتر، نقشهٔ سیم‌کشی و مقادیر ثبت نشده‌اند.",
+    "نمونهٔ تنظیم، رویهٔ بازیابی، فرایند عیب‌یابی عملیاتی، پیکربندی شبکه، نسخه و تماس بازنشر نشده‌اند.",
+    "تنها چند عنوان تشخیصی، نقش خدمات و نام نرم‌افزار برای قیاسِ شیوهٔ ارائه نگه داشته شده‌اند."
+  ],
+  "quality_assurance": {
+    "same_original_PDF_byte_hash": true,
+    "all_208_physical_page_hashes_match_S01": true,
+    "each_physical_page_covered_once": true,
+    "all_49_selected_excerpts_exact_under_both_engines": true,
+    "normalization": "NFKC, discard C0 layout controls from comparison only, whitespace collapse. Stored excerpts retain source case and punctuation.",
+    "blank_and_folio_only_pages_have_no_excerpts": true,
+    "embedded_assets_not_exported": true
+  },
+  "next_queue_cursor": {
+    "document_index": 11,
+    "document_id": "34",
+    "step_index": 2,
+    "step_id": "S03"
+  },
+  "next_stage": "S03 — استخراج فیچر و ترجمه",
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "portfolio_builder_app_source_changed": false,
+  "editorial_structure_changed": false
+}
