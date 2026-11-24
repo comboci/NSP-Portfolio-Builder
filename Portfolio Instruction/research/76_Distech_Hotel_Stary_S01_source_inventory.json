@@ -1,0 +1,129 @@
+{
+  "schema": "nsp-catalog-research-s01-source-inventory-v1",
+  "stage": "S01",
+  "stage_key": "source_inventory",
+  "status": "completed_verified_original_document_and_physical_page_inventory",
+  "document_id": "76",
+  "source_id": "CAT076_DISTECH_HOTEL_STARY_KRAKOW",
+  "date_checked": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "040fd2c9bfd4e84d6dddb718ffa5d4527de67c60",
+  "source": {
+    "company": "Distech Controls",
+    "publisher_imprint_as_printed": "DISTECH CONTROLS SAS",
+    "title": "Hotel Stary",
+    "title_as_printed": "HOTEL STARY",
+    "cover_location_as_printed": "Krakow, Poland",
+    "title_location_and_publisher_physical_page": 1,
+    "document_type": "one-page English vendor case sheet for hospitality refurbishment and building controls",
+    "filename": "76_Distech_Controls_Work C47.1.pdf",
+    "library_path": "/76_Distech_Controls_Work C47.1.pdf",
+    "file_size_bytes": 1438918,
+    "file_size_matches_queue": true,
+    "pdf_pages": 1,
+    "sha256": "e9e0886f47c94a5b91106e491a84cf14599f2004ca3465f4677e1a1d0a3b7149",
+    "source_original_from_exact_user_Library_match": true,
+    "pdf_format": "PDF 1.4",
+    "pdf_creator": "Adobe InDesign CC 2014 (Windows)",
+    "pdf_producer": "Adobe PDF Library 11.0",
+    "pdf_creation_metadata": "D:20160524112524+02'00'",
+    "pdf_modification_metadata": "D:20160524112532+02'00'",
+    "printed_document_code": null,
+    "printed_edition_revision": null,
+    "printed_publication_date": null,
+    "metadata_dates_not_used_as_publication_or_installation_dates": true,
+    "work_filename_suffix_not_printed_edition": true,
+    "language": "en",
+    "encrypted": false,
+    "source_original_committed": false,
+    "source_original_modified": false,
+    "external_publisher_site_verification_performed": false
+  },
+  "pagination": {
+    "canonical_reference": "1-based physical PDF page",
+    "physical_pages": 1,
+    "orientation": "A4 portrait, unrotated",
+    "page_size_points": [
+      595.276,
+      841.89
+    ],
+    "printed_folios_observed": [],
+    "pdf_page_label_rules": [],
+    "pdf_outline_present": false,
+    "private_visual_review_physical_pages": [
+      1
+    ]
+  },
+  "page_index": [
+    {
+      "pdf_page": 1,
+      "verified_printed_folio": null,
+      "pdf_page_label_metadata": null,
+      "rect_pt": [
+        0,
+        0,
+        595.276,
+        841.89
+      ],
+      "rotation": 0,
+      "native_characters": 2263,
+      "native_words": 326,
+      "native_text_sha256": "13943d37ca65cb9f22f7ff12e90fdd97b278dbf8a0bb01eccae99723178774d3",
+      "native_text_hash_basis": "SHA-256 of UTF-8(PyMuPDF native get_text().strip()); no page prose reproduced.",
+      "embedded_image_resource_occurrences": 15,
+      "link_annotation_count": 0,
+      "section_group": "one_page_case_sheet",
+      "analyst_region_inventory": [
+        "case header with property, city and country",
+        "refurbishment and reported case attribution",
+        "vendor narrative combining room control and preexisting building management",
+        "case sidebar with property, recognition and equipment context",
+        "logo, address and graphic regions kept private"
+      ],
+      "visual_review_status": "full page inspected privately; no capture committed"
+    }
+  ],
+  "cross_catalog_identity": {
+    "exact_content_Hotel_Stary_Krakow_distinct_from_generic_Distech_reference": true,
+    "preexisting_Distech_Controls_or_Hotel_Stary_catalog_rows_in_V19": [],
+    "identified_refurbishment_not_independently_verified_installation": true
+  },
+  "claim_boundary": {
+    "named_integrator_as_reported_in_case": "Distech Controls Poland",
+    "separate_integrator_and_publisher_entities_as_stated_not_independently_verified": true,
+    "refurbishment_and_property_area_not_BMS_coverage_or_performance": true,
+    "generic_office_room_language_not_evidence_of_hotel_scope": true,
+    "award_statement_is_vendor_report_not_independent_award_certification_or_NSP": true,
+    "described_remote_service_not_procedure_or_security_capability": true,
+    "system_equipment_and_installed_counts_not_NSP_or_current_compatibility": true,
+    "no_energy_cost_service_time_reliability_performance_result_verified": true
+  },
+  "research_controls": {
+    "repository_visibility": "public",
+    "explicit_open_license_observed": false,
+    "page_image_text_or_logo_republication_rights_verified": false,
+    "no_contact_details_original_prose_logo_or_photo_to_be_published": true,
+    "source_original_kept_private": true,
+    "future_stages_fa": "فقط خلاصهٔ بازنویسی‌شده و صفحه‌دار با انتساب به فروشنده؛ از عکس، لوگو، متن اصلی، دسترسی یا مدیریت از راه دور، نحوهٔ راه‌اندازی، تنظیم، سیم‌بندی، ادعای انطباق یا جایزه و عدد عملکرد استفاده نشود. در صورت نیاز، طرح دیداری اصیل و غیرتقلیدی ساخته شود."
+  },
+  "stage_boundary": {
+    "S01_document_inventory_only": true,
+    "no_source_text_or_asset_published": true,
+    "no_app_or_bank_change": true
+  },
+  "next_stage": "S02 — خلاصه‌های دقیق و صفحه‌دار",
+  "next_queue_cursor": {
+    "document_index": 19,
+    "document_id": "76",
+    "step_index": 1,
+    "step_id": "S02"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
