@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 19,
+    "total_pending_steps": 18,
     "completed_new_documents": 15,
     "remaining_new_documents": 3
   },
   "cursor": {
     "document_index": 18,
     "document_id": "61",
-    "step_index": 2,
-    "step_id": "S03"
+    "step_index": 3,
+    "step_id": "S04"
   },
   "section_types": [
     {
@@ -2117,11 +2117,13 @@
         {
           "id": "S03",
           "key": "feature_software_translation",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/61_Helvar_Zleep_Hotels_S03_editorial_summaries_fa.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "965c88d97c600df21cf26bc189e8ce380628092d",
+          "notes": "هشت خلاصهٔ خودمان از مطالعهٔ Helvar به فارسی ترجمه شد: چهار نامزد تحریریه و چهار زمینه. هدف انرژی، توصیف جو فضا و سه محل گزارش‌شده از نتیجهٔ مستقل و پوشش زنجیره جدا هستند؛ نقشی برای Vanpee استنباط نشد. هیچ متن، شعار، تصویر و ادعای NSP افزوده نشد؛ بانک V18، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S04",
@@ -2160,7 +2162,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S02"
+      "last_successful_stage": "S03"
     },
     {
       "id": "76",
