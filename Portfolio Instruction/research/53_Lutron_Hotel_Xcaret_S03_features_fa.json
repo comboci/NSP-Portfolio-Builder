@@ -1,0 +1,1073 @@
+{
+  "schema": "nsp-catalog-research-stage-feature-translation-v1",
+  "stage": "S03",
+  "stage_key": "feature_software_translation",
+  "status": "completed_source_bound_candidates_and_Persian_translation_only",
+  "document_id": "53",
+  "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+  "source_language": "en",
+  "translation_language": "fa",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "e09e0f2c9acbd5132d91098ccce6376f8e67427d",
+  "provenance": {
+    "company": "Lutron",
+    "title": "Hotel Xcaret Mexico",
+    "filename": "53_Lutron_Work C10.3.pdf",
+    "pdf_pages": 3,
+    "file_size_bytes": 837051,
+    "source_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+    "printed_document_part_number": "368-5134",
+    "printed_revision": "REV B",
+    "printed_copyright_month": "2018-12",
+    "S01_inventory": {
+      "path": "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S01_source_inventory.json",
+      "git_blob_sha": "a4f416886ea8b4f38d303c3caea01999029a5547",
+      "commit_sha": "2fe01a3a6c8fb8239ebd8f58cf91f84f95a2562f"
+    },
+    "S02_text_evidence": {
+      "path": "Portfolio Instruction/research/53_Lutron_Hotel_Xcaret_S02_english_text.json",
+      "blob_sha": "9b72c457eda2bb662c05b4fd8171fc117702320b",
+      "commit_sha": "91f3c559593ce048444938287d2bda2d50f42e33"
+    }
+  },
+  "statistics": {
+    "physical_source_pages": 3,
+    "selected_english_fragments_reconciled": 28,
+    "Persian_translations_reviewed": 28,
+    "research_candidate_records": 15,
+    "context_only_fragments": 13,
+    "records_by_type": {
+      "visual_presentation_style": 4,
+      "case_study": 7,
+      "architecture": 1,
+      "software_capability": 2,
+      "scenario": 1
+    },
+    "NSP_capabilities_verified": 0,
+    "independently_verified_case_outcomes_or_certifications": 0
+  },
+  "editorial_and_safety_policy": {
+    "owner_or_customer_quote_distinct_from_vendor_or_integrator": true,
+    "requirements_not_successfully_proven_functions": true,
+    "myRoom_Vue_optional_and_two_tiers_not_collapsed": true,
+    "Opera_same_property_not_generic_compatibility": true,
+    "Welcome_mode_label_not_access_workflow": true,
+    "proactive_maintenance_report_not_outcome_or_SLA": true,
+    "no_independent_EarthCheck_rank_or_certificate_verification": true,
+    "property_design_not_product_NSP_certification": true,
+    "property_room_count_not_deployed_device_count": true,
+    "no_current_product_or_publication_rights_or_NSP_feature_claim": true
+  },
+  "research_records": [
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I001",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 1,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P01-E03",
+      "S02_fragment_index": 3,
+      "original_source_excerpt_en": "Project Overview",
+      "translation_fa": "نمای کلی پروژه",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "source_editorial_heading",
+      "category_id": "narrative_structure",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "narrator_attribution": "Lutron, case-study structure",
+      "same_editorial_concept_group": "LUTRON53-PROJECT_OVERVIEW",
+      "editorial_relevance_and_limits_fa": "شیوهٔ کنارهم‌آوردن هویت، مکان و روایت اولیه؛ مطالعه و دارایی هتل متعلق به منبع است، نه پروژهٔ NSP.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P01-E01",
+        "LUTRON53-P01-E02",
+        "LUTRON53-P01-E04",
+        "LUTRON53-P01-E07"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I002",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 1,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P01-E05",
+      "S02_fragment_index": 5,
+      "original_source_excerpt_en": "everything flows",
+      "translation_fa": "همه‌چیز روان پیش می‌رود",
+      "source_type": "case_study",
+      "S02_source_type": "source_client_motto",
+      "category_id": "guest_comfort",
+      "narrator_role": "CUSTOMER_DIRECT_QUOTE",
+      "narrator_attribution": "David Quintana, architect and co-owner of Xcaret; quoted by Lutron",
+      "same_editorial_concept_group": "LUTRON53-GUEST_PHILOSOPHY",
+      "editorial_relevance_and_limits_fa": "شعار هتل به نقل از معمار و شریک مالک است؛ مقصود اشاره به آسان‌کردن تجربهٔ مهمان است، نه رضایت سنجیده، ویژگی یا شعار NSP.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P01-E06"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-02"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-VOICE"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I003",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P02-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "The Challenge",
+      "translation_fa": "چالش",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "source_editorial_heading",
+      "category_id": "narrative_structure",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "narrator_attribution": "Lutron, case-study structure",
+      "same_editorial_concept_group": "LUTRON53-CASE_NARRATIVE",
+      "editorial_relevance_and_limits_fa": "قالب «چالش / راهکار» را از واقعی‌بودن همهٔ خواسته‌ها یا قابلیت‌های محصول جدا کن.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P02-E10"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-04"
+      ],
+      "source_context_set_refs": [],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I004",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P02-E02",
+      "S02_fragment_index": 2,
+      "original_source_excerpt_en": "property management system (PMS)",
+      "translation_fa": "سامانهٔ مدیریت هتل (PMS)",
+      "source_type": "case_study",
+      "S02_source_type": "source_client_requirement_reported_by_vendor",
+      "category_id": "integrations",
+      "narrator_role": "CUSTOMER_REQUIREMENT_REPORTED_BY_VENDOR",
+      "narrator_attribution": "Hotel Xcaret Mexico requirements as described by Lutron",
+      "same_editorial_concept_group": "LUTRON53-PMS_NEED_VS_CASE",
+      "editorial_relevance_and_limits_fa": "نام سامانه در دامنهٔ چالش/نیاز هتل است؛ نه نصب تأییدشده، سازگاری همگانی، یا قابلیت NSP.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P02-E12"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-SCOPE"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I005",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P02-E03",
+      "S02_fragment_index": 3,
+      "original_source_excerpt_en": "monitoring devices, data and trends",
+      "translation_fa": "پایش دستگاه‌ها، داده‌ها و روندها",
+      "source_type": "case_study",
+      "S02_source_type": "source_client_requirement_reported_by_vendor",
+      "category_id": "management_software",
+      "narrator_role": "CUSTOMER_REQUIREMENT_REPORTED_BY_VENDOR",
+      "narrator_attribution": "Hotel Xcaret Mexico requirements as described by Lutron",
+      "same_editorial_concept_group": "LUTRON53-MONITORING_NEED_VS_REPORT",
+      "editorial_relevance_and_limits_fa": "نیاز اعلام‌شده در روایت ناشر است، نه سنجش پوشش یا گزارش نتیجه. با نقل‌قول و دادهٔ نقل‌شده در صفحهٔ ۳ ادغام نشود.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P03-E03"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-04"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-SCOPE"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I006",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P02-E04",
+      "S02_fragment_index": 4,
+      "original_source_excerpt_en": "harmonize with the building’s décor",
+      "translation_fa": "با دکورِ ساختمان هماهنگ باشد",
+      "source_type": "case_study",
+      "S02_source_type": "source_client_requirement_reported_by_vendor",
+      "category_id": "design_integration",
+      "narrator_role": "CUSTOMER_REQUIREMENT_REPORTED_BY_VENDOR",
+      "narrator_attribution": "Hotel Xcaret Mexico requirements as described by Lutron",
+      "same_editorial_concept_group": "LUTRON53-DECOR_AND_ICON_DESIGN",
+      "editorial_relevance_and_limits_fa": "خواستهٔ پروژه در بخش چالش؛ هیچ سازگاری، طرح نهایی یا نتیجهٔ NSP را ثابت نمی‌کند.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P02-E13"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-04"
+      ],
+      "source_context_set_refs": [],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I007",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P02-E05",
+      "S02_fragment_index": 5,
+      "original_source_excerpt_en": "light, temperature and shade control",
+      "translation_fa": "کنترل روشنایی، دما و پوشش‌های پنجره",
+      "source_type": "architecture",
+      "S02_source_type": "source_control_scope_vendor_description",
+      "category_id": "room_controls",
+      "narrator_role": "VENDOR_FAMILY_DESCRIPTION",
+      "narrator_attribution": "Lutron descriptions of its own product line",
+      "same_editorial_concept_group": "LUTRON53-MYROOM_SCOPE_AND_TIERS",
+      "editorial_relevance_and_limits_fa": "جمع‌بندی حوزه‌های خانوادهٔ myRoom به روایت ناشر؛ نه قابلیت یکسان در دو رده، مشخصات تجهیزات یا قابلیت NSP. منظور shade تجهیزات تنظیم ورود نورِ پنجره است، نه سایهٔ نورپردازی.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P02-E06",
+        "LUTRON53-P02-E07"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-SCOPE"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I008",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P02-E09",
+      "S02_fragment_index": 9,
+      "original_source_excerpt_en": "web-based front-end dashboard",
+      "translation_fa": "داشبوردِ رابط کاربر مبتنی بر وب",
+      "source_type": "software_capability",
+      "S02_source_type": "source_vendor_software_positioning",
+      "category_id": "management_software",
+      "narrator_role": "VENDOR_FAMILY_DESCRIPTION",
+      "narrator_attribution": "Lutron descriptions of its own product line",
+      "same_editorial_concept_group": "LUTRON53-OPTIONAL_MYROOM_VUE",
+      "editorial_relevance_and_limits_fa": "توصیف myRoom Vue به عنوان گزینهٔ در دسترس، نه تضمین آن در هر رده. رابط و عملکرد فعلی ناشر یا توان فنی NSP ثابت نشده؛ این گزیده هیچ روش اتصال یا تنظیمی ارائه نمی‌دهد.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P02-E06",
+        "LUTRON53-P02-E07",
+        "LUTRON53-P02-E08"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-SCOPE"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I009",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P02-E11",
+      "S02_fragment_index": 11,
+      "original_source_excerpt_en": "Welcome mode",
+      "translation_fa": "حالت خوشامدگویی",
+      "source_type": "scenario",
+      "S02_source_type": "source_vendor_case_scenario_label",
+      "category_id": "room_scenarios",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "narrator_attribution": "Lutron descriptions of the Xcaret case",
+      "same_editorial_concept_group": "LUTRON53-CASE_WELCOME_LABEL",
+      "editorial_relevance_and_limits_fa": "تنها برچسب سناریو در روایت ناشر برای همان هتل؛ بدون ترتیب اجرا، محرک، تنظیم تجهیزات، روش ورود یا قابلیت NSP.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P02-E10"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-06"
+      ],
+      "source_context_set_refs": [],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I010",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P02-E12",
+      "S02_fragment_index": 12,
+      "original_source_excerpt_en": "PMS, Opera",
+      "translation_fa": "سامانهٔ مدیریت هتل (PMS): Opera",
+      "source_type": "case_study",
+      "S02_source_type": "source_case_PMS_name_in_client_context",
+      "category_id": "integrations",
+      "narrator_role": "VENDOR_REPORT_OF_CUSTOMER_OBSERVATION",
+      "narrator_attribution": "Lutron’s account of observation attributed to Jorge Cantoral, Xcaret IT Manager",
+      "same_editorial_concept_group": "LUTRON53-PMS_NEED_VS_CASE",
+      "editorial_relevance_and_limits_fa": "اپرا نام PMS همین مورد در روایت منتسب به مدیر فناوری است. این جمله، محدودهٔ اتصال، سازگاری با رده یا همهٔ نسخه‌ها، پشتیبانی جاری یا قابلیت NSP را تعیین نمی‌کند.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P02-E02"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-06"
+      ],
+      "source_context_set_refs": [],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I011",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 2,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P02-E13",
+      "S02_fragment_index": 13,
+      "original_source_excerpt_en": "customized with such icons",
+      "translation_fa": "با آیکون‌هایی از این دست سفارشی شده‌اند",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "source_case_design_description",
+      "category_id": "design_integration",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "narrator_attribution": "Lutron descriptions of the Xcaret case",
+      "same_editorial_concept_group": "LUTRON53-DECOR_AND_ICON_DESIGN",
+      "editorial_relevance_and_limits_fa": "نمونهٔ طراحی رابط در منبع؛ خود آیکون‌ها و عمل متناظرشان برای کاتالوگ NSP کپی یا به محصول NSP منتسب نشوند.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P02-E04"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-06"
+      ],
+      "source_context_set_refs": [],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I012",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 3,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P03-E01",
+      "S02_fragment_index": 1,
+      "original_source_excerpt_en": "The energy considerations were important",
+      "translation_fa": "ملاحظات انرژی اهمیت داشتند",
+      "source_type": "case_study",
+      "S02_source_type": "source_client_design_priority",
+      "category_id": "energy_hvac",
+      "narrator_role": "CUSTOMER_DIRECT_QUOTE",
+      "narrator_attribution": "Hector Luna, Engineering Director; quoted by Lutron",
+      "same_editorial_concept_group": "LUTRON53-ENERGY_PRIORITY_ONLY",
+      "editorial_relevance_and_limits_fa": "گفتهٔ مدیر مهندسی هتل، اظهار اولویت است؛ نه عدد، خط پایه یا نتیجهٔ صرفه‌جویی. به گواهی ملک یا عملکرد NSP نسبت نده.",
+      "related_context_fragment_refs": [],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-07"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-VOICE"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I013",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 3,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P03-E02",
+      "S02_fragment_index": 2,
+      "original_source_excerpt_en": "it can be monitored remotely",
+      "translation_fa": "می‌توان آن را از راه دور پایش کرد",
+      "source_type": "software_capability",
+      "S02_source_type": "source_vendor_case_monitoring_description",
+      "category_id": "management_software",
+      "narrator_role": "VENDOR_CASE_DESCRIPTION",
+      "narrator_attribution": "Lutron descriptions of the Xcaret case",
+      "same_editorial_concept_group": "LUTRON53-REMOTE_MONITORING_CASE",
+      "editorial_relevance_and_limits_fa": "ضمیر به داشبورد/سامانهٔ توصیف‌شده برمی‌گردد. روایت تاریخی ناشر است؛ نه دستور دسترسی، ادعای امنیت، فاصلهٔ قابل‌پشتیبانی یا قابلیت NSP.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P02-E08",
+        "LUTRON53-P03-E03",
+        "LUTRON53-P03-E04"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-08"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-MONITORING"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I014",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 3,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P03-E04",
+      "S02_fragment_index": 4,
+      "original_source_excerpt_en": "proactive maintenance",
+      "translation_fa": "نگهداری پیشگیرانه",
+      "source_type": "case_study",
+      "S02_source_type": "source_integrator_testimonial",
+      "category_id": "hotel_operations",
+      "narrator_role": "INTEGRATOR_DIRECT_QUOTE",
+      "narrator_attribution": "Ricardo Chavez, co-owner of Rowan Networks; quoted by Lutron",
+      "same_editorial_concept_group": "LUTRON53-INTEGRATOR_REPORTED_USE",
+      "editorial_relevance_and_limits_fa": "کاربردی که یکپارچه‌ساز پروژه از تحلیل داده یاد می‌کند. داده‌های هشدار، وضعیت، روند و سوابق در همان نقل‌قول زمینه‌اند؛ نه کاهش خرابیِ اثبات‌شده، تعهد خدمت یا عملکرد NSP.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P03-E03"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-08"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-MONITORING"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    },
+    {
+      "id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I015",
+      "source_id": "CAT053_LUTRON_HOTEL_XCARET_MEXICO",
+      "source_language": "en",
+      "source_filename": "53_Lutron_Work C10.3.pdf",
+      "source_pdf_sha256": "d5311362beb2108c3a9112875f2beb82a6b2a7938c492226502ba07575cd96c0",
+      "printed_document_part_number": "368-5134",
+      "printed_document_revision": "REV B",
+      "source_pdf_page": 3,
+      "original_printed_page": null,
+      "S02_fragment_ref": "LUTRON53-P03-E05",
+      "S02_fragment_index": 5,
+      "original_source_excerpt_en": "Results",
+      "translation_fa": "نتایج",
+      "source_type": "visual_presentation_style",
+      "S02_source_type": "source_editorial_heading",
+      "category_id": "case_studies",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "narrator_attribution": "Lutron, case-study structure",
+      "same_editorial_concept_group": "LUTRON53-RESULTS_LAYOUT",
+      "editorial_relevance_and_limits_fa": "جایگاه بلوک نتایج مطالعه، نه خود نتیجه. ادعای شناسایی طراحی ملک و رتبهٔ تاریخی به صورت زمینهٔ مجزا نگه داشته شده‌اند؛ نه مدرک محصول یا NSP.",
+      "related_context_fragment_refs": [
+        "LUTRON53-P03-E06",
+        "LUTRON53-P03-E07"
+      ],
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-09"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-RECOGNITION"
+      ],
+      "source_quote_in_S02": true,
+      "source_quote_verification": "Exact original English phrase verified against the physical page in both extraction tools.",
+      "source_section_mapping": "pending_S05",
+      "visual_reference_status": "pending_S04",
+      "requires_further_validation": "S06",
+      "publication_status": "not_approved_for_NSP_catalog",
+      "NSP_capability_verified": false,
+      "independent_case_outcome_or_certification_verified": false
+    }
+  ],
+  "excluded_S02_fragments": [
+    {
+      "S02_fragment_ref": "LUTRON53-P01-E01",
+      "pdf_page": 1,
+      "translation_fa": "هتل شِکارت مکزیک (Hotel Xcaret Mexico)",
+      "scope_fa": "عنوان پروژهٔ مورد مطالعه، نه پروژهٔ NSP.",
+      "source_type": "source_case_title",
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON53-P01-E02",
+      "pdf_page": 1,
+      "translation_fa": "پلایا دل کارمن، مکزیک",
+      "scope_fa": "مکان چاپی همین پرونده، نه دامنهٔ جغرافیایی NSP.",
+      "source_type": "source_case_location",
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON53-P01-E04",
+      "pdf_page": 1,
+      "translation_fa": "پیشینه",
+      "scope_fa": "سرفصل فرعی منبع؛ نه قابلیت.",
+      "source_type": "source_editorial_heading",
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON53-P01-E06",
+      "pdf_page": 1,
+      "translation_fa": "تا جایی که می‌توانیم کار را برای مهمان آسان کنیم",
+      "scope_fa": "توضیح همان شعار توسط معمار/شریک مالک؛ نتیجهٔ سنجش تجربه نیست.",
+      "source_type": "source_client_guest_goal",
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-02"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-VOICE"
+      ],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON53-P01-E07",
+      "pdf_page": 1,
+      "translation_fa": "اقامتگاه تفریحیِ ۹۰۰ اتاقه",
+      "scope_fa": "عدد به مقیاس ذکرشدهٔ ملک تعلق دارد؛ نه تعداد اتاق یا تجهیز تحت پوشش، ظرفیت سامانه یا شرایط کنونی.",
+      "source_type": "vendor_reported_property_scale",
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-03"
+      ],
+      "source_context_set_refs": [],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON53-P02-E06",
+      "pdf_page": 2,
+      "translation_fa": "myRoom prime",
+      "scope_fa": "نام رده در متن ناشر؛ مشخصات یا عرضهٔ فعلی احراز نشده.",
+      "source_type": "source_vendor_tier_name",
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-SCOPE"
+      ],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON53-P02-E07",
+      "pdf_page": 2,
+      "translation_fa": "myRoom plus",
+      "scope_fa": "ردهٔ دیگر؛ با prime ادغام نشود، Vue جزو قطعی هر دو فرض نشود.",
+      "source_type": "source_vendor_tier_name",
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-SCOPE"
+      ],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON53-P02-E08",
+      "pdf_page": 2,
+      "translation_fa": "myRoom Vue",
+      "scope_fa": "نام گزینهٔ داشبورد منبع؛ نه ردیف کارکرد مستقل یا نام ابزار NSP.",
+      "source_type": "source_vendor_software_name",
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-05"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-SCOPE"
+      ],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON53-P02-E10",
+      "pdf_page": 2,
+      "translation_fa": "راهکار",
+      "scope_fa": "عنوان جفتِ چالش، نه دستور یا نتیجهٔ مستقل.",
+      "source_type": "source_editorial_heading",
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-06"
+      ],
+      "source_context_set_refs": [],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON53-P03-E03",
+      "pdf_page": 3,
+      "translation_fa": "هشدارها، وضعیت، روندها و داده‌های تاریخی",
+      "scope_fa": "فهرست زمینه در نقل‌قول یکپارچه‌ساز؛ نه فهرست تضمین‌شدهٔ داده یا سازگاری NSP.",
+      "source_type": "source_integrator_testimonial",
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-08"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-MONITORING"
+      ],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON53-P03-E06",
+      "pdf_page": 3,
+      "translation_fa": "گواهی طراحیِ EarthCheck",
+      "scope_fa": "ادعای ناشر دربارهٔ خود ملک؛ نه گواهی محصول یا نصب، نه وضعیت اعتبار کنونی، نه رابطهٔ علّی با فروشنده یا تأیید NSP.",
+      "source_type": "source_vendor_reported_property_recognition",
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-09"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-RECOGNITION"
+      ],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON53-P03-E07",
+      "pdf_page": 3,
+      "translation_fa": "نخستین هتل در آمریکای لاتین",
+      "scope_fa": "رتبهٔ تاریخی توصیف‌شده در همین گزارش؛ نه ادعای مستقل/فعلی یا رکورد قابل نقل برای NSP.",
+      "source_type": "source_vendor_reported_historical_rank",
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-09"
+      ],
+      "source_context_set_refs": [
+        "LUTRON53-CTX-RECOGNITION"
+      ],
+      "not_independent_feature": true
+    },
+    {
+      "S02_fragment_ref": "LUTRON53-P03-E08",
+      "pdf_page": 3,
+      "translation_fa": "شمارهٔ سند 368-5134، ویرایش B",
+      "scope_fa": "شناسهٔ چاپی سند؛ نه شماره مدل یا تاریخ استقرار.",
+      "source_type": "source_printed_edition",
+      "source_claim_gate_refs": [
+        "LUTRON53-CLAIM-01"
+      ],
+      "source_context_set_refs": [],
+      "not_independent_feature": true
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "LUTRON53-CLAIM-01",
+      "kind": "source_edition_case_location",
+      "physical_pdf_pages": [
+        1,
+        3
+      ],
+      "S02_fragment_refs": [
+        "LUTRON53-P01-E01",
+        "LUTRON53-P01-E02",
+        "LUTRON53-P01-E03",
+        "LUTRON53-P01-E04",
+        "LUTRON53-P03-E08"
+      ],
+      "scope_fa": "فقط هویت مطالعهٔ موردی هتل در مکزیک و کد نسخهٔ چاپی. این پروژهٔ NSP نیست؛ تاریخ حق نشر، تاریخ اجرای پروژه یا نسخهٔ جاری نیست.",
+      "not_an_independent_feature": true,
+      "independent_verification_of_publisher_claim": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I001"
+      ]
+    },
+    {
+      "id": "LUTRON53-CLAIM-02",
+      "kind": "quoted_guest_philosophy",
+      "physical_pdf_pages": [
+        1
+      ],
+      "S02_fragment_refs": [
+        "LUTRON53-P01-E05",
+        "LUTRON53-P01-E06"
+      ],
+      "scope_fa": "شعار و مقصود تجربهٔ مهمان گفتهٔ دیوید کینتانا (معمار و شریک مالک)، به روایت ناشر است؛ نه سنجش راحتی یا رضایت و نه شعار مجاز NSP.",
+      "not_an_independent_feature": true,
+      "independent_verification_of_publisher_claim": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I002"
+      ]
+    },
+    {
+      "id": "LUTRON53-CLAIM-03",
+      "kind": "historical_property_scale_not_device_count",
+      "physical_pdf_pages": [
+        1
+      ],
+      "S02_fragment_refs": [
+        "LUTRON53-P01-E07"
+      ],
+      "scope_fa": "۹۰۰ اتاق به مقیاس تاریخی ملک در متن ناشر مربوط است؛ شمار اتاق‌های مجهز، دستگاه‌ها، ظرفیت سیستم یا وضعیت کنونی از این عدد نتیجه نمی‌شود.",
+      "not_an_independent_feature": true,
+      "independent_verification_of_publisher_claim": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": []
+    },
+    {
+      "id": "LUTRON53-CLAIM-04",
+      "kind": "customer_requirements_not_achieved_scope",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON53-P02-E01",
+        "LUTRON53-P02-E02",
+        "LUTRON53-P02-E03",
+        "LUTRON53-P02-E04"
+      ],
+      "scope_fa": "سه مورد، خواستهٔ پروژه در بخش چالش به روایت Lutron هستند. نیاز به اتصال PMS، پایش داده و تناسب دکور را با کارکرد اجراشده، تضمین سازگاری یا قابلیت NSP یکی نکن.",
+      "not_an_independent_feature": true,
+      "independent_verification_of_publisher_claim": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I003",
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I004",
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I005",
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I006"
+      ]
+    },
+    {
+      "id": "LUTRON53-CLAIM-05",
+      "kind": "vendor_product_family_and_optional_dashboard",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON53-P02-E05",
+        "LUTRON53-P02-E06",
+        "LUTRON53-P02-E07",
+        "LUTRON53-P02-E08",
+        "LUTRON53-P02-E09"
+      ],
+      "scope_fa": "نام خانواده و دو رده، حوزه‌های کنترل و توصیف داشبورد از متن ناشر است. myRoom Vue در متن گزینهٔ در دسترس معرفی شده، نه جزء تضمین‌شدهٔ هر رده یا ابزار NSP. نوع و چگونگی فنی عملیات خارج است.",
+      "not_an_independent_feature": true,
+      "independent_verification_of_publisher_claim": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I007",
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I008"
+      ]
+    },
+    {
+      "id": "LUTRON53-CLAIM-06",
+      "kind": "case_welcome_and_integration_no_access_workflow",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON53-P02-E10",
+        "LUTRON53-P02-E11",
+        "LUTRON53-P02-E12",
+        "LUTRON53-P02-E13"
+      ],
+      "scope_fa": "Welcome mode صرفاً نام سناریوی روایت‌شده است؛ ترتیب، محرک‌ها و روش ورود یا احراز منتشر نشده. Opera نام PMS همین هتل در روایت منتسب به مدیر فناوری است؛ نه ادعای سازگاری کلی. آیکون‌ها مثال طراحی پروژه‌اند.",
+      "not_an_independent_feature": true,
+      "independent_verification_of_publisher_claim": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I009",
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I010",
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I011"
+      ]
+    },
+    {
+      "id": "LUTRON53-CLAIM-07",
+      "kind": "energy_priority_not_quantitative_savings",
+      "physical_pdf_pages": [
+        3
+      ],
+      "S02_fragment_refs": [
+        "LUTRON53-P03-E01"
+      ],
+      "scope_fa": "گفتهٔ هکتور لونا دربارهٔ اهمیت انرژی است؛ نه درصد کاهش، مقایسه، گواهینامه یا برآورد مستقل.",
+      "not_an_independent_feature": true,
+      "independent_verification_of_publisher_claim": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I012"
+      ]
+    },
+    {
+      "id": "LUTRON53-CLAIM-08",
+      "kind": "vendor_remote_monitoring_vs_integrator_testimonial",
+      "physical_pdf_pages": [
+        3
+      ],
+      "S02_fragment_refs": [
+        "LUTRON53-P03-E02",
+        "LUTRON53-P03-E03",
+        "LUTRON53-P03-E04"
+      ],
+      "scope_fa": "توصیف پایش از راه دور از ناشر است؛ فهرست داده و استفاده برای نگهداری پیشگیرانه از ریکاردو چاوز، هم‌مالک پیمانکار یکپارچه‌سازی Rowan Networks، نقل می‌شود. نه اندازه‌گیری کارایی، روش اتصال، پوشش کامل یا نتیجهٔ مستقل NSP.",
+      "not_an_independent_feature": true,
+      "independent_verification_of_publisher_claim": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I013",
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I014"
+      ]
+    },
+    {
+      "id": "LUTRON53-CLAIM-09",
+      "kind": "earthcheck_property_design_report_not_product_certification",
+      "physical_pdf_pages": [
+        3
+      ],
+      "S02_fragment_refs": [
+        "LUTRON53-P03-E05",
+        "LUTRON53-P03-E06",
+        "LUTRON53-P03-E07"
+      ],
+      "scope_fa": "ناشر مدعی دریافت گواهی طراحی EarthCheck برای ملک Hotel Xcaret Mexico و یک رتبهٔ تاریخی است. گواهی محصول یا نصب Lutron/NSP نیست؛ شماره، اعتبار کنونی، رتبه و رابطهٔ علّی با سامانه مستقلاً بررسی نشده‌اند.",
+      "not_an_independent_feature": true,
+      "independent_verification_of_publisher_claim": false,
+      "NSP_capability_verified": false,
+      "related_S03_record_ids": [
+        "CAT053_LUTRON_HOTEL_XCARET_MEXICO:I015"
+      ]
+    }
+  ],
+  "source_context_bindings": [
+    {
+      "id": "LUTRON53-CTX-VOICE",
+      "physical_pdf_pages": [
+        1,
+        3
+      ],
+      "S02_fragment_refs": [
+        "LUTRON53-P01-E05",
+        "LUTRON53-P01-E06",
+        "LUTRON53-P03-E01"
+      ],
+      "scope_fa": "شعار تجربهٔ مهمان از معمار/مالک و اهمیت انرژی از مدیر مهندسی؛ دو نقل‌قول با دو گوینده‌اند و نتیجهٔ مستقل نیستند."
+    },
+    {
+      "id": "LUTRON53-CTX-SCOPE",
+      "physical_pdf_pages": [
+        2
+      ],
+      "S02_fragment_refs": [
+        "LUTRON53-P02-E02",
+        "LUTRON53-P02-E03",
+        "LUTRON53-P02-E05",
+        "LUTRON53-P02-E06",
+        "LUTRON53-P02-E07",
+        "LUTRON53-P02-E08",
+        "LUTRON53-P02-E09"
+      ],
+      "scope_fa": "خواسته‌های پروژه، حوزه و رده‌های محصول، و گزینهٔ داشبورد را جدا نگه دار؛ وجود یک گزینه به معنای وجود همیشگی در هر رده نیست."
+    },
+    {
+      "id": "LUTRON53-CTX-MONITORING",
+      "physical_pdf_pages": [
+        3
+      ],
+      "S02_fragment_refs": [
+        "LUTRON53-P03-E02",
+        "LUTRON53-P03-E03",
+        "LUTRON53-P03-E04"
+      ],
+      "scope_fa": "توصیف ناشر دربارهٔ پایش از راه دور از ادعای یکپارچه‌ساز دربارهٔ داده و نگهداری جداست."
+    },
+    {
+      "id": "LUTRON53-CTX-RECOGNITION",
+      "physical_pdf_pages": [
+        3
+      ],
+      "S02_fragment_refs": [
+        "LUTRON53-P03-E05",
+        "LUTRON53-P03-E06",
+        "LUTRON53-P03-E07"
+      ],
+      "scope_fa": "شناسایی طراحی تاریخی برای خود ملک به روایت ناشر، نه گواهی تجهیز، نه گواهی NSP و نه علیت تأییدشده."
+    }
+  ],
+  "quality_assurance": {
+    "all_28_distinct_dispositions_crosschecked": true,
+    "precise_case_and_edition_preserved": true,
+    "exact_English_excerpt_case_punctuation_retained": true,
+    "Persian_translation_uses_case_bound_terms_only": true,
+    "no_claim_upgrade_or_approval": true
+  },
+  "next_stage": "S04 — استخراج تصاویر و سبک ارائه",
+  "next_queue_cursor": {
+    "document_index": 14,
+    "document_id": "53",
+    "step_index": 3,
+    "step_id": "S04"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
