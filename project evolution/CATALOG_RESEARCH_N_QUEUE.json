@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 6,
+    "total_pending_steps": 5,
     "completed_new_documents": 17,
     "remaining_new_documents": 1
   },
   "cursor": {
     "document_index": 20,
     "document_id": "MG",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -2294,11 +2294,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S02_page_linked_summaries.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "1709a29316fa3e4a73d03e01f4db0f7a0a074c12",
+          "notes": "۱۴ خلاصهٔ مستقل و منسوب به بروشور در صفحات PDF ۲ تا ۱۶ ثبت شد: ۹ نامزد تحریریه و ۵ یادداشت زمینه‌ای. متن یا تصویر اصلی، دستور اجرایی، تأیید سازگاری/انطباق یا قابلیت NSP وارد نشد. بانک V20 و برنامه و D05 ثابت‌اند."
         },
         {
           "id": "S03",
