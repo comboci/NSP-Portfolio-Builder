@@ -1,0 +1,760 @@
+{
+  "schema": "nsp-catalog-research-s02-english-extract-v1",
+  "stage": "S02",
+  "stage_key": "source_text_extraction",
+  "status": "completed_with_source_claim_gates",
+  "created_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "2afcc661fdb30e1fcfd1e30ef66e73b623850fad",
+  "document_id": "15",
+  "source_id": "CAT015_VINGCARD_MOBILE_ACCESS_SOLUTION",
+  "source_pdf": {
+    "company": "Vingcard",
+    "publisher": "Vingcard / ASSA ABLOY",
+    "title": "Mobile Access Solution",
+    "filename": "15_Vingcard_Mobile Access Solution.pdf",
+    "pdf_pages": 12,
+    "file_size_bytes": 2973282,
+    "source_sha256": "4b507238fa0d90e6ef6b3ce2a34fdfe9abfe330c59b9345ffd489a68223f2ed2",
+    "printed_edition_label": "Doc. Printed: 03/2024",
+    "publication_evidence_pdf_page": 12,
+    "S01_inventory": "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S01_source_inventory.json",
+    "S01_inventory_git_blob_sha": "fa9e192bef8a84342d8c9d67f68f5c738b053794",
+    "S01_inventory_commit": "757bf8d8d24c199b4e2eaab14b914482127b8dc9"
+  },
+  "scope": {
+    "all_12_PDF_pages_accounted_for": true,
+    "all_native_text_pages_read": true,
+    "no_OCR_needed_for_native_text": true,
+    "only_short_quotes_and_claim_references_stored": true,
+    "full_PDF_text_not_republished": true,
+    "source_claims_not_NSP_claims": true,
+    "current_vendor_availability_not_verified": true,
+    "competitor_hardware_specs_protocols_or_device_lists_not_promoted": true,
+    "no_app_or_bank_change": true
+  },
+  "statistics": {
+    "PDF_pages_read_and_mapped": 12,
+    "native_text_pages": 12,
+    "native_characters_total": 11933,
+    "short_verified_English_source_fragments": 51,
+    "exact_normalized_native_PDF_matches": 51,
+    "exact_normalized_Library_page_matches": 51,
+    "claim_and_context_gates": 14,
+    "structured_source_context_groups": 4,
+    "manual_visual_supplement_records": 0,
+    "new_NSP_capabilities_verified": 0
+  },
+  "pages": [
+    {
+      "pdf_page": 1,
+      "canonical_reference": "physical_PDF_page",
+      "section_group": "COVER",
+      "native_text_status": "present",
+      "native_text_char_count": 63,
+      "native_page_text_sha256": "4e25c6902de95c45ab2a924d86acd6efd55d7ac21116f553ded4b9f68b14b401",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Mobile Access Solution"
+      ],
+      "short_english_fragments_en": [
+        "Mobile Access Solution",
+        "Experience a safer and more open world"
+      ],
+      "fragment_ids": [
+        "VINGCARD15-P01-E01",
+        "VINGCARD15-P01-E02"
+      ],
+      "fragment_count": 2,
+      "excerpt_verification": "Exact phrase match in both native PDF extraction and Library page text after NFC and whitespace normalization; stored punctuation and spelling unchanged.",
+      "content_handling": "جلد معرفی، نام راهکار و نشان ناشر؛ نمونهٔ چیدمان، نه تأیید استفاده از نشان رقیب.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 2,
+      "canonical_reference": "physical_PDF_page",
+      "section_group": "INTRO",
+      "native_text_status": "present",
+      "native_text_char_count": 1603,
+      "native_page_text_sha256": "a384cfee99ae6d0b140398d911f41d919a17e59da06819d4551629050ee10283",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "The next generation of hospitality"
+      ],
+      "short_english_fragments_en": [
+        "The next generation of hospitality",
+        "using their smartphone or watch as a secure key",
+        "more than 70 percent of travelers",
+        "Close to 70 percent",
+        "~70%"
+      ],
+      "fragment_ids": [
+        "VINGCARD15-P02-E01",
+        "VINGCARD15-P02-E02",
+        "VINGCARD15-P02-E03",
+        "VINGCARD15-P02-E04",
+        "VINGCARD15-P02-E05"
+      ],
+      "fragment_count": 5,
+      "excerpt_verification": "Exact phrase match in both native PDF extraction and Library page text after NFC and whitespace normalization; stored punctuation and spelling unchanged.",
+      "content_handling": "معرفی راهکار و روایت انتظار مهمان؛ درصدها، دورهٔ بررسی و ادعای اثر اقتصادی مستند مستقل NSP نیستند. چیدمان دو ستونه در خواندن حفظ شود.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 3,
+      "canonical_reference": "physical_PDF_page",
+      "section_group": "BENEFITS",
+      "native_text_status": "present",
+      "native_text_char_count": 1523,
+      "native_page_text_sha256": "211a1d8184f6a6b3221a6aaa97e825da02d4f3a736c053edd2e70f41a09b2f0f",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Unique user experience",
+        "Skip front desk - No queues",
+        "Better guest experience",
+        "Operational efficiencies and guest service",
+        "Increased loyalty & profitability"
+      ],
+      "short_english_fragments_en": [
+        "Unique user experience",
+        "Dependent on the solution deployed",
+        "Skip front desk - No queues",
+        "Better guest experience",
+        "Operational efficiencies and guest service",
+        "Increased loyalty & profitability"
+      ],
+      "fragment_ids": [
+        "VINGCARD15-P03-E01",
+        "VINGCARD15-P03-E02",
+        "VINGCARD15-P03-E03",
+        "VINGCARD15-P03-E04",
+        "VINGCARD15-P03-E05",
+        "VINGCARD15-P03-E06"
+      ],
+      "fragment_count": 6,
+      "excerpt_verification": "Exact phrase match in both native PDF extraction and Library page text after NFC and whitespace normalization; stored punctuation and spelling unchanged.",
+      "content_handling": "تفکیک فواید مهمان و هتل؛ فرایند رزرو و پذیرش به راهکار مستقر وابسته است.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 4,
+      "canonical_reference": "physical_PDF_page",
+      "section_group": "OPTIONS",
+      "native_text_status": "present",
+      "native_text_char_count": 1790,
+      "native_page_text_sha256": "c976840f48d86716c64240c5c226b9ad139cc21e981b62259f0fdbc4ca2d5bec",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Our Mobile Access options for hotels"
+      ],
+      "short_english_fragments_en": [
+        "Our Mobile Access options for hotels",
+        "Customer Integration",
+        "Third Party Certified Partner App",
+        "Mobile Access App",
+        "Room key in Apple Wallet integrates",
+        "depending on your needs",
+        "through our Certified Partner Program",
+        "hotels can customize their digital key graphics"
+      ],
+      "fragment_ids": [
+        "VINGCARD15-P04-E01",
+        "VINGCARD15-P04-E02",
+        "VINGCARD15-P04-E03",
+        "VINGCARD15-P04-E04",
+        "VINGCARD15-P04-E05",
+        "VINGCARD15-P04-E06",
+        "VINGCARD15-P04-E07",
+        "VINGCARD15-P04-E08"
+      ],
+      "fragment_count": 8,
+      "excerpt_verification": "Exact phrase match in both native PDF extraction and Library page text after NFC and whitespace normalization; stored punctuation and spelling unchanged.",
+      "content_handling": "چهار بلوک ارائه دیده می‌شود؛ سه روش عرضهٔ اپ و بخش Apple Wallet جداگانه خوانده شوند. مزیت، دسترسی به فضاها و سرعت، ادعای تأییدشدهٔ NSP نیست.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 5,
+      "canonical_reference": "physical_PDF_page",
+      "section_group": "PARTNER_AND_SECURITY",
+      "native_text_status": "present",
+      "native_text_char_count": 855,
+      "native_page_text_sha256": "72cc50e51d9464613942ca570a8b0ab9a162ee42a5ec82ab0cf70a54a8bead1f",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Vingcard Partner Program",
+        "Replaces keys with mobile phones"
+      ],
+      "short_english_fragments_en": [
+        "Vingcard Partner Program",
+        "license agreement",
+        "certified onboarding training",
+        "Received a certification of the app",
+        "Replaces keys with mobile phones",
+        "Mobile Access is powered by Seos"
+      ],
+      "fragment_ids": [
+        "VINGCARD15-P05-E01",
+        "VINGCARD15-P05-E02",
+        "VINGCARD15-P05-E03",
+        "VINGCARD15-P05-E04",
+        "VINGCARD15-P05-E05",
+        "VINGCARD15-P05-E06"
+      ],
+      "fragment_count": 6,
+      "excerpt_verification": "Exact phrase match in both native PDF extraction and Library page text after NFC and whitespace normalization; stored punctuation and spelling unchanged.",
+      "content_handling": "الزامات برنامهٔ شریک از معرفی Seos جدا بماند؛ نشان‌ها و ادعاهای امنیتی به NSP منتقل نشوند.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 6,
+      "canonical_reference": "physical_PDF_page",
+      "section_group": "GUEST_FLOW",
+      "native_text_status": "present",
+      "native_text_char_count": 870,
+      "native_page_text_sha256": "1efee5f30d4a9729428feead8c54e86d4004c552d1432fa6995c39e4dea9dcac",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "How it works"
+      ],
+      "short_english_fragments_en": [
+        "How it works",
+        "approximately",
+        "24 hours before arrival",
+        "when the room is ready",
+        "bypass the front desk"
+      ],
+      "fragment_ids": [
+        "VINGCARD15-P06-E01",
+        "VINGCARD15-P06-E02",
+        "VINGCARD15-P06-E03",
+        "VINGCARD15-P06-E04",
+        "VINGCARD15-P06-E05"
+      ],
+      "fragment_count": 5,
+      "excerpt_verification": "Exact phrase match in both native PDF extraction and Library page text after NFC and whitespace normalization; stored punctuation and spelling unchanged.",
+      "content_handling": "نمودار شماره‌دار پنج‌گام از منظر مهمان و دارای ترتیب تصویری؛ زمان و پیش‌شرط‌ها در S02 جداگانه بررسی شوند.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 7,
+      "canonical_reference": "physical_PDF_page",
+      "section_group": "PHOTO_NARRATIVE",
+      "native_text_status": "present",
+      "native_text_char_count": 120,
+      "native_page_text_sha256": "db26d2f5a1124cbcfa3d8c64dbd5d945b44132409f77969710ef3417ed113fea",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "convenience of being able to open doors"
+      ],
+      "fragment_ids": [
+        "VINGCARD15-P07-E01"
+      ],
+      "fragment_count": 1,
+      "excerpt_verification": "Exact phrase match in both native PDF extraction and Library page text after NFC and whitespace normalization; stored punctuation and spelling unchanged.",
+      "content_handling": "عکس تمام‌صفحهٔ راهرو و نقل‌قول کوتاه؛ چیدمان برگرفته از متن تبلیغاتی، نه اثبات دسترسی یا کارایی.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 8,
+      "canonical_reference": "physical_PDF_page",
+      "section_group": "TECHNICAL_REQUIREMENTS",
+      "native_text_status": "present",
+      "native_text_char_count": 681,
+      "native_page_text_sha256": "a8e5696eaaf41017005e0017940359d2fc2fca0e9b41b0544a194d5ccdf46e60",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Technical requirements",
+        "Software"
+      ],
+      "short_english_fragments_en": [
+        "Technical requirements",
+        "Software",
+        "The latest version of Visionline is needed",
+        "Mobile Access license option"
+      ],
+      "fragment_ids": [
+        "VINGCARD15-P08-E01",
+        "VINGCARD15-P08-E02",
+        "VINGCARD15-P08-E03",
+        "VINGCARD15-P08-E04"
+      ],
+      "fragment_count": 4,
+      "excerpt_verification": "Exact phrase match in both native PDF extraction and Library page text after NFC and whitespace normalization; stored punctuation and spelling unchanged.",
+      "content_handling": "ملزومات فنی، خانواده‌های سخت‌افزار و نرم‌افزار منبع از هم جدا بمانند؛ نام/مشخصات سخت‌افزار رقبا به بانک فیچر وارد نشود.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 9,
+      "canonical_reference": "physical_PDF_page",
+      "section_group": "ISSUANCE_DIAGRAM",
+      "native_text_status": "present",
+      "native_text_char_count": 848,
+      "native_page_text_sha256": "f9ce752be576ef57ea3e99ed0b6af57971aa30aeb1ae2bcd438c8a6089e46838",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Issue mobile key"
+      ],
+      "short_english_fragments_en": [
+        "Issue mobile key",
+        "VISIONLINE access control software system",
+        "Locally hosted at the property"
+      ],
+      "fragment_ids": [
+        "VINGCARD15-P09-E01",
+        "VINGCARD15-P09-E02",
+        "VINGCARD15-P09-E03"
+      ],
+      "fragment_count": 3,
+      "excerpt_verification": "Exact phrase match in both native PDF extraction and Library page text after NFC and whitespace normalization; stored punctuation and spelling unchanged.",
+      "content_handling": "نمودار مستقل شماره‌دار شش‌گام با نقش‌های سامانه؛ ترتیب تصویر معیار است، نه ترتیب خطی ابزار. از نمودار، اتصال یا قابلیت NSP نتیجه نشود.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 10,
+      "canonical_reference": "physical_PDF_page",
+      "section_group": "VENDOR_SCOPE",
+      "native_text_status": "present",
+      "native_text_char_count": 2517,
+      "native_page_text_sha256": "603b728c681cf7078d351cde518f59e50a555f7a2ed02426671f421b5cddaece",
+      "native_running_folio_occurrences": 1,
+      "source_headlines_en": [
+        "Mobile Access by Vingcard",
+        "Why us?",
+        "Future-proof Technology",
+        "Reliability",
+        "Security",
+        "Onboarding services"
+      ],
+      "short_english_fragments_en": [
+        "Mobile Access by Vingcard",
+        "Why us?",
+        "Future-proof Technology",
+        "Reliability",
+        "Security",
+        "Onboarding services"
+      ],
+      "fragment_ids": [
+        "VINGCARD15-P10-E01",
+        "VINGCARD15-P10-E02",
+        "VINGCARD15-P10-E03",
+        "VINGCARD15-P10-E04",
+        "VINGCARD15-P10-E05",
+        "VINGCARD15-P10-E06"
+      ],
+      "fragment_count": 6,
+      "excerpt_verification": "Exact phrase match in both native PDF extraction and Library page text after NFC and whitespace normalization; stored punctuation and spelling unchanged.",
+      "content_handling": "معرفی ناشر، پایداری راهکار، امنیت و خدمات استقرار در بلوک‌های جدا؛ ادعاهای کمّی، امنیتی و خدماتی مشروط به منبع و دورهٔ آن‌اند.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 11,
+      "canonical_reference": "physical_PDF_page",
+      "section_group": "CLOSING_COPY",
+      "native_text_status": "present",
+      "native_text_char_count": 449,
+      "native_page_text_sha256": "67ce04ce5591180f83455b41d6743cc70dd615eef1df5de73259d612245420b7",
+      "native_running_folio_occurrences": 0,
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "what people will be left with is something intangible",
+        "a brand they know and trust"
+      ],
+      "fragment_ids": [
+        "VINGCARD15-P11-E01",
+        "VINGCARD15-P11-E02"
+      ],
+      "fragment_count": 2,
+      "excerpt_verification": "Exact phrase match in both native PDF extraction and Library page text after NFC and whitespace normalization; stored punctuation and spelling unchanged.",
+      "content_handling": "صفحهٔ تیره با متن پایانی و دعوت به تماس؛ شمارهٔ ۱۱ در ناحیهٔ فوتر متن PDF مشاهده نشد.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    },
+    {
+      "pdf_page": 12,
+      "canonical_reference": "physical_PDF_page",
+      "section_group": "BACK_COVER",
+      "native_text_status": "present",
+      "native_text_char_count": 614,
+      "native_page_text_sha256": "0e40a5c06b68fa80d973f8a25b8db9c640e8b8fc2a081d93686f426566f114e8",
+      "native_running_folio_occurrences": 2,
+      "source_headlines_en": [],
+      "short_english_fragments_en": [
+        "Doc. Printed: 03/2024",
+        "Copyright ASSA ABLOY",
+        "Specifications may change without notice"
+      ],
+      "fragment_ids": [
+        "VINGCARD15-P12-E01",
+        "VINGCARD15-P12-E02",
+        "VINGCARD15-P12-E03"
+      ],
+      "fragment_count": 3,
+      "excerpt_verification": "Exact phrase match in both native PDF extraction and Library page text after NFC and whitespace normalization; stored punctuation and spelling unchanged.",
+      "content_handling": "جلد پشت، نشان ناشر، درج 03/2024 و اطلاعات تماس؛ فقط ماه چاپ و هویت ثبت شود، نه فهرست تماس و نه تاریخ اولین انتشار.",
+      "translated_into_Persian": false,
+      "visual_asset_extraction_status": "not_started_S04"
+    }
+  ],
+  "source_claim_gates": [
+    {
+      "id": "VINGCARD15-CLAIM-01",
+      "pdf_page": 2,
+      "kind": "market_survey_and_rounded_callout",
+      "S02_fragment_refs": [
+        "VINGCARD15-P02-E03",
+        "VINGCARD15-P02-E04",
+        "VINGCARD15-P02-E05"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "سه بیان دقیق یکسان نیستند؛ «بیش از» و «نزدیک به» را گرد یا با هم جمع نکن. نام مطالعه، نمونه، زمان و مبنای مستقل در این صفحه تأیید نشد. این‌ها نرخ اجرای NSP نیستند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD15-CLAIM-02",
+      "pdf_page": 2,
+      "kind": "use_and_operational_outcomes",
+      "S02_fragment_refs": [
+        "VINGCARD15-P02-E02"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "کاربرد منبع؛ سازگاری دستگاه، حذف پذیرش، هزینه/درآمد و وفاداری در NSP از این سند تأیید نمی‌شود.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD15-CLAIM-03",
+      "pdf_page": 3,
+      "kind": "deployment_specific_guest_services",
+      "S02_fragment_refs": [
+        "VINGCARD15-P03-E02",
+        "VINGCARD15-P03-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "وابستگی به راهکار مستقر حفظ شود. رزرو، پذیرش، خروج و دورزدن صف پذیرش نباید قابلیت عمومی همهٔ راهکارها یا NSP معرفی شوند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD15-CLAIM-04",
+      "pdf_page": 3,
+      "kind": "vendor_benefits_not_measured",
+      "S02_fragment_refs": [
+        "VINGCARD15-P03-E04",
+        "VINGCARD15-P03-E05",
+        "VINGCARD15-P03-E06"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "وفاداری، کارایی، سودآوری یا کاهش هزینه از نوع پیام مزیت‌اند، نه نتیجهٔ اندازه‌گیری مستقل یا طرح قیمت.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD15-CLAIM-05",
+      "pdf_page": 4,
+      "kind": "three_apps_and_wallet_distinct",
+      "S02_fragment_refs": [
+        "VINGCARD15-P04-E02",
+        "VINGCARD15-P04-E03",
+        "VINGCARD15-P04-E04",
+        "VINGCARD15-P04-E05",
+        "VINGCARD15-P04-E06",
+        "VINGCARD15-P04-E07",
+        "VINGCARD15-P04-E08"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "سه بلوک روش اپ و بلوک جداگانهٔ Apple Wallet در منبع؛ شرایط SDK، شراکت، اپ آماده و کیف پول با هم ادغام نشوند. الزامات امروز Apple یا سازگاری NSP از سند ثابت نمی‌شود.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD15-CLAIM-06",
+      "pdf_page": 5,
+      "kind": "certified_partner_prerequisites",
+      "S02_fragment_refs": [
+        "VINGCARD15-P05-E01",
+        "VINGCARD15-P05-E02",
+        "VINGCARD15-P05-E03",
+        "VINGCARD15-P05-E04"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "سه معیار مربوط به برنامهٔ شریک Vingcard در این نسخه‌اند و هیچ شریک یا نرم‌افزار NSP را گواهی نمی‌کنند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD15-CLAIM-07",
+      "pdf_page": 5,
+      "kind": "seos_vendor_security_context",
+      "S02_fragment_refs": [
+        "VINGCARD15-P05-E05",
+        "VINGCARD15-P05-E06"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "Seos فقط به‌عنوان نام بستر منبع؛ صفت امنیتی یا استاندارد ادعایی تأیید نشده. جزئیات سازوکار یا آزمون امنیتی به این رکورد منتقل نشود.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD15-CLAIM-08",
+      "pdf_page": 6,
+      "kind": "conditional_guest_flow_timing",
+      "S02_fragment_refs": [
+        "VINGCARD15-P06-E02",
+        "VINGCARD15-P06-E03",
+        "VINGCARD15-P06-E04",
+        "VINGCARD15-P06-E05"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "تقریباً ۲۴ ساعت به دعوت در سناریوی ترسیمی مربوط است؛ آماده‌بودن اتاق قیدِ نمایش نتیجه است. تضمین زمانی، SLA و جزء عمومی NSP نیست.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD15-CLAIM-09",
+      "pdf_page": 7,
+      "kind": "lifestyle_quote_not_evidence",
+      "S02_fragment_refs": [
+        "VINGCARD15-P07-E01"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "نقل‌قول و عکس نمونهٔ روایت‌اند و تأیید فرایند واقعی یا مجوز بازنشر نیستند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD15-CLAIM-10",
+      "pdf_page": 8,
+      "kind": "visionline_and_license_conditions",
+      "S02_fragment_refs": [
+        "VINGCARD15-P08-E02",
+        "VINGCARD15-P08-E03",
+        "VINGCARD15-P08-E04"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "Latest متن سال ۲۰۲۴ است، نه شماره نسخهٔ تأییدشدهٔ فعلی. مجوز Mobile Access و نرم‌افزار Visionline در همان متن جداگانه ثبت شوند. مشخصات و مدل‌های سخت‌افزار رقبا در بانک نیایند.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD15-CLAIM-11",
+      "pdf_page": 9,
+      "kind": "vendor_architecture_document_edition",
+      "S02_fragment_refs": [
+        "VINGCARD15-P09-E01",
+        "VINGCARD15-P09-E02",
+        "VINGCARD15-P09-E03"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "توالی و نقش‌ها در نمودار نسخهٔ ۲۰۲۴ ثبت شوند، نه پیاده‌سازی امنیت یا امکان تعامل NSP. میزبانی محلی برای Visionline است؛ با سرویس ابری منبع یکی نیست.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD15-CLAIM-12",
+      "pdf_page": 10,
+      "kind": "security_reliability_and_platform_scope",
+      "S02_fragment_refs": [
+        "VINGCARD15-P10-E03",
+        "VINGCARD15-P10-E04",
+        "VINGCARD15-P10-E05",
+        "VINGCARD15-P10-E06"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "ادعاهای امنیت، مقیاس، پشتیبانی، سازگاری و SLA متعلق به ناشرند. اشاره به استاندارد، معادل گواهی مستقل یا تأیید امنیت NSP نیست.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD15-CLAIM-13",
+      "pdf_page": 11,
+      "kind": "closing_positioning_only",
+      "S02_fragment_refs": [
+        "VINGCARD15-P11-E01",
+        "VINGCARD15-P11-E02"
+      ],
+      "publication_gate": "competitor_source_context_only_requires_independent_NSP_evidence",
+      "context_limits_fa": "بیان آینده‌نگر و حس تجربه است، نه پیش‌بینی بازار آزموده‌شده یا متن تأییدشده NSP.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD15-CLAIM-14",
+      "pdf_page": 12,
+      "kind": "edition_and_rights",
+      "S02_fragment_refs": [
+        "VINGCARD15-P12-E01",
+        "VINGCARD15-P12-E02",
+        "VINGCARD15-P12-E03"
+      ],
+      "publication_gate": "provenance_only_not_a_feature",
+      "context_limits_fa": "03/2024 ماه چاپ درج‌شده است، نه تاریخ اولین انتشار یا وضعیت فعلی. نام ناشر، حقوق و سلب مسئولیت حفظ شود؛ دایرکتوری تماس وارد بانک نشود.",
+      "verified_NSP_claim": false,
+      "source_claim_independently_verified": false,
+      "current_product_status_verified": false,
+      "is_separate_feature_count": false
+    }
+  ],
+  "source_context_binding_groups": [
+    {
+      "id": "VINGCARD15-CONTEXT-DELIVERY-OPTIONS",
+      "pdf_pages": [
+        4,
+        5,
+        8
+      ],
+      "source_order_method": "Physical page layouts and native page headings.",
+      "scope_fa": "روش‌های عرضهٔ اپ، گزینهٔ کیف پول، معیار شریک و پیش‌نیاز مجوز را جدا نگه دار.",
+      "source_fragment_refs": [
+        "VINGCARD15-P04-E02",
+        "VINGCARD15-P04-E03",
+        "VINGCARD15-P04-E04",
+        "VINGCARD15-P04-E05",
+        "VINGCARD15-P05-E01",
+        "VINGCARD15-P08-E04"
+      ],
+      "approved_NSP_capability": false
+    },
+    {
+      "id": "VINGCARD15-CONTEXT-GUEST-FLOW",
+      "pdf_pages": [
+        6
+      ],
+      "source_order_method": "Numbered pictograms 1–5, visually verified against enlarged original page; top row then second row.",
+      "steps_fa": [
+        "معرفی و آماده‌سازی اپ",
+        "رزرو و دعوت مشروط برای شروع پذیرش",
+        "رساندن نتیجه پس از اعلام آماده‌بودن اتاق",
+        "ورود بدون مراجعه به پذیرش در سناریوی منبع",
+        "نمایش تجربهٔ ورود به اتاق"
+      ],
+      "source_fragment_refs": [
+        "VINGCARD15-P06-E01",
+        "VINGCARD15-P06-E02",
+        "VINGCARD15-P06-E03",
+        "VINGCARD15-P06-E04",
+        "VINGCARD15-P06-E05"
+      ],
+      "approved_NSP_capability": false,
+      "not_additional_features": true
+    },
+    {
+      "id": "VINGCARD15-CONTEXT-ISSUANCE-FLOW",
+      "pdf_pages": [
+        9
+      ],
+      "source_order_method": "Visual numbers 1–6 along a curved path; native extraction places number 6 near the beginning and is not ordering evidence.",
+      "diagram_role_order_fa": [
+        "مهمان و آغاز پذیرش",
+        "سامانهٔ مدیریت هتل (PMS)",
+        "نرم‌افزار Visionline",
+        "خدمات ابری ناشر",
+        "تلفن همراه",
+        "قفل اتاق"
+      ],
+      "source_fragment_refs": [
+        "VINGCARD15-P09-E01",
+        "VINGCARD15-P09-E02",
+        "VINGCARD15-P09-E03"
+      ],
+      "approved_NSP_capability": false,
+      "not_additional_features": true,
+      "implementation_details_not_promoted": true
+    },
+    {
+      "id": "VINGCARD15-CONTEXT-RESEARCH-CROSSCHECK",
+      "pdf_pages": [
+        4,
+        5,
+        8,
+        9
+      ],
+      "source_order_method": "Separate publication and edition from Vingcard 14 Novel.",
+      "scope_fa": "هم‌ناشر و هم‌موضوع؛ شاهد مستقل NSP محسوب نمی‌شود و ادعای نسخه‌های ۱۴ و ۱۵ به هم منتقل نمی‌شود.",
+      "source_fragment_refs": [
+        "VINGCARD15-P04-E05",
+        "VINGCARD15-P05-E06",
+        "VINGCARD15-P08-E03",
+        "VINGCARD15-P09-E02"
+      ],
+      "approved_NSP_capability": false
+    }
+  ],
+  "visual_review": {
+    "inherited_contact_sheets_all_12_pages": true,
+    "original_enlarged_pages_rechecked": [
+      6,
+      9
+    ],
+    "visual_step_order_preserved": true,
+    "embedded_image_text_not_guessed": true,
+    "no_visual_assets_exported": true
+  },
+  "editorial_baseline": {
+    "bank_version": 8,
+    "catalogs": 8,
+    "records": 499,
+    "images": 91
+  },
+  "quality_assurance": {
+    "raw_PDF_sha256_matches_S01": true,
+    "every_native_page_text_hash_matches_S01": true,
+    "all_12_physical_pages_present_once": true,
+    "source_fragments_unique_in_ID": true,
+    "source_claim_gate_refs_resolve": true,
+    "two_diagram_orders_verified_against_original_render_not_native_stream": true,
+    "exact_quote_match_failures": 0,
+    "no_source_record_promoted_to_feature_bank": true
+  },
+  "next_queue_cursor": {
+    "document_index": 8,
+    "document_id": "15",
+    "step_index": 2,
+    "step_id": "S03"
+  },
+  "next_stage": "S03 — استخراج فیچر و ترجمه",
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "portfolio_builder_app_source_changed": false,
+  "editorial_structure_changed": false
+}
