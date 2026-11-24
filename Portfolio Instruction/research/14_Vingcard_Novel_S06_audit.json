@@ -1,0 +1,2223 @@
+{
+  "schema": "nsp-catalog-research-s06-audit-v1",
+  "stage": "S06",
+  "stage_key": "validation_and_review",
+  "status": "completed_audited_for_internal_ingest_only",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "document_id": "14",
+  "source_id": "CAT014_VINGCARD_NOVEL",
+  "audit_date": "2026-11-24",
+  "base_main_commit": "6c12a81f9837b2e561f6035cb8debed5e5d69f27",
+  "source_pdf": {
+    "company": "Vingcard",
+    "publisher": "Vingcard / ASSA ABLOY",
+    "title": "Vingcard Novel",
+    "filename": "14_Vingcard_Vingcard Novel Brochure.pdf",
+    "pdf_pages": 16,
+    "source_sha256": "ee493a31863c54e85fc071c6c85742c55ae62b9c398121acf925887d8e1677c6",
+    "file_size_bytes": 3735147,
+    "printed_document_version": "04/2025",
+    "publication_evidence_pdf_page": 16,
+    "date_basis": "Printed document version; not an exact first-publication date or current product-status verification.",
+    "source_check_at_S06": "Exact uploaded filename, size, all 16 page texts and the printed edition on page 16 were read from the original Library PDF.",
+    "source_sha256_basis": "Carried from independent PDF byte hash in S01; not recomputed from raw PDF bytes at S06."
+  },
+  "linked_stage_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/14_Vingcard_Novel_S01_source_inventory.json",
+      "git_blob_sha": "d278c8856a697a2f7d6f1d69aefd95eca49d14c7"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/14_Vingcard_Novel_S02_english_text.json",
+      "git_blob_sha": "5115cbd9c73996848920fc007b89449990401b76"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/14_Vingcard_Novel_S03_features_fa.json",
+      "git_blob_sha": "f33035ea3c11be53cb2cab60ceb8f9fea97db813"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/14_Vingcard_Novel_S04_visual_styles.json",
+      "git_blob_sha": "a01fdc1ab00823d202be8daf0c14ebf5d48bee92"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/14_Vingcard_Novel_S05_section_mapping.json",
+      "git_blob_sha": "46314fd44f2c161a16f50c1d4a4d7f562d830d3d"
+    }
+  },
+  "method": [
+    "Read all 16 pages of the original user-supplied PDF via Library, independently of the prior research extracts.",
+    "Matched native text with case-sensitive whitespace collapse and text-lane recovery for parallel columns. Five strings needed hyphen/line-break spacing normalization. One right-column Page 15 block was reassembled by excluding the adjacent standalone icon 1.",
+    "Reviewed 23 source excerpts with Persian translations and compared all page IDs, references and claim boundaries across S02–S05. No new translation drift requiring a source correction.",
+    "Recovered 19 remote WebP files at pinned main; checked binary signatures, exact byte counts, Git blob IDs and SHA-256. Recomputed normalized-to-physical crop coordinates from recorded Letter page size; no new pixel-level re-render or PDF byte hash at S06. S04 records pixel-level regeneration for the 18 crops.",
+    "Reviewed the current canonical section structure and scope, not a determination of NSP capability, visual reuse rights, or publication approval."
+  ],
+  "summary": {
+    "checked_pdf_pages": 16,
+    "exact_source_fragments_verified": 98,
+    "claim_groups_checked": 25,
+    "claim_field_matches": 46,
+    "bilingual_records_checked": 23,
+    "source_fragments_excluded_and_not_importable": 75,
+    "reference_images_checked": 18,
+    "visual_style_families_checked": 17,
+    "contact_sheet_checked_separately": 1,
+    "text_candidates_mapped": 16,
+    "text_candidates_unassigned": 7,
+    "visual_candidates_mapped": 13,
+    "visual_candidates_style_only": 5,
+    "verified_NSP_capabilities": 0,
+    "approved_public_claims": 0,
+    "open_blocking_mismatches": 0,
+    "passed_integrity_checks": 18
+  },
+  "quality_assurance": {
+    "source_filename_pages_size": true,
+    "all_pages_accessed": true,
+    "all_fragments_located": true,
+    "all_46_claim_fields_located": true,
+    "all_claim_groups_retained": true,
+    "fragment_partition_exhaustive": true,
+    "research_id_coverage": true,
+    "audited_record_flags": true,
+    "software_under_grms_only": true,
+    "text_counts": true,
+    "visual_counts": true,
+    "all_images_intact": true,
+    "overview_separate": true,
+    "style_coverage": true,
+    "canonical_version_pinned": true,
+    "two_non_native_labels_not_new_records": true,
+    "license_and_online_preserved": true,
+    "source_scope_confirmed": true
+  },
+  "source_integrity_exceptions": {
+    "page_15": {
+      "S02_fragment_ref": "VINGCARD14-P15-E03",
+      "claim_ref": "VINGCARD14-CLAIM-24",
+      "finding_fa": "استخراج متن صفحهٔ ۱۵ دو ستون و عنصر بصری شمارهٔ ۱ را در یک سطر می‌آورد. سه سطر ستون راست باید به‌صورت پیوسته خوانده شوند؛ عدد ۱ نشانهٔ مجاور است و به متن، مقیاس زمانی یا اقدام خودکار اضافه نمی‌شود.",
+      "disposition": "layout_extraction_only_no_content_mismatch"
+    },
+    "non_native_labels": {
+      "pages": [
+        11,
+        15
+      ],
+      "disposition": "Retain S02 manually read visual-label references only; not independently re-transcribed at S06 and not eligible as S07 features."
+    }
+  },
+  "S07_disposition_counts": {
+    "eligible_for_S07_mapped_competitor_research_only": 16,
+    "eligible_for_S07_unassigned_internal_research_only": 7,
+    "hold_in_S06_source_audit_only": 0
+  },
+  "S07_eligible_by_proposed_section": {
+    "COVER": 1,
+    "IDENTITY_PAGES": 0,
+    "COMPANY_INTRO": 0,
+    "CHALLENGES_VALUE": 8,
+    "HOTEL_OVERVIEW": 0,
+    "GRMS": 7,
+    "IPTV": 0,
+    "PUBLIC_AREAS": 0,
+    "CASE_STUDIES": 0,
+    "UNASSIGNED_INTERNAL_RESEARCH": 7
+  },
+  "S07_eligible_record_ids": [
+    "CAT014_VINGCARD_NOVEL:I001",
+    "CAT014_VINGCARD_NOVEL:I002",
+    "CAT014_VINGCARD_NOVEL:I003",
+    "CAT014_VINGCARD_NOVEL:I004",
+    "CAT014_VINGCARD_NOVEL:I005",
+    "CAT014_VINGCARD_NOVEL:I006",
+    "CAT014_VINGCARD_NOVEL:I007",
+    "CAT014_VINGCARD_NOVEL:I008",
+    "CAT014_VINGCARD_NOVEL:I009",
+    "CAT014_VINGCARD_NOVEL:I010",
+    "CAT014_VINGCARD_NOVEL:I011",
+    "CAT014_VINGCARD_NOVEL:I012",
+    "CAT014_VINGCARD_NOVEL:I013",
+    "CAT014_VINGCARD_NOVEL:I014",
+    "CAT014_VINGCARD_NOVEL:I015",
+    "CAT014_VINGCARD_NOVEL:I016",
+    "CAT014_VINGCARD_NOVEL:I017",
+    "CAT014_VINGCARD_NOVEL:I018",
+    "CAT014_VINGCARD_NOVEL:I019",
+    "CAT014_VINGCARD_NOVEL:I020",
+    "CAT014_VINGCARD_NOVEL:I021",
+    "CAT014_VINGCARD_NOVEL:I022",
+    "CAT014_VINGCARD_NOVEL:I023"
+  ],
+  "S07_eligible_mapped_record_ids": [
+    "CAT014_VINGCARD_NOVEL:I001",
+    "CAT014_VINGCARD_NOVEL:I002",
+    "CAT014_VINGCARD_NOVEL:I003",
+    "CAT014_VINGCARD_NOVEL:I004",
+    "CAT014_VINGCARD_NOVEL:I006",
+    "CAT014_VINGCARD_NOVEL:I008",
+    "CAT014_VINGCARD_NOVEL:I009",
+    "CAT014_VINGCARD_NOVEL:I011",
+    "CAT014_VINGCARD_NOVEL:I012",
+    "CAT014_VINGCARD_NOVEL:I017",
+    "CAT014_VINGCARD_NOVEL:I018",
+    "CAT014_VINGCARD_NOVEL:I019",
+    "CAT014_VINGCARD_NOVEL:I020",
+    "CAT014_VINGCARD_NOVEL:I021",
+    "CAT014_VINGCARD_NOVEL:I022",
+    "CAT014_VINGCARD_NOVEL:I023"
+  ],
+  "S07_eligible_unassigned_internal_record_ids": [
+    "CAT014_VINGCARD_NOVEL:I005",
+    "CAT014_VINGCARD_NOVEL:I007",
+    "CAT014_VINGCARD_NOVEL:I010",
+    "CAT014_VINGCARD_NOVEL:I013",
+    "CAT014_VINGCARD_NOVEL:I014",
+    "CAT014_VINGCARD_NOVEL:I015",
+    "CAT014_VINGCARD_NOVEL:I016"
+  ],
+  "S07_eligible_internal_image_ids": [
+    "VINGCARD14_01_cover_product_hero",
+    "VINGCARD14_03_numbered_contents_panel",
+    "VINGCARD14_04_photo_benefit_grid",
+    "VINGCARD14_05_icon_feature_rows",
+    "VINGCARD14_05_layered_variants",
+    "VINGCARD14_06_metric_badges_context",
+    "VINGCARD14_06_parts_flatlay",
+    "VINGCARD14_07_material_story_columns",
+    "VINGCARD14_07_packaging_banner",
+    "VINGCARD14_08_finish_gallery_custom_panel",
+    "VINGCARD14_09_photo_slogan",
+    "VINGCARD14_10_numbered_installation_grid",
+    "VINGCARD14_11_phone_access_photo",
+    "VINGCARD14_12_staggered_operation_cards",
+    "VINGCARD14_13_paired_climate_photos",
+    "VINGCARD14_14_cloud_security_panel",
+    "VINGCARD14_15_security_icon_grid",
+    "VINGCARD14_15_transparent_product_cutaway"
+  ],
+  "quarantined_records": [],
+  "contextual_translation_corrections": [],
+  "source_description_metadata_errata": [],
+  "record_audits": [
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I001",
+      "pdf_page": 1,
+      "source_S02_fragment_ref": "VINGCARD14-P01-E02",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "COVER",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I002",
+      "pdf_page": 2,
+      "source_S02_fragment_ref": "VINGCARD14-P02-E02",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I003",
+      "pdf_page": 2,
+      "source_S02_fragment_ref": "VINGCARD14-P02-E03",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I004",
+      "pdf_page": 2,
+      "source_S02_fragment_ref": "VINGCARD14-P02-E04",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I005",
+      "pdf_page": 2,
+      "source_S02_fragment_ref": "VINGCARD14-P02-E10",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I006",
+      "pdf_page": 4,
+      "source_S02_fragment_ref": "VINGCARD14-P04-E02",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I007",
+      "pdf_page": 4,
+      "source_S02_fragment_ref": "VINGCARD14-P04-E05",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I008",
+      "pdf_page": 5,
+      "source_S02_fragment_ref": "VINGCARD14-P05-E01",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I009",
+      "pdf_page": 5,
+      "source_S02_fragment_ref": "VINGCARD14-P05-E04",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I010",
+      "pdf_page": 6,
+      "source_S02_fragment_ref": "VINGCARD14-P06-E01",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I011",
+      "pdf_page": 6,
+      "source_S02_fragment_ref": "VINGCARD14-P06-E07",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I012",
+      "pdf_page": 7,
+      "source_S02_fragment_ref": "VINGCARD14-P07-E02",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I013",
+      "pdf_page": 8,
+      "source_S02_fragment_ref": "VINGCARD14-P08-E01",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I014",
+      "pdf_page": 8,
+      "source_S02_fragment_ref": "VINGCARD14-P08-E05",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I015",
+      "pdf_page": 9,
+      "source_S02_fragment_ref": "VINGCARD14-P09-E01",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I016",
+      "pdf_page": 10,
+      "source_S02_fragment_ref": "VINGCARD14-P10-E01",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": null,
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_unassigned_internal_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I017",
+      "pdf_page": 11,
+      "source_S02_fragment_ref": "VINGCARD14-P11-E03",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I018",
+      "pdf_page": 11,
+      "source_S02_fragment_ref": "VINGCARD14-P11-E04",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I019",
+      "pdf_page": 11,
+      "source_S02_fragment_ref": "VINGCARD14-P11-E05",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I020",
+      "pdf_page": 12,
+      "source_S02_fragment_ref": "VINGCARD14-P12-E01",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "CHALLENGES_VALUE",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I021",
+      "pdf_page": 14,
+      "source_S02_fragment_ref": "VINGCARD14-P14-E05",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I022",
+      "pdf_page": 14,
+      "source_S02_fragment_ref": "VINGCARD14-P14-E07",
+      "source_pdf_text_check": "exact_layout_lane_after_whitespace_normalization",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    },
+    {
+      "record_id": "CAT014_VINGCARD_NOVEL:I023",
+      "pdf_page": 15,
+      "source_S02_fragment_ref": "VINGCARD14-P15-E03",
+      "source_pdf_text_check": "manually_rejoined_page_15_right_column_excluding_adjacent_icon_1",
+      "source_quote_preserved": true,
+      "persian_translation_reviewed_and_preserved": true,
+      "target_section_type": "GRMS",
+      "canonical_mapping_valid": true,
+      "claim_gate_refs_preserved": true,
+      "publication_and_attachment_guards": true,
+      "disposition": "eligible_for_S07_mapped_competitor_research_only"
+    }
+  ],
+  "image_audits": [
+    {
+      "image_id": "VINGCARD14_01_cover_product_hero",
+      "pdf_page": 1,
+      "target_section_type": "COVER",
+      "visual_style_type": "product_hero_with_geometric_title",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_01_cover_product_hero.webp",
+      "git_blob_sha": "3f9a30fda76dac1e0ddf39725d0f73a4d4718bb3",
+      "image_asset_sha256": "986cf9cb49f4c1584a52bf661d630ca2f533d03ef9cba629da1c59a2ee5a6ec1",
+      "bytes": 40726,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_03_numbered_contents_panel",
+      "pdf_page": 3,
+      "target_section_type": null,
+      "visual_style_type": "numbered_topic_navigation",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_03_numbered_contents_panel.webp",
+      "git_blob_sha": "187405eaf90561ca2cc7a87d787b0519af768625",
+      "image_asset_sha256": "1e8eea74e993db2704c33f855110ed3546328e0e8bb1caa116f63ae5bd4d9014",
+      "bytes": 58350,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_04_photo_benefit_grid",
+      "pdf_page": 4,
+      "target_section_type": "CHALLENGES_VALUE",
+      "visual_style_type": "photo_benefit_pair_grid",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_04_photo_benefit_grid.webp",
+      "git_blob_sha": "87afdcadab3aec235377c593e680eafe3dc798a7",
+      "image_asset_sha256": "b09916dd9ed9355c95547f61231bc91daa7eade583d289f478214e02c7591e4e",
+      "bytes": 76626,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_05_icon_feature_rows",
+      "pdf_page": 5,
+      "target_section_type": "GRMS",
+      "visual_style_type": "vertical_icon_text_rows",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_05_icon_feature_rows.webp",
+      "git_blob_sha": "1b9a917e4a5b7dc600b7846e31a7d45a085dfa28",
+      "image_asset_sha256": "73bfbb420d0728a61fe8e2fffd4336ee50fb18685d67f473567a732701a8c06f",
+      "bytes": 61304,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_05_layered_variants",
+      "pdf_page": 5,
+      "target_section_type": "GRMS",
+      "visual_style_type": "layered_product_variant_photos",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_05_layered_variants.webp",
+      "git_blob_sha": "47993abfbd62b3d2b0dca370106bc0a04a39cf22",
+      "image_asset_sha256": "8ec6bc37e62992f7a53cffce82f3b2b9582ade48e3b9a2dcd894cde8a15f2ece",
+      "bytes": 18056,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_06_metric_badges_context",
+      "pdf_page": 6,
+      "target_section_type": null,
+      "visual_style_type": "metric_badges_with_caption_and_baseline",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_06_metric_badges_context.webp",
+      "git_blob_sha": "c03bd451a7701ee0b646134c84f31edabf52b4b8",
+      "image_asset_sha256": "06d517abff33009bcefd47c92b207d03e8a0e946069fd55330f4c4c7bd00eaea",
+      "bytes": 110126,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_06_parts_flatlay",
+      "pdf_page": 6,
+      "target_section_type": "GRMS",
+      "visual_style_type": "product_parts_flatlay",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_06_parts_flatlay.webp",
+      "git_blob_sha": "c3e11ccee5b3d8a216daeee45183daa57a83a089",
+      "image_asset_sha256": "20c27d481cf879cdbbb372bb02182290cc49b522ae65372cb26dd8813abcf75a",
+      "bytes": 31874,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_07_material_story_columns",
+      "pdf_page": 7,
+      "target_section_type": "CHALLENGES_VALUE",
+      "visual_style_type": "illustrated_material_story_columns",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_07_material_story_columns.webp",
+      "git_blob_sha": "bfe4aeed2464140e68a62948efccda19cedf55f5",
+      "image_asset_sha256": "a7e547fbbd075558fe84ecc3b44e6bbdf5c5a80f1c933b08a8e2660e7a0011b3",
+      "bytes": 133736,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_07_packaging_banner",
+      "pdf_page": 7,
+      "target_section_type": null,
+      "visual_style_type": "themed_photo_text_banner",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_07_packaging_banner.webp",
+      "git_blob_sha": "87d1f0aae6963b268a8efaf4ce7bed4aa69ca00e",
+      "image_asset_sha256": "d210a038582f7e23bb6f4e7b697d184d3ef836b20c3c083c8bf2be95cabe43b8",
+      "bytes": 43578,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_08_finish_gallery_custom_panel",
+      "pdf_page": 8,
+      "target_section_type": "GRMS",
+      "visual_style_type": "option_gallery_with_conditional_custom_panel",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_08_finish_gallery_custom_panel.webp",
+      "git_blob_sha": "cb7b86dc5dc8661cbde4855eac4a300480f6d98c",
+      "image_asset_sha256": "98d9ae0dc77c05e0930c669aca9ed818443aae20746542535e6835d61d9bbc95",
+      "bytes": 87038,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_09_photo_slogan",
+      "pdf_page": 9,
+      "target_section_type": null,
+      "visual_style_type": "product_photo_with_translucent_slogan",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_09_photo_slogan.webp",
+      "git_blob_sha": "4d8765b194e16633e3604cfa0eb454b621ff6167",
+      "image_asset_sha256": "80078c40e8d1bd2ea684f02abc4e0ec009a3e170613f7d7b8e0db178b28ea4e4",
+      "bytes": 40450,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_10_numbered_installation_grid",
+      "pdf_page": 10,
+      "target_section_type": "GRMS",
+      "visual_style_type": "numbered_four_photo_workflow",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_10_numbered_installation_grid.webp",
+      "git_blob_sha": "3ec8d88d1117be9ed5999c9ec1d608f7ebceeb0f",
+      "image_asset_sha256": "6c7da9b65c1580217007111a06953061ded70113599c451c1cf1beedcf293d67",
+      "bytes": 22704,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_11_phone_access_photo",
+      "pdf_page": 11,
+      "target_section_type": "GRMS",
+      "visual_style_type": "human_phone_interaction_with_context_panels",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_11_phone_access_photo.webp",
+      "git_blob_sha": "9dcf4a8712c7d801d7a8ce9b7a303f10b2db2824",
+      "image_asset_sha256": "8db6b4f009e8f402a2b556f2c758d33b261a5f1124baf74ac8fa708bac2e91fb",
+      "bytes": 98428,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_12_staggered_operation_cards",
+      "pdf_page": 12,
+      "target_section_type": "CHALLENGES_VALUE",
+      "visual_style_type": "staggered_full_width_benefit_panels",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_12_staggered_operation_cards.webp",
+      "git_blob_sha": "457bd0dd163a22ee802d83631f32b1e0bd234e2e",
+      "image_asset_sha256": "84751beb8b5071942b47a6b4ea461e90ae28732b8391b5e30a9e1de971ca2b5f",
+      "bytes": 96674,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_13_paired_climate_photos",
+      "pdf_page": 13,
+      "target_section_type": null,
+      "visual_style_type": "paired_environment_photos_with_badges",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_13_paired_climate_photos.webp",
+      "git_blob_sha": "4a0224c1690aab037c2b3e520a839f8a4ae7ce49",
+      "image_asset_sha256": "d0bc005311c6b9b5049344d421ea5924984823bcb4e5d2f83752bcea59c77f6d",
+      "bytes": 72546,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_14_cloud_security_panel",
+      "pdf_page": 14,
+      "target_section_type": "GRMS",
+      "visual_style_type": "themed_photo_text_banner",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_14_cloud_security_panel.webp",
+      "git_blob_sha": "842e4e912493cb7a2a15824f06f1bd65b8ede208",
+      "image_asset_sha256": "0c81116864be0408fc161450b434a6a5040cbfe72cd8368a26266b83c81f7910",
+      "bytes": 66006,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_15_security_icon_grid",
+      "pdf_page": 15,
+      "target_section_type": "GRMS",
+      "visual_style_type": "two_column_icon_caption_summary",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_15_security_icon_grid.webp",
+      "git_blob_sha": "dfa6ae8f8adf50bbd98badc076bc610a02a5f0a0",
+      "image_asset_sha256": "9ba789b85e999993313c89e5ad44bc88a00e8bdc303584750105b64e88fad88f",
+      "bytes": 50066,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    },
+    {
+      "image_id": "VINGCARD14_15_transparent_product_cutaway",
+      "pdf_page": 15,
+      "target_section_type": "GRMS",
+      "visual_style_type": "transparent_product_cutaway",
+      "source_image_path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_15_transparent_product_cutaway.webp",
+      "git_blob_sha": "cb608dc4800707aa62e50813c34f6f96e9bbfdeb",
+      "image_asset_sha256": "76dee63ee046f1040a1db38cecdd7412474b6b9d773a65f7fbd8f836dc8f2d2c",
+      "bytes": 23736,
+      "webp_and_integrity": true,
+      "crop_geometry_valid": true,
+      "metadata_preserved": true,
+      "scope_and_gates": true,
+      "disposition": "eligible_reference_only_no_competitor_asset_reuse"
+    }
+  ],
+  "page_inventory_and_S02_fragment_checks": [
+    {
+      "pdf_page": 1,
+      "source_excerpt_ids": [
+        "VINGCARD14-P01-E01",
+        "VINGCARD14-P01-E02"
+      ],
+      "verified_excerpts": 2
+    },
+    {
+      "pdf_page": 2,
+      "source_excerpt_ids": [
+        "VINGCARD14-P02-E01",
+        "VINGCARD14-P02-E02",
+        "VINGCARD14-P02-E03",
+        "VINGCARD14-P02-E04",
+        "VINGCARD14-P02-E05",
+        "VINGCARD14-P02-E06",
+        "VINGCARD14-P02-E07",
+        "VINGCARD14-P02-E08",
+        "VINGCARD14-P02-E09",
+        "VINGCARD14-P02-E10",
+        "VINGCARD14-P02-E11",
+        "VINGCARD14-P02-E12"
+      ],
+      "verified_excerpts": 12
+    },
+    {
+      "pdf_page": 3,
+      "source_excerpt_ids": [
+        "VINGCARD14-P03-E01",
+        "VINGCARD14-P03-E02",
+        "VINGCARD14-P03-E03",
+        "VINGCARD14-P03-E04",
+        "VINGCARD14-P03-E05",
+        "VINGCARD14-P03-E06"
+      ],
+      "verified_excerpts": 6
+    },
+    {
+      "pdf_page": 4,
+      "source_excerpt_ids": [
+        "VINGCARD14-P04-E01",
+        "VINGCARD14-P04-E02",
+        "VINGCARD14-P04-E03",
+        "VINGCARD14-P04-E04",
+        "VINGCARD14-P04-E05",
+        "VINGCARD14-P04-E06",
+        "VINGCARD14-P04-E07",
+        "VINGCARD14-P04-E08",
+        "VINGCARD14-P04-E09",
+        "VINGCARD14-P04-E10"
+      ],
+      "verified_excerpts": 10
+    },
+    {
+      "pdf_page": 5,
+      "source_excerpt_ids": [
+        "VINGCARD14-P05-E01",
+        "VINGCARD14-P05-E02",
+        "VINGCARD14-P05-E03",
+        "VINGCARD14-P05-E04",
+        "VINGCARD14-P05-E05",
+        "VINGCARD14-P05-E06",
+        "VINGCARD14-P05-E07",
+        "VINGCARD14-P05-E08"
+      ],
+      "verified_excerpts": 8
+    },
+    {
+      "pdf_page": 6,
+      "source_excerpt_ids": [
+        "VINGCARD14-P06-E01",
+        "VINGCARD14-P06-E02",
+        "VINGCARD14-P06-E03",
+        "VINGCARD14-P06-E04",
+        "VINGCARD14-P06-E05",
+        "VINGCARD14-P06-E06",
+        "VINGCARD14-P06-E07",
+        "VINGCARD14-P06-E08",
+        "VINGCARD14-P06-E09",
+        "VINGCARD14-P06-E10"
+      ],
+      "verified_excerpts": 10
+    },
+    {
+      "pdf_page": 7,
+      "source_excerpt_ids": [
+        "VINGCARD14-P07-E01",
+        "VINGCARD14-P07-E02",
+        "VINGCARD14-P07-E03",
+        "VINGCARD14-P07-E04",
+        "VINGCARD14-P07-E05",
+        "VINGCARD14-P07-E06",
+        "VINGCARD14-P07-E07",
+        "VINGCARD14-P07-E08",
+        "VINGCARD14-P07-E09"
+      ],
+      "verified_excerpts": 9
+    },
+    {
+      "pdf_page": 8,
+      "source_excerpt_ids": [
+        "VINGCARD14-P08-E01",
+        "VINGCARD14-P08-E02",
+        "VINGCARD14-P08-E03",
+        "VINGCARD14-P08-E04",
+        "VINGCARD14-P08-E05",
+        "VINGCARD14-P08-E06"
+      ],
+      "verified_excerpts": 6
+    },
+    {
+      "pdf_page": 9,
+      "source_excerpt_ids": [
+        "VINGCARD14-P09-E01"
+      ],
+      "verified_excerpts": 1
+    },
+    {
+      "pdf_page": 10,
+      "source_excerpt_ids": [
+        "VINGCARD14-P10-E01",
+        "VINGCARD14-P10-E02",
+        "VINGCARD14-P10-E03",
+        "VINGCARD14-P10-E04",
+        "VINGCARD14-P10-E05",
+        "VINGCARD14-P10-E06"
+      ],
+      "verified_excerpts": 6
+    },
+    {
+      "pdf_page": 11,
+      "source_excerpt_ids": [
+        "VINGCARD14-P11-E01",
+        "VINGCARD14-P11-E02",
+        "VINGCARD14-P11-E03",
+        "VINGCARD14-P11-E04",
+        "VINGCARD14-P11-E05"
+      ],
+      "verified_excerpts": 5
+    },
+    {
+      "pdf_page": 12,
+      "source_excerpt_ids": [
+        "VINGCARD14-P12-E01",
+        "VINGCARD14-P12-E02",
+        "VINGCARD14-P12-E03",
+        "VINGCARD14-P12-E04",
+        "VINGCARD14-P12-E05",
+        "VINGCARD14-P12-E06",
+        "VINGCARD14-P12-E07"
+      ],
+      "verified_excerpts": 7
+    },
+    {
+      "pdf_page": 13,
+      "source_excerpt_ids": [
+        "VINGCARD14-P13-E01",
+        "VINGCARD14-P13-E02"
+      ],
+      "verified_excerpts": 2
+    },
+    {
+      "pdf_page": 14,
+      "source_excerpt_ids": [
+        "VINGCARD14-P14-E01",
+        "VINGCARD14-P14-E02",
+        "VINGCARD14-P14-E03",
+        "VINGCARD14-P14-E04",
+        "VINGCARD14-P14-E05",
+        "VINGCARD14-P14-E06",
+        "VINGCARD14-P14-E07"
+      ],
+      "verified_excerpts": 7
+    },
+    {
+      "pdf_page": 15,
+      "source_excerpt_ids": [
+        "VINGCARD14-P15-E01",
+        "VINGCARD14-P15-E02",
+        "VINGCARD14-P15-E03",
+        "VINGCARD14-P15-E04",
+        "VINGCARD14-P15-E05"
+      ],
+      "verified_excerpts": 5
+    },
+    {
+      "pdf_page": 16,
+      "source_excerpt_ids": [
+        "VINGCARD14-P16-E01",
+        "VINGCARD14-P16-E02"
+      ],
+      "verified_excerpts": 2
+    }
+  ],
+  "source_fragment_match_methods": [
+    {
+      "page": 1,
+      "ref": "VINGCARD14-P01-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 1,
+      "ref": "VINGCARD14-P01-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 2,
+      "ref": "VINGCARD14-P02-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 2,
+      "ref": "VINGCARD14-P02-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 2,
+      "ref": "VINGCARD14-P02-E03",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 2,
+      "ref": "VINGCARD14-P02-E04",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 2,
+      "ref": "VINGCARD14-P02-E05",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 2,
+      "ref": "VINGCARD14-P02-E06",
+      "method": "exact_layout_lane_hyphen_spacing"
+    },
+    {
+      "page": 2,
+      "ref": "VINGCARD14-P02-E07",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 2,
+      "ref": "VINGCARD14-P02-E08",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 2,
+      "ref": "VINGCARD14-P02-E09",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 2,
+      "ref": "VINGCARD14-P02-E10",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 2,
+      "ref": "VINGCARD14-P02-E11",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 2,
+      "ref": "VINGCARD14-P02-E12",
+      "method": "exact_layout_lane_hyphen_spacing"
+    },
+    {
+      "page": 3,
+      "ref": "VINGCARD14-P03-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 3,
+      "ref": "VINGCARD14-P03-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 3,
+      "ref": "VINGCARD14-P03-E03",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 3,
+      "ref": "VINGCARD14-P03-E04",
+      "method": "exact_layout_lane_hyphen_spacing"
+    },
+    {
+      "page": 3,
+      "ref": "VINGCARD14-P03-E05",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 3,
+      "ref": "VINGCARD14-P03-E06",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 4,
+      "ref": "VINGCARD14-P04-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 4,
+      "ref": "VINGCARD14-P04-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 4,
+      "ref": "VINGCARD14-P04-E03",
+      "method": "exact_layout_lane_hyphen_spacing"
+    },
+    {
+      "page": 4,
+      "ref": "VINGCARD14-P04-E04",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 4,
+      "ref": "VINGCARD14-P04-E05",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 4,
+      "ref": "VINGCARD14-P04-E06",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 4,
+      "ref": "VINGCARD14-P04-E07",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 4,
+      "ref": "VINGCARD14-P04-E08",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 4,
+      "ref": "VINGCARD14-P04-E09",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 4,
+      "ref": "VINGCARD14-P04-E10",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 5,
+      "ref": "VINGCARD14-P05-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 5,
+      "ref": "VINGCARD14-P05-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 5,
+      "ref": "VINGCARD14-P05-E03",
+      "method": "exact_layout_lane_hyphen_spacing"
+    },
+    {
+      "page": 5,
+      "ref": "VINGCARD14-P05-E04",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 5,
+      "ref": "VINGCARD14-P05-E05",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 5,
+      "ref": "VINGCARD14-P05-E06",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 5,
+      "ref": "VINGCARD14-P05-E07",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 5,
+      "ref": "VINGCARD14-P05-E08",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 6,
+      "ref": "VINGCARD14-P06-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 6,
+      "ref": "VINGCARD14-P06-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 6,
+      "ref": "VINGCARD14-P06-E03",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 6,
+      "ref": "VINGCARD14-P06-E04",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 6,
+      "ref": "VINGCARD14-P06-E05",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 6,
+      "ref": "VINGCARD14-P06-E06",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 6,
+      "ref": "VINGCARD14-P06-E07",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 6,
+      "ref": "VINGCARD14-P06-E08",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 6,
+      "ref": "VINGCARD14-P06-E09",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 6,
+      "ref": "VINGCARD14-P06-E10",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 7,
+      "ref": "VINGCARD14-P07-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 7,
+      "ref": "VINGCARD14-P07-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 7,
+      "ref": "VINGCARD14-P07-E03",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 7,
+      "ref": "VINGCARD14-P07-E04",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 7,
+      "ref": "VINGCARD14-P07-E05",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 7,
+      "ref": "VINGCARD14-P07-E06",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 7,
+      "ref": "VINGCARD14-P07-E07",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 7,
+      "ref": "VINGCARD14-P07-E08",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 7,
+      "ref": "VINGCARD14-P07-E09",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 8,
+      "ref": "VINGCARD14-P08-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 8,
+      "ref": "VINGCARD14-P08-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 8,
+      "ref": "VINGCARD14-P08-E03",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 8,
+      "ref": "VINGCARD14-P08-E04",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 8,
+      "ref": "VINGCARD14-P08-E05",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 8,
+      "ref": "VINGCARD14-P08-E06",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 9,
+      "ref": "VINGCARD14-P09-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 10,
+      "ref": "VINGCARD14-P10-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 10,
+      "ref": "VINGCARD14-P10-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 10,
+      "ref": "VINGCARD14-P10-E03",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 10,
+      "ref": "VINGCARD14-P10-E04",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 10,
+      "ref": "VINGCARD14-P10-E05",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 10,
+      "ref": "VINGCARD14-P10-E06",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 11,
+      "ref": "VINGCARD14-P11-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 11,
+      "ref": "VINGCARD14-P11-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 11,
+      "ref": "VINGCARD14-P11-E03",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 11,
+      "ref": "VINGCARD14-P11-E04",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 11,
+      "ref": "VINGCARD14-P11-E05",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 12,
+      "ref": "VINGCARD14-P12-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 12,
+      "ref": "VINGCARD14-P12-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 12,
+      "ref": "VINGCARD14-P12-E03",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 12,
+      "ref": "VINGCARD14-P12-E04",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 12,
+      "ref": "VINGCARD14-P12-E05",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 12,
+      "ref": "VINGCARD14-P12-E06",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 12,
+      "ref": "VINGCARD14-P12-E07",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 13,
+      "ref": "VINGCARD14-P13-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 13,
+      "ref": "VINGCARD14-P13-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 14,
+      "ref": "VINGCARD14-P14-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 14,
+      "ref": "VINGCARD14-P14-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 14,
+      "ref": "VINGCARD14-P14-E03",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 14,
+      "ref": "VINGCARD14-P14-E04",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 14,
+      "ref": "VINGCARD14-P14-E05",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 14,
+      "ref": "VINGCARD14-P14-E06",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 14,
+      "ref": "VINGCARD14-P14-E07",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 15,
+      "ref": "VINGCARD14-P15-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 15,
+      "ref": "VINGCARD14-P15-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 15,
+      "ref": "VINGCARD14-P15-E03",
+      "method": "manually_rejoined_page_15_right_column_excluding_adjacent_icon_1"
+    },
+    {
+      "page": 15,
+      "ref": "VINGCARD14-P15-E04",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 15,
+      "ref": "VINGCARD14-P15-E05",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 16,
+      "ref": "VINGCARD14-P16-E01",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "page": 16,
+      "ref": "VINGCARD14-P16-E02",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    }
+  ],
+  "claim_evidence_checks": [
+    {
+      "id": "VINGCARD14-CLAIM-01",
+      "page": 5,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-01",
+      "page": 5,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-02",
+      "page": 6,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-02",
+      "page": 6,
+      "field": "baseline_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-03",
+      "page": 6,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-03",
+      "page": 6,
+      "field": "baseline_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-04",
+      "page": 6,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-04",
+      "page": 6,
+      "field": "baseline_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-05",
+      "page": 7,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-05",
+      "page": 7,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-05",
+      "page": 7,
+      "field": "qualifier_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-06",
+      "page": 7,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-07",
+      "page": 7,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-08",
+      "page": 8,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-08",
+      "page": 8,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-09",
+      "page": 8,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-09",
+      "page": 8,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-09",
+      "page": 8,
+      "field": "qualifier_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-10",
+      "page": 10,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-10",
+      "page": 10,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-11",
+      "page": 10,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-11",
+      "page": 10,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-12",
+      "page": 11,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-12",
+      "page": 11,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-13",
+      "page": 11,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-14",
+      "page": 12,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-14",
+      "page": 12,
+      "field": "qualifier_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-15",
+      "page": 12,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-15",
+      "page": 12,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-15",
+      "page": 12,
+      "field": "qualifier_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-16",
+      "page": 12,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-16",
+      "page": 12,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-17",
+      "page": 13,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-17",
+      "page": 13,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-18",
+      "page": 13,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-19",
+      "page": 14,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-20",
+      "page": 14,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-20",
+      "page": 14,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-21",
+      "page": 14,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-21",
+      "page": 14,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-22",
+      "page": 14,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-23",
+      "page": 14,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-23",
+      "page": 14,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-24",
+      "page": 15,
+      "field": "evidence_en[0]",
+      "method": "manually_rejoined_page_15_right_column_excluding_adjacent_icon_1"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-24",
+      "page": 15,
+      "field": "condition_en",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    },
+    {
+      "id": "VINGCARD14-CLAIM-25",
+      "page": 15,
+      "field": "evidence_en[0]",
+      "method": "exact_layout_lane_after_whitespace_normalization"
+    }
+  ],
+  "source_claim_gates_snapshot": [
+    {
+      "id": "VINGCARD14-CLAIM-01",
+      "pdf_page": 5,
+      "kind": "optional_mechanical_emergency_access",
+      "S02_fragment_refs": [
+        "VINGCARD14-P05-E08"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "context_and_publication_limit_fa": "دسترسی اضطراری با تجهیزات و جزء مکانیکی محصول رقیب فقط با ارجاع به S02 نگهداری می‌شود. اختیاری‌بودن سیلندر از عنوان کوتاه صفحهٔ بعد حذف نشود؛ این مورد بازکردن نرم‌افزاری یا از راه دور را ثابت نمی‌کند.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-02",
+      "pdf_page": 6,
+      "kind": "quantitative_product_mass_comparison",
+      "S02_fragment_refs": [
+        "VINGCARD14-P06-E04"
+      ],
+      "publication_gate": "competitor_quantitative_comparison_source_only_no_NSP_claim",
+      "context_and_publication_limit_fa": "مقایسهٔ وزن خود قفل، مشخصهٔ فیزیکی محصول رقیب است و با ارجاع به S02 حفظ می‌شود. مبنای مقایسه، مدل‌های قدیمی قفل است؛ مدل مرجع و روش آزمون دقیق روشن نیست. با وزن بسته‌بندی جابه‌جا نشود.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-03",
+      "pdf_page": 6,
+      "kind": "quantitative_packaging_volume_comparison",
+      "S02_fragment_refs": [
+        "VINGCARD14-P06-E06"
+      ],
+      "publication_gate": "competitor_quantitative_comparison_source_only_no_NSP_claim",
+      "context_and_publication_limit_fa": "مقایسهٔ حجم بسته‌بندی به‌صورت شاهد محدود در S02 باقی می‌ماند. مبنای آن گزینه‌های دیگر قفل است؛ حجم بسته‌بندی با وزن محصول یا وزن بسته‌بندی یکی نیست.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-04",
+      "pdf_page": 6,
+      "kind": "quantitative_packaging_mass_comparison",
+      "S02_fragment_refs": [
+        "VINGCARD14-P06-E06"
+      ],
+      "publication_gate": "competitor_quantitative_comparison_source_only_no_NSP_claim",
+      "context_and_publication_limit_fa": "مقایسهٔ وزن بسته‌بندی فقط در S02 نگهداری می‌شود. گزینه‌های دیگر قفل مبنای مقایسه‌اند و روش محاسبه یا نمونهٔ مرجع دقیق مشخص نشده است؛ این مورد وزن خود قفل نیست.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-05",
+      "pdf_page": 7,
+      "kind": "optional_wireless_power_implementation",
+      "S02_fragment_refs": [
+        "VINGCARD14-P07-E03",
+        "VINGCARD14-P07-E04"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "context_and_publication_limit_fa": "گزینهٔ تغذیهٔ بی‌نیاز از باتری، جزئیات سخت‌افزاری منبع است و به فیچر S03 منتقل نمی‌شود. اختیاری‌بودن گزینه و ادعای در انتظار ثبت بودن اختراع در همان نسخه حفظ شوند؛ ثبت نهایی یا وضعیت فعلی اختراع و هیچ فناوری ارتباطی NSP تأیید نمی‌شود.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-06",
+      "pdf_page": 7,
+      "kind": "quantitative_recyclability_scope",
+      "S02_fragment_refs": [
+        "VINGCARD14-P07-E06"
+      ],
+      "publication_gate": "competitor_environmental_claim_source_only_no_NSP_claim",
+      "context_and_publication_limit_fa": "ادعای بازیافت‌پذیری فقط به پوشش قفل مربوط است؛ مقدار و عبارت اصلی با ارجاع به S02 حفظ می‌شود. دامنهٔ آن به کل قفل، مدار، باتری یا بسته‌بندی تعمیم نیابد. قابل‌بازیافت با ساخته‌شده از مواد بازیافتی متفاوت است.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-07",
+      "pdf_page": 7,
+      "kind": "recycled_packaging_material_claim",
+      "S02_fragment_refs": [
+        "VINGCARD14-P07-E08"
+      ],
+      "publication_gate": "competitor_environmental_claim_source_only_no_NSP_claim",
+      "context_and_publication_limit_fa": "ادعای منبع به جنس جعبهٔ بسته‌بندی محدود است. بازیافتی‌بودن کاغذ با قابل‌بازیافت‌بودن پوشش قفل دو موضوع جداست؛ این مورد زمینهٔ پژوهش محیط‌زیستی است و فیچر یا گواهی NSP محسوب نمی‌شود.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-08",
+      "pdf_page": 8,
+      "kind": "conditional_custom_finish_request",
+      "S02_fragment_refs": [
+        "VINGCARD14-P08-E05"
+      ],
+      "publication_gate": "conditional_design_inspiration_requires_actual_NSP_evidence",
+      "context_and_publication_limit_fa": "امکان درخواست مشروط است؛ متن، پذیرش قطعی سفارش، حداقل تعداد، زمان تحویل یا امکان همهٔ پرداخت‌های سطحی را تضمین نمی‌کند. برای گزینه‌های واقعی NSP شاهد مستقل لازم است.",
+      "promoted_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I014"
+      ],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-09",
+      "pdf_page": 8,
+      "kind": "installation_variant_physical_form",
+      "S02_fragment_refs": [
+        "VINGCARD14-P08-E03"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "context_and_publication_limit_fa": "واریانت‌های فیزیکی محصول برای نصب جدید و بازسازی، همراه تفاوت اندازه، فقط با ارجاع به S02 باقی می‌مانند. این جزئیات مدل یا اندازهٔ NSP نیستند؛ سبک نمایش دو کاربرد موضوع مرحلهٔ بعد است.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-10",
+      "pdf_page": 10,
+      "kind": "hardware_component_count",
+      "S02_fragment_refs": [],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "context_and_publication_limit_fa": "تعداد جزء و نسبت آن به هر نصب، مشخصهٔ سخت‌افزاری محصول رقیب است و در S02 باقی می‌ماند. از آن تعداد قطعات کل سیستم یا معماری NSP استخراج نشود.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-11",
+      "pdf_page": 10,
+      "kind": "conditional_spare_parts_scope",
+      "S02_fragment_refs": [],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "context_and_publication_limit_fa": "فهرست قطعات یدکی مخصوص محصول رقیب در S02 باقی می‌ماند. احتمال نیاز به قطعه با بی‌نیازی قطعی از نگهداری، نبود خرابی یا ضمانت NSP برابر نیست.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-12",
+      "pdf_page": 11,
+      "kind": "licensed_mobile_access_activation",
+      "S02_fragment_refs": [
+        "VINGCARD14-P11-E03"
+      ],
+      "publication_gate": "conditional_source_software_research_requires_separate_NSP_evidence",
+      "context_and_publication_limit_fa": "این عبارت آمادگی محصول منبع را توصیف می‌کند و باید همراه شرط فعال‌سازی با مجوز نرم‌افزار خوانده شود. فعال‌بودن پیش‌فرض، رایگان‌بودن، بی‌نیازی از مجوز، یکپارچگی PMS یا پذیرش کاملاً خودکار از آن نتیجه نمی‌شود.",
+      "promoted_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I017"
+      ],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-13",
+      "pdf_page": 11,
+      "kind": "named_platform_compatibility",
+      "S02_fragment_refs": [
+        "VINGCARD14-P11-E05"
+      ],
+      "publication_gate": "conditional_source_software_research_requires_separate_NSP_evidence",
+      "context_and_publication_limit_fa": "سازگاری به محصول منبع منتسب است. نسخهٔ سیستم‌عامل، حساب و پیکربندی لازم یا وضعیت فعلی سازگاری در این مرحله بررسی نشده است. شرط مجوز Mobile Access در همان بند جداگانه حفظ می‌شود؛ هیچ سازگاری NSP تأیید نمی‌شود.",
+      "promoted_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I019"
+      ],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-14",
+      "pdf_page": 12,
+      "kind": "quantitative_mechanical_endurance",
+      "S02_fragment_refs": [],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "context_and_publication_limit_fa": "ادعای آزمون چرخهٔ مکانیکی و حداقل ذکرشده فقط با ارجاع به S02 نگهداری می‌شود. تعداد چرخه، تعداد اتاق، کاربر، سال یا آزمون NSP نیست؛ تکرار عدد در گرافیک نیز شاهد آزمون مستقل دیگری نمی‌سازد.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-15",
+      "pdf_page": 12,
+      "kind": "conditional_battery_service_life",
+      "S02_fragment_refs": [
+        "VINGCARD14-P12-E04"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "context_and_publication_limit_fa": "عمر باتری، مشخصهٔ سخت‌افزاری منبع است و به فیچر S03 منتقل نمی‌شود. نصب با باتری و استفادهٔ معمول شروط ادعا هستند؛ منبع برای استفادهٔ معمول تعریف عددی ندارد و این ادعا به نصب بدون باتری یا ضمانت NSP تعمیم نمی‌یابد.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-16",
+      "pdf_page": 12,
+      "kind": "conditional_physical_damage_prevention",
+      "S02_fragment_refs": [
+        "VINGCARD14-P12-E07"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "context_and_publication_limit_fa": "رفتار زبانهٔ قفل در شرایط بسته‌بودن در، یک مکانیزم فیزیکی در زمینهٔ نظافت اتاق است و فقط با ارجاع به S02 حفظ می‌شود. از آن حسگر، محرک نرم‌افزاری، منطق GRMS یا جلوگیری قطعی از هر آسیب در NSP نتیجه گرفته نشود.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-17",
+      "pdf_page": 13,
+      "kind": "quantitative_operating_environment_extremes",
+      "S02_fragment_refs": [
+        "VINGCARD14-P13-E02"
+      ],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "context_and_publication_limit_fa": "کران‌های دمایی و واحدهای دقیق فقط در شاهد S02 باقی می‌مانند. زمینهٔ استفادهٔ داخلی و بیرونی به همان سخت‌افزار محدود است؛ روش آزمون، محل اندازه‌گیری، درجهٔ حفاظت یا محدودهٔ کاری NSP ساخته نشود.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-18",
+      "pdf_page": 13,
+      "kind": "physical_ingress_resistance_claim",
+      "S02_fragment_refs": [],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "context_and_publication_limit_fa": "توصیف مقاومت در برابر آب و گردوغبار، ادعای فیزیکی محصول منبع است و به S02 ارجاع داده می‌شود. درجهٔ حفاظت عددی، عمق یا مدت تماس با آب و گواهی مشخص از این عبارت استنتاج نمی‌شود.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-19",
+      "pdf_page": 14,
+      "kind": "named_hardware_certifications",
+      "S02_fragment_refs": [],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "context_and_publication_limit_fa": "نام‌ها و شناسه‌های گواهی سخت‌افزار فقط در شاهد S02 باقی می‌مانند. وجود، دامنه و اعتبار فعلی آن‌ها مستقلاً بررسی نشده است؛ اختلاف نگارش منبع بین صفحات نیز نباید بی‌صدا اصلاح شود.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-20",
+      "pdf_page": 14,
+      "kind": "optional_component_certification",
+      "S02_fragment_refs": [],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "context_and_publication_limit_fa": "ادعای گواهی فقط به جزء مکانیکی اضطراری اختیاری مربوط است و با ارجاع به S02 نگهداری می‌شود. دامنهٔ جزء با کل قفل و وضعیت اختیاری با تجهیز استاندارد یکسان نیست.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-21",
+      "pdf_page": 14,
+      "kind": "fire_listing_scope",
+      "S02_fragment_refs": [],
+      "publication_gate": "competitor_hardware_spec_source_only_exclude_from_S03_features",
+      "context_and_publication_limit_fa": "ادعای فهرست‌شدن مرتبط با حریق و نوع در فقط به منبع ارجاع داده می‌شود. مدت مقاومت، ردهٔ آزمون، پوشش همهٔ انواع در و گواهی ایمنی NSP از آن استخراج نمی‌شود.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-22",
+      "pdf_page": 14,
+      "kind": "future_upgrade_without_hardware_replacement_claim",
+      "S02_fragment_refs": [
+        "VINGCARD14-P14-E02"
+      ],
+      "publication_gate": "source_security_marketing_no_NSP_security_or_certification_claim",
+      "context_and_publication_limit_fa": "وجه امکان در can و محدودبودن موضوع به بهبودهای امنیتی آینده حفظ شود. عبارت، تضمین همهٔ قابلیت‌های آینده یا تأیید توسعه‌پذیری NSP نیست؛ روش اعمال بهبود نیز مشخص نشده است.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-23",
+      "pdf_page": 14,
+      "kind": "named_cloud_software_updates",
+      "S02_fragment_refs": [
+        "VINGCARD14-P14-E07"
+      ],
+      "publication_gate": "conditional_source_software_research_requires_separate_NSP_evidence",
+      "context_and_publication_limit_fa": "فاعلِ طراحی ابری و دریافت به‌روزرسانی، Vostio Access Management است و ارتباط قفل با آن در بند منبع، سازگاری است. منظم‌بودن به معنی خودکار یا OTA نیست؛ تناوب، مسیر تحویل، تضمین رفع همهٔ آسیب‌پذیری‌ها یا قابلیت NSP مشخص نشده است.",
+      "promoted_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I022"
+      ],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-24",
+      "pdf_page": 15,
+      "kind": "conditional_realtime_security_alarms",
+      "S02_fragment_refs": [
+        "VINGCARD14-P15-E03"
+      ],
+      "publication_gate": "conditional_source_software_research_requires_separate_NSP_evidence",
+      "context_and_publication_limit_fa": "شرط Online فقط به هشدارهای رویداد در لحظه مربوط است. واکنش فوری زبان توصیفی منبع است؛ عامل واکنش، اقدام خودکار، مداخلهٔ تضمین‌شده، نوع اتصال، مسیر شبکه یا تأخیر عددی سنجیده‌شده بیان نشده است. نشان تصویری اعلان نیز زمان پاسخ یا معیار عملکرد نیست.",
+      "promoted_record_refs": [
+        "CAT014_VINGCARD_NOVEL:I023"
+      ],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    },
+    {
+      "id": "VINGCARD14-CLAIM-25",
+      "pdf_page": 15,
+      "kind": "unspecified_security_implementation",
+      "S02_fragment_refs": [
+        "VINGCARD14-P15-E02"
+      ],
+      "publication_gate": "source_security_marketing_no_NSP_security_or_certification_claim",
+      "context_and_publication_limit_fa": "این عبارت عنوان بازاریابی امنیتی منبع است و هویت نرم‌افزار یا پیاده‌سازی مشخصی را اثبات نمی‌کند. الگوریتم، طول کلید، نسخهٔ پروتکل، گواهی رمزنگاری یا تضمین امنیت NSP از آن استخراج نمی‌شود. شرط Online فقط به هشدارهای رویداد مجاور مربوط است.",
+      "promoted_record_refs": [],
+      "verified_NSP_claim": false,
+      "is_separate_feature_count": false
+    }
+  ],
+  "structured_context_review": {
+    "source_context_group_ids": [
+      "VINGCARD14-CONTEXT-MOBILE-LICENSE",
+      "VINGCARD14-CONTEXT-BATTERY-OPTIONS",
+      "VINGCARD14-CONTEXT-HOUSEKEEPING",
+      "VINGCARD14-CONTEXT-VOSTIO",
+      "VINGCARD14-CONTEXT-MECHANICAL-OVERRIDE"
+    ],
+    "retained_in_S03": true,
+    "promoted_to_additional_features": false
+  },
+  "specific_visual_source_boundaries": {
+    "layout_only": true,
+    "competitor_brand_images_not_for_NSP_commercial_reuse": true,
+    "owner_A4_landscape_safe_punch_area_and_continuous_background_not_print_approved": true
+  },
+  "reference_overview_audit": {
+    "id": "overview",
+    "path": "Portfolio Instruction/research/assets/vingcard14/VINGCARD14_S04_reference_overview.webp",
+    "blob_sha": "72b1e73b5b65a4df486d499433a5bb36fa631c90",
+    "bytes": 230288,
+    "sha256": "8bc67104b4d02b53fb4d3dd3681f9ea32e526e5296457b4fca1c3af08c59f6d3",
+    "matching": true,
+    "webp_header": true,
+    "not_additional_image_or_style": true
+  },
+  "canonical_structure_review": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "git_blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "valid_research_section_ids": [
+      "COVER",
+      "IDENTITY_PAGES",
+      "COMPANY_INTRO",
+      "CHALLENGES_VALUE",
+      "HOTEL_OVERVIEW",
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS",
+      "CASE_STUDIES"
+    ],
+    "section_snapshot": [
+      {
+        "section_id": "COVER",
+        "title_fa": "صفحه اول کاتالوگ",
+        "row": 2,
+        "content_level": null
+      },
+      {
+        "section_id": "IDENTITY_PAGES",
+        "title_fa": "صفحات تنفس",
+        "row": 3,
+        "content_level": null
+      },
+      {
+        "section_id": "COMPANY_INTRO",
+        "title_fa": "معرفی شرکت NSP",
+        "row": 4,
+        "content_level": "COMPANY"
+      },
+      {
+        "section_id": "CHALLENGES_VALUE",
+        "title_fa": "نیازها، چالش‌ها و ارزش پیشنهادی",
+        "row": 5,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "HOTEL_OVERVIEW",
+        "title_fa": "نقشهٔ جامع راهکارهای هتلی",
+        "row": 6,
+        "content_level": "SOLUTION"
+      },
+      {
+        "section_id": "GRMS",
+        "title_fa": "سیستم مدیریت هوشمند اتاق مهمان (GRMS)",
+        "row": 7,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "IPTV",
+        "title_fa": "تلویزیون و خدمات تعاملی هتل (IPTV)",
+        "row": 8,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "PUBLIC_AREAS",
+        "title_fa": "کنترل هوشمند مشاعات هتل",
+        "row": 9,
+        "content_level": "SYSTEM"
+      },
+      {
+        "section_id": "CASE_STUDIES",
+        "title_fa": "رزومه و پروژه‌های اجراشده",
+        "row": 10,
+        "content_level": null
+      }
+    ],
+    "legacy_aliases_for_reading_only": {
+      "BISMILLAH": "IDENTITY_PAGES"
+    },
+    "binder_cover_excluded_from_research_mapping": true,
+    "CROSS_SECTION_STYLE_is_tag_not_section": true,
+    "idea_attachment_deferred_to_defrag": true,
+    "proposed_roles_are_not_approved_subsections": true,
+    "systems_in_scope": [
+      "GRMS",
+      "IPTV",
+      "PUBLIC_AREAS"
+    ]
+  },
+  "cross_catalog_overlap_review": {
+    "scope": "No deduplication or cross-source capability merging at S06. S07 checks stable IDs and preserves provenance; conceptual overlap is not proof."
+  },
+  "research_import_readiness": {
+    "state": "eligible_for_S07_internal_research_only",
+    "decision_fa": "۲۳ رکورد و ۱۸ تصویر آمادهٔ ادغام پژوهشی هستند؛ هیچ موردی برای متن نهایی NSP یا استفادهٔ تجاری از تصویر تأیید نشده است."
+  },
+  "S07_import_contract": {
+    "must_import_only_S07_eligible_record_ids": true,
+    "must_exclude_quarantined_records_from_feature_bank": true,
+    "eligible_record_count": 23,
+    "mapped_record_count": 16,
+    "unassigned_internal_record_count": 7,
+    "internal_visual_reference_count": 18,
+    "distinct_style_family_count": 17,
+    "must_preserve_all_source_claim_gates": true,
+    "must_keep_unassigned_primary_and_secondary_targets_empty": true,
+    "must_keep_CROSS_SECTION_STYLE_as_a_tag_not_a_printed_section": true,
+    "must_not_promote_75_excluded_fragments_or_two_visual_labels_to_new_features": true,
+    "must_not_count_derived_overview_as_nineteenth_source_image": true,
+    "must_not_import_or_claim_competitor_hardware_limits_or_NSP_capabilities": true,
+    "legacy_version_expected_before_ingest": 7,
+    "approved_publication_or_NSP_capabilities": 0,
+    "guardrails_fa": [
+      "شرط Mobile Access را نگه دار، برای Apple Wallet مجوز اختصاصی تازه نساز، فاعل Vostio را حفظ کن، شرط Online فقط کنار هشدار بماند، و درخواست فینیش مشروط به نیاز و تعداد سفارش است.",
+      "ابتدا وضعیت زنده و تکراری‌نبودن شناسه‌ها را بسنج؛ داده و رسانهٔ قدیمی را حفظ کن."
+    ]
+  },
+  "feature_bank_snapshot_before_S07": {
+    "path": "Portfolio Instruction/feature.json",
+    "version": 7,
+    "catalog_count": 7,
+    "feature_record_count": 476,
+    "images_array_record_count": 73,
+    "confirmation": "Verified ABB12 S07 integration manifest; distinct Vingcard S04 assets are not part of these counts."
+  },
+  "feature_json_untouched": true,
+  "feature_js_untouched": true,
+  "application_source_untouched": true,
+  "SECTIONS_STRUCTURE_json_untouched": true,
+  "General_Portfolio_json_untouched": true,
+  "next_stage": "S07 — به‌روزرسانی JSON و Commit",
+  "next_queue_cursor": {
+    "document_index": 7,
+    "document_id": "14",
+    "step_index": 6,
+    "step_id": "S07"
+  }
+}
