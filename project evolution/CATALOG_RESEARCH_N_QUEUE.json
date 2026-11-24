@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 28,
+    "total_pending_steps": 27,
     "completed_new_documents": 14,
     "remaining_new_documents": 4
   },
   "cursor": {
     "document_index": 17,
     "document_id": "58",
-    "step_index": 0,
-    "step_id": "S01"
+    "step_index": 1,
+    "step_id": "S02"
   },
   "section_types": [
     {
@@ -1993,17 +1993,19 @@
       "library_path": "/58_HDL_Automation_Work C16.1.pdf",
       "bytes": 2626415,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "queued",
+      "status": "in_progress",
       "prior_import": null,
       "steps": [
         {
           "id": "S01",
           "key": "source_inventory",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/58_HDL_IHMS_Edge_S01_source_inventory.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "79260f7ac5acfa10f677bf98799e139f1a1e2740",
+          "notes": "اصل ۳۸صفحه‌ای راهنمای HDL IHMS Edge V1.0.0 و تاریخ چاپی ۳۰ مارس ۲۰۲۶ در جلد و تاریخچه تأیید شدند. فقط هویت و شاخص صفحات ثبت شد؛ متن عملیاتی، دادهٔ ورود و تصویر یا PDF منبع در مخزن عمومی نیامدند. بانک V17، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S02",
@@ -2059,7 +2061,8 @@
           "commit_sha": null,
           "notes": null
         }
-      ]
+      ],
+      "last_successful_stage": "S01"
     },
     {
       "id": "61",
