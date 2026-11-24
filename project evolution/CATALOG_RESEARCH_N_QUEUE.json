@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 62,
+    "total_pending_steps": 61,
     "completed_new_documents": 9,
     "remaining_new_documents": 9
   },
   "cursor": {
     "document_index": 12,
     "document_id": "46",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -1469,11 +1469,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/46_Crestron_Bloc_Hotels_S02_english_text.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "a5daed4e49f8dda3aa1e095d16d115ed130837ca",
+          "notes": "۲۸ گزیدهٔ کوتاه انگلیسی از هر ۴ صفحهٔ اصل مطالعهٔ Bloc Hotels با دو موتور بررسی شد؛ اختلاف یک گزیدهٔ چیدمان ص ۴ با اصل دیداری رفع شد. روایت مشتری، توصیف فروشنده و طرح آینده جداست؛ بدون نسبت به Hotel Renegade یا NSP. بانک V12، برنامه و سکشن‌ها ثابت‌اند."
         },
         {
           "id": "S03",
@@ -1521,7 +1523,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S01"
+      "last_successful_stage": "S02"
     },
     {
       "id": "50",
