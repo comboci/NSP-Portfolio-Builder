@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 11,
+    "total_pending_steps": 10,
     "completed_new_documents": 16,
     "remaining_new_documents": 2
   },
   "cursor": {
     "document_index": 19,
     "document_id": "76",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -2222,11 +2222,15 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/76_Distech_Hotel_Stary_S04_original_visual_concepts.json",
+            "Portfolio Instruction/research/assets/distech76/DISTECH76_C01_refurbishment_scope_card.webp",
+            "Portfolio Instruction/research/assets/distech76/DISTECH76_C02_existing_new_topic_pair.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "cddb459e0d11be322b70c3b51d7b8de5bcdd7ecb",
+          "notes": "دو طرح تحریریه‌ای اصیل برای شناسنامهٔ بازسازی و جداسازی روایت ساختمان از موضوع اتاق ساخته شد. هیچ تصویر، لوگو، چینش، متن، روند عملیاتی یا ادعای عملکرد از منبع برداشته نشد. صفر تصویر استخراجی؛ بانک V19، برنامه و صفحات ثابت‌اند."
         },
         {
           "id": "S05",
@@ -2256,7 +2260,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S03"
+      "last_successful_stage": "S04"
     },
     {
       "id": "MG",
