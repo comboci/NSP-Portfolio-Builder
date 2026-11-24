@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 93,
+    "total_pending_steps": 92,
     "completed_new_documents": 4,
     "remaining_new_documents": 14
   },
   "cursor": {
     "document_index": 7,
     "document_id": "14",
-    "step_index": 5,
-    "step_id": "S06"
+    "step_index": 6,
+    "step_id": "S07"
   },
   "section_types": [
     {
@@ -959,11 +959,13 @@
         {
           "id": "S06",
           "key": "validation_and_review",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/14_Vingcard_Novel_S06_audit.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "97277c6d82b7c0714986a158a14cb00d45ae9683",
+          "notes": "ممیزی ۱۶ صفحهٔ PDF، ۹۸ گزیده، ۴۶ شاهد در ۲۵ قید، ۲۳ ترجمه، ۱۸ برش در ۱۷ خانواده و یک نمای کلی مستقل؛ هش و بایت تصاویر تأیید شد. ۲۳ متن و ۱۸ تصویر فقط برای ادغام پژوهشی S07 واجد شرایط‌اند؛ ۷۵ حذف محفوظ، بدون نسبت‌دادن ادعای رقیب به NSP و بدون تأیید انتشار یا تغییر دادهٔ V7."
         },
         {
           "id": "S07",
@@ -975,7 +977,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S05"
+      "last_successful_stage": "S06"
     },
     {
       "id": "15",
