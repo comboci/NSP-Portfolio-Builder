@@ -1,0 +1,272 @@
+{
+  "schema": "nsp-catalog-research-editorial-paraphrases-fa-v1",
+  "stage": "MG/S03",
+  "reviewed_on": "2026-11-24",
+  "source": {
+    "filename": "myGEKKO_Smart Hotel_EN.pdf",
+    "document_id": "MG",
+    "title": "Smart Hotel",
+    "brand": "myGEKKO",
+    "pdf_pages": 17,
+    "sha256": "106c685004a79a43c2cae2a0ae2a4127d717f25cd98f67d96dcc753bbcdc1d73",
+    "inventory": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S01_source_inventory.json",
+    "edition_note": "No printed edition date verified; 2021-05-14 PDF metadata is not a publication date.",
+    "folio_basis": "1-based physical PDF pages; each spread is cited by a single PDF folio.",
+    "summary_artifact": "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S02_page_linked_summaries.json",
+    "summary_artifact_commit": "1709a29316fa3e4a73d03e01f4db0f7a0a074c12"
+  },
+  "translation_scope": "Persian editorial renderings of independently written S02 analyst paraphrases, not translations of original supplier brochure prose. No text or visuals from the supplier source are reproduced.",
+  "pending_evidence": "All candidate records remain provisional until S05 section review and S06 original-source audit. No records or concepts approved for public-facing use.",
+  "counts": {
+    "translated_paraphrases": 14,
+    "editorial_candidates": 9,
+    "context_only": 5
+  },
+  "items": [
+    {
+      "id": "MG-E01",
+      "source_pages": [
+        {
+          "pdf_page": 2,
+          "native_text_sha256": "95b630b831918952027bec1244111e788c43346852594f0d6190a54bb68f00f3"
+        },
+        {
+          "pdf_page": 3,
+          "native_text_sha256": "590a9f56da28025b1755741313a12eca166bee9a2f737926befaa7263b503064"
+        }
+      ],
+      "topic": "central_management_positioning",
+      "disposition": "candidate_for_editorial_research",
+      "title_fa": "نمای یکپارچه برای بهره‌بردار، تجربه‌ای جداگانه برای مهمان",
+      "summary_fa": "بروشور myGEKKO کنترل هوشمند هتل را با یک نمای مشترک برای چند خدمت ساختمانی و تجربه‌ای جداگانه برای مهمان معرفی می‌کند.",
+      "boundary_fa": "این چارچوب ارائه است؛ صرفه‌جویی، وفاداری مهمان یا پوشش همهٔ سامانه‌ها را اثبات نمی‌کند.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    },
+    {
+      "id": "MG-E02",
+      "source_pages": [
+        {
+          "pdf_page": 4,
+          "native_text_sha256": "9bafe6619324a7e98bf7bed418628cd758d921666529fa83e5b539ee766eb7fb"
+        },
+        {
+          "pdf_page": 6,
+          "native_text_sha256": "f183cc2114a670124046a3a0df99dffacc5d27914086c971c8aa211d4be382f7"
+        }
+      ],
+      "topic": "modular_rollout_positioning",
+      "disposition": "candidate_for_editorial_research",
+      "title_fa": "توسعهٔ مرحله‌ای به‌جای اجرای یک‌باره",
+      "summary_fa": "myGEKKO سکوی خود را قابل‌گسترش در چند مرحله معرفی می‌کند؛ در این روایت لازم نیست همهٔ نواحی هتل هم‌زمان دیجیتالی شوند.",
+      "boundary_fa": "سازگاری با تجهیزات موجود، امکان بازسازی یک ملک معین یا پشتیبانی از هر رابط احراز نشده است.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    },
+    {
+      "id": "MG-E03",
+      "source_pages": [
+        {
+          "pdf_page": 4,
+          "native_text_sha256": "9bafe6619324a7e98bf7bed418628cd758d921666529fa83e5b539ee766eb7fb"
+        },
+        {
+          "pdf_page": 6,
+          "native_text_sha256": "f183cc2114a670124046a3a0df99dffacc5d27914086c971c8aa211d4be382f7"
+        }
+      ],
+      "topic": "interfaces_for_different_audiences",
+      "disposition": "candidate_for_editorial_research",
+      "title_fa": "جدایی پیکربندی تخصصی از رابط بهره‌برداری",
+      "summary_fa": "بروشور میان پیکربندی سکو توسط متخصص و رابطی که کارکنان برای کار روزمره می‌بینند تفاوت می‌گذارد و از تطبیق رابط بهره‌برداری با نیاز هتل سخن می‌گوید.",
+      "boundary_fa": "نه آموزش پیکربندی است، نه ادعای بی‌نیازی از تخصص یا مجوز بازنشر رابط.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    },
+    {
+      "id": "MG-E04",
+      "source_pages": [
+        {
+          "pdf_page": 5,
+          "native_text_sha256": "639401ac746b5e9fe9e72e6de9ff72c5eee8976efbb22435968cf763c73553bc"
+        }
+      ],
+      "topic": "integration_planning_context",
+      "disposition": "context_only",
+      "title_fa": "هم‌آهنگی سامانه‌های ساختمانی در طراحی",
+      "summary_fa": "صفحهٔ طراحی به هماهنگی خدمات ساختمانی میان چند تأمین‌کننده می‌پردازد و چند خانوادهٔ رابط اتوماسیون را مثال می‌زند.",
+      "boundary_fa": "یادداشت زمینه‌ای؛ نه جدول سازگاری، گواهی استاندارد، توصیهٔ اجرا یا تعهد NSP.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    },
+    {
+      "id": "MG-E05",
+      "source_pages": [
+        {
+          "pdf_page": 7,
+          "native_text_sha256": "a25431ba08395964d2f5398eb42213161060a8b3cc4384ebbdc482d6bbe723bc"
+        },
+        {
+          "pdf_page": 8,
+          "native_text_sha256": "c08f388dbc9c79775a4b03fa32f76abd7e0ac4c8a43fb218d55230d438f06d96"
+        }
+      ],
+      "topic": "roles_and_visibility",
+      "disposition": "candidate_for_editorial_research",
+      "title_fa": "تفاوت نمای سامانه‌ها برای نقش‌های کاری",
+      "summary_fa": "myGEKKO نشان می‌دهد که نمای ارائه‌شده از سامانه‌های هتل می‌تواند برای بهره‌بردار، کارشناس فنی و نیروی نگهداری متفاوت باشد.",
+      "boundary_fa": "الگوی ارائهٔ اطلاعات است؛ ارزیابی امنیت، طراحی کنترل دسترسی یا دستور دسترسی از راه دور نیست.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    },
+    {
+      "id": "MG-E06",
+      "source_pages": [
+        {
+          "pdf_page": 8,
+          "native_text_sha256": "c08f388dbc9c79775a4b03fa32f76abd7e0ac4c8a43fb218d55230d438f06d96"
+        },
+        {
+          "pdf_page": 9,
+          "native_text_sha256": "eda9bfcdfe6eef223d55806551d2d5884f50f2fad17432ff9b1f24057231de98"
+        }
+      ],
+      "topic": "overview_and_detail",
+      "disposition": "candidate_for_editorial_research",
+      "title_fa": "از دسته‌بندی خدمات تا نمای وضعیت",
+      "summary_fa": "بروشور ابتدا کارکردهای هتل را گروه‌بندی می‌کند و سپس در یک نمای مرکزی نمونه‌هایی از وضعیت سامانه‌ها و موارد غیرعادی نشان می‌دهد.",
+      "boundary_fa": "نه بازسازی داشبورد است، نه پوشش همهٔ خدمات یا تضمین کشف و رفع خرابی.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    },
+    {
+      "id": "MG-E07",
+      "source_pages": [
+        {
+          "pdf_page": 9,
+          "native_text_sha256": "eda9bfcdfe6eef223d55806551d2d5884f50f2fad17432ff9b1f24057231de98"
+        }
+      ],
+      "topic": "guest_management_boundary",
+      "disposition": "context_only",
+      "title_fa": "مرز سامانهٔ ساختمان و نرم‌افزار مدیریت مهمان",
+      "summary_fa": "در صفحهٔ بهره‌برداری مرکزی، فروشنده به ارتباط myGEKKO با نرم‌افزار مدیریت مهمان اشاره می‌کند.",
+      "boundary_fa": "یادداشت زمینه‌ای؛ نام محصولِ سازگار، دامنهٔ تبادل داده، روش اتصال و قابلیت NSP احراز نشده‌اند.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    },
+    {
+      "id": "MG-E08",
+      "source_pages": [
+        {
+          "pdf_page": 8,
+          "native_text_sha256": "c08f388dbc9c79775a4b03fa32f76abd7e0ac4c8a43fb218d55230d438f06d96"
+        },
+        {
+          "pdf_page": 10,
+          "native_text_sha256": "4d422b969da6963df53ec069098631386e375fc0133b027ed8b92906516249dd"
+        }
+      ],
+      "topic": "guest_room_comfort",
+      "disposition": "candidate_for_editorial_research",
+      "title_fa": "اختیار مهمان در آسایش اتاق و دید بهره‌بردار",
+      "summary_fa": "در معرفی myGEKKO، تنظیم آسایش اتاق توسط مهمان از دید کلی بهره‌بردار نسبت به اتاق‌ها جداست.",
+      "boundary_fa": "این تمایز جایگزین اندازه‌گیری، منطق خودکار یا تأیید قابلیت سامانهٔ NSP نیست.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    },
+    {
+      "id": "MG-E09",
+      "source_pages": [
+        {
+          "pdf_page": 10,
+          "native_text_sha256": "4d422b969da6963df53ec069098631386e375fc0133b027ed8b92906516249dd"
+        }
+      ],
+      "topic": "occupancy_context",
+      "disposition": "candidate_for_editorial_research",
+      "title_fa": "حضور در اتاق به‌عنوان زمینهٔ توضیح آسایش",
+      "summary_fa": "در مثال اتاق مهمان، بروشور از حضور یا نبود مهمان برای توضیح پیوند آسایش با نور، سایه‌انداز و شرایط محیط داخل استفاده می‌کند.",
+      "boundary_fa": "بدون قاعدهٔ اجرایی، تنظیمات، اعداد صرفه‌جویی یا انتساب به NSP.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    },
+    {
+      "id": "MG-E10",
+      "source_pages": [
+        {
+          "pdf_page": 11,
+          "native_text_sha256": "913c252d662edcb9ed5d416bdfda2e375f12128086d65f96c1ec17d75b91c125"
+        }
+      ],
+      "topic": "wellness_ambience",
+      "disposition": "candidate_for_editorial_research",
+      "title_fa": "نور و صدا در روایت فضاهای تندرستی",
+      "summary_fa": "نور محیطی و صدا در کنار دیگر موضوعات فضاهای تندرستی، بخشی از روایت بروشور دربارهٔ تجربهٔ مهمان‌اند.",
+      "boundary_fa": "یادداشت طراحی ارائه، نه دستور بهره‌برداری استخر، پایش آب، مراقبت یا ایمنی.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    },
+    {
+      "id": "MG-E11",
+      "source_pages": [
+        {
+          "pdf_page": 8,
+          "native_text_sha256": "c08f388dbc9c79775a4b03fa32f76abd7e0ac4c8a43fb218d55230d438f06d96"
+        },
+        {
+          "pdf_page": 12,
+          "native_text_sha256": "767a82395a00640cfccedcc1c3b5e490108962b32474a7b1513c27127f8bc3ea"
+        }
+      ],
+      "topic": "kitchen_monitoring_context",
+      "disposition": "context_only",
+      "title_fa": "پایش آشپزخانه و انبار به‌عنوان موضوع بهره‌برداری",
+      "summary_fa": "نمای کلی کاربردها و صفحهٔ آشپزخانه، پایش آشپزخانه و فضاهای نگهداری مواد را موضوعی مجزا در بهره‌برداری هتل معرفی می‌کنند.",
+      "boundary_fa": "یادداشت زمینه‌ای؛ نه معیار ایمنی غذا، انطباق یا گواهی HACCP، راهنمای قانونی یا تضمین جلوگیری از خرابی.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    },
+    {
+      "id": "MG-E12",
+      "source_pages": [
+        {
+          "pdf_page": 13,
+          "native_text_sha256": "b0dd4a6d721c251bd1a2db76972d1a29a75741db77951531a2aba5a45e960adf"
+        }
+      ],
+      "topic": "public_area_ambience",
+      "disposition": "candidate_for_editorial_research",
+      "title_fa": "فضاسازی نوری برای بخش‌های عمومی",
+      "summary_fa": "بروشور از طراحی حال‌وهوای نوری متناسب با بخش‌هایی مانند رستوران، بار و پذیرش سخن می‌گوید.",
+      "boundary_fa": "پیشنهاد برای طبقه‌بندی محتوای معرفی است، نه روش طراحی یا نصب، سنجش عملکرد یا قابلیت NSP.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    },
+    {
+      "id": "MG-E13",
+      "source_pages": [
+        {
+          "pdf_page": 14,
+          "native_text_sha256": "b08c25369d61f65713d925d6a1fcedaa9f6cd38d06bac29820379a73b05f9811"
+        }
+      ],
+      "topic": "outdoor_and_shared_site_context",
+      "disposition": "context_only",
+      "title_fa": "گسترهٔ مثال‌ها در محوطهٔ هتل",
+      "summary_fa": "صفحهٔ مربوط به پیرامون ملک در کنار فضای داخل از نمونه‌هایی در پارکینگ و محوطه‌سازی نیز یاد می‌کنند.",
+      "boundary_fa": "یادداشت زمینه‌ای؛ بدون دستور دسترسی، شارژ، تسویه یا طراحی برق و بدون وعدهٔ قابلیت.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    },
+    {
+      "id": "MG-E14",
+      "source_pages": [
+        {
+          "pdf_page": 15,
+          "native_text_sha256": "b519a96f8fbd4ca4b9b48eb6c2e4c3b1abc6597f8001d939226d73b245581ef7"
+        },
+        {
+          "pdf_page": 16,
+          "native_text_sha256": "5ed5699ce409d640f3e453cbc000835e6bade7f1ebfa885bb8605bbff7ff868c"
+        }
+      ],
+      "topic": "references_vs_process",
+      "disposition": "context_only",
+      "title_fa": "جداسازی نمونه‌پروژه‌ها از روایت فرایند",
+      "summary_fa": "بروشور ابتدا نمونه‌پروژه‌های فروشنده را در گالری معرفی می‌کند و توضیح عمومی هماهنگی پروژه را جداگانه می‌آورد.",
+      "boundary_fa": "یادداشت زمینه‌ای؛ نه سابقهٔ NSP، نه گواه مستقل استقرار یا نتایج و نه مجوز استفاده از عکس‌های اعتباردهی‌شده.",
+      "allowed_claim": "attributed brochure editorial observation only"
+    }
+  ],
+  "bank_changed": false,
+  "portfolio_app_or_project_changed": false,
+  "next_stage": "MG/S04"
+}
