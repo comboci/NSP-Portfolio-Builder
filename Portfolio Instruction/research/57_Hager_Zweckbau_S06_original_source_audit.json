@@ -1,0 +1,1667 @@
+{
+  "schema": "nsp-catalog-research-stage-original-source-audit-v1",
+  "stage": "S06",
+  "stage_key": "validation_and_review",
+  "status": "completed_verified_for_internal_research_integration_only",
+  "document_id": "57",
+  "source_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01",
+  "source_language": "de",
+  "verified_on": "2026-11-24",
+  "project": "NSP Portfolio Builder",
+  "repository": "comboci/NSP-Portfolio-Builder",
+  "branch": "main",
+  "base_main_commit": "be4095fb9c93edc95f7c2c988326e96c4b33efab",
+  "source_document": {
+    "company": "Hager",
+    "title": "Hager im Zweckbau",
+    "filename": "57_Hager_Work C15.1.pdf",
+    "pdf_pages": 172,
+    "file_size_bytes": 60546700,
+    "source_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+    "printed_document_code": "19DE0075_01",
+    "printed_imprint_physical_page": 172,
+    "printed_publisher": "Hager Vertriebsgesellschaft mbH & Co. KG",
+    "printed_date_or_edition_month_not_verified": true,
+    "exact_pdf_sha256_and_size_reverified": true,
+    "hotel_physical_pdf_pages": [
+      32,
+      71
+    ]
+  },
+  "upstream_artifacts": {
+    "S01": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S01_source_inventory.json",
+      "commit_sha": "4e0a33e3e30c76cd6a38d59e83519e45d8e3ab35",
+      "blob_sha": "a489cd42cd56523eb8ccda538149a43af511e94a"
+    },
+    "S02": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S02_german_text.json",
+      "blob_sha": "51e45bae2ba19081d0d1fd6b8882a8d525b04938",
+      "commit_sha": "e89e8a12939597b06e1351646856a35d2e012cf5"
+    },
+    "S03": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S03_features_fa.json",
+      "blob_sha": "45ed9f53f1d896435739726884baf0ac9b9904af",
+      "commit_sha": "95d16d6a6d6a7713e2ecc57336173dc00fd52f85"
+    },
+    "S04": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S04_visual_styles.json",
+      "blob_sha": "6c3f33661fc6e9d6d54d9f9de38efa656a46ed20",
+      "commit_sha": "7fc1c42298cf95bbc3e5ec6a28ff19adb3b6ae2a"
+    },
+    "S05": {
+      "path": "Portfolio Instruction/research/57_Hager_Zweckbau_S05_section_mapping.json",
+      "blob_sha": "30f9ed30eac4696cedbc386c761a1d572d858fc2",
+      "commit_sha": "caf7fe9a42807328ed625923206824b5d0fa990c"
+    }
+  },
+  "canonical_section_structure": {
+    "path": "Portfolio Instruction/SECTIONS_STRUCTURE.json",
+    "revision": "2.3.0",
+    "blob_sha": "412769a07e7378062cfc44fe12b4995b76c224c3",
+    "research_proposals_only": true,
+    "attached_to_real_page": false
+  },
+  "statistics": {
+    "physical_pages_in_original": 172,
+    "physical_pdf_page_hashes_reverified": 43,
+    "hotel_pages_reverified": 40,
+    "physical_pages_with_selected_excerpts": 29,
+    "exact_German_excerpts_reverified": 31,
+    "Persian_translations_reviewed": 31,
+    "matched_PyMuPDF_and_Poppler_raw": 31,
+    "matched_optional_Poppler_layout": 31,
+    "layout_exceptions": 0,
+    "Persian_copy_edits": 1,
+    "source_candidate_records_reviewed": 17,
+    "eligible_internal_S07_text_records": 12,
+    "source_candidate_records_held_context_only": 5,
+    "additional_S02_items_context_only": 14,
+    "direct_visuals_byte_exact_recreated": 9,
+    "eligible_internal_S07_visuals": 9,
+    "derived_preview_excluded_count": 1,
+    "claim_gates_reviewed": 8,
+    "NSP_capabilities_verified": 0,
+    "independent_case_outcomes_verified": 0,
+    "publication_rights_verified": 0
+  },
+  "physical_source_checks": {
+    "exact_pdf_size_bytes": 60546700,
+    "exact_pdf_sha256": "c0efc60fbad66771689d8d27e70879e54ee6b8a9c1a76462be324996a22ba50c",
+    "physical_pdf_page_hashes": [
+      {
+        "physical_pdf_page": 1,
+        "original_printed_folio": null,
+        "native_text_sha256": "a62c8ffabff539f11f589e434b557bc0507782dec36b89f046eaeff636ae6a4d",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 10,
+        "original_printed_folio": 10,
+        "native_text_sha256": "730b5cfef8ff91230b2407ec13a08e57dd6d49a506aa9bc62d003e4682487a6f",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 32,
+        "original_printed_folio": 32,
+        "native_text_sha256": "37aec07b52a4a34fc1918d80303928d1da8306df5ff6c4da0f88cfc981cc355c",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 33,
+        "original_printed_folio": 33,
+        "native_text_sha256": "8555ccec65636e83a9add5f228d80f2f1fd760f202d2c3399f04ec044e0d8b2a",
+        "retained_excerpt_count": 2
+      },
+      {
+        "physical_pdf_page": 34,
+        "original_printed_folio": 34,
+        "native_text_sha256": "084382a455f0d9596e6c6b543759102bff2621e6eb8810d58cd9c7825f5f0cd2",
+        "retained_excerpt_count": 2
+      },
+      {
+        "physical_pdf_page": 35,
+        "original_printed_folio": 35,
+        "native_text_sha256": "288eaa4673968f5182f86a6cbff17f1537801cf2eb8362976e7f6081570d8408",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 36,
+        "original_printed_folio": 36,
+        "native_text_sha256": "2a4344d6aee1b35d74894f3434ddffb91119cf8740911a85269719f6c0a95176",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 37,
+        "original_printed_folio": 37,
+        "native_text_sha256": "6587515d517ff4a5111ec55a824aadd9f7779203084280032272626af310462f",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 38,
+        "original_printed_folio": 38,
+        "native_text_sha256": "bc2071a320a5c6b84833e3c42452ef4e07881fde1c720dd54e042d1c952c113d",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 39,
+        "original_printed_folio": 39,
+        "native_text_sha256": "4ac083fdc51c24169a144f02faee4aae70fb4ff8f7c8762a09720b1c6b2b9d05",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 40,
+        "original_printed_folio": 40,
+        "native_text_sha256": "7b8cf57125ab74ae2eb5778f0355e69d3887c07ba2d148b8e1f980de29039da7",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 41,
+        "original_printed_folio": 41,
+        "native_text_sha256": "ccfa5160eb4a07eee97e2574433afc81543f60b79bee4507974f94b4a0a751af",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 42,
+        "original_printed_folio": 42,
+        "native_text_sha256": "cb4fec51908c5a0c302cac475d15d662713a2c3e70173153e4dd2e23d37be95b",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 43,
+        "original_printed_folio": 43,
+        "native_text_sha256": "44cb730c420480a0477b505ae68af508fb90f96cf0ec54c6ad16949dd427f13a",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 44,
+        "original_printed_folio": 44,
+        "native_text_sha256": "4006f6e4f3abddf3c761673fa765ac8e585f5b2dbb6c5436970a8110d4cf9294",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 45,
+        "original_printed_folio": 45,
+        "native_text_sha256": "f3f0341fdbe28b5cc823d92524d8cbd0b67a64f1cb4e5c0b90366a5564d63d58",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 46,
+        "original_printed_folio": 46,
+        "native_text_sha256": "7eb16013cd2d8051c9eb6b5cb45e941ec2305d0e5ce8a9e217731674449cbb55",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 47,
+        "original_printed_folio": 47,
+        "native_text_sha256": "6506db860a5a527faddeec81865775418acf109d6a9f767d2d689a81645119bd",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 48,
+        "original_printed_folio": 48,
+        "native_text_sha256": "d89bf221d6e44525b6f41f0fbe9de2573755efd2bab5f1245bf9c2bd0a683974",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 49,
+        "original_printed_folio": 49,
+        "native_text_sha256": "b5f508bad37e313a14176829c6b6249a7f68ff1c1d2cb3a3b60ce9b314e1d985",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 50,
+        "original_printed_folio": 50,
+        "native_text_sha256": "2dd8b20aab8d4dc5474a2d483ebd4f56e8d92f106b01e7c0cfa55de5bb57598c",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 51,
+        "original_printed_folio": 51,
+        "native_text_sha256": "96ccf27bb81ffed90278ac75178e14591dd60c1702fd5df51291d55f4f5a2add",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 52,
+        "original_printed_folio": 52,
+        "native_text_sha256": "2fe8b9a67bb7fb4d00346b5376769f63e576f4c566b9702b4efcfe80031daa79",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 53,
+        "original_printed_folio": 53,
+        "native_text_sha256": "1e8aa1bf8cc9795bfbdd51014081c6e81768e6c508d5dce0544350d153be1850",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 54,
+        "original_printed_folio": 54,
+        "native_text_sha256": "9851cf3d86f07438a7f71e6dfea9666dcf6e8d7ecfaeacd447e5ffaeb75071c4",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 55,
+        "original_printed_folio": 55,
+        "native_text_sha256": "63c7bbbcbc6f557696f313813e4fd8bd679711b29dce92d8f7650e716bf00855",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 56,
+        "original_printed_folio": 56,
+        "native_text_sha256": "06c0a2cd996e0284bf7891bb61f91fc0187392a63bb31998a54c70ca968139e2",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 57,
+        "original_printed_folio": 57,
+        "native_text_sha256": "92e5b06689599f8dfea8f3c6fc9cba10c30cbcc59abf8553df672cda32b638a6",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 58,
+        "original_printed_folio": 58,
+        "native_text_sha256": "d4b12b4ce93b22e1d9a4804b60a891c41e3c6d7ba189d5aee3dd1b697bf46601",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 59,
+        "original_printed_folio": 59,
+        "native_text_sha256": "30d2fe26c93184ed0d509610d76a5b4863567c9725549aa789b94ac6c2165e7d",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 60,
+        "original_printed_folio": 60,
+        "native_text_sha256": "c109886ba2dbbe10f0f0c58dc77b0f1fd880db7735163a3326d3b535a77bf21a",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 61,
+        "original_printed_folio": 61,
+        "native_text_sha256": "e3613ba5551be054ec9d17a41d6d3d7b6823ca38c53774b878ded7c11585fabd",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 62,
+        "original_printed_folio": 62,
+        "native_text_sha256": "b40a9ef20f7d25c0e31ac74a353c69423b4e101eb222461ff3ca97a50f164220",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 63,
+        "original_printed_folio": 63,
+        "native_text_sha256": "fbbcd6fe5c2a5d271ef1856a50e2374321d6529f39b268c282aa2075587446a0",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 64,
+        "original_printed_folio": 64,
+        "native_text_sha256": "08341ab91d3f37972625dc6aa9f1f0b89686ebb184c95b2cb551d25bf27f3b59",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 65,
+        "original_printed_folio": 65,
+        "native_text_sha256": "85d2c90136d60c8c0086e34179b37ec75c383e8696e078329d28b7862ec9885f",
+        "retained_excerpt_count": 0
+      },
+      {
+        "physical_pdf_page": 66,
+        "original_printed_folio": 66,
+        "native_text_sha256": "e68b7cd8299e2eaa94166cd19fb18a7fab6d118836a07dc01a841640fb566962",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 67,
+        "original_printed_folio": 67,
+        "native_text_sha256": "0de80f2c2506853d8157c0809400c67d1d5f7f4a26e861b6ee57ecd73809d2a8",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 68,
+        "original_printed_folio": 68,
+        "native_text_sha256": "d2cb340f60194523229dfbb714b43341ebea058a6651ddf1a1a9e55cb9d2f443",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 69,
+        "original_printed_folio": 69,
+        "native_text_sha256": "afa066b728bf2ffe1547f5e53cc510a2769cd1297b709ab7af364fea4e0a57cf",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 70,
+        "original_printed_folio": 70,
+        "native_text_sha256": "703d88c81e39d3ef103481d75dfa28deb2c7b0267ad9eb7f20259317d05e5d7b",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 71,
+        "original_printed_folio": 71,
+        "native_text_sha256": "35bc7e87d5fdb571f6a0e6a762b384cc1e219dd59e3c6d3aa79eb9ebcf5106b2",
+        "retained_excerpt_count": 1
+      },
+      {
+        "physical_pdf_page": 172,
+        "original_printed_folio": null,
+        "native_text_sha256": "9cf79de87c4d229c57062d3310205fb994955985635364959030087425d16812",
+        "retained_excerpt_count": 1
+      }
+    ],
+    "context_checks": {
+      "hotel_opens_P032_separate_from_office_P072": true,
+      "p033_quote_and_named_JAZ_attribution_same_page": true,
+      "p045_heading_with_supply_context_not_security": true,
+      "p052_editorial_heading_separate_from_P058_presence": true,
+      "p061_Bikini_caption_not_JAZ": true,
+      "p066_KNX_topic_versus_P067_device_label": true,
+      "p070_Hager_custom_design_label": true,
+      "back_cover_document_code_and_printed_publisher": true,
+      "source_cover_readable": true,
+      "hotel_coverage_p032_to_p071_inclusive": true
+    }
+  },
+  "corrections": [
+    {
+      "id": "HAGER57-CORR-01",
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I010",
+      "physical_pdf_page": 48,
+      "S02_fragment_ref": "HAGER57-P048-D01",
+      "original_translation_fa": "قرنیزهای LED برای راهرو و اتاق",
+      "audited_translation_fa": "قرنیزهای مجهز به LED برای راهرو و اتاق",
+      "reason_fa": "روان‌سازی عبارت LED-Sockelleisten و وضوح اینکه قرنیز نوع محصول است؛ بدون افزودن دستور نصب یا ادعای عملکرد.",
+      "source_quote_changed": false,
+      "prior_artifacts_unchanged": true,
+      "apply_derived_fields_in_S07": [
+        "translation_fa",
+        "meaning_fa"
+      ]
+    }
+  ],
+  "fragment_reviews": [
+    {
+      "fragment_id": "HAGER57-P001-D01",
+      "physical_pdf_page": 1,
+      "printed_folio": null,
+      "source_type": "source_identity",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P010-D01",
+      "physical_pdf_page": 10,
+      "printed_folio": 10,
+      "source_type": "source_navigation",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P032-D01",
+      "physical_pdf_page": 32,
+      "printed_folio": 32,
+      "source_type": "source_hotel_chapter_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P033-D01",
+      "physical_pdf_page": 33,
+      "printed_folio": 33,
+      "source_type": "source_design_pro_quote",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P033-D02",
+      "physical_pdf_page": 33,
+      "printed_folio": 33,
+      "source_type": "source_quote_attribution",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P034-D01",
+      "physical_pdf_page": 34,
+      "printed_folio": 34,
+      "source_type": "source_hotel_scope_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P034-D02",
+      "physical_pdf_page": 34,
+      "printed_folio": 34,
+      "source_type": "source_vendor_hotel_topic",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P035-D01",
+      "physical_pdf_page": 35,
+      "printed_folio": 35,
+      "source_type": "source_vendor_hotel_topic",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P038-D01",
+      "physical_pdf_page": 38,
+      "printed_folio": 38,
+      "source_type": "source_vendor_hotel_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P040-D01",
+      "physical_pdf_page": 40,
+      "printed_folio": 40,
+      "source_type": "source_vendor_hotel_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P042-D01",
+      "physical_pdf_page": 42,
+      "printed_folio": 42,
+      "source_type": "source_vendor_hotel_product_family",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P044-D01",
+      "physical_pdf_page": 44,
+      "printed_folio": 44,
+      "source_type": "source_vendor_hotel_product_topic",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P045-D01",
+      "physical_pdf_page": 45,
+      "printed_folio": 45,
+      "source_type": "source_vendor_hotel_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P046-D01",
+      "physical_pdf_page": 46,
+      "printed_folio": 46,
+      "source_type": "source_vendor_hotel_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P048-D01",
+      "physical_pdf_page": 48,
+      "printed_folio": 48,
+      "source_type": "source_vendor_hotel_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P050-D01",
+      "physical_pdf_page": 50,
+      "printed_folio": 50,
+      "source_type": "source_vendor_hotel_product_family",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P052-D01",
+      "physical_pdf_page": 52,
+      "printed_folio": 52,
+      "source_type": "source_vendor_hotel_marketing_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P053-D01",
+      "physical_pdf_page": 53,
+      "printed_folio": 53,
+      "source_type": "source_vendor_hotel_marketing_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P055-D01",
+      "physical_pdf_page": 55,
+      "printed_folio": 55,
+      "source_type": "source_vendor_hotel_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P056-D01",
+      "physical_pdf_page": 56,
+      "printed_folio": 56,
+      "source_type": "source_vendor_hotel_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P058-D01",
+      "physical_pdf_page": 58,
+      "printed_folio": 58,
+      "source_type": "source_vendor_hotel_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P060-D01",
+      "physical_pdf_page": 60,
+      "printed_folio": 60,
+      "source_type": "source_vendor_hotel_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P061-D01",
+      "physical_pdf_page": 61,
+      "printed_folio": 61,
+      "source_type": "source_hotel_case_caption",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P062-D01",
+      "physical_pdf_page": 62,
+      "printed_folio": 62,
+      "source_type": "source_vendor_hotel_product_family",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P066-D01",
+      "physical_pdf_page": 66,
+      "printed_folio": 66,
+      "source_type": "source_vendor_hotel_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P067-D01",
+      "physical_pdf_page": 67,
+      "printed_folio": 67,
+      "source_type": "source_vendor_hotel_product_family",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P068-D01",
+      "physical_pdf_page": 68,
+      "printed_folio": 68,
+      "source_type": "source_vendor_hotel_design_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P069-D01",
+      "physical_pdf_page": 69,
+      "printed_folio": 69,
+      "source_type": "source_vendor_hotel_design_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P070-D01",
+      "physical_pdf_page": 70,
+      "printed_folio": 70,
+      "source_type": "source_vendor_hotel_custom_design_label",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P071-D01",
+      "physical_pdf_page": 71,
+      "printed_folio": 71,
+      "source_type": "source_vendor_hotel_marketing_heading",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    },
+    {
+      "fragment_id": "HAGER57-P172-D01",
+      "physical_pdf_page": 172,
+      "printed_folio": null,
+      "source_type": "source_imprint_document_code",
+      "PyMuPDF_exact_normalized_match": true,
+      "Poppler_raw_exact_normalized_match": true,
+      "Poppler_layout_exact_normalized_match": true
+    }
+  ],
+  "S03_record_reviews": [
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I001",
+      "physical_pdf_page": 32,
+      "original_printed_folio": 32,
+      "S02_fragment_ref": "HAGER57-P032-D01",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "narrator_attribution": "Hager section-heading taxonomy",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "audited_translation_fa": "هتل",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "الگوی بازکردن یک فصل کاربردی است، نه جلد کل کاتالوگ، معرفی یک ملک یا علامت پوشش NSP.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I002",
+      "physical_pdf_page": 33,
+      "original_printed_folio": 33,
+      "S02_fragment_ref": "HAGER57-P033-D01",
+      "narrator_role": "DESIGNER_DIRECT_QUOTE",
+      "narrator_attribution": "Cord Glantz, GEPLAN Design, for JAZ Hotel Stuttgart; quoted in the Hager handbook",
+      "target_section_type": "CHALLENGES_VALUE",
+      "audited_translation_fa": "تا مهمان احساس راحتی کند.",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "گفتهٔ منتسب به Cord Glantz برای JAZ Hotel Stuttgart فقط مقصود طراحی است. نه پیامد مستقل و نه عکس یا پروژهٔ Bikini.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I003",
+      "physical_pdf_page": 34,
+      "original_printed_folio": 34,
+      "S02_fragment_ref": "HAGER57-P034-D01",
+      "narrator_role": "VENDOR_EDITORIAL_STRUCTURE",
+      "narrator_attribution": "Hager chapter contents/topic map",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "audited_translation_fa": "حوزه‌های تخصصی در هتل",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "برای قاب‌بندی حوزه‌ها، نه فهرست تجهیزات، اتصال یا خدمات NSP.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I004",
+      "physical_pdf_page": 34,
+      "original_printed_folio": 34,
+      "S02_fragment_ref": "HAGER57-P034-D02",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "audited_translation_fa": "توزیع و مدیریت انرژی",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "فقط یک عنوان موضوع در فصل هتل؛ نه سامانهٔ قابل‌عرضهٔ NSP، نتیجهٔ صرفه‌جویی یا حتی کنترل HVAC.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I005",
+      "physical_pdf_page": 35,
+      "original_printed_folio": 35,
+      "S02_fragment_ref": "HAGER57-P035-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "target_section_type": "HOTEL_OVERVIEW",
+      "audited_translation_fa": "خانواده‌های کلید و کنترل ساختمان",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "چیدمان دسته‌ها الگوست؛ هیچ جمع‌بندی دربارهٔ کارکرد انواع کلید، پشتیبانی پروتکل یا حضور NSP لازم نیست.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I006",
+      "physical_pdf_page": 38,
+      "original_printed_folio": 38,
+      "S02_fragment_ref": "HAGER57-P038-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "target_section_type": null,
+      "audited_translation_fa": "اندازه‌گیری و صورتحساب هوشمند",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "این تیتر به‌تنهایی دامنهٔ اندازه‌گیری، تعرفه، دقت، مقررات یا روش صورتحساب را نشان نمی‌دهد؛ از تطبیق و ورود مستقل صرف‌نظر شود.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I007",
+      "physical_pdf_page": 40,
+      "original_printed_folio": 40,
+      "S02_fragment_ref": "HAGER57-P040-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "target_section_type": null,
+      "audited_translation_fa": "تابلوهای توزیع راهرو و طبقه",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "تیتر طبقه‌بندی موجود است؛ حوزهٔ توزیع برق راهرو/طبقه بدون شاهد طراحی داخلی یا قابلیت NSP، فعلاً تطبیق نمی‌گیرد.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I008",
+      "physical_pdf_page": 44,
+      "original_printed_folio": 44,
+      "S02_fragment_ref": "HAGER57-P044-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "target_section_type": null,
+      "audited_translation_fa": "سامانه‌های زیرکف",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "نام دستهٔ تجهیزات نباید پیشنهاد نصب، مسیر کابل یا دستور برق تلقی شود. قاب محیطی صفحهٔ بعد جداگانه مجازِ پژوهش داخلی است.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I009",
+      "physical_pdf_page": 45,
+      "original_printed_folio": 45,
+      "S02_fragment_ref": "HAGER57-P045-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "target_section_type": "PUBLIC_AREAS",
+      "audited_translation_fa": "دسترسی انعطاف‌پذیر [به انشعاب‌های خدماتی]",
+      "translation_literal_fa": "دسترسی انعطاف‌پذیر",
+      "translation_scope_note_fa": "توضیحِ در قلاب از زمینهٔ همان صفحه است و بخشی از عبارت کوتاه آلمانی نیست.",
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "معنای دسترسی به انشعاب‌های خدماتی است، نه کنترل ورود. ترکیب عکسِ جلسه و متن صرفاً الگوی تحریریه است؛ نه روش نصب، نیاز فنی قطعی یا دسترسی NSP.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I010",
+      "physical_pdf_page": 48,
+      "original_printed_folio": 48,
+      "S02_fragment_ref": "HAGER57-P048-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "target_section_type": "PUBLIC_AREAS",
+      "audited_translation_fa": "قرنیزهای مجهز به LED برای راهرو و اتاق",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "minor_Persian_edit_preserves_exact_source_and_claim_scope",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "قیاس طراحی دیداری از راهرو در یک تیتر شامل راهرو و اتاق. شکل قاب، روش نصب یا عملکرد روشنایی عمومی NSP را تأیید نمی‌کند.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I011",
+      "physical_pdf_page": 53,
+      "original_printed_folio": 53,
+      "S02_fragment_ref": "HAGER57-P053-D01",
+      "narrator_role": "VENDOR_MARKETING_HEADLINE",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "target_section_type": "GRMS",
+      "audited_translation_fa": "گرد یا زاویه‌دار؛ انتخاب با شماست",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "فقط روش نشان‌دادن انتخاب ظاهری در نمونه‌های ناشر؛ نه نوع کارت، منطق ورود، تنوع قطعی یا عرضهٔ NSP.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I012",
+      "physical_pdf_page": 55,
+      "original_printed_folio": 55,
+      "S02_fragment_ref": "HAGER57-P055-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "target_section_type": null,
+      "audited_translation_fa": "اتصال‌های چندرسانه‌ای برای هر نیاز",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "عنوان اتصالات فیزیکی از فروشنده است؛ هیچ دلیلی برای تطبیق با فصل تلویزیون تعاملی، سازگاری شبکه یا پوشش IPTV نیست.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I013",
+      "physical_pdf_page": 58,
+      "original_printed_folio": 58,
+      "S02_fragment_ref": "HAGER57-P058-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "target_section_type": null,
+      "audited_translation_fa": "با حسگرهای حضور",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "نام موضوع بدون دامنهٔ رفتار و بدون توان NSP. نه منطق کارت/حضور، محرک، تأخیر، اندازه‌گیری یا نتیجهٔ صرفه‌جویی؛ وارد بانک مستقل نشود.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I014",
+      "physical_pdf_page": 60,
+      "original_printed_folio": 60,
+      "S02_fragment_ref": "HAGER57-P060-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "target_section_type": "GRMS",
+      "audited_translation_fa": "ترکیب‌پذیری انعطاف‌پذیر",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "الگوی قاب‌بندی رابط در دکور است، نه فرض نصب، سازگاری، روش کنترل یا شکل محصول نهایی NSP.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I015",
+      "physical_pdf_page": 61,
+      "original_printed_folio": 61,
+      "S02_fragment_ref": "HAGER57-P061-D01",
+      "narrator_role": "VENDOR_CASE_CAPTION",
+      "narrator_attribution": "Hager picture caption, Bikini Hotel, Berlin, p. 61; independent of the p. 33 JAZ attribution",
+      "target_section_type": "CASE_STUDIES",
+      "audited_translation_fa": "هتل بیکینی، برلین",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "فقط نحوۀ انتساب Bikini Hotel به همین عکس. با JAZ یکی نیست و نباید پروژهٔ انجام‌شده یا شاهد اجرا، نتیجه یا حق نشر NSP شمرده شود.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I016",
+      "physical_pdf_page": 66,
+      "original_printed_folio": 66,
+      "S02_fragment_ref": "HAGER57-P066-D01",
+      "narrator_role": "VENDOR_HOTEL_TOPIC_DESCRIPTION",
+      "narrator_attribution": "Hager handbook, hotel chapter",
+      "target_section_type": "GRMS",
+      "audited_translation_fa": "کنترل هوشمند با KNX",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "صرفاً نمونهٔ چیدمان یک موضوع کنترلی با پنل عکس جدا. نام KNX نتیجهٔ فنی، کارکرد جاری، انطباق، رابط یا قابلیت NSP نیست.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    },
+    {
+      "record_id": "CAT057_HAGER_ZWECKBAU_19DE0075_01:I017",
+      "physical_pdf_page": 70,
+      "original_printed_folio": 70,
+      "S02_fragment_ref": "HAGER57-P070-D01",
+      "narrator_role": "VENDOR_BRANDED_DESIGN_LABEL",
+      "narrator_attribution": "Hager handbook, hotel chapter customization label",
+      "target_section_type": "GRMS",
+      "audited_translation_fa": "Hager Manufaktur (بخش ساخت سفارشی هاگر)",
+      "translation_literal_fa": null,
+      "translation_scope_note_fa": null,
+      "translation_review": "accepted_preserves_exact_source_and_claim_scope",
+      "disposition": "accepted_internal_S07_research_record",
+      "scope_fa": "الگوی بصری ارائهٔ انتخاب‌های ظاهری؛ Manufaktur نام ناشر است، نه خدمت تولید، فهرست متریال یا تعهد NSP.",
+      "NSP_capability_verified": false,
+      "independent_case_result_verified": false,
+      "operational_instruction_or_compliance_verified": false,
+      "public_reuse_approved": false
+    }
+  ],
+  "S02_context_reviews": [
+    {
+      "fragment_id": "HAGER57-P001-D01",
+      "physical_pdf_page": 1,
+      "source_type": "source_identity",
+      "audited_translation_fa": "هاگر در ساختمان‌های غیرمسکونی",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "عنوان آلمانی کل کتابچه است؛ نه عنوان یک کاتالوگ اختصاصی هتل."
+    },
+    {
+      "fragment_id": "HAGER57-P010-D01",
+      "physical_pdf_page": 10,
+      "source_type": "source_navigation",
+      "audited_translation_fa": "فهرست مطالب",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "راه‌یابی در اصل سند؛ نه رکورد پژوهشی مستقل."
+    },
+    {
+      "fragment_id": "HAGER57-P033-D02",
+      "physical_pdf_page": 33,
+      "source_type": "source_quote_attribution",
+      "audited_translation_fa": "کورد گلانْتس، GEPLAN Design",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "این سطر هویت گویندهٔ نقل‌قول ص ۳۳ را برای پروژهٔ JAZ Hotel Stuttgart به‌گفتهٔ منبع کامل می‌کند؛ جداگانه رکورد نیست."
+    },
+    {
+      "fragment_id": "HAGER57-P042-D01",
+      "physical_pdf_page": 42,
+      "source_type": "source_vendor_hotel_product_family",
+      "audited_translation_fa": "volta و volta.hybrid",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "دو نام در تیتر محصولات همین فصل؛ بدون مدل/تعداد، مشخصات، نصب و دسترس‌پذیری."
+    },
+    {
+      "fragment_id": "HAGER57-P046-D01",
+      "physical_pdf_page": 46,
+      "source_type": "source_vendor_hotel_heading",
+      "audited_translation_fa": "واحدهای تأمین خدمات و نصب توکار",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "عنوان گونهٔ تجهیزات است؛ شیوه یا محل نصب ترجمه یا استنباط نشده است."
+    },
+    {
+      "fragment_id": "HAGER57-P050-D01",
+      "physical_pdf_page": 50,
+      "source_type": "source_vendor_hotel_product_family",
+      "audited_translation_fa": "tehalit.DAP | DEP",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "نام‌های تجاری منبع، نه پیشنهاد تجهیزات، مدل‌سنجی یا سازگاری."
+    },
+    {
+      "fragment_id": "HAGER57-P052-D01",
+      "physical_pdf_page": 52,
+      "source_type": "source_vendor_hotel_marketing_heading",
+      "audited_translation_fa": "پذیرش هتل و فراغت",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "بازی زبانی abschalten میان فراغت و خاموش‌کردن در تیتر بازاریابی است؛ نه روش استفاده یا منطق کارت هتل."
+    },
+    {
+      "fragment_id": "HAGER57-P056-D01",
+      "physical_pdf_page": 56,
+      "source_type": "source_vendor_hotel_heading",
+      "audited_translation_fa": "کلیدزنی و طراحی متناسب با سلیقه",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "روایت بازاریابیِ انتخاب‌های ظاهری؛ از ادعاهای تعداد، پوشش و مدل جداست. با الگوهای انتخاب شکل و ترکیب هم‌پوشانی دارد."
+    },
+    {
+      "fragment_id": "HAGER57-P062-D01",
+      "physical_pdf_page": 62,
+      "source_type": "source_vendor_hotel_product_family",
+      "audited_translation_fa": "Berker Integro Flow",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "نام تجاریِ معرفی‌شده، نه عمق نصب، تضمین سازگاری، پیشتازی بازار یا قابلیت NSP."
+    },
+    {
+      "fragment_id": "HAGER57-P067-D01",
+      "physical_pdf_page": 67,
+      "source_type": "source_vendor_hotel_product_family",
+      "audited_translation_fa": "کنترلگر اتاق KNX",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "برچسب دستگاه در همان فصل؛ نه روش کار، تعداد گزینه‌ها/زبان‌ها، اتصال یا عرضهٔ امروز."
+    },
+    {
+      "fragment_id": "HAGER57-P068-D01",
+      "physical_pdf_page": 68,
+      "source_type": "source_vendor_hotel_design_heading",
+      "audited_translation_fa": "از سبک متین تا مدرن",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "تیتر فروشنده دربارهٔ زبان طراحی؛ انتخاب نهایی ظاهر و حقوق نشر تأیید نشده است."
+    },
+    {
+      "fragment_id": "HAGER57-P069-D01",
+      "physical_pdf_page": 69,
+      "source_type": "source_vendor_hotel_design_heading",
+      "audited_translation_fa": "از کلاسیک تا مدل‌های سفارشی",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "عنوانِ دامنهٔ سبک از نگاه ناشر؛ دادهٔ تولید، کیفیت یا توان NSP نیست."
+    },
+    {
+      "fragment_id": "HAGER57-P071-D01",
+      "physical_pdf_page": 71,
+      "source_type": "source_vendor_hotel_marketing_heading",
+      "audited_translation_fa": "راه‌حل استاندارد مال دیروز بود؛ امروز نوبت طراحی سفارشی است.",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "استعارهٔ لباس سفارشی و زبان بازاریابی؛ «استاندارد» به معنای طراحی معمول است، نه نام استاندارد فنی یا ادعای انطباق."
+    },
+    {
+      "fragment_id": "HAGER57-P172-D01",
+      "physical_pdf_page": 172,
+      "source_type": "source_imprint_document_code",
+      "audited_translation_fa": "شناسهٔ چاپی 19DE0075_01",
+      "disposition": "source_context_only_no_S07_bank_record",
+      "scope_fa": "فقط شناسهٔ دقیقِ چاپ‌شده در پشت جلد؛ رقم ۱۹ یا فرادادهٔ PDF دلیل تاریخ چاپ یا شمارهٔ ویرایش نیست."
+    }
+  ],
+  "visual_reviews": [
+    {
+      "image_id": "HAGER57_032_reception_texture",
+      "physical_pdf_page": 32,
+      "original_printed_folio": 32,
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_032_reception_texture.webp",
+      "image_blob_sha": "379b37c22350b854c5e53fab6b7866616fb26d61",
+      "image_asset_sha256": "855e76a511a1552a59a9ffea61b7e473c69552f00dea97dae45e4345477c9031",
+      "normalized_pdf_crop": [
+        0.084,
+        0.323,
+        0.892,
+        0.685
+      ],
+      "target_section_type": "HOTEL_OVERVIEW",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "بسنده به پس‌زمینه و ریتم فصل، نه شناسایی ملک یا سند برتری و نه جلد کل.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "operational_instructions_included": false,
+      "byte_exact_original_pdf_render_sha256": "855e76a511a1552a59a9ffea61b7e473c69552f00dea97dae45e4345477c9031",
+      "byte_exact_original_pdf_render_git_blob": "379b37c22350b854c5e53fab6b7866616fb26d61",
+      "actual_remote_bytes_verified": true
+    },
+    {
+      "image_id": "HAGER57_034_hotel_topic_header",
+      "physical_pdf_page": 34,
+      "original_printed_folio": 34,
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_034_hotel_topic_header.webp",
+      "image_blob_sha": "73ab90020bc84c4f2c11ddfac034325ed8681b31",
+      "image_asset_sha256": "f26e0f734adeb867650dce8a4bcea6bbe96c025a6aca354df27e51023d40b892",
+      "normalized_pdf_crop": [
+        0.07,
+        0.042,
+        0.68,
+        0.14
+      ],
+      "target_section_type": "HOTEL_OVERVIEW",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "بدون تجهیزات و اعداد؛ سلسله‌مراتب تایپی را با متن مستقل فارسی بازآفرینی کنید.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "operational_instructions_included": false,
+      "byte_exact_original_pdf_render_sha256": "f26e0f734adeb867650dce8a4bcea6bbe96c025a6aca354df27e51023d40b892",
+      "byte_exact_original_pdf_render_git_blob": "73ab90020bc84c4f2c11ddfac034325ed8681b31",
+      "actual_remote_bytes_verified": true
+    },
+    {
+      "image_id": "HAGER57_045_conference_space",
+      "physical_pdf_page": 45,
+      "original_printed_folio": 45,
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_045_conference_space.webp",
+      "image_blob_sha": "2321fc038bc8d19d54414ea3ffae39662ef05870",
+      "image_asset_sha256": "dfc3aa6d2873314c7a07b836ea92040acad3f94a3ad4b8fb2e45bde31987fd33",
+      "normalized_pdf_crop": [
+        0.015,
+        0.11,
+        0.61,
+        0.93
+      ],
+      "target_section_type": "PUBLIC_AREAS",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "پیش‌زمینهٔ کاربرد، نه طراحی تأسیسات یا اثبات کنترل دسترسی. پیوند به «انشعاب» فقط رابطهٔ صفحه و موضوع است.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "operational_instructions_included": false,
+      "byte_exact_original_pdf_render_sha256": "dfc3aa6d2873314c7a07b836ea92040acad3f94a3ad4b8fb2e45bde31987fd33",
+      "byte_exact_original_pdf_render_git_blob": "2321fc038bc8d19d54414ea3ffae39662ef05870",
+      "actual_remote_bytes_verified": true
+    },
+    {
+      "image_id": "HAGER57_048_corridor_light_context",
+      "physical_pdf_page": 48,
+      "original_printed_folio": 48,
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_048_corridor_light_context.webp",
+      "image_blob_sha": "e194ebed5963d9850bd3d8a4df893d59e8ab8b6c",
+      "image_asset_sha256": "3ca48a9069b6c5d6d9e39a48dde98c8c78ad1c7d7b4cedb768b0c9a93a4cf152",
+      "normalized_pdf_crop": [
+        0.086,
+        0.464,
+        0.99,
+        0.982
+      ],
+      "target_section_type": "PUBLIC_AREAS",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "برای قاب معرفی محیط عمومی؛ نه توصیهٔ نصب یا اندازه‌گیری، و هیچ عکس/شخص بدون حق بازنشر نشود.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "operational_instructions_included": false,
+      "byte_exact_original_pdf_render_sha256": "3ca48a9069b6c5d6d9e39a48dde98c8c78ad1c7d7b4cedb768b0c9a93a4cf152",
+      "byte_exact_original_pdf_render_git_blob": "e194ebed5963d9850bd3d8a4df893d59e8ab8b6c",
+      "actual_remote_bytes_verified": true
+    },
+    {
+      "image_id": "HAGER57_060_bedside_integration",
+      "physical_pdf_page": 60,
+      "original_printed_folio": 60,
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_060_bedside_integration.webp",
+      "image_blob_sha": "d89be6853e344d0e5148b0cdd359d19799701d09",
+      "image_asset_sha256": "8ff50731eecceae497365bdcfe8de6651b0ae38106ee9ebc15c663fbac2639f5",
+      "normalized_pdf_crop": [
+        0.01,
+        0.493,
+        0.984,
+        0.975
+      ],
+      "target_section_type": "GRMS",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "تنها روال نمایش رابط در محیط. جایگاه دیده‌شده حکم فنی، مدل یا کارکرد NSP نیست.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "operational_instructions_included": false,
+      "byte_exact_original_pdf_render_sha256": "8ff50731eecceae497365bdcfe8de6651b0ae38106ee9ebc15c663fbac2639f5",
+      "byte_exact_original_pdf_render_git_blob": "d89be6853e344d0e5148b0cdd359d19799701d09",
+      "actual_remote_bytes_verified": true
+    },
+    {
+      "image_id": "HAGER57_061_bikini_ambient_detail",
+      "physical_pdf_page": 61,
+      "original_printed_folio": 61,
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_061_bikini_ambient_detail.webp",
+      "image_blob_sha": "851b826d03e31c6d54c186d3b16f2dce36cc4e1c",
+      "image_asset_sha256": "68bc94ac28f408475490cef95a38147a31dec4c1c05925be7c61c5178c42e8e2",
+      "normalized_pdf_crop": [
+        0.078,
+        0.102,
+        0.478,
+        0.481
+      ],
+      "target_section_type": "CASE_STUDIES",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "عکس متعلق به منبع با کپشن Bikini، بدون ادعا دربارهٔ نصب و مستقل از JAZ یا پروژهٔ NSP.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "operational_instructions_included": false,
+      "byte_exact_original_pdf_render_sha256": "68bc94ac28f408475490cef95a38147a31dec4c1c05925be7c61c5178c42e8e2",
+      "byte_exact_original_pdf_render_git_blob": "851b826d03e31c6d54c186d3b16f2dce36cc4e1c",
+      "actual_remote_bytes_verified": true
+    },
+    {
+      "image_id": "HAGER57_066_room_lighting_atmosphere",
+      "physical_pdf_page": 66,
+      "original_printed_folio": 66,
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_066_room_lighting_atmosphere.webp",
+      "image_blob_sha": "d516815bfcffda2b42f681da820f438aee0de839",
+      "image_asset_sha256": "f3352c339fd85ae2b921be838b968fb8eb8c70a557065b6d035568e045cd1db8",
+      "normalized_pdf_crop": [
+        0.452,
+        0.687,
+        0.982,
+        0.933
+      ],
+      "target_section_type": "GRMS",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "قاب و رنگ برای سبک‌اند. تجهیزات و دیاگرام کناری خارج شده‌اند؛ تصویر کارکرد، سناریو، توان KNX یا NSP را ثابت نمی‌کند.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "operational_instructions_included": false,
+      "byte_exact_original_pdf_render_sha256": "f3352c339fd85ae2b921be838b968fb8eb8c70a557065b6d035568e045cd1db8",
+      "byte_exact_original_pdf_render_git_blob": "d516815bfcffda2b42f681da820f438aee0de839",
+      "actual_remote_bytes_verified": true
+    },
+    {
+      "image_id": "HAGER57_068_material_contrast_pair",
+      "physical_pdf_page": 68,
+      "original_printed_folio": 68,
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_068_material_contrast_pair.webp",
+      "image_blob_sha": "3e8ca091fe789d9b5850365700da97517e17e069",
+      "image_asset_sha256": "8a726e8fa97f123c0092e48bbe1ced00700c3dfcee0d9b329496694dd9457284",
+      "normalized_pdf_crop": [
+        0.23,
+        0.45,
+        0.99,
+        0.784
+      ],
+      "target_section_type": "GRMS",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "رکورد متنیِ هم‌صفحه ندارد؛ پیوند ص ۵۳ فقط زمینهٔ طراحی است، نه شاهد مشترک.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "operational_instructions_included": false,
+      "byte_exact_original_pdf_render_sha256": "8a726e8fa97f123c0092e48bbe1ced00700c3dfcee0d9b329496694dd9457284",
+      "byte_exact_original_pdf_render_git_blob": "3e8ca091fe789d9b5850365700da97517e17e069",
+      "actual_remote_bytes_verified": true
+    },
+    {
+      "image_id": "HAGER57_070_finish_samples",
+      "physical_pdf_page": 70,
+      "original_printed_folio": 70,
+      "image_asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_070_finish_samples.webp",
+      "image_blob_sha": "c00d0036922eceb07dfdae5b17f68cb2a01ab66d",
+      "image_asset_sha256": "8d9b0ed48006eebf6e7c5521422dd01af947c2a56c44fadf894c657747ef17f1",
+      "normalized_pdf_crop": [
+        0.014,
+        0.396,
+        0.697,
+        0.688
+      ],
+      "target_section_type": "GRMS",
+      "disposition": "accepted_internal_S07_design_reference_only",
+      "scope_fa": "قالب ارائه بدون تکرار برند، عکس، گزینه، متریال قطعی، روش ساخت یا حق نشر.",
+      "rights_approved": false,
+      "NSP_capability_verified": false,
+      "operational_instructions_included": false,
+      "byte_exact_original_pdf_render_sha256": "8d9b0ed48006eebf6e7c5521422dd01af947c2a56c44fadf894c657747ef17f1",
+      "byte_exact_original_pdf_render_git_blob": "c00d0036922eceb07dfdae5b17f68cb2a01ab66d",
+      "actual_remote_bytes_verified": true
+    }
+  ],
+  "derived_reference_overview": {
+    "asset_path": "Portfolio Instruction/research/assets/hager57/HAGER57_S04_reference_overview.webp",
+    "asset_filename": "HAGER57_S04_reference_overview.webp",
+    "mime_type": "image/webp",
+    "asset_bytes": 69696,
+    "asset_sha256": "c89c233076fadfa79aa961ac11ceecc14abf6cdc470f292bbe49a6405d06339d",
+    "git_blob_sha": "87919736beb1a2e11b30cbc92c2b815752c3d0b9",
+    "rendered_size_px": [
+      1170,
+      864
+    ],
+    "base64_length": 92928,
+    "role": "derived_navigation_overview_not_a_source_reference",
+    "source_reference_ids": [
+      "HAGER57_032_reception_texture",
+      "HAGER57_034_hotel_topic_header",
+      "HAGER57_045_conference_space",
+      "HAGER57_048_corridor_light_context",
+      "HAGER57_060_bedside_integration",
+      "HAGER57_061_bikini_ambient_detail",
+      "HAGER57_066_room_lighting_atmosphere",
+      "HAGER57_068_material_contrast_pair",
+      "HAGER57_070_finish_samples"
+    ],
+    "counted_in_reference_images": false,
+    "renderer": "Pillow montage WebP quality 78 method 6, derived solely from the reference crops",
+    "exact_remote_bytes_verified": true,
+    "byte_exact_recreated": true,
+    "exclude_from_V17_asset_count_and_aliases": true
+  },
+  "source_claim_gates_reviewed": [
+    {
+      "id": "HAGER57-CLAIM-01",
+      "kind": "identity_and_hotel_only",
+      "physical_pdf_pages": [
+        1,
+        10,
+        32,
+        172
+      ],
+      "fragment_refs": [
+        "HAGER57-P001-D01",
+        "HAGER57-P010-D01",
+        "HAGER57-P032-D01",
+        "HAGER57-P172-D01"
+      ],
+      "scope_fa": "سند آلمانی با شناسهٔ چاپی 19DE0075_01؛ نام فصل، فهرست و کد برای ردیابی منبع‌اند. نسخهٔ کنونی، تاریخ چاپ و قابلیت NSP نتیجه‌گیری نشده‌اند.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P001-D01",
+        "HAGER57-P010-D01",
+        "HAGER57-P032-D01",
+        "HAGER57-P172-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I001"
+      ],
+      "checked_against_original_and_lineage": true
+    },
+    {
+      "id": "HAGER57-CLAIM-02",
+      "kind": "designer_quote_not_property_outcome",
+      "physical_pdf_pages": [
+        33
+      ],
+      "fragment_refs": [
+        "HAGER57-P033-D01",
+        "HAGER57-P033-D02"
+      ],
+      "scope_fa": "گفتهٔ Cord Glantz از GEPLAN Design با انتساب چاپی به پروژهٔ JAZ Hotel Stuttgart فقط قصد طراحی و آسایش است؛ نه اندازه‌گیری رضایت یا پروژهٔ NSP. با عکسِ Bikini Hotel یکی نیست.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P033-D01",
+        "HAGER57-P033-D02"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I002"
+      ],
+      "checked_against_original_and_lineage": true
+    },
+    {
+      "id": "HAGER57-CLAIM-03",
+      "kind": "power_and_room_distribution_topics_not_instructions",
+      "physical_pdf_pages": [
+        34,
+        38,
+        40,
+        42
+      ],
+      "fragment_refs": [
+        "HAGER57-P034-D01",
+        "HAGER57-P034-D02",
+        "HAGER57-P038-D01",
+        "HAGER57-P040-D01",
+        "HAGER57-P042-D01"
+      ],
+      "scope_fa": "موضوع و نام خانواده در بخش هتلِ Hager؛ نه روش سیم‌بندی و اندازه‌گیری، ظرفیت/تضمین یا قابلیت NSP.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P034-D01",
+        "HAGER57-P034-D02",
+        "HAGER57-P038-D01",
+        "HAGER57-P040-D01",
+        "HAGER57-P042-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I003",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I004",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I006",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I007"
+      ],
+      "checked_against_original_and_lineage": true
+    },
+    {
+      "id": "HAGER57-CLAIM-04",
+      "kind": "cable_and_space_editorial_structure_only",
+      "physical_pdf_pages": [
+        44,
+        45,
+        46,
+        48,
+        50
+      ],
+      "fragment_refs": [
+        "HAGER57-P044-D01",
+        "HAGER57-P045-D01",
+        "HAGER57-P046-D01",
+        "HAGER57-P048-D01",
+        "HAGER57-P050-D01"
+      ],
+      "scope_fa": "نام دسته‌ و قالب ارائهٔ فضا در منبع؛ بدون مسیر اجرا، دستور مکانیکی یا الکتریکی، ایمنی و ارزیابی مقررات.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P044-D01",
+        "HAGER57-P045-D01",
+        "HAGER57-P046-D01",
+        "HAGER57-P048-D01",
+        "HAGER57-P050-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I008",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I009",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I010"
+      ],
+      "checked_against_original_and_lineage": true
+    },
+    {
+      "id": "HAGER57-CLAIM-05",
+      "kind": "switch_and_presence_headlines_not_workflow",
+      "physical_pdf_pages": [
+        35,
+        52,
+        53,
+        55,
+        56,
+        58,
+        60,
+        62
+      ],
+      "fragment_refs": [
+        "HAGER57-P035-D01",
+        "HAGER57-P052-D01",
+        "HAGER57-P053-D01",
+        "HAGER57-P055-D01",
+        "HAGER57-P056-D01",
+        "HAGER57-P058-D01",
+        "HAGER57-P060-D01",
+        "HAGER57-P062-D01"
+      ],
+      "scope_fa": "دسته، تیتر یا نام محصول ساختهٔ ناشر در همین فصل؛ از تیتر هیچ منطق کارت، محرک/تنظیم تشخیص حضور، عدد فروشنده یا قابلیت NSP برنمی‌آید.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P035-D01",
+        "HAGER57-P052-D01",
+        "HAGER57-P053-D01",
+        "HAGER57-P055-D01",
+        "HAGER57-P056-D01",
+        "HAGER57-P058-D01",
+        "HAGER57-P060-D01",
+        "HAGER57-P062-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I005",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I011",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I012",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I013",
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I014"
+      ],
+      "checked_against_original_and_lineage": true
+    },
+    {
+      "id": "HAGER57-CLAIM-06",
+      "kind": "separate_case_caption_Bikini",
+      "physical_pdf_pages": [
+        61
+      ],
+      "fragment_refs": [
+        "HAGER57-P061-D01"
+      ],
+      "scope_fa": "کپشنِ عکس Bikini Hotel، Berlin فقط همان تصویر/مصداق معرفی‌شده است؛ نه گواه بهره‌برداری، پروژهٔ JAZ، سابقهٔ NSP یا حق بازنشر.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P061-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I015"
+      ],
+      "checked_against_original_and_lineage": true
+    },
+    {
+      "id": "HAGER57-CLAIM-07",
+      "kind": "vendor_KNX_and_controller_as_case_topics",
+      "physical_pdf_pages": [
+        66,
+        67
+      ],
+      "fragment_refs": [
+        "HAGER57-P066-D01",
+        "HAGER57-P067-D01"
+      ],
+      "scope_fa": "نام رویکرد و دستگاه در منبع؛ نه روش پیکربندی یا منطق کنترلی، عدد/نتیجهٔ عملکرد، گواهی انطباق، پشتیبانی روز یا محصول NSP.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P066-D01",
+        "HAGER57-P067-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I016"
+      ],
+      "checked_against_original_and_lineage": true
+    },
+    {
+      "id": "HAGER57-CLAIM-08",
+      "kind": "brand_design_language_and_custom_editorial_style",
+      "physical_pdf_pages": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "fragment_refs": [
+        "HAGER57-P068-D01",
+        "HAGER57-P069-D01",
+        "HAGER57-P070-D01",
+        "HAGER57-P071-D01"
+      ],
+      "scope_fa": "تیترهای طراحی و نام Manufaktur از ناشر‌اند؛ نه دسترس‌پذیری کالا/متریال، تولید NSP، تعهد رسمی یا حق بازنشر.",
+      "NSP_capability_verified": false,
+      "independent_result_or_compliance_verified": false,
+      "publication_rights_verified": false,
+      "S02_fragment_refs": [
+        "HAGER57-P068-D01",
+        "HAGER57-P069-D01",
+        "HAGER57-P070-D01",
+        "HAGER57-P071-D01"
+      ],
+      "claim_or_context_only_not_independent_feature": true,
+      "related_S03_record_ids": [
+        "CAT057_HAGER_ZWECKBAU_19DE0075_01:I017"
+      ],
+      "checked_against_original_and_lineage": true
+    }
+  ],
+  "S07_import_contract": {
+    "accepted_internal_record_ids": [
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I001",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I002",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I003",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I004",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I005",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I009",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I010",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I011",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I014",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I015",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I016",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I017"
+    ],
+    "source_context_only_S03_ids": [
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I006",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I007",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I008",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I012",
+      "CAT057_HAGER_ZWECKBAU_19DE0075_01:I013"
+    ],
+    "accepted_internal_visual_ids": [
+      "HAGER57_032_reception_texture",
+      "HAGER57_034_hotel_topic_header",
+      "HAGER57_045_conference_space",
+      "HAGER57_048_corridor_light_context",
+      "HAGER57_060_bedside_integration",
+      "HAGER57_061_bikini_ambient_detail",
+      "HAGER57_066_room_lighting_atmosphere",
+      "HAGER57_068_material_contrast_pair",
+      "HAGER57_070_finish_samples"
+    ],
+    "apply_Persian_copy_edit_in_derived_records_only": true,
+    "additional_14_context_excerpt_ids_not_imported": [
+      "HAGER57-P001-D01",
+      "HAGER57-P010-D01",
+      "HAGER57-P033-D02",
+      "HAGER57-P042-D01",
+      "HAGER57-P046-D01",
+      "HAGER57-P050-D01",
+      "HAGER57-P052-D01",
+      "HAGER57-P056-D01",
+      "HAGER57-P062-D01",
+      "HAGER57-P067-D01",
+      "HAGER57-P068-D01",
+      "HAGER57-P069-D01",
+      "HAGER57-P071-D01",
+      "HAGER57-P172-D01"
+    ],
+    "document_code_not_date_or_inferred_revision": true,
+    "preserve_German_source_language_and_exact_source_excerpt_even_if_existing_renderer_uses_legacy_en_named_display_key": true,
+    "JAZ_quote_is_designer_intention_not_Bikini_caption_or_outcome": true,
+    "flexible_access_refers_only_to_utility_connections_not_entry_security": true,
+    "card_presence_billing_and_media_context_not_bank_records": true,
+    "KNX_and_manufaktur_not_current_offering_or_NSP": true,
+    "derived_reference_overview_excluded": true,
+    "no_wiring_emergency_or_access_procedures_or_performance_or_compliance": true,
+    "no_publication_rights_or_page_attachment": true
+  },
+  "next_stage": "S07 — به‌روزرسانی JSON و Commit",
+  "next_queue_cursor": {
+    "document_index": 16,
+    "document_id": "57",
+    "step_index": 6,
+    "step_id": "S07"
+  },
+  "next_stage_executed": false,
+  "feature_json_changed": false,
+  "feature_js_changed": false,
+  "application_source_changed": false,
+  "editorial_structure_changed": false,
+  "portfolio_pages_changed": false
+}
