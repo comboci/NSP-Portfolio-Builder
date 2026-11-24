@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 90,
+    "total_pending_steps": 89,
     "completed_new_documents": 5,
     "remaining_new_documents": 13
   },
   "cursor": {
     "document_index": 8,
     "document_id": "15",
-    "step_index": 1,
-    "step_id": "S02"
+    "step_index": 2,
+    "step_id": "S03"
   },
   "section_types": [
     {
@@ -1026,11 +1026,13 @@
         {
           "id": "S02",
           "key": "source_text_extraction",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/15_Vingcard_Mobile_Access_S02_english_text.json"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "a34ed1f661749f49349eab2140b1aef1dde1e7ad",
+          "notes": "۱۲ صفحهٔ فیزیکی با هش منبع و S01 تطبیق داده شد؛ ۵۱ گزیدهٔ کوتاه انگلیسی به‌طور هم‌زمان با متن بومی PDF و متن Library تطبیق یافت. ۱۴ قید ادعای ناشر، چهار زمینه و ترتیب بصری دو نمودار مستقل (۵ گام مهمان و ۶ نقش نمودار صدور) ثبت شد. متن کامل، مشخصات سخت‌افزار رقیب یا ادعاهای NSP به بانک اضافه نشد؛ بانک V8 و برنامه ثابت‌اند."
         },
         {
           "id": "S03",
@@ -1078,7 +1080,7 @@
           "notes": null
         }
       ],
-      "last_successful_stage": "S01"
+      "last_successful_stage": "S02"
     },
     {
       "id": "16",
