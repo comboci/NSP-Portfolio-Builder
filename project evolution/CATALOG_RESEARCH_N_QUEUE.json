@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 50,
-    "completed_new_documents": 10,
-    "remaining_new_documents": 8
+    "total_pending_steps": 49,
+    "completed_new_documents": 11,
+    "remaining_new_documents": 7
   },
   "cursor": {
-    "document_index": 13,
-    "document_id": "50",
-    "step_index": 6,
-    "step_id": "S07"
+    "document_index": 14,
+    "document_id": "53",
+    "step_index": 0,
+    "step_id": "S01"
   },
   "section_types": [
     {
@@ -1557,7 +1557,7 @@
       "library_path": "/50_Zenitel_Work C09.4.pdf",
       "bytes": 11905037,
       "availability": "verified_in_user_library_on_2026-11-22",
-      "status": "in_progress",
+      "status": "completed",
       "prior_import": null,
       "steps": [
         {
@@ -1640,14 +1640,28 @@
         {
           "id": "S07",
           "key": "feature_json_and_commit",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/feature.json",
+            "Portfolio Instruction/feature.js",
+            "Portfolio Instruction/research/50_Zenitel_PAVA_S07_ingest_manifest.json",
+            "Portfolio Instruction/assets/zenitel50-01-environmental-hero.webp",
+            "Portfolio Instruction/assets/zenitel50-02-four-application-tiles.webp",
+            "Portfolio Instruction/assets/zenitel50-05-radial-artwork.webp",
+            "Portfolio Instruction/assets/zenitel50-06-symbolic-padlock-photo.webp",
+            "Portfolio Instruction/assets/zenitel50-07-offset-environment-montage.webp",
+            "Portfolio Instruction/assets/zenitel50-09-dark-asymmetric-gallery.webp",
+            "Portfolio Instruction/assets/zenitel50-10-family-column-header-band.webp",
+            "Portfolio Instruction/assets/zenitel50-11-accessory-heading-block.webp",
+            "Portfolio Instruction/assets/zenitel50-12-title-and-soft-map.webp",
+            "Portfolio Instruction/assets/zenitel50-13-sector-icon-strip.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "c72197e96dd2c780cc12727526952d777ad3e4c0",
+          "notes": "بانک پژوهش V14: ۱۴ کاتالوگ، ۶۰۹ رکورد و ۱۴۱ تصویر. تنها ۹ رکورد و ۱۰ تصویر ممیزی‌شدهٔ Zenitel افزوده شدند؛ ویرایش فارسی اعمال شد و تصویر قفل بدون سکشن ماند. پنج مورد زمینه‌ای و نمای کلی وارد بانک نشدند. هیچ قابلیت NSP، گواهی، عملیات یا مجوز نشر احراز نشد؛ برنامه، سکشن‌ها و داده‌های قبلی ثابت‌اند."
         }
       ],
-      "last_successful_stage": "S06"
+      "last_successful_stage": "S07"
     },
     {
       "id": "53",
