@@ -15,15 +15,15 @@
     "available_research_pdfs": 21,
     "prior_imports": 3,
     "queued_files": 18,
-    "total_pending_steps": 4,
+    "total_pending_steps": 3,
     "completed_new_documents": 17,
     "remaining_new_documents": 1
   },
   "cursor": {
     "document_index": 20,
     "document_id": "MG",
-    "step_index": 3,
-    "step_id": "S04"
+    "step_index": 4,
+    "step_id": "S05"
   },
   "section_types": [
     {
@@ -2316,11 +2316,15 @@
         {
           "id": "S04",
           "key": "visuals_and_styles",
-          "status": "pending",
-          "artifact_paths": [],
-          "completed_at": null,
-          "commit_sha": null,
-          "notes": null
+          "status": "completed",
+          "artifact_paths": [
+            "Portfolio Instruction/research/MG_myGEKKO_Smart_Hotel_S04_original_visual_concepts.json",
+            "Portfolio Instruction/research/assets/mygekko/MG_C01_editorial_view_layers.webp",
+            "Portfolio Instruction/research/assets/mygekko/MG_C02_editorial_room_public.webp"
+          ],
+          "completed_at": "2026-11-24",
+          "commit_sha": "30fbf4ca02a553368a884ca40bbbf3a63009b37d",
+          "notes": "دو نمودار تحریریهٔ کاملاً تازه و سه مشاهدهٔ صفحه‌دار دربارهٔ شیوهٔ ارائه ثبت شد؛ بدون عکس، چیدمان، لوگو، رابط یا اجزای تصویری بروشور. طرح‌ها فقط برای پژوهش داخلی‌اند، نه ادعای قابلیت یا انتشار کاتالوگ. بانک V20، برنامه و D05 ثابت‌اند."
         },
         {
           "id": "S05",
