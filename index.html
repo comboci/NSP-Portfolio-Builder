@@ -11423,6 +11423,7 @@ async function openProjectFile(file,owner){
  
  v13ResetEditorContext(true);v77ExpandedProjects.add(target.activeWorkspaceId);await go('v76projects');render();
  const missing=(target.imageLibrary||[]).filter(a=>a.missingOriginal===true);if(missing.length)alert(missing.length+' تصویر قدیمی حذف شده و با جای‌نگهدار مشخص شده است.');
+ return true;
 }
 function openRepository(){
  if(busy||!v76ValidateCanSwitch())return;
@@ -11515,6 +11516,113 @@ window.v265OpenRepository=openRepository;
 window.v265SaveRepository=saveRepository;
 // Pure transport helpers are also exercised by the repository validation script.
 window.V265RepositoryTransport={imageName,safeFolder,validFolder,hasExternal,hydrate,pack,zipParts,crc32,listRoot,saveToRoot};
+// V268: import a self-contained project ZIP produced by downloadZip().
+// Parse the archive before changing application state; images are resolved
+// through the existing hydrate / project import / library persistence flow.
+async function readRepositoryZip(file) {
+ const maxZip=64*1024*1024, maxExpanded=80*1024*1024, maxFiles=1200;
+ if(!file||file.size<=0||file.size>maxZip)fail('حجم فایل ZIP نامعتبر است (حداکثر ۶۴ مگابایت).');
+ const bytes=new Uint8Array(await file.arrayBuffer()), view=new DataView(bytes.buffer,bytes.byteOffset,bytes.byteLength);
+ const u16=i=>view.getUint16(i,true),u32=i=>view.getUint32(i,true);
+ const decoder=new TextDecoder('utf-8',{fatal:true});
+ let end=-1;
+ for(let i=bytes.length-22;i>=Math.max(0,bytes.length-65557);i--){
+  if(u32(i)===0x06054b50 && i+22+u16(i+20)===bytes.length){end=i;break;}
+ }
+ if(end<0||u16(end+4)!==0||u16(end+6)!==0||u16(end+8)!==u16(end+10))fail('ZIP چندبخشی یا ساختار نامعتبر پشتیبانی نمی‌شود.');
+ const count=u16(end+10),centralBytes=u32(end+12),centralStart=u32(end+16);
+ if(!count||count>maxFiles||centralStart+centralBytes>end)fail('فهرست فایل‌های ZIP نامعتبر است.');
+ let offset=centralStart,total=0;
+ const entries=new Map();
+ for(let i=0;i<count;i++){
+  if(offset+46>end||u32(offset)!==0x02014b50)fail('فهرست مرکزی ZIP آسیب دیده است.');
+  const flags=u16(offset+8),method=u16(offset+10),crc=u32(offset+16);
+  const compressed=u32(offset+20),expanded=u32(offset+24);
+  const nameLen=u16(offset+28),extraLen=u16(offset+30),commentLen=u16(offset+32),disk=u16(offset+34),start=u32(offset+42);
+  const attrs=u32(offset+38),next=offset+46+nameLen+extraLen+commentLen;
+  if(next>end||disk||flags&1||!(method===0||method===8)||compressed===0xffffffff||expanded===0xffffffff||start===0xffffffff)fail('ZIP شامل فایل رمزدار یا فرمت پشتیبانی‌نشده است.');
+  let name;try{name=decoder.decode(bytes.subarray(offset+46,offset+46+nameLen));}catch(e){fail('نام فایل‌های ZIP باید UTF-8 باشد.');}
+  if(!name||name.includes('\\')||name.startsWith('/')||name.includes('\u0000')||name.split('/').some(x=>x==='.'||x==='..')||/^([a-z]:|\\)/i.test(name))fail('مسیر غیرمجاز در فایل ZIP: '+name);
+  if((attrs>>>16&0xf000)===0xa000)fail('لینک نمادین داخل ZIP مجاز نیست.');
+  offset=next;
+  if(name.endsWith('/'))continue;
+  if(entries.has(name))fail('فایل تکراری در ZIP: '+name);
+  total+=expanded;
+  if(!expanded||expanded>24*1024*1024||total>maxExpanded)fail('حجم استخراج‌شده ZIP بیش از حد مجاز است.');
+  if(start+30>centralStart||u32(start)!==0x04034b50||u16(start+8)!==method)fail('سرآیند فایل ZIP نامعتبر است.');
+  const dataStart=start+30+u16(start+26)+u16(start+28);
+  if(dataStart+compressed>centralStart)fail('محدوده داده ZIP نامعتبر است.');
+  const packed=bytes.subarray(dataStart,dataStart+compressed);
+  let unpacked;
+  if(method===0){unpacked=packed;if(compressed!==expanded)fail('اندازه فایل فشرده نامعتبر است.');}
+  else{
+   if(typeof DecompressionStream!=='function')fail('این نسخه مرورگر از فایل ZIP فشرده پشتیبانی نمی‌کند؛ مرورگر را به‌روز کنید.');
+   let stream;
+   try{stream=new Blob([packed]).stream().pipeThrough(new DecompressionStream('deflate-raw'));}
+   catch(e){fail('روش فشرده‌سازی ZIP در این مرورگر پشتیبانی نمی‌شود.');}
+   const reader=stream.getReader(),chunks=[];let sum=0;
+   try{
+    while(true){const {done,value}=await reader.read();if(done)break;sum+=value.length;
+     if(sum>expanded||sum>maxExpanded)fail('حجم استخراج فایل ZIP با اطلاعات آن مطابقت ندارد.');chunks.push(value);
+    }
+   }finally{reader.releaseLock();}
+   unpacked=new Uint8Array(sum);let pos=0;for(const c of chunks){unpacked.set(c,pos);pos+=c.length;}
+  }
+  if(unpacked.length!==expanded||crc32(unpacked)!==crc)fail('خطای صحت‌سنجی CRC در فایل '+name);
+  entries.set(name,new Blob([unpacked]));
+ }
+ if(offset!==centralStart+centralBytes)fail('اندازه فهرست مرکزی ZIP معتبر نیست.');
+ const projectPaths=[...entries.keys()].filter(n=>n==='project.json'||/^project file\/[^/]+\/project\.json$/.test(n));
+ if(projectPaths.length!==1)fail('ZIP باید دقیقاً یک project.json در مسیر استاندارد پروژه داشته باشد.');
+ const imageNames=[...entries.keys()].filter(n=>n.startsWith('Image/'));
+ for(const name of imageNames)imageName(prefix+name.slice('Image/'.length));
+ let raw;try{raw=JSON.parse(await entries.get(projectPaths[0]).text());}catch(e){fail('محتوای project.json معتبر نیست.');}
+ arrays(raw); // Validate envelope/schema, image IDs and dependency list first.
+ if(raw.manifest?.format==='NSP-Repository-Project'&&raw.manifest?.relativeImageRoot!==prefix)fail('مسیر تصاویر تعریف‌شده در پروژه با قرارداد فعلی سازگار نیست.');
+ return {raw,readImage:async name=>{const source=entries.get('Image/'+name);if(!source)fail('تصویر وابسته در ZIP موجود نیست: '+name);return source;}};
+}
+async function importRepositoryZip(file,owner){
+ const zip=await readRepositoryZip(file);
+ const hydrated=await hydrate(zip.raw,zip.readImage);
+ const embedded=new File([JSON.stringify(hydrated.payload)],'project.json',{type:'application/json'});
+ const imported=await openProjectFile(embedded,owner);
+ if(imported===true){for(const [src,entry] of hydrated.originals)originalImages.set(src,entry);}
+ return imported;
+}
+function chooseRepositoryZip(){
+ if(busy||!v76ValidateCanSwitch())return;
+ if(window.V13.saveBlocked||window.V13.saveError||window.V13.persistencePending){alert('ابتدا وضعیت ذخیره پروژه فعلی را مشخص کنید.');return;}
+ const owner=state,input=document.createElement('input');
+ input.type='file';input.accept='.zip,application/zip,application/x-zip-compressed';input.style.display='none';document.body.appendChild(input);
+ input.addEventListener('change',async()=>{
+  const file=input.files?.[0];input.remove();if(!file||busy)return;
+  busy=true;try{await importRepositoryZip(file,owner)}
+  catch(e){alert('ورود پروژه ZIP انجام نشد: '+String(e?.message||e))}
+  finally{busy=false}
+ },{once:true});
+ input.addEventListener('cancel',()=>input.remove(),{once:true});
+ try{input.click()}catch(e){input.remove();alert('انتخاب فایل ZIP ممکن نشد: '+String(e?.message||e))}
+}
+function addZipImportButton(){
+ const toolbar=document.querySelector('.v223-projects-bar .toolbar');
+ const filePanel=tab==='file-actions'?document.querySelector('#app .panel'):null;
+ const parent=toolbar||filePanel;
+ if(parent&&!parent.querySelector('[data-v268-import-zip]')){
+  const b=document.createElement('button');b.type='button';b.className='btn';
+  b.dataset.v268ImportZip='1';b.textContent='ورود پروژه ZIP';
+  b.title='ورود project.json و تصاویر نسبی از فایل ZIP بدون ساخت دستی لایه‌ها';
+  parent.appendChild(b);
+ }
+}
+document.addEventListener('click',function(e){
+ if(!e.target.closest?.('[data-v268-import-zip]'))return;
+ e.preventDefault();chooseRepositoryZip();
+});
+const v268PreviousRender=render;
+render=function(){const result=v268PreviousRender.apply(this,arguments);addZipImportButton();return result;};
+window.v268ImportRepositoryZip=chooseRepositoryZip;
+window.V268ZipTransport={readRepositoryZip,importRepositoryZip};
+addZipImportButton();
 })();
 </script>
 </body></html>
