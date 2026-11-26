@@ -2049,7 +2049,16 @@ async function v77DeleteProject(id){
  if(typeof window.V13.deleteManagedProject!=='function'){alert('مدیریت حذف فایل پروژه آماده نیست.');return false;}
  return window.V13.deleteManagedProject(id);
 }
-async function v276DeleteProjectRegistry(id){
+async function v276DeleteProjectRegistry(id,diskOperation=null){
+ const persist=async undo=>{
+  if(!diskOperation)return v77Persist(undo);
+  try{return await window.V13.commitDiskWorkspace(diskOperation);}
+  catch(error){
+   // Do not guess a failed browser commit if its receipt cannot be read.
+   if(!await window.V13.diskWorkspaceReceipt(diskOperation)){undo();render();throw error;}
+   return true;
+  }
+ };
  const all=v76ListProjects(),src=all.find(p=>p.id===id);
  if(!src)return false;
  if(!v76ValidateCanSwitch()||window.V13.persistencePending||window.V13.saveError||window.V13.saveBlocked){
@@ -2084,12 +2093,12 @@ async function v276DeleteProjectRegistry(id){
    target.globalImageLibrary=v13Copy(state.globalImageLibrary||[]);
   }catch(error){alert('آماده‌سازی حذف پروژه انجام نشد: '+error.message);return false;}
   state=target;selected=state.pages[0]?.id||null;
-  if(!await v77Persist(()=>{state=before;selected=oldSelected;}))return false;
+  if(!await persist(()=>{state=before;selected=oldSelected;}))return false;
   v13ResetEditorContext(true);
  }else{
   const before=state.projectWorkspaces;
   state.projectWorkspaces=before.filter(p=>p.id!==id);
-  if(!await v77Persist(()=>{state.projectWorkspaces=before;}))return false;
+  if(!await persist(()=>{state.projectWorkspaces=before;}))return false;
  }
  v77ExpandedProjects.delete(id);
  for(const pf of src.data.portfolios||[])v243ExpandedPortfolios.delete(v243PortfolioKey(id,pf.id));
@@ -7234,6 +7243,7 @@ window.v30PrintPortfolio=async function(id){
 const V=window.V13;
 let ready=false,db=null,queue=Promise.resolve(),revision=0,completed=0,lastError='',lastPayload='',pending=0,browserRevision=0;
 const BROWSER_REVISION_KEY=KEY+':browser-revision-v2';
+const diskReceiptKey=KEY+':disk-operation-v1';
 // TASK-038: a later successful write must never conceal an earlier failed scope.
 const failedWrites=new Map();
 const badge=document.createElement('div');badge.className='no-print';badge.style.cssText='position:fixed;bottom:4px;left:8px;z-index:99999;background:#fff;padding:4px;border:1px solid #ccd6da;font-size:11px';document.body.appendChild(badge);
@@ -7356,8 +7366,9 @@ function readBrowserSnapshot(){return new Promise((ok,no)=>{
  tx.onerror=()=>no(tx.error||Error('خواندن پایگاه مرورگر ناموفق بود'));
  tx.onabort=()=>no(tx.error||Error('خواندن پایگاه مرورگر لغو شد'));
 });}
-function browserCompareAndWrite(payload){return new Promise((ok,no)=>{
- const tx=db.transaction('projects','readwrite'),store=tx.objectStore('projects');
+function browserCompareAndWrite(payload,diskOperation=null){return new Promise((ok,no)=>{
+ const tx=diskOperation?db.transaction('projects','readwrite',{durability:'strict'}):db.transaction('projects','readwrite');
+ const store=tx.objectStore('projects');
  let next=null,failure=null;
  const read=store.get(BROWSER_REVISION_KEY);
  read.onsuccess=()=>{
@@ -7374,17 +7385,18 @@ function browserCompareAndWrite(payload){return new Promise((ok,no)=>{
    next=current+1;
    store.put(payload,KEY);
    store.put(next,BROWSER_REVISION_KEY);
+   if(diskOperation)store.put(diskOperation,diskReceiptKey);
   }catch(error){failure=error;tx.abort();}
  };
  tx.oncomplete=()=>{browserRevision=next;V.workspaceRevision=next;ok(next);};
  tx.onabort=()=>no(failure||tx.error||Error('تراکنش ذخیره مرورگر لغو شد'));
  tx.onerror=()=>{ /* onabort reports the transaction failure */ };
 });}
-async function write(payload){
+async function write(payload,diskOperation=null){
  if(V.saveBlocked)throw Error('WRITE_CONFLICT: ذخیره مسدود شده؛ ابتدا داده تازه را بازیابی کنید');
- return browserCompareAndWrite(payload);
+ return browserCompareAndWrite(payload,diskOperation);
 }
-function enqueue(payload,page=null){
+function enqueue(payload,page=null,diskOperation=null){
  const rev=++revision,projectId=state.activeWorkspaceId,scope=scopeFor(page,projectId);
  const item={scope,rev,kind:page?'page':'project',projectId,
   portfolioId:page?.portfolioId,pageId:page?.pageId,
@@ -7392,18 +7404,40 @@ function enqueue(payload,page=null){
  pending++;status();
  queue=queue.catch(()=>{}).then(async()=>{
   const next=page?mergeSavedPage(payload,page):payload;
-  await write(next);
+  await write(next,diskOperation);
   writeAcknowledged(scope,rev,next,page);
  })
   .catch(error=>writeRejected(item,error))
   .finally(()=>{pending--;status();});
  return queue;
 }
-save=function(forceProject=false){if(!ready||V.saveBlocked){V.saveError=!ready?'پایگاه داده آماده نیست':'دادهٔ قبلی برای بازیابی محفوظ است';v13UpdateSaveStatus();return false;}const current=!forceProject&&V.editor?.currentPage?.();if(current&&typeof V.queuePageSave==='function'){const p=state.portfolios?.find(x=>x.id===current.portfolioId)?.pages?.find(x=>x.id===current.pageId);return p?V.queuePageSave(current.projectId,current.portfolioId,p):false;}try{v78SyncGlobal();v13SyncPages();state.savedAt=new Date().toISOString();state.schemaVersion=2;const payload=JSON.stringify(state);enqueue(payload);return true;}catch(e){lastError=String(e?.message||e);status();alert('ذخیره انجام نشد؛ خروجی JSON تهیه کنید.\n'+lastError);return false;}};
+save=function(forceProject=false,diskOperation=null){if(!ready||V.saveBlocked){V.saveError=!ready?'پایگاه داده آماده نیست':'دادهٔ قبلی برای بازیابی محفوظ است';v13UpdateSaveStatus();return false;}const current=!forceProject&&V.editor?.currentPage?.();if(current&&typeof V.queuePageSave==='function'){const p=state.portfolios?.find(x=>x.id===current.portfolioId)?.pages?.find(x=>x.id===current.pageId);return p?V.queuePageSave(current.projectId,current.portfolioId,p):false;}try{v78SyncGlobal();v13SyncPages();state.savedAt=new Date().toISOString();state.schemaVersion=2;const payload=JSON.stringify(state);enqueue(payload,null,diskOperation);return true;}catch(e){lastError=String(e?.message||e);status();alert('ذخیره انجام نشد؛ خروجی JSON تهیه کنید.\n'+lastError);return false;}};
 V.flushStorage=async function(){
  await queue;
  if(failedWrites.size||lastError||completed!==revision)
   throw Error(failureMessage()||lastError||'ذخیره کامل نشده است');
+};
+V.diskWorkspaceReceipt=(id,minRevision=null)=>new Promise((ok,no)=>{
+ if(!db){no(Error('پایگاه پروژه برای بررسی نتیجهٔ عملیات آماده نیست.'));return;}
+ const tx=db.transaction('projects','readonly'),store=tx.objectStore('projects');
+ const receipt=store.get(diskReceiptKey),rev=store.get(BROWSER_REVISION_KEY),data=store.get(KEY);
+ tx.oncomplete=()=>{
+  try{
+   if(minRevision!==null&&(validBrowserRevision(rev.result)<minRevision||typeof data.result!=='string'||!data.result))
+    throw Error('تداوم پایگاه پروژه تأیید نشد؛ فایل روی دیسک دست نخورده است.');
+   ok(receipt.result===id);
+  }catch(e){no(e);}
+ };
+ tx.onerror=tx.onabort=()=>no(tx.error||Error('نتیجهٔ ثبت مرورگر خوانده نشد.'));
+});
+V.commitDiskWorkspace=async id=>{
+ if(typeof id!=='string'||!id||V.persistencePending||V.saveError||V.saveBlocked)
+  throw Error('ابتدا ثبت قبلی پروژه را تعیین تکلیف کنید.');
+ if(save(true,id)!==true)throw Error(V.saveError||'ثبت پروژه آغاز نشد.');
+ const attempt=queue;
+ await attempt;
+ if(!await V.diskWorkspaceReceipt(id))throw Error(failureMessage()||lastError||'ثبت قطعی پروژه تأیید نشد.');
+ return true;
 };
 function mergeSavedPage(payload,{projectId,portfolioId,pageId}){
  const saved=JSON.parse(lastPayload||'null');
@@ -12005,12 +12039,18 @@ function v277PrepareOpen(payload,owner){
 function v277PlanCurrent(plan){
  return !!plan&&canApplyBackupImport(plan.owner)&&window.V13.workspaceRevision===plan.revision;
 }
-async function v277CommitOpen(plan){
+async function v277CommitOpen(plan,diskOperation=null){
  if(!v277PlanCurrent(plan))fail('پروژه در زمان ورود تغییر کرده است؛ دوباره اقدام کنید.');
  const {original,oldSelected,target}=plan;
  state=target;selected=state.pages[0]?.id||null;
- try{v78SyncGlobal();if(!save(true))throw Error('ذخیره محلی ناموفق');await window.V13.flushStorage();}
- catch(e){state=original;selected=oldSelected;render();throw e;}
+ try{
+  v78SyncGlobal();
+  if(diskOperation)await window.V13.commitDiskWorkspace(diskOperation);
+  else{if(!save(true))throw Error('ذخیره محلی ناموفق');await window.V13.flushStorage();}
+ }catch(e){
+  // No optimistic rollback until the atomic receipt is known.
+  if(!diskOperation||!await window.V13.diskWorkspaceReceipt(diskOperation)){state=original;selected=oldSelected;render();throw e;}
+ }
  plan.committed=true;
  
  v13ResetEditorContext(true);v77ExpandedProjects.add(target.activeWorkspaceId);await go('v76projects');render();
@@ -12019,6 +12059,7 @@ async function v277CommitOpen(plan){
 
 }
 async function openProjectFile(file,owner){
+ await vPb03AssertClear();
  const raw=await v111ReadBackup(file);
  if(hasExternal(raw))fail('این فایل قدیمی به تصاویر بیرونی وابسته است؛ فایل مستقل نسخه ۲۶۸ یا جدیدتر را انتخاب کنید.');
  const {payload}=await hydrate(raw,()=>fail('تصویر باید داخل JSON باشد.'));
@@ -12089,6 +12130,8 @@ async function saveToRoot(root,folder,packed,options={}){
   if(options.duplicate&&!confirm('پروژه «'+options.duplicate.name+'» در برنامه وجود دارد. با نسخه ZIP جایگزین شود؟'))return false;
   if(options.journal)Object.assign(options.journal,{dir,previousText:null,newText:packed.json,written:false});
  }
+ if(options.disk)
+  options.disk.entry=await vPb03Prepare('import',root,dir,folder,options.journal.previousText,packed.json);
  const images=await root.getDirectoryHandle('Image',{create:true});
  // Verify and write dependencies first; the previous JSON is never touched
  // if any image is missing or collides. The writable stream commits JSON last.
@@ -12219,54 +12262,153 @@ async function readRepositoryZip(file,progress=null) {
  if(progress)await progress(2,count,count);
  return {raw,readImage:async name=>{const source=entries.get('Image/'+name);if(!source)fail('تصویر وابسته در ZIP موجود نیست: '+name);return source;}};
 }
-async function v277RollbackZip(journal){
- if(!journal.written)return;
- const current=await findFile(journal.dir,'project.json');
- if(!current||await (await current.getFile()).text()!==journal.newText)fail('فایل روی دیسک تغییر کرده؛ بازیابی خودکار انجام نشد.');
- if(journal.previousText===null)await journal.dir.removeEntry('project.json');
- else{
-  await writeHandle(current,journal.previousText);
-  if(await (await current.getFile()).text()!==journal.previousText)fail('بازخوانی فایل قبلی ناموفق بود.');
- }
- journal.written=false;
-}
 async function importRepositoryZip(file,owner,root,progress=null){
- if(progress)await progress(1);
- const zip=await readRepositoryZip(file,progress);
- if(progress)await progress(3);
- const hydrated=await hydrate(zip.raw,zip.readImage,decodeImage,progress);
- if(!root)fail('پوشه اصلی نرم‌افزار انتخاب نشده است.');
- // Validate the target and resolve the empty-name case before disk writes.
- if(progress)await progress(4);
- const plan=v277PrepareOpen(hydrated.payload,owner);
- if(!plan)return false;
- if(progress)await progress(5);
- const packed=await pack(hydrated.payload,hydrated.originals,digest,null,progress);
- const folder=safeFolder(hydrated.payload.project.name),journal={written:false};
- if(!v277PlanCurrent(plan))fail('پروژه هنگام ورود تغییر کرد؛ دوباره اقدام کنید.');
- try{
-  if(progress)await progress(6);
-  if(!await saveToRoot(root,folder,packed,{duplicate:plan.duplicate,journal,plan,progress}))return false;
-  if(progress)await progress(7);
-  const imported=await v277CommitOpen(plan);
-  if(imported!==true){await v277RollbackZip(journal);return false;}
- }catch(e){
-  if(!plan.committed){
-   if(progress&&journal.written)await progress(7,null,null,'در حال بازگرداندن فایل قبلی پس از خطا');
-   try{await v277RollbackZip(journal);}
-   catch(restore){fail(String(e?.message||e)+'؛ بازیابی فایل دیسک تأیید نشد: '+String(restore?.message||restore));}
+ return vPb03Exclusive(async()=>{
+  await vPb03AssertClear();
+  if(progress)await progress(1);
+  const zip=await readRepositoryZip(file,progress);
+  if(progress)await progress(3);
+  const hydrated=await hydrate(zip.raw,zip.readImage,decodeImage,progress);
+  if(!root)fail('پوشه اصلی نرم‌افزار انتخاب نشده است.');
+  if(progress)await progress(4);
+  const plan=v277PrepareOpen(hydrated.payload,owner);
+  if(!plan)return false;
+  if(progress)await progress(5);
+  const packed=await pack(hydrated.payload,hydrated.originals,digest,null,progress);
+  const folder=safeFolder(hydrated.payload.project.name),journal={},disk={};
+  if(!v277PlanCurrent(plan))fail('پروژه هنگام ورود تغییر کرد؛ دوباره اقدام کنید.');
+  try{
+   if(progress)await progress(6);
+   if(!await saveToRoot(root,folder,packed,{duplicate:plan.duplicate,journal,disk,plan,progress}))return false;
+   if(progress)await progress(7);
+   await v277CommitOpen(plan,disk.entry.id);
+  }catch(e){
+   if(!disk.entry)throw e;
+   let committed;
+   try{committed=await vPb03Reconcile(disk.entry);}
+   catch(reconcile){fail(String(e.message||e)+'؛ ثبت بازیابی حفظ شد: '+String(reconcile.message||reconcile));}
+   if(!committed)throw e;
+   alert('ثبت ورود تأیید شد. در صورت نیاز فهرست پروژه‌ها را تازه‌سازی کنید.');
+   for(const [src,entry] of hydrated.originals)originalImages.set(src,entry);
+   return true;
   }
-  throw e;
- }
- for(const [src,entry] of hydrated.originals)originalImages.set(src,entry);
- return true;
+  // Receipt and readback carry the result even if the page closes here.
+  if(!await vPb03Reconcile(disk.entry))fail('ثبت قطعی ورود در مرورگر تأیید نشد.');
+  for(const [src,entry] of hydrated.originals)originalImages.set(src,entry);
+  return true;
+ });
 }
 // V271: keep the browser-granted repository directory handle outside
 // project data, so project switching, import and deletion cannot reset it.
 const v271RootDbName='nsp-portfolio-builder-local-settings';
 const v271RootKey='repository-root';
 let v271Root=null,v271RootPermission='unknown',v271RootError='',v271RootStored=false;
-function v271RootRecord(method,value){
+// PB-03: a strict durable before-record plus an atomic IndexedDB commit receipt.
+// Cross-origin applications and old versions must be closed during reconciliation.
+const vPb03JournalKey='cross-store-pending-v1';
+function vPb03Exclusive(action){
+ if(typeof navigator.locks?.request!=='function')fail('این مرورگر قفل مشترک لازم برای تغییر فایل پروژه را ندارد.');
+ return navigator.locks.request('nsp-project-disk-commit-v1',{mode:'exclusive',ifAvailable:true},lock=>{
+  if(!lock)fail('تغییر دیگری روی فایل پروژه در پنجرهٔ دیگر جاری است.');
+  return action();
+ });
+}
+async function vPb03AssertClear(){
+ if(await v271RootRecord('get',undefined,vPb03JournalKey))
+  fail('یک عملیات محلی ناتمام است. در «تنظیمات و داده‌ها» ابتدا بازیابی فایل پروژه را بررسی کنید.');
+}
+async function vPb03Prepare(kind,root,dir,folder,before,after){
+ const baseRevision=window.V13.workspaceRevision;
+ if(!Number.isSafeInteger(baseRevision)||baseRevision<1)fail('ابتدا پروژه را در پایگاه مرورگر ثبت کنید.');
+ const entry={version:1,id:uid(),kind,root,dir,folder,before,after,baseRevision,preparedAt:new Date().toISOString()};
+ if([before,after].some(text=>text!=null&&new Blob([text]).size>80*1024*1024))
+  fail('ثبت نسخهٔ بازیابی عملیات فایل بیش از حد مجاز است؛ هیچ فایل پروژه تغییر نکرد.');
+ await v271RootRecord('add',entry,vPb03JournalKey);
+ return entry;
+}
+function vPb03RecoveryDecision(entry,committed,current){
+ const wanted=committed?entry.after:entry.before;
+ const alternative=committed?entry.before:entry.after;
+ if(current===wanted)return {action:'accept',wanted};
+ if(current!==alternative)return {action:'manual',wanted};
+ return {action:wanted===null?'remove':'write',wanted};
+}
+async function vPb03ReadText(handle){
+ if(!handle)return null;
+ const file=await handle.getFile();
+ if(file.size>80*1024*1024)fail('فایل فعلی بیش از حد مجاز برای تطبیق است؛ بازنویسی نشد.');
+ return file.text();
+}
+async function vPb03Reconcile(entry,renew=false){
+ if(entry?.version!==1||typeof entry.id!=='string'||!entry.id||
+    !['import','delete'].includes(entry.kind)||typeof entry.folder!=='string'||
+    !Number.isSafeInteger(entry.baseRevision)||entry.baseRevision<1||
+    (entry.before!==null&&typeof entry.before!=='string')||
+    (entry.after!==null&&typeof entry.after!=='string')||
+    !entry.root?.getDirectoryHandle||!entry.dir?.isSameEntry ||
+    (entry.kind==='import'?entry.after===null:entry.before===null||entry.after!==null))
+  fail('ثبت عملیات ناتمام معتبر نیست؛ هیچ فایلی تغییر نکرد.');
+ if(await entry.root.queryPermission({mode:'readwrite'})!=='granted'){
+  if(!renew||await entry.root.requestPermission({mode:'readwrite'})!=='granted')
+   fail('مجوز ریشهٔ ذخیره‌شده برای بازیابی در دسترس نیست.');
+ }
+ const parent=await entry.root.getDirectoryHandle('project file',{create:false});
+ const dir=await parent.getDirectoryHandle(entry.folder,{create:false});
+ if(!await dir.isSameEntry(entry.dir))fail('پوشهٔ پروژه دیگر همان پوشهٔ ثبت‌شده نیست؛ هیچ فایلی تغییر نکرد.');
+ const committed=await window.V13.diskWorkspaceReceipt(entry.id,entry.baseRevision);
+ const current=await findFile(dir,'project.json');
+ const currentText=await vPb03ReadText(current);
+ const transition=vPb03RecoveryDecision(entry,committed,currentText);
+ if(transition.action==='manual')fail('فایل پروژه از زمان ثبت عملیات تغییر کرده است. هیچ فایلی تغییر نکرد؛ نسخهٔ بازیابی را در تنظیمات دریافت کنید.');
+ if(transition.action==='remove'){
+  const fresh=await findFile(dir,'project.json');
+  if(!fresh||!await fresh.isSameEntry(current)||await vPb03ReadText(fresh)!==currentText)
+   fail('فایل پیش از بازیابی تغییر کرد.');
+  await dir.removeEntry('project.json');
+ }else if(transition.action==='write'){
+  const fresh=await findFile(dir,'project.json');
+  if(current?(!fresh||!await fresh.isSameEntry(current)||await vPb03ReadText(fresh)!==currentText):!!fresh)
+   fail('فایل پیش از بازیابی تغییر کرد.');
+  const out=fresh||await dir.getFileHandle('project.json',{create:true});
+  if(!fresh&&(await out.getFile()).size!==0)fail('فایل در همین فاصله ایجاد شده است.');
+  await writeHandle(out,transition.wanted);
+ }
+ const readback=await findFile(dir,'project.json');
+ if(await vPb03ReadText(readback)!==transition.wanted)
+  fail('بازخوانی فایل پس از بازیابی تأیید نشد.');
+ // Never remove Image objects; they are global and may already be in use.
+ await v271RootRecord('delete',undefined,vPb03JournalKey);
+ return committed;
+}
+async function vPb03Recover(){
+ if(busy)return;
+ busy=true;
+ try{
+  await vPb03Exclusive(async()=>{
+   const entry=await v271RootRecord('get',undefined,vPb03JournalKey);
+   if(!entry){alert('عملیات فایل ناتمام ثبت نشده است.');return;}
+   if(!confirm('وضعیت فایل پروژه با ثبت قطعی مرورگر تطبیق داده شود؟ در صورت تغییر مستقل فایل، بازنویسی انجام نمی‌شود.'))return;
+   const committed=await vPb03Reconcile(entry,true);
+   alert(committed?'نسخهٔ قطعی عملیات روی دیسک تأیید شد.':'نسخهٔ قبل از عملیات روی دیسک تأیید شد. تصاویر مشترک حذف نشدند.');
+  });
+ }catch(e){alert('بازیابی فایل تأیید نشد؛ ثبت بازیابی حفظ شد. '+String(e.message||e));}
+ finally{busy=false;}
+}
+async function vPb03DownloadRecovery(){
+ try{
+  const entry=await v271RootRecord('get',undefined,vPb03JournalKey);
+  if(!entry)return alert('نسخهٔ بازیابی فایل ثبت نشده است.');
+  if(!confirm('این خروجی می‌تواند هر دو نسخهٔ خصوصی فایل پروژه را داشته باشد. برای بررسی دستی دریافت شود؟'))return;
+  const data={kind:'NSP_DISK_RECOVERY_EVIDENCE_NOT_PROJECT_BACKUP',operation:entry.kind,
+   folder:entry.folder,preparedAt:entry.preparedAt,before:entry.before,after:entry.after};
+  v111BackupJSON(data,'NSP_Disk_Recovery.json');
+ }catch(e){alert('خروجی بازیابی انجام نشد. '+String(e.message||e));}
+}
+window.V13.requireNoPendingDiskOperation=vPb03AssertClear;
+window.vPb03Recover=vPb03Recover;
+window.vPb03DownloadRecovery=vPb03DownloadRecovery;
+
+function v271RootRecord(method,value,key=v271RootKey){
  return new Promise((resolve,reject)=>{
   const req=indexedDB.open(v271RootDbName,1);
   req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains('settings'))req.result.createObjectStore('settings');};
@@ -12276,9 +12418,11 @@ function v271RootRecord(method,value){
    const db=req.result;
    let tx,op,result;
    try{
-    tx=db.transaction('settings',method==='get'?'readonly':'readwrite');
+    const durable=method!=='get'&&key===vPb03JournalKey;
+    tx=durable?db.transaction('settings','readwrite',{durability:'strict'}):
+     db.transaction('settings',method==='get'?'readonly':'readwrite');
     const store=tx.objectStore('settings');
-    op=method==='put'?store.put(value,v271RootKey):method==='delete'?store.delete(v271RootKey):store.get(v271RootKey);
+    op=method==='add'?store.add(value,key):method==='put'?store.put(value,key):method==='delete'?store.delete(key):store.get(key);
    }catch(e){db.close();reject(e);return;}
    op.onsuccess=()=>{result=op.result;};
    tx.oncomplete=()=>{db.close();resolve(result);};
@@ -12386,18 +12530,6 @@ async function v276FindDiskProject(root,project,all){
 function v276ProjectStamp(p){
  return JSON.stringify({name:p.name,portfolios:p.data.portfolios||[],images:p.data.imageLibrary||[],albums:p.data.imageAlbums||[],components:p.data.customComponents||[]});
 }
-async function v276RestoreDisk(plan){
- // Never overwrite a file recreated or changed by another process.
- const existing=await findFile(plan.dir,'project.json');
- if(existing){
-  if(await (await existing.getFile()).text()===plan.text)return;
-  fail('فایل دیگری در مسیر پروژه ایجاد شده است؛ بازنویسی نشد.');
- }
- const file=await plan.dir.getFileHandle('project.json',{create:true});
- if((await file.getFile()).size!==0)fail('فایل پروژه در همین فاصله ایجاد شده است؛ بازنویسی نشد.');
- await writeHandle(file,plan.text);
- if(await (await file.getFile()).text()!==plan.text)fail('بازخوانی فایل بازیابی‌شده ناموفق بود.');
-}
 async function v276DeleteManagedProject(id){
  if(busy||!v76ValidateCanSwitch())return false;
  const V=window.V13;
@@ -12409,8 +12541,9 @@ async function v276DeleteManagedProject(id){
   const current=v76ListProjects().find(p=>p.id===id);
   return state===owner&&!!current&&v276ProjectStamp(current)===stamp&&!V.persistencePending&&!V.saveError&&!V.saveBlocked;
  };
- busy=true;let plan=null,removed=false,registryCommitted=false;
+ busy=true;let plan=null,journal=null;
  try{
+  await vPb03AssertClear();
   await v271RootReady;
   if(!v271Root){
    alert('ابتدا پوشه اصلی ذخیره پروژه‌ها را از تنظیمات و داده‌ها تعیین کنید؛ برای حذف کامل باید فایل روی دیسک بررسی شود.');
@@ -12430,13 +12563,19 @@ async function v276DeleteManagedProject(id){
    if(!fresh||!await fresh.isSameEntry(plan.file)||await (await fresh.getFile()).text()!==plan.text)
     fail('فایل پروژه پس از بررسی تغییر کرده است؛ حذف متوقف شد.');
    if(!unchanged())fail('پروژه تغییر کرده است؛ حذف متوقف شد.');
+   journal=await vPb03Prepare('delete',root,plan.dir,plan.name,plan.text,null);
+   const checked=await findFile(plan.dir,'project.json');
+   if(!unchanged()||!checked||!await checked.isSameEntry(fresh)||(await (await checked.getFile()).text())!==plan.text)
+    fail('فایل یا پروژه پیش از حذف تغییر کرد.');
    await plan.dir.removeEntry('project.json');
-   removed=true;
    if(await findFile(plan.dir,'project.json'))fail('حذف فایل در دیسک تأیید نشد.');
   }
   if(!unchanged())fail('پروژه هنگام حذف تغییر کرده است.');
-  if(!await v276DeleteProjectRegistry(id))fail('حذف پروژه در پایگاه مرورگر تأیید نشد.');
-  registryCommitted=true;
+  if(!await v276DeleteProjectRegistry(id,journal?.id))fail('حذف پروژه در پایگاه مرورگر تأیید نشد.');
+  if(journal){
+   if(!await vPb03Reconcile(journal))fail('ثبت قطعی حذف در مرورگر تأیید نشد.');
+   journal=null;
+  }
   if(plan){
    // Clean up only an empty directory. Other files always remain untouched.
    try{
@@ -12449,14 +12588,19 @@ async function v276DeleteManagedProject(id){
   }
   return true;
  }catch(e){
-  if(removed&&!registryCommitted){
-   try{await v276RestoreDisk(plan);alert('حذف کامل انجام نشد؛ فایل روی دیسک بازیابی شد.\n'+String(e?.message||e));}
-   catch(restoreError){alert('حذف کامل تأیید نشد و بازیابی فایل نیز ناموفق بود. داده مرورگر را بررسی و خروجی بگیرید.\n'+String(restoreError?.message||restoreError));}
+  if(journal){
+   try{
+    if(await vPb03Reconcile(journal)){alert('حذف قطعی پروژه و وضعیت فایل تأیید شد.');return true;}
+    alert('حذف قطعی نشد؛ وضعیت فایل قبلی تأیید شد. '+String(e.message||e));
+   }catch(reconcile){alert('نتیجهٔ فایل قطعی نشد؛ ثبت بازیابی حفظ شد. '+String(reconcile.message||reconcile));}
   }else if(e?.name!=='AbortError')alert('حذف پروژه انجام نشد: '+String(e?.message||e));
   return false;
  }finally{busy=false;}
 }
-window.V13.deleteManagedProject=v276DeleteManagedProject;
+window.V13.deleteManagedProject=async id=>{
+ try{return await vPb03Exclusive(()=>v276DeleteManagedProject(id));}
+ catch(e){alert(String(e.message||e));return false;}
+};
 async function v271ChangeRoot(){
  if(busy)return;
  busy=true;
@@ -12475,7 +12619,7 @@ window.v271ChangeRoot=v271ChangeRoot;
 window.v271ForgetRoot=v271ForgetRoot;
 const v271OldSettingsView=settingsView;
 settingsView=function(){
- return v271OldSettingsView.apply(this,arguments)+'<div class="panel" id="v271-repository-root"><h3>پوشه اصلی ذخیره پروژه‌ها</h3><p class="muted">پوشه دارای index.html را یک بار تعیین کنید. هنگام ورود ZIP از همین پوشه استفاده می‌شود. اگر مرورگر مجوز را لغو کند، تأیید مجدد لازم است.</p><p role="status" data-v271-root-status>'+esc(v271RootStatus())+'</p><div class="toolbar"><button type="button" class="btn primary" onclick="v271ChangeRoot()">تعیین / تغییر پوشه اصلی</button><button type="button" class="btn" onclick="v271ForgetRoot()">حذف تنظیم پوشه</button></div></div>';
+ return v271OldSettingsView.apply(this,arguments)+'<div class="panel" id="v271-repository-root"><h3>پوشه اصلی ذخیره پروژه‌ها</h3><p class="muted">پوشه دارای index.html را یک بار تعیین کنید. هنگام ورود ZIP از همین پوشه استفاده می‌شود. اگر مرورگر مجوز را لغو کند، تأیید مجدد لازم است.</p><p role="status" data-v271-root-status>'+esc(v271RootStatus())+'</p><div class="toolbar"><button type="button" class="btn primary" onclick="v271ChangeRoot()">تعیین / تغییر پوشه اصلی</button><button type="button" class="btn" onclick="v271ForgetRoot()">حذف تنظیم پوشه</button><button type="button" class="btn" onclick="vPb03Recover()">بررسی و بازیابی فایل پروژه</button><button type="button" class="btn" onclick="vPb03DownloadRecovery()">دریافت نسخهٔ بازیابی</button></div></div>';
 };
 // V280: progress reports completed work, not an estimated timer.
 const v280ImportStages=['خواندن فایل ZIP','استخراج و بررسی صحت فایل‌ها','آماده‌سازی تصاویر','اعتبارسنجی پروژه و وابستگی‌ها','آماده‌سازی فایل‌های ذخیره','ذخیره و بازخوانی فایل‌ها روی دیسک','ثبت پروژه در پایگاه داده و بازگشت به لیست'];
