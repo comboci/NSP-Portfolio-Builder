@@ -1496,7 +1496,7 @@ function library(){
   ${workResearchMode==="companies"?`<label>جست‌وجوی شرکت یا سکشن <input type="search" placeholder="نام شرکت یا موضوع" oninput="workResearchFilter(this.value)"></label><div>${companyCards}</div>`:workResearchMode==="sections"?`<div>${sectionCards}</div>`:`<div id="work-feature-content">${workFeatureBrowser()}</div>`}
   </section>`;
 }
-function preview(){return `<h2 class="no-print">پیش‌نمایش کل سند</h2><div class="toolbar no-print"><button class="btn primary" onclick="window.print()">چاپ A4 / ذخیره PDF</button></div><div class="panel print-zone">${state.pages.map((p,i)=>paper(p,i+1)).join('')}</div>`}function printAll(){go('preview');setTimeout(()=>window.print(),250)}function v59ChangeTitle(value){const previousTitle=state.title;state.title=value;if(!save()){state.title=previousTitle;render();alert('تغییر عنوان سند ذخیره نشد؛ عنوان قبلی بازگردانده شد.');}}function settingsView(){return `<h2>تنظیمات و پشتیبان‌گیری</h2><div class="panel"><label>عنوان سند</label><input style="width:100%" value="${esc(state.title)}" onchange="v59ChangeTitle(this.value)"><div class="toolbar"><button class="btn primary" onclick="download()">دریافت فایل پروژه JSON</button><button class="btn danger" onclick="reset()">بازنشانی نسخه آزمایشی</button></div><p class="note">ذخیره خودکار فقط در مرورگر همین دستگاه انجام می‌شود. برای انتقال پروژه، خروجی JSON بگیرید. هیچ داده‌ای به سرور ارسال نمی‌شود.</p></div>`}async function download(){
+function preview(){return `<h2 class="no-print">پیش‌نمایش کل سند</h2><div class="toolbar no-print"><button class="btn primary" onclick="printAll()">چاپ A4 / ذخیره PDF</button></div><div class="panel print-zone">${state.pages.map((p,i)=>paper(p,i+1)).join('')}</div>`}function printAll(){alert('موتور بررسی چاپ هنوز آماده نیست.');return false;}function v59ChangeTitle(value){const previousTitle=state.title;state.title=value;if(!save()){state.title=previousTitle;render();alert('تغییر عنوان سند ذخیره نشد؛ عنوان قبلی بازگردانده شد.');}}function settingsView(){return `<h2>تنظیمات و پشتیبان‌گیری</h2><div class="panel"><label>عنوان سند</label><input style="width:100%" value="${esc(state.title)}" onchange="v59ChangeTitle(this.value)"><div class="toolbar"><button class="btn primary" onclick="download()">دریافت فایل پروژه JSON</button><button class="btn danger" onclick="reset()">بازنشانی نسخه آزمایشی</button></div><p class="note">ذخیره خودکار فقط در مرورگر همین دستگاه انجام می‌شود. برای انتقال پروژه، خروجی JSON بگیرید. هیچ داده‌ای به سرور ارسال نمی‌شود.</p></div>`}async function download(){
  v13SyncPages();
  try{
   return await v237SaveBackupJSON({app:'NSP Portfolio Builder',appVersion:window.V13.appVersion,
@@ -2872,25 +2872,12 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
   printAll = function (printSnapshot,pages=state.pages) {
     if (V.printPending) return false;
     if (!pages?.length) { alert('ابتدا یک صفحه به پورتفولیو اضافه کنید.'); return false; }
-    if (!printSnapshot) go('preview');
-    if (tab !== 'preview') return false;
+    if (!printSnapshot?.isConnected) return false;
     V.printPending = true;
-    var root = printSnapshot || document.querySelector('#app .print-zone');
-    var waits = [];
-    if (document.fonts && document.fonts.ready) waits.push(document.fonts.ready);
-    Array.prototype.forEach.call(root ? root.querySelectorAll('.v13-page-surface img') : [],function (img) {
-      if (img.complete) return;
-      waits.push(new Promise(function (resolve) {
-        img.addEventListener('load',resolve,{once:true});
-        img.addEventListener('error',resolve,{once:true});
-      }));
-    });
-    var timer, recoveryTimer, active = true, printInvoked = false, recoveryButton = null;
-    var timeout = new Promise(function (resolve) { timer = setTimeout(resolve,4000); });
+    var recoveryTimer, active = true, printInvoked = false, recoveryButton = null;
     var cleanup = function () {
       if (!active) return;
       active = false;
-      clearTimeout(timer);
       clearTimeout(recoveryTimer);
       recoveryButton?.remove();
       window.removeEventListener('afterprint',onAfterPrint);
@@ -2920,14 +2907,9 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
       };
       document.body.appendChild(recoveryButton);
     };
-    (root?root.querySelectorAll('svg image'):[]).forEach(node=>{const src=node.getAttribute('href');if(src)waits.push(new Promise(resolve=>{const image=new Image();image.onload=image.onerror=resolve;image.src=src;if(image.complete)resolve();}));});
-    Promise.race([Promise.all(waits),timeout]).catch(function () {}).then(function () {
-      clearTimeout(timer);
-      if (!active) return;
-      printInvoked = true;
-      recoveryTimer = setTimeout(offerRecovery,120000);
-      try { window.print(); } catch (error) { cleanup(); throw error; }
-    });
+    printInvoked = true;
+    recoveryTimer = setTimeout(offerRecovery,120000);
+    try { window.print(); } catch (error) { cleanup(); throw error; }
     return true;
   };
   toggleLock = function (kind) {
@@ -3237,7 +3219,7 @@ function v113SharpenDefs(e,id){
  const k=cap(e.sharpen,0,100)/100,kernel=[0,-k,0,-k,1+4*k,-k,0,-k,0].map(n=>Number(n.toFixed(3))).join(' ');
  return '<filter id="'+id+'" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB"><feConvolveMatrix order="3" kernelMatrix="'+kernel+'" divisor="1" edgeMode="duplicate" preserveAlpha="true"/></filter>';
 }
-function frame(o){const a=original(o.assetId),src=safe(a?.src||o.src||o.image||o.dataUrl),e=settings(o);const x=cap(e.cropX,0,99),y=cap(e.cropY,0,99),w=cap(e.cropW,1,100-x,100-x),ht=cap(e.cropH,1,100-y,100-y);let clip=maskShape(e);const sharpId=cap(e.sharpen,0,100)>0?'v113-sharp-'+uid():'';return '<div style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:'+cap(e.radius,0,500)+'px;clip-path:'+clip+'">'+(sharpId?'<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><defs>'+v113SharpenDefs(e,sharpId)+'</defs></svg>':'')+(src?'<div style="position:absolute;width:'+10000/w+'%;height:'+10000/ht+'%;left:'+(-x*100/w)+'%;top:'+(-y*100/ht)+'%"><img draggable="false" alt="'+html(o.alt||a?.name||'تصویر')+'" src="'+html(src)+'" style="display:block;width:100%;height:100%;object-fit:'+(['contain','cover','fill','none'].includes(o.objectFit)?o.objectFit:'contain')+';object-position:'+cap(e.x,0,100,50)+'% '+cap(e.y,0,100,50)+'%;transform:scale('+cap(e.zoom,1,8,1)+');filter:'+v113FilterCss(e,sharpId)+';"></div>':'<span class="v13-image-placeholder">تصویر انتخاب نشده</span>')+'</div>';}
+function frame(o){const a=original(o.assetId),src=safe(a?.src||o.src||o.image||o.dataUrl),e=settings(o);const x=cap(e.cropX,0,99),y=cap(e.cropY,0,99),w=cap(e.cropW,1,100-x,100-x),ht=cap(e.cropH,1,100-y,100-y);let clip=maskShape(e);const sharpId=cap(e.sharpen,0,100)>0?'v113-sharp-'+uid():'';return '<div style="position:relative;width:100%;height:100%;overflow:hidden;border-radius:'+cap(e.radius,0,500)+'px;clip-path:'+clip+'"'+(o.assetId&&!src?' data-print-missing-image="true"':'')+'>'+(sharpId?'<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><defs>'+v113SharpenDefs(e,sharpId)+'</defs></svg>':'')+(src?'<div style="position:absolute;width:'+10000/w+'%;height:'+10000/ht+'%;left:'+(-x*100/w)+'%;top:'+(-y*100/ht)+'%"><img draggable="false" alt="'+html(o.alt||a?.name||'تصویر')+'" src="'+html(src)+'" style="display:block;width:100%;height:100%;object-fit:'+(['contain','cover','fill','none'].includes(o.objectFit)?o.objectFit:'contain')+';object-position:'+cap(e.x,0,100,50)+'% '+cap(e.y,0,100,50)+'%;transform:scale('+cap(e.zoom,1,8,1)+');filter:'+v113FilterCss(e,sharpId)+';"></div>':'<span class="v13-image-placeholder">تصویر انتخاب نشده</span>')+'</div>';}
 const viewportFrame=frame;
 frame=function(o){const a=original(o.assetId),src=safe(a?.src||o.src||o.image||o.dataUrl);if(!src||!a?.width||!a?.height)return viewportFrame(o);const e=settings(o),x=cap(e.cropX,0,99),y=cap(e.cropY,0,99),w=cap(e.cropW,1,100-x,100-x),h=cap(e.cropH,1,100-y,100-y),cw=a.width*w/100,ch=a.height*h/100,clip='v72clip-'+uid(),shape=maskShape(e),fit=o.objectFit||'contain',align=(cap(e.x,0,100,50)<34?'xMin':cap(e.x,0,100,50)>66?'xMax':'xMid')+(cap(e.y,0,100,50)<34?'YMin':cap(e.y,0,100,50)>66?'YMax':'YMid'),aspect=fit==='fill'?'none':align+' '+(fit==='cover'?'slice':'meet');
 const sharpId=cap(e.sharpen,0,100)>0?'v113-sharp-'+uid():'';const bw=Math.max(1,Number(o.w)||220),bh=Math.max(1,Number(o.h)||150),scale=fit==='none'?1:fit==='cover'?Math.max(bw/cw,bh/ch):Math.min(bw/cw,bh/ch),sx=fit==='fill'?bw/cw:scale,sy=fit==='fill'?bh/ch:scale,dx=(bw-cw*sx)*cap(e.x,0,100,50)/100,dy=(bh-ch*sy)*cap(e.y,0,100,50)/100;
@@ -7080,16 +7062,83 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
    '<div id="v82-preflight-results" role="status"></div></section>';
   return setup+oldPreview();
  };
+ function createPrintSnapshot(pages,markup){
+  if(document.getElementById('v37-print-snapshot'))return null;
+  const root=document.createElement('div');
+  root.id='v37-print-snapshot';root.className='print-zone';
+  root.setAttribute('aria-hidden','true');root.inert=true;
+  root.innerHTML=markup??pages.map((page,index)=>V.renderDocument(page,index+1)).join('');
+  document.body.appendChild(root);
+  return root;
+ }
+ V.createPrintSnapshot=createPrintSnapshot;
+ async function waitForPrintAssets(root,timeoutMs=4000){
+  if(root.querySelector('[data-print-missing-image]'))throw Error('یک تصویر ثبت‌شده در خروجی پیدا نشد.');
+  let timer;
+  const controller=new AbortController();
+  function waitImage(img){
+   img.loading='eager';
+   const failure=()=>Error('یک تصویر چاپ بارگیری یا رمزگشایی نشد.');
+   const assertReady=()=>{if(!img.complete||img.naturalWidth<=0)throw failure();};
+   if(typeof img.decode==='function')return img.decode().then(assertReady,()=>{throw failure();});
+   if(img.complete)return Promise.resolve().then(assertReady);
+   return new Promise((resolve,reject)=>{
+    img.addEventListener('load',()=>{try{assertReady();resolve();}catch(error){reject(error);}},{once:true,signal:controller.signal});
+    img.addEventListener('error',()=>reject(failure()),{once:true,signal:controller.signal});
+   });
+  }
+  const waits=[document.fonts?.ready||Promise.resolve(),...Array.from(root.querySelectorAll('img'),waitImage)];
+  root.querySelectorAll('svg image').forEach(node=>{
+   const src=node.getAttribute('href')||node.getAttribute('xlink:href');
+   if(!src){waits.push(Promise.reject(Error('برای یک تصویر SVG منبعی ثبت نشده است.')));return;}
+   const img=new Image();img.src=src;waits.push(waitImage(img));
+  });
+  try{
+   await Promise.race([Promise.all(waits),new Promise((_,reject)=>{
+    timer=setTimeout(()=>reject(Error('آماده‌شدن فونت یا تصویر در مهلت چاپ تأیید نشد.')),timeoutMs);
+   })]);
+  }finally{clearTimeout(timer);controller.abort();}
+ }
+ V.waitForPrintAssets=waitForPrintAssets;
  const oldPrintAll=printAll;
- printAll=async function(snapshot,pages=state.pages){
-  if(!snapshot&&tab!=='preview'&&(await go('preview')===false||tab!=='preview'))return false;
-  const issues=collectIssues(snapshot||document.querySelector('#app .print-zone'),pages);
-  renderReport(issues);
-  const errors=issues.filter(i=>i.severity==='error'),warnings=issues.length-errors.length;
-  if(errors.length){alert('چاپ متوقف شد: '+errors.length+' خطا در پیش‌بررسی وجود دارد. از فهرست خطاها، عناصر را باز کنید.');return false;}
-  if(warnings&&!confirm(warnings+' هشدار حاشیهٔ امن یا کیفیت تصویر شناسایی شد. با این وضعیت چاپ ادامه پیدا کند؟'))return false;
-  refreshPrintFormat();
-  return oldPrintAll(snapshot,pages);
+ printAll=async function(snapshot,pages=state.pages,{stillCurrent=()=>true}={}){
+  if(V.printPending||V.printCheckPending)return false;
+  let started=false;
+  V.printCheckPending=true;
+  try{
+   if(!snapshot&&tab!=='preview'&&(await go('preview')===false||tab!=='preview'))return false;
+   if(!stillCurrent())return false;
+   if(!snapshot){
+    pages=v13Copy(pages||[]);
+    if(!pages.length){alert('ابتدا یک صفحه به پورتفولیو اضافه کنید.');return false;}
+    snapshot=createPrintSnapshot(pages);
+   }
+   if(!snapshot?.isConnected||!pages?.length)return false;
+   snapshot.dataset.printMeasure='true';
+   // Require every resolved visual asset before reviewing and emitting one frozen copy.
+   await waitForPrintAssets(snapshot);
+   if(!stillCurrent()||!snapshot.isConnected)return false;
+   const issues=collectIssues(snapshot,pages);
+   renderReport(issues);
+   const errors=issues.filter(i=>i.severity==='error'),warnings=issues.length-errors.length;
+   if(errors.length){alert('چاپ متوقف شد: '+errors.length+' خطا در پیش‌بررسی وجود دارد. '+errors[0].message);return false;}
+   if(warnings&&!confirm(warnings+' هشدار حاشیهٔ امن یا کیفیت تصویر شناسایی شد. با این وضعیت چاپ ادامه پیدا کند؟'))return false;
+   if(!stillCurrent()||!snapshot.isConnected)return false;
+   delete snapshot.dataset.printMeasure;
+   refreshPrintFormat();
+   document.body.classList.add('v37-print-active');
+   started=oldPrintAll(snapshot,pages);
+   return started;
+  }catch(error){
+   if(stillCurrent())alert('چاپ متوقف شد؛ خروجی کامل تأیید نشد. '+String(error?.message||error));
+   return false;
+  }finally{
+   V.printCheckPending=false;
+   if(!started&&snapshot){
+    snapshot.remove();
+    if(!V.printPending)document.body.classList.remove('v37-print-active');
+   }
+  }
  };
  const oldRender=render;
  render=function(){refreshPrintFormat();return oldRender.apply(this,arguments);};
@@ -7209,23 +7258,18 @@ window.v30PrintPortfolio=async function(id){
  if(await go('preview')===false||tab!=='preview'||owner!==state)return false;
  if(window.V13.printPending||document.getElementById('v37-print-snapshot'))return false;
  const pages=v13Copy(chosen.pages);
- const snapshot=document.createElement('div');
- snapshot.id='v37-print-snapshot';
- snapshot.className='print-zone';
- snapshot.innerHTML=pages.map((page,index)=>paper(page,index+1)).join('');
- document.body.appendChild(snapshot);
- document.body.classList.add('v37-print-active');
- let started=false;
- try{started=await printAll(snapshot,pages);return started;}
- finally{
-  if(!started){snapshot.remove();document.body.classList.remove('v37-print-active');}
- }
+ const snapshot=window.V13.createPrintSnapshot(pages);
+ if(!snapshot)return false;
+ return printAll(snapshot,pages,{stillCurrent:()=>owner===state&&tab==='preview'});
 };
 })();
 </script>
 
 <!-- Version 37: isolated print snapshot survives application rerenders -->
-<style id="v37-print-isolation">#v37-print-snapshot{display:none}@media print{body.v37-print-active .shell{display:none!important}body.v37-print-active #v37-print-snapshot{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}#v37-print-snapshot .v13-page-surface{break-inside:avoid}}</style>
+<style id="v37-print-isolation">#v37-print-snapshot{display:none}
+#v37-print-snapshot[data-print-measure]{display:block;position:fixed;top:0;left:-100000px;visibility:hidden;pointer-events:none}
+@media print{body.v37-print-active>.v222-print-root,body.v37-print-active>#v225-portfolio-preview{display:none!important}}
+@media print{body.v37-print-active .shell{display:none!important}body.v37-print-active #v37-print-snapshot{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}#v37-print-snapshot .v13-page-surface{break-inside:avoid}}</style>
 <!-- Version 32: independent section pages view and floating export menus -->
 <style id="v31-fixes">
 .v31-pages-view .v28-toolbar{margin:12px 0 16px}
@@ -10601,10 +10645,10 @@ function componentFromSelection(list,name){
    document.body.classList.toggle('v284-hide-rulers',!V.rulersVisible);
    addRulerToggle(); // No render(), project mutation or page save.
  });
- let previewRoot=null,closing=false;
+ let previewRoot=null,previewSnapshot=null,closing=false;
  function closePreview(){
    if(!previewRoot)return;
-   previewRoot.remove();previewRoot=null;
+   previewRoot.remove();previewRoot=null;previewSnapshot=null;
    document.body.classList.remove('v222-design-print');
  }
  function design(){
@@ -10616,9 +10660,10 @@ function componentFromSelection(list,name){
    const model=design();
    if(!model){alert('ابتدا یک صفحه یا قالب را در طراح باز کنید.');return null;}
    const portfolio=V.pageEditScope==='project'?(state.portfolios||[]).find(p=>p.id===state.activePortfolioId):null;
-   const pages=portfolio?(portfolio.pages||[]):[model];
+   const pages=v13Copy(portfolio?(portfolio.pages||[]):[model]);
    if(!pages.length){alert('پورتفولیو صفحه‌ای برای پیش‌نمایش ندارد.');return null;}
    closePreview();
+   const markup=pages.map((page,index)=>V.renderDocument(page,index+1)).join('');
    const root=document.createElement('div');
    root.className='v222-print-root';root.id='v222-print-root';
    root.setAttribute('role','dialog');root.setAttribute('aria-modal','true');root.setAttribute('aria-label','پیش‌نمایش چاپ');
@@ -10626,8 +10671,9 @@ function componentFromSelection(list,name){
      '<strong>پیش‌نمایش PDF — '+esc(portfolio?.name||model.title||model.name||'صفحه طراحی')+' ('+pages.length+' صفحه)</strong>'+
      '<div class="v222-print-actions"><button class="btn primary" type="button" data-v222-print-from-preview>چاپ / PDF</button>'+
      '<button class="btn" type="button" data-v222-close-preview>بستن ×</button></div></div>'+
-     '<div class="v222-print-content">'+pages.map((page,index)=>V.renderDocument(page,index+1)).join('')+'</div>';
+     '<div class="v222-print-content">'+markup+'</div>';
    document.body.appendChild(root);previewRoot=root;
+   previewSnapshot={owner:state,pages,markup};
    root.querySelector('[data-v222-close-preview]')?.focus({preventScroll:true});
    return root;
  }
@@ -10638,17 +10684,14 @@ function componentFromSelection(list,name){
    closing=true;
    const printButton=root.querySelector('[data-v222-print-from-preview]');
    if(printButton)printButton.disabled=true;
-   let timer;
    try{
-    const waits=[document.fonts?.ready||Promise.resolve(),...Array.from(root.querySelectorAll('img')).map(img=>typeof img.decode==='function'?img.decode():Promise.resolve())];
-    await Promise.race([Promise.allSettled(waits),new Promise(resolve=>{timer=setTimeout(resolve,4000);})]);
-    if(previewRoot!==root||!root.isConnected)return;
-    document.body.classList.add('v222-design-print');
-    window.print();
-   }catch(error){document.body.classList.remove('v222-design-print');alert('بازکردن پنجره چاپ انجام نشد: '+String(error));}
-   finally{clearTimeout(timer);closing=false;if(printButton)printButton.disabled=false;}
+    const frozen=previewSnapshot;
+    if(!frozen||frozen.owner!==state)return;
+    const stillCurrent=()=>previewRoot===root&&previewSnapshot===frozen&&frozen.owner===state&&root.isConnected;
+    const snapshot=V.createPrintSnapshot(frozen.pages,frozen.markup);
+    if(snapshot)await printAll(snapshot,frozen.pages,{stillCurrent});
+   }finally{closing=false;if(printButton)printButton.disabled=false;}
  }
- window.addEventListener('afterprint',()=>{document.body.classList.remove('v222-design-print');});
  document.addEventListener('click',e=>{
    const button=e.target.closest('[data-v222-print-preview],[data-v222-print-direct],[data-v222-print-from-preview],[data-v222-close-preview]');
    if(!button)return;
@@ -10658,7 +10701,7 @@ function componentFromSelection(list,name){
    printCurrent();
  },true);
  document.addEventListener('keydown',e=>{
-   if(e.key==='Escape'&&previewRoot&&!document.body.classList.contains('v222-design-print'))closePreview();
+   if(e.key==='Escape'&&previewRoot&&!V.printPending)closePreview();
  },true);
  const beforeRender=render;
  render=function(){
@@ -10997,9 +11040,9 @@ body.v225-preview-open{overflow:hidden}
   const menus=document.querySelectorAll('.v223-pf-tools[open]');
   if(menus.length){menus.forEach(menu=>menu.open=false);event.preventDefault();}
  },true);
- let root=null;
+ let root=null,frozenPages=null;
  window.v225ClosePortfolioPreview=function(){
-  if(root){root.remove();root=null;}
+  if(root){root.remove();root=null;frozenPages=null;}
   document.body.classList.remove('v225-preview-open','v225-printing');
   go('v76projects');
  };
@@ -11013,7 +11056,7 @@ body.v225-preview-open{overflow:hidden}
   if(!Array.isArray(portfolio.pages)||!portfolio.pages.length)return alert('این پورتفولیو هنوز صفحه‌ای برای پیش‌نمایش ندارد.');
   if(root)window.v225ClosePortfolioPreview();
   await go('v76projects');
-  const pages=v13Copy(portfolio.pages);
+  const pages=v13Copy(portfolio.pages);frozenPages=pages;
   const output=pages.map((p,i)=>'<section class="v225-preview-paper" aria-label="صفحه '+(i+1)+'">'+paper(p,i+1)+'</section>').join('');
   if(!output.trim())return alert('صفحات پورتفولیو برای پیش‌نمایش رندر نشدند.');
   root=document.createElement('section');root.id='v225-portfolio-preview';root.setAttribute('role','dialog');
@@ -11031,8 +11074,11 @@ body.v225-preview-open{overflow:hidden}
   if(!button)return;
   event.preventDefault();
   if(button.hasAttribute('data-v225-cancel')){window.v225ClosePortfolioPreview();return;}
-  document.body.classList.add('v225-printing');
-  try{window.print();}catch(error){document.body.classList.remove('v225-printing');alert('چاپ انجام نشد: '+String(error));}
+  const V=window.V13,origin=root,pages=frozenPages,owner=state;
+  if(!pages||V.printPending||V.printCheckPending)return;
+  const markup=Array.from(origin.querySelectorAll('.v225-preview-paper')).map(el=>el.innerHTML).join('');
+  const snapshot=V.createPrintSnapshot(pages,markup);
+  if(snapshot)void printAll(snapshot,pages,{stillCurrent:()=>root===origin&&state===owner&&origin.isConnected});
  },true);
  window.addEventListener('afterprint',()=>document.body.classList.remove('v225-printing'));
  document.addEventListener('keydown',e=>{
