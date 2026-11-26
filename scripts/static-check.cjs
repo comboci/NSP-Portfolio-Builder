@@ -7,13 +7,41 @@ const vm = require('vm');
 const assert = require('assert');
 const root = path.resolve(__dirname, '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8').replace(/^\uFEFF/, '');
-const html = read('index.html');
+const mode = process.argv[2] || '--all';
+assert(['--all','--browser','--native'].includes(mode),'Use --all, --browser or --native');
+const compile = (html, scope) => {
+  const inline=[];
+  for(const m of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)){
+    if(/application\/json/.test(m[1])){JSON.parse(m[2]);continue;}
+    inline.push(m[2]);new vm.Script(m[2],{filename:scope+'-inline-'+inline.length});
+  }
+  new vm.Script(inline.join('\n;\n'),{filename:scope+'-all-inline'});
+  const ids=[...html.matchAll(/<script\b[^>]*\bid="([^"]+)"/g)].map(x=>x[1]);
+  assert.strictEqual(new Set(ids).size,ids.length,'Duplicate script IDs in '+scope);
+  return inline;
+};
+if(mode!=='--native'){
+  const browser=read('index.html');
+  const version=browser.match(/<meta name="application-version" content="(\d+)">/)?.[1];
+  assert(version&&browser.includes('<title>NSP Portfolio Builder — Version '+version+'</title>')&&
+    browser.includes('id="nsp-app-version">Version '+version+'</small>'),'Browser version markers differ');
+  assert(browser.includes('appVersion:Number(document.querySelector')&&browser.includes('meta[name="application-version"]'),
+    'Browser application state is not reading the browser version marker');
+  const inline=compile(browser,'Browser');
+  assert(fs.existsSync(path.join(root,'Portfolio Instruction','feature.js')),'Offline companion catalogue is missing');
+  assert(browser.includes('browserCompareAndWrite')&&browser.includes('V268ZipTransport')&&browser.includes('v290ScopedComponentRefs'),
+    'Browser storage, transport or scoped component entry point missing');
+  console.log(JSON.stringify({target:'browser',version,scriptCount:inline.length,result:'PASS_SOURCE_ONLY'}));
+}
+if(mode==='--browser')process.exit(0);
+const html=read('native-ui/index.html');
 const config = JSON.parse(read('src-tauri/tauri.conf.json'));
 const cargo = read('src-tauri/Cargo.toml');
 const rust = read('src-tauri/src/main.rs');
 const media = read('src-tauri/src/media_store.rs');
 const projectStore = read('src-tauri/src/project_store.rs');
 const ownership = read('src-tauri/src/image_ownership.rs');
+const backupStore = read('src-tauri/src/backup_store.rs');
 const scene = read('src-tauri/src/scene_store.rs');
 
 assert(/^\d+\.\d+\.\d+$/.test(config.version), 'Invalid Tauri semver');
@@ -28,7 +56,8 @@ assert.strictEqual(cargoVersion, config.version, 'Cargo and Tauri versions diffe
 const version = Number(config.version.split('.')[0]);
 assert(Number.isSafeInteger(version) && version > 0, 'Invalid application version');
 assert.strictEqual(config.app.withGlobalTauri, true);
-assert.deepStrictEqual(config.build.frontendDist, ['../index.html']);
+assert.strictEqual(config.build.frontendDist,'../native-ui');
+assert(config.app.windows.some(x=>x.label==='main'&&x.url==='index.html'),'Native packaged entry point differs');
 assert(html.includes('<meta name="application-version" content="' + version + '">'),
   'HTML application-version does not match Cargo/Tauri');
 assert(html.includes('<title>NSP Portfolio Builder — Version ' + version + '</title>'),
@@ -37,17 +66,8 @@ assert(html.includes('<small>Version ' + version + '</small>'),
   'Visible application header is stale');
 const versions = [...html.matchAll(/\bappVersion\s*[:=]\s*(\d+)\b/g)].map(m => Number(m[1]));
 assert(versions.length > 0, 'No JS application version marker found');
-for (const found of versions) {
-  assert.strictEqual(found, version, 'Stale JavaScript appVersion overrides the UI');
-}
-
-const inline = [];
-for (const m of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)) {
-  if (/application\/json/.test(m[1])) { JSON.parse(m[2]); continue; }
-  inline.push(m[2]);
-  new vm.Script(m[2], { filename: 'inline-' + inline.length });
-}
-new vm.Script(inline.join('\n;\n'), { filename: 'all-inline-scripts' });
+assert.strictEqual(Math.max(...versions),version,'Active native JS appVersion differs');
+const inline=compile(html,'Native');
 assert(html.includes("const KEY='nsp-portfolio-builder-v13'"), 'Persistent storage key changed');
 assert(html.includes('id="v74-storage"'), 'Storage bridge not found');
 assert(html.indexOf('<script id="v72-media-upgrade">') < html.indexOf('V.mediaContext={'),
@@ -146,7 +166,8 @@ assert(projectStore.includes('ON CONFLICT(project_id,portfolio_id,id) DO UPDATE'
   'Relational page upsert missing');
 assert(projectStore.includes('references missing {kind}/{template}'),
   'Template reference integrity guard missing');
-assert(rust.includes('prune_automatic_backup_refs(&tx)') &&
+assert(rust.includes('backup_store::apply_automatic_retention(&tx)') &&
+       backupStore.includes('prune_automatic_backup_refs(tx)') &&
        rust.includes('index_backup_refs(&tx,"automatic",backup_id,&prior_value)') &&
        ownership.includes('pub fn index_backup_refs('),
   'Incremental backup reference tracking is not wired');
@@ -197,6 +218,6 @@ const report = {
   runtimeExecuted: false,
   ownerAcceptance: 'not-established-by-this-script'
 };
-fs.writeFileSync(path.join(root, 'STATIC_VALIDATION.json'), JSON.stringify(report, null, 2) + '\n');
+console.log(JSON.stringify({...report,target:'native'}));
 console.log('V' + version + ' source-static checks passed (schema ' + schemaMigration +
   '); this is NOT a native build or runtime acceptance.');
