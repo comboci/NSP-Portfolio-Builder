@@ -673,7 +673,7 @@ function v13NormalizeProject(input){
  s.pages=s.portfolios.find(p=>p.id===s.activePortfolioId)?.pages||[];s.title=v13Text(s.title,'پورتفولیوی NSP','عنوان پروژه');s.schemaVersion=2;
  const imageIds=new Set((s.imageLibrary||[]).concat(s.globalImageLibrary||[]).map(a=>a.id));
  function checkImages(value){if(!value||typeof value!=='object')return;if(value.assetId&&!imageIds.has(value.assetId))throw Error('تصویر ارجاع‌شده در کتابخانه موجود نیست: '+value.assetId);if(value.tilesJson){const t=JSON.parse(value.tilesJson);for(const cell of [...(t.cells||[]),...Object.values(t.stash||{})]){const id=typeof cell==='string'?cell:cell?.assetId;if(id&&!imageIds.has(id))throw Error('تصویر Tile در کتابخانه موجود نیست: '+id);}}for(const [key,item] of Object.entries(value))if(!['imageLibrary','globalImageLibrary','projectWorkspaces','globalTemplates','templates'].includes(key))checkImages(item);}
- checkImages(s);return s;
+ checkImages(s);window.V13.nsp?.validate?.(s);return s;
 }
 function isIndependentPage(p){return p?.designMode==='independent';}
 let state=v13NormalizeProject(initialProjectData());let tab='dashboard';let selected=state.pages[0]?.id;
@@ -2794,7 +2794,7 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
       var v98AxisHandles=Math.abs(number(o.rotation,0)%360)<0.00001&&o.flipH!==true&&o.flipV!==true;
       if (type === 'image') {
         styles+='overflow:hidden;';
-        content=V.media?V.media.markup(o):'';if(selected&&editable&&!o.locked&&opts.showHandles&&selectedTokens.size<=1&&v98AxisHandles)content+=V.media?.controls?.(o)||'';
+        content=V.media?V.media.markup(V.nsp?.resolveImage(o,opts.nspScope)||o):'';if(selected&&editable&&!o.locked&&opts.showHandles&&selectedTokens.size<=1&&v98AxisHandles)content+=V.media?.controls?.(o)||'';
       }
       if (selected && !o.locked && opts.showHandles && selectedTokens.size<=1&&v98AxisHandles) {
         [['nw','بالا چپ'],['n','بالا'],['ne','بالا راست'],['e','راست'],['se','پایین راست'],['s','پایین'],['sw','پایین چپ'],['w','چپ']].forEach(function (handle) {
@@ -2812,7 +2812,7 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
     var width = number(resolved.width,size.width), height = number(resolved.height,size.height);
     var printScale = Math.min(size.widthMm * 96 / 25.4 / width,size.heightMm * 96 / 25.4 / height);
     var objectOptions = {editableOrigin:opts.editor ? opts.editableOrigin : null,selectedId:opts.selectedId,selectedIds:opts.selectedIds,
-      showHandles:!!opts.editor && !!opts.showHandles,fontFamily:s.font,textColor:s.textColor,editor:!!opts.editor,showEditablePageNumber:!!opts.editor,pageIndex:index||1};
+      showHandles:!!opts.editor && !!opts.showHandles,fontFamily:s.font,textColor:s.textColor,editor:!!opts.editor,showEditablePageNumber:!!opts.editor,pageIndex:index||1,nspScope:V.nsp?.pageScope(p)};
     var style = '--v13-width:'+width+'px;--v13-height:'+height+'px;--v13-paper-width:'+size.widthMm+'mm;--v13-paper-height:'+size.heightMm+'mm;--v13-print-scale:'+printScale+';';
     var surfaceStyle = 'width:'+width+'px;height:'+height+'px;background:'+s.background+';color:'+s.textColor+';font-family:'+s.font+';';
     return '<article class="v13-document v13-'+s.orientation+' v244-paper-'+size.paper.toLowerCase()+(opts.editor ? ' v13-editor-document' : '')+'" data-v13-page-id="'+html(p && p.id || '')+'" style="'+html(style)+'"><div class="v13-page-surface" data-v13-surface="1" style="'+html(surfaceStyle)+'">'+V.renderObjects(resolved.objects,objectOptions)+'</div></article>';
@@ -3898,7 +3898,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
   function chooseObjectImage(c) {
     const o=currentObject(c);
     if(selectedTokens(c).length!==1||!o||o.type!=='image'||locked(c)||objectLocked(c,o)||!ownObject(c,o))return;
-    V.media.openPicker({replaceOnly:true});
+    if(!o.nspBinding)V.media.openPicker({replaceOnly:true});
   }
   function imageRequestTarget(request) {
     if(!request||E.imageRequest!==request||request.epoch!==E.epoch||!E.current||key(request.context)!==key(E.current)||selectedId(E.current)!==request.objectId||selectedTokens(E.current).length!==1||locked(request.context))return null;
@@ -4324,9 +4324,9 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     if(E.current.type==='page')document.querySelectorAll('[data-v13-dirty]').forEach(node=>{node.textContent=v107StorageText(E.current);});
     document.querySelectorAll('[data-v107-retry]').forEach(node=>{node.disabled=!(V.saveError||V.persistenceState==='error');});
   }
-  function refresh(c) {
+  function refresh(c,nspOnly=null) {
     if(!E.current || key(c)!==key(E.current))return;
-    const host=document.querySelector('[data-v13-canvas-host]');if(host){host.innerHTML=V.editorCanvas(c);V.v284AddRulerTicks?.();V.v287CanvasRefreshed?.(c);}
+    const host=document.querySelector('[data-v13-canvas-host]');if(host){host.innerHTML=V.editorCanvas(c);V.v284AddRulerTicks?.();V.v287CanvasRefreshed?.(c,nspOnly);}
     const layers=document.querySelector('[data-v13-layer-list]');if(layers)layers.innerHTML=layerList(c);
     document.querySelectorAll('[data-v13-dirty]').forEach(n=>{n.textContent=v107StorageText(c);});
     const h=history(c);
@@ -4446,10 +4446,10 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
       out+=input('رنگ شماره صفحه','color',o.color||'#152638','color');
       out+='<label>چینش افقی</label><select data-v13-property="textAlign" '+disabled+'>'+[['right','راست'],['center','وسط'],['left','چپ']].map(([value,title])=>'<option value="'+value+'" '+((o.textAlign||'center')===value?'selected':'')+'>'+title+'</option>').join('')+'</select>';
     }else if(o.type==='image'){
-      out+=V.media.properties(o,off);
+      out+=V.nsp?.imagePanel(o,off)||'';out+=V.media.properties(o,off);
       const part=V.media.selectedPart(o),tiled=V.media.isTiled(o);
       const hasImage=!!(part?.assetId||part?.src||part?.image||part?.dataUrl);
-      out+=labelFor('فایل تصویر','src')+'<p class="muted" data-v18-image-status style="overflow-wrap:anywhere">'+html(hasImage?(part.imageFileName||o.imageFileName||'تصویر انتخاب شده است.'):'هنوز تصویری انتخاب نشده است.')+'</p><button type="button" class="btn primary" data-v13-action="choose-object-image" '+disabled+'>'+(hasImage?'تعویض تصویر':'انتخاب تصویر')+'</button><p class="muted">تعویض از کتابخانه فقط مرجع فایل تصویر را تغییر می‌دهد؛ کادر، Crop، ماسک، سایه، حاشیه و افکت‌ها حفظ می‌شوند. نسبت متفاوت به‌صورت پیش‌فرض کادر را با Fill پر می‌کند.</p>'+labelFor('نمایش تصویر در کادر','objectFit')+'<select '+(tiled?'onchange="V13.media.fit(this.value)"':'data-v13-property="objectFit"')+' '+disabled+'>'+[['contain','نمایش کامل — Fit'],['fill','کشیده — Stretch'],['none','مقیاس اصلی — Center'],['cover','پرکردن کادر — Fill']].map(a=>'<option value="'+a[0]+'" '+((part.objectFit||'contain')===a[0]?'selected':'')+'>'+a[1]+'</option>').join('')+'</select>';
+      if(!o.nspBinding)out+=labelFor('فایل تصویر','src')+'<p class="muted" data-v18-image-status style="overflow-wrap:anywhere">'+html(hasImage?(part.imageFileName||o.imageFileName||'تصویر انتخاب شده است.'):'هنوز تصویری انتخاب نشده است.')+'</p><button type="button" class="btn primary" data-v13-action="choose-object-image" '+disabled+'>'+(hasImage?'تعویض تصویر':'انتخاب تصویر')+'</button><p class="muted">تعویض از کتابخانه فقط مرجع فایل تصویر را تغییر می‌دهد؛ کادر، Crop، ماسک، سایه، حاشیه و افکت‌ها حفظ می‌شوند. نسبت متفاوت به‌صورت پیش‌فرض کادر را با Fill پر می‌کند.</p>'+labelFor('نمایش تصویر در کادر','objectFit')+'<select '+(tiled?'onchange="V13.media.fit(this.value)"':'data-v13-property="objectFit"')+' '+disabled+'>'+[['contain','نمایش کامل — Fit'],['fill','کشیده — Stretch'],['none','مقیاس اصلی — Center'],['cover','پرکردن کادر — Fill']].map(a=>'<option value="'+a[0]+'" '+((part.objectFit||'contain')===a[0]?'selected':'')+'>'+a[1]+'</option>').join('')+'</select>';
     }else if(o.type==='block'){
       out+='<label>تغییر اندازهٔ بلوک</label><select data-v13-property="blockResizeMode" '+disabled+'><option value="frame" '+(o.blockResizeMode!=='proportional'?'selected':'')+'>فقط کادر</option><option value="proportional" '+(o.blockResizeMode==='proportional'?'selected':'')+'>کادر و اعضا به‌تناسب</option></select>';
       out+='<div class="v89-block-tools"><button type="button" class="btn" data-v13-action="block-add-child" data-v13-type="text" '+disabled+'>+ متن</button><button type="button" class="btn" data-v13-action="block-add-child" data-v13-type="image" '+disabled+'>+ تصویر</button><button type="button" class="btn" data-v13-action="block-add-child" data-v13-type="shape" '+disabled+'>+ مستطیل</button></div>';
@@ -5859,6 +5859,16 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
   visualPointerDown=pointerDown;visualPointerMove=pointerMove;visualPointerEnd=pointerEnd;
   V.clearEditorHistory=function(){E.propertyEdit=null;E.imageRequest=null;E.inline=null;E.lastCanvasClick=null;E.selected.clear();E.multi.clear();E.anchors.clear();E.activeLayers.clear();E.selectedLayers.clear();E.layerDrag=null;E.drag=null;};
   V.editor=Object.assign(V.editor||{},{hasDrafts:function(){return !!(catalogChanged());},currentPage:function(){return tab==='visual'&&E.pageMode==='edit'&&E.current?.type==='page'&&!catalogContext(E.current)?{projectId:state.activeWorkspaceId,portfolioId:E.current.portfolioId||state.activePortfolioId,pageId:E.current.id}:null;},resetSelection:function(){E.propertyEdit=null;E.imageRequest=null;E.inline=null;E.lastCanvasClick=null;E.epoch++;E.current=null;E.selected.clear();E.multi.clear();E.anchors.clear();E.activeLayers.clear();E.selectedLayers.clear();E.layerDrag=null;E.drag=null;},resetAll:function(){E.propertyEdit=null;E.imageRequest=null;E.inline=null;E.lastCanvasClick=null;E.epoch++;E.current=null;E.pageMode='list';E.selected.clear();E.multi.clear();E.anchors.clear();E.activeLayers.clear();E.selectedLayers.clear();E.layerDrag=null;E.histories.clear();E.drag=null;},refreshStorageStatus:v107RefreshStorageStatus});
+  V.editor.nspSelected=()=>currentObject(E.current);
+  V.editor.nspRefresh=function(ids){const c=E.current;if(!c)return;if(ids.includes(c.id))refresh(c,ids);else V.v287CanvasRefreshed?.(c,ids);for(const id of ids)if(id!==c.id)V.thumbnails?.pageChanged?.({...c,id});};
+  V.editor.nspBindImage=function(b){
+    const c=E.current,o=currentObject(c),p=V.nsp.pfc();
+    if(!p||!o||o.type!=='image'||o.tilesJson||locked(c)||objectLocked(c,o)||!ownObject(c,o)||b&&!V.nsp.lookup(p,b))return false;
+    const src=objects(c,true).find(x=>x.id===o.id),before=objectSnapshot(c);
+    if(b){src.nspBinding=V.nsp.copy(b);for(const k of ['assetId','src','image','dataUrl','imageFileName'])delete src[k];}
+    else{const id=V.nsp.lookup(p,src.nspBinding)?.assetId;delete src.nspBinding;if(id)src.assetId=id;}
+    return commit(c,before,true);
+  };
   V.editor.openCatalogDraft=function(p,definitionId=null,restored=false){
     const context={type:'page',id:p.id,portfolioId:'@template'};
     E.histories.delete(key(context));E.selected.delete(key(context));E.multi.delete(key(context));
@@ -13237,12 +13247,12 @@ body.v284-hide-object-names [data-v13-canvas-host] .v89-block-title{display:none
   });
   scheduleFrame(m);
  }
- V.v287CanvasRefreshed=function(c){
+ V.v287CanvasRefreshed=function(c,only=null){
   const m=mounted;if(!valid(m)||c.id!==m.active)return;
   const slot=byId(m,c.id),page=(state.pages||[]).find(p=>p.id===c.id),paper=slot?.querySelector('.v287-page-paper');
   if(page&&paper){const size=V.v287MeasurePage(page);paper.style.width=size.width+'px';paper.style.height=size.height+'px';}
   m.pages=(state.pages||[]).slice();
-  for(const slot of m.hydrated){delete slot.dataset.v287Ready;}
+  for(const slot of m.hydrated){if(!only||only.includes(slot.dataset.v287Page))delete slot.dataset.v287Ready;}
   // Keep tracking the stale DOM until it is repainted or evicted.
   scheduleFrame(m);
  };
@@ -13320,6 +13330,97 @@ document.addEventListener('drop',e=>{if(!accept(e))return;e.preventDefault();e.s
  const d=N.toolDefinitions?.().find(x=>x.id===e.dataTransfer.getData(C)),surface=e.target.closest('[data-v13-surface]')||document.querySelector('[data-v13-editor] [data-v13-surface]');if(d&&surface)N.insert(d,{surface,x:e.clientX,y:e.clientY});},true);
 Object.assign(N,{copy,storeBy,pfc,collections,make,btn,patch,change,addControl,view});
 const before=render;render=function(){const r=before.apply(this,arguments);patch();return r;};patch();
+})();
+</script>
+<script id="nsp-controls">
+(function(){
+'use strict';
+const V=V13,N=V.nsp,{make,btn,collections,change}=N;
+const idOk=x=>typeof x==='string'&&/^[a-z0-9][a-z0-9_.:-]{0,127}$/i.test(x);
+const named=x=>typeof x==='string'&&x.trim().length>0&&x.length<=100;
+const assetList=()=>[...(state.imageLibrary||[]),...(state.globalImageLibrary||[])].filter(x=>!x.catalogArchived);
+const pages=p=>p?.pages||[],pageObjects=p=>pages(p).flatMap(x=>[...(x.visualObjects||[]),...(x.snapshot?.objects||[])]);
+const scopeFor=o=>(state.portfolios||[]).find(p=>p.id===state.activePortfolioId&&pages(p).some(x=>x.id===o.ownerId))||(state.portfolios||[]).find(p=>pages(p).some(x=>x.id===o.ownerId));
+const pageScope=o=>(state.portfolios||[]).find(p=>pages(p).includes(o))||scopeFor({ownerId:o?.id});
+const lookup=(p,b)=>collections(p).find(c=>c.type==='logo'&&c.id===b?.controlId)?.entries.find(x=>x.id===b.variantId);
+const dep=(p,c,e)=>pageObjects(p).some(o=>o.nspBinding?.controlId===c.id&&(!e||o.nspBinding.variantId===e.id))||c.type==='systems'&&(e?[e]:c.entries).some(x=>(p.nspHotels||[]).some(h=>h.systems.includes(x.id)));
+const resolveImage=(o,p)=>o.nspBinding?{...o,assetId:lookup(p||scopeFor(o),o.nspBinding)?.assetId||'',src:'',image:'',dataUrl:''}:o;
+const duplicate=a=>new Set(a.map(x=>x.id)).size!==a.length;
+function validate(s){
+ for(const p of s.portfolios||[]){
+  const a=collections(p);
+  if(!Array.isArray(a)||a.length>40||a.some(c=>!c||!idOk(c.id)||!named(c.name)||!['logo','systems'].includes(c.type)||!Array.isArray(c.entries)||c.entries.length>300||
+    c.entries.some(e=>!e||!idOk(e.id)||!named(e.name)||e.assetId&&!idOk(e.assetId)||c.type==='systems'&&['nameFa','nameEn'].some(k=>typeof e[k]!=='string'||e[k].length>100))||duplicate(c.entries))||duplicate(a)||duplicate(a.filter(c=>c.type==='systems').flatMap(c=>c.entries)))throw Error('Data Controls نامعتبر است.');
+  for(const o of pageObjects(p)){const b=o.nspBinding;if(b&&(o.type!=='image'||b.kind!=='logo'||!idOk(b.variantId)||!idOk(b.controlId)||!lookup(p,b)||o.assetId||o.src||o.image||o.dataUrl||o.tilesJson))throw Error('مرجع Logo در پورتفولیو معتبر نیست.');}
+  N.validateHotels?.(p);
+ }
+ N.validateInstances?.(s);N.validateDefinitions?.(s);return s;
+}
+function addEntry(p,c,d){
+ if(!c||!idOk(d.id)||!named(d.name)||d.assetId&&!assetList().some(x=>x.id===d.assetId))return false;
+ return change(p,'nspDataControls',a=>{const row=a.find(x=>x.id===c.id);
+  if(!row||row.entries.length>=300||row.entries.some(x=>x.id===d.id)||row.type==='systems'&&a.some(x=>x.type==='systems'&&x.entries.some(e=>e.id===d.id)))return false;
+  const entry={id:d.id,name:d.name.trim(),assetId:d.assetId||''};if(row.type==='systems')Object.assign(entry,{nameFa:String(d.nameFa||'').slice(0,100),nameEn:String(d.nameEn||'').slice(0,100)});row.entries.push(entry);
+ });}
+function editEntry(p,c,e,patch){return change(p,'nspDataControls',a=>{const entry=a.find(x=>x.id===c.id)?.entries.find(x=>x.id===e.id);if(!entry)return false;for(const [k,v] of Object.entries(patch)){
+ if(k==='assetId'){if(v&&!assetList().some(x=>x.id===v))return false;entry[k]=v;}
+ else if(['name','nameFa','nameEn'].includes(k)&&typeof v==='string'&&v.length<=100&&(k!=='name'||named(v)))entry[k]=v;
+ }});}
+function removeControl(p,id,confirmed=false){
+ if(!p)return false;const c=collections(p).find(x=>x.id===id);if(!c)return false;
+ if(dep(p,c)){alert('کنترل وابستگی دارد؛ ابتدا اتصال را جدا کنید.');return false;}
+ if(!confirmed&&!confirm('کنترل حذف شود؟'))return false;
+ return change(p,'nspDataControls',a=>{const i=a.findIndex(x=>x.id===id);if(i<0)return false;a.splice(i,1);});
+}
+function removeEntry(p,c,e,confirmed=false){
+ if(dep(p,c,e)){alert('این مورد در صفحه‌ها یا هتل‌ها استفاده شده است. ابتدا اتصال را جدا کنید.');return false;}
+ if(!confirmed&&!confirm('این ورودی حذف شود؟'))return false;
+ return change(p,'nspDataControls',a=>{const row=a.find(x=>x.id===c.id),i=row?.entries.findIndex(x=>x.id===e.id);if(i==null||i<0)return false;row.entries.splice(i,1);});
+}
+function field(host,t,e){host.append(make('label',{},[make('span',{text:t}),e]));return e;}
+function input(value,onchange,attrs={}){const el=make('input',{type:'text',value:value??'',maxlength:100,...attrs});if(onchange)el.onchange=()=>onchange(el.value);return el;}
+function selector(items,value,change,attrs={}){const el=make('select',attrs,items.map(([id,text])=>make('option',{value:id,text,...(id===value?{selected:''}:{})})));if(change)el.onchange=()=>change(el.value);return el;}
+const assetInput=(v,c,a={})=>selector([['','— بدون تصویر —'],...assetList().map(x=>[x.id,x.name])],v,c,a);
+function mountControl(host,p,c){
+ field(host,'نام کنترل',input(c.name,v=>{if(named(v))change(p,'nspDataControls',a=>a.find(o=>o.id===c.id).name=v.trim());}));
+ const id=field(host,c.type==='logo'?'Variant ID':'System ID',input('',null,{'data-nsp-entry-id':'',placeholder:c.type==='logo'?'Primary':'GRMS'}));
+ const title=field(host,'نام نمایشی',input('',null,{'data-nsp-entry-title':''}));
+ if(c.type==='logo'){id.setAttribute('list','nsp-suggested-variants');host.append(make('datalist',{id:'nsp-suggested-variants'},['Primary','Symbol','Horizontal','Vertical','Wordmark','Light','Dark','Monochrome'].map(s=>make('option',{value:s}))));}
+ host.append(btn('+ افزودن',async()=>{if(!await addEntry(p,c,{id:id.value.trim(),name:title.value.trim()||id.value.trim()}))alert('شناسهٔ پایدار و بدون تکرار لازم است.');},{'data-nsp-add-entry':''}));
+ for(const e of c.entries){const d=make('details',{open:'','data-nsp-entry':e.id},[make('summary',{text:e.name+' · '+e.id})]);
+  for(const [k,t] of [['name','نام نمایشی'],...(c.type==='systems'?[['nameFa','نام فارسی'],['nameEn','نام انگلیسی']]:[])])field(d,t,input(e[k],v=>editEntry(p,c,e,{[k]:v}),{'data-nsp-entry-field':k}));
+  field(d,'تصویر کتابخانه',assetInput(e.assetId,v=>editEntry(p,c,e,{assetId:v}),{'data-nsp-entry-field':'assetId'}));d.append(btn('حذف ورودی',()=>removeEntry(p,c,e)));host.append(d);
+ }
+ host.append(btn('حذف کنترل',()=>removeControl(p,c.id)));
+}
+function imagePanel(o,off){
+ const p=scopeFor(o);if(!p||o.tilesJson)return '';
+ const b=o.nspBinding,ct=collections(p).filter(x=>x.type==='logo'&&x.entries.length);
+ const f=make('fieldset',{class:'nsp-property',...(off?{disabled:''}:{})},[make('legend',{text:'Image Source'})]);
+ field(f,'منبع',selector([['library','Image Library'],['control','Data Control']],b?'control':'library',null,{'data-nsp-image-source':''}));
+ if(b){field(f,'Logo',selector(ct.map(x=>[x.id,x.name]),b.controlId,null,{'data-nsp-image-control':''}));
+  field(f,'Variant',selector((ct.find(c=>c.id===b.controlId)?.entries||[]).map(x=>[x.id,x.name]),b.variantId,null,{'data-nsp-image-variant':''}));}
+ else if(!ct.length)f.append(make('small',{text:'ابتدا یک Logo و نسخهٔ لوگو به سینی اضافه کنید.'}));return f.outerHTML;
+}
+document.addEventListener('change',e=>{const el=e.target;if(!el.matches('[data-nsp-image-source],[data-nsp-image-control],[data-nsp-image-variant]'))return;
+ const p=N.pfc(),o=V.editor.nspSelected?.();if(!p||o?.type!=='image')return;const k=o.nspBinding,c=collections(p).filter(x=>x.type==='logo'&&x.entries.length),first=c[0];
+ if(el.matches('[data-nsp-image-source]')){if(el.value==='library')V.editor.nspBindImage(null);else if(first)V.editor.nspBindImage({kind:'logo',controlId:first.id,variantId:first.entries[0].id});else el.value='library';}
+ if(el.matches('[data-nsp-image-control]')&&k){const v=c.find(x=>x.id===el.value);if(v)V.editor.nspBindImage({...k,controlId:v.id,variantId:v.entries[0].id});}
+ if(el.matches('[data-nsp-image-variant]')&&k)V.editor.nspBindImage({...k,variantId:el.value});
+});
+function changes(p,f,a=[],b=[]){
+ const m=new Map(a.map(x=>[x.id,x])),n=new Map(b.map(x=>[x.id,x])),changed=new Set([...m.keys(),...n.keys()].filter(k=>JSON.stringify(m.get(k))!==JSON.stringify(n.get(k))));
+ let related=new Set(), variants=new Map();
+ if(f==='nspHotels')related=changed;
+ else if(f==='nspDataControls'){const systems=new Set();for(const id of changed){
+  const aa=m.get(id),bb=n.get(id),a0=new Map((aa?.entries||[]).map(x=>[x.id,x])),b0=new Map((bb?.entries||[]).map(x=>[x.id,x]));
+  const v=new Set([...a0.keys(),...b0.keys()].filter(k=>JSON.stringify(a0.get(k))!==JSON.stringify(b0.get(k))));
+  if((aa||bb).type==='logo')variants.set(id,v);else v.forEach(x=>systems.add(x));
+ }related=new Set((p.nspHotels||[]).filter(h=>h.systems.some(id=>systems.has(id))).map(h=>h.id));}
+ const touched=pages(p).filter(pg=>(pg.visualObjects||[]).some(o=>o.hotelIds?.some(id=>related.has(id))||o.nspBinding&&variants.get(o.nspBinding.controlId)?.has(o.nspBinding.variantId))).map(pg=>pg.id);
+ if(touched.length&&p===N.pfc())V.editor.nspRefresh(touched);
+}
+Object.assign(N,{idOk,named,assetList,pages,pageObjects,scopeFor,pageScope,validate,lookup,resolveImage,addEntry,editEntry,removeControl,removeEntry,field,input,selector,assetInput,mountControl,imagePanel,onSharedChange:changes});
 })();
 </script>
 </body></html>
