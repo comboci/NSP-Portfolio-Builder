@@ -540,6 +540,20 @@ function v20SceneRecord(record,label) {
  return record;
 }
 
+function v291NormalizePageTemplate(t,categoryIds,publicImageIds){
+  t.name=v13Text(t.name,'قالب','نام قالب');t.layout=v13Text(t.layout,'standard','چیدمان');
+  t.overrides=t.overrides==null?{}:v13Record(t.overrides,'تنظیمات قالب');
+  if(!t.categoryId)t.categoryId=categoryIds.has(t.id)?t.id:t.id==='project'?'projects':'other';
+  v13Id(t.categoryId,'شناسه گروه قالب');
+  if(!categoryIds.has(t.categoryId))throw Error('گروه قالب پیدا نشد: '+t.name);
+  t.objects=v13Objects(t.objects,'عناصر قالب',true);
+  if(t.objects.some(o=>o.type==='custom'||o.type==='nspComponent'||o.nspBinding))throw Error('قالب عمومی نمی‌تواند به کامپوننت پروژه وابسته باشد.');
+  for(const id of v111AssetIds(t.objects)){
+   if(!publicImageIds.has(id))throw Error('تصویر عمومی موردنیاز قالب «'+t.name+'» موجود نیست: '+id);
+  }
+  if(t.layers!=null)v20SceneRecord(t,'قالب صفحه');
+  t.style=t.style==null?{}:v13Record(t.style,'استایل قالب');
+}
 function initialProjectData(){
  const portfolio={id:'portfolio-original',name:'پورتفولیوی اصلی',pages:[]};
  return {designModel:'page-first',title:'پورتفولیوی NSP',templates:[],portfolios:[portfolio],activePortfolioId:portfolio.id};
@@ -634,20 +648,7 @@ function v13NormalizeProject(input){
   }
  }
  const publicImageIds=new Set((s.globalImageLibrary||[]).map(a=>a.id));
- for(const t of s.templates){
-  t.name=v13Text(t.name,'قالب','نام قالب');t.layout=v13Text(t.layout,'standard','چیدمان');
-  t.overrides=t.overrides==null?{}:v13Record(t.overrides,'تنظیمات قالب');
-  if(!t.categoryId)t.categoryId=categoryIds.has(t.id)?t.id:t.id==='project'?'projects':'other';
-  v13Id(t.categoryId,'شناسه گروه قالب');
-  if(!categoryIds.has(t.categoryId))throw Error('گروه قالب پیدا نشد: '+t.name);
-  t.objects=v13Objects(t.objects,'عناصر قالب',true);
-  if(t.objects.some(o=>o.type==='custom'||o.type==='nspComponent'||o.nspBinding))throw Error('قالب عمومی نمی‌تواند به کامپوننت پروژه وابسته باشد.');
-  for(const id of v111AssetIds(t.objects)){
-   if(!publicImageIds.has(id))throw Error('تصویر عمومی موردنیاز قالب «'+t.name+'» موجود نیست: '+id);
-  }
-  if(t.layers!=null)v20SceneRecord(t,'قالب صفحه');
-  t.style=t.style==null?{}:v13Record(t.style,'استایل قالب');
- }
+ for(const t of s.templates)v291NormalizePageTemplate(t,categoryIds,publicImageIds);
  if(s.customComponents==null)s.customComponents=[];
  if(!Array.isArray(s.customComponents))throw Error('فهرست کامپوننت‌ها نامعتبر است.');
  v13Unique(s.customComponents,'کامپوننت سفارشی');
@@ -2254,6 +2255,26 @@ function backupDependencies(portfolios,components,privateImages,catalog=state){
  if(publicImages.length!==publicIds.size)throw Error('تصویر عمومی وابسته در کتابخانه موجود نیست.');
  return {templates,templateCategories,styleLibrary,publicImages};
 }
+// Stable content, not ID or timestamps. Object-local templateSourceId records
+// where a source page got the element; instantiate() replaces it for a new page.
+function v291TemplateSignature(template){
+ const sortJson=(value,level='',asObject=false)=>{
+  if(Array.isArray(value))return value.map(item=>sortJson(item,'',level==='objects'));
+  if(!value||typeof value!=='object')return value;
+  const pairs=[];
+  for(const key of Object.keys(value).sort()){
+   if(level==='template'&&['id','createdAt','updatedAt','createdBy','updatedBy'].includes(key))continue;
+   if(asObject&&key==='templateSourceId')continue;
+   const item=value[key];
+   if((key==='tilesJson'||key==='imageEdit')&&typeof item==='string'&&item){
+    try{pairs.push([key,JSON.stringify(sortJson(JSON.parse(item)))]);continue;}catch(_){}
+   }
+   pairs.push([key,sortJson(item,level==='template'?key:'')]);
+  }
+  return Object.fromEntries(pairs);
+ };
+ return JSON.stringify(sortJson(template,'template'));
+}
 function importBackupDependencies(backup,portfolios,components,privateImages,privateRemap=new Map()){
  for(const key of ['publicImages','styleLibrary','templateCategories','templates']){
   if(backup[key]==null)continue;
@@ -2298,11 +2319,34 @@ function importBackupDependencies(backup,portfolios,components,privateImages,pri
   }
   if(!advanced)throw Error('ساختار والد/فرزند گروه‌های قالب در فایل ورودی ناقص یا چرخه‌ای است.');
  }
- const incomingTemplates=v13Copy(backup.templates||[]);
- for(const item of incomingTemplates){
-  const id=uid();templateIds.set(item.id,id);
-  item.id=id;item.categoryId=categoryIds.get(item.categoryId)||templateCategories[0]?.id;
-  v111RebindImages(item.objects,publicIds);templates.push(item);
+ const preparedTemplates=v13Copy(backup.templates||[]),addedTemplates=[];
+ const allCategoryIds=new Set(templateCategories.map(c=>c.id));
+ const allPublicIds=new Set(globalImageLibrary.map(a=>a.id));
+ const templateSignatures=new Map(),catalogIndex=new Map();
+ const bucket=t=>JSON.stringify([t.name,t.categoryId]);
+ for(const t of templates){
+  const key=bucket(t);if(!catalogIndex.has(key))catalogIndex.set(key,[]);
+  catalogIndex.get(key).push(t);
+ }
+ for(const item of preparedTemplates){
+  const sourceId=item.id;
+  item.categoryId=categoryIds.get(item.categoryId)||templateCategories[0]?.id;
+  v111RebindImages(item.objects,publicIds);
+  for(const o of item.objects||[])if(styleIds.has(o.styleId))o.styleId=styleIds.get(o.styleId);
+  v291NormalizePageTemplate(item,allCategoryIds,allPublicIds);
+  const signature=v291TemplateSignature(item),key=bucket(item);
+  const peers=catalogIndex.get(key)||[];
+  const same=t=>{
+   if(!templateSignatures.has(t))templateSignatures.set(t,v291TemplateSignature(t));
+   return templateSignatures.get(t)===signature;
+  };
+  const existing=peers.find(t=>t.id===sourceId&&same(t))||peers.find(same);
+  if(existing){templateIds.set(sourceId,existing.id);continue;}
+  // A differing design remains a distinct template; never overwrite catalog
+  // data on name/ID collision. The importing pages bind to the imported design.
+  item.id=uid();templateIds.set(sourceId,item.id);
+  templateSignatures.set(item,signature);peers.push(item);catalogIndex.set(key,peers);
+  templates.push(item);addedTemplates.push(item);
  }
  const pageImages=new Map(publicIds);
  for(const asset of privateImages){
@@ -2310,10 +2354,12 @@ function importBackupDependencies(backup,portfolios,components,privateImages,pri
   if(privateRemap.has(asset.id))pageImages.set(asset.id,privateRemap.get(asset.id));
  }
  v111RebindImages({portfolios,components},pageImages);
- for(const o of backupScenes(portfolios,components,incomingTemplates)){
+ for(const o of backupScenes(portfolios,components)){
   if(styleIds.has(o.styleId))o.styleId=styleIds.get(o.styleId);
   if(templateIds.has(o.templateSourceId))o.templateSourceId=templateIds.get(o.templateSourceId);
  }
+ for(const t of addedTemplates)for(const o of t.objects||[])
+  if(templateIds.has(o.templateSourceId))o.templateSourceId=templateIds.get(o.templateSourceId);
  for(const pg of portfolios.flatMap(p=>p.pages||[])){
   if(templateIds.has(pg.pageTemplateId))pg.pageTemplateId=templateIds.get(pg.pageTemplateId);
   for(const layer of [...(pg.layers||[]),...(pg.snapshot?.layers||[])])
