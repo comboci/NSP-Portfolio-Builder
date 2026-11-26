@@ -4,6 +4,28 @@
   'use strict';
   const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const finite = n => typeof n === 'number' && Number.isFinite(n) && Math.abs(n) <= 1000000;
+  function coordinateSpace(value) {
+    if(!value||typeof value!=='object'||Array.isArray(value)||!['width','height'].every(k=>finite(value[k])&&value[k]>=100&&value[k]<=10000))throw Error('ابعاد مبنای طراحی نامعتبر است.');
+    return {width:value.width,height:value.height};
+  }
+  function pageStyle(record,style) {
+    const next={...style};
+    if(next.coordinateSpace!=null){next.coordinateSpace=coordinateSpace(next.coordinateSpace);return next;}
+    // Compatibility for our original ZIP only. Source geometry was never
+    // resized in storage: objectList clamped a rendering copy to 842 x 595.
+    // Recognize the imported Illustrator objects, not unrelated large designs.
+    const objects=record?.visualObjects||record?.objects||[];
+    const source=objects.filter(o=>Number.isInteger(o.illustratorSource?.page)&&o.illustratorSource.page>=1&&o.illustratorSource.page<=5&&Number.isInteger(o.illustratorSource.object));
+    if(next.paperSize==='A4'&&next.orientation==='landscape'&&source.length>=10&&
+       source.some(o=>o.sourceTextLayout)&&source.some(o=>o.x+o.w>842.01||o.y+o.h>595.01))
+      next.coordinateSpace={width:1191,height:842};
+    return next;
+  }
+  function canvasSize(style,physical) {
+    if(style?.coordinateSpace==null)return physical;
+    const space=coordinateSpace(style.coordinateSpace),short=Math.min(space.width,space.height),long=Math.max(space.width,space.height),landscape=style.orientation==='landscape';
+    return {...physical,width:landscape?long:short,height:landscape?short:long};
+  }
   function path(d) {
     if (typeof d !== 'string' || !d.length || d.length > 200000 || !/^[Mm]/.test(d) || /[^MmLlHhVvCcSsQqTtAaZz0-9eE+.,\s-]/.test(d)) throw Error('مسیر برداری نامعتبر است.');
     const nums=d.match(/[-+]?(?:\d*\.\d+|\d+\.?\d*)(?:[eE][-+]?\d+)?/g)||[];
@@ -71,5 +93,5 @@
     const glyphs=t.glyphs.map(g=>!g.text.trim()?'':g.d?'<path d="'+esc(g.d)+'" transform="matrix('+m.join(' ')+' '+g.x+' '+g.y+')"/>':'<text xml:space="preserve" x="0" y="0" transform="matrix('+m.join(' ')+' '+g.x+' '+g.y+')">'+esc(g.text)+'</text>').join('');
     return {face,content:'<div class="v13-object-text" style="position:absolute;inset:0;width:100%;height:100%"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 '+t.width+' '+t.height+'" preserveAspectRatio="none" style="display:block;overflow:visible;font-family:'+t.family+';font-size:1px;font-weight:400;font-style:normal;fill:currentColor;direction:ltr">'+glyphs+'</svg></div>'};
   }
-  root.NSPIllustrator={path,clips,typography,validate,clipDefs,vectorMarkup,textMarkup};
+  root.NSPIllustrator={path,clips,typography,validate,clipDefs,vectorMarkup,textMarkup,coordinateSpace,pageStyle,canvasSize};
 })(typeof window!=='undefined'?window:globalThis);

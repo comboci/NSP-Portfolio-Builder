@@ -2,7 +2,7 @@
 // Offline schema/source checks and standalone document proofs. No app launch,
 // browser, application storage, native build or runtime acceptance.
 const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert');
-const root=path.resolve(__dirname,'..'),out=path.join(root,'deliverables','NSP-Portfolio-Editable-Master');
+const root=path.resolve(__dirname,'..'),out=path.join(root,'deliverables',process.env.NSP_TEMPLATE_VARIANT||'NSP-Portfolio-Editable-Master');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const scripts=[...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)];
 for(const [,attrs,body] of scripts){if(/application\/json/.test(attrs))JSON.parse(body);else new vm.Script(body);}
@@ -53,6 +53,46 @@ hydratedData.templates=payload.templates;hydratedData.templateCategories=payload
 hydratedData.globalImageLibrary=payload.publicImages.map(a=>({...a,src:'data:image/png;base64,'+fs.readFileSync(path.join(out,'Image',path.basename(a.path))).toString('base64')}));
 const normalized=validator.v13NormalizeProject(hydratedData);
 assert.strictEqual(normalized.pages.length,5);assert.strictEqual(normalized.templates.length,5);
+// Exercise the REAL canvas resolver before object clamping, and the REAL shared
+// HTML renderer, in a VM. No browser, DOM, app bootstrap or application storage.
+const shared=scripts.find(s=>s[2].includes('V.renderObjects = function'))[2];
+const sharedCore=shared.slice(0,shared.indexOf('  paper = function'))+'\n})();';
+const engine={window:{NSPIllustrator:api},state:{styleLibrary:[]}};
+vm.runInNewContext(sharedCore,engine);
+vm.runInNewContext(scripts.find(s=>s[1].includes('id="page-scene"'))[2],engine);
+const V=engine.window.V13;
+// Reproduce the reported regression through the same resolver with the design
+// coordinate support disabled. Valid JSON alone did not catch this failure.
+const legacyProbe=JSON.parse(JSON.stringify(pages[0]));delete legacyProbe.pageStyleOverrides.coordinateSpace;
+engine.window.NSPIllustrator={...api,pageStyle:(p,s)=>s,canvasSize:(s,p)=>p};
+const squeezed=V.resolvePage(legacyProbe);
+assert.strictEqual(squeezed.width,842);assert.strictEqual(squeezed.height,595);
+assert(squeezed.objects.some(o=>{const raw=legacyProbe.visualObjects.find(r=>r.id===o.id);return Math.abs(o.x-raw.x)>1||Math.abs(o.y-raw.y)>1;}));
+engine.window.NSPIllustrator=api;
+assert.strictEqual(V.pageSize({paperSize:'A4',orientation:'landscape'}).width,842);
+assert.strictEqual(V.pageSize({paperSize:'A4',orientation:'landscape'}).height,595);
+assert.throws(()=>api.coordinateSpace({width:Infinity,height:842}));
+assert.throws(()=>api.coordinateSpace({width:0,height:842}));
+const resolvedPages=pages.map(p=>V.resolvePage(p));
+for(let i=0;i<pages.length;i++){
+ const p=pages[i],resolved=resolvedPages[i];
+ assert.strictEqual(resolved.width,1191);assert.strictEqual(resolved.height,842);
+ assert.strictEqual(resolved.widthMm,297);assert.strictEqual(resolved.heightMm,210);
+ for(const o of resolved.objects){const raw=p.visualObjects.find(r=>r.id===o.id);for(const k of ['x','y','w','h'])assert(Math.abs(o[k]-raw[k])<0.00001,o.id+' unexpectedly clamped '+k);}
+ const document=V.renderDocument(p,i+1);
+ assert(document.includes('--v13-width:1191px;--v13-height:842px;'));
+ assert(document.includes('--v13-paper-width:297mm;--v13-paper-height:210mm;'));
+ // Legacy ZIP: metadata-free Illustrator imports are recognized from their
+ // source tags; a reload/duplicate must preserve geometry and the paper size.
+ const legacy=JSON.parse(JSON.stringify(p));delete legacy.pageStyleOverrides.coordinateSpace;
+ const old=V.resolvePage(legacy);assert.strictEqual(old.width,1191);assert.strictEqual(old.height,842);
+ const duplicate=JSON.parse(JSON.stringify(p));duplicate.id+='-copy';assert.strictEqual(V.resolvePage(duplicate).width,1191);
+ const stored=JSON.parse(JSON.stringify(p));assert.strictEqual(V.resolvePage(stored).width,1191);
+}
+// Templates carry the same style field used by instantiate/writeTemplateToPage.
+for(const t of payload.templates)assert.strictEqual(V.resolvePage({id:t.id,visualObjects:t.objects,pageStyleOverrides:t.style,layers:t.layers}).width,1191);
+const unrelated={id:'ordinary',pageStyleOverrides:{paperSize:'A4',orientation:'landscape'},visualObjects:[{id:'outside',type:'shape',x:900,y:700,w:50,h:50}]};
+assert.strictEqual(V.resolvePage(unrelated).width,842);
 // Render assets through the same primitive generator, outside the application.
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function svgObject(o){
@@ -72,13 +112,14 @@ async function run(){
  const sharp=require(process.env.NSP_SHARP_MODULE||'sharp');
  const preview=path.join(out,'Preview');fs.mkdirSync(preview,{recursive:true});
  for(let i=0;i<pages.length;i++){
-  let svg='<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1191" height="842" viewBox="0 0 1191 842"><rect width="1191" height="842" fill="white"/>'+pages[i].visualObjects.map(svgObject).join('')+'</svg>';
+  const resolved=resolvedPages[i];
+  let svg='<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="'+resolved.width+'" height="'+resolved.height+'" viewBox="0 0 '+resolved.width+' '+resolved.height+'"><rect width="100%" height="100%" fill="white"/>'+resolved.objects.map(svgObject).join('')+'</svg>';
   // Nested vector markup uses width/height percentages; set its local viewport.
   svg=svg.replace(/<svg x="([^"]+)" y="([^"]+)" ([^>]*?)viewBox="0 0 ([^ ]+) ([^"]+)"/g,(m,x,y,attrs,w,h)=>'<svg x="'+x+'" y="'+y+'" '+attrs.replace('width="100%" height="100%"','width="'+w+'" height="'+h+'"')+'viewBox="0 0 '+w+' '+h+'"');
   fs.writeFileSync(path.join(preview,'page-'+(i+1)+'.svg'),svg);
   await sharp(Buffer.from(svg),{density:144,limitInputPixels:50000000}).resize(1191,842).png().toFile(path.join(preview,'page-'+(i+1)+'.png'));
  }
- const result={sourceSyntax:'PASS',primitiveAndSceneValidation:'PASS',actualImportSchemaValidator:'PASS',pages:5,reusableTemplates:5,counts,assets:assets.size,standaloneProofs:5,appRuntimeExecuted:false,printAcceptance:'OWNER_PENDING'};
+ const result={sourceSyntax:'PASS',primitiveAndSceneValidation:'PASS',actualImportSchemaValidator:'PASS',originalSqueezeReproduced:'PASS',actualSharedCanvasAndRenderer:'PASS',unclampedGeometryAllFivePages:'PASS',legacyZipRecovery:'PASS',templateAndDuplicateCanvas:'PASS',ordinaryA4Unaffected:'PASS',pages:5,reusableTemplates:5,canvas:[1191,842],paperMm:[297,210],counts,assets:assets.size,standaloneProofs:5,appRuntimeExecuted:false,printAcceptance:'OWNER_PENDING'};
  fs.writeFileSync(path.join(out,'static-validation.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result,null,2));
 }
 run().catch(e=>{console.error(e);process.exitCode=1;});

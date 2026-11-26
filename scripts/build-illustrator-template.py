@@ -4,12 +4,12 @@ Offline document conversion only. Does not launch the application or touch its
 storage. Requires bundled pypdfium2, pypdf, Pillow and reportlab.
 """
 from pathlib import Path
-import argparse, base64, collections, ctypes as C, hashlib, io, json, math, re, zipfile
+import argparse, base64, collections, ctypes as C, hashlib, io, json, math, re, zipfile, os
 import pypdfium2 as pdfium
 from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'deliverables' / 'NSP-Portfolio-Editable-Master'
+OUT = ROOT / 'deliverables' / os.environ.get('NSP_TEMPLATE_VARIANT','NSP-Portfolio-Editable-Master')
 RAW = pdfium.raw
 
 def num(n):
@@ -220,7 +220,7 @@ def convert(source):
             blocks.append({'id':bid,'type':'block','name':title,'x':left,'y':top,'w':num(right-left),'h':num(bottom-top),'layerId':key,'layerOrigin':'page','layerOwnerId':pid,'blockResizeMode':'proportional','background':'transparent','text':'','fontSize':12,'color':'#152638','visible':True,'locked':False})
             for child in children:child['blockId']=bid;del child['regionTitle']
         objects=blocks+objects
-        page_record={'id':pid,'title':['جلد','معرفی شرکت','خدمات و راهکارها','معرفی هتل','کارت‌های پروژه'][i],'body':'','image':'','chartLabels':'','chartValues':'','designMode':'independent','locked':False,'contentLocked':False,'snapshot':None,'layers':layers,'layerOrder':[json.dumps(['page',pid,l['id']],separators=(',',':')) for l in layers],'objectOrder':[json.dumps(['page',pid,o['id']],separators=(',',':')) for o in objects],'visualObjects':objects,'pageStyleOverrides':{'paperSize':'A4','orientation':'landscape','background':'#ffffff','textColor':'#09213d','font':'Tahoma','margin':0,'verticalMargin':0}}
+        page_record={'id':pid,'title':['جلد','معرفی شرکت','خدمات و راهکارها','معرفی هتل','کارت‌های پروژه'][i],'body':'','image':'','chartLabels':'','chartValues':'','designMode':'independent','locked':False,'contentLocked':False,'snapshot':None,'layers':layers,'layerOrder':[json.dumps(['page',pid,l['id']],separators=(',',':')) for l in layers],'objectOrder':[json.dumps(['page',pid,o['id']],separators=(',',':')) for o in objects],'visualObjects':objects,'pageStyleOverrides':{'paperSize':'A4','orientation':'landscape','coordinateSpace':{'width':1191,'height':842},'background':'#ffffff','textColor':'#09213d','font':'Tahoma','margin':0,'verticalMargin':0}}
         pages.append(page_record);stats.append({'page':i+1,'objects':dict(collections.Counter(o['type'] for o in objects)),'regions':len(blocks),'skippedInvisibleOrEmpty':skipped})
     for family,data in font_used.items():(fonts_dir/(family+'.ttf')).write_bytes(data)
     templates=[]
@@ -230,7 +230,7 @@ def convert(source):
     # Shared immutable source photos make the five masters immediately reusable
     # from the page-template library, including in a different project.
     data={'designModel':'page-first','title':'NSP Portfolio','schemaVersion':2,'templates':[],'imageLibrary':[],'imageAlbums':[],'customComponents':[],'portfolios':[{'id':'nsp-illustrator-portfolio','name':'NSP Portfolio','title':'NSP Portfolio','pages':pages}],'activePortfolioId':'nsp-illustrator-portfolio'}
-    payload={'app':'NSP Portfolio Builder','kind':'NSP-Project-Backup','schemaVersion':2,'appVersion':269,'project':{'name':'NSP Portfolio','data':data},'templates':templates,'templateCategories':[{'id':'nsp-illustrator-masters','name':'NSP — اصل طراحی Illustrator','parentId':None}],'styleLibrary':[],'publicImages':assets,'manifest':{'format':'NSP-Repository-Project','version':1,'relativeImageRoot':'../../Image/','pageCount':5,'imageCount':len(assets),'requiredCapabilities':['illustrator-vector-path-v1','illustrator-positioned-text-v1','illustrator-vector-clip-v1'],'sourceFile':'Rezome nsp 4.ai','sourceSHA256':hashlib.sha256(Path(source).read_bytes()).hexdigest()}}
+    payload={'app':'NSP Portfolio Builder','kind':'NSP-Project-Backup','schemaVersion':2,'appVersion':269,'project':{'name':'NSP Portfolio','data':data},'templates':templates,'templateCategories':[{'id':'nsp-illustrator-masters','name':'NSP — اصل طراحی Illustrator','parentId':None}],'styleLibrary':[],'publicImages':assets,'manifest':{'format':'NSP-Repository-Project','version':1,'relativeImageRoot':'../../Image/','pageCount':5,'imageCount':len(assets),'requiredCapabilities':['illustrator-vector-path-v1','illustrator-positioned-text-v1','illustrator-vector-clip-v1','illustrator-design-space-v1'],'sourceFile':'Rezome nsp 4.ai','sourceSHA256':hashlib.sha256(Path(source).read_bytes()).hexdigest()}}
     project_dir=OUT/'project file'/'NSP-Portfolio';project_dir.mkdir(parents=True,exist_ok=True)
     (project_dir/'project.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
     report={'status':'DOCUMENT_CONVERSION_ONLY_RUNTIME_REVIEW_BY_OWNER','source':str(source),'pages':stats,'assetCount':len(assets),'fontCount':len(font_used),'noRasterBackgrounds':True,'runtimeExecuted':False}
