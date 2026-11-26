@@ -10568,19 +10568,23 @@ function componentFromSelection(list,name){
   menu=document.createElement('div');menu.className='v223-page-context v235-page-context no-print';
   menu.setAttribute('role','menu');
   const canPaste=v235PageClipboard?.workspace===state.activeWorkspaceId;
+  const pageAction=(action,label,extra='',inner=label)=>'<button type="button" role="menuitem" data-v235-page-action="'+action+'" data-v235-page-id="'+html(pageId)+'" aria-label="'+html(label)+'" title="'+html(label)+'" '+extra+'>'+inner+'</button>';
+  const option=(action,value,label,active)=>'<button type="button" class="v244-page-option" role="menuitemradio" aria-checked="'+active+'" data-v235-page-action="'+action+'" data-v244-value="'+value+'" data-v235-page-id="'+html(pageId)+'" '+disabled+'>'+(active?'<span aria-hidden="true" class="v283-option-check">✓</span>':'')+label+'</button>';
+  const icon=(path)=>'<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+path+'</svg>';
+  const shortcut=(action,label,short,path,extra='')=>pageAction(action,label,extra,icon(path)+'<span>'+short+'</span>');
   menu.innerHTML='<div class="v223-page-context-title">'+html(current?.title||'صفحه')+'</div>'+
-   '<button type="button" role="menuitem" data-v235-page-action="rename" data-v235-page-id="'+html(pageId)+'" '+disabled+'>تغییر نام صفحه…</button>'+
-   '<button type="button" role="menuitem" data-v235-page-action="template" data-v235-page-id="'+html(pageId)+'">انتخاب قالب از کتابخانه…</button>'+
-   '<div class="v244-page-menu-heading">جهت صفحه (Orientation)</div>'+
-   [['portrait','عمودی · Portrait'],['landscape','افقی · Landscape']].map(([v,label])=>
-    '<button type="button" class="v244-page-option" role="menuitemradio" aria-checked="'+(orientation===v)+'" data-v235-page-action="orientation" data-v244-value="'+v+'" data-v235-page-id="'+html(pageId)+'" '+disabled+'>'+(orientation===v?'✓ ':'')+label+'</button>').join('')+
-   '<div class="v244-page-menu-heading">اندازه کاغذ</div>'+
-   ['A4','A5','A3'].map(v=>'<button type="button" class="v244-page-option" role="menuitemradio" aria-checked="'+(paper===v)+'" data-v235-page-action="paper" data-v244-value="'+v+'" data-v235-page-id="'+html(pageId)+'" '+disabled+'>'+(paper===v?'✓ ':'')+v+'</button>').join('')+
+   pageAction('rename','تغییر نام صفحه…',disabled)+
+   pageAction('template','انتخاب قالب از کتابخانه…')+
+   '<div class="v244-page-menu-heading">جهت صفحه</div><div class="v283-option-row v283-orientation" role="group" aria-label="جهت صفحه">'+
+   [['portrait','عمودی'],['landscape','افقی']].map(([v,label])=>option('orientation',v,label,orientation===v)).join('')+
+   '</div><div class="v244-page-menu-heading">اندازه کاغذ</div><div class="v283-option-row v283-paper" role="group" aria-label="اندازه کاغذ">'+
+   ['A4','A5','A3'].map(v=>option('paper',v,v,paper===v)).join('')+'</div>'+
    '<div class="v244-page-menu-rule" role="separator"></div>'+
-   '<button type="button" role="menuitem" data-v235-page-action="copy" data-v235-page-id="'+html(pageId)+'">کپی صفحه</button>'+
-   '<button type="button" role="menuitem" data-v235-page-action="cut" data-v235-page-id="'+html(pageId)+'">برش صفحه</button>'+
-   '<button type="button" role="menuitem" data-v235-page-action="paste" data-v235-page-id="'+html(pageId)+'" '+(canPaste?'':'disabled')+'>چسباندن صفحه بعد از این صفحه</button>'+
-   '<button type="button" role="menuitem" class="danger" data-v235-page-action="delete" data-v235-page-id="'+html(pageId)+'">حذف صفحه</button>';
+   '<div class="v283-page-shortcuts" role="group" aria-label="عملیات صفحه">'+
+   shortcut('copy','کپی صفحه','کپی','<rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/>')+
+   shortcut('cut','برش صفحه','برش','<circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8 8l12 12M8 16L20 4M14 14l-3-3"/>',disabled)+
+   shortcut('paste','چسباندن صفحه بعد از این صفحه','چسباندن','<rect x="7" y="3" width="10" height="4" rx="1"/><path d="M7 5H5a2 2 0 0 0-2 2v13h18V7a2 2 0 0 0-2-2h-2M12 10v7M9 14l3 3 3-3"/>',canPaste?'':'disabled')+
+   shortcut('delete','حذف صفحه','حذف','<path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7M14 10v7"/>','class="danger"')+'</div>';
   document.body.appendChild(menu);
   const rect=menu.getBoundingClientRect();
   menu.style.left=Math.max(8,Math.min(innerWidth-rect.width-8,e.clientX))+'px';
@@ -12405,5 +12409,22 @@ addZipImportButton();
 .v280-zip-progress progress{width:100%;height:12px;accent-color:#087b80}
 .v280-zip-progress [data-v280-current]{height:9px}
 .v280-zip-progress [data-v280-detail]{min-height:1.7em;overflow-wrap:anywhere;font-size:12px}
+</style>
+
+<style id="v283-compact-page-context">
+.v235-page-context{width:258px;min-width:0;max-width:calc(100vw - 16px);max-height:calc(100vh - 16px);gap:3px;padding:8px}
+.v235-page-context .v223-page-context-title{padding:5px 7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.v235-page-context>button{padding:7px 8px;font-size:12px}
+.v235-page-context .v244-page-menu-heading{padding:5px 3px 1px}
+.v235-page-context .v283-option-row,.v235-page-context .v283-page-shortcuts{display:grid;gap:5px;min-width:0}
+.v235-page-context .v283-orientation{grid-template-columns:repeat(2,minmax(0,1fr))}
+.v235-page-context .v283-paper{grid-template-columns:repeat(3,minmax(0,1fr))}
+.v235-page-context .v283-page-shortcuts{grid-template-columns:repeat(4,minmax(0,1fr))}
+.v235-page-context .v283-option-row>button,.v235-page-context .v283-page-shortcuts>button{display:flex!important;align-items:center;justify-content:center;text-align:center!important;min-width:0;border:1px solid #c7d9d6;border-radius:6px;padding:6px 2px;gap:4px;font-size:11px;white-space:nowrap}
+.v235-page-context .v283-option-row>button[aria-checked="true"]{border-color:#087b80;box-shadow:inset 0 0 0 1px #087b80;background:#e4f3f3}
+.v235-page-context .v283-option-check{font-weight:bold;color:#087b80}
+.v235-page-context .v283-page-shortcuts>button{flex-direction:column;padding:7px 2px;gap:3px;font-size:10px}
+.v235-page-context .v283-page-shortcuts>button.danger{border-color:#e4c9cb}
+.v235-page-context .v244-page-menu-rule{margin:4px 0}
 </style>
 </body></html>
