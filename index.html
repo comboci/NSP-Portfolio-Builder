@@ -12479,6 +12479,8 @@ addZipImportButton();
  function setOpen(slot,value){
   const rail=slot.querySelector(':scope > .v283-edge-tab');
   const isOpen=!!value&&active()&&slot.dataset.pinned==='false';
+  // Do not leave keyboard focus in an invisible flyout.
+  if(!isOpen&&slot.dataset.open==='true'&&slot.dataset.pinned==='false'&&slot.querySelector(':scope > .v283-dock-panel')?.contains(document.activeElement))rail?.focus({preventScroll:true});
   slot.dataset.open=String(isOpen);
   rail?.setAttribute('aria-expanded',String(isOpen));
  }
@@ -12512,7 +12514,7 @@ addZipImportButton();
  function closeWhenOutside(slot){
   if(slot.isConnected&&!slot.matches(':hover')&&!slot.contains(document.activeElement)&&!menuOpen(slot))setOpen(slot,false);
  }
- function mountSlot(panel,key,label){
+ function mountSlot(panel,key,label,restoreOpen=false){
   if(!panel)return;
   let slot=panel.parentElement;
   if(!slot.classList.contains('v283-dock-slot')){
@@ -12559,11 +12561,21 @@ addZipImportButton();
    bar.append(title,pin);host.prepend(bar);
   }
   setPinned(slot,preferences[key],false);
+  if(restoreOpen)setOpen(slot,true);
  }
- function mount(){
+ let mountedTab=null;
+ function rememberFlyouts(){
+  const open={};
+  if(active()&&mountedTab===tab)document.querySelectorAll('.v283-dock-slot[data-open="true"]').forEach(slot=>{
+   if(slot.matches(':hover')||slot.contains(document.activeElement)||menuOpen(slot))open[slot.dataset.kind]=true;
+  });
+  return open;
+ }
+ function mount(open={}){
   document.body.classList.toggle('v283-designer',!!document.querySelector('#app .v13-editor')&&(tab==='visual'||tab==='templates'));
-  mountSlot(document.getElementById('nav'),'nav','منوها');
-  mountSlot(document.querySelector('#app .v85-sidebar'),'pages','صفحات');
+  mountSlot(document.getElementById('nav'),'nav','منوها',open.nav);
+  mountSlot(document.querySelector('#app .v85-sidebar'),'pages','صفحات',open.pages);
+  mountedTab=tab;
   applyLayout();
  }
  document.addEventListener('pointerdown',e=>{
@@ -12581,9 +12593,9 @@ addZipImportButton();
    document.querySelectorAll('.v283-dock-slot[data-open="true"]').forEach(slot=>{if(!menuOpen(slot))setOpen(slot,false);});
   },0);
  });
- media.addEventListener('change',mount);
+ media.addEventListener('change',()=>mount());
  const previousRender=render;
- render=function(){const result=previousRender.apply(this,arguments);mount();return result;};
+ render=function(){const open=rememberFlyouts();const result=previousRender.apply(this,arguments);mount(open);return result;};
  mount();
 })();
 </script>
