@@ -2968,6 +2968,7 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
       recoveryButton = document.createElement('button');
       recoveryButton.type = 'button';
       recoveryButton.textContent = 'بازیابی چاپ بلاتکلیف';
+      recoveryButton.dataset.checkedPrintRecovery = 'true';
       recoveryButton.style.cssText = 'position:fixed;bottom:16px;left:16px;z-index:2147483647;padding:12px;background:#243c53;color:white;border:0;border-radius:8px;cursor:pointer';
       recoveryButton.onclick = function () {
         if (!active) return;
@@ -10775,10 +10776,22 @@ function componentFromSelection(list,name){
    document.body.classList.toggle('v284-hide-rulers',!V.rulersVisible);
    addRulerToggle(); // No render(), project mutation or page save.
  });
- let previewRoot=null,previewSnapshot=null,closing=false;
- function closePreview(){
+ let previewRoot=null,previewSnapshot=null,closing=false,focusOrigin=null,inertBackground=new Map();
+ function previewFocusable(root){
+  return Array.from(root.querySelectorAll('button:not(:disabled),[href],input:not(:disabled),select:not(:disabled),textarea:not(:disabled),[tabindex]:not([tabindex="-1"])'))
+   .filter(el=>!el.hidden&&!el.closest('[inert]')&&el.getClientRects().length>0);
+ }
+ function movePreviewFocus(root,backward){
+  const all=previewFocusable(root);
+  (all[backward?all.length-1:0]||root).focus({preventScroll:true});
+ }
+ function closePreview(restore=true){
    if(!previewRoot)return;
    previewRoot.remove();previewRoot=null;previewSnapshot=null;
+   for(const [el,wasInert] of inertBackground)el.inert=wasInert;
+   inertBackground.clear();
+   const previous=focusOrigin;focusOrigin=null;
+   if(restore&&previous?.isConnected&&!previous.disabled)previous.focus({preventScroll:true});
    document.body.classList.remove('v222-design-print');
  }
  function design(){
@@ -10786,30 +10799,37 @@ function componentFromSelection(list,name){
    if(!doc)return null;
    return doc;
  }
- function openPreview(){
+ function openPreview(trigger){
+   if(V.printPending)return null;
    const model=design();
    if(!model){alert('ابتدا یک صفحه یا قالب را در طراح باز کنید.');return null;}
    const portfolio=V.pageEditScope==='project'?(state.portfolios||[]).find(p=>p.id===state.activePortfolioId):null;
    const pages=v13Copy(portfolio?(portfolio.pages||[]):[model]);
    if(!pages.length){alert('پورتفولیو صفحه‌ای برای پیش‌نمایش ندارد.');return null;}
-   closePreview();
+   const previous=trigger||focusOrigin||document.activeElement;
+   closePreview(false);
    const markup=pages.map((page,index)=>V.renderDocument(page,index+1)).join('');
    const root=document.createElement('div');
    root.className='v222-print-root';root.id='v222-print-root';
    root.setAttribute('role','dialog');root.setAttribute('aria-modal','true');root.setAttribute('aria-label','پیش‌نمایش چاپ');
+   root.tabIndex=-1;
    root.innerHTML='<div class="v222-print-header no-print">'+
      '<strong>پیش‌نمایش PDF — '+esc(portfolio?.name||model.title||model.name||'صفحه طراحی')+' ('+pages.length+' صفحه)</strong>'+
      '<div class="v222-print-actions"><button class="btn primary" type="button" data-v222-print-from-preview>چاپ / PDF</button>'+
      '<button class="btn" type="button" data-v222-close-preview>بستن ×</button></div></div>'+
      '<div class="v222-print-content">'+markup+'</div>';
-   document.body.appendChild(root);previewRoot=root;
+   document.body.appendChild(root);previewRoot=root;focusOrigin=previous;
+   for(const el of document.body.children){
+    if(el===root||el.matches('script,style,[data-checked-print-recovery]'))continue;
+    inertBackground.set(el,el.inert);el.inert=true;
+   }
    previewSnapshot={owner:state,pages,markup};
    root.querySelector('[data-v222-close-preview]')?.focus({preventScroll:true});
    return root;
  }
- async function printCurrent(){
+ async function printCurrent(trigger){
    if(closing)return;
-   const root=previewRoot||openPreview();
+   const root=previewRoot||openPreview(trigger);
    if(!root)return;
    closing=true;
    const printButton=root.querySelector('[data-v222-print-from-preview]');
@@ -10820,18 +10840,31 @@ function componentFromSelection(list,name){
     const stillCurrent=()=>previewRoot===root&&previewSnapshot===frozen&&frozen.owner===state&&root.isConnected;
     const snapshot=V.createPrintSnapshot(frozen.pages,frozen.markup);
     if(snapshot)await printAll(snapshot,frozen.pages,{stillCurrent});
-   }finally{closing=false;if(printButton)printButton.disabled=false;}
+   }finally{
+    closing=false;if(printButton)printButton.disabled=false;
+    if(previewRoot===root&&!root.contains(document.activeElement))movePreviewFocus(root,false);
+   }
  }
  document.addEventListener('click',e=>{
    const button=e.target.closest('[data-v222-print-preview],[data-v222-print-direct],[data-v222-print-from-preview],[data-v222-close-preview]');
    if(!button)return;
    e.preventDefault();
-   if(button.hasAttribute('data-v222-print-preview')){openPreview();return;}
-   if(button.hasAttribute('data-v222-close-preview')){closePreview();return;}
-   printCurrent();
+   if(button.hasAttribute('data-v222-print-preview')){openPreview(button);return;}
+   if(button.hasAttribute('data-v222-close-preview')){if(!V.printPending)closePreview();return;}
+   printCurrent(button);
+ },true);
+ document.addEventListener('focusin',e=>{
+   if(previewRoot&&!previewRoot.contains(e.target)&&!e.target.closest?.('[data-checked-print-recovery]'))
+    movePreviewFocus(previewRoot,false);
  },true);
  document.addEventListener('keydown',e=>{
-   if(e.key==='Escape'&&previewRoot&&!V.printPending)closePreview();
+   const root=previewRoot;if(!root)return;
+   if(e.key==='Escape'&&!V.printPending){e.preventDefault();e.stopImmediatePropagation();closePreview();return;}
+   if(e.key!=='Tab'||e.target.closest?.('[data-checked-print-recovery]'))return;
+   const all=previewFocusable(root),first=all[0],last=all[all.length-1],active=document.activeElement;
+   if(!first||!all.includes(active)||(e.shiftKey?active===first:active===last)){
+    e.preventDefault();movePreviewFocus(root,e.shiftKey);
+   }
  },true);
  const beforeRender=render;
  render=function(){
