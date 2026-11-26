@@ -6996,6 +6996,14 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
      push('error','pageBounds',pageId,index,id,'عنصر «'+label+'» بیرون از محدودهٔ صفحه است.',identity(o));
     else if(x<safeX-.2||y<safeY-.2||x+w>width-safeX+.2||y+h>height-safeY+.2)
      push('warning','safeMargin',pageId,index,id,'عنصر «'+label+'» وارد حاشیهٔ امن '+settings.safeMarginMm+' میلی‌متری شده است.',identity(o));
+    if(o.type==='nspComponent'&&(o.nspOptions?.fields||['systems']).includes('systems')&&
+       (o.nspBase==='hotelText'||o.nspOptions?.systemMode!=='none')){
+     const owner=V.nsp?.pageScope?.(page),missing=new Set();
+     for(const hotel of V.nsp?.records?.(o,owner)||[])
+      for(const key of V.nsp.unresolvedSystems?.(hotel,owner)||[])missing.add(key);
+     if(missing.size)push('error','unresolvedHotelSystem',pageId,index,id,
+      'سامانهٔ تعریف‌نشده برای «'+label+'»: '+Array.from(missing).join('، '),identity(o));
+    }
     const renderedImage=o.type==='image'?V.nsp?.resolveImage?.(o,V.nsp.pageScope(page))||o:o;
     if(o.type==='image'&&!imagePresent(renderedImage))
      push('error','missingImage',pageId,index,id,'تصویر «'+label+'» در کتابخانهٔ همین پروژه یا کتابخانهٔ عمومی پیدا نشد.',identity(o));
@@ -13845,6 +13853,14 @@ function mountSection(tray,p,u){
   const box=make('details',{'data-nsp-hotel':x.id},[make('summary',{text:(x.hotelName||x.projectName||x.id)+' · '+x.id})]);box.open=x.id===u.hotel;box.ontoggle=()=>{if(box.open)u.hotel=x.id;};
   for(const [k,t] of [['hotelName','نام هتل'],['projectName','نام پروژه'],['city','شهر'],['stars','ستاره (۱–۵)'],['year','سال اجرا']])
    field(box,t,input(x[k],v=>{u.hotel=x.id;editHotel(p,x.id,{[k]:v});},{'data-nsp-hotel-field':k}));
+  const missing=unresolvedSystems(x,p);
+  if(missing.length){
+   const warning=make('p',{class:'note',role:'status',text:'سامانه‌های ثبت‌شده ولی تعریف‌نشده: '+missing.join('، ')});box.append(warning);
+   for(const id of missing)box.append(btn('قطع پیوند سامانهٔ تعریف‌نشده: '+id,()=>{
+    if(confirm('فقط ارجاع این رکورد به سامانهٔ بی‌تعریف حذف شود؟'))
+     void editHotel(p,x.id,row=>({systems:row.systems.filter(value=>value!==id)}));
+   }));
+  }
   for(const s of systems(p)){const ck=make('input',{type:'checkbox','data-nsp-hotel-system':s.id});ck.checked=x.systems.includes(s.id);
    ck.onchange=()=>{u.hotel=x.id;const checked=ck.checked;void editHotel(p,x.id,current=>({
     systems:checked?[...current.systems,s.id]:current.systems.filter(id=>id!==s.id)
@@ -13869,7 +13885,14 @@ function text(id,val,x,y,w,h,o,a={}){const s=o.nspOptions;return primitive(id,'t
 function records(o,p){const b=new Map((p?.nspHotels||[]).map(x=>[x.id,x]));const a=(o.hotelIds||[]).map(i=>b.get(i)).filter(Boolean);
  if(o.nspOptions.sort==='name')a.sort((x,y)=>x.hotelName.localeCompare(y.hotelName,'fa'));
  if(o.nspOptions.sort==='year')a.sort((x,y)=>x.year.localeCompare(y.year,'fa'));return a;}
-const systemRows=(h,p)=>{const by=new Map(systems(p).map(q=>[q.id,q]));return h.systems.map(x=>by.get(x)).filter(Boolean);};
+const unresolvedSystems=(h,p)=>{
+ const available=new Set(systems(p).map(r=>r.id));return (h.systems||[]).filter(id=>!available.has(id));
+};
+const systemRows=(h,p)=>{
+ const by=new Map(systems(p).map(q=>[q.id,q]));
+ return (h.systems||[]).map(id=>by.get(id)||{id,missing:true,name:'سامانهٔ تعریف‌نشده: '+id,
+   nameFa:'سامانهٔ تعریف‌نشده: '+id,nameEn:'Undefined system: '+id,assetId:''});
+};
 const tools={records,systems:systemRows,primitive,text};
 function layoutText(o,p){const s=o.nspOptions,h=s.fontSize*s.lineHeight,draw=[];let y=8;
  for(const q of records(o,p)){const vals={name:q.hotelName,city:q.city,stars:'★'.repeat(+q.stars||0),year:q.year,systems:systemRows(q,p).map(z=>z.name||z.nameFa||z.nameEn).join('، ')};
@@ -13934,7 +13957,7 @@ document.addEventListener('change',ev=>{
 });
 document.addEventListener('click',ev=>{const b=ev.target.closest('[data-nsp-hotel-seq]');if(!b)return;const o=V.editor.nspSelected(),a=o?.hotelIds?.slice(),i=a?.indexOf(b.dataset.nspHotelId);if(i==null||i<0)return;const k=b.dataset.nspHotelSeq,j=i+(k==='up'?-1:1);
  if(k==='remove')a.splice(i,1);else if(j>=0&&j<a.length)[a[i],a[j]]=[a[j],a[i]];V.editor.nspPatch({hotelIds:a});});
-Object.assign(N,{kinds,fields,roles,fonts,toolDefinitions:definitions,cleanOptions:options,validateHotels,validateInstances,addHotel,editHotel,removeHotel,mountTray,mountSection,builtin,slot,insert,createInstance,renderContent:content,propPanel:panel,layoutText,layoutTools:tools,records,systems:systemRows});
+Object.assign(N,{kinds,fields,roles,fonts,toolDefinitions:definitions,cleanOptions:options,validateHotels,validateInstances,addHotel,editHotel,removeHotel,mountTray,mountSection,builtin,slot,insert,createInstance,renderContent:content,propPanel:panel,layoutText,layoutTools:tools,records,systems:systemRows,unresolvedSystems});
 })();
 </script>
 <script id="nsp-view">
