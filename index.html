@@ -7666,6 +7666,11 @@ function normalizeRestoreWorkspace(payload){
  });
  return candidate;
 }
+function v290RestoreSummary(candidate,current){
+ const names=[candidate.activeWorkspaceName,...(candidate.projectWorkspaces||[]).map(p=>p.name)];
+ return 'کل Workspace شامل همه پروژه‌ها و کتابخانه مشترک جایگزین می‌شود. پروژه‌های نسخه پشتیبان:\n'+names.join('\n')+
+  (current?'':'\nوضعیت فعلی قابل خواندن نیست؛ فهرست پروژه‌های فعلی قابل مقایسه نیست.')+'\nجایگزینی انجام شود؟';
+}
 async function restore(payload,confirmed=false){
  const candidate=normalizeRestoreWorkspace(payload);if(!confirmed&&!confirm('پروژهٔ جاری با نسخهٔ انتخاب‌شده جایگزین شود؟'))return;
  if(!ready)throw Error('ذخیره‌سازی آماده نیست');
@@ -7723,7 +7728,7 @@ V.recoverBrowserConflict=function(){
 const exportUnverifiedDownload=download;download=function(...args){if(V.recoveryMissingAssets?.length&&!confirm('این فایل JSON حاوی تصویر جایگزین است، نه محتوای اصل تصاویر مفقود. نسخهٔ کامل بکاپ محسوب نمی‌شود. خروجی موقت برای بررسی گرفته شود؟'))return false;return exportUnverifiedDownload.apply(this,args);};
 window.addEventListener('beforeunload',e=>{if(pending||lastError||V.editor?.hasDrafts?.()){e.preventDefault();e.returnValue='';}});
 // TASK-042: browser storage recovery stays locked and never merges storage sources.
-function showBrowserStorageRecovery(error){
+function showBrowserStorageRecovery(error,readRevision=false){
  v136RecordIncident('startup','startup',error,'failed');
  ready=false;V.saveBlocked=true;
  const problem=String(error?.message||error);
@@ -7736,8 +7741,40 @@ function showBrowserStorageRecovery(error){
  const title=document.createElement('h2');title.textContent='بازیابی منبع ذخیره‌سازی';panel.appendChild(title);
  function paragraph(msg,host=panel){const p=document.createElement('p');p.textContent=msg;p.style.cssText='white-space:pre-wrap;line-height:1.8;font-size:13px';host.appendChild(p);return p;}
  function button(label,fn,host=panel){const b=document.createElement('button');b.type='button';b.className='btn';b.style.cssText='margin:4px;white-space:normal';b.textContent=label;b.onclick=fn;host.appendChild(b);return b;}
- paragraph('منبع معتبر احتمالی: IndexedDB — فعلاً قابل خواندن نیست. ویرایش و تمام ذخیره‌ها قفل شده‌اند؛ هیچ اطلاعاتی در IndexedDB یا localStorage تغییر داده نمی‌شود.');
+ paragraph('وضعیت جاری IndexedDB قابل بارگذاری نیست. ویرایش و ذخیره عادی قفل است. مشاهده و دریافت پشتیبان تغییری ایجاد نمی‌کند؛ بازیابی فقط با تأیید صریح و کنترل نسخه انجام می‌شود.');
  paragraph('خطا: '+problem);
+ if(db){
+  const checkpoints=document.createElement('div');panel.appendChild(checkpoints);
+  let recoveryWriteActive=false;
+  button('نمایش بکاپ‌های معتبر مرورگر',async event=>{
+   const trigger=event.currentTarget;trigger.disabled=true;checkpoints.replaceChildren();
+   try{
+    const rows=await request('backups','getAll');
+    let valid=0;
+    for(const row of rows){
+     let candidate;
+     try{normalizeRestoreWorkspace(row.payload);candidate=row;}catch(_){continue;}
+     valid++;
+     const line=document.createElement('div');checkpoints.appendChild(line);
+     paragraph(String(candidate.name||'پشتیبان')+' — '+String(candidate.createdAt||''),line);
+     button('خروجی JSON بکاپ',async()=>{
+      try{await v237SaveBackupJSON({app:'NSP Portfolio Builder',schemaVersion:2,state:normalizeRestoreWorkspace(candidate.payload)},'NSP_Recovery_Backup.json');}
+      catch(e){alert(String(e?.message||e));}
+     },line);
+     if(readRevision)button('بازیابی این Workspace',async e=>{
+      if(recoveryWriteActive||!confirm(v290RestoreSummary(normalizeRestoreWorkspace(candidate.payload),null)))return;
+      recoveryWriteActive=true;
+      const restoreButton=e.currentTarget;restoreButton.disabled=true;
+      try{await V.requireNoPendingDiskOperation?.();await browserCompareAndWrite(JSON.stringify(normalizeRestoreWorkspace(candidate.payload)));window.location.reload();}
+      catch(error){alert('داده جایگزین نشد: '+String(error?.message||error));restoreButton.disabled=false;recoveryWriteActive=false;}
+     },line);
+    }
+    if(!valid)paragraph('بکاپ سالم برای بازیابی پیدا نشد.',checkpoints);
+   }catch(e){paragraph('خواندن پشتیبان‌ها ممکن نبود: '+String(e?.message||e),checkpoints);}
+   finally{trigger.disabled=false;}
+  });
+ }
+
  button('خروجی گزارش خطای بدون اطلاعات خصوصی (نه بکاپ)',()=>V.exportStorageDiagnostics());
  button('تلاش مجدد: بارگذاری صفحه',()=>window.location.reload()).classList.add('primary');
  cover.appendChild(panel);
@@ -7746,9 +7783,10 @@ function showBrowserStorageRecovery(error){
  status();
 }
 (async()=>{
+ let readRevision=false;
  try{
   await openBrowser();
-  const payload=await readBrowserSnapshot();
+  const payload=await readBrowserSnapshot();readRevision=true;
   if(payload){
    state=v13NormalizeProject(JSON.parse(payload));lastPayload=payload;
    selected=state.pages[0]?.id;v13ResetEditorContext(true);
@@ -7765,7 +7803,7 @@ function showBrowserStorageRecovery(error){
   }
   if(!payload)save(true);
   status();
- }catch(error){showBrowserStorageRecovery(error);}
+ }catch(error){showBrowserStorageRecovery(error,readRevision);}
 })();
 
 })();
