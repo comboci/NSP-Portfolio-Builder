@@ -1960,42 +1960,49 @@ async function v77CopyProject(id){
 async function v77DeleteProject(id){
  const all=v76ListProjects(),src=all.find(p=>p.id===id);
  if(!src)return false;
- if(Array.isArray(src.data.portfolios)&&src.data.portfolios.length){
-  alert('این پروژه دارای پورتفولیو است؛ ابتدا پورتفولیوهای آن را حذف کنید.');
-  return false;
- }
  if(!v76ValidateCanSwitch()||window.V13.persistencePending||window.V13.saveError||window.V13.saveBlocked){
   alert('ابتدا وضعیت ذخیره و ویرایشگر را مشخص کنید.');return false;
  }
- if(!confirm('پروژهٔ خالی «'+src.name+'» و تصاویر خصوصی آن حذف شود؟ این عمل قابل بازگشت نیست.'))return false;
- if(all.length===1){
-  // The blank root is an internal storage host, not a user-visible project.
-  // Persist an explicit empty registry so reload cannot resurrect a project.
-  const before=state,oldSelected=selected;
-  let empty;
-  try{
-   empty=v78ApplyGlobal(v13NormalizeProject(initialProjectData()),v78SyncGlobal());
-   empty.portfolios=[];empty.activePortfolioId=null;empty.pages=[];
-   empty.imageLibrary=[];empty.imageAlbums=[];
-   empty.globalImageLibrary=v13Copy(state.globalImageLibrary||[]);
-   empty.projectWorkspaces=[];empty.projectRegistryEmpty=true;
-   empty.activeWorkspaceId=uid();empty.activeWorkspaceName='بدون پروژه';
-  }catch(error){alert('آماده‌سازی فهرست خالی انجام نشد: '+error.message);return false;}
-  state=empty;selected=null;
-  if(save(true)!==true){state=before;selected=oldSelected;render();return false;}
-  try{await window.V13.flushStorage();}
-  catch(error){state=before;selected=oldSelected;render();
-   alert('حذف آخرین پروژه ذخیره نشد.\\n'+String(error));return false;}
-  v77ExpandedProjects.clear();v13ResetEditorContext(true);go('v76projects');return true;
- }
+ if(!confirm('پروژه «'+src.name+'» به همراه تمام پورتفولیوها، صفحات و تصاویر خصوصی آن از برنامه حذف شود؟ این عمل قابل بازگشت نیست. فایل‌های خروجی روی دیسک و کتابخانه‌های عمومی حذف نمی‌شوند.'))return false;
  if(id===state.activeWorkspaceId){
-  const next=state.projectWorkspaces[0];
-  if(!next||!await v76SwitchProject(next.id,false))return false;
+  // Remove the active project in one persistence transaction, without
+  // first saving it back into the inactive project registry.
+  const before=state,oldSelected=selected;
+  let target;
+  try{
+   const catalog=v78SyncGlobal();
+   if(all.length===1){
+    // The blank root is only an internal storage host.
+    target=v78ApplyGlobal(v13NormalizeProject(initialProjectData()),catalog);
+    target.portfolios=[];target.activePortfolioId=null;target.pages=[];
+    target.imageLibrary=[];target.imageAlbums=[];
+    target.projectWorkspaces=[];target.projectRegistryEmpty=true;
+    target.activeWorkspaceId=uid();target.activeWorkspaceName='بدون پروژه';
+   }else{
+    const next=state.projectWorkspaces[0];
+    if(!next)throw Error('پروژه جایگزین پیدا نشد.');
+    const candidate=v78ApplyGlobal(v13Copy(next.data),catalog);
+    candidate.globalImageLibrary=v13Copy(state.globalImageLibrary||[]);
+    target=v13NormalizeProject(candidate);
+    target.projectRegistryEmpty=false;
+    target.activeWorkspaceId=next.id;target.activeWorkspaceName=next.name;
+    target.activeWorkspaceCreator=next.createdBy||next.data?.activeWorkspaceCreator||'';
+    target.activeWorkspaceCreatedAt=next.createdAt||next.data?.activeWorkspaceCreatedAt||'';
+    target.projectWorkspaces=state.projectWorkspaces.filter(p=>p.id!==next.id&&p.id!==id);
+   }
+   target.globalImageLibrary=v13Copy(state.globalImageLibrary||[]);
+  }catch(error){alert('آماده‌سازی حذف پروژه انجام نشد: '+error.message);return false;}
+  state=target;selected=state.pages[0]?.id||null;
+  if(!await v77Persist(()=>{state=before;selected=oldSelected;}))return false;
+  v13ResetEditorContext(true);
+ }else{
+  const before=state.projectWorkspaces;
+  state.projectWorkspaces=before.filter(p=>p.id!==id);
+  if(!await v77Persist(()=>{state.projectWorkspaces=before;}))return false;
  }
- const before=state.projectWorkspaces;
- state.projectWorkspaces=before.filter(p=>p.id!==id);
- if(!await v77Persist(()=>{state.projectWorkspaces=before;}))return false;
- v77ExpandedProjects.delete(id);go('v76projects');return true;
+ v77ExpandedProjects.delete(id);
+ for(const pf of src.data.portfolios||[])v243ExpandedPortfolios.delete(v243PortfolioKey(id,pf.id));
+ await go('v76projects');return true;
 }
 
 async function v77OpenImages(id){
