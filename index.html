@@ -14020,9 +14020,11 @@ Object.assign(N,{kinds,fields,roles,fonts,toolDefinitions:definitions,cleanOptio
  const clamp=(v,d,min,max)=>v==null||v===''||!Number.isFinite(Number(v))?d:Math.min(max,Math.max(min,Number(v)));
  const str=x=>x==null?'':String(x).trim();
  const paint=(x,d)=>/^(?:#[0-9a-f]{3,8}|transparent)$/i.test(str(x))?str(x):d;
- function bind(o,scope,tools,hotel,base,r,grid){
+ function bind(o,scope,tools,hotel,base,r,grid,layoutKey){
   let {x,y,w,h}=r;if(w<8||h<8)return [];
   const opt=o.nspOptions||{},out=[];
+  // The instance and primitive IDs are opaque. Carry slot/layout roles independently.
+  const withPart=(primitive,part)=>({...primitive,nspLayoutKey:layoutKey,nspLayoutPart:part});
   const fields=new Set(Array.isArray(opt.fields)?opt.fields:order);
   const custom=Array.isArray(opt.elementOrder)?opt.elementOrder:str(opt.elementOrder).split(/[,،\s]+/);
   const selectedOrder=[...new Set([...custom,...order])].filter(q=>order.includes(q));
@@ -14035,10 +14037,12 @@ Object.assign(N,{kinds,fields,roles,fonts,toolDefinitions:definitions,cleanOptio
   const pad=grid?.034:.047,tx=x+(share+pad)*w,tw=Math.max(2,w*(1-share-2*pad));
   function emit(slot,value,top,height,size,color,boxX=tx,boxW=tw,extra={}){
    if(value===''||value==null||boxW<2||height<2)return;
-   out.push(tools.text(base+'-'+slot,String(value),boxX,top,boxW,height,o,{fontFamily:opt.fontFamily||o.fontFamily||'Tahoma',fontSize:Math.max(2,size),color,direction:opt.direction==='ltr'?'ltr':'rtl',textAlign:opt.align|| (rtl?'right':'left'),...extra}));
+   const part=slot==='systems-heading'||slot.startsWith('system-name-')?'systems':slot;
+   out.push(withPart(tools.text(base+'-'+slot,String(value),boxX,top,boxW,height,o,{fontFamily:opt.fontFamily||o.fontFamily||'Tahoma',fontSize:Math.max(2,size),color,direction:opt.direction==='ltr'?'ltr':'rtl',textAlign:opt.align|| (rtl?'right':'left'),...extra}),part));
   }
-  if(bg!=='transparent'||edge>0)out.push(tools.primitive(base+'-frame','shape',x,y,w,h,{background:bg,borderColor:border,borderWidth:edge}));
-  if(photo?.assetId)out.push(tools.primitive(base+'-photo','image',x,y,w*share,h,{assetId:photo.assetId,objectFit:'cover',...(crop?{imageEdit:crop}:{})}));
+  const paintsFrame=bg!=='transparent'||edge>0;
+  if(paintsFrame||grid)out.push(withPart(tools.primitive(base+'-frame','shape',x,y,w,h,{background:bg,borderColor:border,borderWidth:edge,visible:paintsFrame}),'frame'));
+  if(photo?.assetId)out.push(withPart(tools.primitive(base+'-photo','image',x,y,w*share,h,{assetId:photo.assetId,objectFit:'cover',...(crop?{imageEdit:crop}:{})}),'image'));
   const rows=grid?[[.17,.22],[.44,.074],[.53,.077],[.65,.077],[.78,.19]]:[[.177,.138],[.328,.04],[.405,.044],[.472,.044],[.55,.153]];
   const body=clamp(opt.fontSize,grid?h*.055:h*.0258,2,100),space=clamp(opt.spacing,0,-30,60);
   const mode=['none','text','icon','both'].includes(opt.systemMode)?opt.systemMode:'both';
@@ -14059,7 +14063,7 @@ Object.assign(N,{kinds,fields,roles,fonts,toolDefinitions:definitions,cleanOptio
     systems.slice(0,Math.max(0,vertical?total:Math.min(numCols,total))).forEach((sys,j)=>{
      const sy=first+(vertical?j*(boxH+gap):0),sx=tx+(!vertical?(rtl?tw-colW-j*(colW+gap):j*(colW+gap)):0);
      const iconSide=Math.min(icon,boxH,colW),useIcon=(mode==='icon'||mode==='both')&&!!sys?.assetId&&iconSide>=2;
-     if(useIcon)out.push(tools.primitive(base+'-system-icon-'+j,'image',sx+(rtl?colW-iconSide:0),sy,iconSide,iconSide,{assetId:sys.assetId,objectFit:'contain'}));
+     if(useIcon)out.push(withPart(tools.primitive(base+'-system-icon-'+j,'image',sx+(rtl?colW-iconSide:0),sy,iconSide,iconSide,{assetId:sys.assetId,objectFit:'contain'}),'systems'));
      if(mode==='text'||mode==='both'){
       const label=tools.systemCaption(sys,opt),inset=useIcon?iconSide+gap:0;
       emit('system-name-'+j,label,sy,boxH,Math.min(body*.84,boxH*.72),ink,sx+(rtl?0:inset),colW-inset,{fontWeight:'bold'});
@@ -14074,7 +14078,7 @@ Object.assign(N,{kinds,fields,roles,fonts,toolDefinitions:definitions,cleanOptio
  }
  N.layoutView=function(o,scope,tools){
   const rs=tools.records(o,scope)||[];if(!rs.length)return [];
-  return bind(o,scope,tools,rs[0],o.id+'-view',{x:0,y:0,w:clamp(o.w,0,0,10000),h:clamp(o.h,0,0,10000)},false);
+  return bind(o,scope,tools,rs[0],o.id+'-view',{x:0,y:0,w:clamp(o.w,0,0,10000),h:clamp(o.h,0,0,10000)},false,'view');
  };
  N.layoutGrid=function(o,scope,tools){
   const rs=tools.records(o,scope)||[],opts=o.nspOptions||{};if(!rs.length)return [];
@@ -14088,7 +14092,7 @@ Object.assign(N,{kinds,fields,roles,fonts,toolDefinitions:definitions,cleanOptio
   // Defer complete overflow rows instead of partially painting truncated cards.
   for(let i=0;i<limit;i++){
    const row=Math.floor(i/cols),col=i%cols,x=rtl?w-cardW-col*(cardW+gap):col*(cardW+gap);
-   out.push(...bind(o,scope,tools,rs[i],o.id+'-card-'+i,{x,y:row*(cardH+gap),w:cardW,h:cardH},true));
+   out.push(...bind(o,scope,tools,rs[i],o.id+'-card-'+i,{x,y:row*(cardH+gap),w:cardW,h:cardH},true,i));
   }
   return out;
  };
@@ -14292,14 +14296,12 @@ function applySlots(o,primitives,_p,tools){
  const slots=o.nspSlots,size=o.nspDesignSize;
  const boxes=new Map(),groups=new Map(),base=[];
  for(const p of primitives){
-  const m=p.id.match(/-(view|card-(\d+))-(.+)$/);
-  if(o.nspBase==='hotelText'){if(!groups.has('single'))groups.set('single',{});(groups.get('single').hotelText||=[]).push(p);continue;}
-  if(!m)continue;
-  const key=m[1],kind=m[3];
-  if(kind==='frame'){boxes.set(key,p);base.push(p);continue;}
-  const groupKey=kind==='photo'?'image':kind.startsWith('system')?'systems':kind;
+  if(o.nspBase==='hotelText')continue; // Hotel Text is reflowed directly in its saved slot.
+  const key=p.nspLayoutKey,kind=p.nspLayoutPart;
+  if(key==null||!kind)continue;
+  if(kind==='frame'){boxes.set(key,p);if(p.visible!==false)base.push(p);continue;}
   if(!groups.has(key))groups.set(key,{});
-  const g=groups.get(key);(g[groupKey]||=[]).push(p);
+  const g=groups.get(key);(g[kind]||=[]).push(p);
  }
  if(o.nspBase==='hotelGrid'&&!boxes.size)return base;
  const bounds=o.nspBase==='hotelGrid'?[...boxes]:[[o.nspBase==='hotelText'?'single':'view',{x:0,y:0,w:o.w,h:o.h}]];
