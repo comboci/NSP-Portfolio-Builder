@@ -2129,7 +2129,14 @@ async function v77OpenImages(id){
    new project; portfolio imports add a new document to the chosen project.
    Neither operation is allowed to overwrite the system-wide catalogs. */
 
+const V290_BACKUP_JSON_BYTES=80*1024*1024;
+function v290BackupJSONBlob(text,maxBytes=V290_BACKUP_JSON_BYTES){
+ const blob=new Blob([text],{type:'application/json'});
+ if(blob.size>maxBytes)throw Error('حجم JSON بیش از سقف خواندن برنامه (۸۰ MiB) است. ابتدا از مسیر پروژه خروجی ZIP بگیرید؛ برای پیش‌نویس حجم تصاویر را کاهش دهید.');
+ return blob;
+}
 async function v237SaveBackupJSON(data,filename){
+ const blob=v290BackupJSONBlob(JSON.stringify(data,null,2));
  const safe=String(filename||'NSP_Project.json').replace(/[\\/:*?"<>|\u0000-\u001f]/g,'_');
  if(typeof window.showSaveFilePicker==='function'){
   let handle;
@@ -2138,7 +2145,7 @@ async function v237SaveBackupJSON(data,filename){
     types:[{description:'فایل JSON پروژه NSP',accept:{'application/json':['.json']}}]});
   }catch(error){if(error?.name==='AbortError')return false;throw error;}
   const writable=await handle.createWritable();
-  try{await writable.write(JSON.stringify(data,null,2));await writable.close();}
+  try{await writable.write(blob);await writable.close();}
   catch(error){try{await writable.abort();}catch(_){}throw error;}
   return true;
  }
@@ -2150,17 +2157,16 @@ async function v237SaveBackupJSON(data,filename){
    localStorage.setItem(key,'1');
   }
  }catch(error){}
- v111BackupJSON(data,safe);return true;
+ v111BackupJSON(data,safe,blob);return true;
 }
-function v111BackupJSON(data,filename){
- const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+function v111BackupJSON(data,filename,blob=v290BackupJSONBlob(JSON.stringify(data,null,2))){
  const url=URL.createObjectURL(blob),a=document.createElement('a');
  a.href=url;a.download=String(filename).replace(/[\\/:*?"<>|\u0000-\u001f]/g,'_');
  a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 function v111ReadBackup(file){
  if(!file)return Promise.resolve(null);
- if(file.size>80*1024*1024)return Promise.reject(Error('حجم فایل پشتیبان بیش از ۸۰ مگابایت است.'));
+ if(file.size>V290_BACKUP_JSON_BYTES)return Promise.reject(Error('حجم فایل پشتیبان بیش از ۸۰ مگابایت است.'));
  return file.text().then(raw=>{
   const result=JSON.parse(raw);
   if(!result||typeof result!=='object'||Array.isArray(result))
@@ -2451,7 +2457,7 @@ async function v264ImportGitHub(){
   if(!response.ok)throw Error('GitHub HTTP '+response.status);
   const listing=await response.json();
   if(!Array.isArray(listing))throw Error('فهرست GitHub معتبر نیست.');
-  const files=listing.filter(f=>f.type==='file'&&typeof f.name==='string'&&/\.json$/i.test(f.name)&&!f.name.includes('/')&&f.size<=80*1024*1024);
+  const files=listing.filter(f=>f.type==='file'&&typeof f.name==='string'&&/\.json$/i.test(f.name)&&!f.name.includes('/')&&f.size<=V290_BACKUP_JSON_BYTES);
   if(!files.length)throw Error('فایل پروژه یافت نشد.');
   const choice=prompt('شماره پروژه GitHub را انتخاب کنید:\n'+files.map((f,i)=>(i+1)+'. '+f.name).join('\n'),'1');
   if(choice===null)return;
@@ -11937,7 +11943,7 @@ async function hydrate(raw,readFile,convert=decodeImage,progress=null){
   if(!originals.has(src))originals.set(src,{name,blob});
  }
  // Limit the expanded transport too, including repeated Base64 image data.
- if(JSON.stringify(payload).length>80*1024*1024)fail('حجم پروژه پس از خواندن تصاویر بیش از حد مجاز است.');
+ v290BackupJSONBlob(JSON.stringify(payload));
  if(progress)await progress(3,assets.length,assets.length);
  return {payload,originals};
 }
@@ -12270,7 +12276,7 @@ async function saveRepository(projectId){
  try{const raw=projectPayload(projectId);
   for(const a of arrays(raw)){if(!a.src)fail('داده تصویر موجود نیست: '+a.name);dataBytes(a.src);delete a.path;delete a.repositorySource;}
   raw.manifest={format:'NSP-Embedded-Project',version:1,pageCount:raw.project.data.portfolios.reduce((n,p)=>n+p.pages.length,0),imageCount:arrays(raw).length};
-  if(JSON.stringify(raw,null,2).length>80*1024*1024)fail('حجم پروژه بیش از حد مجاز است.');
+  v290BackupJSONBlob(JSON.stringify(raw,null,2));
   if(!canApplyBackupImport(owner))return;await v237SaveBackupJSON(raw,'project.json');
  }catch(e){if(e?.name!=='AbortError')alert('ذخیره پروژه انجام نشد: '+String(e?.message||e))}finally{busy=false}
 }
@@ -12604,7 +12610,7 @@ async function v276FindDiskProject(root,project,all){
   const blob=await file.getFile();
   let raw,text;
   try{
-   if(blob.size>80*1024*1024)throw Error('oversize');
+   if(blob.size>V290_BACKUP_JSON_BYTES)throw Error('oversize');
    text=await blob.text();raw=JSON.parse(text);
   }catch(e){
    if(normalizeName(name)===normalizeName(safeFolder(project.name)))uncertain.push(name);
