@@ -641,7 +641,7 @@ function v13NormalizeProject(input){
   v13Id(t.categoryId,'شناسه گروه قالب');
   if(!categoryIds.has(t.categoryId))throw Error('گروه قالب پیدا نشد: '+t.name);
   t.objects=v13Objects(t.objects,'عناصر قالب',true);
-  if(t.objects.some(o=>o.type==='custom'))throw Error('قالب عمومی نمی‌تواند به کامپوننت پروژه وابسته باشد.');
+  if(t.objects.some(o=>o.type==='custom'||o.type==='nspComponent'||o.nspBinding))throw Error('قالب عمومی نمی‌تواند به کامپوننت پروژه وابسته باشد.');
   for(const id of v111AssetIds(t.objects)){
    if(!publicImageIds.has(id))throw Error('تصویر عمومی موردنیاز قالب «'+t.name+'» موجود نیست: '+id);
   }
@@ -655,7 +655,7 @@ function v13NormalizeProject(input){
   c.name=v13Text(c.name,'کامپوننت','نام کامپوننت');
   c.width=v13Finite(c.width,1,'عرض',true);c.height=v13Finite(c.height,1,'ارتفاع',true);
   c.objects=v13Objects(c.objects,'اعضای کامپوننت',true);
-  if(c.objects.some(o=>o.type==='custom'))throw Error('کامپوننت تو در تو مجاز نیست.');
+  if(c.objects.some(o=>o.type==='custom'||o.type==='nspComponent'||o.nspBinding))throw Error('کامپوننت تو در تو مجاز نیست.');
   const blocks=new Set(c.objects.filter(o=>o.type==='block').map(o=>o.id));
   if(c.objects.some(o=>o.blockId&&!blocks.has(o.blockId)))throw Error('والد Region Block در تعریف کامپوننت پیدا نشد.');
  }
@@ -2790,6 +2790,7 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
           styles+='overflow:hidden;';
         }else content='<span>کامپوننت پیدا نشد</span>';
       }
+      if(type==='nspComponent'){content=V.nsp?.renderContent?.(o,opts)||'';styles+='overflow:hidden;';}
       // Rotated/flipped frames are resized numerically until the mouse logic uses local axes.
       var v98AxisHandles=Math.abs(number(o.rotation,0)%360)<0.00001&&o.flipH!==true&&o.flipV!==true;
       if (type === 'image') {
@@ -4460,7 +4461,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
       out+=input('رنگ سطح','background',o.background||'#f7931e','color')+input('رنگ خط','strokeColor',o.strokeColor||'#000000','color')+input('ضخامت خط','strokeWidth',o.strokeWidth||0,'number');
       out+='<label><input type="checkbox" data-v13-property="pathFill" '+(o.pathFill?'checked':'')+' '+disabled+'> سطح رنگی</label><label><input type="checkbox" data-v13-property="pathStroke" '+(o.pathStroke?'checked':'')+' '+disabled+'> خط دور</label>';
       out+='<label>مسیر برداری (SVG path)</label><textarea dir="ltr" rows="5" data-v13-property="pathData" '+disabled+'>'+html(o.pathData||'')+'</textarea><p class="muted">مسیر واردشده از Illustrator مستقل است؛ رنگ، اندازه و جایگاه را می‌توانید تغییر دهید.</p>';
-    }else if(o.type==='custom'){out+='<p class="muted">این نمونه به تعریف مرکزی کامپوننت در Toolbox متصل است؛ جابه‌جایی و اندازه مختص همین نمونه است.</p>';}else out+=input('رنگ شکل','background',o.background||'#e4f3f3','color');
+    }else if(o.type==='nspComponent'){out+=V.nsp?.propPanel?.(o,off)||'';}else if(o.type==='custom'){out+='<p class="muted">این نمونه به تعریف مرکزی کامپوننت در Toolbox متصل است؛ جابه‌جایی و اندازه مختص همین نمونه است.</p>';}else out+=input('رنگ شکل','background',o.background||'#e4f3f3','color');
     if(o.type==='text'||o.type==='image')out+=input('رنگ پس‌زمینهٔ عنصر','background',o.background&&o.background!=='transparent'?o.background:'#ffffff','color')+'<label class="v13-check"><input type="checkbox" data-v13-object-transparent '+(!o.background||o.background==='transparent'?'checked':'')+' '+disabled+'> پس‌زمینهٔ شفاف</label>'+(o.type==='image'?'<p class="muted">رنگ پس‌زمینه در قسمت‌های شفاف تصویر و فضای خالی کادر دیده می‌شود.</p>':'');
     if(['image','shape','circle'].includes(o.type)){
       const field=(title,k,val,min,max)=>labelFor(title,k)+'<input type="number" data-v13-property="'+k+'" data-v103-effect-number min="'+min+'" max="'+max+'" step="1" value="'+html(val)+'" '+disabled+'>';
@@ -5860,6 +5861,14 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
   V.clearEditorHistory=function(){E.propertyEdit=null;E.imageRequest=null;E.inline=null;E.lastCanvasClick=null;E.selected.clear();E.multi.clear();E.anchors.clear();E.activeLayers.clear();E.selectedLayers.clear();E.layerDrag=null;E.drag=null;};
   V.editor=Object.assign(V.editor||{},{hasDrafts:function(){return !!(catalogChanged());},currentPage:function(){return tab==='visual'&&E.pageMode==='edit'&&E.current?.type==='page'&&!catalogContext(E.current)?{projectId:state.activeWorkspaceId,portfolioId:E.current.portfolioId||state.activePortfolioId,pageId:E.current.id}:null;},resetSelection:function(){E.propertyEdit=null;E.imageRequest=null;E.inline=null;E.lastCanvasClick=null;E.epoch++;E.current=null;E.selected.clear();E.multi.clear();E.anchors.clear();E.activeLayers.clear();E.selectedLayers.clear();E.layerDrag=null;E.drag=null;},resetAll:function(){E.propertyEdit=null;E.imageRequest=null;E.inline=null;E.lastCanvasClick=null;E.epoch++;E.current=null;E.pageMode='list';E.selected.clear();E.multi.clear();E.anchors.clear();E.activeLayers.clear();E.selectedLayers.clear();E.layerDrag=null;E.histories.clear();E.drag=null;},refreshStorageStatus:v107RefreshStorageStatus});
   V.editor.nspSelected=()=>currentObject(E.current);
+  V.editor.nspInsert=(values,drop)=>{const c=E.current;if(!c||locked(c)||!V.nsp.pfc())return false;add(c,'nspComponent',values,drop||undefined);return V.editor.nspSelected()?.id||false;};
+  V.editor.nspPatch=function(patch){
+    const c=E.current,o=currentObject(c),p=V.nsp.pfc();
+    if(!p||!o||o.type!=='nspComponent'||locked(c)||objectLocked(c,o)||!ownObject(c,o))return false;
+    const next={};if(patch.nspOptions)next.nspOptions=V.nsp.cleanOptions(patch.nspOptions);
+    if(patch.hotelIds){if(!Array.isArray(patch.hotelIds)||patch.hotelIds.some(id=>!(p.nspHotels||[]).some(h=>h.id===id)))return false;next.hotelIds=[...new Set(patch.hotelIds)].slice(0,o.nspBase==='hotelView'?1:100);}
+    const before=objectSnapshot(c);writeObjectValues(c,o,next);return commit(c,before,true);
+  };
   V.editor.nspRefresh=function(ids){const c=E.current;if(!c)return;if(ids.includes(c.id))refresh(c,ids);else V.v287CanvasRefreshed?.(c,ids);for(const id of ids)if(id!==c.id)V.thumbnails?.pageChanged?.({...c,id});};
   V.editor.nspBindImage=function(b){
     const c=E.current,o=currentObject(c),p=V.nsp.pfc();
@@ -5958,7 +5967,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
    const c=E.current;if(!c||c.type!=='page'||catalogContext(c)||locked(c))return null;
    const expanded=new Set(expandBlocks(c,expandGroups(c,selectedTokens(c))));
    const list=documentFor(c).objects.filter(o=>expanded.has(objectToken(o)));
-   if(!list.length||list.some(o=>!ownObject(c,o)||objectLocked(c,o)||o.type==='custom'))return null;
+   if(!list.length||list.some(o=>!ownObject(c,o)||objectLocked(c,o)||o.type==='custom'||o.type==='nspComponent'||o.nspBinding))return null;
    return copy(list);
   };
   V.editor.replaceWithComponent=function(def){
@@ -8032,7 +8041,7 @@ function showBrowserStorageRecovery(error){
   const objects=copy(p.visualObjects||[]);
   const publicIds=new Set((state.globalImageLibrary||[]).map(a=>a.id));
   for(const o of objects){
-   if(o.type==='custom')throw Error('کامپوننت پروژه‌ای را پیش از انتشار قالب عمومی Detach کنید.');
+   if(o.type==='custom'||o.type==='nspComponent'||o.nspBinding)throw Error('قالب عمومی نمی‌تواند به اتصال دادهٔ محلی وابسته باشد.');
    if(o.type==='image'&&!o.assetId&&(o.src||o.image||o.dataUrl))throw Error('عکس بدون شناسه عمومی در قالب مجاز نیست.');
   }
   for(const id of v111AssetIds(objects)){
@@ -13421,6 +13430,134 @@ function changes(p,f,a=[],b=[]){
  if(touched.length&&p===N.pfc())V.editor.nspRefresh(touched);
 }
 Object.assign(N,{idOk,named,assetList,pages,pageObjects,scopeFor,pageScope,validate,lookup,resolveImage,addEntry,editEntry,removeControl,removeEntry,field,input,selector,assetInput,mountControl,imagePanel,onSharedChange:changes});
+})();
+</script>
+<script id="nsp-hotels">
+(function(){
+'use strict';
+const V=V13,N=V.nsp,{make,btn,field,input,assetInput,selector,idOk}=N;
+const kinds=['hotelText','hotelView','hotelGrid'],fields=['name','city','stars','year','systems'],roles=['large','small','square','rectangle'],fonts=['Tahoma','Vazirmatn','Arial','Noto Sans Arabic','Times New Roman'];
+const bounds=(x,min,max,def)=>x==null||x===''||!Number.isFinite(Number(x))?def:Math.max(min,Math.min(max,Number(x)));
+const e=(v,list,def)=>list.includes(v)?v:def,clr=(s,d)=>/^(#[0-9a-f]{6}|transparent)$/i.test(String(s))?s:d;
+const order=v=>Array.isArray(v)?[...new Set(v.filter(x=>fields.includes(x)))]:fields.slice();
+const builtins=N.builtins=[],fieldNames={name:'نام هتل',city:'شهر',stars:'ستاره‌ها',year:'سال اجرا',systems:'سیستم‌ها'};
+const hotelKeys=['hotelName','projectName','city','stars','year'];
+const systems=p=>N.collections(p).filter(c=>c.type==='systems').flatMap(c=>c.entries);
+function cleanHotel(x){
+ const h={id:x.id,images:{},systems:Array.isArray(x.systems)?[...new Set(x.systems.filter(idOk))].slice(0,60):[]};
+ for(const k of hotelKeys)h[k]=String(x[k]??'').trim().slice(0,120);
+ if(!/^[1-5]$/.test(h.stars))h.stars='';
+ for(const k of roles)if(idOk(x.images?.[k]?.assetId))h.images[k]={assetId:x.images[k].assetId};
+ return h;
+}
+function validateHotels(p){
+ const a=p.nspHotels;if(a==null)return;
+ if(!Array.isArray(a)||a.length>600||new Set(a.map(h=>h?.id)).size!==a.length||a.some(h=>!h||!idOk(h.id)||
+  hotelKeys.some(k=>typeof h[k]!=='string'||h[k].length>120)||h.stars&&!/^[1-5]$/.test(h.stars)||!Array.isArray(h.systems)||h.systems.length>60||
+  h.systems.some(k=>!idOk(k))||!h.images||Array.isArray(h.images)||Object.keys(h.images).some(k=>!roles.includes(k)||!idOk(h.images[k]?.assetId))))throw Error('رکوردهای هتل معتبر نیستند.');
+}
+function addHotel(p,h){if(!p||!idOk(h?.id))return false;return N.change(p,'nspHotels',a=>{if(a.length>=600||a.some(x=>x.id===h.id))return false;a.push(cleanHotel(h));});}
+function editHotel(p,id,x){return N.change(p,'nspHotels',a=>{const i=a.findIndex(y=>y.id===id);if(i<0)return false;a[i]=cleanHotel({...a[i],...x,id});});}
+function removeHotel(p,id){if(N.pageObjects(p).some(o=>o.hotelIds?.includes(id))){alert('این رکورد در یک صفحه استفاده می‌شود. ابتدا آن را از کامپوننت جدا کنید.');return;}
+ if(confirm('رکورد حذف شود؟'))N.change(p,'nspHotels',a=>{const i=a.findIndex(x=>x.id===id);if(i<0)return false;a.splice(i,1);});}
+function mountTray(p,row,u){row.append(btn('اطلاعات هتل‌ها',()=>{u.control='';u.section=u.section?'':'hotels';N.patch();},{'data-nsp-hotels':''}));}
+function mountSection(tray,p,u){
+ if(u.section!=='hotels')return;
+ const h=make('section',{'data-nsp-hotel-records':''},[make('strong',{text:'اطلاعات محلی هتل‌ها'})]);
+ const id=field(h,'Hotel/Project ID',input('',null,{'data-nsp-new-hotel-id':''})),name=field(h,'نام هتل',input('',null,{'data-nsp-new-hotel-name':''}));
+ h.append(btn('+ رکورد',async()=>{if(!await addHotel(p,{id:id.value.trim(),hotelName:name.value}))alert('شناسهٔ معتبر غیرتکراری لازم است.');},{'data-nsp-new-hotel':''}));
+ for(const x of p.nspHotels||[]){
+  const box=make('details',{'data-nsp-hotel':x.id},[make('summary',{text:(x.hotelName||x.projectName||x.id)+' · '+x.id})]);box.open=x.id===u.hotel;box.ontoggle=()=>{if(box.open)u.hotel=x.id;};
+  for(const [k,t] of [['hotelName','نام هتل'],['projectName','نام پروژه'],['city','شهر'],['stars','ستاره (۱–۵)'],['year','سال اجرا']])
+   field(box,t,input(x[k],v=>{u.hotel=x.id;editHotel(p,x.id,{[k]:v});},{'data-nsp-hotel-field':k}));
+  for(const s of systems(p)){const ck=make('input',{type:'checkbox','data-nsp-hotel-system':s.id});ck.checked=x.systems.includes(s.id);
+   ck.onchange=()=>{u.hotel=x.id;editHotel(p,x.id,{systems:ck.checked?[...x.systems,s.id]:x.systems.filter(id=>id!==s.id)});};field(box,s.name,ck);}
+  for(const k of roles)field(box,k,assetInput(x.images[k]?.assetId,v=>{u.hotel=x.id;editHotel(p,x.id,{images:{...x.images,[k]:{assetId:v}}});},{'data-nsp-hotel-role':k}));
+  box.append(btn('حذف رکورد',()=>removeHotel(p,x.id)));h.append(box);
+ }tray.append(h);
+}
+function options(v={}){
+ const im=v?.imageEdit||{};
+ return {fields:order(v.fields),order:order(v.order),elementOrder:order(v.elementOrder||v.order),showImage:v.showImage!==false,imageRole:e(v.imageRole,roles,'large'),
+ systemMode:e(v.systemMode,['none','text','icon','both'],'both'),fontFamily:e(v.fontFamily,fonts,'Tahoma'),fontWeight:e(v.fontWeight,['normal','bold'],'normal'),
+ fontSize:bounds(v.fontSize,6,150,20),color:clr(v.color,'#152638'),background:clr(v.background,'#ffffff'),borderColor:clr(v.borderColor,'#dcd3c5'),borderWidth:bounds(v.borderWidth,0,16,1),
+ align:e(v.align,['left','center','right','justify'],'right'),direction:e(v.direction,['rtl','ltr'],'rtl'),layoutDirection:e(v.layoutDirection,['rtl','ltr'],'ltr'),
+ lineHeight:bounds(v.lineHeight,.8,4,1.45),bullet:e(v.bullet,['','•','–','◦'],''),indent:bounds(v.indent,0,150,0),separator:typeof v.separator==='string'?v.separator.slice(0,24):' · ',multiLine:v.multiLine===true,
+ recordGap:bounds(v.recordGap,0,150,10),spacing:bounds(v.spacing,0,100,10),cols:Math.floor(bounds(v.cols,1,12,2)),count:Math.floor(bounds(v.count,1,100,4)),gap:bounds(v.gap,0,140,12),cardW:bounds(v.cardW,0,2200,0),cardH:bounds(v.cardH,0,2200,0),
+ sort:e(v.sort,['selected','name','year'],'selected'),iconSize:bounds(v.iconSize,8,110,24),iconLayout:e(v.iconLayout,['row','column'],'row'),
+ imageEdit:{zoom:bounds(im.zoom,1,8,1),x:bounds(im.x,-200,200,0),y:bounds(im.y,-200,200,0),cropX:bounds(im.cropX,0,95,0),cropY:bounds(im.cropY,0,95,0),cropW:bounds(im.cropW,5,100,100),cropH:bounds(im.cropH,5,100,100)}};
+}
+function primitive(id,type,x,y,w,h,a={}){return {id,type,name:type,x,y,w:Math.max(1,w),h:Math.max(1,h),origin:'component',ownerId:'nsp-definition',fontSize:20,fontFamily:'Tahoma',direction:'rtl',textAlign:'right',color:'#152638',background:'transparent',visible:true,...a};}
+function text(id,val,x,y,w,h,o,a={}){const s=o.nspOptions;return primitive(id,'text',x,y,w,h,{text:String(val??''),fontFamily:s.fontFamily,fontSize:s.fontSize,fontWeight:s.fontWeight,color:s.color,direction:s.direction,textAlign:s.align,lineHeight:s.lineHeight,...a});}
+function records(o,p){const b=new Map((p?.nspHotels||[]).map(x=>[x.id,x]));const a=(o.hotelIds||[]).map(i=>b.get(i)).filter(Boolean);
+ if(o.nspOptions.sort==='name')a.sort((x,y)=>x.hotelName.localeCompare(y.hotelName,'fa'));
+ if(o.nspOptions.sort==='year')a.sort((x,y)=>x.year.localeCompare(y.year,'fa'));return a;}
+const systemRows=(h,p)=>{const by=new Map(systems(p).map(q=>[q.id,q]));return h.systems.map(x=>by.get(x)).filter(Boolean);};
+const tools={records,systems:systemRows,primitive,text};
+function layoutText(o,p){const s=o.nspOptions,h=s.fontSize*s.lineHeight,draw=[];let y=8;
+ for(const q of records(o,p)){const vals={name:q.hotelName,city:q.city,stars:'★'.repeat(+q.stars||0),year:q.year,systems:systemRows(q,p).map(z=>z.name||z.nameFa||z.nameEn).join('، ')};
+ const a=s.order.concat(fields.filter(k=>!s.order.includes(k))).filter(k=>s.fields.includes(k)&&vals[k]).map(k=>vals[k]);if(!a.length)continue;
+ const lines=s.multiLine?a:[a.join(s.separator)];
+ for(let i=0;i<lines.length&&y+h<=o.h;i++,y+=h)draw.push(text(o.id+'-text-'+q.id+'-'+i,(i===0&&s.bullet?s.bullet+' ':'')+lines[i],8+(s.align==='left'?s.indent:0),y,o.w-16-s.indent,h,o));
+ y+=s.recordGap;if(y+h>o.h)break;}return draw;}
+function content(o,opts){
+ const p=opts.nspScope||N.scopeFor(o);if(!p)return '';
+ const n={...o,nspOptions:options(o.nspOptions)},fn=o.nspBase==='hotelView'?N.layoutView:o.nspBase==='hotelGrid'?N.layoutGrid:layoutText;
+ const a=fn?.(n,p,tools)||[],draw=N.applySlots?.(n,a,p,tools)||a;
+ return '<div class="nsp-component-content" aria-label="'+esc(o.name)+'" style="position:absolute;inset:0;overflow:hidden;pointer-events:none">'+V.renderObjects(draw,{...opts,nspScope:p,editor:false,editableOrigin:null,selectedId:null,selectedIds:new Set(),showHandles:false})+'</div>';
+}
+function slot(id,k,type,x,y,w,h,t=''){return primitive(id,type,x,y,w,h,{name:k,nspField:k,text:t});}
+function builtin(id,name,nspBase,width,height,objects){const d={id,name,nspBase,width,height,objects,nspVersion:1,nspStatus:'published'};builtins.push(d);return d;}
+builtin('nsp-hotel-text','Hotel Text','hotelText',670,220,[slot('nsp-slot-hotel-text','hotelText','text',8,8,654,204,'Hotel Text')]);
+const definitions=()=>[...builtins,...(state.customComponents||[]).filter(x=>x.nspBase&&x.nspStatus==='published')];
+function createInstance(d){if(!d||d.nspStatus!=='published'||!kinds.includes(d.nspBase))return null;return {name:d.name,w:d.width,h:d.height,background:'transparent',nspBase:d.nspBase,nspDefinitionId:d.id,nspVersion:d.nspVersion,nspDesignSize:{w:d.width,h:d.height},nspSlots:N.copy(d.objects),nspUseLayout:builtins.includes(d),nspOptions:options(),hotelIds:[]};}
+function insert(d,drop){const o=createInstance(d);return o&&N.pfc()?V.editor.nspInsert(o,drop):false;}
+function validateInstances(s){
+ for(const p of s.portfolios||[]){const ids=new Set((p.nspHotels||[]).map(x=>x.id));for(const o of N.pageObjects(p)){
+  if(o.type!=='nspComponent')continue;
+  if(!kinds.includes(o.nspBase)||!idOk(o.nspDefinitionId)||!Number.isInteger(o.nspVersion)||o.nspVersion<1||!Array.isArray(o.nspSlots)||o.nspSlots.length>200||
+   !o.nspDesignSize||!Number.isFinite(o.nspDesignSize.w)||o.nspDesignSize.w<1||!Number.isFinite(o.nspDesignSize.h)||o.nspDesignSize.h<1||
+   !Array.isArray(o.hotelIds)||o.hotelIds.length>(o.nspBase==='hotelView'?1:100)||o.hotelIds.some(id=>!ids.has(id)))throw Error('نمونهٔ هتل معتبر نیست.');
+   o.nspOptions=options(o.nspOptions||{});N.validateSlots?.(o.nspSlots,o.nspBase);
+ }}
+}
+function panel(o,off){
+ const p=N.scopeFor(o),v=options(o.nspOptions);if(!p)return '';
+ const f=make('fieldset',{class:'nsp-property','data-nsp-hotel-props':'',...(off?{disabled:''}:{})},[make('legend',{text:o.name+' · v'+o.nspVersion})]);
+ const pick=(t,k,a,x=v[k])=>field(f,t,selector(a,x,null,{'data-nsp-hprop':k}));
+ const inp=(t,k,x=v[k],type='number')=>field(f,t,input(x,null,{type,'data-nsp-hprop':k,step:'any'}));
+ const check=(t,k,on,attr='data-nsp-hprop')=>field(f,t,make('input',{type:'checkbox',[attr]:k,...(on?{checked:''}:{})}));
+ pick('منبع','source',[['manual','Manual · دستی'],['database','Database · آینده']],'manual').querySelector('[value=database]').disabled=true;
+ pick('افزودن هتل','hotelSelect',[['','— انتخاب —'],...(p.nspHotels||[]).filter(h=>!o.hotelIds.includes(h.id)).map(h=>[h.id,h.hotelName||h.projectName||h.id])],'');
+ for(const id of o.hotelIds){const h=p.nspHotels.find(x=>x.id===id);f.append(make('div',{},[make('span',{text:h?.hotelName||id}),...['up','down','remove'].map((n,i)=>btn(['↑','↓','×'][i],null,{'data-nsp-hotel-seq':n,'data-nsp-hotel-id':id}))]));}
+ if(o.nspBase==='hotelText')pick('ترکیب','preset',[['','سفارشی'],['name','نام'],['name,stars','نام و ستاره'],['name,city','نام و شهر'],['name,city,stars','نام، شهر و ستاره'],['name,year','نام و سال'],[fields.join(','),'همه']],'');
+ fields.forEach(k=>check(fieldNames[k],k,v.fields.includes(k),'data-nsp-hfield'));
+ inp('ترتیب name,city,stars,year,systems','order',v.order.join(','),'text');
+ pick('فونت','fontFamily',fonts.map(x=>[x,x]));inp('اندازه','fontSize');pick('ضخامت','fontWeight',[['normal','معمولی'],['bold','ضخیم']]);inp('رنگ','color',undefined,'color');
+ pick('چینش','align',[['right','راست'],['center','وسط'],['left','چپ'],['justify','دوطرفه']]);pick('جهت متن','direction',[['rtl','RTL'],['ltr','LTR']]);inp('فاصلهٔ خطوط','lineHeight');
+ if(o.nspBase==='hotelText'){pick('Bullet','bullet',[['','بدون'],['•','•'],['–','–'],['◦','◦']]);inp('تورفتگی','indent');inp('جداکننده','separator',v.separator,'text');check('چندخطی','multiLine',v.multiLine);inp('فاصله رکوردها','recordGap');}
+ else{check('نمایش عکس','showImage',v.showImage);pick('نقش تصویر','imageRole',roles.map(k=>[k,k]));pick('سیستم‌ها','systemMode',[['none','None'],['text','Text'],['icon','Icon'],['both','Icon + Text']]);
+  inp('اندازه آیکون','iconSize');pick('چیدمان آیکون','iconLayout',[['row','ردیف'],['column','ستون']]);inp('فاصله','spacing');inp('رنگ کادر','borderColor',undefined,'color');inp('ضخامت کادر','borderWidth');
+  for(const [k,t] of [['zoom','بزرگنمایی'],['x','جابجایی X'],['y','جابجایی Y'],['cropX','Crop X'],['cropY','Crop Y'],['cropW','Crop Width'],['cropH','Crop Height']])inp(t,'imageEdit.'+k,v.imageEdit[k]);
+  if(o.nspBase==='hotelGrid'){for(const [k,t] of [['cols','ستون'],['count','سقف رکورد'],['gap','فاصله کارت'],['cardW','عرض کارت (۰ خودکار)'],['cardH','ارتفاع کارت (۰ خودکار)']])inp(t,k);
+   pick('ترتیب کارت','sort',[['selected','انتخاب'],['name','نام'],['year','سال']]);pick('ترتیب ستون','layoutDirection',[['ltr','LTR'],['rtl','RTL']]);f.append(make('p',{text:'ردیف سرریز رسم نمی‌شود؛ داده‌ها محفوظ می‌مانند.'}));}
+ }return f.outerHTML;
+}
+document.addEventListener('change',ev=>{
+ const el=ev.target,k=el.dataset.nspHprop,f=el.dataset.nspHfield;if(!k&&!f)return;
+ const o=V.editor.nspSelected();if(o?.type!=='nspComponent')return;const s=options(o.nspOptions);
+ if(k==='source')return;
+ if(k==='hotelSelect'){if(el.value)V.editor.nspPatch({hotelIds:o.nspBase==='hotelView'?[el.value]:[...o.hotelIds,el.value]});return;}
+ if(f)s.fields=el.checked?[...s.fields,f]:s.fields.filter(x=>x!==f);
+ else if(k==='preset'){if(!el.value)return;s.fields=el.value.split(',');}
+ else if(k==='order')s.order=s.elementOrder=el.value.split(',').map(x=>x.trim());
+ else if(k.startsWith('imageEdit.'))s.imageEdit[k.slice(10)]=el.value;
+ else s[k]=el.type==='checkbox'?el.checked:el.value;
+ V.editor.nspPatch({nspOptions:s});
+});
+document.addEventListener('click',ev=>{const b=ev.target.closest('[data-nsp-hotel-seq]');if(!b)return;const o=V.editor.nspSelected(),a=o?.hotelIds?.slice(),i=a?.indexOf(b.dataset.nspHotelId);if(i==null||i<0)return;const k=b.dataset.nspHotelSeq,j=i+(k==='up'?-1:1);
+ if(k==='remove')a.splice(i,1);else if(j>=0&&j<a.length)[a[i],a[j]]=[a[j],a[i]];V.editor.nspPatch({hotelIds:a});});
+Object.assign(N,{kinds,fields,roles,fonts,toolDefinitions:definitions,cleanOptions:options,validateHotels,validateInstances,addHotel,editHotel,removeHotel,mountTray,mountSection,builtin,slot,insert,createInstance,renderContent:content,propPanel:panel,layoutText,layoutTools:tools,records,systems:systemRows});
 })();
 </script>
 </body></html>
