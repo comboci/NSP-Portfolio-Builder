@@ -2394,7 +2394,7 @@ function v290ScopedComponentRefs(portfolio){
   if(o.type==='nspComponent'){
    const builtin=(window.V13.nsp?.builtins||[]).find(d=>d.id===o.nspDefinitionId);
    if(builtin&&builtin.nspBase!==o.nspBase)throw Error('نوع تعریف داخلی کامپوننت هتل سازگار نیست.');
-   refs.push({object:o,key:'nspDefinitionId',id:o.nspDefinitionId,builtin:!!builtin});
+   refs.push({object:o,key:'nspDefinitionId',id:o.nspDefinitionId,builtin:!!builtin&&(o.nspUseLayout!==false||Number(o.nspVersion||1)===1)});
   }
  }
  return refs;
@@ -14037,8 +14037,13 @@ function content(o,opts){
 function slot(id,k,type,x,y,w,h,t=''){return primitive(id,type,x,y,w,h,{name:k,nspField:k,text:t});}
 function builtin(id,name,nspBase,width,height,objects){const d={id,name,nspBase,width,height,objects,nspVersion:1,nspStatus:'published'};builtins.push(d);return d;}
 builtin('nsp-hotel-text','Hotel Text','hotelText',670,220,[slot('nsp-slot-hotel-text','hotelText','text',8,8,654,204,'Hotel Text')]);
-const definitions=()=>[...builtins,...(state.customComponents||[]).filter(x=>x.nspBase&&x.nspStatus==='published')];
-function createInstance(d){if(!d||d.nspStatus!=='published'||!kinds.includes(d.nspBase))return null;return {name:d.name,w:d.width,h:d.height,background:'transparent',nspBase:d.nspBase,nspDefinitionId:d.id,nspVersion:d.nspVersion,nspDesignSize:{w:d.width,h:d.height},nspSlots:N.copy(d.objects),nspUseLayout:builtins.includes(d),nspOptions:options(),hotelIds:[]};}
+const effectiveDefinitions=(stored=state.customComponents||[])=>{
+ const map=new Map(builtins.map(d=>[d.id,d]));
+ for(const d of stored)if(d.nspBase)map.set(d.id,d);
+ return [...map.values()];
+};
+const definitions=()=>effectiveDefinitions().filter(d=>d.nspStatus==='published');
+function createInstance(d){if(!d||d.nspStatus!=='published'||!kinds.includes(d.nspBase))return null;return {name:d.name,w:d.nspBase==='hotelGrid'?900:d.width,h:d.nspBase==='hotelGrid'?480:d.height,background:'transparent',nspBase:d.nspBase,nspDefinitionId:d.id,nspVersion:d.nspVersion,nspDesignSize:{w:d.width,h:d.height},nspSlots:N.copy(d.objects),nspUseLayout:builtins.includes(d),nspOptions:options(),hotelIds:[]};}
 function insert(d,drop){const o=createInstance(d);return o&&N.pfc()?V.editor.nspInsert(o,drop):false;}
 function validateInstances(s){
  for(const p of s.portfolios||[]){const ids=new Set((p.nspHotels||[]).map(x=>x.id));for(const o of N.pageObjects(p)){
@@ -14085,7 +14090,7 @@ document.addEventListener('change',ev=>{
 });
 document.addEventListener('click',ev=>{const b=ev.target.closest('[data-nsp-hotel-seq]');if(!b)return;const o=V.editor.nspSelected(),a=o?.hotelIds?.slice(),i=a?.indexOf(b.dataset.nspHotelId);if(i==null||i<0)return;const k=b.dataset.nspHotelSeq,j=i+(k==='up'?-1:1);
  if(k==='remove')a.splice(i,1);else if(j>=0&&j<a.length)[a[i],a[j]]=[a[j],a[i]];V.editor.nspPatch({hotelIds:a});});
-Object.assign(N,{kinds,fields,roles,fonts,toolDefinitions:definitions,cleanOptions:options,validateHotels,validateInstances,addHotel,editHotel,removeHotel,mountTray,mountSection,builtin,slot,insert,createInstance,renderContent:content,propPanel:panel,layoutText,layoutTools:tools,records,systems:systemRows,unresolvedSystems});
+Object.assign(N,{kinds,fields,roles,fonts,toolDefinitions:definitions,cleanOptions:options,validateHotels,validateInstances,addHotel,editHotel,removeHotel,mountTray,mountSection,builtin,slot,insert,createInstance,effectiveDefinitions,renderContent:content,propPanel:panel,layoutText,layoutTools:tools,records,systems:systemRows,unresolvedSystems});
 })();
 </script>
 <script id="nsp-view">
@@ -14203,7 +14208,7 @@ s('hg-year','year','text',260,132,160,22,'سال اجرا'),s('hg-systems','syst
  const existing=()=>state.customComponents||[], defaults=()=>N.builtins||[];
  const isBuiltin=id=>defaults().some(d=>d.id===id);
  const custom=()=>existing().filter(d=>Object.hasOwn(baseNames,d.nspBase));
- const list=()=>defaults().concat(custom());
+ const list=()=>N.effectiveDefinitions(existing());
  const lookup=id=>list().find(d=>d.id===id);
  const current=()=>V.editor.catalogDraft?.();
  const active=()=>current()?.nspEditorDraft;
@@ -14218,7 +14223,7 @@ s('hg-year','year','text',260,132,160,22,'سال اجرا'),s('hg-systems','syst
   (state.projectRegistryEmpty?'<p class="note">ابتدا یک پروژه باز یا ایجاد کنید.</p>':'')+
   '<div class="toolbar"><label>نوع پایه <select data-nsp-def-base>'+Object.entries(baseNames).map(([id,name])=>option(id,name,id==='hotelView')).join('')+'</select></label>'+button('new','＋ جدید','',!allowed())+'</div>'+
   '<div style="overflow-x:auto"><table class="nsp-def-grid"><thead><tr><th>نام</th><th>نوع پایه</th><th>نسخه</th><th>وضعیت</th><th>عملیات</th></tr></thead><tbody>'+
-  list().map(d=>'<tr data-nsp-def-row="'+esc(d.id)+'"><td>'+esc(d.name)+'</td><td>'+esc(baseNames[d.nspBase]||'')+'</td><td>'+Number(d.nspVersion||1)+'</td><td>'+(isBuiltin(d.id)?'پیش‌فرض':d.nspStatus==='published'?'منتشرشده':'پیش‌نویس')+'</td><td>'+
+  list().map(d=>'<tr data-nsp-def-row="'+esc(d.id)+'"><td>'+esc(d.name)+'</td><td>'+esc(baseNames[d.nspBase]||'')+'</td><td>'+Number(d.nspVersion||1)+'</td><td>'+(isBuiltin(d.id)?(defaults().includes(d)?'پیش‌فرض':'پیش‌فرض ویرایش‌شده'):d.nspStatus==='published'?'منتشرشده':'پیش‌نویس')+'</td><td>'+
   button('edit','ویرایش',d.id,!allowed())+button('duplicate','تکثیر',d.id,!allowed())+button('saveas','ذخیره با نام جدید',d.id,!allowed())+button('toggle',d.nspStatus==='published'?'غیرفعال‌کردن':'انتشار',d.id,!allowed()||isBuiltin(d.id))+button('delete','حذف',d.id,!allowed()||isBuiltin(d.id))+'</td></tr>').join('')+'</tbody></table></div>'+
   '<p class="muted">روی ردیف دو بار کلیک کنید. تغییر ظاهر تعریف، نمونه‌های قدیمی را به‌طور خودکار تغییر نمی‌دهد. تعریفِ در حال استفاده را می‌توان غیرفعال کرد، نه حذف.</p></section>';
  }
@@ -14265,11 +14270,12 @@ s('hg-year','year','text',260,132,160,22,'سال اجرا'),s('hg-systems','syst
   if(!allowed())return false;
   const d=mode==='new'?defaults().find(o=>o.nspBase===base):lookup(id);if(!d)return false;
   if(tab!==pane&&(await go(pane)===false||tab!==pane))return false;
-  const creating=isBuiltin(d.id)||mode==='new'||mode==='saveas';
+  const creating=mode==='new'||mode==='saveas';
+   const baseGrid=defaults().includes(d)&&d.nspBase==='hotelGrid';
   V.editor.openCatalogDraft({id:uid(),designMode:'independent',title:creating?d.name+' ـ نسخهٔ جدید':d.name,
    pageStyleOverrides:{paperSize:'A4',orientation:'landscape',background:'#ffffff'},
    visualObjects:cp(d.objects||[]).map(o=>({...o,layerId:'default',layerOrigin:'page',locked:false})),
-   nspEditorDraft:{creating,sourceId:d.id,targetId:creating?uid():d.id,version:Number(d.nspVersion||1),status:creating?'published':d.nspStatus,base:d.nspBase,width:d.width,height:d.height}},d.id);
+   nspEditorDraft:{creating,sourceId:d.id,targetId:creating?uid():d.id,version:Number(d.nspVersion||1),status:creating?'published':d.nspStatus,base:d.nspBase,width:baseGrid?440:d.width,height:baseGrid?220:d.height}},d.id);
   return true;
  }
  async function duplicate(id){
@@ -14278,11 +14284,11 @@ s('hg-year','year','text',260,132,160,22,'سال اجرا'),s('hg-systems','syst
   try{const copy=shape({...d,id:uid(),nspVersion:1,nspStatus:'draft'},d.width,d.height,d.objects,name);if(!await write([...existing(),copy]))return false;render();return copy.id;}catch(e){alert(e.message);return false;}
  }
  async function toggle(id){
-  const d=custom().find(o=>o.id===id);if(!d||!allowed()||!await write(existing().map(o=>o===d?{...o,nspStatus:d.nspStatus==='published'?'draft':'published'}:o)))return false;
+  const d=custom().find(o=>o.id===id);if(isBuiltin(id)||!d||!allowed()||!await write(existing().map(o=>o===d?{...o,nspStatus:d.nspStatus==='published'?'draft':'published'}:o)))return false;
   render();return true;
  }
  async function remove(id){
-  const d=custom().find(o=>o.id===id);if(!d||!allowed())return false;
+  const d=custom().find(o=>o.id===id);if(isBuiltin(id)||!d||!allowed())return false;
   if(used(id)){alert('حذف تعریف مورد استفاده مجاز نیست؛ می‌توانید آن را غیرفعال کنید.');return false;}
   if(!confirm('این تعریف حذف شود؟')||!await write(existing().filter(o=>o!==d)))return false;
   render();return true;
@@ -14357,10 +14363,11 @@ function validateSlots(items,base){
  return N.definitionEditor.cleanSlots(items,base);
 }
 function validateDefinitions(s){
- const builtin=new Set(N.builtins.map(x=>x.id));
+ const builtin=new Map(N.builtins.map(x=>[x.id,x]));
  for(const d of s.customComponents||[]){
-  if(d.nspBase==null)continue;
-  if(builtin.has(d.id)||!N.kinds.includes(d.nspBase)||!N.idOk(d.id)||!N.named(d.name)||!Number.isInteger(d.nspVersion)||d.nspVersion<1||
+  const original=builtin.get(d.id);
+  if(d.nspBase==null){if(original)throw Error('شناسهٔ تعریف پیش‌فرض رزرو شده است.');continue;}
+  if((original&&(original.nspBase!==d.nspBase||d.nspVersion<2||d.nspStatus!=='published'))||!N.kinds.includes(d.nspBase)||!N.idOk(d.id)||!N.named(d.name)||!Number.isInteger(d.nspVersion)||d.nspVersion<1||
      !['draft','published'].includes(d.nspStatus)||d.width<40||d.height<40||d.width>1191||d.height>842)throw Error('تعریف تخصصی معتبر نیست.');
   d.objects=validateSlots(d.objects,d.nspBase);
  }
