@@ -13920,7 +13920,7 @@ function options(v={}){
  return {fields:order(v.fields),order:order(v.order),elementOrder:order(v.elementOrder||v.order),showImage:v.showImage!==false,imageRole:e(v.imageRole,roles,'large'),
  systemMode:e(v.systemMode,['none','text','icon','both'],'both'),fontFamily:e(v.fontFamily,fonts,'Tahoma'),fontWeight:e(v.fontWeight,['normal','bold'],'normal'),
  fontSize:bounds(v.fontSize,6,150,20),color:clr(v.color,'#152638'),background:clr(v.background,'#ffffff'),borderColor:clr(v.borderColor,'#dcd3c5'),borderWidth:bounds(v.borderWidth,0,16,1),
- align:e(v.align,['left','center','right','justify'],'right'),direction:e(v.direction,['rtl','ltr'],'rtl'),layoutDirection:e(v.layoutDirection,['rtl','ltr'],'ltr'),
+ align:e(v.align,['left','center','right','justify'],'right'),direction:e(v.direction,['rtl','ltr'],'rtl'),layoutDirection:e(v.layoutDirection,['rtl','ltr'],'ltr'),systemLabelLanguage:e(v.systemLabelLanguage,['auto','fa','en','generic'],'auto'),
  lineHeight:bounds(v.lineHeight,.8,4,1.45),bullet:e(v.bullet,['','•','–','◦'],''),indent:bounds(v.indent,0,150,0),separator:typeof v.separator==='string'?v.separator.slice(0,24):' · ',multiLine:v.multiLine===true,
  recordGap:bounds(v.recordGap,0,150,10),spacing:bounds(v.spacing,0,100,10),cols:Math.floor(bounds(v.cols,1,12,2)),count:Math.floor(bounds(v.count,1,100,4)),gap:bounds(v.gap,0,140,12),cardW:bounds(v.cardW,0,2200,0),cardH:bounds(v.cardH,0,2200,0),
  sort:e(v.sort,['selected','name','year'],'selected'),iconSize:bounds(v.iconSize,8,110,24),iconLayout:e(v.iconLayout,['row','column'],'row'),
@@ -13939,9 +13939,15 @@ const systemRows=(h,p)=>{
  return (h.systems||[]).map(id=>by.get(id)||{id,missing:true,name:'سامانهٔ تعریف‌نشده: '+id,
    nameFa:'سامانهٔ تعریف‌نشده: '+id,nameEn:'Undefined system: '+id,assetId:''});
 };
-const tools={records,systems:systemRows,primitive,text};
+const systemCaption=(row,options)=>{
+ const mode=options.systemLabelLanguage==='auto'||!options.systemLabelLanguage
+  ?(options.direction==='ltr'?'en':'fa'):options.systemLabelLanguage;
+ const keys=mode==='generic'?['name','nameFa','nameEn']:mode==='en'?['nameEn','name','nameFa']:['nameFa','name','nameEn'];
+ return keys.map(k=>String(row[k]||'').trim()).find(Boolean)||'';
+};
+const tools={records,systems:systemRows,systemCaption,primitive,text};
 function layoutText(o,p){const s=o.nspOptions,h=s.fontSize*s.lineHeight,draw=[];let y=8;
- for(const q of records(o,p)){const vals={name:q.hotelName,city:q.city,stars:'★'.repeat(+q.stars||0),year:q.year,systems:systemRows(q,p).map(z=>z.name||z.nameFa||z.nameEn).join('، ')};
+ for(const q of records(o,p)){const vals={name:q.hotelName,city:q.city,stars:'★'.repeat(+q.stars||0),year:q.year,systems:systemRows(q,p).map(z=>systemCaption(z,s)).join(s.direction==='ltr'?', ':'، ')};
  const a=s.order.concat(fields.filter(k=>!s.order.includes(k))).filter(k=>s.fields.includes(k)&&vals[k]).map(k=>vals[k]);if(!a.length)continue;
  const lines=s.multiLine?a:[a.join(s.separator)];
  for(let i=0;i<lines.length&&y+h<=o.h;i++,y+=h)draw.push(text(o.id+'-text-'+q.id+'-'+i,(i===0&&s.bullet?s.bullet+' ':'')+lines[i],8+(s.align==='left'?s.indent:0),y,o.w-16-s.indent,h,o));
@@ -13980,7 +13986,7 @@ function panel(o,off){
  fields.forEach(k=>check(fieldNames[k],k,v.fields.includes(k),'data-nsp-hfield'));
  inp('ترتیب name,city,stars,year,systems','order',v.order.join(','),'text');
  pick('فونت','fontFamily',fonts.map(x=>[x,x]));inp('اندازه','fontSize');pick('ضخامت','fontWeight',[['normal','معمولی'],['bold','ضخیم']]);inp('رنگ','color',undefined,'color');
- pick('چینش','align',[['right','راست'],['center','وسط'],['left','چپ'],['justify','دوطرفه']]);pick('جهت متن','direction',[['rtl','RTL'],['ltr','LTR']]);inp('فاصلهٔ خطوط','lineHeight');
+ pick('چینش','align',[['right','راست'],['center','وسط'],['left','چپ'],['justify','دوطرفه']]);pick('جهت متن','direction',[['rtl','RTL'],['ltr','LTR']]);pick('زبان نام سامانه','systemLabelLanguage',[['auto','طبق جهت متن'],['fa','فارسی'],['en','English'],['generic','نام عمومی']]);inp('فاصلهٔ خطوط','lineHeight');
  if(o.nspBase==='hotelText'){pick('Bullet','bullet',[['','بدون'],['•','•'],['–','–'],['◦','◦']]);inp('تورفتگی','indent');inp('جداکننده','separator',v.separator,'text');check('چندخطی','multiLine',v.multiLine);inp('فاصله رکوردها','recordGap');}
  else{check('نمایش عکس','showImage',v.showImage);pick('نقش تصویر','imageRole',roles.map(k=>[k,k]));pick('سیستم‌ها','systemMode',[['none','None'],['text','Text'],['icon','Icon'],['both','Icon + Text']]);
   inp('اندازه آیکون','iconSize');pick('چیدمان آیکون','iconLayout',[['row','ردیف'],['column','ستون']]);inp('فاصله','spacing');inp('رنگ کادر','borderColor',undefined,'color');inp('ضخامت کادر','borderWidth');
@@ -14055,7 +14061,7 @@ Object.assign(N,{kinds,fields,roles,fonts,toolDefinitions:definitions,cleanOptio
      const iconSide=Math.min(icon,boxH,colW),useIcon=(mode==='icon'||mode==='both')&&!!sys?.assetId&&iconSide>=2;
      if(useIcon)out.push(tools.primitive(base+'-system-icon-'+j,'image',sx+(rtl?colW-iconSide:0),sy,iconSide,iconSide,{assetId:sys.assetId,objectFit:'contain'}));
      if(mode==='text'||mode==='both'){
-      const label=str(sys.name)||(rtl?(str(sys.nameFa)||str(sys.nameEn)):(str(sys.nameEn)||str(sys.nameFa))),inset=useIcon?iconSide+gap:0;
+      const label=tools.systemCaption(sys,opt),inset=useIcon?iconSide+gap:0;
       emit('system-name-'+j,label,sy,boxH,Math.min(body*.84,boxH*.72),ink,sx+(rtl?0:inset),colW-inset,{fontWeight:'bold'});
      }
     });
