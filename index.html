@@ -4838,7 +4838,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
   async function v235SelectThumbnailPage(id){
     if(!state.pages?.some(pg=>pg.id===id)||V.pageEditScope!=='project')return false;
     if(E.current?.type==='page'&&E.current.id!==id&&!await v117EnsurePagePersisted(E.current))return false;
-    if(E.current?.type==='page'&&E.current.id===id)return true;
+    if(E.current?.type==='page'&&E.current.id===id){V.v287ScrollToActive?.();return true;}
     return visualOpenPage(id);
   }
   document.addEventListener('click',async event=>{
@@ -4869,7 +4869,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
   document.addEventListener('keydown',async event=>{
     const el=event.target.closest('[data-v85-page]');
     if(!el||V.pageEditScope!=='project'||event.target.closest('button'))return;
-    if(event.key==='Enter'||event.key===' '){event.preventDefault();if(E.current?.type==='page'&&E.current.id!==el.dataset.v85Page&&!await v117EnsurePagePersisted(E.current))return;visualOpenPage(el.dataset.v85Page);}
+    if(event.key==='Enter'||event.key===' '){event.preventDefault();if(E.current?.type==='page'&&E.current.id===el.dataset.v85Page){V.v287ScrollToActive?.();return;}if(E.current?.type==='page'&&E.current.id!==el.dataset.v85Page&&!await v117EnsurePagePersisted(E.current))return;visualOpenPage(el.dataset.v85Page);}
   },true);
   document.addEventListener('dragstart',event=>{
     const item=event.target.closest('[data-v85-page]');
@@ -13000,13 +13000,19 @@ body.v284-hide-object-names [data-v13-canvas-host] .v89-block-title{display:none
   if(frame)cancelAnimationFrame(frame);frame=0;
   clearTimeout(settle);settle=0;
  }
- function scrollTo(m,id){
+ function scrollTo(m,id,centerHorizontal=false){
   const slot=byId(m,id);if(!slot)return false;
   const b=slot.getBoundingClientRect(),v=viewport(m);
   m.scroll.scrollTop+=b.top-v.top;
+  if(centerHorizontal){
+   const page=slot.querySelector('.v287-page-paper').getBoundingClientRect(),sc=m.scroll.getBoundingClientRect();
+   const left=sc.left+m.scroll.clientLeft;
+   if(page.width<=m.scroll.clientWidth)m.scroll.scrollLeft+=(page.left+page.width/2)-(left+m.scroll.clientWidth/2);
+   else m.scroll.scrollLeft+=page.left-left-30;
+  }
   m.lastTop=m.scroll.scrollTop;return true;
  }
- V.v287ScrollToActive=function(){return valid(mounted)?scrollTo(mounted,mounted.active):false;};
+ V.v287ScrollToActive=function(){return valid(mounted)?scrollTo(mounted,mounted.active,true):false;};
  async function activate(m,id,explicit=false){
   if(!valid(m)||!id||id===m.active||opening||!V.v287CanActivate?.())return;
   const ticket=++serial;
@@ -13016,25 +13022,35 @@ body.v284-hide-object-names [data-v13-canvas-host] .v89-block-title{display:none
    await V.v287ActivatePage(id,wanted,()=>{
     transition={scope:m.scope,id,top:m.scroll.scrollTop,left:m.scroll.scrollLeft,owner:m.owner};
    });
-  }finally{opening=false;transition=null;}
+  }finally{
+   opening=false;transition=null;
+   if(valid(m)&&m.retryAfterActivation){m.retryAfterActivation=false;scheduleActivation(m);}
+   else if(mounted&&valid(mounted)&&mounted.retryAfterActivation){mounted.retryAfterActivation=false;scheduleActivation(mounted);}
+  }
+ }
+ function scheduleActivation(m){
+  clearTimeout(settle);
+  settle=setTimeout(()=>{
+   settle=0;if(!valid(m)||m.scroll.classList.contains('v92-pan-dragging'))return;
+   if(opening){m.retryAfterActivation=true;return;}
+   activate(m,choose(m));
+  },220);
  }
  function onScroll(m){
   if(!valid(m))return;
   schedulePaint(m);
   if(Math.abs(m.lastTop-m.scroll.scrollTop)<.5)return;
   m.lastTop=m.scroll.scrollTop;
-  serial++;clearTimeout(settle);
+  serial++;
   // Native wheel/trackpad scrolling remains completely unblocked.
   // Rebind the editor only after scrolling settles, never on each wheel tick.
-  settle=setTimeout(()=>{
-   settle=0;if(!valid(m)||opening||m.scroll.classList.contains('v92-pan-dragging'))return;
-   activate(m,choose(m));
-  },220);
+  scheduleActivation(m);
  }
  function capture(){
   const m=mounted;
   if(!m||!m.scroll.isConnected)return null;
-  return {scope:m.scope,owner:m.owner,active:m.active,top:m.scroll.scrollTop,left:m.scroll.scrollLeft,slots:m.slots,pages:m.pages};
+  const sidebar=m.scroll.closest('.v85-portfolio-layout')?.querySelector('.v85-page-stack');
+  return {scope:m.scope,owner:m.owner,active:m.active,top:m.scroll.scrollTop,left:m.scroll.scrollLeft,slots:m.slots,pages:m.pages,sidebarTop:sidebar?.scrollTop||0,needsActivation:!!settle||opening||m.retryAfterActivation};
  }
  function mount(old){
   cancelTimers();mounted=null;
@@ -13078,8 +13094,25 @@ body.v284-hide-object-names [data-v13-canvas-host] .v89-block-title{display:none
   mounted=m;
   if(preserve){scroll.scrollLeft=transition.left;scroll.scrollTop=transition.top;}
   else if(same&&old.active===active){scroll.scrollLeft=old.left;scroll.scrollTop=old.top;}
-  else{scrollTo(m,active);if(same)scroll.scrollLeft=old.left;}
+  else{scrollTo(m,active,true);}
   m.lastTop=scroll.scrollTop;
+  const sidebar=scroll.closest('.v85-portfolio-layout')?.querySelector('.v85-page-stack');
+  if(sidebar){
+   if(same)sidebar.scrollTop=old.sidebarTop;
+   const row=[...sidebar.querySelectorAll('[data-v85-page]')].find(n=>n.dataset.v85Page===active);
+   if(row&&sidebar.clientHeight){
+    const a=sidebar.getBoundingClientRect(),b=row.getBoundingClientRect();
+    if(b.top<a.top)sidebar.scrollTop+=b.top-a.top;
+    else if(b.bottom>a.bottom)sidebar.scrollTop+=b.bottom-a.bottom;
+   }
+  }
+  // Render the visible neighboring page immediately on a context switch,
+  // avoiding a white flash at the seam. Other nearby pages remain lazy.
+  const visible=viewport(m);
+  m.slots.filter(slot=>{
+   const b=slot.getBoundingClientRect();
+   return slot.dataset.v287Active==='false'&&b.bottom>visible.top&&b.top<visible.bottom;
+  }).slice(0,2).forEach(slot=>paint(m,slot));
   const bar=editor.querySelector('.v13-tools');
   if(bar){
    const indicator=document.createElement('span');indicator.className='v287-current-page';
@@ -13099,6 +13132,9 @@ body.v284-hide-object-names [data-v13-canvas-host] .v89-block-title{display:none
    event.preventDefault();event.stopPropagation();clearTimeout(settle);activate(m,slot.dataset.v287Page,true);
   });
   schedulePaint(m);
+  if(same&&old.active===active&&old.needsActivation&&choose(m)!==active){
+   if(opening)m.retryAfterActivation=true;else scheduleActivation(m);
+  }
  }
  V.v287CanvasRefreshed=function(c){
   const m=mounted;if(!valid(m)||c.id!==m.active)return;
