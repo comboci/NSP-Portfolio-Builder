@@ -7665,7 +7665,7 @@ V.exportDraft=function(){
   const data={app:'NSP Portfolio Builder',appVersion:V.appVersion,schemaVersion:2,
    exportKind:'UNSAVED_DRAFT_NOT_RECOVERY',savedRevision:null,state:JSON.parse(backupPayload()),
    catalogDraft:V.editor?.exportCatalogDraft?.()||null};
-  const url=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'}));
+  const url=URL.createObjectURL(v290BackupJSONBlob(JSON.stringify(data)));
   const link=document.createElement('a');link.href=url;
   link.download='NSP_Unsaved_Draft_'+new Date().toISOString().replace(/[:.]/g,'-')+'.json';
   link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
@@ -7745,6 +7745,7 @@ function v290RestoreSummary(candidate,current){
 }
 async function restore(payload,confirmed=false){
  const candidate=normalizeRestoreWorkspace(payload);if(!confirmed&&!confirm(v290RestoreSummary(candidate,state)))return;
+ await V.requireNoPendingDiskOperation?.();
  if(!ready)throw Error('ذخیره‌سازی آماده نیست');
  if(hasUnsavedTemplateDraft())throw Error('پیش از Restore، پیش‌نویس قالب/صفحه را ذخیره کنید یا از آن خروجی JSON مستقل بگیرید.');
  if(V.saveBlocked)throw Error('در حالت بازیابی/تعارض نمی‌توان Backup Before Restore قابل اتکا ایجاد کرد.');
@@ -7848,6 +7849,8 @@ function showBrowserStorageRecovery(error,readRevision=false){
  }
 
  button('خروجی گزارش خطای بدون اطلاعات خصوصی (نه بکاپ)',()=>V.exportStorageDiagnostics());
+ button('بررسی عملیات ناتمام فایل پروژه',()=>window.vPb03Recover?.());
+ button('خروجی نسخه‌های عملیات ناتمام فایل',()=>window.vPb03DownloadRecovery?.());
  button('تلاش مجدد: بارگذاری صفحه',()=>window.location.reload()).classList.add('primary');
  cover.appendChild(panel);
  document.querySelector('.shell')?.setAttribute('inert','');
@@ -13841,12 +13844,18 @@ function removeControl(p,id,confirmed=false){
  if(!p)return false;const c=collections(p).find(x=>x.id===id);if(!c)return false;
  if(dep(p,c)){alert('کنترل وابستگی دارد؛ ابتدا اتصال را جدا کنید.');return false;}
  if(!confirmed&&!confirm('کنترل حذف شود؟'))return false;
- return change(p,'nspDataControls',a=>{const i=a.findIndex(x=>x.id===id);if(i<0)return false;a.splice(i,1);});
+ return change(p,'nspDataControls',a=>{const i=a.findIndex(x=>x.id===id);if(i<0)return false;
+  if(dep(p,a[i])){alert('کنترل اکنون وابستگی دارد؛ حذف نشد.');return false;}
+  a.splice(i,1);
+ });
 }
 function removeEntry(p,c,e,confirmed=false){
  if(dep(p,c,e)){alert('این مورد در صفحه‌ها یا هتل‌ها استفاده شده است. ابتدا اتصال را جدا کنید.');return false;}
  if(!confirmed&&!confirm('این ورودی حذف شود؟'))return false;
- return change(p,'nspDataControls',a=>{const row=a.find(x=>x.id===c.id),i=row?.entries.findIndex(x=>x.id===e.id);if(i==null||i<0)return false;row.entries.splice(i,1);});
+ return change(p,'nspDataControls',a=>{const row=a.find(x=>x.id===c.id),i=row?.entries.findIndex(x=>x.id===e.id);if(i==null||i<0)return false;
+  if(dep(p,row,row.entries[i])){alert('این ورودی اکنون استفاده می‌شود؛ حذف نشد.');return false;}
+  row.entries.splice(i,1);
+ });
 }
 function field(host,t,e){host.append(make('label',{},[make('span',{text:t}),e]));return e;}
 function input(value,onchange,attrs={}){const el=make('input',{type:'text',value:value??'',maxlength:100,...attrs});if(onchange)el.onchange=()=>onchange(el.value);return el;}
@@ -13920,8 +13929,14 @@ function validateHotels(p){
 }
 function addHotel(p,h){if(!p||!idOk(h?.id))return false;return N.change(p,'nspHotels',a=>{if(a.length>=600||a.some(x=>x.id===h.id))return false;a.push(cleanHotel(h));});}
 function editHotel(p,id,x){return N.change(p,'nspHotels',a=>{const i=a.findIndex(y=>y.id===id);if(i<0)return false;a[i]=cleanHotel({...a[i],...(typeof x==='function'?x(a[i]):x),id});});}
-function removeHotel(p,id){if(N.pageObjects(p).some(o=>o.hotelIds?.includes(id))||V.editor.nspHistoryUses?.(p,o=>o.hotelIds?.includes(id))){alert('این رکورد در یک صفحه استفاده می‌شود. ابتدا آن را از کامپوننت جدا کنید.');return;}
- if(confirm('رکورد حذف شود؟'))N.change(p,'nspHotels',a=>{const i=a.findIndex(x=>x.id===id);if(i<0)return false;a.splice(i,1);});}
+function removeHotel(p,id){
+ const used=()=>N.pageObjects(p).some(o=>o.hotelIds?.includes(id))||V.editor.nspHistoryUses?.(p,o=>o.hotelIds?.includes(id));
+ if(used()){alert('این رکورد در یک صفحه استفاده می‌شود. ابتدا آن را از کامپوننت جدا کنید.');return;}
+ if(confirm('رکورد حذف شود؟'))void N.change(p,'nspHotels',a=>{
+  if(used()){alert('رکورد اکنون در یک صفحه استفاده می‌شود؛ حذف نشد.');return false;}
+  const i=a.findIndex(x=>x.id===id);if(i<0)return false;a.splice(i,1);
+ });
+}
 function mountTray(p,row,u){row.append(btn('اطلاعات هتل‌ها',()=>{u.control='';u.section=u.section?'':'hotels';N.patch();},{'data-nsp-hotels':''}));}
 function mountSection(tray,p,u){
  if(u.section!=='hotels')return;
