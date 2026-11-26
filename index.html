@@ -7667,12 +7667,18 @@ function normalizeRestoreWorkspace(payload){
  return candidate;
 }
 function v290RestoreSummary(candidate,current){
- const names=[candidate.activeWorkspaceName,...(candidate.projectWorkspaces||[]).map(p=>p.name)];
- return 'کل Workspace شامل همه پروژه‌ها و کتابخانه مشترک جایگزین می‌شود. پروژه‌های نسخه پشتیبان:\n'+names.join('\n')+
-  (current?'':'\nوضعیت فعلی قابل خواندن نیست؛ فهرست پروژه‌های فعلی قابل مقایسه نیست.')+'\nجایگزینی انجام شود؟';
+ const projectMap=workspace=>new Map([[workspace.activeWorkspaceId,workspace.activeWorkspaceName||workspace.title||'پروژه فعال'],
+  ...(workspace.projectWorkspaces||[]).map(p=>[p.id,p.name||p.id])]);
+ const after=projectMap(candidate),before=current?projectMap(current):new Map();
+ const rows=[];
+ for(const [id,title] of before)rows.push(after.has(id)?'جایگزینی: '+title+' ← '+after.get(id):'در نسخه پشتیبان نیست و کنار گذاشته می‌شود: '+title);
+ for(const [id,title] of after)if(!before.has(id))rows.push((current?'افزوده از پشتیبان: ':'در نسخه پشتیبان: ')+title);
+ return ['کل Workspace شامل همه پروژه‌ها و کتابخانه مشترک جایگزین می‌شود.',
+  ...(!current?['وضعیت فعلی قابل خواندن نیست؛ فهرست پروژه‌های فعلی قابل مقایسه نیست.']:[]),
+  ...rows,'برای افزودن تنها یک پروژه، انصراف دهید و از «ورود پروژه» استفاده کنید.','جایگزینی انجام شود؟'].join('\n');
 }
 async function restore(payload,confirmed=false){
- const candidate=normalizeRestoreWorkspace(payload);if(!confirmed&&!confirm('پروژهٔ جاری با نسخهٔ انتخاب‌شده جایگزین شود؟'))return;
+ const candidate=normalizeRestoreWorkspace(payload);if(!confirmed&&!confirm(v290RestoreSummary(candidate,state)))return;
  if(!ready)throw Error('ذخیره‌سازی آماده نیست');
  if(hasUnsavedTemplateDraft())throw Error('پیش از Restore، پیش‌نویس قالب/صفحه را ذخیره کنید یا از آن خروجی JSON مستقل بگیرید.');
  if(V.saveBlocked)throw Error('در حالت بازیابی/تعارض نمی‌توان Backup Before Restore قابل اتکا ایجاد کرد.');
@@ -7715,7 +7721,7 @@ importData=async function(event){
  }catch(e){alert('ورود فایل کامل نشد؛ '+String(e?.message||e));}
 };
 function backupPayload(){v78SyncGlobal();v13SyncPages();return JSON.stringify(state);}
-const settingsBefore=settingsView;settingsView=function(){return settingsBefore()+'<div class="panel"><h3>Backup / Restore</h3><div class="toolbar"><button class="btn" onclick="download()">Backup قابل‌انتقال JSON + تصاویر</button><button class="btn" onclick="document.getElementById(\'importFile\').click()">Restore از JSON</button><button class="btn" onclick="V13.createBackup()">پشتیبان نام‌گذاری‌شده</button><button class="btn" onclick="V13.exportDraft()">خروجی پیش‌نویس JSON (غیر Recovery)</button><button class="btn" onclick="V13.restoreBackup()">بازیابی پشتیبان</button></div></div>';};
+const settingsBefore=settingsView;settingsView=function(){return settingsBefore()+'<div class="panel"><h3>Backup / Restore</h3><div class="toolbar"><button class="btn" onclick="download()">Backup قابل‌انتقال JSON + تصاویر</button><button class="btn" onclick="document.getElementById(\'importFile\').click()">بازیابی کل Workspace از JSON</button><button class="btn" onclick="V13.createBackup()">پشتیبان نام‌گذاری‌شده</button><button class="btn" onclick="V13.exportDraft()">خروجی پیش‌نویس JSON (غیر Recovery)</button><button class="btn" onclick="V13.restoreBackup()">بازیابی پشتیبان</button></div></div>';};
 // A stale tab must export its unsaved edits before loading the newer database state.
 V.recoverBrowserConflict=function(){
  if(!V.saveBlocked)return alert('در حال حاضر تعارض ذخیرهٔ مرورگر گزارش نشده است.');
