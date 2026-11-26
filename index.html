@@ -13261,4 +13261,65 @@ body.v284-hide-object-names [data-v13-canvas-host] .v89-block-title{display:none
 .v16-tool-window .v18-inspector-target strong{margin-bottom:0!important;line-height:1.6;white-space:normal;overflow-wrap:anywhere}
 .v16-tool-window .v13-number-grid input{min-width:0;width:100%}
 </style>
+<style id="nsp-tray">
+.nsp-group{padding:6px;margin:4px;border:1px solid #bbd6dc;border-radius:6px}
+.nsp-group>.btn{width:100%;margin:2px 0;text-align:start}
+.nsp-tray{position:absolute;bottom:5px;left:64px;right:64px;z-index:7;pointer-events:none}
+.nsp-tray>div,.nsp-tray>section{pointer-events:auto;width:min(800px,98%);box-sizing:border-box;margin:auto;background:#eef7fa;color:#203a4d;border:1px solid #aec4ce;border-radius:7px;padding:6px;overflow:auto;max-height:38vh}
+.nsp-tray>div{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.nsp-tray label,.nsp-property label{display:block;margin:4px 0}
+.nsp-tray input:not([type=checkbox]),.nsp-tray select,.nsp-property input:not([type=checkbox]),.nsp-property select{width:100%;max-width:100%;box-sizing:border-box}
+.nsp-tray details,.nsp-property{border:1px solid #cbdce2;padding:5px;margin:5px 0}
+@media print{.nsp-tray,.nsp-group{display:none!important}}
+</style>
+<script id="nsp-tray">
+(function(){
+'use strict';
+const V=V13,N=V.nsp={},K='application/x-nsp-data-control',C='application/x-nsp-component',views=new Map();let busy=false;
+const copy=x=>JSON.parse(JSON.stringify(x)),storeBy=id=>(state.portfolios||[]).find(p=>p.id===id),pfc=()=>storeBy(V.editor.currentPage()?.portfolioId);
+const collections=p=>p?.nspDataControls||[],labels={logo:'Logo',systems:'System Logos'};
+function make(tag,a={},kids=[]){const e=document.createElement(tag);for(const[k,v] of Object.entries(a))if(k==='text')e.textContent=v;else if(k==='onclick')e.onclick=v;else e.setAttribute(k,String(v));e.append(...kids);return e;}
+const btn=(text,onclick,attrs={})=>make('button',{class:'btn',type:'button',text,onclick,...attrs});
+const group=(title,attr)=>make('section',{class:'nsp-group',[attr]:'','aria-label':title},[make('strong',{text:title})]);
+function view(p){const k=state.activeWorkspaceId+':'+p.id;if(!views.has(k))views.set(k,{});return views.get(k);}
+async function change(p,field,fn){if(busy||!p||p!==storeBy(p.id)||V.saveBlocked)return false;const owner=state,old=p[field],next=copy(old||[]);
+ try{if(fn(next)===false)return false;busy=true;p[field]=next;if(!save(true))throw Error('ذخیره در دسترس نیست');await V.flushStorage();if(state===owner){N.onSharedChange?.(p,field,old,next);patch();}return true;}
+ catch(e){if(state===owner){if(old===undefined)delete p[field];else p[field]=old;patch();}alert(String(e.message||e));return false;}finally{busy=false;}}
+async function addControl(p,type){if(!labels[type]||!p)return false;const id=uid();if(!await change(p,'nspDataControls',a=>{if(a.length>=40)return false;a.push({id,type,name:labels[type],entries:[]});}))return false;view(p).control=id;view(p).section='';patch();return id;}
+function patch(){
+ const editor=document.querySelector('[data-v13-editor]');if(!editor)return;
+ const slot=editor.querySelector('[data-v220-toolbox-slot]'),p=pfc(),draft=N.definitionEditor?.isDraft?.();
+ if(slot){
+  if(!slot.querySelector('[data-nsp-general]')){
+   const general=group('General','data-nsp-general'),special=group('NSP','data-nsp-tools');
+   for(const n of Array.from(slot.children)){const l=n.querySelector('.v227-components');if(l)special.append(l);(n.matches('.v227-components')?special:general).append(n);}
+   if(!general.querySelector('[data-v13-type=shape]'))general.append(make('button',{class:'btn',type:'button','data-v13-action':'add','data-v13-type':'shape',draggable:true,text:'مستطیل / Shape'}));
+   slot.append(general,special);
+  }
+  slot.querySelector('[data-nsp-builtins]')?.remove();
+  const host=make('div',{'data-nsp-builtins':''});
+  if(draft)N.definitionEditor?.mountTools?.(host);
+  if(p){for(const d of N.toolDefinitions?.()||[]){const b=btn(d.name,()=>N.insert(d),{'data-nsp-insert':d.id,draggable:true});b.ondragstart=e=>e.dataTransfer.setData(C,d.id);host.append(b);}
+    if(N.definitionEditor)host.append(btn('Component Editor',()=>N.definitionEditor.navigate()));}
+  slot.querySelector('[data-nsp-tools]').append(host);
+  slot.querySelector('[data-nsp-data-tools]')?.remove();
+  if(p){const g=group('Data Controls','data-nsp-data-tools');for(const [type,name] of Object.entries(labels)){const b=btn(name,()=>addControl(p,type),{'data-nsp-add-control':type,draggable:true});b.ondragstart=e=>e.dataTransfer.setData(K,type);g.append(b);}slot.append(g);}
+ }
+ editor.querySelector('[data-nsp-tray]')?.remove();
+ if(!p)return;
+ const u=view(p),row=make('div',{},[make('strong',{text:'Data Controls · '+p.name})]),tray=make('aside',{class:'nsp-tray no-print','data-nsp-tray':'','aria-label':'کنترل‌های غیرچاپی پورتفولیو'},[row]);
+ for(const c of collections(p))row.append(btn(c.name,()=>{u.section='';u.control=u.control===c.id?'':c.id;patch();},{'data-nsp-control':c.id,'aria-pressed':u.control===c.id}));
+ N.mountTray?.(p,row,u);
+ const c=collections(p).find(x=>x.id===u.control);if(c){const section=make('section',{'data-nsp-control-properties':''});section.append(make('strong',{text:c.name}));N.mountControl?.(section,p,c);tray.append(section);}
+ N.mountSection?.(tray,p,u);
+ (editor.querySelector('.v13-canvas-scroll')||editor).insertAdjacentElement('afterend',tray);
+}
+function accept(e){return pfc()&&e.target.closest('[data-v13-editor] .v13-canvas-scroll,[data-nsp-tray]')&&Array.from(e.dataTransfer?.types||[]).some(t=>t===K||t===C);}
+document.addEventListener('dragover',e=>{if(accept(e)){e.preventDefault();e.dataTransfer.dropEffect='copy';}},true);
+document.addEventListener('drop',e=>{if(!accept(e))return;e.preventDefault();e.stopPropagation();const t=e.dataTransfer.getData(K);if(t)return void addControl(pfc(),t);
+ const d=N.toolDefinitions?.().find(x=>x.id===e.dataTransfer.getData(C)),surface=e.target.closest('[data-v13-surface]')||document.querySelector('[data-v13-editor] [data-v13-surface]');if(d&&surface)N.insert(d,{surface,x:e.clientX,y:e.clientY});},true);
+Object.assign(N,{copy,storeBy,pfc,collections,make,btn,patch,change,addControl,view});
+const before=render;render=function(){const r=before.apply(this,arguments);patch();return r;};patch();
+})();
+</script>
 </body></html>
