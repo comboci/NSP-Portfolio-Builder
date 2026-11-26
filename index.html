@@ -14201,6 +14201,17 @@ function validateDefinitions(s){
   d.objects=validateSlots(d.objects,d.nspBase);
  }
 }
+// Dynamic slot style is explicit; data text, image identity, and component versions
+// stay with the bound record. Visual effects belong to the saved definition.
+function slotStyle(slot,keys){
+ return Object.fromEntries(keys.filter(key=>slot[key]!==undefined).map(key=>[key,slot[key]]));
+}
+const boxStyleKeys=['opacity','rotation','flipH','flipV','transformPivot','cornerRadius','borderColor','borderWidth','shadowX','shadowY','shadowBlur','shadowStrength'];
+const typeStyleKeys=['fontFamily','fontWeight','fontStyle','color','colorSource','direction','textAlign','verticalAlign','lineHeight','background'];
+function scaledFont(slot,fallback,sx,sy){
+ const size=Number(slot.fontSize??fallback);
+ return Math.max(6,Math.min(300,(Number.isFinite(size)?size:20)*Math.min(sx,sy)));
+}
 function applySlots(o,primitives,_p,tools){
  if(o.nspUseLayout!==false)return primitives;
  const slots=o.nspSlots,size=o.nspDesignSize;
@@ -14226,17 +14237,30 @@ function applySlots(o,primitives,_p,tools){
     const {id,type,locked,nspField,...styles}=s;
     base.push(tools.primitive(o.id+'-'+key+'-static-'+id,type,x,y,w,h,{...styles,x,y,w,h,locked:false}));continue;
    }
-   const ps=dyn[s.nspField]||[];if(!ps.length)continue;
-   if(s.nspField==='image'){base.push({...ps[0],x,y,w,h,objectFit:s.objectFit||ps[0].objectFit,imageEdit:s.imageEdit||ps[0].imageEdit,cornerRadius:s.cornerRadius??0});continue;}
    if(s.nspField==='hotelText'){
-    // Preserve row spacing and font preferences; fit only full lines inside the slot.
-    const left=Math.min(...ps.map(p=>p.x)),top=Math.min(...ps.map(p=>p.y));for(const p of ps){if(y+p.y-top+p.h>y+h)break;base.push({...p,x:x+p.x-left,y:y+p.y-top,w:Math.max(1,w-p.x+left)});}continue;
+    // Reflow data inside the saved slot; rows discarded by the full-size default
+    // layout must not determine capacity for a differently styled custom slot.
+    const fontSize=scaledFont(s,o.nspOptions.fontSize,sx,sy),lineHeight=s.lineHeight??o.nspOptions.lineHeight;
+    const laidOut=N.layoutText({...o,w:w+16,h:h+8,nspOptions:{...o.nspOptions,fontSize,lineHeight,
+     recordGap:o.nspOptions.recordGap*sy,indent:Math.min(Math.max(0,w-1),o.nspOptions.indent*sx),
+     align:s.textAlign??o.nspOptions.align,direction:s.direction??o.nspOptions.direction}},_p);
+    const effects=slotStyle(s,boxStyleKeys.concat(typeStyleKeys));
+    base.push(...laidOut.map(p=>({...p,...effects,x:x+p.x-8,y:y+p.y-8,fontSize,lineHeight})));
+    continue;
+   }
+   const ps=dyn[s.nspField]||[];if(!ps.length)continue;
+   if(s.nspField==='image'){
+    base.push({...ps[0],...slotStyle(s,boxStyleKeys),x,y,w,h,
+     objectFit:s.objectFit||ps[0].objectFit,imageEdit:s.imageEdit||ps[0].imageEdit});
+    continue;
    }
    const left=Math.min(...ps.map(p=>p.x)),top=Math.min(...ps.map(p=>p.y)),right=Math.max(...ps.map(p=>p.x+p.w)),bottom=Math.max(...ps.map(p=>p.y+p.h));
    const gx=w/Math.max(1,right-left),gy=h/Math.max(1,bottom-top);
    for(const p of ps){
     const local={x:x+(p.x-left)*gx,y:y+(p.y-top)*gy,w:Math.max(1,p.w*gx),h:Math.max(1,p.h*gy)};
-    if(p.type==='text')Object.assign(local,{fontSize:Math.min(local.h,(s.fontSize||p.fontSize)*Math.min(sx,sy)),fontFamily:s.fontFamily||p.fontFamily,fontWeight:s.fontWeight||p.fontWeight,color:s.color||p.color,direction:s.direction||p.direction,textAlign:s.textAlign||p.textAlign});
+    Object.assign(local,slotStyle(s,boxStyleKeys));
+    if(p.type==='text')Object.assign(local,slotStyle(s,typeStyleKeys),{
+     fontSize:Math.max(6,Math.min(local.h,scaledFont(s,p.fontSize,sx,sy)))});
     base.push({...p,...local});
    }
   }
