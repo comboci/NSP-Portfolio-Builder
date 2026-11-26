@@ -13648,16 +13648,36 @@ body.v284-hide-object-names [data-v13-canvas-host] .v89-block-title{display:none
 <script id="nsp-tray">
 (function(){
 'use strict';
-const V=V13,N=V.nsp={},K='application/x-nsp-data-control',C='application/x-nsp-component',views=new Map();let busy=false;
+const V=V13,N=V.nsp={},K='application/x-nsp-data-control',C='application/x-nsp-component',views=new Map();let sharedEdits=Promise.resolve();
 const copy=x=>JSON.parse(JSON.stringify(x)),storeBy=id=>(state.portfolios||[]).find(p=>p.id===id),pfc=()=>storeBy(V.editor.currentPage()?.portfolioId);
 const collections=p=>p?.nspDataControls||[],labels={logo:'Logo',systems:'System Logos'};
 function make(tag,a={},kids=[]){const e=document.createElement(tag);for(const[k,v] of Object.entries(a))if(k==='text')e.textContent=v;else if(k==='onclick')e.onclick=v;else e.setAttribute(k,String(v));e.append(...kids);return e;}
 const btn=(text,onclick,attrs={})=>make('button',{class:'btn',type:'button',text,onclick,...attrs});
 const group=(title,attr)=>make('section',{class:'nsp-group',[attr]:'','aria-label':title},[make('strong',{text:title})]);
 function view(p){const k=state.activeWorkspaceId+':'+p.id;if(!views.has(k))views.set(k,{});return views.get(k);}
-async function change(p,field,fn){if(busy||!p||p!==storeBy(p.id)||V.saveBlocked)return false;const owner=state,old=p[field],next=copy(old||[]);
- try{if(fn(next)===false)return false;busy=true;p[field]=next;if(!save(true))throw Error('ذخیره در دسترس نیست');await V.flushStorage();if(state===owner){N.onSharedChange?.(p,field,old,next);patch();}return true;}
- catch(e){if(state===owner){if(old===undefined)delete p[field];else p[field]=old;patch();}alert(String(e.message||e));return false;}finally{busy=false;}}
+function change(p,field,fn){
+ const owner=state,workspace=owner.activeWorkspaceId;
+ const apply=async()=>{
+  if(!p||state!==owner||state.activeWorkspaceId!==workspace||p!==storeBy(p.id)||V.saveBlocked){
+   alert('ویرایش کنترل ثبت نشد؛ پروژه یا وضعیت ذخیره تغییر کرده است.');return false;
+  }
+  const old=p[field],next=copy(old||[]);
+  if(fn(next)===false)return false;
+  try{
+   p[field]=next;
+   if(!save(true))throw Error('ذخیره در دسترس نیست');
+   await V.flushStorage();
+   if(state===owner){N.onSharedChange?.(p,field,old,next);patch();}
+   return true;
+  }catch(e){
+   if(state===owner){if(old===undefined)delete p[field];else p[field]=old;patch();}
+   alert(String(e.message||e));return false;
+  }
+ };
+ const request=sharedEdits.then(apply).catch(error=>{alert(String(error?.message||error));return false;});
+ sharedEdits=request;
+ return request;
+}
 async function addControl(p,type){if(!labels[type]||!p)return false;const id=uid();if(!await change(p,'nspDataControls',a=>{if(a.length>=40)return false;a.push({id,type,name:labels[type],entries:[]});}))return false;view(p).control=id;view(p).section='';patch();return id;}
 function patch(){
  const editor=document.querySelector('[data-v13-editor]');if(!editor)return;
@@ -13812,7 +13832,7 @@ function validateHotels(p){
   h.systems.some(k=>!idOk(k))||!h.images||Array.isArray(h.images)||Object.keys(h.images).some(k=>!roles.includes(k)||!idOk(h.images[k]?.assetId))))throw Error('رکوردهای هتل معتبر نیستند.');
 }
 function addHotel(p,h){if(!p||!idOk(h?.id))return false;return N.change(p,'nspHotels',a=>{if(a.length>=600||a.some(x=>x.id===h.id))return false;a.push(cleanHotel(h));});}
-function editHotel(p,id,x){return N.change(p,'nspHotels',a=>{const i=a.findIndex(y=>y.id===id);if(i<0)return false;a[i]=cleanHotel({...a[i],...x,id});});}
+function editHotel(p,id,x){return N.change(p,'nspHotels',a=>{const i=a.findIndex(y=>y.id===id);if(i<0)return false;a[i]=cleanHotel({...a[i],...(typeof x==='function'?x(a[i]):x),id});});}
 function removeHotel(p,id){if(N.pageObjects(p).some(o=>o.hotelIds?.includes(id))||V.editor.nspHistoryUses?.(p,o=>o.hotelIds?.includes(id))){alert('این رکورد در یک صفحه استفاده می‌شود. ابتدا آن را از کامپوننت جدا کنید.');return;}
  if(confirm('رکورد حذف شود؟'))N.change(p,'nspHotels',a=>{const i=a.findIndex(x=>x.id===id);if(i<0)return false;a.splice(i,1);});}
 function mountTray(p,row,u){row.append(btn('اطلاعات هتل‌ها',()=>{u.control='';u.section=u.section?'':'hotels';N.patch();},{'data-nsp-hotels':''}));}
@@ -13826,8 +13846,10 @@ function mountSection(tray,p,u){
   for(const [k,t] of [['hotelName','نام هتل'],['projectName','نام پروژه'],['city','شهر'],['stars','ستاره (۱–۵)'],['year','سال اجرا']])
    field(box,t,input(x[k],v=>{u.hotel=x.id;editHotel(p,x.id,{[k]:v});},{'data-nsp-hotel-field':k}));
   for(const s of systems(p)){const ck=make('input',{type:'checkbox','data-nsp-hotel-system':s.id});ck.checked=x.systems.includes(s.id);
-   ck.onchange=()=>{u.hotel=x.id;editHotel(p,x.id,{systems:ck.checked?[...x.systems,s.id]:x.systems.filter(id=>id!==s.id)});};field(box,s.name,ck);}
-  for(const k of roles)field(box,k,assetInput(x.images[k]?.assetId,v=>{u.hotel=x.id;editHotel(p,x.id,{images:{...x.images,[k]:{assetId:v}}});},{'data-nsp-hotel-role':k}));
+   ck.onchange=()=>{u.hotel=x.id;const checked=ck.checked;void editHotel(p,x.id,current=>({
+    systems:checked?[...current.systems,s.id]:current.systems.filter(id=>id!==s.id)
+   }));};field(box,s.name,ck);}
+  for(const k of roles)field(box,k,assetInput(x.images[k]?.assetId,v=>{u.hotel=x.id;void editHotel(p,x.id,current=>({images:{...current.images,[k]:{assetId:v}}}));},{'data-nsp-hotel-role':k}));
   box.append(btn('حذف رکورد',()=>removeHotel(p,x.id)));h.append(box);
  }tray.append(h);
 }
