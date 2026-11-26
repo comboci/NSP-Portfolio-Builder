@@ -1871,10 +1871,15 @@ function v77Data(id){
  v76InitProjects();if(id===state.activeWorkspaceId){v13SyncPages();return state;}
  return state.projectWorkspaces.find(x=>x.id===id)?.data||null;
 }
+let v290OptimisticBusy=false;
 async function v77Persist(undo){
- if(!save(true)){undo();render();return false;}
- try{await window.V13.flushStorage();return true;}
- catch(error){undo();window.V13.dirty=true;render();alert('تغییر پروژه در پایگاه داده ذخیره نشد و در حافظه بازگردانده شد.\n'+String(error));return false;}
+ if(v290OptimisticBusy){undo();render();alert('ابتدا نتیجه ذخیره تغییر پیشین مشخص شود؛ تغییر جدید اعمال نشد.');return false;}
+ v290OptimisticBusy=true;
+ try{
+  if(!save(true)){undo();render();return false;}
+  await window.V13.flushStorage();return true;
+ }catch(error){undo();window.V13.dirty=true;render();alert('ذخیره این تغییر تأیید نشد؛ تغییر در حافظه بازگردانده شد.\n'+String(error));return false;}
+ finally{v290OptimisticBusy=false;}
 }
 async function v77AddPortfolio(id){
  const data=v77Data(id);if(!data)return;
@@ -7461,18 +7466,24 @@ async function write(payload,diskOperation=null){
  if(V.saveBlocked)throw Error('WRITE_CONFLICT: ذخیره مسدود شده؛ ابتدا داده تازه را بازیابی کنید');
  return browserCompareAndWrite(payload,diskOperation);
 }
+let v290WriteGeneration=0;
 function enqueue(payload,page=null,diskOperation=null){
+ const generation=v290WriteGeneration;
  const rev=++revision,projectId=state.activeWorkspaceId,scope=scopeFor(page,projectId);
  const item={scope,rev,kind:page?'page':'project',projectId,
   portfolioId:page?.portfolioId,pageId:page?.pageId,
   label:page?'صفحه '+page.pageId:'ذخیره پروژه '+String(projectId||'')};
  pending++;status();
  queue=queue.catch(()=>{}).then(async()=>{
+  if(generation!==v290WriteGeneration){
+   writeRejected(item,Error('WRITE_PREDECESSOR_FAILED: Snapshot بعد از خطای قبلی تأیید نشد؛ پس از بازگشت تغییر قبلی دوباره ذخیره کنید.'));
+   return;
+  }
   const next=page?mergeSavedPage(payload,page):payload;
   await write(next,diskOperation);
   writeAcknowledged(scope,rev,next,page);
  })
-  .catch(error=>writeRejected(item,error))
+  .catch(error=>{v290WriteGeneration++;writeRejected(item,error);})
   .finally(()=>{pending--;status();});
  return queue;
 }
