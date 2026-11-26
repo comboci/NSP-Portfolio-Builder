@@ -1,0 +1,26 @@
+// Independent source-level audit, no DOM/browser runtime.
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const source=fs.readFileSync(path.join(__dirname,'../../index.html'),'utf8');
+const blocks=[...source.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script\s*>/gi)].filter(m=>!/\btype=["'](?:application\/json|application\/ld\+json|module)/i.test(m[1])&&!/\bsrc=/.test(m[1]));
+for(const m of blocks)new Function(m[2]);
+const block=id=>blocks.find(m=>m[1].includes('id="'+id+'"'))[2];
+const N={copy:x=>JSON.parse(JSON.stringify(x)),collections:p=>p.nspDataControls||[],idOk:x=>typeof x==='string',pageObjects:()=>[]},V={nsp:N};
+new Function('V13','document',block('nsp-hotels'))(V,{addEventListener(){}});
+new Function('window',block('nsp-view'))({V13:V});
+const p={nspDataControls:[{type:'systems',entries:['a','b','c','d'].map(id=>({id,name:id,assetId:id}))}],nspHotels:[1,2,3,4,5].map(i=>({id:'h'+i,hotelName:'Hotel '+i,city:'City',stars:'5',year:'1405',systems:['a','b','c','d'],images:{}}))};
+const txt={id:'t',w:500,h:400,hotelIds:['h1','h2'],nspOptions:N.cleanOptions({fields:['name','stars'],recordFlow:'inline',recordSeparator:' / '})};
+assert.equal(N.cleanOptions({}).cols,4);
+assert.equal(N.cleanOptions({cols:2}).cols,2,'explicit old columns preserved');
+const inline=N.layoutText(txt,p)[0].text;
+assert.ok(inline.includes('Hotel 2')&&inline.includes('(5 ستاره)'));
+assert.ok(N.layoutText({...txt,h:20,nspOptions:N.cleanOptions({fields:['name'],multiLine:true})},p).nspIssue);
+const detail=N.layoutText({...txt,nspOptions:N.cleanOptions({fields:['name','city'],multiLine:true,indent:20,bullet:'★',direction:'ltr'})},p);
+assert.equal(detail[0].x,8);assert.equal(detail[1].x,28);assert.equal(detail[1].text,'★ City');
+const grid={id:'g',w:900,h:480,hotelIds:['h1','h2','h3','h4','h5'],nspOptions:N.cleanOptions({fields:['name'],showImage:false})};
+const g=N.layoutGrid(grid,p,N.layoutTools);
+assert.equal(g.filter(x=>x.id.endsWith('-frame')).length,4);assert.ok(g.nspIssue);
+assert.ok(N.layoutView({...grid,hotelIds:['h1'],nspOptions:N.cleanOptions({fields:['systems'],systemMode:'both'})},p,N.layoutTools).nspIssue);
+assert.match(source,/article\.querySelectorAll\('\[data-nsp-layout-issue\]'\)/);
+console.log('PASS: '+blocks.length+' script syntax checks and focused hotel layout/overflow model. Browser not run.');
