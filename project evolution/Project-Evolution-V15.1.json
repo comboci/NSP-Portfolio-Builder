@@ -9,12 +9,12 @@
     "history_imported": false,
     "former_active_records_imported": false,
     "note": "V15.1 identifies this fresh Project Evolution operational record. It does not claim that an external PES-15.1 schema has been formally published.",
-    "last_metadata_update_at": "2026-11-21"
+    "last_metadata_update_at": "2026-11-26"
   },
   "source_baseline": {
     "repository": "comboci/NSP-Portfolio-Builder",
     "branch": "main",
-    "application_release": "Browser 241",
+    "application_release": "Browser 289",
     "source_commit_before_project_evolution_reset": "1b1f58420399276333aa42e0acd97ec1ef0232e8",
     "browser_entry": "index.html",
     "browser_architecture": "Page-First",
@@ -29,7 +29,16 @@
       "database": "SQLite schema 13",
       "scope": "deferred; not considered browser-runtime accepted"
     },
-    "current_source_release_note": "Browser V241 RR-085..RR-088: corrected raw object containment in Region cascading delete; Region adopts contained objects on creation/move; window-captured vertical object/blank/inline text context menu with Paste/Select All; Word-style horizontal/vertical text alignment and direction controls."
+    "current_source_release_note": "V289 — مبنای سورس تأییدشده در GitHub به تاریخ 2026-11-26؛ مرور کوتاه تغییرات امروز در source_checkpoint_20261126. پذیرش Runtime مالک ثبت نشده است.",
+    "source_checkpoint_20261126": {
+      "date": "2026-11-26",
+      "source_commit": "fa205b96824052a43a6ff2b466a78c111be83ad1",
+      "previous_documented_release": "Browser 241",
+      "previous_documented_release_note": "Browser V241 RR-085..RR-088: corrected raw object containment in Region cascading delete; Region adopts contained objects on creation/move; window-captured vertical object/blank/inline text context menu with Paste/Select All; Word-style horizontal/vertical text alignment and direction controls.",
+      "today_summary": "طبق عناوین و شواهد کامیت‌های امروز V270 تا V289: پشتیبانی قالب‌های قابل ویرایش Illustrator، مدیریت پروژه و ورود ZIP، ذخیره و بازیابی، کنترل Undo/Redo، نوار ابزار و پنل‌ها، پیمایش و بوم پیوستهٔ صفحات، PDF و زوم، و V289 اصلاح تداخل خط‌کش با پنل‌ها و استفادهٔ مجدد از صحنهٔ resolve‌شده در Inspector. جزئیات تغییرات در تاریخچهٔ Git باقی می‌ماند.",
+      "portfolio_deliverable_note": "طبق گزارش گفتگو: نسخهٔ فارسی RTL قالب پنج‌صفحه‌ای، سپس شناسه‌های مستقل برای Import و بازطراحی تایپوگرافی با Noto Sans Arabic (FA-03) تحویل شده است. این موارد تحویل قالب هستند، نه قابلیت جدید تأییدشدهٔ نرم‌افزار. فایل‌های خروجی در این به‌روزرسانی دوباره بررسی یا وارد نرم‌افزار نشده‌اند.",
+      "evidence_scope": "Commit metadata and V289 diff checked; not a full source audit or runtime test."
+    }
   },
   "product_definition": {
     "hierarchy": "Project → independent Portfolios → independent Pages",
@@ -47,10 +56,24 @@
     "native_runtime_tested": false,
     "browser_database_physically_cleared": false,
     "no_build_or_static_checker_executed": true,
-    "caveat": "V241: 31 scripts parsed; fixture V230 raw ownership and Word toolbar mocks passed. Firefox, clipboard permissions, IndexedDB/undo and printing not yet validated.",
-    "browser_javascript_syntax_checked": true,
-    "browser_javascript_scripts_parsed": 31,
-    "browser_static_checker_executed": false
+    "caveat": "V289: آخرین نسخه و کامیت سورس در GitHub بررسی شد؛ در این به‌روزرسانی مستندات هیچ Build، Syntax checker یا آزمون Runtime اجرا نشده است. گزارش گفتگوی قبلی از بررسی نحوی ۳۷ اسکریپت یاد می‌کند، اما در این عملیات مستقلاً تکرار نشده است. سابقهٔ ثبت‌شده V241 در previous_documented_verification حفظ شده؛ تأیید مالک V289 باز است.",
+    "browser_javascript_syntax_checked": false,
+    "browser_javascript_scripts_parsed": null,
+    "browser_static_checker_executed": false,
+    "previous_documented_verification": {
+      "release": "Browser 241",
+      "source_version_confirmed": true,
+      "source_only_baseline": true,
+      "browser_runtime_tested": false,
+      "browser_owner_accepted": false,
+      "native_runtime_tested": false,
+      "browser_database_physically_cleared": false,
+      "no_build_or_static_checker_executed": true,
+      "caveat": "V241: 31 scripts parsed; fixture V230 raw ownership and Word toolbar mocks passed. Firefox, clipboard permissions, IndexedDB/undo and printing not yet validated.",
+      "browser_javascript_syntax_checked": true,
+      "browser_javascript_scripts_parsed": 31,
+      "browser_static_checker_executed": false
+    }
   },
   "active_tasks": [
     {
@@ -2829,7 +2852,7 @@
       "multilingual_ui_status": "not verified; do not assume other translations"
     },
     "browser_application": {
-      "release": 241,
+      "release": 289,
       "entrypoint": "index.html",
       "application_type": "single-file HTML browser application",
       "implementation_languages": [
@@ -2884,7 +2907,7 @@
       "Native and Browser app versions are different",
       "Project Evolution V15.1 is a project record version, not an application version"
     ],
-    "evidence_reviewed_at": "2026-11-21"
+    "evidence_reviewed_at": "2026-11-26"
   },
   "catalog_research_n_pipeline": {
     "schema": "nsp-catalog-research-n-queue-v1",
@@ -2907,5 +2930,53 @@
     "queue_state_commit": "5c19bbf27db00defa8db334e167d9fe467b5557d",
     "completed_new_documents": 18,
     "remaining_new_documents": 0
+  },
+  "product_ideas": {
+    "purpose": "مرجع اصلی ایده‌های محصول، جهت تکامل، نیازها و تصمیم‌های مطرح‌شده با مالک؛ مستقل از فهرست ایرادها و گزارش کامیت‌ها.",
+    "recording_policy": {
+      "owner_directive_date": "2026-11-26",
+      "owner_directive": "اولویت Project Evolution ثبت ایده‌های مطرح‌شده در گفتگو، تصمیم‌های طراحی و مسیر آیندهٔ محصول است. ثبت جزئیات تمام تغییرات روزمرهٔ سورس الزامی نیست؛ تاریخچهٔ Git برای آن جزئیات کافی است. ایده‌ها تا زمان تصمیم اجرای آن‌ها نباید به‌عنوان پیاده‌سازی‌شده یا پذیرش رانتایم گزارش شوند.",
+      "keep_existing_records": true
+    },
+    "items": [
+      {
+        "id": "IDEA-001",
+        "title": "کاهش وابستگی به طراح و Adobe Illustrator",
+        "status": "owner_confirmed_direction",
+        "date": "2026-11-26",
+        "detail": "هدف محوری NSP Portfolio Builder این است که کاربر عادی بدون وابستگی دائمی به طراح گرافیک یا نرم‌افزارهایی مانند Illustrator بتواند پورتفولیو و کاتالوگ حرفه‌ای بسازد؛ طراحی‌های پیچیده و تکراری به اجزای آماده و قابل استفادهٔ مجدد تبدیل شوند و افزودن آن‌ها به صفحه بسیار ساده باشد.",
+        "implementation_state": "product_direction_not_a_completion_claim"
+      },
+      {
+        "id": "IDEA-002",
+        "title": "Toolbox دسته‌بندی‌شده مانند Visual Studio",
+        "status": "owner_confirmed_direction",
+        "date": "2026-11-26",
+        "detail": "ابزارهای پایهٔ فعلی (مانند خط، متن، تصویر و شکل) در دستهٔ General قرار گیرند. دستهٔ مستقل NSP برای کامپوننت‌های آمادهٔ تخصصی شرکت در همان Toolbox ایجاد شود. در آینده امکان افزودن دسته‌ها و کامپوننت‌های بیشتر وجود داشته باشد. هدف، استفادهٔ ساده از یک جزء از پیش طراحی‌شده در صفحه است، نه طراحی مجدد تک‌تک عناصر آن. قابلیت کامپوننت‌های سفارشی فعلی نباید با این ایده خلط شود.",
+        "implementation_state": "not_implemented_by_this_record"
+      },
+      {
+        "id": "IDEA-003",
+        "title": "کامپوننت آمادهٔ کارت مشخصات هتل و پروژه",
+        "status": "owner_confirmed_direction",
+        "date": "2026-11-26",
+        "detail": "اولین نمونهٔ مطرح‌شده برای بخش NSP، کارت مشخصات هتل بر اساس صفحهٔ نمونهٔ پورتفولیو فارسی و انگلیسی است: تصویر هتل، نام پروژه/هتل، تعداد ستاره‌ها و سیستم‌ها یا پروژه‌های اجراشده توسط NSP. کاربر با افزودن کارت آماده به صفحه و واردکردن اطلاعات بتواند به طرحی حرفه‌ای برسد؛ آبجکت و فیلدهای اطلاعات آن قابل ویرایش باقی بمانند.",
+        "implementation_state": "not_implemented_by_this_record",
+        "proposed_first_stage": "نسخهٔ آفلاین/ورود دستی اطلاعات؛ طراحی و قرارداد فیلدها هنگام آغاز توسعه تعیین شوند. پشتیبانی فارسی RTL و انگلیسی LTR با توجه به دو نمونه، پیشنهاد طراحی است و جزئیات آن هنوز تصویب نشده‌اند."
+      },
+      {
+        "id": "IDEA-004",
+        "title": "کامپوننت‌های داده‌محور و API اتصال به NSP Office",
+        "status": "future_deferred_by_owner",
+        "date": "2026-11-26",
+        "detail": "در آینده برخی کامپوننت‌ها بتوانند با آدرس API اتوماسیون NSP Office داده‌های پروژه را دریافت کنند؛ فهرست پروژه‌ها، تصاویر، رتبهٔ ستارهٔ هتل و سیستم‌های اجراشده به‌صورت خودکار در کارت‌ها و صفحات پورتفولیو قرار گیرند. هدف نهایی، تولید یا تکمیل خودکار صفحات بر اساس اطلاعات پروژه‌ها است.",
+        "implementation_state": "deferred_not_authorized_for_implementation",
+        "constraints": [
+          "مالک صریحاً اعلام کرد هنوز برای پیاده‌سازی این مرحله زود است.",
+          "فعلاً فقط ثبت ایده؛ هیچ API، اتصال، تغییر نرم‌افزار NSP Office یا پردازش خودکار اجرا نشود.",
+          "جزئیات قرارداد API، مجوز دسترسی، نگاشت فیلدها، به‌روزرسانی و قالب تولید صفحات در فاز طراحی آینده تعیین شوند."
+        ]
+      }
+    ]
   }
 }
