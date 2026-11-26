@@ -13624,11 +13624,32 @@ Object.assign(N,{kinds,fields,roles,fonts,toolDefinitions:definitions,cleanOptio
   const rs=tools.records(o,scope)||[];if(!rs.length)return [];
   return bind(o,scope,tools,rs[0],o.id+'-view',{x:0,y:0,w:clamp(o.w,0,0,10000),h:clamp(o.h,0,0,10000)},false);
  };
+ N.layoutGrid=function(o,scope,tools){
+  const rs=tools.records(o,scope)||[],opts=o.nspOptions||{};if(!rs.length)return [];
+  const w=clamp(o.w,0,0,10000),h=clamp(o.h,0,0,10000),cols=Math.floor(clamp(opts.cols,2,1,12)),count=Math.floor(clamp(opts.count,4,1,100));
+  const gap=clamp(opts.gap,Math.min(24,w*.022),0,200),maxW=(w-(cols-1)*gap)/cols;
+  if(maxW<8||h<8)return [];
+  const cardW=clamp(opts.cardW||null,maxW,8,maxW),n=Math.max(1,Math.ceil(count/cols));
+  const defaultH=Math.min(cardW*(274/525.5),Math.max(8,(h-(n-1)*gap)/n)),cardH=clamp(opts.cardH||null,defaultH,8,h);
+  const cropRows=Math.max(0,Math.floor((h+gap+.0001)/(cardH+gap))),rtl=opts.layoutDirection==='rtl'||(opts.layoutDirection!=='ltr'&&o.direction!=='ltr');
+  const limit=Math.min(rs.length,count,cols*cropRows),out=[];
+  // Defer complete overflow rows instead of partially painting truncated cards.
+  for(let i=0;i<limit;i++){
+   const row=Math.floor(i/cols),col=i%cols,x=rtl?w-cardW-col*(cardW+gap):col*(cardW+gap);
+   out.push(...bind(o,scope,tools,rs[i],o.id+'-card-'+i,{x,y:row*(cardH+gap),w:cardW,h:cardH},true));
+  }
+  return out;
+ };
 const s=N.slot;
 N.builtin('nsp-hotel-view','Hotel View','hotelView',720,470,[
 s('hv-img','image','image',0,0,376,470),s('hv-name','name','text',412,66,280,63,'نام هتل'),
 s('hv-stars','stars','text',412,143,280,34,'★★★★★'),s('hv-city','city','text',412,190,280,38,'شهر'),
 s('hv-year','year','text',412,238,280,38,'سال اجرا'),s('hv-systems','systems','text',412,300,280,110,'سیستم‌ها')]);
+
+N.builtin('nsp-hotel-grid','Hotel Grid','hotelGrid',900,480,[
+s('hg-img','image','image',0,0,240,215),s('hg-name','name','text',260,23,160,45,'نام هتل'),
+s('hg-stars','stars','text',260,70,160,25,'★★★★★'),s('hg-city','city','text',260,102,160,22,'شهر'),
+s('hg-year','year','text',260,132,160,22,'سال اجرا'),s('hg-systems','systems','text',260,163,160,42,'سیستم‌ها')]);
 })(V.nsp);
 </script>
 </body></html>
