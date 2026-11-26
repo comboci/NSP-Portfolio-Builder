@@ -2310,6 +2310,7 @@ function v129PortfolioEnvelope(project,source){
  const portfolio={id:source.id,name:source.name,pages:v13Copy(source.pages)};
  if(typeof source.createdAt==='string')portfolio.createdAt=source.createdAt;
  const componentIds=new Set(portfolioComponentInstances(portfolio).map(o=>o.componentId));
+ for(const o of (portfolio.pages||[]).flatMap(p=>p.visualObjects||[]))if(o.nspDefinitionId)componentIds.add(o.nspDefinitionId);
  const customComponents=v13Copy((project.data.customComponents||[]).filter(def=>componentIds.has(def.id)));
  if(customComponents.length!==componentIds.size)throw Error('تعریف یکی از کامپوننت‌های پورتفولیو پیدا نشد.');
  const required=v111AssetIds({portfolio,customComponents});
@@ -2819,7 +2820,6 @@ const v13StateRender=render;render=function(){v13StateRender();v13UpdateSaveStat
     return '<article class="v13-document v13-'+s.orientation+' v244-paper-'+size.paper.toLowerCase()+(opts.editor ? ' v13-editor-document' : '')+'" data-v13-page-id="'+html(p && p.id || '')+'" style="'+html(style)+'"><div class="v13-page-surface" data-v13-surface="1" style="'+html(surfaceStyle)+'">'+V.renderObjects(resolved.objects,objectOptions)+'</div></article>';
   };
   paper = function (p, index) { return V.renderDocument(p,index); };
-  pageStyle = function (p) { return V.resolvePage(p).style; };
   preview = function () {
     return '<h2 class="no-print">پیش‌نمایش کل سند — Version '+V.appVersion+'</h2><div class="toolbar no-print"><button class="btn primary" onclick="printAll()">چاپ / ذخیره PDF</button></div><p class="muted no-print">چیدمان، اندازه و عناصر صفحه از همان موتور طراح نمایش داده می‌شوند. برای خروجی PDF، مقیاس چاپ را روی ۱۰۰٪ بگذارید و سربرگ و پابرگ مرورگر را خاموش کنید.</p><div class="v13-preview-list print-zone">'+(state.pages || []).map(function (p,i) { return paper(p,i+1); }).join('')+'</div>';
   };
@@ -4370,7 +4370,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     }
     return save();
   }
-  function commit(c,before,full) {
+  function commit(c,before,full,nspPageIds=null) {
     const after=objectSnapshot(c);let saved=true;
     if(v91ContentSnapshot(before)!==v91ContentSnapshot(after)){
       const h=history(c),oldPast=h.past.slice(),oldFuture=h.future;
@@ -4378,7 +4378,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
       h.past.push(before);if(h.past.length>100)h.past.shift();h.future=[];
       if(c.type==='page'&&!v122SaveByScope(c)){restoreObjects(c,before);h.past=oldPast;h.future=oldFuture;saved=false;}
     }
-    if(full!==null){if(full)render();else refresh(c);}
+    if(full!==null){if(full)render();else refresh(c,nspPageIds);}
     if(E.current&&key(E.current)===key(c)){
       const h=history(c),host=document.querySelector('[data-v91-history]');
       if(host)host.innerHTML=historyPanel(c);
@@ -5188,7 +5188,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     const ids=v231CascadeIds(c,list);
     const originals=objects(c,true).filter(o=>ids.has(o.id));
     if(!originals.length)return false;
-    v231Clipboard={workspaceId:state.activeWorkspaceId,objects:copy(originals)};
+    v231Clipboard={workspaceId:state.activeWorkspaceId,portfolioId:c.portfolioId||state.activePortfolioId,objects:copy(originals)};
     v231PasteSerial=0;
     v284SyncToolbar(c); // Enable Paste immediately without rendering the designer.
     if(cut)mutate(c,'delete-object');
@@ -5198,6 +5198,9 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     if(!c||locked(c)||!v231Clipboard||v231Clipboard.workspaceId!==state.activeWorkspaceId)return false;
     const source=copy(v231Clipboard.objects);
     if(!source.length)return false;
+    if((c.portfolioId||state.activePortfolioId)!==v231Clipboard.portfolioId&&source.some(o=>o.nspBinding||o.type==='nspComponent')){
+      alert('این عنصر به دادهٔ پورتفولیو مبدأ وابسته است؛ در پورتفولیو مقصد عنصر تازه ایجاد کنید.');return false;
+    }
     const doc=documentFor(c);
     if(source.some(o=>o.w>doc.width||o.h>doc.height))return alert('ابعاد آبجکت با صفحهٔ مقصد سازگار نیست.');
     const maxX=Math.max(...source.map(o=>o.x+o.w)),maxY=Math.max(...source.map(o=>o.y+o.h));
@@ -5861,13 +5864,23 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
   V.clearEditorHistory=function(){E.propertyEdit=null;E.imageRequest=null;E.inline=null;E.lastCanvasClick=null;E.selected.clear();E.multi.clear();E.anchors.clear();E.activeLayers.clear();E.selectedLayers.clear();E.layerDrag=null;E.drag=null;};
   V.editor=Object.assign(V.editor||{},{hasDrafts:function(){return !!(catalogChanged());},currentPage:function(){return tab==='visual'&&E.pageMode==='edit'&&E.current?.type==='page'&&!catalogContext(E.current)?{projectId:state.activeWorkspaceId,portfolioId:E.current.portfolioId||state.activePortfolioId,pageId:E.current.id}:null;},resetSelection:function(){E.propertyEdit=null;E.imageRequest=null;E.inline=null;E.lastCanvasClick=null;E.epoch++;E.current=null;E.selected.clear();E.multi.clear();E.anchors.clear();E.activeLayers.clear();E.selectedLayers.clear();E.layerDrag=null;E.drag=null;},resetAll:function(){E.propertyEdit=null;E.imageRequest=null;E.inline=null;E.lastCanvasClick=null;E.epoch++;E.current=null;E.pageMode='list';E.selected.clear();E.multi.clear();E.anchors.clear();E.activeLayers.clear();E.selectedLayers.clear();E.layerDrag=null;E.histories.clear();E.drag=null;},refreshStorageStatus:v107RefreshStorageStatus});
   V.editor.nspSelected=()=>currentObject(E.current);
+  V.editor.nspHistoryUses=function(p,test){
+    if(!p||typeof test!=='function')return false;
+    const snapshots=p.pages.flatMap(pg=>{const t=E.histories.get(key({type:'page',portfolioId:p.id,id:pg.id}));return t?[...t.past,...t.future]:[];});
+    return snapshots.some(v=>(v.objects||[]).some(test))||
+      (v231Clipboard?.workspaceId===state.activeWorkspaceId&&v231Clipboard?.portfolioId===p.id&&v231Clipboard.objects.some(test));
+  };
   V.editor.nspInsert=(values,drop)=>{const c=E.current;if(!c||locked(c)||!V.nsp.pfc())return false;add(c,'nspComponent',values,drop||undefined);return V.editor.nspSelected()?.id||false;};
   V.editor.nspPatch=function(patch){
     const c=E.current,o=currentObject(c),p=V.nsp.pfc();
     if(!p||!o||o.type!=='nspComponent'||locked(c)||objectLocked(c,o)||!ownObject(c,o))return false;
     const next={};if(patch.nspOptions)next.nspOptions=V.nsp.cleanOptions(patch.nspOptions);
     if(patch.hotelIds){if(!Array.isArray(patch.hotelIds)||patch.hotelIds.some(id=>!(p.nspHotels||[]).some(h=>h.id===id)))return false;next.hotelIds=[...new Set(patch.hotelIds)].slice(0,o.nspBase==='hotelView'?1:100);}
-    const before=objectSnapshot(c);writeObjectValues(c,o,next);return commit(c,before,true);
+    const before=objectSnapshot(c);
+    writeObjectValues(c,o,next);const ok=commit(c,before,false,[c.id]);
+    const host=document.querySelector('[data-nsp-hotel-props]'),updated=currentObject(c);
+    if(host&&updated){const t=document.createElement('template');t.innerHTML=V.nsp.propPanel(updated,locked(c)||objectLocked(c,updated));if(t.content.firstElementChild)host.replaceWith(t.content.firstElementChild);}
+    return ok;
   };
   V.editor.nspRefresh=function(ids){const c=E.current;if(!c)return;if(ids.includes(c.id))refresh(c,ids);else V.v287CanvasRefreshed?.(c,ids);for(const id of ids)if(id!==c.id)V.thumbnails?.pageChanged?.({...c,id});};
   V.editor.nspBindImage=function(b){
@@ -6929,10 +6942,11 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
      push('error','pageBounds',pageId,index,id,'عنصر «'+label+'» بیرون از محدودهٔ صفحه است.',identity(o));
     else if(x<safeX-.2||y<safeY-.2||x+w>width-safeX+.2||y+h>height-safeY+.2)
      push('warning','safeMargin',pageId,index,id,'عنصر «'+label+'» وارد حاشیهٔ امن '+settings.safeMarginMm+' میلی‌متری شده است.',identity(o));
-    if(o.type==='image'&&!imagePresent(o))
+    const renderedImage=o.type==='image'?V.nsp?.resolveImage?.(o,V.nsp.pageScope(page))||o:o;
+    if(o.type==='image'&&!imagePresent(renderedImage))
      push('error','missingImage',pageId,index,id,'تصویر «'+label+'» در کتابخانهٔ همین پروژه یا کتابخانهٔ عمومی پیدا نشد.',identity(o));
     if(o.type==='image'&&!(typeof o.tilesJson==='string'&&o.tilesJson.trim())){
-     const dpi=v113PrintDpi(getAsset(o.assetId),o.imageEdit,w,h,doc,size);
+     const dpi=v113PrintDpi(getAsset(renderedImage.assetId),renderedImage.imageEdit,w,h,doc,size);
      if(dpi!==null&&dpi<200)push('warning','imageDpi',pageId,index,id,'تصویر «'+label+'» پس از برش/بزرگ‌نمایی حدود '+dpi+' DPI (کمتر از ۲۰۰) دارد.',identity(o));
     }
     if(o.type==='image'&&typeof o.tilesJson==='string'&&o.tilesJson.trim()){
@@ -7368,6 +7382,13 @@ function mergeSavedPage(payload,{projectId,portfolioId,pageId}){
  const available=new Set([...existing,...additions.map(d=>d.id)]);
  if([...linked].some(id=>!available.has(id)))
   throw Error('تعریف کامپوننت وابسته در پروژه پیدا نشد.');
+ if(V.nsp){
+  const definitions=portfolio.nspDataControls||[],hotels=new Set((portfolio.nspHotels||[]).map(h=>h.id));
+  for(const o of page.visualObjects||[]){
+   if(o.nspBinding&&!definitions.some(c=>c.type==='logo'&&c.id===o.nspBinding.controlId&&c.entries.some(e=>e.id===o.nspBinding.variantId)))throw Error('مرجع لوگوی این صفحه در پورتفولیو ذخیره نشده است.');
+   if(o.hotelIds?.some(id=>!hotels.has(id)))throw Error('رکورد هتل در پورتفولیو ذخیره نشده است.');
+  }
+ }
  portfolio.pages[index]=page;
  if(owner.activePortfolioId===portfolioId)owner.pages=portfolio.pages;
  if(additions.length)owner.customComponents=storedDefinitions.concat(additions);
@@ -13352,7 +13373,8 @@ const pages=p=>p?.pages||[],pageObjects=p=>pages(p).flatMap(x=>[...(x.visualObje
 const scopeFor=o=>(state.portfolios||[]).find(p=>p.id===state.activePortfolioId&&pages(p).some(x=>x.id===o.ownerId))||(state.portfolios||[]).find(p=>pages(p).some(x=>x.id===o.ownerId));
 const pageScope=o=>(state.portfolios||[]).find(p=>pages(p).includes(o))||scopeFor({ownerId:o?.id});
 const lookup=(p,b)=>collections(p).find(c=>c.type==='logo'&&c.id===b?.controlId)?.entries.find(x=>x.id===b.variantId);
-const dep=(p,c,e)=>pageObjects(p).some(o=>o.nspBinding?.controlId===c.id&&(!e||o.nspBinding.variantId===e.id))||c.type==='systems'&&(e?[e]:c.entries).some(x=>(p.nspHotels||[]).some(h=>h.systems.includes(x.id)));
+const bound=(c,e)=>(o=>o.nspBinding?.controlId===c.id&&(!e||o.nspBinding.variantId===e.id));
+const dep=(p,c,e)=>(pageObjects(p).some(bound(c,e))||V.editor.nspHistoryUses?.(p,bound(c,e)))||c.type==='systems'&&(e?[e]:c.entries).some(x=>(p.nspHotels||[]).some(h=>h.systems.includes(x.id)));
 const resolveImage=(o,p)=>o.nspBinding?{...o,assetId:lookup(p||scopeFor(o),o.nspBinding)?.assetId||'',src:'',image:'',dataUrl:''}:o;
 const duplicate=a=>new Set(a.map(x=>x.id)).size!==a.length;
 function validate(s){
@@ -13458,7 +13480,7 @@ function validateHotels(p){
 }
 function addHotel(p,h){if(!p||!idOk(h?.id))return false;return N.change(p,'nspHotels',a=>{if(a.length>=600||a.some(x=>x.id===h.id))return false;a.push(cleanHotel(h));});}
 function editHotel(p,id,x){return N.change(p,'nspHotels',a=>{const i=a.findIndex(y=>y.id===id);if(i<0)return false;a[i]=cleanHotel({...a[i],...x,id});});}
-function removeHotel(p,id){if(N.pageObjects(p).some(o=>o.hotelIds?.includes(id))){alert('این رکورد در یک صفحه استفاده می‌شود. ابتدا آن را از کامپوننت جدا کنید.');return;}
+function removeHotel(p,id){if(N.pageObjects(p).some(o=>o.hotelIds?.includes(id))||V.editor.nspHistoryUses?.(p,o=>o.hotelIds?.includes(id))){alert('این رکورد در یک صفحه استفاده می‌شود. ابتدا آن را از کامپوننت جدا کنید.');return;}
  if(confirm('رکورد حذف شود؟'))N.change(p,'nspHotels',a=>{const i=a.findIndex(x=>x.id===id);if(i<0)return false;a.splice(i,1);});}
 function mountTray(p,row,u){row.append(btn('اطلاعات هتل‌ها',()=>{u.control='';u.section=u.section?'':'hotels';N.patch();},{'data-nsp-hotels':''}));}
 function mountSection(tray,p,u){
@@ -13583,7 +13605,7 @@ Object.assign(N,{kinds,fields,roles,fonts,toolDefinitions:definitions,cleanOptio
   const pad=grid?.034:.047,tx=x+(share+pad)*w,tw=Math.max(2,w*(1-share-2*pad));
   function emit(slot,value,top,height,size,color,boxX=tx,boxW=tw,extra={}){
    if(value===''||value==null||boxW<2||height<2)return;
-   out.push(tools.text(base+'-'+slot,String(value),boxX,top,boxW,height,o,{fontFamily:opt.fontFamily||o.fontFamily||'Tahoma',fontSize:Math.max(2,size),color,direction:dir,textAlign:rtl?'right':'left',...extra}));
+   out.push(tools.text(base+'-'+slot,String(value),boxX,top,boxW,height,o,{fontFamily:opt.fontFamily||o.fontFamily||'Tahoma',fontSize:Math.max(2,size),color,direction:opt.direction==='ltr'?'ltr':'rtl',textAlign:opt.align|| (rtl?'right':'left'),...extra}));
   }
   if(bg!=='transparent'||edge>0)out.push(tools.primitive(base+'-frame','shape',x,y,w,h,{background:bg,borderColor:border,borderWidth:edge}));
   if(photo?.assetId)out.push(tools.primitive(base+'-photo','image',x,y,w*share,h,{assetId:photo.assetId,objectFit:'cover',...(crop?{imageEdit:crop}:{})}));
@@ -13650,7 +13672,7 @@ N.builtin('nsp-hotel-grid','Hotel Grid','hotelGrid',900,480,[
 s('hg-img','image','image',0,0,240,215),s('hg-name','name','text',260,23,160,45,'نام هتل'),
 s('hg-stars','stars','text',260,70,160,25,'★★★★★'),s('hg-city','city','text',260,102,160,22,'شهر'),
 s('hg-year','year','text',260,132,160,22,'سال اجرا'),s('hg-systems','systems','text',260,163,160,42,'سیستم‌ها')]);
-})(V.nsp);
+})(window.V13.nsp);
 </script>
 <script id="nsp-editor">
 (function nspComponentEditor(){
@@ -13713,11 +13735,11 @@ s('hg-year','year','text',260,132,160,22,'سال اجرا'),s('hg-systems','syst
  }
  async function write(next){
   if(!allowed())return false;
-  const old=state.customComponents;state.customComponents=next;
+  const owner=state,old=state.customComponents;state.customComponents=next;
   if(save(true)!==true){state.customComponents=old;alert('ذخیره آغاز نشد؛ تغییر بازگردانده شد.');return false;}
   busy=true;
   try{await V.flushStorage();return true;}
-  catch(e){alert('ذخیره روی دیسک تأیید نشد؛ تغییر در حافظه است. '+String(e?.message||''));return false;}
+  catch(e){if(state===owner)state.customComponents=old;alert('ذخیره تأیید نشد؛ تعریف در حافظه نیز بازگردانده شد. '+String(e?.message||''));return false;}
   finally{busy=false;}
  }
  async function open(id,mode='edit',base=null){
@@ -13826,7 +13848,7 @@ function validateDefinitions(s){
 }
 function applySlots(o,primitives,_p,tools){
  if(o.nspUseLayout!==false)return primitives;
- const slots=validateSlots(o.nspSlots,o.nspBase),size=o.nspDesignSize;
+ const slots=o.nspSlots,size=o.nspDesignSize;
  const boxes=new Map(),groups=new Map(),base=[];
  for(const p of primitives){
   const m=p.id.match(/-(view|card-(\d+))-(.+)$/);
@@ -13869,4 +13891,5 @@ function applySlots(o,primitives,_p,tools){
 Object.assign(N,{validateDefinitions,validateSlots,applySlots});
 })();
 </script>
+<style id="nsp-print-physical-pages">@media print{html,body{overflow:visible!important;overflow-x:visible!important;overflow-y:visible!important;height:auto!important;max-height:none!important}}</style>
 </body></html>
