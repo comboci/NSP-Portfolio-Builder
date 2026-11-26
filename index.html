@@ -13044,7 +13044,7 @@ body.v284-hide-object-names [data-v13-canvas-host] .v89-block-title{display:none
  function scheduleFrame(m){
   if(!valid(m)||frame)return;
   frame=requestAnimationFrame(()=>{
-   frame=0;if(!valid(m))return;
+   frame=0;if(!valid(m)||!m.scroll.clientHeight||!m.scroll.clientWidth)return;
    syncVisible(m);
    const view=viewport(m),extra=Math.max(650,m.scroll.clientHeight*1.5),pending=[];
    // Inspect the nearby range only. No save, editor activation or full render is reachable from scroll.
@@ -13083,6 +13083,45 @@ body.v284-hide-object-names [data-v13-canvas-host] .v89-block-title{display:none
  V.v288VisiblePageId=function(){return valid(mounted)?choose(mounted):null;};
  V.v288VisiblePaper=function(){const id=V.v288VisiblePageId();return byId(mounted,id)?.querySelector('.v287-page-paper')||null;};
  V.v288ScrollToPage=function(id){return valid(mounted)&&id?scrollTo(mounted,id,true):false;};
+ function activeOffscreen(m){
+  if(!valid(m))return false;
+  const paper=byId(m,m.active)?.querySelector('.v287-page-paper');
+  if(!paper)return false;
+  const view=viewport(m),b=paper.getBoundingClientRect();
+  return b.bottom<=view.top||b.top>=view.bottom;
+ }
+ function revealEditHint(m){
+  syncVisible(m,true);
+  if(m.editButton&&!m.editButton.hidden)m.editButton.focus({preventScroll:true});
+ }
+ // Scroll is view-only. Protect editing shortcuts and mutation controls from
+ // inadvertently operating on an editing page that is completely offscreen.
+ function guardOffscreenEdit(event){
+  const m=mounted;if(!activeOffscreen(m))return;
+  const target=event.target,editor=m.scroll.closest('[data-v13-editor]');
+  if(!editor||document.querySelector('dialog[open]'))return;
+  if(event.type==='keydown'||event.type==='paste'){
+   if(target?.closest?.('input,textarea,select,[contenteditable="true"]')||target?.isContentEditable)return;
+   if(event.type==='keydown'){
+    const k=String(event.key||'').toLowerCase(),ctrl=event.ctrlKey||event.metaKey;
+    if(!(ctrl&&!event.altKey&&['c','x','v','d','g','z','y'].includes(k))&&
+       !(!ctrl&&!event.altKey&&['delete','backspace'].includes(k)))return;
+   }
+  }else{
+   if(!editor.contains(target))return;
+   const control=target.closest?.('[data-v13-action],[data-v227-text-format],[data-v96-align-run],[data-v83-add],[data-v83-toggle],[data-v83-remove-guide],[data-v91-history-step],[data-v13-property],[data-v103-effect-number],[data-v13-page-style]');
+   if(!control)return;
+   if(control.matches('[data-v13-action="project-pages-back"],[data-v13-action="save"],[data-v13-action="page-content"],[data-v13-action="template-pages-back"]'))return;
+  }
+  if(event.cancelable)event.preventDefault();
+  event.stopImmediatePropagation();
+  revealEditHint(m);
+ }
+ window.addEventListener('keydown',guardOffscreenEdit,true);
+ window.addEventListener('paste',guardOffscreenEdit,true);
+ window.addEventListener('click',guardOffscreenEdit,true);
+ window.addEventListener('input',guardOffscreenEdit,true);
+ window.addEventListener('change',guardOffscreenEdit,true);
  async function activate(m,id){
   if(!valid(m)||!id||id===m.active||opening||!V.v287CanActivate?.())return;
   const ticket=++serial;opening=true;
@@ -13185,7 +13224,8 @@ body.v284-hide-object-names [data-v13-canvas-host] .v89-block-title{display:none
   if(page&&paper){const size=V.v287MeasurePage(page);paper.style.width=size.width+'px';paper.style.height=size.height+'px';}
   m.pages=(state.pages||[]).slice();
   for(const slot of m.hydrated){delete slot.dataset.v287Ready;}
-  m.hydrated.clear();scheduleFrame(m);
+  // Keep tracking the stale DOM until it is repainted or evicted.
+  scheduleFrame(m);
  };
  window.addEventListener('resize',()=>{if(valid(mounted))scheduleFrame(mounted);},{passive:true});
  const previousRender=render;
