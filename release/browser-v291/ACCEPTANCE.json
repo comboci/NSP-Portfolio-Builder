@@ -1,0 +1,97 @@
+{
+  "candidate": "Browser V291",
+  "branch": "audit/v290-integrated-components",
+  "source_blob_sha": "179c1543ff666efddae1ff74348add530c4e628f",
+  "source_syntax": {
+    "status": "PASS",
+    "inline_scripts": 44,
+    "combined_parse": true
+  },
+  "source_fixture": {
+    "status": "PASS",
+    "scope": "V8 actual-source functions; editor save/reload mock; executed before version marker-only change"
+  },
+  "browser": "NOT_RUN",
+  "owner_runtime": "NOT_RUN",
+  "native": "NOT_RUN",
+  "scenarios": [
+    {
+      "id": 1,
+      "scenario": "Two isolated portfolios/multiple pages",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 2,
+      "scenario": "Two logo variants and multiple bound images",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 3,
+      "scenario": "One logo update with geometry unchanged",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 4,
+      "scenario": "System name/icon propagates to Hotel View and Grid",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 5,
+      "scenario": "Hotel Text fields and RTL/LTR",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 6,
+      "scenario": "Hotel View independent visibility",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 7,
+      "scenario": "Grid with four distinct hotels",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 8,
+      "scenario": "Create Hotel View Square",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 9,
+      "scenario": "Published component appears in Toolbox",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 10,
+      "scenario": "Reload component and reuse",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 14,
+      "scenario": "Drag and Properties responsiveness",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 15,
+      "scenario": "Database unavailable/no Office traffic",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 12,
+      "scenario": "Print/PDF without tray",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 11,
+      "scenario": "ZIP roundtrip preserve refs",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": 13,
+      "scenario": "Open pre-V290 project",
+      "status": "NOT_RUN"
+    }
+  ],
+  "historical_acceptance": "release/browser-v290/ACCEPTANCE.json",
+  "historical_sample": "release/browser-v290/NSP-Components-Sample-Import.zip",
+  "release_ready": false
+}

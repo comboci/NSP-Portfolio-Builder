@@ -3212,8 +3212,8 @@
         "status": "owner_confirmed_direction",
         "detail": "Component Editor با DataGrid کامپوننت‌ها، افزودن، دابل کلیک برای ویرایش، تکثیر/Save As و حذف کنترل‌شده. مدیر از همان موتور طراحی موجود برای تغییر ظاهر و ساخت Variant جدید مانند Hotel View Square استفاده کند؛ عناصر پایه Text/Image/Shape/Line و فیلدهای ثابت داده‌ای در دسترس باشند. موتور منطق و قرارداد اطلاعات هتل ثابت بماند؛ تعریف بصری و جایگاه/ابعاد/فونت/رنگ و گزینه‌های نمایش قابل تغییر باشند. ذخیره تعریف، خودکار ورودی NSP Toolbox را به‌روز کند؛ بدون تغییر سورس برای هر طرح جدید.",
         "product_principle": "کاربر عادی با قراردادن کامپوننت آماده و تنظیم اطلاعات بتواند رزومه حرفه‌ای بسازد. مدیر طراح کامپوننت است؛ کاربر مصرف‌کننده. در محیط مستقل فعلی مرز دسترسی مدیریتی را متناسب با امکانات موجود روشن نگه دارید؛ مجوز واقعی پس از یکپارچه‌سازی Office از بک‌اند اعمال شود.",
-        "design_constraints": "تعریف ظاهر از داده رکورد و تنظیمات نمونه جدا باشد؛ تغییر تعریف/حذف یا نسخه‌بندی نباید پروژه‌های موجود را خراب کند. رفتار انتشار و حفظ ویرایش‌های نمونه نیازمند طراحی و تست است.",
-        "implementation_state": "pending_implementation"
+        "design_constraints": "تعریف ظاهر از داده رکورد و تنظیمات نمونه جدا باشد؛ تغییر تعریف/حذف یا نسخه‌بندی نباید پروژه‌های موجود را خراب کند. رفتار انتشار و حفظ ویرایش‌های نمونه نیازمند طراحی و تست است. تعریف پیش‌فرض در سطح پروژه با همان ID و شماره نسخه جدید ذخیره می‌شود؛ نمونه‌های موجود طرح نسخه قبلی خود را نگه می‌دارند؛ Save As شناسه مستقل می‌سازد.",
+        "implementation_state": "source_candidate_runtime_pending"
       }
     ],
     "current_priority": {
@@ -3230,15 +3230,29 @@
     }
   },
   "browser_component_candidate": {
-    "version": 290,
-    "branch": "engineering/browser-v290-components",
-    "base_commit": "b7deb97ce05ed171aa23db4c2d44caeab4c2f0ee",
-    "status": "development_branch_release_candidate_not_merged",
+    "version": 291,
+    "branch": "audit/v290-integrated-components",
+    "status": "integrated_source_candidate_runtime_pending",
+    "source_blob_sha": "179c1543ff666efddae1ff74348add530c4e628f",
+    "base_commit": "35778ce7c95002ff88fe4e11b42a54d9cb46cded",
     "owner_runtime": "NOT_RUN",
     "native_tauri": "NOT_RUN",
-    "verified_browser_scenarios": 15,
-    "tested_index_sha256": "ac03e17fc1ba58ef7593dbd7bca8f5eddf47acb11ae3deabe9d6ae4119e844ad",
-    "acceptance_file": "release/browser-v290/ACCEPTANCE.json",
-    "scope_fa": "Toolbox، دادهٔ دستی هتل، کنترل‌های مشترک پورتفولیو، کامپوننت‌های Editable و ذخیره؛ بدون اتصال Office یا تغییر Native."
-  }
+    "verified_browser_scenarios": 0,
+    "acceptance_file": "release/browser-v291/ACCEPTANCE.json",
+    "scope_fa": "تجمیع ممیزی دات و اصلاحات مستقل، ویرایش مستقیم کامپوننت پیش‌فرض با حفظ شناسه و نسخهٔ نمونه‌های قدیمی؛ بدون مهاجرت به Office."
+  },
+  "browser_component_candidate_history": [
+    {
+      "version": 290,
+      "branch": "engineering/browser-v290-components",
+      "base_commit": "b7deb97ce05ed171aa23db4c2d44caeab4c2f0ee",
+      "status": "development_branch_release_candidate_not_merged",
+      "owner_runtime": "NOT_RUN",
+      "native_tauri": "NOT_RUN",
+      "verified_browser_scenarios": 15,
+      "tested_index_sha256": "ac03e17fc1ba58ef7593dbd7bca8f5eddf47acb11ae3deabe9d6ae4119e844ad",
+      "acceptance_file": "release/browser-v290/ACCEPTANCE.json",
+      "scope_fa": "Toolbox، دادهٔ دستی هتل، کنترل‌های مشترک پورتفولیو، کامپوننت‌های Editable و ذخیره؛ بدون اتصال Office یا تغییر Native."
+    }
+  ]
 }

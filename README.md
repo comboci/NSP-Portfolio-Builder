@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V291 (integrated source candidate)
+
+شاخه `audit/v290-integrated-components`؛ گزارش و وضعیت پذیرش در `release/browser-v291/START-FA.md`. Native تغییر نکرده است. نسخهٔ نهایی عملیاتی نیست؛ Browser/PDF/IndexedDB روی این کاندیدا هنوز NOT_RUN.
+
+---
+
 # NSP Portfolio Builder — Browser V164 / Native V138 (۱۸ مرحله ممیزی‌شده، بدون Runtime)
 
 **Browser:** نسخه ۱۶۴، تک‌فایل `index.html`، مدل Page-First و `IndexedDB` مستقل. **Native:** نسخه ۱۳۸ در `native-ui/`، Tauri/SQLite schema 13 فعلاً فاز جدا. از V145 تا V164 تعداد ۱۹ Commit واقعی ثبت شده است؛ مرحله‌های ۰۱–۱۷ شواهد پیاده‌سازی سورس دارند ولی تأیید عملیاتی نشده‌اند؛ مرحله ۱۸ پاک‌سازی Legacy هنوز ناقص است.
