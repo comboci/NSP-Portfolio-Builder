@@ -2037,10 +2037,25 @@ async function v285EditPortfolioCore(id,pid,pageId){
  }
  await go('visual');return tab==='visual';
 }
+// Pages, layers, components and private assets are workspace-local. Keep those
+// IDs so their cross-references survive, but retire the old portfolio identity.
+function v291RemapProjectPortfolios(core){
+ const ids=new Map();
+ for(const p of core.portfolios||[]){
+  if(typeof p.id!=='string'||!p.id||ids.has(p.id))throw Error('شناسه‌های پورتفولیو یکتا و معتبر نیستند.');
+  const replacement=uid();ids.set(p.id,replacement);p.id=replacement;
+ }
+ core.activePortfolioId=ids.get(core.activePortfolioId)||core.portfolios?.[0]?.id||null;
+ core.pages=core.portfolios?.find(p=>p.id===core.activePortfolioId)?.pages||[];
+ return core;
+}
 async function v77CopyProject(id){
  const data=v77Data(id);if(!data)return;
  const src=v76ListProjects().find(x=>x.id===id);
- const core=v13Copy(data);delete core.projectWorkspaces;delete core.activeWorkspaceId;delete core.activeWorkspaceName;delete core.globalTemplates;delete core.globalImageLibrary;delete core.globalImageAlbums;delete core.styleLibrary;
+ let core;
+ try{core=v291RemapProjectPortfolios(src.active?v76CoreSnapshot():v13Copy(data));}
+ catch(error){alert('کپی پروژه انجام نشد: '+String(error?.message||error));return;}
+ delete core.projectWorkspaces;delete core.activeWorkspaceId;delete core.activeWorkspaceName;delete core.globalTemplates;delete core.globalImageLibrary;delete core.globalImageAlbums;delete core.styleLibrary;
  const copy={id:uid(),name:src.name+' (کپی)',createdBy:v225CurrentAuthor(),createdAt:new Date().toISOString(),data:core};
  state.projectWorkspaces.push(copy);
  if(await v77Persist(()=>state.projectWorkspaces.pop())){v77ExpandedProjects.add(copy.id);render();}
@@ -2304,7 +2319,7 @@ async function v111ExportProject(projectId){
  const shared=backupDependencies(data.portfolios||[],data.customComponents||[],data.imageLibrary||[]);
  const known=new Set([...(data.imageLibrary||[]),...shared.publicImages].map(a=>a.id));
  if([...v111AssetIds(data)].some(id=>!known.has(id)))throw Error('اصل یکی از تصاویر پروژه در دسترس نیست.');
- await v237SaveBackupJSON({app:'NSP Portfolio Builder',kind:'NSP-Project-Backup',schemaVersion:2,appVersion:window.V13.appVersion,project:{name:project.name,data},...shared},
+ await v237SaveBackupJSON({app:'NSP Portfolio Builder',kind:'NSP-Project-Backup',schemaVersion:2,appVersion:window.V13.appVersion,project:{workspaceId:project.id,name:project.name,data},...shared},
   'NSP_Project_'+project.name+'_V'+window.V13.appVersion+'.json');
  }catch(error){alert('خروجی پروژه انجام نشد: '+String(error.message||error));}
 }
@@ -2476,7 +2491,7 @@ async function v111ImportProject(input,fromGitHub=false){
    }
   }
   if(!confirm('پروژهٔ «'+name+'» به‌صورت مستقل افزوده شود؟ پروژه‌های موجود دست‌نخورده می‌مانند.'))return;
-  const entry={id:uid(),name,data:candidate};
+  const entry={id:uid(),name,data:v291RemapProjectPortfolios(candidate)};
   const rollback=Object.fromEntries(Object.keys(shared).map(key=>[key,state[key]]));
   const wasRegistryEmpty=state.projectRegistryEmpty===true;
   Object.assign(state,shared);
@@ -10790,7 +10805,7 @@ function componentFromSelection(list,name){
    const known=new Set([...(data.imageLibrary||[]),...(shared.publicImages||[])].map(a=>a.id));
    if([...v111AssetIds(data)].some(id=>!known.has(id)))throw Error('تصویر ارجاع‌شده‌ای در پروژه پیدا نشد.');
    const payload={app:'NSP Portfolio Builder',kind:'NSP-Project-Backup',schemaVersion:2,
-      appVersion:V.appVersion,project:{name:project.name,data},...shared};
+      appVersion:V.appVersion,project:{workspaceId:project.id,name:project.name,data},...shared};
    const filename=('NSP_Project_'+project.name+'_V'+V.appVersion+'.json').replace(/[\\/:*?"<>|\u0000-\u001f]/g,'_');
    await v237SaveBackupJSON(payload,filename);
   }catch(error){alert('خروجی پروژه انجام نشد: '+String(error?.message||error));}
@@ -12005,7 +12020,7 @@ function projectPayload(projectId){
  }
  const known=new Set([...(data.imageLibrary||[]),...shared.publicImages].map(a=>a.id));
  if([...v111AssetIds(data)].some(id=>!known.has(id)))fail('اصل یکی از تصاویر پروژه در دسترس نیست.');
- return {app:'NSP Portfolio Builder',kind:'NSP-Project-Backup',schemaVersion:2,appVersion:window.V13.appVersion,project:{name:project.name,data},...shared};
+ return {app:'NSP Portfolio Builder',kind:'NSP-Project-Backup',schemaVersion:2,appVersion:window.V13.appVersion,project:{workspaceId:project.id,name:project.name,data},...shared};
 }
 async function chooseProject(candidates){
  if(!candidates.length)fail('فایل project.json در زیرپوشه‌های project file پیدا نشد. ریشه مخزن را انتخاب کنید.');
@@ -12047,19 +12062,39 @@ function listRoot(fileList){
  }};
 }
 function normalizeName(n){return String(n||'').trim().normalize('NFKC').toLowerCase()}
+// Optional additive Schema 2 metadata. Absence is supported for older files.
+function v291ProjectFileId(project){
+ const id=project?.workspaceId;
+ if(id===undefined)return null;
+ if(typeof id!=='string'||!id||id.length>200||/[\s\x00-\x1f\x7f]/.test(id))
+  fail('شناسه پروژه در فایل معتبر نیست.');
+ return id;
+}
 function v277ResolveImportProject(payload,projects){
  const name=String(payload.project.name||payload.project.data.title||'پروژه محلی');
- const ids=new Set(payload.project.data.portfolios.map(p=>p.id));
- const matches=projects.filter(p=>normalizeName(p.name)===normalizeName(name)||(p.data.portfolios||[]).some(pf=>ids.has(pf.id)));
- if(matches.length>1)fail('چند پروژه هم‌نام یا هم‌شناسه وجود دارد.');
- const duplicate=matches[0];
- if(duplicate){
-  const empty=!(duplicate.data.portfolios||[]).length&&!(duplicate.data.pages||[]).length;
-  const sameName=normalizeName(duplicate.name)===normalizeName(name);
-  const overlap=(duplicate.data.portfolios||[]).some(p=>ids.has(p.id));
-  if(!overlap&&!(empty&&sameName))fail('نام پروژه یکسان ولی شناسه متفاوت است. برای حفاظت از پروژه موجود، ابتدا نام آن را تغییر دهید.');
+ const id=v291ProjectFileId(payload.project);
+ const rows=payload.project.data.portfolios;
+ const ids=new Set(rows.map(p=>p?.id));
+ if(ids.size!==rows.length||rows.some(p=>typeof p?.id!=='string'||!p.id))
+  fail('شناسه‌های پورتفولیو در فایل یکتا و معتبر نیستند.');
+ const sameName=projects.filter(p=>normalizeName(p.name)===normalizeName(name));
+ const matches=projects.filter(p=>id&&p.id===id);
+ if(matches.length>1||sameName.length>1)fail('چند پروژه هم‌نام یا هم‌شناسه وجود دارد.');
+ if(id){
+  const exact=matches[0];
+  if(sameName.some(p=>p!==exact))fail('نام پروژه یکسان ولی شناسه متفاوت است؛ پروژه موجود جایگزین نشد.');
+  return exact||null;
  }
- return duplicate||null;
+ const exact=sameName[0];
+ const overlaps=p=>(p.data.portfolios||[]).some(pf=>ids.has(pf.id));
+ if(exact){
+  // Older Copy created a different name with the same portfolio IDs. Require
+  // the original name AND portfolio evidence; name alone is not ownership.
+  if(overlaps(exact)||(!(exact.data.portfolios||[]).length&&!(exact.data.pages||[]).length))return exact;
+  fail('نام پروژه یکسان ولی شناسه متفاوت است. برای حفاظت از پروژه موجود، ابتدا نام آن را تغییر دهید.');
+ }
+ if(projects.some(overlaps))fail('شناسه پورتفولیو مشترک است اما نام پروژه قدیمی تطابق ندارد؛ جایگزینی انجام نشد.');
+ return null;
 }
 function v277PrepareOpen(payload,owner){
  if(!canApplyBackupImport(owner))return null;
@@ -12078,7 +12113,7 @@ function v277PrepareOpen(payload,owner){
  const original=state,oldSelected=selected;
  const registry=state.projectWorkspaces.filter(p=>p.id!==duplicate?.id);
  if(!state.projectRegistryEmpty&&!v257IsEmptyPlaceholder()&&state.activeWorkspaceId!==duplicate?.id)registry.push({id:state.activeWorkspaceId,name:state.activeWorkspaceName,data:v76CoreSnapshot()});
- target.projectRegistryEmpty=false;target.activeWorkspaceId=duplicate?.id||uid();target.activeWorkspaceName=name;target.projectWorkspaces=registry;
+ target.projectRegistryEmpty=false;target.activeWorkspaceId=duplicate?.id||v291ProjectFileId(payload.project)||uid();target.activeWorkspaceName=name;target.projectWorkspaces=registry;
 
  return {original,oldSelected,target,duplicate,owner,revision:window.V13.workspaceRevision,committed:false};
 }
@@ -12165,7 +12200,10 @@ async function saveToRoot(root,folder,packed,options={}){
   if(!priorName||previous.app!=='NSP Portfolio Builder'||previous.kind!=='NSP-Project-Backup'||previous.schemaVersion!==2||!Array.isArray(previous?.project?.data?.portfolios))fail('فایل موجود پروژه NSP معتبر نیست.');
   const priorIds=new Set(previous.project.data.portfolios.map(p=>p.id));
   const incoming=packed.payload.project.data.portfolios;
-  if(normalizeName(priorName)!==normalizeName(currentName)||(!incoming.some(p=>priorIds.has(p.id))&&priorIds.size&&incoming.length))
+  const previousId=v291ProjectFileId(previous.project),activeId=v291ProjectFileId(packed.payload.project);
+  if(priorIds.size!==previous.project.data.portfolios.length||
+     (previousId&&activeId?previousId!==activeId:
+      normalizeName(priorName)!==normalizeName(currentName)||(!incoming.some(p=>priorIds.has(p.id))&&priorIds.size&&incoming.length)))
    fail('این پوشه متعلق به پروژه دیگری است؛ فایل موجود جایگزین نشد.');
   if(options.journal)Object.assign(options.journal,{dir,previousText,newText:packed.json,written:false});
   if(previousText!==packed.json||options.duplicate){
@@ -12320,7 +12358,8 @@ async function importRepositoryZip(file,owner,root,progress=null){
   const plan=v277PrepareOpen(hydrated.payload,owner);
   if(!plan)return false;
   if(progress)await progress(5);
-  const packed=await pack(hydrated.payload,hydrated.originals,digest,null,progress);
+  const diskPayload={...hydrated.payload,project:{...hydrated.payload.project,workspaceId:plan.target.activeWorkspaceId}};
+ const packed=await pack(diskPayload,hydrated.originals,digest,null,progress);
   const folder=safeFolder(hydrated.payload.project.name),journal={},disk={};
   if(!v277PlanCurrent(plan))fail('پروژه هنگام ورود تغییر کرد؛ دوباره اقدام کنید.');
   try{
@@ -12528,12 +12567,18 @@ function v276DiskIdentity(raw,project,all,folderName=''){
  if(raw?.app!=='NSP Portfolio Builder'||raw.kind!=='NSP-Project-Backup'||raw.schemaVersion!==2||
     typeof raw.project?.name!=='string'||!Array.isArray(raw.project?.data?.portfolios)||
     !raw.project.data.portfolios.every(p=>p&&typeof p.id==='string'&&p.id))return 'invalid';
+ let diskWorkspaceId;
+ try{diskWorkspaceId=v291ProjectFileId(raw.project);}catch(_){return 'invalid';}
+ const diskIds=v276PortfolioIds(raw.project);
+ if(diskIds.size!==raw.project.data.portfolios.length)return 'uncertain';
+ if(diskWorkspaceId){
+  if(diskWorkspaceId===project.id)return all.filter(p=>p.id===diskWorkspaceId).length===1?'match':'uncertain';
+  return normalizeName(raw.project.name)===normalizeName(project.name)?'uncertain':'other';
+ }
  const sameName=normalizeName(raw.project.name)===normalizeName(project.name);
  const targetIds=v276PortfolioIds(project);
- const diskIds=v276PortfolioIds(raw.project);
  const common=[...targetIds].filter(id=>diskIds.has(id));
  if(!sameName)return common.length?'related':'other';
- if(diskIds.size!==raw.project.data.portfolios.length)return 'uncertain';
  // No second workspace may claim the same name or a portfolio ID on disk.
  if(all.some(p=>p.id!==project.id&&(normalizeName(p.name)===normalizeName(project.name)||
     [...v276PortfolioIds(p)].some(id=>diskIds.has(id)))))return 'uncertain';
