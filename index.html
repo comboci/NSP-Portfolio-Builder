@@ -2342,6 +2342,20 @@ function v129PortfolioEnvelope(project,source){
  if(!source||!Array.isArray(source.pages))throw Error('پورتفولیوی انتخاب‌شده معتبر نیست.');
  const portfolio={id:source.id,name:source.name,pages:v13Copy(source.pages)};
  if(typeof source.createdAt==='string')portfolio.createdAt=source.createdAt;
+ // The selected portfolio owns its manual records and controls even when
+ // no object on the current page references an entry yet.
+ if(Array.isArray(source.nspDataControls))
+  portfolio.nspDataControls=source.nspDataControls.map(c=>({
+   id:c.id,type:c.type,name:c.name,entries:c.entries.map(e=>Object.fromEntries(
+    ['id','name','nameFa','nameEn','assetId'].filter(k=>Object.hasOwn(e,k)).map(k=>[k,e[k]])))
+  }));
+ if(Array.isArray(source.nspHotels))
+  portfolio.nspHotels=source.nspHotels.map(h=>({
+   id:h.id,hotelName:h.hotelName,projectName:h.projectName,city:h.city,stars:h.stars,year:h.year,
+   systems:v13Copy(h.systems),
+   images:Object.fromEntries(Object.entries(h.images||{}).filter(([role])=>['large','small','square','rectangle'].includes(role))
+    .map(([role,image])=>[role,{assetId:image.assetId}]))
+  }));
  const selected=new Map();
  for(const ref of v290ScopedComponentRefs(portfolio))
   if(!ref.builtin)selected.set(ref.id,v290ResolveScopedDefinition(project.data.customComponents,ref));
