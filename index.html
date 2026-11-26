@@ -2305,14 +2305,47 @@ async function v111ExportProject(projectId){
 function portfolioComponentInstances(portfolio){
  return (portfolio.pages||[]).flatMap(page=>[...(page.visualObjects||[]),...(page.snapshot?.objects||[])].filter(o=>o.type==='custom'));
 }
+// The built-in catalogue is not stored in project customComponents.
+function v290ScopedComponentRefs(portfolio){
+ const refs=[];
+ for(const page of portfolio.pages||[])for(const o of [...(page.visualObjects||[]),...(page.snapshot?.objects||[])]){
+  if(o.type==='custom')refs.push({object:o,key:'componentId',id:o.componentId,builtin:false});
+  if(o.type==='nspComponent'){
+   const builtin=(window.V13.nsp?.builtins||[]).find(d=>d.id===o.nspDefinitionId);
+   if(builtin&&builtin.nspBase!==o.nspBase)throw Error('نوع تعریف داخلی کامپوننت هتل سازگار نیست.');
+   refs.push({object:o,key:'nspDefinitionId',id:o.nspDefinitionId,builtin:!!builtin});
+  }
+ }
+ return refs;
+}
+function v290ResolveScopedDefinition(definitions,ref){
+ const found=(Array.isArray(definitions)?definitions:[]).filter(d=>d?.id===ref.id);
+ if(!ref.id||found.length!==1)throw Error('تعریف یکتای کامپوننت پورتفولیو پیدا نشد.');
+ const d=found[0];
+ if((ref.key==='nspDefinitionId'&&d.nspBase!==ref.object.nspBase)||(ref.key==='componentId'&&d.nspBase))
+  throw Error('نوع تعریف کامپوننت در فایل پورتفولیو سازگار نیست.');
+ return d;
+}
+function v290ImportScopedComponentRefs(portfolio,definitions){
+ const mapped=new Map(),additions=[];
+ for(const ref of v290ScopedComponentRefs(portfolio)){
+  if(ref.builtin)continue;
+  const source=v290ResolveScopedDefinition(definitions,ref);
+  if(!mapped.has(ref.id)){
+   const definition=v13Copy(source);definition.id=uid();mapped.set(ref.id,definition.id);additions.push(definition);
+  }
+  ref.object[ref.key]=mapped.get(ref.id); // Preserve pinned geometry, slots and version.
+ }
+ return additions;
+}
 function v129PortfolioEnvelope(project,source){
  if(!source||!Array.isArray(source.pages))throw Error('پورتفولیوی انتخاب‌شده معتبر نیست.');
  const portfolio={id:source.id,name:source.name,pages:v13Copy(source.pages)};
  if(typeof source.createdAt==='string')portfolio.createdAt=source.createdAt;
- const componentIds=new Set(portfolioComponentInstances(portfolio).map(o=>o.componentId));
- for(const o of (portfolio.pages||[]).flatMap(p=>p.visualObjects||[]))if(o.nspDefinitionId)componentIds.add(o.nspDefinitionId);
- const customComponents=v13Copy((project.data.customComponents||[]).filter(def=>componentIds.has(def.id)));
- if(customComponents.length!==componentIds.size)throw Error('تعریف یکی از کامپوننت‌های پورتفولیو پیدا نشد.');
+ const selected=new Map();
+ for(const ref of v290ScopedComponentRefs(portfolio))
+  if(!ref.builtin)selected.set(ref.id,v290ResolveScopedDefinition(project.data.customComponents,ref));
+ const customComponents=v13Copy([...selected.values()]);
  const required=v111AssetIds({portfolio,customComponents});
  const permittedImageFields=['id','name','src','thumbnail','width','height','type','size','hash','createdAt'];
  const images=(Array.isArray(project.data.imageLibrary)?project.data.imageLibrary:[])
@@ -2463,17 +2496,7 @@ async function v111ImportPortfolio(projectId){
     throw Error('پورتفولیوی ارث‌بر باید پیش از ورود به پروژهٔ مستقل به صفحه‌های مستقل تبدیل شود.');
    const clone=v100ClonePortfolio(source);
    const definitions=backup.kind==='NSP-Portfolio-Backup'?backup.customComponents:backup.state?.customComponents;
-   const instances=portfolioComponentInstances(clone),componentRemap=new Map(),componentAdditions=[];
-   for(const instance of instances){
-    const oldId=instance.componentId;
-    if(!componentRemap.has(oldId)){
-     const matches=Array.isArray(definitions)?definitions.filter(d=>d?.id===oldId):[];
-     if(matches.length!==1)throw Error('تعریف یکتای کامپوننت «'+oldId+'» در فایل پیدا نشد.');
-     const definition=v13Copy(matches[0]);definition.id=uid();
-     componentRemap.set(oldId,definition.id);componentAdditions.push(definition);
-    }
-    instance.componentId=componentRemap.get(oldId);
-   }
+   const componentAdditions=v290ImportScopedComponentRefs(clone,definitions);
    const dependencies=backup.kind==='NSP-Portfolio-Backup'?backup:backupDependencies([clone],componentAdditions,assets,backup.state);
    const required=v111AssetIds({clone,componentAdditions}),remap=new Map(),additions=[];
    const local=Array.isArray(target.imageLibrary)?target.imageLibrary:[];
