@@ -14147,6 +14147,9 @@ s('hg-year','year','text',260,132,160,22,'سال اجرا'),s('hg-systems','syst
    if(o.type==='block')continue;
    if(!primitive.has(o.type))throw Error('فقط عناصر پایه در تعریف مجازند.');
    const obj=Object.fromEntries(keys.filter(k=>Object.hasOwn(o,k)&&o[k]!==undefined).map(k=>[k,cp(o[k])]));
+   // Component snapshots contain primitives, not the editor's temporary layers.
+   // Flatten resolved layer and object visibility without discarding hidden data.
+   if(o.layerVisible===false||o.renderVisible===false)obj.visible=false;
    if(!obj.id||ids.has(obj.id))throw Error('شناسهٔ عنصر خالی یا تکراری است.');
    ids.add(obj.id);
    if(obj.nspField){
@@ -14227,7 +14230,7 @@ s('hg-year','year','text',260,132,160,22,'سال اجرا'),s('hg-systems','syst
   const node=document.createElement('fieldset');node.className='nsp-def-toolbar no-print';node.dataset.nspDefToolbar='';
   node.innerHTML='<legend>'+esc(baseNames[c.base])+' · کادر طرح</legend><label>عرض <input data-nsp-def-size="width" type="number" min="40" max="1191" step=".1" value="'+Number(c.width)+'"></label>'+
    '<label>ارتفاع <input data-nsp-def-size="height" type="number" min="40" max="842" step=".1" value="'+Number(c.height)+'"></label>'+button('draft-copy','ذخیره با نام جدید')+
-   '<small>جایگاه‌های داده را جابه‌جا کنید یا از پنل لایه‌ها پنهان کنید. ابزارهای General برای افزودن عناصر ثابت‌اند.</small>';
+   '<small>جایگاه‌ها را می‌توانید پنهان کنید. هنگام ذخیره، نتیجهٔ پنهان‌سازی لایه روی عناصر آن ثبت می‌شود. ابزارهای General برای افزودن اجزای ثابت‌اند.</small>';
   bar.append(node);drawFrame(c);
  }
  const css=document.createElement('style');css.textContent='.nsp-def-grid{border-collapse:collapse;width:100%}.nsp-def-grid td,.nsp-def-grid th{border-bottom:1px solid #c4d6e1;padding:8px;text-align:right}.nsp-def-grid .btn{margin:2px}.nsp-def-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:7px}.nsp-def-toolbar input{max-width:7rem}.nsp-def-frame::after{content:"";position:absolute;inset:0 auto auto 0;width:var(--nsp-def-w);height:var(--nsp-def-h);border:1px dashed #137ea5;pointer-events:none;z-index:999;box-sizing:border-box}@media print{.nsp-def-frame::after{display:none}}';document.head.append(css);
