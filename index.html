@@ -1814,45 +1814,55 @@ function v77ToggleProject(id){if(v77ExpandedProjects.has(id))v77ExpandedProjects
 // UI-only expansion state, scoped to the project and portfolio so duplicate ids cannot collide.
 const v243ExpandedPortfolios=new Set();
 function v243PortfolioKey(projectId,portfolioId){return JSON.stringify([String(projectId),String(portfolioId)]);}
+function v285PortfolioPanelId(projectId,portfolioId){
+ return 'v243-pf-pages-'+encodeURIComponent(projectId)+'-'+encodeURIComponent(portfolioId);
+}
+function v285PortfolioPageTable(projectId,portfolioId,pages){
+ if(!pages.length)return '<p class="v225-no-pages muted">هنوز صفحه‌ای برای این پورتفولیو ساخته نشده است.</p>';
+ const records=pages.map(pg=>{
+  const template=pg.pageTemplateId?(state.templates||[]).find(t=>t.id===pg.pageTemplateId)?.name||'قالب ناموجود':'بدون قالب';
+  return '<tr class="v232-page-row" tabindex="0" role="button" title="دوبار کلیک برای بازکردن همین صفحه" '+
+   'data-v232-project="'+esc(projectId)+'" data-v232-portfolio="'+esc(portfolioId)+'" data-v232-page="'+esc(pg.id)+'"><td>'+
+   '<span class="v225-page-link">'+v225Icon('page')+'<span>'+esc(pg.title||'صفحه')+'</span></span>'+
+   '<button type="button" class="v232-open-page btn" data-v232-single-open title="بازکردن صفحه">بازکردن</button></td>'+
+   '<td>'+esc(pg.createdBy||'ثبت نشده')+'</td><td><time>'+esc(v225Date(pg.createdAt))+'</time></td><td>'+esc(template)+'</td></tr>';
+ }).join('');
+ return '<div class="v225-page-grid-scroll"><table class="v225-page-grid"><thead><tr>'+
+  '<th scope="col">نام صفحه</th><th scope="col">ایجادکننده</th><th scope="col">تاریخ ایجاد</th><th scope="col">قالب صفحه</th>'+
+  '</tr></thead><tbody>'+records+'</tbody></table></div>';
+}
+function v285SetPortfolioExpanded(projectId,portfolioId,expanded){
+ if(tab!=='v76projects')return false;
+ const project=v76ListProjects().find(p=>p.id===projectId);
+ const pf=project?.data?.portfolios?.find(p=>p.id===portfolioId);
+ if(!pf)return false;
+ const key=v243PortfolioKey(projectId,portfolioId),id=v285PortfolioPanelId(projectId,portfolioId);
+ const panel=document.getElementById(id),header=document.getElementById(id+'-toggle');
+ if(expanded)v243ExpandedPortfolios.add(key);else v243ExpandedPortfolios.delete(key);
+ if(!panel||!header){render();return true;}
+ // Update only the subtree. The row and header retain their DOM identity so
+ // the browser can dispatch the native double-click even after the first click.
+ if(expanded&&panel.hidden)panel.innerHTML=v285PortfolioPageTable(projectId,portfolioId,Array.isArray(pf.pages)?pf.pages:[]);
+ panel.hidden=!expanded;
+ header.setAttribute('aria-expanded',String(expanded));
+ const arrow=header.querySelector('.v243-pf-toggle');if(arrow)arrow.textContent=expanded?'▾':'▸';
+ return true;
+}
 function v243TogglePortfolio(projectId,portfolioId){
- const key=v243PortfolioKey(projectId,portfolioId);
- if(v243ExpandedPortfolios.has(key))v243ExpandedPortfolios.delete(key);
- else v243ExpandedPortfolios.add(key);
- render();
-}
-const v285PortfolioClickTimers=new Map();
-function v285ExpandPortfolio(projectId,portfolioId){
- const key=v243PortfolioKey(projectId,portfolioId);
- clearTimeout(v285PortfolioClickTimers.get(key));v285PortfolioClickTimers.delete(key);
- if(tab!=='v76projects')return;
- if(!v243ExpandedPortfolios.has(key)){v243ExpandedPortfolios.add(key);render();}
-}
-function v285SchedulePortfolioToggle(event,projectId,portfolioId){
- const key=v243PortfolioKey(projectId,portfolioId);
- clearTimeout(v285PortfolioClickTimers.get(key));v285PortfolioClickTimers.delete(key);
- if(event.detail>=2){v285ExpandPortfolio(projectId,portfolioId);return;}
- if(event.detail===0){
-  const buttonId=event.currentTarget.id;
-  v243TogglePortfolio(projectId,portfolioId);
-  if(buttonId)document.getElementById(buttonId)?.focus({preventScroll:true});
-  return;
- }
- const node=event.currentTarget;
- v285PortfolioClickTimers.set(key,setTimeout(()=>{
-  v285PortfolioClickTimers.delete(key);
-  if(tab==='v76projects'&&node.isConnected)v243TogglePortfolio(projectId,portfolioId);
- },450));
+ return v285SetPortfolioExpanded(projectId,portfolioId,!v243ExpandedPortfolios.has(v243PortfolioKey(projectId,portfolioId)));
 }
 function v272TogglePortfolioRow(event,projectId,portfolioId){
  if(event.target.closest('button,details,summary,a,input,select,textarea,[contenteditable]'))return;
- v285SchedulePortfolioToggle(event,projectId,portfolioId);
+ if(event.detail>=2)v285SetPortfolioExpanded(projectId,portfolioId,true);
+ else v243TogglePortfolio(projectId,portfolioId);
 }
 function v272TogglePortfolioHeader(event,projectId,portfolioId){
- v285SchedulePortfolioToggle(event,projectId,portfolioId);
+ if(event.detail>=2)v285SetPortfolioExpanded(projectId,portfolioId,true);
+ else v243TogglePortfolio(projectId,portfolioId);
 }
 function v285DoubleClickPortfolio(event,projectId,portfolioId){
  if(event.target.closest('.v258-pf-actions,details,summary,a,input,select,textarea,[contenteditable]'))return;
- event.preventDefault();v285ExpandPortfolio(projectId,portfolioId);
+ event.preventDefault();v285SetPortfolioExpanded(projectId,portfolioId,true);
 }
 function v77Data(id){
  v76InitProjects();if(id===state.activeWorkspaceId){v13SyncPages();return state;}
@@ -2574,18 +2584,7 @@ function v76Projects(){
      const doubleRow=esc('v285DoubleClickPortfolio(event,'+JSON.stringify(project.id)+','+JSON.stringify(pf.id)+')');
      const pages=Array.isArray(pf.pages)?pf.pages:[];
      const pagesExpanded=v243ExpandedPortfolios.has(v243PortfolioKey(project.id,pf.id));
-     const panelId='v243-pf-pages-'+encodeURIComponent(project.id)+'-'+encodeURIComponent(pf.id);
-     const records=pagesExpanded?pages.map(pg=>{
-      const template=pg.pageTemplateId?
-       (state.templates||[]).find(t=>t.id===pg.pageTemplateId)?.name||'قالب ناموجود':'بدون قالب';
-      return '<tr class="v232-page-row" tabindex="0" role="button" title="دوبار کلیک برای بازکردن همین صفحه" '+
-       'data-v232-project="'+esc(project.id)+'" data-v232-portfolio="'+esc(pf.id)+'" data-v232-page="'+esc(pg.id)+'"><td>'+
-       '<span class="v225-page-link">'+v225Icon('page')+'<span>'+esc(pg.title||'صفحه')+'</span></span>'+
-       '<button type="button" class="v232-open-page btn" data-v232-single-open title="بازکردن صفحه">بازکردن</button></td>'+
-       '<td>'+esc(pg.createdBy||'ثبت نشده')+'</td>'+
-       '<td><time>'+esc(v225Date(pg.createdAt))+'</time></td>'+
-       '<td>'+esc(template)+'</td></tr>';
-     }).join(''):'';
+     const panelId=v285PortfolioPanelId(project.id,pf.id);
      return '<div class="v223-pf-item"><div class="v223-pf-top v272-pf-row" onclick="'+toggleRow+'" ondblclick="'+doubleRow+'">'+
       '<button type="button" id="'+esc(panelId+'-toggle')+'" class="v223-pf-open v272-pf-header" onclick="'+toggle+'" aria-expanded="'+pagesExpanded+'" aria-controls="'+esc(panelId)+'" title="باز / بسته کردن صفحات پورتفولیو">'+
       '<span class="v243-pf-toggle" aria-hidden="true">'+(pagesExpanded?'▾':'▸')+'</span>'+v225Icon('portfolio')+
@@ -2600,10 +2599,7 @@ function v76Projects(){
       '<button type="button" onclick="'+link('v111PrintPortfolio',project.id,pf.id)+'">چاپ / PDF</button>'+
       '</div></details></div></div>'+
       '<div id="'+esc(panelId)+'" class="v243-pf-pages"'+(pagesExpanded?'':' hidden')+'>'+
-      (pagesExpanded&&pages.length?'<div class="v225-page-grid-scroll"><table class="v225-page-grid"><thead><tr>'+
-       '<th scope="col">نام صفحه</th><th scope="col">ایجادکننده</th><th scope="col">تاریخ ایجاد</th><th scope="col">قالب صفحه</th>'+
-       '</tr></thead><tbody>'+records+'</tbody></table></div>':
-       pagesExpanded?'<p class="v225-no-pages muted">هنوز صفحه‌ای برای این پورتفولیو ساخته نشده است.</p>':'')+
+      (pagesExpanded?v285PortfolioPageTable(project.id,pf.id,pages):'')+
       '</div></div>';
     }).join(''):'<p class="muted">این پروژه هنوز پورتفولیو ندارد.</p>')+'</div>':'';
   return '<div class="v223-project-entry"><div class="v223-project-head">'+
@@ -12529,7 +12525,7 @@ addZipImportButton();
  body.v285-docks .v283-dock-pin[aria-pressed="false"] svg{transform:rotate(-45deg)}
  body.v285-docks .v283-dock-slot[data-pinned="false"]>.v283-edge-tab{display:flex!important;align-items:center;justify-content:center;gap:7px;writing-mode:vertical-rl;min-height:96px;width:29px;border:1px solid #c7d9df;border-radius:5px;background:#eff6f8;color:#315a70;font-size:11px;font-weight:700;padding:8px 4px;margin:0 auto;cursor:pointer}
  body.v285-docks .v283-nav-slot[data-pinned="false"]>.v283-edge-tab{margin-top:10px}
- body.v285-docks .v283-dock-slot[data-pinned="false"]>.v283-dock-panel{position:absolute!important;right:29px;left:auto;top:0!important;width:var(--v283-panel-width)!important;min-width:0;visibility:hidden;opacity:0;pointer-events:none;border:1px solid #c7d9df;border-radius:8px;box-shadow:0 8px 24px #122c3c30;transition:opacity .12s ease;max-height:100%}
+ body.v285-docks .v283-dock-slot[data-pinned="false"]>.v283-dock-panel{position:relative!important;top:0!important;min-width:0;border:1px solid #c7d9df;border-radius:8px;max-height:100%}
  body.v285-docks .v283-pages-slot[data-pinned="false"]>.v283-dock-panel{max-height:calc(100vh - 115px)}
  body.v285-docks .v283-dock-slot[data-pinned="false"][data-open="true"]>.v283-dock-panel{visibility:visible;opacity:1;pointer-events:auto}
  body.v285-docks .v283-dock-slot[data-pinned="false"][data-open="true"]>.v283-edge-tab{background:#e4f3f3;color:#087b80;border-color:#087b80}
@@ -12845,7 +12841,7 @@ body.v284-hide-object-names [data-v13-canvas-host] .v89-block-title{display:none
   const oldPreview=editor.closest('.v13-page-workspace')?.querySelector('[data-v222-print-preview]');
   const preview=oldPreview||document.createElement('button');
   preview.type='button';preview.classList.add('btn');preview.dataset.v222PrintPreview='true';
-  preview.innerHTML=glyph('pdf');decorate(preview,'پیش‌نمایش PDF همهٔ صفحات');
+  preview.innerHTML=glyph('pdf');decorate(preview,V.pageEditScope==='project'?'پیش‌نمایش PDF همهٔ صفحات':'پیش‌نمایش PDF / چاپ');
   main.body.appendChild(preview);
   const oldPrint=editor.closest('.v13-page-workspace')?.querySelector('[data-v222-print-direct]');
   if(oldPrint){decorate(oldPrint,'چاپ / ذخیره PDF');main.body.appendChild(oldPrint);}
