@@ -1,0 +1,210 @@
+{
+  "branch": "engineering/browser-v290-components",
+  "applicationHash": "ac03e17fc1ba58ef7593dbd7bca8f5eddf47acb11ae3deabe9d6ae4119e844ad",
+  "browser": "138.0.7204.0",
+  "backend": "Browser; Native/Tauri NOT_RUN",
+  "scenarios": [
+    {
+      "id": 1,
+      "scenario": "Two isolated portfolios/multiple pages",
+      "status": "PASS",
+      "evidence": {
+        "portfolioPages": 4,
+        "controls": [
+          2,
+          1
+        ],
+        "scope": "real editor pages and rendered trays; no page scene objects"
+      }
+    },
+    {
+      "id": 2,
+      "scenario": "Two logo variants and multiple bound images",
+      "status": "PASS",
+      "evidence": {
+        "variants": 2,
+        "boundInstances": 4,
+        "basis": "real editor-selected Image instances, stable IDs, and actual app persistence"
+      }
+    },
+    {
+      "id": 3,
+      "scenario": "One logo update with geometry unchanged",
+      "status": "PASS",
+      "evidence": {
+        "changed": 2,
+        "unchanged": 2,
+        "preserved": [
+          "x",
+          "y",
+          "w",
+          "h",
+          "rotation",
+          "imageEdit",
+          "layerId",
+          "layerOrigin",
+          "objectFit"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "scenario": "System name/icon propagates to Hotel View and Grid",
+      "status": "PASS",
+      "evidence": {
+        "renamedLabelsInActualPageRender": 5,
+        "source": "one portfolio-level System Logos control"
+      }
+    },
+    {
+      "id": 5,
+      "scenario": "Hotel Text fields and RTL/LTR",
+      "status": "PASS",
+      "evidence": {
+        "records": 2,
+        "modes": [
+          "name-only RTL",
+          "name/city/stars/year LTR"
+        ],
+        "render": "existing page renderer"
+      }
+    },
+    {
+      "id": 6,
+      "scenario": "Hotel View independent visibility",
+      "status": "PASS",
+      "evidence": {
+        "scope": "real persisted view instance properties and browser renderer"
+      }
+    },
+    {
+      "id": 7,
+      "scenario": "Grid with four distinct hotels",
+      "status": "PASS",
+      "evidence": {
+        "cards": 4,
+        "arrayIds": [
+          "qa-hotel-0",
+          "qa-hotel-1",
+          "qa-hotel-2",
+          "qa-hotel-3"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "scenario": "Create Hotel View Square",
+      "status": "PASS",
+      "evidence": {
+        "newId": "e1001f4d-8f56-47d8-a622-b56633d47288",
+        "sourceId": "nsp-hotel-view",
+        "size": [
+          720,
+          720
+        ],
+        "editablePrimitives": 6,
+        "definitionStatus": "published"
+      }
+    },
+    {
+      "id": 9,
+      "scenario": "Published component appears in Toolbox",
+      "status": "PASS",
+      "evidence": {
+        "id": "e1001f4d-8f56-47d8-a622-b56633d47288",
+        "toolboxRendered": true
+      }
+    },
+    {
+      "id": 10,
+      "scenario": "Reload component and reuse",
+      "status": "PASS",
+      "evidence": {
+        "reloaded": true,
+        "definitionId": "e1001f4d-8f56-47d8-a622-b56633d47288",
+        "instantiated": "6595ead7-d0ee-4908-adac-d864218bab63"
+      }
+    },
+    {
+      "id": 14,
+      "scenario": "Drag and Properties responsiveness",
+      "status": "PASS",
+      "evidence": {
+        "dragMs": 359,
+        "maxFrameMs": 16.799999999999955,
+        "p95FrameMs": 16.799999999999955,
+        "samples": 21,
+        "dragOrigin": {
+          "x": 563.75,
+          "y": 636,
+          "hit": "v13-object visual-object v13-editable v13-is-selected is-selected",
+          "r": [
+            296,
+            240,
+            595,
+            720
+          ]
+        },
+        "basis": "One isolated headless Chromium drag; not Windows performance certification.",
+        "propertyMs": 72,
+        "delta": [
+          0,
+          19
+        ],
+        "updatedName": "Hotel View Square QA"
+      }
+    },
+    {
+      "id": 15,
+      "scenario": "Database unavailable/no Office traffic",
+      "status": "PASS",
+      "evidence": {
+        "databaseDisabled": true,
+        "occurrences": 1,
+        "officeRequests": 0,
+        "observedNetworkRequests": 4
+      }
+    },
+    {
+      "id": 12,
+      "scenario": "Print/PDF without tray",
+      "status": "PASS",
+      "evidence": {
+        "file": "integration-print.pdf",
+        "pages": 2,
+        "physicalSize": "594.96 x 841.92 pts (A4)",
+        "nativeDialog": "NOT_RUN (intercepted window.print; Chromium emitted PDF)"
+      }
+    },
+    {
+      "id": 11,
+      "scenario": "ZIP roundtrip preserve refs",
+      "status": "PASS",
+      "evidence": {
+        "files": 7,
+        "basis": "Actual application ZIP pack/read/import/write/readback through isolated OPFS; native chooser not run."
+      }
+    },
+    {
+      "id": 13,
+      "scenario": "Open pre-V290 project",
+      "status": "PASS",
+      "evidence": {
+        "basis": "Actual Open Project UI, test supplies real OPFS handle for native folder picker. Actual checked-in V268 project.",
+        "pages": 1,
+        "objects": 21
+      }
+    }
+  ],
+  "errors": [],
+  "title": "NSP Portfolio Builder — Version 290",
+  "candidate": "Browser V290 RC",
+  "tested_index_sha256": "ac03e17fc1ba58ef7593dbd7bca8f5eddf47acb11ae3deabe9d6ae4119e844ad",
+  "not_run": [
+    "Native/Tauri build or runtime",
+    "Windows owner runtime",
+    "native file picker and print dialogs",
+    "large production-scale stress test"
+  ],
+  "scope": "Browser application and PDF generation exercised in isolated Linux Chromium. Test input, image and projects were synthetic or existing repo fixtures."
+}

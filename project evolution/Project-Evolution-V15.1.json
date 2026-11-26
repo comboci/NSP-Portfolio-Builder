@@ -3228,5 +3228,17 @@
       "decision_source": "owner_conversation",
       "office_requirements_ref": "https://github.com/comboci/NSPOffice/blob/main/exchange/project-evolution-portfolio-project-requirements.json"
     }
+  },
+  "browser_component_candidate": {
+    "version": 290,
+    "branch": "engineering/browser-v290-components",
+    "base_commit": "b7deb97ce05ed171aa23db4c2d44caeab4c2f0ee",
+    "status": "development_branch_release_candidate_not_merged",
+    "owner_runtime": "NOT_RUN",
+    "native_tauri": "NOT_RUN",
+    "verified_browser_scenarios": 15,
+    "tested_index_sha256": "ac03e17fc1ba58ef7593dbd7bca8f5eddf47acb11ae3deabe9d6ae4119e844ad",
+    "acceptance_file": "release/browser-v290/ACCEPTANCE.json",
+    "scope_fa": "Toolbox، دادهٔ دستی هتل، کنترل‌های مشترک پورتفولیو، کامپوننت‌های Editable و ذخیره؛ بدون اتصال Office یا تغییر Native."
   }
 }
