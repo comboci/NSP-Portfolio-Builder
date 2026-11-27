@@ -1,0 +1,13 @@
+{
+  "schema": 1, "mission": "NSP-GE-001", "stage": "G10", "branch": "engineering/graphics-engine-evolution",
+  "base": {"version": 300, "commit": "a1cc7089dfacf5ab73b9224c9e0f87c78c452dda"},
+  "candidate": {"version": 301, "commit": "CONTAINING_COMMIT", "status": "SOURCE_COMPLETE / RUNTIME_PENDING", "releaseReady": false},
+  "entry": "index.html",
+  "module": {"path": "graphics-core/print-policy.js", "embeddedId": "nsp-graphics-core-print-policy"},
+  "features": {"trim": "SOURCE_CHANGED", "binder": "INTERNAL_ADVISORY", "bleed": "OPT_IN_FLAT_BACKGROUND_ONLY",
+    "nestedDpi": "SHARED_RENDER_SAMPLING", "pdfX4": "NOT_SUPPORTED_OR_VALIDATED", "browserBoxesVerified": false},
+  "checks": {"sourceReview": "DONE", "inlineModuleByteParity": "CHECKED", "gitDiffWhitespace": "CHECKED",
+    "browser": "NOT_RUN", "native": "NOT_RUN", "pdf": "NOT_RUN", "tests": "NOT_RUN", "staticChecker": "NOT_RUN",
+    "build": "NOT_RUN", "benchmark": "NOT_RUN", "ciCd": "NOT_RUN", "deploy": "NOT_RUN"},
+  "next": "G11", "openStages": ["G11", "G12"]
+}

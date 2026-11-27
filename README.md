@@ -1,3 +1,7 @@
+# NSP Portfolio Builder — Browser V301 (Graphics G10 source candidate)
+
+پیش‌بررسی فیزیکی چاپ، پانچ درون خط برش، اضافه‌برش اختیاری برای رنگ تخت و بررسی کیفیت مشترک. [گزارش G10](release/browser-v301/START-FA.md). Runtime و PDF اجرا نشده‌اند.
+
 # NSP Portfolio Builder — Browser V300 (Graphics G09 source candidate)
 
 شاخهٔ `engineering/graphics-engine-evolution`؛ [گزارش مرکز عیب‌یابی گرافیک](release/browser-v300/START-FA.md). بررسی فقط خواندنی و پذیرش اجرایی `NOT_RUN`.
