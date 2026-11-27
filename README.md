@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V325 (A14 final source gate)
+
+[گزارش Gate مرحله A14](release/browser-v325/START-FA.md) — Restore، حفاظت کتابخانه و تاریخچه. **CONDITIONAL_SOURCE_GO / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V324 (A14 resource and persistence follow-up)
 
 [گزارش ممیزی A14](release/browser-v324/START-FA.md) — حفاظت منابع، Import/Export و ثبت صفحه. **PARTIAL / RUNTIME_PENDING**.

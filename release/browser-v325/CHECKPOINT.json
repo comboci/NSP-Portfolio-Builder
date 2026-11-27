@@ -1,0 +1,116 @@
+{
+  "mission": "NSP-GE-AUDIT-02",
+  "version": "Browser V325",
+  "parent": "f9246658e79a587a2e554fcd63e508d37d18a6a5",
+  "phase": "A14_FINAL_SOURCE_GATE_REVIEWED",
+  "gate": "CONDITIONAL_SOURCE_GO_RUNTIME_PENDING",
+  "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+  "findings": [
+    {
+      "id": "A14-IA-01",
+      "severity": "HIGH",
+      "description": "New pins and archives explicitly bind owner identity; scoped import remaps outer owner only; old provenance remains unknown",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-02",
+      "severity": "HIGH",
+      "description": "Reject malformed Region ancestry and post-normalization pin/archive byte overflow without pruning",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-03",
+      "severity": "HIGH",
+      "description": "Refuse flat and nested Pinned Detach with ambiguous clipping, frame background/opacity or child shadows before mutation",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-04",
+      "severity": "HIGH",
+      "description": "Central style deletion now includes editor history, drafts and same-workspace clipboard; clipboard asset refs also protected",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-05",
+      "severity": "HIGH",
+      "description": "Portable import/export checks source-owned style and asset closure, duplicate private/public IDs, templates and archive-only dependencies before remapping",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-06",
+      "severity": "HIGH",
+      "description": "Malformed Tile dependencies block asset removal; strict cells/stash structure required by dependency collector",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-07",
+      "severity": "HIGH",
+      "description": "Page-only persistence rejects stored/queued common revision or archive mismatch and newly missing style references instead of silently using stale definitions",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-08",
+      "severity": "HIGH",
+      "description": "Nested pinned detach with remapped outer identity is refused rather than guessing live child identity in destination",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-01",
+      "severity": "HIGH",
+      "description": "Startup and full restore share workspace validation; inactive scope checked; reject nested registry and malformed Tile without overwriting stored payload; validate draft ownership before restore",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-02",
+      "severity": "HIGH",
+      "description": "Restore checks owner and revision after asynchronous guard, blocks concurrent editing, requires prior backup, reports CAS conflict and distinguishes post-commit UI failure; raw recovery preserves previous payload and exposes invalid backups as raw exports",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-03",
+      "severity": "HIGH",
+      "description": "Q-005 public images hidden, never removed by library reset; only unreferenced active private resources removed; mixed delete stops on failed public mutation; private delete/undo blocked during uncertain persistence",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-04",
+      "severity": "HIGH",
+      "description": "A13 expected-side history snapshots and editor/clipboard references protected; component delete checks draft identity and live edges without conflating closed snapshot IDs",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-05",
+      "severity": "MEDIUM",
+      "description": "Valid common archive records retain additive metadata during normalization; no fabricated legacy provenance",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    }
+  ],
+  "openFindings": [
+    "Runtime acceptance required: startup/restore with invalid inactive workspace, legacy pins, raw recovery, CAS conflict, actual IndexedDB/ZIP/PDF and A13 history/flow.",
+    "Legacy archive provenance and nested detach after scoped import remain restricted. Legacy unresolved styles remain deliberately unresolved; portable export may be refused.",
+    "Source-only gate is conditional, not release approval. Review raw recovery size/availability, startup normalization compatibility, archive metadata limits and queue/history behavior before owner acceptance."
+  ],
+  "runtime": "NOT_RUN",
+  "releaseReady": false,
+  "next": "A14_GATE_FOLLOWUP_OR_OWNER_ACCEPTANCE_PREPARATION",
+  "limits": [
+    "DEC-006: no Build/Test/Static Checker/Runtime/CI/CD/Deployment/Merge",
+    "No schema version or Native change; valid legacy archive metadata preserved",
+    "Startup validation may require recovery for previously latent invalid inactive records; no stored payload overwritten on validation failure",
+    "Raw recovery refuses overwrite if prior payload backup cannot be made; export size limit remains",
+    "Conditional source gate only; all acceptance scenarios NOT_RUN"
+  ]
+}
