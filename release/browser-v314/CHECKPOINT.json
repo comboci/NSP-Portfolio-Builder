@@ -1,0 +1,16 @@
+{
+  "mission": "NSP-GE-AUDIT-02",
+  "version": "Browser V314",
+  "parent": "cb9c082cbc01985547b21c964e17b1b6c84f4c6f",
+  "phase": "A11",
+  "status": "PARTIAL_RUNTIME_PENDING",
+  "findings": {
+    "GE-027": "PARTIAL_ACTIVE_PORTFOLIO_BATCH_SOURCE_CHANGED",
+    "GE-024": "PARTIAL",
+    "GE-021": "LEGACY_DETECTED_NOT_RECONCILED",
+    "GE-036": "SOURCE_FIXED_RUNTIME_PENDING"
+  },
+  "runtime": "NOT_RUN",
+  "releaseReady": false,
+  "next": "A12_LEGACY_LAYOUT_REMEDIATION"
+}

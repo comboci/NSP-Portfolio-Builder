@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V314 (Graphics A11 source candidate)
+
+[گزارش مرحله A11](release/browser-v314/START-FA.md) — بازآرایی محدود استایل در پورتفولیوی فعال و عیب‌یابی نسخه‌های کامپوننت. **PARTIAL / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V303 (Graphics G12 source audit)
 
 جمع‌بندی مهندسی و اصلاح دو ریسک بررسی نهایی. [پذیرش نهایی و محدودیت‌ها](release/browser-v303/START-FA.md). **PARTIAL / RUNTIME_PENDING؛ آمادهٔ انتشار نیست.**
