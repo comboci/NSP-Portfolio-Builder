@@ -1,3 +1,7 @@
+# NSP Portfolio Builder — Browser V303 (Graphics G12 source audit)
+
+جمع‌بندی مهندسی و اصلاح دو ریسک بررسی نهایی. [پذیرش نهایی و محدودیت‌ها](release/browser-v303/START-FA.md). **PARTIAL / RUNTIME_PENDING؛ آمادهٔ انتشار نیست.**
+
 # NSP Portfolio Builder — Browser V302 (Graphics G11 source candidate)
 
 تاریخچه با اشتراک داده‌های تغییرنکرده؛ پیش‌نمایش Drag بدون دستکاری مدل تا رهاکردن. [گزارش G11](release/browser-v302/START-FA.md). کارایی اندازه‌گیری نشده است.

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "mission": "NSP-GE-001",
+  "stage": "G12",
+  "branch": "engineering/graphics-engine-evolution",
+  "base": {
+    "version": 302,
+    "commit": "1c268fcf28d0f098ea8d77f54bdb52a48e9d6a2b"
+  },
+  "candidate": {
+    "version": 303,
+    "commit": "CONTAINING_COMMIT",
+    "status": "PARTIAL / RUNTIME_PENDING",
+    "releaseReady": false
+  },
+  "sourceFixes": [
+    "GE-015",
+    "GE-016",
+    "GE-017"
+  ],
+  "checks": {
+    "independentSourceReview": "DONE",
+    "canonicalLocalCheckout": "UNAVAILABLE",
+    "browser": "NOT_RUN",
+    "native": "NOT_RUN",
+    "pdf": "NOT_RUN",
+    "tests": "NOT_RUN",
+    "staticChecker": "NOT_RUN",
+    "build": "NOT_RUN",
+    "benchmark": "NOT_RUN",
+    "ciCd": "NOT_RUN",
+    "deploy": "NOT_RUN"
+  },
+  "next": "OWNER_ACCEPTANCE_ON_EXACT_CLEAN_SHA"
+}
