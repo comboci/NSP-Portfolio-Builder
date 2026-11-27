@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V318 (A13 independent source candidate)
+
+[گزارش ممیزی مستقل A13](release/browser-v318/START-FA.md) — هشت یافته و اصلاح سورس. **PARTIAL / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V317 (A13 follow-up source candidate)
 
 [گزارش A13 تکمیلی](release/browser-v317/START-FA.md) — Region تودرتو، قیود هندسی و بازآرایی صریح استایل. **PARTIAL / RUNTIME_PENDING**.

@@ -1,0 +1,66 @@
+{
+  "mission": "NSP-GE-AUDIT-02",
+  "version": "Browser V318",
+  "parent": "de3e8b60e64693067f3ec589e3c73bfc71f413f6",
+  "phase": "A13_INDEPENDENT_SOURCE_REVIEW",
+  "status": "PARTIAL_SOURCE_CHANGED_RUNTIME_PENDING",
+  "findings": [
+    {
+      "id": "A13-IA-01",
+      "severity": "HIGH",
+      "description": "Group Resize, keyboard and direct property paths missing shared min/max/aspect checks",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-IA-02",
+      "severity": "HIGH",
+      "description": "Protected/grouped child could preview detached geometry and retain invalid relationship; prior nesting not checked",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-IA-03",
+      "severity": "HIGH",
+      "description": "Every reactive Region ran after any watched object edit; unrelated locked/invalid Region blocked valid layout",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-IA-04",
+      "severity": "HIGH",
+      "description": "Property handler scheduled Text Flow after commit failure; coalesced property save lacked rollback",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-IA-05",
+      "severity": "HIGH",
+      "description": "Planner/preview did not share raw bounds/stroke checks; multi-page delete bypassed generic guard",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-IA-06",
+      "severity": "MEDIUM",
+      "description": "Repeated ancestry/subtree scans in resolved scene and commit; replace with scoped graph indexes",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-IA-07",
+      "severity": "MEDIUM",
+      "description": "Overflow page creation lacked structural history and style staleness guard; central style editing could race batch",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-IA-08",
+      "severity": "MEDIUM",
+      "description": "Font evidence accepted any loaded face in matching family without matching style/weight",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    }
+  ],
+  "runtime": "NOT_RUN",
+  "releaseReady": false,
+  "next": "A13_TARGETED_SOURCE_FOLLOWUP_OR_A14",
+  "limits": [
+    "Source review of changed paths only, not exhaustive proof of all editor callers",
+    "Explicit geometry edits may remain when a reactive plan is invalid; no partial automatic layout; diagnostics and runtime acceptance pending",
+    "Nested Region rigid in parent planner; cross-project style batch not automatic",
+    "Exact glyph coverage/font rendering, storage durability, performance and runtime all NOT_RUN"
+  ]
+}
