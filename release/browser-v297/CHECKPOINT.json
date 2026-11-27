@@ -1,0 +1,12 @@
+{
+  "schema": 1, "mission": "NSP-GE-001", "stage": "G06", "branch": "engineering/graphics-engine-evolution",
+  "base": {"version": 296, "commit": "49061babb8844b6f025333c935fee24d85162512"},
+  "candidate": {"version": 297, "commit": "CONTAINING_COMMIT", "status": "SOURCE_COMPLETE / RUNTIME_PENDING", "releaseReady": false},
+  "entry": "index.html",
+  "module": {"path": "graphics-core/auto-layout.js", "embeddedId": "nsp-graphics-core-auto-layout", "blob": "90616dd72de889e7d084bd140261dfb92d8fca0a"},
+  "features": {"rowColumnGrid": "SOURCE_CHANGED", "previewThenAtomicApply": "SOURCE_CHANGED", "constraints": "SOURCE_CHANGED", "overflow": "EXPLICIT_INDEPENDENT_COPY_ONLY", "passiveRelayout": "NOT_ENABLED"},
+  "checks": {"sourceReview": "DONE", "inlineModuleByteParity": "CHECKED", "gitDiffWhitespace": "CHECKED",
+    "browser": "NOT_RUN", "native": "NOT_RUN", "pdf": "NOT_RUN", "tests": "NOT_RUN",
+    "staticChecker": "NOT_RUN", "build": "NOT_RUN", "benchmark": "NOT_RUN", "ciCd": "NOT_RUN", "deploy": "NOT_RUN"},
+  "next": "G07", "openStages": ["G07", "G08", "G09", "G10", "G11", "G12"]
+}
