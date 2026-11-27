@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V294 (Graphics G03 source candidate)
+
+شاخهٔ `engineering/graphics-engine-evolution`؛ [گزارش Selection و Transform](release/browser-v294/START-FA.md). ذخیرهٔ Project JSON و Native تغییر نکرده‌اند. پذیرش اجرایی `NOT_RUN`.
+
+---
+
 # NSP Portfolio Builder — Browser V293 (Graphics G02 source candidate)
 
 شاخهٔ `engineering/graphics-engine-evolution`؛ [گزارش معماری و پذیرش G02](release/browser-v293/START-FA.md). Graphics Core ماژولار و داخل همان HTML مستقل است. Native و Schema تغییر نکرده‌اند. پذیرش اجرایی `NOT_RUN`.

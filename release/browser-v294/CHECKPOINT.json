@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "mission": "NSP-GE-001",
+  "stage": "G03",
+  "branch": "engineering/graphics-engine-evolution",
+  "base": {"version": 293, "commit": "d74a466c694244a11dc65d3816f709bd57d3c20b"},
+  "candidate": {"version": 294, "commit": "CONTAINING_COMMIT", "status": "SOURCE_COMPLETE / RUNTIME_PENDING", "releaseReady": false},
+  "entry": "index.html",
+  "newModule": {"path": "graphics-core/selection-geometry.js", "embeddedId": "nsp-graphics-core-selection-geometry", "blob": "6a9bcefce7bfbaa10f888001b669bad9472d6814"},
+  "features": {"marquee": "SOURCE_CHANGED", "groupResize": "SOURCE_CHANGED", "rotationPivot": "SOURCE_CHANGED", "newTransformsCommitOnPointerUp": "SOURCE_CHANGED"},
+  "openFindings": {"GE-009": "PARTIAL_EXTRACTION", "GE-010": "OPEN", "GE-011": "OPEN_IN_LEGACY_POINTER_PATH"},
+  "checks": {"sourceReview": "DONE", "inlineModuleByteParity": "CHECKED", "gitDiffWhitespace": "CHECKED",
+    "browser": "NOT_RUN", "native": "NOT_RUN", "pdf": "NOT_RUN", "tests": "NOT_RUN",
+    "staticChecker": "NOT_RUN", "build": "NOT_RUN", "benchmark": "NOT_RUN", "ciCd": "NOT_RUN", "deploy": "NOT_RUN"},
+  "next": "G04",
+  "openStages": ["G04", "G05", "G06", "G07", "G08", "G09", "G10", "G11", "G12"]
+}
