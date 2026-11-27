@@ -1,0 +1,17 @@
+{
+  "mission": "NSP-GE-AUDIT-02",
+  "version": "Browser V315",
+  "parent": "5d657429587e9b61708174c1c124fbebb77caea1",
+  "phase": "A12",
+  "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+  "findings": {
+    "GE-021": "SAFE_EXPLICIT_RECONCILIATION_SOURCE_CHANGED",
+    "GE-037": "SOURCE_FIXED_RUNTIME_PENDING",
+    "GE-020": "ADDITIONAL_SOURCE_GUARD",
+    "GE-022": "ADDITIONAL_SOURCE_GUARD"
+  },
+  "preservation": "NO_AUTOMATIC_LEGACY_CONTENT_DELETION",
+  "runtime": "NOT_RUN",
+  "releaseReady": false,
+  "next": "A13_AUTO_LAYOUT"
+}

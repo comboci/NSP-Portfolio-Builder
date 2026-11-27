@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V315 (Graphics A12 source candidate)
+
+[گزارش A12](release/browser-v315/START-FA.md) — حفاظت و تعیین تکلیف صریح صفحات ادامهٔ قدیمی. **SOURCE_CHANGED / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V314 (Graphics A11 source candidate)
 
 [گزارش مرحله A11](release/browser-v314/START-FA.md) — بازآرایی محدود استایل در پورتفولیوی فعال و عیب‌یابی نسخه‌های کامپوننت. **PARTIAL / RUNTIME_PENDING**.

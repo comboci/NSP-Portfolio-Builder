@@ -1,0 +1,264 @@
+{
+  "releaseReady": false,
+  "immutableCandidate": "CONTAINING_COMMIT",
+  "runtime": {
+    "browser": "NOT_RUN",
+    "native": "NOT_RUN",
+    "pdf": "NOT_RUN",
+    "tests": "NOT_RUN",
+    "staticChecker": "NOT_RUN",
+    "build": "NOT_RUN",
+    "benchmark": "NOT_RUN",
+    "ciCd": "NOT_RUN",
+    "deploy": "NOT_RUN"
+  },
+  "browserScenarios": [
+    {
+      "id": "E08-01",
+      "name": "Two isolated portfolios/multiple pages",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-02",
+      "name": "Two logo variants and multiple bound images",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-03",
+      "name": "One logo update with geometry unchanged",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-04",
+      "name": "System name/icon propagates to Hotel View and Grid",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-05",
+      "name": "Hotel Text fields and RTL/LTR",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-06",
+      "name": "Hotel View independent visibility",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-07",
+      "name": "Grid with four distinct hotels",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-08",
+      "name": "Create Hotel View Square",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-09",
+      "name": "Published component appears in Toolbox",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-10",
+      "name": "Reload component and reuse",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-11",
+      "name": "ZIP roundtrip preserve refs",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-12",
+      "name": "Print/PDF without tray",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-13",
+      "name": "Open pre-V290 project",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-14",
+      "name": "Drag and Properties responsiveness",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-15",
+      "name": "Database unavailable/no Office traffic",
+      "state": "NOT_RUN"
+    }
+  ],
+  "additional": [
+    {
+      "name": "Legacy Project JSON and isolated project/portfolio ZIP (owners, history and images)",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Real IndexedDB and reload",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Duplicate page ID across portfolios; scope-isolated assets in both print paths",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Frozen preview on abandoned/superseded navigation and pending/failed save",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Mixed A3/A4/A5, A4 trim, binder clearance and flat bleed in real Browser PDF",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Missing required nested image and font; mixed Persian/English",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Detached canvas lost capture / cancel and next gesture; zero persisted edit",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "GE G01–G09 case matrix",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "10/100/500 data integrity + measurements",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Native / Windows paths separately",
+      "state": "NOT_RUN"
+    }
+  ],
+  "baseline": "f7efda910a8b888d391da5b7e058dab25a92e9df",
+  "mission": "NSP-GE-AUDIT-02",
+  "remediation": [
+    {
+      "id": "IA-01",
+      "name": "Repeated page ID across portfolios in Editor, Preview, Print paths, Diagnostics, Logo and Hotel bindings",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-02",
+      "name": "Cut/delete/Region/template/conversion with manually edited continuation and locked continuation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-03",
+      "name": "Text Flow transaction across page history, manual conflict, save rejection and reload",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-04",
+      "name": "Independent flows on same source; stale, superseded, locked or scope-changed request",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-05",
+      "name": "Transform capture cancellation, release-only persistence and scrolled coordinates across Zoom",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-06",
+      "name": "Common nested snapshot with opt-in hotel live and override fallback; full/scoped ZIP asset closure",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-07",
+      "name": "Shared Auto Layout validation, nested opted-in Region and no implicit duplication",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-08",
+      "name": "Rich Clipboard, character color, Persian IME and linked type metrics drift",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-09",
+      "name": "Text/shape/vector gradient compare in Preview and actual PDF; opacity-zero assets not loaded",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-10",
+      "name": "Diagnostics nested font reasons, incomplete result, local overflow along both axes",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-11",
+      "name": "Parity and 10/100/500 benchmark comparing cold mount, history and pointer p95",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-12",
+      "name": "Delimiter-containing IDs and orphan detection in imported legacy projects",
+      "state": "NOT_RUN"
+    }
+  ],
+  "parent": "5d657429587e9b61708174c1c124fbebb77caea1",
+  "candidate": "Browser V315",
+  "a11": [
+    {
+      "id": "A11-01",
+      "name": "Style link/unlink reflow and protected manual/locked continuation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A11-02",
+      "name": "Active portfolio style batch, scope change, pending/failed persistence and exact counts",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A11-03",
+      "name": "Pinned closure diagnostics and live hotel fallback",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A11-04",
+      "name": "Legacy continuation provenance warning without deletion",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a12": [
+    {
+      "id": "A12-01",
+      "name": "Legacy signed and unsigned continuation groups: reflow and shrink rejected; all historical content retained",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-02",
+      "name": "Explicit group detach from source or continuation, including manual content; exact identities, asset refs, geometry and page order preserved; cancel no mutation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-03",
+      "name": "Orphan source, missing manuscript, invalid relation and marker-only continuation: diagnostics and explicit recovery without guessed content deletion",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-04",
+      "name": "Locked continuation, locked ancestor Region, locked source, conflicting marker/index and outbound child relation: no unsafe rewrite",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-05",
+      "name": "Detached full manuscript: edit/resize/style batch does not recreate pages automatically; explicit resume consent creates only new managed pages",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-06",
+      "name": "Multi-flow source with linked continuation but missing origin metadata, plus unknown text measurement: no duplication of unrelated manuscript in new continuation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-07",
+      "name": "Undo/Redo exact group, source edit conflict, single-page discard guard, storage failure, owner switch and reload",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-08",
+      "name": "Duplicate IDs across portfolios, full and scoped ZIP, legacy Backup/Restore, Editor/Preview/PDF preservation",
+      "state": "NOT_RUN"
+    }
+  ]
+}
