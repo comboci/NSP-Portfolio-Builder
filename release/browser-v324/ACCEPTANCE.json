@@ -1,0 +1,630 @@
+{
+  "releaseReady": false,
+  "immutableCandidate": "CONTAINING_COMMIT",
+  "runtime": {
+    "browser": "NOT_RUN",
+    "native": "NOT_RUN",
+    "pdf": "NOT_RUN",
+    "tests": "NOT_RUN",
+    "staticChecker": "NOT_RUN",
+    "build": "NOT_RUN",
+    "benchmark": "NOT_RUN",
+    "ciCd": "NOT_RUN",
+    "deploy": "NOT_RUN"
+  },
+  "browserScenarios": [
+    {
+      "id": "E08-01",
+      "name": "Two isolated portfolios/multiple pages",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-02",
+      "name": "Two logo variants and multiple bound images",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-03",
+      "name": "One logo update with geometry unchanged",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-04",
+      "name": "System name/icon propagates to Hotel View and Grid",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-05",
+      "name": "Hotel Text fields and RTL/LTR",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-06",
+      "name": "Hotel View independent visibility",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-07",
+      "name": "Grid with four distinct hotels",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-08",
+      "name": "Create Hotel View Square",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-09",
+      "name": "Published component appears in Toolbox",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-10",
+      "name": "Reload component and reuse",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-11",
+      "name": "ZIP roundtrip preserve refs",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-12",
+      "name": "Print/PDF without tray",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-13",
+      "name": "Open pre-V290 project",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-14",
+      "name": "Drag and Properties responsiveness",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-15",
+      "name": "Database unavailable/no Office traffic",
+      "state": "NOT_RUN"
+    }
+  ],
+  "additional": [
+    {
+      "name": "Legacy Project JSON and isolated project/portfolio ZIP (owners, history and images)",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Real IndexedDB and reload",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Duplicate page ID across portfolios; scope-isolated assets in both print paths",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Frozen preview on abandoned/superseded navigation and pending/failed save",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Mixed A3/A4/A5, A4 trim, binder clearance and flat bleed in real Browser PDF",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Missing required nested image and font; mixed Persian/English",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Detached canvas lost capture / cancel and next gesture; zero persisted edit",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "GE G01–G09 case matrix",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "10/100/500 data integrity + measurements",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Native / Windows paths separately",
+      "state": "NOT_RUN"
+    }
+  ],
+  "baseline": "f7efda910a8b888d391da5b7e058dab25a92e9df",
+  "mission": "NSP-GE-AUDIT-02",
+  "remediation": [
+    {
+      "id": "IA-01",
+      "name": "Repeated page ID across portfolios in Editor, Preview, Print paths, Diagnostics, Logo and Hotel bindings",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-02",
+      "name": "Cut/delete/Region/template/conversion with manually edited continuation and locked continuation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-03",
+      "name": "Text Flow transaction across page history, manual conflict, save rejection and reload",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-04",
+      "name": "Independent flows on same source; stale, superseded, locked or scope-changed request",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-05",
+      "name": "Transform capture cancellation, release-only persistence and scrolled coordinates across Zoom",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-06",
+      "name": "Common nested snapshot with opt-in hotel live and override fallback; full/scoped ZIP asset closure",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-07",
+      "name": "Shared Auto Layout validation, nested opted-in Region and no implicit duplication",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-08",
+      "name": "Rich Clipboard, character color, Persian IME and linked type metrics drift",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-09",
+      "name": "Text/shape/vector gradient compare in Preview and actual PDF; opacity-zero assets not loaded",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-10",
+      "name": "Diagnostics nested font reasons, incomplete result, local overflow along both axes",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-11",
+      "name": "Parity and 10/100/500 benchmark comparing cold mount, history and pointer p95",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-12",
+      "name": "Delimiter-containing IDs and orphan detection in imported legacy projects",
+      "state": "NOT_RUN"
+    }
+  ],
+  "parent": "7499df3d109656520b236a27254e540292a8e950",
+  "candidate": "Browser V324",
+  "a11": [
+    {
+      "id": "A11-01",
+      "name": "Style link/unlink reflow and protected manual/locked continuation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A11-02",
+      "name": "Active portfolio style batch, scope change, pending/failed persistence and exact counts",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A11-03",
+      "name": "Pinned closure diagnostics and live hotel fallback",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A11-04",
+      "name": "Legacy continuation provenance warning without deletion",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a12": [
+    {
+      "id": "A12-01",
+      "name": "Legacy signed and unsigned continuation groups: reflow and shrink rejected; all historical content retained",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-02",
+      "name": "Explicit group detach from source or continuation, including manual content; exact identities, asset refs, geometry and page order preserved; cancel no mutation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-03",
+      "name": "Orphan source, missing manuscript, invalid relation and marker-only continuation: diagnostics and explicit recovery without guessed content deletion",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-04",
+      "name": "Locked continuation, locked ancestor Region, locked source, conflicting marker/index and outbound child relation: no unsafe rewrite",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-05",
+      "name": "Detached full manuscript: edit/resize/style batch does not recreate pages automatically; explicit resume consent creates only new managed pages",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-06",
+      "name": "Multi-flow source with linked continuation but missing origin metadata, plus unknown text measurement: no duplication of unrelated manuscript in new continuation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-07",
+      "name": "Undo/Redo exact group, source edit conflict, single-page discard guard, storage failure, owner switch and reload",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-08",
+      "name": "Duplicate IDs across portfolios, full and scoped ZIP, legacy Backup/Restore, Editor/Preview/PDF preservation",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a13": [
+    {
+      "id": "A13-01",
+      "name": "Legacy config without new flags: no implicit nesting/height fit; import/reload/ZIP parity",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-02",
+      "name": "Opt-in row/column/grid text heights with measured proposed width, mixed RTL/LTR rich runs, borders and min/max constraints",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-03",
+      "name": "Font loading/fallback, vector glyph, fixed ratio, horizontal overflow, 101 text frames: reject unsafe plan",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-04",
+      "name": "Existing nested Region moved as rigid member in all three layout modes, descendants preserve relative positions and sizes",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-05",
+      "name": "Nested locked/grouped/flow-related descendant, cyclic or invalid relation, cross-page IDs, overflows: no partial application",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-06",
+      "name": "Preview, Apply, diagnostics use same planner; explicit Apply must not trigger unrelated reactive layout",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-07",
+      "name": "Reactive outer-to-inner geometry, local rich-text edits, one history transition, storage failure and Undo/Redo",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-08",
+      "name": "Legacy continuation/marker and linked source with missing text metadata: no automatic rewrite or copy; nested overflow copy rejected",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-09",
+      "name": "Browser/PDF/IndexedDB/ZIP acceptance and 100-frame measurement cost; nested authoring and central style propagation remain open",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a13Followup": [
+    {
+      "id": "A13F-01",
+      "name": "Create nested Region, reparent/detach without geometry loss, reject self/cycle, cross-layer subtree and malformed imported graph",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13F-02",
+      "name": "Recursive drag, frame and proportional resize, min/max/aspect constraints and nested fixed layout; compare pointer vs Properties, undo/redo and locks",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13F-03",
+      "name": "Delete/Cut/Layer delete/Group/align/duplicate with nested descendants and locked or flow-linked child; no orphan or historical content loss",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13F-04",
+      "name": "Layer tree with nested/cyclic legacy records; no silent repair, crash or hidden unrelated content",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13F-05",
+      "name": "Font declared/local/generic/fallback and rich text in mixed Persian/English; conservative evidence is not glyph coverage",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13F-06",
+      "name": "Explicit central-style layout batch across portfolios of current project, duplicate page IDs, locked/legacy pages, storage failure and owner switch",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13F-07",
+      "name": "Browser/PDF/IndexedDB/ZIP/Undo acceptance plus regression matrix V315/V316",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a13Independent": [
+    {
+      "id": "A13-IA-01",
+      "severity": "HIGH",
+      "name": "Group Resize, keyboard and direct property paths missing shared min/max/aspect checks",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-02",
+      "severity": "HIGH",
+      "name": "Protected/grouped child could preview detached geometry and retain invalid relationship; prior nesting not checked",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-03",
+      "severity": "HIGH",
+      "name": "Every reactive Region ran after any watched object edit; unrelated locked/invalid Region blocked valid layout",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-04",
+      "severity": "HIGH",
+      "name": "Property handler scheduled Text Flow after commit failure; coalesced property save lacked rollback",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-05",
+      "severity": "HIGH",
+      "name": "Planner/preview did not share raw bounds/stroke checks; multi-page delete bypassed generic guard",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-06",
+      "severity": "MEDIUM",
+      "name": "Repeated ancestry/subtree scans in resolved scene and commit; replace with scoped graph indexes",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-07",
+      "severity": "MEDIUM",
+      "name": "Overflow page creation lacked structural history and style staleness guard; central style editing could race batch",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-08",
+      "severity": "MEDIUM",
+      "name": "Font evidence accepted any loaded face in matching family without matching style/weight",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a13Final": [
+    {
+      "id": "A13-F01",
+      "name": "Clipboard: rigid transformed translation, preflight relation graph, no increment on rejection, guarded Text Flow copy/cut and truthful duplicate result",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-F02",
+      "name": "Component: complete subtree, one external parent, same source layer, linked text protection",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-F03",
+      "name": "Raw paper geometry before format change, catalog draft guard, nested resize constraint",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-F04",
+      "name": "Portfolio import/clone: preserve original manuscript and fragments, remap explicit source identities, invalidate old copied signature",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-F05",
+      "name": "Scoped page ownership, pending structural save guard, coalesced layer rollback",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-F06",
+      "name": "Legacy cycle and missing-ancestor diagnostics without data migration",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a13GateFollowup": [
+    {
+      "id": "A13-R20-01",
+      "description": "Paste preserves geometry and does not auto-paginate; duplicate and component conversion preserve explicit placement",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-R20-02",
+      "description": "Ordinary history rejects divergent snapshots; coalesced writes verify matching state and roll back on rejection",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-R20-03",
+      "description": "Managed flow page copy/cut and cross-portfolio page paste fail closed; cut clipboard only staged after approval; storage guard",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-R20-04",
+      "description": "Prevent deleting orphan continuation marker, changing managed page format or copying nested overflow when child Region excluded",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a14": [
+    {
+      "id": "A14-01",
+      "description": "Common revisions archive previous root and full dependency closure; bounded lineage, legacy revision gap preserved, no silent pruning",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-02",
+      "description": "Nested Pinned closures validated with independent scope and depth/expansion limits; renderer uses definition identity, no hidden live substitution",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-04",
+      "description": "Scoped export/import retains common and hotel archives; recursively collect/remap styles in closed snapshots; assets remain recursively closed",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-05",
+      "description": "Pinned Detach resolves actual revision; unsafe transforms fail closed and nested dependencies remain pinned",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-03",
+      "description": "Common Properties selects current or archived revision; explicit relink and revision change; nested pin in common draft with dependency validation; no reactive re-layout",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-AC-01",
+      "name": "Save revisions 1→2→3, archive limit without pruning, no fabricated legacy revisions, reload and compare current/archive",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-AC-02",
+      "name": "Live and pinned root and nested child, pinned old version after dependency/style change, graph cycle/depth/size limits",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-AC-03",
+      "name": "Full and scoped ZIP preserving common and hotel revision archives, remapped IDs, archived-only assets and legacy pinned style refs",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-AC-04",
+      "name": "Pinned detach safe/unsafe geometry, nested pins, Region ownership, Undo/Redo, queue failure and actual PDF",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-AC-05",
+      "name": "All A13 acceptance scenarios; source review of new archives, style and asset deletion guards and storage compatibility",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-AC-06",
+      "name": "Properties choose archived/current revision, pin nested common draft, cancel relink/change, missing definition, preserve geometry, save/reload and Undo/Redo",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a14Independent": [
+    {
+      "id": "A14-IA-01",
+      "severity": "HIGH",
+      "description": "New pins and archives explicitly bind owner identity; scoped import remaps outer owner only; old provenance remains unknown",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-02",
+      "severity": "HIGH",
+      "description": "Reject malformed Region ancestry and post-normalization pin/archive byte overflow without pruning",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-03",
+      "severity": "HIGH",
+      "description": "Refuse flat and nested Pinned Detach with ambiguous clipping, frame background/opacity or child shadows before mutation",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC01",
+      "name": "Owner-bound pin and archive, swapped owner reject; scoped clone remaps owner without changing closure IDs; legacy provenance unknown",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC02",
+      "name": "Malformed nested Region and post-normalization pin/archive overflow: reject without pruning",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC03",
+      "name": "Pinned flat/nested detach clipped child, background, opacity, shadows, safe plain frame, Undo/Redo, persistence failure",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-04",
+      "severity": "HIGH",
+      "description": "Central style deletion now includes editor history, drafts and same-workspace clipboard; clipboard asset refs also protected",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-05",
+      "severity": "HIGH",
+      "description": "Portable import/export checks source-owned style and asset closure, duplicate private/public IDs, templates and archive-only dependencies before remapping",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-06",
+      "severity": "HIGH",
+      "description": "Malformed Tile dependencies block asset removal; strict cells/stash structure required by dependency collector",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-07",
+      "severity": "HIGH",
+      "description": "Page-only persistence rejects stored/queued common revision or archive mismatch and newly missing style references instead of silently using stale definitions",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-08",
+      "severity": "HIGH",
+      "description": "Nested pinned detach with remapped outer identity is refused rather than guessing live child identity in destination",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC04",
+      "name": "Delete central style and private assets referenced only in archive, editor history, structural transition, draft or same-workspace clipboard; unrelated project isolation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC05",
+      "name": "Full/scoped import/export with missing archive-only style or image, destination ID collision, valid dependency remap and legacy unresolved style; no accidental destination binding",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC06",
+      "name": "Malformed Tile JSON, invalid cells/stash, valid stash-only asset, single/bulk deletion, library undo and reset",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC07",
+      "name": "Page-only save with persisted common revision mismatch, newly missing style, pending write and A13 history/flow guard; no partial persistence",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC08",
+      "name": "Scoped imported nested pinned detach with closure root differing from current ID; keep instance unchanged; ordinary non-imported detach remains available subject to V323 guards",
+      "state": "NOT_RUN"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "mission": "NSP-GE-AUDIT-02",
+  "version": "Browser V324",
+  "parent": "7499df3d109656520b236a27254e540292a8e950",
+  "phase": "A14_INDEPENDENT_SOURCE_AUDIT_FOLLOWUP",
+  "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+  "findings": [
+    {
+      "id": "A14-IA-01",
+      "severity": "HIGH",
+      "description": "New pins and archives explicitly bind owner identity; scoped import remaps outer owner only; old provenance remains unknown",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-02",
+      "severity": "HIGH",
+      "description": "Reject malformed Region ancestry and post-normalization pin/archive byte overflow without pruning",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-03",
+      "severity": "HIGH",
+      "description": "Refuse flat and nested Pinned Detach with ambiguous clipping, frame background/opacity or child shadows before mutation",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-04",
+      "severity": "HIGH",
+      "description": "Central style deletion now includes editor history, drafts and same-workspace clipboard; clipboard asset refs also protected",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-05",
+      "severity": "HIGH",
+      "description": "Portable import/export checks source-owned style and asset closure, duplicate private/public IDs, templates and archive-only dependencies before remapping",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-06",
+      "severity": "HIGH",
+      "description": "Malformed Tile dependencies block asset removal; strict cells/stash structure required by dependency collector",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-07",
+      "severity": "HIGH",
+      "description": "Page-only persistence rejects stored/queued common revision or archive mismatch and newly missing style references instead of silently using stale definitions",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-08",
+      "severity": "HIGH",
+      "description": "Nested pinned detach with remapped outer identity is refused rather than guessing live child identity in destination",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    }
+  ],
+  "openFindings": [
+    "A14 final source gate: review remaining legacy archives, full workspace restore and library reset, closure size and queue/rollback boundaries; assess A13 property/history regression paths.",
+    "Legacy pin provenance is unknown; scoped nested detach remains deliberately restricted; portable operations reject missing source style/image instead of guessing.",
+    "Runtime, visual/PDF parity, IndexedDB durability, performance and cumulative A13/A14 acceptance remain unverified."
+  ],
+  "runtime": "NOT_RUN",
+  "releaseReady": false,
+  "next": "A14_FINAL_SOURCE_GATE_REVIEW",
+  "limits": [
+    "DEC-006: no Build/Test/Static Checker/Runtime/CI/CD/Deployment/Merge",
+    "No schema/native change or migration",
+    "Missing source dependency rejects portable operations; existing unresolved legacy page style links are not rewritten",
+    "Malformed Tile conservatively blocks deletion; imported nested Pin with remapped root cannot detach until ownership is established"
+  ]
+}

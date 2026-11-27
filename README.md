@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V324 (A14 resource and persistence follow-up)
+
+[گزارش ممیزی A14](release/browser-v324/START-FA.md) — حفاظت منابع، Import/Export و ثبت صفحه. **PARTIAL / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V323 (A14 independent source audit)
 
 [گزارش ممیزی A14](release/browser-v323/START-FA.md) — هویت Pin، اعتبارسنجی آرشیو و حفاظت Detach. **PARTIAL / RUNTIME_PENDING**.
