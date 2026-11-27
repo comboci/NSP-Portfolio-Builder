@@ -1,0 +1,12 @@
+{
+  "schema": 1, "mission": "NSP-GE-001", "stage": "G08", "branch": "engineering/graphics-engine-evolution",
+  "base": {"version": 298, "commit": "633fe7f0185715dd5b3042475a956d466b5b1d1c"},
+  "candidate": {"version": 299, "commit": "CONTAINING_COMMIT", "status": "SOURCE_COMPLETE / RUNTIME_PENDING", "releaseReady": false},
+  "entry": "index.html",
+  "modules": {"graphics-core/image-treatment.js": "eb7663e43fc48c8dbcf54aeac16ed916d5186fa2", "graphics-core/print-sampling.js": "e847ae80f9809f1e45ebd1cb369030daf9928d14"},
+  "features": {"nonDestructive": "SOURCE_CHANGED", "preciseCropAndMask": "SOURCE_CHANGED", "colourAndPresets": "SOURCE_CHANGED", "gradient": "KNOWN_DIMENSIONS_ONLY", "sharedDpiGeometry": "SOURCE_CHANGED"},
+  "checks": {"sourceReview": "DONE", "inlineModuleByteParity": "CHECKED", "gitDiffWhitespace": "CHECKED",
+    "browser": "NOT_RUN", "native": "NOT_RUN", "pdf": "NOT_RUN", "tests": "NOT_RUN",
+    "staticChecker": "NOT_RUN", "build": "NOT_RUN", "benchmark": "NOT_RUN", "ciCd": "NOT_RUN", "deploy": "NOT_RUN"},
+  "next": "G09", "openStages": ["G09", "G10", "G11", "G12"]
+}
