@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "mission": "NSP-GE-001",
+  "stage": "G02",
+  "branch": "engineering/graphics-engine-evolution",
+  "base": {"version": 292, "commit": "df7098f611b9c629dcf6a6512e8980c8742f9f5a"},
+  "candidate": {"version": 293, "commit": "CONTAINING_COMMIT", "status": "SOURCE_COMPLETE / RUNTIME_PENDING", "releaseReady": false},
+  "entry": "index.html",
+  "moduleBlobs": {
+    "graphics-core/affine.js": "3ca638bc812f11f9245b774e9e2787b199f1330a",
+    "graphics-core/scene.js": "5ba9a75633c2f75a73de018f5c9cbe628230303a",
+    "graphics-core/print-sampling.js": "d95f6f7c076b73bbd25fe2e53da745b8881c4ccd"
+  },
+  "findings": {"GE-009": "PARTIAL_EXTRACTION_RUNTIME_PENDING", "GE-013": "SOURCE_CHANGED", "GE-014": "SOURCE_CHANGED", "GE-010": "OPEN", "GE-011": "OPEN"},
+  "checks": {
+    "sourceReview": "DONE",
+    "inlineModuleByteParity": "CHECKED",
+    "gitDiffWhitespace": "CHECKED",
+    "browser": "NOT_RUN", "native": "NOT_RUN", "pdf": "NOT_RUN", "tests": "NOT_RUN",
+    "staticChecker": "NOT_RUN", "build": "NOT_RUN", "benchmark": "NOT_RUN", "ciCd": "NOT_RUN", "deploy": "NOT_RUN"
+  },
+  "next": "G03",
+  "openStages": ["G03", "G04", "G05", "G06", "G07", "G08", "G09", "G10", "G11", "G12"]
+}
