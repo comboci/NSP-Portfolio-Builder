@@ -36,5 +36,15 @@
       (o.type!=='pageNumber'||opts.showEditablePageNumber===true||Number(opts.pageIndex||1)>1||o.showOnFirstPage===true)&&
       (o.type!=='block'||opts.editor===true);
   }
-  V.graphicsCore.scene=Object.freeze({dictionary,key,layerKey,ownLayers,arrange,finishScene,shouldPaint});
+  function sharedPageNumber(page,result,portfolio,resolveBase){
+    if(!page||!Array.isArray(result.objects)||!portfolio)return result;
+    const master=portfolio.pages?.find(p=>p.visualObjects?.some(o=>o.type==='pageNumber'));
+    if(!master)return result;
+    const number=(master===page?result:resolveBase(master)).objects.find(o=>o.type==='pageNumber');
+    if(!number)return result;
+    const displayed=master.id===page.id?number:{...number,id:'shared-page-number-'+number.id,
+      origin:'portfolioNumber',ownerId:master.id,locked:true};
+    return {...result,objects:[...result.objects.filter(o=>o.type!=='pageNumber'),displayed]};
+  }
+  V.graphicsCore.scene=Object.freeze({sharedPageNumber,dictionary,key,layerKey,ownLayers,arrange,finishScene,shouldPaint});
 })(window.V13);
