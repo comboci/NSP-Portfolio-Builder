@@ -1,3 +1,7 @@
+# NSP Portfolio Builder — Browser V302 (Graphics G11 source candidate)
+
+تاریخچه با اشتراک داده‌های تغییرنکرده؛ پیش‌نمایش Drag بدون دستکاری مدل تا رهاکردن. [گزارش G11](release/browser-v302/START-FA.md). کارایی اندازه‌گیری نشده است.
+
 # NSP Portfolio Builder — Browser V301 (Graphics G10 source candidate)
 
 پیش‌بررسی فیزیکی چاپ، پانچ درون خط برش، اضافه‌برش اختیاری برای رنگ تخت و بررسی کیفیت مشترک. [گزارش G10](release/browser-v301/START-FA.md). Runtime و PDF اجرا نشده‌اند.

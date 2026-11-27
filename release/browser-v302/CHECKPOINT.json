@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "mission": "NSP-GE-001",
+  "stage": "G11",
+  "branch": "engineering/graphics-engine-evolution",
+  "base": {
+    "version": 301,
+    "commit": "14f5d14262aa85b1256beb80e9bbc7358b3785de"
+  },
+  "candidate": {
+    "version": 302,
+    "commit": "CONTAINING_COMMIT",
+    "status": "SOURCE_CHANGED / PERFORMANCE_UNMEASURED",
+    "releaseReady": false
+  },
+  "performance": {
+    "GE-010": "ADJACENT_IMMUTABLE_SHARING",
+    "GE-011": "DOM_PREVIEW_SINGLE_COMMIT",
+    "metrics": "NOT_RUN",
+    "fixtures": [
+      10,
+      100,
+      500
+    ]
+  },
+  "checks": {
+    "sourceReview": "DONE",
+    "sourceDelivery": "GITHUB_EXACT_PARENT",
+    "localCanonicalClean": "UNAVAILABLE",
+    "browser": "NOT_RUN",
+    "native": "NOT_RUN",
+    "pdf": "NOT_RUN",
+    "tests": "NOT_RUN",
+    "staticChecker": "NOT_RUN",
+    "build": "NOT_RUN",
+    "benchmark": "NOT_RUN",
+    "ciCd": "NOT_RUN",
+    "deploy": "NOT_RUN"
+  },
+  "next": "G12",
+  "openStages": [
+    "G12"
+  ]
+}
