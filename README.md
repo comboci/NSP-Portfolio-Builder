@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V332 (V331-RT-002 measured Hotel Text rows)
+
+[گزارش V332](release/browser-v332/START-FA.md) · [پذیرش مالک](release/browser-v332/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v332/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V331 (V330-RT-001 hotel card text fitting)
 
 [گزارش V331](release/browser-v331/START-FA.md) · [پذیرش مالک](release/browser-v331/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v331/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
