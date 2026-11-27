@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V295 (Graphics G04 source candidate)
+
+شاخهٔ `engineering/graphics-engine-evolution`؛ [گزارش و پذیرش Smart Guides](release/browser-v295/START-FA.md). Grid و اندازه‌گیری فاصله به بوم محدودند. پذیرش اجرایی `NOT_RUN`.
+
+---
+
 # NSP Portfolio Builder — Browser V294 (Graphics G03 source candidate)
 
 شاخهٔ `engineering/graphics-engine-evolution`؛ [گزارش Selection و Transform](release/browser-v294/START-FA.md). ذخیرهٔ Project JSON و Native تغییر نکرده‌اند. پذیرش اجرایی `NOT_RUN`.

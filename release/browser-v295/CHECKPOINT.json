@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "mission": "NSP-GE-001",
+  "stage": "G04",
+  "branch": "engineering/graphics-engine-evolution",
+  "base": {"version": 294, "commit": "3e8c210f0663600d195bea487b09debec26052dd"},
+  "candidate": {"version": 295, "commit": "CONTAINING_COMMIT", "status": "SOURCE_COMPLETE / RUNTIME_PENDING", "releaseReady": false},
+  "entry": "index.html",
+  "newModule": {"path": "graphics-core/smart-guides.js", "embeddedId": "nsp-graphics-core-smart-guides", "blob": "b7294d9a053e7d63479c2800a8d31489bb2b0dea"},
+  "features": {"smartSnap": "SOURCE_CHANGED", "groupResizeSnap": "SOURCE_CHANGED", "distanceIndicators": "SOURCE_CHANGED", "sessionGrid": "SOURCE_CHANGED", "transformedDistribution": "SOURCE_CHANGED"},
+  "checks": {"sourceReview": "DONE", "inlineModuleByteParity": "CHECKED", "gitDiffWhitespace": "CHECKED",
+    "browser": "NOT_RUN", "native": "NOT_RUN", "pdf": "NOT_RUN", "tests": "NOT_RUN",
+    "staticChecker": "NOT_RUN", "build": "NOT_RUN", "benchmark": "NOT_RUN", "ciCd": "NOT_RUN", "deploy": "NOT_RUN"},
+  "next": "G05",
+  "openStages": ["G05", "G06", "G07", "G08", "G09", "G10", "G11", "G12"]
+}
