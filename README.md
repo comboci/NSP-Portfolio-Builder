@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V320 (A13 gate follow-up)
+
+[گزارش کنترل A13](release/browser-v320/START-FA.md) — CONDITIONAL_SOURCE_GO_A14. **RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V319 (A13 final source follow-up)
 
 [گزارش V319](release/browser-v319/START-FA.md) — Clipboard، Component، هندسه صفحه، انتقال پورتفولیو و حفاظت ذخیره. **SOURCE_CHANGED / RUNTIME_PENDING**.

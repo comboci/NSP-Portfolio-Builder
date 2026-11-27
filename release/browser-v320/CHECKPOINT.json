@@ -1,0 +1,40 @@
+{
+  "mission": "NSP-GE-AUDIT-02",
+  "version": "Browser V320",
+  "parent": "2e7333abf50d87f97465b3cf7a7b0916e059e0e7",
+  "phase": "A13_GATE_FOLLOWUP",
+  "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+  "findings": [
+    {
+      "id": "A13-R20-01",
+      "description": "Paste preserves geometry and does not auto-paginate; duplicate and component conversion preserve explicit placement",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-R20-02",
+      "description": "Ordinary history rejects divergent snapshots; coalesced writes verify matching state and roll back on rejection",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-R20-03",
+      "description": "Managed flow page copy/cut and cross-portfolio page paste fail closed; cut clipboard only staged after approval; storage guard",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-R20-04",
+      "description": "Prevent deleting orphan continuation marker, changing managed page format or copying nested overflow when child Region excluded",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    }
+  ],
+  "openFindings": [],
+  "runtime": "NOT_RUN",
+  "releaseReady": false,
+  "gate": "CONDITIONAL_SOURCE_GO_A14",
+  "next": "A14_COMPONENT_REVISIONS_SOURCE_ONLY",
+  "limits": [
+    "Source review only, not exhaustive proof",
+    "All runtime acceptance NOT_RUN; no claim of durable writes or font/render parity",
+    "V319 copied continuation signatures invalidated intentionally; no fabricated evidence",
+    "A14 revision archive remains to implement"
+  ]
+}
