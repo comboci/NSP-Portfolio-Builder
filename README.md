@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V322 (A14 revision selection)
+
+[گزارش تکمیل اولیه A14](release/browser-v322/START-FA.md) — انتخاب نسخهٔ آرشیوی و Pin تودرتو. **RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V321 (A14 Component Revision source candidate)
 
 [گزارش A14](release/browser-v321/START-FA.md) — آرشیو نسخه‌ها و وابستگی‌ها. **PARTIAL / RUNTIME_PENDING**.
