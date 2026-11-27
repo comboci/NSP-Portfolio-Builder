@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V321 (A14 Component Revision source candidate)
+
+[گزارش A14](release/browser-v321/START-FA.md) — آرشیو نسخه‌ها و وابستگی‌ها. **PARTIAL / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V320 (A13 gate follow-up)
 
 [گزارش کنترل A13](release/browser-v320/START-FA.md) — CONDITIONAL_SOURCE_GO_A14. **RUNTIME_PENDING**.

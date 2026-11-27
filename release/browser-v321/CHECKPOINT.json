@@ -1,0 +1,46 @@
+{
+  "mission": "NSP-GE-AUDIT-02",
+  "version": "Browser V321",
+  "parent": "9465064fd8b99c9e9c39e0b8311cee286220d306",
+  "phase": "A14_COMPONENT_REVISIONS",
+  "status": "PARTIAL_SOURCE_CHANGED_RUNTIME_PENDING",
+  "findings": [
+    {
+      "id": "A14-01",
+      "description": "Common revisions archive previous root and full dependency closure; bounded lineage, legacy revision gap preserved, no silent pruning",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A14-02",
+      "description": "Nested Pinned closures validated with independent scope and depth/expansion limits; renderer uses definition identity, no hidden live substitution",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A14-04",
+      "description": "Scoped export/import retains common and hotel archives; recursively collect/remap styles in closed snapshots; assets remain recursively closed",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A14-05",
+      "description": "Pinned Detach resolves actual revision; unsafe transforms fail closed and nested dependencies remain pinned",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING"
+    }
+  ],
+  "openFindings": [
+    {
+      "id": "A14-03",
+      "description": "Properties can choose current or archived common revision; explicit relink; Pin also available in ordinary component draft",
+      "error": "anchor        const definitions=V.componentDependencies.collect(state.customComponents,[o.componentId]).map(d=>({\n        id:d.id,name:d.name,width:d.width,height:d.he"
+    }
+  ],
+  "runtime": "NOT_RUN",
+  "releaseReady": false,
+  "next": "A14_INDEPENDENT_SOURCE_AUDIT",
+  "limits": [
+    "Archive captures dependency closure at supersession time, not a fabricated reconstruction of earlier historical dependency states",
+    "Bounded 12 common archives, 8 MB combined, 2 MB per pin; refuse overflow, never prune",
+    "Nested pin requires live reference available for explicit relink and conservative combined graph validation",
+    "Pinned detach only at safe untransformed unit scale with resolvable child live definitions; exact font/glyph and appearance parity unverified",
+    "No standalone module or schema/native change; A13 runtime regression and A14 source follow-up remain open"
+  ]
+}
