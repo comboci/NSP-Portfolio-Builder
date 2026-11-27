@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "mission": "NSP-GE-001",
+  "stage": "G01",
+  "branch": "engineering/graphics-engine-evolution",
+  "baseline": {
+    "branch": "audit/v290-integrated-components",
+    "commit": "c6b781d51e39cc36a70bfbe8eec39e5d316cf5e4",
+    "browserVersion": 291
+  },
+  "candidate": {
+    "browserVersion": 292,
+    "appEntry": "index.html",
+    "commit": "CONTAINING_COMMIT",
+    "status": "SOURCE_COMPLETE / RUNTIME_PENDING",
+    "releaseReady": false,
+    "nativeChanged": false,
+    "schemaChanged": false
+  },
+  "findings": {
+    "GE-001": "SOURCE_CHANGED",
+    "GE-002": "SOURCE_CHANGED",
+    "GE-003": "SOURCE_CHANGED",
+    "GE-004": "SOURCE_CHANGED",
+    "GE-005": "SOURCE_CHANGED",
+    "GE-006": "SOURCE_CHANGED",
+    "GE-007": "SOURCE_CHANGED",
+    "GE-008": "SOURCE_CHANGED",
+    "GE-009": "OPEN",
+    "GE-010": "OPEN",
+    "GE-011": "OPEN",
+    "GE-012": "SOURCE_CHANGED"
+  },
+  "verification": {
+    "sourceReview": "DONE",
+    "gitDiffWhitespace": "CHECKED",
+    "browserRuntime": "NOT_RUN",
+    "nativeRuntime": "NOT_RUN",
+    "pdfPrint": "NOT_RUN",
+    "projectTests": "NOT_RUN",
+    "staticChecker": "NOT_RUN",
+    "build": "NOT_RUN",
+    "benchmark": "NOT_RUN",
+    "ciCd": "NOT_RUN",
+    "deploy": "NOT_RUN"
+  },
+  "next": "G02",
+  "openStages": ["G02", "G03", "G04", "G05", "G06", "G07", "G08", "G09", "G10", "G11", "G12"]
+}

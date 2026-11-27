@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V292 (Graphics G01 source candidate)
+
+شاخهٔ `engineering/graphics-engine-evolution`؛ [گزارش G01 و ماتریس پذیرش](release/browser-v292/START-FA.md). Native و داده/Schema پروژه تغییر نکرده‌اند. این نسخه فقط کاندید سورس است؛ Browser، PDF، IndexedDB و پذیرش مالک `NOT_RUN` هستند.
+
+---
+
 # NSP Portfolio Builder — Browser V291 (integrated source candidate)
 
 شاخه `audit/v290-integrated-components`؛ گزارش و وضعیت پذیرش در `release/browser-v291/START-FA.md`. Native تغییر نکرده است. نسخهٔ نهایی عملیاتی نیست؛ Browser/PDF/IndexedDB روی این کاندیدا هنوز NOT_RUN.
