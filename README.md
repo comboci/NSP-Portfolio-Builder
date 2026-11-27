@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V326 (A14 gate follow-up / owner acceptance prepared)
+
+[گزارش V326](release/browser-v326/START-FA.md) · [پذیرش مالک](release/browser-v326/OWNER-ACCEPTANCE-FA.md). **CONDITIONAL_SOURCE_GO / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V325 (A14 final source gate)
 
 [گزارش Gate مرحله A14](release/browser-v325/START-FA.md) — Restore، حفاظت کتابخانه و تاریخچه. **CONDITIONAL_SOURCE_GO / RUNTIME_PENDING**.
