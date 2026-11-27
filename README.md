@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V317 (A13 follow-up source candidate)
+
+[گزارش A13 تکمیلی](release/browser-v317/START-FA.md) — Region تودرتو، قیود هندسی و بازآرایی صریح استایل. **PARTIAL / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V316 (Graphics A13 partial source candidate)
 
 [گزارش A13](release/browser-v316/START-FA.md) — Auto Layout اختیاری متن و Region موجود؛ **PARTIAL / RUNTIME_PENDING**.
