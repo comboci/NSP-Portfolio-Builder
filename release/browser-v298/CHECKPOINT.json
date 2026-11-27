@@ -1,0 +1,12 @@
+{
+  "schema": 1, "mission": "NSP-GE-001", "stage": "G07", "branch": "engineering/graphics-engine-evolution",
+  "base": {"version": 297, "commit": "8a7f5a9e9985ea2705020215b6d8204bcd38e567"},
+  "candidate": {"version": 298, "commit": "CONTAINING_COMMIT", "status": "SOURCE_COMPLETE / RUNTIME_PENDING", "releaseReady": false},
+  "entry": "index.html",
+  "module": {"path": "graphics-core/rich-text.js", "embeddedId": "nsp-graphics-core-rich-text", "blob": "b4c1ce1b070cfe906fe99ef963c693c17e75e2f5"},
+  "features": {"characterRuns": "SOURCE_CHANGED", "paragraphPresets": "SOURCE_CHANGED", "safeLatinTracking": "SOURCE_CHANGED", "baselineGrid": "LOCAL_FRAME_ONLY", "richFlow": "SOURCE_CHANGED", "nativeCaretAndIme": "RUNTIME_PENDING"},
+  "checks": {"sourceReview": "DONE", "inlineModuleByteParity": "CHECKED", "gitDiffWhitespace": "CHECKED",
+    "browser": "NOT_RUN", "native": "NOT_RUN", "pdf": "NOT_RUN", "tests": "NOT_RUN",
+    "staticChecker": "NOT_RUN", "build": "NOT_RUN", "benchmark": "NOT_RUN", "ciCd": "NOT_RUN", "deploy": "NOT_RUN"},
+  "next": "G08", "openStages": ["G08", "G09", "G10", "G11", "G12"]
+}

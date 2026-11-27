@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V298 (Graphics G07 source candidate)
+
+شاخهٔ `engineering/graphics-engine-evolution`؛ [گزارش Typography و نمونهٔ پذیرش](release/browser-v298/START-FA.md). متن پایه و Schema محفوظ‌اند. پذیرش اجرایی `NOT_RUN`.
+
+---
+
 # NSP Portfolio Builder — Browser V297 (Graphics G06 source candidate)
 
 شاخهٔ `engineering/graphics-engine-evolution`؛ [گزارش Auto Layout](release/browser-v297/START-FA.md). چیدمان با پیش‌نمایش و اعمال صریح، بدون بازچینش خودکار صفحه‌های موجود. پذیرش `NOT_RUN`.
