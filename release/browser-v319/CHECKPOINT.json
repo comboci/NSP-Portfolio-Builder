@@ -1,0 +1,50 @@
+{
+  "mission": "NSP-GE-AUDIT-02",
+  "version": "Browser V319",
+  "parent": "a70b64f33ccd836dc062dd56018731ac7be100ed",
+  "phase": "A13_FINAL_SOURCE_REGRESSION",
+  "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+  "findings": [
+    {
+      "id": "A13-F01",
+      "name": "Clipboard: rigid transformed translation, preflight relation graph, no increment on rejection, guarded Text Flow copy/cut and truthful duplicate result",
+      "state": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-F02",
+      "name": "Component: complete subtree, one external parent, same source layer, linked text protection",
+      "state": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-F03",
+      "name": "Raw paper geometry before format change, catalog draft guard, nested resize constraint",
+      "state": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-F04",
+      "name": "Portfolio import/clone: preserve original manuscript and fragments, remap explicit source identities, invalidate old copied signature",
+      "state": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-F05",
+      "name": "Scoped page ownership, pending structural save guard, coalesced layer rollback",
+      "state": "SOURCE_CHANGED_RUNTIME_PENDING"
+    },
+    {
+      "id": "A13-F06",
+      "name": "Legacy cycle and missing-ancestor diagnostics without data migration",
+      "state": "SOURCE_CHANGED_RUNTIME_PENDING"
+    }
+  ],
+  "runtime": "NOT_RUN",
+  "releaseReady": false,
+  "next": "A14_COMPONENT_REVISIONS_SOURCE_ONLY_AFTER_REVIEW",
+  "gate": "CONDITIONAL_SOURCE_CONTINUATION_ONLY",
+  "limits": [
+    "No Build/Test/Static Checker/Runtime/CI/CD/Deployment/Merge under DEC-006",
+    "Copied Text Flow provenance requires explicit reconciliation",
+    "Legacy invalid graphs retained and reported",
+    "Scoped component revision-history preservation remains A14 scope",
+    "No exhaustive verification or storage durability claim"
+  ]
+}

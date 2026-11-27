@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V319 (A13 final source follow-up)
+
+[گزارش V319](release/browser-v319/START-FA.md) — Clipboard، Component، هندسه صفحه، انتقال پورتفولیو و حفاظت ذخیره. **SOURCE_CHANGED / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V318 (A13 independent source candidate)
 
 [گزارش ممیزی مستقل A13](release/browser-v318/START-FA.md) — هشت یافته و اصلاح سورس. **PARTIAL / RUNTIME_PENDING**.
