@@ -1,4 +1,4 @@
-<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 328</title><meta name="application-version" content="328"><style>
+<!doctype html><html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NSP Portfolio Builder — Version 329</title><meta name="application-version" content="329"><style>
 :root{font-family:Tahoma,'Segoe UI',sans-serif;color:#152638;background:#edf1f4}*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}button{cursor:pointer}header{background:#122c3c;color:#fff;padding:17px 24px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}header small{color:#a7d7dd}.shell{display:grid;grid-template-columns:235px 1fr;min-height:calc(100vh - 75px)}nav{background:#fff;border-left:1px solid #d9e1e5;padding:18px 12px}nav button{display:block;width:100%;border:0;text-align:right;background:transparent;padding:13px;border-radius:9px;margin:3px 0;color:#324453}nav button.active{background:#e4f3f3;color:#06656c;font-weight:bold}main{padding:22px;max-width:1450px;width:100%;margin:auto}.panel{background:white;border:1px solid #dbe3e7;border-radius:14px;padding:20px;margin-bottom:18px;box-shadow:0 2px 8px #17304408}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.stat{background:#f4f8fa;padding:15px;border-radius:10px}.stat b{font-size:27px;display:block}.muted{color:#647683;font-size:13px}.btn{border:1px solid #b7cbd1;border-radius:8px;background:white;padding:9px 13px;color:#174450}.primary{background:#087b80;color:white;border-color:#087b80}.danger{color:#a33}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:12px 0}.item{padding:12px;border:1px solid #e1e8eb;border-radius:9px;margin:8px 0;background:#fbfdfd}.item.selected{border-color:#09858a;background:#f1fbfa}input,select,textarea{border:1px solid #c6d5da;border-radius:7px;padding:9px;background:#fff;max-width:100%}input[type=checkbox]{accent-color:#087b80}textarea{width:100%;min-height:100px}label{display:block;font-size:13px;margin:10px 0 5px}.columns{display:grid;grid-template-columns:minmax(240px,350px) minmax(0,1fr);gap:18px}.paper{background:#fff;width:min(100%,595px);min-height:842px;margin:15px auto;padding:55px 48px;box-shadow:0 8px 30px #17304425;position:relative;overflow:hidden;direction:rtl}.paper:before{content:'NSP';position:absolute;left:45px;top:40px;color:#087b80;font-weight:900;font-size:19px}.paper h1{margin-top:65px;font-size:26px}.paper footer{position:absolute;bottom:30px;right:48px;left:48px;border-top:1px solid #ccc;padding-top:9px;font-size:11px;color:#667}.paper .hero{height:185px;background:linear-gradient(130deg,#d8eeec,#f0f4f6);display:flex;align-items:center;justify-content:center;color:#568e90;margin:20px 0}.paper img{max-width:100%;max-height:260px;object-fit:contain}.paper table{width:100%;border-collapse:collapse}.paper td,.paper th{border:1px solid #ccd6da;padding:8px}.tag{display:inline-block;border-radius:12px;padding:3px 8px;background:#e7f3f3;font-size:11px;margin:2px}.note{border-right:3px solid #087b80;padding:10px;background:#f1f7f7}.hide{display:none!important}@media(max-width:850px){.shell{grid-template-columns:1fr}nav{display:flex;overflow-x:auto;padding:8px}nav button{white-space:nowrap;width:auto}.columns{grid-template-columns:1fr}main{padding:12px}.paper{min-height:700px;padding:38px 25px}}@media print{header,nav,.no-print,.editor,.panel:not(.print-zone){display:none!important}.shell{display:block}main{padding:0;max-width:none}.print-zone{border:0;box-shadow:none;padding:0;margin:0}.paper{box-shadow:none;margin:0;min-height:297mm;width:210mm;page-break-after:always;padding:25mm 20mm}.paper:last-child{page-break-after:auto}@page{size:A4;margin:0}}
 @media(max-width:850px){header{padding:12px;gap:8px}header .toolbar{flex-wrap:wrap}nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible!important;gap:8px;padding:10px}nav .nav-group{min-width:0!important;margin:0!important}nav button.nav-subitem{white-space:normal!important;text-align:right;width:100%!important;padding:10px!important}main{min-width:0;overflow-wrap:anywhere}.panel{max-width:100%;overflow-x:auto}button,select,input{max-width:100%}#v9-design-form[hidden]{display:none!important}}
 </style><style>
@@ -478,7 +478,7 @@ header.app-header #v13-save-status{flex:1 1 240px!important;direction:rtl;text-a
   root.NSPIllustrator={path,clips,typography,validate,clipDefs,vectorMarkup,textMarkup,graphicGradient,gradientCss,coordinateSpace,pageStyle,canvasSize};
 })(typeof window!=='undefined'?window:globalThis);
 
-</script><script src="./Portfolio%20Instruction/feature.js"></script><header class="app-header"><div class="app-brand" dir="ltr"><b>NSP Portfolio Builder</b><small id="nsp-app-version">Version 328</small></div></header><input id="importFile" type="file" accept=".json,application/json" hidden onchange="importData(event)"><div class="shell"><nav id="nav"></nav><main id="app"></main></div><script id="seed" type="application/json">{"schema_version": "1.0.0", "language": "fa", "research_date": "2026-11-11", "purpose_fa": "کتابخانه محتوایی و معماری صفحات پورتفولیوی هتلی NSP", "priorities": {"P0": {"label_fa": "هسته نسخه اول", "rule_fa": "قالب و جایگاه در نسخه اول؛ محتوای عمومی پس از تأیید"}, "P1": {"label_fa": "قالب اختیاری نسخه اول", "rule_fa": "ورود پس از آماده بودن داده و شواهد پروژه"}, "P2": {"label_fa": "پس از نسخه اول", "rule_fa": "افزودن برای مخاطب خاص یا پس از اثبات توان"}}, "chapters": [{"title_fa": "هویت و دامنه", "sections": ["SEC-01", "SEC-02", "SEC-03"]}, {"title_fa": "راهکارهای اتاق و هتل", "sections": ["SEC-04", "SEC-05", "SEC-07", "SEC-06", "SEC-08", "SEC-09", "SEC-17"]}, {"title_fa": "اقتصاد و اثبات اجرا", "sections": ["SEC-10", "SEC-11"]}, {"title_fa": "تحویل، پشتیبانی و اقدام بعدی", "sections": ["SEC-12", "SEC-15", "SEC-18"]}, {"title_fa": "ضمائم فنی", "sections": ["SEC-13", "SEC-14", "SEC-16"]}], "sections": [{"id": "SEC-01", "title_fa": "کاور و شناسنامه", "title_en": "Cover and Document Identity", "goal_fa": "شناسایی نسخه و مخاطب", "audiences_fa": ["همه مخاطبان"], "references": [{"company_id": "C07", "company": "Vingcard", "documents": [{"source_id": "C07.1", "url": "https://www.vingcard.com/en/industries/hospitality"}, {"source_id": "C07.2", "url": "https://www.vingcard.com/en/resources/case-studies"}, {"source_id": "C07.3", "url": "https://www.vingcard.com/en/solutions/energy-automation/energy-management"}]}, {"company_id": "C08", "company": "Crestron", "documents": [{"source_id": "C08.1", "url": "https://zh.crestron.com/getmedia/e98bcb6f-f129-4c45-9a74-07f3145cfda1/pb_Hospitality_Technology_Solutions"}, {"source_id": "C08.2", "url": "https://www.crestron.com/Crestron/media/Crestron/WidenResources/Web%20Marketing%20Resources/Case%20Studies/CS_2025_Hotel%20Renegade.pdf?ext=.pdf"}, {"source_id": "C08.3", "url": "https://www.crestron.com/getattachment/News/Case-Studies/2021/Bloc-Hotels/CS_Updated_Bloc-Hotel_FINAL.pdf?ext=.pdf&lang=en-US"}]}], "content_types_fa": ["تصویر", "متن"], "page_template_fa": "کاور A4 با عکس مجاز و شناسه انتشار", "priority": "P0", "proposed_position_fa": "۱", "required_nsp_information_fa": "لوگو، عکس مجاز، عنوان، تاریخ و نسخه", "required_approval_ids": ["G01"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-02", "title_fa": "معرفی NSP و خلاصه اجرایی", "title_en": "Company and Executive Summary", "goal_fa": "تعریف مسئله هتل و نقش NSP", "audiences_fa": ["مالک", "مدیر هتل"], "references": [{"company_id": "C01", "company": "Schneider Electric", "documents": [{"source_id": "C01.1", "url": "https://www.se.com/ww/en/work/solutions/hotels/"}, {"source_id": "C01.2", "url": "https://www.se.com/ie/en/download/document/998-24134550/"}, {"source_id": "C01.3", "url": "https://download.se.com/files?p_Doc_Ref=UG-EcoStruxure-GuestRoomExpert&p_File_Name=UG-EcoStruxure-GuestRoomExpert_A4_EN_v2_RH20200214.pdf&p_enDocType=User+guide"}, {"source_id": "C01.4", "url": "https://www.se.com/ww/fr/assets/342/document/46127/schneider-sustainability-report-2017-2018.pdf"}]}, {"company_id": "C06", "company": "INTEREL", "documents": [{"source_id": "C06.1", "url": "https://interel.com/about"}, {"source_id": "C06.2", "url": "https://interel.com/"}, {"source_id": "C06.3", "url": "https://interel.com/videos/eos2"}]}, {"company_id": "C07", "company": "Vingcard", "documents": [{"source_id": "C07.1", "url": "https://www.vingcard.com/en/industries/hospitality"}, {"source_id": "C07.2", "url": "https://www.vingcard.com/en/resources/case-studies"}, {"source_id": "C07.3", "url": "https://www.vingcard.com/en/solutions/energy-automation/energy-management"}]}], "content_types_fa": ["متن", "تصویر"], "page_template_fa": "یک صفحه با سه بلوک تجربه، عملیات و اقتصاد", "priority": "P0", "proposed_position_fa": "۲", "required_nsp_information_fa": "شرح مصوب شرکت، محدوده جغرافیایی، نقش قرارداد و آمار قابل استناد", "required_approval_ids": ["G01", "G02"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-03", "title_fa": "نقشه راهکارها و دامنه تحویل", "title_en": "Solutions and Scope Map", "goal_fa": "مشخص کردن محدوده و پیش‌نیازها", "audiences_fa": ["مالک", "مشاور"], "references": [{"company_id": "C04", "company": "Legrand", "documents": [{"source_id": "C04.1", "url": "https://developer.legrand.com/solutions/guest-room-management-system/"}, {"source_id": "C04.2", "url": "https://www.legrand.com.sg/sites/default/files/downloads/pdf/202401%20Legrand%20Guest%20Room%20Hotel%20Solutions%20Brochure%20LD_low%20res.pdf"}, {"source_id": "C04.3", "url": "https://assets.legrand.com/general/ouidoo/pdf/legrand-guide-technique-offre-hotel.pdf"}, {"source_id": "C04.4", "url": "https://www.legrandintegratedsolutions.com/case_history/pairi-daiza-best-hotel-experience-legrand-grms"}]}, {"company_id": "C07", "company": "Vingcard", "documents": [{"source_id": "C07.1", "url": "https://www.vingcard.com/en/industries/hospitality"}, {"source_id": "C07.2", "url": "https://www.vingcard.com/en/resources/case-studies"}, {"source_id": "C07.3", "url": "https://www.vingcard.com/en/solutions/energy-automation/energy-management"}]}, {"company_id": "C08", "company": "Crestron", "documents": [{"source_id": "C08.1", "url": "https://zh.crestron.com/getmedia/e98bcb6f-f129-4c45-9a74-07f3145cfda1/pb_Hospitality_Technology_Solutions"}, {"source_id": "C08.2", "url": "https://www.crestron.com/Crestron/media/Crestron/WidenResources/Web%20Marketing%20Resources/Case%20Studies/CS_2025_Hotel%20Renegade.pdf?ext=.pdf"}, {"source_id": "C08.3", "url": "https://www.crestron.com/getattachment/News/Case-Studies/2021/Bloc-Hotels/CS_Updated_Bloc-Hotel_FINAL.pdf?ext=.pdf&lang=en-US"}]}], "content_types_fa": ["جدول", "دیاگرام"], "page_template_fa": "ماتریس فضا در برابر سامانه و وضعیت تحویل", "priority": "P0", "proposed_position_fa": "۳", "required_nsp_information_fa": "فهرست راهکارهای قابل عرضه، نقش شریک، اقلام خارج از دامنه", "required_approval_ids": ["G02", "G03", "G04", "G05", "G06", "G07", "G08"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-04", "title_fa": "سفر مهمان و سناریوهای اتاق", "title_en": "Guest Journey and Room Scenarios", "goal_fa": "ترجمه فرمان‌ها به تجربه اقامت", "audiences_fa": ["مدیر هتل", "معمار"], "references": [{"company_id": "C04", "company": "Legrand", "documents": [{"source_id": "C04.1", "url": "https://developer.legrand.com/solutions/guest-room-management-system/"}, {"source_id": "C04.2", "url": "https://www.legrand.com.sg/sites/default/files/downloads/pdf/202401%20Legrand%20Guest%20Room%20Hotel%20Solutions%20Brochure%20LD_low%20res.pdf"}, {"source_id": "C04.3", "url": "https://assets.legrand.com/general/ouidoo/pdf/legrand-guide-technique-offre-hotel.pdf"}, {"source_id": "C04.4", "url": "https://www.legrandintegratedsolutions.com/case_history/pairi-daiza-best-hotel-experience-legrand-grms"}]}, {"company_id": "C10", "company": "Lutron", "documents": [{"source_id": "C10.1", "url": "https://www.lutron.com/us/en/applications/hospitality/verticals/hospitality-and-hotel-lighting-solutions"}, {"source_id": "C10.2", "url": "https://support.lutron.com/us/en/product/myroom/documents/product-brochures"}, {"source_id": "C10.3", "url": "https://assets.lutron.com/a/documents/3685134xcaretcasestudy_english.pdf"}, {"source_id": "C10.4", "url": "https://assets.lutron.com/a/documents/The-Duke-case-study_English.pdf"}]}, {"company_id": "C16", "company": "HDL Automation", "documents": [{"source_id": "C16.1", "url": "https://www.hdlautomation.com/vancheerfile/Files/2026/5/20260513161716760.pdf"}]}], "content_types_fa": ["دیاگرام", "جدول"], "page_template_fa": "استوری‌بورد چک‌این تا خروج با سناریوهای استثنا", "priority": "P0", "proposed_position_fa": "۴", "required_nsp_information_fa": "توالی واقعی، کلید و سنسور، کنترل دستی، DND/MUR، رفتار آفلاین", "required_approval_ids": ["G03", "G07"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-05", "title_fa": "معماری GRMS و تیپ اتاق", "title_en": "GRMS Architecture and Typical Room", "goal_fa": "نمایش مسیر فرمان و حدود سامانه", "audiences_fa": ["مشاور برق", "IT"], "references": [{"company_id": "C02", "company": "ABB", "documents": [{"source_id": "C02.1", "url": "https://library.e.abb.com/public/b063157941cf403093efa4fa51b8b9d1/ABB-Hospitality-KNX-in-Hotel-Rooms_PR_EN_V1-1_9AKK108470A0975.pdf?x-sign=d59C9k2LMHx4xJUcQ06fU2EFTgFEfIz5wez9rSskelaocPK5QhuYwEdx7CKPsAMz"}, {"source_id": "C02.2", "url": "https://library.e.abb.com/public/3f6135c38ddb46d4843dec5b7e94c7cb/ABB-i-bus-KNX-and-Hospitality-KNX-in-Hotel-Rooms_PR_EN_V1-3_9AKK108470A0975.pdf?x-sign=KL7NXShUH1V8xkUMjY8WjUx7XqDswvFJwSVcLRJzMm5hfH3KMr%2FsQ1hcOdgcYyYa"}, {"source_id": "C02.3", "url": "https://new.abb.com/news/detail/116882/elevating-luxury-ambience-with-knx-building-automation-at-panorama-landscape-hotel-in-finlands-tahko-hills"}, {"source_id": "C02.4", "url": "https://www.busch-jaeger.de/media/download/Broschueren/en/ABB_Hotel_Solutions_Master_Brochure.pdf"}]}, {"company_id": "C04", "company": "Legrand", "documents": [{"source_id": "C04.1", "url": "https://developer.legrand.com/solutions/guest-room-management-system/"}, {"source_id": "C04.2", "url": "https://www.legrand.com.sg/sites/default/files/downloads/pdf/202401%20Legrand%20Guest%20Room%20Hotel%20Solutions%20Brochure%20LD_low%20res.pdf"}, {"source_id": "C04.3", "url": "https://assets.legrand.com/general/ouidoo/pdf/legrand-guide-technique-offre-hotel.pdf"}, {"source_id": "C04.4", "url": "https://www.legrandintegratedsolutions.com/case_history/pairi-daiza-best-hotel-experience-legrand-grms"}]}, {"company_id": "C18", "company": "EAE Technology", "documents": [{"source_id": "C18.1", "url": "https://www.eaetechnology.com/en/solutions/knx-hotel-grms-lighting-control-solutions"}]}], "content_types_fa": ["دیاگرام", "جدول"], "page_template_fa": "پلان تیپ در کنار دیاگرام کنترلر، باس، بار و سامانه‌های بیرونی", "priority": "P0", "proposed_position_fa": "۵–۶", "required_nsp_information_fa": "نقشه مصوب، مدل کنترلر، بار، نسخه پروتکل، حدود خطا", "required_approval_ids": ["G03", "G07"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-06", "title_fa": "IPTV و تجربه دیجیتال", "title_en": "IPTV and Digital Guest Experience", "goal_fa": "تعریف قابلیت اتاق و شبکه توزیع محتوا", "audiences_fa": ["IT", "مدیر هتل"], "references": [{"company_id": "C30", "company": "Nonius", "documents": [{"source_id": "C30.1", "url": "https://noniussolutions.com/case-studies/"}]}, {"company_id": "C31", "company": "Uniguest", "documents": [{"source_id": "C31.1", "url": "https://uniguest.com/wp-content/uploads/2024/11/Hotel-Hub-Brochure.pdf"}]}, {"company_id": "C35", "company": "Televes", "documents": [{"source_id": "C35.1", "url": "https://arantiatv.televes.com/de"}]}, {"company_id": "C37", "company": "MCOMS", "documents": [{"source_id": "C37.1", "url": "https://mcoms.com/hospitality/"}]}, {"company_id": "C40", "company": "Nomadix", "documents": [{"source_id": "C40.1", "url": "https://nomadix.com/nomadix-casting/"}]}], "content_types_fa": ["تصویر", "دیاگرام", "جدول"], "page_template_fa": "دیاگرام مسیر محتوا و نمونه سه‌مرحله‌ای Casting", "priority": "P0", "proposed_position_fa": "۷", "required_nsp_information_fa": "شبکه، مدل TV، حقوق محتوا، PMS، پاک‌سازی نشست و سازگاری", "required_approval_ids": ["G04", "G07", "G09"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-07", "title_fa": "روشنایی، پرده و رابط اتاق", "title_en": "Lighting, Shading and Room Interfaces", "goal_fa": "پیوند عملکرد کنترل با معماری و جزئیات قابل انتخاب", "audiences_fa": ["معمار", "مشاور برق"], "references": [{"company_id": "C04", "company": "Legrand", "documents": [{"source_id": "C04.1", "url": "https://developer.legrand.com/solutions/guest-room-management-system/"}, {"source_id": "C04.2", "url": "https://www.legrand.com.sg/sites/default/files/downloads/pdf/202401%20Legrand%20Guest%20Room%20Hotel%20Solutions%20Brochure%20LD_low%20res.pdf"}, {"source_id": "C04.3", "url": "https://assets.legrand.com/general/ouidoo/pdf/legrand-guide-technique-offre-hotel.pdf"}, {"source_id": "C04.4", "url": "https://www.legrandintegratedsolutions.com/case_history/pairi-daiza-best-hotel-experience-legrand-grms"}]}, {"company_id": "C10", "company": "Lutron", "documents": [{"source_id": "C10.1", "url": "https://www.lutron.com/us/en/applications/hospitality/verticals/hospitality-and-hotel-lighting-solutions"}, {"source_id": "C10.2", "url": "https://support.lutron.com/us/en/product/myroom/documents/product-brochures"}, {"source_id": "C10.3", "url": "https://assets.lutron.com/a/documents/3685134xcaretcasestudy_english.pdf"}, {"source_id": "C10.4", "url": "https://assets.lutron.com/a/documents/The-Duke-case-study_English.pdf"}]}, {"company_id": "C13", "company": "JUNG", "documents": [{"source_id": "C13.1", "url": "https://www.jung-group.com/en-DE/Catalogue/Product-solutions/Hospitality/"}]}, {"company_id": "C21", "company": "Somfy", "documents": [{"source_id": "C21.1", "url": "https://www.somfy.com/projects/building-types/hospitality"}]}, {"company_id": "C24", "company": "Casambi", "documents": [{"source_id": "C24.1", "url": "https://support.casambi.com/support/solutions/articles/12000103590-casambi-design-guide-hospitality"}]}], "content_types_fa": ["تصویر", "جدول"], "page_template_fa": "صفحه نمونه متریال و ماتریس صحنه/بار/رابط", "priority": "P1", "proposed_position_fa": "پس از صفحه ۶", "required_nsp_information_fa": "مدل و فینیش مجاز، دیمر و درایور سازگار، موتور و نصب", "required_approval_ids": ["G05"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-08", "title_fa": "مشاعات و نقشه زون‌ها", "title_en": "Public Areas and Zone Map", "goal_fa": "معرفی کاربرد بر اساس فضا و نوع کنترل", "audiences_fa": ["مدیر بهره‌برداری", "معمار"], "references": [{"company_id": "C08", "company": "Crestron", "documents": [{"source_id": "C08.1", "url": "https://zh.crestron.com/getmedia/e98bcb6f-f129-4c45-9a74-07f3145cfda1/pb_Hospitality_Technology_Solutions"}, {"source_id": "C08.2", "url": "https://www.crestron.com/Crestron/media/Crestron/WidenResources/Web%20Marketing%20Resources/Case%20Studies/CS_2025_Hotel%20Renegade.pdf?ext=.pdf"}, {"source_id": "C08.3", "url": "https://www.crestron.com/getattachment/News/Case-Studies/2021/Bloc-Hotels/CS_Updated_Bloc-Hotel_FINAL.pdf?ext=.pdf&lang=en-US"}]}, {"company_id": "C09", "company": "Zenitel", "documents": [{"source_id": "C09.1", "url": "https://zenitel.com/customer-stories"}, {"source_id": "C09.2", "url": "https://www.zenitel.com/news/professional-audio-solution-avani-hotel"}, {"source_id": "C09.3", "url": "https://www.zenitel.com/library?combine=&combine_1=&page=0"}, {"source_id": "C09.4", "url": "https://www.zenitel.com/sites/default/files/2026-05/Zenitel%20PAVA%20Brochure_EN_0.pdf"}]}, {"company_id": "C22", "company": "Helvar", "documents": [{"source_id": "C22.1", "url": "https://helvar.com/wp-content/uploads/2021/03/ZleepHotels_DATASHEET_EN.pdf"}]}, {"company_id": "C23", "company": "Signify", "documents": [{"source_id": "C23.1", "url": "https://www.signify.com/de-de/applications/guestrooms"}]}], "content_types_fa": ["دیاگرام", "تصویر", "جدول"], "page_template_fa": "پلان زون‌بندی و جدول فضا/کاربری/کنترل", "priority": "P0", "proposed_position_fa": "۸", "required_nsp_information_fa": "نقشه لابی، راهرو، رستوران و جلسه؛ نوع زون و مسئول هر سامانه", "required_approval_ids": ["G05", "G06"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-09", "title_fa": "پایش، داشبورد و اتصال به BMS", "title_en": "Monitoring, Dashboard and BMS Integration", "goal_fa": "شرح دید اپراتور، داده، هشدار و حدود فرمان", "audiences_fa": ["تأسیسات", "IT"], "references": [{"company_id": "C02", "company": "ABB", "documents": [{"source_id": "C02.1", "url": "https://library.e.abb.com/public/b063157941cf403093efa4fa51b8b9d1/ABB-Hospitality-KNX-in-Hotel-Rooms_PR_EN_V1-1_9AKK108470A0975.pdf?x-sign=d59C9k2LMHx4xJUcQ06fU2EFTgFEfIz5wez9rSskelaocPK5QhuYwEdx7CKPsAMz"}, {"source_id": "C02.2", "url": "https://library.e.abb.com/public/3f6135c38ddb46d4843dec5b7e94c7cb/ABB-i-bus-KNX-and-Hospitality-KNX-in-Hotel-Rooms_PR_EN_V1-3_9AKK108470A0975.pdf?x-sign=KL7NXShUH1V8xkUMjY8WjUx7XqDswvFJwSVcLRJzMm5hfH3KMr%2FsQ1hcOdgcYyYa"}, {"source_id": "C02.3", "url": "https://new.abb.com/news/detail/116882/elevating-luxury-ambience-with-knx-building-automation-at-panorama-landscape-hotel-in-finlands-tahko-hills"}, {"source_id": "C02.4", "url": "https://www.busch-jaeger.de/media/download/Broschueren/en/ABB_Hotel_Solutions_Master_Brochure.pdf"}]}, {"company_id": "C05", "company": "Siemens", "documents": [{"source_id": "C05.1", "url": "https://www.siemens.com/de-de/content/h-hotels-connected-operations/"}, {"source_id": "C05.2", "url": "https://sid.siemens.com/api/khub/documents/loJdAE4rucJQqR0GekqdlQ/content"}, {"source_id": "C05.3", "url": "https://references.siemens.com/en/reference/slk-moom-hotel"}]}, {"company_id": "C45", "company": "Enseo", "documents": [{"source_id": "C45.1", "url": "https://www.enseo.com/solutions/property-monitoring"}]}, {"company_id": "C47", "company": "Distech Controls", "documents": [{"source_id": "C47.1", "url": "https://www.distech-controls.com/-/media/abl/distechcontrols/files/resources/project-references/case-study_hotel-stary_poland.pdf"}]}], "content_types_fa": ["تصویر", "دیاگرام", "جدول"], "page_template_fa": "نمای داشبورد با راهنمای وضعیت و ماتریس اتصال", "priority": "P1", "proposed_position_fa": "پس از صفحه ۸", "required_nsp_information_fa": "اسکرین‌شات واقعی، داده و هشدار، نوع دسترسی، محل استقرار و نسخه BMS", "required_approval_ids": ["G07", "G08", "G09"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-10", "title_fa": "انرژی و مدل اقتصادی", "title_en": "Energy and Business Case", "goal_fa": "محاسبه سناریویی و مستندسازی نتیجه", "audiences_fa": ["مالک", "مالی", "تأسیسات"], "references": [{"company_id": "C01", "company": "Schneider Electric", "documents": [{"source_id": "C01.1", "url": "https://www.se.com/ww/en/work/solutions/hotels/"}, {"source_id": "C01.2", "url": "https://www.se.com/ie/en/download/document/998-24134550/"}, {"source_id": "C01.3", "url": "https://download.se.com/files?p_Doc_Ref=UG-EcoStruxure-GuestRoomExpert&p_File_Name=UG-EcoStruxure-GuestRoomExpert_A4_EN_v2_RH20200214.pdf&p_enDocType=User+guide"}, {"source_id": "C01.4", "url": "https://www.se.com/ww/fr/assets/342/document/46127/schneider-sustainability-report-2017-2018.pdf"}]}, {"company_id": "C03", "company": "Honeywell", "documents": [{"source_id": "C03.1", "url": "https://www.honeywell.com/us/en/industries/hospitality"}, {"source_id": "C03.2", "url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/document-lists/inncom/brochures/INNCOM_Hospitality_IoT_Brochure_01-00149.pdf"}, {"source_id": "C03.3", "url": "https://ws.buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/honeywell_INNCOM_Washington_Hilton_Case_Study.pdf"}]}, {"company_id": "C41", "company": "Verdant", "documents": [{"source_id": "C41.1", "url": "https://www.verdant.co/wp-content/uploads/2019/08/Hotel-Management-Trends-2020.pdf"}]}, {"company_id": "C44", "company": "SensorFlow", "documents": [{"source_id": "C44.1", "url": "https://www.sensorflow.co/hotel-energy-management-system/"}]}], "content_types_fa": ["جدول", "نمودار"], "page_template_fa": "صفحه روش و سناریو، به‌همراه جدول فرضیات", "priority": "P0", "proposed_position_fa": "۹–۱۰", "required_nsp_information_fa": "kWh، تعرفه، اشغال، شرایط اقلیمی، CAPEX و OPEX، مبنای مقایسه", "required_approval_ids": ["G10"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-11", "title_fa": "مطالعه موردی پروژه", "title_en": "Project Case Study", "goal_fa": "اثبات دامنه و نتیجه با پروژه مستند", "audiences_fa": ["مالک", "مشاور"], "references": [{"company_id": "C03", "company": "Honeywell", "documents": [{"source_id": "C03.1", "url": "https://www.honeywell.com/us/en/industries/hospitality"}, {"source_id": "C03.2", "url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/document-lists/inncom/brochures/INNCOM_Hospitality_IoT_Brochure_01-00149.pdf"}, {"source_id": "C03.3", "url": "https://ws.buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/honeywell_INNCOM_Washington_Hilton_Case_Study.pdf"}]}, {"company_id": "C05", "company": "Siemens", "documents": [{"source_id": "C05.1", "url": "https://www.siemens.com/de-de/content/h-hotels-connected-operations/"}, {"source_id": "C05.2", "url": "https://sid.siemens.com/api/khub/documents/loJdAE4rucJQqR0GekqdlQ/content"}, {"source_id": "C05.3", "url": "https://references.siemens.com/en/reference/slk-moom-hotel"}]}, {"company_id": "C08", "company": "Crestron", "documents": [{"source_id": "C08.1", "url": "https://zh.crestron.com/getmedia/e98bcb6f-f129-4c45-9a74-07f3145cfda1/pb_Hospitality_Technology_Solutions"}, {"source_id": "C08.2", "url": "https://www.crestron.com/Crestron/media/Crestron/WidenResources/Web%20Marketing%20Resources/Case%20Studies/CS_2025_Hotel%20Renegade.pdf?ext=.pdf"}, {"source_id": "C08.3", "url": "https://www.crestron.com/getattachment/News/Case-Studies/2021/Bloc-Hotels/CS_Updated_Bloc-Hotel_FINAL.pdf?ext=.pdf&lang=en-US"}]}, {"company_id": "C09", "company": "Zenitel", "documents": [{"source_id": "C09.1", "url": "https://zenitel.com/customer-stories"}, {"source_id": "C09.2", "url": "https://www.zenitel.com/news/professional-audio-solution-avani-hotel"}, {"source_id": "C09.3", "url": "https://www.zenitel.com/library?combine=&combine_1=&page=0"}, {"source_id": "C09.4", "url": "https://www.zenitel.com/sites/default/files/2026-05/Zenitel%20PAVA%20Brochure_EN_0.pdf"}]}, {"company_id": "C10", "company": "Lutron", "documents": [{"source_id": "C10.1", "url": "https://www.lutron.com/us/en/applications/hospitality/verticals/hospitality-and-hotel-lighting-solutions"}, {"source_id": "C10.2", "url": "https://support.lutron.com/us/en/product/myroom/documents/product-brochures"}, {"source_id": "C10.3", "url": "https://assets.lutron.com/a/documents/3685134xcaretcasestudy_english.pdf"}, {"source_id": "C10.4", "url": "https://assets.lutron.com/a/documents/The-Duke-case-study_English.pdf"}]}, {"company_id": "C34", "company": "Hoteza", "documents": [{"source_id": "C34.1", "url": "https://hoteza.com/success-stories/digital-innovation-redefining-hospitality-at-amara-hotel-with-hoteza"}]}], "content_types_fa": ["تصویر", "جدول", "نمودار"], "page_template_fa": "یک گستره با مسئله، اجرا، نقش، نتیجه و روش سنجش", "priority": "P0", "proposed_position_fa": "۱۱–۱۲", "required_nsp_information_fa": "مجوز نام و عکس، تاریخ، نقش، مدارک تحویل و داده نتیجه", "required_approval_ids": ["G01", "G02", "G10", "G11"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-12", "title_fa": "طراحی تا تحویل و پشتیبانی", "title_en": "Delivery, Commissioning and Support", "goal_fa": "تعریف مسئولیت و فرایند تحویل", "audiences_fa": ["کارفرما", "پیمانکار", "بهره‌بردار"], "references": [{"company_id": "C06", "company": "INTEREL", "documents": [{"source_id": "C06.1", "url": "https://interel.com/about"}, {"source_id": "C06.2", "url": "https://interel.com/"}, {"source_id": "C06.3", "url": "https://interel.com/videos/eos2"}]}, {"company_id": "C31", "company": "Uniguest", "documents": [{"source_id": "C31.1", "url": "https://uniguest.com/wp-content/uploads/2024/11/Hotel-Hub-Brochure.pdf"}]}, {"company_id": "C45", "company": "Enseo", "documents": [{"source_id": "C45.1", "url": "https://www.enseo.com/solutions/property-monitoring"}]}], "content_types_fa": ["دیاگرام", "جدول"], "page_template_fa": "نوار مراحل و جدول تحویل‌دادنی/مسئول/معیار پذیرش", "priority": "P0", "proposed_position_fa": "۱۳", "required_nsp_information_fa": "فرایند مصوب، FAT/SAT، آموزش، ضمانت و SLA", "required_approval_ids": ["G02", "G12"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-13", "title_fa": "یکپارچگی، داده و رفتار زمان قطعی", "title_en": "Interfaces, Data and Resilience", "goal_fa": "قابل ممیزی کردن ارتباط و حالت خرابی", "audiences_fa": ["IT", "مشاور تأسیسات"], "references": [{"company_id": "C02", "company": "ABB", "documents": [{"source_id": "C02.1", "url": "https://library.e.abb.com/public/b063157941cf403093efa4fa51b8b9d1/ABB-Hospitality-KNX-in-Hotel-Rooms_PR_EN_V1-1_9AKK108470A0975.pdf?x-sign=d59C9k2LMHx4xJUcQ06fU2EFTgFEfIz5wez9rSskelaocPK5QhuYwEdx7CKPsAMz"}, {"source_id": "C02.2", "url": "https://library.e.abb.com/public/3f6135c38ddb46d4843dec5b7e94c7cb/ABB-i-bus-KNX-and-Hospitality-KNX-in-Hotel-Rooms_PR_EN_V1-3_9AKK108470A0975.pdf?x-sign=KL7NXShUH1V8xkUMjY8WjUx7XqDswvFJwSVcLRJzMm5hfH3KMr%2FsQ1hcOdgcYyYa"}, {"source_id": "C02.3", "url": "https://new.abb.com/news/detail/116882/elevating-luxury-ambience-with-knx-building-automation-at-panorama-landscape-hotel-in-finlands-tahko-hills"}, {"source_id": "C02.4", "url": "https://www.busch-jaeger.de/media/download/Broschueren/en/ABB_Hotel_Solutions_Master_Brochure.pdf"}]}, {"company_id": "C04", "company": "Legrand", "documents": [{"source_id": "C04.1", "url": "https://developer.legrand.com/solutions/guest-room-management-system/"}, {"source_id": "C04.2", "url": "https://www.legrand.com.sg/sites/default/files/downloads/pdf/202401%20Legrand%20Guest%20Room%20Hotel%20Solutions%20Brochure%20LD_low%20res.pdf"}, {"source_id": "C04.3", "url": "https://assets.legrand.com/general/ouidoo/pdf/legrand-guide-technique-offre-hotel.pdf"}, {"source_id": "C04.4", "url": "https://www.legrandintegratedsolutions.com/case_history/pairi-daiza-best-hotel-experience-legrand-grms"}]}, {"company_id": "C40", "company": "Nomadix", "documents": [{"source_id": "C40.1", "url": "https://nomadix.com/nomadix-casting/"}]}, {"company_id": "C42", "company": "Pelican Wireless", "documents": [{"source_id": "C42.1", "url": "https://www.pelicanwireless.com/cmp-pms/"}]}, {"company_id": "C47", "company": "Distech Controls", "documents": [{"source_id": "C47.1", "url": "https://www.distech-controls.com/-/media/abl/distechcontrols/files/resources/project-references/case-study_hotel-stary_poland.pdf"}]}], "content_types_fa": ["جدول", "دیاگرام"], "page_template_fa": "ضمیمه رابط‌ها با ستون نسخه، جهت داده، مالک، آزمون و رفتار قطعی", "priority": "P1", "proposed_position_fa": "ضمیمه A", "required_nsp_information_fa": "لیست رابط‌ها، تست هر مدل و نسخه، دسترسی، پشتیبان‌گیری و حریم خصوصی", "required_approval_ids": ["G07", "G08", "G09"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-14", "title_fa": "کاتالوگ تجهیزات منتخب", "title_en": "Selected Equipment Catalogue", "goal_fa": "تسهیل بررسی مدل، ظرفیت و سازگاری", "audiences_fa": ["خرید", "مشاور برق"], "references": [{"company_id": "C04", "company": "Legrand", "documents": [{"source_id": "C04.1", "url": "https://developer.legrand.com/solutions/guest-room-management-system/"}, {"source_id": "C04.2", "url": "https://www.legrand.com.sg/sites/default/files/downloads/pdf/202401%20Legrand%20Guest%20Room%20Hotel%20Solutions%20Brochure%20LD_low%20res.pdf"}, {"source_id": "C04.3", "url": "https://assets.legrand.com/general/ouidoo/pdf/legrand-guide-technique-offre-hotel.pdf"}, {"source_id": "C04.4", "url": "https://www.legrandintegratedsolutions.com/case_history/pairi-daiza-best-hotel-experience-legrand-grms"}]}, {"company_id": "C08", "company": "Crestron", "documents": [{"source_id": "C08.1", "url": "https://zh.crestron.com/getmedia/e98bcb6f-f129-4c45-9a74-07f3145cfda1/pb_Hospitality_Technology_Solutions"}, {"source_id": "C08.2", "url": "https://www.crestron.com/Crestron/media/Crestron/WidenResources/Web%20Marketing%20Resources/Case%20Studies/CS_2025_Hotel%20Renegade.pdf?ext=.pdf"}, {"source_id": "C08.3", "url": "https://www.crestron.com/getattachment/News/Case-Studies/2021/Bloc-Hotels/CS_Updated_Bloc-Hotel_FINAL.pdf?ext=.pdf&lang=en-US"}]}, {"company_id": "C13", "company": "JUNG", "documents": [{"source_id": "C13.1", "url": "https://www.jung-group.com/en-DE/Catalogue/Product-solutions/Hospitality/"}]}, {"company_id": "C15", "company": "Hager", "documents": [{"source_id": "C15.1", "url": "https://assets.hager.com/step-content/P/HA_22808530/Document/std.lang.all/19DE0075_01_BRO_HBE_ZWECKBAU.pdf"}]}, {"company_id": "C27", "company": "Samsung", "documents": [{"source_id": "C27.1", "url": "https://www.samsung.com/de/business/commercial-tvs/hotel-tv/hf8000f-hg32f800feuxen/"}]}], "content_types_fa": ["جدول", "تصویر"], "page_template_fa": "کارت تجهیز با مدل، کاربرد، مشخصات و لینک دیتاشیت", "priority": "P1", "proposed_position_fa": "ضمیمه B", "required_nsp_information_fa": "دیتاشیت، SKU، وضعیت عرضه، تصویر، استاندارد و گارانتی", "required_approval_ids": ["G02", "G03", "G04", "G05"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-15", "title_fa": "بازسازی هتل در حال فعالیت", "title_en": "Live Hotel Retrofit", "goal_fa": "بیان مراحل اجرا، محدودیت و تداوم سرویس", "audiences_fa": ["مالک", "مدیر هتل"], "references": [{"company_id": "C11", "company": "WAGO", "documents": [{"source_id": "C11.1", "url": "https://www.wago.com/de/branchen/gebaeudetechnik/referenz-radisson-blu"}]}, {"company_id": "C24", "company": "Casambi", "documents": [{"source_id": "C24.1", "url": "https://support.casambi.com/support/solutions/articles/12000103590-casambi-design-guide-hospitality"}]}, {"company_id": "C47", "company": "Distech Controls", "documents": [{"source_id": "C47.1", "url": "https://www.distech-controls.com/-/media/abl/distechcontrols/files/resources/project-references/case-study_hotel-stary_poland.pdf"}]}, {"company_id": "C48", "company": "Trane", "documents": [{"source_id": "C48.1", "url": "https://www.trane.com/content/dam/Trane/Commercial/global/case-studies/lodging-and-entertainment/Grand-Hyatt-New-York/CASE-SLX480-EN_04202020.pdf"}]}], "content_types_fa": ["دیاگرام", "جدول"], "page_template_fa": "مقایسه پروژه جدید و بازسازی، فازبندی طبقات و نقاط بازگشت", "priority": "P1", "proposed_position_fa": "پس از صفحه ۱۳", "required_nsp_information_fa": "برنامه قطعی، آزمون پایلوت، نقشه موجود، نمونه پروژه و برنامه بازگشت", "required_approval_ids": ["G11", "G12"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-16", "title_fa": "دسترسی و اعتبار ورود", "title_en": "Access and Credentials", "goal_fa": "شرح گردش‌کار دسترسی مهمان و پرسنل", "audiences_fa": ["امنیت", "پذیرش", "IT"], "references": [{"company_id": "C07", "company": "Vingcard", "documents": [{"source_id": "C07.1", "url": "https://www.vingcard.com/en/industries/hospitality"}, {"source_id": "C07.2", "url": "https://www.vingcard.com/en/resources/case-studies"}, {"source_id": "C07.3", "url": "https://www.vingcard.com/en/solutions/energy-automation/energy-management"}]}, {"company_id": "C49", "company": "dormakaba", "documents": [{"source_id": "C49.1", "url": "https://www.dormakaba.com/ch-en/use-case/adoro"}]}, {"company_id": "C50", "company": "SALTO", "documents": [{"source_id": "C50.1", "url": "https://saltosystems.com/sv-se/segment/referensobjekt/lasala-plaza-hotel/"}]}], "content_types_fa": ["دیاگرام", "جدول"], "page_template_fa": "مسیر صدور و لغو اعتبار در کنار جدول نقش و زون", "priority": "P2", "proposed_position_fa": "ضمیمه اختیاری", "required_nsp_information_fa": "سازنده قفل، نسخه، مدل اعتبار، لاگ و رفتار قطعی", "required_approval_ids": ["G06", "G07", "G09"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-17", "title_fa": "پایش چند هتل", "title_en": "Multi-property Operations", "goal_fa": "نمایش قابلیت مقایسه و کنترل سبد دارایی", "audiences_fa": ["مالک زنجیره", "مدیر انرژی"], "references": [{"company_id": "C05", "company": "Siemens", "documents": [{"source_id": "C05.1", "url": "https://www.siemens.com/de-de/content/h-hotels-connected-operations/"}, {"source_id": "C05.2", "url": "https://sid.siemens.com/api/khub/documents/loJdAE4rucJQqR0GekqdlQ/content"}, {"source_id": "C05.3", "url": "https://references.siemens.com/en/reference/slk-moom-hotel"}]}, {"company_id": "C43", "company": "VDA Telkonet", "documents": [{"source_id": "C43.1", "url": "https://vda-telkonet.com/wp-content/uploads/2024/05/Leaflet-Etheos-EN-Web.pdf"}]}], "content_types_fa": ["نمودار", "جدول"], "page_template_fa": "نمای سلسله‌مراتب هتل/طبقه/اتاق و KPI قابل مقایسه", "priority": "P2", "proposed_position_fa": "بعد از داشبورد", "required_nsp_information_fa": "نمونه استقرار، جداسازی داده، کنتورها و روش نرمال‌سازی", "required_approval_ids": ["G08", "G09", "G10"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-18", "title_fa": "گام بعدی و اطلاعات تماس", "title_en": "Next Step and Contact", "goal_fa": "تبدیل مطالعه پورتفولیو به درخواست جلسه یا بازدید", "audiences_fa": ["همه مخاطبان"], "references": [{"company_id": "C06", "company": "INTEREL", "documents": [{"source_id": "C06.1", "url": "https://interel.com/about"}, {"source_id": "C06.2", "url": "https://interel.com/"}, {"source_id": "C06.3", "url": "https://interel.com/videos/eos2"}]}, {"company_id": "C07", "company": "Vingcard", "documents": [{"source_id": "C07.1", "url": "https://www.vingcard.com/en/industries/hospitality"}, {"source_id": "C07.2", "url": "https://www.vingcard.com/en/resources/case-studies"}, {"source_id": "C07.3", "url": "https://www.vingcard.com/en/solutions/energy-automation/energy-management"}]}, {"company_id": "C44", "company": "SensorFlow", "documents": [{"source_id": "C44.1", "url": "https://www.sensorflow.co/hotel-energy-management-system/"}]}], "content_types_fa": ["متن", "جدول"], "page_template_fa": "یک صفحه تماس و ورودی‌های جلسه کشف نیاز", "priority": "P0", "proposed_position_fa": "۱۴", "required_nsp_information_fa": "کانال تماس رسمی، مسئول پاسخ، مدارک اولیه موردنیاز", "required_approval_ids": ["G01", "G02"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}], "approval_register": [{"id": "G01", "title_fa": "هویت، لوگو، تصویر، اطلاعات تماس و حقوق انتشار", "suggested_owner_fa": "مدیریت و بازاریابی", "required_evidence_fa": "هویت مصوب و مجوز مکتوب عکس، برند و نام", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G02", "title_fa": "نقش NSP، نوع همکاری، دامنه خدمات، طراحی، تأمین، اجرا و پشتیبانی", "suggested_owner_fa": "مدیریت و قراردادها", "required_evidence_fa": "ماتریس مسئولیت و نمونه دامنه قرارداد", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G03", "title_fa": "GRMS، حضور، HVAC، DND/MUR، صحنه‌ها، Override و رفتار آفلاین", "suggested_owner_fa": "مهندسی محصول", "required_evidence_fa": "BOM و آزمون پذیرش سناریو برای مدل و نسخه مشخص", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G04", "title_fa": "IPTV، VOD، Casting، TV، Signage و خدمات محتوا", "suggested_owner_fa": "مهندسی IPTV و مسئول محتوا", "required_evidence_fa": "ماتریس مدل TV، تست پایلوت و حقوق نمایش محتوا", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G05", "title_fa": "دیمینگ، درایور، سایه‌انداز، سنسور و رابط‌های معماری", "suggested_owner_fa": "مهندسی برق و طراحی", "required_evidence_fa": "لیست مدل و تست بار واقعی", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G06", "title_fa": "کنترل مشاعات، قفل، کلید دیجیتال، صوت و پیجینگ", "suggested_owner_fa": "مهندسی پروژه و ایمنی", "required_evidence_fa": "نقشه زون، مشخصات و تست پذیرش؛ برای کاربرد اضطراری مدرک انطباق مستقل", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G07", "title_fa": "اتصال PMS، BMS، ACS و پروتکل KNX/BACnet/DALI/Modbus یا API", "suggested_owner_fa": "مهندسی یکپارچگی", "required_evidence_fa": "نام و نسخه دو طرف، جهت داده، رخدادها و سناریوی خرابی", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G08", "title_fa": "داشبورد، آلارم، کنتور، پایش و تجمیع چندسایتی", "suggested_owner_fa": "تیم نرم‌افزار و بهره‌برداری", "required_evidence_fa": "دمو واقعی، نوع نقاط داده، ظرفیت و سطح دسترسی", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G09", "title_fa": "شبکه، ابر/محلی، حریم خصوصی، داده مهمان، امنیت و پاک‌سازی Casting", "suggested_owner_fa": "مسئول IT و امنیت", "required_evidence_fa": "دیاگرام شبکه، جریان داده، زمان نگهداری و آزمون پاک‌سازی", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G10", "title_fa": "صرفه‌جویی، کاهش هزینه، بازگشت سرمایه و درآمد منتسب", "suggested_owner_fa": "مالی و انرژی", "required_evidence_fa": "داده خام، روش سنجش، دوره، خط مبنا، مفروضات و تأیید مالک", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G11", "title_fa": "پروژه‌های اجراشده، تعداد اتاق/سایت، نقش و نتیجه", "suggested_owner_fa": "مدیر پروژه و کارفرما", "required_evidence_fa": "صورتجلسه تحویل، نقش قرارداد، مجوز انتشار و مدرک نتیجه", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G12", "title_fa": "FAT/SAT، راه‌اندازی، آموزش، نگهداری، SLA، ضمانت و اجرای فازبندی", "suggested_owner_fa": "مدیر خدمات و تحویل", "required_evidence_fa": "رویه مصوب، قرارداد خدمات و معیارهای پذیرش", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}]}</script><script>
+</script><script src="./Portfolio%20Instruction/feature.js"></script><header class="app-header"><div class="app-brand" dir="ltr"><b>NSP Portfolio Builder</b><small id="nsp-app-version">Version 329</small></div></header><input id="importFile" type="file" accept=".json,application/json" hidden onchange="importData(event)"><div class="shell"><nav id="nav"></nav><main id="app"></main></div><script id="seed" type="application/json">{"schema_version": "1.0.0", "language": "fa", "research_date": "2026-11-11", "purpose_fa": "کتابخانه محتوایی و معماری صفحات پورتفولیوی هتلی NSP", "priorities": {"P0": {"label_fa": "هسته نسخه اول", "rule_fa": "قالب و جایگاه در نسخه اول؛ محتوای عمومی پس از تأیید"}, "P1": {"label_fa": "قالب اختیاری نسخه اول", "rule_fa": "ورود پس از آماده بودن داده و شواهد پروژه"}, "P2": {"label_fa": "پس از نسخه اول", "rule_fa": "افزودن برای مخاطب خاص یا پس از اثبات توان"}}, "chapters": [{"title_fa": "هویت و دامنه", "sections": ["SEC-01", "SEC-02", "SEC-03"]}, {"title_fa": "راهکارهای اتاق و هتل", "sections": ["SEC-04", "SEC-05", "SEC-07", "SEC-06", "SEC-08", "SEC-09", "SEC-17"]}, {"title_fa": "اقتصاد و اثبات اجرا", "sections": ["SEC-10", "SEC-11"]}, {"title_fa": "تحویل، پشتیبانی و اقدام بعدی", "sections": ["SEC-12", "SEC-15", "SEC-18"]}, {"title_fa": "ضمائم فنی", "sections": ["SEC-13", "SEC-14", "SEC-16"]}], "sections": [{"id": "SEC-01", "title_fa": "کاور و شناسنامه", "title_en": "Cover and Document Identity", "goal_fa": "شناسایی نسخه و مخاطب", "audiences_fa": ["همه مخاطبان"], "references": [{"company_id": "C07", "company": "Vingcard", "documents": [{"source_id": "C07.1", "url": "https://www.vingcard.com/en/industries/hospitality"}, {"source_id": "C07.2", "url": "https://www.vingcard.com/en/resources/case-studies"}, {"source_id": "C07.3", "url": "https://www.vingcard.com/en/solutions/energy-automation/energy-management"}]}, {"company_id": "C08", "company": "Crestron", "documents": [{"source_id": "C08.1", "url": "https://zh.crestron.com/getmedia/e98bcb6f-f129-4c45-9a74-07f3145cfda1/pb_Hospitality_Technology_Solutions"}, {"source_id": "C08.2", "url": "https://www.crestron.com/Crestron/media/Crestron/WidenResources/Web%20Marketing%20Resources/Case%20Studies/CS_2025_Hotel%20Renegade.pdf?ext=.pdf"}, {"source_id": "C08.3", "url": "https://www.crestron.com/getattachment/News/Case-Studies/2021/Bloc-Hotels/CS_Updated_Bloc-Hotel_FINAL.pdf?ext=.pdf&lang=en-US"}]}], "content_types_fa": ["تصویر", "متن"], "page_template_fa": "کاور A4 با عکس مجاز و شناسه انتشار", "priority": "P0", "proposed_position_fa": "۱", "required_nsp_information_fa": "لوگو، عکس مجاز، عنوان، تاریخ و نسخه", "required_approval_ids": ["G01"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-02", "title_fa": "معرفی NSP و خلاصه اجرایی", "title_en": "Company and Executive Summary", "goal_fa": "تعریف مسئله هتل و نقش NSP", "audiences_fa": ["مالک", "مدیر هتل"], "references": [{"company_id": "C01", "company": "Schneider Electric", "documents": [{"source_id": "C01.1", "url": "https://www.se.com/ww/en/work/solutions/hotels/"}, {"source_id": "C01.2", "url": "https://www.se.com/ie/en/download/document/998-24134550/"}, {"source_id": "C01.3", "url": "https://download.se.com/files?p_Doc_Ref=UG-EcoStruxure-GuestRoomExpert&p_File_Name=UG-EcoStruxure-GuestRoomExpert_A4_EN_v2_RH20200214.pdf&p_enDocType=User+guide"}, {"source_id": "C01.4", "url": "https://www.se.com/ww/fr/assets/342/document/46127/schneider-sustainability-report-2017-2018.pdf"}]}, {"company_id": "C06", "company": "INTEREL", "documents": [{"source_id": "C06.1", "url": "https://interel.com/about"}, {"source_id": "C06.2", "url": "https://interel.com/"}, {"source_id": "C06.3", "url": "https://interel.com/videos/eos2"}]}, {"company_id": "C07", "company": "Vingcard", "documents": [{"source_id": "C07.1", "url": "https://www.vingcard.com/en/industries/hospitality"}, {"source_id": "C07.2", "url": "https://www.vingcard.com/en/resources/case-studies"}, {"source_id": "C07.3", "url": "https://www.vingcard.com/en/solutions/energy-automation/energy-management"}]}], "content_types_fa": ["متن", "تصویر"], "page_template_fa": "یک صفحه با سه بلوک تجربه، عملیات و اقتصاد", "priority": "P0", "proposed_position_fa": "۲", "required_nsp_information_fa": "شرح مصوب شرکت، محدوده جغرافیایی، نقش قرارداد و آمار قابل استناد", "required_approval_ids": ["G01", "G02"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-03", "title_fa": "نقشه راهکارها و دامنه تحویل", "title_en": "Solutions and Scope Map", "goal_fa": "مشخص کردن محدوده و پیش‌نیازها", "audiences_fa": ["مالک", "مشاور"], "references": [{"company_id": "C04", "company": "Legrand", "documents": [{"source_id": "C04.1", "url": "https://developer.legrand.com/solutions/guest-room-management-system/"}, {"source_id": "C04.2", "url": "https://www.legrand.com.sg/sites/default/files/downloads/pdf/202401%20Legrand%20Guest%20Room%20Hotel%20Solutions%20Brochure%20LD_low%20res.pdf"}, {"source_id": "C04.3", "url": "https://assets.legrand.com/general/ouidoo/pdf/legrand-guide-technique-offre-hotel.pdf"}, {"source_id": "C04.4", "url": "https://www.legrandintegratedsolutions.com/case_history/pairi-daiza-best-hotel-experience-legrand-grms"}]}, {"company_id": "C07", "company": "Vingcard", "documents": [{"source_id": "C07.1", "url": "https://www.vingcard.com/en/industries/hospitality"}, {"source_id": "C07.2", "url": "https://www.vingcard.com/en/resources/case-studies"}, {"source_id": "C07.3", "url": "https://www.vingcard.com/en/solutions/energy-automation/energy-management"}]}, {"company_id": "C08", "company": "Crestron", "documents": [{"source_id": "C08.1", "url": "https://zh.crestron.com/getmedia/e98bcb6f-f129-4c45-9a74-07f3145cfda1/pb_Hospitality_Technology_Solutions"}, {"source_id": "C08.2", "url": "https://www.crestron.com/Crestron/media/Crestron/WidenResources/Web%20Marketing%20Resources/Case%20Studies/CS_2025_Hotel%20Renegade.pdf?ext=.pdf"}, {"source_id": "C08.3", "url": "https://www.crestron.com/getattachment/News/Case-Studies/2021/Bloc-Hotels/CS_Updated_Bloc-Hotel_FINAL.pdf?ext=.pdf&lang=en-US"}]}], "content_types_fa": ["جدول", "دیاگرام"], "page_template_fa": "ماتریس فضا در برابر سامانه و وضعیت تحویل", "priority": "P0", "proposed_position_fa": "۳", "required_nsp_information_fa": "فهرست راهکارهای قابل عرضه، نقش شریک، اقلام خارج از دامنه", "required_approval_ids": ["G02", "G03", "G04", "G05", "G06", "G07", "G08"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-04", "title_fa": "سفر مهمان و سناریوهای اتاق", "title_en": "Guest Journey and Room Scenarios", "goal_fa": "ترجمه فرمان‌ها به تجربه اقامت", "audiences_fa": ["مدیر هتل", "معمار"], "references": [{"company_id": "C04", "company": "Legrand", "documents": [{"source_id": "C04.1", "url": "https://developer.legrand.com/solutions/guest-room-management-system/"}, {"source_id": "C04.2", "url": "https://www.legrand.com.sg/sites/default/files/downloads/pdf/202401%20Legrand%20Guest%20Room%20Hotel%20Solutions%20Brochure%20LD_low%20res.pdf"}, {"source_id": "C04.3", "url": "https://assets.legrand.com/general/ouidoo/pdf/legrand-guide-technique-offre-hotel.pdf"}, {"source_id": "C04.4", "url": "https://www.legrandintegratedsolutions.com/case_history/pairi-daiza-best-hotel-experience-legrand-grms"}]}, {"company_id": "C10", "company": "Lutron", "documents": [{"source_id": "C10.1", "url": "https://www.lutron.com/us/en/applications/hospitality/verticals/hospitality-and-hotel-lighting-solutions"}, {"source_id": "C10.2", "url": "https://support.lutron.com/us/en/product/myroom/documents/product-brochures"}, {"source_id": "C10.3", "url": "https://assets.lutron.com/a/documents/3685134xcaretcasestudy_english.pdf"}, {"source_id": "C10.4", "url": "https://assets.lutron.com/a/documents/The-Duke-case-study_English.pdf"}]}, {"company_id": "C16", "company": "HDL Automation", "documents": [{"source_id": "C16.1", "url": "https://www.hdlautomation.com/vancheerfile/Files/2026/5/20260513161716760.pdf"}]}], "content_types_fa": ["دیاگرام", "جدول"], "page_template_fa": "استوری‌بورد چک‌این تا خروج با سناریوهای استثنا", "priority": "P0", "proposed_position_fa": "۴", "required_nsp_information_fa": "توالی واقعی، کلید و سنسور، کنترل دستی، DND/MUR، رفتار آفلاین", "required_approval_ids": ["G03", "G07"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-05", "title_fa": "معماری GRMS و تیپ اتاق", "title_en": "GRMS Architecture and Typical Room", "goal_fa": "نمایش مسیر فرمان و حدود سامانه", "audiences_fa": ["مشاور برق", "IT"], "references": [{"company_id": "C02", "company": "ABB", "documents": [{"source_id": "C02.1", "url": "https://library.e.abb.com/public/b063157941cf403093efa4fa51b8b9d1/ABB-Hospitality-KNX-in-Hotel-Rooms_PR_EN_V1-1_9AKK108470A0975.pdf?x-sign=d59C9k2LMHx4xJUcQ06fU2EFTgFEfIz5wez9rSskelaocPK5QhuYwEdx7CKPsAMz"}, {"source_id": "C02.2", "url": "https://library.e.abb.com/public/3f6135c38ddb46d4843dec5b7e94c7cb/ABB-i-bus-KNX-and-Hospitality-KNX-in-Hotel-Rooms_PR_EN_V1-3_9AKK108470A0975.pdf?x-sign=KL7NXShUH1V8xkUMjY8WjUx7XqDswvFJwSVcLRJzMm5hfH3KMr%2FsQ1hcOdgcYyYa"}, {"source_id": "C02.3", "url": "https://new.abb.com/news/detail/116882/elevating-luxury-ambience-with-knx-building-automation-at-panorama-landscape-hotel-in-finlands-tahko-hills"}, {"source_id": "C02.4", "url": "https://www.busch-jaeger.de/media/download/Broschueren/en/ABB_Hotel_Solutions_Master_Brochure.pdf"}]}, {"company_id": "C04", "company": "Legrand", "documents": [{"source_id": "C04.1", "url": "https://developer.legrand.com/solutions/guest-room-management-system/"}, {"source_id": "C04.2", "url": "https://www.legrand.com.sg/sites/default/files/downloads/pdf/202401%20Legrand%20Guest%20Room%20Hotel%20Solutions%20Brochure%20LD_low%20res.pdf"}, {"source_id": "C04.3", "url": "https://assets.legrand.com/general/ouidoo/pdf/legrand-guide-technique-offre-hotel.pdf"}, {"source_id": "C04.4", "url": "https://www.legrandintegratedsolutions.com/case_history/pairi-daiza-best-hotel-experience-legrand-grms"}]}, {"company_id": "C18", "company": "EAE Technology", "documents": [{"source_id": "C18.1", "url": "https://www.eaetechnology.com/en/solutions/knx-hotel-grms-lighting-control-solutions"}]}], "content_types_fa": ["دیاگرام", "جدول"], "page_template_fa": "پلان تیپ در کنار دیاگرام کنترلر، باس، بار و سامانه‌های بیرونی", "priority": "P0", "proposed_position_fa": "۵–۶", "required_nsp_information_fa": "نقشه مصوب، مدل کنترلر، بار، نسخه پروتکل، حدود خطا", "required_approval_ids": ["G03", "G07"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-06", "title_fa": "IPTV و تجربه دیجیتال", "title_en": "IPTV and Digital Guest Experience", "goal_fa": "تعریف قابلیت اتاق و شبکه توزیع محتوا", "audiences_fa": ["IT", "مدیر هتل"], "references": [{"company_id": "C30", "company": "Nonius", "documents": [{"source_id": "C30.1", "url": "https://noniussolutions.com/case-studies/"}]}, {"company_id": "C31", "company": "Uniguest", "documents": [{"source_id": "C31.1", "url": "https://uniguest.com/wp-content/uploads/2024/11/Hotel-Hub-Brochure.pdf"}]}, {"company_id": "C35", "company": "Televes", "documents": [{"source_id": "C35.1", "url": "https://arantiatv.televes.com/de"}]}, {"company_id": "C37", "company": "MCOMS", "documents": [{"source_id": "C37.1", "url": "https://mcoms.com/hospitality/"}]}, {"company_id": "C40", "company": "Nomadix", "documents": [{"source_id": "C40.1", "url": "https://nomadix.com/nomadix-casting/"}]}], "content_types_fa": ["تصویر", "دیاگرام", "جدول"], "page_template_fa": "دیاگرام مسیر محتوا و نمونه سه‌مرحله‌ای Casting", "priority": "P0", "proposed_position_fa": "۷", "required_nsp_information_fa": "شبکه، مدل TV، حقوق محتوا، PMS، پاک‌سازی نشست و سازگاری", "required_approval_ids": ["G04", "G07", "G09"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-07", "title_fa": "روشنایی، پرده و رابط اتاق", "title_en": "Lighting, Shading and Room Interfaces", "goal_fa": "پیوند عملکرد کنترل با معماری و جزئیات قابل انتخاب", "audiences_fa": ["معمار", "مشاور برق"], "references": [{"company_id": "C04", "company": "Legrand", "documents": [{"source_id": "C04.1", "url": "https://developer.legrand.com/solutions/guest-room-management-system/"}, {"source_id": "C04.2", "url": "https://www.legrand.com.sg/sites/default/files/downloads/pdf/202401%20Legrand%20Guest%20Room%20Hotel%20Solutions%20Brochure%20LD_low%20res.pdf"}, {"source_id": "C04.3", "url": "https://assets.legrand.com/general/ouidoo/pdf/legrand-guide-technique-offre-hotel.pdf"}, {"source_id": "C04.4", "url": "https://www.legrandintegratedsolutions.com/case_history/pairi-daiza-best-hotel-experience-legrand-grms"}]}, {"company_id": "C10", "company": "Lutron", "documents": [{"source_id": "C10.1", "url": "https://www.lutron.com/us/en/applications/hospitality/verticals/hospitality-and-hotel-lighting-solutions"}, {"source_id": "C10.2", "url": "https://support.lutron.com/us/en/product/myroom/documents/product-brochures"}, {"source_id": "C10.3", "url": "https://assets.lutron.com/a/documents/3685134xcaretcasestudy_english.pdf"}, {"source_id": "C10.4", "url": "https://assets.lutron.com/a/documents/The-Duke-case-study_English.pdf"}]}, {"company_id": "C13", "company": "JUNG", "documents": [{"source_id": "C13.1", "url": "https://www.jung-group.com/en-DE/Catalogue/Product-solutions/Hospitality/"}]}, {"company_id": "C21", "company": "Somfy", "documents": [{"source_id": "C21.1", "url": "https://www.somfy.com/projects/building-types/hospitality"}]}, {"company_id": "C24", "company": "Casambi", "documents": [{"source_id": "C24.1", "url": "https://support.casambi.com/support/solutions/articles/12000103590-casambi-design-guide-hospitality"}]}], "content_types_fa": ["تصویر", "جدول"], "page_template_fa": "صفحه نمونه متریال و ماتریس صحنه/بار/رابط", "priority": "P1", "proposed_position_fa": "پس از صفحه ۶", "required_nsp_information_fa": "مدل و فینیش مجاز، دیمر و درایور سازگار، موتور و نصب", "required_approval_ids": ["G05"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-08", "title_fa": "مشاعات و نقشه زون‌ها", "title_en": "Public Areas and Zone Map", "goal_fa": "معرفی کاربرد بر اساس فضا و نوع کنترل", "audiences_fa": ["مدیر بهره‌برداری", "معمار"], "references": [{"company_id": "C08", "company": "Crestron", "documents": [{"source_id": "C08.1", "url": "https://zh.crestron.com/getmedia/e98bcb6f-f129-4c45-9a74-07f3145cfda1/pb_Hospitality_Technology_Solutions"}, {"source_id": "C08.2", "url": "https://www.crestron.com/Crestron/media/Crestron/WidenResources/Web%20Marketing%20Resources/Case%20Studies/CS_2025_Hotel%20Renegade.pdf?ext=.pdf"}, {"source_id": "C08.3", "url": "https://www.crestron.com/getattachment/News/Case-Studies/2021/Bloc-Hotels/CS_Updated_Bloc-Hotel_FINAL.pdf?ext=.pdf&lang=en-US"}]}, {"company_id": "C09", "company": "Zenitel", "documents": [{"source_id": "C09.1", "url": "https://zenitel.com/customer-stories"}, {"source_id": "C09.2", "url": "https://www.zenitel.com/news/professional-audio-solution-avani-hotel"}, {"source_id": "C09.3", "url": "https://www.zenitel.com/library?combine=&combine_1=&page=0"}, {"source_id": "C09.4", "url": "https://www.zenitel.com/sites/default/files/2026-05/Zenitel%20PAVA%20Brochure_EN_0.pdf"}]}, {"company_id": "C22", "company": "Helvar", "documents": [{"source_id": "C22.1", "url": "https://helvar.com/wp-content/uploads/2021/03/ZleepHotels_DATASHEET_EN.pdf"}]}, {"company_id": "C23", "company": "Signify", "documents": [{"source_id": "C23.1", "url": "https://www.signify.com/de-de/applications/guestrooms"}]}], "content_types_fa": ["دیاگرام", "تصویر", "جدول"], "page_template_fa": "پلان زون‌بندی و جدول فضا/کاربری/کنترل", "priority": "P0", "proposed_position_fa": "۸", "required_nsp_information_fa": "نقشه لابی، راهرو، رستوران و جلسه؛ نوع زون و مسئول هر سامانه", "required_approval_ids": ["G05", "G06"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-09", "title_fa": "پایش، داشبورد و اتصال به BMS", "title_en": "Monitoring, Dashboard and BMS Integration", "goal_fa": "شرح دید اپراتور، داده، هشدار و حدود فرمان", "audiences_fa": ["تأسیسات", "IT"], "references": [{"company_id": "C02", "company": "ABB", "documents": [{"source_id": "C02.1", "url": "https://library.e.abb.com/public/b063157941cf403093efa4fa51b8b9d1/ABB-Hospitality-KNX-in-Hotel-Rooms_PR_EN_V1-1_9AKK108470A0975.pdf?x-sign=d59C9k2LMHx4xJUcQ06fU2EFTgFEfIz5wez9rSskelaocPK5QhuYwEdx7CKPsAMz"}, {"source_id": "C02.2", "url": "https://library.e.abb.com/public/3f6135c38ddb46d4843dec5b7e94c7cb/ABB-i-bus-KNX-and-Hospitality-KNX-in-Hotel-Rooms_PR_EN_V1-3_9AKK108470A0975.pdf?x-sign=KL7NXShUH1V8xkUMjY8WjUx7XqDswvFJwSVcLRJzMm5hfH3KMr%2FsQ1hcOdgcYyYa"}, {"source_id": "C02.3", "url": "https://new.abb.com/news/detail/116882/elevating-luxury-ambience-with-knx-building-automation-at-panorama-landscape-hotel-in-finlands-tahko-hills"}, {"source_id": "C02.4", "url": "https://www.busch-jaeger.de/media/download/Broschueren/en/ABB_Hotel_Solutions_Master_Brochure.pdf"}]}, {"company_id": "C05", "company": "Siemens", "documents": [{"source_id": "C05.1", "url": "https://www.siemens.com/de-de/content/h-hotels-connected-operations/"}, {"source_id": "C05.2", "url": "https://sid.siemens.com/api/khub/documents/loJdAE4rucJQqR0GekqdlQ/content"}, {"source_id": "C05.3", "url": "https://references.siemens.com/en/reference/slk-moom-hotel"}]}, {"company_id": "C45", "company": "Enseo", "documents": [{"source_id": "C45.1", "url": "https://www.enseo.com/solutions/property-monitoring"}]}, {"company_id": "C47", "company": "Distech Controls", "documents": [{"source_id": "C47.1", "url": "https://www.distech-controls.com/-/media/abl/distechcontrols/files/resources/project-references/case-study_hotel-stary_poland.pdf"}]}], "content_types_fa": ["تصویر", "دیاگرام", "جدول"], "page_template_fa": "نمای داشبورد با راهنمای وضعیت و ماتریس اتصال", "priority": "P1", "proposed_position_fa": "پس از صفحه ۸", "required_nsp_information_fa": "اسکرین‌شات واقعی، داده و هشدار، نوع دسترسی، محل استقرار و نسخه BMS", "required_approval_ids": ["G07", "G08", "G09"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-10", "title_fa": "انرژی و مدل اقتصادی", "title_en": "Energy and Business Case", "goal_fa": "محاسبه سناریویی و مستندسازی نتیجه", "audiences_fa": ["مالک", "مالی", "تأسیسات"], "references": [{"company_id": "C01", "company": "Schneider Electric", "documents": [{"source_id": "C01.1", "url": "https://www.se.com/ww/en/work/solutions/hotels/"}, {"source_id": "C01.2", "url": "https://www.se.com/ie/en/download/document/998-24134550/"}, {"source_id": "C01.3", "url": "https://download.se.com/files?p_Doc_Ref=UG-EcoStruxure-GuestRoomExpert&p_File_Name=UG-EcoStruxure-GuestRoomExpert_A4_EN_v2_RH20200214.pdf&p_enDocType=User+guide"}, {"source_id": "C01.4", "url": "https://www.se.com/ww/fr/assets/342/document/46127/schneider-sustainability-report-2017-2018.pdf"}]}, {"company_id": "C03", "company": "Honeywell", "documents": [{"source_id": "C03.1", "url": "https://www.honeywell.com/us/en/industries/hospitality"}, {"source_id": "C03.2", "url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/document-lists/inncom/brochures/INNCOM_Hospitality_IoT_Brochure_01-00149.pdf"}, {"source_id": "C03.3", "url": "https://ws.buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/honeywell_INNCOM_Washington_Hilton_Case_Study.pdf"}]}, {"company_id": "C41", "company": "Verdant", "documents": [{"source_id": "C41.1", "url": "https://www.verdant.co/wp-content/uploads/2019/08/Hotel-Management-Trends-2020.pdf"}]}, {"company_id": "C44", "company": "SensorFlow", "documents": [{"source_id": "C44.1", "url": "https://www.sensorflow.co/hotel-energy-management-system/"}]}], "content_types_fa": ["جدول", "نمودار"], "page_template_fa": "صفحه روش و سناریو، به‌همراه جدول فرضیات", "priority": "P0", "proposed_position_fa": "۹–۱۰", "required_nsp_information_fa": "kWh، تعرفه، اشغال، شرایط اقلیمی، CAPEX و OPEX، مبنای مقایسه", "required_approval_ids": ["G10"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-11", "title_fa": "مطالعه موردی پروژه", "title_en": "Project Case Study", "goal_fa": "اثبات دامنه و نتیجه با پروژه مستند", "audiences_fa": ["مالک", "مشاور"], "references": [{"company_id": "C03", "company": "Honeywell", "documents": [{"source_id": "C03.1", "url": "https://www.honeywell.com/us/en/industries/hospitality"}, {"source_id": "C03.2", "url": "https://buildings.honeywell.com/content/dam/hbtbt/en/documents/document-lists/inncom/brochures/INNCOM_Hospitality_IoT_Brochure_01-00149.pdf"}, {"source_id": "C03.3", "url": "https://ws.buildings.honeywell.com/content/dam/hbtbt/en/documents/downloads/honeywell_INNCOM_Washington_Hilton_Case_Study.pdf"}]}, {"company_id": "C05", "company": "Siemens", "documents": [{"source_id": "C05.1", "url": "https://www.siemens.com/de-de/content/h-hotels-connected-operations/"}, {"source_id": "C05.2", "url": "https://sid.siemens.com/api/khub/documents/loJdAE4rucJQqR0GekqdlQ/content"}, {"source_id": "C05.3", "url": "https://references.siemens.com/en/reference/slk-moom-hotel"}]}, {"company_id": "C08", "company": "Crestron", "documents": [{"source_id": "C08.1", "url": "https://zh.crestron.com/getmedia/e98bcb6f-f129-4c45-9a74-07f3145cfda1/pb_Hospitality_Technology_Solutions"}, {"source_id": "C08.2", "url": "https://www.crestron.com/Crestron/media/Crestron/WidenResources/Web%20Marketing%20Resources/Case%20Studies/CS_2025_Hotel%20Renegade.pdf?ext=.pdf"}, {"source_id": "C08.3", "url": "https://www.crestron.com/getattachment/News/Case-Studies/2021/Bloc-Hotels/CS_Updated_Bloc-Hotel_FINAL.pdf?ext=.pdf&lang=en-US"}]}, {"company_id": "C09", "company": "Zenitel", "documents": [{"source_id": "C09.1", "url": "https://zenitel.com/customer-stories"}, {"source_id": "C09.2", "url": "https://www.zenitel.com/news/professional-audio-solution-avani-hotel"}, {"source_id": "C09.3", "url": "https://www.zenitel.com/library?combine=&combine_1=&page=0"}, {"source_id": "C09.4", "url": "https://www.zenitel.com/sites/default/files/2026-05/Zenitel%20PAVA%20Brochure_EN_0.pdf"}]}, {"company_id": "C10", "company": "Lutron", "documents": [{"source_id": "C10.1", "url": "https://www.lutron.com/us/en/applications/hospitality/verticals/hospitality-and-hotel-lighting-solutions"}, {"source_id": "C10.2", "url": "https://support.lutron.com/us/en/product/myroom/documents/product-brochures"}, {"source_id": "C10.3", "url": "https://assets.lutron.com/a/documents/3685134xcaretcasestudy_english.pdf"}, {"source_id": "C10.4", "url": "https://assets.lutron.com/a/documents/The-Duke-case-study_English.pdf"}]}, {"company_id": "C34", "company": "Hoteza", "documents": [{"source_id": "C34.1", "url": "https://hoteza.com/success-stories/digital-innovation-redefining-hospitality-at-amara-hotel-with-hoteza"}]}], "content_types_fa": ["تصویر", "جدول", "نمودار"], "page_template_fa": "یک گستره با مسئله، اجرا، نقش، نتیجه و روش سنجش", "priority": "P0", "proposed_position_fa": "۱۱–۱۲", "required_nsp_information_fa": "مجوز نام و عکس، تاریخ، نقش، مدارک تحویل و داده نتیجه", "required_approval_ids": ["G01", "G02", "G10", "G11"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-12", "title_fa": "طراحی تا تحویل و پشتیبانی", "title_en": "Delivery, Commissioning and Support", "goal_fa": "تعریف مسئولیت و فرایند تحویل", "audiences_fa": ["کارفرما", "پیمانکار", "بهره‌بردار"], "references": [{"company_id": "C06", "company": "INTEREL", "documents": [{"source_id": "C06.1", "url": "https://interel.com/about"}, {"source_id": "C06.2", "url": "https://interel.com/"}, {"source_id": "C06.3", "url": "https://interel.com/videos/eos2"}]}, {"company_id": "C31", "company": "Uniguest", "documents": [{"source_id": "C31.1", "url": "https://uniguest.com/wp-content/uploads/2024/11/Hotel-Hub-Brochure.pdf"}]}, {"company_id": "C45", "company": "Enseo", "documents": [{"source_id": "C45.1", "url": "https://www.enseo.com/solutions/property-monitoring"}]}], "content_types_fa": ["دیاگرام", "جدول"], "page_template_fa": "نوار مراحل و جدول تحویل‌دادنی/مسئول/معیار پذیرش", "priority": "P0", "proposed_position_fa": "۱۳", "required_nsp_information_fa": "فرایند مصوب، FAT/SAT، آموزش، ضمانت و SLA", "required_approval_ids": ["G02", "G12"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-13", "title_fa": "یکپارچگی، داده و رفتار زمان قطعی", "title_en": "Interfaces, Data and Resilience", "goal_fa": "قابل ممیزی کردن ارتباط و حالت خرابی", "audiences_fa": ["IT", "مشاور تأسیسات"], "references": [{"company_id": "C02", "company": "ABB", "documents": [{"source_id": "C02.1", "url": "https://library.e.abb.com/public/b063157941cf403093efa4fa51b8b9d1/ABB-Hospitality-KNX-in-Hotel-Rooms_PR_EN_V1-1_9AKK108470A0975.pdf?x-sign=d59C9k2LMHx4xJUcQ06fU2EFTgFEfIz5wez9rSskelaocPK5QhuYwEdx7CKPsAMz"}, {"source_id": "C02.2", "url": "https://library.e.abb.com/public/3f6135c38ddb46d4843dec5b7e94c7cb/ABB-i-bus-KNX-and-Hospitality-KNX-in-Hotel-Rooms_PR_EN_V1-3_9AKK108470A0975.pdf?x-sign=KL7NXShUH1V8xkUMjY8WjUx7XqDswvFJwSVcLRJzMm5hfH3KMr%2FsQ1hcOdgcYyYa"}, {"source_id": "C02.3", "url": "https://new.abb.com/news/detail/116882/elevating-luxury-ambience-with-knx-building-automation-at-panorama-landscape-hotel-in-finlands-tahko-hills"}, {"source_id": "C02.4", "url": "https://www.busch-jaeger.de/media/download/Broschueren/en/ABB_Hotel_Solutions_Master_Brochure.pdf"}]}, {"company_id": "C04", "company": "Legrand", "documents": [{"source_id": "C04.1", "url": "https://developer.legrand.com/solutions/guest-room-management-system/"}, {"source_id": "C04.2", "url": "https://www.legrand.com.sg/sites/default/files/downloads/pdf/202401%20Legrand%20Guest%20Room%20Hotel%20Solutions%20Brochure%20LD_low%20res.pdf"}, {"source_id": "C04.3", "url": "https://assets.legrand.com/general/ouidoo/pdf/legrand-guide-technique-offre-hotel.pdf"}, {"source_id": "C04.4", "url": "https://www.legrandintegratedsolutions.com/case_history/pairi-daiza-best-hotel-experience-legrand-grms"}]}, {"company_id": "C40", "company": "Nomadix", "documents": [{"source_id": "C40.1", "url": "https://nomadix.com/nomadix-casting/"}]}, {"company_id": "C42", "company": "Pelican Wireless", "documents": [{"source_id": "C42.1", "url": "https://www.pelicanwireless.com/cmp-pms/"}]}, {"company_id": "C47", "company": "Distech Controls", "documents": [{"source_id": "C47.1", "url": "https://www.distech-controls.com/-/media/abl/distechcontrols/files/resources/project-references/case-study_hotel-stary_poland.pdf"}]}], "content_types_fa": ["جدول", "دیاگرام"], "page_template_fa": "ضمیمه رابط‌ها با ستون نسخه، جهت داده، مالک، آزمون و رفتار قطعی", "priority": "P1", "proposed_position_fa": "ضمیمه A", "required_nsp_information_fa": "لیست رابط‌ها، تست هر مدل و نسخه، دسترسی، پشتیبان‌گیری و حریم خصوصی", "required_approval_ids": ["G07", "G08", "G09"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-14", "title_fa": "کاتالوگ تجهیزات منتخب", "title_en": "Selected Equipment Catalogue", "goal_fa": "تسهیل بررسی مدل، ظرفیت و سازگاری", "audiences_fa": ["خرید", "مشاور برق"], "references": [{"company_id": "C04", "company": "Legrand", "documents": [{"source_id": "C04.1", "url": "https://developer.legrand.com/solutions/guest-room-management-system/"}, {"source_id": "C04.2", "url": "https://www.legrand.com.sg/sites/default/files/downloads/pdf/202401%20Legrand%20Guest%20Room%20Hotel%20Solutions%20Brochure%20LD_low%20res.pdf"}, {"source_id": "C04.3", "url": "https://assets.legrand.com/general/ouidoo/pdf/legrand-guide-technique-offre-hotel.pdf"}, {"source_id": "C04.4", "url": "https://www.legrandintegratedsolutions.com/case_history/pairi-daiza-best-hotel-experience-legrand-grms"}]}, {"company_id": "C08", "company": "Crestron", "documents": [{"source_id": "C08.1", "url": "https://zh.crestron.com/getmedia/e98bcb6f-f129-4c45-9a74-07f3145cfda1/pb_Hospitality_Technology_Solutions"}, {"source_id": "C08.2", "url": "https://www.crestron.com/Crestron/media/Crestron/WidenResources/Web%20Marketing%20Resources/Case%20Studies/CS_2025_Hotel%20Renegade.pdf?ext=.pdf"}, {"source_id": "C08.3", "url": "https://www.crestron.com/getattachment/News/Case-Studies/2021/Bloc-Hotels/CS_Updated_Bloc-Hotel_FINAL.pdf?ext=.pdf&lang=en-US"}]}, {"company_id": "C13", "company": "JUNG", "documents": [{"source_id": "C13.1", "url": "https://www.jung-group.com/en-DE/Catalogue/Product-solutions/Hospitality/"}]}, {"company_id": "C15", "company": "Hager", "documents": [{"source_id": "C15.1", "url": "https://assets.hager.com/step-content/P/HA_22808530/Document/std.lang.all/19DE0075_01_BRO_HBE_ZWECKBAU.pdf"}]}, {"company_id": "C27", "company": "Samsung", "documents": [{"source_id": "C27.1", "url": "https://www.samsung.com/de/business/commercial-tvs/hotel-tv/hf8000f-hg32f800feuxen/"}]}], "content_types_fa": ["جدول", "تصویر"], "page_template_fa": "کارت تجهیز با مدل، کاربرد، مشخصات و لینک دیتاشیت", "priority": "P1", "proposed_position_fa": "ضمیمه B", "required_nsp_information_fa": "دیتاشیت، SKU، وضعیت عرضه، تصویر، استاندارد و گارانتی", "required_approval_ids": ["G02", "G03", "G04", "G05"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-15", "title_fa": "بازسازی هتل در حال فعالیت", "title_en": "Live Hotel Retrofit", "goal_fa": "بیان مراحل اجرا، محدودیت و تداوم سرویس", "audiences_fa": ["مالک", "مدیر هتل"], "references": [{"company_id": "C11", "company": "WAGO", "documents": [{"source_id": "C11.1", "url": "https://www.wago.com/de/branchen/gebaeudetechnik/referenz-radisson-blu"}]}, {"company_id": "C24", "company": "Casambi", "documents": [{"source_id": "C24.1", "url": "https://support.casambi.com/support/solutions/articles/12000103590-casambi-design-guide-hospitality"}]}, {"company_id": "C47", "company": "Distech Controls", "documents": [{"source_id": "C47.1", "url": "https://www.distech-controls.com/-/media/abl/distechcontrols/files/resources/project-references/case-study_hotel-stary_poland.pdf"}]}, {"company_id": "C48", "company": "Trane", "documents": [{"source_id": "C48.1", "url": "https://www.trane.com/content/dam/Trane/Commercial/global/case-studies/lodging-and-entertainment/Grand-Hyatt-New-York/CASE-SLX480-EN_04202020.pdf"}]}], "content_types_fa": ["دیاگرام", "جدول"], "page_template_fa": "مقایسه پروژه جدید و بازسازی، فازبندی طبقات و نقاط بازگشت", "priority": "P1", "proposed_position_fa": "پس از صفحه ۱۳", "required_nsp_information_fa": "برنامه قطعی، آزمون پایلوت، نقشه موجود، نمونه پروژه و برنامه بازگشت", "required_approval_ids": ["G11", "G12"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-16", "title_fa": "دسترسی و اعتبار ورود", "title_en": "Access and Credentials", "goal_fa": "شرح گردش‌کار دسترسی مهمان و پرسنل", "audiences_fa": ["امنیت", "پذیرش", "IT"], "references": [{"company_id": "C07", "company": "Vingcard", "documents": [{"source_id": "C07.1", "url": "https://www.vingcard.com/en/industries/hospitality"}, {"source_id": "C07.2", "url": "https://www.vingcard.com/en/resources/case-studies"}, {"source_id": "C07.3", "url": "https://www.vingcard.com/en/solutions/energy-automation/energy-management"}]}, {"company_id": "C49", "company": "dormakaba", "documents": [{"source_id": "C49.1", "url": "https://www.dormakaba.com/ch-en/use-case/adoro"}]}, {"company_id": "C50", "company": "SALTO", "documents": [{"source_id": "C50.1", "url": "https://saltosystems.com/sv-se/segment/referensobjekt/lasala-plaza-hotel/"}]}], "content_types_fa": ["دیاگرام", "جدول"], "page_template_fa": "مسیر صدور و لغو اعتبار در کنار جدول نقش و زون", "priority": "P2", "proposed_position_fa": "ضمیمه اختیاری", "required_nsp_information_fa": "سازنده قفل، نسخه، مدل اعتبار، لاگ و رفتار قطعی", "required_approval_ids": ["G06", "G07", "G09"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-17", "title_fa": "پایش چند هتل", "title_en": "Multi-property Operations", "goal_fa": "نمایش قابلیت مقایسه و کنترل سبد دارایی", "audiences_fa": ["مالک زنجیره", "مدیر انرژی"], "references": [{"company_id": "C05", "company": "Siemens", "documents": [{"source_id": "C05.1", "url": "https://www.siemens.com/de-de/content/h-hotels-connected-operations/"}, {"source_id": "C05.2", "url": "https://sid.siemens.com/api/khub/documents/loJdAE4rucJQqR0GekqdlQ/content"}, {"source_id": "C05.3", "url": "https://references.siemens.com/en/reference/slk-moom-hotel"}]}, {"company_id": "C43", "company": "VDA Telkonet", "documents": [{"source_id": "C43.1", "url": "https://vda-telkonet.com/wp-content/uploads/2024/05/Leaflet-Etheos-EN-Web.pdf"}]}], "content_types_fa": ["نمودار", "جدول"], "page_template_fa": "نمای سلسله‌مراتب هتل/طبقه/اتاق و KPI قابل مقایسه", "priority": "P2", "proposed_position_fa": "بعد از داشبورد", "required_nsp_information_fa": "نمونه استقرار، جداسازی داده، کنتورها و روش نرمال‌سازی", "required_approval_ids": ["G08", "G09", "G10"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "SEC-18", "title_fa": "گام بعدی و اطلاعات تماس", "title_en": "Next Step and Contact", "goal_fa": "تبدیل مطالعه پورتفولیو به درخواست جلسه یا بازدید", "audiences_fa": ["همه مخاطبان"], "references": [{"company_id": "C06", "company": "INTEREL", "documents": [{"source_id": "C06.1", "url": "https://interel.com/about"}, {"source_id": "C06.2", "url": "https://interel.com/"}, {"source_id": "C06.3", "url": "https://interel.com/videos/eos2"}]}, {"company_id": "C07", "company": "Vingcard", "documents": [{"source_id": "C07.1", "url": "https://www.vingcard.com/en/industries/hospitality"}, {"source_id": "C07.2", "url": "https://www.vingcard.com/en/resources/case-studies"}, {"source_id": "C07.3", "url": "https://www.vingcard.com/en/solutions/energy-automation/energy-management"}]}, {"company_id": "C44", "company": "SensorFlow", "documents": [{"source_id": "C44.1", "url": "https://www.sensorflow.co/hotel-energy-management-system/"}]}], "content_types_fa": ["متن", "جدول"], "page_template_fa": "یک صفحه تماس و ورودی‌های جلسه کشف نیاز", "priority": "P0", "proposed_position_fa": "۱۴", "required_nsp_information_fa": "کانال تماس رسمی، مسئول پاسخ، مدارک اولیه موردنیاز", "required_approval_ids": ["G01", "G02"], "nsp_capability_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}], "approval_register": [{"id": "G01", "title_fa": "هویت، لوگو، تصویر، اطلاعات تماس و حقوق انتشار", "suggested_owner_fa": "مدیریت و بازاریابی", "required_evidence_fa": "هویت مصوب و مجوز مکتوب عکس، برند و نام", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G02", "title_fa": "نقش NSP، نوع همکاری، دامنه خدمات، طراحی، تأمین، اجرا و پشتیبانی", "suggested_owner_fa": "مدیریت و قراردادها", "required_evidence_fa": "ماتریس مسئولیت و نمونه دامنه قرارداد", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G03", "title_fa": "GRMS، حضور، HVAC، DND/MUR، صحنه‌ها، Override و رفتار آفلاین", "suggested_owner_fa": "مهندسی محصول", "required_evidence_fa": "BOM و آزمون پذیرش سناریو برای مدل و نسخه مشخص", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G04", "title_fa": "IPTV، VOD، Casting، TV، Signage و خدمات محتوا", "suggested_owner_fa": "مهندسی IPTV و مسئول محتوا", "required_evidence_fa": "ماتریس مدل TV، تست پایلوت و حقوق نمایش محتوا", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G05", "title_fa": "دیمینگ، درایور، سایه‌انداز، سنسور و رابط‌های معماری", "suggested_owner_fa": "مهندسی برق و طراحی", "required_evidence_fa": "لیست مدل و تست بار واقعی", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G06", "title_fa": "کنترل مشاعات، قفل، کلید دیجیتال، صوت و پیجینگ", "suggested_owner_fa": "مهندسی پروژه و ایمنی", "required_evidence_fa": "نقشه زون، مشخصات و تست پذیرش؛ برای کاربرد اضطراری مدرک انطباق مستقل", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G07", "title_fa": "اتصال PMS، BMS، ACS و پروتکل KNX/BACnet/DALI/Modbus یا API", "suggested_owner_fa": "مهندسی یکپارچگی", "required_evidence_fa": "نام و نسخه دو طرف، جهت داده، رخدادها و سناریوی خرابی", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G08", "title_fa": "داشبورد، آلارم، کنتور، پایش و تجمیع چندسایتی", "suggested_owner_fa": "تیم نرم‌افزار و بهره‌برداری", "required_evidence_fa": "دمو واقعی، نوع نقاط داده، ظرفیت و سطح دسترسی", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G09", "title_fa": "شبکه، ابر/محلی، حریم خصوصی، داده مهمان، امنیت و پاک‌سازی Casting", "suggested_owner_fa": "مسئول IT و امنیت", "required_evidence_fa": "دیاگرام شبکه، جریان داده، زمان نگهداری و آزمون پاک‌سازی", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G10", "title_fa": "صرفه‌جویی، کاهش هزینه، بازگشت سرمایه و درآمد منتسب", "suggested_owner_fa": "مالی و انرژی", "required_evidence_fa": "داده خام، روش سنجش، دوره، خط مبنا، مفروضات و تأیید مالک", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G11", "title_fa": "پروژه‌های اجراشده، تعداد اتاق/سایت، نقش و نتیجه", "suggested_owner_fa": "مدیر پروژه و کارفرما", "required_evidence_fa": "صورتجلسه تحویل، نقش قرارداد، مجوز انتشار و مدرک نتیجه", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}, {"id": "G12", "title_fa": "FAT/SAT، راه‌اندازی، آموزش، نگهداری، SLA، ضمانت و اجرای فازبندی", "suggested_owner_fa": "مدیر خدمات و تحویل", "required_evidence_fa": "رویه مصوب، قرارداد خدمات و معیارهای پذیرش", "nsp_status": "pending_nsp_verification", "public_release": "blocked_until_approved"}]}</script><script>
 window.V13=window.V13||{};
 const research=JSON.parse(document.getElementById('seed').textContent);
 const KEY='workspace';
@@ -1800,28 +1800,12 @@ v8Init();
 function v8Portfolio(){return state.portfolios.find(x=>x.id===state.activePortfolioId)}
 async function v8SelectPortfolio(id){
  const portfolio=state.portfolios.find(p=>p.id===id);
- if(!portfolio)return false;
+ if(!portfolio||!v329CanMutate())return false;
  const owner=state,previousActive=owner.activePortfolioId,previousPages=owner.pages,previousSelected=selected;
  v13SyncPages();
- owner.activePortfolioId=id;
- owner.pages=portfolio.pages;
- selected=owner.pages[0]?.id;
- try{
-  if(!save(true))throw Error(window.V13.saveError||'ذخیره آغاز نشد.');
-  await window.V13.flushStorage();
- }catch(error){
-  if(state===owner&&owner.activePortfolioId===id){
-   owner.activePortfolioId=previousActive;
-   owner.pages=previousPages;
-   selected=previousSelected;
-   render();
-  }
-  alert('ثبت پورتفولیوی فعال تأیید نشد.\n'+String(error?.message||error));
-  return false;
- }
- if(state!==owner||owner.activePortfolioId!==id)return false;
- v13ResetEditorContext();
- return true;
+ owner.activePortfolioId=id;owner.pages=portfolio.pages;selected=owner.pages[0]?.id;
+ if(!await v329PersistChange(owner,()=>{owner.activePortfolioId=previousActive;owner.pages=previousPages;selected=previousSelected;v13SyncPages();},{contextChange:true}))return false;
+ return v329AfterCommit(owner,()=>v13ResetEditorContext());
 }
 menuGroups[1][1].unshift(['v76projects','پروژه‌ها']);
 
@@ -1889,17 +1873,9 @@ function v93CanChangeStyles(){
  return false;
 }
 async function v93SaveStyles(before){
-  if(save(true)!==true){
-    state.styleLibrary=before;v78SyncGlobal();render();
-    alert('ذخیره استایل انجام نشد؛ تغییر بازگردانده شد.');return;
-  }
-  try{
-    if(typeof window.V13.flushStorage==='function')await window.V13.flushStorage();
-    render();
-  }catch(error){
-    window.V13.dirty=true;render();
-    alert('ذخیره استایل تأیید نشد. تغییر در حافظه است و باید ذخیره را دوباره انجام دهید.\n'+String(error));
-  }
+ const owner=state;
+ if(await v329PersistChange(owner,()=>{owner.styleLibrary=before;}))
+  await v329AfterCommit(owner,()=>render());
 }
 function v93AddStyle(){
  if(!v93CanChangeStyles())return;
@@ -2074,6 +2050,7 @@ function v76ValidateCanSwitch(){
  return true;
 }
 async function v76SwitchProject(id,navigate=true){
+ if(!v329CanMutate())return false;
  v76InitProjects();
  if(id===state.activeWorkspaceId){if(navigate)await go('v76projects');return true;}
  const storage=window.V13;
@@ -2098,10 +2075,8 @@ async function v76SwitchProject(id,navigate=true){
  target.projectWorkspaces=registry;
  state=target;
  selected=state.pages[0]?.id||null;
- if(!save(true)){state=original;selected=oldSelected;render();return false;}
- try{await window.V13.flushStorage();}
- catch(error){state=original;selected=oldSelected;render();alert('تعویض پروژه ذخیره نشد.\n'+String(error));return false;}
- v13ResetEditorContext(true);if(navigate)await go('v76projects');return true;
+ if(!await v329PersistChange(target,()=>{state=original;selected=oldSelected;},{contextChange:true}))return false;
+ return v329AfterCommit(target,async()=>{v13ResetEditorContext(true);if(navigate&&await go('v76projects')===false)throw Error('نمایش فهرست پروژه‌ها کامل نشد.');});
 }
 function v230NextName(prefix,names){
  const used=new Set(names.map(name=>String(name||'').trim().toLocaleLowerCase()));
@@ -2109,7 +2084,7 @@ function v230NextName(prefix,names){
  return prefix+' '+i;
 }
 async function v76AddProject(){
- if(!v76ValidateCanSwitch())return;
+ if(!v76ValidateCanSwitch()||!v329CanMutate())return;
  const name=prompt('نام پروژه جدید:',v230NextName('پروژه',v76ListProjects().map(p=>p.name)));if(!name?.trim())return;
  const original=state,oldSelected=selected;
  let fresh=v78ApplyGlobal(v13NormalizeProject(initialProjectData()),v78SyncGlobal());
@@ -2126,37 +2101,32 @@ async function v76AddProject(){
   ...(!v257IsEmptyPlaceholder()?[{id:state.activeWorkspaceId||uid(),name:state.activeWorkspaceName||state.title||'پروژه اصلی',createdBy:state.activeWorkspaceCreator||'',createdAt:state.activeWorkspaceCreatedAt||'',data:v76CoreSnapshot()}]:[])];
  fresh.projectRegistryEmpty=false;
  state=fresh;selected=null;
- if(!save(true)){state=original;selected=oldSelected;render();return;}
- try{await window.V13.flushStorage();}
- catch(error){state=original;selected=oldSelected;render();alert('ساخت پروژه ذخیره نشد.\n'+String(error));return;}
- v13ResetEditorContext(true);
- go('v76projects');
+ if(!await v329PersistChange(fresh,()=>{state=original;selected=oldSelected;},{contextChange:true}))return;
+ await v329AfterCommit(fresh,async()=>{v13ResetEditorContext(true);return go('v76projects');});
 }
 async function v76RenameProject(id){
+ if(!v329CanMutate())return;
  v76InitProjects();
  const active=id===state.activeWorkspaceId,entry=active?null:state.projectWorkspaces.find(p=>p.id===id);
  if(!active&&!entry)return;
  const name=prompt('نام جدید پروژه:',active?state.activeWorkspaceName:entry.name);
  if(!name?.trim())return;
- const old=active?state.activeWorkspaceName:entry.name;
- if(active)state.activeWorkspaceName=name.trim();else entry.name=name.trim();
- if(!save()){if(active)state.activeWorkspaceName=old;else entry.name=old;render();return;}
- try{await window.V13.flushStorage();}
- catch(error){if(active)state.activeWorkspaceName=old;else entry.name=old;render();alert('تغییر نام پروژه ذخیره نشد.\n'+String(error));return;}
- render();
+ const owner=state,old=active?owner.activeWorkspaceName:entry.name;
+ if(active)owner.activeWorkspaceName=name.trim();else entry.name=name.trim();
+ if(await v329PersistChange(owner,()=>{if(active)owner.activeWorkspaceName=old;else entry.name=old;}))
+  await v329AfterCommit(owner,()=>render());
 }
 async function v76DeleteProject(id){
+ if(!v329CanMutate())return;
  v76InitProjects();
  if(id===state.activeWorkspaceId)return alert('پروژه فعال را نمی‌توان حذف کرد؛ ابتدا پروژه دیگری را باز کنید.');
  const entry=state.projectWorkspaces.find(p=>p.id===id);
  if(!entry)return;
  if(!confirm('پروژه «'+entry.name+'» و تمام پورتفولیوها، تصاویر و صفحات آن حذف شوند؟ این عمل قابل بازگشت نیست. ابتدا خروجی JSON بگیرید.'))return;
- const before=state.projectWorkspaces;
- state.projectWorkspaces=before.filter(p=>p.id!==id);
- if(!save()){state.projectWorkspaces=before;render();return;}
- try{await window.V13.flushStorage();}
- catch(error){state.projectWorkspaces=before;render();alert('حذف پروژه ذخیره نشد.\n'+String(error));return;}
- render();
+ const owner=state,before=owner.projectWorkspaces;
+ owner.projectWorkspaces=before.filter(p=>p.id!==id);
+ if(await v329PersistChange(owner,()=>{owner.projectWorkspaces=before;}))
+  await v329AfterCommit(owner,()=>render());
 }
 const v77ExpandedProjects=new Set();
 function v77ToggleProject(id){if(v77ExpandedProjects.has(id))v77ExpandedProjects.delete(id);else v77ExpandedProjects.add(id);render();}
@@ -2221,6 +2191,52 @@ function v77Data(id){
  return state.projectWorkspaces.find(x=>x.id===id)?.data||null;
 }
 let v290OptimisticBusy=false;
+// V329: per-operation result, not the global flush, governs optimistic rollback.
+function v329CanMutate(){
+ const V=window.V13;
+ if(v290OptimisticBusy||V.persistencePending||V.saveError||V.saveBlocked||typeof V.persistWorkspaceMutation!=='function'){
+  alert('ابتدا وضعیت ذخیرهٔ پیشین را تعیین تکلیف کنید.');return false;
+ }
+ return true;
+}
+function v329Refresh(){try{render();}catch(error){console.warn('[NSP] Mutation UI refresh failed.',error);}}
+async function v329PersistChange(owner,undo,{contextChange=false,diskOperation=null}={}){
+ const V=window.V13;
+ let outcome;
+ try{outcome=await V.persistWorkspaceMutation(diskOperation);}
+ catch(error){outcome={state:'UNKNOWN',message:String(error?.message||error)};}
+ if(outcome.state==='COMMITTED'){
+  if(state===owner&&!V.saveBlocked)return true;
+  V.blockMutationRecovery('ثبت انجام شد؛ مالکیت یا تأیید رابط نامطمئن است. داده را حفاظت و بازخوانی کنید.');
+  alert('این عملیات در پایگاه ثبت شد؛ ادامهٔ رابط متوقف شد.');return false;
+ }
+ let rolled=false;
+ if(state===owner&&outcome.canRollbackNow?.()){
+  try{undo();v78SyncGlobal();rolled=true;}
+  catch(error){V.blockMutationRecovery('بازگردانی کامل نشد؛ داده را حفاظت کنید.');}
+ }
+ if(!rolled||(outcome.state==='REJECTED'&&state!==owner)){
+  // A rejected root replacement belongs to the candidate owner, not to the restored root.
+  // Never retry that failed scope against a different active project.
+  V.blockMutationRecovery('ثبت یا مالکیت نامطمئن است؛ پیش از بازخوانی داده را حفاظت کنید.');
+  if(contextChange&&state===owner){try{v13ResetEditorContext(true);}catch(error){console.warn('[NSP] Context recovery failed.',error);}}
+ }
+ v329Refresh();
+ alert((rolled?'عملیات ثبت نشد؛ فقط تغییر همان عملیات بازگردانده شد.':'نتیجهٔ ثبت قطعی نیست؛ بازگردانی حدسی انجام نشد.')+'\n'+String(outcome.message||''));
+ return false;
+}
+async function v329AfterCommit(owner,action){
+ const V=window.V13;
+ try{
+  if(state!==owner||V.saveBlocked)throw Error('مالکیت یا وضعیت ذخیره تغییر کرده است.');
+  const result=await action();
+  if(result===false||state!==owner||V.saveBlocked)throw Error('ادامه رابط یا مالکیت تأیید نشد.');
+  return true;
+ }catch(error){
+  V.blockMutationRecovery('ثبت در پایگاه انجام شد، اما تکمیل رابط تأیید نشد؛ پیش از بازخوانی داده را حفاظت کنید.');
+  alert('ثبت انجام شد، نمایش یا ادامهٔ رابط کامل نشد.\n'+String(error?.message||error));return false;
+ }
+}
 async function v77Persist(undo){
  const V=window.V13,owner=state;
  const revert=()=>{if(state!==owner)return false;undo();v78SyncGlobal();return true;};
@@ -2235,8 +2251,8 @@ async function v77Persist(undo){
    if(state!==owner||V.saveBlocked){alert('ثبت این عملیات انجام شد؛ وضعیت فعلی رابط یا مالک نیازمند بررسی است.');return false;}
    return true;
   }
-  const rolledBack=outcome.canRollback&&revert();
-  if(!rolledBack&&outcome.state!=='NOT_QUEUED')V.blockMutationRecovery?.('نتیجه یا مالکیت ثبت نامطمئن است؛ داده در حافظه حفظ شد. پیش از خروج JSON تهیه کنید.');
+   const rolledBack=outcome.canRollbackNow?.()&&revert();
+   if(!rolledBack||(outcome.state==='REJECTED'&&state!==owner))V.blockMutationRecovery?.('نتیجه یا مالکیت ثبت نامطمئن است؛ داده در حافظه حفظ شد. پیش از خروج JSON تهیه کنید.');
   refresh();
   alert((rolledBack?'این تغییر ثبت نشد و فقط تغییر همان عملیات بازگردانده شد.':'تأیید ثبت کامل نیست؛ از بازگردانی حدسی جلوگیری شد. پیش از خروج داده را حفاظت کنید.')+'\n'+String(outcome.message||''));
   return false;
@@ -2457,15 +2473,7 @@ async function v77DeleteProject(id){
  return window.V13.deleteManagedProject(id);
 }
 async function v276DeleteProjectRegistry(id,diskOperation=null){
- const persist=async undo=>{
-  if(!diskOperation)return v77Persist(undo);
-  try{return await window.V13.commitDiskWorkspace(diskOperation);}
-  catch(error){
-   // Do not guess a failed browser commit if its receipt cannot be read.
-   if(!await window.V13.diskWorkspaceReceipt(diskOperation)){undo();render();throw error;}
-   return true;
-  }
- };
+ const persist=(undo,contextChange=false)=>v329PersistChange(state,undo,{contextChange,diskOperation});
  const all=v76ListProjects(),src=all.find(p=>p.id===id);
  if(!src)return false;
  if(!v76ValidateCanSwitch()||window.V13.persistencePending||window.V13.saveError||window.V13.saveBlocked){
@@ -2500,16 +2508,19 @@ async function v276DeleteProjectRegistry(id,diskOperation=null){
    target.globalImageLibrary=v13Copy(state.globalImageLibrary||[]);
   }catch(error){alert('آماده‌سازی حذف پروژه انجام نشد: '+error.message);return false;}
   state=target;selected=state.pages[0]?.id||null;
-  if(!await persist(()=>{state=before;selected=oldSelected;}))return false;
-  v13ResetEditorContext(true);
+   if(!await persist(()=>{state=before;selected=oldSelected;},true))return false;
+   if(!await v329AfterCommit(target,()=>v13ResetEditorContext(true)))return false;
  }else{
   const before=state.projectWorkspaces;
   state.projectWorkspaces=before.filter(p=>p.id!==id);
   if(!await persist(()=>{state.projectWorkspaces=before;}))return false;
  }
- v77ExpandedProjects.delete(id);
- for(const pf of src.data.portfolios||[])v243ExpandedPortfolios.delete(v243PortfolioKey(id,pf.id));
- await go('v76projects');return true;
+ const committedOwner=state;
+ return v329AfterCommit(committedOwner,async()=>{
+  v77ExpandedProjects.delete(id);
+  for(const pf of src.data.portfolios||[])v243ExpandedPortfolios.delete(v243PortfolioKey(id,pf.id));
+  return go('v76projects');
+ });
 }
 
 async function v77OpenImages(id){
@@ -4487,7 +4498,7 @@ M.rename=function(id){const a=list().find(item=>item.id===id);if(!a)return;const
    project's permanent ownership. Browser mode retains ordinary save support. */
 M.renamePublic=async function(id){
  const current=publicList().find(a=>a.id===id);
- if(!current||busy)return;
+  if(!current||busy||!v329CanMutate())return;
  const answer=prompt('نام جدید تصویر عمومی:',current.name||'تصویر عمومی');
  if(answer===null)return;
  const name=answer.trim();
@@ -4496,20 +4507,12 @@ M.renamePublic=async function(id){
  if(name===current.name)return;
  busy=true;
  const prior=current.name,owner=state;
- try{
-  if(owner!==state)throw Error('پروژه در زمان تغییر نام عوض شد؛ دوباره تلاش کنید.');
-  current.name=name;
-  if(save(true)!==true)throw Error('ذخیرهٔ نام تصویر عمومی آغاز نشد.');
-  await V.flushStorage();
-  render();
- }catch(error){
-  if(owner===state&&publicList().find(a=>a.id===id)===current){
-   current.name=prior;
-   v78SyncGlobal();
-  }
-  render();
-  alert('تغییر نام تصویر عمومی ذخیره نشد: '+String(error));
- }finally{busy=false;}
+  try{
+   if(owner!==state)return;
+   current.name=name;
+   if(await v329PersistChange(owner,()=>{current.name=prior;}))
+    await v329AfterCommit(owner,()=>render());
+  }finally{busy=false;}
 };
 M.explainPublicDelete=function(id){
  if(!publicList().some(a=>a.id===id))return;
@@ -10817,10 +10820,10 @@ function writeRejected(item,error){
 function status(){
  if(failedWrites.size)lastError=failureMessage();
  V.persistenceState=V.saveBlocked?'recovery':!ready?'loading':lastError?'error':pending?'saving':'saved';
- badge.textContent='IndexedDB مرورگر'+': '+({loading:'loading…',recovery:'recovery required',error:'ERROR — retry / JSON backup',saving:'saving…',saved:'saved'}[V.persistenceState]);
- V.persistencePending=pending>0;V.dirty=pending>0||!!lastError;
- if(lastError)V.saveError=lastError;else if(!pending)V.saveError='';
- v13UpdateSaveStatus();V.editor?.refreshStorageStatus?.();
+  V.persistencePending=pending>0;V.dirty=pending>0||!!lastError;
+  if(lastError)V.saveError=lastError;else if(!pending)V.saveError='';
+  badge.textContent='IndexedDB مرورگر'+': '+({loading:'loading…',recovery:'recovery required',error:'ERROR — retry / JSON backup',saving:'saving…',saved:'saved'}[V.persistenceState]);
+  v13UpdateSaveStatus();V.editor?.refreshStorageStatus?.();
 }
 function request(store,method,...args){return new Promise((ok,no)=>{const tx=db.transaction(store,method==='get'||method==='getAll'?'readonly':'readwrite'),req=tx.objectStore(store)[method](...args);let result;req.onsuccess=()=>result=req.result;tx.oncomplete=()=>ok(result);tx.onerror=()=>no(tx.error||req.error);tx.onabort=()=>no(tx.error||Error('Transaction aborted'));});}
 // TASK-039: revision metadata and payload share one IndexedDB transaction.
@@ -10923,20 +10926,36 @@ function enqueue(payload,page=null,diskOperation=null,ticket=null){
 save=function(forceProject=false,diskOperation=null,ticket=null){if(!ready||V.saveBlocked){V.saveError=!ready?'پایگاه داده آماده نیست':'دادهٔ قبلی برای بازیابی محفوظ است';v13UpdateSaveStatus();return false;}const current=!forceProject&&V.editor?.currentPage?.();if(current&&typeof V.queuePageSave==='function'){const p=state.portfolios?.find(x=>x.id===current.portfolioId)?.pages?.find(x=>x.id===current.pageId);return p?V.queuePageSave(current.projectId,current.portfolioId,p):false;}try{v78SyncGlobal();v13SyncPages();state.savedAt=new Date().toISOString();state.schemaVersion=2;const payload=JSON.stringify(state);enqueue(payload,null,diskOperation,ticket);return true;}catch(e){lastError=String(e?.message||e);status();alert('ذخیره انجام نشد؛ خروجی JSON تهیه کنید.\n'+lastError);return false;}};
 // An operation receipt is separate from the global queue/flush result.
 // Only the original, unchanged candidate with no successor may be rolled back.
-V.persistWorkspaceMutation=async function(diskOperation=null){
- const owner=state,ticket={state:'NOT_QUEUED',message:''};
- try{
-  if(!ready||V.saveBlocked||V.saveError||V.persistencePending||pending)
-   return {state:'NOT_QUEUED',message:'ابتدا وضعیت ذخیره قبلی را تعیین تکلیف کنید.',canRollback:true};
-  const accepted=save(true,diskOperation,ticket);
-  if(!ticket.promise)return {state:'NOT_QUEUED',message:V.saveError||'شروع ذخیره انجام نشد.',canRollback:state===owner};
-  if(!accepted&&ticket.state==='QUEUED')ticket.message='نتیجه آغاز ثبت نیازمند بررسی است.';
-  await ticket.promise;
- }catch(error){ticket.message=String(error?.message||error);}
- let unchanged=false;
- try{unchanged=state===owner&&revision===ticket.revision&&pending===0&&JSON.stringify(state)===ticket.payload;}catch(_){}
- return {state:ticket.state==='QUEUED'?'UNKNOWN':ticket.state,message:ticket.message,canRollback:ticket.state==='NOT_QUEUED'?state===owner:ticket.state==='REJECTED'&&unchanged,ownerCurrent:state===owner};
-};
+ V.persistWorkspaceMutation=async function(diskOperation=null){
+  const owner=state,ticket={state:'NOT_QUEUED',message:''};
+  const initialRevision=revision,initialPending=pending;
+  let notQueuedPayload=null;
+  const stamp=()=>{try{return JSON.stringify(state);}catch(_){return null;}};
+  try{
+   if(!ready||V.saveBlocked||V.saveError||V.persistencePending||pending){
+    ticket.message='ابتدا وضعیت ذخیره قبلی را تعیین تکلیف کنید.';
+    notQueuedPayload=stamp();
+   }else{
+    const accepted=save(true,diskOperation,ticket);
+    if(!ticket.promise){
+     ticket.message=V.saveError||'شروع ذخیره انجام نشد.';
+     notQueuedPayload=stamp();
+    }else{
+     if(!accepted&&ticket.state==='QUEUED')ticket.message='نتیجه آغاز ثبت نیازمند بررسی است.';
+     await ticket.promise;
+    }
+   }
+  }catch(error){
+   ticket.message=String(error?.message||error);
+   if(ticket.state==='NOT_QUEUED'&&!ticket.promise)notQueuedPayload=stamp();
+  }
+  const canRollbackNow=()=>{
+   if(state!==owner)return false;
+   if(ticket.state==='NOT_QUEUED')return !ticket.promise&&revision===initialRevision&&pending===initialPending&&notQueuedPayload!==null&&stamp()===notQueuedPayload;
+   return ticket.state==='REJECTED'&&revision===ticket.revision&&pending===0&&stamp()===ticket.payload;
+  };
+  return {state:ticket.state==='QUEUED'?'UNKNOWN':ticket.state,message:ticket.message,canRollback:canRollbackNow(),canRollbackNow,ownerCurrent:state===owner};
+ };
 V.blockMutationRecovery=function(message){
  V.saveBlocked=true;lastError=String(message);V.dirty=true;
  try{status();}catch(error){console.warn('[NSP] Recovery status UI failed.',error);}
@@ -10946,28 +10965,25 @@ V.flushStorage=async function(){
  if(failedWrites.size||lastError||completed!==revision)
   throw Error(failureMessage()||lastError||'ذخیره کامل نشده است');
 };
-V.diskWorkspaceReceipt=(id,minRevision=null)=>new Promise((ok,no)=>{
- if(!db){no(Error('پایگاه پروژه برای بررسی نتیجهٔ عملیات آماده نیست.'));return;}
- const tx=db.transaction('projects','readonly'),store=tx.objectStore('projects');
- const receipt=store.get(diskReceiptKey),rev=store.get(BROWSER_REVISION_KEY),data=store.get(KEY);
- tx.oncomplete=()=>{
-  try{
-   if(minRevision!==null&&(validBrowserRevision(rev.result)<minRevision||typeof data.result!=='string'||!data.result))
-    throw Error('تداوم پایگاه پروژه تأیید نشد؛ فایل روی دیسک دست نخورده است.');
-   ok(receipt.result===id);
-  }catch(e){no(e);}
- };
- tx.onerror=tx.onabort=()=>no(tx.error||Error('نتیجهٔ ثبت مرورگر خوانده نشد.'));
-});
-V.commitDiskWorkspace=async id=>{
- if(typeof id!=='string'||!id||V.persistencePending||V.saveError||V.saveBlocked)
-  throw Error('ابتدا ثبت قبلی پروژه را تعیین تکلیف کنید.');
- if(save(true,id)!==true)throw Error(V.saveError||'ثبت پروژه آغاز نشد.');
- const attempt=queue;
- await attempt;
- if(!await V.diskWorkspaceReceipt(id))throw Error(failureMessage()||lastError||'ثبت قطعی پروژه تأیید نشد.');
- return true;
-};
+ V.diskWorkspaceReceipt=(id,baseRevision)=>new Promise((ok,no)=>{
+  if(!db){no(Error('پایگاه پروژه برای بررسی نتیجهٔ عملیات آماده نیست.'));return;}
+  if(!Number.isSafeInteger(baseRevision)||baseRevision<1){no(Error('Revision مبنای Journal معتبر نیست.'));return;}
+  const tx=db.transaction('projects','readonly'),store=tx.objectStore('projects');
+  const receipt=store.get(diskReceiptKey),rev=store.get(BROWSER_REVISION_KEY),data=store.get(KEY);
+  tx.oncomplete=()=>{
+   try{
+    const current=validBrowserRevision(rev.result);
+    if(typeof data.result!=='string'||!data.result)throw Error('تداوم دادهٔ پروژه تأیید نشد.');
+    const committed=receipt.result===id;
+    // A single last receipt cannot prove the outcome after unrelated later writes.
+    // Retain the journal and disk file if the exact revision transition is lost.
+    if(current!==(committed?baseRevision+1:baseRevision))
+     throw Error('JOURNAL_REVISION_UNCERTAIN: Revision عملیات قابل انتساب نیست؛ ثبت بازیابی و فایل حفظ شدند.');
+    ok(committed);
+   }catch(e){no(e);}
+  };
+  tx.onerror=tx.onabort=()=>no(tx.error||Error('نتیجهٔ ثبت مرورگر خوانده نشد.'));
+ });
 function mergeSavedPage(payload,{projectId,portfolioId,pageId}){
  const saved=JSON.parse(lastPayload||'null');
  const owner=saved?.activeWorkspaceId===projectId?saved:saved?.projectWorkspaces?.find(p=>p.id===projectId)?.data;
@@ -11778,24 +11794,11 @@ function showBrowserStorageRecovery(error,readRevision=false){
   for(const g of groups().filter(g=>!g.parentId))expandedGroups.add(g.id);
  }
  function allowed(){if(V.saveBlocked||V.saveError||V.persistencePending){alert('ابتدا وضعیت ذخیره را تعیین تکلیف کنید.');return false;}return true;}
- async function persist(rollbackBeforeQueue){
-  // Preserve uncertain async failures as unsaved drafts; only roll back before enqueue.
-  if(save(true)!==true){
-   if(typeof rollbackBeforeQueue==='function'){
-    rollbackBeforeQueue();
-    v78SyncGlobal();
-   }
-   render();
-   alert('شروع ذخیره انجام نشد؛ تغییر جدید بازگردانده شد.');
-   return false;
+  async function persist(rollbackBeforeQueue){
+   const owner=state;
+   if(!await v329PersistChange(owner,()=>{if(typeof rollbackBeforeQueue!=='function')throw Error('Rollback مشخص نشده است.');rollbackBeforeQueue();}))return false;
+   return v329AfterCommit(owner,()=>render());
   }
-  try{await V.flushStorage();render();return true;}
-  catch(e){
-   render();
-   alert('ذخیره در پایگاه داده تأیید نشد. تغییر همچنان در حافظه قرار دارد و ذخیره‌شده محسوب نمی‌شود. پیش از خروج JSON بگیرید.\n'+String(e?.message||e));
-   return false;
-  }
- }
  async function newPage(templateId){
   if(!allowed())return;
   const initial=templateId?templates().find(t=>t.id===templateId):null;
@@ -11805,11 +11808,10 @@ function showBrowserStorageRecovery(error,readRevision=false){
    body:'',image:'',chartLabels:'',chartValues:'',visualObjects:[],locked:false,contentLocked:false,snapshot:null};
   p.designMode='independent';
   if(initial)writeTemplateToPage(initial,p);
-  const beforePages=state.pages.slice();
-  state.pages.push(p);v13SyncPages();
-  if(save(true)!==true){state.pages=beforePages;v13SyncPages();render();return alert('شروع ثبت صفحه انجام نشد و صفحهٔ جدید بازگردانده شد.');}
-  try{await V.flushStorage();visualOpenPage(p.id);}
-  catch(e){alert('ذخیره صفحه تأیید نشد؛ صفحه در حافظه باقی است و باید از وضعیت فعلی JSON تهیه کنید.\n'+String(e?.message||e));render();}
+   const owner=state,beforePages=owner.pages.slice();
+   owner.pages.push(p);v13SyncPages();
+   if(await v329PersistChange(owner,()=>{owner.pages=beforePages;v13SyncPages();}))
+    await v329AfterCommit(owner,()=>visualOpenPage(p.id));
  }
  function templateContents(p=V.editor?.currentPage?.()?page():null){
   if(!p)return null;
@@ -13652,21 +13654,16 @@ function componentFromSelection(list,name){
    if(store(k,sc).some(g=>g.id!==exclude&&g.name.toLocaleLowerCase()===name.toLocaleLowerCase()))throw Error('نام پوشه تکراری است.');
    return name;
  }
- async function mutation(apply){
-   if(busy)return false;busy=true;
-   const owner=state,before={private:v13Copy(privAlbums()),shared:v13Copy(pubAlbums()),images:v13Copy(pub())};
-   try{
-     apply();
-     if(!save(true))throw Error('ثبت در پایگاه داده شروع نشد.');
-     if(typeof V.flushStorage==='function')await V.flushStorage();
-     if(owner!==state)throw Error('پروژه در حین ذخیره عوض شده است.');
-     render();return true;
-   }catch(e){
-     if(owner===state){state.imageAlbums=before.private;state.globalImageAlbums=before.shared;state.globalImageLibrary=before.images;
-       if(typeof v78SyncGlobal==='function')v78SyncGlobal();render();}
-     alert('تغییر کتابخانه ذخیره نشد؛ اطلاعات قبلی حفظ شد.\n'+String(e?.message||e));return false;
-   }finally{busy=false;}
- }
+  async function mutation(apply){
+    if(busy||!v329CanMutate())return false;busy=true;
+    const owner=state,before={private:v13Copy(privAlbums()),shared:v13Copy(pubAlbums()),images:v13Copy(pub())};
+    const undo=()=>{owner.imageAlbums=before.private;owner.globalImageAlbums=before.shared;owner.globalImageLibrary=before.images;};
+    try{
+      try{apply();}catch(error){if(state===owner){undo();v78SyncGlobal();v329Refresh();}alert(String(error?.message||error));return false;}
+      if(!await v329PersistChange(owner,undo))return false;
+      return await v329AfterCommit(owner,()=>render());
+    }finally{busy=false;}
+  }
  function changeFolder(k,action){
    const id=choice[k],g=folder(k,id),sc=scope(k,id);
    if(action==='new-folder'){
@@ -14020,20 +14017,16 @@ function componentFromSelection(list,name){
      throw Error('پوشه‌ای با این نام وجود دارد.');
    return name;
  }
- async function mutate(fn){
-   if(writing)return false;writing=true;
-   const owner=state,old={private:v13Copy(localFolders()),public:v13Copy(sharedFolders()),sharedImages:v13Copy(shared())};
-   try{
-     fn();
-     if(save(true)!==true)throw Error('شروع ثبت پایگاه داده ناموفق بود.');
-     if(typeof V.flushStorage==='function')await V.flushStorage();
-     if(state!==owner)throw Error('پروژه تغییر کرده است.');
-     render();return true;
-   }catch(error){
-     if(state===owner){state.imageAlbums=old.private;state.globalImageAlbums=old.public;state.globalImageLibrary=old.sharedImages;v78SyncGlobal?.();render();}
-     alert('ذخیره انجام نشد؛ تغییرات بازگردانده شد.\n'+String(error?.message||error));return false;
-   }finally{writing=false;}
- }
+  async function mutate(fn){
+    if(writing||!v329CanMutate())return false;writing=true;
+    const owner=state,old={private:v13Copy(localFolders()),public:v13Copy(sharedFolders()),sharedImages:v13Copy(shared())};
+    const undo=()=>{owner.imageAlbums=old.private;owner.globalImageAlbums=old.public;owner.globalImageLibrary=old.sharedImages;};
+    try{
+      try{fn();}catch(error){if(state===owner){undo();v78SyncGlobal();v329Refresh();}alert(String(error?.message||error));return false;}
+      if(!await v329PersistChange(owner,undo))return false;
+      return await v329AfterCommit(owner,()=>render());
+    }finally{writing=false;}
+  }
  function folderCommand(action,id){
    const a=folder(id),scope=a?.scope||'public';
    if(action==='upload'){
@@ -14124,21 +14117,17 @@ function componentFromSelection(list,name){
    catch(e){alert('بررسی وابستگی تصاویر انجام نشد؛ کتابخانه تغییر نکرد.\n'+String(e?.message||e));return;}
    if(!confirm('کتابخانه تصاویر عمومی و خصوصی پروژه فعلی و همه آلبوم‌های آنها ریست شوند؟\n'+plan.removed+' تصویر خصوصی بدون وابستگی حذف و '+plan.retained+' تصویر (تمام تصاویر عمومی و تصاویر خصوصی وابسته) به‌صورت مخفی نگهداری می‌شوند. فایل‌های اصلی روی دیسک و تصاویر خصوصی سایر پروژه‌ها حذف نمی‌شوند.'))return;
    const old={imageLibrary:owner.imageLibrary,globalImageLibrary:owner.globalImageLibrary,imageAlbums:owner.imageAlbums,globalImageAlbums:owner.globalImageAlbums};
-   writing=true;let queued=false,committed=false;
-   try{
-     owner.imageLibrary=plan.privateKeep;owner.globalImageLibrary=plan.publicKeep;
-     owner.imageAlbums=[];owner.globalImageAlbums=[];
-     if(save(true)!==true)throw Error('شروع ثبت پایگاه داده ناموفق بود.');
-     queued=true;await V.flushStorage();committed=true;
-     if(state!==owner)throw Error('پروژه در حین ریست تغییر کرد.');
-     V.media.clearLibraryHistory?.();
-     selected.clear();chosenFolder='';uploadFolder='';removePopup();
-     render();alert('کتابخانه تصاویر ریست شد.');
-   }catch(e){
-     if(!queued&&state===owner){Object.assign(owner,old);v78SyncGlobal();render();}
-     // A rejected global flush is not proof that this queued write never committed.
-     alert((committed?'ریست در پایگاه ثبت شد، اما نمایش رابط کامل نشد؛ دادهٔ قبلی به حافظه بازنگشت.':queued?'تأیید نهایی ریست مشخص نیست؛ وضعیت جدید در حافظه حفظ شده است. پیش از خروج، ذخیره یا بازیابی را تعیین تکلیف کنید.':'شروع ثبت ریست انجام نشد؛ تغییر جدید بازگردانده شد.')+'\n'+String(e?.message||e));
-   }finally{writing=false;}
+    writing=true;
+    try{
+      owner.imageLibrary=plan.privateKeep;owner.globalImageLibrary=plan.publicKeep;
+      owner.imageAlbums=[];owner.globalImageAlbums=[];
+      if(!await v329PersistChange(owner,()=>Object.assign(owner,old)))return;
+      await v329AfterCommit(owner,()=>{
+       V.media.clearLibraryHistory?.();
+       selected.clear();chosenFolder='';uploadFolder='';removePopup();
+       render();alert('کتابخانه تصاویر ریست شد.');
+      });
+    }finally{writing=false;}
  }
  async function removeSelected(){
    const ids=[...selected].filter(id=>images().some(a=>a.id===id));if(!ids.length)return;
@@ -16102,10 +16091,10 @@ function v277PrepareOpen(payload,owner){
  if(!state.projectRegistryEmpty&&!v257IsEmptyPlaceholder()&&state.activeWorkspaceId!==duplicate?.id)registry.push({id:state.activeWorkspaceId,name:state.activeWorkspaceName,data:v76CoreSnapshot()});
  target.projectRegistryEmpty=false;target.activeWorkspaceId=duplicate?.id||v291ProjectFileId(payload.project)||uid();target.activeWorkspaceName=name;target.projectWorkspaces=registry;
 
- return {original,oldSelected,target,duplicate,owner,revision:window.V13.workspaceRevision,committed:false};
+  return {original,oldSelected,target,duplicate,owner,revision:window.V13.workspaceRevision,ownerPayload:JSON.stringify(owner),committed:false};
 }
 function v277PlanCurrent(plan){
- return !!plan&&canApplyBackupImport(plan.owner)&&window.V13.workspaceRevision===plan.revision;
+  return !!plan&&canApplyBackupImport(plan.owner)&&window.V13.workspaceRevision===plan.revision&&JSON.stringify(plan.owner)===plan.ownerPayload;
 }
 async function v277CommitOpen(plan,diskOperation=null){
  if(!v277PlanCurrent(plan))fail('پروژه در زمان ورود تغییر کرده است؛ دوباره اقدام کنید.');
@@ -16115,14 +16104,15 @@ async function v277CommitOpen(plan,diskOperation=null){
  try{outcome=await V.persistWorkspaceMutation(diskOperation);}
  catch(error){outcome={state:'UNKNOWN',message:String(error?.message||error),canRollback:false};}
  if(outcome.state!=='COMMITTED'){
-  if(outcome.canRollback&&state===target){
+   if(state===target&&outcome.canRollbackNow?.()){
    state=original;selected=oldSelected;
    try{render();}catch(error){console.warn('[NSP] Open rollback UI failed.',error);}
   }else{
-   if(state===target)v13ResetEditorContext(true);
-   V.blockMutationRecovery?.('وضعیت ثبت ورود نامطمئن است؛ دادهٔ حافظه را حفاظت کنید. ذخیره مجدد تا تعیین تکلیف مسدود است.');
-  }
-  throw Error((outcome.canRollback?'ورود ثبت نشد؛ وضعیت قبلی بازگردانده شد.':'نتیجه ورود مشخص نیست؛ بازگردانی حدسی انجام نشد.')+' '+String(outcome.message||''));
+    V.blockMutationRecovery?.('وضعیت ثبت ورود نامطمئن است؛ دادهٔ حافظه را حفاظت کنید. ذخیره مجدد تا تعیین تکلیف مسدود است.');
+    if(state===target){try{v13ResetEditorContext(true);}catch(error){console.warn('[NSP] Context recovery failed.',error);}}
+   }
+   if(state===original&&outcome.state==='REJECTED')V.blockMutationRecovery?.('ثبت پروژه جایگزین رد شد؛ بازپخش همان Scope روی پروژه قبلی مجاز نیست.');
+   throw Error((state===original?'ورود ثبت نشد؛ وضعیت قبلی بازگردانده شد.':'نتیجه ورود مشخص نیست؛ بازگردانی حدسی انجام نشد.')+' '+String(outcome.message||''));
  }
  // The journal receipt is written atomically with the browser workspace.
  plan.committed=true;
@@ -16371,7 +16361,7 @@ async function importRepositoryZip(file,owner,root,progress=null){
    if(!disk.entry)throw e;
    let committed;
    try{committed=await vPb03Reconcile(disk.entry);}
-   catch(reconcile){fail(String(e.message||e)+'؛ ثبت بازیابی حفظ شد: '+String(reconcile.message||reconcile));}
+   catch(reconcile){window.V13.blockMutationRecovery('Journal ورود تعیین تکلیف نشده است؛ داده و نسخه بازیابی را حفاظت کنید.');fail(String(e.message||e)+'؛ ثبت بازیابی حفظ شد: '+String(reconcile.message||reconcile));}
    if(!committed)throw e;
    alert('ثبت ورود تأیید شد. در صورت نیاز فهرست پروژه‌ها را تازه‌سازی کنید.');
    for(const [src,entry] of hydrated.originals)originalImages.set(src,entry);
@@ -16440,7 +16430,10 @@ async function vPb03Reconcile(entry,renew=false){
  const parent=await entry.root.getDirectoryHandle('project file',{create:false});
  const dir=await parent.getDirectoryHandle(entry.folder,{create:false});
  if(!await dir.isSameEntry(entry.dir))fail('پوشهٔ پروژه دیگر همان پوشهٔ ثبت‌شده نیست؛ هیچ فایلی تغییر نکرد.');
- const committed=await window.V13.diskWorkspaceReceipt(entry.id,entry.baseRevision);
+  const V=window.V13;
+  const readReceipt=async()=>{try{return await V.diskWorkspaceReceipt(entry.id,entry.baseRevision);}catch(error){V.blockMutationRecovery('Revision یا Receipt عملیات فایل نامطمئن است؛ Journal حفظ شد.');throw error;}};
+  const committed=await readReceipt();
+  const stillReceipt=async()=>{if(await readReceipt()!==committed){V.blockMutationRecovery('نتیجه Journal تغییر کرد.');fail('نتیجه Journal تغییر کرد؛ بازیابی خودکار متوقف شد.');}};
  const current=await findFile(dir,'project.json');
  const currentText=await vPb03ReadText(current);
  const transition=vPb03RecoveryDecision(entry,committed,currentText);
@@ -16449,20 +16442,24 @@ async function vPb03Reconcile(entry,renew=false){
   const fresh=await findFile(dir,'project.json');
   if(!fresh||!await fresh.isSameEntry(current)||await vPb03ReadText(fresh)!==currentText)
    fail('فایل پیش از بازیابی تغییر کرد.');
-  await dir.removeEntry('project.json');
+   await stillReceipt();
+   await dir.removeEntry('project.json');
  }else if(transition.action==='write'){
   const fresh=await findFile(dir,'project.json');
   if(current?(!fresh||!await fresh.isSameEntry(current)||await vPb03ReadText(fresh)!==currentText):!!fresh)
    fail('فایل پیش از بازیابی تغییر کرد.');
+  await stillReceipt();
   const out=fresh||await dir.getFileHandle('project.json',{create:true});
   if(!fresh&&(await out.getFile()).size!==0)fail('فایل در همین فاصله ایجاد شده است.');
-  await writeHandle(out,transition.wanted);
+  await stillReceipt();
+   await writeHandle(out,transition.wanted);
  }
  const readback=await findFile(dir,'project.json');
  if(await vPb03ReadText(readback)!==transition.wanted)
   fail('بازخوانی فایل پس از بازیابی تأیید نشد.');
  // Never remove Image objects; they are global and may already be in use.
- await v271RootRecord('delete',undefined,vPb03JournalKey);
+  await stillReceipt();
+  await v271RootRecord('delete',undefined,vPb03JournalKey);
  return committed;
 }
 async function vPb03Recover(){
@@ -16476,7 +16473,7 @@ async function vPb03Recover(){
    const committed=await vPb03Reconcile(entry,true);
    alert(committed?'نسخهٔ قطعی عملیات روی دیسک تأیید شد.':'نسخهٔ قبل از عملیات روی دیسک تأیید شد. تصاویر مشترک حذف نشدند.');
   });
- }catch(e){alert('بازیابی فایل تأیید نشد؛ ثبت بازیابی حفظ شد. '+String(e.message||e));}
+ }catch(e){window.V13.blockMutationRecovery('بازیابی فایل تأیید نشد؛ Journal حفظ شد.');alert('بازیابی فایل تأیید نشد؛ ثبت بازیابی حفظ شد. '+String(e.message||e));}
  finally{busy=false;}
 }
 async function vPb03DownloadRecovery(){
@@ -16627,11 +16624,12 @@ async function v276DeleteManagedProject(id){
  if(V.persistencePending||V.saveError||V.saveBlocked){alert('ابتدا وضعیت ذخیره را مشخص کنید.');return false;}
  const all=v76ListProjects(),project=all.find(p=>p.id===id);
  if(!project)return false;
- const owner=state,stamp=v276ProjectStamp(project);
- const unchanged=()=>{
-  const current=v76ListProjects().find(p=>p.id===id);
-  return state===owner&&!!current&&v276ProjectStamp(current)===stamp&&!V.persistencePending&&!V.saveError&&!V.saveBlocked;
- };
+  const owner=state,stamp=v276ProjectStamp(project),ownerPayload=JSON.stringify(owner),baseRevision=V.workspaceRevision;
+  const unchanged=()=>{
+   const current=v76ListProjects().find(p=>p.id===id);
+   return state===owner&&current?.data===project.data&&v276ProjectStamp(current)===stamp&&
+    JSON.stringify(owner)===ownerPayload&&V.workspaceRevision===baseRevision&&!V.persistencePending&&!V.saveError&&!V.saveBlocked&&v76ValidateCanSwitch();
+  };
  busy=true;let plan=null,journal=null;
  try{
   await vPb03AssertClear();
@@ -16683,7 +16681,7 @@ async function v276DeleteManagedProject(id){
    try{
     if(await vPb03Reconcile(journal)){alert('حذف قطعی پروژه و وضعیت فایل تأیید شد.');return true;}
     alert('حذف قطعی نشد؛ وضعیت فایل قبلی تأیید شد. '+String(e.message||e));
-   }catch(reconcile){alert('نتیجهٔ فایل قطعی نشد؛ ثبت بازیابی حفظ شد. '+String(reconcile.message||reconcile));}
+   }catch(reconcile){V.blockMutationRecovery('حذف یا بازیابی فایل قطعی نیست؛ Journal حفظ شد.');alert('نتیجهٔ فایل قطعی نشد؛ ثبت بازیابی حفظ شد. '+String(reconcile.message||reconcile));}
   }else if(e?.name!=='AbortError')alert('حذف پروژه انجام نشد: '+String(e?.message||e));
   return false;
  }finally{busy=false;}
@@ -17597,21 +17595,14 @@ function view(p){const k=state.activeWorkspaceId+':'+p.id;if(!views.has(k))views
 function change(p,field,fn){
  const owner=state,workspace=owner.activeWorkspaceId;
  const apply=async()=>{
-  if(!p||state!==owner||state.activeWorkspaceId!==workspace||p!==storeBy(p.id)||V.saveBlocked){
-   alert('ویرایش کنترل ثبت نشد؛ پروژه یا وضعیت ذخیره تغییر کرده است.');return false;
+   if(!p||state!==owner||state.activeWorkspaceId!==workspace||p!==storeBy(p.id)||!v329CanMutate()){
+    alert('ویرایش کنترل ثبت نشد؛ پروژه یا وضعیت ذخیره تغییر کرده است.');return false;
   }
   const old=p[field],next=copy(old||[]);
   if(fn(next)===false)return false;
-  try{
    p[field]=next;
-   if(!save(true))throw Error('ذخیره در دسترس نیست');
-   await V.flushStorage();
-   if(state===owner){N.onSharedChange?.(p,field,old,next);patch();}
-   return true;
-  }catch(e){
-   if(state===owner){if(old===undefined)delete p[field];else p[field]=old;patch();}
-   alert(String(e.message||e));return false;
-  }
+   if(!await v329PersistChange(owner,()=>{if(old===undefined)delete p[field];else p[field]=old;}))return false;
+   return v329AfterCommit(owner,()=>{N.onSharedChange?.(p,field,old,next);patch();});
  };
  const request=sharedEdits.then(apply).catch(error=>{alert(String(error?.message||error));return false;});
  sharedEdits=request;
@@ -18295,13 +18286,11 @@ s('hg-year','year','text',260,132,160,22,'سال اجرا'),s('hg-systems','syst
   return {...def,name,width:w,height:h,objects,updatedAt:new Date().toISOString()};
  }
  async function write(next){
-  if(!allowed())return false;
-  const owner=state,old=state.customComponents;state.customComponents=next;
-  if(save(true)!==true){state.customComponents=old;alert('ذخیره آغاز نشد؛ تغییر بازگردانده شد.');return false;}
-  busy=true;
-  try{await V.flushStorage();return true;}
-  catch(e){if(state===owner)state.customComponents=old;alert('ذخیره تأیید نشد؛ تعریف در حافظه نیز بازگردانده شد. '+String(e?.message||''));return false;}
-  finally{busy=false;}
+   if(!allowed()||!v329CanMutate())return false;
+   const owner=state,old=owner.customComponents;owner.customComponents=next;
+   busy=true;
+   try{return await v329PersistChange(owner,()=>{owner.customComponents=old;});}
+   finally{busy=false;}
  }
  async function open(id,mode='edit',base=null){
   if(!allowed())return false;

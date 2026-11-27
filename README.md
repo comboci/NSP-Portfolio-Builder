@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V329 (A14 receipt and journal follow-up)
+
+[گزارش V329](release/browser-v329/START-FA.md) · [پذیرش مالک](release/browser-v329/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v329/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V328 (A14 persistence receipt and import ownership)
 
 [گزارش V328](release/browser-v328/START-FA.md) · [پذیرش مالک](release/browser-v328/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v328/OWNER-RESULTS-TEMPLATE.json). **CONDITIONAL_SOURCE_GO / RUNTIME_PENDING**.
