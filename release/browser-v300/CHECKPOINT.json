@@ -1,0 +1,13 @@
+{
+  "schema": 1, "mission": "NSP-GE-001", "stage": "G09", "branch": "engineering/graphics-engine-evolution",
+  "base": {"version": 299, "commit": "cbe74c086e8aec4ff9d7b29dabc053c45a6a4207"},
+  "candidate": {"version": 300, "commit": "CONTAINING_COMMIT", "status": "SOURCE_COMPLETE / RUNTIME_PENDING", "releaseReady": false},
+  "entry": "index.html",
+  "module": {"path": "graphics-core/diagnostics.js", "embeddedId": "nsp-graphics-core-diagnostics", "blob": "fa206d4bfb2357604adc397fba198c14aa8883dd"},
+  "features": {"scopedReport": "SOURCE_CHANGED", "actionableJump": "SOURCE_CHANGED", "onDemand": true, "projectMutation": false, "externalImageFetchFromScan": false},
+  "limits": {"pages": 500, "issues": 5000, "rowsPerView": 50},
+  "checks": {"sourceReview": "DONE", "inlineModuleByteParity": "CHECKED", "gitDiffWhitespace": "CHECKED",
+    "browser": "NOT_RUN", "native": "NOT_RUN", "pdf": "NOT_RUN", "tests": "NOT_RUN",
+    "staticChecker": "NOT_RUN", "build": "NOT_RUN", "benchmark": "NOT_RUN", "ciCd": "NOT_RUN", "deploy": "NOT_RUN"},
+  "next": "G10", "openStages": ["G10", "G11", "G12"]
+}

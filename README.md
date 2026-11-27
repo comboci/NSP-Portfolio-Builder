@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V300 (Graphics G09 source candidate)
+
+شاخهٔ `engineering/graphics-engine-evolution`؛ [گزارش مرکز عیب‌یابی گرافیک](release/browser-v300/START-FA.md). بررسی فقط خواندنی و پذیرش اجرایی `NOT_RUN`.
+
+---
+
 # NSP Portfolio Builder — Browser V299 (Graphics G08 source candidate)
 
 شاخهٔ `engineering/graphics-engine-evolution`؛ [گزارش و پذیرش Image Editor](release/browser-v299/START-FA.md). اصل تصویر و مالکیت دست‌نخورده‌اند. پذیرش اجرایی `NOT_RUN`.
