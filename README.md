@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V331 (V330-RT-001 hotel card text fitting)
+
+[گزارش V331](release/browser-v331/START-FA.md) · [پذیرش مالک](release/browser-v331/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v331/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V330 (A14 scoped source gate)
 
 [گزارش V330](release/browser-v330/START-FA.md) · [پذیرش مالک](release/browser-v330/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v330/OWNER-RESULTS-TEMPLATE.json). **CONDITIONAL_SOURCE_GO / RUNTIME_PENDING**.
