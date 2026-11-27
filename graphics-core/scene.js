@@ -31,7 +31,8 @@
     result.objects.sort((a,b)=>rank.get(a.layerKey)-rank.get(b.layerKey));result.layers=list;return result;
   }
   function shouldPaint(o,opts={}){
-    return o.visible!==false&&o.renderVisible!==false&&o.layerVisible!==false&&
+    const opacity=Number(o.opacity??1);
+    return o.visible!==false&&o.renderVisible!==false&&o.layerVisible!==false&&(!Number.isFinite(opacity)||opacity>0)&&
       (o.type!=='pageNumber'||opts.showEditablePageNumber===true||Number(opts.pageIndex||1)>1||o.showOnFirstPage===true)&&
       (o.type!=='block'||opts.editor===true);
   }

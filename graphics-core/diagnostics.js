@@ -23,9 +23,9 @@
   const pageNumber=Number.isSafeInteger(provided)&&provided>0?provided:
    Number.isSafeInteger(index)&&index>=0&&index<Number.MAX_SAFE_INTEGER?index+1:null;
   return {severity,type,pageId:cleanId(get('pageId'),200),objectId:cleanId(get('objectId'),200),
-   objectToken:cleanId(get('objectToken'),1200),pageNumber,category:classify(type),message};
+   objectToken:cleanId(get('objectToken'),1200),elementPath:cleanId(get('elementPath'),1800),pageNumber,category:classify(type),message};
  }
- const key=i=>JSON.stringify([i.severity,i.type,i.pageId,i.objectToken||i.objectId,i.pageNumber]);
+ const key=i=>JSON.stringify([i.severity,i.type,i.pageId,i.objectToken||i.objectId,i.elementPath,i.pageNumber]);
  function report(input){
   const list=Array.isArray(input)?input:[],issues=[],ids=new Set();
   let invalid=0,duplicates=0;
