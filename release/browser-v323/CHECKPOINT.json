@@ -1,0 +1,44 @@
+{
+  "mission": "NSP-GE-AUDIT-02",
+  "version": "Browser V323",
+  "parent": "4bddfc4d5e5c71e17a21739c2a28bf25949d0afc",
+  "phase": "A14_INDEPENDENT_SOURCE_AUDIT_PARTIAL",
+  "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+  "findings": [
+    {
+      "id": "A14-IA-01",
+      "severity": "HIGH",
+      "description": "New pins and archives explicitly bind owner identity; scoped import remaps outer owner only; old provenance remains unknown",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-02",
+      "severity": "HIGH",
+      "description": "Reject malformed Region ancestry and post-normalization pin/archive byte overflow without pruning",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-03",
+      "severity": "HIGH",
+      "description": "Refuse flat and nested Pinned Detach with ambiguous clipping, frame background/opacity or child shadows before mutation",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    }
+  ],
+  "openFindings": [
+    "Review legacy central style references, archive-only asset deletion, cross-workspace ownership and storage durability.",
+    "Legacy pins lack verifiable provenance; scoped import can legitimately change outer IDs. No owner guessed for legacy records.",
+    "Exact visual parity, nested detach after scoped import, archive size/performance and all cumulative A13/A14 runtime scenarios remain unverified."
+  ],
+  "runtime": "NOT_RUN",
+  "releaseReady": false,
+  "next": "A14_INDEPENDENT_SOURCE_AUDIT_CONTINUE",
+  "limits": [
+    "DEC-006: no Build/Test/Static Checker/Runtime/CI/CD/Deployment/Merge",
+    "No schema version or Native change; no legacy provenance inferred",
+    "New pin ownerId is an optional additive field, not a migration",
+    "Conservative Detach rejection instead of silent visual changes"
+  ]
+}

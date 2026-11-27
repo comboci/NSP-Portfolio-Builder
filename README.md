@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V323 (A14 independent source audit)
+
+[گزارش ممیزی A14](release/browser-v323/START-FA.md) — هویت Pin، اعتبارسنجی آرشیو و حفاظت Detach. **PARTIAL / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V322 (A14 revision selection)
 
 [گزارش تکمیل اولیه A14](release/browser-v322/START-FA.md) — انتخاب نسخهٔ آرشیوی و Pin تودرتو. **RUNTIME_PENDING**.
