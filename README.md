@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V334 (Tile dependency fail-closed)
+
+[گزارش V334](release/browser-v334/START-FA.md) · [پذیرش مالک](release/browser-v334/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v334/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V333 (Hotel Text dispatch and Custom Slot scope)
 
 [گزارش V333](release/browser-v333/START-FA.md) · [پذیرش مالک](release/browser-v333/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v333/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.

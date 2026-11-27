@@ -1,0 +1,366 @@
+{
+  "mission": "NSP-GE-AUDIT-02",
+  "version": "Browser V334",
+  "parent": "4cc29d9d58859194e26537aadf728dcfcca01934",
+  "phase": "V333_TILE_DEPENDENCY_FAIL_CLOSED_REMEDIATION",
+  "gate": "CONDITIONAL_SOURCE_GO_RUNTIME_PENDING",
+  "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+  "findings": [
+    {
+      "id": "A14-IA-01",
+      "severity": "HIGH",
+      "description": "New pins and archives explicitly bind owner identity; scoped import remaps outer owner only; old provenance remains unknown",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-02",
+      "severity": "HIGH",
+      "description": "Reject malformed Region ancestry and post-normalization pin/archive byte overflow without pruning",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-03",
+      "severity": "HIGH",
+      "description": "Refuse flat and nested Pinned Detach with ambiguous clipping, frame background/opacity or child shadows before mutation",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-04",
+      "severity": "HIGH",
+      "description": "Central style deletion now includes editor history, drafts and same-workspace clipboard; clipboard asset refs also protected",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-05",
+      "severity": "HIGH",
+      "description": "Portable import/export checks source-owned style and asset closure, duplicate private/public IDs, templates and archive-only dependencies before remapping",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-06",
+      "severity": "HIGH",
+      "description": "Malformed Tile dependencies block asset removal; strict cells/stash structure required by dependency collector",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-07",
+      "severity": "HIGH",
+      "description": "Page-only persistence rejects stored/queued common revision or archive mismatch and newly missing style references instead of silently using stale definitions",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-08",
+      "severity": "HIGH",
+      "description": "Nested pinned detach with remapped outer identity is refused rather than guessing live child identity in destination",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-01",
+      "severity": "HIGH",
+      "description": "Startup and full restore share workspace validation; inactive scope checked; reject nested registry and malformed Tile without overwriting stored payload; validate draft ownership before restore",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-02",
+      "severity": "HIGH",
+      "description": "Restore checks owner and revision after asynchronous guard, blocks concurrent editing, requires prior backup, reports CAS conflict and distinguishes post-commit UI failure; raw recovery preserves previous payload and exposes invalid backups as raw exports",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-03",
+      "severity": "HIGH",
+      "description": "Q-005 public images hidden, never removed by library reset; only unreferenced active private resources removed; mixed delete stops on failed public mutation; private delete/undo blocked during uncertain persistence",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-04",
+      "severity": "HIGH",
+      "description": "A13 expected-side history snapshots and editor/clipboard references protected; component delete checks draft identity and live edges without conflating closed snapshot IDs",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-05",
+      "severity": "MEDIUM",
+      "description": "Valid common archive records retain additive metadata during normalization; no fabricated legacy provenance",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-01",
+      "severity": "HIGH",
+      "description": "Distinguish missing key, empty/non-text payload and nonzero-revision missing data at startup; never initialize over invalid persisted data",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-02",
+      "severity": "HIGH",
+      "description": "Expose direct raw textual export without portable JSON cap; raw-only checkpoint flag, preserve empty textual payload, refuse non-text replacement; cancel conflict reload on draft export failure",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-03",
+      "severity": "HIGH",
+      "description": "Clear catalog draft, clipboard and page session on full editor reset, including restore to identical workspace IDs",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-04",
+      "severity": "HIGH",
+      "description": "Require explicit full save for legacy workspace without persisted owner ID; compare normalized common definition bodies and archives on page-only persistence rather than raw serialization",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-05",
+      "severity": "HIGH",
+      "description": "Do not roll back image reset in memory after confirmed persistence when UI refresh fails; distinguish committed restore with failed UI and block restored draft opening",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-01",
+      "severity": "HIGH",
+      "description": "Page-only save requires full save if normalized active portfolio differs from persisted alias; retry refuses repeating known full-save-required failures and rechecks owner",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-02",
+      "severity": "HIGH",
+      "description": "Backup browsing and raw download remain read-only despite save errors; valid and raw textual backups offer raw export; raw-only cannot restore; named backup requires settled persistence and reports CAS conflict",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-03",
+      "severity": "HIGH",
+      "description": "Recovery confirmation and replacement use the same normalized candidate; post-commit reload failure distinguished from rejected replacement",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-04",
+      "severity": "HIGH",
+      "description": "Library reset rolls back only before enqueue; after uncertain async flush retain proposed memory state rather than speculatively reverting a committed snapshot",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-05",
+      "severity": "HIGH",
+      "description": "A13 discard requires exact active portfolio/page-array scope before and after asynchronous continuation checks",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-01",
+      "severity": "HIGH",
+      "description": "Dedicated per-operation in-memory write receipt; distinguish COMMITTED, REJECTED, NOT_QUEUED, UNKNOWN; rendering/status errors cannot misclassify a committed IndexedDB write; acknowledgement failure blocks recovery",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-02",
+      "severity": "HIGH",
+      "description": "v77Persist checks unsettled storage and owner; rollback only before enqueue or confirmed rejection with unchanged exact snapshot and no successor; otherwise retain candidate and block uncertain writes",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-03",
+      "severity": "HIGH",
+      "description": "Project-file and journal-backed ZIP open consume operation receipt; confirmed commit separated from UI error, rollback only on attributable rejection; journal reconciliation remains authoritative for disk files",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-04",
+      "severity": "HIGH",
+      "description": "Scoped portfolio import freezes owner and destination reference from picker through confirmation, preserves pre-existing private asset and common definition records, appends only validated additions",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-05",
+      "severity": "HIGH",
+      "description": "Independent project import remaps source-private IDs colliding with public destination catalog and remaps album membership; refuse missing template category and ambiguous historical template identity instead of destination fallback",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-01",
+      "severity": "HIGH",
+      "description": "Receipt rechecks exact candidate, owner, queue revision and pending state at undo time; storage flags precede DOM status; rejected root replacement blocks stale scope retry.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-02",
+      "severity": "HIGH",
+      "description": "Project switch/create/rename/legacy deletion and portfolio activation consume attributable receipts; committed UI failure never restores previous state.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-03",
+      "severity": "HIGH",
+      "description": "Managed project registry deletion consumes operation receipt for active/inactive and disk-backed paths; workspace, record and revision checked during disk preparation.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-04",
+      "severity": "HIGH",
+      "description": "Journal requires exact base revision for rejection or base+1 with matching receipt for commit; rereads before disk mutation and journal removal; ambiguous successor retains recovery evidence.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-05",
+      "severity": "HIGH",
+      "description": "Style save, public image rename, template/page creation, album mutations and image reset consume per-write receipts.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-06",
+      "severity": "HIGH",
+      "description": "NSP Data Controls and component definition writes consume attributable receipts; import rechecks original owner snapshot and blocks rejected root-scope retry.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-01",
+      "severity": "HIGH",
+      "description": "Page save now requires the exact live page object and returns an operation receipt; explicit navigation validates receipt, scope and page stamp. Global flush rejects successor, pending or recovery state.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-02",
+      "severity": "HIGH",
+      "description": "Both template application paths use page receipts and freeze chooser owner/page identity; no rollback on committed UI failure.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-03",
+      "severity": "HIGH",
+      "description": "Discard, page ordering and cut/paste structure use attributable receipts; prior state retained only for exact rollback eligibility.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-04",
+      "severity": "HIGH",
+      "description": "Ordinary IndexedDB writes share the same-origin Journal lock; exclusive disk transaction validates its receipt ID and base revision, and registry-only delete carries a non-persisted token. Pending Journal blocks other writes.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-05",
+      "severity": "HIGH",
+      "description": "Disk preparation rechecks revision before Journal and file mutation; newly appeared nonempty file refuses overwrite; recovery evidence includes operation ID and base revision.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-06",
+      "severity": "HIGH",
+      "description": "Restore rechecks full owner snapshot across asynchronous guard, navigation failure after import is distinguished from transaction failure, recovery state survives pending/error indicators.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V330-RT-001",
+      "severity": "P1",
+      "description": "Dot V330 actual browser measurement: 24 vertical overflows in default Hotel View/Grid; Tehran city 19/23 and 10/13 px, hotel name 65/90 and 30/42 px. V331 computes line-height-aware font ceiling and measures bound card text in the final projected slot via existing text renderer; bounded cache; no text truncation, no preflight suppression.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V331-HT-02",
+      "severity": "MEDIUM",
+      "description": "Grid default rows reserve more vertical capacity and clamp requested spacing within remaining card height. All bound visible card labels fit against final slot dimensions, including edited Component Editor definitions; preserve hidden/static authored elements and underlying data. At minimum 6 px, an unfittable field remains a print-blocking diagnostic.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V331-RT-002",
+      "severity": "P1",
+      "description": "Dot reproduced a long Hotel Text record wrapping into two lines: fixed frame 29 px vs actual 58 px, blocking print in V330 and V331. V332 measures natural wrapped height using the existing text renderer at selected font size, advances subsequent rows by measured height, preserves full underlying text and unchanged print-blocking diagnostics.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V332-TX-02",
+      "severity": "MEDIUM",
+      "description": "Measure custom Hotel Text at its final scaled slot width and typography including borders and effects, without measuring the discarded default layout. Bounded separate 1024-entry height cache invalidated on font loading events. Inline mode verifies total capacity; insufficient or unmeasurable height fails closed. V331 Hotel View/Grid fitting algorithm not changed.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V333-TX-01",
+      "severity": "P1",
+      "description": "Confirmed in V332 index.html lines 17859,17902,17916,17927,17997–18001: renderScene passed renderer tools as the third argument to layoutText, whose new third argument means slotEffects. Spread order in text() then allowed tools.text (a function) to overwrite the bound string. V333 explicitly separates text/card dispatch, filters visual overrides to an allowlist, and assigns the bound text after overrides.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V333-TX-02",
+      "severity": "P1",
+      "description": "Confirmed in V332 index.html lines 18562–18564,18625–18635: the nsp-slots IIFE declared N but not V, then used V.graphicsCore.scene.shouldPaint(s) for Hotel Text custom slots. V333 explicitly binds V=V13 and N=V.nsp in that IIFE. No change to slot geometry, visibility contract or prior card fit algorithm.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V334-TILE-01",
+      "severity": "P0",
+      "description": "Source-confirmed V333 index.html: v20VisualFields validates Tile dimensions, cells, stash coordinates and member types, but v111AssetIds only checks array/object containers; valid JSON containing a number/boolean/array as a cell, invalid stash coordinate or invalid assetId can pass dependency collection. M.references skips non-text tilesJson. Single/bulk removal and library Undo use M.references; reset and portable/page dependency checks use v111AssetIds. V334 shares the existing normalization validator and routes nonempty non-text metadata to fail-closed handling. Existing validated startup rejects many such inputs; runtime reachability/data loss not established. No raw data rewrite or schema change.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    }
+  ],
+  "openFindings": [
+    "V333 source-only review identified V334-TILE-01: dependency collector accepts malformed cell/stash members and deletion guard skips non-text tilesJson. Remediation is source-only; runtime reachability and acceptance remain open.",
+    "Full V333 source audit is not exhaustive; reviewed IndexedDB CAS/receipts/restore, page queue, journal, common pin/archive, portable closure, selected Region/clipboard/history, Hotel Text/View/Grid projection. Remaining call paths and Native require separate review.",
+    "V333 Dot report: 27 PASS, 0 FAIL, 1 BLOCKED, 164 incomplete of 192; 31 successful P0 subtests; raw row evidence not independently recovered. No PASS transferred."
+  ],
+  "runtime": "NOT_RUN",
+  "releaseReady": false,
+  "next": "OWNER_AUTHORIZED_ISOLATED_RUNTIME_ACCEPTANCE_V334",
+  "limits": [
+    "DEC-006: no Build/Test/Static Checker/Runtime/CI/CD/Deployment/Merge in this source pass",
+    "No schema version or Native change; no data or preflight mutation",
+    "All 196 V334 scenarios NOT_RUN"
+  ],
+  "acceptanceRows": 196,
+  "priorRuntime": {
+    "candidate": "Browser V333",
+    "sha": "4cc29d9d58859194e26537aadf728dcfcca01934",
+    "report": "V333-AUDIT-FA.md (report reviewed; raw matrix not independently retrieved)",
+    "decision": "NO-GO (reported)",
+    "pass": 27,
+    "fail": 0,
+    "blocked": 1,
+    "notRun": 164,
+    "p0SuccessfulSubtests": 31,
+    "verifiedFromOriginalEvidence": false,
+    "ownerSignoff": null
+  }
+}
