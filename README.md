@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V316 (Graphics A13 partial source candidate)
+
+[گزارش A13](release/browser-v316/START-FA.md) — Auto Layout اختیاری متن و Region موجود؛ **PARTIAL / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V315 (Graphics A12 source candidate)
 
 [گزارش A12](release/browser-v315/START-FA.md) — حفاظت و تعیین تکلیف صریح صفحات ادامهٔ قدیمی. **SOURCE_CHANGED / RUNTIME_PENDING**.

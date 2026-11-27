@@ -1,0 +1,20 @@
+{
+  "mission": "NSP-GE-AUDIT-02",
+  "version": "Browser V316",
+  "parent": "7378c19c22c468f7470215820bcbb02d5bf56754",
+  "phase": "A13",
+  "status": "PARTIAL_SOURCE_CHANGED_RUNTIME_PENDING",
+  "findings": {
+    "GE-025": "SHARED_PLANNER_EXTENDED_SOURCE_CHANGED",
+    "GE-026": "OPT_IN_TEXT_HEIGHT_AND_EXISTING_NESTED_REGION_SOURCE_CHANGED"
+  },
+  "limits": [
+    "Nested parent authoring and generic Region drag/resize/delete lifecycle not extended",
+    "Rigid nested dimensions only",
+    "Central style propagation and exact font face/glyph verification remain open",
+    "100 ordinary text frames per plan"
+  ],
+  "runtime": "NOT_RUN",
+  "releaseReady": false,
+  "next": "A13_FOLLOWUP_THEN_A14_COMPONENT_REVISIONS"
+}
