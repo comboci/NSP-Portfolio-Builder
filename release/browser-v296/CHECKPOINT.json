@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "mission": "NSP-GE-001",
+  "stage": "G05",
+  "branch": "engineering/graphics-engine-evolution",
+  "base": {"version": 295, "commit": "27a9fdf5786216e25f0e0a412178a0345a46cc97"},
+  "candidate": {"version": 296, "commit": "CONTAINING_COMMIT", "status": "SOURCE_COMPLETE / RUNTIME_PENDING", "releaseReady": false},
+  "entry": "index.html",
+  "newModule": {"path": "graphics-core/component-revisions.js", "embeddedId": "nsp-graphics-core-component-revisions", "blob": "a29e2093f2b354d20fdbb314b105876ca501c143"},
+  "features": {"hotelVariants": "SOURCE_CHANGED", "revisionComparison": "SOURCE_CHANGED", "perInstanceOverrides": "SOURCE_CHANGED", "selectedUpgrade": "SOURCE_CHANGED", "nestedCommonComponents": "SOURCE_CHANGED", "dependencyReport": "SOURCE_CHANGED", "scopeClosure": "SOURCE_CHANGED"},
+  "gates": {"nestedHotelData": "NOT_SUPPORTED", "schemaVersionChanged": false, "nativeChanged": false, "singlePortfolioArchives": "EXCLUDED"},
+  "checks": {"sourceReview": "DONE", "inlineModuleByteParity": "CHECKED", "gitDiffWhitespace": "CHECKED",
+    "browser": "NOT_RUN", "native": "NOT_RUN", "pdf": "NOT_RUN", "tests": "NOT_RUN",
+    "staticChecker": "NOT_RUN", "build": "NOT_RUN", "benchmark": "NOT_RUN", "ciCd": "NOT_RUN", "deploy": "NOT_RUN"},
+  "next": "G06",
+  "openStages": ["G06", "G07", "G08", "G09", "G10", "G11", "G12"]
+}
