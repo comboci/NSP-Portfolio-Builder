@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V335 (Private library / structural page receipts)
+
+[گزارش V335](release/browser-v335/START-FA.md) · [پذیرش مالک](release/browser-v335/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v335/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V334 (Tile dependency fail-closed)
 
 [گزارش V334](release/browser-v334/START-FA.md) · [پذیرش مالک](release/browser-v334/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v334/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
