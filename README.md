@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V337 (Public media persistence receipt)
+
+[گزارش V337](release/browser-v337/START-FA.md) · [پذیرش مالک](release/browser-v337/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v337/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V336 (Restore / startup UI isolation)
 
 [گزارش V336](release/browser-v336/START-FA.md) · [پذیرش مالک](release/browser-v336/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v336/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
