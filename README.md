@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V339 (Image identity / explicit ownership)
+
+[گزارش V339](release/browser-v339/START-FA.md) · [پذیرش مالک](release/browser-v339/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v339/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V338 (Template publication receipt / album scope)
 
 [گزارش V338](release/browser-v338/START-FA.md) · [پذیرش مالک](release/browser-v338/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v338/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
