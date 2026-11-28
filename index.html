@@ -18965,7 +18965,7 @@ s('hg-year','year','text',260,132,160,22,'سال اجرا'),s('hg-systems','syst
   render();return true;
  }
  async function saveDraft(stay=false,asCopy=false){
-  const pg=current(),c=pg?.nspEditorDraft;if(!c||!allowed())return false;
+  const owner=state,pg=current(),c=pg?.nspEditorDraft;if(!c||!allowed())return false;
   if(!c.creating&&!asCopy&&Number(lookup(c.sourceId)?.nspVersion)!==c.version){alert('نسخه عوض شده است؛ طرح را دوباره باز کنید.');return false;}
   let name=pg.title;
   if(asCopy){name=prompt('نام کامپوننت تازه:',name+' ـ کپی');if(name===null)return false;}
@@ -18974,8 +18974,12 @@ s('hg-year','year','text',260,132,160,22,'سال اجرا'),s('hg-systems','syst
    const previous=(c.creating||asCopy)?null:lookup(c.sourceId);
    const next=revisions.withRevision(shape(def,c.width,c.height,V.resolvePage(pg).objects,name),previous);
    if(!await write(existing().filter(o=>o.id!==def.id).concat(next)))return false;
-   if(stay){pg.title=next.name;Object.assign(c,{creating:false,sourceId:next.id,targetId:next.id,status:next.nspStatus,version:next.nspVersion});V.editor.ackSavedCatalogDraft?.();render();return true;}
-   V.editor.closeCatalogDraft();await go(pane);return true;
+   return await v329AfterCommit(owner,async()=>{
+    if(current()!==pg||pg.nspEditorDraft!==c)return false;
+    if(stay){pg.title=next.name;Object.assign(c,{creating:false,sourceId:next.id,targetId:next.id,status:next.nspStatus,version:next.nspVersion});V.editor.ackSavedCatalogDraft?.();render();return true;}
+    V.editor.closeCatalogDraft();
+    return await go(pane)!==false&&tab===pane;
+   });
   }catch(e){alert(String(e.message||e));return false;}
  }
  const saveLegacy=V.saveCatalogDraft;
