@@ -12234,10 +12234,10 @@ function showBrowserStorageRecovery(error,readRevision=false){
    if(!chosen)return alert('گروه معتبر نیست.');
   }
   const created={id:uid(),name:name.trim(),categoryId:chosen.id,createdAt:new Date().toISOString(),...contents};
+  const owner=state;
   templates().push(created);
-  if(await persist(()=>{state.templates=templates().filter(t=>t.id!==created.id);})){
-   filter=chosen.id;expandToGroup(chosen.id);render();return created;
-  }
+  if(!await persist(()=>{owner.templates=owner.templates.filter(t=>t.id!==created.id);}))return;
+  if(await v329AfterCommit(owner,()=>{filter=chosen.id;expandToGroup(chosen.id);return render();}))return created;
  }
  function instantiate(t,p,keepDefaultLayer=false){
   const original=copy(t.objects||[]);
