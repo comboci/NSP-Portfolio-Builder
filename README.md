@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V343
+
+[تصمیم Merge برای آزمون مالک](release/browser-v343/START-FA.md) · [ماتریس پوشش سورس](release/browser-v343/SOURCE-COVERAGE-FA.md) · [پذیرش مالک](release/browser-v343/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v343/OWNER-RESULTS-TEMPLATE.json)
+
+---
+
 # NSP Portfolio Builder — Browser V342 (Album kind / page ownership / structural receipt)
 
 [گزارش V342](release/browser-v342/START-FA.md) · [پذیرش مالک](release/browser-v342/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v342/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
