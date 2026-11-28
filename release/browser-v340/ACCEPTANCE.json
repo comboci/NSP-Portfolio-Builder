@@ -1,0 +1,1399 @@
+{
+  "releaseReady": false,
+  "immutableCandidate": "CONTAINING_COMMIT",
+  "runtime": {
+    "browser": "NOT_RUN",
+    "native": "NOT_RUN",
+    "pdf": "NOT_RUN",
+    "tests": "NOT_RUN",
+    "staticChecker": "NOT_RUN",
+    "build": "NOT_RUN",
+    "benchmark": "NOT_RUN",
+    "ciCd": "NOT_RUN",
+    "deploy": "NOT_RUN"
+  },
+  "browserScenarios": [
+    {
+      "id": "E08-01",
+      "name": "Two isolated portfolios/multiple pages",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-02",
+      "name": "Two logo variants and multiple bound images",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-03",
+      "name": "One logo update with geometry unchanged",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-04",
+      "name": "System name/icon propagates to Hotel View and Grid",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-05",
+      "name": "Hotel Text fields and RTL/LTR",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-06",
+      "name": "Hotel View independent visibility",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-07",
+      "name": "Grid with four distinct hotels",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-08",
+      "name": "Create Hotel View Square",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-09",
+      "name": "Published component appears in Toolbox",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-10",
+      "name": "Reload component and reuse",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-11",
+      "name": "ZIP roundtrip preserve refs",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-12",
+      "name": "Print/PDF without tray",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-13",
+      "name": "Open pre-V290 project",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-14",
+      "name": "Drag and Properties responsiveness",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "E08-15",
+      "name": "Database unavailable/no Office traffic",
+      "state": "NOT_RUN"
+    }
+  ],
+  "additional": [
+    {
+      "name": "Legacy Project JSON and isolated project/portfolio ZIP (owners, history and images)",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Real IndexedDB and reload",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Duplicate page ID across portfolios; scope-isolated assets in both print paths",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Frozen preview on abandoned/superseded navigation and pending/failed save",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Mixed A3/A4/A5, A4 trim, binder clearance and flat bleed in real Browser PDF",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Missing required nested image and font; mixed Persian/English",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Detached canvas lost capture / cancel and next gesture; zero persisted edit",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "GE G01–G09 case matrix",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "10/100/500 data integrity + measurements",
+      "state": "NOT_RUN"
+    },
+    {
+      "name": "Native / Windows paths separately",
+      "state": "NOT_RUN"
+    }
+  ],
+  "baseline": "f7efda910a8b888d391da5b7e058dab25a92e9df",
+  "mission": "NSP-GE-AUDIT-02",
+  "remediation": [
+    {
+      "id": "IA-01",
+      "name": "Repeated page ID across portfolios in Editor, Preview, Print paths, Diagnostics, Logo and Hotel bindings",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-02",
+      "name": "Cut/delete/Region/template/conversion with manually edited continuation and locked continuation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-03",
+      "name": "Text Flow transaction across page history, manual conflict, save rejection and reload",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-04",
+      "name": "Independent flows on same source; stale, superseded, locked or scope-changed request",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-05",
+      "name": "Transform capture cancellation, release-only persistence and scrolled coordinates across Zoom",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-06",
+      "name": "Common nested snapshot with opt-in hotel live and override fallback; full/scoped ZIP asset closure",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-07",
+      "name": "Shared Auto Layout validation, nested opted-in Region and no implicit duplication",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-08",
+      "name": "Rich Clipboard, character color, Persian IME and linked type metrics drift",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-09",
+      "name": "Text/shape/vector gradient compare in Preview and actual PDF; opacity-zero assets not loaded",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-10",
+      "name": "Diagnostics nested font reasons, incomplete result, local overflow along both axes",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-11",
+      "name": "Parity and 10/100/500 benchmark comparing cold mount, history and pointer p95",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "IA-12",
+      "name": "Delimiter-containing IDs and orphan detection in imported legacy projects",
+      "state": "NOT_RUN"
+    }
+  ],
+  "parent": "8d9f3f24642d8e094d8bda13ca083281382dc8e2",
+  "candidate": "Browser V340",
+  "a11": [
+    {
+      "id": "A11-01",
+      "name": "Style link/unlink reflow and protected manual/locked continuation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A11-02",
+      "name": "Active portfolio style batch, scope change, pending/failed persistence and exact counts",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A11-03",
+      "name": "Pinned closure diagnostics and live hotel fallback",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A11-04",
+      "name": "Legacy continuation provenance warning without deletion",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a12": [
+    {
+      "id": "A12-01",
+      "name": "Legacy signed and unsigned continuation groups: reflow and shrink rejected; all historical content retained",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-02",
+      "name": "Explicit group detach from source or continuation, including manual content; exact identities, asset refs, geometry and page order preserved; cancel no mutation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-03",
+      "name": "Orphan source, missing manuscript, invalid relation and marker-only continuation: diagnostics and explicit recovery without guessed content deletion",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-04",
+      "name": "Locked continuation, locked ancestor Region, locked source, conflicting marker/index and outbound child relation: no unsafe rewrite",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-05",
+      "name": "Detached full manuscript: edit/resize/style batch does not recreate pages automatically; explicit resume consent creates only new managed pages",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-06",
+      "name": "Multi-flow source with linked continuation but missing origin metadata, plus unknown text measurement: no duplication of unrelated manuscript in new continuation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-07",
+      "name": "Undo/Redo exact group, source edit conflict, single-page discard guard, storage failure, owner switch and reload",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A12-08",
+      "name": "Duplicate IDs across portfolios, full and scoped ZIP, legacy Backup/Restore, Editor/Preview/PDF preservation",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a13": [
+    {
+      "id": "A13-01",
+      "name": "Legacy config without new flags: no implicit nesting/height fit; import/reload/ZIP parity",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-02",
+      "name": "Opt-in row/column/grid text heights with measured proposed width, mixed RTL/LTR rich runs, borders and min/max constraints",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-03",
+      "name": "Font loading/fallback, vector glyph, fixed ratio, horizontal overflow, 101 text frames: reject unsafe plan",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-04",
+      "name": "Existing nested Region moved as rigid member in all three layout modes, descendants preserve relative positions and sizes",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-05",
+      "name": "Nested locked/grouped/flow-related descendant, cyclic or invalid relation, cross-page IDs, overflows: no partial application",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-06",
+      "name": "Preview, Apply, diagnostics use same planner; explicit Apply must not trigger unrelated reactive layout",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-07",
+      "name": "Reactive outer-to-inner geometry, local rich-text edits, one history transition, storage failure and Undo/Redo",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-08",
+      "name": "Legacy continuation/marker and linked source with missing text metadata: no automatic rewrite or copy; nested overflow copy rejected",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-09",
+      "name": "Browser/PDF/IndexedDB/ZIP acceptance and 100-frame measurement cost; nested authoring and central style propagation remain open",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a13Followup": [
+    {
+      "id": "A13F-01",
+      "name": "Create nested Region, reparent/detach without geometry loss, reject self/cycle, cross-layer subtree and malformed imported graph",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13F-02",
+      "name": "Recursive drag, frame and proportional resize, min/max/aspect constraints and nested fixed layout; compare pointer vs Properties, undo/redo and locks",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13F-03",
+      "name": "Delete/Cut/Layer delete/Group/align/duplicate with nested descendants and locked or flow-linked child; no orphan or historical content loss",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13F-04",
+      "name": "Layer tree with nested/cyclic legacy records; no silent repair, crash or hidden unrelated content",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13F-05",
+      "name": "Font declared/local/generic/fallback and rich text in mixed Persian/English; conservative evidence is not glyph coverage",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13F-06",
+      "name": "Explicit central-style layout batch across portfolios of current project, duplicate page IDs, locked/legacy pages, storage failure and owner switch",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13F-07",
+      "name": "Browser/PDF/IndexedDB/ZIP/Undo acceptance plus regression matrix V315/V316",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a13Independent": [
+    {
+      "id": "A13-IA-01",
+      "severity": "HIGH",
+      "name": "Group Resize, keyboard and direct property paths missing shared min/max/aspect checks",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-02",
+      "severity": "HIGH",
+      "name": "Protected/grouped child could preview detached geometry and retain invalid relationship; prior nesting not checked",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-03",
+      "severity": "HIGH",
+      "name": "Every reactive Region ran after any watched object edit; unrelated locked/invalid Region blocked valid layout",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-04",
+      "severity": "HIGH",
+      "name": "Property handler scheduled Text Flow after commit failure; coalesced property save lacked rollback",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-05",
+      "severity": "HIGH",
+      "name": "Planner/preview did not share raw bounds/stroke checks; multi-page delete bypassed generic guard",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-06",
+      "severity": "MEDIUM",
+      "name": "Repeated ancestry/subtree scans in resolved scene and commit; replace with scoped graph indexes",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-07",
+      "severity": "MEDIUM",
+      "name": "Overflow page creation lacked structural history and style staleness guard; central style editing could race batch",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-IA-08",
+      "severity": "MEDIUM",
+      "name": "Font evidence accepted any loaded face in matching family without matching style/weight",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a13Final": [
+    {
+      "id": "A13-F01",
+      "name": "Clipboard: rigid transformed translation, preflight relation graph, no increment on rejection, guarded Text Flow copy/cut and truthful duplicate result",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-F02",
+      "name": "Component: complete subtree, one external parent, same source layer, linked text protection",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-F03",
+      "name": "Raw paper geometry before format change, catalog draft guard, nested resize constraint",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-F04",
+      "name": "Portfolio import/clone: preserve original manuscript and fragments, remap explicit source identities, invalidate old copied signature",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-F05",
+      "name": "Scoped page ownership, pending structural save guard, coalesced layer rollback",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-F06",
+      "name": "Legacy cycle and missing-ancestor diagnostics without data migration",
+      "source": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a13GateFollowup": [
+    {
+      "id": "A13-R20-01",
+      "description": "Paste preserves geometry and does not auto-paginate; duplicate and component conversion preserve explicit placement",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-R20-02",
+      "description": "Ordinary history rejects divergent snapshots; coalesced writes verify matching state and roll back on rejection",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-R20-03",
+      "description": "Managed flow page copy/cut and cross-portfolio page paste fail closed; cut clipboard only staged after approval; storage guard",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A13-R20-04",
+      "description": "Prevent deleting orphan continuation marker, changing managed page format or copying nested overflow when child Region excluded",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a14": [
+    {
+      "id": "A14-01",
+      "description": "Common revisions archive previous root and full dependency closure; bounded lineage, legacy revision gap preserved, no silent pruning",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-02",
+      "description": "Nested Pinned closures validated with independent scope and depth/expansion limits; renderer uses definition identity, no hidden live substitution",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-04",
+      "description": "Scoped export/import retains common and hotel archives; recursively collect/remap styles in closed snapshots; assets remain recursively closed",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-05",
+      "description": "Pinned Detach resolves actual revision; unsafe transforms fail closed and nested dependencies remain pinned",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-03",
+      "description": "Common Properties selects current or archived revision; explicit relink and revision change; nested pin in common draft with dependency validation; no reactive re-layout",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-AC-01",
+      "name": "Save revisions 1→2→3, archive limit without pruning, no fabricated legacy revisions, reload and compare current/archive",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-AC-02",
+      "name": "Live and pinned root and nested child, pinned old version after dependency/style change, graph cycle/depth/size limits",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-AC-03",
+      "name": "Full and scoped ZIP preserving common and hotel revision archives, remapped IDs, archived-only assets and legacy pinned style refs",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-AC-04",
+      "name": "Pinned detach safe/unsafe geometry, nested pins, Region ownership, Undo/Redo, queue failure and actual PDF",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-AC-05",
+      "name": "All A13 acceptance scenarios; source review of new archives, style and asset deletion guards and storage compatibility",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-AC-06",
+      "name": "Properties choose archived/current revision, pin nested common draft, cancel relink/change, missing definition, preserve geometry, save/reload and Undo/Redo",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a14Independent": [
+    {
+      "id": "A14-IA-01",
+      "severity": "HIGH",
+      "description": "New pins and archives explicitly bind owner identity; scoped import remaps outer owner only; old provenance remains unknown",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-02",
+      "severity": "HIGH",
+      "description": "Reject malformed Region ancestry and post-normalization pin/archive byte overflow without pruning",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-03",
+      "severity": "HIGH",
+      "description": "Refuse flat and nested Pinned Detach with ambiguous clipping, frame background/opacity or child shadows before mutation",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC01",
+      "name": "Owner-bound pin and archive, swapped owner reject; scoped clone remaps owner without changing closure IDs; legacy provenance unknown",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC02",
+      "name": "Malformed nested Region and post-normalization pin/archive overflow: reject without pruning",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC03",
+      "name": "Pinned flat/nested detach clipped child, background, opacity, shadows, safe plain frame, Undo/Redo, persistence failure",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-04",
+      "severity": "HIGH",
+      "description": "Central style deletion now includes editor history, drafts and same-workspace clipboard; clipboard asset refs also protected",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-05",
+      "severity": "HIGH",
+      "description": "Portable import/export checks source-owned style and asset closure, duplicate private/public IDs, templates and archive-only dependencies before remapping",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-06",
+      "severity": "HIGH",
+      "description": "Malformed Tile dependencies block asset removal; strict cells/stash structure required by dependency collector",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-07",
+      "severity": "HIGH",
+      "description": "Page-only persistence rejects stored/queued common revision or archive mismatch and newly missing style references instead of silently using stale definitions",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-08",
+      "severity": "HIGH",
+      "description": "Nested pinned detach with remapped outer identity is refused rather than guessing live child identity in destination",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC04",
+      "name": "Delete central style and private assets referenced only in archive, editor history, structural transition, draft or same-workspace clipboard; unrelated project isolation",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC05",
+      "name": "Full/scoped import/export with missing archive-only style or image, destination ID collision, valid dependency remap and legacy unresolved style; no accidental destination binding",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC06",
+      "name": "Malformed Tile JSON, invalid cells/stash, valid stash-only asset, single/bulk deletion, library undo and reset",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC07",
+      "name": "Page-only save with persisted common revision mismatch, newly missing style, pending write and A13 history/flow guard; no partial persistence",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-IA-AC08",
+      "name": "Scoped imported nested pinned detach with closure root differing from current ID; keep instance unchanged; ordinary non-imported detach remains available subject to V323 guards",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a14FinalGate": [
+    {
+      "id": "A14-FG-01",
+      "severity": "HIGH",
+      "description": "Startup and full restore share workspace validation; inactive scope checked; reject nested registry and malformed Tile without overwriting stored payload; validate draft ownership before restore",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-02",
+      "severity": "HIGH",
+      "description": "Restore checks owner and revision after asynchronous guard, blocks concurrent editing, requires prior backup, reports CAS conflict and distinguishes post-commit UI failure; raw recovery preserves previous payload and exposes invalid backups as raw exports",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-03",
+      "severity": "HIGH",
+      "description": "Q-005 public images hidden, never removed by library reset; only unreferenced active private resources removed; mixed delete stops on failed public mutation; private delete/undo blocked during uncertain persistence",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-04",
+      "severity": "HIGH",
+      "description": "A13 expected-side history snapshots and editor/clipboard references protected; component delete checks draft identity and live edges without conflating closed snapshot IDs",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-05",
+      "severity": "MEDIUM",
+      "description": "Valid common archive records retain additive metadata during normalization; no fabricated legacy provenance",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-AC01",
+      "name": "Full restore/reload: active/inactive archive-only assets, duplicate workspace ID, invalid inactive Tile, nested registry, valid old data, invalid draft ownership",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-AC02",
+      "name": "Restore race: pending write, owner switch, two-tab CAS, backup failure, raw recovery, post-commit UI error",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-AC03",
+      "name": "Reset library: all public images, inactive private images, active archive-only assets, corrupt Tile, failed mixed deletion, Undo/Redo",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-AC04",
+      "name": "A13 expected history, multi-page transitions, draft/clipboard protect resources; closure-local ID collision",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-FG-AC05",
+      "name": "Roundtrip legacy archive metadata, unknown provenance, size limits; no pruning",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a14GateFollowup": [
+    {
+      "id": "A14-GF-01",
+      "severity": "HIGH",
+      "description": "Distinguish missing key, empty/non-text payload and nonzero-revision missing data at startup; never initialize over invalid persisted data",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-02",
+      "severity": "HIGH",
+      "description": "Expose direct raw textual export without portable JSON cap; raw-only checkpoint flag, preserve empty textual payload, refuse non-text replacement; cancel conflict reload on draft export failure",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-03",
+      "severity": "HIGH",
+      "description": "Clear catalog draft, clipboard and page session on full editor reset, including restore to identical workspace IDs",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-04",
+      "severity": "HIGH",
+      "description": "Require explicit full save for legacy workspace without persisted owner ID; compare normalized common definition bodies and archives on page-only persistence rather than raw serialization",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-05",
+      "severity": "HIGH",
+      "description": "Do not roll back image reset in memory after confirmed persistence when UI refresh fails; distinguish committed restore with failed UI and block restored draft opening",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-AC01",
+      "name": "Empty string, non-text stored value, missing key with nonzero revision, fresh database, corrupt JSON: no unintended initialization or overwrite",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-AC02",
+      "name": "Current raw payload and raw-only backup textual export, >80 MiB raw, empty payload, absent/non-text refusal, backup failure, export failure before conflict reload",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-AC03",
+      "name": "Restore same workspace ID and duplicate local object IDs; clear clipboard/draft/baseline, no stale reference or A13 history leakage",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-AC04",
+      "name": "Legacy ownerless workspace first explicit full save; page-only save with normalized defaults, key order, true revision/archive/body mismatch, failure and recovery",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-GF-AC05",
+      "name": "Reset and Restore commit succeeds but UI refresh fails; no rollback of confirmed snapshot; reload shows committed state and no unintended draft",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a14OwnerHandoff": [
+    {
+      "id": "A14-OH-01",
+      "severity": "HIGH",
+      "description": "Page-only save requires full save if normalized active portfolio differs from persisted alias; retry refuses repeating known full-save-required failures and rechecks owner",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-02",
+      "severity": "HIGH",
+      "description": "Backup browsing and raw download remain read-only despite save errors; valid and raw textual backups offer raw export; raw-only cannot restore; named backup requires settled persistence and reports CAS conflict",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-03",
+      "severity": "HIGH",
+      "description": "Recovery confirmation and replacement use the same normalized candidate; post-commit reload failure distinguished from rejected replacement",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-04",
+      "severity": "HIGH",
+      "description": "Library reset rolls back only before enqueue; after uncertain async flush retain proposed memory state rather than speculatively reverting a committed snapshot",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-05",
+      "severity": "HIGH",
+      "description": "A13 discard requires exact active portfolio/page-array scope before and after asynchronous continuation checks",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-AC01",
+      "name": "Legacy invalid active portfolio alias, explicit full save, stale common revision or missing persisted resource, retry does not repeat impossible page write, owner switch while awaiting queue",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-AC02",
+      "name": "Read-only backup selection/export with pending or failed write, valid large textual backup, RAW-only rejection, named backup CAS conflict",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-AC03",
+      "name": "Recovery legacy workspace without ID: confirmed candidate identity equals committed identity, reload failure after replacement",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-AC04",
+      "name": "Reset rejection before enqueue versus asynchronous or successor failure; retain proposed memory and prior confirmed data honestly; no speculative rollback",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-OH-AC05",
+      "name": "A13 discard repeated page IDs, active portfolio change during continuation cleanliness check, protected continuation and ordinary same-owner discard",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a14PersistenceReview": [
+    {
+      "id": "A14-PR-01",
+      "severity": "HIGH",
+      "description": "Dedicated per-operation in-memory write receipt; distinguish COMMITTED, REJECTED, NOT_QUEUED, UNKNOWN; rendering/status errors cannot misclassify a committed IndexedDB write; acknowledgement failure blocks recovery",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-02",
+      "severity": "HIGH",
+      "description": "v77Persist checks unsettled storage and owner; rollback only before enqueue or confirmed rejection with unchanged exact snapshot and no successor; otherwise retain candidate and block uncertain writes",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-03",
+      "severity": "HIGH",
+      "description": "Project-file and journal-backed ZIP open consume operation receipt; confirmed commit separated from UI error, rollback only on attributable rejection; journal reconciliation remains authoritative for disk files",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-04",
+      "severity": "HIGH",
+      "description": "Scoped portfolio import freezes owner and destination reference from picker through confirmation, preserves pre-existing private asset and common definition records, appends only validated additions",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-05",
+      "severity": "HIGH",
+      "description": "Independent project import remaps source-private IDs colliding with public destination catalog and remaps album membership; refuse missing template category and ambiguous historical template identity instead of destination fallback",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-AC01",
+      "name": "Per-write result: queue refusal, IndexedDB abort, own commit followed by unrelated failure, UI status throw, acknowledgement failure; no incorrect rollback or success",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-AC02",
+      "name": "v77Persist add/rename/copy/delete portfolio, image publication/share, isolated rejection vs newer enqueue or owner/snapshot change; recovery lock on uncertainty",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-AC03",
+      "name": "Browser-only project replacement and journal-backed ZIP: disk receipt true/false/unreadable, abort before commit, committed UI failure, owner mismatch, no stale retry",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-AC04",
+      "name": "Portfolio picker owner change, destination replaced with identical ID, active/inactive target, retained exact A13 history and legacy definition/asset records, scoped archived closure, failed import",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PR-AC05",
+      "name": "Project JSON/legacy import private-public ID collision, album and archive-only asset remap, missing category, absent historical template ID colliding with destination, valid complete package",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a14ReceiptFollowup": [
+    {
+      "id": "A14-RF-01",
+      "severity": "HIGH",
+      "description": "Receipt rechecks exact candidate, owner, queue revision and pending state at undo time; storage flags precede DOM status; rejected root replacement blocks stale scope retry.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-02",
+      "severity": "HIGH",
+      "description": "Project switch/create/rename/legacy deletion and portfolio activation consume attributable receipts; committed UI failure never restores previous state.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-03",
+      "severity": "HIGH",
+      "description": "Managed project registry deletion consumes operation receipt for active/inactive and disk-backed paths; workspace, record and revision checked during disk preparation.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-04",
+      "severity": "HIGH",
+      "description": "Journal requires exact base revision for rejection or base+1 with matching receipt for commit; rereads before disk mutation and journal removal; ambiguous successor retains recovery evidence.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-05",
+      "severity": "HIGH",
+      "description": "Style save, public image rename, template/page creation, album mutations and image reset consume per-write receipts.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-06",
+      "severity": "HIGH",
+      "description": "NSP Data Controls and component definition writes consume attributable receipts; import rechecks original owner snapshot and blocks rejected root-scope retry.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-AC01",
+      "name": "Exact rejection, successor, same-owner mutation between receipt and undo, DOM status exception and acknowledgement failure; no speculative rollback.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-AC02",
+      "name": "Switch/create/rename and portfolio activation: abort, commit plus UI failure, successor, duplicate local IDs; compare memory, storage and context.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-AC03",
+      "name": "Active, inactive and last-project deletion with/without project.json; owner change during scan, CAS failure, committed UI failure; shared Image untouched.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-AC04",
+      "name": "Journal exact base, matching receipt base+1, later revision, reread failure and independent file change; preserve journal on ambiguity.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-AC05",
+      "name": "Style, public image rename, album UIs, image reset, template/new-page writes: commit plus refresh failure; rejection versus successor.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-RF-AC06",
+      "name": "Data Controls, Component Editor and Project JSON/ZIP replacement: changed owner snapshot, rejection, successor and stale scope retry.",
+      "state": "NOT_RUN"
+    }
+  ],
+  "a14PageQueueFinal": [
+    {
+      "id": "A14-PQ-01",
+      "severity": "HIGH",
+      "description": "Page save now requires the exact live page object and returns an operation receipt; explicit navigation validates receipt, scope and page stamp. Global flush rejects successor, pending or recovery state.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-02",
+      "severity": "HIGH",
+      "description": "Both template application paths use page receipts and freeze chooser owner/page identity; no rollback on committed UI failure.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-03",
+      "severity": "HIGH",
+      "description": "Discard, page ordering and cut/paste structure use attributable receipts; prior state retained only for exact rollback eligibility.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-04",
+      "severity": "HIGH",
+      "description": "Ordinary IndexedDB writes share the same-origin Journal lock; exclusive disk transaction validates its receipt ID and base revision, and registry-only delete carries a non-persisted token. Pending Journal blocks other writes.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-05",
+      "severity": "HIGH",
+      "description": "Disk preparation rechecks revision before Journal and file mutation; newly appeared nonempty file refuses overwrite; recovery evidence includes operation ID and base revision.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-06",
+      "severity": "HIGH",
+      "description": "Restore rechecks full owner snapshot across asynchronous guard, navigation failure after import is distinguished from transaction failure, recovery state survives pending/error indicators.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-AC01",
+      "name": "Page Queue: stale object with same ID, predecessor abort, own commit with successor pending/rejected, acknowledgement UI throw, explicit save and navigation; exact page scope and no false success.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-AC02",
+      "name": "Template picker: duplicate page IDs across portfolios, switch owner while open, same-ID replacement, rejected write with unchanged candidate vs committed write and UI exception.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-AC03",
+      "name": "Discard linked/unlinked, page reorder, cut/paste and history: isolated reject, successor, UI refresh exception after commit; verify persisted content, selection and clipboard.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-AC04",
+      "name": "Two tabs same origin: ordinary save during exclusive disk import/delete, raw restore and startup save with unresolved Journal, lock unsupported, stale receipt and registry-only deletion.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-AC05",
+      "name": "Journal prepare/reconcile: base revision changed before prepare, external file appeared, missing/changed receipt, crash after disk change and before/after DB commit; preserve evidence and shared Image.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "A14-PQ-AC06",
+      "name": "Restore async guard same-owner edit, post-commit project navigation false, beforeunload with recovery lock; cumulative A13/A14 and legacy regression.",
+      "state": "NOT_RUN"
+    }
+  ],
+  "v331HotelCardRemediation": [
+    {
+      "id": "V330-RT-001",
+      "severity": "P1",
+      "description": "Dot V330 actual browser measurement: 24 vertical overflows in default Hotel View/Grid; Tehran city 19/23 and 10/13 px, hotel name 65/90 and 30/42 px. V331 computes line-height-aware font ceiling and measures bound card text in the final projected slot via existing text renderer; bounded cache; no text truncation, no preflight suppression.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V331-HT-02",
+      "severity": "MEDIUM",
+      "description": "Grid default rows reserve more vertical capacity and clamp requested spacing within remaining card height. All bound visible card labels fit against final slot dimensions, including edited Component Editor definitions; preserve hidden/static authored elements and underlying data. At minimum 6 px, an unfittable field remains a print-blocking diagnostic.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V331-HT-AC01",
+      "name": "Reproduce Dot V330-RT-001 exactly on the new candidate: one default Hotel View and four-record default Hotel Grid, short names/Tehran, synthetic images and System Logos, Chromium/Linux and Windows/Tahoma when available. Record every name/city/other text frame client/scroll dimensions, verify original full strings, real mixed-card PDF and no tray.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V331-HT-AC02",
+      "name": "Long Persian/English/mixed names and cities, wrap, font families/weights and line heights .8–4, photo shown/hidden, system labels and custom Component Editor Square/Grid slot resizing; full text, fit against final geometry, correct RTL/LTR, editor/preview/PDF parity and no changes to stored data/definitions.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V331-HT-AC03",
+      "name": "Deliberately impossible tiny card, long string, border/opacity, font load or fallback and very high spacing; retain actual text, no false PASS, genuine overflow blocks printing, hidden field no false error, no clipped or overlapping rows. Verify cached measurements invalidate after fonts change.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V331-HT-AC04",
+      "name": "Performance regression: compare V330/V331 render, drag, preview, print preflight, 10/100/500 pages and 1/4/100 hotel cards, cold/warm fit cache, browser layout cost and memory. Preserve source geometry and records after reload, ZIP roundtrip and Undo/Redo.",
+      "state": "NOT_RUN"
+    }
+  ],
+  "v332HotelTextRemediation": [
+    {
+      "id": "V331-RT-002",
+      "severity": "P1",
+      "description": "Dot reproduced a long Hotel Text record wrapping into two lines: fixed frame 29 px vs actual 58 px, blocking print in V330 and V331. V332 measures natural wrapped height using the existing text renderer at selected font size, advances subsequent rows by measured height, preserves full underlying text and unchanged print-blocking diagnostics.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V332-TX-02",
+      "severity": "MEDIUM",
+      "description": "Measure custom Hotel Text at its final scaled slot width and typography including borders and effects, without measuring the discarded default layout. Bounded separate 1024-entry height cache invalidated on font loading events. Inline mode verifies total capacity; insufficient or unmeasurable height fails closed. V331 Hotel View/Grid fitting algorithm not changed.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V332-TX-AC01",
+      "name": "Reproduce V331-RT-002 using original fixture, North Riverside Grand Conference Hotel / Newcastle upon Tyne plus rating/year: no overflow in a sufficient Hotel Text frame, same font size, all text preserved, actual mixed Hotel Text/View/Grid PDF without removing Hotel Text. Measure old/new frame and scroll heights.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V332-TX-AC02",
+      "name": "Multiple records and mixed Persian/English names, multiline fields, inline and newline, separators, bullets, indent, RTL/LTR, custom Component Editor slot width/height/font/border/line-height: verify measured rows, order, non-overlap, full text, unchanged stored records and geometry.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V332-TX-AC03",
+      "name": "Negative control with insufficient total height or width, many records, border and high line-height, loading/fallback font: true clipping blocks printing, no silent text loss or font shrink; diagnostics retained, cached heights invalidate on font events.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V332-TX-AC04",
+      "name": "Compare V331/V332 cold and warm Hotel Text projection and render/drag/preview/PDF cost, 1/4/100 records, cache eviction, font change; rerun View/Grid exact V330-RT-001 reproduction, tiny-card negative control, P0 safety and all other acceptance rows. No inherited PASS.",
+      "state": "NOT_RUN"
+    }
+  ],
+  "v333HotelTextDispatchRemediation": [
+    {
+      "id": "V333-TX-01",
+      "severity": "P1",
+      "description": "Confirmed in V332 index.html lines 17859,17902,17916,17927,17997–18001: renderScene passed renderer tools as the third argument to layoutText, whose new third argument means slotEffects. Spread order in text() then allowed tools.text (a function) to overwrite the bound string. V333 explicitly separates text/card dispatch, filters visual overrides to an allowlist, and assigns the bound text after overrides.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V333-TX-02",
+      "severity": "P1",
+      "description": "Confirmed in V332 index.html lines 18562–18564,18625–18635: the nsp-slots IIFE declared N but not V, then used V.graphicsCore.scene.shouldPaint(s) for Hotel Text custom slots. V333 explicitly binds V=V13 and N=V.nsp in that IIFE. No change to slot geometry, visibility contract or prior card fit algorithm.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V333-TX-AC01",
+      "name": "On the exact V332 fixture, compare default Hotel Text newline, multiline and inline projections in V332/V333. Every projected text property must be a string containing the actual selected record fields, including North Riverside Grand Conference Hotel / Newcastle upon Tyne; no function source, renderer-tool keys or missing records. Verify DOM, print snapshot and extracted PDF.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V333-TX-AC02",
+      "name": "Create and reload an actual custom Hotel Text definition and instance; visible/hidden slot, style overrides (font, border, direction, alignment, opacity), multiple records and wrapping. No V is not defined, no unintended change to record, slot or instance geometry. Verify string content and measured rows in editor and PDF.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V333-TX-AC03",
+      "name": "Regression: sufficient/insufficient frames, long and mixed Persian/English hotel fields, original V331-RT-002 fixture, real mixed Hotel Text/View/Grid PDF without removing any content. Confirm measured row heights, non-overlap, unchanged chosen font size and genuine print-blocking diagnostics when capacity is insufficient. Rerun V330-RT-001 card fixtures.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V333-TX-AC04",
+      "name": "Repeat all P0 and outstanding acceptance scenarios on exact V333 SHA; compare cold/warm cache and rendering cost. Reproduce all six reported V332 failed rows from original Dot evidence; if evidence unavailable mark BLOCKED and request the original V332 report rather than inventing results. No inherited PASS.",
+      "state": "NOT_RUN"
+    }
+  ],
+  "v334TileDependencySafety": [
+    {
+      "id": "V334-TILE-01",
+      "severity": "P0",
+      "description": "Source-confirmed V333 index.html: v20VisualFields validates Tile dimensions, cells, stash coordinates and member types, but v111AssetIds only checks array/object containers; valid JSON containing a number/boolean/array as a cell, invalid stash coordinate or invalid assetId can pass dependency collection. M.references skips non-text tilesJson. Single/bulk removal and library Undo use M.references; reset and portable/page dependency checks use v111AssetIds. V334 shares the existing normalization validator and routes nonempty non-text metadata to fail-closed handling. Existing validated startup rejects many such inputs; runtime reachability/data loss not established. No raw data rewrite or schema change.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V334-TILE-AC01",
+      "name": "P0: On isolated V334 fixture inject malformed Tile dependency metadata in page, component archive, draft and same-workspace history/clipboard. Cases: cells containing numeric, boolean, array, invalid assetId; malformed stash value/key, bad dimensions, nested Tile metadata, non-text tilesJson, invalid JSON. Dependency checks must fail closed, not report zero. Single/bulk removal and library Undo/Redo must not remove a candidate asset; Reset must refuse before mutation. Compare bytes, resource IDs, revisions and history. No real data.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V334-TILE-AC02",
+      "name": "P0 positive/legacy controls: valid grid and stash-only image, bare ID and object assetId, empty/null cell, legacy count, empty/null/absent tilesJson, private/public scope. Preserve referenced originals and valid portable export/import/page-save behavior; allow unrelated valid private asset deletion. Compare parsed/stored Tile bytes, library membership and reload; no schema migration or false-positive block.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V334-TILE-AC03",
+      "name": "P0 repeat A14-IA-AC06 and A14-FG-AC03 with library Undo/Redo, malformed active/inactive scope, reset and failed persistence; measure dependency scan cost on 10/100/500-page synthetic projects. All V333 scenarios require new-SHA evidence; no inherited PASS.",
+      "state": "NOT_RUN"
+    }
+  ],
+  "v335PersistenceReceipt": [
+    {
+      "id": "V335-LIB-01",
+      "severity": "P0",
+      "description": "V334 index.html L4509-L4526, L4556-L4557: private image changes and library Undo/Redo use save(true), which at L10957 only enqueues a workspace snapshot. History is advanced before COMMITTED; importFiles catch unconditionally restores the old library even if render throws after enqueue. registerDecoded returns an asset ID before persistence. V335 routes these private mutations through v329PersistChange and moves library history/UI only after their own receipt; import and image bind recheck owner and candidate, and mixed delete/import callers await success. Runtime reachability/data loss not established.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V335-LIB-AC01",
+      "name": "Private rename, single/bulk deletion, library Undo/Redo: NOT_QUEUED, IndexedDB abort, exact rejection vs successor, own COMMITTED with UI exception, acknowledgement failure, owner switch; compare memory, database, revision and history, protect live/archived asset references; no speculative rollback or false success.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V335-LIB-AC02",
+      "name": "Private import: valid new image, duplicate/archived image, invalid file, owner switch and same-owner library change during decode, failed enqueue/transaction, render exception after commit, retry and reload; preserve original and exact history; no blind restoration of before snapshot.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V335-LIB-AC03",
+      "name": "Direct editor image registration and independent replacement: exact receipt before rebinding, context/selection/element change during await, rejection and committed UI failure, existing asset fast path, mixed public/private deletion, folder import and membership; never bind a missing asset or clear selection on failed private commit.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V335-PAGE-01",
+      "severity": "P0",
+      "description": "V334 index.html L7894-L7930: gePageTxn and geApplyPageTxn use save(true) and immediately advance structural history, independent of the result of the corresponding transaction. V335 uses v329PersistChange and exact owner/page-array/history checks before moving history, awaits structural transactions at all four callsites and preserves Clipboard publication guards. Ordinary single-page optimistic editor behavior is not changed. Runtime acceptance pending.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V335-PAGE-AC01",
+      "name": "Multi-page Text Flow pagination, detach continuation, delete source with preserved continuation, explicit Auto Layout overflow: exact receipt, isolated rejection, successor, CAS conflict, acknowledgement and UI refresh errors after commit; page order, data, page array, and structural history must correspond to actual outcome.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V335-PAGE-AC02",
+      "name": "Structural Undo/Redo: expected-side divergence, changed owner and same-ID scope, locked pages, history replacement, confirmed rejection, committed UI failure and valid repeat/reload; no history movement before own successful receipt, no speculative data rollback.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V335-PAGE-AC03",
+      "name": "Clipboard/selection and mixed normal/structural editor actions: copy and cut including protected flows, paste, repeated IDs, context change while awaiting structural deletion, failed persistence and successors; preserve old clipboard and valid unrelated page edits; compare performance and prior A13/A14/P0 and V334 Tile cases.",
+      "state": "NOT_RUN"
+    }
+  ],
+  "v336RestoreUiIsolation": [
+    {
+      "id": "V336-RESTORE-01",
+      "severity": "P0",
+      "description": "Source-confirmed in V335 index.html L11373-L11404: restore enqueued pre-restore save and set ready=false before DOM preparation outside try/finally; a preparation exception stranded the adapter. Its unguarded finally status() could throw after COMMITTED, or render catch could mask the original receipt; successful return with failed UI was also possible. L11444 opened restored draft outside the committed-result distinction. V336 prepares blocking UI inside try before enqueue, tracks cleanup independently, reports committed vs unconfirmed replacement and blocks uncertain UI continuation; restored draft opening failure is explicitly post-commit.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V336-RESTORE-AC01",
+      "name": "Restore setup: inject cover/DOM/inert preparation exception before enqueue; check ready flag, original persisted bytes/revision and ability to recover; backup failure and CAS rejection still prevent replacement; previously inert nodes remain inert.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V336-RESTORE-AC02",
+      "name": "Restore after committed replacement: inject editor reset, library history reset, cover cleanup, inert cleanup, status and render exceptions independently. New payload/revision remains committed; no false rejection, no stale draft opening, recovery lock and clear committed-status message. Repeat genuine rejection and successful positive control.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V336-RESTORE-AC03",
+      "name": "Restore imported draft: valid draft opening, failure during opening/render after committed workspace, missing/invalid draft ownership rejected before restore. Protect input file and candidate bytes, report committed workspace separately from draft UI, no automatic retry.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V336-STARTUP-01",
+      "severity": "P0",
+      "description": "Source-confirmed in V335 index.html L11540-L11566: editor reset, route/dashboard rendering and status() shared outer catch with IndexedDB read and validation. A display failure after successful data validation invoked corrupt-storage recovery and offered destructive replacement. V336 separates read/validation from UI initialization; UI-only failure blocks writes and offers read-only RAW export/reload, not replacement. Fresh initialization follows successful UI setup. No change to CAS, backup format or schema.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V336-STARTUP-AC01",
+      "name": "Valid persisted snapshot: fail editor reset, saved route, dashboard fallback and status separately; route-only failure with successful fallback should work, unrecoverable UI failure must not present replacement controls. Compare IndexedDB bytes/revision, RAW export, recovery lock, reload.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V336-STARTUP-AC02",
+      "name": "Fresh DB vs missing key with revision, corrupt JSON, empty/non-text data, read/validation rejection and valid legacy snapshot. Fresh UI failure must not enqueue initialization; actual corrupt storage retains prior RAW recovery path; positive reload/explicit restore and V335 receipt regression.",
+      "state": "NOT_RUN"
+    }
+  ],
+  "v337PublicMediaReceipt": [
+    {
+      "id": "V337-PUB-01",
+      "severity": "P0",
+      "description": "V336 index.html L5059–5080: public image/logo import admits a workspace write through save() but treats it as completed; preparation or post-enqueue render failure unconditionally replaces the catalog with an earlier copy, potentially undoing newer in-memory edits or diverging from a committed IndexedDB snapshot. Folder import callers at L14000 and L14275 ignore the operation result. V337 stages assets without catalog mutation, checks exact owner/catalog identity and contents before commit, avoids in-place unarchive, uses per-operation receipt and only attributable rollback, separates post-commit UI failure and gates both folder callers on success. Source-confirmed defect; runtime reachability and actual data loss not established.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V337-PUB-AC01",
+      "name": "Public image and hotel-logo upload: valid new images, duplicates, archived reactivation; compare immutable original records, exact receipt and folder association; verify rejected preparation does not restore an older catalog.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V337-PUB-AC02",
+      "name": "Change workspace or shared catalog during asynchronous decode/hash; pending/error/blocked writer; no stale import or overwrite of concurrent catalog edits; retry explicitly.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V337-PUB-AC03",
+      "name": "Inject attributable rejection, unknown result and post-commit render error; verify revision, bytes, recovery lock, rollback eligibility and both folder callers do not continue when import fails; positive control.",
+      "state": "NOT_RUN"
+    }
+  ],
+  "v338TemplatePublicationAlbumScope": [
+    {
+      "id": "V338-PUB-01",
+      "severity": "P0",
+      "description": "V337 L14294–14309, L14408–14451, L14120–14151: active unified picker exposes private and public originals; choosing a private asset in a global template permanently publishes without explicit grant and binds after queue admission, not a durable receipt. This contradicts the one-way publication policy at L4704–4715. V338 obtains explicit grant for a new public original, preserves the private original, avoids relying on imported hash equality, allocates a noncolliding ID, persists via attributable receipt, and rechecks original root, exact draft/stamp, selection/Tile and picker lifetime before binding. All picker consumers await the result; actual add result is returned. Cancellation after commit does not unpublish. Runtime acceptance pending.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V338-PUB-AC01",
+      "name": "Private image in global template: decline permanent publication, accept, reuse exact public source, matching hash with different source, unique public ID across active/inactive projects; verify original private data and template save/reload.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V338-PUB-AC02",
+      "name": "Reject or lose receipt for new public image; compare revision, original and public catalog; no draft binding until attributable commit, no speculative rollback after commit.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V338-PUB-AC03",
+      "name": "During publication close/reopen picker, switch draft, selection, Tile or workspace; no stale placement or closing a replacement picker; published original remains when committed; successful add/replace and locked target regression.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V338-ALBUM-01",
+      "severity": "HIGH",
+      "description": "V337 L867–896 permits duplicate album IDs across separate public/private namespaces, while L14114–14118 and L14138–14162 flatten them into unscoped UI IDs; L14238–14293 resolves mutations and asynchronous folder upload by that ambiguous ID. A valid public/private same-ID pair can resolve a private selection to the public album, mix subtree membership, or modify the wrong folder. V338 projects scoped UI keys and scoped parents, retains raw persisted IDs, uses raw records for writes, captures upload owner/record, and refuses stale popup/upload ownership. No migration or automatic modification of stored album IDs. Runtime acceptance pending.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V338-ALBUM-AC01",
+      "name": "Valid public and private albums with identical raw IDs and identical child IDs; independently open, browse subtree, rename, add child, add selected assets and delete one scope; raw persisted IDs and opposite scope remain intact.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V338-ALBUM-AC02",
+      "name": "Open upload/popup in one workspace, switch or restore to same IDs, replace folder during file/decode/flush; stale request cannot update another folder; successful new upload and archived reactivation attach only to captured scope.",
+      "state": "NOT_RUN"
+    }
+  ],
+  "v339ImageIdentityOwnership": [
+    {
+      "id": "V339-IMAGE-01",
+      "severity": "P0",
+      "description": "V338 L835, L858–862 validate image source syntax but do not verify imported hash metadata. L4623, L4656–4658, L4709, L4729, L4740, L5074 use hash equality OR actual source equality, and L14136–14145 hides distinct images with equal metadata. A valid imported record with a reused/stale hash and different source can suppress import, publication or sharing, or select a wrong original for replacement. L2735 accepts a public dependency without source by matching unverified hash, bypassing the missing-original rejection. V339 requires exact source equality for these comparisons and rejects missing public originals before deduplication; no existing source, hash or ID is rewritten. Different textual encodings may remain separate intentionally. Runtime not run.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V339-IMAGE-AC01",
+      "name": "Import two valid distinct image sources with identical imported hash; private and public import, explicit share/publication/copy and unified picker preserve both originals, exact source duplicate reuses only matching bytes.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V339-IMAGE-AC02",
+      "name": "Independent replacement with distinct source but stale matching hash; wrong original never selected, exact source no-op remains. Verify selected Tile and all other references after reload.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V339-IMAGE-AC03",
+      "name": "Portable project/portfolio import with required public image absent source but matching hash metadata; fail before mutation, positive complete source closure, check original workspace bytes/revision.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V339-OWN-01",
+      "severity": "HIGH",
+      "description": "V338 L4705–4746 explicit ownership paths allocate IDs without checking all applicable namespaces, copy archived visibility to newly granted resources, and render outside the post-commit outcome guard; L5076 allocates public upload IDs before asynchronous preparation completes and checks only active private IDs. A copied archived public original can become an invisible private grant; public collisions with an inactive private original violate L859 and inactive restore normalization L11352. V339 aligns explicit paths with permanent source ownership, exact receipts and post-commit handling, makes new grants visible, validates destination record, and allocates global IDs across active/inactive/staged source namespaces in public upload, explicit publication and portable dependency import. Auto-publication V338 already guards these namespaces and is unchanged. Runtime reachability of ID collision not established.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V339-OWN-AC01",
+      "name": "Explicit publication/share/private copy of visible or archived original, canceled/invalid destination, rejected/unknown receipt, post-commit UI exception; no original overwrite, visible new grant, exact destination ownership.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V339-OWN-AC02",
+      "name": "Force candidate asset IDs to collide with inactive private, public, destination private or staged dependency records; verify disjoint public/private namespaces and safe reload; concurrent public upload final allocation.",
+      "state": "NOT_RUN"
+    }
+  ],
+  "v340PageLifecycle": [
+    {
+      "id": "V340-ALBUM-01",
+      "severity": "HIGH",
+      "description": "V339 L1034–1048 legacy v112 album write uses save()/global flush and unconditionally restores old album state on any failure, including render after commit. L1071–1079 removes parents without guarding children, causing persisted invalid hierarchy on reload. V340 uses attributable workspace receipt, distinct post-commit UI handling, valid scope and child guard. Older v112 view superseded by active V222; actual legacy UI reachability not established.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V340-ALBUM-AC01",
+      "name": "Legacy v112 album mutate with rejection, unknown outcome, committed render failure; compare exact catalog/revision and no speculative rollback; parent with child refuses deletion.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V340-PAGE-01",
+      "severity": "P0",
+      "description": "V339 L8931–8959 page duplicate/delete enqueue saveProject then unconditionally undo on false global flush; committed operation with later unrelated failure can diverge from IndexedDB. Portfolio deletion L2411–2420 resets all editor state without draft guard. V340 prechecks mutation status, uses exact receipts and guarded post-commit UI; protects unresolved continuation markers and open catalog drafts. No schema change.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V340-PAGE-AC01",
+      "name": "Duplicate/delete page: attributable rejection, successor/unknown and committed UI failure; verify owner, page list, selection, history, reload and locked/flow guards. Portfolio deletion with unsaved template draft refuses.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V340-CUT-01",
+      "severity": "P0",
+      "description": "V339 L14880–14910 cut commits deletion before volatile v235PageClipboard publication, so close/reload/failed paste loses the only live page; clipboard compares only workspace ID and is missing from dependency references L9115–9119 and resetAll L9161. V340 changes cut to deferred intent: preserve source until atomic move/paste, guard exact root, source record/content, destination and locks/flow; include page clipboard in dependency closure, clear on full context reset, reject stale menu owner. Cut now leaves source visible until successful paste; existing clone ID behavior and cross-portfolio data guard preserved. Actual runtime not run.",
+      "status": "SOURCE_CHANGED_RUNTIME_PENDING",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V340-CUT-AC01",
+      "name": "Cut then abandon/overwrite clipboard, close/reload or reset: source remains in persisted portfolio; stale root/menu and changed/locked source reject paste.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V340-CUT-AC02",
+      "name": "Cut/paste within and across same workspace portfolios: exact single transaction removes source and inserts clone; rejection/unknown/committed UI failure, destination and flow/binding guards; verify bytes and revision.",
+      "state": "NOT_RUN"
+    },
+    {
+      "id": "V340-CUT-AC03",
+      "name": "Copied/cut page references private images, styles and components; resource removal/reset refuses while clipboard is current; full reset and same-ID restored root never reuse old clipboard; positive ordinary copy.",
+      "state": "NOT_RUN"
+    }
+  ]
+}
