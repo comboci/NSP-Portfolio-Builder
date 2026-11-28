@@ -8035,10 +8035,14 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
           try{const t=JSON.parse(token);return !Array.isArray(t)||!deleted.has(t[2]);}catch{return true;}
         });
         try{ge13CheckMutation(c,before,changed.visualObjects);}catch(error){alert(String(error.message||error));return false;}
-         const owner=state;
+         const owner=state,next=detached.map(p=>p===page?changed:p);
          return (async()=>{
-           if(!await V.gePageTxn(c,pages,detached.map(p=>p===page?changed:p),'حذف کادر و حفظ ادامه‌ها'))return false;
-           return v329AfterCommit(owner,()=>{clearSelection(c);render();return true;});
+           if(!await V.gePageTxn(c,pages,next,'حذف کادر و حفظ ادامه‌ها'))return false;
+           return v329AfterCommit(owner,()=>{
+             if(owner.activePortfolioId!==portfolio.id||geOwner(c)!==portfolio||owner.pages!==next||portfolio.pages!==next)
+               throw Error('دامنهٔ صفحات ثبت‌شده تغییر کرده است.');
+             clearSelection(c);render();return true;
+           });
          })();
       }
       if(deleted.size){
