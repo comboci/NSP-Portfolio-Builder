@@ -6798,10 +6798,10 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     if(first.config.includeRegions||block.blockId||children.some(o=>o.type==='block')||documentFor(c).objects.some(o=>o.type==='block'&&o.blockId===block.id&&ownObject(c,o)))
       throw Error('کپی سرریز Region تودرتو مجاز نیست؛ ابتدا چیدمان را در صفحهٔ اصلی تعیین تکلیف کنید.');
     if(first.blocked.length||!first.overflow.size||ge06Busy.has(state)||V.saveBlocked||V.saveError||V.persistencePending)return false;
-    const owner=state,page=record(c),portfolioId=state.activePortfolioId,saved=JSON.stringify(page),
+    const owner=state,page=record(c),portfolio=geOwner(c),portfolioId=state.activePortfolioId,saved=JSON.stringify(page),
       styles=JSON.stringify(owner.styleLibrary||[]),ids=new Set(first.overflow),created=[];
     const belongs=()=>owner===state&&E.current&&key(E.current)===key(c)&&
-      owner.activePortfolioId===portfolioId&&record(c)===page&&JSON.stringify(page)===saved&&JSON.stringify(owner.styleLibrary||[])===styles;
+      owner.activePortfolioId===portfolioId&&geOwner(c)===portfolio&&record(c)===page&&JSON.stringify(page)===saved&&JSON.stringify(owner.styleLibrary||[])===styles;
     if(!page||page.flowGenerated||V.textFlow?.hasRecovery?.(page)||!belongs())return false;
     let pending=children.filter(o=>ids.has(o.id));
     if(pending.some(o=>o.flowFullText!=null||o.flowContinuationId||o.flowId||(geOwner(c)?.pages||[]).some(p=>p.flowGenerated?.sourcePageId===page.id&&p.flowGenerated.sourceObjectId===o.id)))
@@ -6831,7 +6831,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
        if(!await V.gePageTxn(c,before,next,'کپی صریح سرریز Auto Layout'))return false;
       // V342: gePageTxn consumed its own durable receipt; later global flush is not that result.
       return v329AfterCommit(owner,()=>{
-        if(owner.activePortfolioId!==portfolioId||owner.pages!==next)throw Error('دامنهٔ صفحات ثبت‌شده تغییر کرده است.');
+        if(owner.activePortfolioId!==portfolioId||geOwner(c)!==portfolio||portfolio.pages!==next||owner.pages!==next)throw Error('دامنهٔ صفحات ثبت‌شده تغییر کرده است.');
         if(owner.pages.some(p=>added.has(p.id)))v275TrackSession(c,true);
         render();
       });
@@ -15510,7 +15510,7 @@ body.v225-preview-open{overflow:hidden}
    requests.delete(contextKey({portfolioId:portfolio.id,id:sourceId},objectId));
    if(!await V.gePageTxn(c,pages,next,'حفظ مستقل صفحات ادامه',null,guard))return false;
    return v329AfterCommit(owner,()=>{
-    if(owner.activePortfolioId!==portfolio.id||portfolio.pages!==next||owner.pages!==next)
+    if(owner.activePortfolioId!==portfolio.id||owner.portfolios?.find(p=>p.id===portfolio.id)!==portfolio||portfolio.pages!==next||owner.pages!==next)
      throw Error('دامنهٔ صفحات ثبت‌شده تغییر کرده است.');
     render();
    });
@@ -15707,7 +15707,7 @@ body.v225-preview-open{overflow:hidden}
   const next=[...rest.slice(0,at),master,...continuation,...rest.slice(at)];
    if(!await V.gePageTxn(c,before,next,'تقسیم متن و صفحات ادامه'))return false;
    return v329AfterCommit(owner,()=>{
-    if(owner.activePortfolioId!==portfolio.id||portfolio.pages!==next||owner.pages!==next)
+    if(owner.activePortfolioId!==portfolio.id||owner.portfolios?.find(p=>p.id===portfolio.id)!==portfolio||portfolio.pages!==next||owner.pages!==next)
      throw Error('دامنهٔ صفحات ثبت‌شده تغییر کرده است.');
     render();
    });
