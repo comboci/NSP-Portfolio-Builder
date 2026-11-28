@@ -3254,5 +3254,145 @@
       "acceptance_file": "release/browser-v290/ACCEPTANCE.json",
       "scope_fa": "Toolbox، دادهٔ دستی هتل، کنترل‌های مشترک پورتفولیو، کامپوننت‌های Editable و ذخیره؛ بدون اتصال Office یا تغییر Native."
     }
-  ]
+  ],
+  "recurring_catalog_patterns": {
+    "title_fa": "موارد پرتکرار در طراحی رزومه و کاتالوگ",
+    "recorded_at": "2026-11-28",
+    "status": "research_observations_only",
+    "owner_decision": "مالک درخواست کرد الگوهای پرتکرار به‌صورت بخش مستقل پژوهشی در Project Evolution ثبت شوند. ثبت این موارد به معنی تصویب ساخت کامپوننت، تعیین اولویت اجرا یا ادعای پیاده‌سازی نیست. بررسی ماهیت کامپوننت و ابزار عمومی جداگانه ادامه دارد.",
+    "scope": {
+      "description_fa": "جمع‌بندی مرور قبلی طرح چهارصفحه‌ای فارسی NSP و نمونه‌ کاتالوگ‌های هتلداری؛ بررسی کل آرشیو تکمیل نشده است.",
+      "references": [
+        "NSP-Portfolio-02-Resume-Templates.zip / NSP-Portfolio-02-Overview.jpg",
+        "08_Legrand_Guest Room Hotel Solutions (official catalogue).pdf",
+        "09_Legrand_Hospitality Buildings – Integrated Solutions.pdf",
+        "10_ABB_Hospitality GRMS Brochure 2025.pdf",
+        "11_ABB_Hospitality Portfolio 2026.pdf",
+        "12_ABB_First Class Solutions for Hotels.pdf",
+        "01_Honeywell_INNCOM Hospitality IoT.pdf",
+        "04_Crestron_Hotel Renegade Case Study.pdf",
+        "53_Lutron_Work C10.3.pdf",
+        "57_Hager_Work C15.1.pdf"
+      ],
+      "note_fa": "اسامی الگوها صرفاً برچسب تحلیلی هستند. نمونه‌برداری Hager محدود بوده است. شمارش فراوانی و تحلیل صفحه‌به‌صفحه برای کل آرشیو هنوز انجام نشده است."
+    },
+    "patterns": [
+      {
+        "id": "RP-001",
+        "name": "Product Text",
+        "description_fa": "معرفی متنی محصول، مدل و توضیح",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-002",
+        "name": "Product View",
+        "description_fa": "نمایش تصویری یک محصول، نام، مدل و ویژگی‌های منتخب",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-003",
+        "name": "Product Grid",
+        "description_fa": "نمایش چند محصول در چیدمان تکرارشونده",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-004",
+        "name": "Product Family",
+        "description_fa": "نمایش رنگ، جنس، اندازه و مدل‌های یک خانواده",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-005",
+        "name": "Product Specification",
+        "description_fa": "نمایش جدول یا بلوک مشخصات فنی؛ لزوماً کامپوننت تخصصی نیست",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-006",
+        "name": "Product Comparison",
+        "description_fa": "مقایسه ویژگی‌ها، گزینه‌ها و سازگاری محصولات",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-007",
+        "name": "Solution View",
+        "description_fa": "معرفی راهکارهایی مانند GRMS و IPTV، مزایا و تجهیزات مرتبط",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-008",
+        "name": "Feature Grid",
+        "description_fa": "نمایش خدمات و قابلیت‌ها با آیکون، عنوان و توضیح",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-009",
+        "name": "KPI View",
+        "description_fa": "نمایش عدد، واحد، عنوان و شاخص‌های عملکرد یا سابقه",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-010",
+        "name": "Application View",
+        "description_fa": "معرفی کاربرد تجهیزات در اتاق، لابی و سایر فضاها",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-011",
+        "name": "Annotated Image",
+        "description_fa": "تصویر با نشانگر یا خط راهنما و توضیح مرتبط",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-012",
+        "name": "Room / Building Map",
+        "description_fa": "پلان یا نمای سه‌بعدی فضا و موقعیت تجهیزات",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-013",
+        "name": "System Architecture",
+        "description_fa": "دیاگرام ارتباط تجهیزات و پروتکل‌ها",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-014",
+        "name": "Scenario View",
+        "description_fa": "نمایش مراحل یا وضعیت‌های سناریوهای کاربردی",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-015",
+        "name": "Case Study",
+        "description_fa": "معرفی پروژه، چالش، راهکار و نتایج",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-016",
+        "name": "Partner Grid",
+        "description_fa": "نمایش برندها، شرکا و سامانه‌های سازگار",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-017",
+        "name": "Photo Mosaic",
+        "description_fa": "ترکیب چند عکس در جلد یا صفحات معرفی",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-018",
+        "name": "Brand / Service Strip",
+        "description_fa": "عنوان برند و نوار آیکون خدمات در جلد",
+        "component_decision": "not_decided"
+      },
+      {
+        "id": "RP-019",
+        "name": "Hotel Text / Hotel View / Hotel Grid",
+        "description_fa": "خانوادهٔ قبلاً مورد توافق برای رزومه و کارت‌های هتل؛ وجود مسیرهای پیاده‌سازی در سورس Browser V343 قبلاً بررسی شده است",
+        "component_decision": "previously_agreed_family"
+      }
+    ],
+    "classification_guidance_fa": "الگوی تکرارشونده الزاماً کامپوننت مستقل نیست. ابزار عمومی مانند Table، ترکیب عناصر قابل ویرایش، Variant یک کامپوننت موجود و کامپوننت داده‌محور تخصصی باید جداگانه ارزیابی شوند. Product Specification در گفتگوی مالک به‌عنوان نمونه‌ای برای بررسی این تمایز مطرح شد؛ هیچ تصمیم نهایی درباره ساخت آن ثبت نشده است.",
+    "implementation_authorized": false
+  }
 }
