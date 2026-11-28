@@ -14361,7 +14361,7 @@ function componentFromSelection(list,name){
      '<img loading="lazy" src="'+H(imageSrc(a))+'" alt="'+H(a.name||'تصویر')+'"></button>'+
      '<strong>'+H(a.name||'بدون نام')+'</strong>'+
      '<small>'+Number(a.width||0)+' × '+Number(a.height||0)+'</small>'+
-     '<div class="toolbar">'+(publicOriginal?grant('addPublicToProject','افزودن به این پروژه'):
+     '<div class="toolbar">'+(publicOriginal?grant('addPublicToProject','افزودن به این پروژه')+grant('renamePublic','تغییر نام تصویر عمومی'):
        grant('shareToProject','اشتراک با پروژه دیگر')+grant('publish','انتشار عمومی'))+'</div></article>';
  }
  function view(){
@@ -14613,6 +14613,7 @@ function componentFromSelection(list,name){
      const record=visibleImages(chosenFolder).find(a=>a.id===id);
      if(!record)return;
      if(action==='addPublicToProject'&&shared().includes(record))V.media.addPublicToProject(id);
+     else if(action==='renamePublic'&&shared().includes(record))V.media.renamePublic(id);
      else if(local().includes(record)){
        if(action==='shareToProject')V.media.shareToProject(id);
        if(action==='publish')V.media.publish(id);
