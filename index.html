@@ -1965,10 +1965,12 @@ async function ge13ReflowLayoutStyle(id){
    for(const task of tasks){
      if(!current()||V.saveBlocked||V.saveError||V.persistencePending)break;
      if(!owner.portfolios.includes(task.portfolio)||task.portfolio.pages.filter(p=>p.id===task.id).length!==1){blocked++;continue;}
-     const status=V.geLayout.applyStylePage({type:'page',portfolioId:task.portfolio.id,id:task.id},id);
+     const status=await V.geLayout.applyStylePage({type:'page',portfolioId:task.portfolio.id,id:task.id},id);
      if(status==='blocked'){blocked++;continue;}
      if(status==='unchanged'){unchanged++;continue;}
-     try{await V.flushStorage();done++;}catch{unconfirmed++;break;}
+     if(status!=='committed'){unconfirmed++;break;}
+     done++;
+     try{await V.flushStorage();}catch{break;}
    }
  }finally{
    if(vGeStyleBatch===run)vGeStyleBatch=null;
@@ -2447,21 +2449,25 @@ async function v285EditPortfolioCore(id,pid,pageId){
  }
  if(id!==state.activeWorkspaceId&&!(await v76SwitchProject(id,false)))return false;
  if(!await v8SelectPortfolio(pid))return false;
- if(state.activeWorkspaceId!==id||state.activePortfolioId!==pid)return false;
- V.pageEditScope='project';
- const target=pageId?state.pages.find(p=>p.id===pageId):state.pages[0];
- if(pageId&&!target)return false;
- if(target){
-  if(visualOpenPage(target.id)===false)return false;
-  // The editor, selected row and URL route must all refer to the same page.
-  const active=tab==='visual'&&selected===target.id&&state.activePortfolioId===pid;
-  if(!active)return false;
-  document.querySelectorAll('.v85-page-item[data-v85-page]').forEach(row=>{
-   if(row.dataset.v85Page===target.id)row.scrollIntoView({block:'nearest',inline:'nearest'});
-  });
-  return true;
- }
- await go('visual');return tab==='visual';
+ // Portfolio selection has already been persisted. A later editor failure
+ // must not report that the operation failed to save or leave writes enabled.
+ return v329AfterCommit(state,async()=>{
+  if(state.activeWorkspaceId!==id||state.activePortfolioId!==pid)return false;
+  V.pageEditScope='project';
+  const target=pageId?state.pages.find(p=>p.id===pageId):state.pages[0];
+  if(pageId&&!target)return false;
+  if(target){
+   if(await visualOpenPage(target.id)===false)return false;
+   // The editor, selected row and URL route must all refer to the same page.
+   const active=tab==='visual'&&selected===target.id&&state.activePortfolioId===pid;
+   if(!active)return false;
+   document.querySelectorAll('.v85-page-item[data-v85-page]').forEach(row=>{
+    if(row.dataset.v85Page===target.id)row.scrollIntoView({block:'nearest',inline:'nearest'});
+   });
+   return true;
+  }
+  return await go('visual')!==false&&tab==='visual';
+ });
 }
 // Pages, layers, components and private assets are workspace-local. Keep those
 // IDs so their cross-references survive, but retire the old portfolio identity.
@@ -2643,18 +2649,21 @@ function v111RebindImages(value,ids,insideTiles=false,seen=new WeakSet()){
  }
  return value;
 }
-function backupScenes(portfolios,components,templates=[]){
- const out=[],seen=new WeakSet();
- function visit(value){
-  if(!value||typeof value!=='object'||seen.has(value))return;
-  seen.add(value);
-  if(Array.isArray(value)){value.forEach(visit);return;}
-  if(typeof value.type==='string')out.push(value);
+function backupScenes(portfolios,components,templates=[],archivedOnly=false){
+ const out=[],seen=new WeakSet(),seenArchived=new WeakSet();
+ function visit(value,archived=false){
+  if(!value||typeof value!=='object')return;
+  const visited=archivedOnly&&archived?seenArchived:seen;
+  if(visited.has(value))return;
+  visited.add(value);
+  if(Array.isArray(value)){value.forEach(item=>visit(item,archived));return;}
+  if(typeof value.type==='string'&&(!archivedOnly||archived))out.push(value);
   // Archive/pin closure IDs are local; only shared style/image references are remapped.
-  for(const key of ['visualObjects','objects','snapshot','definitions','geCommonPin','geCommonRevisions','pin','nspRevisions','nspSlots'])visit(value[key]);
+  for(const key of ['visualObjects','objects','snapshot','definitions','geCommonPin','geCommonRevisions','pin','nspRevisions','nspSlots'])
+   visit(value[key],archived||key==='geCommonPin'||key==='geCommonRevisions'||key==='nspRevisions');
  }
  for(const p of portfolios)for(const pg of p.pages||[])visit(pg);
- components.forEach(visit);templates.forEach(visit);
+ components.forEach(value=>visit(value));templates.forEach(value=>visit(value));
  return out;
 }
 // Check portable dependency identity in the SOURCE catalog, never in the destination.
@@ -4528,6 +4537,13 @@ M.clearLibraryHistory=function(){past=[];future=[];libraryOwner=state;};
   const from=redo?future:past,to=redo?past:future;
   if(!from.length)return false;
   const owner=state,before=clone(list()),next=from[from.length-1];
+  // Library history writes the whole workspace. Unlike the conservative reference
+  // count below, this guard must distinguish unknown dependencies from known uses.
+  try{v111AssetIds([owner,V.mediaContext?.references?.()]);}
+  catch(error){
+   alert('بررسی وابستگی تصاویر انجام نشد؛ تاریخچه و کتابخانه تغییر نکرد.\n'+String(error?.message||error));
+   return false;
+  }
   // Never remove an asset still needed by an element, a draft, or element history.
   const keep=before.filter(a=>!next.some(b=>b.id===a.id)&&M.references(a.id)>0);
   busy=true;
@@ -6611,6 +6627,11 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     const group=o=>!!(o.groupId||o.groupKey);
     const protectedText=o=>o.type==='text'&&(o.flowFullText!=null||o.flowContinuationId!=null||o.flowId!=null||
       (scope?.pages||[]).some(p=>p.flowGenerated?.sourcePageId===page?.id&&p.flowGenerated.sourceObjectId===o.id));
+    // Layout must not plan against the display-clamped Region when the stored
+    // frame would be rejected by the editor's commit-time geometry guard.
+    const rawBlock=page?.visualObjects?.find(o=>o.id===block.id&&o.type==='block');
+    if(rawBlock&&!ge13PaperValid(doc,rawBlock))
+      throw Error('هندسهٔ خام Region از محدودهٔ صفحه خارج است؛ ابتدا موقعیت یا اندازهٔ Region را اصلاح کنید.');
     const advanced=config?.includeRegions===true||config?.fitTextHeight===true;
     if(locked(block)||group(block)||advanced&&(!page||!scope||page.locked||page.contentLocked||V.textFlow?.hasRecovery?.(page)))
       throw Error('Region، مالک صفحه یا رابطهٔ Text Flow برای این چیدمان مجاز نیست.');
@@ -6740,17 +6761,25 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     }
     return result;
   }
-  V.geLayout.applyStylePage=function(c,id){
-    const p=record(c);
-    if(!p||locked(c)||catalogContext(c)||V.textFlow?.hasRecovery?.(p)||V.saveBlocked||V.saveError||V.persistencePending)return 'blocked';
+  V.geLayout.applyStylePage=async function(c,id){
+    const p=record(c),owner=state;
+    if(!p||locked(c)||catalogContext(c)||V.textFlow?.hasRecovery?.(p)||!v329CanMutate())return 'blocked';
     const before=objectSnapshot(c);
     try{
       ge06Reactive(c,before,id);
       ge13CheckMutation(c,before);
     }catch(error){restoreObjects(c,before);return 'blocked';}
-    if(v91ContentSnapshot(before)===v91ContentSnapshot(objectSnapshot(c)))return 'unchanged';
-    before.__ge06Explicit=true;before.__v96Title='بازآرایی ارتفاع متن با استایل مرکزی';
-    return commit(c,before,null)?'queued':'blocked';
+    const after=objectSnapshot(c);
+    if(v91ContentSnapshot(before)===v91ContentSnapshot(after))return 'unchanged';
+    const pageScope=[owner.activeWorkspaceId,c.portfolioId||owner.activePortfolioId,p];
+    if(!await v329PersistChange(owner,()=>restoreObjects(c,before),{pageScope}))return 'unconfirmed';
+    await v329AfterCommit(owner,()=>{
+      const h=history(c);
+      const entry=ge11HistoryEntry(before,h.past[h.past.length-1],'بازآرایی ارتفاع متن با استایل مرکزی');
+      ge20Remember(entry,after);
+      h.past.push(entry);if(h.past.length>100)h.past.shift();h.future=[];
+    });
+    return 'committed';
   };
   function ge06Preview(c,block,result){
     const surface=document.querySelector('[data-v13-canvas-host] [data-v13-surface]');
@@ -7279,19 +7308,25 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
       v275TrackSession(c,true);return true;
     });
   }
-  async function v275LeavePage(c){
+  async function v275LeavePage(c,onDiscardCommit){
     if(!c||c.type!=='page'||catalogContext(c))return true;
     if(V.textFlow?.idle)await V.textFlow.idle();
     if(!await v117EnsurePagePersisted(c))return false;
     if(!v275Changed(c))return true;
     const session=v275Session,shown=v275Fingerprint(v275Capture(c));
-    const choice=await v275Choice(record(c)?.title);
+    const portfolio=geOwner(c),pages=portfolio?.pages,source=record(c),epoch=E.epoch;
+    if(!portfolio||state.pages!==pages||!source)return false;
+    const choice=await v275Choice(source.title);
     if(choice==='cancel')return false;
-    if(v275Session!==session||state!==session.owner||v275Fingerprint(v275Capture(c))!==shown){
+    if(v275Session!==session||state!==session.owner||E.current!==c||E.epoch!==epoch||
+       geOwner(c)!==portfolio||state.activePortfolioId!==portfolio.id||portfolio.pages!==pages||
+       state.pages!==pages||record(c)!==source||v275Fingerprint(v275Capture(c))!==shown){
       alert('وضعیت صفحه تغییر کرد؛ دوباره بازگشت را بزنید.');return false;
     }
     if(choice==='save')return v117EnsurePagePersisted(c,true);
-    return v275Discard(c);
+    const discarded=await v275Discard(c);
+    if(discarded)onDiscardCommit?.(session.owner);
+    return discarded;
   }
   let v117PageSavePending=false;
   async function v117EnsurePagePersisted(c,explicitSave=false){
@@ -7531,6 +7566,8 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
   }
   function add(c,type,extra,drop){
     if(!c||locked(c))return false;
+    const durableCustom=type==='custom'&&c.type==='page'&&!catalogContext(c);
+    if(durableCustom&&!v329CanMutate())return false;
     if(extra?.once===true&&(c.type!=='page'||!['text','image'].includes(type)))return false;
     const current=currentObject(c);let parent=!drop&&current?.type==='block'&&ownObject(c,current)?current:null;
     if(parent&&objectLocked(c,parent))return false;
@@ -7575,7 +7612,34 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
         if(v98BoundsValid(c,doc,{...item,blockId:o.id},o))item.blockId=o.id;
       }
     }
-    record(c,true).objectOrder=doc.objects.map(objectToken).concat(ownToken(c,o));setSelection(c,[ownToken(c,o)],ownToken(c,o));const saved=commit(c,before,true);if(saved)openObjectProperties(c);return saved;
+    const target=record(c,true),token=ownToken(c,o);
+    target.objectOrder=doc.objects.map(objectToken).concat(token);
+    if(durableCustom)return commitCustomInsert(c,target,token,before);
+    setSelection(c,[token],token);const saved=commit(c,before,true);if(saved)openObjectProperties(c);return saved;
+  }
+  // A Common Component insertion is successful only on its own durable page receipt.
+  // Draft-only and ordinary toolbox objects retain their existing edit contract.
+  async function commitCustomInsert(c,target,token,before){
+    const owner=state;
+    let relayout;
+    try{
+      ge13CheckMutation(c,before);relayout=ge06Reactive(c,before);ge13CheckMutation(c,before);
+    }catch(error){
+      restoreObjects(c,before);E.propertyEdit=null;render();alert(String(error.message||error));return false;
+    }
+    const after=objectSnapshot(c),pageScope=[owner.activeWorkspaceId,c.portfolioId||owner.activePortfolioId,target];
+    if(!await v329PersistChange(owner,()=>restoreObjects(c,before),{pageScope}))return false;
+    return v329AfterCommit(owner,()=>{
+      const h=history(c),entry=ge11HistoryEntry(before,h.past[h.past.length-1],v91HistoryTitle(before,after));
+      ge20Remember(entry,after);
+      h.past.push(entry);if(h.past.length>100)h.past.shift();h.future=[];
+      const active=E.current&&key(E.current)===key(c);
+      if(active)setSelection(c,[token],token);
+      render();
+      if(active)openObjectProperties(c);
+      relayout.forEach(id=>V.textFlow?.schedule?.(c,id));
+      return true;
+    });
   }
   const toolboxDragType='application/x-nsp-editor-tool';
   const draggableTools=new Set(['text','line','image','pageNumber','shape','circle','block','vectorPath']);
@@ -9391,10 +9455,10 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
    }
    return add(c,'custom',extra);
   };
-  V.editor.detachCustom=function(){
-   const c=E.current,o=c&&currentObject(c);
+  V.editor.detachCustom=async function(){
+   const c=E.current,o=c&&currentObject(c),owner=state;
    if(!c||c.type!=='page'||locked(c)||!o||o.type!=='custom'||!ownObject(c,o)||objectLocked(c,o))return false;
-   if(V.saveBlocked||V.saveError||V.persistencePending)return false;
+   if(!v329CanMutate())return false;
    const {def,definitions}=vGeCommonScene(o);if(!def)return false;
    // A transported closure can retain old child IDs that now mean unrelated live definitions.
    // Do not infer a live relink from those IDs. Keep the closed parent intact.
@@ -9447,14 +9511,24 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
    if(!children.length||children.some(child=>!v98BoundsValid(c,doc,child,child.blockId?local.get(child.blockId)||doc.objects.find(b=>b.type==='block'&&b.id===child.blockId&&ownObject(c,b)):null))){
      alert('هندسهٔ عناصر مستقل در صفحه یا Region مقصد معتبر نیست.');return false;
    }
-   before.__ge06Explicit=true;before.__v96Title='قطع ارتباط نسخهٔ کامپوننت';
    r.visualObjects=(r.visualObjects||[]).filter(x=>x.id!==o.id).concat(children);
    const instanceToken=ownToken(c,o),tokens=children.map(x=>ownToken(c,x));
    const order=(r.objectOrder||[]).slice(),index=order.indexOf(instanceToken);
    if(index<0)order.push(...tokens);else order.splice(index,1,...tokens);
    r.objectOrder=order;
-   setSelection(c,children.map(x=>ownToken(c,x)),ownToken(c,children[children.length-1]));
-   return commit(c,before,true);
+   try{ge13CheckMutation(c,before);}catch(error){
+     restoreObjects(c,before);render();alert(String(error.message||error));return false;
+   }
+   const after=objectSnapshot(c),pageScope=[owner.activeWorkspaceId,c.portfolioId||owner.activePortfolioId,r];
+   if(!await v329PersistChange(owner,()=>restoreObjects(c,before),{pageScope}))return false;
+   return v329AfterCommit(owner,()=>{
+     const h=history(c),entry=ge11HistoryEntry(before,h.past[h.past.length-1],'قطع ارتباط نسخهٔ کامپوننت');
+     const selection=children.map(x=>ownToken(c,x));
+     if(E.current&&key(E.current)===key(c))setSelection(c,selection,selection[selection.length-1]);
+     ge20Remember(entry,after);
+     h.past.push(entry);if(h.past.length>100)h.past.shift();h.future=[];
+     render();
+   });
   };
   V.editor.componentContextActions=function(){
    const c=E.current,o=c&&currentObject(c);
@@ -9464,10 +9538,12 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
   V.editor.runComponentAction=function(action){
    if(V.editor.componentContextActions()?.[action==='duplicate'?'duplicate':'remove'])mutate(E.current,action);
   };
-  V.editor.selectContextObject=function(token){
+  V.editor.selectContextObject=function(token,keepViewport=false){
    const c=E.current;if(!c||c.type!=='page'||!documentFor(c).objects.some(o=>objectToken(o)===token))return false;
    if(!selectedTokens(c).includes(token))setSelection(c,[token],token);
-   render();return documentFor(c).objects.find(o=>objectToken(o)===token);
+   // A click on the context menu must not rebuild and re-scroll the continuous page stack.
+   if(keepViewport)refresh(c);else render();
+   return documentFor(c).objects.find(o=>objectToken(o)===token);
   };
   const renderBeforePageWorkspace=render;
   render=function(){if(E.inline)finishInline(false,false);E.propertyEdit=null;if(tab!=='visual')v275Session=null;const result=renderBeforePageWorkspace.apply(this,arguments);document.body.classList.toggle('v13-page-screen',tab==='templates'||tab==='visual');return result;};
@@ -9480,6 +9556,7 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     try{
       finishInline(true,false);
       const originTab=tab,origin=E.current,originPortfolio=state.activePortfolioId,originPage=selected;
+      let discardOwner=null;
       if(originTab==='visual'&&catalogDraft){
         if(V.persistencePending)return false;
         if(catalogChanged()){
@@ -9489,15 +9566,18 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
         }
         V.editor.closeCatalogDraft();
       }else if(originTab==='visual'&&origin?.type==='page'){
-        if(!await v275LeavePage(origin))return false;
+        if(!await v275LeavePage(origin,owner=>{discardOwner=owner;}))return false;
       }
-      // A concurrent page/project switch invalidates this pending navigation.
-      if(tab!==originTab||state.activePortfolioId!==originPortfolio||
-         (origin?.type==='page'&&!catalogContext(origin)&&(selected!==originPage||E.current?.id!==origin.id)))return false;
-      if(destination==='visual'){
-        E.pageMode='list';E.current=null;E.propertyEdit=null;E.epoch++;geRelease(E.drag);
-      }
-      return goBeforePageWorkspace(destination);
+      const navigate=()=>{
+        // A concurrent page/project switch invalidates this pending navigation.
+        if(tab!==originTab||state.activePortfolioId!==originPortfolio||
+           (origin?.type==='page'&&!catalogContext(origin)&&(selected!==originPage||E.current?.id!==origin.id)))return false;
+        if(destination==='visual'){
+          E.pageMode='list';E.current=null;E.propertyEdit=null;E.epoch++;geRelease(E.drag);
+        }
+        return goBeforePageWorkspace(destination);
+      };
+      return discardOwner?await v329AfterCommit(discardOwner,navigate):navigate();
     }finally{v125NavigationPending=false;}
   };
 })();
@@ -10333,7 +10413,10 @@ const style=document.createElement('style');style.textContent='.v72-tile-plus{po
     article.style.getPropertyValue('--v13-paper-height').trim()!==size.heightMm+'mm')throw Error('ابعاد کاغذ نسخهٔ ثابت با طرح فعلی هم‌خوان نیست.');
    if(!color||!plan.settings.bleedMm)throw Error('برای اضافه‌برش فقط پس‌زمینهٔ تخت و مقدار مثبت پذیرفته می‌شود.');
    const probe=document.createElement('span');probe.style.backgroundColor=color;
-   if(probe.style.backgroundColor!==surface.style.backgroundColor||Boolean(surface.style.backgroundImage&&surface.style.backgroundImage!=='none'))throw Error('پس‌زمینهٔ نسخهٔ ثابت با طرح چاپ فعلی هم‌خوان نیست.');
+   // A color-only background shorthand can expose "initial" in inline CSSOM.
+   // Validate the actual surface so non-flat CSS backgrounds still fail closed.
+   const background=getComputedStyle(surface);
+   if(probe.style.backgroundColor!==background.backgroundColor||background.backgroundImage!=='none')throw Error('پس‌زمینهٔ نسخهٔ ثابت با طرح چاپ فعلی هم‌خوان نیست.');
    const {sheet}=plan,b=plan.settings.bleedMm;
    const name=('nsp-bleed-'+sheet.w+'-'+sheet.h).replaceAll('.','_');
    rules.set(name,'@page '+name+'{size:'+sheet.w+'mm '+sheet.h+'mm;margin:0}');
@@ -11415,6 +11498,15 @@ function vGeDownloadRawStorage(payload){
 }
 async function restore(payload,confirmed=false){
  const candidate=normalizeRestoreWorkspace(payload),nextPayload=JSON.stringify(candidate);
+ // Explicit Restore must not install a pinned/archived revision with a dangling style.
+ // Use the backup's own catalog; do not borrow a same-ID style from the current workspace.
+ // Startup and RAW recovery remain able to read historical data without rewriting it.
+ const styles=new Set((candidate.styleLibrary||[]).map(style=>style.id));
+ for(const workspace of [candidate,...candidate.projectWorkspaces.map(project=>project.data)]){
+  const missing=backupScenes(workspace.portfolios||[],workspace.customComponents||[],workspace.templates||[],true)
+   .find(object=>object.styleId&&!styles.has(object.styleId));
+  if(missing)throw Error('استایل وابسته به بازبینی بایگانی‌شده در پشتیبان موجود نیست: '+missing.styleId);
+ }
  if(!ready||V.saveBlocked||V.saveError||V.persistencePending)throw Error('ابتدا ذخیره و تعارض قبلی را تعیین تکلیف کنید؛ بازیابی شروع نشد.');
  if(hasUnsavedTemplateDraft())throw Error('پیش از Restore، پیش‌نویس قالب/صفحه را ذخیره کنید یا از آن خروجی JSON مستقل بگیرید.');
  const owner=state,ownerPayload=JSON.stringify(owner),expectedRevision=browserRevision,expectedWrite=revision;
@@ -12290,7 +12382,7 @@ function showBrowserStorageRecovery(error,readRevision=false){
       const undo=()=>{Object.keys(target).forEach(k=>delete target[k]);Object.assign(target,previous);};
       try{writeTemplateToPage(template,target);}catch(error){undo();alert(String(error?.message||error));return;}
       if(await v329PersistChange(owner,undo,{pageScope:[owner.activeWorkspaceId,portfolioId,target]}))
-       await v329AfterCommit(owner,()=>{close();visualOpenPage(pageId);});
+       await v329AfterCommit(owner,()=>{close();return visualOpenPage(pageId);});
      }finally{busy=false;}
    });
    root.addEventListener('input',e=>{
@@ -14365,11 +14457,16 @@ function componentFromSelection(list,name){
    const {owner,key:target,scope,record}=request;
    const current=()=>state===owner&&(!target||!!record&&store(scope).includes(record)&&folder(target)?.rawId===record.id);
    if(!current()){input.value='';alert('پوشه یا پروژهٔ مقصد تغییر کرده است.');return false;}
-   const before=new Set((scope==='private'?local():shared()).filter(a=>!a.catalogArchived).map(a=>a.id));
+   // The unified explorer still has typed public folders. Deduplication and
+   // reactivation must use the destination's catalog, not the view's route.
+   const kind=scope==='public'&&record?.catalogKind==='hotel-logo'?'hotel-logo':'images';
+   const activeCatalog=()=> (scope==='private'?local():shared()).filter(a=>!a.catalogArchived&&
+     (scope==='private'||(a.catalogKind||'images')===kind));
+   const before=new Set(activeCatalog().map(a=>a.id));
    if(scope==='private'){if(!await V.media.importFiles(input))return false;}
-   else if(!await V.media.importPublicFiles(input,'images'))return false;
+   else if(!await V.media.importPublicFiles(input,kind))return false;
    if(!current()){alert('تصاویر ثبت شدند، اما مقصد پوشه تغییر کرد؛ عضویت جدید ثبت نشد.');return false;}
-   const added=(scope==='private'?local():shared()).filter(a=>!a.catalogArchived&&!before.has(a.id));
+   const added=activeCatalog().filter(a=>!before.has(a.id));
    if(!target||!added.length)return true;
    try{
      if(typeof V.flushStorage==='function')await V.flushStorage();
@@ -15849,7 +15946,7 @@ function onContext(e){
    btn('data-v13-action="add" data-v13-type="text"','افزودن متن'));
   return;
  }
- const token=node.dataset.v13ObjectToken,obj=V.editor?.selectContextObject?.(token);
+ const token=node.dataset.v13ObjectToken,obj=V.editor?.selectContextObject?.(token,true);
  if(!obj)return;
  const isText=obj.type==='text',region=obj.type==='block',custom=obj.type==='custom';
  const common='<div class="v241-context-title">آبجکت · '+esc(obj.name||obj.type)+'</div>'+
