@@ -1,3 +1,9 @@
+# NSP Portfolio Builder — Browser V341 (Legacy album scope / print receipt)
+
+[گزارش V341](release/browser-v341/START-FA.md) · [پذیرش مالک](release/browser-v341/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v341/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
+
+---
+
 # NSP Portfolio Builder — Browser V340 (Page lifecycle / deferred cut)
 
 [گزارش V340](release/browser-v340/START-FA.md) · [پذیرش مالک](release/browser-v340/OWNER-ACCEPTANCE-FA.md) · [فرم شواهد](release/browser-v340/OWNER-RESULTS-TEMPLATE.json). **SOURCE_CHANGED / RUNTIME_PENDING**.
