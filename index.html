@@ -11977,7 +11977,7 @@ function showBrowserStorageRecovery(error,readRevision=false){
 @media(max-width:700px){.v96-align-popup{position:fixed;top:auto;left:12px;right:12px;width:auto;max-height:65vh;overflow:auto;z-index:200}}
 @media print{.v96-align-menu{display:none!important}}
 </style>
-<style id="v107-storage-styles">.v13-tools .v107-storage-feedback{font-size:11px;white-space:normal;flex:1 1 180px;line-height:1.6}.v13-tools [data-v107-retry]{font-size:11px;min-height:34px}@media print{.v107-storage-feedback,[data-v107-retry]{display:none!important}}</style>
+<style id="v107-storage-styles">.v13-tools .v107-storage-feedback{font-size:11px;white-space:normal;flex:1 1 180px;line-height:1.6}.v13-tools [data-v107-retry]{font-size:11px;min-height:34px}.v13-tools [data-v107-retry]:disabled{display:none}@media print{.v107-storage-feedback,[data-v107-retry]{display:none!important}}</style>
 
 <script id="v134-thumbnail-virtualization">
 /* TASK-071 / V134: only hydrate nearby portfolio thumbnails. All page edits
@@ -13857,7 +13857,7 @@ function componentFromSelection(list,name){
    const pan=bar.querySelector('[data-v92-action="pan"]');
    if(pan)pan.remove();  // Middle mouse dragging remains supported by v92.
    bar.prepend(view);
-   bar.querySelectorAll('.v208-shortcut-tip,[data-v92-guide-slot],.v107-storage-feedback,[data-v107-retry]').forEach(node=>node.remove());
+   bar.querySelectorAll('.v208-shortcut-tip,[data-v92-guide-slot],.v107-storage-feedback').forEach(node=>node.remove());
   }
   const grid=editor.querySelector('.v218-two-sided');
   if(grid){
