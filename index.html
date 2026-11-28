@@ -14349,12 +14349,16 @@ function componentFromSelection(list,name){
      '</div>'+children('',0,mode,id)+'</div>';
  }
  function card(a){
+   const publicOriginal=shared().includes(a);
+   const grant=(action,label)=>'<button type="button" class="btn" data-v222-grant="'+action+'" data-v222-grant-id="'+H(a.id)+'">'+label+'</button>';
    return '<article class="v222-image-card" data-v222-image-name="'+H(a.name||'')+'">'+
      '<label><input type="checkbox" data-v222-check="'+H(a.id)+'" '+(selected.has(a.id)?'checked':'')+'> انتخاب</label>'+
      '<button class="v222-image-preview" type="button" data-v222-view-image="'+H(a.id)+'">'+
      '<img loading="lazy" src="'+H(imageSrc(a))+'" alt="'+H(a.name||'تصویر')+'"></button>'+
      '<strong>'+H(a.name||'بدون نام')+'</strong>'+
-     '<small>'+Number(a.width||0)+' × '+Number(a.height||0)+'</small></article>';
+     '<small>'+Number(a.width||0)+' × '+Number(a.height||0)+'</small>'+
+     '<div class="toolbar">'+(publicOriginal?grant('addPublicToProject','افزودن به این پروژه'):
+       grant('shareToProject','اشتراک با پروژه دیگر')+grant('publish','انتشار عمومی'))+'</div></article>';
  }
  function view(){
    checkProject();
@@ -14595,6 +14599,20 @@ function componentFromSelection(list,name){
      if(kind==='none'){selected.clear();render();}
      if(kind==='delete')removeSelected();
      if(kind==='reset')v278ResetImages();
+     return;
+   }
+   const grant=e.target.closest('[data-v222-grant]');
+   if(grant){
+     e.preventDefault();
+     if(viewOwner!==state||projectId!==state.activeWorkspaceId||!root.isConnected)return;
+     const action=grant.dataset.v222Grant,id=grant.dataset.v222GrantId;
+     const record=visibleImages(chosenFolder).find(a=>a.id===id);
+     if(!record)return;
+     if(action==='addPublicToProject'&&shared().includes(record))V.media.addPublicToProject(id);
+     else if(local().includes(record)){
+       if(action==='shareToProject')V.media.shareToProject(id);
+       if(action==='publish')V.media.publish(id);
+     }
      return;
    }
    const img=e.target.closest('[data-v222-view-image]');if(img)fullImage(img.dataset.v222ViewImage);
